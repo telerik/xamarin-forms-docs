@@ -2,12 +2,12 @@
 
 This repository contains the common infrastructure for building markdown documentation with [Jekyll](http://jekyllrb.com/).
 
-## Installation
+## Set up a new documentation repository
 
 1. Install Ruby 1.9.x (2.x may or may not work).
 2. Install NodeJS (or delete the line ` js_compressor: uglifier` from `_config.yml`).
 1. Open a terminal or "Git Bash" if on Windows.
-1. `cd` to the directory where your markdown documentation repository is.
+1. `cd` to the directory where your markdown documentation github repository is.
 1. Add a new git remote to the docs-base repository. This will be used to merge any new features and fixes from the documentation base repository.
 
          git remote add base git@github.com:telerik/docs-base.git
@@ -31,6 +31,13 @@ This repository contains the common infrastructure for building markdown documen
 Jekyll builds a static HTML site in the `_site` directory. This contents of this directory can be deployed on a live server. 
 
 > Important: Jekyll creates .html pages by default. However the documentation creates links without .html extension. A `web.config` with rewrite rules is included out of the box. 
+
+## Getting latest changes from the docs-base repository in your documentation
+1. Open a terminal or "Git Bash" if on Windows.
+1. `cd` to the directory where your markdown documentation github repository is.
+1. Fetch the "base" remote. This will retrieve the latest commits from the base repo. If git complains that there is no "base" remote run `git remote add base git@github.com:telerik/docs-base.git`
+1. Use `git cherry-pick` to get the commit you are interested in. For example to get the last commit run `git cherry-pick base/master`. If there are any conflicts resolve them and run `git cherry-pick --continue`
+1. Push the new commits to github.
 
 ## Some Jekyll info
 

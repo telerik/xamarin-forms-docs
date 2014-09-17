@@ -1,21 +1,24 @@
 # The public documentation URL, used for sitemap.xml
-url: "http://docs.telerik.com/product"
+url: "http://docs.telerik.com/devtools/ui-xamarin-forms"
 
 # Exclude files which should not be in the output
 exclude: [README.md,Gemfile,Gemfile.lock]
 navigation:
 ## List your directory names and order here, like this:
-    getting-started:
+    installation-and-deployment:
+        title: "Installation and Deployment"
         position: 2
-        title: Getting Started
-    "*foo":
-        title: Foo
+    controls:
+        title: "Controls"
+        position: 3
+    controls/chart:
+        title: "Chart"
 
 ## The application virtual path
-baseurl: /kendo-ui
+baseurl: /ui-xamarin-forms
 
 ## The product name
-productName: "AppBuilder"
+productName: "Telerik UI for Xamarin Forms"
 
 ## Assign layout and category per different paths
 defaults:
@@ -45,4 +48,3 @@ kramdown:
     toc_levels: 2..3
     smart_quotes: ["quot", "quot", "quot", "quot"]
     input: GFM
-

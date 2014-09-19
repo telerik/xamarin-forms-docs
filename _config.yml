@@ -15,7 +15,7 @@ navigation:
         title: "Chart"
 
 ## The application virtual path
-baseurl: /ui-xamarin-forms
+baseurl: "/ui-xamarin-forms"
 
 ## The product name
 productName: "Telerik UI for Xamarin Forms"

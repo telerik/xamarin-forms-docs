@@ -1,5 +1,6 @@
 ---
 title: System Requirements
+slug: system-requirements
 position: .1
 ---
 You can use **Xamarin.Forms** for application development for the following mobile operating systems:

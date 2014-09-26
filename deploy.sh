@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Get latest documentation from github
-git pull || { echo 'Getting latest documentation from github.com failed.'; exit 1; }
-
 # Install latest Ruby gems (if any)
 bundle install --without development || { echo 'Installing Ruby gems failed.'; exit 1; }
 

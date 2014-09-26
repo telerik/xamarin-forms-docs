@@ -1,5 +1,5 @@
 # The public documentation URL, used for sitemap.xml
-url: "http://docs.telerik.com/devtools/ui-xamarin-forms"
+url: "http://docs.telerik.com/devtools/xamarin"
 
 # Exclude files which should not be in the output
 exclude: [README.md,Gemfile,Gemfile.lock]
@@ -15,7 +15,7 @@ navigation:
         title: "Chart"
 
 ## The application virtual path
-baseurl: "/ui-xamarin-forms"
+baseurl: "/devtools/xamarin"
 
 ## The product name
 productName: "Telerik UI for Xamarin Forms"

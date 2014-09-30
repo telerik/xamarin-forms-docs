@@ -1,13 +1,15 @@
 ---
 title: Overview
-position: .1
+page_title: RadChart Overview
+position: 1
+slug: chart-overview
 ---
+**RadChart for Xamarin.Forms** is a versatile charting component that offers unmatched performance regarding loading time, drawing capabilities and real-time updates. Its intuitive object model and public API allow complex charts to be easily setup either in XAML or in code-behind. RadChart is completely data aware as the binding mechanism of the control is used to create the appropriate data points from the raw data. Chart types (or series) are organized in hierarchies, depending on the coordinate system, used to plot data points.
 
-**RadChart for Xamarin.Forms** is a versatile charting component that offers unmatched performance regarding loading time, drawing capabilities and real-time updates. Its intuitive object model and public API allow complex charts to be easily setup either in XAML or in code-behind. The control is completely data aware and may work in bound or unbound mode, depending on the requirements. Chart types (or series) are organized in hierarchies, depending on the coordinate system, used to plot data points.
+![Chart examples](images/controls/chart/chart-overview.png)
 
-![chart images]()
+A charting component in general is used to visualize (or plot) some data in a human-readable way through different representations like lines, areas, bars, pies, etc. Each series has a collection of data points – the data equivalent of a 2D point – and knows how to visualize them. Different series types may process certain types of data points – for example, categorical series may contain categorical data points.
 
-A charting component in general is used to visualize (or plot) some data in a human-readable way through different representations like lines, areas, bars, pies, etc. Each series has a collection of data points – the data equivalent of a 2D point – and knows how to visualize them. Different series types may process certain types of data points – for example, categorical series may contain categorical data points. Data points may be added directly to series or a data binding mechanism may be used to create the appropriate data points from the raw data.
 ## Chart Types ##
 ### RadCartesianChart ###
 As the name hints, this chart control uses the Cartesian coordinate system to plot the data points in its chart series. The X and Y axes define how each point’s coordinates in the plot area are calculated.
@@ -46,7 +48,7 @@ Optionally, each chart may be enabled with interactivity through its Behaviors p
 - **PanAndZoomBehavior**: This behavior handles Manipulation events and/or MouseMove/MouseWheel to enable panning and zooming of the associated chart plot area.
 - **TooltipBehavior**: This behavior handles Hold and/or MouseMove events to enable context-sensitive information about a data point. It differs from the TrackballBehavior in terms of visual information and trigger action.
 - **SelectionBehavior**: This behavior handles the Tap event to enable selection/deselection of data points and/or chart series. When a data point becomes "Selected", the Chart's SelectionPalette property is used to visualize the selected point.
-
+- **ChartTrackBallBehavior**: This behavior handles Hold events to enable context-sensitive information about a data point.
 ## Annotations ##
 
 Another feature of RadChart is the ability to show annotations. They are visual elements that can be used to highlight certain areas on the plot area and denote statistical significance. The provided types of annotations include:
@@ -55,6 +57,6 @@ Another feature of RadChart is the ability to show annotations. They are visual 
 - **CartesianPlotBand**: The Cartesian Plot Band annotation is either a horizontal or a vertical stripe that crosses entirely the vertical or horizontal axis, respectively.
 
 ## Palettes ##
-TO DO
+The Chart Palettes are a set of predefined values that you can use to set colors of a chart.
 ## Labels ##
 Chart can display different labels for the series and axes that are displayed. The labels can be customized according to your preferences.

@@ -1,10 +1,14 @@
 ---
 title: Chart Getting Started
+page_title: Chart Getting Started
+position: 3
+slug: chart-getting-started
 ---
 # Getting Started #
 This example will guide you through the steps needed to add a basic RadCartesianChart control in your application.
+
 ## Add References to Telerik UI for Xamarin.Forms ##
-First you have to create a new Xamarin.Forms project. You can see how in the [LinearAxis]({% slug getting-started %} "Read more about LinearAxis") [Getting Started example]({% slug getting-started %} "Getting started with Telerik UI for Xamarin.Forms"). Then you have to add reference to the following assemblies:
+First you have to create a new Xamarin.Forms project. You can see how in the [Getting Started Example]({% slug getting-started %} "Getting Started with Telerik UI foe Xamarin.Forms"). Then you have to add reference to the following assemblies:
 
 * **Portable** (if you have created Xamarin.Forms Portable App)
 	* Telerik.XamarinForms.Chart.dll
@@ -30,24 +34,31 @@ First you have to create a new Xamarin.Forms project. You can see how in the [Li
 	* Telerik.XamarinForms.Chart.dll
 	* Telerik.XamarinForms.ChartRenderer.Android.dll
 	* Telerik.XamarinForms.Common.dll
+		
+ 		![Add References](images/controls/chart/chart-getting-started-references.png)
 
-![Add references](images/installation-and-deployment/visual-studio-add-references.png "Image")  
-![Add references](images/installation-and-deployment/xamarin-studio-add-references.png "Image")   
- 
 You will also have to add the following code to these project files:
 
-* Android: **MainActivity.cs**
+* **Android**: MainActivity.cs
   
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.AndroidChartRenderer.CartesianChartRenderer))]
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.AndroidChartRenderer.PieChartRenderer))]
-* iOS: **AppDelegate.cs**
+
+* **iOS**: AppDelegate.cs
 
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartRenderer))]
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.iOS.PieChartRenderer))]
-* WinPhone: **MainPage.xaml.cs**
+	You also have to create the following instances in the FinishedLaunching() method:
+
+		new Telerik.XamarinForms.ChartRenderer.iOS.PieChartRenderer();
+		new Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartRenderer();
+
+
+* **WinPhone**: MainPage.xaml.cs
     
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.WinPhone.CartesianChartRenderer))]
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.WinPhone.PieChartRenderer))]
+
 ##Add Chart Control to Your Project##
 1. Add new Xamarin.Forms page to your Portable/Shared project:
 	* **Visual Studio**: right click on the project > `Add` > `New Item...` > choose `Forms Xaml Page`
@@ -172,4 +183,4 @@ And here is the sample data used as binding context:
 	        }
 	    }
 Here is the result:  
-![Basic RadCartesianChart](image "Basic RadCartesianChart")
+![Basic RadCartesianChart Example](chart-getting-started-example.png "Basic RadCartesianChart")

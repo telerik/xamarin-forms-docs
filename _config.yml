@@ -13,6 +13,9 @@ navigation:
         position: 3
     controls/chart:
         title: "Chart"
+    controls/chart/types:
+        title: "Types"
+        position: 3
 
 ## The application virtual path
 baseurl: "/devtools/xamarin"

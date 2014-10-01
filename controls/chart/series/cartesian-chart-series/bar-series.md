@@ -1,5 +1,6 @@
 ---
 title: BarSeries
+slug: chart-series-bar-series
 ---
 # BarSeries #
 
@@ -7,9 +8,9 @@ title: BarSeries
 ## Example ##
 Here is an example of how to create a basic RadCartesianChart with BarSeries in xaml:
 
-	<telerikChart:RadCartesianChart HeightRequest="600">
+	<telerikChart:RadCartesianChart>
 	  <telerikChart:RadCartesianChart.BindingContext>
-	    <local:MainViewModel/>
+	    <viewMoedls:CategoricalViewModel/>
 	  </telerikChart:RadCartesianChart.BindingContext>
 	  <telerikChart:RadCartesianChart.HorizontalAxis>
 	    <telerikChart:CategoricalAxis/>
@@ -28,18 +29,21 @@ Here is an example of how to create a basic RadCartesianChart with BarSeries in 
 	    </telerikChart:BarSeries>
 	  </telerikChart:RadCartesianChart.Series>
 	</telerikChart:RadCartesianChart>
+
+Where
+
+	xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
 Here is an example of how to create a RadCartesianChart with BarSeries in code:
 
 	var chart = new RadCartesianChart
 	{
-	    HorizontalAxis = new Telerik.XamarinForms.Chart.CategoricalAxis(),
-	    VerticalAxis = new Telerik.XamarinForms.Chart.NumericalAxis(),
-	    HeightRequest = 600,
-	    BindingContext = new ViewModel()
+	    HorizontalAxis = new CategoricalAxis(),
+	    VerticalAxis = new NumericalAxis(),
+	    BindingContext = new CategoricalViewModel()
 	};
-
-	var series = new Telerik.XamarinForms.Chart.BarSeries();
-	series.SetBinding(BarSeries.ItemsSourceProperty, new Binding("CategoricalData"));	
+	
+	var series = new BarSeries();
+	series.SetBinding(BarSeries.ItemsSourceProperty, new Binding("CategoricalData"));   
 	series.ValueBinding = new PropertyNameDataPointBinding("Value");
 	series.CategoryBinding = new PropertyNameDataPointBinding("Category");
 	

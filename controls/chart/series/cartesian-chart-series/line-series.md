@@ -1,5 +1,6 @@
 ---
 title: LineSeries
+slug: chart-series-line-series
 ---
 # LineSeries #
 
@@ -8,9 +9,9 @@ title: LineSeries
 ## Example ##
 Here is an example of how to create a basic RadCartesianChart with LineSeries in xaml:
 
-	<telerikChart:RadCartesianChart HeightRequest="600">
+	<telerikChart:RadCartesianChart>
 	  <telerikChart:RadCartesianChart.BindingContext>
-	    <local:MainViewModel/>
+	    <viewMoedls:CategoricalViewModel/>
 	  </telerikChart:RadCartesianChart.BindingContext>
 	  <telerikChart:RadCartesianChart.HorizontalAxis>
 	    <telerikChart:CategoricalAxis/>
@@ -29,18 +30,20 @@ Here is an example of how to create a basic RadCartesianChart with LineSeries in
 	    </telerikChart:LineSeries>
 	  </telerikChart:RadCartesianChart.Series>
 	</telerikChart:RadCartesianChart>
+Where
+
+	xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
 Here is an example of how to create a RadCartesianChart with LineSeries in code:
 
 	var chart = new RadCartesianChart
 	{
-	    HorizontalAxis = new Telerik.XamarinForms.Chart.CategoricalAxis(),
-	    VerticalAxis = new Telerik.XamarinForms.Chart.NumericalAxis(),
-	    HeightRequest = 600,
-	    BindingContext = new ViewModel()
+	    HorizontalAxis = new CategoricalAxis(),
+	    VerticalAxis = new NumericalAxis(),
+	    BindingContext = new CategoricalViewModel()
 	};
-
-	var series = new Telerik.XamarinForms.Chart.LineSeries();
-	series.SetBinding(LineSeries.ItemsSourceProperty, new Binding("CategoricalData"));	
+	
+	var series = new LineSeries();
+	series.SetBinding(LineSeries.ItemsSourceProperty, new Binding("CategoricalData"));   
 	series.ValueBinding = new PropertyNameDataPointBinding("Value");
 	series.CategoryBinding = new PropertyNameDataPointBinding("Category");
 	

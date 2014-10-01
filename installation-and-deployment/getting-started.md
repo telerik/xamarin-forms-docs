@@ -13,9 +13,9 @@ First you have to download and install [Xamarin Studio](http://xamarin.com/downl
 Create new solution **Xamarin.Forms Portable** / **Shared**
 
 * **Visual Studio**: located at `Templates > Visual C# > Mobile Apps` section:  
-![Create new Xamarin.Forms solution](images/installation-and-deployment/visual-studio-new-solution.png "Image")
+![Create new Xamarin.Forms solution](/images/installation-and-deployment/visual-studio-new-solution.png "Image")
 * **Xamarin Studio**: located at `C# > Mobile Apps` section:  
-![Create new Xamarin.Forms solution](images/installation-and-deployment/xamarin-studio-new-solution.png "Image")  
+![Create new Xamarin.Forms solution](/images/installation-and-deployment/xamarin-studio-new-solution.png "Image")  
 
 Typically, the solution will contain the following projects:
 
@@ -26,7 +26,7 @@ Typically, the solution will contain the following projects:
 	* Available for OS X.
 	* If you wish to use Visual Studio as a development environment you will also need a mac machine. You can find more information how to setup your environment here: [Introduction to Xamarin.iOS for Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/)
 	 
-![Solution projects](images/installation-and-deployment/visual-studio-solution-projects.png "Image")
+![Solution projects](/images/installation-and-deployment/visual-studio-solution-projects.png "Image")
 
 ## Packages ##
 >The minimum supported Xamarin.Forms version is **1.2.2.6234**.  

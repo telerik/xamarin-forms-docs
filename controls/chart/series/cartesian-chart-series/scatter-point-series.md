@@ -1,5 +1,6 @@
 ---
 title: ScatterPointSeries
+slug: chart-series-scatter-point-series
 ---
 # ScatterPointSeries #
 
@@ -8,9 +9,9 @@ The **ScatterPointSeries** are represented on the chart as not connected data po
 ## Example ##
 Here is an example of how to create a basic RadCartesianChart with ScatterPointSeries in xaml:
 
-	<telerikChart:RadCartesianChart HeightRequest="600">
+	<telerikChart:RadCartesianChart>
 	  <telerikChart:RadCartesianChart.BindingContext>
-	    <local:ViewModel/>
+	    <viewMoedls:ScatterViewModel/>
 	  </telerikChart:RadCartesianChart.BindingContext>
 	  <telerikChart:RadCartesianChart.HorizontalAxis>
 	    <telerikChart:NumericalAxis/>
@@ -20,28 +21,29 @@ Here is an example of how to create a basic RadCartesianChart with ScatterPointS
 	  </telerikChart:RadCartesianChart.VerticalAxis>
 	  <telerikChart:RadCartesianChart.Series>
 	    <telerikChart:ScatterPointSeries ItemsSource="{Binding ScatterData}">
-	      <telerikChart:ScatterPointSeries>
+	      <telerikChart:ScatterPointSeries.XValueBinding>
 	        <telerikChart:PropertyNameDataPointBinding PropertyName="XValue"/>
-	      </telerikChart:ScatterPointSeries>
-	      <telerikChart:ScatterPointSeries>
+	      </telerikChart:ScatterPointSeries.XValueBinding>
+	      <telerikChart:ScatterPointSeries.YValueBinding>
 	        <telerikChart:PropertyNameDataPointBinding PropertyName="YValue"/>
-	      </telerikChart:ScatterPointSeries>
+	      </telerikChart:ScatterPointSeries.YValueBinding>
 	    </telerikChart:ScatterPointSeries>
 	  </telerikChart:RadCartesianChart.Series>
 	</telerikChart:RadCartesianChart>
+Where:
 
+	xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
 Here is an example of how to create a RadCartesianChart with ScatterPointSeries in code:
 
 	var chart = new RadCartesianChart
 	{
 	    HorizontalAxis = new NumericalAxis(),
 	    VerticalAxis = new NumericalAxis(),
-	    HeightRequest = 600,
-	    BindingContext = new ViewModel()
+	    BindingContext = new ScatterViewModel()
 	};
-	var series = new ScatterPointSeries();
-	series.SetBinding(BarSeries.ItemsSourceProperty, new Binding("ScatterData"));
 	
+	var series = new ScatterPointSeries();
+	series.SetBinding(ScatterPointSeries.ItemsSourceProperty, new Binding("ScatterData"));   
 	series.XValueBinding = new PropertyNameDataPointBinding("XValue");
 	series.YValueBinding = new PropertyNameDataPointBinding("YValue");
 	

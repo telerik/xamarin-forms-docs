@@ -1,5 +1,6 @@
 ---
 title: ScatterAreaSeries
+slug: chart-series-scatter-area-series
 ---
 # ScatterLineSeries #
 
@@ -8,9 +9,9 @@ title: ScatterAreaSeries
 ## Example ##
 Here is an example of how to create a basic RadCartesianChart with ScatterAreaSeries in xaml:
 
-	<telerikChart:RadCartesianChart HeightRequest="600">
+	<telerikChart:RadCartesianChart>
 	  <telerikChart:RadCartesianChart.BindingContext>
-	    <local:ViewModel/>
+	    <viewMoedls:ScatterViewModel/>
 	  </telerikChart:RadCartesianChart.BindingContext>
 	  <telerikChart:RadCartesianChart.HorizontalAxis>
 	    <telerikChart:NumericalAxis/>
@@ -20,35 +21,34 @@ Here is an example of how to create a basic RadCartesianChart with ScatterAreaSe
 	  </telerikChart:RadCartesianChart.VerticalAxis>
 	  <telerikChart:RadCartesianChart.Series>
 	    <telerikChart:ScatterAreaSeries ItemsSource="{Binding ScatterData}">
-	      <telerikChart:ScatterAreaSeries>
+	      <telerikChart:ScatterAreaSeries.XValueBinding>
 	        <telerikChart:PropertyNameDataPointBinding PropertyName="XValue"/>
-	      </telerikChart:ScatterAreaSeries>
-	      <telerikChart:ScatterAreaSeries>
+	      </telerikChart:ScatterAreaSeries.XValueBinding>
+	      <telerikChart:ScatterAreaSeries.YValueBinding>
 	        <telerikChart:PropertyNameDataPointBinding PropertyName="YValue"/>
-	      </telerikChart:ScatterAreaSeries>
+	      </telerikChart:ScatterAreaSeries.YValueBinding>
 	    </telerikChart:ScatterAreaSeries>
 	  </telerikChart:RadCartesianChart.Series>
 	</telerikChart:RadCartesianChart>
+Where:
 
+	xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
 Here is an example of how to create a RadCartesianChart with ScatterAreaSeries in code:
 
 	var chart = new RadCartesianChart
 	{
 	    HorizontalAxis = new NumericalAxis(),
 	    VerticalAxis = new NumericalAxis(),
-	    HeightRequest = 600,
-	    BindingContext = new ViewModel()
+	    BindingContext = new ScatterViewModel()
 	};
-	var series = new ScatterAreaSeries();
-	series.SetBinding(BarSeries.ItemsSourceProperty, new Binding("ScatterData"));
 	
+	var series = new ScatterAreaSeries();
+	series.SetBinding(ScatterAreaSeries.ItemsSourceProperty, new Binding("ScatterData"));   
 	series.XValueBinding = new PropertyNameDataPointBinding("XValue");
 	series.YValueBinding = new PropertyNameDataPointBinding("YValue");
 	
 	chart.Series.Add(series);
-
 Here is the sample data:
 	
-
 ![Basic ScatterAreaSeries]()
 ## Customization ##

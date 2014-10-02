@@ -49,12 +49,53 @@ Here is an example of how to create a RadCartesianChart with SplineSeries in cod
 	series.CategoryBinding = new PropertyNameDataPointBinding("Category");
 	
 	chart.Series.Add(series);
+Here is the sample data:
 
-![Basic SplineSeries Windows Phone](/images/controls/chart/series/cartesan-spline-series-basic-example-WP.png)
-![Basic SplineSeries Android](/images/controls/chart/series/cartesan-spline-series-basic-example-andro.png)
-![Basic SplineSeries iOS](/images/controls/chart/series/cartesan-spline-series-basic-example-iOS.png)
+	public class CategoricalData
+	{
+	    public object Category { get; set; }
+	    public double Value { get; set; }
+	}
+
+	public class CategoricalViewModel
+    {
+        private static Random random = new Random();
+        private static string[] categories = new string[] { "Greenings", "Perfecto", "NearBy", "Family", "Fresh" };
+
+        public CategoricalViewModel()
+        {
+            this.CategoricalData = GetCategoricalData();
+        }
+
+        public ObservableCollection<CategoricalData> CategoricalData { get; set; }
+
+        public static ObservableCollection<CategoricalData> GetCategoricalData()
+        {
+            var data = new ObservableCollection<CategoricalData>();
+            for (int i = 0; i < categories.Length; i++)
+            {
+                data.Add(new CategoricalData() { Value = random.Next(50, 100), Category = categories[i] });
+            }
+
+            return data;
+        }
+    }
+
+And here is the result:
+
+![Basic SplineSeries Windows Phone](spline-series-images/cartesian-spline-series-basic-example-WP.png)
+![Basic SplineSeries Android](spline-series-images/cartesian-spline-series-basic-example-andro.png)
+![Basic SplineSeries iOS](spline-series-images/cartesian-spline-series-basic-example-iOS.png)
 ## Customization ##
-**LineSeries** extend [**LineSeries**]({% slug chart-series-line-series %}) so they provide the same properties to change their style:
+**SplineSeries** extend [**LineSeries**]({% slug chart-series-line-series %}) so they provide the same properties to change their style:
 
 - **Stroke** (Color): changes the color used to draw lines.
 - **StrokeThickness** (double): changes the width of the lines.
+
+Here is an example:
+
+	var series = new SplineSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5 };
+
+![Customized SplineSeries Windows Phone](spline-series-images/cartesian-spline-series-customization-example-WP.png)
+![Customized SplineSeries Android](spline-series-images/cartesian-spline-series-customization-example-andro.png)
+![Customized SplineSeries iOS](spline-series-images/cartesian-spline-series-customization-example-iOS.png)

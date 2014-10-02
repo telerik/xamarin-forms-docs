@@ -53,9 +53,50 @@ Here is an example of how to create a RadCartesianChart with ScatterSplineSeries
 
 Here is the sample data:
 	
-![Basic ScatterSplineSeries WP](/images/controls/chart/series/cartesan-scatter-spline-series-basic-example-WP.png)
-![Basic ScatterSplineSeries Android](/images/controls/chart/series/cartesan-scatter-spline-series-basic-example-andro.png)
-![Basic ScatterSplineSeries iOS](/images/controls/chart/series/cartesan-scatter-spline-basic-example-iOS.png)
+	public class NumericalData
+	{
+	    public double XValue { get; set; }
+	    public double YValue { get; set; }
+	}
+
+	public class ScatterViewModel
+	{
+	    private static Random random = new Random();
+	
+	    public ScatterViewModel()
+	    {
+	        this.ScatterData = GetScatterData(10, 0.1, 0.1, this.GenerateX, this.GenerateY);
+	    }
+	
+	    public ObservableCollection<NumericalData> ScatterData { get; set; }
+	
+	    public static ObservableCollection<NumericalData> GetScatterData(int dataCount, double xDispersion, double yDispersion, Func<int, double> xFunc, Func<int, double> yFunc)
+	    {
+	        var data = new ObservableCollection<NumericalData>();
+	        for (int i = 0; i < dataCount; i++)
+	        {
+	            data.Add(new NumericalData() { XValue = xFunc(i) + xDispersion * random.NextDouble(), YValue = yFunc(i) + yDispersion * random.NextDouble() });
+	        }
+	
+	        return data;
+	    }
+	
+	    private double GenerateX(int i)
+	    {
+	        return 1 + Math.Sin(i);
+	    }
+	
+	    private double GenerateY(int i)
+	    {
+	        return i;
+	    }
+	}
+
+Here is the result:
+	
+![Basic ScatterSplineSeries Windows Phone](scatter-spline-series-images/cartesian-scatter-spline-series-basic-example-WP.png)
+![Basic ScatterSplineSeries Android](scatter-spline-series-images/cartesian-scatter-spline-series-basic-example-andro.png)
+![Basic ScatterSplineSeries iOS](scatter-spline-series-images/cartesian-scatter-spline-series-basic-example-iOS.png)
 ## Customization ##
 **ScatterSplineSeries** provides the following properties to change its style:
 
@@ -66,6 +107,6 @@ Here is an example:
 
 	var series = new ScatterSplineSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5 };
 
-![Customized ScatterSplineSeries WP](/images/controls/chart/series/cartesan-scatter-spline-series-customization-example-WP.png)
-![Customized ScatterSplineSeries Android](/images/controls/chart/series/cartesan-scatter-spline-series-customization-example-andro.png)
-![Customized ScatterSplineSeries iOS](/images/controls/chart/series/cartesan-scatter-spline-customization-example-iOS.png)
+![Customized ScatterSplineSeries Windows Phone](scatter-spline-series-images/cartesian-scatter-spline-series-customization-example-WP.png)
+![Customized ScatterSplineSeries Android](scatter-spline-series-images/cartesian-scatter-spline-series-customization-example-andro.png)
+![Customized ScatterSplineSeries iOS](scatter-spline-series-images/cartesian-scatter-spline-series-customization-example-iOS.png)

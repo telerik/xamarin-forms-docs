@@ -50,9 +50,50 @@ Here is an example of how to create a RadCartesianChart with ScatterAreaSeries i
 	chart.Series.Add(series);
 Here is the sample data:
 	
-![Basic ScatterAreaSeries WP](/images/controls/chart/series/cartesan-scatter-area-series-basic-example-WP.png)
-![Basic ScatterAreaSeries Android](/images/controls/chart/series/cartesan-scatter-area-series-basic-example-andro.png)
-![Basic ScatterAreaSeries iOS](/images/controls/chart/series/cartesan-scatter-area-basic-example-iOS.png)
+	public class NumericalData
+	{
+	    public double XValue { get; set; }
+	    public double YValue { get; set; }
+	}
+
+	public class ScatterViewModel
+	{
+	    private static Random random = new Random();
+	
+	    public ScatterViewModel()
+	    {
+	        this.ScatterData = GetScatterData(10, 0.1, 0.1, this.GenerateX, this.GenerateY);
+	    }
+	
+	    public ObservableCollection<NumericalData> ScatterData { get; set; }
+	
+	    public static ObservableCollection<NumericalData> GetScatterData(int dataCount, double xDispersion, double yDispersion, Func<int, double> xFunc, Func<int, double> yFunc)
+	    {
+	        var data = new ObservableCollection<NumericalData>();
+	        for (int i = 0; i < dataCount; i++)
+	        {
+	            data.Add(new NumericalData() { XValue = xFunc(i) + xDispersion * random.NextDouble(), YValue = yFunc(i) + yDispersion * random.NextDouble() });
+	        }
+	
+	        return data;
+	    }
+	
+	    private double GenerateX(int i)
+	    {
+	        return 1 + Math.Sin(i);
+	    }
+	
+	    private double GenerateY(int i)
+	    {
+	        return i;
+	    }
+	}
+
+
+
+![Basic ScatterAreaSeries Windows Phone](scatter-area-series-images/cartesian-scatter-area-series-basic-example-WP.png)
+![Basic ScatterAreaSeries Android](scatter-area-series-images/cartesian-scatter-area-series-basic-example-andro.png)
+![Basic ScatterAreaSeries iOS](scatter-area-series-images/cartesian-scatter-area-series-basic-example-iOS.png)
 ## Customization ##
 **ScatterAreaSeries** provides the following properties to change its style:
 
@@ -64,6 +105,6 @@ Here is an example:
 
 	var series = new ScatterAreaSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5, Fill = new Color(0.8, 0.8, 1) };
 
-![Customized ScatterAreaSeries WP](/images/controls/chart/series/cartesan-scatter-area-series-customization-example-WP.png)
-![Customized ScatterAreaSeries Android](/images/controls/chart/series/cartesan-scatter-area-series-customization-example-andro.png)
-![Customized ScatterAreaSeries iOS](/images/controls/chart/series/cartesan-scatter-area-customization-example-iOS.png)
+![Customized ScatterAreaSeries Windows Phone](scatter-area-series-images/cartesian-scatter-area-series-customization-example-WP.png)
+![Customized ScatterAreaSeries Android](scatter-area-series-images/cartesian-scatter-area-series-customization-example-andro.png)
+![Customized ScatterAreaSeries iOS](scatter-area-series-images/cartesian-scatter-area-series-customization-example-iOS.png)

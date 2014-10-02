@@ -50,9 +50,43 @@ Here is an example of how to create a RadCartesianChart with AreaSeries in code:
 		
 	chart.Series.Add(series);
 
-![Basic AreaSeries WP](/images/controls/chart/series/cartesan-area-series-basic-example-WP.png)
-![Basic AreaSeries Android](/images/controls/chart/series/cartesan-area-series-basic-example-andro.png)
-![Basic AreaSeries iOS](/images/controls/chart/series/cartesan-area-series-basic-example-iOS.png)
+Here is the sample data:
+
+	public class CategoricalData
+	{
+	    public object Category { get; set; }
+	    public double Value { get; set; }
+	}
+
+	public class CategoricalViewModel
+    {
+        private static Random random = new Random();
+        private static string[] categories = new string[] { "Greenings", "Perfecto", "NearBy", "Family", "Fresh" };
+
+        public CategoricalViewModel()
+        {
+            this.CategoricalData = GetCategoricalData();
+        }
+
+        public ObservableCollection<CategoricalData> CategoricalData { get; set; }
+
+        public static ObservableCollection<CategoricalData> GetCategoricalData()
+        {
+            var data = new ObservableCollection<CategoricalData>();
+            for (int i = 0; i < categories.Length; i++)
+            {
+                data.Add(new CategoricalData() { Value = random.Next(50, 100), Category = categories[i] });
+            }
+
+            return data;
+        }
+    }
+
+And here is the result:
+
+![Basic AreaSeries WP](area-series-images/cartesian-area-series-basic-example-WP.png)
+![Basic AreaSeries Android](area-series-images/cartesian-area-series-basic-example-andro.png)
+![Basic AreaSeries iOS](area-series-images/cartesian-area-series-basic-example-iOS.png)
 ## Customization ##
 **AreaSeries** extend **CategoricalStrokedSeries** which provide the following way to change their style:
 
@@ -65,6 +99,6 @@ Here is an example:
 
 	var series = new AreaSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5, Fill = new Color(0.8, 0.8, 1) };
 
-![Customized AreaSeries WP](/images/controls/chart/series/cartesan-area-series-customization-example-WP.png)
-![Customized AreaSeries Android](/images/controls/chart/series/cartesan-area-series-customization-example-andro.png)
-![Customized AreaSeries iOS](/images/controls/chart/series/cartesan-area-series-customization-example-iOS.png)
+![Customized AreaSeries WP](area-series-images/cartesian-area-series-customization-example-WP.png)
+![Customized AreaSeries Android](area-series-images/cartesian-area-series-customization-example-andro.png)
+![Customized AreaSeries iOS](area-series-images/cartesian-area-series-customization-example-iOS.png)

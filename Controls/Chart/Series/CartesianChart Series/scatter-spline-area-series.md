@@ -4,7 +4,7 @@ slug: chart-series-scatter-spline-area-series
 ---
 # ScatterLineSeries #
 
-**RadCartesianChart** visualizes **ScatterSplineAreaSeries** as the area enclosed by the coordinate axes and curved line segments that connect the series data points. The **ScatterSplineAreaSeries** inherit from the **[ScatterPointSeries]()** class and also require both axes of the chart to be of type **NumericalAxis**.
+**RadCartesianChart** visualizes **ScatterSplineAreaSeries** as the area enclosed by the coordinate axes and curved line segments that connect the series data points. The **ScatterSplineAreaSeries** inherit from the [**ScatterPointSeries**]({% slug chart-series-scatter-point-series %}) class and also require both axes of the chart to be of type **NumericalAxis**.
 
 ## Example ##
 Here is an example of how to create a basic RadCartesianChart with ScatterSplineAreaSeries in xaml:
@@ -50,11 +50,51 @@ Here is an example of how to create a RadCartesianChart with ScatterSplineAreaSe
 	chart.Series.Add(series);
 
 Here is the sample data:
+	
+	public class NumericalData
+	{
+	    public double XValue { get; set; }
+	    public double YValue { get; set; }
+	}
 
+	public class ScatterViewModel
+	{
+	    private static Random random = new Random();
+	
+	    public ScatterViewModel()
+	    {
+	        this.ScatterData = GetScatterData(10, 0.1, 0.1, this.GenerateX, this.GenerateY);
+	    }
+	
+	    public ObservableCollection<NumericalData> ScatterData { get; set; }
+	
+	    public static ObservableCollection<NumericalData> GetScatterData(int dataCount, double xDispersion, double yDispersion, Func<int, double> xFunc, Func<int, double> yFunc)
+	    {
+	        var data = new ObservableCollection<NumericalData>();
+	        for (int i = 0; i < dataCount; i++)
+	        {
+	            data.Add(new NumericalData() { XValue = xFunc(i) + xDispersion * random.NextDouble(), YValue = yFunc(i) + yDispersion * random.NextDouble() });
+	        }
+	
+	        return data;
+	    }
+	
+	    private double GenerateX(int i)
+	    {
+	        return 1 + Math.Sin(i);
+	    }
+	
+	    private double GenerateY(int i)
+	    {
+	        return i;
+	    }
+	}
 
-![Basic ScatterSplineAreaSeries Windows Phone](/images/controls/chart/series/cartesan-scatter-spline-area-series-basic-example-WP.png)
-![Basic ScatterSplineAreaSeries Android](/images/controls/chart/series/cartesan-scatter-spline-area-series-basic-example-andro.png)
-![Basic ScatterSplineAreaSeries iOS](/images/controls/chart/series/cartesan-scatter-spline-area-series-basic-example-iOS.png)
+Here is the result:
+
+![Basic ScatterSplineAreaSeries Windows Phone](scatter-spline-area-series-images/cartesian-scatter-spline-area-series-basic-example-WP.png)
+![Basic ScatterSplineAreaSeries Android](scatter-spline-area-series-images/cartesian-scatter-spline-area-series-basic-example-andro.png)
+![Basic ScatterSplineAreaSeries iOS](scatter-spline-area-series-images/cartesian-scatter-spline-area-series-basic-example-iOS.png)
 ## Customization ##
 **ScatterSplineAreaSeries** provide the following properties to change their style:
 
@@ -66,6 +106,6 @@ Here is an example:
 
 	var series = new ScatterSplineAreaSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5, Fill = new Color(0.8, 0.8, 1) };
 
-![Cistomized ScatterSplineAreaSeries Windows Phone](/images/controls/chart/series/cartesan-scatter-spline-area-series-customization-example-WP.png)
-![Cistomized ScatterSplineAreaSeries Android](/images/controls/chart/series/cartesan-scatter-spline-area-series-customization-example-andro.png)
-![Cistomized ScatterSplineAreaSeries iOS](/images/controls/chart/series/cartesan-scatter-spline-area-series-customization-example-iOS.png)
+![Cistomized ScatterSplineAreaSeries Windows Phone](scatter-spline-area-series-images/cartesian-scatter-spline-area-series-customization-example-WP.png)
+![Cistomized ScatterSplineAreaSeries Android](scatter-spline-area-series-images/cartesian-scatter-spline-area-series-customization-example-andro.png)
+![Cistomized ScatterSplineAreaSeries iOS](scatter-spline-area-series-images/cartesian-scatter-spline-area-series-customization-example-iOS.png)

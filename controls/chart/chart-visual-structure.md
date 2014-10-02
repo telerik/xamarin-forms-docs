@@ -7,7 +7,7 @@ slug: chart-visual-structure
 ## Visual Structure ##
 Here are described all visual elements and terms used in a standard RadChart control.
 
-![Chart Visual Structure](/images/controls/chart/chart-visual-structure.png "Visual elements of RadChart control")
+![Chart Visual Structure](chart-visual-structure.png "Visual elements of RadChart control")
 ## Legend ##
 - **PlotArea**: The area that contains the data series (on the image it is the area inside the rectangle defined by the axes).
 - **Series**: The visual representation of the data.

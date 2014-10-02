@@ -50,6 +50,39 @@ Here is an example of how to create a RadCartesianChart with BarSeries in code:
 	chart.Series.Add(series);
 Here is the sample data:
 
-![Basic BarSeries WP](/images/controls/chart/series/cartesan-bar-series-basic-example-WP.png)
-![Basic BarSeries Android](/images/controls/chart/series/cartesan-bar-series-basic-example-andro.png)
-![Basic BarSeries iOS](/images/controls/chart/series/cartesan-area-bar-basic-example-iOS.png)
+	public class CategoricalData
+	{
+	    public object Category { get; set; }
+	    public double Value { get; set; }
+	}
+
+	public class CategoricalViewModel
+	{
+	    private static Random random = new Random();
+	    private static string[] categories = new string[] { "Greenings", "Perfecto", "NearBy", "Family", "Fresh" };
+	
+	    public CategoricalViewModel()
+	    {
+	        this.CategoricalData = GetCategoricalData();
+	    }
+	
+	    public ObservableCollection<CategoricalData> CategoricalData { get; set; }
+	
+	    public static ObservableCollection<CategoricalData> GetCategoricalData()
+	    {
+	        var data = new ObservableCollection<CategoricalData>();
+	        for (int i = 0; i < categories.Length; i++)
+	        {
+	            data.Add(new CategoricalData() { Value = random.Next(50, 100), Category = categories[i] });
+	        }
+	
+	        return data;
+	    }
+	}
+
+
+And here is the result:
+
+![Basic BarSeries WP](bar-series-images/cartesian-bar-series-basic-example-WP.png)
+![Basic BarSeries Android](bar-series-images/cartesian-bar-series-basic-example-andro.png)
+![Basic BarSeries iOS](bar-series-images/cartesian-bar-series-basic-example-iOS.png)

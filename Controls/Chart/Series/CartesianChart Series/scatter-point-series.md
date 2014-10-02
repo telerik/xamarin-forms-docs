@@ -51,6 +51,46 @@ Here is an example of how to create a RadCartesianChart with ScatterPointSeries 
 
 Here is the sample data:
 	
-![Basic ScatterPointSeries Windows Phone](/images/controls/chart/series/cartesan-scatter-point-series-basic-example-WP.png)
-![Basic ScatterPointSeries Android](/images/controls/chart/series/cartesan-scatter-point-series-basic-example-andro.png)
-![Basic ScatterPointSeries iOS](/images/controls/chart/series/cartesan-scatter-point-series-basic-example-iOS.png)
+	public class NumericalData
+	{
+	    public double XValue { get; set; }
+	    public double YValue { get; set; }
+	}
+
+	public class ScatterViewModel
+	{
+	    private static Random random = new Random();
+	
+	    public ScatterViewModel()
+	    {
+	        this.ScatterData = GetScatterData(10, 0.1, 0.1, this.GenerateX, this.GenerateY);
+	    }
+	
+	    public ObservableCollection<NumericalData> ScatterData { get; set; }
+	
+	    public static ObservableCollection<NumericalData> GetScatterData(int dataCount, double xDispersion, double yDispersion, Func<int, double> xFunc, Func<int, double> yFunc)
+	    {
+	        var data = new ObservableCollection<NumericalData>();
+	        for (int i = 0; i < dataCount; i++)
+	        {
+	            data.Add(new NumericalData() { XValue = xFunc(i) + xDispersion * random.NextDouble(), YValue = yFunc(i) + yDispersion * random.NextDouble() });
+	        }
+	
+	        return data;
+	    }
+	
+	    private double GenerateX(int i)
+	    {
+	        return 1 + Math.Sin(i);
+	    }
+	
+	    private double GenerateY(int i)
+	    {
+	        return i;
+	    }
+	}
+And here is the result:
+
+![Basic ScatterPointSeries Windows Phone](scatter-point-series-images/cartesian-scatter-point-series-basic-example-WP.png)
+![Basic ScatterPointSeries Android](scatter-point-series-images/cartesian-scatter-point-series-basic-example-andro.png)
+![Basic ScatterPointSeries iOS](scatter-point-series-images/cartesian-scatter-point-series-basic-example-iOS.png)

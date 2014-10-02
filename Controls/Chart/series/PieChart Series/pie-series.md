@@ -40,7 +40,10 @@ Where
 
 Here is the result:
 
-![Basic BarSeries](/images/controls/chart/series/pie-pie-series-basic-example-WP.png)
-![Basic BarSeries](/images/controls/chart/series/pie-pie-series-basic-example-andro.png)
-![Basic BarSeries](/images/controls/chart/series/pie-pie-series-basic-example-iOS.png)
+![Basic BarSeries](pie-series-images/pie-series-basic-example-WP.png)
+![Basic BarSeries](pie-series-images/pie-series-basic-example-andro.png)
+![Basic BarSeries](pie-series-images/pie-series-basic-example-iOS.png)
 ## Customization ##
+Before the RadPieChart instance is drawn, its radius needs to be calculated. By default the radius is set to such a value that the chart would fill the whole available space. Then the radius factor is applied. The default value for the radius factor is 1.0. This means that the radius will remain to a value significant to fill the entire space that is available for RadPieChart. You can use the **RadiusFactor** property in order to change it. For example, here's how to modify the radius factor, so that the pie consumes only half of the available space:
+
+	var series = new PieSeries { RadiusFactor = 0.5 };

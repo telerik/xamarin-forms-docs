@@ -49,9 +49,43 @@ Here is an example of how to create a RadCartesianChart with LineSeries in code:
 	
 	chart.Series.Add(series);
 
-![Basic LineSeries WP](/images/controls/chart/series/cartesan-line-series-basic-example-WP.png)
-![Basic LineSeries Android](/images/controls/chart/series/cartesan-line-series-basic-example-andro.png)
-![Basic LineSeries iOS](/images/controls/chart/series/cartesan-area-line-basic-example-iOS.png)
+Here is the sample data:
+
+	public class CategoricalData
+	{
+	    public object Category { get; set; }
+	    public double Value { get; set; }
+	}
+
+	public class CategoricalViewModel
+    {
+        private static Random random = new Random();
+        private static string[] categories = new string[] { "Greenings", "Perfecto", "NearBy", "Family", "Fresh" };
+
+        public CategoricalViewModel()
+        {
+            this.CategoricalData = GetCategoricalData();
+        }
+
+        public ObservableCollection<CategoricalData> CategoricalData { get; set; }
+
+        public static ObservableCollection<CategoricalData> GetCategoricalData()
+        {
+            var data = new ObservableCollection<CategoricalData>();
+            for (int i = 0; i < categories.Length; i++)
+            {
+                data.Add(new CategoricalData() { Value = random.Next(50, 100), Category = categories[i] });
+            }
+
+            return data;
+        }
+    }
+
+And here is the result:
+
+![Basic LineSeries Windows Phone](line-series-images/cartesian-line-series-basic-example-WP.png)
+![Basic LineSeries Android](line-series-images/cartesian-line-series-basic-example-andro.png)
+![Basic LineSeries iOS](line-series-images/cartesian-line-series-basic-example-iOS.png)
 ## Customization ##
 **LineSeries** extend **CategoricalStrokedSeries** which provide the following way to change their style:
 
@@ -62,6 +96,6 @@ Here is an example:
 
 	var series = new LineSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5 };
 
-![Customized LineSeries WP](/images/controls/chart/series/cartesan-line-series-customization-example-WP.png)
-![Customized LineSeries Android](/images/controls/chart/series/cartesan-line-series-customization-example-andro.png)
-![Customized LineSeries iOS](/images/controls/chart/series/cartesan-area-line-customization-example-iOS.png)
+![Customized LineSeries Windows Phone](line-series-images/cartesian-line-series-customization-example-WP.png)
+![Customized LineSeries Android](line-series-images/cartesian-line-series-customization-example-andro.png)
+![Customized LineSeries iOS](line-series-images/cartesian-line-series-customization-example-iOS.png)

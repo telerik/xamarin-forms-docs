@@ -6,7 +6,7 @@ slug: chart-overview
 ---
 **RadChart for Xamarin.Forms** is a versatile charting component that offers unmatched performance regarding loading time, drawing capabilities and real-time updates. Its intuitive object model and public API allow complex charts to be easily setup either in XAML or in code-behind. RadChart is completely data aware as the binding mechanism of the control is used to create the appropriate data points from the raw data. Chart types (or series) are organized in hierarchies, depending on the coordinate system, used to plot data points.
 
-![Chart examples](images/controls/chart/chart-overview.png)
+![Chart examples](chart-overview.png)
 
 A charting component in general is used to visualize (or plot) some data in a human-readable way through different representations like lines, areas, bars, pies, etc. Each series has a collection of data points – the data equivalent of a 2D point – and knows how to visualize them. Different series types may process certain types of data points – for example, categorical series may contain categorical data points.
 

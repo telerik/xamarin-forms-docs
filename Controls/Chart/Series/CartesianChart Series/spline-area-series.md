@@ -48,21 +48,45 @@ Here is an example of how to create a RadCartesianChart with SplineAreaSeries in
 	series.CategoryBinding = new PropertyNameDataPointBinding("Category");
 	
 	chart.Series.Add(series);
-![Basic SplineAreaSeries]()
-## Customization ##
-**SplineAreaSeries** extend **AreaSeries**, so they provide the same properties to change their style:
-
-- **Stroke** (Color): changes the color used to draw lines.
-- **StrokeThickness** (double): changes the width of the lines.
-- **Fill** (Color): changes the color used to fill the area shapes.
-
 
 Here is the sample data:
 
+	public class CategoricalData
+	{
+	    public object Category { get; set; }
+	    public double Value { get; set; }
+	}
 
-![Basic SplineAreaSeries Windows Phone](/images/controls/chart/series/cartesan-spline-area-series-basic-example-WP.png)
-![Basic SplineAreaSeries Android](/images/controls/chart/series/cartesan-spline-area-series-basic-example-andro.png)
-![Basic SplineAreaSeries iOS](/images/controls/chart/series/cartesan-spline-area-series-basic-example-iOS.png)
+	public class CategoricalViewModel
+    {
+        private static Random random = new Random();
+        private static string[] categories = new string[] { "Greenings", "Perfecto", "NearBy", "Family", "Fresh" };
+
+        public CategoricalViewModel()
+        {
+            this.CategoricalData = GetCategoricalData();
+        }
+
+        public ObservableCollection<CategoricalData> CategoricalData { get; set; }
+
+        public static ObservableCollection<CategoricalData> GetCategoricalData()
+        {
+            var data = new ObservableCollection<CategoricalData>();
+            for (int i = 0; i < categories.Length; i++)
+            {
+                data.Add(new CategoricalData() { Value = random.Next(50, 100), Category = categories[i] });
+            }
+
+            return data;
+        }
+    }
+
+And here is the result:
+
+![Basic SplineAreaSeries Windows Phone](spline-area-series-images/cartesian-spline-area-series-basic-example-WP.png)
+![Basic SplineAreaSeries Android](spline-area-series-images/cartesian-spline-area-series-basic-example-andro.png)
+![Basic SplineAreaSeries iOS](spline-area-series-images/cartesian-spline-area-series-basic-example-iOS.png)
+
 ## Customization ##
 **SplineAreaSeries** extend **AreaSeries**, so they provide the same properties to change their style:
 
@@ -70,10 +94,10 @@ Here is the sample data:
 - **StrokeThickness** (double): changes the width of the lines.
 - **Fill** (Color): changes the color used to fill the area shapes.
 
-
 Here is an example:
+
 	var series = new SplineAreaSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5, Fill = new Color(0.8, 0.8, 1) };
 
-![Cistomized SplineAreaSeries Windows Phone](/images/controls/chart/series/cartesan-spline-area-series-customization-example-WP.png)
-![Cistomized SplineAreaSeries Android](/images/controls/chart/series/cartesan-spline-area-series-customization-example-andro.png)
-![Cistomized SplineAreaSeries iOS](/images/controls/chart/series/cartesan-spline-area-series-customization-example-iOS.png)
+![Customized SplineAreaSeries Windows Phone](spline-area-series-images/cartesian-spline-area-series-customization-example-WP.png)
+![Customized SplineAreaSeries Android](spline-area-series-images/cartesian-spline-area-series-customization-example-andro.png)
+![Customized SplineAreaSeries iOS](spline-area-series-images/cartesian-spline-area-series-customization-example-iOS.png)

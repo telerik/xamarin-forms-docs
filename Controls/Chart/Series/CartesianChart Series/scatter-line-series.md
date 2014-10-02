@@ -48,10 +48,48 @@ Here is an example of how to create a RadCartesianChart with ScatterLineSeries i
 	series.YValueBinding = new PropertyNameDataPointBinding("YValue");
 Here is the sample data:
 	
+	public class NumericalData
+	{
+	    public double XValue { get; set; }
+	    public double YValue { get; set; }
+	}
 
-![Basic ScatterLineSeries Windows Phone](/images/controls/chart/series/cartesan-scatter-line-series-basic-example-WP.png)
-![Basic ScatterLineSeries Android](/images/controls/chart/series/cartesan-scatter-line-series-basic-example-andro.png)
-![Basic ScatterLineSeries iOS](/images/controls/chart/series/cartesan-scatter-line-series-basic-example-iOS.png)
+	public class ScatterViewModel
+	{
+	    private static Random random = new Random();
+	
+	    public ScatterViewModel()
+	    {
+	        this.ScatterData = GetScatterData(10, 0.1, 0.1, this.GenerateX, this.GenerateY);
+	    }
+	
+	    public ObservableCollection<NumericalData> ScatterData { get; set; }
+	
+	    public static ObservableCollection<NumericalData> GetScatterData(int dataCount, double xDispersion, double yDispersion, Func<int, double> xFunc, Func<int, double> yFunc)
+	    {
+	        var data = new ObservableCollection<NumericalData>();
+	        for (int i = 0; i < dataCount; i++)
+	        {
+	            data.Add(new NumericalData() { XValue = xFunc(i) + xDispersion * random.NextDouble(), YValue = yFunc(i) + yDispersion * random.NextDouble() });
+	        }
+	
+	        return data;
+	    }
+	
+	    private double GenerateX(int i)
+	    {
+	        return 1 + Math.Sin(i);
+	    }
+	
+	    private double GenerateY(int i)
+	    {
+	        return i;
+	    }
+	}
+
+![Basic ScatterLineSeries Windows Phone](scatter-line-series-images/cartesian-scatter-line-series-basic-example-WP.png)
+![Basic ScatterLineSeries Android](scatter-line-series-images/cartesian-scatter-line-series-basic-example-andro.png)
+![Basic ScatterLineSeries iOS](scatter-line-series-images/cartesian-scatter-line-series-basic-example-iOS.png)
 ## Customization ##
 **ScatterLineSeries** provide the following properties to change their style:
 
@@ -62,6 +100,6 @@ Here is an example:
 
 	var series = new ScatterLineSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5 };
 
-![Customized ScatterLineSeries Windows Phone](/images/controls/chart/series/cartesan-scatter-line-series-basic-example-WP.png)
-![Customized ScatterLineSeries Android](/images/controls/chart/series/cartesan-scatter-line-series-basic-example-andro.png)
-![Customized ScatterLineSeries iOS](/images/controls/chart/series/cartesan-scatter-line-series-basic-example-iOS.png)
+![Customized ScatterLineSeries Windows Phone](scatter-line-series-images/cartesian-scatter-line-series-customization-example-WP.png)
+![Customized ScatterLineSeries Android](scatter-line-series-images/cartesian-scatter-line-series-customization-example-andro.png)
+![Customized ScatterLineSeries iOS](scatter-line-series-images/cartesian-scatter-line-series-customization-example-iOS.png)

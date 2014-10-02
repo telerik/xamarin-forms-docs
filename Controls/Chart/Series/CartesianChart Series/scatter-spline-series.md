@@ -53,6 +53,19 @@ Here is an example of how to create a RadCartesianChart with ScatterSplineSeries
 
 Here is the sample data:
 	
-
-![Basic ScatterSplineSeries]()
+![Basic ScatterSplineSeries WP](/images/controls/chart/series/cartesan-scatter-spline-series-basic-example-WP.png)
+![Basic ScatterSplineSeries Android](/images/controls/chart/series/cartesan-scatter-spline-series-basic-example-andro.png)
+![Basic ScatterSplineSeries iOS](/images/controls/chart/series/cartesan-scatter-spline-basic-example-iOS.png)
 ## Customization ##
+**ScatterSplineSeries** provides the following properties to change its style:
+
+- **Stroke** (Color): changes the color used to draw lines.
+- **StrokeThickness** (double): changes the width of the lines.
+
+Here is an example:
+
+	var series = new ScatterSplineSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5 };
+
+![Customized ScatterSplineSeries WP](/images/controls/chart/series/cartesan-scatter-spline-series-customization-example-WP.png)
+![Customized ScatterSplineSeries Android](/images/controls/chart/series/cartesan-scatter-spline-series-customization-example-andro.png)
+![Customized ScatterSplineSeries iOS](/images/controls/chart/series/cartesan-scatter-spline-customization-example-iOS.png)

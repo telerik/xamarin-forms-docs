@@ -51,5 +51,21 @@ Here is an example of how to create a RadCartesianChart with ScatterSplineAreaSe
 
 Here is the sample data:
 
-![Basic ScatterSplineAreaSeries]()
+
+![Basic ScatterSplineAreaSeries Windows Phone](/images/controls/chart/series/cartesan-scatter-spline-area-series-basic-example-WP.png)
+![Basic ScatterSplineAreaSeries Android](/images/controls/chart/series/cartesan-scatter-spline-area-series-basic-example-andro.png)
+![Basic ScatterSplineAreaSeries iOS](/images/controls/chart/series/cartesan-scatter-spline-area-series-basic-example-iOS.png)
 ## Customization ##
+**ScatterSplineAreaSeries** provide the following properties to change their style:
+
+- **Stroke** (Color): changes the color used to draw lines.
+- **StrokeThickness** (double): changes the width of the lines.
+- **Fill** (Color): changes the color used to fill the area shapes.
+
+Here is an example:
+
+	var series = new ScatterSplineAreaSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5, Fill = new Color(0.8, 0.8, 1) };
+
+![Cistomized ScatterSplineAreaSeries Windows Phone](/images/controls/chart/series/cartesan-scatter-spline-area-series-customization-example-WP.png)
+![Cistomized ScatterSplineAreaSeries Android](/images/controls/chart/series/cartesan-scatter-spline-area-series-customization-example-andro.png)
+![Cistomized ScatterSplineAreaSeries iOS](/images/controls/chart/series/cartesan-scatter-spline-area-series-customization-example-iOS.png)

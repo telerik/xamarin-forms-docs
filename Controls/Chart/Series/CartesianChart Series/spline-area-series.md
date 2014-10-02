@@ -55,3 +55,25 @@ Here is an example of how to create a RadCartesianChart with SplineAreaSeries in
 - **Stroke** (Color): changes the color used to draw lines.
 - **StrokeThickness** (double): changes the width of the lines.
 - **Fill** (Color): changes the color used to fill the area shapes.
+
+
+Here is the sample data:
+
+
+![Basic SplineAreaSeries Windows Phone](/images/controls/chart/series/cartesan-spline-area-series-basic-example-WP.png)
+![Basic SplineAreaSeries Android](/images/controls/chart/series/cartesan-spline-area-series-basic-example-andro.png)
+![Basic SplineAreaSeries iOS](/images/controls/chart/series/cartesan-spline-area-series-basic-example-iOS.png)
+## Customization ##
+**SplineAreaSeries** extend **AreaSeries**, so they provide the same properties to change their style:
+
+- **Stroke** (Color): changes the color used to draw lines.
+- **StrokeThickness** (double): changes the width of the lines.
+- **Fill** (Color): changes the color used to fill the area shapes.
+
+
+Here is an example:
+	var series = new SplineAreaSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5, Fill = new Color(0.8, 0.8, 1) };
+
+![Cistomized SplineAreaSeries Windows Phone](/images/controls/chart/series/cartesan-spline-area-series-customization-example-WP.png)
+![Cistomized SplineAreaSeries Android](/images/controls/chart/series/cartesan-spline-area-series-customization-example-andro.png)
+![Cistomized SplineAreaSeries iOS](/images/controls/chart/series/cartesan-spline-area-series-customization-example-iOS.png)

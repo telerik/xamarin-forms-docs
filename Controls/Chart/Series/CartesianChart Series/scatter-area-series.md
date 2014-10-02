@@ -52,7 +52,7 @@ Here is the sample data:
 	
 ![Basic ScatterAreaSeries WP](/images/controls/chart/series/cartesan-scatter-area-series-basic-example-WP.png)
 ![Basic ScatterAreaSeries Android](/images/controls/chart/series/cartesan-scatter-area-series-basic-example-andro.png)
-![Basic ScatterAreaSeries iOS](/images/controls/chart/series/cartesan-area-scatter-area-basic-example-iOS.png)
+![Basic ScatterAreaSeries iOS](/images/controls/chart/series/cartesan-scatter-area-basic-example-iOS.png)
 ## Customization ##
 **ScatterAreaSeries** provides the following properties to change its style:
 
@@ -66,4 +66,4 @@ Here is an example:
 
 ![Customized ScatterAreaSeries WP](/images/controls/chart/series/cartesan-scatter-area-series-customization-example-WP.png)
 ![Customized ScatterAreaSeries Android](/images/controls/chart/series/cartesan-scatter-area-series-customization-example-andro.png)
-![Customized ScatterAreaSeries iOS](/images/controls/chart/series/cartesan-area-scatter-area-customization-example-iOS.png)
+![Customized ScatterAreaSeries iOS](/images/controls/chart/series/cartesan-scatter-area-customization-example-iOS.png)

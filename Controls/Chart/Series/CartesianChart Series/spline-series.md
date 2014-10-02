@@ -49,7 +49,10 @@ Here is an example of how to create a RadCartesianChart with SplineSeries in cod
 	series.CategoryBinding = new PropertyNameDataPointBinding("Category");
 	
 	chart.Series.Add(series);
-![Basic SplineSeries]()
+
+![Basic SplineSeries Windows Phone](/images/controls/chart/series/cartesan-spline-series-basic-example-WP.png)
+![Basic SplineSeries Android](/images/controls/chart/series/cartesan-spline-series-basic-example-andro.png)
+![Basic SplineSeries iOS](/images/controls/chart/series/cartesan-spline-series-basic-example-iOS.png)
 ## Customization ##
 **LineSeries** extend [**LineSeries**]({% slug chart-series-line-series %}) so they provide the same properties to change their style:
 

@@ -51,6 +51,6 @@ Here is an example of how to create a RadCartesianChart with ScatterPointSeries 
 
 Here is the sample data:
 	
-
-![Basic ScatterPointSeries]()
-## Customization ##
+![Basic ScatterPointSeries Windows Phone](/images/controls/chart/series/cartesan-scatter-point-series-basic-example-WP.png)
+![Basic ScatterPointSeries Android](/images/controls/chart/series/cartesan-scatter-point-series-basic-example-andro.png)
+![Basic ScatterPointSeries iOS](/images/controls/chart/series/cartesan-scatter-point-series-basic-example-iOS.png)

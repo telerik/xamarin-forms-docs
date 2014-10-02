@@ -49,5 +49,19 @@ Here is an example of how to create a RadCartesianChart with ScatterLineSeries i
 Here is the sample data:
 	
 
-![Basic ScatterLineSeries]()
+![Basic ScatterLineSeries Windows Phone](/images/controls/chart/series/cartesan-scatter-line-series-basic-example-WP.png)
+![Basic ScatterLineSeries Android](/images/controls/chart/series/cartesan-scatter-line-series-basic-example-andro.png)
+![Basic ScatterLineSeries iOS](/images/controls/chart/series/cartesan-scatter-line-series-basic-example-iOS.png)
 ## Customization ##
+**ScatterLineSeries** provide the following properties to change their style:
+
+- **Stroke** (Color): changes the color used to draw lines.
+- **StrokeThickness** (double): changes the width of the lines.
+
+Here is an example:
+
+	var series = new ScatterLineSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5 };
+
+![Customized ScatterLineSeries Windows Phone](/images/controls/chart/series/cartesan-scatter-line-series-basic-example-WP.png)
+![Customized ScatterLineSeries Android](/images/controls/chart/series/cartesan-scatter-line-series-basic-example-andro.png)
+![Customized ScatterLineSeries iOS](/images/controls/chart/series/cartesan-scatter-line-series-basic-example-iOS.png)

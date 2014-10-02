@@ -40,5 +40,7 @@ Where
 
 Here is the result:
 
-![Basic BarSeries]()
+![Basic BarSeries](/images/controls/chart/series/pie-pie-series-basic-example-WP.png)
+![Basic BarSeries](/images/controls/chart/series/pie-pie-series-basic-example-andro.png)
+![Basic BarSeries](/images/controls/chart/series/pie-pie-series-basic-example-iOS.png)
 ## Customization ##

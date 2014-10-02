@@ -50,3 +50,8 @@ Here is an example of how to create a RadCartesianChart with SplineAreaSeries in
 	chart.Series.Add(series);
 ![Basic SplineAreaSeries]()
 ## Customization ##
+**SplineAreaSeries** extend **AreaSeries**, so they provide the same properties to change their style:
+
+- **Stroke** (Color): changes the color used to draw lines.
+- **StrokeThickness** (double): changes the width of the lines.
+- **Fill** (Color): changes the color used to fill the area shapes.

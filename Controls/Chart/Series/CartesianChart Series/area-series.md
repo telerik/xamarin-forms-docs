@@ -50,5 +50,21 @@ Here is an example of how to create a RadCartesianChart with AreaSeries in code:
 		
 	chart.Series.Add(series);
 
-![Basic AreaSeries]()
+![Basic AreaSeries WP](/images/controls/chart/series/cartesan-area-series-basic-example-WP.png)
+![Basic AreaSeries Android](/images/controls/chart/series/cartesan-area-series-basic-example-andro.png)
+![Basic AreaSeries iOS](/images/controls/chart/series/cartesan-area-series-basic-example-iOS.png)
 ## Customization ##
+**AreaSeries** extend **CategoricalStrokedSeries** which provide the following way to change their style:
+
+- **Stroke** (Color): changes the color used to draw lines.
+- **StrokeThickness** (double): changes the width of the lines.
+
+Additionally, **AreaSeries** can change the color of their fill with the **Fill** property.
+
+Here is an example:
+
+	var series = new AreaSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5, Fill = new Color(0.8, 0.8, 1) };
+
+![Customized AreaSeries WP](/images/controls/chart/series/cartesan-area-series-customization-example-WP.png)
+![Customized AreaSeries Android](/images/controls/chart/series/cartesan-area-series-customization-example-andro.png)
+![Customized AreaSeries iOS](/images/controls/chart/series/cartesan-area-series-customization-example-iOS.png)

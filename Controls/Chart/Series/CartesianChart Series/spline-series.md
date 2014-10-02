@@ -51,3 +51,7 @@ Here is an example of how to create a RadCartesianChart with SplineSeries in cod
 	chart.Series.Add(series);
 ![Basic SplineSeries]()
 ## Customization ##
+**LineSeries** extend [**LineSeries**]({% slug chart-series-line-series %}) so they provide the same properties to change their style:
+
+- **Stroke** (Color): changes the color used to draw lines.
+- **StrokeThickness** (double): changes the width of the lines.

@@ -49,5 +49,19 @@ Here is an example of how to create a RadCartesianChart with LineSeries in code:
 	
 	chart.Series.Add(series);
 
-![Basic LineSeries]()
+![Basic LineSeries WP](/images/controls/chart/series/cartesan-line-series-basic-example-WP.png)
+![Basic LineSeries Android](/images/controls/chart/series/cartesan-line-series-basic-example-andro.png)
+![Basic LineSeries iOS](/images/controls/chart/series/cartesan-area-line-basic-example-iOS.png)
 ## Customization ##
+**LineSeries** extend **CategoricalStrokedSeries** which provide the following way to change their style:
+
+- **Stroke** (Color): changes the color used to draw lines.
+- **StrokeThickness** (double): changes the width of the lines.
+
+Here is an example:
+
+	var series = new LineSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5 };
+
+![Customized LineSeries WP](/images/controls/chart/series/cartesan-line-series-customization-example-WP.png)
+![Customized LineSeries Android](/images/controls/chart/series/cartesan-line-series-customization-example-andro.png)
+![Customized LineSeries iOS](/images/controls/chart/series/cartesan-area-line-customization-example-iOS.png)

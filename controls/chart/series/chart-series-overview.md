@@ -1,3 +1,8 @@
+---
+title: Overview
+page_title: RadChart Series Overview
+slug: chart-series-overview
+---
 # Overview #
 The data visualization in RadChart is done by a hierarchy of classes that inherit from the ChartSeries class. Each series has a collection of data points, that is the view model of the data. A series may have its data populated by data-binding to an arbitrary IEnumerable instance through the ItemsSource property.
 ## Series Class Hierarchy ##
@@ -26,21 +31,13 @@ Here are listed all supported series grouped by the chart types that can use the
 ### Common Features ###
 * **ItemsSource**: Defines the data set that will fill the series data points. It supports a large variety of different data sources as the property is of type IEnumerable. 
 * **ShowLabels**: Defines whether the series will display labels for each plotted data point.
-### Categorical Series Features ###
-#### Data Binding ####
-All categorical series have **CategoryBinding** and **ValueBinding** properties.
-#### Combining ####
-The categorical series provide functionality to group 
+* **DisplayName**
+#### Categorical Series Features ####
+##### Data Binding #####
+All categorical series have **CategoryBinding** and **ValueBinding** properties. These properties are of **PropertyNameDataPointBinding** and specify the name  of the property from the data model used by the chart to plot the corresponding visual point.
+##### Combining ####
+The categorical series could be combined. Several combining strategies are supported. You can take a look at the [Grouping example]({% slug chart-series-combine-mode %}).
 
-### Scatter Series Common Features ###
-
-- **DisplayName**: Gets or sets the human-readable name of the series.
-- **ItemsSource**: Defines the data set that will fill the DataPoints collection of the series. It supports a large variety of different data sources as the property is of type IEnumerable.
-- **ShowLabels**: Defines whether the series will display labels for each DataPoint plotted.
-- **IsSelected**:
-
->The property is of type DataPointBinding rather than the system Binding. This custom binding mechanism is implemented for performance reasons so that each DataPoint does not need to inherit DependencyObject. Additionally, for even better performance or context-sensitive binding, the GenericDataPointBinding class may be used. All different data-binding related properties across all series follow this pattern.
-
-The following code demonstrates how to specify a valid DataPointBinding in a concrete instance that inherits the base ChartSeries class, e.g., BarSeries class:
-
-`code`
+#### Scatter Series Common Features ####
+##### Data Binding #####
+All categorical series have **XValueBinding** and **YValueBinding** properties. These properties are of **PropertyNameDataPointBinding** and specify the name  of the property from the data model used by the chart to plot the corresponding visual point.

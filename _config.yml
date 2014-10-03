@@ -32,6 +32,9 @@ navigation:
     controls/chart/series/pie:
         title: "PieSeries"
         position: 3
+    controls/chart/series/features:
+        title: "Features"
+        position: 20
         
 ## The application virtual path
 baseurl: "/devtools/xamarin"

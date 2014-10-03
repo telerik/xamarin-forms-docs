@@ -10,6 +10,7 @@ The **ScatterPointSeries** are represented on the chart as not connected data po
 
 - **XValueBinding** : Gets or sets the binding that will be used to fill the XValue of ScatterDataPoint members of the DataPoints collection.
 - **YValueBinding** : Gets or sets the binding that will be used to fill the YValue of ScatterDataPoint members of the DataPoints collection.
+
 # Example #
 Here is an example of how to create a basic RadCartesianChart with ScatterPointSeries in xaml:
 

@@ -89,14 +89,10 @@ Here is the sample data:
 
 And here is the result:
 
-![Basic SplineAreaSeries Windows Phone](spline-area-series-images/cartesian-spline-area-series-basic-example-WP.png)
-![Basic SplineAreaSeries Android](spline-area-series-images/cartesian-spline-area-series-basic-example-andro.png)
-![Basic SplineAreaSeries iOS](spline-area-series-images/cartesian-spline-area-series-basic-example-iOS.png)
+![Basic SplineAreaSeries Windows Phone](spline-area-series-images/cartesian-spline-area-series-basic-example.png)
 
 Here we make some customizations:
 
 	var series = new SplineAreaSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5, Fill = new Color(0.8, 0.8, 1) };
 
-![Customized SplineAreaSeries Windows Phone](spline-area-series-images/cartesian-spline-area-series-customization-example-WP.png)
-![Customized SplineAreaSeries Android](spline-area-series-images/cartesian-spline-area-series-customization-example-andro.png)
-![Customized SplineAreaSeries iOS](spline-area-series-images/cartesian-spline-area-series-customization-example-iOS.png)
+![Customized SplineAreaSeries Windows Phone](spline-area-series-images/cartesian-spline-area-series-customization-example.png)

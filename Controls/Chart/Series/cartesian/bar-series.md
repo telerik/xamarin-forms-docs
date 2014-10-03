@@ -84,6 +84,4 @@ Here is the sample data:
 
 And here is the result:
 
-![Basic BarSeries WP](bar-series-images/cartesian-bar-series-basic-example-WP.png)
-![Basic BarSeries Android](bar-series-images/cartesian-bar-series-basic-example-andro.png)
-![Basic BarSeries iOS](bar-series-images/cartesian-bar-series-basic-example-iOS.png)
+![Basic BarSeries](bar-series-images/cartesian-bar-series-basic-example.png)

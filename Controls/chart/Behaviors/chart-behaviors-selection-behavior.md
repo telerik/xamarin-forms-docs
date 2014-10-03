@@ -1,21 +1,28 @@
 ---
-title: Chart Selection Behavior
+title: ChartSelectionBehavior
 slug: chart-behaviors-selection
 ---
 
 # Overview #
 
-ChartSelectionBehavior is responsible for selecting, deselecting and reporting the selection of either data points or series. In other words, the selection behavior can target data points, series or both if required.
+**ChartSelectionBehavior** is responsible for selecting, deselecting and reporting the selection of either data points or series. In other words, the selection behavior can target data points, series or both if required.
 
 # Features #
-
-- **DataPointSelectionMode** : Gets or sets the ChartSelectionMode that controls the selection behavior of the data points within the chart series { None, Single, Multiple }.
-- **SeriesSelectionMode**: Gets or sets the ChartSelectionMode that controls the selection behavior of the series within the plot area { None, Single, Multiple }.
-- **SelectedPoints** : Retrieves all the points from all series within the chart plot area that are currently selected.
-- **SelectedSeries** : Retrieves all the series instances within the plot area that are currently selected.
-
-- **ClearSelecton() method** : Removes the current selection within the chart.
-- **SelectionChanged EventHandler** : Occurs when a selection has been made.
+#### Properties ####
+- **DataPointSelectionMode**: Gets or sets the ChartSelectionMode that controls the selection behavior of the data points within the chart series. The available values are:
+	-  None
+	-  Single
+	-  Multiple
+- **SeriesSelectionMode**: Gets or sets the ChartSelectionMode that controls the selection behavior of the series within the plot area. The available values are:
+	-  None
+	-  Single
+	-  Multiple
+- **SelectedPoints**: Retrieves all the points from all series within the chart plot area that are currently selected.
+- **SelectedSeries**: Retrieves all the series instances within the plot area that are currently selected.
+#### Methods ####
+- **ClearSelecton()** method : Removes the current selection within the chart.
+#### Events ####
+- **SelectionChanged** event: Occurs when a selection has been made.
 
 # Example #
 

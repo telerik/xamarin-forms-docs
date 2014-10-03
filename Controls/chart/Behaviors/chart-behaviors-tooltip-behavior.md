@@ -1,15 +1,15 @@
 ---
-title: Chart ToolTip Behavior
+title: ChartToolTipBehavior
 slug: chart-behaviors-tooltipbehavior
 ---
 
 #Overview#
 
-ChartTooltipBehavior is responsible for rendering concise information about a data point in a small popup which displays close to its relevant data point.
+**ChartTooltipBehavior** is responsible for rendering concise information about a data point in a small popup which is displayed close to its relevant data point.
 
 #Features#
 
-- **TriggerMode** : Determines the gestures on which the ChartToolTipBehavior should show a tool tip { Tap, Hold }.
+- **TriggerMode**: Determines the gestures on which the ChartToolTipBehavior should show a tool tip { Tap, Hold }.
 
 #Example#
 

@@ -89,15 +89,11 @@ Here is the sample data:
 
 And here is the result:
 
-![Basic LineSeries Windows Phone](line-series-images/cartesian-line-series-basic-example-WP.png)
-![Basic LineSeries Android](line-series-images/cartesian-line-series-basic-example-andro.png)
-![Basic LineSeries iOS](line-series-images/cartesian-line-series-basic-example-iOS.png)
+![Basic LineSeries Windows Phone](line-series-images/cartesian-line-series-basic-example.png)
 
 
 Here we make some customizations:
 
 	var series = new LineSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5 };
 
-![Customized LineSeries Windows Phone](line-series-images/cartesian-line-series-customization-example-WP.png)
-![Customized LineSeries Android](line-series-images/cartesian-line-series-customization-example-andro.png)
-![Customized LineSeries iOS](line-series-images/cartesian-line-series-customization-example-iOS.png)
+![Customized LineSeries Windows Phone](line-series-images/cartesian-line-series-customization-example.png)

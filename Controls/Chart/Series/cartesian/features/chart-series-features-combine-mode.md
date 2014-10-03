@@ -42,6 +42,4 @@ Here is the same example with the other combine modes:
 ##### Stack100 #####
 ![Stack100 CombineMode Example ]()
 ##### Cluster #####
-![Cluster CombineMode Windows Phone](chart-series-features-combine-mode-cluster-WP.png)
-![Cluster CombineMode Android](chart-series-features-combine-mode-cluster-andro.png)
-![Cluster CombineMode iOS](chart-series-features-combine-mode-cluster-iOS.png)
+![Cluster CombineMode Windows Phone](chart-series-features-combine-mode-cluster.png)

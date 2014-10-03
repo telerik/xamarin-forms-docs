@@ -1,13 +1,13 @@
 ---
-title: Chart TrackBall Behavior
+title: ChartTrackBallBehavior
 slug: chart-behaviors-trackball
 ---
 # Overview #
-ChartTrackBallBehavior is responsible for rendering concise information about several data points in a small popup which displays over its relevant data points. A horizontal or vertical line is also drawn through the data points for maximum clarity.
+**ChartTrackBallBehavior** is responsible for rendering concise information about several data points in a small popup which displays over its relevant data points. A horizontal or vertical line is also drawn through the data points for maximum clarity.
 
 # Features #
 
-- **ShowTrackInfo** :  Determines whether the visual information for all the closest data points will be displayed.
+- **ShowTrackInfo**:  Determines whether the visual information for all the closest data points will be displayed.
 
 # Example #
 

@@ -5,16 +5,16 @@ position: 8
 
 #Overview#
 
-Annotations are visual elements used to highlight certain areas on the plot. They can be used as comments or as markers for specific values on the plot. You can practically use any visual element as template for the annotation.
+**Annotations** are visual elements used to highlight certain areas on the plot. They can be used as comments or as markers for specific values on the plot. You can practically use any visual element as template for the annotation.
 
 RadChart provides support for the following types of annotations:
 
-- **Cartesian GridLineAnnotations** : this annotation is visually represented by straight lines across the chart that marks a specific value on the associated Cartesian axis.
-- **Cartesian PlotBandAnnotations** : this annotation is visually represented by a band across the chart that marks a specific range on the associated Cartesian axis.
+- **Cartesian GridLineAnnotations**: this annotation is visually represented by straight lines across the chart that marks a specific value on the associated Cartesian axis.
+- **Cartesian PlotBandAnnotations**: this annotation is visually represented by a band across the chart that marks a specific range on the associated Cartesian axis.
 
-#Cartesian GridLine Annotation#
+# CartesianGridLineAnnotation #
 
-The Cartesian GridLineAnnotation represents a vertical or horizontal line that crosses the entire plot area.
+The **CartesianGridLineAnnotation** represents a vertical or horizontal line that crosses the entire plot area.
 
 ##Features##
 
@@ -25,9 +25,9 @@ Note: When the associated axis is numerical - a numeric value is expected, and w
 
  
 
-#Cartesian PlotBand Annotation#
+# CartesianPlotBandAnnotation #
 
-The PlotBandAnnotation represents a vertical or horizontal area that crosses the entire plot area.  
+The **CartesianPlotBandAnnotation** represents a vertical or horizontal area that crosses the entire plot area.  
 
 ##Features##
 

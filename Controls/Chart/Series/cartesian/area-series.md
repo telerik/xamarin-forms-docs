@@ -90,15 +90,11 @@ Here is the sample data:
 
 And here is the result:
 
-![Basic AreaSeries WP](area-series-images/cartesian-area-series-basic-example-WP.png)
-![Basic AreaSeries Android](area-series-images/cartesian-area-series-basic-example-andro.png)
-![Basic AreaSeries iOS](area-series-images/cartesian-area-series-basic-example-iOS.png)
+![Basic AreaSeries](area-series-images/cartesian-area-series-basic-example.png)
 
 
 Here we have some customizations:
 
 	var series = new AreaSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5, Fill = new Color(0.8, 0.8, 1) };
 
-![Customized AreaSeries WP](area-series-images/cartesian-area-series-customization-example-WP.png)
-![Customized AreaSeries Android](area-series-images/cartesian-area-series-customization-example-andro.png)
-![Customized AreaSeries iOS](area-series-images/cartesian-area-series-customization-example-iOS.png)
+![Customized AreaSeries](area-series-images/cartesian-area-series-customization-example.png)

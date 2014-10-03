@@ -3,11 +3,17 @@ title: AreaSeries
 slug: chart-series-area-series
 ---
 
-# AreaSeries #
+# Overview #
 
 **RadCartesianChart** visualizes **AreaSeries** as an area on the chart that is enclosed by the coordinate axes and straight line segments that connect the data points represented by these series. The **AreaSeries** extend **CategoricalStrokedSeries**, so they are also **CategoricalSeries** and require one **CategoricalAxis** and one **NumricalAxis**.
 
-## Example ##
+#Features#
+
+- **Fill** : gets or sets the fill of the AreaSeries.
+- **Stroke** : changes the color used to draw lines.
+- **StrokeThickness** : changes the width of the lines.
+
+# Example #
 Here is an example of how to create a basic RadCartesianChart with AreaSeries in xaml:
 
 	<telerikChart:RadCartesianChart>
@@ -87,15 +93,9 @@ And here is the result:
 ![Basic AreaSeries WP](area-series-images/cartesian-area-series-basic-example-WP.png)
 ![Basic AreaSeries Android](area-series-images/cartesian-area-series-basic-example-andro.png)
 ![Basic AreaSeries iOS](area-series-images/cartesian-area-series-basic-example-iOS.png)
-## Customization ##
-**AreaSeries** extend **CategoricalStrokedSeries** which provide the following way to change their style:
 
-- **Stroke** (Color): changes the color used to draw lines.
-- **StrokeThickness** (double): changes the width of the lines.
 
-Additionally, **AreaSeries** can change the color of their fill with the **Fill** property.
-
-Here is an example:
+Here we have some customizations:
 
 	var series = new AreaSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5, Fill = new Color(0.8, 0.8, 1) };
 

@@ -2,11 +2,17 @@
 title: SplineAreaSeries
 slug: chart-series-spline-area-series
 ---
-# LineSeries #
+# Overview #
 
 **RadCartesianChart** visualizes **SplineAreaSeries** as an area on the chart that is enclosed by the coordinate axes and straight line segments that connect the data points represented by these series. The **SplineAreaSeries** extend **CategoricalStrokedSeries**, so they are also **CategoricalSeries** and require one **CategoricalAxis** and one **NumricalAxis**.
 
-## Example ##
+#Features#
+
+- **Stroke** (Color): changes the color used to draw lines.
+- **StrokeThickness** (double): changes the width of the lines.
+- **Fill** (Color): changes the color used to fill the area shapes.
+
+# Example #
 Here is an example of how to create a basic RadCartesianChart with SplineAreaSeries in xaml:
 
 	<telerikChart:RadCartesianChart>
@@ -87,14 +93,7 @@ And here is the result:
 ![Basic SplineAreaSeries Android](spline-area-series-images/cartesian-spline-area-series-basic-example-andro.png)
 ![Basic SplineAreaSeries iOS](spline-area-series-images/cartesian-spline-area-series-basic-example-iOS.png)
 
-## Customization ##
-**SplineAreaSeries** extend **AreaSeries**, so they provide the same properties to change their style:
-
-- **Stroke** (Color): changes the color used to draw lines.
-- **StrokeThickness** (double): changes the width of the lines.
-- **Fill** (Color): changes the color used to fill the area shapes.
-
-Here is an example:
+Here we make some customizations:
 
 	var series = new SplineAreaSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5, Fill = new Color(0.8, 0.8, 1) };
 

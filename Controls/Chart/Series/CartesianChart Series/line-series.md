@@ -2,11 +2,17 @@
 title: LineSeries
 slug: chart-series-line-series
 ---
-# LineSeries #
+# Overview #
 
 **RadCartesianChart** visualizes each data item from the **LineSeries** and connects them with straight line segments. The **LineSeries** extend **CategoricalStrokedSeries**, so they are also **CategoricalSeries** and require one **CategoricalAxis** and one **NumricalAxis**.
 
-## Example ##
+#Features#
+
+- **Stroke** (Color): changes the color used to draw lines.
+- **StrokeThickness** (double): changes the width of the lines.
+
+
+# Example #
 Here is an example of how to create a basic RadCartesianChart with LineSeries in xaml:
 
 	<telerikChart:RadCartesianChart>
@@ -86,13 +92,9 @@ And here is the result:
 ![Basic LineSeries Windows Phone](line-series-images/cartesian-line-series-basic-example-WP.png)
 ![Basic LineSeries Android](line-series-images/cartesian-line-series-basic-example-andro.png)
 ![Basic LineSeries iOS](line-series-images/cartesian-line-series-basic-example-iOS.png)
-## Customization ##
-**LineSeries** extend **CategoricalStrokedSeries** which provide the following way to change their style:
 
-- **Stroke** (Color): changes the color used to draw lines.
-- **StrokeThickness** (double): changes the width of the lines.
 
-Here is an example:
+Here we make some customizations:
 
 	var series = new LineSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5 };
 

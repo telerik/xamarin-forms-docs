@@ -2,11 +2,17 @@
 title: ScatterSplineAreaSeries
 slug: chart-series-scatter-spline-area-series
 ---
-# ScatterLineSeries #
+# Overview #
 
 **RadCartesianChart** visualizes **ScatterSplineAreaSeries** as the area enclosed by the coordinate axes and curved line segments that connect the series data points. The **ScatterSplineAreaSeries** inherit from the [**ScatterPointSeries**]({% slug chart-series-scatter-point-series %}) class and also require both axes of the chart to be of type **NumericalAxis**.
 
-## Example ##
+#Features#
+
+- **Stroke** (Color): changes the color used to draw lines.
+- **StrokeThickness** (double): changes the width of the lines.
+- **Fill** (Color): changes the color used to fill the area shapes.
+ 
+# Example #
 Here is an example of how to create a basic RadCartesianChart with ScatterSplineAreaSeries in xaml:
 	
 	<telerikChart:RadCartesianChart>
@@ -95,14 +101,9 @@ Here is the result:
 ![Basic ScatterSplineAreaSeries Windows Phone](scatter-spline-area-series-images/cartesian-scatter-spline-area-series-basic-example-WP.png)
 ![Basic ScatterSplineAreaSeries Android](scatter-spline-area-series-images/cartesian-scatter-spline-area-series-basic-example-andro.png)
 ![Basic ScatterSplineAreaSeries iOS](scatter-spline-area-series-images/cartesian-scatter-spline-area-series-basic-example-iOS.png)
-## Customization ##
-**ScatterSplineAreaSeries** provide the following properties to change their style:
 
-- **Stroke** (Color): changes the color used to draw lines.
-- **StrokeThickness** (double): changes the width of the lines.
-- **Fill** (Color): changes the color used to fill the area shapes.
 
-Here is an example:
+Here we make some customizations:
 
 	var series = new ScatterSplineAreaSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5, Fill = new Color(0.8, 0.8, 1) };
 

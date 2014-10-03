@@ -2,6 +2,7 @@
 title: Overview
 page_title: RadChart Series Overview
 slug: chart-series-overview
+position: 1
 ---
 # Overview #
 The data visualization in RadChart is done by a hierarchy of classes that inherit from the ChartSeries class. Each series has a collection of data points, that is the view model of the data. A series may have its data populated by data-binding to an arbitrary IEnumerable instance through the ItemsSource property.

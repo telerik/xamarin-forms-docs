@@ -16,19 +16,22 @@ navigation:
         title: "Chart"
     controls/chart/types:
         title: "Types"
-        position: 3
+        position: 4
     controls/chart/axes:
         title: "Axes"
-        position: 4
+        position: 5
     controls/chart/series:
         title: "Series"
-        position: 5
+        position: 6
     controls/chart/behaviors:
         title: "Behaviors"
-        position: 6
-    controls/chart/annotations:
-        title: "Annotations"
         position: 7
+    controls/chart/series/cartesian:
+        title: "CartesianSeries"
+        position: 2
+    controls/chart/series/pie:
+        title: "PieSeries"
+        position: 3
         
 ## The application virtual path
 baseurl: "/devtools/xamarin"

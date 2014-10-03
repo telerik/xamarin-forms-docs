@@ -32,10 +32,16 @@ Here is an example that demonstrates how you can create BarSeries that are combi
 	    chart.Series.Add(series);
 	}
 Here is the result:  
-![Stack CombineMode Example ]()
+
+![Stack CombineMode Windows Phone](chart-series-features-combine-mode-stack-WP.png)
+![Stack CombineMode Android](chart-series-features-combine-mode-stack-andro.png)
+![Stack CombineMode iOS](chart-series-features-combine-mode-stack-iOS.png)
+
 
 Here is the same example with the other combine modes:
 ##### Stack100 #####
 ![Stack100 CombineMode Example ]()
 ##### Cluster #####
-![Cluster CombineMode Example ]()
+![Cluster CombineMode Windows Phone](chart-series-features-combine-mode-cluster-WP.png)
+![Cluster CombineMode Android](chart-series-features-combine-mode-cluster-andro.png)
+![Cluster CombineMode iOS](chart-series-features-combine-mode-cluster-iOS.png)

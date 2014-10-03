@@ -11,26 +11,30 @@ This example will guide you through the steps needed to add a basic RadCartesian
 First you have to create a new Xamarin.Forms project. You can see how in the [Getting Started Example]({% slug getting-started %} "Getting Started with Telerik UI foe Xamarin.Forms"). Then you have to add reference to the following assemblies:
 
 * **Portable** (if you have created Xamarin.Forms Portable App)
-	* Telerik.XamarinForms.Chart.dll
-	* Telerik.XamarinForms.Common.dll
+	- Telerik.XamarinForms.Chart.dll
+	- Telerik.XamarinForms.Common.dll
 * **Android**
 
-	// TO DO 
-	* Telerik.XamarinForms.Chart.dll
-	* Telerik.XamarinForms.ChartRenderer.Android.dll
-	* Telerik.XamarinForms.Common.dll
+	- Telerik.Xamarin.Android.Chart.dll
+	- Telerik.Xamarin.Android.Common.dll
+	- Telerik.Xamarin.Android.Primitives.dll
+	- Telerik.XamarinForms.Chart.dll
+	- Telerik.XamarinForms.ChartRenderer.Android.dll
+	- Telerik.XamarinForms.Common.dll
 * **iOS**
 
-	// TO DO 
-	* Telerik.XamarinForms.Chart.dll
-	* Telerik.XamarinForms.ChartRenderer.Android.dll
-	* Telerik.XamarinForms.Common.dll
+	- Telerik.Xamarin.iOS.dll
+	- Telerik.XamarinForms.Chart.dll
+	- Telerik.XamarinForms.ChartRenderer.iOS.dll
+	- Telerik.XamarinForms.Common.dll
 * **WinPhone**
 	
-	// TO DO 
-	* Telerik.XamarinForms.Chart.dll
-	* Telerik.XamarinForms.ChartRenderer.Android.dll
-	* Telerik.XamarinForms.Common.dll
+	- Telerik.Windows.Controls.Chart.dll
+	- Telerik.Windows.Controls.Primitives.dll
+	- Telerik.Windows.Core.dll
+	- Telerik.XamarinForms.Chart.dll
+	- Telerik.XamarinForms.ChartRenderer.WinPhone.dll
+	- Telerik.XamarinForms.Common.dll
 		
  		![Add Chart References](chart-getting-started-references.png)
 

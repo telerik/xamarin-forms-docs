@@ -5,7 +5,17 @@ url: "http://docs.telerik.com/devtools/xamarin"
 exclude: [README.md,Gemfile,Gemfile.lock]
 navigation:
 ## List your directory names and order here, like this:
- 
+    installation-and-deployment:
+        title: "Installation and Deployment"
+        position: 2
+    controls:
+        title: "Controls"
+        position: 3
+    controls/chart:
+        title: "Chart"
+    controls/chart/types:
+        title: "Types"
+        position: 3
 ## The application virtual path
 baseurl: "/devtools/xamarin"
 

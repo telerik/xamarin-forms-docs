@@ -33,13 +33,11 @@ Here is an example that demonstrates how you can create BarSeries that are combi
 	}
 Here is the result:  
 
-![Stack CombineMode Windows Phone](chart-series-features-combine-mode-stack-WP.png)
-![Stack CombineMode Android](chart-series-features-combine-mode-stack-andro.png)
-![Stack CombineMode iOS](chart-series-features-combine-mode-stack-iOS.png)
+![Stack CombineMode](chart-series-features-combine-mode-stack.png)
 
 
 Here is the same example with the other combine modes:
 ##### Stack100 #####
-![Stack100 CombineMode Example ]()
+![Stack CombineMode](chart-series-features-combine-mode-stack100.png)
 ##### Cluster #####
-![Cluster CombineMode Windows Phone](chart-series-features-combine-mode-cluster.png)
+![Cluster CombineMode](chart-series-features-combine-mode-cluster.png)

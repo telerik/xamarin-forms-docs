@@ -96,6 +96,4 @@ Here is the sample data:
 	}
 And here is the result:
 
-![Basic ScatterPointSeries Windows Phone](scatter-point-series-images/cartesian-scatter-point-series-basic-example-WP.png)
-![Basic ScatterPointSeries Android](scatter-point-series-images/cartesian-scatter-point-series-basic-example-andro.png)
-![Basic ScatterPointSeries iOS](scatter-point-series-images/cartesian-scatter-point-series-basic-example-iOS.png)
+![Basic ScatterPointSeries](scatter-point-series-images/cartesian-scatter-point-series-basic-example.png)

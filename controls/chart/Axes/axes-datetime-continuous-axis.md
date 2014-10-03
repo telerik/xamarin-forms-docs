@@ -1,5 +1,6 @@
 ---
 title: Overview
+slug: axes-date-time-continuous-axis
 ---
 
 #Overview#
@@ -19,24 +20,24 @@ DateTimeContinuousAxis also expects valid DateTime values so that the data could
 #Example#
 
     <telerikChart:RadCartesianChart SelectionPaletteName="LightSelected">
-    <telerikChart:RadCartesianChart.BindingContext>
-      <viewMoedls:CategoricalViewModel/>
-    </telerikChart:RadCartesianChart.BindingContext>
+      <telerikChart:RadCartesianChart.BindingContext>
+        <viewMoedls:CategoricalViewModel/>
+      </telerikChart:RadCartesianChart.BindingContext>
 
-    <telerikChart:RadCartesianChart.HorizontalAxis>
-      <telerikChart:DateTimeContinuousAxis LabelFormat="yy" GapLength="0.5" PlotMode="BetweenTicks" MajorStepUnit="Year" MajorStep="2" />
-    </telerikChart:RadCartesianChart.HorizontalAxis>
-    <telerikChart:RadCartesianChart.VerticalAxis>
-      <telerikChart:NumericalAxis/>
-    </telerikChart:RadCartesianChart.VerticalAxis>
-    <telerikChart:RadCartesianChart.Series>
-      <telerikChart:BarSeries ItemsSource="{Binding DateTimeData}">
-        <telerikChart:BarSeries.ValueBinding>
-          <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
-        </telerikChart:BarSeries.ValueBinding>
-        <telerikChart:BarSeries.CategoryBinding>
-          <telerikChart:PropertyNameDataPointBinding PropertyName="Date"/>
-        </telerikChart:BarSeries.CategoryBinding>
-      </telerikChart:BarSeries>
-    </telerikChart:RadCartesianChart.Series>
+      <telerikChart:RadCartesianChart.HorizontalAxis>
+        <telerikChart:DateTimeContinuousAxis LabelFormat="yy" GapLength="0.5" PlotMode="BetweenTicks" MajorStepUnit="Year" MajorStep="2" />
+      </telerikChart:RadCartesianChart.HorizontalAxis>
+      <telerikChart:RadCartesianChart.VerticalAxis>
+        <telerikChart:NumericalAxis/>
+      </telerikChart:RadCartesianChart.VerticalAxis>
+      <telerikChart:RadCartesianChart.Series>
+        <telerikChart:BarSeries ItemsSource="{Binding DateTimeData}">
+          <telerikChart:BarSeries.ValueBinding>
+            <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
+          </telerikChart:BarSeries.ValueBinding>
+          <telerikChart:BarSeries.CategoryBinding>
+            <telerikChart:PropertyNameDataPointBinding PropertyName="Date"/>
+          </telerikChart:BarSeries.CategoryBinding>
+        </telerikChart:BarSeries>
+      </telerikChart:RadCartesianChart.Series>
     </telerikChart:RadCartesianChart>

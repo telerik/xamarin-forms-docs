@@ -1,5 +1,6 @@
 ---
 title: NumericalAxis
+slug: axes-numerical-axis
 ---
 # Overview #
 
@@ -14,24 +15,24 @@ title: NumericalAxis
 #Example#
 
     <telerikChart:RadCartesianChart SelectionPaletteName="LightSelected">
-    <telerikChart:RadCartesianChart.BindingContext>
-      <viewMoedls:CategoricalViewModel/>
-    </telerikChart:RadCartesianChart.BindingContext>
-
-    <telerikChart:RadCartesianChart.HorizontalAxis>
-      <telerikChart:CategoricalAxis />
-    </telerikChart:RadCartesianChart.HorizontalAxis>
-    <telerikChart:RadCartesianChart.VerticalAxis>
-      <telerikChart:NumericalAxis Minimum="-20"  MajorStep="10" RangeExtendDirection="None"/>
-    </telerikChart:RadCartesianChart.VerticalAxis>
-    <telerikChart:RadCartesianChart.Series>
-      <telerikChart:BarSeries ItemsSource="{Binding CategoricalData}">
-        <telerikChart:BarSeries.ValueBinding>
-          <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
-        </telerikChart:BarSeries.ValueBinding>
-        <telerikChart:BarSeries.CategoryBinding>
-          <telerikChart:PropertyNameDataPointBinding PropertyName="Category"/>
-        </telerikChart:BarSeries.CategoryBinding>
-      </telerikChart:BarSeries>
-    </telerikChart:RadCartesianChart.Series>
+	  <telerikChart:RadCartesianChart.BindingContext>
+	    <viewMoedls:CategoricalViewModel/>
+	  </telerikChart:RadCartesianChart.BindingContext>
+	
+	  <telerikChart:RadCartesianChart.HorizontalAxis>
+	    <telerikChart:CategoricalAxis />
+	  </telerikChart:RadCartesianChart.HorizontalAxis>
+	  <telerikChart:RadCartesianChart.VerticalAxis>
+	    <telerikChart:NumericalAxis Minimum="-20"  MajorStep="10" RangeExtendDirection="None"/>
+	  </telerikChart:RadCartesianChart.VerticalAxis>
+	  <telerikChart:RadCartesianChart.Series>
+	    <telerikChart:BarSeries ItemsSource="{Binding CategoricalData}">
+	      <telerikChart:BarSeries.ValueBinding>
+	        <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
+	      </telerikChart:BarSeries.ValueBinding>
+	      <telerikChart:BarSeries.CategoryBinding>
+	        <telerikChart:PropertyNameDataPointBinding PropertyName="Category"/>
+	      </telerikChart:BarSeries.CategoryBinding>
+	    </telerikChart:BarSeries>
+	  </telerikChart:RadCartesianChart.Series>
     </telerikChart:RadCartesianChart>

@@ -38,50 +38,54 @@ The PlotBandAnnotation represents a vertical or horizontal area that crosses the
 #Example#
 
     <telerikChart:RadCartesianChart x:Name="chart">
-    <telerikChart:RadCartesianChart.BindingContext>
-      <viewMoedls:CategoricalViewModel/>
-    </telerikChart:RadCartesianChart.BindingContext>
-
-    <telerikChart:RadCartesianChart.HorizontalAxis>
-      <telerikChart:CategoricalAxis />
-    </telerikChart:RadCartesianChart.HorizontalAxis>
-    <telerikChart:RadCartesianChart.VerticalAxis>
-      <telerikChart:NumericalAxis x:Name="verticalAxis"/>
-    </telerikChart:RadCartesianChart.VerticalAxis>
-    <telerikChart:RadCartesianChart.Series>
-      <telerikChart:LineSeries ItemsSource="{Binding CategoricalData}">
-        <telerikChart:LineSeries.ValueBinding>
-          <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
-        </telerikChart:LineSeries.ValueBinding>
-        <telerikChart:LineSeries.CategoryBinding>
-          <telerikChart:PropertyNameDataPointBinding PropertyName="Category"/>
-        </telerikChart:LineSeries.CategoryBinding>
-      </telerikChart:LineSeries>
-    </telerikChart:RadCartesianChart.Series>
+      <telerikChart:RadCartesianChart.BindingContext>
+        <viewMoedls:CategoricalViewModel/>
+      </telerikChart:RadCartesianChart.BindingContext>
+	  
+      <telerikChart:RadCartesianChart.HorizontalAxis>
+        <telerikChart:CategoricalAxis />
+      </telerikChart:RadCartesianChart.HorizontalAxis>
+      <telerikChart:RadCartesianChart.VerticalAxis>
+        <telerikChart:NumericalAxis x:Name="verticalAxis"/>
+      </telerikChart:RadCartesianChart.VerticalAxis>
+      <telerikChart:RadCartesianChart.Series>
+        <telerikChart:LineSeries ItemsSource="{Binding CategoricalData}">
+          <telerikChart:LineSeries.ValueBinding>
+            <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
+          </telerikChart:LineSeries.ValueBinding>
+          <telerikChart:LineSeries.CategoryBinding>
+            <telerikChart:PropertyNameDataPointBinding PropertyName="Category"/>
+          </telerikChart:LineSeries.CategoryBinding>
+        </telerikChart:LineSeries>
+      </telerikChart:RadCartesianChart.Series>
     </telerikChart:RadCartesianChart>
 
 In the code behind: 
 
-            var lineAnnotation = new CartesianGridLineAnnotation()
-            {
-                Axis = this.chart.VerticalAxis, 
-                Value = 80,
-                Stroke = Color.Green,
-                StrokeThickness = Device.OnPlatform(0.5, 2, 2),
-                DashArray = Device.OnPlatform(null, new double[] { 4, 2 }, new double[] { 4, 2 })
+	var lineAnnotation = new CartesianGridLineAnnotation()
+	{
+	    Axis = this.chart.VerticalAxis, 
+	    Value = 80,
+	    Stroke = Color.Green,
+	    StrokeThickness = Device.OnPlatform(0.5, 2, 2),
+	    DashArray = Device.OnPlatform(null, new double[] { 4, 2 }, new double[] { 4, 2 })
+	
+	};
+	
+	var bandAnnotation = new CartesianPlotBandAnnotation()
+	{
+	    Axis = this.chart.VerticalAxis,
+	    From = 70,
+	    To = 75,
+	    Fill = Color.FromHex("33A9A9A9"),
+	    StrokeThickness = 2,
+	    Stroke = Color.Transparent
+	};
+	
+	
+	this.chart.Annotations.Add(lineAnnotation);
+	this.chart.Annotations.Add(bandAnnotation);
 
-            };
-
-            var bandAnnotation = new CartesianPlotBandAnnotation()
-            {
-                Axis = this.chart.VerticalAxis,
-                From = 70,
-                To = 75,
-                Fill = Color.FromHex("33A9A9A9"),
-                StrokeThickness = 2,
-                Stroke = Color.Transparent,
-            };
-
-
-            this.chart.Annotations.Add(lineAnnotation);
-            this.chart.Annotations.Add(bandAnnotation);
+![Annotations Windows Phone](chart-annotations-WP.png)
+![Annotations Windows Phone](chart-annotations-andro.png)
+![Annotations Windows Phone](chart-annotations-iOS.png)

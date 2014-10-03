@@ -1,5 +1,6 @@
 ---
 title: CategoricalAxis
+slug: axes-categorical-axis
 ---
 
 # CategoricalAxis #
@@ -16,24 +17,28 @@ Defines the distance (in logical units [0,1]) between two adjacent categories. D
 #Example#
 
     <telerikChart:RadCartesianChart SelectionPaletteName="LightSelected">
-    <telerikChart:RadCartesianChart.BindingContext>
-      <viewMoedls:CategoricalViewModel/>
-    </telerikChart:RadCartesianChart.BindingContext>
-    
-    <telerikChart:RadCartesianChart.HorizontalAxis>
-      <telerikChart:CategoricalAxis PlotMode="OnTicks" MajorTickInterval="2" GapLength="0.5"/>
-    </telerikChart:RadCartesianChart.HorizontalAxis>
-    <telerikChart:RadCartesianChart.VerticalAxis>
-      <telerikChart:NumericalAxis/>
-    </telerikChart:RadCartesianChart.VerticalAxis>
-    <telerikChart:RadCartesianChart.Series>
-      <telerikChart:BarSeries ItemsSource="{Binding CategoricalData}">
-        <telerikChart:BarSeries.ValueBinding>
-          <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
-        </telerikChart:BarSeries.ValueBinding>
-        <telerikChart:BarSeries.CategoryBinding>
-          <telerikChart:PropertyNameDataPointBinding PropertyName="Category"/>
-        </telerikChart:BarSeries.CategoryBinding>
-      </telerikChart:BarSeries>
-     </telerikChart:RadCartesianChart.Series>
+	  <telerikChart:RadCartesianChart.BindingContext>
+	    <viewMoedls:CategoricalViewModel/>
+	  </telerikChart:RadCartesianChart.BindingContext>
+	    
+	  <telerikChart:RadCartesianChart.HorizontalAxis>
+	    <telerikChart:CategoricalAxis PlotMode="OnTicks" MajorTickInterval="2" GapLength="0.5"/>
+	  </telerikChart:RadCartesianChart.HorizontalAxis>
+	  <telerikChart:RadCartesianChart.VerticalAxis>
+	    <telerikChart:NumericalAxis/>
+	  </telerikChart:RadCartesianChart.VerticalAxis>
+	  <telerikChart:RadCartesianChart.Series>
+	    <telerikChart:BarSeries ItemsSource="{Binding CategoricalData}">
+	      <telerikChart:BarSeries.ValueBinding>
+	        <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
+	      </telerikChart:BarSeries.ValueBinding>
+	      <telerikChart:BarSeries.CategoryBinding>
+	        <telerikChart:PropertyNameDataPointBinding PropertyName="Category"/>
+	      </telerikChart:BarSeries.CategoryBinding>
+	    </telerikChart:BarSeries>
+	  </telerikChart:RadCartesianChart.Series>
     </telerikChart:RadCartesianChart>
+
+![CategoricalAxis Windows Phone](axes-categorical-axis-example-WP.png)
+![CategoricalAxis Android](axes-categorical-axis-example-andro.png)
+![CategoricalAxis iOS](axes-categorical-axis-example-iOS.png)

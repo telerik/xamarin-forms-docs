@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: DateTimeContinuousAxis
 slug: axes-date-time-continuous-axis
 ---
 

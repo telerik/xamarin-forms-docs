@@ -1,6 +1,7 @@
 ---
 title: Annotations
 position: 8
+slug: chart-annotations
 ---
 
 #Overview#
@@ -21,9 +22,7 @@ The **CartesianGridLineAnnotation** represents a vertical or horizontal line tha
 - **Axis** : the CartesianGridLineAnnotation should be associated with horizontal or vertical cartesian axis explicitly.
 - **Value** : the place on the associated axis where a line crosses it.
 
-Note: When the associated axis is numerical - a numeric value is expected, and when it is a CategoricalAxis - a category is expected.
-
- 
+> Note: When the associated axis is numerical - a numeric value is expected, and when it is a CategoricalAxis - a category is expected. 
 
 # CartesianPlotBandAnnotation #
 
@@ -87,6 +86,4 @@ In the code behind:
 	this.chart.Annotations.Add(lineAnnotation);
 	this.chart.Annotations.Add(bandAnnotation);
 
-![Annotations Windows Phone](chart-annotations-WP.png)
-![Annotations Windows Phone](chart-annotations-andro.png)
-![Annotations Windows Phone](chart-annotations-iOS.png)
+![Annotations](chart-annotations.png)

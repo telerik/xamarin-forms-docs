@@ -1,6 +1,6 @@
 ---
 title: ChartPanAndZoomBehavior
-slug: chart-behaviors-panandzoom
+slug: chart-behaviors-pan-and-zoom
 ---
 
 # Overview #

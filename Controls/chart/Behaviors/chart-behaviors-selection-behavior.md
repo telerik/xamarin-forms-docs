@@ -8,7 +8,9 @@ slug: chart-behaviors-selection
 **ChartSelectionBehavior** is responsible for selecting, deselecting and reporting the selection of either data points or series. In other words, the selection behavior can target data points, series or both if required.
 
 # Features #
+
 #### Properties ####
+
 - **DataPointSelectionMode**: Gets or sets the ChartSelectionMode that controls the selection behavior of the data points within the chart series. The available values are:
 	-  None
 	-  Single
@@ -19,15 +21,18 @@ slug: chart-behaviors-selection
 	-  Multiple
 - **SelectedPoints**: Retrieves all the points from all series within the chart plot area that are currently selected.
 - **SelectedSeries**: Retrieves all the series instances within the plot area that are currently selected.
+
 #### Methods ####
+
 - **ClearSelecton()** method : Removes the current selection within the chart.
+
 #### Events ####
+
 - **SelectionChanged** event: Occurs when a selection has been made.
 
 # Example #
 
 Here's an example that shows how to add ChartSelectionBehavior to a RadChart, set its selection mode and handle its SelectionChanged event where you can get the selected points/series:
-
 
 
     <telerikChart:RadCartesianChart SelectionPaletteName="LightSelected">
@@ -64,6 +69,4 @@ Here's the event handler in the code behind:
 
 Here is how a selected bar series data point looks like:
 
-![Selection Behavior Windows Phone](chart-behaviors-selection-behavior-WP.png)
-![Selection Behavior Android](chart-behaviors-selection-behavior-andro.png)
-![Selection Behavior iOS](chart-behaviors-selection-behavior-iOS.png)
+![Selection Behavior](chart-behaviors-selection-behavior.png)

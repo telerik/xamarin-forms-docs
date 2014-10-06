@@ -3,15 +3,21 @@ title: Pie Chart
 position: 2
 slug: chart-types-pie-chart
 ---
+
 # RadPieChart #
+
 The **RadPieChart**  visualizes its data points using radial coordinate system. Each data point is represented as a slice from a pie. The ratio between the space consumed by each slice and the space consumed by the whole chart is the same as the ratio between the value of the data point that it represents and the total value of all data points in the series.
 
 ![Pie Chart](pie-chart-example.png)
+
 ## Supported Series ##
+
 **RadPieChart** can visualize the following types of series:
 
 - **PieSeries**: The PieSeries are used to visualize a single series of data in a pie chart. The sweep of a pie's slices is directly proportional to the magnitude of the data points' values.
+
 ## Example ##
+
 1. Define RadPieChart:  
 	
 		XAML definition:

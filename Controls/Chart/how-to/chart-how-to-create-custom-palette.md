@@ -4,7 +4,7 @@ slug: chart-how-to-create-custom-palette
 ---
 
 #Overview#
-When a user needs to define custom sets of colors, they can take advantage of Custom Palettes. Here is an example that shows how to achieve this: 
+When a user needs to define custom sets of colors, they can take advantage of custom palettes. Here is an example that shows how to achieve this: 
 
 #Example#
 

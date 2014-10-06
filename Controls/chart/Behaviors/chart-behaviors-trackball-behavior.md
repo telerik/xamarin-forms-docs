@@ -39,6 +39,4 @@ slug: chart-behaviors-trackball
 
 Here is how the trackball looks:
 
-![Tooltip Behavior Windows Phone](chart-behaviors-trackball-behavior-WP.png)
-![Tooltip Behavior Android](chart-behaviors-trackball-behavior-andro.png)
-![Tooltip Behavior iOS](chart-behaviors-trackball-behavior-iOS.png)
+![Tooltip Behavior](chart-behaviors-trackball-behavior.png)

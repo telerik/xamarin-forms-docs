@@ -1,6 +1,7 @@
 ---
 title: Overview
 position: 1
+slug: axes-overview
 ---
 # Overview #
 

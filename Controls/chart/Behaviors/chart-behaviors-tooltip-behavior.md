@@ -1,6 +1,6 @@
 ---
 title: ChartToolTipBehavior
-slug: chart-behaviors-tooltipbehavior
+slug: chart-behaviors-tooltip
 ---
 
 #Overview#
@@ -40,6 +40,4 @@ slug: chart-behaviors-tooltipbehavior
 
 Here is how the tool-tip looks:
 
-![Tooltip Behavior Windows Phone](chart-behaviors-tooltip-behavior-WP.png)
-![Tooltip Behavior Android](chart-behaviors-tooltip-behavior-andro.png)
-![Tooltip Behavior iOS](chart-behaviors-tooltip-behavior-iOS.png)
+![Tooltip Behavior](chart-behaviors-tooltip-behavior.png)

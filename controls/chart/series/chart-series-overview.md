@@ -46,7 +46,7 @@ Here are listed all supported series grouped by the chart types that can use the
 
 ##### Data Binding #####
 
-All categorical series have **CategoryBinding** and **ValueBinding** properties. These properties are of **PropertyNameDataPointBinding** and specify the name  of the property from the data model used by the chart to plot the corresponding visual point.
+All categorical series have **CategoryBinding** and **ValueBinding** properties. These properties are of **PropertyNameDataPointBinding** and specify the name  of the property from the data model used by the chart to plot the corresponding visual points.
 
 ##### Combining ####
 
@@ -56,4 +56,4 @@ The categorical series could be combined. Several combining strategies are suppo
 
 ##### Data Binding #####
 
-All categorical series have **XValueBinding** and **YValueBinding** properties. These properties are of **PropertyNameDataPointBinding** and specify the name  of the property from the data model used by the chart to plot the corresponding visual point.
+Scatter series provide **XValueBinding** and **YValueBinding** properties for data binding to a view model. These properties are of **PropertyNameDataPointBinding** and specify the name  of the property from the data model used by the chart to plot the corresponding visual points.

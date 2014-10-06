@@ -8,10 +8,10 @@ navigation:
 
     installation-and-deployment:
         title: "Installation and Deployment"
-        position: 1
+        position: 2
     controls:
         title: "Controls"
-        position: 2
+        position: 3
     controls/chart:
         title: "Chart"
     controls/chart/types:
@@ -26,13 +26,16 @@ navigation:
     controls/chart/behaviors:
         title: "Behaviors"
         position: 7
+    controls/chart/how-to:
+        title: "How To"
+        position: 9
     controls/chart/series/cartesian:
         title: "CartesianSeries"
         position: 2
     controls/chart/series/pie:
         title: "PieSeries"
         position: 3
-    controls/chart/series/features:
+    controls/chart/series/cartesian/features:
         title: "Features"
         position: 20
         

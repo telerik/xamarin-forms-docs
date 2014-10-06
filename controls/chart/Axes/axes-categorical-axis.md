@@ -12,7 +12,9 @@ Defines the distance (in logical units [0,1]) between two adjacent categories. D
 
 - **MajorTickInterval** :  Defines the step at which major ticks are generated. The default value is 1. This property will also affect axis labels as they are generated on a per major tick basis.
 
-- **PlotMode** : Defines the strategy used to position data points along the axis category slots. Three possible values are available: { BetweenTicks, OnTicks }.
+- **PlotMode** : Defines the strategy used to position data points along the axis category slots. The possible values are:
+	- BetweenTicks
+	- OnTicks
 
 #Example#
 
@@ -39,6 +41,4 @@ Defines the distance (in logical units [0,1]) between two adjacent categories. D
 	  </telerikChart:RadCartesianChart.Series>
     </telerikChart:RadCartesianChart>
 
-![CategoricalAxis Windows Phone](axes-categorical-axis-example-WP.png)
-![CategoricalAxis Android](axes-categorical-axis-example-andro.png)
-![CategoricalAxis iOS](axes-categorical-axis-example-iOS.png)
+![CategoricalAxis](axes-categorical-axis-example.png)

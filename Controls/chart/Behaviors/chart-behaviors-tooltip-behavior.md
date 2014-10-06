@@ -9,7 +9,9 @@ slug: chart-behaviors-tooltip
 
 #Features#
 
-- **TriggerMode**: Determines the gestures on which the ChartToolTipBehavior should show a tool tip { Tap, Hold }.
+- **TriggerMode**: Determines the gestures on which the ChartToolTipBehavior should show a tool tip. The available values are:
+	- Tap
+	- Hold
 
 #Example#
 

@@ -44,18 +44,18 @@ Here are listed all supported series grouped by the chart types that can use the
 * **ShowLabels**: Defines whether the series will display labels for each plotted data point.
 * **DisplayName**
 
-#### Categorical Series Features ####
+### Categorical Series Features ###
 
-##### Data Binding #####
+#### Data Binding ####
 
 All categorical series have **CategoryBinding** and **ValueBinding** properties. These properties are of **PropertyNameDataPointBinding** and specify the name  of the property from the data model used by the chart to plot the corresponding visual points.
 
-##### Combining ####
+#### Combining ###
 
 The categorical series could be combined. Several combining strategies are supported. You can take a look at the [Grouping example]({% slug chart-series-combine-mode %}).
 
-#### Scatter Series Common Features ####
+### Scatter Series Common Features ###
 
-##### Data Binding #####
+#### Data Binding ####
 
 Scatter series provide **XValueBinding** and **YValueBinding** properties for data binding to a view model. These properties are of **PropertyNameDataPointBinding** and specify the name  of the property from the data model used by the chart to plot the corresponding visual points.

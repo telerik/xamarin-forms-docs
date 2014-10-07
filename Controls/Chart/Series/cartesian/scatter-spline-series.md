@@ -100,14 +100,8 @@ Here is the sample data:
 
 Here is the result:
 	
-![Basic ScatterSplineSeries Windows Phone](scatter-spline-series-images/cartesian-scatter-spline-series-basic-example-WP.png)
-![Basic ScatterSplineSeries Android](scatter-spline-series-images/cartesian-scatter-spline-series-basic-example-andro.png)
-![Basic ScatterSplineSeries iOS](scatter-spline-series-images/cartesian-scatter-spline-series-basic-example-iOS.png)
+![Basic ScatterSplineSeries](scatter-spline-series-images/cartesian-scatter-spline-series-basic-example.png)
 
 Here we make some customizations:
 
 	var series = new ScatterSplineSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5 };
-
-![Customized ScatterSplineSeries Windows Phone](scatter-spline-series-images/cartesian-scatter-spline-series-customization-example-WP.png)
-![Customized ScatterSplineSeries Android](scatter-spline-series-images/cartesian-scatter-spline-series-customization-example-andro.png)
-![Customized ScatterSplineSeries iOS](scatter-spline-series-images/cartesian-scatter-spline-series-customization-example-iOS.png)

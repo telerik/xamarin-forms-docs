@@ -91,9 +91,7 @@ Here is the sample data:
 
 
 
-![Basic ScatterAreaSeries Windows Phone](scatter-area-series-images/cartesian-scatter-area-series-basic-example-WP.png)
-![Basic ScatterAreaSeries Android](scatter-area-series-images/cartesian-scatter-area-series-basic-example-andro.png)
-![Basic ScatterAreaSeries iOS](scatter-area-series-images/cartesian-scatter-area-series-basic-example-iOS.png)
+![Basic ScatterAreaSeries](scatter-area-series-images/cartesian-scatter-area-series-basic-example.png)
 ## Customization ##
 **ScatterAreaSeries** provides the following properties to change its style:
 
@@ -104,7 +102,3 @@ Here is the sample data:
 Here is an example:
 
 	var series = new ScatterAreaSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5, Fill = new Color(0.8, 0.8, 1) };
-
-![Customized ScatterAreaSeries Windows Phone](scatter-area-series-images/cartesian-scatter-area-series-customization-example-WP.png)
-![Customized ScatterAreaSeries Android](scatter-area-series-images/cartesian-scatter-area-series-customization-example-andro.png)
-![Customized ScatterAreaSeries iOS](scatter-area-series-images/cartesian-scatter-area-series-customization-example-iOS.png)

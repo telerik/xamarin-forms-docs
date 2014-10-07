@@ -87,9 +87,7 @@ Here is the sample data:
 	    }
 	}
 
-![Basic ScatterLineSeries Windows Phone](scatter-line-series-images/cartesian-scatter-line-series-basic-example-WP.png)
-![Basic ScatterLineSeries Android](scatter-line-series-images/cartesian-scatter-line-series-basic-example-andro.png)
-![Basic ScatterLineSeries iOS](scatter-line-series-images/cartesian-scatter-line-series-basic-example-iOS.png)
+![Basic ScatterLineSeries](scatter-line-series-images/cartesian-scatter-line-series-basic-example.png)
 ## Customization ##
 **ScatterLineSeries** provide the following properties to change their style:
 
@@ -99,7 +97,3 @@ Here is the sample data:
 Here is an example:
 
 	var series = new ScatterLineSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5 };
-
-![Customized ScatterLineSeries Windows Phone](scatter-line-series-images/cartesian-scatter-line-series-customization-example-WP.png)
-![Customized ScatterLineSeries Android](scatter-line-series-images/cartesian-scatter-line-series-customization-example-andro.png)
-![Customized ScatterLineSeries iOS](scatter-line-series-images/cartesian-scatter-line-series-customization-example-iOS.png)

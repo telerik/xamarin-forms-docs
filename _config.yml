@@ -37,7 +37,7 @@ navigation:
         position: 3
     controls/chart/series/cartesian/features:
         title: "Features"
-        position: 20
+        position: 11
         
 ## The application virtual path
 baseurl: "/devtools/xamarin"

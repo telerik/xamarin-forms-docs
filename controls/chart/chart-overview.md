@@ -4,20 +4,19 @@ page_title: RadChart Overview
 position: 1
 slug: chart-overview
 ---
-**RadChart for Xamarin.Forms** is a versatile charting component that offers unmatched performance regarding loading time, drawing capabilities and real-time updates. Its intuitive object model and public API allow complex charts to be easily setup either in XAML or in code-behind. RadChart is completely data aware as the binding mechanism of the control is used to create the appropriate data points from the raw data. Chart types (or series) are organized in hierarchies, depending on the coordinate system, used to plot data points.
+**RadChart for Xamarin.Forms** is a versatile charting component that offers unmatched performance regarding loading time, drawing capabilities and real-time updates. Its intuitive object model and public API allow complex charts to be easily setup either in XAML or in code-behind. RadChart is completely data aware as the binding mechanism of the control is used to create the appropriate data points from the raw data. Chart types and series are organized in hierarchies, depending on the coordinate system, used to plot data points.
 
 ![Chart examples](chart-overview.png)
 
-A charting component in general is used to visualize (or plot) some data in a human-readable way through different representations like lines, areas, bars, pies, etc. Each series has a collection of data points – the data equivalent of a 2D point – and knows how to visualize them. Different series types may process certain types of data points – for example, categorical series may contain categorical data points.
+A charting component in general is used to visualize (or plot) some data in a human-readable way through different representations like lines, areas, bars, pies, etc. Each series has a collection of data points – the data equivalent of a 2D point – and knows how to visualize them. Different series types may process certain types of data points.
 
 ## Chart Types ##
 
 ### RadCartesianChart ###
 
-As the name hints, the [**RadCartesianChart**]({% slug chart-types-cartesian-chart %}) control uses the Cartesian coordinate system to plot the data points in its chart series. The X and Y axes define how each point’s coordinates in the plot area are calculated.
+As the name hints, the [**RadCartesianChart**]({% slug chart-types-cartesian-chart %}) control uses the Cartesian coordinate system to plot the data points in its chart series. The X and Y axes define how each point's coordinates in the plot area are calculated.
 
 #### Axes ####
-
 The following Cartesian axes are available:
 
 - [**Categorical**]({% slug axes-categorical-axis %}): Arranges the plotted data points in categories where the key of each category is the point’s value (if available) for that axis or its index within the points collection. The point’s coordinate, specified by this axis, is discrete and is calculated depending on the size of the category slot where the point resides.

@@ -76,3 +76,7 @@ And the data class:
 	    public object Category { get; set; }
 	    public double Value { get; set; }
 	}
+
+Here is the result:
+
+![Custom Palette](chart-how-to-create-custom-palette.png)

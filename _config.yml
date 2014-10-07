@@ -28,7 +28,7 @@ navigation:
         position: 7
     controls/chart/how-to:
         title: "How To"
-        position: 9
+        position: 10
     controls/chart/series/cartesian:
         title: "CartesianSeries"
         position: 2

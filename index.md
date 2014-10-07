@@ -3,9 +3,7 @@ title: Overview
 position: 1
 ---
 
-# Introduction #
-
-Welcome to the official documentation of **Telerik UI for Xamarin.Forms**
+Welcome to the official documentation of **Telerik UI for Xamarin.Forms**!
 
 ## What is Telerik UI for Xamarin.Forms ##
 
@@ -23,8 +21,4 @@ After you read the [System Requirements]({% slug system-requirements %}) section
 
 ## Controls Overview ##
 
-### Chart ###
-
-The [Telerik Chart for Xamarin]({% slug chart-overview %}) is a feature-rich, intuitive and easy to use data visualization control which employs the Xamarin.Forms technology and allows you to build native iOS, Android and Windows Phone apps in C#. For the Xamarin wrapper lovers, Telerik Chart comes also in the form of Xamarin.iOS and Xamarin.Android wrappers on top of the native Telerik iOS and Android suites.
-
-While Chart for Xamarin capitalizes all the innate benefits of the native UI, it exposes its objects and properties in C#, allowing for no-compromise customization and flexibility. Using Telerik Chart along with the Xamarin.Forms technology allows developers to easily implement various chart scenarios in their apps from a single shared C# code base.
+- [**Telerik Chart for Xamarin**]({% slug chart-overview %}): A feature rich charting control that supports different chart types and series. Its intuitive object model and public API allow you to easily setup complex charts and integrate them into your application.

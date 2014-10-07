@@ -1,5 +1,5 @@
 ---
-title: Cartesian Chart Grid
+title: CartesianChartGrid
 slug: cartesian-chart-grid
 position: 9
 ---

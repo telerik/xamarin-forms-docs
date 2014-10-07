@@ -3,13 +3,15 @@ title: ChartSelectionBehavior
 slug: chart-behaviors-selection
 ---
 
-# Overview #
+# ChartSelectionBehavior #
+
+## Overview ##
 
 **ChartSelectionBehavior** is responsible for selecting, deselecting and reporting the selection of either data points or series. In other words, the selection behavior can target data points, series or both if required.
 
-# Features #
+## Features ##
 
-#### Properties ####
+### Properties ###
 
 - **DataPointSelectionMode**: Gets or sets the ChartSelectionMode that controls the selection behavior of the data points within the chart series. The available values are:
 	-  None
@@ -22,15 +24,15 @@ slug: chart-behaviors-selection
 - **SelectedPoints**: Retrieves all the points from all series within the chart plot area that are currently selected.
 - **SelectedSeries**: Retrieves all the series instances within the plot area that are currently selected.
 
-#### Methods ####
+### Methods ###
 
 - **ClearSelecton()** method : Removes the current selection within the chart.
 
-#### Events ####
+### Events ###
 
 - **SelectionChanged** event: Occurs when a selection has been made.
 
-# Example #
+## Example ##
 
 Here's an example that shows how to add ChartSelectionBehavior to a RadChart, set its selection mode and handle its SelectionChanged event where you can get the selected points/series:
 

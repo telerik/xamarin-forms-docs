@@ -2,16 +2,20 @@
 title: ScatterPointSeries
 slug: chart-series-scatter-point-series
 ---
-# Overview #
+
+# ScatterPointSeries #
+
+## Overview ##
 
 The **ScatterPointSeries** are represented on the chart as not connected data points. Each scatter data point has to provide values for the X and Y coordinate on the **RadCartesianChart**. The **ScatterPointSeries** require both axes of the chart to be of type **NumericalAxis**.
 
-#Features#
+## Features ##
 
 - **XValueBinding** : Gets or sets the binding that will be used to fill the XValue of ScatterDataPoint members of the DataPoints collection.
 - **YValueBinding** : Gets or sets the binding that will be used to fill the YValue of ScatterDataPoint members of the DataPoints collection.
 
-# Example #
+## Example ##
+
 Here is an example of how to create a basic RadCartesianChart with ScatterPointSeries in xaml:
 
 	<telerikChart:RadCartesianChart>

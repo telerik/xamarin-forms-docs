@@ -2,11 +2,23 @@
 title: ScatterAreaSeries
 slug: chart-series-scatter-area-series
 ---
-# ScatterLineSeries #
+
+# ScatterAreaSeries #
+
+## Overview ##
 
 **RadCartesianChart** visualizes **ScatterAreaSeries** as the area enclosed by the coordinate axes and straight line segments that connect the series data points. The **ScatterAreaSeries** inherit from the **[ScatterPointSeries]()** class and also require both axes of the chart to be of type **NumericalAxis**.
 
+## Features ##
+
+**ScatterAreaSeries** provides the following properties to change its style:
+
+- **Stroke** (Color): changes the color used to draw lines.
+- **StrokeThickness** (double): changes the width of the lines.
+- **Fill** (Color): changes the color of the chart area.
+
 ## Example ##
+
 Here is an example of how to create a basic RadCartesianChart with ScatterAreaSeries in xaml:
 
 	<telerikChart:RadCartesianChart>
@@ -92,13 +104,7 @@ Here is the sample data:
 
 
 ![Basic ScatterAreaSeries](scatter-area-series-images/cartesian-scatter-area-series-basic-example.png)
-## Customization ##
-**ScatterAreaSeries** provides the following properties to change its style:
 
-- **Stroke** (Color): changes the color used to draw lines.
-- **StrokeThickness** (double): changes the width of the lines.
-- **Fill** (Color): changes the color of the chart area.
-
-Here is an example:
+Here we make some customization:
 
 	var series = new ScatterAreaSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5, Fill = new Color(0.8, 0.8, 1) };

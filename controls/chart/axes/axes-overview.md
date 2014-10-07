@@ -3,6 +3,7 @@ title: Overview
 position: 1
 slug: axes-overview
 ---
+
 # Overview #
 
 **RadCartesianChart** plots data points in a coordinate system defined by its two axes. Instead of having one axis type that does hundreds of things, we have a hierarchy of axes where each concrete axis type expose particular functionality.

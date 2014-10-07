@@ -3,17 +3,19 @@ title: ChartToolTipBehavior
 slug: chart-behaviors-tooltip
 ---
 
-#Overview#
+# ChartToolTipBehavior #
+
+## Overview ##
 
 **ChartTooltipBehavior** is responsible for rendering concise information about a data point in a small popup which is displayed close to its relevant data point.
 
-#Features#
+## Features ##
 
 - **TriggerMode**: Determines the gestures on which the ChartToolTipBehavior should show a tool tip. The available values are:
 	- Tap
 	- Hold
 
-#Example#
+## Example ##
 
     <telerikChart:RadCartesianChart>
 	  <telerikChart:RadCartesianChart.BindingContext>

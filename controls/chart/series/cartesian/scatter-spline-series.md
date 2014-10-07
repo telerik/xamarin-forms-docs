@@ -2,17 +2,21 @@
 title: ScatterSplineSeries
 slug: chart-series-scatter-spline-series
 ---
-# Overview #
+
+# ScatterSplineSeries #
+
+## Overview ##
 
 The **ScatterSplineSeries** are represented on the chart as data points connected with curved line segments. The **ScatterSplineSeries** inherit from the[**ScatterPointSeries**]({% slug chart-series-scatter-point-series %}) class and also require both axes of the chart to be of type **NumericalAxis**.
 
-#Features#
+## Features ##
 
 - **Stroke** (Color): changes the color used to draw lines.
 - **StrokeThickness** (double): changes the width of the lines.
 
 
-# Example #
+## Example ##
+
 Here is an example of how to create a basic RadCartesianChart with ScatterSplineSeries in xaml:
 
 	<telerikChart:RadCartesianChart>
@@ -102,6 +106,6 @@ Here is the result:
 	
 ![Basic ScatterSplineSeries](scatter-spline-series-images/cartesian-scatter-spline-series-basic-example.png)
 
-Here we make some customizations:
+Here we make some customization:
 
 	var series = new ScatterSplineSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5 };

@@ -2,19 +2,22 @@
 title: SplineSeries
 slug: chart-series-spline-series
 ---
-# Overview #
 
+# SplineSeries #
+
+## Overview ##
 
 **RadCartesianChart** visualizes each data item from the **LineSeries** and connects them with curved line segments. The **SplineSeries** extend **LineSeries**, so they are also **CategoricalSeries** and require one **CategoricalAxis** and one **NumricalAxis**.
 
-#Features#
-**SplineSeries** extend [**LineSeries**]({% slug chart-series-line-series %}) so they provide the same properties to change their style:
+## Features ##
 
+**SplineSeries** extend [**LineSeries**]({% slug chart-series-line-series %}) so they provide the same properties to change their style:
 
 - **Stroke** (Color): changes the color used to draw lines.
 - **StrokeThickness** (double): changes the width of the lines.
 
-# Example #
+## Example ##
+
 Here is an example of how to create a basic RadCartesianChart with SplineSeries in xaml:
 
 	<telerikChart:RadCartesianChart>
@@ -92,7 +95,7 @@ And here is the result:
 
 ![Basic SplineSeries](spline-series-images/cartesian-spline-series-basic-example.png)
 
-Here we make some customizations:
+Here we make some customization:
 
 	var series = new SplineSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5 };
 

@@ -4,11 +4,13 @@ slug: cartesian-chart-grid
 position: 9
 ---
 
-#Overview#
+# CartesianChartGrid #
+
+## Overview ##
 
 The CartesianChartGrid represents a decoration over the plot area of RadCartesianChart. It adds major lines connected to each Major tick of each axis. You can set a new grid through the RadCartesianChart.Grid property.
 
-#Features#
+## Features ##
 
 - **MajorLinesVisibility** : Gets or sets the visibility of major grid lines. In other means : a line that extends the major ticks throughout the plot area.
 - **MajorLineThickness**: Gets or sets the thickness of the Major Grid Lines.
@@ -21,7 +23,8 @@ The CartesianChartGrid represents a decoration over the plot area of RadCartesia
 - **XStripeColor**: Gets or sets the color of the area between two major ticks of the Horizontal Axis. This color alternates with the XStripeAlternativeColor starting from the first area.
 - **XStripeAlternativeColor**: Gets or sets the color of the area between two major ticks of the Horizontal Axis. This color alternates with the XStripeAlternativeColor starting from the second area.
 
-#Example#
+## Example ##
+
     <telerikChart:RadCartesianChart>
 	    <telerikChart:RadCartesianChart.BindingContext>
 	      <viewMoedls:CategoricalViewModel/>

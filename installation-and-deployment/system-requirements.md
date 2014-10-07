@@ -5,7 +5,8 @@ slug: system-requirements
 position: 1
 ---
 
-## System Requirements ##
+# System Requirements #
+
 You can develop cross-platform applications with Xamarin.Forms on the following operating systems:
 
 * **Windows**

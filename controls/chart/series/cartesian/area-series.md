@@ -3,17 +3,19 @@ title: AreaSeries
 slug: chart-series-area-series
 ---
 
-# Overview #
+# AreaSeries #
+
+## Overview ##
 
 **RadCartesianChart** visualizes **AreaSeries** as an area on the chart that is enclosed by the coordinate axes and straight line segments that connect the data points represented by these series. The **AreaSeries** extend **CategoricalStrokedSeries**, so they are also **CategoricalSeries** and require one **CategoricalAxis** and one **NumricalAxis**.
 
-#Features#
+## Features ##
 
 - **Fill** : gets or sets the fill of the AreaSeries.
 - **Stroke** : changes the color used to draw lines.
 - **StrokeThickness** : changes the width of the lines.
 
-# Example #
+## Example ##
 Here is an example of how to create a basic RadCartesianChart with AreaSeries in xaml:
 
 	<telerikChart:RadCartesianChart>

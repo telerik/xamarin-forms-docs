@@ -4,9 +4,19 @@ slug: chart-series-scatter-line-series
 ---
 # ScatterLineSeries #
 
+## Overview ##
+
 The **ScatterLineSeries** are represented on the chart as data points connected with straight line segments. The **ScatterLineSeries** inherit from the **[ScatterPointSeries]()** class and also require both axes of the chart to be of type **NumericalAxis**.
 
+## Features ##
+
+**ScatterLineSeries** provide the following properties to change their style:
+
+- **Stroke** (Color): changes the color used to draw lines.
+- **StrokeThickness** (double): changes the width of the lines.
+
 ## Example ##
+
 Here is an example of how to create a basic RadCartesianChart with ScatterLineSeries in xaml:
 
 	<telerikChart:RadCartesianChart>
@@ -88,12 +98,8 @@ Here is the sample data:
 	}
 
 ![Basic ScatterLineSeries](scatter-line-series-images/cartesian-scatter-line-series-basic-example.png)
-## Customization ##
-**ScatterLineSeries** provide the following properties to change their style:
 
-- **Stroke** (Color): changes the color used to draw lines.
-- **StrokeThickness** (double): changes the width of the lines.
 
-Here is an example:
+Here we make some customization:
 
 	var series = new ScatterLineSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5 };

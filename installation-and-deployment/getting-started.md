@@ -10,7 +10,8 @@ Here are described the steps that you have to follow to create a new cross platf
 
 First you have to download and install [Xamarin Studio](http://xamarin.com/download).
 
-## Create new Xamarin.Forms Solution##
+## Create new Xamarin.Forms Solution ##
+
 Create new solution **Xamarin.Forms Portable** / **Shared**
 
 * **Visual Studio**: located at *Templates* > *Visual C#* > *Mobile Apps* section:  
@@ -30,6 +31,7 @@ Typically, the solution will contain the following projects:
 ![Solution projects](visual-studio-solution-projects.png "Image")
 
 ## Packages ##
+
 >The minimum supported Xamarin.Forms version is **1.2.2.6234**.  
 >The Android project needs the following nuget package installed: **Xamarin Support Library v7 AppCompat**
   

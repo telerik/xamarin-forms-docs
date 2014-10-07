@@ -75,29 +75,27 @@ You will also have to add the following code to these project files:
 		}
 1. Edit the MainPage.xaml file to add a RadChart control:
 
-		<StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-		  <telerikChart:RadCartesianChart x:Name="barChart" HeightRequest="600">
-		    <telerikChart:RadCartesianChart.BindingContext>
-		      <local:MainViewModel/>
-		    </telerikChart:RadCartesianChart.BindingContext>
-		    <telerikChart:RadCartesianChart.HorizontalAxis>
-		      <telerikChart:CategoricalAxis/>
-		    </telerikChart:RadCartesianChart.HorizontalAxis>
-		    <telerikChart:RadCartesianChart.VerticalAxis>
-		      <telerikChart:NumericalAxis/>
-		    </telerikChart:RadCartesianChart.VerticalAxis>
-		    <telerikChart:RadCartesianChart.Series>
-		      <telerikChart:BarSeries ItemsSource="{Binding Data}">
-		        <telerikChart:BarSeries.ValueBinding>
-		          <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
-		        </telerikChart:BarSeries.ValueBinding>
-		        <telerikChart:BarSeries.CategoryBinding>
-		          <telerikChart:PropertyNameDataPointBinding PropertyName="Category"/>
-		        </telerikChart:BarSeries.CategoryBinding>
-		      </telerikChart:BarSeries>
-		    </telerikChart:RadCartesianChart.Series>
-		  </telerikChart:RadCartesianChart>
-		</StackLayout>
+	    <telerikChart:RadCartesianChart x:Name="barChart">
+	      <telerikChart:RadCartesianChart.BindingContext>
+	        <local:MainViewModel/>
+	      </telerikChart:RadCartesianChart.BindingContext>
+	      <telerikChart:RadCartesianChart.HorizontalAxis>
+	        <telerikChart:CategoricalAxis/>
+	      </telerikChart:RadCartesianChart.HorizontalAxis>
+	      <telerikChart:RadCartesianChart.VerticalAxis>
+	        <telerikChart:NumericalAxis/>
+	      </telerikChart:RadCartesianChart.VerticalAxis>
+	      <telerikChart:RadCartesianChart.Series>
+	        <telerikChart:BarSeries ItemsSource="{Binding Data}">
+	          <telerikChart:BarSeries.ValueBinding>
+	            <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
+	          </telerikChart:BarSeries.ValueBinding>
+	          <telerikChart:BarSeries.CategoryBinding>
+	            <telerikChart:PropertyNameDataPointBinding PropertyName="Category"/>
+	          </telerikChart:BarSeries.CategoryBinding>
+	        </telerikChart:BarSeries>
+	      </telerikChart:RadCartesianChart.Series>
+	    </telerikChart:RadCartesianChart>
 where:  
 
 		xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
@@ -109,11 +107,9 @@ Alternatively, you can add the chart in code behind:
 	        {
 	            InitializeComponent();
 				this.BindingContext = new MainViewModel();
-
-	            BackgroundColor = Color.FromRgb(240, 240, 240);
-	            var layout = new StackLayout { HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand };
-	            layout.Children.Add(CreateChart());
-	            Content = layout;
+	            BackgroundColor = Xamarin.Forms.Device.OnPlatform(Xamarin.Forms.Color.White, Xamarin.Forms.Color.White, Xamarin.Forms.Color.Transparent);
+	            
+				this.Content = CreateChart();
 	        }
 	
 	        private static RadCartesianChart CreateChart()
@@ -122,7 +118,6 @@ Alternatively, you can add the chart in code behind:
 	            {
 	                HorizontalAxis = new Telerik.XamarinForms.Chart.CategoricalAxis(),
 	                VerticalAxis = new Telerik.XamarinForms.Chart.NumericalAxis(),
-	                HeightRequest = 600
 	            };
 	
 	            var series = CreateSeries();

@@ -2,17 +2,21 @@
 title: ScatterSplineAreaSeries
 slug: chart-series-scatter-spline-area-series
 ---
-# Overview #
+
+# ScatterSplineAreaSeries #
+
+## Overview ##
 
 **RadCartesianChart** visualizes **ScatterSplineAreaSeries** as the area enclosed by the coordinate axes and curved line segments that connect the series data points. The **ScatterSplineAreaSeries** inherit from the [**ScatterPointSeries**]({% slug chart-series-scatter-point-series %}) class and also require both axes of the chart to be of type **NumericalAxis**.
 
-#Features#
+## Features ##
 
 - **Stroke** (Color): changes the color used to draw lines.
 - **StrokeThickness** (double): changes the width of the lines.
 - **Fill** (Color): changes the color used to fill the area shapes.
  
-# Example #
+## Example ##
+
 Here is an example of how to create a basic RadCartesianChart with ScatterSplineAreaSeries in xaml:
 	
 	<telerikChart:RadCartesianChart>
@@ -101,6 +105,6 @@ Here is the result:
 ![Basic ScatterSplineAreaSeries](scatter-spline-area-series-images/cartesian-scatter-spline-area-series-basic-example.png)
 
 
-Here we make some customizations:
+Here we make some customization:
 
 	var series = new ScatterSplineAreaSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5, Fill = new Color(0.8, 0.8, 1) };

@@ -2,16 +2,17 @@
 title: DateTimeContinuousAxis
 slug: axes-date-time-continuous-axis
 ---
+# DateTimeContinuousAxis #
 
-#Overview#
+## Overview ##
 
 The **DateTimeContinuousAxis** is a special axis that extends the base CartesianAxis class and may be considered as a hybrid between a categorical and a numerical axis. DateTimeContinuousAxis works with categorical data but instead of categories, the axis builds time slots depending on its Minimum, Maximum and MajorStep values.
 DateTimeContinuousAxis also expects valid DateTime values so that the data could be plotted correctly. Think of DateTimeContinuousAxis as a timeline where each data point has a certain position, depending on its DateTime value. The timeline range properties are automatically calculated if not set explicitly by the user: the default value of the major step is the smallest difference between any two DateTime values. There might be empty time slots if no data falling into them is found, because the axis behaves like a numerical one.
 
-The **CategoricalAxis** inherits from the base **Axis** class. You can see the inherited properties [here]({% slug axes-overview %})
+The **CategoricalAxis** inherits from the base **Axis** class. You can see the inherited properties [here]({% slug axes-overview %}).
 
 
-#Features#
+## Features ##
 
 - **Minimum** : The Minimum property defines the start value of the timeline. Specify DateTime.Minimum to clear the value and force the axis to determine it automatically, depending on the smallest DateTime value present.
 - **Maximum** : The Maximum property defines the end value of the timeline. Specify DateTime.Maximum to clear the value and force the axis to determine it automatically, depending on the biggest DateTime value present.
@@ -20,7 +21,7 @@ The **CategoricalAxis** inherits from the base **Axis** class. You can see the i
 - **MajorStepUnit** : The MajorStepUnit property defines what DateTime component the MajorStep property refers to { Year, Quarter, Month, Week, Day, Hour, Minute, Second, Millisecond }.
 - **GapLength** : The GapLength property defines the distance (in logical units [0,1]) between two adjacent time slots. The default value is 0.3. As an example, if you have two BarSeries combined in Cluster mode, you can remove the space between the bars by setting the GapLength property to 0.
 
-#Example#
+## Example ##
 
     <telerikChart:RadCartesianChart SelectionPaletteName="LightSelected">
       <telerikChart:RadCartesianChart.BindingContext>

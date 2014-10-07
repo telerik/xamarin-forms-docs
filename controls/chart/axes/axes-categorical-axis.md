@@ -2,13 +2,16 @@
 title: CategoricalAxis
 slug: axes-categorical-axis
 ---
-# Overview #
+
+# CategoricalAxis #
+
+## Overview ##
 
 When **RadCartesianChart** visualizes **CategoricalSeries**, it needs an axis that can represent the different categories. Categories are built depending on the **CategoryBinding** value of each categorical data point in the owning CategoricalSeries. The axis is divided into discrete slots and each data point is visualized in the slot corresponding to its categorical value.
 
-The **CategoricalAxis** inherits from the base **Axis** class. You can see the inherited properties [here]({% slug axes-overview %})
+The **CategoricalAxis** inherits from the base **Axis** class. You can see the inherited properties [here]({% slug axes-overview %}).
 
-# Features #
+## Features ##
 
 - **GapLength** :
 Defines the distance (in logical units [0,1]) between two adjacent categories. Default value is 0.3. For example if you have BarSeries, you can decrease the space between the bars from the different categories by setting the GapLength to a value lower than 0.3.
@@ -19,7 +22,7 @@ Defines the distance (in logical units [0,1]) between two adjacent categories. D
 	- BetweenTicks
 	- OnTicks
 
-#Example#
+## Example ##
 
     <telerikChart:RadCartesianChart SelectionPaletteName="LightSelected">
 	  <telerikChart:RadCartesianChart.BindingContext>

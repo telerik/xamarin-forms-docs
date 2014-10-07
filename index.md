@@ -17,7 +17,7 @@ Telerik provides libraries of native UI components for each of the listed platfo
 
 You can find more information about Xamarin.Forms at this link: [An Introduction to Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/introduction-to-xamarin-forms/)
 
-After you read the [System Requirements]({% slug system-requirements %}) section, you can go to the [Getting Started]({% slug getting-started %}) section where you can find step-by-step instructions how to get started using our components.
+After you read the [System Requirements]({% slug system-requirements %}) section, you can go to the [Getting Started]({% slug getting-started %}) section where you can find step-by-step instructions how to start using our components.
 
 ## Controls Overview ##
 

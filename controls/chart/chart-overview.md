@@ -5,6 +5,8 @@ position: 1
 slug: chart-overview
 ---
 
+# RadChart Overview #
+
 **Telerik Chart for Xamarin** is a feature-rich, intuitive and easy to use data visualization control which employs the Xamarin.Forms technology and allows you to build native iOS, Android and Windows Phone apps in C#. For the Xamarin wrapper lovers, Telerik Chart comes also in the form of Xamarin.iOS and Xamarin.Android wrappers on top of the native Telerik iOS and Android suites.
 
 While Chart for Xamarin capitalizes all the innate benefits of the native UI, it exposes its objects and properties in C#, allowing for no-compromise customization and flexibility. Using Telerik Chart along with the Xamarin.Forms technology allows developers to easily implement various chart scenarios in their apps from a single shared C# code base.

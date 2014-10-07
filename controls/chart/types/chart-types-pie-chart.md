@@ -20,39 +20,45 @@ The **RadPieChart**  visualizes its data points using radial coordinate system. 
 
 1. Define RadPieChart:  
 	
-		XAML definition:
-		<telerikChart:RadPieChart>
-		</telerikChart:RadPieChart>
+	- XAML definition:
+	
+			<telerikChart:RadPieChart>
+			</telerikChart:RadPieChart>
 
-		C# definition:
-		var chart = new RadPieChart();
+	- C# definition:
+	
+			var chart = new RadPieChart();
 
 1. After that you can add the series to the RadPieChart.Series collection:
 
-		XAML definition:
-		<telerikChart:RadPieChart.Series>
-		  <telerikChart:PieSeries ItemsSource="{Binding Data}">
-		    <telerikChart:PieSeries.ValueBinding>
-		      <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
-		    </telerikChart:PieSeries.ValueBinding>
-		  </telerikChart:PieSeries>
-		</telerikChart:RadPieChart.Series>
+	- XAML definition:
+	
+			<telerikChart:RadPieChart.Series>
+			  <telerikChart:PieSeries ItemsSource="{Binding Data}">
+			    <telerikChart:PieSeries.ValueBinding>
+			      <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
+			    </telerikChart:PieSeries.ValueBinding>
+			  </telerikChart:PieSeries>
+			</telerikChart:RadPieChart.Series>
 
 
-		C# definition:
-		var series = new PieSeries();
-		series.SetBinding(PieSeries.ItemsSourceProperty, new Binding("Data"));
-		series.ValueBinding = new PropertyNameDataPointBinding("Value");
-		chart.Series.Add(series);
+	- C# definition:
+
+			var series = new PieSeries();
+			series.SetBinding(PieSeries.ItemsSourceProperty, new Binding("Data"));
+			series.ValueBinding = new PropertyNameDataPointBinding("Value");
+			chart.Series.Add(series);
 1. You also have to set a BindingContext of the chart if none of its parents have a context:
  
-		XAML definition:
-		<telerikChart:RadPieChart.BindingContext>
-		  <local:ViewModel/>
-		</telerikChart:RadPieChart.BindingContext>
+	- XAML definition:
 
-		C# definition:
-		chart.BindingContext = new ViewModel();
+			<telerikChart:RadPieChart.BindingContext>
+			  <local:ViewModel/>
+			</telerikChart:RadPieChart.BindingContext>
+
+	- C# definition:
+
+			chart.BindingContext = new ViewModel();
 
 Here is the full definition of the chart:
 
@@ -69,7 +75,7 @@ Here is the full definition of the chart:
 	  </telerikChart:RadPieChart.Series>
 	</telerikChart:RadPieChart>
 
-And this is the sample data
+And this is the sample data:
 
 	public class Data
 	{		

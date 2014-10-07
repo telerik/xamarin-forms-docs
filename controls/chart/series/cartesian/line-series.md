@@ -2,17 +2,21 @@
 title: LineSeries
 slug: chart-series-line-series
 ---
-# Overview #
+
+# LineSeries #
+
+## Overview ##
 
 **RadCartesianChart** visualizes each data item from the **LineSeries** and connects them with straight line segments. The **LineSeries** extend **CategoricalStrokedSeries**, so they are also **CategoricalSeries** and require one **CategoricalAxis** and one **NumricalAxis**.
 
-#Features#
+## Features ##
 
 - **Stroke** (Color): changes the color used to draw lines.
 - **StrokeThickness** (double): changes the width of the lines.
 
 
-# Example #
+## Example ##
+
 Here is an example of how to create a basic RadCartesianChart with LineSeries in xaml:
 
 	<telerikChart:RadCartesianChart>

@@ -4,7 +4,9 @@ position: 8
 slug: chart-annotations
 ---
 
-#Overview#
+# Annotations #
+
+## Overview ##
 
 **Annotations** are visual elements used to highlight certain areas on the plot. They can be used as comments or as markers for specific values on the plot. You can practically use any visual element as template for the annotation.
 
@@ -13,29 +15,29 @@ RadChart provides support for the following types of annotations:
 - **Cartesian GridLineAnnotations**: this annotation is visually represented by straight lines across the chart that marks a specific value on the associated Cartesian axis.
 - **Cartesian PlotBandAnnotations**: this annotation is visually represented by a band across the chart that marks a specific range on the associated Cartesian axis.
 
-# CartesianGridLineAnnotation #
+## CartesianGridLineAnnotation ##
 
 The **CartesianGridLineAnnotation** represents a vertical or horizontal line that crosses the entire plot area.
 
-##Features##
+### Features ###
 
 - **Axis** : the CartesianGridLineAnnotation should be associated with horizontal or vertical cartesian axis explicitly.
 - **Value** : the place on the associated axis where a line crosses it.
 
 > Note: When the associated axis is numerical - a numeric value is expected, and when it is a CategoricalAxis - a category is expected. 
 
-# CartesianPlotBandAnnotation #
+## CartesianPlotBandAnnotation ##
 
 The **CartesianPlotBandAnnotation** represents a vertical or horizontal area that crosses the entire plot area.  
 
-##Features##
+### Features ###
 
 - **Axis** : the cartesian plotband annotation needs to be associated with horizontal or vertical axis explicitly.
 - **From** : the starting value for the plotband.
 - **To** : the ending value for the plotband.
 - **Fill** :  Gets or sets the Fill. 
 
-#Example#
+## Example ##
 
     <telerikChart:RadCartesianChart x:Name="chart">
       <telerikChart:RadCartesianChart.BindingContext>

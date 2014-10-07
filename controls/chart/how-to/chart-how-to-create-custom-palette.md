@@ -1,12 +1,12 @@
 ---
-title: How to create a custom chart palette.
+title: Custom Chart Palette
 slug: chart-how-to-create-custom-palette
 ---
 
-#Overview#
+# Custom Chart Palette #
 When a user needs to define custom sets of colors, they can take advantage of custom palettes. Here is an example that shows how to achieve this: 
 
-#Example#
+## Example ##
 
 Create a static class that will provide custom palette instances: 
 

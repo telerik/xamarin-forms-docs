@@ -2,17 +2,21 @@
 title: SplineAreaSeries
 slug: chart-series-spline-area-series
 ---
-# Overview #
+
+# SplineAreaSeries #
+
+## Overview ##
 
 **RadCartesianChart** visualizes **SplineAreaSeries** as an area on the chart that is enclosed by the coordinate axes and straight line segments that connect the data points represented by these series. The **SplineAreaSeries** extend **CategoricalStrokedSeries**, so they are also **CategoricalSeries** and require one **CategoricalAxis** and one **NumricalAxis**.
 
-#Features#
+## Features ##
 
 - **Stroke** (Color): changes the color used to draw lines.
 - **StrokeThickness** (double): changes the width of the lines.
 - **Fill** (Color): changes the color used to fill the area shapes.
 
-# Example #
+## Example ##
+
 Here is an example of how to create a basic RadCartesianChart with SplineAreaSeries in xaml:
 
 	<telerikChart:RadCartesianChart>
@@ -91,7 +95,7 @@ And here is the result:
 
 ![Basic SplineAreaSeries](spline-area-series-images/cartesian-spline-area-series-basic-example.png)
 
-Here we make some customizations:
+Here we make some customization:
 
 	var series = new SplineAreaSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5, Fill = new Color(0.8, 0.8, 1) };
 

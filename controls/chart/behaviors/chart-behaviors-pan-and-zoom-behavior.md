@@ -3,11 +3,13 @@ title: ChartPanAndZoomBehavior
 slug: chart-behaviors-pan-and-zoom
 ---
 
-# Overview #
+# ChartPanAndZoomBehavior #
+
+## Overview ##
 
 With **ChartPanAndZoomBehavior**, RadChart handles the gestures drag, pinch open and pinch close which respectively cause panning, zooming in and zooming out of the associated chart plot area.
 
-#Features#
+## Features ##
 
 - **ZoomMode**: Gets or sets value that specifies how the chart will respond to a zoom gesture. The available values are:
 	- None
@@ -21,7 +23,7 @@ With **ChartPanAndZoomBehavior**, RadChart handles the gestures drag, pinch open
 	- Both
 - **HandleDoubleTap**: Determines whether a double-tap gesture will be handled by the behavior to reset the values of the Zoom and ScrollOffset (Pan) properties of the chart.
 
-#Example#
+## Example ##
 
     <telerikChart:RadCartesianChart>
 	  <telerikChart:RadCartesianChart.BindingContext>

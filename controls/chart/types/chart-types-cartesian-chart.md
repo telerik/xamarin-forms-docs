@@ -38,58 +38,64 @@ Each of the above series of the same type may be combined in either [stacks or c
 ## Example ##
 
 1. Define RadCartesianChart:  
+	- XAML definition:
 	
-		XAML definition:
-		<telerikChart:RadCartesianChart>
-		</telerikChart:RadCartesianChart>
+			<telerikChart:RadCartesianChart>
+			</telerikChart:RadCartesianChart>
 
-		C# definition:
-		var chart = new RadCartesianChart();
+	- C# definition:
+	
+			var chart = new RadCartesianChart();
 
 1. The RadCartesianChart control needs two axes - horizontal and vertical to plot its data.
+	- XAML definition:
 
-		XAML definition:
-		<telerikChart:RadCartesianChart.HorizontalAxis>
-		  <telerikChart:CategoricalAxis/>
-		</telerikChart:RadCartesianChart.HorizontalAxis>
-		<telerikChart:RadCartesianChart.VerticalAxis>
-		  <telerikChart:NumericalAxis/>
-		</telerikChart:RadCartesianChart.VerticalAxis>
+			<telerikChart:RadCartesianChart.HorizontalAxis>
+			  <telerikChart:CategoricalAxis/>
+			</telerikChart:RadCartesianChart.HorizontalAxis>
+			<telerikChart:RadCartesianChart.VerticalAxis>
+			  <telerikChart:NumericalAxis/>
+			</telerikChart:RadCartesianChart.VerticalAxis>
 
-		C# definition:
-		chart.HorizontalAxis = new CategoricalAxis();
-		chart.VerticalAxis = new NumericalAxis();
+	- C# definition:
+	
+			chart.HorizontalAxis = new CategoricalAxis();
+			chart.VerticalAxis = new NumericalAxis();
 
 1. After that you can add the series to the RadCartesianChart.Series collection:
 
-		XAML definition:
-		<telerikChart:RadCartesianChart.Series>
-		  <telerikChart:BarSeries ItemsSource="{Binding CategoricalData}">
-		    <telerikChart:BarSeries.ValueBinding>
-		      <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
-		    </telerikChart:BarSeries.ValueBinding>
-		    <telerikChart:BarSeries.CategoryBinding>
-		      <telerikChart:PropertyNameDataPointBinding PropertyName="Category"/>
-		    </telerikChart:BarSeries.CategoryBinding>
-		    </telerikChart:BarSeries>
-		  </telerikChart:RadCartesianChart.Series>
-		</telerikChart:RadCartesianChart>
+	- XAML definition:
 
-		C# definition:
-		var series = new BarSeries();
-		series.SetBinding(BarSeries.ItemsSourceProperty, new Binding("CategoricalData"));
-		series.ValueBinding = new PropertyNameDataPointBinding("Value");
-		series.CategoryBinding = new PropertyNameDataPointBinding("Category");            
-		chart.Series.Add(series);
+			<telerikChart:RadCartesianChart.Series>
+			  <telerikChart:BarSeries ItemsSource="{Binding CategoricalData}">
+			    <telerikChart:BarSeries.ValueBinding>
+			      <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
+			    </telerikChart:BarSeries.ValueBinding>
+			    <telerikChart:BarSeries.CategoryBinding>
+			      <telerikChart:PropertyNameDataPointBinding PropertyName="Category"/>
+			    </telerikChart:BarSeries.CategoryBinding>
+			    </telerikChart:BarSeries>
+			  </telerikChart:RadCartesianChart.Series>
+			</telerikChart:RadCartesianChart>
+
+	- C# definition:
+	
+			var series = new BarSeries();
+			series.SetBinding(BarSeries.ItemsSourceProperty, new Binding("CategoricalData"));
+			series.ValueBinding = new PropertyNameDataPointBinding("Value");
+			series.CategoryBinding = new PropertyNameDataPointBinding("Category");            
+			chart.Series.Add(series);
 1. You also have to set a BindingContext of the chart if none of its parents have a context:
  
-		XAML definition:
-		<telerikChart:RadPieChart.BindingContext>
-		  <local:ViewModel/>
-		</telerikChart:RadPieChart.BindingContext>
+	- XAML definition:
+	
+			<telerikChart:RadPieChart.BindingContext>
+			  <local:ViewModel/>
+			</telerikChart:RadPieChart.BindingContext>
 
-		C# definition:
-		chart.BindingContext = new ViewModel();
+	- C# definition:
+		
+			chart.BindingContext = new ViewModel();
 
 Here is the full definition of the chart:
 

@@ -46,7 +46,7 @@ Each of the above series of the same type may be combined in either [stacks or c
     
 #### CartesianChartGrid ####
 
-The Cartesian chart may be optionally decorated with grid-like visuals that support horizontal and vertical lines, associated with axis ticks and horizontal and vertical stripes – the area between two adjacent ticks.
+The Cartesian chart may be optionally decorated with grid-like visuals that support horizontal and vertical lines, associated with axis ticks and horizontal and vertical stripes – the area between two adjacent ticks. For more information you can see the [CartesianChartGrid section]({% slug cartesian-chart-grid %}).
 
 ### PieChart ###
 

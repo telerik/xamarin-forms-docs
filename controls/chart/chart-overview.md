@@ -17,6 +17,7 @@ A charting component in general is used to visualize (or plot) some data in a hu
 As the name hints, the [**RadCartesianChart**]({% slug chart-types-cartesian-chart %}) control uses the Cartesian coordinate system to plot the data points in its chart series. The X and Y axes define how each point's coordinates in the plot area are calculated.
 
 #### Axes ####
+
 The following Cartesian axes are available:
 
 - [**Categorical**]({% slug axes-categorical-axis %}): Arranges the plotted data points in categories where the key of each category is the point’s value (if available) for that axis or its index within the points collection. The point’s coordinate, specified by this axis, is discrete and is calculated depending on the size of the category slot where the point resides.
@@ -24,6 +25,7 @@ The following Cartesian axes are available:
 - [**Date-Time Continuous**]({% slug axes-date-time-continuous-axis %}): A special axis that expects each data point to provide a System.DateTime structure as its value for this axis. Think of this axis as a time line where the coordinate of each data point is calculated depending on the position of its associated DateTime on the time line. The base unit (or the step) of the axis is calculated depending on the smallest difference between any two dates.
 
 #### Series ####
+
 The following Cartesian series are available:
 
 - **Categorical**: Categorical series need a [**Numerical**]({% slug axes-numerical-axis %}) and a [**Categorical**]({% slug axes-categorical-axis %})/[**Date-Time Continuous**]({% slug axes-date-time-continuous-axis %}) axis in order to get properly plotted.

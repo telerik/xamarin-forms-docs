@@ -8,71 +8,71 @@ When a user needs to define custom sets of colors, they can take advantage of cu
 
 #Example#
 
-Create a static class to define a custom palette instance: 
+Create a static class that will provide custom palette instances: 
 
-    public class CustomPalettes
-    {
-        static CustomPalettes()
-        {
-            CreateCustomDarkPalette();
-        }
+	public class CustomPalettes
+	{
+	    static CustomPalettes()
+	    {
+	        CreateCustomDarkPalette();
+	    }
+	
+	    public static ChartPalette CustomDark { get; private set; }
+	
+	    private static void CreateCustomDarkPalette()
+	    {
+	        ChartPalette palette = new ChartPalette();
+	
+	        palette.Entries.Add(new PaletteEntry() { FillColor = Color.FromRgb(246, 0, 29), StrokeColor = Color.FromRgb(178, 0, 21) });
+	        palette.Entries.Add(new PaletteEntry() { FillColor = Color.FromRgb(255, 206, 0), StrokeColor = Color.FromRgb(186, 150, 0) });
+	        palette.Entries.Add(new PaletteEntry() { FillColor = Color.FromRgb(20, 216, 0), StrokeColor = Color.FromRgb(14, 152, 0) });
+	
+	        CustomDark = palette;
+	    }
+	}
 
-        private static void CreateCustomDarkPalette()
-        {
-            
-            ChartPalette palette = new ChartPalette();
 
-            palette.Entries.Add(new PaletteEntry() { FillColor = Color.Navy, StrokeColor = Color.Silver });
-            palette.Entries.Add(new PaletteEntry() { FillColor = Color.Lime, StrokeColor = Color.Silver });
-            palette.Entries.Add(new PaletteEntry() { FillColor = Color.Red, StrokeColor = Color.Silver });             
-            palette.Entries.Add(new PaletteEntry() { FillColor = Color.Navy, StrokeColor = Color.Silver });
-            palette.Entries.Add(new PaletteEntry() { FillColor = Color.Maroon, StrokeColor = Color.Silver });
-             
-            CustomDark = palette;
-        }
+Create a chart and set the chart palette to your custom defined one:
 
-        public static ChartPalette CustomDark { get; private set; }
+	var chart = new RadCartesianChart
+	{
+	    HorizontalAxis = new CategoricalAxis(),
+	    VerticalAxis = new NumericalAxis(),
+	};
+	
+	for (int i = 0; i < 3; i++)
+	{
+	    var series = new BarSeries();
+	    series.ItemsSource = GetCategoricalData();
+	    series.ValueBinding = new PropertyNameDataPointBinding("Value");
+	    series.CategoryBinding = new PropertyNameDataPointBinding("Category");
+	    series.CombineMode = ChartSeriesCombineMode.Cluster;
+	
+	    chart.Series.Add(series);
+	}
 
-    }
+	chart.Palette = CustomPalettes.CustomDark;
 
-Set the chart palette to your custom defined one: 
+Here is how the chart gets its sample data:
 
-    <telerikChart:RadCartesianChart x:Name="chart">
-    <telerikChart:RadCartesianChart.BindingContext>
-      <viewMoedls:CategoricalViewModel/>
-    </telerikChart:RadCartesianChart.BindingContext>
-    <telerikChart:RadCartesianChart.HorizontalAxis>
-      <telerikChart:CategoricalAxis/>
-    </telerikChart:RadCartesianChart.HorizontalAxis>
-    <telerikChart:RadCartesianChart.VerticalAxis>
-      <telerikChart:NumericalAxis/>
-    </telerikChart:RadCartesianChart.VerticalAxis>
-    <telerikChart:RadCartesianChart.Series>
-      <telerikChart:BarSeries ItemsSource="{Binding CategoricalData}" CombineMode="Cluster">
-        <telerikChart:BarSeries.ValueBinding>
-          <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
-        </telerikChart:BarSeries.ValueBinding>
-        <telerikChart:BarSeries.CategoryBinding>
-          <telerikChart:PropertyNameDataPointBinding PropertyName="Category"/>
-        </telerikChart:BarSeries.CategoryBinding>
-      </telerikChart:BarSeries>
+	private static Random random = new Random();
+	private static string[] categories = new string[] { "Greenings", "Perfecto", "NearBy", "Family", "Fresh" };
+	
+	public static ObservableCollection<CategoricalData> GetCategoricalData()
+	{
+	    var data = new ObservableCollection<CategoricalData>();
+	    for (int i = 0; i < categories.Length; i++)
+	    {
+	        data.Add(new CategoricalData() { Value = random.Next(50, 100), Category = categories[i] });
+	    }
+	
+	    return data;
+	}
 
-      <telerikChart:BarSeries ItemsSource="{Binding CategoricalData}" CombineMode="Cluster">
-        <telerikChart:BarSeries.ValueBinding>
-          <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
-        </telerikChart:BarSeries.ValueBinding>
-        <telerikChart:BarSeries.CategoryBinding>
-          <telerikChart:PropertyNameDataPointBinding PropertyName="Category"/>
-        </telerikChart:BarSeries.CategoryBinding>
-      </telerikChart:BarSeries>
-    </telerikChart:RadCartesianChart.Series>
-    </telerikChart:RadCartesianChart>
+And the data class:
 
-In the code behind: 
-
-        public PalettesExample()
-        {
-            InitializeComponent();
-
-            this.chart.Palette = CustomPalettes.CustomDark;
-        }
+	public class CategoricalData
+	{
+	    public object Category { get; set; }
+	    public double Value { get; set; }
+	}

@@ -42,6 +42,7 @@ Here are listed all supported series grouped by the chart types that can use the
 * **ItemsSource**: Defines the data set that will fill the series data points. It supports a large variety of different data sources as the property is of type IEnumerable. 
 * **ShowLabels**: Defines whether the series will display labels for each plotted data point.
 * **DisplayName**
+
 #### Categorical Series Features ####
 
 ##### Data Binding #####

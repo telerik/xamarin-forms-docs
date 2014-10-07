@@ -8,6 +8,7 @@ position: 1
 Welcome to the official documentation of **Telerik UI for Xamarin.Forms**
 
 ## What is Telerik UI for Xamarin.Forms ##
+
 You can use **Xamarin.Forms** for application development for the following mobile operating systems:
 
 * **Android 4.0** or higher

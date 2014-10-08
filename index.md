@@ -13,7 +13,7 @@ The API and feature set of the Xamarin.Forms controls is different from the Xama
 - The documentation set of [UI for iOS](http://docs.telerik.com/devtools/ios/) provides information about the features and API of the Xamarin.iOS bindings.*
 - The documentation set of [UI for Android](http://docs.telerik.com/devtools/android/) provides information about the features and the API of the Xamarin.Android bindings.*
 
-## Xamarin.Forms Controls Overview ##
+### Xamarin.Forms Controls Overview ###
 
 - [**Telerik Chart for Xamarin**]({% slug chart-overview %}): A feature rich charting control that supports different chart types and series. Its intuitive object model and public API allow you to easily setup complex charts and integrate them into your application.
 

@@ -20,7 +20,7 @@ The API and feature set of the Xamarin.Forms controls is different from the Xama
 You can use **Xamarin.Forms** for application development for the following mobile operating systems:
 
 * **Android 4.0** or higher
-* **iOS 6.1** or higher
+* **iOS 7.0** or higher
 * **Windows Phone 8**
 
 > Note: There could be information for more controls in the UI for iOS and UI for Android than what is supported by the Xamarin bindings. For a list of the supported controls, you can refer to the [UI for Xamarin](http://www.telerik.com/xamarin-ui) product page.

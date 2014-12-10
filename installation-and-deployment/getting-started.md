@@ -33,7 +33,7 @@ Typically, the solution will contain the following projects:
 ## Packages ##
 
 >The minimum supported Xamarin.Forms version is **1.2.2.6234**.  
->The Android project needs the following nuget package installed: **Xamarin Support Library v7 AppCompat**
+>The Android project needs the following nuget package installed: **Xamarin Support Library v7 AppCompat v. 20.0.0.2**
   
 * On **Visual Studio** you can download and update these packages from the NuGet Package Manager.  
 * On **Xamarin Studio** you can right click on the Packages folder of your projects and select *Update* or *Add Packages...*

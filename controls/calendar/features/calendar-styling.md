@@ -30,18 +30,36 @@ slug: calendar-styling
 
 #### Example ####
 
+This example demonstrates how you can customize the calendar grid lines.
+
+	var calendar = new RadCalendar();
+	calendar.GridLinesDisplayMode = DisplayMode.Show;
+	calendar.GridLinesColor = Color.FromRgb(229, 173, 241);
+	calendar.GridLinesWidth = 3;
+
+This is the result:
+
 ![Grid Lines Example]()
 
 ### Cell Styling ###
  
-- **SetStyleForCell** (Func&lt;CalendarCell, CalendarCellStyle&gt;):
+- **SetStyleForCell** (Func&lt;CalendarCell, CalendarCellStyle&gt;): This property should be assigned to a method that should return a CalendarCellStyle object. If the returned value is null, the default style of the cell will be applied.  
+Here are all properties defined in the the **CalendarCellStyle** class:
+ - **BackgroundColor** (Color): 
+ - **BorderColor** (Color): 
+ - **BorderThickness** (Thickness): 
+ - **FontSize** (double): 
+ - **FontWeight** (FontWeight): 
+ - **ForegroundColor** (Color): 
 
 #### Example ####
+
+This example demonstrates how you can change the style of the cells of type DayName:
 
 	var calendar = new RadCalendar();
 	calendar.SetStyleForCell = this.EvaluateCellStyle;
 
-Here is a sample method the will set a custom style for the cells of type DayName: 
+And this is the method:
 
 	private CalendarCellStyle EvaluateCellStyle(CalendarCell cell)
 	{
@@ -67,7 +85,6 @@ Here is the result:
 
 Sometimes you will need to set different values of the properties for each platform. This is possible ... 
 
- 
 #### CalendarResources ####
 
 This is a special static class which instance is created for every platform and its members are overridden with platform specific values.

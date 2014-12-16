@@ -103,4 +103,4 @@ Alternatively, you can add the calendar in code behind:
 		}
 
 Here is the result:  
-![Basic RadCalendar Example](calendar-getting-started-example.png "Basic RadCalendar")
+![Basic RadCalendar Example](calendar-getting-started.png "Basic RadCalendar")

@@ -39,7 +39,7 @@ This example demonstrates how you can customize the calendar grid lines.
 
 This is the result:
 
-![Grid Lines Example]()
+![Grid Lines Example](calendar-grid-lines.png)
 
 ### Cell Styling ###
  
@@ -73,13 +73,28 @@ And this is the method:
 	            FontWeight = FontWeight.Bold
 	        };
 	    }
+
+	
+        var dayCell = cell as CalendarDayCell;
+        if(dayCell != null && dayCell.Date.Date == new DateTime(2015, 3, 14))
+        {
+            return new CalendarCellStyle
+            {
+                BackgroundColor = Color.White,
+                ForegroundColor = Color.FromRgb(218, 112, 214),
+                FontSize = 20,
+                FontWeight = FontWeight.Bold,
+                BorderColor = Color.FromRgb(218, 112, 214),
+                BorderThickness = 3
+            }; 
+        }
 	
 	    return null;
 	}
 
 Here is the result:
 
-![pic]()
+![Cell Styling](calendar-cell-styling.png)
 
 ### Resources ###
 
@@ -164,3 +179,111 @@ Now the calendar will use your instance of CalendarResources class.
 
 Similarly to the CalendarResources class, you can create your own custom resources that will define platform specific properties.
 
+    public abstract class CalendarUserResources
+    {
+        public static CalendarUserResources Instance;
+    
+        public abstract Color Background { get; }
+
+        public abstract Color Foreground { get; }
+
+        public abstract double FontSize { get; }
+
+        public abstract void LoadInstance();
+    }
+
+In each platform project you have to create a class that inherits from the **CalendarUserResources** class:
+
+    public class CalendarUserPlatformResources : CalendarUserResources
+    {
+        private static CalendarUserPlatformResources instance = new CalendarUserPlatformResources();
+
+        public override double FontSize
+        {
+            get
+            {
+                return 30;
+            }
+        }
+
+        static CalendarUserPlatformResources()
+        {
+            CalendarUserResources.Instance = instance;
+        }
+
+        private CalendarUserPlatformResources()
+        {
+        }
+
+        public static new CalendarUserPlatformResources Instance
+        {
+            get
+            {
+                return instance;
+            }
+        }
+
+        public override Color Foreground
+        {
+            get
+            {
+                return Color.FromRgb(163, 118, 222);
+            }
+        }
+
+        public override Xamarin.Forms.Color Background
+        {
+            get
+            {
+                return Color.FromRgb(255, 243, 125);
+            }
+        }
+
+        public override void LoadInstance()
+        { 
+        }
+    }
+
+We will return different values in the property getters in each platform:
+
+- Android:
+ - FontSize: 30
+ - Foreground: Color.FromRgb(163, 118, 222)
+ - Background: Color.FromRgb(255, 243, 125)
+- iOS:
+ - FontSize: 15
+ - Foreground: Color.FromRgb(255, 235, 171)
+ - Background: Color.FromRgb(255, 149, 0)
+- Windows Phone:
+ - FontSize: 20
+ - Foreground: Color.FromRgb(70, 70, 70)
+ - Background: Color.FromRgb(255, 217, 0)
+
+
+Then you have to initialize the instance of the **CalendarUserResources** class by calling the **CalendarUserPlatformResources.Instance.LoadInstance()** method. This should happen in the platform projects before the Forms.Init(...) call.
+
+- Android: in the MainActivity.OnCreate(...) method
+- iOS: in the AppDelegate.FinishedLaunching(...) method
+- Windows Phone: in the MainPage class constructor
+
+We will use a different method to style the cells:
+
+	private CalendarCellStyle EvaluateCellStyle(CalendarCell cell)
+	{
+	    if (cell.Type == CalendarCellType.DayName)
+	    {
+	        return new CalendarCellStyle
+	        {
+	            BackgroundColor = CalendarUserResources.Instance.Background,
+	            ForegroundColor = CalendarUserResources.Instance.Foreground,
+	            FontSize = CalendarUserResources.Instance.FontSize,
+	            FontWeight = FontWeight.Bold
+	        };
+	    }
+	   
+	    return null;
+	}
+ 
+
+Here is the result:
+![Calendar User Resources](calendar-user-resources.png)

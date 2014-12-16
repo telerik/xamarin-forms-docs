@@ -20,7 +20,7 @@ slug: calendar-cell-types
 
 >**Type**: The only allowed type of CalendatDayCell is `Date`.
 
-## CalendatDayCell : CalendarDateCell ##
+## CalendarDayCell : CalendarDateCell ##
 
 - **IsFromCurrentMonth** (bool): Gets a value that specifies whether the cell is from the current month in month view.
 - **IsToday** (bool): Gets a value that specifies whether the cell date is today.

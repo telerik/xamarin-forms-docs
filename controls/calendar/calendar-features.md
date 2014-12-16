@@ -5,20 +5,6 @@ position: 4
 slug: calendar-features
 ---
 
-
-
-
-Styling 
-### Properties: ### 
-**GridLinesColor** (Color): 
-SelectionDecorationColor (Color): 
-**GridLinesWidth** (double): 
-SelectionDecorationWidth (double): Valid/used for Android ONLY! 
-**GridLinesDisplayMode** (DisplayMode): 
-SelectionDisplayMode (DisplayMode): 
-**SetStyleForCell** (Func<CalendarCell, CalendarCellStyle>): 
-**DayNamesDisplayMode** (DisplayMode): 
-**WeekNumbersDisplayMode** (DisplayMode): 
 ## Appointments ##
 
 ### Properties: ###
@@ -27,7 +13,7 @@ SelectionDisplayMode (DisplayMode):
 
 ## Additional classes / enums  ##
 
-### Classes ### 
+### Classes ###
 
 ValueChangedEventArgs<T> 
 T PreviousValue 
@@ -61,35 +47,7 @@ IsToday (bool):
 CalendarTextCell : CalendarCell 
 Type: Title, WeekNumber, DayName 
 Enums 
-CalendarViewMode 
- 
-Windows Phone 
-iOS 
-Android 
-Month 
- 
- 
- 
-Week 
- 
- 
- 
-MonthNames 
- 
- 
- 
-Year 
- 
- 
- 
-YearNumbers 
- 
- 
- 
-Flow 
- 
- 
- 
+
  
 CalendarCellType 
 Date 

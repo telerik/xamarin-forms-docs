@@ -87,28 +87,25 @@ Sometimes you will need to set different values of the properties for each platf
 
 #### CalendarResources ####
 
-This is a special static class which instance is created for every platform and its members are overridden with platform specific values.
+This is a special static class which instance is created depending on the platform that the application runs on, and its members are overridden with platform specific values.
 
 It exposes the following members:
 
 - static **Instance** (CalendarResources):   Gets or sets the instance of the CalendarResources class. See the example below to see how you can create your own instance.
-- **DisplayWeekNumbers** (bool): Gets the 
-- **DisplayDayNames** (bool):
-- **DisplayGridLines** (bool):
-- **GridLinesColor** (Color):
-- **GridLinesWidth** (double):
+- **DisplayWeekNumbers** (bool): Gets the week numbers visibility.
+- **DisplayDayNames** (bool): Gets the day names visibility.
+- **DisplayGridLines** (bool): Gets the grid lines visibility.
+- **GridLinesColor** (Color): Gets the  grid lines color.
+- **GridLinesWidth** (double): Gets the grid lines width.
 - void **Load**(): You should override this method in the classes that inherit from the CalendarResources class and  call it in order to initialize your own instance.
 
+The CalendarResources class is inherited in each platform by the following classes:
 
+- **Android**: AndroidCalendarResources
+- **iOS**: IOSCalendarResources
+- **Windows Phone**: WinPhoneCalendarResources
 
-
-You can change these resources per platform. You have to create a class that inherits from the platform specific resource class:
-
-- Android: AndroidCalendarResources
-- iOS: IOSCalendarResources
-- Windows Phone: WinPhoneCalendarResources
-
-and override the members that you wish to change.
+If you wish to change the default values defined by these classes, you can create your own class that inherits from them and and override the members that you wish to change.
 
 #### Example ####
 
@@ -160,6 +157,8 @@ After that you have to load the custom resources in the MainActivity.cs class be
 	
 	    this.SetPage(App.GetMainPage());
 	}
+
+Now the calendar will use your instance of CalendarResources class. 
 
 #### User resources ####
 

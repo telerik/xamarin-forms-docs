@@ -1,16 +1,20 @@
 ---
 title: Appointments
 page_title: Appointments
-position: 4
+position: 3
 slug: calendar-appointments
 ---
 
+# Appointments #
+
 RadCalendar can display appointments in its month view by using its **AppointmentsSource** property. It accepts a collection of objects, which implement the **Telerik.XamarinForms.IAppointment** interface. This interface defines 3 members:
-- **StartDate**, 
-- **EndDate**, 
+
+- **StartDate**
+- **EndDate**
 - **Title**
 
 ## Example ##
+
 	calendar.AppointmentsSource = new List<Appointment>() {
 		new Appointment() { 
 			StartDate = DateTime.Today.AddDays(1), 

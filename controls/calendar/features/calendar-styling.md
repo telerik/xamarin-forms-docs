@@ -1,11 +1,13 @@
 ---
-title: Calendar Styling
-page_title: Calendar Styling
-position:  
+title: Styling
+page_title: Styling
+position: 4
 slug: calendar-styling
 ---
 
-### Elements ###
+# Styling #
+
+## Elements ##
 
 - **DayNamesDisplayMode** (DisplayMode): Gets or sets a value that specifies whether the day names will be visible.
 - **WeekNumbersDisplayMode** (DisplayMode): Gets or sets a value that specifies whether the day names will be visible.
@@ -22,7 +24,7 @@ slug: calendar-styling
 	calendar.WeekNumbersDisplayMode = DisplayMode.Show;
 	calendar.DayNamesDisplayMode = DisplayMode.Show;
 
-### Grid Lines ###
+## Grid Lines ##
 
 - **GridLinesDisplayMode** (DisplayMode): Gets or sets a value that specifies whether the grid lines will be visible.
 - **GridLinesColor** (Color): Gets or sets the color of the grid lines.
@@ -41,7 +43,7 @@ This is the result:
 
 ![Grid Lines Example](calendar-grid-lines.png)
 
-### Cell Styling ###
+## Cell Styling ##
  
 - **SetStyleForCell** (Func&lt;CalendarCell, CalendarCellStyle&gt;): This property should be assigned to a method that should return a CalendarCellStyle object. If the returned value is null, the default style of the cell will be applied.  
 Here are all properties defined in the the **CalendarCellStyle** class:
@@ -96,7 +98,7 @@ Here is the result:
 
 ![Cell Styling](calendar-cell-styling.png)
 
-### Resources ###
+## Resources ##
 
 Sometimes you will need to set different values of the properties for each platform. This is possible ... 
 
@@ -175,7 +177,7 @@ After that you have to load the custom resources in the MainActivity.cs class be
 
 Now the calendar will use your instance of CalendarResources class. 
 
-#### User resources ####
+## User resources ##
 
 Similarly to the CalendarResources class, you can create your own custom resources that will define platform specific properties.
 

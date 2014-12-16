@@ -1,12 +1,11 @@
 ---
-title: Calendar Selection
-page_title: Calendar Selection
-position: 
+title: Selection
+page_title: Selection
+position: 2
 slug: calendar-selection
 ---
 
-
-## Selection ##
+# Selection #
  
 ### Properties: ###
  

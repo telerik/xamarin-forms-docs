@@ -1,9 +1,11 @@
 ---
 title: Calendar Cell Types
 page_title: Calendar Cell Types
-position:  
+position: 5
 slug: calendar-cell-types
 ---
+
+# Calendar Cell Types #
 
 ![Calendar Cell Types](calendar-cell-types-diagram.png "Calendar Cell Types")
 

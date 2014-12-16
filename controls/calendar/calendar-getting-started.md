@@ -1,14 +1,16 @@
 ---
-title: Calendar Getting Started
-page_title: Calendar Getting Started
+title: Getting Started
+page_title: Getting Started
 position: 3
 slug: calendar-getting-started
 ---
 
 # Getting Started #
+
 This example will guide you through the steps needed to add a basic RadCalendar control in your application.
 
 ## Add References to Telerik UI for Xamarin.Forms ##
+
 First you have to create a new Xamarin.Forms project. You can see how in the [Getting Started Example]({% slug getting-started %} "Getting Started with Telerik UI foe Xamarin.Forms"). Then you have to add reference to the following assemblies:
 
 * **Portable** (if you have created Xamarin.Forms Portable App)

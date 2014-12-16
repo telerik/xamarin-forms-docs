@@ -1,9 +1,12 @@
 ---
-title: Calendar Navigation and View Mode
-page_title: Calendar Navigation and View Mode
+title: Navigation and View Mode
+page_title: Navigation and View Mode
 position: 1
 slug: calendar-features-navigation-and-view-mode
 ---
+
+# Navigation and View Mode #
+
 ## Navigation ##
 
 ### Properties: ###

@@ -14,6 +14,10 @@ navigation:
         position: 3
     controls/chart:
         title: "Chart"
+        position: 4
+    controls/calendar:
+        title: "Calendar"
+        position: 5
     controls/chart/types:
         title: "Types"
         position: 4
@@ -38,7 +42,10 @@ navigation:
     controls/chart/series/cartesian/features:
         title: "Features"
         position: 11
-        
+    controls/calendar/features:
+        title: "Features"
+        position: 4
+
 ## The application virtual path
 baseurl: "/devtools/xamarin"
 

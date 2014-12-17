@@ -31,4 +31,4 @@ slug: calendar-cell-types
 
 ## CalendarTextCell ##
 
->**Type**: The only allowed types of CalendarDayCell are `Title`, `WeekNumber` and `DayName`.
+>**Type**: The only allowed types of CalendarDayCell are `WeekNumber` and `DayName`.

@@ -7,17 +7,13 @@ slug: calendar-overview
 
 # Overview #
 
-RadCalendar for Xamarin.Forms is a calendar component that has been designed for the mobile environment. 
+The **RadCalendar for Xamarin.Forms** allows you to easily implement various calendar scenarios in your apps built with Xamarin.Forms. The control capitalizes on all the innate benefits of the native UI but exposes all objects and properties in C#, allowing for no-compromise customization and flexibility.
 
 ![Calendar Overview](calendar-overview.png "Calendar Overview")
 
 ## Features ##
 
-- [**Different view modes**]({% slug calendar-features-navigation-and-view-mode %})
+- [**Different view modes support**]({% slug calendar-features-navigation-and-view-mode %})
 - [**Selection**]({% slug calendar-selection %})
 - [**Appointments**]({% slug calendar-appointments %})
 - [**Customization**]({% slug calendar-styling %}): RadCalendar provides number of ways to override the default calendar appearance.
-	- Day names and week numbers visibility
-	- Grid lines
-	- Cell style customization
-	- Platform specific property values

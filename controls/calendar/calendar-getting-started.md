@@ -11,32 +11,29 @@ This example will guide you through the steps needed to add a basic RadCalendar 
 
 ## Add References to Telerik UI for Xamarin.Forms ##
 
-First you have to create a new Xamarin.Forms project. You can see how in the [Getting Started Example]({% slug getting-started %} "Getting Started with Telerik UI foe Xamarin.Forms"). Then you have to add reference to the following assemblies:
+First you have to create a new Xamarin.Forms project. You can see how in the [Getting Started Example]({% slug getting-started %} "Getting Started with Telerik UI for Xamarin.Forms"). Then you have to add reference to the following assemblies:
 
 * **Portable** (if you have created Xamarin.Forms Portable App)
 	- Telerik.XamarinForms.Input.dll
 	- Telerik.XamarinForms.Common.dll
 * **Android**
-
 	- Telerik.Xamarin.Android.Input.dll
 	- Telerik.Xamarin.Android.Common.dll
 	- Telerik.Xamarin.Android.Primitives.dll
-	- Telerik.XamarinForms.Chart.dll
-	- Telerik.XamarinForms.ChartRenderer.Android.dll
+	- Telerik.XamarinForms.Input.dll
+	- Telerik.XamarinForms.InputRenderer.Android.dll
 	- Telerik.XamarinForms.Common.dll
 * **iOS**
-
 	- Telerik.Xamarin.iOS.dll
 	- Telerik.XamarinForms.Input.dll
-	- Telerik.XamarinForms.ChartRenderer.iOS.dll
+	- Telerik.XamarinForms.InputRenderer.iOS.dll
 	- Telerik.XamarinForms.Common.dll
 * **WinPhone**
-	
 	- Telerik.Windows.Controls.Input.dll
 	- Telerik.Windows.Controls.Primitives.dll
 	- Telerik.Windows.Core.dll
 	- Telerik.XamarinForms.Input.dll
-	- Telerik.XamarinForms.ChartRenderer.WinPhone.dll
+	- Telerik.XamarinForms.InputRenderer.WinPhone.dll
 	- Telerik.XamarinForms.Common.dll
 
 ![Add Calendar References](calendar-getting-started-references.png)

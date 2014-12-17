@@ -9,7 +9,7 @@ slug: calendar-appointments
 
 RadCalendar can display appointments in its month view by using its **AppointmentsSource** property. It accepts a collection of objects, which implement the **Telerik.XamarinForms.IAppointment** interface. This interface defines 3 members:
 
-- **StartDate**
+- **StartDate** 
 - **EndDate**
 - **Title**
 
@@ -29,5 +29,16 @@ RadCalendar can display appointments in its month view by using its **Appointmen
 			EndDate = DateTime.Today.AddDays(12).AddHours(4), 
 			Title = "Progress Party"}
 	};
+
+where **Appointment** class implements **IAppointment** interface:
+
+	public class Appointment : IAppointment
+	{
+		public DateTime StartDate { get; set; }
+
+		public DateTime EndDate {  get; set; }
+
+		public string Title { get; set; }
+	}
 
 ![Appointments](calendar-appointments.png)

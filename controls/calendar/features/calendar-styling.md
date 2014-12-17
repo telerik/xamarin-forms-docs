@@ -7,16 +7,20 @@ slug: calendar-styling
 
 # Styling #
 
-## Elements ##
+The RadCalendar control provides several ways to change its appearance.
+
+## DisplayMode ##
+
+The calendar provides properties that control the visibility of its elements.. 
 
 - **DayNamesDisplayMode** (DisplayMode): Gets or sets a value that specifies whether the day names will be visible.
 - **WeekNumbersDisplayMode** (DisplayMode): Gets or sets a value that specifies whether the day names will be visible.
 
-#### DisplayMode ####
+The **DisplayMode** enumeration has the following values:
 
 - **Show**: The element will be visible.
 - **Hide**: The element will not be visible.
-- **Automatic**: The visibility of the element will be determined by the value defined in the platform specific resources. [see the resources]()
+- **Automatic**: The visibility of the element will be determined by the value defined in the platform specific resources. See the Resources section below.
 
 #### Example ####
 
@@ -24,7 +28,7 @@ slug: calendar-styling
 	calendar.WeekNumbersDisplayMode = DisplayMode.Show;
 	calendar.DayNamesDisplayMode = DisplayMode.Show;
 
-## Grid Lines ##
+#### Grid Lines ####
 
 - **GridLinesDisplayMode** (DisplayMode): Gets or sets a value that specifies whether the grid lines will be visible.
 - **GridLinesColor** (Color): Gets or sets the color of the grid lines.
@@ -45,18 +49,22 @@ This is the result:
 
 ## Cell Styling ##
  
-- **SetStyleForCell** (Func&lt;CalendarCell, CalendarCellStyle&gt;): This property should be assigned to a method that should return a CalendarCellStyle object. If the returned value is null, the default style of the cell will be applied.  
+- **SetStyleForCell** (Func&lt;CalendarCell, CalendarCellStyle&gt;): This property should be assigned to a method that returns a CalendarCellStyle object. The method will be called for every calendar cell and the returned style will be applied. If the return value is null, the default style of the cell will be used.  
+ 
 Here are all properties defined in the the **CalendarCellStyle** class:
- - **BackgroundColor** (Color): 
- - **BorderColor** (Color): 
- - **BorderThickness** (Thickness): 
- - **FontSize** (double): 
- - **FontWeight** (FontWeight): 
- - **ForegroundColor** (Color): 
+
+ - **BackgroundColor** (Color)
+ - **BorderColor** (Color)
+ - **BorderThickness** (Thickness)
+ - **FontSize** (double)
+ - **FontWeight** (FontWeight): Bold or Normal.
+ - **ForegroundColor** (Color)
+
+You can find more information about the calendar cells in this article: [Calendar Cell Types]({% calendar-cell-types %}) 
 
 #### Example ####
 
-This example demonstrates how you can change the style of the cells of type DayName:
+This example demonstrates how you can change the style of the cells of type DayName and a specific date:
 
 	var calendar = new RadCalendar();
 	calendar.SetStyleForCell = this.EvaluateCellStyle;
@@ -100,11 +108,11 @@ Here is the result:
 
 ## Resources ##
 
-Sometimes you will need to set different values of the properties for each platform. This is possible ... 
+Sometimes you will need to set different values of the properties for each platform. This could be achieved with the **CalendarResources** class. 
 
 #### CalendarResources ####
 
-This is a special static class which instance is created depending on the platform that the application runs on, and its members are overridden with platform specific values.
+This is a special class that uses the singleton pattern. It has a single instance, that is created depending on the platform that the application runs on, and its members are overridden with platform specific values.
 
 It exposes the following members:
 
@@ -181,55 +189,39 @@ Now the calendar will use your instance of CalendarResources class.
 
 Similarly to the CalendarResources class, you can create your own custom resources that will define platform specific properties.
 
-    public abstract class CalendarUserResources
+    public abstract class UserResources
     {
-        public static CalendarUserResources Instance;
+        public static UserResources Instance;
     
         public abstract Color Background { get; }
 
-        public abstract Color Foreground { get; }
-
         public abstract double FontSize { get; }
 
-        public abstract void LoadInstance();
+        public abstract Color Foreground { get; }
+
+        public abstract void Load();
     }
 
-In each platform project you have to create a class that inherits from the **CalendarUserResources** class:
+In each platform project you have to create a class that inherits from the **UserResources** class:
 
-    public class CalendarUserPlatformResources : CalendarUserResources
+    public class PlatformUserResources : UserResources
     {
-        private static CalendarUserPlatformResources instance = new CalendarUserPlatformResources();
+        private static PlatformUserResources instance = new PlatformUserResources();
 
-        public override double FontSize
+        static PlatformUserResources()
         {
-            get
-            {
-                return 30;
-            }
+            UserResources.Instance = instance;
         }
 
-        static CalendarUserPlatformResources()
-        {
-            CalendarUserResources.Instance = instance;
-        }
-
-        private CalendarUserPlatformResources()
+        private PlatformUserResources()
         {
         }
 
-        public static new CalendarUserPlatformResources Instance
+        public static new PlatformUserResources Instance
         {
             get
             {
                 return instance;
-            }
-        }
-
-        public override Color Foreground
-        {
-            get
-            {
-                return Color.FromRgb(163, 118, 222);
             }
         }
 
@@ -241,34 +233,48 @@ In each platform project you have to create a class that inherits from the **Cal
             }
         }
 
-        public override void LoadInstance()
-        { 
+		public override double FontSize
+        {
+            get
+            {
+                return 30;
+            }
         }
+        public override Color Foreground
+        {
+            get
+            {
+                return Color.FromRgb(163, 118, 222);
+            }
+        }
+
+        public override void Load()
+        { }
     }
 
-We will return different values in the property getters in each platform:
+We will return different values in the property getters in each platform.
 
-- Android:
- - FontSize: 30
- - Foreground: Color.FromRgb(163, 118, 222)
+- **Android**:
  - Background: Color.FromRgb(255, 243, 125)
-- iOS:
- - FontSize: 15
- - Foreground: Color.FromRgb(255, 235, 171)
+ - Foreground: Color.FromRgb(163, 118, 222)
+ - FontSize: 30
+
+- **iOS**:
  - Background: Color.FromRgb(255, 149, 0)
-- Windows Phone:
- - FontSize: 20
- - Foreground: Color.FromRgb(70, 70, 70)
+ - Foreground: Color.FromRgb(255, 235, 171)
+ - FontSize: 15
+- **Windows Phone**:
  - Background: Color.FromRgb(255, 217, 0)
+ - Foreground: Color.FromRgb(70, 70, 70)
+ - FontSize: 20
 
+Then you have to initialize the instance of the **UserResources** class by calling the **PlatformUserResources.Instance.Load()** method. This should happen in the platform projects before the Forms.Init(...) call.
 
-Then you have to initialize the instance of the **CalendarUserResources** class by calling the **CalendarUserPlatformResources.Instance.LoadInstance()** method. This should happen in the platform projects before the Forms.Init(...) call.
+- **Android**: in the MainActivity.OnCreate(...) method
+- **iOS**: in the AppDelegate.FinishedLaunching(...) method
+- **Windows Phone**: in the MainPage class constructor
 
-- Android: in the MainActivity.OnCreate(...) method
-- iOS: in the AppDelegate.FinishedLaunching(...) method
-- Windows Phone: in the MainPage class constructor
-
-We will use a different method to style the cells:
+We will follow the example for the cell styling (above), but we will use a different method to style the cells:
 
 	private CalendarCellStyle EvaluateCellStyle(CalendarCell cell)
 	{
@@ -276,16 +282,15 @@ We will use a different method to style the cells:
 	    {
 	        return new CalendarCellStyle
 	        {
-	            BackgroundColor = CalendarUserResources.Instance.Background,
-	            ForegroundColor = CalendarUserResources.Instance.Foreground,
-	            FontSize = CalendarUserResources.Instance.FontSize,
+	            BackgroundColor = UserResources.Instance.Background,
+	            ForegroundColor = UserResources.Instance.Foreground,
+	            FontSize = UserResources.Instance.FontSize,
 	            FontWeight = FontWeight.Bold
 	        };
 	    }
 	   
 	    return null;
 	}
- 
 
 Here is the result:
 ![Calendar User Resources](calendar-user-resources.png)

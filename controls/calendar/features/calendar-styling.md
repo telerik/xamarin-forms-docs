@@ -24,9 +24,11 @@ The **DisplayMode** enumeration has the following values:
 
 #### Example ####
 
-	var calendar = new RadCalendar();
-	calendar.WeekNumbersDisplayMode = DisplayMode.Show;
-	calendar.DayNamesDisplayMode = DisplayMode.Show;
+This example demonstrates how you can display the week numbers and hide the day names of the calendar.
+
+    var calendar = new RadCalendar();
+    calendar.WeekNumbersDisplayMode = DisplayMode.Show;
+    calendar.DayNamesDisplayMode = DisplayMode.Hide;
 
 #### Grid Lines ####
 
@@ -38,18 +40,18 @@ The **DisplayMode** enumeration has the following values:
 
 This example demonstrates how you can customize the calendar grid lines.
 
-	var calendar = new RadCalendar();
-	calendar.GridLinesDisplayMode = DisplayMode.Show;
-	calendar.GridLinesColor = Color.FromRgb(229, 173, 241);
-	calendar.GridLinesWidth = 3;
+    var calendar = new RadCalendar();
+    calendar.GridLinesDisplayMode = DisplayMode.Show;
+    calendar.GridLinesColor = Color.FromRgb(229, 173, 241);
+    calendar.GridLinesWidth = 3;
 
 This is the result:
 
-![Grid Lines Example](calendar-grid-lines.png)
+![Grid Lines Example](calendar-grid-lines.png "Grid lines customization example")
 
 ## Cell Styling ##
  
-- **SetStyleForCell** (Func&lt;CalendarCell, CalendarCellStyle&gt;): This property should be assigned to a method that returns a CalendarCellStyle object. The method will be called for every calendar cell and the returned style will be applied. If the return value is null, the default style of the cell will be used.  
+- **SetStyleForCell** (Func&lt;CalendarCell, CalendarCellStyle&gt;): This property should be assigned to a method that returns a CalendarCellStyle object. The method will be called for every calendar cell and the returned style will be applied. If the return value is null, the default style of the cell will be used.
  
 Here are all properties defined in the the **CalendarCellStyle** class:
 
@@ -66,25 +68,25 @@ You can find more information about the calendar cells in this article: [Calenda
 
 This example demonstrates how you can change the style of the cells of type DayName and a specific date:
 
-	var calendar = new RadCalendar();
-	calendar.SetStyleForCell = this.EvaluateCellStyle;
+    var calendar = new RadCalendar();
+    calendar.SetStyleForCell = this.EvaluateCellStyle;
 
 And this is the method:
 
-	private CalendarCellStyle EvaluateCellStyle(CalendarCell cell)
-	{
-	    if (cell.Type == CalendarCellType.DayName)
-	    {
-	        return new CalendarCellStyle
-	        {
-	            BackgroundColor = Color.White,
-	            ForegroundColor = Color.FromRgb(163, 118, 222),
-	            FontSize = 15,                   
-	            FontWeight = FontWeight.Bold
-	        };
-	    }
+    private CalendarCellStyle EvaluateCellStyle(CalendarCell cell)
+    {
+        if (cell.Type == CalendarCellType.DayName)
+        {
+            return new CalendarCellStyle
+            {
+                BackgroundColor = Color.White,
+                ForegroundColor = Color.FromRgb(163, 118, 222),
+                FontSize = 15,                   
+                FontWeight = FontWeight.Bold
+            };
+        }
 
-	
+    
         var dayCell = cell as CalendarDayCell;
         if(dayCell != null && dayCell.Date.Date == new DateTime(2015, 3, 14))
         {
@@ -98,13 +100,13 @@ And this is the method:
                 BorderThickness = 3
             }; 
         }
-	
-	    return null;
-	}
+    
+        return null;
+    }
 
 Here is the result:
 
-![Cell Styling](calendar-cell-styling.png)
+![Cell Styling](calendar-cell-styling.png "Cell styling example")
 
 ## Resources ##
 
@@ -174,18 +176,18 @@ If you wish to change the default values defined by these classes, you can creat
 
 After that you have to load the custom resources in the MainActivity.cs class before the Forms.Init(this, bundle) call:
 
-	protected override void OnCreate(Bundle bundle)
-	{
-	    base.OnCreate(bundle);
-	    CustomAndroidCalendarResources.Instance.Load();
-	    Forms.Init(this, bundle);
-	
-	    this.SetPage(App.GetMainPage());
-	}
+    protected override void OnCreate(Bundle bundle)
+    {
+        base.OnCreate(bundle);
+        CustomAndroidCalendarResources.Instance.Load();
+        Forms.Init(this, bundle);
+    
+        this.SetPage(App.GetMainPage());
+    }
 
 Now the calendar will use your instance of CalendarResources class. 
 
-## User resources ##
+#### User resources ####
 
 Similarly to the CalendarResources class, you can create your own custom resources that will define platform specific properties.
 
@@ -233,7 +235,7 @@ In each platform project you have to create a class that inherits from the **Use
             }
         }
 
-		public override double FontSize
+        public override double FontSize
         {
             get
             {
@@ -276,21 +278,23 @@ Then you have to initialize the instance of the **UserResources** class by calli
 
 We will follow the example for the cell styling (above), but we will use a different method to style the cells:
 
-	private CalendarCellStyle EvaluateCellStyle(CalendarCell cell)
-	{
-	    if (cell.Type == CalendarCellType.DayName)
-	    {
-	        return new CalendarCellStyle
-	        {
-	            BackgroundColor = UserResources.Instance.Background,
-	            ForegroundColor = UserResources.Instance.Foreground,
-	            FontSize = UserResources.Instance.FontSize,
-	            FontWeight = FontWeight.Bold
-	        };
-	    }
-	   
-	    return null;
-	}
+    private CalendarCellStyle EvaluateCellStyle(CalendarCell cell)
+    {
+        if (cell.Type == CalendarCellType.DayName)
+        {
+            return new CalendarCellStyle
+            {
+                BackgroundColor = UserResources.Instance.Background,
+                ForegroundColor = UserResources.Instance.Foreground,
+                FontSize = UserResources.Instance.FontSize,
+                FontWeight = FontWeight.Bold
+            };
+        }
+       
+        return null;
+    }
 
 Here is the result:
-![Calendar User Resources](calendar-user-resources.png)
+
+![Calendar User Resources](calendar-user-resources.png "User resources example")
+

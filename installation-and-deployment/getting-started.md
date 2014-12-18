@@ -30,10 +30,20 @@ Typically, the solution will contain the following projects:
 	 
 ![Solution projects](visual-studio-solution-projects.png "Image")
 
-## Packages ##
+## Getting the Latest Platform SDK Versions ##
 
->The minimum supported Xamarin.Forms version is **1.2.2.6234**.  
->The Android project needs the following nuget package installed: **Xamarin Support Library v7 AppCompat v. 20.0.0.2**
-  
-* On **Visual Studio** you can download and update these packages from the NuGet Package Manager.  
-* On **Xamarin Studio** you can right click on the Packages folder of your projects and select *Update* or *Add Packages...*
+You have to make sure that you have the right version of Xamarin.Forms and all related packages.
+
+- Right-click the newly created solution and choose: Visual Studio: "Manage NuGet packages for Solution".
+- From Updates >> nuget.org install the latest version of the **Xamarin.Forms** package (**v1.2.3.6257**).
+
+>The minimum supported **Xamarin.Forms** version is **1.2.2.6234**.
+
+![Update packages](calendar-getting-started-update-packages.png)
+
+- After you update the Xamarin.Forms to the the required version, you have to update the **Xamarin.Android.Support.v4** to version **20.0.0.4**.
+You have to do this in the Package Manager Console, because you cannot update to a version prior to the latest one through the GUI of NuGet Package Manager. To open the console go to Tools >> NuGet Package Manager >> Package Manager Console. In the console window, select SampleApp.Android project and execute the following command:
+
+`Update-Package Xamarin.Android.Support.v4 -version 20.0.0.4`
+
+![Update packages](calendar-getting-started-pm-console.png)

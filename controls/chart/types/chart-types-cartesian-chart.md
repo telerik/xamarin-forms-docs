@@ -89,10 +89,12 @@ Each of the above series of the same type may be combined in either [stacks or c
  
 	- XAML definition:
 	
-			<telerikChart:RadPieChart.BindingContext>
+			<telerikChart:RadCartesianChart.BindingContext>
 			  <local:ViewModel/>
-			</telerikChart:RadPieChart.BindingContext>
+			</telerikChart:RadCartesianChart.BindingContext>
+	Where `local` is
 
+			xmlns:local="clr-namespace:[The namespace where the ViewModel class is defined];assembly=[The assembly name]"
 	- C# definition:
 		
 			chart.BindingContext = new ViewModel();

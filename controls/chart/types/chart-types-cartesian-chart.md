@@ -8,6 +8,29 @@ slug: chart-types-cartesian-chart
 This chart visualizes its data points using the Cartesian coordinate system. The X and Y axes define how the coordinates of each point in the plot area are calculated and the series type define the way these data points will be visualized.  
 ![Cartesian Chart](cartesian-chart-example.png)
 
+## Properties
+
+The RadCartesianChart control has the following properties:
+
+* **HorizontalAxis**: Gets or sets the visual Axis instance that will be used to plot points along the horizontal (X) axis.
+* **VesrticalAxis**: Gets or sets the visual Axis instance that will be used to plot points along the vertical (Y) axis.
+* **Series**: Gets a collection of all series presented by the chart instance.
+* **Palette**: Gets or sets the **ChartPalette** instance that defines the appearance of the chart.
+* **PaletteName**: Gets or sets the name of the predefined Palette that will be applied to the chart.
+* **SelectionPalette**: Gets or sets the **ChartPalette** instance that defines the appearance of the chart for selected series and/or data points.
+* **SelectionPaletteName**: Gets or sets the name of the predefined SelectionPalette that will be applied to the chart.
+* **Behaviors**: Gets a collection of all enabled behaviors.
+* **Grid**: Gets or sets the CartesianChartGrid instance used to decorate the chart plot area with grid and strip lines.
+* **Annotations**: Gets a collection of all annotations presented by the chart instance.
+* **MaxZoom**: Gets or sets the maximum allowed zoom.
+
+## Methods
+
+> All chart methods should be called after the native element has been loaded.
+
+* **SetPanOffset**(Point offset): Sets an offset to the chart measured from the upper left corner in pixels.
+* **SetZoom**(Size zoom): Sets the zoom of the chart.
+
 ## Supported Axes ##
 
 **RadCartesianChart** needs to have two axes which will be used to calculate correctly the position of each data point. Usually one of the axes will be used to display the category of each data point and the other will represent its value. Here are the supported axes:

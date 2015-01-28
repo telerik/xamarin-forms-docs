@@ -10,6 +10,15 @@ The **RadPieChart**  visualizes its data points using radial coordinate system. 
 
 ![Pie Chart](pie-chart-example.png)
 
+## Properties
+
+* **Series**: Gets a collection of all series presented by the chart instance.
+* **Behaviors**: Gets a collection of all enabled behaviors.
+* **Palette**: Gets or sets the **ChartPalette** instance that defines the appearance of the chart.
+* **PaletteName**: Gets or sets the name of the predefined Palette that will be applied to the chart.
+* **SelectionPalette**: Gets or sets the **ChartPalette** instance that defines the appearance of the chart for selected series and/or data points.
+* **SelectionPaletteName**: Gets or sets the name of the predefined SelectionPalette that will be applied to the chart.
+
 ## Supported Series ##
 
 **RadPieChart** can visualize the following types of series:

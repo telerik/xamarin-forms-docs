@@ -43,29 +43,18 @@ You will have to add the following code to these project files:
 * **Android**: MainActivity.cs
   
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.Android.CalendarRenderer))]
-	
-	You also have to add the following code in the `OnCreate(Bundle bundle)` before the `Forms.Init(this, bundle)` call:
-
-		CalendarCustomResourcesAndroid.Instance.Load();
 
 * **iOS**: AppDelegate.cs
 
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.iOS.CalendarRenderer))]
 
-	You also have to create the following instances in the `FinishedLaunching()` method before the `Forms.Init()` call:
+	You also have to create the following instance in the `FinishedLaunching()` method before the `Forms.Init()` call:
 
 		new Telerik.XamarinForms.InputRenderer.iOS.CalendarRenderer();
-		CalendarCustomResourcesIOS.Instance.Load();
-
-
 
 * **WinPhone**: MainPage.xaml.cs
     
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.WinPhone.CalendarRenderer))]
-
-	You also have to create the following instances in the `MainPage()` constructor before the `Forms.Init()` call:
-
-		CalendarCustomResourcesWP.Instance.Load();
 
 ##Add Calendar Control to Your Project##
 

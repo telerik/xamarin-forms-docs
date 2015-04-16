@@ -80,3 +80,7 @@ The [chart palettes]({% slug chart-how-to-create-custom-palette %}) are a set of
 ## Labels ##
 
 Chart can display different labels for the series and axes that are displayed. The labels can be customized according to your preferences.
+
+## Platform-Specific Features ##
+
+You can [customize the control]({% chart-how-to-create-custom-renderer %}) for a specific platform by creating an custom renderer.

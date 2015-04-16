@@ -45,7 +45,7 @@ navigation:
     controls/calendar/features:
         title: "Features"
         position: 4
-	controls/calendar/howto:
+    controls/calendar/howto:
         title: "How To"
         position: 5
 

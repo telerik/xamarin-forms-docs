@@ -28,7 +28,9 @@ You can customize the labels orientation and style with the following properties
 	- **Rotate**: Arranges the axis labels so that they are rotated some degrees around their top left corner.
 - **LabelFontSize**: Specifies the font size of the labels.
 - **LabelTextColor**: Specifies the color of the labels.
-- **LabelFormat**: Allows axis labels to be formatted in a custom way. The String.Format method is internally used, so the value should follow the syntax, expected by the String.Format method.
+- **LabelFormat**: Allows axis labels to be formatted in a custom way.
+  
+		axis.LabelFormat = Xamarin.Forms.Device.OnPlatform("%.2f","%.2f", "N2");
 
 Examlpe:
  

@@ -45,6 +45,9 @@ navigation:
     controls/calendar/features:
         title: "Features"
         position: 4
+    controls/calendar/how-to:
+        title: "How To"
+        position: 5
 
 ## The application virtual path
 baseurl: "/devtools/xamarin"

@@ -13,7 +13,7 @@ navigation:
         title: "Controls"
         position: 3
 ## End Root Level
-## Controls
+## Controls Sub-Folders
     ## Calendar
     controls/calendar:
         title: "Calendar"
@@ -61,13 +61,13 @@ navigation:
         title: "How To"
         position: 10
         ## End Chart Sub-Folders
+    ## End Chart
     ## ListView
     controls/listview:
         title: "ListView"
         position: 3
     ## End ListView
-## End Chart
-## End Controls
+## End Controls Sub-Folders
 
 ## The application virtual path
 baseurl: "/devtools/xamarin"

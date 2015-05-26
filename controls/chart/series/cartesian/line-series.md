@@ -93,11 +93,11 @@ Here is the sample data:
 
 And here is the result:
 
-![Basic LineSeries](line-series-images/cartesian-line-series-basic-example.png)
+![Basic LineSeries](images/cartesian-line-series-basic-example.png)
 
 
 Here we make some customizations:
 
 	var series = new LineSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5 };
 
-![Customized LineSeries](line-series-images/cartesian-line-series-customization-example.png)
+![Customized LineSeries](images/cartesian-line-series-customization-example.png)

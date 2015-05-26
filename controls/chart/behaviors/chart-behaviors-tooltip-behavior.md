@@ -44,4 +44,4 @@ slug: chart-behaviors-tooltip
 
 Here is how the tool-tip looks:
 
-![Tooltip Behavior](chart-behaviors-tooltip-behavior.png)
+![Tooltip Behavior](images/chart-behaviors-tooltip-behavior.png)

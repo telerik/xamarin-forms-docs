@@ -88,4 +88,4 @@ In the code behind:
 	this.chart.Annotations.Add(lineAnnotation);
 	this.chart.Annotations.Add(bandAnnotation);
 
-![Annotations](chart-annotations.png)
+![Annotations](images/chart-annotations.png)

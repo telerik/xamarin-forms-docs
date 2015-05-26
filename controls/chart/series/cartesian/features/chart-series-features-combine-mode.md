@@ -33,11 +33,11 @@ Here is an example that demonstrates how you can create BarSeries that are combi
 	}
 Here is the result:  
 
-![Stack CombineMode](chart-series-features-combine-mode-stack.png)
+![Stack CombineMode](images/chart-series-features-combine-mode-stack.png)
 
 
 Here is the same example with the other combine modes:
 ##### Stack100 #####
-![Stack CombineMode](chart-series-features-combine-mode-stack100.png)
+![Stack CombineMode](images/chart-series-features-combine-mode-stack100.png)
 ##### Cluster #####
-![Cluster CombineMode](chart-series-features-combine-mode-cluster.png)
+![Cluster CombineMode](images/chart-series-features-combine-mode-cluster.png)

@@ -13,7 +13,7 @@ The data visualization in RadChart is done by a hierarchy of classes that inheri
 
 Concrete series types are available for specific charts. For example, there is a set of CartesianSeries applicable in the context of a RadCartesianChart. Here is the hierarchy of all series:
 
-![Series Class Diagram](chart-series-class-diagram.png)
+![Series Class Diagram](images/chart-series-class-diagram.png)
 
 Here are listed all supported series grouped by the chart types that can use them:
 

@@ -47,7 +47,7 @@ This example demonstrates how you can customize the calendar grid lines.
 
 This is the result:
 
-![Grid Lines Example](calendar-grid-lines.png "Grid lines customization example")
+![Grid Lines Example](images/calendar-grid-lines.png "Grid lines customization example")
 
 ## Cell Styling ##
  
@@ -106,7 +106,7 @@ And this is the method:
 
 Here is the result:
 
-![Cell Styling](calendar-cell-styling.png "Cell styling example")
+![Cell Styling](images/calendar-cell-styling.png "Cell styling example")
 
 ## Resources ##
 
@@ -296,5 +296,5 @@ We will follow the example for the cell styling (above), but we will use a diffe
 
 Here is the result:
 
-![Calendar User Resources](calendar-user-resources.png "User resources example")
+![Calendar User Resources](images/calendar-user-resources.png "User resources example")
 

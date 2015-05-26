@@ -8,7 +8,7 @@ slug: axes-overview
 
 **RadCartesianChart** plots data points in a coordinate system defined by its two axes. Instead of having one axis type that does hundreds of things, we have a hierarchy of axes where each concrete axis type expose particular functionality.
 
-![Axes Class Diagram](axes-class-diagram.png)
+![Axes Class Diagram](images/axes-class-diagram.png)
 
 The predefined axis types are:
 

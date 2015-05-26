@@ -41,4 +41,4 @@ where **Appointment** class implements **IAppointment** interface:
 		public string Title { get; set; }
 	}
 
-![Appointments](calendar-appointments.png)
+![Appointments](images/calendar-appointments.png)

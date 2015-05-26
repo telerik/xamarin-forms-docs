@@ -88,4 +88,4 @@ Here is the sample data:
 
 And here is the result:
 
-![Basic BarSeries](bar-series-images/cartesian-bar-series-basic-example.png)
+![Basic BarSeries](images/cartesian-bar-series-basic-example.png)

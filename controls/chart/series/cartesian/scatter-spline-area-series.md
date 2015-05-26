@@ -102,7 +102,7 @@ Here is the sample data:
 
 Here is the result:
 
-![Basic ScatterSplineAreaSeries](scatter-spline-area-series-images/cartesian-scatter-spline-area-series-basic-example.png)
+![Basic ScatterSplineAreaSeries](images/cartesian-scatter-spline-area-series-basic-example.png)
 
 
 Here we make some customization:

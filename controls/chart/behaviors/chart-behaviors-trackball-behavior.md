@@ -42,4 +42,4 @@ slug: chart-behaviors-trackball
 
 Here is how the trackball looks:
 
-![Tooltip Behavior](chart-behaviors-trackball-behavior.png)
+![Tooltip Behavior](images/chart-behaviors-trackball-behavior.png)

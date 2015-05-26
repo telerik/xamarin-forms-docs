@@ -7,7 +7,7 @@ slug: calendar-cell-types
 
 # Calendar Cell Types #
 
-![Calendar Cell Types](calendar-cell-types-diagram.png "Calendar Cell Types")
+![Calendar Cell Types](images/calendar-cell-types-diagram.png "Calendar Cell Types")
 
 ## CalendarCell ##
 

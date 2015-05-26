@@ -36,7 +36,7 @@ First you have to create a new Xamarin.Forms project. You can see how in the [Ge
 	- Telerik.XamarinForms.ChartRenderer.WinPhone.dll
 	- Telerik.XamarinForms.Common.dll
 		
- 		![Add Chart References](chart-getting-started-references.png)
+ 		![Add Chart References](images/chart-getting-started-references.png)
 
 You will also have to add the following code to these project files:
 
@@ -179,4 +179,4 @@ And here is the sample data used as binding context:
 	        }
 	    }
 Here is the result:  
-![Basic RadCartesianChart Example](chart-getting-started-example.png "Basic RadCartesianChart")
+![Basic RadCartesianChart Example](images/chart-getting-started-example.png "Basic RadCartesianChart")

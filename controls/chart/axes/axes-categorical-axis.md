@@ -47,4 +47,4 @@ Defines the distance (in logical units [0,1]) between two adjacent categories. D
 	  </telerikChart:RadCartesianChart.Series>
     </telerikChart:RadCartesianChart>
 
-![CategoricalAxis](axes-categorical-axis-example.png)
+![CategoricalAxis](images/axes-categorical-axis-example.png)

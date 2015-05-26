@@ -9,7 +9,7 @@ slug: calendar-visual-structure
 
 Here are described all visual elements and terms used in a standard RadCalendar control.
 
-![Calendar Visual Structure](calendar-visual-structure.png "Visual elements of RadCalendar control")
+![Calendar Visual Structure](images/calendar-visual-structure.png "Visual elements of RadCalendar control")
 
 ## Legend ##
 

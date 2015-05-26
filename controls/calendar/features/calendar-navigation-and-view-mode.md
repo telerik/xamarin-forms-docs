@@ -52,7 +52,7 @@ Or subscribe to the **DisplayDateChanged** event:
 
  - **ViewMode** (CalendarViewMode): Gets the current view mode of the calendar (use the TryChangeViewMode method to set the current view).  
 Here are listed the supported view modes for each platform:
-![Calendar View Modes](calendar-view-mode-support.png "Supported view modes")
+![Calendar View Modes](images/calendar-view-mode-support.png "Supported view modes")
 
 ### Events: ###
 

@@ -79,4 +79,4 @@ And the data class:
 
 Here is the result:
 
-![Custom Palette](chart-how-to-create-custom-palette.png)
+![Custom Palette](images/chart-how-to-create-custom-palette.png)

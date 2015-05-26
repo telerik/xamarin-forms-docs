@@ -36,7 +36,7 @@ First you have to create a new Xamarin.Forms project. You can see how in the [Ge
 	- Telerik.XamarinForms.InputRenderer.WinPhone.dll
 	- Telerik.XamarinForms.Common.dll
 
-![Add Calendar References](calendar-getting-started-references.png)
+![Add Calendar References](images/calendar-getting-started-references.png)
 
 You will have to add the following code to these project files:
 
@@ -91,4 +91,4 @@ Alternatively, you can add the calendar in code behind:
 		}
 
 Here is the result:  
-![Basic RadCalendar Example](calendar-getting-started.png "Basic RadCalendar")
+![Basic RadCalendar Example](images/calendar-getting-started.png "Basic RadCalendar")

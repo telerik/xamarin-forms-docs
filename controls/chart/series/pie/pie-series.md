@@ -51,4 +51,4 @@ Where
 
 Here is the result:
 
-![Basic PieSeries](pie-series-basic-example.png)
+![Basic PieSeries](images/pie-series-basic-example.png)

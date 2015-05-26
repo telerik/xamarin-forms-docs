@@ -97,7 +97,7 @@ Here is the sample data:
 	    }
 	}
 
-![Basic ScatterLineSeries](scatter-line-series-images/cartesian-scatter-line-series-basic-example.png)
+![Basic ScatterLineSeries](images/cartesian-scatter-line-series-basic-example.png)
 
 
 Here we make some customization:

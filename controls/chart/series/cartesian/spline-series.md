@@ -93,10 +93,10 @@ Here is the sample data:
 
 And here is the result:
 
-![Basic SplineSeries](spline-series-images/cartesian-spline-series-basic-example.png)
+![Basic SplineSeries](images/cartesian-spline-series-basic-example.png)
 
 Here we make some customization:
 
 	var series = new SplineSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5 };
 
-![Customized SplineSeries](spline-series-images/cartesian-spline-series-customization-example.png)
+![Customized SplineSeries](images/cartesian-spline-series-customization-example.png)

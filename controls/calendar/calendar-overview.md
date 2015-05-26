@@ -9,7 +9,7 @@ slug: calendar-overview
 
 The **RadCalendar for Xamarin.Forms** allows you to easily implement various calendar scenarios in your apps built with Xamarin.Forms. The control capitalizes on all the innate benefits of the native UI but exposes all objects and properties in C#, allowing for no-compromise customization and flexibility.
 
-![Calendar Overview](calendar-overview.png "Calendar Overview")
+![Calendar Overview](images/calendar-overview.png "Calendar Overview")
 
 ## Features ##
 

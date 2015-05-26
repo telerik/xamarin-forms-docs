@@ -104,7 +104,7 @@ Here is the sample data:
 
 Here is the result:
 	
-![Basic ScatterSplineSeries](scatter-spline-series-images/cartesian-scatter-spline-series-basic-example.png)
+![Basic ScatterSplineSeries](images/cartesian-scatter-spline-series-basic-example.png)
 
 Here we make some customization:
 

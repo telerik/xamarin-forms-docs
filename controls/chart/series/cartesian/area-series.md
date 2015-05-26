@@ -92,11 +92,11 @@ Here is the sample data:
 
 And here is the result:
 
-![Basic AreaSeries](area-series-images/cartesian-area-series-basic-example.png)
+![Basic AreaSeries](images/cartesian-area-series-basic-example.png)
 
 
 Here we have some customizations:
 
 	var series = new AreaSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5, Fill = new Color(0.8, 0.8, 1) };
 
-![Customized AreaSeries](area-series-images/cartesian-area-series-customization-example.png)
+![Customized AreaSeries](images/cartesian-area-series-customization-example.png)

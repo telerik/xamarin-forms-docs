@@ -100,4 +100,4 @@ Here is the sample data:
 	}
 And here is the result:
 
-![Basic ScatterPointSeries](scatter-point-series-images/cartesian-scatter-point-series-basic-example.png)
+![Basic ScatterPointSeries](images/cartesian-scatter-point-series-basic-example.png)

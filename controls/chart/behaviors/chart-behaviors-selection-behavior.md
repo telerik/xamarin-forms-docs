@@ -71,4 +71,4 @@ Here's the event handler in the code behind:
 
 Here is how a selected bar series data point looks like:
 
-![Selection Behavior](chart-behaviors-selection-behavior.png)
+![Selection Behavior](images/chart-behaviors-selection-behavior.png)

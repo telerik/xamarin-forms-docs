@@ -7,7 +7,7 @@ slug: chart-series-orientation
 
 The orientation of the series depends on which chart axis is horizontal and which one is vertical. Here is an example where the CategoricalAxis is vertical and the BarSeries are displayed horizontally.
 
-![Horizontal BarSeries](chart-series-features-horizontal-series.png)
+![Horizontal BarSeries](images/chart-series-features-horizontal-series.png)
 
 	var chart = new RadCartesianChart
 	{

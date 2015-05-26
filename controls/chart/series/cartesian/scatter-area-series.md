@@ -103,7 +103,7 @@ Here is the sample data:
 
 
 
-![Basic ScatterAreaSeries](scatter-area-series-images/cartesian-scatter-area-series-basic-example.png)
+![Basic ScatterAreaSeries](images/cartesian-scatter-area-series-basic-example.png)
 
 Here we make some customization:
 

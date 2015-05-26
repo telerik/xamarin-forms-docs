@@ -9,7 +9,7 @@ slug: chart-visual-structure
 
 Here are described all visual elements and terms used in a standard RadChart control.
 
-![Chart Visual Structure](chart-visual-structure.png "Visual elements of RadChart control")
+![Chart Visual Structure](images/chart-visual-structure.png "Visual elements of RadChart control")
 
 ## Legend ##
 

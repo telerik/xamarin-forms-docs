@@ -62,4 +62,4 @@ In the code behind:
 
 Here is the result:
 
-![Chart Grid](chart-grid-example.png)
+![Chart Grid](images/chart-grid-example.png)

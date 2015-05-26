@@ -68,6 +68,7 @@ You can use the commands described below to install the required version:
 
 	Install-Package Xamarin.Android.Support.v7.AppCompat -Version 21.0.3.0
 and
+
 	Install-Package Xamarin.Android.Support.v7.RecyclerView -Version 21.0.3.0
 	
 After successful installation of those packages the application should be set up and ready to build and deploy.

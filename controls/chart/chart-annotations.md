@@ -1,6 +1,6 @@
 ---
 title: Annotations
-position: 8
+position: 4
 slug: chart-annotations
 ---
 

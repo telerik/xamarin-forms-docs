@@ -1,7 +1,7 @@
 ---
 title: CartesianChartGrid
 slug: cartesian-chart-grid
-position: 9
+position: 5
 ---
 
 # CartesianChartGrid #

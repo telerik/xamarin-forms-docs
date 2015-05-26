@@ -5,52 +5,69 @@ url: "http://docs.telerik.com/devtools/xamarin"
 exclude: [README.md,Gemfile,Gemfile.lock]
 navigation:
 ## List your directory names and order here, like this:
-
+## Root Level
     installation-and-deployment:
         title: "Installation and Deployment"
         position: 2
     controls:
         title: "Controls"
         position: 3
-    controls/chart:
-        title: "Chart"
-        position: 4
+## End Root Level
+## Controls
+    ## Calendar
     controls/calendar:
         title: "Calendar"
+        position: 1
+        ## Calendar Sub-Folders
+    controls/calendar/features:
+        title: "Features"
         position: 5
-    controls/listview:
-        title: "ListView"
+    controls/calendar/how-to:
+        title: "How To"
         position: 6
-    controls/chart/types:
-        title: "Types"
-        position: 4
+        ## End Calendar Sub-Folders
+    ## End Calendar
+    ## Chart
+    controls/chart:
+        title: "Chart"
+        position: 2
+        ## Chart Sub-Folders
     controls/chart/axes:
         title: "Axes"
-        position: 5
-    controls/chart/series:
-        title: "Series"
         position: 6
     controls/chart/behaviors:
         title: "Behaviors"
         position: 7
-    controls/chart/how-to:
-        title: "How To"
-        position: 10
+    controls/chart/series:
+        title: "Series"
+        position: 8
+            ## Chart Series Sub-Folders
     controls/chart/series/cartesian:
         title: "CartesianSeries"
         position: 2
-    controls/chart/series/pie:
-        title: "PieSeries"
-        position: 3
+                ## Chart Series CartesianSeries Sub-Folders
     controls/chart/series/cartesian/features:
         title: "Features"
         position: 11
-    controls/calendar/features:
-        title: "Features"
-        position: 4
-    controls/calendar/how-to:
+                ## End Chart Series CartesianSeries Sub-Folders
+    controls/chart/series/pie:
+        title: "PieSeries"
+        position: 3
+            ## End Chart Series Sub-Folders
+    controls/chart/types:
+        title: "Types"
+        position: 9
+    controls/chart/how-to:
         title: "How To"
-        position: 5
+        position: 10
+        ## End Chart Sub-Folders
+    ## ListView
+    controls/listview:
+        title: "ListView"
+        position: 3
+    ## End ListView
+## End Chart
+## End Controls
 
 ## The application virtual path
 baseurl: "/devtools/xamarin"

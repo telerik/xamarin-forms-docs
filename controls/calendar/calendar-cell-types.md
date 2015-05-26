@@ -1,7 +1,7 @@
 ---
 title: Calendar Cell Types
 page_title: Calendar Cell Types
-position: 6
+position: 4
 slug: calendar-cell-types
 ---
 

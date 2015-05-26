@@ -18,6 +18,9 @@ navigation:
     controls/calendar:
         title: "Calendar"
         position: 5
+    controls/listview:
+        title: "ListView"
+        position: 6
     controls/chart/types:
         title: "Types"
         position: 4

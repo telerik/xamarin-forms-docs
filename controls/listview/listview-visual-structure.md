@@ -5,5 +5,3 @@ position: 2
 slug: listview-visual-structure
 published: false
 ---
-
-# Visual Structure

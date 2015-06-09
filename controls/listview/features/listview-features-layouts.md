@@ -15,10 +15,20 @@ Linear layout is the default layout of the control. It can be explicitly set by 
 
 Here is how the linear layouts look like:
 
+Figure 1: Linear Vertical Layout in Android
+
 ![Linear Vertical](images/listview-features-layout-android.png)
+
+Figure 2: Linear Vertical Layout in iOS
+
 ![Linear Vertical](images/listview-features-layout-ios.png)
 
+Figure 3: Linear Horizontal Layout in Android
+
 ![Linear Horizontal](images/listview-features-horizontal-layout-android.png)
+
+Figure 4: Linear Horizontal Layout in iOS
+
 ![Linear Horizontal](images/listview-features-horizontal-layout-ios.png)
 
 ## Grid Layout
@@ -27,8 +37,18 @@ The Grid Layout is an alternative layout provided by the **RadListView** out of 
 
 Here is how the Grid Layout looks like:
 
+Figure 5: Grid Vertical Layout in Android
+
 ![Grid Vertical](images/listview-features-grid-layout-android.png)
+
+Figure 6: Grid Vertical Layout in iOS
+
 ![Grid Vertical](images/listview-features-grid-layout-ios.png)
 
+Figure 7: Grid Horizontal Layout in Android
+
 ![Grid Horizontal](images/listview-features-horizontal-grid-layout-android.png)
+
+Figure 8: Grid Horizontal Layout in iOS
+
 ![Grid Horizontal](images/listview-features-horizontal-grid-layout-ios.png)

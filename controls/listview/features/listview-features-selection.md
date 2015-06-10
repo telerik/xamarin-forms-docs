@@ -17,11 +17,11 @@ The **RadListView** component exposes selection feature. It allows users to sele
 
 This is the default selection mode. It allows users to select only one item. This is how it looks.
 
-Figure 1: ListView SingleSelection in Android
+Figure 1: Single Selection in Android
 
 ![ListView SingleSelection Android](images/listview-features-selection-single-android.png)
 
-Figure 2: ListView SingleSelection in iOS
+Figure 2: Single Selection in iOS
 
 ![ListView SingleSelection iOS](images/listview-features-selection-single-ios.png)
 
@@ -29,10 +29,10 @@ Figure 2: ListView SingleSelection in iOS
 
 To enable it the **SelectionMode** property should be set to **SelectionMode.Multiple**. This mode allows users to select more than one item. Here is how it looks.
 
-Figure 1: ListView MultipleSelection in Android
+Figure 3: Multiple Selection in Android
 
 ![ListView MultipleSelection Android](images/listview-features-selection-multiple-android.png)
 
-Figure 1: ListView MultipleSelection in iOS
+Figure 4: Multiple Selection in iOS
 
 ![ListView MultipleSelection iOS](images/listview-features-selection-multiple-ios.png)

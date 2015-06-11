@@ -7,7 +7,16 @@ slug: listview-features-layouts
 
 # Layouts
 
-The **RadListView** component allows users to set either linear or grid layout definition. This can be done by changing the default setting of the **RadListView.LayoutDefinition**. It is of type ListViewLayoutBase and gets or sets the layout of the control. 
+The **RadListView** component allows users to set either linear or grid layout definition. This can be done by changing the default setting of the **RadListView.LayoutDefinition**. This property is of type ListViewLayoutBase and gets or sets the layout of the control. 
+
+## Common properties
+
+Both layouts share common functionality in addition to the arrangement of the items. They allow users to control the size of the items and the spacing in between. Both layouts expose the following properties:
+
+1. **VerticalItemSpacing** - a property of type double which gets or sets the vertical space between two items.
+2. **HorizontalItemSpacing** - a property of type double which gets or sets the horizontal space between two items.
+3. **ItemLength** - a property of type double which gets or sets the width or height (depending on the layout orientation) of the items. Its default value is -1 which means that the items will be sized according to the targeted platform.
+4.
 
 ## Linear Layout
 

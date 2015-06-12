@@ -19,6 +19,7 @@ Next you have to add reference to the following assemblies:
 
 	- Telerik.XamarinForms.DataControls.dll
 	- Telerik.XamarinForms.Common.dll
+
 * **Android**
 
 	- Telerik.Xamarin.Android.Common.dll
@@ -28,12 +29,14 @@ Next you have to add reference to the following assemblies:
 	- Telerik.XamarinForms.Common.dll
 	- Telerik.XamarinForms.DataControls.dll
 	- Telerik.XamarinForms.DataControlsRenderer.Android.dll
+
 * **iOS**
 
 	- Telerik.Xamarin.iOS.dll
 	- Telerik.XamarinForms.Common.dll
 	- Telerik.XamarinForms.DataControls.dll
 	- Telerik.XamarinForms.DataControlsRenderer.iOS.dll
+
 * **WinPhone**
 	
 >Not available
@@ -72,3 +75,31 @@ and
 	Install-Package Xamarin.Android.Support.v7.RecyclerView -Version 21.0.3.0
 	
 After successful installation of those packages the application should be set up and ready to build and deploy.
+
+## Example
+
+Users can visualize the **RadListView** using XAML code like this:
+
+	<telerik:RadListView x:Name="LV"/> 
+
+where the **telerik** namespace is defined like this:
+
+	xmlns:telerik="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+The next step is to add the items that will be visualized. This can be done in code like this:
+
+	InitializeComponent();
+	this.LV.ItemsSource = new List<string>() { "A", "B", "C" };
+An alternative way to visualize the component is to create it entirely in code. This can be done like this:
+
+	var listView = new RadListView();
+	listView.ItemsSource = new List<string>() { "A", "B", "C" };
+	this.Content = listView;
+The result will be similar to the following pictures.
+
+Figure 1: RadListView in Android
+
+![RadListView in Android](images/listview-android.png)
+
+Figure 2: RadListView in iOS
+
+![RadListView in Android](images/listview-ios.png)

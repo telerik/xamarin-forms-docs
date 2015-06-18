@@ -9,13 +9,9 @@ slug: listview-features-cell-swipe
 
 The cell swipe feature allows end-users to use swipe gesture on cells. When the user swipes, the content view moves revealing a designated swipe background view where you can place custom views ready for interaction e.g. buttons, images etc.
 
-Figure 1: Swipe in iOS
+Figure 1: Cell Swipe
 
-![iOS Swipe](images/listview-features-cell-swipe-ios.png)
-
-Figure 2: Swipe in Android
-
-![Android Swipe](images/listview-features-cell-swipe-android.png)
+![CellSwipe](images/listview-features-cell-swipe.png)
 
 This feature consists of the following properties:
 

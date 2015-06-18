@@ -98,8 +98,4 @@ The result will be similar to the following pictures.
 
 Figure 1: RadListView in Android
 
-![RadListView in Android](images/listview-android.png)
-
-Figure 2: RadListView in iOS
-
-![RadListView in Android](images/listview-ios.png)
+![RadListView](images/listview.png)

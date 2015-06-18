@@ -11,4 +11,4 @@ slug: listview-overview
 
 Figure 1: Overview
 
-![ListView Overview](images/listview-overview.png)
+![ListView Overview](images/listview.png)

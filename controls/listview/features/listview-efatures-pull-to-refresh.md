@@ -17,10 +17,6 @@ This feature consists of:
 
 Here is how the loading process looks like:
 
-Figure 1: Pull to Refresh in iOS
+Figure 1: Pull to Refresh
 
-![Pull to Refresh in iOS](images/listview-features-pull-to-refresh-ios.png)
-
-Figure 2: Pull to Refresh in Android
-
-![Pull to Refresh in Android](images/listview-features-pull-to-refresh-android.png)
+![PullToRefresh](images/listview-features-pull-to-refresh.png)

@@ -32,6 +32,7 @@ Next, you have to add reference to the following assemblies:
 	- Telerik.XamarinForms.DataControls.dll
 	- Telerik.XamarinForms.DataControlsRenderer.iOS.dll
 * **WinPhone**
+
 	> **RadListView** is not available for **Windows Phone**.
 
 You will also have to add the following code to these project files:

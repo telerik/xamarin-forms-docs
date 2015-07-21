@@ -21,9 +21,11 @@ For your convenience we have created a special **SideDrawerUserCommand** class t
 
 # Examples
 
+The following examples will demonstrate how to use the RadSideDrawer commands in different scenarios.
+
 ## Inherit from the SideDrawerCommandBase class
 
-You can create a class deriving from the **SideDrawerCommandBase** class and set its **Id** property to the respective command. Furthermore, you can override its **CanExecute()** and **Execute()** methods. A sample implementation is shown below:
+You can create a class deriving from the **SideDrawerCommandBase** class and set its **Id** property to the desired command trigger event. Furthermore, you can override its **CanExecute()** and **Execute()** methods. A sample implementation is shown below:
 
 	public class CustomUserCommand : SideDrawerCommandBase
 	{

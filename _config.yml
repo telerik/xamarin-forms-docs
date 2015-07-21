@@ -72,6 +72,16 @@ navigation:
         position: 4
         ## End ListView Sub-Folders
     ## End ListView
+    ## SideDrawer
+    controls/sidedrawer:
+        title: "SideDrawer"
+        position: 4
+        ## SideDrawer Sub-Folders
+    controls/sidedrawer/features:
+        title: "Features"
+        position: 5
+        ## End SideDrawer Sub-Folders
+    ## End SideDrawer
 ## End Controls Sub-Folders
 
 ## The application virtual path

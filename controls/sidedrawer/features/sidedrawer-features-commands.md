@@ -5,7 +5,7 @@ position: 1
 slug: sidedrawer-features-commands
 ---
 
-# Commands
+# Overview
 
 The **RadSideDrawer** control exposes a **Commands** collection that allows you to
 register custom commands with each control’s instance. The commands allow the user to easily change and extend the control default behavior.
@@ -19,9 +19,9 @@ Each element in the **Commands** collection should inherit from the **SideDrawer
 
 For your convenience we have created a special **SideDrawerUserCommand** class that also exposes a **Command** dependency property which can be set to an instance of type that implements the **ICommand** interface.
 
-## Examples
+# Examples
 
-### Inherit from the SideDrawerCommandBase class
+## Inherit from the SideDrawerCommandBase class
 
 You can create a class deriving from the **SideDrawerCommandBase** class and set its **Id** property to the respective command. Furthermore, you can override its **CanExecute()** and **Execute()** methods. A sample implementation is shown below:
 
@@ -58,7 +58,7 @@ Once such command is created it can be used in XAML like this:
 
 Where the *local* alias points to the namespace where the **CustomUserCommand** is defined.
 
-### Using the SideDrawerUserCommand class
+## Using the SideDrawerUserCommand class
 
 You can define a class that implements the **ICommand** interface:
 
@@ -88,7 +88,7 @@ After thet you can use this class with the **SideDrawerUserCommand** in XAML lik
 	  </primitives:RadSideDrawer.Commands>
 	</primitives:RadSideDrawer>
 
-### Binding to a view model
+## Binding to a view model
 
 You can also use the **SideDrawerUserCommand** to bind its **Command** property to a view model.
 

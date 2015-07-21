@@ -79,4 +79,3 @@ Where the *CustomCommand* class is defined like this:
 	    {
 	    }
 	}
-

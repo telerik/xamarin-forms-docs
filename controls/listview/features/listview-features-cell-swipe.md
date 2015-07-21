@@ -15,10 +15,10 @@ Figure 1: Cell Swipe
 
 This feature consists of the following properties:
 
-1. **IsItemSwipeEnabled** - of type bool which turns on or off the feature. It's default value is false.
-2. **SwipeThreshhold** - of type double which gets or sets the length (in pixels) of the swipe gesture which is required to trigger the feature. Any shorter swipe will not be respected. It's default value is 0.
-3. **SwipeOffset** - of type Thickness which gets or sets how much the swiped cell will be moved to the side and stick there. It's default value is 100.
-4. **ItemSwipeContentTemplate** - of type DataTemplate which gets or sets the content that will be visualized when users swipe a cell.
+- **IsItemSwipeEnabled**: of type bool which turns on or off the feature. It's default value is false.
+- **SwipeThreshhold**: of type double which gets or sets the length (in pixels) of the swipe gesture which is required to trigger the feature. Any shorter swipe will not be respected. It's default value is 0.
+- **SwipeOffset**: of type Thickness which gets or sets how much the swiped cell will be moved to the side and stick there. It's default value is 100.
+- **ItemSwipeContentTemplate**: of type DataTemplate which gets or sets the content that will be visualized when users swipe a cell.
 
 To enable this feature in a project the **IsItemSwipeEnabled** property of the RadListView should be set to **True**. 
 

@@ -4,10 +4,11 @@ page_title: Getting Started
 position: 3
 slug: sidedrawer-getting-started
 ---
-# Introduction #
-This article will guide users through the steps that needs to be taken in order to use the RadSideDrawer in a project.
+# Introduction
 
-# Getting Started #
+This article will guide users through the steps that have to be taken in order to use the RadSideDrawer in a project.
+
+# Getting Started
 
 Once users create the blank **Xamarin.Forms** solution, they need to add references to the following binaries in order to include the **RadSideDrawer** into their project:
 
@@ -31,19 +32,19 @@ Once users create the blank **Xamarin.Forms** solution, they need to add referen
 
 When the references are added, you can proceed with defining the component:
 
-	<primitives:RadSideDrawer x:Name="drawer">
+	<primitives:RadSideDrawer DrawerLength="200">
 	  <primitives:RadSideDrawer.MainContent>
 	    <StackLayout>
-	      <Button Text="Check" VerticalOptions="Start" BackgroundColor="Purple"/>
-	      <Button Text="Set" VerticalOptions="Start" BackgroundColor="Green"/>
-	      <Button Text="Delete" VerticalOptions="Start" BackgroundColor="Black"/>
+	      <Button Text="Check"/>
+	      <Button Text="Set"/>
+	      <Button Text="Delete"/>
 	    </StackLayout>
 	  </primitives:RadSideDrawer.MainContent>
 	  <primitives:RadSideDrawer.DrawerContent>
-	    <StackLayout BackgroundColor="#4422ddee">
+	    <StackLayout BackgroundColor="Silver">
+	      <Button Text="Mail"/>
 	      <Button Text="Navigation"/>
 	      <Button Text="Settings"/>
-	      <Button Text="e-Mail"/>
 	    </StackLayout>
 	  </primitives:RadSideDrawer.DrawerContent>
 	</primitives:RadSideDrawer>

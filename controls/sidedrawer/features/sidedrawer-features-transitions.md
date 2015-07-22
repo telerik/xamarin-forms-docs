@@ -28,7 +28,7 @@ Lets break down these steps and see the specifics in each of the platforms.
 
 
 
-### Create Custom Transition in Android
+## Create Custom Transition in Android
 
 Creating custom renderer is simple. Just create a class and derive it from the **SideDrawerRenderer**. Furthermore, customers should override the **CreateFadeLayer()** and **CreateCustomTransition()** methods. Those methods are the necessary extensibility points for such customization. Here is a sample implementation of a custom renderer:
 
@@ -50,11 +50,11 @@ Creating custom renderer is simple. Just create a class and derive it from the *
 	    }
 	}
 
->note: BlurFadeLayer requires reference to Xamarin.Android.Support.v8.RenderScript
+>**BlurFadeLayer** requires reference to **Xamarin.Android.Support.v8.RenderScript**
 
 
 
-Once users have this class created, they need to register the renderer. This can be done in the MainActivity.cs file of the Android project and use the following code:
+Once users have this class created, they need to register the renderer. This can be done in the **MainActivity.cs** file of the Android project and use the following code:
 
 
 
@@ -64,7 +64,7 @@ Once users have this class created, they need to register the renderer. This can
 
 This must replace the registration of our **SideDrawerRenderer**
 
-### Create Custom Transition in iOS
+## Create Custom Transition in iOS
 
 In iOS the creation of custom animation effect is very similar to the process in Android. The steps are the same but are executed in a bit different way.
 

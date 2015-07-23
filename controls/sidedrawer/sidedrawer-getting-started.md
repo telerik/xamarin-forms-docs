@@ -55,4 +55,10 @@ Where the *primitives* namespace is defined like this:
 
 	xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
 
-![SideDrawer example](images/sidedrawer-getting-started.png)
+### Drawer Closed
+
+![SideDrawer example](images/sidedrawer-getting-started-closed.png)
+
+### Drawer Opened
+
+![SideDrawer example](images/sidedrawer-getting-started-opened.png)

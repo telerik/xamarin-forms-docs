@@ -32,23 +32,27 @@ Once users create the blank **Xamarin.Forms** solution, they need to add referen
 
 When the references are added, you can proceed with defining the component:
 
-	<primitives:RadSideDrawer DrawerLength="200">
+	<primitives:RadSideDrawer>
+	  <primitives:RadSideDrawer.DrawerLength>
+	    <OnPlatform x:TypeArguments="x:Double" iOS="150" Android="200"/>
+	  </primitives:RadSideDrawer.DrawerLength>
 	  <primitives:RadSideDrawer.MainContent>
-	    <StackLayout>
-	      <Button Text="Check"/>
-	      <Button Text="Set"/>
-	      <Button Text="Delete"/>
-	    </StackLayout>
+	    <Label Text="Main Content" FontSize="Large" HorizontalOptions="Center"/>
 	  </primitives:RadSideDrawer.MainContent>
 	  <primitives:RadSideDrawer.DrawerContent>
-	    <StackLayout BackgroundColor="Silver">
+	    <StackLayout>
+	      <Label Text="Drawer Content" FontSize="Medium" HorizontalOptions="Center"/>
 	      <Button Text="Mail"/>
-	      <Button Text="Navigation"/>
-	      <Button Text="Settings"/>
+	      <Button Text="Calendar"/>
+	      <Button Text="People"/>
+	      <Button Text="Tasks"/>
 	    </StackLayout>
 	  </primitives:RadSideDrawer.DrawerContent>
 	</primitives:RadSideDrawer>
 
+
 Where the *primitives* namespace is defined like this:
 
 	xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+
+![SideDrawer example](images/sidedrawer-getting-started.png)

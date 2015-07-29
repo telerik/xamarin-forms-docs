@@ -31,7 +31,7 @@ Once users create the blank **Xamarin.Forms** solution, they need to add referen
 	> **RadSideDrawer** is not available for **Windows Phone**.
 
 ## NuGet Packages
-Next step is to add references to the NuGet Packages needed by RadSideDrawer in the Android project. You can find the full list with required packages in the - [**Required Android Support Libraries**]({% slug required-android-support-libraries %}) help topic.
+Next step is to add references to the NuGet Packages needed by RadSideDrawer in the Android project. You can find the full list with required packages in the [**Required Android Support Libraries**]({% slug required-android-support-libraries %}) help topic.
 
 When the references are added, you can proceed with defining the component:
 

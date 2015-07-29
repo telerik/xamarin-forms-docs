@@ -38,6 +38,9 @@ First you have to create a new Xamarin.Forms project. You can see how in the [Ge
 
 ![Add Calendar References](images/calendar-getting-started-references.png)
 
+## NuGet Packages
+Next step is to add references to the NuGet Packages needed by RadRadCalendar in the Android project. You can find the full list with required packages in the - [**Required Android Support Libraries**]({% slug required-android-support-libraries %}) help topic.
+	
 You will have to add the following code to these project files:
 
 * **Android**: MainActivity.cs

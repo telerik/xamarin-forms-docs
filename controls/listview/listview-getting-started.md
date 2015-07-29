@@ -52,20 +52,7 @@ You will also have to add the following code to these project files:
 After referencing the required binaries it is time to edit the default configuration of the iOS project. Unload it and open the iOS.csproj file. Inside it you will find several PropertyGroups. One for each build definition. Inside each group you will find CodesignEntitlements tag. Those tags should be empty in each build definition. More information on that matter can be found in [this]({http://forums.xamarin.com/discussion/39674/iphonesimulator-build-results-in-no-valid-ios-code-signing-keys-found-in-keychain}) forum thread.
 
 ## NuGet Packages
-Next step is to add reference to the correct NuGet Packages for the Android project. Please note that the required versions are not the latest available. This is why you need to use the **NuGet Package Manager Console** to install or downgrade to the specified versions.
-
-First, you will have to make sure that the installed version of **Xamarin.Android.Support.v4** package is **21.0.3**. If not, you will need to run the following command in the console:
-
-	 Update-Package Xamarin.Android.Support.v4 -Version 21.0.3
-
-After that you have to install the following packages using the specified commands:
-
-* **Xamarin.Android.Support.v7.AppCompat** version: **21.0.3.0**
-
-		Install-Package Xamarin.Android.Support.v7.AppCompat -Version 21.0.3.0
-* **Xamarin.Android.Support.v7.RecyclerView** version: **21.0.3.0**
-
-		Install-Package Xamarin.Android.Support.v7.RecyclerView -Version 21.0.3.0	
+Next step is to add references to the NuGet Packages needed by RadListViiew in the Android project. You can find the full list with required packages in the - [**Required Android Support Libraries**]({% slug required-android-support-libraries %}) help topic.
 	
 After successful installation of those packages, the application should be set up and ready to build and deploy.
 

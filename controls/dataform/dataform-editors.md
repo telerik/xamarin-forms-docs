@@ -15,7 +15,7 @@ The RadDataForm provides the following methods to replace the default editors:
 
 ## Editor Types
 
-The values from the EditorType enumeration are interpreted differently by each platform and when an editor type is missing, the closest type is used. The following table shows the type mapping:  
+The values from the **EditorType** enumeration are interpreted differently by each platform and when an editor type is missing, the closest type is used. The following table shows the type mapping:  
 
 <table>
 	<tr>

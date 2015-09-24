@@ -5,21 +5,31 @@ slug: required-android-support-libraries
 position: 3
 ---
 
+# Required Android Support Libraries
+
 The controls in the suite require specific Xamarin Android Support Libraries to render correctly on Android. This is the complete list:
 
-# Calendar #
+## Calendar
+
 * Xamarin.Android.Support.v7.AppCompat
 * Xamarin.Android.Support.v8.RenderScript
 
-# Chart #
+## Chart
+
 * Xamarin.Android.Support.v7.AppCompat
 * Xamarin.Android.Support.v8.RenderScript
 
-# ListView #
+## ListView
+
 * Xamarin.Android.Support.v7.AppCompat
 * Xamarin.Android.Support.v7.RecyclerView
 
-# SideDrawer #
+## SideDrawer
+
 * Xamarin.Android.Support.v7.AppCompat
 * Xamarin.Android.Support.v8.RenderScript
 
+## DataForm
+
+* Xamarin.Android.Support.v7.AppCompat
+* Xamarin.Android.Support.v8.RenderScript

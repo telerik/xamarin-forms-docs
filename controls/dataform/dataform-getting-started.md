@@ -36,16 +36,17 @@ Next, you have to add reference to the following assemblies:
 - **WinPhone**
     > **RadDataForm** is not available for **Windows Phone**.
 
+Next step is to add references to the NuGet Packages needed by RadDataForm in the Android project. You can find the full list with required packages in the [**Required Android Support Libraries**]({% slug required-android-support-libraries %}) help topic.
 
 You will also have to add the following code to these project files:
 
 * **Android**: MainActivity.cs
 
-	Add this line outside the namespace: 
+	Add this line outside the namespace:
   
 		[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(Telerik.XamarinForms.InputRenderer.Android.DataFormRenderer))]
 
-	You also have to add 
+	You also have to change this method:
 
 		protected override void OnCreate(Bundle bundle)
 		{
@@ -63,7 +64,7 @@ You will also have to add the following code to these project files:
 		[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(Telerik.XamarinForms.InputRenderer.iOS.DataFormRenderer))]
 
 
-	You also have to
+	You also have to change this method:
 
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
@@ -114,3 +115,8 @@ Where:
 And finally set the Source of the form to an instance of the data class:
 
 	dataForm.Source = new Person{ Name = "Peter" };
+
+Or you can use binding if you have set a proper BindingContext:
+
+
+	<telerikInput:RadDataForm Source={Binding SourceObject}/>

@@ -19,14 +19,16 @@ The values from the **EditorType** enumeration are interpreted differently by ea
 
 <table>
 	<tr>
-		<th>EditorType value</th>
+		<th>EditorType</th>
 		<th>Android native editor</th>
 		<th>iOS native editor</th>
+		<th>editor value type</th>
 	</tr>
 	<tr>
 		<td>SliderEditor</td>
 		<td>AndroidDataFormSeekBarEditor</td>
 		<td>TKDataFormSliderEditor</td>
+		<td>Android:int<br/>iOS:float</td>
 	</tr>
 	<tr>
 		<td>PickerEditor</td>
@@ -37,11 +39,13 @@ The values from the **EditorType** enumeration are interpreted differently by ea
 		<td>SwitchEditor</td>
 		<td>DataFormSwitchEditor</td>
 		<td>TKDataFormSwitchEditor</td>
+		<td>bool</td>
 	</tr>
 	<tr>
 		<td>TextEditor</td>
 		<td>DataFormTextEditor</td>
 		<td>TKDataFormTextFieldEditor</td>
+		<td>string</td>
 	</tr>
 	<tr>
 		<td>SegmentedEditor</td>
@@ -52,36 +56,43 @@ The values from the **EditorType** enumeration are interpreted differently by ea
 		<td>NumberPickerEditor</td>
 		<td>DataFormNumberPickerEditor</td>
 		<td>TKDataFormStepperEditor</td>
+		<td>double</td>
 	</tr>
 	<tr>
 		<td>DateEditor</td>
 		<td>DataFormDateEditor</td>
 		<td>TKDataFormDatePickerEditor</td>
+		<td>DateTime</td>
 	</tr>
 	<tr>
 		<td>TimeEditor</td>
 		<td>DataFormTimeEditor</td>
 		<td>TKDataFormTimePickerEditor</td>
+		<td>DateTime</td>
 	</tr>
 	<tr>
 		<td>CheckBoxEditor</td>
 		<td>DataFormCheckBoxEditor</td>
 		<td>TKDataFormSwitchEditor instead</td>
+		<td>bool</td>
 	</tr>
 	<tr>
 		<td>ToggleButtonEditor</td>
 		<td>DataFormToggleButtonEditor</td>
 		<td>TKDataFormSwitchEditor instead</td>
+		<td>bool</td>
 	</tr>
 	<tr>
 		<td>DecimalEditor</td>
 		<td>DataFormDecimalEditor</td>
-		<td>custom</td>
+		<td>TKDataFormDecimalEditor</td>
+		<td>Android:double<br/>iOS: ?</td>
 	</tr>
 	<tr>
 		<td>IntegerEditor</td>
 		<td>DataFormIntegerEditor</td>
-		<td>custom</td>
+		<td>TKDataFormNumberEditor</td>
+		<td>Android:int<br/>iOS: ?</td>
 	</tr>
 	<tr>
 		<td>Custom</td>
@@ -90,9 +101,11 @@ The values from the **EditorType** enumeration are interpreted differently by ea
 	</tr>
 </table>
  
+Sometimes your property type will not be the same as the editor type, e.g. when you wish to edit integers with a NumberPicker editor. In this case you will have to use a **[converter]({% dataform-data-annotations#ConverterAttribute %})**.
+
 ### Custom Editors
 
-When a Custom editor type is registered, specific renderer methods will be called in each platform. You will have to inherit from the renderers and override these methods to to provide your custom editor.
+When a Custom editor type is registered, specific renderer methods will be called on each platform. You will have to inherit from the renderers and override specific methods to setup a custom editor.
 
 	dataForm.RegisterEditor("Gender", EditorType.Custom);
 

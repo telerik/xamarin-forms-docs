@@ -8,8 +8,13 @@ slug: dataform-further-customization
 
 ## Android
 
+This example will demonstrate how to add an auto-complete editor for a property called Animal on Android.
 
-	[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(CustomRendererDroid))]
+First you have to specify that a custom editor will be used for this property.
+
+	dataForm.RegisterEditor("Animal", EditorType.Custom);
+
+Then you have to inherit from the default **DataFormRenderer** and override the some of its methods.
 
 	public class CustomRendererDroid : DataFormRenderer
 	{
@@ -36,6 +41,12 @@ slug: dataform-further-customization
 	        }
 	    }
 	}
+
+After that you will have to replace the default **DataFormRenderer** with the new one in **MainActivity.cs**:
+
+	[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(CustomRendererDroid))]
+
+Result:
 
 ![AutoComplete Editor](images/dataform-custom-renderer-android.png)
 

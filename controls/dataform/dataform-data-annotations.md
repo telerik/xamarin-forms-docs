@@ -124,7 +124,7 @@ You can also define your custom validators. You can directly implement the **IPr
 
 	public enum Gender { Unspecified, Male, Female }
 	
-	public class Person : NotifyPropertyChangedBase
+	public class Person
 	{
 	    [NumericalRangeValidator(10, 15)]
 	    public int Age { get; set; }
@@ -149,3 +149,42 @@ You can also define your custom validators. You can directly implement the **IPr
 	        return (Gender)value != Gender.Unspecified;
 	    }
 	}
+
+## ConverterAttribute
+
+Sometimes the editors work with types that are not the same as the property type. In this case you can use a converter. The converters should implement the **IPropertyConverter** interface. The converter attribute requires the type of the converter that will be used.
+
+### Example
+
+	public class Person : NotifyPropertyChangedBase
+	{
+        [Converter(typeof(IntDoublePropertyConverter))]
+        public int Age
+        {
+            get
+            {
+                return this.age;
+            }
+            set
+            {
+                if (this.age != value)
+                {
+                    this.age = value;
+                    this.RaisePropertyCanged();
+                }
+            }
+        }
+    }
+
+    public class IntDoublePropertyConverter : IPropertyConverter
+    {
+        public object ConvertPropertyValue(object value)
+        {
+            return (double)(int)value;
+        }
+
+        public object ConvertEditorValue(object value)
+        {
+            return (int)(double)value;
+        }
+    }

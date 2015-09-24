@@ -85,7 +85,7 @@ Here is a sample data class:
 	    private string name;
 	
 	    [DisplayOptions(Header = "Name", PlaceholderText = "name")]
-	    [NonEmptyValidatorAttribute("Name is required!")]
+	    [StringLengthValidator(2, int.MaxValue, "Name should be longer than 2 symbols.")]
 	    public string Name
 	    {
 	        get

@@ -17,6 +17,8 @@ slug: dataform-further-customization
 	
 	    protected override EntityPropertyEditor GetCustomEditorForProperty(RadDataForm form, IEntityProperty property, EntityPropertyMetadata metadata)
 	    {
+            base.UpdateEditor(editor, metadata);
+
 	        if (property.Name() == "Animal")
 	        {
 	            return new DataFormAutoCompleteEditor(form, property);

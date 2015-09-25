@@ -22,7 +22,7 @@ Then you have to inherit from the default **DataFormRenderer** and override the 
 	
 	    protected override EntityPropertyEditor GetCustomEditorForProperty(RadDataForm form, IEntityProperty property, EntityPropertyMetadata metadata)
 	    {
-            base.UpdateEditor(editor, metadata);
+           
 
 	        if (property.Name() == "Animal")
 	        {
@@ -34,6 +34,8 @@ Then you have to inherit from the default **DataFormRenderer** and override the 
 	
 	    protected override void UpdateEditor(EntityPropertyEditor editor, EntityPropertyMetadata metadata)
 	    {
+			base.UpdateEditor(editor, metadata);
+
 	        if (editor.Property().Name() == "Animal")
 	        {
 	            var autoComplete = editor.EditorView as AutoCompleteTextView;
@@ -41,6 +43,16 @@ Then you have to inherit from the default **DataFormRenderer** and override the 
 	        }
 	    }
 	}
+
+You have to define the **data\_form\_autocomplete\_item** resource in the **Resources\\layout** folder of the Android project. If the folder is missing, you have to create it. Then add the the following file: data\_form\_autocomplete\_item\.xml
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/data_form_autocomplete_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+
 
 After that you will have to replace the default **DataFormRenderer** with the new one in **MainActivity.cs**:
 

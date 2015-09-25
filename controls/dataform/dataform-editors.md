@@ -34,7 +34,7 @@ The values from the **EditorType** enumeration are interpreted differently by ea
 		<td>PickerEditor</td>
 		<td>DataFormSpinnerEditor</td>
 		<td>TKDataFormPickerViewEditor</td>
-        <td>requires [PropertyDataSourceProvider]()</td>
+        <td>requires [PropertyDataSourceProvider]({% slug dataform-data-annotations%}#datasourcekeyattribute)</td>
 	</tr>
 	<tr>
 		<td>SwitchEditor</td>
@@ -52,7 +52,7 @@ The values from the **EditorType** enumeration are interpreted differently by ea
 		<td>SegmentedEditor</td>
 		<td>DataFormSegmentedEditor</td>
 		<td>TKDataFormSegmentedEditor</td>
-		<td>requires [PropertyDataSourceProvider]()</td>
+		<td>requires [PropertyDataSourceProvider]({% slug dataform-data-annotations%}#datasourcekeyattribute)</td>
 	</tr>
 	<tr>
 		<td>NumberPickerEditor</td>
@@ -104,7 +104,7 @@ The values from the **EditorType** enumeration are interpreted differently by ea
 	</tr>
 </table>
  
-Sometimes your property type will not be the same as the editor type, e.g. when you wish to edit integers with a NumberPicker editor. In this case you will have to use a **[converter]({%dataform-data-annotations%}#converterattribute)**.
+Sometimes your property type will not be the same as the editor type, e.g. when you wish to edit integers with a NumberPicker editor. In this case you will have to use a **[converter]({% slug dataform-data-annotations%}#converterattribute)**.
 
 ### Custom Editors
 

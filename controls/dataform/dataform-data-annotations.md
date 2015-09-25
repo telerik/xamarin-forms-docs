@@ -48,7 +48,7 @@ Properties marked with this attribute can not be edited. There are differences b
 
 The DataSourceKeyAttribute defines the following property:
 
-- Key (object): Specifies the key that is used by RadDataForm.PropertyDataSourceProvider.
+- Key (object): Specifies the key that is used by **PropertyDataSourceProvider** property of RadDataForm.
 
 Some editors require a list of possible values, e.g. picker editors. If the property type is enum, the values from the enumeration are used. In all other cases you have to provide a list of values. This is done with a special class that implements the **IPropertyDataSourceProvider** interface. It has two methods:
 

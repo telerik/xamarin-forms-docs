@@ -15,9 +15,9 @@ First you have to download and install [Xamarin Studio](http://xamarin.com/downl
 Create new solution **Xamarin.Forms Portable** / **Shared**
 
 * **Visual Studio**: located at *Templates* > *Visual C#* > *Mobile Apps* section:  
-![Create new Xamarin.Forms solution](visual-studio-new-solution.png "Image")
+![Create new Xamarin.Forms solution](images/visual-studio-new-solution.png "Image")
 * **Xamarin Studio**: located at *C#* > *Mobile Apps* section:  
-![Create new Xamarin.Forms solution](xamarin-studio-new-solution.png "Image")  
+![Create new Xamarin.Forms solution](images/xamarin-studio-new-solution.png "Image")  
 
 Typically, the solution will contain the following projects:
 
@@ -28,7 +28,7 @@ Typically, the solution will contain the following projects:
 	* Available for OS X.
 	* If you wish to use Visual Studio as a development environment you will also need a mac machine. You can find more information how to setup your environment here: [Introduction to Xamarin.iOS for Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/)
 	 
-![Solution projects](visual-studio-solution-projects.png "Image")
+![Solution projects](images/visual-studio-solution-projects.png "Image")
 
 ## Getting the Latest Platform SDK Versions ##
 
@@ -39,7 +39,7 @@ You have to make sure that you have the right version of Xamarin.Forms and all r
 
 >The minimum supported **Xamarin.Forms** version is **1.4.2.6359**.
 
-![Update packages](calendar-getting-started-update-packages.png)
+![Update packages](images/calendar-getting-started-update-packages.png)
 
 - After you update the Xamarin.Forms to the the required version, you get **Xamarin.Android.Support.v4** updated to its latest version (currently **21.0.3.0**). Now you are ready to use UI for Xamarin Cross-Platform.
 

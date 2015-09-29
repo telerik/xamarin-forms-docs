@@ -62,10 +62,15 @@ navigation:
         position: 10
         ## End Chart Sub-Folders
     ## End Chart
+    ## DataForm
+    controls/dataform:
+        title: "DataForm"
+        position: 3
+    ## End DataForm
     ## ListView
     controls/listview:
         title: "ListView"
-        position: 3
+        position: 4
         ## ListView Sub-Folders
     controls/listview/features:
         title: "Features"
@@ -75,7 +80,7 @@ navigation:
     ## SideDrawer
     controls/sidedrawer:
         title: "SideDrawer"
-        position: 4
+        position: 5
         ## SideDrawer Sub-Folders
     controls/sidedrawer/features:
         title: "Features"

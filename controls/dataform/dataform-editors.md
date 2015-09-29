@@ -97,6 +97,10 @@ When a Custom editor type is registered, specific renderer methods will be calle
 	    ...
 	}
 
+> For more detailed example you can take a look at the [Further Customization]({%slug dataform-further-customization%}) article.
+> 
+> The DataFormRenderer works differently on each platform - see the specific methods available for override below.
+
 #### Android
 
 DataFormRenderer available methods for override:
@@ -116,4 +120,3 @@ DataFormRenderer available methods for override:
 - void **UpdateEditor**(TKDataFormEditor *editor*, TKEntityProperty *property*, EntityPropertyMetadata *metadata*)
 
 > On iOS if a property is read-only, the editor is disabled.
-

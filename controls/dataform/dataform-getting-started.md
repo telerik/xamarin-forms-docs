@@ -7,7 +7,7 @@ slug: dataform-getting-started
 
 # Getting Started
 
-This example will guide you through the steps needed to add a basic RadDataForm control in your application.
+This article will guide you through the steps needed to add a basic RadDataForm control in your application.
 
 ## Update existing Xamarin.Forms package
 After creating the blank mobile application template, it is recommended to update the **Xamarin.Forms** package in your solution. Updating it to the latest version can be done using the NuGet UI.

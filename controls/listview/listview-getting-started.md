@@ -40,13 +40,31 @@ You will also have to add the following code to these project files:
 * **Android**: MainActivity.cs
   
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.DataControls.RadListView), typeof(Telerik.XamarinForms.DataControlsRenderer.Android.ListViewRenderer))]
+You also need to call `TelerikForms.Init()` inside the `OnCreate()` method
+
+		protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+
+            global::Xamarin.Forms.Forms.Init(this, bundle); 
+            Telerik.XamarinForms.Common.Android.TelerikForms.Init();
+            LoadApplication(new App());
+        }
 
 * **iOS**: AppDelegate.cs
 
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.DataControls.RadListView), typeof(Telerik.XamarinForms.DataControlsRenderer.iOS.ListViewRenderer))]
-	You also have to create the following instances in the FinishedLaunching() method:
+You also have to create an instance of the renderer in the `FinishedLaunching()` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`:
 
-		new Telerik.XamarinForms.DataControlsRenderer.iOS.ListViewRenderer();
+		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+        {
+            new ListViewRenderer();
+            global::Xamarin.Forms.Forms.Init();
+            Telerik.XamarinForms.Common.iOS.TelerikForms.Init();
+            LoadApplication(new App());
+
+            return base.FinishedLaunching(app, options);
+        }
 
 ## Edit the iOS project
 After referencing the required binaries it is time to edit the default configuration of the iOS project. Unload it and open the iOS.csproj file. Inside it you will find several PropertyGroups. One for each build definition. Inside each group you will find CodesignEntitlements tag. Those tags should be empty in each build definition. More information on that matter can be found in [this]({http://forums.xamarin.com/discussion/39674/iphonesimulator-build-results-in-no-valid-ios-code-signing-keys-found-in-keychain}) forum thread.

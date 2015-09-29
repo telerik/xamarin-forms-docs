@@ -35,11 +35,11 @@ Typically, the solution will contain the following projects:
 You have to make sure that you have the right version of Xamarin.Forms and all related packages.
 
 - Right-click the newly created solution and choose: Visual Studio: "Manage NuGet packages for Solution".
-- From Updates >> nuget.org install the latest version of the **Xamarin.Forms** package (currently **v1.4.2.6359**).
+- From Updates >> nuget.org install the latest version of the **Xamarin.Forms** package.
 
 >The minimum supported **Xamarin.Forms** version is **1.4.2.6359**.
 
 ![Update packages](images/calendar-getting-started-update-packages.png)
 
-- After you update the Xamarin.Forms to the the required version, you get **Xamarin.Android.Support.v4** updated to its latest version (currently **21.0.3.0**). Now you are ready to use UI for Xamarin Cross-Platform.
+- After you update the Xamarin.Forms to the the required version, you get **Xamarin.Android.Support.v4** updated to its latest version. Now you are ready to use UI for Xamarin Cross-Platform.
 

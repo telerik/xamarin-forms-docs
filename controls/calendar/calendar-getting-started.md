@@ -38,28 +38,48 @@ First you have to create a new Xamarin.Forms project. You can see how in the [Ge
 
 ![Add Calendar References](images/calendar-getting-started-references.png)
 
-## NuGet Packages
-Next step is to add references to the NuGet Packages needed by RadRadCalendar in the Android project. You can find the full list with required packages in the [**Required Android Support Libraries**]({% slug required-android-support-libraries %}) help topic.
-	
 You will have to add the following code to these project files:
 
 * **Android**: MainActivity.cs
   
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.Android.CalendarRenderer))]
+you also need to call `TelerikForms.Init()` inside the `OnCreate()` method
+
+		protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+
+            global::Xamarin.Forms.Forms.Init(this, bundle); 
+            Telerik.XamarinForms.Common.Android.TelerikForms.Init();
+            LoadApplication(new App());
+        }
 
 * **iOS**: AppDelegate.cs
 
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.iOS.CalendarRenderer))]
+You also have to create an instance of the renderer in the `FinishedLaunching()` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()` :
 
-	You also have to create the following instance in the `FinishedLaunching()` method before the `Forms.Init()` call:
+		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+        {
+            new CalendarRenderer();
+            global::Xamarin.Forms.Forms.Init();
+            Telerik.XamarinForms.Common.iOS.TelerikForms.Init();
+            LoadApplication(new App());
 
-		new Telerik.XamarinForms.InputRenderer.iOS.CalendarRenderer();
+            return base.FinishedLaunching(app, options);
+        }
 
 * **WinPhone**: MainPage.xaml.cs
     
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.WinPhone.CalendarRenderer))]
 
-##Add Calendar Control to Your Project##
+## Edit the iOS project
+After referencing the required binaries it is time to edit the default configuration of the iOS project. Unload it and open the iOS.csproj file. Inside it you will find several PropertyGroups. One for each build definition. Inside each group you will find CodesignEntitlements tag. Those tags should be empty in each build definition. More information on that matter can be found in [this]({http://forums.xamarin.com/discussion/39674/iphonesimulator-build-results-in-no-valid-ios-code-signing-keys-found-in-keychain}) forum thread.
+
+## NuGet Packages
+Next step is to add references to the NuGet Packages needed by RadRadCalendar in the Android project. You can find the full list with required packages in the [**Required Android Support Libraries**]({% slug required-android-support-libraries %}) help topic.
+
+##Example
 
 1. Add new Xamarin.Forms page to your Portable/Shared project:
 	* **Visual Studio**: right click on the project > `Add` > `New Item...` > choose `Forms Xaml Page`

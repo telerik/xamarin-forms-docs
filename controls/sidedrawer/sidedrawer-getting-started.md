@@ -30,9 +30,44 @@ Once users create the blank **Xamarin.Forms** solution, they need to add referen
 
 	> **RadSideDrawer** is not available for **Windows Phone**.
 
+You will also have to add the following code to these project files:
+
+* **Android**: MainActivity.cs
+* 
+		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Primitives.RadSideDrawer), typeof(Telerik.XamarinForms.PrimitivesRenderer.Android.SideDrawerRenderer))]
+You also need to call `TelerikForms.Init()` inside the `OnCreate()` method
+
+		protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+
+            global::Xamarin.Forms.Forms.Init(this, bundle); 
+            Telerik.XamarinForms.Common.Android.TelerikForms.Init();
+            LoadApplication(new App());
+        }
+
+* **iOS**: AppDelegate.cs
+
+		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Primitives.RadSideDrawer), typeof(Telerik.XamarinForms.PrimitivesRenderer.iOS.SideDrawerRenderer))]
+You also have to create an instance of the renderer in the `FinishedLaunching()` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`:
+
+		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+        {
+            new SideDrawerRenderer();
+            global::Xamarin.Forms.Forms.Init();
+            Telerik.XamarinForms.Common.iOS.TelerikForms.Init();
+            LoadApplication(new App());
+
+            return base.FinishedLaunching(app, options);
+        }
+
+## Edit the iOS project
+After referencing the required binaries it is time to edit the default configuration of the iOS project. Unload it and open the iOS.csproj file. Inside it you will find several PropertyGroups. One for each build definition. Inside each group you will find CodesignEntitlements tag. Those tags should be empty in each build definition. More information on that matter can be found in [this]({http://forums.xamarin.com/discussion/39674/iphonesimulator-build-results-in-no-valid-ios-code-signing-keys-found-in-keychain}) forum thread.
+
 ## NuGet Packages
 Next step is to add references to the NuGet Packages needed by RadSideDrawer in the Android project. You can find the full list with required packages in the [**Required Android Support Libraries**]({% slug required-android-support-libraries %}) help topic.
 
+## Example
 When the references are added, you can proceed with defining the component:
 
 	<primitives:RadSideDrawer>

@@ -36,8 +36,6 @@ Next, you have to add reference to the following assemblies:
 - **WinPhone**
     > **RadDataForm** is not available for **Windows Phone**.
 
-Next step is to add references to the NuGet Packages needed by RadDataForm in the Android project. You can find the full list with required packages in the [**Required Android Support Libraries**]({% slug required-android-support-libraries %}) help topic.
-
 You will also have to add the following code to these project files:
 
 * **Android**: MainActivity.cs
@@ -45,37 +43,40 @@ You will also have to add the following code to these project files:
 	Add this line outside the namespace:
   
 		[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(Telerik.XamarinForms.InputRenderer.Android.DataFormRenderer))]
-
-	You also have to change this method:
+You also need to call `TelerikForms.Init()` inside the `OnCreate()` method
 
 		protected override void OnCreate(Bundle bundle)
-		{
-		    base.OnCreate(bundle);
-		    Forms.Init(this, bundle);
-		    TelerikForms.Init();
-		
-		    this.LoadApplication(new App());
-		}
+        {
+            base.OnCreate(bundle);
+
+            global::Xamarin.Forms.Forms.Init(this, bundle); 
+            Telerik.XamarinForms.Common.Android.TelerikForms.Init();
+            LoadApplication(new App());
+        }
 
 * **iOS**: AppDelegate.cs
 
 	Add this line outside the namespace:
 
 		[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(Telerik.XamarinForms.InputRenderer.iOS.DataFormRenderer))]
-
-
-	You also have to change this method:
+You also have to create an instance of the renderer in the `FinishedLaunching()` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`:
 
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-		{
-		    new DataFormRenderer();
-		    global::Xamarin.Forms.Forms.Init();
-		
-		    TelerikForms.Init();
-		
-		    this.LoadApplication(new App());
-		    return base.FinishedLaunching(app, options);
-		}
+        {
+            new DataFormRenderer();
+            global::Xamarin.Forms.Forms.Init();
+            Telerik.XamarinForms.Common.iOS.TelerikForms.Init();
+            LoadApplication(new App());
+
+            return base.FinishedLaunching(app, options);
+        }
+
+## Edit the iOS project
+After referencing the required binaries it is time to edit the default configuration of the iOS project. Unload it and open the iOS.csproj file. Inside it you will find several PropertyGroups. One for each build definition. Inside each group you will find CodesignEntitlements tag. Those tags should be empty in each build definition. More information on that matter can be found in [this]({http://forums.xamarin.com/discussion/39674/iphonesimulator-build-results-in-no-valid-ios-code-signing-keys-found-in-keychain}) forum thread.
+
+## NuGet Packages
+Next step is to add references to the NuGet Packages needed by RadDataForm in the Android project. You can find the full list with required packages in the [**Required Android Support Libraries**]({% slug required-android-support-libraries %}) help topic.
+
 
 ## Example
 

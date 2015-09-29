@@ -25,3 +25,94 @@ To enable this feature in a project the **IsItemSwipeEnabled** property of the R
 In *Android* it is enough to set this property. It will force the swiped item to stick to the corresponding side. Visualizing the underlying SwipeContent.
 
 In *iOS* however, the **SwipeThreshhold** property should be set to force the items to stick to the swiped side. This property represents the length of the swipe gesture in pixels that will visualize the DataTemplate defined as **ItemSwipeContentTemplate**. Any swipe less than this value will not trigger the Cell Swipe.
+
+
+## Example
+
+#### XAML
+	<Grid BackgroundColor="#33888888">
+	    <Grid.RowDefinitions>
+	      <RowDefinition Height="Auto"/>
+	      <RowDefinition/>
+	    </Grid.RowDefinitions>
+	
+	    <Label Text="swipe an item" HorizontalOptions="Center" FontSize="Medium"/>
+	
+	    <telerikDataControls:RadListView x:Name="listView" Grid.Row="1" IsItemSwipeEnabled="True" SwipeThreshold="10" BackgroundColor="White" SelectionMode="None">
+	      <telerikDataControls:RadListView.ItemStyle>
+	        <telerikListView:ListViewItemStyle BorderWidth="0"/>
+	      </telerikDataControls:RadListView.ItemStyle>
+	      <telerikDataControls:RadListView.ItemTemplate>
+	        <DataTemplate>
+	          <telerikListView:ListViewTemplateCell>
+	            <telerikListView:ListViewTemplateCell.View>
+	              <StackLayout HorizontalOptions="Center" Padding="10">
+	                <Label Text="{Binding Name}" HorizontalOptions="Center" TextColor="Black" FontSize="Medium"/>
+	                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+	                  <Label TextColor="Gray" Text="Amount: "/>
+	                  <Label TextColor="Gray" Text="{Binding Value}"/>
+	                </StackLayout>
+	              </StackLayout>
+	            </telerikListView:ListViewTemplateCell.View>
+	          </telerikListView:ListViewTemplateCell>
+	        </DataTemplate>
+	      </telerikDataControls:RadListView.ItemTemplate>
+	    
+	      <telerikDataControls:RadListView.ItemSwipeContentTemplate>
+	        <DataTemplate>
+	          <Grid>
+	            <Grid.ColumnDefinitions>
+	              <ColumnDefinition Width="100"/>
+	              <ColumnDefinition/>
+	              <ColumnDefinition Width="100"/>
+	            </Grid.ColumnDefinitions>
+	            <Button Text="increase" TextColor="White" BackgroundColor="#FF9966" Clicked="IncreaseButtonClicked"/>
+	            <Button Text="decrease" TextColor="White" BackgroundColor="#66CCFF" Clicked="DecreaseButtonClicked" Grid.Column="2"/>
+	          </Grid>
+	        </DataTemplate>
+	      </telerikDataControls:RadListView.ItemSwipeContentTemplate>
+	    </telerikDataControls:RadListView>
+	</Grid>
+
+#### C# 
+    private int[] randomNumbers = new int[] { 11, 5, 13, 11, 4, 5, 20, 20, 6, 2, 16, 20, 14, 1, 7, 5, 5, 11, 17, 1, 9, 11, 7, 6, 11, 8, 11, 14, 20, 3, 3, 1, 17, 20, 6, 16, 16,
+    17, 5, 11, 18, 15, 2, 20, 10, 9, 3, 8, 20, 5 };
+
+    public SwipeGesture()
+    {
+        InitializeComponent();
+        listView.ItemsSource = this.GetSource(50);
+        listView.SwipeOffset = Device.OnPlatform<Thickness>(new Thickness(100, 0, 100, 0), 70, 0);
+        listView.LayoutDefinition.ItemLength = Device.OnPlatform<double>(60,-1,-1);
+    }
+
+    private System.Collections.IEnumerable GetSource(int count)
+    {
+        var items = new List<Item>();
+        for (int i = 0; i < count; i++)
+        {
+            items.Add(new Item { Name = string.Format("product {0}", i), Value = randomNumbers[i] });
+        }
+
+        return items;
+    }
+
+    private void IncreaseButtonClicked(object sender, EventArgs e)
+    {
+        var button = sender as Button;
+        var item = button.BindingContext as Item;
+        item.Value++;
+        listView.EndItemSwipe();
+    }
+
+    private void DecreaseButtonClicked(object sender, EventArgs e)
+    {
+        var button = sender as Button;
+        var item = button.BindingContext as Item;
+        if (item.Value > 0)
+        {
+            item.Value--;
+        }
+
+        listView.EndItemSwipe();
+    }

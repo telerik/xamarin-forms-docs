@@ -20,3 +20,35 @@ Here is how the loading process looks like:
 Figure 1: Pull to Refresh
 
 ![PullToRefresh](images/listview-features-pull-to-refresh.png)
+
+## Example
+
+#### XAML
+
+	<Grid BackgroundColor="#33888888">
+		<Grid.RowDefinitions>
+		  <RowDefinition Height="Auto"/>
+		  <RowDefinition/>
+		</Grid.RowDefinitions>
+		<Label Text="pull to refresh" HorizontalOptions="Center" FontSize="Medium"/>
+		<telerikDataControls:RadListView  x:Name="listView" IsPullToRefreshEnabled="True" Grid.Row="1" BackgroundColor="White"/>
+	</Grid>
+
+#### C# 
+
+    private int count = 10;
+
+    public PullToRefresh()
+    {
+        InitializeComponent();
+        listView.ItemsSource = Enumerable.Range(0, this.count);
+        listView.RefreshRequested += this.RefreshRequested;
+    }
+
+    private async void RefreshRequested(object sender, PullToRefreshRequestedEventArgs e)
+    {
+        await Task.Delay(3000);
+        listView.ItemsSource = Enumerable.Range(this.count, 10);
+        this.count += 10;
+        listView.EndRefresh();
+    }

@@ -147,7 +147,7 @@ You can also define your custom validators. You can directly implement the **IPr
 	    }
 	}
 
-## ConverterAttribute
+<!-- ## ConverterAttribute
 
 Sometimes the editors work with types that are not the same as the property type. In this case you can use a converter. The converters should implement the **IPropertyConverter** interface. The converter attribute requires the type of the converter that will be used.
 
@@ -187,3 +187,4 @@ Sometimes the editors work with types that are not the same as the property type
     }
 
 	dataForm.RegisterEditor("Age", EditorType.NumberPickerEditor);
+-->

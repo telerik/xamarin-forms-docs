@@ -28,7 +28,7 @@ The values from the **EditorType** enumeration are interpreted differently by ea
 		<td>SliderEditor</td>
 		<td>AndroidDataFormSeekBarEditor</td>
 		<td>TKDataFormSliderEditor</td>
-		<td>Android:int<br/>iOS:float</td>
+		<td>float</td>
 	</tr>
 	<tr>
 		<td>PickerEditor</td>
@@ -59,19 +59,7 @@ The values from the **EditorType** enumeration are interpreted differently by ea
 		<td>DataFormNumberPickerEditor</td>
 		<td>TKDataFormStepperEditor</td>
 		<td>double</td>
-	</tr>
-	<tr>
-		<td>DateEditor</td>
-		<td>DataFormDateEditor</td>
-		<td>TKDataFormDatePickerEditor</td>
-		<td>DateTime</td>
-	</tr>
-	<tr>
-		<td>TimeEditor</td>
-		<td>DataFormTimeEditor</td>
-		<td>TKDataFormTimePickerEditor</td>
-		<td>DateTime</td>
-	</tr>
+	</tr>	
 	<tr>
 		<td>CheckBoxEditor</td>
 		<td>DataFormCheckBoxEditor</td>
@@ -85,18 +73,6 @@ The values from the **EditorType** enumeration are interpreted differently by ea
 		<td>bool</td>
 	</tr>
 	<tr>
-		<td>DecimalEditor</td>
-		<td>DataFormDecimalEditor</td>
-		<td>TKDataFormDecimalEditor</td>
-		<td>Android:double<br/>iOS: ?</td>
-	</tr>
-	<tr>
-		<td>IntegerEditor</td>
-		<td>DataFormIntegerEditor</td>
-		<td>TKDataFormNumberEditor</td>
-		<td>Android:int<br/>iOS: ?</td>
-	</tr>
-	<tr>
 		<td>Custom</td>
 		<td>custom</td>
 		<td>custom</td>
@@ -106,7 +82,7 @@ The values from the **EditorType** enumeration are interpreted differently by ea
  
 \* **[PropertyDataSourceProvider]({% slug dataform-data-annotations%}#datasourcekeyattribute)**
 
-Sometimes your property type will not be the same as the editor type, e.g. when you wish to edit integers with a NumberPicker editor. In this case you will have to use a **[converter]({% slug dataform-data-annotations%}#converterattribute)**.
+<!--Sometimes your property type will not be the same as the editor type, e.g. when you wish to edit integers with a NumberPicker editor. In this case you will have to use a **[converter]({% slug dataform-data-annotations%}#converterattribute)**.-->
 
 ### Custom Editors
 

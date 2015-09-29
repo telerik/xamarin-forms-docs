@@ -21,9 +21,7 @@ Then you have to inherit from the default **DataFormRenderer** and override the 
 	    private readonly Java.Lang.Object[] items = new Java.Lang.Object[] { "pretty cat", "fat cat", "fluffy cat" };
 	
 	    protected override EntityPropertyEditor GetCustomEditorForProperty(RadDataForm form, IEntityProperty property, EntityPropertyMetadata metadata)
-	    {
-           
-
+	    {           
 	        if (property.Name() == "Animal")
 	        {
 	            return new DataFormAutoCompleteEditor(form, property);
@@ -64,3 +62,42 @@ Result:
 
 ## iOS
 
+	public class Account
+	{
+	    [DisplayOptions(Header="User Name", PlaceholderText = "user name", Group = "Registration Info")]
+	    [StringLengthValidator(5, 30, "User name should be longed than 5 symbols.")]
+	    public string UserName { get; set; }
+	
+	    [DisplayOptions(Header = "Email", PlaceholderText = "email", Group = "Registration Info")]
+	    public string Email { get; set; }
+	
+	    [DisplayOptions(Header = "Password", PlaceholderText = "password", Position = 2, Group = "Registration Info")]
+	    [StringLengthValidator(5, 30, "Password should be longed than 5 symbols.")]
+	    public string Password { get; set; }
+	}
+
+	dataForm.RegisterEditor("Email", EditorType.Custom);
+	dataForm.RegisterEditor("Password", EditorType.Custom);
+	dataForm.RegisterEditor("Date", EditorType.DateEditor);
+
+	public class CustomRendererIOS : DataFormRenderer
+	{
+	    protected override Type GetCustomEditorType(string propertyName, Type propertyType)
+	    {
+	        if (propertyName == "Email")
+	        {
+	            return typeof(TKDataFormEmailEditor);
+	        }
+	
+	        if (propertyName == "Password")
+	        {
+	            return typeof(TKDataFormPasswordEditor);
+	        }
+	
+	        return base.GetCustomEditorType(propertyName, propertyType);
+	    }
+	}
+
+
+
+	[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(CustomRendererIOS))]

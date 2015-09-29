@@ -2,6 +2,7 @@
 title: Validate and Commit
 page_title: Validate and Commit
 slug: dataform-validate-and-commit
+position: 5
 ---
 
 ## Validate

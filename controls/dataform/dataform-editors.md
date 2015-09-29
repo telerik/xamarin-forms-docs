@@ -2,6 +2,7 @@
 title: Editors
 page_title: Editors
 slug: dataform-editors
+position: 3
 ---
 
 # Editors

@@ -86,6 +86,8 @@ navigation:
         title: "Features"
         position: 5
         ## End SideDrawer Sub-Folders
+    controls/dataform:
+        title: "Data Form"
     ## End SideDrawer
 ## End Controls Sub-Folders
 

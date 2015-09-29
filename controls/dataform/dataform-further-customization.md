@@ -50,8 +50,6 @@ You have to define the **data\_form\_autocomplete\_item** resource in the **Reso
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"/>
 
-
-
 After that you will have to replace the default **DataFormRenderer** with the new one in **MainActivity.cs**:
 
 	[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(CustomRendererDroid))]
@@ -62,6 +60,10 @@ Result:
 
 ## iOS
 
+This example will demonstrate how to add custom editors in iOS DataForm.
+
+First, create a sample class.
+ 
 	public class Account
 	{
 	    [DisplayOptions(Header="User Name", PlaceholderText = "user name", Group = "Registration Info")]
@@ -76,9 +78,15 @@ Result:
 	    public string Password { get; set; }
 	}
 
+Then, setup the source and register the editor types.
+ 
+	dataForm.Source = new Account();
+
 	dataForm.RegisterEditor("Email", EditorType.Custom);
 	dataForm.RegisterEditor("Password", EditorType.Custom);
 	dataForm.RegisterEditor("Date", EditorType.DateEditor);
+
+After that, you have to inherit from the default **DataFormRenderer** and override the some of its methods.
 
 	public class CustomRendererIOS : DataFormRenderer
 	{
@@ -98,6 +106,6 @@ Result:
 	    }
 	}
 
-
+Finally, replace the default **DataFormRenderer** with the new one in **AppDelegate.cs**:
 
 	[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(CustomRendererIOS))]

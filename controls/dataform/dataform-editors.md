@@ -38,12 +38,6 @@ The values from the **EditorType** enumeration are interpreted differently by ea
         <td>*requires PropertyDataSourceProvider</td>
 	</tr>
 	<tr>
-		<td>SwitchEditor</td>
-		<td>DataFormSwitchEditor</td>
-		<td>TKDataFormSwitchEditor</td>
-		<td>bool</td>
-	</tr>
-	<tr>
 		<td>TextEditor</td>
 		<td>DataFormTextEditor</td>
 		<td>TKDataFormTextFieldEditor</td>

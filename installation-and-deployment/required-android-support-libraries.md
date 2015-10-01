@@ -13,12 +13,12 @@ The controls in the suite require specific Xamarin Android Support Libraries to 
 
 * Xamarin.Android.Support.v7.AppCompat
 * Xamarin.Android.Support.v8.RenderScript
-* 
+
 ## DataForm
 
 * Xamarin.Android.Support.v7.AppCompat
 * Xamarin.Android.Support.v8.RenderScript
-* 
+
 ## Chart
 
 * Xamarin.Android.Support.v7.AppCompat

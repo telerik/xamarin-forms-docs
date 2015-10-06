@@ -35,10 +35,10 @@ Once users create the blank **Xamarin.Forms** solution, they need to add referen
 You will also have to add the following code to these project files:
 
 * **Android**: MainActivity.cs
-* 
+
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Primitives.RadSideDrawer), typeof(Telerik.XamarinForms.PrimitivesRenderer.Android.SideDrawerRenderer))]
 
-You also need to call `TelerikForms.Init()` inside the `OnCreate(...)` method right after the `Forms.Init(...)` call.
+	You also need to call `TelerikForms.Init()` inside the `OnCreate(...)` method right after the `Forms.Init(...)` call.
 		protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -52,7 +52,7 @@ You also need to call `TelerikForms.Init()` inside the `OnCreate(...)` method ri
 
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Primitives.RadSideDrawer), typeof(Telerik.XamarinForms.PrimitivesRenderer.iOS.SideDrawerRenderer))]
 
-You also have to create an instance of the renderer in the `FinishedLaunching(...)` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`.
+	You also have to create an instance of the renderer in the `FinishedLaunching(...)` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`.
 
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {

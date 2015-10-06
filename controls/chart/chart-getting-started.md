@@ -45,7 +45,7 @@ You will also have to add the following code to these project files:
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.Android.CartesianChartRenderer))]
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.Android.PieChartRenderer))]
 
-You also need to call `TelerikForms.Init()` inside the `OnCreate(...)` method right after the `Forms.Init(...)` call.
+	You also need to call `TelerikForms.Init()` inside the `OnCreate(...)` method right after the `Forms.Init(...)` call.
 
 		protected override void OnCreate(Bundle bundle)
         {
@@ -61,7 +61,7 @@ You also need to call `TelerikForms.Init()` inside the `OnCreate(...)` method ri
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartRenderer))]
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.iOS.PieChartRenderer))]
 
-You also have to create an instance of the renderers in the `FinishedLaunching(...)` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`.
+	You also have to create an instance of the renderers in the `FinishedLaunching(...)` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`.
 
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
@@ -80,7 +80,7 @@ You also have to create an instance of the renderers in the `FinishedLaunching(.
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.WinPhone.CartesianChartRenderer))]
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.WinPhone.PieChartRenderer))]
 
-You also need to call `TelerikForms.Init()` inside the MainPage constrictor right after the `Forms.Init()` call.
+	 also need to call `TelerikForms.Init()` inside the MainPage constrictor right after the `Forms.Init()` call.
 
 		public partial class MainPage : FormsApplicationPage
 		{

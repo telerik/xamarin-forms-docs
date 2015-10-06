@@ -43,7 +43,8 @@ You will also have to add the following code to these project files:
 	Add this line outside the namespace:
   
 		[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(Telerik.XamarinForms.InputRenderer.Android.DataFormRenderer))]
-You also need to call `TelerikForms.Init()` inside the `OnCreate()` method
+
+You also need to call `TelerikForms.Init()` inside the `OnCreate(...)` method right after the `Forms.Init(...)` call.
 
 		protected override void OnCreate(Bundle bundle)
         {
@@ -59,7 +60,8 @@ You also need to call `TelerikForms.Init()` inside the `OnCreate()` method
 	Add this line outside the namespace:
 
 		[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(Telerik.XamarinForms.InputRenderer.iOS.DataFormRenderer))]
-You also have to create an instance of the renderer in the `FinishedLaunching()` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`:
+
+You also have to create an instance of the renderer in the `FinishedLaunching(...)` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`.
 
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {

@@ -24,11 +24,13 @@ Next, you have to add reference to the following assemblies:
 	- Telerik.Xamarin.Android.Input.dll
 	- Telerik.Xamarin.Android.List.dll
 	- Telerik.XamarinForms.Common.dll
+	- Telerik.XamarinForms.Common.Android.dll
 	- Telerik.XamarinForms.DataControls.dll
 	- Telerik.XamarinForms.DataControlsRenderer.Android.dll
 * **iOS**
 	- Telerik.Xamarin.iOS.dll
 	- Telerik.XamarinForms.Common.dll
+	- Telerik.XamarinForms.Common.iOS.dll
 	- Telerik.XamarinForms.DataControls.dll
 	- Telerik.XamarinForms.DataControlsRenderer.iOS.dll
 * **WinPhone**
@@ -40,7 +42,8 @@ You will also have to add the following code to these project files:
 * **Android**: MainActivity.cs
   
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.DataControls.RadListView), typeof(Telerik.XamarinForms.DataControlsRenderer.Android.ListViewRenderer))]
-You also need to call `TelerikForms.Init()` inside the `OnCreate()` method
+
+You also need to call `TelerikForms.Init()` inside the `OnCreate(...)` method right after the `Forms.Init(...)` call.
 
 		protected override void OnCreate(Bundle bundle)
         {
@@ -54,7 +57,8 @@ You also need to call `TelerikForms.Init()` inside the `OnCreate()` method
 * **iOS**: AppDelegate.cs
 
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.DataControls.RadListView), typeof(Telerik.XamarinForms.DataControlsRenderer.iOS.ListViewRenderer))]
-You also have to create an instance of the renderer in the `FinishedLaunching()` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`:
+
+You also have to create an instance of the renderer in the `FinishedLaunching(...)` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`.
 
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {

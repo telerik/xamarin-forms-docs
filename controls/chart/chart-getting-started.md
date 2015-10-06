@@ -13,8 +13,6 @@ First you have to create a new Xamarin.Forms project. You can see how in the [Ge
 * **Portable** (if you have created Xamarin.Forms Portable App)
 	- Telerik.XamarinForms.Chart.dll
 	- Telerik.XamarinForms.Common.dll
-
-
 * **Android**
 	- Telerik.Xamarin.Android.Chart.dll
 	- Telerik.Xamarin.Android.Common.dll
@@ -22,15 +20,13 @@ First you have to create a new Xamarin.Forms project. You can see how in the [Ge
 	- Telerik.XamarinForms.Chart.dll
 	- Telerik.XamarinForms.ChartRenderer.Android.dll
 	- Telerik.XamarinForms.Common.dll
-
-
+	- Telerik.XamarinForms.Common.Android.dll
 * **iOS**
 	- Telerik.Xamarin.iOS.dll
 	- Telerik.XamarinForms.Chart.dll
 	- Telerik.XamarinForms.ChartRenderer.iOS.dll
 	- Telerik.XamarinForms.Common.dll
-
-
+	- Telerik.XamarinForms.Common.iOS.dll
 * **WinPhone**
 	- Telerik.Windows.Controls.Chart.dll
 	- Telerik.Windows.Controls.Primitives.dll
@@ -38,6 +34,7 @@ First you have to create a new Xamarin.Forms project. You can see how in the [Ge
 	- Telerik.XamarinForms.Chart.dll
 	- Telerik.XamarinForms.ChartRenderer.WinPhone.dll
 	- Telerik.XamarinForms.Common.dll
+	- Telerik.XamarinForms.Common.WinPhone.dll
 
 ![Add Chart References](images/chart-getting-started-references.png)
 
@@ -47,7 +44,8 @@ You will also have to add the following code to these project files:
   
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.Android.CartesianChartRenderer))]
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.Android.PieChartRenderer))]
-You also need to call `TelerikForms.Init()` inside the `OnCreate()` method
+
+You also need to call `TelerikForms.Init()` inside the `OnCreate(...)` method right after the `Forms.Init(...)` call.
 
 		protected override void OnCreate(Bundle bundle)
         {
@@ -62,16 +60,18 @@ You also need to call `TelerikForms.Init()` inside the `OnCreate()` method
 
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartRenderer))]
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.iOS.PieChartRenderer))]
-You also have to create an instance of the renderer in the `FinishedLaunching()` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`:
+
+You also have to create an instance of the renderers in the `FinishedLaunching(...)` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`.
 
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             new CartesianChartRenderer();
             new PieChartRenderer();
+
             global::Xamarin.Forms.Forms.Init();
             Telerik.XamarinForms.Common.iOS.TelerikForms.Init();
-            LoadApplication(new App());
 
+            LoadApplication(new App());
             return base.FinishedLaunching(app, options);
         }
 
@@ -79,6 +79,22 @@ You also have to create an instance of the renderer in the `FinishedLaunching()`
 
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.WinPhone.CartesianChartRenderer))]
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.WinPhone.PieChartRenderer))]
+
+You also need to call `TelerikForms.Init()` inside the MainPage constrictor right after the `Forms.Init()` call.
+
+		public partial class MainPage : FormsApplicationPage
+		{
+		    public MainPage()
+		    {
+		        this.InitializeComponent();
+		
+		        Forms.Init();
+		        TelerikForms.Init();  
+		        CalendarCustomResourcesWP.Load();
+		
+		        this.LoadApplication(new SDKBrowser.App());
+		    }
+		}
 
 ## Edit the iOS project
 After referencing the required binaries it is time to edit the default configuration of the iOS project. Unload it and open the iOS.csproj file. Inside it you will find several PropertyGroups. One for each build definition. Inside each group you will find CodesignEntitlements tag. Those tags should be empty in each build definition. More information on that matter can be found in [this]({http://forums.xamarin.com/discussion/39674/iphonesimulator-build-results-in-no-valid-ios-code-signing-keys-found-in-keychain}) forum thread.

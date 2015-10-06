@@ -79,7 +79,7 @@ The values from the **EditorType** enumeration are interpreted differently by ea
 
 <!--Sometimes your property type will not be the same as the editor type, e.g. when you wish to edit integers with a NumberPicker editor. In this case you will have to use a **[converter]({% slug dataform-data-annotations%}#converterattribute)**.-->
 
-### Custom Editors
+## Custom Editors
 
 When a Custom editor type is registered, specific renderer methods will be called on each platform. You will have to inherit from the renderers and override specific methods to setup a custom editor.
 
@@ -96,7 +96,7 @@ When a Custom editor type is registered, specific renderer methods will be calle
 > 
 > The DataFormRenderer works differently on each platform - see the specific methods available for override below.
 
-#### Android
+### Android
 
 DataFormRenderer available methods for override:
 
@@ -107,7 +107,7 @@ DataFormRenderer available methods for override:
 
 > On Android if a property is read-only, a viewer is used.
 
-#### iOS
+### iOS
 
 DataFormRenderer available methods for override:
 

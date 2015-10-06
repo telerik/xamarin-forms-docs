@@ -9,6 +9,8 @@ position: 3
 
 The controls in the suite require specific Xamarin Android Support Libraries to render correctly on Android. This is the complete list:
 
+> The latest supported version of Xamarin Android Support Libraries is **22.2.1.0**.
+
 ## Calendar
 
 * Xamarin.Android.Support.v7.AppCompat
@@ -33,4 +35,3 @@ The controls in the suite require specific Xamarin Android Support Libraries to 
 
 * Xamarin.Android.Support.v7.AppCompat
 * Xamarin.Android.Support.v8.RenderScript
-

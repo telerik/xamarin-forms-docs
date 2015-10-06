@@ -18,12 +18,14 @@ Once users create the blank **Xamarin.Forms** solution, they need to add referen
 * **Android**
 	- Telerik.Xamarin.Android.Common.dll
 	- Telerik.Xamarin.Android.Primitives.dll
-	- Telerik.XamarinForms.Primitives.dll
 	- Telerik.XamarinForms.Common.dll
+	- Telerik.XamarinForms.Common.Android.dll
+	- Telerik.XamarinForms.Primitives.dll
 	- Telerik.XamarinForms.PrimitivesRenderer.Android.dll
 * **iOS**
 	- Telerik.Xamarin.iOS.dll
 	- Telerik.XamarinForms.Common.dll
+	- Telerik.XamarinForms.Common.iOS.dll
 	- Telerik.XamarinForms.Primitives.dll
 	- Telerik.XamarinForms.PrimitivesRenderer.iOS.dll
 * **WinPhone**

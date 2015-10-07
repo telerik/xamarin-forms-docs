@@ -39,6 +39,7 @@ You will also have to add the following code to these project files:
 		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Primitives.RadSideDrawer), typeof(Telerik.XamarinForms.PrimitivesRenderer.Android.SideDrawerRenderer))]
 
 	You also need to call `TelerikForms.Init()` inside the `OnCreate(...)` method right after the `Forms.Init(...)` call.
+
 		protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);

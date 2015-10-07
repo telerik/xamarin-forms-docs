@@ -12,7 +12,7 @@ With the official release of **Q3 2015** we have introduced several new assembli
 
     TelerikForms.Init()
 
-This method should be called right after the `Xamarin.Forms.Forms.Init(...)` call in the native projects starting pages and no additional code will be required.
+This method should be called right after the `Xamarin.Forms.Forms.Init(...)` call in the native projects starting pages.
 
 - **Android**: MainActivity.cs  
 in the MainActivity.OnCreate(...) method
@@ -32,7 +32,7 @@ Telerik.XamarinForms.Common.WinPhone.dll
 
 > You will have to make these changes to your application if you update from a previous version of UI for Xamarin suite.
 
-The other changes are mainly related to type conversion. We have restructured our code and we have introduced new ways to define conversion between CLR and native objects. We have also added support for automatic CLR to native types conversion and in most of the cases you will not need to know that such thing exists.
+The other changes are mainly related to type conversion. We have introduced new ways to define conversion between CLR and native objects. We have also added support for automatic CLR to native types conversion and in most of the cases you will not need to know that such thing exists.
 
 All type conversion related API is moved to the TypeRegister class. It provides methods to register your own type converters. You can also register your converters with an attribute in a similar way that you register renderer - control mappings. We have also provided extension methods:
 

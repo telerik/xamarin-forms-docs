@@ -12,7 +12,7 @@ Transitions are the animation effects applied to the side drawer while it is bei
 - Reveal
 - ReverseSlideOut
 - ScaleUp
-- SlideAling
+- SlideAlong
 - SlideInOnTop
 - Custom
 

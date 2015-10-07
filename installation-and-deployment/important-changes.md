@@ -8,7 +8,7 @@ slug: important-changes
 
 ## Q3 2015
 
-With the official release of **Q3 2015** we have introduced several new assemblies that facilitate the initial steps required to setup a new project that uses our controls. Now the code related to loading and initializing all required resources is combined in a single method call:
+With the official release of **Q3 2015** we have introduced several new assemblies that facilitate the initial steps required to setup a new project utilizing the Telerik's UI for Xamarin control suite. Now the code related to loading and initializing all required resources is combined in a single method call:
 
     TelerikForms.Init()
 
@@ -30,7 +30,7 @@ Telerik.XamarinForms.Common.iOS.dll
 - **Windows Phone**:  
 Telerik.XamarinForms.Common.WinPhone.dll 
 
-> You will have to make these changes to your application if you update from a previous version of UI for Xamarin Forms.
+> You will have to make these changes to your application if you update from a previous version of UI for Xamarin suite.
 
 The other changes are mainly related to type conversion. We have restructured our code and we have introduced new ways to define conversion between CLR and native objects. We have also added support for automatic CLR to native types conversion and in most of the cases you will not need to know that such thing exists.
 

@@ -41,5 +41,3 @@ You have to make sure that you have the right version of Xamarin.Forms and all r
 
 ![Update packages](images/calendar-getting-started-update-packages.png)
 
-- After you update the Xamarin.Forms to the the required version, you get **Xamarin.Android.Support.v4** updated to its latest version. Now you are ready to use UI for Xamarin Cross-Platform.
-

@@ -12,6 +12,9 @@ navigation:
     controls:
         title: "Controls"
         position: 3
+	troubleshooting:
+		title: "Troubleshooting"
+		position: 4
 ## End Root Level
 ## Controls Sub-Folders
     ## Calendar

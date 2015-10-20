@@ -30,7 +30,7 @@ Once users create the blank **Xamarin.Forms** solution, they need to add referen
 	- Telerik.XamarinForms.PrimitivesRenderer.iOS.dll
 * **WinPhone**
 
-	> **RadSideDrawer** is not available for **Windows Phone**.
+	> **RadSideDrawer** is not available for **Windows Phone** and **WinRT**.
 
 You will also have to add the following code to these project files:
 

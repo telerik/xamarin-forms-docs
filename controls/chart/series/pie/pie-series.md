@@ -25,7 +25,7 @@ slug: chart-series-pie-series
 	};
 	
 	var series = new PieSeries();
-	series.SetBinding(BarSeries.ItemsSourceProperty, new Binding("SimpleData"));    
+	series.SetBinding(PieSeries.ItemsSourceProperty, new Binding("SimpleData"));    
 	series.ValueBinding = new PropertyNameDataPointBinding("Value");
 	series.ShowLabels = true;
 	
@@ -39,9 +39,9 @@ slug: chart-series-pie-series
 	  </telerikChart:RadCartesianChart.BindingContext>
 	  <telerikChart:RadPieChart.Series>
 	    <telerikChart:PieSeries ItemsSource="{Binding SimpleData}" ShowLabels="true">
-	      <telerikChart:BarSeries.ValueBinding>
+	      <telerikChart:PieSeries.ValueBinding>
 	        <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
-	      </telerikChart:BarSeries.ValueBinding>
+	      </telerikChart:PieSeries.ValueBinding>
 	    </telerikChart:PieSeries>
 	  </telerikChart:RadPieChart.Series>
 	</telerikChart:RadPieChart>

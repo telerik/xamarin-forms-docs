@@ -15,9 +15,9 @@ With the official release of **Q3 2015** we have introduced several new assembli
 This method should be called right after the `Xamarin.Forms.Forms.Init(...)` call in the native projects starting pages.
 
 - **Android**: MainActivity.cs  
-in the MainActivity.OnCreate(...) method
+in the `MainActivity.OnCreate(...)` method
 - **iOS**: AppDelegate.cs  
-in the AppDelegate.FinishedLaunching(...) method
+in the `AppDelegate.FinishedLaunching(...)` method
 - **Windows Phone**: MainPage.xaml.cs  
 in the MainPage constructor
 

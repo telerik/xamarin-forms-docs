@@ -7,10 +7,21 @@ position: 3
 
 # Required Android Support Libraries
 
-The controls in the suite require specific Xamarin Android Support Libraries to render correctly on Android. This is the complete list:
+The controls in the suite require specific Xamarin Android Support Libraries to render correctly on Android.
 
-> The latest supported version of Xamarin Android Support Libraries is **23.1.0.3**.  
-> You will also have to update the Xamarin.Forms package to version **1.5.1.6471** and all its dependencies to version **23.1.0.3**.
+>Here are listed the common requirements for all Android projects that use our suite:
+>
+- The required version of all Xamarin Android Support Libraries is **23.1.0.3**.
+- The required version of **Xamarin.Forms** package is **1.5.1.6471**.
+- Here are listed all packages that come with the latest version of Xamarin.Forms, which also have to be updated to version **23.1.0.3**:
+ - Xamarin.Android.Support.v4
+ - Xamarin.Android.Support.Design
+ - Xamarin.Android.Support.v7.AppCompat
+ - Xamarin.Android.Support.v7.CardView
+ - Xamarin.Android.Support.v7.MediaRouter
+- The **Android 6.0 (API 23) SDK** has to be installed in order to use the 23.* versions of the support libraries.
+
+Below is a list of all additional required packages by each control.
 
 ## Calendar
 

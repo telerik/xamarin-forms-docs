@@ -1,6 +1,7 @@
 ---
 title: AreaSeries
 slug: chart-series-area-series
+position: 0
 ---
 
 # AreaSeries #

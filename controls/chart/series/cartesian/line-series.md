@@ -1,6 +1,7 @@
 ---
 title: LineSeries
 slug: chart-series-line-series
+position: 0
 ---
 
 # LineSeries #

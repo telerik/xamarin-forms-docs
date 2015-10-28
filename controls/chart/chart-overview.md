@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: RadChart Overview
-position: 1
+position: 0
 slug: chart-overview
 ---
 

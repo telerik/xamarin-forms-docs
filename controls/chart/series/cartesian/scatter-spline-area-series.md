@@ -1,6 +1,7 @@
 ---
 title: ScatterSplineAreaSeries
 slug: chart-series-scatter-spline-area-series
+position: 0
 ---
 
 # ScatterSplineAreaSeries #

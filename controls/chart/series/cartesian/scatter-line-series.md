@@ -1,6 +1,7 @@
 ---
 title: ScatterLineSeries
 slug: chart-series-scatter-line-series
+position: 0
 ---
 # ScatterLineSeries #
 

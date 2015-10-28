@@ -1,6 +1,7 @@
 ---
 title: BarSeries
 slug: chart-series-bar-series
+position: 0
 ---
 
 # BarSeries #

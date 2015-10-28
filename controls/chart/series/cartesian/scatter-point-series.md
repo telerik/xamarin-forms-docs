@@ -1,6 +1,7 @@
 ---
 title: ScatterPointSeries
 slug: chart-series-scatter-point-series
+position: 0
 ---
 
 # ScatterPointSeries #

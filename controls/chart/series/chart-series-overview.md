@@ -2,7 +2,7 @@
 title: Overview
 page_title: RadChart Series Overview
 slug: chart-series-overview
-position: 1
+position: 0
 ---
 
 # Overview #

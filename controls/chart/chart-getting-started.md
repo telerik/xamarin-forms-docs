@@ -1,7 +1,7 @@
 ---
 title: Chart Getting Started
 page_title: Chart Getting Started
-position: 3
+position: 2
 slug: chart-getting-started
 ---
 # Getting Started #

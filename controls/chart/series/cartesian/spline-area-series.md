@@ -1,6 +1,7 @@
 ---
 title: SplineAreaSeries
 slug: chart-series-spline-area-series
+position: 0
 ---
 
 # SplineAreaSeries #

@@ -1,6 +1,7 @@
 ---
 title: SplineSeries
 slug: chart-series-spline-series
+position: 0
 ---
 
 # SplineSeries #

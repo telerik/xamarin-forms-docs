@@ -20,7 +20,7 @@ Here are listed the common requirements for all Android projects that use our su
  - Xamarin.Android.Support.v7.CardView
  - Xamarin.Android.Support.v7.MediaRouter
 - The **Android 6.0 (API 23) SDK** has to be installed in order to use the 23.* versions of the support libraries (install from the Android SDK Manager).
-- The target Android version of the Android project should be API Level 23 (Xamarin.Android v6.0 Support). This could be modified from the project settings.
+- The target Android version of the Android project should be **API Level 23 (Xamarin.Android v6.0 Support)**. This could be modified from the project settings.
 
 Below is a list of the specific packages required by each control.
 

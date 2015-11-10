@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-position: 3
+position: 2
 slug: listview-getting-started
 ---
 

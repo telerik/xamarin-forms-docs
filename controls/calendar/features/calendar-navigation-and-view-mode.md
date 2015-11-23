@@ -5,21 +5,21 @@ position: 1
 slug: calendar-features-navigation-and-view-mode
 ---
 
-# Navigation and View Mode #
+# Navigation and View Mode
 
-## Navigation ##
+## Navigation
 
-### Properties: ###
+### Properties:
 
  - **DisplayDate** (DateTime): A date in the current view. 
  - **MinDate** (DateTime): Gets or sets the min date that could be displayed or selected. 
  - **MaxDate** (DateTime): Gets or sets the max date that can be displayed or selected. 
 
-### Events: ###
+### Events:
 
  - **DisplayDateChanged** (ValueChangedEventArgs&lt;object&gt;): Occurs when the selected date is changed. 
 
-### Example ###
+### Example
 
 First you have to create a RadCalendar control:
 
@@ -46,21 +46,23 @@ Or subscribe to the **DisplayDateChanged** event:
 	    // do something  
 	};
 
-## ViewMode ##
+## ViewMode
 
-### Properties: ###
+### Properties:
 
  - **ViewMode** (CalendarViewMode): Gets the current view mode of the calendar (use the **TrySetViewMode** method to set the current view).  
 Here are listed the supported view modes for each platform:
 ![Calendar View Modes](images/calendar-view-mode-support.png "Supported view modes")
 
-### Events: ###
+### Events:
 
- - **ViewChanged** (ValueChangedEventArgs&lt;CalendarViewMode&gt;): Occurs when the calendar view mode is changed. 
+- **ViewChanged** (ValueChangedEventArgs&lt;CalendarViewMode&gt;): Occurs when the calendar view mode is changed. 
+- **NativeControlLoaded** (EventArgs): Occurs when the renderer has finished preparing the native control.
+- **NativeControlUnloaded** (EventArgs): Occurs when the native control is in invalid state.
 
-### Methods: ###
+### Methods:
 
-> **Important**: All calendar methods should be called after the native element has been loaded.
+> **Important**: All calendar methods should be called after the native element has been loaded - when the **NativeControlLoaded** event is raised.
  
  - bool **TrySetViewMode**(CalendarViewMode *view*, bool *isAnimated* = true): Tries to set the view mode of the calendar to the specified value. If the view mode is supported, the method returns `true`, otherwise returns `false`.
  - bool **TryNavigateToUpperView** (bool *isAnimated* = true): Navigates to upper view if possible. Returns `true` if navigation has been successful, `false` otherwise. 
@@ -73,3 +75,12 @@ Here are listed the supported view modes for each platform:
   - **Android**: `Year` > `Month` 
 
 
+Example:
+
+	var calendar = new RadCalendar();
+	calendar.NativeControlLoaded += CalendarLoaded;
+	
+	private void CalendarLoaded(object sender, EventArgs args)
+	{
+	    (sender as RadCalendar).TrySetViewMode(CalendarViewMode.Year);
+	}

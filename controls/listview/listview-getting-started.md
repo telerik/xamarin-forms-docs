@@ -100,4 +100,4 @@ The result will be similar to the following pictures.
 
 Figure 1: RadListView in Android
 
-![RadListView](images/listview.png)
+![RadListView](images/listview-getting-started.png)

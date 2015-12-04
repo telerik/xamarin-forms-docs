@@ -25,6 +25,68 @@ This descriptor enables you to group by a custom key (e.g. some complex expressi
 - **KeyLookup**: Gets or sets the IKeyLookup instance used to retrieve the group key for each data item.
 - **SortOrder**:  Gets or sets the sort order in each group to Ascending or Descending.
 
+## Example
+
+#### XAML
+	<telerikDataControls:RadListView x:Name="EventsList">
+	    <telerikDataControls:RadListView.ItemTemplate>
+	      <DataTemplate>
+	        <listView:ListViewTemplateCell>
+	          <listView:ListViewTemplateCell.View>
+	            <Grid Padding="16, 0, 0, 0">
+	              <Label Text="{Binding Content}" FontSize="Large"/>
+	            </Grid>
+	          </listView:ListViewTemplateCell.View>
+	        </listView:ListViewTemplateCell>
+	      </DataTemplate>
+	    </telerikDataControls:RadListView.ItemTemplate>
+	    <telerikDataControls:RadListView.GroupDescriptors>
+	      <listView:PropertyGroupDescriptor PropertyName="Day"/>
+	    </telerikDataControls:RadListView.GroupDescriptors>
+	    <telerikDataControls:RadListView.GroupHeaderTemplate>
+	      <DataTemplate>
+	        <Grid BackgroundColor="#C1C1C1">
+	          <Label Text="{Binding }" TextColor="#303030" FontSize="Medium" HorizontalOptions="Center"/>
+	        </Grid>
+	      </DataTemplate>
+	    </telerikDataControls:RadListView.GroupHeaderTemplate>
+	</telerikDataControls:RadListView>
+
+Where the  telerikDataControls and the listView alias are defined like this:
+
+	xmlns:listView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
+	xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+
+####	C# 
+
+    public partial class StartPage : ContentPage
+    {
+        public StartPage()
+        {
+            InitializeComponent();
+
+            this.EventsList.ItemsSource = this.GenerateSource();
+        }
+
+        private System.Collections.IEnumerable GenerateSource()
+        {
+            var results = new List<Event>();
+
+            results.Add(new Event() { Content = "Content of the item", Day = "Today" });
+            results.Add(new Event() { Content = "This also happens today", Day = "Today" });
+            results.Add(new Event() { Content = "More events today", Day = "Today" });
+            results.Add(new Event() { Content = "Go shopping after 19:00", Day = "Today" });
+            results.Add(new Event() { Content = "You are now free to do whathever", Day = "Today" });
+
+            results.Add(new Event() { Content = "For tommorow", Day = "Tommorow" });
+            results.Add(new Event() { Content = "It is a free day", Day = "Tommorow" });
+            results.Add(new Event() { Content = "Go have some fun", Day = "Tommorow" });
+            results.Add(new Event() { Content = "Party", Day = "Tommorow" });
+
+            return results;
+        }
+    }
+
 ## See Also
 
 [Filtering]({%slug listview-features-filtering%})

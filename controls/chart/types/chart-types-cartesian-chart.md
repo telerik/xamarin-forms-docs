@@ -12,17 +12,17 @@ This chart visualizes its data points using the Cartesian coordinate system. The
 
 The RadCartesianChart control has the following properties:
 
-* **HorizontalAxis**: Gets or sets the visual Axis instance that will be used to plot points along the horizontal (X) axis.
-* **VesrticalAxis**: Gets or sets the visual Axis instance that will be used to plot points along the vertical (Y) axis.
-* **Series**: Gets a collection of all series presented by the chart instance.
-* **Palette**: Gets or sets the **ChartPalette** instance that defines the appearance of the chart.
-* **PaletteName**: Gets or sets the name of the predefined Palette that will be applied to the chart.
-* **SelectionPalette**: Gets or sets the **ChartPalette** instance that defines the appearance of the chart for selected series and/or data points.
-* **SelectionPaletteName**: Gets or sets the name of the predefined SelectionPalette that will be applied to the chart.
-* **Behaviors**: Gets a collection of all enabled behaviors.
-* **Grid**: Gets or sets the CartesianChartGrid instance used to decorate the chart plot area with grid and strip lines.
-* **Annotations**: Gets a collection of all annotations presented by the chart instance.
-* **MaxZoom**: Gets or sets the maximum allowed zoom.
+* **HorizontalAxis** (CartesianAxis): Gets or sets the visual Axis instance that will be used to plot points along the horizontal (X) axis.
+* **VesrticalAxis** (CartesianAxis): Gets or sets the visual Axis instance that will be used to plot points along the vertical (Y) axis.
+* **Series** (ElementsCollection<CartesianSeries>): Gets a collection of all series presented by the chart instance.
+* **Palette** (ChartPalette): Gets or sets the **ChartPalette** instance that defines the appearance of the chart.
+* **PaletteName** (PaletteNames): Gets or sets the name of the predefined Palette that will be applied to the chart.
+* **SelectionPalette** (ChartPalette): Gets or sets the **ChartPalette** instance that defines the appearance of the chart for selected series and/or data points.
+* **SelectionPaletteName** (PaletteNames): Gets or sets the name of the predefined SelectionPalette that will be applied to the chart.
+* **Behaviors** (ObservableCollection<ChartBehavior>): Gets a collection of all enabled behaviors.
+* **Grid** (CartesianChartGrid): Gets or sets the CartesianChartGrid instance used to decorate the chart plot area with grid and strip lines.
+* **Annotations** (ObservableCollection<CartesianChartAnnotation>): Gets a collection of all annotations presented by the chart instance.
+* **MaxZoom** (Size): Gets or sets the maximum allowed zoom.
 
 ## Methods
 

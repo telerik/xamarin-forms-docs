@@ -24,7 +24,9 @@ The properties of this object are respectively applied to the native components.
 3. **BorderWidth** (*double*): gets or sets the width of the borer.
 4. **BorderLocation** (*Location*): gets or sets an enumeration describing where the border should be visible.
 
-#### Location
+
+
+### Location
 
 This enumeration contains the following members:
 

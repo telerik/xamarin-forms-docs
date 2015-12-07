@@ -22,6 +22,11 @@ Cells are non visual objects used to describe a template for creating a visual e
 	    </telerikDataControls:RadListView.ItemTemplate>
   	</telerikDataControls:RadListView>
 
+Where the namespaces are defined like this:
+
+             xmlns:listView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
+             xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+
 #### C# 
 
     public partial class StartPage : ContentPage
@@ -74,6 +79,11 @@ Cells are non visual objects used to describe a template for creating a visual e
 	      </DataTemplate>
 	    </telerikDataControls:RadListView.ItemTemplate>
   	</telerikDataControls:RadListView>
+
+Where the namespaces are defined like this:
+
+             xmlns:listView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
+             xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
 
 #### C# 
 

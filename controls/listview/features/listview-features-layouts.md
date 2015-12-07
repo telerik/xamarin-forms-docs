@@ -16,10 +16,12 @@ Both layouts share common functionality in addition to the arrangement of the it
 - **VerticalItemSpacing** (double): Gets or sets the vertical space between two items.
 - **HorizontalItemSpacing** (double): Gets or sets the horizontal space between two items.
 - **ItemLength** (double): Gets or sets the width or height (depending on the layout orientation) of the items. Its default value is -1 which means that the items will be sized according to the targeted platform.
+- **GroupHeaderLength** (double): Gets or sets a value defining how much space the header item should take.
+- **Orientation** (Orientation): Gets or sets a value describing how the list should be visualized.
 
 ## Linear Layout
 
-Linear layout is the default layout of the control. It can be explicitly set by creating an instance of the **ListViewLinearLayout** class and assigning it to the **RadListView.LayoutDefinition** property. In addition to the layout itself users can also change it's orientation. This can be done by changing the **ListViewLinearLayout.Orientation** property. It is of type *Orientation* enum and gets or sets the orientation either to *Vertical* or *Horizontal*.
+Linear layout is the default layout of the control. It can be explicitly set by creating an instance of the **ListViewLinearLayout** class and assigning it to the **RadListView.LayoutDefinition** property.
 
 Here is how the linear layouts look like:
 
@@ -33,7 +35,9 @@ Figure 2: Linear Horizontal Layout
 
 ## Grid Layout
 
-The Grid Layout is an alternative layout provided by the **RadListView** out of the box. It allows distributing cells in a fixed number of columns/rows. It can be utilized by setting the **RadListView.LayoutDefinition** property to a new instance of the **ListViewGridLayout** class. It's orientation can also be changed by setting the **ListViewGridLayout.Orientation** property to either *Orientation.Vertical* or *Orientation.Horizontal*.
+The Grid Layout is an alternative layout provided by the **RadListView** out of the box. It allows distributing cells in a fixed number of columns/rows. In addition to the properties of the linear layout it exposes the **SpanCount** property. It is of type **int** and gets or sets the count of the Columns/Rows (depending on the orientation) of the list. 
+
+The grid layout can be utilized by setting the **RadListView.LayoutDefinition** property to a new instance of the **ListViewGridLayout** class.
 
 Here is how the Grid Layout looks like:
 

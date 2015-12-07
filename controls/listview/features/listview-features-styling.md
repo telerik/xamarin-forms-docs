@@ -15,7 +15,7 @@ The RadListView component provides styling mechanism for customizing the look of
 
 All the properties can be **get** or **set** and their type is **ListViewItemStyle**.
 
-## ListViewItemStyle
+# ListViewItemStyle
 
 The properties of this object are respectively applied to the native components. The supported ones are the following:
 
@@ -24,7 +24,7 @@ The properties of this object are respectively applied to the native components.
 3. **BorderWidth** (*double*): gets or sets the width of the borer.
 4. **BorderLocation** (*Location*): gets or sets an enumeration describing where the border should be visible.
 
-##### Location
+#### Location
 
 This enumeration contains the following members:
 

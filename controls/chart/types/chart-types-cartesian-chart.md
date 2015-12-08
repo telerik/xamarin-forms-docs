@@ -23,9 +23,6 @@ The RadCartesianChart control has the following properties:
 * **Grid** (CartesianChartGrid): Gets or sets the CartesianChartGrid instance used to decorate the chart plot area with grid and strip lines.
 * **Annotations** (ObservableCollection<CartesianChartAnnotation>): Gets a collection of all annotations presented by the chart instance.
 * **MaxZoom** (Size): Gets or sets the maximum allowed zoom.
-<!-- * **Zoom**(Size zoom): Gets or sets the zoom of the chart.
-* **PanOffset**(Point offset): Gets or sets an offset to the chart.
--->
 
 ## Methods
 

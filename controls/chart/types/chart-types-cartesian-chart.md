@@ -3,7 +3,7 @@ title: Cartesian Chart
 position: 1
 slug: chart-types-cartesian-chart
 ---
-# RadCartesianChart #
+# RadCartesianChart
 
 This chart visualizes its data points using the Cartesian coordinate system. The X and Y axes define how the coordinates of each point in the plot area are calculated and the series type define the way these data points will be visualized.  
 ![Cartesian Chart](images/cartesian-chart-example.png)
@@ -13,7 +13,7 @@ This chart visualizes its data points using the Cartesian coordinate system. The
 The RadCartesianChart control has the following properties:
 
 * **HorizontalAxis** (CartesianAxis): Gets or sets the visual Axis instance that will be used to plot points along the horizontal (X) axis.
-* **VesrticalAxis** (CartesianAxis): Gets or sets the visual Axis instance that will be used to plot points along the vertical (Y) axis.
+* **VerticalAxis** (CartesianAxis): Gets or sets the visual Axis instance that will be used to plot points along the vertical (Y) axis.
 * **Series** (ElementsCollection<CartesianSeries>): Gets a collection of all series presented by the chart instance.
 * **Palette** (ChartPalette): Gets or sets the **ChartPalette** instance that defines the appearance of the chart.
 * **PaletteName** (PaletteNames): Gets or sets the name of the predefined Palette that will be applied to the chart.
@@ -23,6 +23,9 @@ The RadCartesianChart control has the following properties:
 * **Grid** (CartesianChartGrid): Gets or sets the CartesianChartGrid instance used to decorate the chart plot area with grid and strip lines.
 * **Annotations** (ObservableCollection<CartesianChartAnnotation>): Gets a collection of all annotations presented by the chart instance.
 * **MaxZoom** (Size): Gets or sets the maximum allowed zoom.
+<!-- * **Zoom**(Size zoom): Gets or sets the zoom of the chart.
+* **PanOffset**(Point offset): Gets or sets an offset to the chart.
+-->
 
 ## Methods
 
@@ -31,7 +34,7 @@ The RadCartesianChart control has the following properties:
 * **SetPanOffset**(Point offset): Sets an offset to the chart measured from the upper left corner in pixels.
 * **SetZoom**(Size zoom): Sets the zoom of the chart.
 
-## Supported Axes ##
+## Supported Axes
 
 **RadCartesianChart** needs to have two axes which will be used to calculate correctly the position of each data point. Usually one of the axes will be used to display the category of each data point and the other will represent its value. Here are the supported axes:
 
@@ -39,7 +42,7 @@ The RadCartesianChart control has the following properties:
 - [**Numerical**]({% slug axes-numerical-axis %}): Calculates the coordinate of each data point, depending on the actual numerical value this point provides for the axis. A NumericalAxis exposes Minimum and Maximum properties to allow for explicit definition of the range of values visible on this axis. If these properties are not specified, the axis will automatically calculate the range, depending on the minimum and maximum data point values.
 - [**Date-Time Continuous**]({% slug axes-date-time-continuous-axis %}): This is a special axis that expects each data point to provide a DateTime structure as its value for this axis. You can think of DateTimeContinuousAxis as a timeline where the coordinate of each data point is calculated depending on the position of its associated DateTime on the timeline. The base unit (or the timeline step) of the axis is calculated depending on the smallest difference between any two dates.
 
-## Supported Series ##
+## Supported Series
 The following Cartesian series are available:
 
 - **Categorical**: Categorical series need a [**Numerical**]({% slug axes-numerical-axis %}) and a [**Categorical**]({% slug axes-categorical-axis %})/[**Date-Time Continuous**]({% slug axes-date-time-continuous-axis %}) axis in order to get properly plotted.
@@ -58,7 +61,7 @@ Each of the above series of the same type may be combined in either [stacks or c
     - [**ScatterArea**]({% slug chart-series-scatter-area-series %}): Data points and the horizontal axis enclose an area that may be optionally stroked and/or filled.
     - [**ScatterSplineArea**]({% slug chart-series-scatter-spline-area-series %}): A ScatterArea, where points are connected with smooth rather than straight segments.
 
-## Example ##
+## Example
 
 1. Define RadCartesianChart:  
 	- XAML definition:

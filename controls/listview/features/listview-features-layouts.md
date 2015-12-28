@@ -24,11 +24,19 @@ Linear layout is the default layout of the control. It can be explicitly set by 
 
 Here is how the linear layouts look like:
 
-Figure 1: Linear Vertical Layout
+Figure 1: Linear Vertical Layout (default layout)
+
+	<telerikDataControls:RadListView/>
 
 ![Linear Vertical](images/listview-features-layout.png)
 
 Figure 2: Linear Horizontal Layout
+	
+	<telerikDataControls:RadListView>
+		<telerikDataControls:RadListView.LayoutDefinition>
+			<list:ListViewLinearLayout Orientation="Horizontal"/>
+		</telerikDataControls:RadListView.LayoutDefinition>
+	</telerikDataControls:RadListView>
 
 ![Linear Horizontal](images/listview-features-horizontal-layout.png)
 
@@ -42,90 +50,31 @@ Here is how the Grid Layout looks like:
 
 Figure 3: Grid Vertical Layout
 
+	<telerikDataControls:RadListView x:Name="list">
+		<telerikDataControls:RadListView.LayoutDefinition>
+			<list:ListViewGridLayout />
+		</telerikDataControls:RadListView.LayoutDefinition>
+	</telerikDataControls:RadListView>
+
 ![Grid Vertical](images/listview-features-grid-layout.png)
 
 Figure 4: Grid Horizontal Layout
 
+	<telerikDataControls:RadListView x:Name="list">
+		<telerikDataControls:RadListView.LayoutDefinition>
+			<list:ListViewGridLayout Orientation="Horizontal"/>
+		</telerikDataControls:RadListView.LayoutDefinition>
+	</telerikDataControls:RadListView>
+
 ![Grid Horizontal](images/listview-features-horizontal-grid-layout.png)
 
-## Example
+Figure 5: Grid Vertical Layout with 3 columns
 
-#### XAML
-	<Grid BackgroundColor="#33888888">
-		<Grid.RowDefinitions>
-		  <RowDefinition Height="Auto"/>
-		  <RowDefinition/>
-		</Grid.RowDefinitions>
-		
-		<StackLayout Padding="10">
-		  <Label Text="select layout:" FontSize="Medium"/>
-		  <Picker x:Name="layoutPicker"/>
-		  <Label Text="select orientation:" FontSize="Medium"/>
-		  <Picker x:Name="orientationPicker"/>
-		</StackLayout>
+	<telerikDataControls:RadListView x:Name="list">
+		<telerikDataControls:RadListView.LayoutDefinition>
+			<list:ListViewGridLayout SpanCount="3"/>
+		</telerikDataControls:RadListView.LayoutDefinition>
+	</telerikDataControls:RadListView>
 
-		<telerikDataControls:RadListView x:Name="listView" Grid.Row="1" BackgroundColor="White"/>
-	</Grid>
+![Grid Horizontal](images/listview-features-spancount-grid-layout.png)
 
-#### C# 
-
-    private Orientation orientation = Orientation.Vertical;
-
-    public Layouts()
-    {
-        InitializeComponent();
-        this.InitializePickers();
-        listView.ItemsSource = GetSource(100);
-    }
-
-    private static IEnumerable GetSource(int count)
-    {
-        var source = new List<string>();
-        for (var i = 0; i < count; i++)
-        {
-            source.Add(string.Format("item {0}", i));
-        }
-
-        return source;
-    }
-
-    private void InitializePickers()
-    {
-        orientationPicker.Items.Add("Vertical");
-        orientationPicker.Items.Add("Horizontal");
-        orientationPicker.SelectedIndexChanged += this.OnOrientationChanged;
-        orientationPicker.SelectedIndex = 0;  
-        
-        layoutPicker.Items.Add("Linear");
-        layoutPicker.Items.Add("Grid");
-        layoutPicker.SelectedIndexChanged += this.OnLayoutChanged;
-        layoutPicker.SelectedIndex = 0;
-    }
-
-    private void OnOrientationChanged(object sender, EventArgs e)
-    {
-        switch ((sender as Picker).SelectedIndex)
-        {
-            case 0:
-                this.orientation = Orientation.Vertical;
-                break;
-            case 1:
-                this.orientation = Orientation.Horizontal;
-                break;
-        }
-        
-        listView.LayoutDefinition.Orientation = this.orientation;
-    }
-
-    private void OnLayoutChanged(object sender, EventArgs e)
-    {
-        switch ((sender as Picker).SelectedIndex)
-        {
-            case 0:
-                listView.LayoutDefinition = new ListViewLinearLayout { Orientation = this.orientation };
-                break;
-            case 1:
-                listView.LayoutDefinition = new ListViewGridLayout { Orientation = this.orientation };
-                break;
-        }
-    }

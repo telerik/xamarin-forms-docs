@@ -25,9 +25,12 @@ navigation:
     controls/calendar/features:
         title: "Features"
         position: 5
+	controls/calendar/styling:
+        title: "Styling"
+        position: 6
     controls/calendar/how-to:
         title: "How To"
-        position: 6
+        position: 7
         ## End Calendar Sub-Folders
     ## End Calendar
     ## Chart

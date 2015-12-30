@@ -25,7 +25,7 @@ navigation:
     controls/calendar/features:
         title: "Features"
         position: 5
-	controls/calendar/styling:
+    controls/calendar/styling:
         title: "Styling"
         position: 6
     controls/calendar/how-to:

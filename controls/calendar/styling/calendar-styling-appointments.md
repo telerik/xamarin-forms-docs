@@ -5,7 +5,7 @@ position: 5
 slug: calendar-styling-appointments
 ---
 
->important Appointments cannot be customized in WindowsPhone. This is why the following properties are applicable for iOS and Android, only.
+> Appointments cannot be customized in WindowsPhone. This is why the following properties are applicable for iOS and Android, only.
 
 This article's purpose is to get you familiar with the **AppointmentsStyle** property of the RadCalendar component. It is of type **CalendarAppointmentsStyle** and gets or sets the visual representation of the appointments of the calendar. Here are the properties that the style exposes:
 

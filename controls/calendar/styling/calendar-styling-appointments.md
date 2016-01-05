@@ -34,7 +34,11 @@ Here are the properties exposed by the style:
  - **ShapesHorizontalLocation** (*HorizontalLocation*): Gets or sets the horizontal position of the events shapes.
  - **ShapeSize** (*Size*): Gets or sets the size of the events shapes.
  - **ShapesOrientation** (*Orientation*): Gets or sets the orientation of the shapes.
- - 
+ - **AllDayShapesDisplayMode** (*AllDayDisplayMode*): Gets or sets a value defining how the all-day events will be visualized.
+	 - Indicator
+	 - WithShapes
+
+
  - **DisplayMode** (*AppointmentDisplayMode*): Gets or sets how the appointments are visualized.
 	 - Text
 	 - TextWithShape
@@ -60,4 +64,4 @@ Here are the properties exposed by the style:
 	 - Right
 	 - All
  
-![AllDay Indicator Location](images/calendar-cell-style-all-day-indicator-location.png "AllDayIndicatorLocation")
+![AllDay Indicator Location](images/calendar-cell-style-all-day-indicator-location.png "AllDayIndicatorLocation = Left")

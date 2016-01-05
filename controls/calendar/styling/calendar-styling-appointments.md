@@ -68,6 +68,22 @@ Here are the properties exposed by the style:
 
 #### Example
 
+	var r = new Random();
+    var appointments = new ObservableCollection<Appointment>();
+    for (int i = 0; i < 30; i++)
+    {
+        var start = DateTime.Now.AddDays((double)r.Next(-30, 3)).AddHours((double)r.Next(-12, 12));
+        appointments.Add(new Appointment() 
+        { 
+            Color = Color.FromRgb((double)r.Next(0,100)/100,(double)r.Next(0,100)/100,(double)r.Next(0,100)/100),
+            StartDate = start,
+            EndDate = start.AddDays((double)r.Next(0, 3)).AddHours((double)r.Next(0, 24)),
+            IsAllDay = r.Next(0,100) % 3 == 0 ? true : false,
+            Title = i + " appointment title"
+        });
+    }
+
+	this.calendar.AppointmentsSource = appointments;
     this.calendar.AppointmentsStyle = new CalendarAppointmentsStyle
     {
         DisplayMode = AppointmentDisplayMode.Shape,

@@ -7,37 +7,57 @@ slug: calendar-styling-appointments
 
 > Appointments cannot be customized in WindowsPhone. This is why the following properties are applicable for iOS and Android, only.
 
-This article's purpose is to get you familiar with the **AppointmentsStyle** property of the RadCalendar component. It is of type **CalendarAppointmentsStyle** and gets or sets the visual representation of the appointments of the calendar. Here are the properties that the style exposes:
+This article's purpose is to get users familiar with the **AppointmentsStyle** property of the RadCalendar component. It is of type **CalendarAppointmentsStyle** and gets or sets the visual representation of the appointments of the calendar. This is how the appointments are positioned inside a calendar cell.
 
- - **FontSize** (*double*): Gets or sets a value controlling the size of the text of an appointment.
+![Display Mode](images/text.png "Cell Structure")
+
+Here are the properties exposed by the style:
+
+ - **MaxCount** (*int*): Gets or sets the maximum count of displayed events. 
+ - **Padding** (*Thickness*): Gets or sets the padding of the rectangle that holds the events.
  - **ShapeSize** (*Size*): Gets or sets the dimensions that will be user when drawing the separate shapes.
  - **Spacing** (*double*): Gets or sets the empty space between two appointments in the same date.
+ - **FontSize** (*double*): Gets or sets a value controlling the size of the text of an appointment. 
+ - **TextColor** (*Color*): Gets or sets the color for all appointments that are **not** marked as all day. This color will be applied if the *TextColorFromAppointment* property is set to false.
+ - **AllDayTextColor** (*Color*): Gets or sets the text color for the all-day appointments. 
+ - **MoreTextColor** (*Color*): Gets or sets the color for the text indicating  there are appointments that are not displayed due to lack of space. 
+ - **AllDayTextPadding** (*Thickness*): Gets or sets the padding of the all-day appointments text. 
+ - **TextPadding** (*Thickness*): Gets or sets the padding of the appointments text.
+ - **TextColorFromAppointment** (*bool*): Gets or sets a boolean value indicating whether the appointment text should take its color from the *IAppointment.Color* value or the *TextColor* property value should be used.
+ - **TextVerticalLocation** (*VerticalLocation*): Gets or sets the vertical position of the text.
+ - **TextHorizontalLocation** (*HorizontalLocation*): Gets or sets the horizontal position of the text.
+ - **BackgroundRectBorderRadius** (*double*): Gets or sets the border radius of the text background rectangle.
+ - **MoreTextFormatString** (*string*): Gets or sets the format string that will be used to modify the text displaying how many appointments remain hidden, e.g.: " **{0} more**"
+ - **AllDayIndicatorWidth** (*double*): Gets or sets the width of the all-day indicator. It will take all available space for its other dimension depending on its location.
+ - **AllDayIndicatorPadding** (*Thickness*): Gets or sets the padding of the all-day indicator rectangle. 
+ - **ShapesVerticalLocation** (*VerticalLocation*): Gets or sets the vertical position of the events shapes.
+ - **ShapesHorizontalLocation** (*HorizontalLocation*): Gets or sets the horizontal position of the events shapes.
+ - **ShapeSize** (*Size*): Gets or sets the size of the events shapes.
+ - **ShapesOrientation** (*Orientation*): Gets or sets the orientation of the shapes.
+ - 
  - **DisplayMode** (*AppointmentDisplayMode*): Gets or sets how the appointments are visualized.
-	 - AppointmentDisplayMode:
-		 - Text
-		 - TextWithShape
-		 - TextWithBackground
-		 - Shape
+	 - Text
+	 - TextWithShape
+	 - TextWithBackground
+	 - Shape
 
-![Display Mode](images/a.png "DisplayMode = Shape")
+![Display Mode](images/calendar-cell-style-display-mode.png "DisplayMode = Shape")
 
  - **ShapeType** (*CalendarAppointmentShapeType*): Gets or sets the shape representing an appointment.
-	 - CalendarAppointmentShapeType:
-		 - Rectangle
-		 - Ellipse
-		 - TriangleUp
-		 - TriangleDown
-		 - Rhombus
+	 - Rectangle
+	 - Ellipse
+	 - TriangleUp
+	 - TriangleDown
+	 - Rhombus
 
-![Shape Type](images/b.png "ShapeType = Rhombus")
+![Shape Type](images/calendar-cell-style-shape-type.png "ShapeType = Rhombus")
 
  - **AllDayIndicatorLocation** (*Location*): Gets or sets the location where the all day indicators are visualized.
-	 - Location:
-		 - None
-		 - Top
-		 - Bottom
-		 - Left
-		 - Right
-		 - All
+	 - None
+	 - Top
+	 - Bottom
+	 - Left
+	 - Right
+	 - All
  
-![AllDay Indicator Location](images/c.png "AllDayIndicatorLocation")
+![AllDay Indicator Location](images/calendar-cell-style-all-day-indicator-location.png "AllDayIndicatorLocation")

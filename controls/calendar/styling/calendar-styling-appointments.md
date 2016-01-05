@@ -65,3 +65,28 @@ Here are the properties exposed by the style:
 	 - All
  
 ![AllDay Indicator Location](images/calendar-cell-style-all-day-indicator-location.png "AllDayIndicatorLocation = Left")
+
+#### Example
+
+    this.calendar.AppointmentsStyle = new CalendarAppointmentsStyle
+    {
+        DisplayMode = AppointmentDisplayMode.Shape,
+        Padding = new Thickness(5, 25, 5, 5),
+        MaxCount = 20,
+        Spacing = 1,
+        ShapesHorizontalLocation = HorizontalLocation.Right,
+        ShapesVerticalLocation = VerticalLocation.Bottom,
+        ShapesOrientation = Orientation.Vertical,
+        ShapeSize = new Size(6, 4),
+        ShapeType = CalendarAppointmentShapeType.Rectangle,
+        AllDayShapesDisplayMode = AllDayDisplayMode.Indicator,
+        AllDayIndicatorLocation = Location.Top,
+        AllDayIndicatorPadding = new Thickness(5, 2),
+        AllDayIndicatorWidth = 2,
+    };
+
+The result should be similar to this:
+
+![Styling Appointments](images/calendar-calendar-appointments-style-ios.png "iOS")
+
+![Styling Appointments](images/calendar-calendar-appointments-style-android.png "Android")

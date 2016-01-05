@@ -9,9 +9,15 @@ slug: listview-features-selection
 
 The **RadListView** component exposes selection feature. It allows users to select one or many items out of the ItemsSource of the control. This feature provides both visual and programmatic feedback for the actions of the user. The following members are related to the selection: 
 
-- **SelectionGesture** (SelectionGesture): Gets or sets the gesture triggering the selection. The available values are: **Tap**, **Hold**.
-- **SelectionMode** (SelectionMode): Gets or sets the mode of the selection. The available values are: **None**, **Single**, **Multiple**.
-- **SelectedItems** (ReadOnlyObservableCollection<object>): Holds the items that are currently selected.
+- **SelectionGesture** (*SelectionGesture*): Gets or sets the gesture triggering the selection.
+	- Tap
+	- Hold
+- **SelectionMode** (*SelectionMode*): Gets or sets the mode of the selection.
+	- None
+	- Single
+	- Multiple
+- **SelectedItems** (*ObservableCollection&lt;object&gt;*): Gets or sets the currently selected items.
+- **SelectedItem** (*object*): Gets the last selected item.
 - **SelectionChanged**: An event that is triggered whenever the SelectedItems collection is changed.
 
 ## Single Selection
@@ -20,7 +26,28 @@ This is the default selection mode. It allows users to select only one item. Thi
 
 Figure 1: Single Selection
 
-![SingleSelection](images/listview-features-selection-single.png)
+![SingleSelection](images/listview-features-selection-single.png "Single Selection")
+
+## Example
+
+#### XAML
+
+	<StackLayout>
+		<telerik:RadListView x:Name="list" SelectionMode="Single"></telerik:RadListView>
+		<Label BindingContext="{x:Reference Name=list}" Text="{Binding SelectedItem}" TextColor="Red"/>
+	</StackLayout>
+
+#### C# 
+
+    public Selection()
+    {
+        InitializeComponent();
+
+        byte index = 0;
+        var items = Enumerable.Repeat("Item ", 10).Select(i => i += index++).ToList<string>();
+        this.list.ItemsSource = items;
+        this.list.SelectedItems.Add(items[4]);
+    }
 
 ## Multiple Selection
 
@@ -28,30 +55,23 @@ To enable it the **SelectionMode** property should be set to **SelectionMode.Mul
 
 Figure 2: Multiple Selection
 
-![MultipleSelection](images/listview-features-selection-multiple.png)
+![MultipleSelection](images/listview-features-selection-multiple.png "Multiple Selection")
 
 ## Example
 
 #### XAML
 
-	<Grid BackgroundColor="#33888888">
+	<Grid>
 		<Grid.RowDefinitions>
-		  <RowDefinition Height="Auto"/>
-		  <RowDefinition/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition>
+				<RowDefinition.Height>
+					<OnPlatform x:TypeArguments="GridLength" iOS="130" Android="700"/>
+				</RowDefinition.Height>
+			</RowDefinition>
 		</Grid.RowDefinitions>
-		
-		<StackLayout Padding="10">
-		  <Label Text="set selection mode:" FontSize="Medium"/>
-		  <Picker x:Name="selectionModePicker"/>
-		  <Label Text="set selection gesture:" FontSize="Medium"/>
-		  <Picker x:Name="selectionGesturePicker"/>
-		</StackLayout>
-		
-		<telerikDataControls:RadListView  x:Name="listView" Grid.Row="1" BackgroundColor="White">
-		  <telerikDataControls:RadListView.SelectedItemStyle>
-		    <telerikListView:ListViewItemStyle BackgroundColor="#88888888"/>
-		  </telerikDataControls:RadListView.SelectedItemStyle> 
-		</telerikDataControls:RadListView>
+		<telerik:RadListView x:Name="list" SelectionMode="Multiple"></telerik:RadListView>
+		<ListView BindingContext="{x:Reference Name=list}" ItemsSource="{Binding SelectedItems}" Grid.Row="1" />
 	</Grid>
 
 #### C# 
@@ -59,60 +79,12 @@ Figure 2: Multiple Selection
     public Selection()
     {
         InitializeComponent();
-        listView.ItemsSource = new List<string> { "dog", "cat", "horse", "cow" };
-        this.InitializePickers();
+
+        byte index = 0;
+        var items = Enumerable.Repeat("Item ", 10).Select(i => i += index++).ToList<string>();
+        this.list.ItemsSource = items;
+        this.list.SelectedItems.Add(items[2]);
+        this.list.SelectedItems.Add(items[5]);
+        this.list.SelectedItems.Add(items[8]);
     }
 
-    private void InitializePickers()
-    {
-        selectionModePicker.Items.Add("None");
-        selectionModePicker.Items.Add("Single");
-        selectionModePicker.Items.Add("Multiple");
-        selectionModePicker.SelectedIndexChanged += this.OnSelectionModeChanged;
-        selectionModePicker.SelectedIndex = 1;
-
-        selectionGesturePicker.Items.Add("Tap");
-        selectionGesturePicker.Items.Add("Hold");
-        selectionGesturePicker.SelectedIndexChanged += this.OnSelectionGestureChanged;
-        selectionGesturePicker.SelectedIndex = 0;
-    }
-
-    private void OnSelectionGestureChanged(object sender, EventArgs e)
-    {
-        switch ((sender as Picker).SelectedIndex)
-        {
-            case 0:
-                listView.SelectionGesture = SelectionGesture.Tap;
-                break;
-            case 1:
-                listView.SelectionGesture = SelectionGesture.Hold;
-                break;
-        }
-    }
-
-    private void OnSelectionModeChanged(object sender, EventArgs e)
-    {
-        switch ((sender as Picker).SelectedIndex)
-        {
-            case 0:
-                listView.SelectionMode = SelectionMode.None;
-                break;
-            case 1:
-                listView.SelectionMode = SelectionMode.Single;
-                break;
-            case 2:
-                listView.SelectionMode = SelectionMode.Multiple;
-                break;
-        }
-    }
-
-    private void ListViewSelectionChanged(object sender, NotifyCollectionChangedEventArgs e)
-    {
-        if (e.NewItems != null)
-        {
-            foreach (var item in e.NewItems)
-            {
-                this.DisplayAlert("Selected item:", (string)item, "OK");
-            }
-        }
-    }

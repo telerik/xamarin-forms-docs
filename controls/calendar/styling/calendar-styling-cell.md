@@ -1,7 +1,7 @@
 ---
 title: Calendar Cell Styling
 page_title: Calendar Cell Styling
-position: 2
+position: 3
 slug: calendar-styling-cell
 ---
 

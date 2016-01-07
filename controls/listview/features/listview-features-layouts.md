@@ -15,7 +15,8 @@ Both layouts share common functionality in addition to the arrangement of the it
 
 - **VerticalItemSpacing** (double): Gets or sets the vertical space between two items.
 - **HorizontalItemSpacing** (double): Gets or sets the horizontal space between two items.
-- **ItemLength** (double): Gets or sets the width or height (depending on the layout orientation) of the items. The default value is -1 which means that the items will be sized according to the targeted platform.
+- **ItemLength** (double): Gets or sets the width or height (depending on the layout orientation) of the items. The default value is -1 which means that the items will be sized according to the targeted platform default behavior.
+- **GroupHeaderLength** (double): Gets or sets the width or height (depending on the layout orientation) of the group headers. The default value is -1 which means that the items will be sized according to the targeted platform default behavior.
 - **Orientation** (Orientation): Gets or sets a value describing how the list should be visualized.
 
 ## Linear Layout

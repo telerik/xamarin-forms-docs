@@ -12,9 +12,11 @@ Here are listed all **RadDataForm** members:
 ## Properties
 
 - **Source** (object)
+- **IsReadOnly** (bool)
 - **[ValidationMode]({%slug dataform-validate-and-commit%}#validate)** (ValidationMode)
 - **[CommitMode]({%slug dataform-validate-and-commit%}#commit)** (CommitMode)
 - **[PropertyDataSourceProvider]({%slug dataform-data-annotations%}#datasourcekeyattribute)** (IPropertyDataSourceProvider)
+- **[EditorStyle]({%slug dataform-styling-editors%})** (DataFormEditorStyle)
 
 ## Methods
 

@@ -148,7 +148,7 @@ You can also define your custom validators. You can directly implement the **IPr
 	    }
 	}
 
-<!-- ## ConverterAttribute
+## ConverterAttribute
 
 Sometimes the editors work with types that are not the same as the property type. In this case you can use a converter. The converters should implement the **IPropertyConverter** interface. The converter attribute requires the type of the converter that will be used.
 
@@ -168,7 +168,7 @@ Sometimes the editors work with types that are not the same as the property type
                 if (this.age != value)
                 {
                     this.age = value;
-                    this.RaisePropertyCanged();
+                    this.OnPropertyCanged();
                 }
             }
         }
@@ -178,14 +178,25 @@ Sometimes the editors work with types that are not the same as the property type
     {
         public object ConvertPropertyValue(object value)
         {
-            return (double)(int)value;
+            return System.Convert.ToInt32(value);
         }
 
         public object ConvertEditorValue(object value)
         {
-            return (int)(double)value;
+            return System.Convert.ToDouble(value);
         }
     }
 
 	dataForm.RegisterEditor("Age", EditorType.NumberPickerEditor);
--->
+
+## DisplayValueFormatAttribute
+
+This attribute provides format options for Date, Time and NumberPicker editor types.
+
+### Example
+
+	[DisplayValueFormat(Plural = "{0} votes", Single = "{0} vote", Zero = "no votes")]
+	public double Votes	{ get; set; }
+
+	[DisplayValueFormat(Date = "yyyy.MM.dd")]
+	public DateTime Date { get; set; }

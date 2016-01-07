@@ -101,7 +101,7 @@ Here is a sample data class:
 	            if (this.name != value)
 	            {
 	                this.name = value;
-	                this.RaisePropertyCanged();
+	                this.OnPropertyChanged();
 	            }
 	        }
 	    }

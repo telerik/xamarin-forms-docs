@@ -54,7 +54,19 @@ The values from the **EditorType** enumeration are interpreted differently by ea
 		<td>DataFormNumberPickerEditor</td>
 		<td>TKDataFormStepperEditor</td>
 		<td>double</td>
-	</tr>	
+	</tr>
+    <tr>
+		<td>IntegerEditor</td>
+		<td>DataFormIntegerEditor</td>
+		<td>TKDataFormNumberEditor</td>
+		<td>int</td>
+	</tr>
+    <tr>
+		<td>DecimalEditor</td>
+		<td>DataFormDecimalEditor</td>
+		<td>TKDataFormDecimalEditor</td>
+		<td>double</td>
+	</tr>
 	<tr>
 		<td>CheckBoxEditor</td>
 		<td>DataFormCheckBoxEditor</td>
@@ -66,6 +78,18 @@ The values from the **EditorType** enumeration are interpreted differently by ea
 		<td>DataFormToggleButtonEditor</td>
 		<td>TKDataFormSwitchEditor instead</td>
 		<td>bool</td>
+	</tr>
+    <tr>
+		<td>DateEditor</td>
+		<td>DataFormDateEditor</td>
+		<td>TKDataFormDatePickerEditor</td>
+		<td>DateTime</td>
+	</tr>
+    <tr>
+		<td>TimeEditor</td>
+		<td>DataFormTimeEditor</td>
+		<td>TKDataFormTimePickerEditor</td>
+		<td>DateTime</td>
 	</tr>
 	<tr>
 		<td>Custom</td>

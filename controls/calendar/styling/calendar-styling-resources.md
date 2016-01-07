@@ -1,11 +1,11 @@
-<!--
 ---
 title: Calendar Styling Resources
 page_title: Calendar Styling Resources
 position: 3
 slug: calendar-styling-resources
+published: False
 ---
--->
+
 ## Resources ##
 
 Sometimes you will need to set different values of the properties for each platform. This could be achieved with the **CalendarResources** class. 

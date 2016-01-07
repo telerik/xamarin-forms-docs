@@ -1,11 +1,11 @@
 ---
-title: Calendar Cell Styling
-page_title: Calendar Cell Styling
+title: Cell Styling
+page_title: Cell Styling
 position: 3
 slug: calendar-styling-cell
 ---
 
-## Cell Styling ##
+## Cell Styling
  
 - **SetStyleForCell** (Func&lt;CalendarCell, CalendarCellStyle&gt;): This property should be assigned to a method that returns a CalendarCellStyle object. The method will be called for every calendar cell and the returned style will be applied. If the return value is null, the default style of the cell will be used.
  

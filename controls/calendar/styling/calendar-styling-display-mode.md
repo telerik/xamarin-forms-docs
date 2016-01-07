@@ -1,11 +1,11 @@
 ---
-title: Calendar DisplayMode
-page_title: Calendar DisplayMode
+title: Elements Display Mode
+page_title: Elements Display Mode
 position: 1
 slug: calendar-styling-display-mode
 ---
 
-# DisplayMode
+# Elements Display Mode
 
 The calendar provides properties that control the visibility of its elements.
 

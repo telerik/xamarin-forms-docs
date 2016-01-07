@@ -1,11 +1,11 @@
 ---
-title: Calendar Appointments Styling
-page_title: Calendar Appointments Styling
+title: Appointments Styling
+page_title: Appointments Styling
 position: 4
 slug: calendar-styling-appointments
 ---
 
-# Calendar Appointments Styling
+# Appointments Styling
 
 > Appointments cannot be customized in WindowsPhone. This is why the following properties are applicable for iOS and Android, only.
 

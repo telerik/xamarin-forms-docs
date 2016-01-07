@@ -37,7 +37,5 @@ You have to make sure that you have the right version of Xamarin.Forms and all r
 - Right-click the newly created solution and choose: Visual Studio: "Manage NuGet packages for Solution".
 - From Updates >> nuget.org install the latest version of the **Xamarin.Forms** package.
 
->The minimum supported **Xamarin.Forms** version is **1.4.2.6359**.
-
 ![Update packages](images/calendar-getting-started-update-packages.png)
 

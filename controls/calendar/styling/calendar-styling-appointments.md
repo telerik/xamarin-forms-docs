@@ -13,7 +13,7 @@ This article's purpose is to get users familiar with the **AppointmentsStyle** p
 
 ## Visual Structure
 
-The events can be rendered in as text or shapes or a combination of these. The images below explain the the visual structure and the elements in the different display modes.
+The events can be rendered as text or shapes or a combination of these. The images below explain the the visual structure and the elements in the different display modes.
 
 ### Text Mode
 
@@ -69,7 +69,7 @@ The events can be rendered in as text or shapes or a combination of these. The i
  - TriangleDown
  - Rhombus
 
-    ![Shape Type](images/calendar-cell-style-shape-type.png "ShapeType = Rhombus")
+    ![Shape Type](images/calendar-appointments-shape-types.png )
 - **AllDayShapeType** (*CalendarAppointmentShapeType*): Gets or sets the shape type of the all-day appointments. If this property is not set, the ShapeType value will be used.
 - **AllDayIndicatorLocation** (*Location*): Gets or sets the location where the all day indicators are visualized.
  - None
@@ -82,7 +82,7 @@ The events can be rendered in as text or shapes or a combination of these. The i
 
 - **ReserveIndicatorSpace** (*bool*): In scenarios where appointments are rendered as shapes with all-day indicator, but there are no all-day events for a specific day. This property specifies whether the shapes will keep the space where the indicator is drawn or they will take all available space. 
 
-#### Example
+## Example
 
 	var r = new Random();
     var appointments = new ObservableCollection<Appointment>();

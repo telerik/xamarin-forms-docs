@@ -18,7 +18,7 @@ The RadDataForm editors appearance can be customized with the EditorStyle proper
 - **PositiveFeedbackForeground** (Color): Sets the foreground for the positive feedback message.
 - **NegativeFeedbackForeground** (Color): Sets the foreground for the negative feedback message.
 - **PositiveFeedbackBackground** (Background): Sets the background for positive feedback.
-- **NegativeFeedbackBackground** (Background): Sets the background for negative feedback.``
+- **NegativeFeedbackBackground** (Background): Sets the background for negative feedback.
 - **PositiveFeedbackImage** (ImageSource): Sets the image for the positive feedback.
 - **NegativeFeedbackImage** (ImageSource): Sets the image for the negative feedback.
 

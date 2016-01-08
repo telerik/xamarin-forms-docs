@@ -33,113 +33,45 @@ This descriptor enables you to sort by a custom key (e.g. some complex expressio
 
 ## Example
 
+### Adding sort descriptors in code:
+
 #### XAML
 
-	<Grid BackgroundColor="#33888888">
-		<Grid.RowDefinitions>
-		  <RowDefinition Height="Auto"/>
-		  <RowDefinition/>
-		</Grid.RowDefinitions>
-		
-		<Grid Padding="10">
-		  <Grid.RowDefinitions>
-		    <RowDefinition Height="Auto"/>
-		    <RowDefinition Height="Auto"/>
-		    <RowDefinition Height="Auto"/>
-		  </Grid.RowDefinitions>
-		  <Grid.ColumnDefinitions>
-		    <ColumnDefinition Width="Auto"/>
-		    <ColumnDefinition/>
-		  </Grid.ColumnDefinitions>
-		  <Grid Grid.Row="2" Grid.ColumnSpan="2">
-		    <Grid.ColumnDefinitions>
-		      <ColumnDefinition Width="Auto"/>
-		      <ColumnDefinition/>
-		    </Grid.ColumnDefinitions>
-		    <Label Text="sort direction:" />
-		    <Picker x:Name="sortDirectionPicker" Grid.Column="1"/>
-		  </Grid>
-		</Grid>
-		
-		<telerikDataControls:RadListView BackgroundColor="White" Grid.Row="1" x:Name="listView" ItemsSource="{Binding Items}">
-		  <telerikDataControls:RadListView.ItemTemplate>
-		    <DataTemplate>
-		      <telerikListView:ListViewTemplateCell>
-		        <telerikListView:ListViewTemplateCell.View>
-		          <StackLayout Padding="10">
-		            <StackLayout Orientation="Horizontal">
-		              <Label Text="Name:" TextColor="Black"/>
-		              <Label Text="{Binding Name}" TextColor="Red"/>
-		            </StackLayout>
-		            <StackLayout Orientation="Horizontal" Grid.Row="1">
-		              <Label Text="Age:" TextColor="Black"/>
-		              <Label Text="{Binding Age}" TextColor="Red"/>
-		            </StackLayout>
-		          </StackLayout>
-		        </telerikListView:ListViewTemplateCell.View>
-		      </telerikListView:ListViewTemplateCell>
-		    </DataTemplate>
-		  </telerikDataControls:RadListView.ItemTemplate>
-		  <telerikDataControls:RadListView.LayoutDefinition>
-		    <telerikListView:ListViewLinearLayout Orientation="Vertical" ItemLength="70"/>
-		  </telerikDataControls:RadListView.LayoutDefinition>
-		</telerikDataControls:RadListView>
-	</Grid>
+	<telerikDataControls:RadListView x:Name="listView" ItemsSource="{Binding Items}">
+	  <telerikDataControls:RadListView.ItemTemplate>
+	    <DataTemplate>
+	      <telerikListView:ListViewTemplateCell>
+	        <telerikListView:ListViewTemplateCell.View>
+	          <StackLayout Orientation="Horizontal">
+	            <Label Text="Name:"/>
+	            <Label Text="{Binding Name}"/>
+	            <Label Text=", Age:"/>
+	            <Label Text="{Binding Age}"/>
+	          </StackLayout>
+	        </telerikListView:ListViewTemplateCell.View>
+	      </telerikListView:ListViewTemplateCell>
+	    </DataTemplate>
+	  </telerikDataControls:RadListView.ItemTemplate>
+	</telerikDataControls:RadListView>
 
 #### C# 
 
-    public DataOperations()
+Add the following code to the Page class:
+
+    public Page()
     {
         InitializeComponent();
-        this.BindingContext = new DataOperationsViewModel();
-
-        sortDirectionPicker.Items.Add("no sort");
-        sortDirectionPicker.Items.Add("sort by age ascending");
-        sortDirectionPicker.Items.Add("sort by age descending");
-        sortDirectionPicker.SelectedIndex = 0;
-        sortDirectionPicker.SelectedIndexChanged += this.SortDirectionPickerSelectedIndexChanged;
+        this.BindingContext = new ViewModel();
+		listView.SortDescriptors.Add(new PropertySortDescriptor { PropertyName = "Age", SortOrder = SortOrder.Ascending });
     }
 
-    private void SortDirectionPickerSelectedIndexChanged(object sender, EventArgs e)
-    {
-        var descriptor = listView.SortDescriptors.FirstOrDefault();
+Here is the ViewModel class:    
 
-        switch (sortDirectionPicker.SelectedIndex)
-        {
-            case 0:
-                listView.SortDescriptors.Clear();
-                break;
-            case 1:
-                if (descriptor == null)
-                {
-                    descriptor = new PropertySortDescriptor { PropertyName = "Age", SortOrder = SortOrder.Ascending };
-                    listView.SortDescriptors.Add(descriptor);
-                }
-                else
-                {
-                    (descriptor as PropertySortDescriptor).SortOrder = SortOrder.Ascending;
-                }
-                break;
-            case 2:
-                if (descriptor == null)
-                {
-                    descriptor = new PropertySortDescriptor { PropertyName = "Age", SortOrder = SortOrder.Descending };
-                    listView.SortDescriptors.Add(descriptor);
-                }
-                else
-                {
-                    (descriptor as PropertySortDescriptor).SortOrder = SortOrder.Descending;
-                }
-
-                break;
-        }
-    }
-
-    public class DataOperationsViewModel
+    public class ViewModel
     {
         private static Random rand = new Random();
 
-        public DataOperationsViewModel()
+        public ViewModel()
         {
             this.Items = GetData(100);
         }
@@ -158,3 +90,27 @@ This descriptor enables you to sort by a custom key (e.g. some complex expressio
             return items;
         }
     }
+
+And the data class:
+
+	public class Item
+	{
+		public string Name { get; set; }
+		public int Age { get; set; }
+	}
+
+### Adding sort descriptors in XAML:
+
+#### XAML
+
+    <telerikDataControls:RadListView>
+      <telerikDataControls:RadListView.SortDescriptors>
+        <telerikListView:PropertySortDescriptor PropertyName="Age" SortOrder = "Ascending"/>
+      </telerikDataControls:RadListView.SortDescriptors>
+    </telerikDataControls:RadListView>
+
+## See Also
+
+[Grouping]({%slug listview-features-grouping%})
+
+[Filtering]({%slug listview-features-filtering%}

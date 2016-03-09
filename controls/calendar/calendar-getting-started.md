@@ -13,88 +13,190 @@ This example will guide you through the steps needed to add a basic RadCalendar 
 
 First you have to create a new Xamarin.Forms project. You can see how in the [Getting Started Example]({% slug getting-started %} "Getting Started with Telerik UI for Xamarin.Forms"). Then you have to add reference to the following assemblies:
 
-* **Portable** (if you have created Xamarin.Forms Portable App)
-	- Telerik.XamarinForms.Input.dll
-	- Telerik.XamarinForms.Common.dll
-* **Android**
-	- Telerik.Xamarin.Android.Input.dll
-	- Telerik.Xamarin.Android.Common.dll
-	- Telerik.Xamarin.Android.Primitives.dll
-	- Telerik.XamarinForms.Input.dll
-	- Telerik.XamarinForms.InputRenderer.Android.dll
-	- Telerik.XamarinForms.Common.dll
-	- Telerik.XamarinForms.Common.Android.dll
-* **iOS**
-	- Telerik.Xamarin.iOS.dll
-	- Telerik.XamarinForms.Input.dll
-	- Telerik.XamarinForms.InputRenderer.iOS.dll
-	- Telerik.XamarinForms.Common.dll
-	- Telerik.XamarinForms.Common.iOS.dll
-* **WinPhone**
-	- Telerik.Windows.Controls.Input.dll
-	- Telerik.Windows.Controls.Primitives.dll
-	- Telerik.Windows.Core.dll
-	- Telerik.XamarinForms.Input.dll
-	- Telerik.XamarinForms.InputRenderer.WinPhone.dll
-	- Telerik.XamarinForms.Common.dll
-	- Telerik.XamarinForms.Common.WinPhone.dll
+### Portable Project
+
+#### XamarinForms\\Common\\
+
+- Telerik.XamarinForms.Input.dll
+- Telerik.XamarinForms.Common.dll
+
+### Android Project
+
+#### Android\\
+
+- Telerik.Xamarin.Android.Common.dll
+- Telerik.Xamarin.Android.Primitives.dll
+- Telerik.Xamarin.Android.Input.dll
+
+#### XamarinForms\\Common\\
+
+- Telerik.XamarinForms.Input.dll
+- Telerik.XamarinForms.Common.dll
+
+#### XamarinForms\\Android\\
+
+- Telerik.XamarinForms.InputRenderer.Android.dll
+- Telerik.XamarinForms.Common.Android.dll
+	
+### iOS Project
+
+#### iOS\\
+
+- Telerik.Xamarin.iOS.dll
+	
+#### XamarinForms\\Common\\
+
+- Telerik.XamarinForms.Input.dll
+- Telerik.XamarinForms.Common.dll
+
+#### XamarinForms\\iOS\\
+
+- Telerik.XamarinForms.InputRenderer.iOS.dll
+- Telerik.XamarinForms.Common.iOS.dll
+
+### Windows Phone 8 Project
+
+#### WindowsPhone\\
+
+- Telerik.Windows.Controls.Input.dll
+- Telerik.Windows.Controls.Primitives.dll
+- Telerik.Windows.Core.dll
+
+#### XamarinForms\\Common\\ 
+
+- Telerik.XamarinForms.Input.dll
+- Telerik.XamarinForms.Common.dll
+
+#### XamarinForms\\WindowsPhone\\ 
+
+- Telerik.XamarinForms.InputRenderer.WinPhone.dll
+- Telerik.XamarinForms.Common.WinPhone.dll
+
+### Windows 8.1 Project
+
+#### WinRT\\Common\\ 
+
+- Telerik.Core.dll
+
+#### WinRT\\Windows 8.1\\ 
+
+- Telerik.UI.Xaml.Primitives.dll
+- Telerik.UI.Xaml.Input.dll
+
+#### XamarinForms\\Common\\ 
+
+- Telerik.XamarinForms.Common.dll
+- Telerik.XamarinForms.Input.dll
+
+#### XamarinForms\\WinRT\\ 
+
+- Telerik.XamarinForms.Common.WinRT.dll
+
+#### XamarinForms\\WinRT\\Windows\\ 
+
+- Telerik.XamarinForms.InputRenderer.WinRT.Windows.dll
+
+### Windows Phone 8.1 Project
+
+#### WinRT\\Common\\ 
+
+- Telerik.Core.dll
+
+#### WinRT\\Windows Phone 8.1\\ 
+
+- Telerik.UI.Xaml.Primitives.dll
+- Telerik.UI.Xaml.Input.dll
+
+#### XamarinForms\\Common\\ 
+
+- Telerik.XamarinForms.Common.dll
+- Telerik.XamarinForms.Input.dll
+
+#### XamarinForms\\WinRT\\ 
+
+- Telerik.XamarinForms.Common.WinRT.dll
+
+#### XamarinForms\\WinRT\\WinPhone\\
+
+- Telerik.XamarinForms.InputRenderer.WinRT.WindowsPhone.dll
 
 ![Add Calendar References](images/calendar-getting-started-references.png)
 
-You will have to add the following code to these project files:
+## Edit Project Files
 
-* **Android**: MainActivity.cs
-  
-		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.Android.CalendarRenderer))]
+### Android Project
 
-	You also need to call `TelerikForms.Init()` inside the `OnCreate(...)` method right after the `Forms.Init(...)` call.
+You have add the following line to edit the **MainActivity.cs** file:
 
-		protected override void OnCreate(Bundle bundle)
-        {
-            base.OnCreate(bundle);
+	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.Android.CalendarRenderer))]
 
-            global::Xamarin.Forms.Forms.Init(this, bundle); 
-            Telerik.XamarinForms.Common.Android.TelerikForms.Init();
-            LoadApplication(new App());
-        }
+You also need to call `TelerikForms.Init()` inside the `OnCreate(...)` method right after the `Forms.Init(...)` call.
 
-* **iOS**: AppDelegate.cs
+	protected override void OnCreate(Bundle bundle)
+    {
+        base.OnCreate(bundle);
 
-		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.iOS.CalendarRenderer))]
+        global::Xamarin.Forms.Forms.Init(this, bundle); 
+        Telerik.XamarinForms.Common.Android.TelerikForms.Init();
+        LoadApplication(new App());
+    }
 
-	You also have to create an instance of the renderer in the `FinishedLaunching(...)` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`.
+### iOS Project
 
-		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-        {
-            new CalendarRenderer();
+You have add the following line to edit the **AppDelegate.cs** file:
 
-            global::Xamarin.Forms.Forms.Init();
-            Telerik.XamarinForms.Common.iOS.TelerikForms.Init();
-            LoadApplication(new App());
+	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.iOS.CalendarRenderer))]
 
-            return base.FinishedLaunching(app, options);
-        }
+You also have to create an instance of the renderer in the `FinishedLaunching(...)` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`.
 
-* **WinPhone**: MainPage.xaml.cs
-    
-		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.WinPhone.CalendarRenderer))]
+	public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+    {
+        new CalendarRenderer();
 
-	You also need to call `TelerikForms.Init()` inside the MainPage constrictor right after the `Forms.Init()` call.
+        global::Xamarin.Forms.Forms.Init();
+        Telerik.XamarinForms.Common.iOS.TelerikForms.Init();
+        LoadApplication(new App());
 
-		public partial class MainPage : FormsApplicationPage
-		{
-		    public MainPage()
-		    {
-		        this.InitializeComponent();
+        return base.FinishedLaunching(app, options);
+    }
+
+### Windows Phone 8 Project
+
+You have add the following line to edit the **MainPage.xaml.cs** file:
+
+	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.WinPhone.CalendarRenderer))]
+
+You also need to call `TelerikForms.Init()` inside the MainPage constrictor right after the `Forms.Init()` call.
+
+	public partial class MainPage : FormsApplicationPage
+	{
+	    public MainPage()
+	    {
+	        this.InitializeComponent();
+	
+	        Forms.Init();
+	        TelerikForms.Init();  
+	        CalendarCustomResourcesWP.Load();
+	
+	        this.LoadApplication(new SDKBrowser.App());
+	    }
+	}
+
+### Windows 8.1 and Windows Phone 8.1 Projects
+
+You have add the following line to edit the **MainPage.xaml.cs** file:
+
+	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.WinRT.CalendarRenderer))]
+
+You also need to call `TelerikForms.Init()` inside the MainPage constrictor before the `LoadApplication(new SampleApp.App())` call.
+
+    public MainPage()
+    {
+        this.InitializeComponent();
+        Telerik.XamarinForms.Common.WinRT.TelerikForms.Init();
+        LoadApplication(new SampleApp.App());
+    }
 		
-		        Forms.Init();
-		        TelerikForms.Init();  
-		        CalendarCustomResourcesWP.Load();
-		
-		        this.LoadApplication(new SDKBrowser.App());
-		    }
-		}
-
 
 ## Edit the iOS project
 After referencing the required binaries it is time to edit the default configuration of the iOS project. Unload it and open the iOS.csproj file. Inside it you will find several PropertyGroups. One for each build definition. Inside each group you will find CodesignEntitlements tag. Those tags should be empty in each build definition. More information on that matter can be found in [this]({http://forums.xamarin.com/discussion/39674/iphonesimulator-build-results-in-no-valid-ios-code-signing-keys-found-in-keychain}) forum thread.

@@ -176,7 +176,6 @@ You also need to call `TelerikForms.Init()` inside the MainPage constrictor righ
 	
 	        Forms.Init();
 	        TelerikForms.Init();  
-	        CalendarCustomResourcesWP.Load();
 	
 	        this.LoadApplication(new SDKBrowser.App());
 	    }

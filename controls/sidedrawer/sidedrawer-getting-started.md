@@ -102,7 +102,7 @@ First you have to create a new Xamarin.Forms project. You can see how in the [Ge
 
 - Telerik.XamarinForms.PrimitivesRenderer.WinRT.WindowsPhone.dll
 
-# Edit Project Files
+## Edit Project Files
 
 ### Android Project
 

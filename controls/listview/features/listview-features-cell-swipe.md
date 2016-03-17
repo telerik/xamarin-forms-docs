@@ -13,7 +13,9 @@ Figure 1: Cell Swipe
 
 ![CellSwipe](images/listview-features-cell-swipe.png)
 
-This feature consists of the following properties:
+## Properties
+
+The following RadListView properties are related to the sell swiping feature:
 
 - **IsItemSwipeEnabled**: of type bool which turns on or off the feature. It's default value is false.
 - **SwipeThreshhold**: of type double which gets or sets the length (in pixels) of the swipe gesture which is required to trigger the feature. Any shorter swipe will not be respected. It's default value is 0.
@@ -26,6 +28,25 @@ In *Android* it is enough to set this property. It will force the swiped item to
 
 In *iOS* however, the **SwipeThreshhold** property should be set to force the items to stick to the swiped side. This property represents the length of the swipe gesture in pixels that will visualize the DataTemplate defined as **ItemSwipeContentTemplate**. Any swipe less than this value will not trigger the Cell Swipe.
 
+## Methods
+
+The following RadListView methods are related to the sell swiping feature:
+
+- void **EndItemSwipe**(bool *isAnimated*): Moves the swiped item to its default position.
+
+## Events
+
+The following RadListView events are related to the sell swiping feature:
+
+- **ItemSwipeStarting**: Occurs when the user has initiated swipe gesture. The event arguments are of type **ItemSwipeStartingEventArgs**, that provides the following properties:
+ - **Item** (object): The item that will be swiped.
+ - **Cancel** (bool): If you set this value to `false`, the swiping will be canceled.
+- **ItemSwiping**: Occurs while the user is swiping the item. The event arguments are of type **ItemSwipingEventArgs**, that provides the following properties:
+ - **Item** (object): The item that is being swiped.
+ - **Offset** (double): The current swipe offset.
+- **ItemSwipeCompleted**: Occurs when the user finishes the swipe gesture. The event arguments are of type **ItemSwipeCompletedEventArgs**, that provides the following properties:
+ - **Item** (object): The item that has been swiped.
+ - **Offset** (double): The swipe offset at which the item has been dropped.
 
 ## Example
 

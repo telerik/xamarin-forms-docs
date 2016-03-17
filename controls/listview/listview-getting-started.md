@@ -13,62 +13,98 @@ This example will guide you through the steps needed to add a basic RadListView 
 After creating the blank mobile application template, it is recommended to update the **Xamarin.Forms** package in your solution. Updating it to the latest version can be done using the NuGet UI.
 
 ## Add References to Telerik UI for Xamarin.Forms ##
-Next, you have to add reference to the following assemblies:
+First you have to create a new Xamarin.Forms project. You can see how in the [Getting Started Example]({% slug getting-started %} "Getting Started with Telerik UI for Xamarin.Forms"). Then you have to add reference to the following assemblies:
 
-* **Portable** (if you have created Xamarin.Forms Portable App)
-	- Telerik.XamarinForms.DataControls.dll
-	- Telerik.XamarinForms.Common.dll
-* **Android**
-	- Telerik.Xamarin.Android.Common.dll
-	- Telerik.Xamarin.Android.Data.dll
-	- Telerik.Xamarin.Android.Input.dll
-	- Telerik.Xamarin.Android.List.dll
-	- Telerik.XamarinForms.Common.dll
-	- Telerik.XamarinForms.Common.Android.dll
-	- Telerik.XamarinForms.DataControls.dll
-	- Telerik.XamarinForms.DataControlsRenderer.Android.dll
-* **iOS**
-	- Telerik.Xamarin.iOS.dll
-	- Telerik.XamarinForms.Common.dll
-	- Telerik.XamarinForms.Common.iOS.dll
-	- Telerik.XamarinForms.DataControls.dll
-	- Telerik.XamarinForms.DataControlsRenderer.iOS.dll
-* **WinPhone**
+> The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls.  
+>The default location is `C:\Program Files (x86)\Telerik\UI for Xamarin QX XXX\Binaries`. 
 
-	> **RadListView** is not available for **Windows Phone**.
+### Portable Project
 
-You will also have to add the following code to these project files:
+#### XamarinForms\\Common\\
 
-* **Android**: MainActivity.cs
-  
-		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.DataControls.RadListView), typeof(Telerik.XamarinForms.DataControlsRenderer.Android.ListViewRenderer))]
+- Telerik.XamarinForms.DataControls.dll
+- Telerik.XamarinForms.Common.dll
 
-	You also need to call `TelerikForms.Init()` inside the `OnCreate(...)` method right after the `Forms.Init(...)` call.
+### Android Project
 
-		protected override void OnCreate(Bundle bundle)
-        {
-            base.OnCreate(bundle);
+#### Android\\
 
-            global::Xamarin.Forms.Forms.Init(this, bundle); 
-            Telerik.XamarinForms.Common.Android.TelerikForms.Init();
-            LoadApplication(new App());
-        }
+- Telerik.Xamarin.Android.Data.dll
+- Telerik.Xamarin.Android.Input.dll
+- Telerik.Xamarin.Android.List.dll
+- Telerik.Xamarin.Android.Common.dll
 
-* **iOS**: AppDelegate.cs
+#### XamarinForms\\Common\\
 
-		[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.DataControls.RadListView), typeof(Telerik.XamarinForms.DataControlsRenderer.iOS.ListViewRenderer))]
+- Telerik.XamarinForms.DataControls.dll
+- Telerik.XamarinForms.Common.dll
 
-	You also have to create an instance of the renderer in the `FinishedLaunching(...)` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`.
+#### XamarinForms\\Android\\
 
-		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-        {
-            new ListViewRenderer();
-            global::Xamarin.Forms.Forms.Init();
-            Telerik.XamarinForms.Common.iOS.TelerikForms.Init();
-            LoadApplication(new App());
+- Telerik.XamarinForms.DataControlsRenderer.Android.dll
+- Telerik.XamarinForms.Common.Android.dll
 
-            return base.FinishedLaunching(app, options);
-        }
+### iOS Project
+
+#### iOS\\
+
+- Telerik.Xamarin.iOS.dll
+
+#### XamarinForms\\Common\\
+
+- Telerik.XamarinForms.DataControls.dll
+- Telerik.XamarinForms.Common.dll
+
+#### XamarinForms\\iOS\\
+
+- Telerik.XamarinForms.DataControlsRenderer.iOS.dll
+- Telerik.XamarinForms.Common.iOS.dll
+
+
+### Windows Phone 8 Poject
+
+> **RadListView** is not available for **Windows Phone 8**.
+
+### Windows 8.1 and Windows Phone 8.1 Project 
+
+> **RadListView** is not available for **Windows 8.1 and Windows Phone 8.1**.
+
+## Edit Project Files
+
+### Android Project
+
+You have add the following lines to the **MainActivity.cs** file:
+
+	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.DataControls.RadListView), typeof(Telerik.XamarinForms.DataControlsRenderer.Android.ListViewRenderer))]
+
+You also need to call `TelerikForms.Init()` inside the `OnCreate(...)` method right after the `Forms.Init(...)` call.
+
+	protected override void OnCreate(Bundle bundle)
+    {
+        base.OnCreate(bundle);
+
+        global::Xamarin.Forms.Forms.Init(this, bundle); 
+        Telerik.XamarinForms.Common.Android.TelerikForms.Init();
+        LoadApplication(new App());
+    }
+
+### iOS Project
+
+You have add the following lines to the **AppDelegate.cs** file:
+
+	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.DataControls.RadListView), typeof(Telerik.XamarinForms.DataControlsRenderer.iOS.ListViewRenderer))]
+
+You also have to create an instance of the renderer in the `FinishedLaunching(...)` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`.
+
+	public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+    {
+        new ListViewRenderer();
+        global::Xamarin.Forms.Forms.Init();
+        Telerik.XamarinForms.Common.iOS.TelerikForms.Init();
+        LoadApplication(new App());
+
+        return base.FinishedLaunching(app, options);
+    }
 
 ## Edit the iOS project
 After referencing the required binaries it is time to edit the default configuration of the iOS project. Unload it and open the iOS.csproj file. Inside it you will find several PropertyGroups. One for each build definition. Inside each group you will find CodesignEntitlements tag. Those tags should be empty in each build definition. More information on that matter can be found in [this]({http://forums.xamarin.com/discussion/39674/iphonesimulator-build-results-in-no-valid-ios-code-signing-keys-found-in-keychain}) forum thread.

@@ -13,6 +13,9 @@ This example will guide you through the steps needed to add a basic RadCalendar 
 
 First you have to create a new Xamarin.Forms project. You can see how in the [Getting Started Example]({% slug getting-started %} "Getting Started with Telerik UI for Xamarin.Forms"). Then you have to add reference to the following assemblies:
 
+> The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls.  
+>The default location is `C:\Program Files (x86)\Telerik\UI for Xamarin QX XXX\Binaries`. 
+
 ### Portable Project
 
 #### XamarinForms\\Common\\
@@ -126,7 +129,7 @@ First you have to create a new Xamarin.Forms project. You can see how in the [Ge
 
 ### Android Project
 
-You have add the following line to edit the **MainActivity.cs** file:
+You have add the following line to the **MainActivity.cs** file:
 
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.Android.CalendarRenderer))]
 
@@ -143,7 +146,7 @@ You also need to call `TelerikForms.Init()` inside the `OnCreate(...)` method ri
 
 ### iOS Project
 
-You have add the following line to edit the **AppDelegate.cs** file:
+You have add the following line to the **AppDelegate.cs** file:
 
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.iOS.CalendarRenderer))]
 
@@ -162,7 +165,7 @@ You also have to create an instance of the renderer in the `FinishedLaunching(..
 
 ### Windows Phone 8 Project
 
-You have add the following line to edit the **MainPage.xaml.cs** file:
+You have add the following line to the **MainPage.xaml.cs** file:
 
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.WinPhone.CalendarRenderer))]
 
@@ -183,7 +186,7 @@ You also need to call `TelerikForms.Init()` inside the MainPage constrictor righ
 
 ### Windows 8.1 and Windows Phone 8.1 Projects
 
-You have add the following line to edit the **MainPage.xaml.cs** file:
+You have add the following line to the **MainPage.xaml.cs** file:
 
 	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.WinRT.CalendarRenderer))]
 

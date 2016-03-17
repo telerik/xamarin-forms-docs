@@ -12,66 +12,98 @@ This article will guide you through the steps needed to add a basic RadDataForm 
 ## Update existing Xamarin.Forms package
 After creating the blank mobile application template, it is recommended to update the **Xamarin.Forms** package in your solution. Updating it to the latest version can be done using the NuGet UI.
 
-## Assemblies
+## Add References to Telerik UI for Xamarin.Forms ##
+First you have to create a new Xamarin.Forms project. You can see how in the [Getting Started Example]({% slug getting-started %} "Getting Started with Telerik UI for Xamarin.Forms"). Then you have to add reference to the following assemblies:
 
-Next, you have to add reference to the following assemblies:
+> The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls.  
+>The default location is `C:\Program Files (x86)\Telerik\UI for Xamarin QX XXX\Binaries`. 
 
-- **Portable/Common**
- - Telerik.XamarinForms.Common
- - Telerik.XamarinForms.Input
-- **Android**
- - Telerik.Xamarin.Android.Common
- - Telerik.Xamarin.Android.Input
- - Telerik.Xamarin.Android.Primitives
- - Telerik.XamarinForms.Common
- - Telerik.XamarinForms.Common.Android
- - Telerik.XamarinForms.Input
- - Telerik.XamarinForms.InputRenderer.Android
-- **iOS**
- - Telerik.Xamarin.iOS
- - Telerik.XamarinForms.Common
- - Telerik.XamarinForms.Common.iOS
- - Telerik.XamarinForms.Input
- - Telerik.XamarinForms.InputRenderer.iOS
-- **WinPhone**
-    > **RadDataForm** is not available for **Windows Phone**.
+### Portable Project
 
-You will also have to add the following code to these project files:
+#### XamarinForms\\Common\\
 
-* **Android**: MainActivity.cs
+- Telerik.XamarinForms.Common
+- Telerik.XamarinForms.Input
 
-	Add this line outside the namespace:
-  
-		[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(Telerik.XamarinForms.InputRenderer.Android.DataFormRenderer))]
+### Android Project
 
-	You also need to call `TelerikForms.Init()` inside the `OnCreate(...)` method right after the `Forms.Init(...)` call.
+#### Android\\
 
-		protected override void OnCreate(Bundle bundle)
-        {
-            base.OnCreate(bundle);
+- Telerik.Xamarin.Android.Common
+- Telerik.Xamarin.Android.Input
+- Telerik.Xamarin.Android.Primitives
 
-            global::Xamarin.Forms.Forms.Init(this, bundle); 
-            Telerik.XamarinForms.Common.Android.TelerikForms.Init();
-            LoadApplication(new App());
-        }
+#### XamarinForms\\Common\\
 
-* **iOS**: AppDelegate.cs
+- Telerik.XamarinForms.Common
+- Telerik.XamarinForms.Input
 
-	Add this line outside the namespace:
+#### XamarinForms\\Android\\
 
-		[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(Telerik.XamarinForms.InputRenderer.iOS.DataFormRenderer))]
+- Telerik.XamarinForms.InputRenderer.Android.dll
+- Telerik.XamarinForms.Common.Android.dll
 
-	You also have to create an instance of the renderer in the `FinishedLaunching(...)` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`.
+### iOS Project
 
-		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-        {
-            new DataFormRenderer();
-            global::Xamarin.Forms.Forms.Init();
-            Telerik.XamarinForms.Common.iOS.TelerikForms.Init();
-            LoadApplication(new App());
+#### iOS\\
 
-            return base.FinishedLaunching(app, options);
-        }
+- Telerik.Xamarin.iOS.dll
+
+#### XamarinForms\\Common\\
+
+- Telerik.XamarinForms.Input.dll
+- Telerik.XamarinForms.Common.dll
+
+#### XamarinForms\\iOS\\
+
+- Telerik.XamarinForms.InputRenderer.iOS.dll
+- Telerik.XamarinForms.Common.iOS.dll
+
+
+### Windows Phone 8 Poject
+
+> **RadDataForm** is not available for **Windows Phone 8**.
+
+### Windows 8.1 and Windows Phone 8.1 Projects
+
+> **RadDataForm** is not available for **Windows 8.1 and Windows Phone 8.1**.
+
+## Edit Project Files
+
+### Android Project
+
+You have add the following line to the **MainActivity.cs** file outside the namespace:
+
+	[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(Telerik.XamarinForms.InputRenderer.Android.DataFormRenderer))]
+
+You also need to call `TelerikForms.Init()` inside the `OnCreate(...)` method right after the `Forms.Init(...)` call.
+
+	protected override void OnCreate(Bundle bundle)
+    {
+        base.OnCreate(bundle);
+
+        global::Xamarin.Forms.Forms.Init(this, bundle); 
+        Telerik.XamarinForms.Common.Android.TelerikForms.Init();
+        LoadApplication(new App());
+    }
+
+### iOS Project
+
+You have add the following lines to the **AppDelegate.cs** file outside the namespace:
+
+	[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(Telerik.XamarinForms.InputRenderer.iOS.DataFormRenderer))]
+
+You also have to create an instance of the renderer in the `FinishedLaunching(...)` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`.
+
+	public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+    {
+        new DataFormRenderer();
+        global::Xamarin.Forms.Forms.Init();
+        Telerik.XamarinForms.Common.iOS.TelerikForms.Init();
+        LoadApplication(new App());
+
+        return base.FinishedLaunching(app, options);
+    }
 
 ## Edit the iOS project
 After referencing the required binaries it is time to edit the default configuration of the iOS project. Unload it and open the iOS.csproj file. Inside it you will find several PropertyGroups. One for each build definition. Inside each group you will find CodesignEntitlements tag. Those tags should be empty in each build definition. More information on that matter can be found in [this]({http://forums.xamarin.com/discussion/39674/iphonesimulator-build-results-in-no-valid-ios-code-signing-keys-found-in-keychain}) forum thread.

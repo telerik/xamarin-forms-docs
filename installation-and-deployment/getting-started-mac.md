@@ -21,7 +21,7 @@ For the iOS and the Portable projects users need to update only the version of t
 The Android project however, requires additional packages with specified versions. All the requirements can be seen in the [Required Android Support Libraries]({% slug required-android-support-libraries %}) article. The issue that will be encountered is installing a particular **Android.Support** package with a specific earlier (not latest available) version. This can be done by the *packages.config* file, also. Everything users need to do is to fill in the missing packages and update the existing one(s) in the following format :
 
 
-		<package id="[*PackageName*]" version="[*PackageVersion*]" targetFramework="[*TargetFramework*]" />
+		<package id="[PackageName]" version="[PackageVersion]" targetFramework="[TargetFramework]" />
 
 
 >On the [Required Android Support Libraries]({% slug required-android-support-libraries %}) Libraries page users can see the name and the exact version of the required packages.
@@ -57,4 +57,6 @@ After the Telerik NuGet server is added users will be able to see the packages t
 
 ## Add Telerik UI for Xamarin pack ##
 
-Once the server is added users will be able to add to their projects any of the Telerik NuGet packages available for their license. One click on the settings icon of the “*Packages*” folder of any project will open the Add Packages dialog where the available Telerik packs will be listed.
+Once the server is added users will be able to add to their projects any of the **Telerik NuGet** packages available for their license. One click on the settings icon of the “*Packages*” folder of any project will open the **Add Packages** dialog where the available Telerik packs will be listed.
+
+![Telerik NuGet packages](images/getting-started-add-packages-dialog.png "Telerik NuGet packages")

@@ -1,6 +1,6 @@
 ---
-title: Getting Started
-page_title: Getting Started with Telerik UI for Xamarin.Forms
+title: Getting Started on Windows
+page_title: Getting Started with Telerik UI for Xamarin.Forms on Windows
 slug: getting-started
 position: 3
 ---

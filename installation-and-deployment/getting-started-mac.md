@@ -6,7 +6,7 @@ position: 4
 ---
 # Getting Started on Mac #
 
-This article should help Mac developers to get started with **Telerik UI for XamarinForms** suite and **Xamarin Studio** under iOS. We will demonstrate how users can take advantage of **Telerik NuGet server** in order to include our suite in their solution and/or update to the latest available version.
+This article should help Mac developers to get started with **Telerik UI for Xamarin** suite and **Xamarin Studio** under iOS. We will demonstrate how users can take advantage of **Telerik NuGet server** in order to include our suite in their solution and/or update to the latest available version.
 
 ## Update *packages.config* files ##
 
@@ -20,9 +20,11 @@ For the iOS and the Portable projects users need to update only the version of t
 
 The Android project however, requires additional packages with specified versions. All the requirements can be seen in the [Required Android Support Libraries]({% slug required-android-support-libraries %}) article. The issue that will be encountered is installing a particular **Android.Support** package with a specific earlier (not latest available) version. This can be done by the *packages.config* file, also. Everything users need to do is to fill in the missing packages and update the existing one(s) in the following format :
 
-  <package id="[*PackageName*]" version="[*PackageVersion*]" targetFramework="[*TargetFramework*]" />
 
->tipOn the [Required Android Support Libraries]({% slug required-android-support-libraries %}) Libraries page users can see the name and the exact version of the required packages.
+		<package id="[*PackageName*]" version="[*PackageVersion*]" targetFramework="[*TargetFramework*]" />
+
+
+>On the [Required Android Support Libraries]({% slug required-android-support-libraries %}) Libraries page users can see the name and the exact version of the required packages.
 
 Please bear in mind that the [*TargetFramework*] parameter should be the same among all packages since they all target the Android platform. This parameter can be taken from the existing packs in prior of modifying the *packages.config* file.
 

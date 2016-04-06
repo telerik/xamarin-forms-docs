@@ -2,7 +2,7 @@
 title: Required Android Support Libraries
 page_title: Required Android Support Libraries
 slug: required-android-support-libraries
-position: 3
+position: 5
 ---
 
 # Required Android Support Libraries

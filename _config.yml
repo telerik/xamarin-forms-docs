@@ -72,11 +72,11 @@ navigation:
     controls/dataform:
         title: "DataForm"
         position: 3
-		## DataForm Sub-Folders
-	controls/dataform/annotations:
+        ## DataForm Sub-Folders
+    controls/dataform/annotations:
         title: "Data Annotations"
         position: 3
-		## End DataForm Sub-Folders
+        ## End DataForm Sub-Folders
     ## End DataForm
     ## ListView
     controls/listview:

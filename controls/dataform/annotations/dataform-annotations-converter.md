@@ -7,7 +7,7 @@ position: 5
 
 ## ConverterAttribute
 
-Sometimes the editors work with types that are not the same as the property type. In this case you can use a converter. The converters should implement the **IPropertyConverter** interface. The converter attribute requires the type of the converter that will be used.
+There are cases when the editors require types that are not the same as the property type defined in the business object. In these case users can use a converter class. This is a custom class implementing the **IPropertyConverter** interface. The next example demonstrates how such converted can be used.
 
 ### Example
 

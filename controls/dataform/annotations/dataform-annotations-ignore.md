@@ -7,7 +7,7 @@ position: 1
 
 ## IgnoreAttribute
 
-Properties marked with the Ignore attribute are not visualized by the RadDataForm.
+Properties marked with the Ignore attribute will force the **RadDataForm** to skip creating editor for them.
 
 ### Example
 

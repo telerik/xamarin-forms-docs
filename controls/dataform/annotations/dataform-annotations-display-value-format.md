@@ -7,7 +7,7 @@ position: 6
 
 ## DisplayValueFormatAttribute
 
-This attribute provides format options for Date, Time and NumberPicker editor types.
+For the scenarios when the provided property value is not the same as the required visualization the **DisplayValueFormat** attribute comes handy. This attribute provides formatting options for Date, Time and NumberPicker editor types. Here is how it can be used.
 
 ### Example
 

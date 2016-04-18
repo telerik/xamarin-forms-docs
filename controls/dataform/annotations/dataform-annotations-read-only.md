@@ -1,13 +1,13 @@
 ---
-title: Ignore Attribute
-page_title: Ignore Attribute
+title: Read Only Attribute
+page_title: Read Only Attribute
 slug: dataform-annotations-read-only
 position: 2
 ---
 
 ## ReadOnlyAttribute
 
-Properties marked with the **ReadOnly** attribute can not be edited. There are differences between the platforms:
+Properties marked with the **ReadOnly** attribute will force the RadDataForm to create editors that can not be edited by the end users. There are differences in the behavior of the generated native components in the different platforms:
 
 - **iOS**: The editors are in disabled state.
 - **Android**: Viewers are used instead of editors. 

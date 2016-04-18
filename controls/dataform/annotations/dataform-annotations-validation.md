@@ -7,12 +7,12 @@ position: 4
 
 ## Validation Annotations
 
-Validators are special type of attributes that implement the **IPropertyValidator** interface. It defines the following members:
+Validators are special type of attributes that can be used to ensure if the users' input falls within the expected range of values. Each of these validators implement the **IPropertyValidator** interface defining the following members:
 
 - **ErrorMessage** (string): The error message that is displayed in the editor if the property value is invalid.
-- bool **Validate**(object *value*): A method that decides whether the property value is valid or not.
+- bool **Validate** (object *value*): A method that decides whether the property value is valid or not.
 
-Here are listed the available validators:
+The following list contains the available annotations that are shipped and can be used out of the box:
 
 - **DateRangeValidatorAttribute**
 	- MinYear (int)
@@ -35,7 +35,7 @@ Here are listed the available validators:
 	- MinLength (int)
 	- MaxLength (int)
 
-You can also define your custom validators. You can directly implement the **IPropertyValidator** interface or inherit from our base implementation - the **ValidatorBaseAttribute** class.
+Users can also define their custom validators. The only requirement is to implement the **IPropertyValidator** interface or to inherit from the base implementation - the **ValidatorBaseAttribute** class.
 
 ### Example
 

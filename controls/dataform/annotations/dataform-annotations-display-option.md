@@ -21,7 +21,7 @@ All properties are optional.
 	[DisplayOptions( Header = "Age", Position = 0, PlaceholderText = "age")]
 	public int Age { get; set; }
 	
-		
+
 ## Read More
 - [Validation Attribute]({%slug dataform-annotations-validation%})
 - [Converter Attribute]({%slug dataform-annotations-converter%})

@@ -17,6 +17,7 @@ For the scenarios when the provided property value is not the same as the requir
 	[DisplayValueFormat(Date = "yyyy.MM.dd")]
 	public DateTime Date { get; set; }
 		
+
 ## Read More
 - [Validation Attribute]({%slug dataform-annotations-validation%})
 - [Converter Attribute]({%slug dataform-annotations-converter%})

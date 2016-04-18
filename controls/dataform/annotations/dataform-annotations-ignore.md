@@ -15,9 +15,9 @@ Properties marked with the Ignore attribute will force the **RadDataForm** to sk
 	public int Age { get; set; }
 	
 ## Read More
-- []({%slug dataform-annotations-validation%})
-- []({%slug dataform-annotations-converter%})
-- []({%slug dataform-annotations-data-source-key%})
-- []({%slug dataform-annotations-display-option%})
-- []({%slug dataform-annotations-display-value-format%})
-- []({%slug dataform-annotations-read-only%})
+- [Validation Attribute]({%slug dataform-annotations-validation%})
+- [Converter Attribute]({%slug dataform-annotations-converter%})
+- [Data Source Key Attribute]({%slug dataform-annotations-data-source-key%})
+- [Display Option Attribute]({%slug dataform-annotations-display-option%})
+- [Display Value Format Attribute]({%slug dataform-annotations-display-value-format%})
+- [Read Only Attribute]({%slug dataform-annotations-read-only%})

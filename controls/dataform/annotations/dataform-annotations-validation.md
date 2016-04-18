@@ -68,9 +68,9 @@ Users can also define their custom validators. The only requirement is to implem
 	}
 	
 ## Read More
-- []({%slug dataform-annotations-ignore%})
-- []({%slug dataform-annotations-converter%})
-- []({%slug dataform-annotations-data-source-key%})
-- []({%slug dataform-annotations-display-option%})
-- []({%slug dataform-annotations-display-value-format%})
-- []({%slug dataform-annotations-read-only%})
+- [Ignore Attribute]({%slug dataform-annotations-ignore%})
+- [Converter Attribute]({%slug dataform-annotations-converter%})
+- [Data Source Key Attribute]({%slug dataform-annotations-data-source-key%})
+- [Display Option Attribute]({%slug dataform-annotations-display-option%})
+- [Display Value Format Attribute]({%slug dataform-annotations-display-value-format%})
+- [Read Only Attribute]({%slug dataform-annotations-read-only%})

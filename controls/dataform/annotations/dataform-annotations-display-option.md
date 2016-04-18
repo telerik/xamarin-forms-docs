@@ -23,9 +23,9 @@ All properties are optional.
 	
 		
 ## Read More
-- []({%slug dataform-annotations-validation%})
-- []({%slug dataform-annotations-converter%})
-- []({%slug dataform-annotations-data-source-key%})
-- []({%slug dataform-annotations-display-value-format%})
-- []({%slug dataform-annotations-ignore%})
-- []({%slug dataform-annotations-read-only%})
+- [Validation Attribute]({%slug dataform-annotations-validation%})
+- [Converter Attribute]({%slug dataform-annotations-converter%})
+- [Data Source Key Attribute]({%slug dataform-annotations-data-source-key%})
+- [Display Value Format Attribute]({%slug dataform-annotations-display-value-format%})
+- [Ignore Attribute]({%slug dataform-annotations-ignore%})
+- [Read Only Attribute]({%slug dataform-annotations-read-only%})

@@ -16,3 +16,11 @@ For the scenarios when the provided property value is not the same as the requir
 
 	[DisplayValueFormat(Date = "yyyy.MM.dd")]
 	public DateTime Date { get; set; }
+		
+## Read More
+- []({%slug dataform-annotations-validation%})
+- []({%slug dataform-annotations-converter%})
+- []({%slug dataform-annotations-data-source-key%})
+- []({%slug dataform-annotations-display-option%})
+- []({%slug dataform-annotations-ignore%})
+- []({%slug dataform-annotations-read-only%})

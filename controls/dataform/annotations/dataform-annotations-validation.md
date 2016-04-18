@@ -66,3 +66,11 @@ Users can also define their custom validators. The only requirement is to implem
 	        return (Gender)value != Gender.Unspecified;
 	    }
 	}
+	
+## Read More
+- []({%slug dataform-annotations-ignore%})
+- []({%slug dataform-annotations-converter%})
+- []({%slug dataform-annotations-data-source-key%})
+- []({%slug dataform-annotations-display-option%})
+- []({%slug dataform-annotations-display-value-format%})
+- []({%slug dataform-annotations-read-only%})

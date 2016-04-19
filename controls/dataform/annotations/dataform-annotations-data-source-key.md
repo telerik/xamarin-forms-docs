@@ -46,7 +46,7 @@ Finally, replace the default text editor with a picker editor:
 
 	dataForm.RegisterEditor("Location", EditorType.PickerEditor);
 			
-## Read More
+## See Also
 - [Validation Attribute]({%slug dataform-annotations-validation%})
 - [Converter Attribute]({%slug dataform-annotations-converter%})
 - [Display Option Attribute]({%slug dataform-annotations-display-option%})

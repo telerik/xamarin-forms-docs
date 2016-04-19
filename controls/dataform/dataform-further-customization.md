@@ -110,3 +110,7 @@ After that, you have to inherit from the default **DataFormRenderer** and overri
 Finally, replace the default **DataFormRenderer** with the new one in **AppDelegate.cs**:
 
 	[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(CustomRendererIOS))]
+		
+## See Also
+- [Editors]({%slug dataform-editors%})
+- [Members]({%slug dataform-members%})

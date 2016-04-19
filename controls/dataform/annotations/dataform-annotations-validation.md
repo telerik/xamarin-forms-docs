@@ -14,24 +14,27 @@ Validators are special type of attributes that can be used to ensure if the user
 
 The following list contains the available annotations that are shipped and can be used out of the box:
 
-- **DateRangeValidatorAttribute**
+- **DateRangeValidatorAttribute** - validates if a DateTime value is part of a given interval
 	- MinYear (int)
 	- MinMonth (int)
 	- MinDay (int)
 	- MaxYear (int)
 	- MaxMonth (int)
 	- MaxDay (int)
-- **EmailValidatorAttribute**
-- **NonEmptyValidatorAttribute**
-- **NumericalRangeValidatorAttribute**
+- **EmailValidatorAttribute** - validates if a string matches the e-mail format **[string]@[string].[string]**
+- **NonEmptyValidatorAttribute** - validates if an editor has any value set
+- **NumericalRangeValidatorAttribute** - validates if a number is in given interval
+
+>This attribute sets the Minimum, Maximum and Step properties of the created editor (e.g. RadSlider)
+
 	- Min (double)
 	- Max (double)
 	- Step (double)
-- **PhoneNumberValidatorAttribute**
-- **RegularExpressionValidatorAttribute**
+- **PhoneNumberValidatorAttribute** - validates if a string matches the phone number requirements
+- **RegularExpressionValidatorAttribute** - validates if a string matches the provided custom pattern
 	- Pattern (string)
 	- Options (RegexOptions)
-- **StringLengthValidatorAttribute**
+- **StringLengthValidatorAttribute** - validates if a string has specified length
 	- MinLength (int)
 	- MaxLength (int)
 
@@ -67,7 +70,7 @@ Users can also define their custom validators. The only requirement is to implem
 	    }
 	}
 	
-## Read More
+## See Also
 - [Ignore Attribute]({%slug dataform-annotations-ignore%})
 - [Converter Attribute]({%slug dataform-annotations-converter%})
 - [Data Source Key Attribute]({%slug dataform-annotations-data-source-key%})

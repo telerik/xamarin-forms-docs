@@ -9,10 +9,10 @@ position: 0
 
 The **DisplayOptionsAttribute** controls the way an editor is presented. It defines the following properties:
 
-- **Header (string)** - Sets the label of the respective editor.
-- **Group (string)** - Sets the group which the editor is part of.
-- **Position (int)** - Sets the position the editor will be visualized.
-- **PlaceholderText (string)** - Sets the empty content of the editor.
+- **Header** (string) - Sets the label of the respective editor.
+- **Group** (string) - Sets the group which the editor is part of.
+- **Position** (int) - Sets the position the editor will be visualized.
+- **PlaceholderText** (string) - Sets the empty content of the editor.
 
 All properties are optional.
 
@@ -22,7 +22,7 @@ All properties are optional.
 	public int Age { get; set; }
 	
 
-## Read More
+## See Also
 - [Validation Attribute]({%slug dataform-annotations-validation%})
 - [Converter Attribute]({%slug dataform-annotations-converter%})
 - [Data Source Key Attribute]({%slug dataform-annotations-data-source-key%})

@@ -1,13 +1,10 @@
 ---
-title: Further Customization
-page_title: Further Customization
-slug: dataform-further-customization
-position: 6
+title: Autocomplete editor in Android
+page_title: Autocomplete editor in Android
+slug: dataform-howto-use-native-editors-android
+position: 0
 ---
-
-# Further Customization
-
-## Android
+## Autocomplete editor in Android
 
 This example will demonstrate how to add an auto-complete editor for a property called Animal on Android.
 
@@ -59,58 +56,7 @@ Result:
 
 ![AutoComplete Editor](images/dataform-custom-renderer-android.png)
 
-## iOS
-
-This example will demonstrate how to add custom editors in iOS DataForm.
-
-First, create a sample class.
- 
-	public class Account
-	{
-	    [DisplayOptions(Header="User Name", PlaceholderText = "user name", Group = "Registration Info")]
-	    [StringLengthValidator(5, 30, "User name should be longed than 5 symbols.")]
-	    public string UserName { get; set; }
-	
-	    [DisplayOptions(Header = "Email", PlaceholderText = "email", Group = "Registration Info")]
-	    public string Email { get; set; }
-	
-	    [DisplayOptions(Header = "Password", PlaceholderText = "password", Position = 2, Group = "Registration Info")]
-	    [StringLengthValidator(5, 30, "Password should be longed than 5 symbols.")]
-	    public string Password { get; set; }
-	}
-
-Then, setup the source and register the editor types.
- 
-	dataForm.Source = new Account();
-
-	dataForm.RegisterEditor("Email", EditorType.Custom);
-	dataForm.RegisterEditor("Password", EditorType.Custom);
-	dataForm.RegisterEditor("Date", EditorType.DateEditor);
-
-After that, you have to inherit from the default **DataFormRenderer** and override the some of its methods.
-
-	public class CustomRendererIOS : DataFormRenderer
-	{
-	    protected override Type GetCustomEditorType(string propertyName, Type propertyType)
-	    {
-	        if (propertyName == "Email")
-	        {
-	            return typeof(TKDataFormEmailEditor);
-	        }
-	
-	        if (propertyName == "Password")
-	        {
-	            return typeof(TKDataFormPasswordEditor);
-	        }
-	
-	        return base.GetCustomEditorType(propertyName, propertyType);
-	    }
-	}
-
-Finally, replace the default **DataFormRenderer** with the new one in **AppDelegate.cs**:
-
-	[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(CustomRendererIOS))]
-		
 ## See Also
+- [Email and Password editors in iOS]({%slug dataform-howto-use-native-editors-ios%})
 - [Editors]({%slug dataform-editors%})
 - [Members]({%slug dataform-members%})

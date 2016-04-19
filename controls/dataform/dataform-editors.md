@@ -101,7 +101,7 @@ The values from the **EditorType** enumeration are interpreted differently by ea
  
 \* **[PropertyDataSourceProvider]({%slug dataform-annotations-data-source-key)**
 
-<!--Sometimes your property type will not be the same as the editor type, e.g. when you wish to edit integers with a NumberPicker editor. In this case you will have to use a **[converter]({% slug dataform-data-annotations%}#converterattribute)**.-->
+<!--Sometimes your property type will not be the same as the editor type, e.g. when you wish to edit integers with a NumberPicker editor. In this case you will have to use a **[converter]({%slug dataform-data-annotations%}#converterattribute)**.-->
 
 ## Custom Editors
 

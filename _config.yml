@@ -76,6 +76,9 @@ navigation:
     controls/dataform/annotations:
         title: "Data Annotations"
         position: 3
+    controls/dataform/howto:
+        title: "How To"
+        position: 9
         ## End DataForm Sub-Folders
     ## End DataForm
     ## ListView

@@ -24,4 +24,3 @@ The **RadCalendar for Xamarin.Forms** allows you to easily implement various cal
 - [**Different view modes support**]({% slug calendar-features-navigation-and-view-mode %})
 - [**Selection**]({% slug calendar-selection %})
 - [**Appointments**]({% slug calendar-appointments %})
-- [**Customization**]({% slug calendar-styling %}): RadCalendar provides number of ways to override the default calendar appearance.

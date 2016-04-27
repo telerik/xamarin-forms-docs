@@ -26,3 +26,10 @@ Find the **TelrikXFApp** template and click OK. This will invoke the Project Wiz
 
 ![Newly created solution](images/visual-studio-created-solution.png)
 
+After rebuilding the socution all packages and binaries will be updated and users will be ready to choose a startup project and deploy to the targeted platform.
+
+
+## See Also
+- [System Requirements]({%slug system-requirements%})
+- [Getting Started on Mac]({%slug getting-started-mac%})
+- [Required Android Support Libraries]({%slug required-android-support-libraries%})

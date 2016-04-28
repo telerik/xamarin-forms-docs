@@ -65,9 +65,57 @@ First you have to create a new Xamarin.Forms project. You can see how in the [Ge
 
 > **RadListView** is not available for **Windows Phone 8**.
 
-### Windows 8.1 and Windows Phone 8.1 Project 
+### Windows 8.1 Project
 
-> **RadListView** is not available for **Windows 8.1 and Windows Phone 8.1**.
+#### WinRT\\Common\\
+
+- Telerik.Core.dll
+- Telerik.Data.dll
+
+#### WinRT\\Windows 8.1\\
+
+- Telerik.UI.Xaml.Controls.Data.dll
+- Telerik.UI.Xaml.Input.dll
+- Telerik.UI.Xaml.Primitives.dll
+
+#### XamarinForms\\Common\\
+
+- Telerik.XamarinForms.DataControls.dll
+- Telerik.XamarinForms.Common.dll
+
+#### XamarinForms\\WinRT\\
+
+- Telerik.XamarinForms.Common.WinRT.dll
+
+#### XamarinForms\\\WinRT\\\Windows\\
+
+- Telerik.XamarinForms.DataControlsRenderer.WinRT.Windows.dll
+
+### Windows Phone 8.1 Project
+
+#### WinRT\\Common\\
+
+- Telerik.Core.dll
+- Telerik.Data.dll
+
+#### WinRT\\Windows Phone 8.1\\
+
+- Telerik.UI.Xaml.Controls.Data.dll
+- Telerik.UI.Xaml.Input.dll
+- Telerik.UI.Xaml.Primitives.dll
+
+#### XamarinForms\\Common\\
+
+- Telerik.XamarinForms.DataControls.dll
+- Telerik.XamarinForms.Common.dll
+
+#### XamarinForms\\WinRT\\
+
+- Telerik.XamarinForms.Common.WinRT.dll
+
+#### XamarinForms\\\WinRT\\\WinPhone\\
+
+- Telerik.XamarinForms.DataControlsRenderer.WinRT.WindowsPhone.dll
 
 ## Edit Project Files
 

@@ -83,13 +83,10 @@ First you have to create a new Xamarin.Forms project. You can see how in the [Ge
 - Telerik.XamarinForms.DataControls.dll
 - Telerik.XamarinForms.Common.dll
 
-#### XamarinForms\\WinRT\\
-
-- Telerik.XamarinForms.Common.WinRT.dll
-
 #### XamarinForms\\\WinRT\\\Windows\\
 
 - Telerik.XamarinForms.DataControlsRenderer.WinRT.Windows.dll
+- Telerik.XamarinForms.Common.WinRT.Windows.dll
 
 ### Windows Phone 8.1 Project
 
@@ -109,13 +106,10 @@ First you have to create a new Xamarin.Forms project. You can see how in the [Ge
 - Telerik.XamarinForms.DataControls.dll
 - Telerik.XamarinForms.Common.dll
 
-#### XamarinForms\\WinRT\\
-
-- Telerik.XamarinForms.Common.WinRT.dll
-
 #### XamarinForms\\\WinRT\\\WinPhone\\
 
 - Telerik.XamarinForms.DataControlsRenderer.WinRT.WindowsPhone.dll
+- Telerik.XamarinForms.Common.WinRT.WindowsPhone.dll
 
 ## Edit Project Files
 

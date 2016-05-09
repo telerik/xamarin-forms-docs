@@ -13,13 +13,12 @@ This example will guide you through the steps needed to add a basic RadCalendar 
 
 First you have to create a new Xamarin.Forms project. You can see how in the [Getting Started Example]({% slug getting-started %} "Getting Started with Telerik UI for Xamarin.Forms"). Then you have to add reference to the following assemblies:
 
-> The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls.  
+>The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls.  
 >The default location is `C:\Program Files (x86)\Telerik\UI for Xamarin QX XXX\Binaries`. 
 
->important Before adding reference to any Telerik library, please make sure the required [Xamarin.Forms and Xamarin.Android.Support]({% slug required-android-support-libraries%}) libraries are installed on your PC.
-
-
 ### Portable Project
+
+>important Before adding reference to any Telerik library, please make sure the required [Xamarin.Forms and Xamarin.Android.Support]({% slug required-android-support-libraries%}) libraries are installed on your PC.
 
 #### XamarinForms\\Common\\
 

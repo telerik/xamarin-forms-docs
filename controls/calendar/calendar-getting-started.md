@@ -18,14 +18,14 @@ First you have to create a new Xamarin.Forms project. You can see how in the [Ge
 
 ### Portable Project
 
->important Before adding reference to any Telerik library, please make sure the required [Xamarin.Forms and Xamarin.Android.Support]({% slug required-android-support-libraries%}) libraries are installed on your PC.
-
 #### XamarinForms\\Common\\
 
 - Telerik.XamarinForms.Input.dll
 - Telerik.XamarinForms.Common.dll
 
 ### Android Project
+
+>important Before adding reference to any Telerik library, please make sure the required [Xamarin.Forms and Xamarin.Android.Support]({% slug required-android-support-libraries%}) libraries are installed on your PC.
 
 #### Android\\
 

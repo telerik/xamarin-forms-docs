@@ -12,8 +12,12 @@ This article will guide users through the steps that have to be taken in order t
 
 First you have to create a new Xamarin.Forms project. You can see how in the [Getting Started Example]({% slug getting-started %} "Getting Started with Telerik UI for Xamarin.Forms"). Then you have to add reference to the following assemblies in order to include the **RadSideDrawer** into your project:
 
-> The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls.  
+>The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls.  
 >The default location is `C:\Program Files (x86)\Telerik\UI for Xamarin QX XXX\Binaries`. 
+
+Before adding reference to any Telerik library
+
+>Please make sure the required [Xamarin.Forms and Xamarin.Android.Support]({% slug required-android-support-libraries%}) libraries are installed on your PC.
 
 ### Portable Project
 
@@ -23,8 +27,6 @@ First you have to create a new Xamarin.Forms project. You can see how in the [Ge
 - Telerik.XamarinForms.Common.dll
 
 ### Android Project
-
->important Before adding reference to any Telerik library, please make sure the required [Xamarin.Forms and Xamarin.Android.Support]({% slug required-android-support-libraries%}) libraries are installed on your PC.
 
 #### Android\\
 

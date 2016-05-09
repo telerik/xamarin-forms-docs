@@ -16,6 +16,12 @@ First you have to create a new Xamarin.Forms project. You can see how in the [Ge
 > The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls.  
 >The default location is `C:\Program Files (x86)\Telerik\UI for Xamarin QX XXX\Binaries`. 
 
+!Before adding reference to any Telerik library, please make sure the required [Xamarin.Forms and Xamarin.Android.Support]({% slug required-android-support-libraries%}) libraries are installed on your PC.
+
+>!Before adding reference to any Telerik library, please make sure the required [Xamarin.Forms and Xamarin.Android.Support]({% slug required-android-support-libraries%}) libraries are installed on your PC.
+
+#!Before adding reference to any Telerik library, please make sure the required [Xamarin.Forms and Xamarin.Android.Support]({% slug required-android-support-libraries%}) libraries are installed on your PC.
+
 ### Portable Project
 
 #### XamarinForms\\Common\\

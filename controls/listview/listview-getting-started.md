@@ -216,6 +216,6 @@ An alternative way to visualize the component is to create it entirely in code. 
 	this.Content = listView;
 The result will be similar to the following pictures.
 
-Figure 1: RadListView in Android
+Figure 1: RadListView in Android, iOS and WinRT.Phone
 
 ![RadListView](images/listview-getting-started.png)

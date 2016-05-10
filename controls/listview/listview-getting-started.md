@@ -155,6 +155,42 @@ You also have to create an instance of the renderer in the `FinishedLaunching(..
 ## Edit the iOS project
 After referencing the required binaries it is time to edit the default configuration of the iOS project. Unload it and open the iOS.csproj file. Inside it you will find several PropertyGroups. One for each build definition. Inside each group you will find CodesignEntitlements tag. Those tags should be empty in each build definition. More information on that matter can be found in [this]({http://forums.xamarin.com/discussion/39674/iphonesimulator-build-results-in-no-valid-ios-code-signing-keys-found-in-keychain}) forum thread.
 
+### WinRT Projects
+
+## WinRT.Windows Project
+
+The MainPage.xaml.cs file should define the *ListViewRenderer* like this:
+
+	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(Telerik.XamarinForms.DataControls.RadListView), typeof(Telerik.XamarinForms.DataControlsRenderer.WinRT.ListViewRenderer))]
+
+Also the MainPage class should not derive from any native class and in its constructor initialization of *TelerikForms* and *Portable application* should be performed:
+
+	public sealed partial class MainPage
+    {
+        public MainPage()
+        {
+            Telerik.XamarinForms.Common.WinRT.TelerikForms.Init();
+            this.InitializeComponent();
+            LoadApplication(new Portable.App());
+        }
+    }
+	
+As for the XAML part of the MainPage the root container should be a **WindowsPage**:
+	
+	<forms:WindowsPage
+			    xmlns:forms="using:Xamarin.Forms.Platform.WinRT"
+				...
+	</forms:WindowsPage>
+	
+## WinRT.WindowsPhone Project
+
+The code behind part of the MainPage class of this project is the same as the previous project. The only difference is the type of the root element in the XAML part of the page. It should be a **WindowsPhonePage**:
+
+	<forms:WindowsPhonePage
+						xmlns:forms="using:Xamarin.Forms.Platform.WinRT"
+						...
+	</forms:WindowsPhonePage>
+
 ## NuGet Packages
 Next step is to add references to the NuGet Packages needed by RadListViiew in the Android project. You can find the full list with required packages in the [**Required Android Support Libraries**]({% slug required-android-support-libraries %}) help topic.
 	
@@ -172,11 +208,11 @@ where the **telerik** namespace is defined like this:
 The next step is to add the items that will be visualized. This can be done in code like this:
 
 	InitializeComponent();
-	this.LV.ItemsSource = new List<string>() { "A", "B", "C" };
+	this.LV.ItemsSource = Enum.GetNames(typeof(DayOfWeek)).ToList();
 An alternative way to visualize the component is to create it entirely in code. This can be done like this:
 
 	var listView = new RadListView();
-	listView.ItemsSource = new List<string>() { "A", "B", "C" };
+	this.LV.ItemsSource = Enum.GetNames(typeof(DayOfWeek)).ToList();
 	this.Content = listView;
 The result will be similar to the following pictures.
 

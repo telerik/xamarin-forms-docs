@@ -27,13 +27,14 @@ a img {
 
 #page-header {
     font-size: 12px;
+    height: 100px;
 }
 
 #page-header a {
     text-decoration: none;
 }
 
-#logo-bar {
+/*#logo-bar {
     background: #2d3e50;
     height: 40px;
     font-size: 14px;
@@ -41,6 +42,27 @@ a img {
 
 #logo-bar a {
     color: #fff;
+}*/
+
+#logo-bar a,
+#logo-bar-sl a {
+    display: inline-block;
+    background: url('../images/telerik_xam_logo.png') 0 center no-repeat;
+    height: 60px;
+    color: #fff;
+    width: 370px;
+}
+
+#logo-bar span {
+    display: none;
+}
+
+#logo-bar-sl a{
+    background: url('../images/telerik_xam_logo.png') 0 center no-repeat;
+}
+
+#logo-bar-sl span {
+    display: none;
 }
 
 .nav-buttons {

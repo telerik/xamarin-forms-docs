@@ -1,5 +1,6 @@
 ---
 title: Overview
+page_title: Telerik UI for Xamarin Documentation
 position: 1
 ---
 

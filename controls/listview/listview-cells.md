@@ -17,14 +17,14 @@ Cells are non visual objects used to describe a template for creating a visual e
 	<telerikDataControls:RadListView x:Name="EventsList">
 	    <telerikDataControls:RadListView.ItemTemplate>
 	      <DataTemplate>
-	        <listView:ListViewTextCell Text="{Binding Content}" TextColor="Red" Detail="{Binding EventDetais}" DetailColor="Green"/>
+	        <telerikListView:ListViewTextCell Text="{Binding Content}" TextColor="Red" Detail="{Binding EventDetais}" DetailColor="Green"/>
 	      </DataTemplate>
 	    </telerikDataControls:RadListView.ItemTemplate>
   	</telerikDataControls:RadListView>
 
 Where the namespaces are defined like this:
 
-             xmlns:listView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
+             xmlns:telerikListView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
              xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
 
 #### C# 
@@ -64,8 +64,8 @@ Where the namespaces are defined like this:
   	<telerikDataControls:RadListView x:Name="EventsList">
 	    <telerikDataControls:RadListView.ItemTemplate>
 	      <DataTemplate>
-	        <listView:ListViewTemplateCell>
-	          <listView:ListViewTemplateCell.View>
+	        <telerikListView:ListViewTemplateCell>
+	          <telerikListView:ListViewTemplateCell.View>
 	            <Grid Padding="16, 0, 16, 0">
 	              <Grid.RowDefinitions>
 	                <RowDefinition />
@@ -74,15 +74,15 @@ Where the namespaces are defined like this:
 	              <Label Text="{Binding Content}" FontSize="Large"/>
 	              <Label Text="{Binding EventDetais}" FontSize="Small" HorizontalOptions="End" Grid.Row="1"/>
 	            </Grid>
-	          </listView:ListViewTemplateCell.View>
-	        </listView:ListViewTemplateCell>
+	          </telerikListView:ListViewTemplateCell.View>
+	        </telerikListView:ListViewTemplateCell>
 	      </DataTemplate>
 	    </telerikDataControls:RadListView.ItemTemplate>
   	</telerikDataControls:RadListView>
 
 Where the namespaces are defined like this:
 
-             xmlns:listView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
+             xmlns:telerikListView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
              xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
 
 #### C# 

@@ -113,4 +113,4 @@ And the data class:
 
 [Grouping]({%slug listview-features-grouping%})
 
-[Filtering]({%slug listview-features-filtering%}
+[Filtering]({%slug listview-features-filtering%})

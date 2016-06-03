@@ -137,37 +137,12 @@ You have add the following lines to the **MainActivity.cs** file:
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.Android.CartesianChartRenderer))]
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.Android.PieChartRenderer))]
 
-You also need to call `TelerikForms.Init()` inside the `OnCreate(...)` method right after the `Forms.Init(...)` call.
-
-	protected override void OnCreate(Bundle bundle)
-    {
-        base.OnCreate(bundle);
-
-        global::Xamarin.Forms.Forms.Init(this, bundle); 
-        Telerik.XamarinForms.Common.Android.TelerikForms.Init();
-        LoadApplication(new App());
-    }
-
 ### iOS Project
 
 You have add the following lines to the **AppDelegate.cs** file:
 
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartRenderer))]
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.iOS.PieChartRenderer))]
-
-You also have to create an instance of the renderers in the `FinishedLaunching(...)` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`.
-
-	public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-    {
-        new CartesianChartRenderer();
-        new PieChartRenderer();
-
-        global::Xamarin.Forms.Forms.Init();
-        Telerik.XamarinForms.Common.iOS.TelerikForms.Init();
-
-        LoadApplication(new App());
-        return base.FinishedLaunching(app, options);
-    }
 
 ### Windows Phone 8 Project
 
@@ -176,37 +151,12 @@ You have add the following lines to the **MainPage.xaml.cs** file:
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.WinPhone.CartesianChartRenderer))]
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.WinPhone.PieChartRenderer))]
 
-You also need to call `TelerikForms.Init()` inside the MainPage constrictor right after the `Forms.Init()` call.
-
-	public partial class MainPage : FormsApplicationPage
-	{
-	    public MainPage()
-	    {
-	        this.InitializeComponent();
-	
-	        Forms.Init();
-	        TelerikForms.Init();
-	
-	        this.LoadApplication(new SDKBrowser.App());
-	    }
-	}
-
 ### Windows 8.1 and Windows Phone 8.1 Projects
 
 You have add the following lines to edit the **MainPage.xaml.cs** file:
 
 	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.WinRT.CartesianChartRenderer))]
 	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.WinRT.PieChartRenderer))]
-
-
-You also need to call `TelerikForms.Init()` inside the MainPage constrictor before the `LoadApplication(new SampleApp.App())` call.
-
-    public MainPage()
-    {
-        this.InitializeComponent();
-        Telerik.XamarinForms.Common.WinRT.TelerikForms.Init();
-        LoadApplication(new SampleApp.App());
-    }
 
 ## NuGet Packages
 Next step is to add references to the NuGet Packages needed by the chart controls in the Android project. You can find the full list with required packages in the [**Required Android Support Libraries**]({% slug required-android-support-libraries %}) help topic.

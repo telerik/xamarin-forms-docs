@@ -137,16 +137,6 @@ You have add the following line to the **MainActivity.cs** file:
 
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.Android.CalendarRenderer))]
 
-You also need to call `TelerikForms.Init()` inside the `OnCreate(...)` method right after the `Forms.Init(...)` call.
-
-	protected override void OnCreate(Bundle bundle)
-    {
-        base.OnCreate(bundle);
-
-        global::Xamarin.Forms.Forms.Init(this, bundle); 
-        Telerik.XamarinForms.Common.Android.TelerikForms.Init();
-        LoadApplication(new App());
-    }
 
 ### iOS Project
 
@@ -173,35 +163,11 @@ You have add the following line to the **MainPage.xaml.cs** file:
 
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.WinPhone.CalendarRenderer))]
 
-You also need to call `TelerikForms.Init()` inside the MainPage constrictor right after the `Forms.Init()` call.
-
-	public partial class MainPage : FormsApplicationPage
-	{
-	    public MainPage()
-	    {
-	        this.InitializeComponent();
-	
-	        Forms.Init();
-	        TelerikForms.Init();  
-	
-	        this.LoadApplication(new SDKBrowser.App());
-	    }
-	}
-
 ### Windows 8.1 and Windows Phone 8.1 Projects
 
 You have add the following line to the **MainPage.xaml.cs** file:
 
 	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.WinRT.CalendarRenderer))]
-
-You also need to call `TelerikForms.Init()` inside the MainPage constrictor before the `LoadApplication(new SampleApp.App())` call.
-
-    public MainPage()
-    {
-        this.InitializeComponent();
-        Telerik.XamarinForms.Common.WinRT.TelerikForms.Init();
-        LoadApplication(new SampleApp.App());
-    }
 
 ## NuGet Packages
 Next step is to add references to the NuGet Packages needed by RadRadCalendar in the Android project. You can find the full list with required packages in the [**Required Android Support Libraries**]({% slug required-android-support-libraries %}) help topic.

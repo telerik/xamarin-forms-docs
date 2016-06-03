@@ -31,13 +31,13 @@ This descriptor enables you to group by a custom key (e.g. some complex expressi
 	<telerikDataControls:RadListView x:Name="EventsList">
 	    <telerikDataControls:RadListView.ItemTemplate>
 	      <DataTemplate>
-	        <listView:ListViewTemplateCell>
-	          <listView:ListViewTemplateCell.View>
+	        <telerikListView:ListViewTemplateCell>
+	          <telerikListView:ListViewTemplateCell.View>
 	            <Grid Padding="16, 0, 0, 0">
 	              <Label Text="{Binding Content}" FontSize="Large"/>
 	            </Grid>
-	          </listView:ListViewTemplateCell.View>
-	        </listView:ListViewTemplateCell>
+	          </telerikListView:ListViewTemplateCell.View>
+	        </telerikListView:ListViewTemplateCell>
 	      </DataTemplate>
 	    </telerikDataControls:RadListView.ItemTemplate>
 	    <telerikDataControls:RadListView.GroupDescriptors>
@@ -54,7 +54,7 @@ This descriptor enables you to group by a custom key (e.g. some complex expressi
 
 Where the  telerikDataControls and the listView alias are defined like this:
 
-	xmlns:listView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
+	xmlns:telerikListView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
 	xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
 
 ####	C# 

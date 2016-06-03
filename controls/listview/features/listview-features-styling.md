@@ -41,20 +41,20 @@ This enumeration contains the following members:
 
 	<telerikDataControls:RadListView ItemsSource="{Binding SourceList}">
 	    <telerikDataControls:RadListView.ItemStyle>
-	      <listView:ListViewItemStyle BackgroundColor="Transparent" BorderLocation="None"/>
+	      <telerikListView:ListViewItemStyle BackgroundColor="Transparent" BorderLocation="None"/>
 	    </telerikDataControls:RadListView.ItemStyle>
 
 	    <telerikDataControls:RadListView.SelectedItemStyle>
-	      <listView:ListViewItemStyle BackgroundColor="#E5EDF3" BorderWidth="3" BorderLocation="Bottom"/>
+	      <telerikListView:ListViewItemStyle BackgroundColor="#E5EDF3" BorderWidth="3" BorderLocation="Bottom"/>
 	    </telerikDataControls:RadListView.SelectedItemStyle>
 
 	    <telerikDataControls:RadListView.PressedItemStyle>
-	      <listView:ListViewItemStyle BackgroundColor="#C1C1C1" BorderColor="#FF692F" BorderWidth="3" BorderLocation="Bottom"/>
+	      <telerikListView:ListViewItemStyle BackgroundColor="#C1C1C1" BorderColor="#FF692F" BorderWidth="3" BorderLocation="Bottom"/>
 	    </telerikDataControls:RadListView.PressedItemStyle>
 
 	    <telerikDataControls:RadListView.ItemTemplate>
 	      <DataTemplate>
-	        <listView:ListViewTextCell Text="{Binding Title}" />
+	        <telerikListView:ListViewTextCell Text="{Binding Title}" />
 	      </DataTemplate>
 	    </telerikDataControls:RadListView.ItemTemplate>
 	  </telerikDataControls:RadListView>

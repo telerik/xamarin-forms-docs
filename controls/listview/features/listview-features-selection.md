@@ -33,7 +33,7 @@ Figure 1: Single Selection
 #### XAML
 
 	<StackLayout>
-		<telerik:RadListView x:Name="list" SelectionMode="Single"></telerik:RadListView>
+		<telerikDataControls:RadListView x:Name="list" SelectionMode="Single"></telerik:RadListView>
 		<Label BindingContext="{x:Reference Name=list}" Text="{Binding SelectedItem}" TextColor="Red"/>
 	</StackLayout>
 
@@ -70,7 +70,7 @@ Figure 2: Multiple Selection
 				</RowDefinition.Height>
 			</RowDefinition>
 		</Grid.RowDefinitions>
-		<telerik:RadListView x:Name="list" SelectionMode="Multiple"></telerik:RadListView>
+		<telerikDataControls:RadListView x:Name="list" SelectionMode="Multiple"></telerik:RadListView>
 		<ListView BindingContext="{x:Reference Name=list}" ItemsSource="{Binding SelectedItems}" Grid.Row="1" />
 	</Grid>
 

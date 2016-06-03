@@ -35,7 +35,7 @@ Figure 2: Linear Horizontal Layout
 	
 	<telerikDataControls:RadListView>
 		<telerikDataControls:RadListView.LayoutDefinition>
-			<list:ListViewLinearLayout Orientation="Horizontal"/>
+			<telerikListView:ListViewLinearLayout Orientation="Horizontal"/>
 		</telerikDataControls:RadListView.LayoutDefinition>
 	</telerikDataControls:RadListView>
 
@@ -53,7 +53,7 @@ Figure 3: Grid Vertical Layout
 
 	<telerikDataControls:RadListView x:Name="list">
 		<telerikDataControls:RadListView.LayoutDefinition>
-			<list:ListViewGridLayout />
+			<telerikListView:ListViewGridLayout />
 		</telerikDataControls:RadListView.LayoutDefinition>
 	</telerikDataControls:RadListView>
 
@@ -63,7 +63,7 @@ Figure 4: Grid Horizontal Layout
 
 	<telerikDataControls:RadListView x:Name="list">
 		<telerikDataControls:RadListView.LayoutDefinition>
-			<list:ListViewGridLayout Orientation="Horizontal"/>
+			<telerikListView:ListViewGridLayout Orientation="Horizontal"/>
 		</telerikDataControls:RadListView.LayoutDefinition>
 	</telerikDataControls:RadListView>
 
@@ -73,7 +73,7 @@ Figure 5: Grid Vertical Layout with 3 columns
 
 	<telerikDataControls:RadListView x:Name="list">
 		<telerikDataControls:RadListView.LayoutDefinition>
-			<list:ListViewGridLayout SpanCount="3"/>
+			<telerikListView:ListViewGridLayout SpanCount="3"/>
 		</telerikDataControls:RadListView.LayoutDefinition>
 	</telerikDataControls:RadListView>
 

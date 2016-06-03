@@ -144,11 +144,11 @@ After successful installation of those packages, the application should be set u
 
 Users can visualize the **RadListView** using XAML code like this:
 
-	<telerik:RadListView x:Name="LV"/> 
+	<telerikDataControls:RadListView x:Name="LV"/> 
 
 where the **telerik** namespace is defined like this:
 
-	xmlns:telerik="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+	xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
 The next step is to add the items that will be visualized. This can be done in code like this:
 
 	InitializeComponent();

@@ -208,3 +208,8 @@ Alternatively, you can add the calendar in code behind:
 
 Here is the result:  
 ![Basic RadCalendar Example](images/calendar-getting-started.png "Basic RadCalendar")
+
+## See Also
+
+- [Project Wizard]({% slug project-wizard %})
+- [Getting Started on Mac]({% slug getting-started-mac %})

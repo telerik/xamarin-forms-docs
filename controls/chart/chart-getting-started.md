@@ -132,28 +132,28 @@ Before adding reference to any Telerik library
 
 ### Android Project
 
-You have add the following lines to the **MainActivity.cs** file:
+You have to add the following lines to the **MainActivity.cs** file outside the scope of the namespace just after the using statements:
   
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.Android.CartesianChartRenderer))]
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.Android.PieChartRenderer))]
 
 ### iOS Project
 
-You have add the following lines to the **AppDelegate.cs** file:
+You have to add the following lines to the **AppDelegate.cs** file outside the scope of the namespace just after the using statements:
 
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartRenderer))]
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.iOS.PieChartRenderer))]
 
 ### Windows Phone 8 Project
 
-You have add the following lines to the **MainPage.xaml.cs** file:
+You have to add the following lines to the **MainPage.xaml.cs** file outside the scope of the namespace just after the using statements:
 
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.WinPhone.CartesianChartRenderer))]
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.WinPhone.PieChartRenderer))]
 
 ### Windows 8.1 and Windows Phone 8.1 Projects
 
-You have add the following lines to edit the **MainPage.xaml.cs** file:
+You have to add the following lines to edit the **MainPage.xaml.cs** file outside the scope of the namespace just after the using statements:
 
 	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.WinRT.CartesianChartRenderer))]
 	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.WinRT.PieChartRenderer))]

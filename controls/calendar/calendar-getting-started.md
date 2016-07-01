@@ -133,14 +133,14 @@ Before adding reference to any Telerik library
 
 ### Android Project
 
-You have add the following line to the **MainActivity.cs** file:
+You have to add the following line to the **MainActivity.cs** file outside the scope of the namespace just after the using statements:
 
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.Android.CalendarRenderer))]
 
 
 ### iOS Project
 
-You have add the following line to the **AppDelegate.cs** file:
+You have to add the following line to the **AppDelegate.cs** file outisde the scope of the namespace just after the using statements:
 
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.iOS.CalendarRenderer))]
 
@@ -159,13 +159,13 @@ You also have to create an instance of the renderer in the `FinishedLaunching(..
 
 ### Windows Phone 8 Project
 
-You have add the following line to the **MainPage.xaml.cs** file:
+You have to add the following line to the **MainPage.xaml.cs** file outisde the scope of the namespace just after the using statements:
 
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.WinPhone.CalendarRenderer))]
 
 ### Windows 8.1 and Windows Phone 8.1 Projects
 
-You have add the following line to the **MainPage.xaml.cs** file:
+You have to add the following line to the **MainPage.xaml.cs** file outisde the scope of the namespace just after the using statements:
 
 	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.WinRT.CalendarRenderer))]
 

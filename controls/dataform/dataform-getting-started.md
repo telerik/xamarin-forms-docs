@@ -76,13 +76,13 @@ Before adding reference to any Telerik library
 
 ### Android Project
 
-You have add the following line to the **MainActivity.cs** file outside the namespace:
+You have to add the following line to the **MainActivity.cs** file outside the scope of the namespace just after the using statements:
 
 	[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(Telerik.XamarinForms.InputRenderer.Android.DataFormRenderer))]
 
 ### iOS Project
 
-You have add the following lines to the **AppDelegate.cs** file outside the namespace:
+You have to add the following lines to the **AppDelegate.cs** file outside the scope of the namespace just after the using statements:
 
 	[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(Telerik.XamarinForms.InputRenderer.iOS.DataFormRenderer))]
 

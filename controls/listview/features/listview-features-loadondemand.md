@@ -9,7 +9,7 @@ tags: radlistview, lazy, incremental, loading, load, on demand
 
 # Load on demand
 
-With our 2016 R3 official release we introduced new items loading mechanism. This mechanism allows the developer to load items into the RadListView component only when the end-user wants to see more. It can serve to reduce the intial loading time by loading a few items at startup (ensuting fast loading) and add additional items at runtime (on a user request). On the following picture customers can see how the feature looks like with its default templates.
+With our 2016 R3 official release we introduced new items loading mechanism. This mechanism allows the developer to load items into the RadListView component only when the end-user wants to see more. It can serve to reduce the intial loading time by loading a few items at startup and add additional items at runtime. On the following picture customers can see how the feature looks like with its default templates.
 
 ![LoadOnDemand](images/listview-features-load-on-demand.png)
 
@@ -19,10 +19,10 @@ The load view is visualized when the feature is configured to be triggered manua
 
 The LoadOnDemand API consist of:
 
-* **IsLoadOnDemandEnabled** (bool): Gets or sets a boolean value indicating if the feature is enabled or not.
-* **IsLoadOnDemandActive** (bool): Gets or sets a boolean value indicating if the items loading logic is currently working. This property should be set to False once the custom logic completes loading. 
+* **IsLoadOnDemandEnabled** (bool): Gets or sets a boolean value indicating whether the feature is enabled or not.
+* **IsLoadOnDemandActive** (bool): Gets or sets a boolean value indicating whether the items loading logic is currently working. This property should be set to False once the custom logic completes loading.
 * **LoadOnDemandMode** (LoadOnDemandMode): Gets or sets how the end-user will be able to request additional items
-	* **Manual**: The RadListView will visualize a button like items after the last cell of its ItemsSource. The end-user will be able to tap it in order to request additional items.
+	* **Manual**: a string, invitig the end-user to tap, is visualized after the items in the ItemsSource. The end-user will be able to tap it in order to request additional items.
 	* **Automatic**: The RadListView will automatically trigger the items loading logic whenever there are 5 or less available items outside the viewport of the control.
 * **LoadOnDemandItemTemplate** (DataTemplate): Gets or sets a description of the visual representation of the button like item.
 * **LoadingOnDemandItemTemplate** (DataTemplate): Gets or sets a description of the visual representation of the data loading indicator.

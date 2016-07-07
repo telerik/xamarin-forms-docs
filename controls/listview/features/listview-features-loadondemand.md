@@ -94,26 +94,26 @@ Once a custom collection implements the interface, the RadListView will be to tr
 
 #### XAML
 
-  <Grid BackgroundColor="White">
-    <Grid.RowDefinitions>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="Auto"/>
-    </Grid.RowDefinitions>
-    <telerikDataControls:RadListView x:Name="listView" IsLoadOnDemandEnabled="True" LoadOnDemandMode="Automatic" ItemsSource="{Binding TelerikSource}">
-      <telerikDataControls:RadListView.ItemTemplate>
-        <DataTemplate>
-          <telerikListView:ListViewTemplateCell>
-            <telerikListView:ListViewTemplateCell.View>
-              <Grid HeightRequest="120">
-                <Label Text="{Binding }" FontSize="24" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
-              </Grid>
-            </telerikListView:ListViewTemplateCell.View>
-          </telerikListView:ListViewTemplateCell>
-        </DataTemplate>
-      </telerikDataControls:RadListView.ItemTemplate>
-    </telerikDataControls:RadListView>
-    <Button Grid.Row="1" Text="Cancel LOD" HorizontalOptions="CenterAndExpand" Clicked="Cancel_LOD" />
-  </Grid>
+	<Grid BackgroundColor="White">
+	<Grid.RowDefinitions>
+	  <RowDefinition Height="*"/>
+	  <RowDefinition Height="Auto"/>
+	</Grid.RowDefinitions>
+	<telerikDataControls:RadListView x:Name="listView" IsLoadOnDemandEnabled="True" LoadOnDemandMode="Automatic" ItemsSource="{Binding TelerikSource}">
+	  <telerikDataControls:RadListView.ItemTemplate>
+		<DataTemplate>
+		  <telerikListView:ListViewTemplateCell>
+			<telerikListView:ListViewTemplateCell.View>
+			  <Grid HeightRequest="120">
+				<Label Text="{Binding }" FontSize="24" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
+			  </Grid>
+			</telerikListView:ListViewTemplateCell.View>
+		  </telerikListView:ListViewTemplateCell>
+		</DataTemplate>
+	  </telerikDataControls:RadListView.ItemTemplate>
+	</telerikDataControls:RadListView>
+	<Button Grid.Row="1" Text="Cancel LOD" HorizontalOptions="CenterAndExpand" Clicked="Cancel_LOD" />
+	</Grid>
   
 Where the namespaces are defined like this:
 

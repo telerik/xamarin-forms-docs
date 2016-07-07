@@ -11,7 +11,7 @@ tags: radlistview, lazy, incremental, loading, load, on demand
 
 With our 2016 R3 official release we introduced new items loading mechanism. This mechanism allows the developer to load items into the RadListView component only when the end-user wants to see more. It can serve to reduce the intial loading time by loading a few items at startup (ensuting fast loading) and add additional items at runtime (on a user request). On the following picture customers can see how the feature looks like with its default templates.
 
-![RadListView - LOD](images/listview-features-load-on-demand.png)
+![LoadOnDemand](images/listview-features-load-on-demand.png)
 
 The load view is visualized when the feature is configured to be triggered manually and the end user scrolls to the end of the RadListView. The default load view is a button which triggers the custom item loading logic. The loading view is visualized while the custom item loading logic is ongoing. This view is also visualized in automatic mode when the end user scrolls to the end of the list.
 

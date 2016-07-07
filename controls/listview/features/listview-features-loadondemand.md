@@ -89,12 +89,12 @@ Where the namespaces are defined like this:
 
 # Collection reliant implementation
 
-This approach is an MVVM friendly implementation of the same feature. Developers are allowed to provide a special collection as ItemsSource of the RadListView component. This collection should implement the ISupportLoadOnDemand interface. It contains the following members:
+This approach is an MVVM friendly implementation of the LoadOnDemand feature. Developers are allowed to provide a special collection as ItemsSource of the RadListView component. This collection should implement the ISupportLoadOnDemand interface. It contains the following members:
 	
 * **LoadOnDemandAction** (Func&lt;CancellationToken, IEnumerable&lt;object&gt;&gt;) - Gets the function wrapping the custom items loading logic.
 * **LoadItemsOnDemand()** (void) - a method that triggers the items loading logic.
 	
-Once a custom collection implements the interface, the RadListView will be to trigger the custom item loading logic and the developer will be able to cancel his/her async taks through the RadListView.IsLoadOnDemandActive property. The most important advantage of this particular approach is that it allows asyncronus loading of items. Here is a sample which will get you started:
+If a collection implements the interface, the RadListView will be to trigger the custom item loading logic and the developer will be able to cancel his/her async taks through the RadListView.IsLoadOnDemandActive property. The most important advantage of this particular approach is that it allows asyncronus loading of items. Here is a sample which will get you started:
 
 #### XAML
 

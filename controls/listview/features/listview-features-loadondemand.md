@@ -178,7 +178,7 @@ Where the TelerikViewModel class is defined like this:
         }
     }
 	
-#### See Also
+## See Also
 
 [Pull to refresh]({%slug listview-features-pull-to-refresh%})
 

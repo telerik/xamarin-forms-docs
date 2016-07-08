@@ -105,7 +105,7 @@ And the data class:
 
     <telerikDataControls:RadListView>
       <telerikDataControls:RadListView.SortDescriptors>
-        <telerikListView:PropertySortDescriptor PropertyName="Age" SortOrder = "Ascending"/>
+        <telerikListView:PropertySortDescriptor PropertyName="Age" SortOrder="Ascending"/>
       </telerikDataControls:RadListView.SortDescriptors>
     </telerikDataControls:RadListView>
 

@@ -125,7 +125,9 @@ defaults:
 
 # The google services configuration
 google_tag_manager: GTM-6X92
-google_custom_search: '015477434697877241846:nis_vwdkwzq'
+google_custom_search: '001595215763381649090:hqd69dmjy2k'
+
+
 
 # Assets pipeline configuration
 assets:

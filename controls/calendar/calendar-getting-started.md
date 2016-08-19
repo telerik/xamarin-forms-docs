@@ -95,12 +95,9 @@ Before adding reference to any Telerik library
 - Telerik.XamarinForms.Common.dll
 - Telerik.XamarinForms.Input.dll
 
-#### XamarinForms\\WinRT\\ 
-
-- Telerik.XamarinForms.Common.WinRT.dll
-
 #### XamarinForms\\WinRT\\Windows\\ 
 
+- Telerik.XamarinForms.Common.WinRT.Windows.dll
 - Telerik.XamarinForms.InputRenderer.WinRT.Windows.dll
 
 ### Windows Phone 8.1 Project
@@ -119,12 +116,9 @@ Before adding reference to any Telerik library
 - Telerik.XamarinForms.Common.dll
 - Telerik.XamarinForms.Input.dll
 
-#### XamarinForms\\WinRT\\ 
-
-- Telerik.XamarinForms.Common.WinRT.dll
-
 #### XamarinForms\\WinRT\\WinPhone\\
 
+- Telerik.XamarinForms.Common.WinRT.WindowsPhone.dll
 - Telerik.XamarinForms.InputRenderer.WinRT.WindowsPhone.dll
 
 ![Add Calendar References](images/calendar-getting-started-references.png)
@@ -167,7 +161,7 @@ You have to add the following line to the **MainPage.xaml.cs** file outisde the 
 
 You have to add the following line to the **MainPage.xaml.cs** file outisde the scope of the namespace just after the using statements:
 
-	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.WinRT.CalendarRenderer))]
+	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.WinRT.CalendarRenderer))]
 
 ## NuGet Packages
 Next step is to add references to the NuGet Packages needed by RadRadCalendar in the Android project. You can find the full list with required packages in the [**Required Android Support Libraries**]({% slug required-android-support-libraries %}) help topic.

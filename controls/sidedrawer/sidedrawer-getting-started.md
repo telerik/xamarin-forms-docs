@@ -78,12 +78,9 @@ Before adding reference to any Telerik library
 - Telerik.XamarinForms.Common.dll
 - Telerik.XamarinForms.Primitives.dll
 
-#### XamarinForms\\WinRT\\ 
-
-- Telerik.XamarinForms.Common.WinRT.dll
-
 #### XamarinForms\\WinRT\\Windows\\ 
 
+- Telerik.XamarinForms.Common.WinRT.Windows.dll
 - Telerik.XamarinForms.PrimitivesRenderer.WinRT.Windows.dll
 
 ### Windows Phone 8.1 Project
@@ -101,12 +98,9 @@ Before adding reference to any Telerik library
 - Telerik.XamarinForms.Common.dll
 - Telerik.XamarinForms.Primitives.dll
 
-#### XamarinForms\\WinRT\\ 
-
-- Telerik.XamarinForms.Common.WinRT.dll
-
 #### XamarinForms\\WinRT\\WinPhone\\
 
+- Telerik.XamarinForms.Common.WinRT.WindowsPhone.dll
 - Telerik.XamarinForms.PrimitivesRenderer.WinRT.WindowsPhone.dll
 
 ## Edit Project Files

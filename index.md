@@ -41,9 +41,10 @@ You can use UI for Xamarin.Forms for application development for the following m
 |:---								|:---			|
 |Android		|4.0.3 (API 15) or higher|
 |iOS				|7.0 or higher|
-|Windows							|Windows Phone 8 Silverlight, Windows 8.1 / Windows Phone 8.1,Windows 10 Mobile / Windows 10  |
+|Windows							|Windows Phone 8 Silverlight, Windows 8.1 / Windows Phone 8.1, Windows 10 Mobile / Windows 10  |
 
 ## Next Steps ##
  - [Getting started with UI for Xamarin on Windows]({%slug getting-started%})
  - [Getting started with UI for Xamarin on Mac]({%slug getting-started-mac%})
+ - [System Requirements]({% slug system-requirements %})
  - [UI for Xamarin Support and Learning Resources](http://www.telerik.com/support/xamarin-ui)

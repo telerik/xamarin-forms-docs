@@ -18,10 +18,10 @@ After the release of Xamarin.Android.Support libraries version 23.0.1 from Xamar
 - Right-click the .Droid project and select "Properties"
 - Select "Android Options"
 - Select "Advanced" tab
-- Enter a value for "Java Max Heap Size" e.g. **`256m`**
+- Enter a value for "Java Max Heap Size" e.g. **`1G`**
 
 ## In Xamarin Studio: ##
 - Right-click the .Droid project and select "Options"
 - Select "Android Build" in "Build" node
 - Select "Advanced" tab
-- Enter a value for "Java Heap Size" e.g. **`256m`**
+- Enter a value for "Java Heap Size" e.g. **`1G`**

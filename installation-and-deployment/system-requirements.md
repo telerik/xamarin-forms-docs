@@ -6,7 +6,6 @@ position: 2
 ---
 
 # System Requirements #
-
 You can develop cross-platform applications with Xamarin.Forms on the following operating systems:
 
 * **Windows**

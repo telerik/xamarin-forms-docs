@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Welcome to UI for Xamarin
 page_title: Telerik UI for Xamarin Documentation
 position: 1
 ---
@@ -37,11 +37,11 @@ For information about the control set, API and features, refer to the documentat
 ##Supported mobile versions##
 You can use UI for Xamarin.Forms for application development for the following mobile operating systems:
 
-- **Android 4.0** or higher
-- **iOS 7.0** or higher
-- **Windows Phone 8 Silverlight**
-- **Windows 8.1 / Windows Phone 8.1**
-- **Windows 10 Mobile / Windows 10**
+- Android 4.0 or higher
+- iOS 7.0 or higher
+- Windows Phone 8 Silverlight
+- Windows 8.1 / Windows Phone 8.1
+- Windows 10 Mobile / Windows 10
 
 ## Next Steps ##
  - [Getting started with UI for Xamarin on Windows]({%slug getting-started%})

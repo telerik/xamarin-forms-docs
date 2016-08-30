@@ -15,7 +15,7 @@ To read more about the benefits of using UI for Xamarin, please visit the [produ
 ![Telerik UI for Xamarin](front-image.jpg)
 
 
-###Xamarin Forms controls###
+###UI for Xamarin Forms###
 Our suite offers the following controls for cross-platform development with Xamarin forms:
 
  - [Calendar for Xamarin.Forms]({% slug calendar-overview %})
@@ -25,13 +25,13 @@ Our suite offers the following controls for cross-platform development with Xama
  - [SideDrawer for Xamarin.Forms]({% slug sidedrawer-overview %})
 
 
-###Xamarin.Android controls###
+###UI for Xamarin.Android###
 For information about the Xamarin.iOS bindings API and features, please check our documentation of [UI for iOS](http://docs.telerik.com/devtools/ios/).
 
-###Xamarin.iOS controls###
+###UI for Xamarin.iOS###
 For information about the Xamarin.Android wrappers API and features, refer to the documentation set of [UI for Android](http://docs.telerik.com/devtools/android/).
 
-###UI for UWP controls###
+###UI for UWP###
 For information about the control set, API and features, refer to the documentation set of [UI for UWP](http://docs.telerik.com/windows-universal/).
 
 ##Supported mobile versions##
@@ -47,11 +47,3 @@ You can use UI for Xamarin.Forms for application development for the following m
  - [Getting started with UI for Xamarin on Windows]({%slug getting-started%})
  - [Getting started with UI for Xamarin on Mac]({%slug getting-started-mac%})
  - [UI for Xamarin Support and Learning Resources](http://www.telerik.com/support/xamarin-ui)
-
-
-
-
-
-
-
-> Note: You can find more controls in the UI for iOS and UI for Android than what is supported by the Xamarin bindings. For a list of the supported controls, you can refer to the [UI for Xamarin](http://www.telerik.com/xamarin-ui) product page.

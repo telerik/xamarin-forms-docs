@@ -108,6 +108,12 @@ navigation:
 ## The application virtual path
 baseurl: "/devtools/xamarin"
 
+## The Kendo UI version used
+cdnVersion: "2016.2.607"
+
+## The MVC Core version used
+mvcCoreVersion: "2016.2.616"
+
 ## The product name
 productName: "Telerik UI for Xamarin Forms"
 

@@ -86,6 +86,23 @@ You have to add the following lines to the **AppDelegate.cs** file outside the s
 
 	[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(Telerik.XamarinForms.InputRenderer.iOS.DataFormRenderer))]
 
+
+You also have to create an instance of the renderer in the `FinishedLaunching(...)` method before the `Forms.Init()` call which is called right before the `TelerikForms.Init()` call.
+
+	public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+    {
+        new Telerik.XamarinForms.InputRenderer.iOS.DataFormRenderer();
+
+        global::Xamarin.Forms.Forms.Init();
+        
+        Telerik.XamarinForms.Common.iOS.TelerikForms.Init();
+        
+        LoadApplication(new App());
+
+        return base.FinishedLaunching(app, options);
+    }
+
+
 ## NuGet Packages
 Next step is to add references to the NuGet Packages needed by RadDataForm in the Android project. You can find the full list with required packages in the [**Required Android Support Libraries**]({% slug required-android-support-libraries %}) help topic.
 

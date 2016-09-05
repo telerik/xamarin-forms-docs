@@ -150,6 +150,47 @@ function preventParentSelection(e) {
 }
 
 $(function(){
+
+//add expand collapse of code snippets
+   $("pre[lang]").each(function() {
+       if (this.parentNode.className.indexOf("k-content") >= 0) {
+           return;
+       }
+
+       var langs = $(this).nextUntil(":not(pre)", "pre").add(this);
+
+       var tabs = $.map(langs, function(item) {
+          return $("<li>").text($(item).attr("lang"));
+       });
+
+       tabs[0].addClass("k-state-active");
+
+       var tabstrip = $("<div>")
+                       .insertBefore(this)
+                       .append($("<ul>").append(tabs))
+                       .append(langs);
+
+       langs.wrap("<div>");
+
+       tabstrip.kendoTabStrip({
+           animation: false
+       });
+    });
+
+    var codeSampleMapper = {
+        'C#': 'cs',
+        'VB.NET' : 'vb',
+        'AppBuilder' : 'js',
+        'JavaScript' : 'commonjs',
+        'TypeScript' : 'commonjs',
+        'C++' : 'cpp',
+        'C' : 'c',
+        'Objective-C' : 'm',
+        'Java' : 'java',
+    }
+
+    //enable prettyprint
+
     $("pre[data-lang^=tab-]").each(function() {
         if (this.parentNode.className.indexOf("k-content") >= 0) {
             return;

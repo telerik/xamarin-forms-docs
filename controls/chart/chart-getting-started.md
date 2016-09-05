@@ -128,9 +128,7 @@ Before adding reference to any Telerik library
 
 You have to add the following lines to the **MainActivity.cs** file outside the scope of the namespace just after the using statements:
   
-  ```CSharp
   <snippet id='sdk-chart-attr-droid'/>
-  ```
 
 ### iOS Project
 

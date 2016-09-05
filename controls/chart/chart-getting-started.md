@@ -128,8 +128,9 @@ Before adding reference to any Telerik library
 
 You have to add the following lines to the **MainActivity.cs** file outside the scope of the namespace just after the using statements:
   
-	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.Android.CartesianChartRenderer))]
-	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.Android.PieChartRenderer))]
+  ```CSharp
+  <snippet id='sdk-chart-attr-droid'/>
+  ```
 
 ### iOS Project
 

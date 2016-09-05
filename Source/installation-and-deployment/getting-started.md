@@ -2,7 +2,7 @@
 title: Getting Started on Windows
 page_title: Getting Started with Telerik UI for Xamarin.Forms on Windows
 slug: getting-started
-position: 3
+position: 1
 ---
 #Getting Started on Windows#
 Here are described the steps that you have to follow to create a new cross platform solution with **Visual Studio**. Please, read the [System Requirements]({% slug system-requirements %}) article before you proceed.

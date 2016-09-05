@@ -1,7 +1,5 @@
 #!/bin/bash
 
-cd Source
-
 # Install latest Ruby gems (if any)
 bundle install --without development || { echo 'Installing Ruby gems failed.'; exit 1; }
 

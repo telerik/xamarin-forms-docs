@@ -12,6 +12,7 @@
         {% stylesheet styles %}
         {% stylesheet icon-font %}
         {% stylesheet theme %}
+        {% stylesheet highlight %}
         <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="http://kendo.cdn.telerik.com/{{ site.cdnVersion }}/js/kendo.web.min.js"></script>
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.6.0/codemirror.min.css">
@@ -22,6 +23,7 @@
         <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.6.0/mode/htmlmixed/htmlmixed.min.js"></script>
         {% javascript prettify %}
         {% javascript app %}
+        {% javascript highlight %}
         {% if page.editableExample == "true" %}
         {% javascript dojo %}
         {% endif %}

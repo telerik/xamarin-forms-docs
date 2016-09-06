@@ -18,10 +18,10 @@ navigation:
 ## End Root Level
 ## Intallation Sub-Folders
     installation-and-deployment/windows:
-        title: Windows
+        title: "Windows"
         position: 2
      installation-and-deployment/mac:
-        title: Mac
+        title: "Mac"
         position: 3
 ## End Intallation Sub-Folders
 ## Controls Sub-Folders

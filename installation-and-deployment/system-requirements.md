@@ -2,7 +2,7 @@
 title: System Requirements
 page_title: System Requirements for using Telerik UI for Xamarin.Forms
 slug: system-requirements
-position: 3
+position: 1
 ---
 
 #System Requirements#

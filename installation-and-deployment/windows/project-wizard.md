@@ -2,7 +2,7 @@
 title: Using Project Wizard for Visual Studio
 page_title: Telerik UI for Xamarin Project Wizard
 slug: project-wizard
-position: 1
+position: 3
 ---
 
 # Project Wizard

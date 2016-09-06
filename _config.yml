@@ -16,6 +16,14 @@ navigation:
         title: "Troubleshooting"
         position: 4
 ## End Root Level
+## Intallation Sub-Folders
+    installation-and-deployment/windows:
+        title: Windows
+        position: 2
+     installation-and-deployment/mac:
+        title: Mac
+        position: 3
+## End Intallation Sub-Folders
 ## Controls Sub-Folders
     ## Calendar
     controls/calendar:

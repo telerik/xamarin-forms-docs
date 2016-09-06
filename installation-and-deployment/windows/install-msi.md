@@ -2,7 +2,7 @@
 title: Installing UI for Xamarin from MSI File
 page-title: Installing UI for Xamarin from MSI File
 description: This article will guide you through the steps you have to follow in order to download and install the UI for Xamarin Forms.
-position: 2 
+position: 1 
 slug: install-msi
 ---
 # Download Steps #

@@ -21,6 +21,9 @@ layout: index
                     }
                 }
             },
+            messages: {
+                loading: " "
+            },
             select: preventParentSelection,
             template: navigationTemplate("{{site.baseurl}}/"),
             dataBound: expandNavigation("{{page.url | remove_first: '/' }}")
@@ -29,19 +32,9 @@ layout: index
     </div>
 
     <div id="page-article">
-        <div id="page-top">
-            <div id="page-breadcrumb">
-                {% breadcrumb %}
-            </div>
-            <div id="page-search">
-                {% include search.html %}
-            </div>
-        </div>
-
         <article>
             {{ content }}
         </article>
+        {% include footer.html %}
     </div>
 </div>
-
-{% include footer.html %}

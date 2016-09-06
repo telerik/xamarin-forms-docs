@@ -128,8 +128,7 @@ Before adding reference to any Telerik library
 
 You have to add the following lines to the **MainActivity.cs** file outside the scope of the namespace just after the using statements:
   
-	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.Android.CartesianChartRenderer))]
-	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.Android.PieChartRenderer))]
+  <snippet id='sdk-chart-attr-droid'/>
 
 ### iOS Project
 
@@ -137,7 +136,6 @@ You have to add the following lines to the **AppDelegate.cs** file outside the s
 
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartRenderer))]
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.iOS.PieChartRenderer))]
-
 ### Windows Phone 8 Project
 
 You have to add the following lines to the **MainPage.xaml.cs** file outside the scope of the namespace just after the using statements:
@@ -171,8 +169,11 @@ Next step is to add references to the NuGet Packages needed by the chart control
 			}
 		}
 
-1. Edit the MainPage.xaml file to add a RadChart control:
+1. Edit the MainPage file to add a RadChart control, either in Xaml or C#:
 
+```Xaml
+	xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
+    ...
 		<telerikChart:RadCartesianChart x:Name="barChart">
 		  <telerikChart:RadCartesianChart.BindingContext>
 		    <local:MainViewModel/>
@@ -194,15 +195,8 @@ Next step is to add references to the NuGet Packages needed by the chart control
 		    </telerikChart:BarSeries>
 		  </telerikChart:RadCartesianChart.Series>
 		</telerikChart:RadCartesianChart>
-
-where:  
-
-	xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
-
-Alternatively, you can add the chart in code behind:
-
-    public partial class MainPage
-    {
+```
+```C#
         public MainPage()
         {
             InitializeComponent();
@@ -243,7 +237,8 @@ Alternatively, you can add the chart in code behind:
 
             return series;
         }
-    }
+```
+
 And here is the sample data used as binding context:  
 
 	public class CategoricalData

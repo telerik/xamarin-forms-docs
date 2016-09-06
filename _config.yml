@@ -20,7 +20,7 @@ navigation:
     installation-and-deployment/windows:
         title: "Windows"
         position: 2
-     installation-and-deployment/mac:
+    installation-and-deployment/mac:
         title: "Mac"
         position: 3
 ## End Intallation Sub-Folders

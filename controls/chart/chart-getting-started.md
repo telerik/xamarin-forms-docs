@@ -197,7 +197,7 @@ Next step is to add references to the NuGet Packages needed by the chart control
 		</telerikChart:RadCartesianChart>
 ```
 ```C#
- public MainPage()
+        public MainPage()
         {
             InitializeComponent();
 			this.BindingContext = new MainViewModel();

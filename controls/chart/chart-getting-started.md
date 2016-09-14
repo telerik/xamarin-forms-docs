@@ -173,8 +173,10 @@ Here is the chart setup:
 <snippet id='chart-getting-started-xaml-chart'/>
 <snippet id='chart-getting-started-csharp-chart'/> 
 
-Where:
-<snippet id='chart-getting-started-xaml-namespace'/>
+You also need to add the following napespaces:
+
+<snippet id='xmlns-telerikChart'/>
+<snippet id='using-telerikChart'/>
 
 And here is the sample data used as binding context:
 

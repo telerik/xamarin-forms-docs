@@ -128,27 +128,37 @@ Before adding reference to any Telerik library
 
 You have to add the following lines to the **MainActivity.cs** file outside the scope of the namespace just after the using statements:
   
-  <snippet id='sdk-chart-attr-droid'/>
+<snippet id='chart-getting-started-android-renderers'/>
+
+You also have to call the `TelerikForms.Init()` method right after the `Forms.Init` call. 
 
 ### iOS Project
 
 You have to add the following lines to the **AppDelegate.cs** file outside the scope of the namespace just after the using statements:
 
-	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartRenderer))]
-	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.iOS.PieChartRenderer))]
-### Windows Phone 8 Project
+<snippet id='chart-getting-started-ios-renderers'/>
 
-You have to add the following lines to the **MainPage.xaml.cs** file outside the scope of the namespace just after the using statements:
+You also have to call the `TelerikForms.Init()` method right after the `Forms.Init` call.
 
-	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.WinPhone.CartesianChartRenderer))]
-	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.WinPhone.PieChartRenderer))]
+TODO: add init
+
+### Windows Universal Platform Projects
+
+You have to add the following lines to edit the **MainPage.xaml.cs** file outside the scope of the namespace just after the using statements:
+
+<snippet id='chart-getting-started-uwp-renderers'/>
 
 ### Windows 8.1 and Windows Phone 8.1 Projects
 
 You have to add the following lines to edit the **MainPage.xaml.cs** file outside the scope of the namespace just after the using statements:
 
-	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.WinRT.CartesianChartRenderer))]
-	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.WinRT.PieChartRenderer))]
+<snippet id='chart-getting-started-winrt-renderers'/>
+
+### Windows Phone 8 Project
+
+You have to add the following lines to the **MainPage.xaml.cs** file outside the scope of the namespace just after the using statements:
+
+<snippet id='chart-getting-started-wp8-renderers'/>
 
 ## NuGet Packages
 Next step is to add references to the NuGet Packages needed by the chart controls in the Android project. You can find the full list with required packages in the [**Required Android Support Libraries**]({% slug required-android-support-libraries %}) help topic.
@@ -156,127 +166,27 @@ Next step is to add references to the NuGet Packages needed by the chart control
 
 ##Example
 
-1. Add new Xamarin.Forms page to your Portable/Shared project:
-	* **Visual Studio**: right click on the project > `Add` > `New Item...` > choose `Forms Xaml Page`
-	* **Xamarin Studio**: right click on the project > `Add` > `New File` > choose `Forms ContentPage Xaml`
-1. Modify the GetMainPage() method in the App.xaml.cs file to set the newly created page as a front page of the application:
-
-		public class App
-		{
-			public static Page GetMainPage()
-			{
-				return new MainPage();
-			}
-		}
-
-1. Edit the MainPage file to add a RadChart control, either in Xaml or C#:
-
-```Xaml
-	xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
-    ...
-		<telerikChart:RadCartesianChart x:Name="barChart">
-		  <telerikChart:RadCartesianChart.BindingContext>
-		    <local:MainViewModel/>
-		  </telerikChart:RadCartesianChart.BindingContext>
-		  <telerikChart:RadCartesianChart.HorizontalAxis>
-		    <telerikChart:CategoricalAxis/>
-		  </telerikChart:RadCartesianChart.HorizontalAxis>
-		  <telerikChart:RadCartesianChart.VerticalAxis>
-		    <telerikChart:NumericalAxis/>
-		  </telerikChart:RadCartesianChart.VerticalAxis>
-		  <telerikChart:RadCartesianChart.Series>
-		    <telerikChart:BarSeries ItemsSource="{Binding Data}">
-		      <telerikChart:BarSeries.ValueBinding>
-		        <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
-		      </telerikChart:BarSeries.ValueBinding>
-		      <telerikChart:BarSeries.CategoryBinding>
-		        <telerikChart:PropertyNameDataPointBinding PropertyName="Category"/>
-		      </telerikChart:BarSeries.CategoryBinding>
-		    </telerikChart:BarSeries>
-		  </telerikChart:RadCartesianChart.Series>
-		</telerikChart:RadCartesianChart>
-```
-```C#
-        public MainPage()
-        {
-            InitializeComponent();
-			this.BindingContext = new MainViewModel();
-            BackgroundColor = Xamarin.Forms.Device.OnPlatform(Xamarin.Forms.Color.White, Xamarin.Forms.Color.White, Xamarin.Forms.Color.Transparent);
-            
-			this.Content = CreateChart();
-        }
-
-        private static RadCartesianChart CreateChart()
-        {
-            var chart = new RadCartesianChart
-            {
-                HorizontalAxis = new Telerik.XamarinForms.Chart.CategoricalAxis(),
-                VerticalAxis = new Telerik.XamarinForms.Chart.NumericalAxis(),
-            };
-
-            var series = CreateSeries();
-
-            chart.Series.Add(series);
-            return chart;
-        }
-
-        private static BarSeries CreateSeries()
-        {
-            var series = new Telerik.XamarinForms.Chart.BarSeries();
-            series.SetBinding(BarSeries.ItemsSourceProperty, new Binding("Data"));
-
-            series.ValueBinding = new Telerik.XamarinForms.Chart.PropertyNameDataPointBinding
-            {
-                PropertyName = "Value"
-            };
-
-            series.CategoryBinding = new Telerik.XamarinForms.Chart.PropertyNameDataPointBinding
-            {
-                PropertyName = "Category"
-            };
-
-            return series;
-        }
-```
-
-And here is the sample data used as binding context:  
-
-	public class CategoricalData
-	{
-	    public object Category { get; set; }
-	
-	    public double Value { get; set; }
-	}
-
-    public class MainViewModel
-    {
-        public MainViewModel()
-        {
-            this.Data = GetCategoricalData();
-        }
-
-        public List<CategoricalData> Data { get; set; }
-
-        public string Title { get; set; }
-
-        public static List<CategoricalData> GetCategoricalData()
-        {
-            List<CategoricalData> data = new List<CategoricalData>
-            {
-                new CategoricalData { Category = "A", Value = 0.63 },
-                new CategoricalData { Category = "B", Value = 0.85 },
-                new CategoricalData { Category = "C", Value = 1.05 },
-                new CategoricalData { Category = "D", Value = 0.96 },
-                new CategoricalData { Category = "E", Value = 0.78 },
-            };
-
-            return data;
-        }
-    }
-Here is the result:  
-
+This example demonstrates how to create a basic cartesian chart with bar series like this one.
 
 ![Basic RadCartesianChart Example](images/chart-getting-started-example.png "Basic RadCartesianChart")
+
+Here is the chart setup:
+
+```Xaml
+ 
+<snippet id='chart-getting-started-xaml-namespace'/>
+<snippet id='chart-getting-started-xaml-chart'/> 
+
+```
+```C#
+
+<snippet id='chart-getting-started-csharp-chart'/> 
+
+```
+
+And here is the sample data used as binding context:
+
+<snippet id='chart-getting-started-viewmodel'/>
 
 ## See Also
 

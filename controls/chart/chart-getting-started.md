@@ -130,8 +130,6 @@ You have to add the following lines to the **MainActivity.cs** file outside the 
   
 <snippet id='chart-getting-started-android-renderers'/>
 
-You also have to call the `TelerikForms.Init()` method right after the `Forms.Init` call. 
-
 ### iOS Project
 
 You have to add the following lines to the **AppDelegate.cs** file outside the scope of the namespace just after the using statements:
@@ -172,17 +170,11 @@ This example demonstrates how to create a basic cartesian chart with bar series 
 
 Here is the chart setup:
 
-```Xaml
- 
-<snippet id='chart-getting-started-xaml-namespace'/>
-<snippet id='chart-getting-started-xaml-chart'/> 
-
-```
-```C#
-
+<snippet id='chart-getting-started-xaml-chart'/>
 <snippet id='chart-getting-started-csharp-chart'/> 
 
-```
+Where:
+<snippet id='chart-getting-started-xaml-namespace'/>
 
 And here is the sample data used as binding context:
 

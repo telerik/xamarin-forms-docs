@@ -136,9 +136,9 @@ You have to add the following lines to the **AppDelegate.cs** file outside the s
 
 <snippet id='chart-getting-started-ios-renderers'/>
 
-You also have to call the `TelerikForms.Init()` method right after the `Forms.Init` call.
+You also have to call the `TelerikForms.Init()` method right after the `Forms.Init()` call.
 
-TODO: add init
+<snippet id='chart-getting-started-ios-init'/>
 
 ### Windows Universal Platform Projects
 
@@ -173,7 +173,7 @@ Here is the chart setup:
 <snippet id='chart-getting-started-xaml-chart'/>
 <snippet id='chart-getting-started-csharp-chart'/> 
 
-You also need to add the following napespaces:
+You also need to add the following namespace:
 
 <snippet id='xmlns-telerikChart'/>
 <snippet id='using-telerikChart'/>

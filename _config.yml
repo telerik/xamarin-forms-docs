@@ -116,6 +116,9 @@ navigation:
 ## The application virtual path
 baseurl: "/devtools/xamarin"
 
+## product path
+product: "/xamarin-ui"
+
 ## The Kendo UI version used
 cdnVersion: "2016.2.607"
 

@@ -20,7 +20,7 @@ Typically, the solution will contain the following projects:
 
 * **Portable/Shared**: Cross platform application library that contains the shared code and UI.
 * **Android**: Available on all operation systems.
-* **WinPhone**: Available only for projects created with Visual Studio.
+* **WinPhone**, **Windows 8.1**or **UWP**: Available only for projects created with Visual Studio.
 * **iOS**:
 	* Available for OS X.
 	* If you wish to use Visual Studio as a development environment you will also need a mac machine. You can find more information how to setup your environment here: [Introduction to Xamarin.iOS for Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/)

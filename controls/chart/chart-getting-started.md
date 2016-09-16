@@ -167,7 +167,7 @@ You have to add the following lines to edit the **MainPage.xaml.cs** file outsid
 	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.WinRT.CartesianChartRenderer))]
 	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.WinRT.PieChartRenderer))]
 
-### Universal Windows Platform Projects
+### Universal Windows Platform Project
 
 You have to add the following lines to edit the **MainPage.xaml.cs** file outside the scope of the namespace just after the using statements:
 

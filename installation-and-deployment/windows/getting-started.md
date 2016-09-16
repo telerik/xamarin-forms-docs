@@ -25,7 +25,7 @@ Typically, the solution will contain the following projects:
 	* Available for OS X.
 	* If you wish to use Visual Studio as a development environment you will also need a mac machine. You can find more information how to setup your environment here: [Introduction to Xamarin.iOS for Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/)
 	 
-![Solution projects](images/visual-studio-solution-projects.png "Image")
+![Solution projects](../images/visual-studio-solution-projects.png "Image")
 
 ## Getting the Latest Platform SDK Versions ##
 
@@ -34,5 +34,5 @@ You have to make sure that you have the right version of Xamarin.Forms and all r
 - Right-click the newly created solution and choose: Visual Studio: "Manage NuGet packages for Solution".
 - From Updates >> nuget.org install the latest version of the **Xamarin.Forms** package.
 
-![Update packages](images/calendar-getting-started-update-packages.png)
+![Update packages](../images/calendar-getting-started-update-packages.png)
 

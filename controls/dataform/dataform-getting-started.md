@@ -68,9 +68,70 @@ Before adding reference to any Telerik library
 
 > **RadDataForm** is not available for **Windows Phone 8**.
 
-### Windows 8.1 and Windows Phone 8.1 Projects
+### Windows 8.1 Project
 
-> **RadDataForm** is not available for **Windows 8.1 and Windows Phone 8.1**.
+#### WinRT\\Common\\ 
+
+- Telerik.Core.dll
+- Telerik.Data.dll
+
+#### WinRT\\Windows 8.1\\ 
+
+- Telerik.UI.Xaml.Input.dll
+- Telerik.UI.Xaml.Primitives.dll
+- Telerik.UI.Xaml.Controls.Data.dll
+
+#### XamarinForms\\Common\\ 
+
+- Telerik.XamarinForms.Common.dll
+- Telerik.XamarinForms.Input.dll
+
+#### XamarinForms\\WinRT\\Windows\\ 
+
+- Telerik.XamarinForms.Common.WinRT.Windows.dll
+- Telerik.XamarinForms.InputRenderer.WinRT.Windows.dll
+
+### Windows Phone 8.1 Project
+
+#### WinRT\\Common\\ 
+
+- Telerik.Core.dll
+- Telerik.Data.dll
+
+#### WinRT\\Windows Phone 8.1\\ 
+
+- Telerik.UI.Xaml.Input.dll
+- Telerik.UI.Xaml.Primitives.dll
+- Telerik.UI.Xaml.Controls.Data.dll
+
+#### XamarinForms\\Common\\ 
+
+- Telerik.XamarinForms.Common.dll
+- Telerik.XamarinForms.Input.dll
+
+#### XamarinForms\\WinRT\\WinPhone\\
+
+- Telerik.XamarinForms.Common.WinRT.WindowsPhone.dll
+- Telerik.XamarinForms.InputRenderer.WinRT.WindowsPhone.dll
+
+### Universal Windows Platform Project
+
+#### UWP\\
+
+- Telerik.Core.dll
+- Telerik.Data.dll
+- Telerik.UI.Xaml.Input.UWP.dll
+- Telerik.UI.Xaml.Controls.Data.UWP.dll
+
+#### XamarinForms\\Common\\ 
+
+- Telerik.XamarinForms.Common.dll
+- Telerik.XamarinForms.Input.dll
+
+#### XamarinForms\\UWP\\
+
+- Telerik.XamarinForms.Common.UWP.dll
+- Telerik.XamarinForms.InputRenderer.UWP.dll
 
 ## Edit Project Files
 
@@ -86,7 +147,6 @@ You have to add the following lines to the **AppDelegate.cs** file outside the s
 
 	[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(Telerik.XamarinForms.InputRenderer.iOS.DataFormRenderer))]
 
-
 You also have to create an instance of the renderer in the `FinishedLaunching(...)` method before the `Forms.Init()` call which is called right before the `TelerikForms.Init()` call.
 
 	public override bool FinishedLaunching(UIApplication app, NSDictionary options)
@@ -101,6 +161,12 @@ You also have to create an instance of the renderer in the `FinishedLaunching(..
 
         return base.FinishedLaunching(app, options);
     }
+
+### Universal Windows Platform Project
+
+You have to add the following lines to edit the **MainPage.xaml.cs** file outside the scope of the namespace just after the using statements:
+
+	[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(Telerik.XamarinForms.InputRenderer.UWP.DataFormRenderer))]
 
 
 ## NuGet Packages

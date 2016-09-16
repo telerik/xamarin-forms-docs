@@ -119,6 +119,23 @@ Before adding reference to any Telerik library
 - Telerik.XamarinForms.Common.WinRT.WindowsPhone.dll
 - Telerik.XamarinForms.ChartRenderer.WinRT.WindowsPhone.dll
 
+### Universal Windows Platform Project
+
+#### UWP\\
+
+- Telerik.Core.dll
+- Telerik.UI.Xaml.Chart.UWP.dll
+- Telerik.UI.Xaml.Primitives.UWP.dll
+
+#### XamarinForms\\Common\\ 
+
+- Telerik.XamarinForms.Common.dll
+- Telerik.XamarinForms.Chart.dll
+
+#### XamarinForms\\UWP\\
+
+- Telerik.XamarinForms.Common.UWP.dll
+- Telerik.XamarinForms.ChartRenderer.UWP.dll
 
 ![Add Chart References](images/chart-getting-started-references.png)
 
@@ -149,6 +166,14 @@ You have to add the following lines to edit the **MainPage.xaml.cs** file outsid
 
 	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.WinRT.CartesianChartRenderer))]
 	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.WinRT.PieChartRenderer))]
+
+### Universal Windows Platform Projects
+
+You have to add the following lines to edit the **MainPage.xaml.cs** file outside the scope of the namespace just after the using statements:
+
+	[assembly: Xamarin.Forms.Platform.UWP.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.UWP.CartesianChartRenderer))]
+	[assembly: Xamarin.Forms.Platform.UWP.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.UWP.PieChartRenderer))]
+
 
 ## NuGet Packages
 Next step is to add references to the NuGet Packages needed by the chart controls in the Android project. You can find the full list with required packages in the [**Required Android Support Libraries**]({% slug required-android-support-libraries %}) help topic.

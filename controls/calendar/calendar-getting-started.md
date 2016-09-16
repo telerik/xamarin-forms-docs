@@ -121,6 +121,27 @@ Before adding reference to any Telerik library
 - Telerik.XamarinForms.Common.WinRT.WindowsPhone.dll
 - Telerik.XamarinForms.InputRenderer.WinRT.WindowsPhone.dll
 
+### Universal Windows Platform Project
+
+#### UWP\\
+
+- Telerik.Core.dll
+- Telerik.Data.dll
+- Telerik.UI.Xaml.Chart.UWP.dll
+- Telerik.UI.Xaml.Controls.Data.UWP.dll
+- Telerik.UI.Xaml.Input.UWP.dll
+- Telerik.UI.Xaml.Primitives.UWP.dll
+
+#### XamarinForms\\Common\\ 
+
+- Telerik.XamarinForms.Common.dll
+- Telerik.XamarinForms.Input.dll
+
+#### XamarinForms\\UWP\\
+
+- Telerik.XamarinForms.Common.UWP.dll
+- Telerik.XamarinForms.InputRenderer.UWP.dll
+
 ![Add Calendar References](images/calendar-getting-started-references.png)
 
 ## Edit Project Files

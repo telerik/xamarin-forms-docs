@@ -87,6 +87,9 @@ navigation:
     controls/dataform/howto:
         title: "How To"
         position: 9
+    controls/dataform/styles:
+       title: "Styling"
+       position: 8    
         ## End DataForm Sub-Folders
     ## End DataForm
     ## ListView

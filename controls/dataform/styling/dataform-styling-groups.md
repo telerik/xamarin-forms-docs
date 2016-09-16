@@ -2,14 +2,15 @@
 title: Groups Styling
 page_title: Groups Styling
 slug: dataform-styling-groups
-position: 7
+position: 1
 ---
 
 # Groups Styling
 
-The RadDataForm group headers can be styled with the GroupHeaderStyle property.
- 
-**DataFormGroupHeaderStyle** class exposes the following properties: 
+
+The RadDataForm group headers appearance can be customized with the **GroupHeaderStyle** property of type DataFormGroupHeaderStyle.
+
+The **DataFormGroupHeaderStyle** class exposes the following properties:  
 
 - **Background** (Color): Gets or sets the background of the group header.
 - **BackgroundImageSource** (ImageSource): Gets or sets a background image for the group header.
@@ -21,7 +22,7 @@ The RadDataForm group headers can be styled with the GroupHeaderStyle property.
 
 ## Example
 
-Here is an example that demonstrates how the data form group headers can be styled.
+Here is an example that demonstrates how to style the data form group headers.
 
 <snippet id='dataform-styling-groups-xaml'/>
 <snippet id='dataform-styling-groups-csharp'/>

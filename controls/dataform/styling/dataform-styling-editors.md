@@ -2,7 +2,7 @@
 title: Editors Styling
 page_title: Editors Styling
 slug: dataform-styling-editors
-position: 3
+position: 0
 ---
 
 # Editors Styling

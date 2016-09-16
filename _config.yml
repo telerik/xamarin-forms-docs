@@ -116,8 +116,6 @@ navigation:
 ## The application virtual path
 baseurl: "/devtools/xamarin"
 
-## product path
-product: "/xamarin-ui"
 
 ## The Kendo UI version used
 cdnVersion: "2016.2.607"
@@ -136,6 +134,7 @@ defaults:
     values:
         layout: "page"
         category: "default"
+        product: "xamarin-ui"
 
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"

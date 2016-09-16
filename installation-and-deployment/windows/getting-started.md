@@ -12,9 +12,9 @@ Here are described the steps that you have to follow to create a new cross platf
 Create new solution **Xamarin.Forms Portable** / **Shared**
 
 * **Visual Studio**: located at *Templates* > *Visual C#* > *Mobile Apps* section:  
-![Create new Xamarin.Forms solution](images/visual-studio-new-solution.png "Image")
+![Create new Xamarin.Forms solution](../images/visual-studio-new-solution.png "Image")
 * **Xamarin Studio**: located at *C#* > *Mobile Apps* section:  
-![Create new Xamarin.Forms solution](images/xamarin-studio-new-solution.png "Image")  
+![Create new Xamarin.Forms solution](../images/xamarin-studio-new-solution.png "Image")  
 
 Typically, the solution will contain the following projects:
 

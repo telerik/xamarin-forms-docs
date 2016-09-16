@@ -176,7 +176,7 @@ Here is the chart setup:
 You also need to add the following namespace:
 
 <snippet id='xmlns-telerikchart'/>
-<snippet id='using-telerikchart'/>
+<snippet id='ns-telerikchart'/>
 
 And here is the sample data used as binding context:
 

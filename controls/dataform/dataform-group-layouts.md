@@ -9,23 +9,23 @@ slug: dataform-group-layouts
 
 RadDataForm supports different group layouts through the following properties:
 
-- **GroupLayoutDefinition**: Gets or sets a layout that will be used by all data form groups to arrange the editors.
-- **GroupLayoutDefinitionSelector**: Gets or sets a layout selector that applies specific layout for each group. The selector should implement the IDataFormGroupLayoutDefinitionSelector interface.
+- **GroupLayoutDefinition**: Gets or sets a layout definition that will be used by all data form groups to arrange the editors.
+- **GroupLayoutDefinitionSelector**: Gets or sets a layout definition selector that applies specific layout for each group. The selector should implement the IDataFormGroupLayoutDefinitionSelector interface.
 
-The information for editors arrangement is defined in the source class metadata. Here are all **DisplayOptionsAttribute** properties that are interpreted by the layouts:
+The information for editors arrangement is defined in the source class metadata with the [DisplayOptionsAttribute]({%slug dataform-annotations-display-option%}). Here are all **DisplayOptionsAttribute** properties that are interpreted by the layouts:
 
-- **Position**
-- **ColumnPosition**
-- **ColumnSpan**
+- **Position**: default value: 0
+- **ColumnPosition**: default value: 0
+- **ColumnSpan**: default value: 1
 
  
-## Group Stack Layout
+## Stack Layout Definition
 
 The **DataFormGroupStackLayoutDefinition** arranges the editors in stack ordered by the DisplayOptions **Position** value.
 
 Here is a sample source object class:
 
-<snippet id='dataform-grouplayouts-stacklayout-sourceitem'/>
+<snippet id='dataform-stacklayouts-stacklayout-sourceitem'/>
 
 The following sample demonstrates how to set stack layout for all groups:
 
@@ -34,9 +34,9 @@ The following sample demonstrates how to set stack layout for all groups:
 
 Here is the result:
 
-![]()
+![](images/)
 
-## Group Grid Layout
+## Grid Layout Definition
 
 The **DataFormGroupGridLayoutDefinition** arranges the editors in grid. Each editor is placed at position defined by the DisplayOptions **Position** (row) and **ColumnPosition** (column) values. The number of columns that the editor occupies is defined by the DisplayOptions **ColumnSpan** property.
 
@@ -51,13 +51,13 @@ The following sample demonstrates how to set grid layout for all groups:
 
 Here is the result:
 
-![]()
+![](images/)
 
-## Group Layout Selector
+## Layout Definition Selector
 
-Sometimes different layout is required for each group. In these cases you can use the layout selector. This is a class that implements the **IDataFormGroupLayoutDefinitionSelector** interface and provides layout definition for each group.
+Sometimes different layout is required for each group. In these cases you can use the layout definition selector. This is a class that implements the **IDataFormGroupLayoutDefinitionSelector** interface and provides layout definition for each group.
 
-Here is a sample layout selector class:
+Here is a sample layout definition selector class:
 
 <snippet id='dataform-grouplayouts-layoutselector-selector'/>
 
@@ -72,4 +72,4 @@ The following sample demonstrates how to use layout selector in data form:
 
 Here is the result:
 
-![]()
+![](images/)

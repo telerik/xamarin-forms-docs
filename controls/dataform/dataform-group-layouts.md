@@ -1,16 +1,20 @@
 ---
-title: DataForm Group Layouts
+title: Layouts
 page_title: DataForm Group Layouts
-position:  
+position: 6
 slug: dataform-group-layouts
 ---
 
 # DataForm Group Layouts
 
+## Properties
+
 RadDataForm supports different group layouts through the following properties:
 
-- **GroupLayoutDefinition**: Gets or sets a layout definition that will be used by all data form groups to arrange the editors.
-- **GroupLayoutDefinitionSelector**: Gets or sets a layout definition selector that applies specific layout for each group. The selector should implement the IDataFormGroupLayoutDefinitionSelector interface.
+- **GroupLayoutDefinition**: Gets or sets a layout definition that will be used to arrange editors in all data form groups.
+- **GroupLayoutDefinitionSelector**: Gets or sets a layout definition selector that applies specific layout for each group.
+
+> If no groups are defined all editors are arranged in a default group.
 
 The information for editors arrangement is defined in the source class metadata with the [DisplayOptionsAttribute]({%slug dataform-annotations-display-option%}). Here are all **DisplayOptionsAttribute** properties that are interpreted by the layouts:
 
@@ -25,7 +29,7 @@ The **DataFormGroupStackLayoutDefinition** arranges the editors in stack ordered
 
 Here is a sample source object class:
 
-<snippet id='dataform-stacklayouts-stacklayout-sourceitem'/>
+<snippet id='dataform-grouplayouts-stacklayout-sourceitem'/>
 
 The following sample demonstrates how to set stack layout for all groups:
 

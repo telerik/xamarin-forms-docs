@@ -54,6 +54,4 @@ You also need a custom entity property class that is responsible for committing 
 
 Here is the data form setup:
 
-<snippet id='dataform-source-customsource-dataform'/>
-
 <snippet id='dataform-source-customsource-dataform-setup'/>

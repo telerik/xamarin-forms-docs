@@ -83,7 +83,7 @@ navigation:
         ## DataForm Sub-Folders
     controls/dataform/annotations:
         title: "Data Annotations"
-        position: 3
+        position: 4
     controls/dataform/styling:
        title: "Styling"
        position: 9    

@@ -84,12 +84,12 @@ navigation:
     controls/dataform/annotations:
         title: "Data Annotations"
         position: 3
+    controls/dataform/styling:
+       title: "Styling"
+       position: 9    
     controls/dataform/howto:
         title: "How To"
-        position: 9
-    controls/dataform/styles:
-       title: "Styling"
-       position: 8    
+        position: 10
         ## End DataForm Sub-Folders
     ## End DataForm
     ## ListView

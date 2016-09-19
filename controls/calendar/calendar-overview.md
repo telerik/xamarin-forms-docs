@@ -16,6 +16,7 @@ The **RadCalendar for Xamarin.Forms** allows you to easily implement various cal
 > - **Windows Phone 8**
 > - **Windows 8.1**
 > - **Windows Phone 8.1**
+> - **Universal Windows Platform**
 
 ![Calendar Overview](images/calendar-overview.png "Calendar Overview")
 

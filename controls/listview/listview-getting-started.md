@@ -115,6 +115,27 @@ Before adding reference to any Telerik library
 - Telerik.XamarinForms.DataControlsRenderer.WinRT.WindowsPhone.dll
 - Telerik.XamarinForms.Common.WinRT.WindowsPhone.dll
 
+### Universal Windows Platform Project
+
+#### UWP\\
+
+- Telerik.Core.dll
+- Telerik.Data.dll
+- Telerik.UI.Xaml.Controls.Data.UWP.dll
+- Telerik.UI.Xaml.Input.UWP.dll
+- Telerik.UI.Xaml.Primitives.UWP.dll
+
+#### XamarinForms\\Common\\
+
+- Telerik.XamarinForms.DataControls.dll
+- Telerik.XamarinForms.Common.dll
+
+#### XamarinForms\\\UWP\\
+
+- Telerik.XamarinForms.DataControlsRenderer.UWP.dll
+- Telerik.XamarinForms.Common.UWP.dll
+
+
 ## Edit Project Files
 
 ### Android Project
@@ -134,6 +155,12 @@ You have to add the following lines to the **AppDelegate.cs** file outside the s
 You have to add the following lines to edit the **MainPage.xaml.cs** file outside the scope of the namespace just after the using statements:
 
 	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(Telerik.XamarinForms.DataControls.RadListView), typeof(Telerik.XamarinForms.DataControlsRenderer.WinRT.ListViewRenderer))]
+
+### Unviersal Windows Platform Project
+
+You have to add the following lines to edit the **MainPage.xaml.cs** file outside the scope of the namespace just after the using statements:
+
+	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(Telerik.XamarinForms.DataControls.RadListView), typeof(Telerik.XamarinForms.DataControlsRenderer.UWP.ListViewRenderer))]
 
 ## NuGet Packages
 Next step is to add references to the NuGet Packages needed by RadListViiew in the Android project. You can find the full list with required packages in the [**Required Android Support Libraries**]({% slug required-android-support-libraries %}) help topic.

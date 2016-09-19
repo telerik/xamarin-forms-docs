@@ -14,5 +14,6 @@ The **RadSideDrawer** component is designed to enable users to visualize a hidde
 > - **iOS**
 > - **Windows 8.1**
 > - **Windows Phone 8.1**
+> - **Universal Windows Platform**
 
 ![SideDrawer example](images/sidedrawer-overview.png) 

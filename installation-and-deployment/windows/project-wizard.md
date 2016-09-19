@@ -9,7 +9,7 @@ position: 3
 
 This article introduces the **Telerik UI for Xamarin.Forms Project Wizard**. The Project Wizard is a Visual Studio extension that improves the getting started experience for Telerik customers.
 
-![Visual Studio Project Wizard](images/visual-studio-project-wizard.png)
+![Visual Studio Project Wizard](../images/visual-studio-project-wizard.png)
 
 It allows customers to select which platform(s) their application target(s) and the wizard will automatically reference all required binaries and packages.
 
@@ -20,11 +20,11 @@ It allows customers to select which platform(s) their application target(s) and 
 In order to create a new solution using the Project Wizard customers should open the **New Project** dialog window of Visual Studio.
 Next users should navigate to Templates -> Visual C# section and the Telerik UI for Xamarin.Forms Project Wizard will be listed at the end.
 
-![Visual Studio New Project](images/visual-studio-new-project-dialog.png)
+![Visual Studio New Project](../images/visual-studio-new-project-dialog.png)
 
 Find the **TelerikXFApp** template and click OK. This will invoke the Project Wizard. Make your choice and click **Create**. Wait until Visual Studio prepares all the projects for you. After the solution is created it should be rebuilt in order to update the Xamarin.Forms NuGet packages.
 
-![Newly created solution](images/visual-studio-created-solution.png)
+![Newly created solution](../images/visual-studio-created-solution.png)
 
 After rebuilding the solution all packages and binaries will be updated and users will be ready to choose a startup project and deploy it to the targeted platform.
 

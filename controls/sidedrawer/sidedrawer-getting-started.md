@@ -103,6 +103,23 @@ Before adding reference to any Telerik library
 - Telerik.XamarinForms.Common.WinRT.WindowsPhone.dll
 - Telerik.XamarinForms.PrimitivesRenderer.WinRT.WindowsPhone.dll
 
+### Universal Widnows Platform Project
+
+#### UWP\\
+
+- Telerik.Core.dll
+- Telerik.UI.Xaml.Primitives.dll
+
+#### XamarinForms\\Common\\ 
+
+- Telerik.XamarinForms.Common.dll
+- Telerik.XamarinForms.Primitives.dll
+
+#### XamarinForms\\UWP\\
+
+- Telerik.XamarinForms.Common.UWP.dll
+- Telerik.XamarinForms.PrimitivesRenderer.UWP.dll
+
 ## Edit Project Files
 
 ### Android Project
@@ -122,6 +139,12 @@ You have to add the following line to the **AppDelegate.cs** file outside the sc
 You have to add the following line to the **MainPage.xaml.cs** file outside the scope of the namespace just after the using statements:
 
 	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(Telerik.XamarinForms.Primitives.RadSideDrawer), typeof(Telerik.XamarinForms.InputRenderer.WinRT.SideDrawerRenderer))]
+
+### Universal Widnows Platform Project
+
+You have to add the following line to the **MainPage.xaml.cs** file outside the scope of the namespace just after the using statements:
+
+	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(Telerik.XamarinForms.Primitives.RadSideDrawer), typeof(Telerik.XamarinForms.InputRenderer.UWP.SideDrawerRenderer))]
 
 ## NuGet Packages
 Next step is to add references to the NuGet Packages needed by RadSideDrawer in the Android project. You can find the full list with required packages in the [**Required Android Support Libraries**]({% slug required-android-support-libraries %}) help topic.

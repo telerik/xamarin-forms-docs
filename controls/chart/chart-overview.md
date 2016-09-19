@@ -18,6 +18,7 @@ While Chart for Xamarin capitalizes all the innate benefits of the native UI, it
 > - **Windows Phone 8**
 > - **Windows 8.1**
 > - **Windows Phone 8.1**
+> - **Universal Windows Platform**
 
 ![Chart examples](images/chart-overview.png)
 

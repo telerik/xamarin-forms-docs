@@ -40,11 +40,15 @@ This example will demonstrate how to use a dictionary as data form source.
 
 <snippet id='dataform-source-customsource-source'/>
 
+You have to set a custom metadata provider that will provide information for each property, in this case dictionary item. The data form will use this metadata when building its UI.
+
 The metadata provider has to inherit from the **PropertyMetadataProviderBase** class:
 
 <snippet id='dataform-source-customsource-metadataprovider'/>
 
-You also have to provide a custom entity property class that is responsible for committing the values entered in the data form:
+In the **Initialize** method you have to add the metadata for each dictionary item using the **EntityPropertyMetadata** class. It contains all metadata information that can be set on a property and you can modify it as per your needs.
+
+You also need a custom entity property class that is responsible for committing the values entered in the data form:
 
 <snippet id='dataform-source-customsource-entityproperty'/>
 

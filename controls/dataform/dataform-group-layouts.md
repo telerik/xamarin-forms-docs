@@ -38,9 +38,7 @@ The following sample demonstrates how to set stack layout for all groups:
 
 Here is the result:
 
-![](images/android - dataform-layouts-stack.png)
-![](images/ios - dataform-layouts-stack.png)
-![](images/uwp - dataform-layouts-stack.png)
+![](images/dataform-layouts-stack.png)
 
 ## Grid Layout Definition
 
@@ -57,9 +55,8 @@ The following sample demonstrates how to set grid layout for all groups:
 
 Here is the result:
 
-![](images/android - dataform-layouts-grid.png)
-![](images/ios - dataform-layouts-grid.png)
-![](images/uwp - dataform-layouts-grid.png)
+![](images/dataform-layouts-grid.png)
+
 ## Layout Definition Selector
 
 Sometimes different layout is required for each group. In these cases you can use the layout definition selector. This is a class that implements the **IDataFormGroupLayoutDefinitionSelector** interface and provides layout definition for each group.
@@ -79,6 +76,4 @@ The following sample demonstrates how to use layout selector in data form:
 
 Here is the result:
 
-![](images/android - dataform-layouts-selector.png)
-![](images/ios - dataform-layouts-selector.png)
-![](images/uwp - dataform-layouts-selector.png)
+![](images/dataform-layouts-selector.png)

@@ -36,6 +36,4 @@ Here is the source item class:
 
 <snippet id='dataform-styling-groups-dataitem'/>
 
-![](images/android - dataform-styling-groups.png)
-![](images/ios - dataform-styling-groups.png)
-![](images/uwp - dataform-styling-groups.png)
+![](images/dataform-styling-groups.png)

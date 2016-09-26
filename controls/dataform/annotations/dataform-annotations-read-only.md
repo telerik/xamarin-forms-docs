@@ -15,11 +15,11 @@ Properties marked with the **ReadOnly** attribute will force the RadDataForm to 
 
 Here is the decoration of the source class properties:
 
-<source id='dataform-dataannotations-readonly-source'/>
+<snippet id='dataform-dataannotations-readonly-source'/>
  
 And here is the data form setup:
 
-<source id='dataform-dataannotations-readonly-form'/>
+<snippet id='dataform-dataannotations-readonly-form'/>
 
 ## See Also
 - [Ignore Attribute]({%slug dataform-annotations-ignore%})

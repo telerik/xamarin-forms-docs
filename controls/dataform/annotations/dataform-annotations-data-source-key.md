@@ -21,15 +21,15 @@ The default implementation of this interface - the PropertyDataSourceProvider cl
 
 Here is the implementation of the **IPropertyDataSourceProvider** interface that will provide a list of available locations for all properties that have **DataSourceKeyAttribute** defined with Key="Location".
 
-<source id='dataform-dataannotations-datasourcekey-locationprovider'/>
+<snippet id='dataform-dataannotations-datasourcekey-locationprovider'/>
 
 Here is the decoration of the source class properties:
 
-<source id='dataform-dataannotations-datasourcekey-source'/>
+<snippet id='dataform-dataannotations-datasourcekey-source'/>
  
 And here is the data form setup, you have to specify the property data source provider for the data form:
 
-<source id='dataform-dataannotations-datasourcekey-form'/>
+<snippet id='dataform-dataannotations-datasourcekey-form'/>
 			
 ## See Also
 - [Validation Attribute]({%slug dataform-annotations-validation%})

@@ -25,7 +25,7 @@ Here is the decoration of the source class:
 
 And here is the data form setup:
 
-<snippet id-'dataform-dataannotations-displayoptions-form'/>
+<snippet id='dataform-dataannotations-displayoptions-form'/>
 
 ## See Also
 - [Validation Attribute]({%slug dataform-annotations-validation%})

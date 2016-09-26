@@ -2,7 +2,6 @@
 title: Display Value Format Attribute
 page_title: Display Value Format Attribute
 slug: dataform-annotations-display-value-format
-position: 6
 ---
 
 ## DisplayValueFormatAttribute
@@ -11,17 +10,18 @@ For the scenarios when the provided property value is not the same as the requir
 
 ### Example
 
-	[DisplayValueFormat(Plural = "{0} votes", Single = "{0} vote", Zero = "no votes")]
-	public double Votes	{ get; set; }
+Here is the decoration of the source class properties:
 
-	[DisplayValueFormat(Date = "yyyy.MM.dd")]
-	public DateTime Date { get; set; }
-		
+<snippet id='dataform-dataannotations-displayvalueformat-source'/>
+
+And here is the data form setup:
+
+<snippet id='dataform-dataannotations-displayvalueformat-form'/>
 
 ## See Also
 - [Validation Attribute]({%slug dataform-annotations-validation%})
 - [Converter Attribute]({%slug dataform-annotations-converter%})
 - [Data Source Key Attribute]({%slug dataform-annotations-data-source-key%})
-- [Display Option Attribute]({%slug dataform-annotations-display-option%})
+- [Display Options Attribute]({%slug dataform-annotations-display-options%})
 - [Ignore Attribute]({%slug dataform-annotations-ignore%})
 - [Read Only Attribute]({%slug dataform-annotations-read-only%})

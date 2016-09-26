@@ -2,7 +2,6 @@
 title: Read Only Attribute
 page_title: Read Only Attribute
 slug: dataform-annotations-read-only
-position: 2
 ---
 
 ## ReadOnlyAttribute
@@ -14,13 +13,18 @@ Properties marked with the **ReadOnly** attribute will force the RadDataForm to 
 
 ### Example
 
-	[ReadOnly]
-	public int Age { get; set; }
-	
+Here is the decoration of the source class properties:
+
+<source id='dataform-dataannotations-readonly-source'/>
+ 
+And here is the data form setup:
+
+<source id='dataform-dataannotations-readonly-form'/>
+
 ## See Also
 - [Ignore Attribute]({%slug dataform-annotations-ignore%})
 - [Converter Attribute]({%slug dataform-annotations-converter%})
 - [Data Source Key Attribute]({%slug dataform-annotations-data-source-key%})
-- [Display Option Attribute]({%slug dataform-annotations-display-option%})
+- [Display Options Attribute]({%slug dataform-annotations-display-options%})
 - [Display Value Format Attribute]({%slug dataform-annotations-display-value-format%})
 - [Validation Attribute]({%slug dataform-annotations-validation%})

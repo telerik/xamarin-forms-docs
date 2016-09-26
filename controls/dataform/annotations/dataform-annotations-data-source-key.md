@@ -2,7 +2,6 @@
 title: Data Source Key Attribute
 page_title: Data Source Key Attribute
 slug: dataform-annotations-data-source-key
-position: 3
 ---
 
 ## DataSourceKeyAttribute
@@ -20,36 +19,22 @@ The default implementation of this interface - the PropertyDataSourceProvider cl
 
 ### Example
 
-	[DataSourceKey("LocationsSource")]
-	public string Location { get; set; }
+Here is the implementation of the **IPropertyDataSourceProvider** interface that will provide a list of available locations for all properties that have **DataSourceKeyAttribute** defined with Key="Location".
 
-Here is the implementation that will provide a list of available locations for all properties that have **DataSourceKeyAttribute** defined with Key="Location".
+<source id='dataform-dataannotations-datasourcekey-locationprovider'/>
 
-	public class UserPropertyDataSourceProvider : PropertyDataSourceProvider
-	{
-	    public override IList GetSourceForKey(object key)
-	    {
-	        if (key == "LocationsSource")
-	        {
-	            return new List<string> { "Top", "Bottom", "Left", "Right" };
-	        }
-	
-	        return null;
-	    }
-	}
+Here is the decoration of the source class properties:
 
-You have to specify the property data source provider for the data form:
+<source id='dataform-dataannotations-datasourcekey-source'/>
+ 
+And here is the data form setup, you have to specify the property data source provider for the data form:
 
-	dataForm.PropertyDataSourceProvider = new UserPropertyDataSourceProvider();
-
-Finally, replace the default text editor with a picker editor:
-
-	dataForm.RegisterEditor("Location", EditorType.PickerEditor);
+<source id='dataform-dataannotations-datasourcekey-form'/>
 			
 ## See Also
 - [Validation Attribute]({%slug dataform-annotations-validation%})
 - [Converter Attribute]({%slug dataform-annotations-converter%})
-- [Display Option Attribute]({%slug dataform-annotations-display-option%})
+- [Display Options Attribute]({%slug dataform-annotations-display-options%})
 - [Display Value Format Attribute]({%slug dataform-annotations-display-value-format%})
 - [Ignore Attribute]({%slug dataform-annotations-ignore%})
 - [Read Only Attribute]({%slug dataform-annotations-read-only%})

@@ -45,7 +45,6 @@ This example will demonstrate how to create a custom validator and also how to u
 
 Here is a sample class that has an "Occupation" property:
 
-<snippet id='dataform-dataannotations-validation-options'/>
 <snippet id='dataform-dataannotations-validation-source'/>
 
 Let's create a validator that ensures that the person occupation is not "Unspecified".

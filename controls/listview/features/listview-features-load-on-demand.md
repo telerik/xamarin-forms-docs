@@ -20,12 +20,14 @@ In order to load the data Listview requires either to:
 We will load the data automatically using event. In this case Here is how the setup will look like:
 
 ###Define the listview in xaml
+We use the following snippet:
 <snippet id='sdk-lv-lod-auto-event-xaml'/>
 
 We would also need to define the listview namespace
-[TODO]: add listview namesapce
+[TODO]: add listview namespace
 
 ###Add the code to load the data in the LoadOnDemand event
+We use the following snippet:
 <snippet id='sdk-lv-lod-auto-event-cs'/>
 
 Figure 1: Automatic Loading on demand
@@ -37,12 +39,14 @@ Figure 1: Automatic Loading on demand
 Alternatively you can request items only explicitely when pressing the load more button rendered at the end of the loaded items.
 
 ###Define the listview in xaml with manual loading mode
+We use the following snippet:
 <snippet id='sdk-lv-lod-manual-event-xaml'/>
 
 We would also need to define the listview namespace
 [TODO]: add listview namesapce
 
 ###Add the code to load the data in the LoadOnDemand event
+We use the following snippet:
 <snippet id='sdk-lv-lod-manual-event-cs'/>
 
 ## Loading mode with collection
@@ -56,9 +60,11 @@ We would also need to define the listview namespace
 [TODO]: add listview namespace
 
 ###Define the Viewmodel
+We use the following snippet:
 <snippet id='sdk-lv-lod-auto-collection-model-cs'/>
 
 ###Bind the DataContext
+We use the following snippet:
 <snippet id='sdk-lv-lod-auto-collection-cs'/>
 
 ## Advanced options

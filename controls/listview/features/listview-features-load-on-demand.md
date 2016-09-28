@@ -8,8 +8,8 @@ slug: listview-features-load-on-demand
 # Load On Demand
 
 Loading a large data set on a mobile device has its chalenges. On of the most popular aproach is using incremental data loading as the items needs to be visualized. **RadListView** is capable of doing this using its load on demand capabilitites enabled by its **IsLoadOnDemandEnabled** property. It offers two loading modes through its **LoadOnDemandMode** property:
-1. **Automatic** - the data is requested automatically when you scroll near the end of the listview.
-2. **Manual** - a button is rendered at the end of the listview. The data is requested explicitely by pressing the button.
+ 1. **Automatic** - the data is requested automatically when you scroll near the end of the listview.
+ 2. **Manual** - a button is rendered at the end of the listview. The data is requested explicitely by pressing the button.
 
 In order to load the data Listview requires either to:
  1. Subscribe to **LoadOnDemand** event and add the loaded data to the source.
@@ -28,10 +28,9 @@ We would also need to define the listview namespace
 ###Add the code to load the data in the LoadOnDemand event
 <snippet id='sdk-lv-lod-auto-event-cs'/>
 
-The final result will look like that:
 Figure 1: Automatic Loading on demand
 
-//![AutoLoadOnDemand](images/listview-features-load-on-demand.png)
+![AutoLoadOnDemand](images/listview-features-load-on-demand.png)
 
 
 ## Manual loading mode
@@ -46,11 +45,6 @@ We would also need to define the listview namespace
 ###Add the code to load the data in the LoadOnDemand event
 <snippet id='sdk-lv-lod-manual-event-cs'/>
 
-The final result will look like that:
-Figure 1: Manual Loading on demand
-
-//![ManualLoadOnDemand](images/listview-features-load-on-demand-manual.png)
-
 ## Loading mode with collection
 In many sceanarios you would like to control the loading of the data directly from our viewmodel. For these cases you can take advantage of our **ListViewLoadOnDemandCollection** that takes case of reqesting new items internally. It can work both in **Manual** and **Automatic** mode. Let's see the setup for Automatic loading mode using the collection.
 
@@ -59,7 +53,7 @@ Define the listview in xaml and bind its ItemsSource to the data in the viewmode
 <snippet id='sdk-lv-lod-auto-collection-xaml'/>
 
 We would also need to define the listview namespace
-[TODO]: add listview namesapce
+[TODO]: add listview namespace
 
 ###Define the Viewmodel
 <snippet id='sdk-lv-lod-auto-collection-model-cs'/>
@@ -70,14 +64,14 @@ We would also need to define the listview namespace
 ## Advanced options
 
 ###Control the number of preloaded items
-This feature works in conjunction with LoadOnDemandMode.Automatic mode of the listview - //TODO add link to # Automatic loading mode.  You can control the number of minimum items loaded ahead through listview **LoadOnDemandBufferItemsCount** property. By default it is set to 10 item. When the listview requests an item in the buffer it will trigger new loading batch.
+This feature works in conjunction with [LoadOnDemandMode.Automatic mode of the listview]({%slug listview-features-load-on-demand%}#automatic-mode).  You can control the number of minimum items loaded ahead through listview **LoadOnDemandBufferItemsCount** property. By default it is set to 10 item. When the listview requests an item in the buffer it will trigger new loading batch.
 
 ###Change the appearance of Manual load button
-This feature works in conjunction with LoadOnDemandMode.Manual mode of the listview - //TODO add link to # Manual loading mode
+This feature works in conjunction with [LoadOnDemandMode.Manual mode of the listview]({%slug listview-features-load-on-demand%}#manual-loading-mode)
 You can control load more button content through the **LoadOnDemandItemTemplate** property.
 <snippet id='sdk-lv-lod-customize-loadbutton-xaml'/>
 
 ###Change the appearance of Manual loading indicator
-This feature works in conjunction with LoadOnDemandMode.Manual mode of the listview - //TODO add link to # Manual loading mode
+This feature works in conjunction with [LoadOnDemandMode.Manual mode of the listview]({%slug listview-features-load-on-demand%}#manual-loading-mode)
 You can control the loadinf indicator content through the **LoadingOnDemandItemTemplate** property.
 <snippet id=' sdk-lv-lod-customize-loading-ind-xaml'/>

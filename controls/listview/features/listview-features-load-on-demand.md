@@ -24,16 +24,11 @@ We use the following snippet:
 <snippet id='sdk-lv-lod-auto-event-xaml'/>
 
 We would also need to define the listview namespace
-[TODO]: add listview namespace
+ <snippet id='xmlns-telerikListView'/>
 
 ###Add the code to load the data in the LoadOnDemand event
 We use the following snippet:
 <snippet id='sdk-lv-lod-auto-event-cs'/>
-
-Figure 1: Automatic Loading on demand
-
-![AutoLoadOnDemand](images/listview-features-load-on-demand.png)
-
 
 ## Manual loading mode
 Alternatively you can request items only explicitely when pressing the load more button rendered at the end of the loaded items.
@@ -43,11 +38,15 @@ We use the following snippet:
 <snippet id='sdk-lv-lod-manual-event-xaml'/>
 
 We would also need to define the listview namespace
-[TODO]: add listview namesapce
+ <snippet id='xmlns-telerikListView'/>
 
 ###Add the code to load the data in the LoadOnDemand event
 We use the following snippet:
 <snippet id='sdk-lv-lod-manual-event-cs'/>
+
+Figure 1: Manual Loading on demand
+
+![ManualLoadOnDemand](images/listview-features-load-on-demand.png)
 
 ## Loading mode with collection
 In many sceanarios you would like to control the loading of the data directly from our viewmodel. For these cases you can take advantage of our **ListViewLoadOnDemandCollection** that takes case of reqesting new items internally. It can work both in **Manual** and **Automatic** mode. Let's see the setup for Automatic loading mode using the collection.
@@ -57,7 +56,7 @@ Define the listview in xaml and bind its ItemsSource to the data in the viewmode
 <snippet id='sdk-lv-lod-auto-collection-xaml'/>
 
 We would also need to define the listview namespace
-[TODO]: add listview namespace
+ <snippet id='xmlns-telerikListView'/>
 
 ###Define the Viewmodel
 We use the following snippet:

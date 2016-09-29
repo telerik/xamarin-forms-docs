@@ -61,7 +61,13 @@ This is how you can update the NuGet packages:
 
 ## 3. Add reference to Telerik Components
 
+You have two options.
+
+### Telerik NuGet package server
+
 You can use our [**Telerik NuGet package server**]({%slug telerik-nuget-server%}) to include our suite in your solution and/or update to the latest available version.
+
+### Manually add required assemblies
 
 The hard way is to add all required assemblies manually. We have added a special article in each control section that contains information about all required assemblies. The article is called **"Required Assemblies"** and is located in the **Getting Started** section for each control.
 

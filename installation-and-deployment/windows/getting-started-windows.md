@@ -65,29 +65,28 @@ You can use our [**Telerik NuGet package server**]({%slug telerik-nuget-server%}
 
 The hard way is to add all required assemblies manually. We have added a special article in each control section that contains information about all required assemblies. The article is called **"Required Assemblies"** and is located in the **Getting Started** section for each control.
 
-- [Calendar Required Assemblies]({%slug calendar-getting-started-required-assemblies})
-- [Chart Required Assemblies]({%slug chart-getting-started-required-assemblies})
-- [DataForm Required Assemblies]({%slug dataform-getting-started-required-assemblies})
-- [ListView Required Assemblies]({%slug listview-getting-started-required-assemblies})
-- [SideDrawer Required Assemblies]({%slug sidedrawer-getting-started-required-assemblies})
+- [Calendar Required Assemblies]({%slug calendar-getting-started-required-assemblies%})
+- [Chart Required Assemblies]({%slug chart-getting-started-required-assemblies%})
+- [DataForm Required Assemblies]({%slug dataform-getting-started-required-assemblies%})
+- [ListView Required Assemblies]({%slug listview-getting-started-required-assemblies%})
+- [SideDrawer Required Assemblies]({%slug sidedrawer-getting-started-required-assemblies%})
 
 ## 4. Register Renderers
 
 The final step is to register the control renderers. These articles will show you how:
 
-- [Calendar Register Renderer]({%slug calendar-getting-started-register-renderer})
-- [Chart Register Renderer]({%slug chart-getting-started-register-renderer})
-- [DataForm Register Renderer]({%slug dataform-getting-started-register-renderer})
-- [ListView Register Renderer]({%slug listview-getting-started-register-renderer})
-- [SideDrawer Register Renderer]({%slug sidedrawer-getting-register-renderer})
+- [Calendar Register Renderer]({%slug calendar-getting-started-register-renderer%})
+- [Chart Register Renderer]({%slug chart-getting-started-register-renderer%})
+- [DataForm Register Renderer]({%slug dataform-getting-started-register-renderer%})
+- [ListView Register Renderer]({%slug listview-getting-started-register-renderer%})
+- [SideDrawer Register Renderer]({%slug sidedrawer-getting-register-renderer%})
 
 ## See Also
 
 - [Project Wizard]({%slug project-wizard%})
 - [Telerik NuGet packages server]({%slug telerik-nuget-server%})
-- [Calendar Getting Started]({%slug calendar-getting-started})
-- [Chart Getting Started]({%slug chart-getting-started})
-- [DataForm Getting Started]({%slug dataform-getting-started})
-- [ListView Getting Started]({%slug listview-getting-started})
-- [SideDrawer Getting Started]({%slug sidedrawer-getting-started})
-
+- [Calendar Getting Started]({%slug calendar-getting-started%})
+- [Chart Getting Started]({%slug chart-getting-started%})
+- [DataForm Getting Started]({%slug dataform-getting-started%})
+- [ListView Getting Started]({%slug listview-getting-started%})
+- [SideDrawer Getting Started]({%slug sidedrawer-getting-started%})

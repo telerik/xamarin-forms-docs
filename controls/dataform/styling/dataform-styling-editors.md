@@ -24,36 +24,7 @@ The RadDataForm editors appearance can be customized with the EditorStyle proper
 
 ## Example
 
-	var positive = "CCFF00";
-	var negative = "FF004C";
-	
-	var style = new DataFormEditorStyle
-	{
-	    Background = new Background
-	    {
-	        Fill = Color.Transparent,
-	        StrokeColor = Color.FromHex(positive),
-	        StrokeWidth = 1,
-	        StrokeLocation = Location.Bottom
-	    },
-	    HeaderFontSize = 15,
-	    HeaderForeground = Color.White,
-	    FeedbackFontSize = 10,
-	    PositiveFeedbackImage = ImageSource.FromFile("success.png"),
-	    NegativeFeedbackForeground = Color.FromHex(negative),
-	    NegativeFeedbackBackground = new Background
-	    {
-	        Fill = Color.FromHex(50 + negative),
-	        StrokeColor = Color.FromHex(negative),
-	        StrokeWidth = 2,
-	        StrokeLocation = Location.All
-	    },
-	    Height = 60,
-	    FeedbackImageSize = new Size(10, 10),
-	};
-	
-	dataForm.EditorStyle = style;
-	dataForm.BackgroundColor = Color.FromHex("3D6978");
+<snippet id='dataform-styling-editors'/>
 
 Result:
 

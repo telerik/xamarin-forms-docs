@@ -4,59 +4,111 @@ page_title: Getting Started with Telerik UI for Xamarin.Forms on Mac
 slug: getting-started-mac
 position: 1
 ---
-# Getting Started on Mac #
+# Getting Started on Mac
 
-This article should help Mac developers to get started with **Telerik UI for Xamarin** suite and **Xamarin Studio** under iOS. We will demonstrate how users can take advantage of **Telerik NuGet server** in order to include our suite in their solution and/or update to the latest available version.
+This article should help developers to get started with **Telerik UI for Xamarin** suite and **Xamarin Studio** on **Mac OS**.
 
-## Update *packages.config* files ##
+>Please, make sure you have already read the [System Requirements]({% slug system-requirements %}) article before you proceed.
+ 
+## 1. Start with Xamarin.Forms app
 
-After a blank **Xamarin.Forms App** has been created using the default solution template built in **Xamarin Studio** a default *packages.config* file will be generated for each platform. Users need to manually update those files so that they include the required packs since there is no stable mechanism to do this using UI or console, yet. After updating the respective files the **NuGet Package manager** will be able to restore the missing packs and update the existing ones. Another benefit is the fact that upgrading to the latest official release of the **Telerik UI for XamarinForms** suite will be as far away as a single mouse click is.
+Depending on your scenario, you either have an existing app where you will add our components, or you have to create a new blank app.
 
-## iOS and Portable projects ##
+ 
+> If you already have an app, please proceed to the [next step]({%slug getting-started-mac%}#2-getting-the-latest-platform-sdk-versions).
 
-For the iOS and the Portable projects users need to update only the version of the required Xamarin.Forms package since this is the only required pack. Its latest official version can be seen on the [official NuGet page](https://www.nuget.org/packages/Xamarin.Forms/). Open the *packages.config* file directly in Xamarin Studio and replace only the existing version with the one presented on the already referred page.
+### Create new app from scratch
 
-## Android project ##
+Open Xamarin Studion and create new solution **Xamarin.Forms Forms App**:
 
-The Android project however, requires additional packages with specified versions. All the requirements can be seen in the [Required Android Support Libraries]({% slug required-android-support-libraries %}) article. The issue that will be encountered is installing a particular **Android.Support** package with a specific earlier (not latest available) version. This can be done by the *packages.config* file, also. Everything users need to do is to fill in the missing packages and update the existing one(s) in the following format :
+![Create new Xamerin.Forms app](images/mac-xs-create-new-app-1.png)
 
+Follow the steps in the wizard until your app is created. It should contain the following projects:
 
-		<package id="[PackageName]" version="[PackageVersion]" targetFramework="[TargetFramework]" />
+![](images/mac-xs-new-app.png)
 
+## 2. Getting the latest platform SDK versions
 
->On the [Required Android Support Libraries]({% slug required-android-support-libraries %}) Libraries page users can see the name and the exact version of the required packages.
+Make sure that your Xamarin.Forms packages are up to date.
 
-Please bear in mind that the [*TargetFramework*] parameter should be the same among all packages since they all target the Android platform. This parameter can be taken from the existing packs in prior of modifying the *packages.config* file.
+>The **Android project** requires multiple packages with specific versions. The **Xamarin.Forms** package will install most of the required packages as its dependencies. You can then go to [Required Android Support Libraries]({% slug required-android-support-libraries %}) article and check if you have all required files and versions.
 
-## Restore the NuGet packages ##
+You can either use the Xamarin Studio UI to update all packages to the required versions, or you can do it manually by editing the *packages.config* file in each project.
+
+### Update packages using Xamarin Studio UI
+
+>You have to make sure that you have the right version of Xamarin.Forms and all related packages.
+
+To update specific package to the latest version, right-click on it and select "update":
+ 
+ ![Update packages](images/getting-started-mac-update-packages.png)
+
+If your application requires specific version of a package, you can right-click directly on the packages folder and choose "Add packages...". This will work even if newer version of the package is already added.
+
+![](images/getting-started-mac-add-packages-1.png)
+
+You have to search for the package and select the correct version:
+
+![](images/getting-started-mac-add-packages-2.png)
+
+> Please, proceed to the [next step]({%slug getting-started-mac%}#3-add-reference-to-telerik-components).
+
+### Update packages using *packages.config* files
+
+Each project in your solution contains *packages.config* file that contains all referenced NuGet packages. Users can manually update those files to include new packages or modify existing ones. After updating the respective files the **NuGet Package manager** will be able to restore the missing packs and update the existing ones.
+
+Everything users need to do is to fill in the missing packages and update the existing ones in the following format:
+
+	<package id="[PackageName]" version="[PackageVersion]" targetFramework="[TargetFramework]" />
+	
+####  iOS and Portable
+
+For the iOS and the Portable projects users need to update only the version of the required Xamarin.Forms package, this is the only required package. Its latest official version can be seen on the [official NuGet page](https://www.nuget.org/packages/Xamarin.Forms/). Open the *packages.config* file directly in Xamarin Studio and replace only the existing version with the latest one.
+
+#### Android
+	
+After updating the Xamarin.Forms package, you can go to [Required Android Support Libraries]({% slug required-android-support-libraries %}) article and check if you have all required packages and versions.
+	
+>Please bear in mind that the [*TargetFramework*] parameter in the *packages.config* file should be the same among all packages since they all target the Android platform. The value of this parameter can be seen from already installed packages.
+
+If the versions of the required packages is not correct, the Android project will not build with multiple errors of this type:
+
+	Error: `DataFormMultilineEditor.Droid.Resource.Style' does not contain a definition for `Widget_MediaRouter_ControllerText_Title'
+
+#### Restore the NuGet packages
 
 After updating all the *packages.config* files users are now ready to restore the packages. This can be done by clicking the settings icon of the solution and choosing “*Restore NuGet Packages*”.
 
-![Restore NuGet Packages](../images/getting-started-restore-packages.png "Restore NuGet Packages")
+![Restore NuGet Packages](images/getting-started-mac-restore-packages.png "Restore NuGet Packages")
 
-## Add Telerik NuGet packages server ##
+## 3. Add reference to Telerik Components
 
-In order to take advantage of the Telerik NuGet packages and respectively the **Telerik UI for XamarinForms** pack users need to add the Telerik NuGet server in their packages sources list. This can be done by clicking on the settings icon of any “*Packages*” folder (any project will do the job) and choosing “*Add Packages…*”.
+You can use our [**Telerik NuGet package server**]({%slug telerik-nuget-server%}) to include our suite in your solution and/or update to the latest available version.
 
-![Add Packages](../images/getting-started-add-packages-menu.png "Add Packages")
+The hard way is to add all required assemblies manually. We have added a special article in each control section that contains information about all required assemblies. The article is called **"Required Assemblies"** and is located in the **Getting Started** section for each control.
 
-This will open another dialog. Users need to choose “*Configure Sources…*” option from the dropdown in the upper right corner.
+- [Calendar Required Assemblies]({%slug calendar-getting-started-required-assemblies})
+- [Chart Required Assemblies]({%slug chart-getting-started-required-assemblies})
+- [DataForm Required Assemblies]({%slug dataform-getting-started-required-assemblies})
+- [ListView Required Assemblies]({%slug listview-getting-started-required-assemblies})
+- [SideDrawer Required Assemblies]({%slug sidedrawer-getting-started-required-assemblies})
 
+## 4. Register Renderers
 
-![Configure Sources](../images/getting-started-configure-sources.png "Configure Sources")
+The final step is to register the control renderers. These articles will show you how:
 
-On the next dialog users will see all the available sources. Choose “*Add*” to add the new server.
+- [Calendar Register Renderer]({%slug calendar-getting-started-register-renderer})
+- [Chart Register Renderer]({%slug chart-getting-started-register-renderer})
+- [DataForm Register Renderer]({%slug dataform-getting-started-register-renderer})
+- [ListView Register Renderer]({%slug listview-getting-started-register-renderer})
+- [SideDrawer Register Renderer]({%slug sidedrawer-getting-register-renderer})
 
-![Add Telerik NuGet server](../images/getting-started-add-package-source.png "Add Telerik NuGet server")
+## See Also
 
-In the Add Package Source dialog users should fill in the information of the Telerik server (URL: **https://nuget.telerik.com/nuget**) as well as their private Telerik credentials. Authentication procedure is required in order to allow downloading the packs.
+- [Telerik NuGet packages server]({%slug telerik-nuget-server%})
+- [Calendar Getting Started]({%slug calendar-getting-started})
+- [Chart Getting Started]({%slug chart-getting-started})
+- [DataForm Getting Started]({%slug dataform-getting-started})
+- [ListView Getting Started]({%slug listview-getting-started})
+- [SideDrawer Getting Started]({%slug sidedrawer-getting-started})
 
-![Telerik NuGet server details](../images/getting-started-add-telerk-server.png "Telerik NuGet server details")
-
-After the Telerik NuGet server is added users will be able to see the packages they are allowed to download in the Add Packages dialog. This will allow them to check the **Telerik UI for Xamarin** pack and add it into their projects.
-
-## Add Telerik UI for Xamarin pack ##
-
-Once the server is added users will be able to add to their projects any of the **Telerik NuGet** packages available for their license. One click on the settings icon of the “*Packages*” folder of any project will open the **Add Packages** dialog where the available Telerik packs will be listed.
-
-![Telerik NuGet packages](../images/getting-started-add-packages-dialog.png "Telerik NuGet packages")

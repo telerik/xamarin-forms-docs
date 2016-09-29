@@ -16,25 +16,30 @@ To read more about the benefits of using UI for Xamarin, please visit the [produ
 
 
 ### UI for Xamarin Forms
+
 Our suite offers the following controls for cross-platform development with Xamarin forms:
 
- - [Calendar for Xamarin.Forms]({% slug calendar-overview %})
- - [Chart for Xamarin.Forms]({% slug chart-overview %})
- - [DataForm for Xamarin.Forms]({% slug dataform-overview %})
- - [ListView for Xamarin.Forms]({% slug listview-overview %})
- - [SideDrawer for Xamarin.Forms]({% slug sidedrawer-overview %})
+- [Calendar for Xamarin.Forms]({% slug calendar-overview %})
+- [Chart for Xamarin.Forms]({% slug chart-overview %})
+- [DataForm for Xamarin.Forms]({% slug dataform-overview %})
+- [ListView for Xamarin.Forms]({% slug listview-overview %})
+- [SideDrawer for Xamarin.Forms]({% slug sidedrawer-overview %})
 
 
 ### UI for Xamarin.Android
+
 For information about the Xamarin.iOS bindings API and features, please check our documentation of [UI for iOS](http://docs.telerik.com/devtools/ios/).
 
 ### UI for Xamarin.iOS
+
 For information about the Xamarin.Android wrappers API and features, refer to the documentation set of [UI for Android](http://docs.telerik.com/devtools/android/).
 
 ### UI for UWP
+
 For information about the control set, API and features, refer to the documentation set of [UI for UWP](http://docs.telerik.com/windows-universal/).
 
 ## Supported mobile versions
+
 You can use UI for Xamarin.Forms for application development for the following mobile operating systems:
 
 |Platform 						|Supported version |
@@ -44,7 +49,8 @@ You can use UI for Xamarin.Forms for application development for the following m
 |Windows							|Windows Phone 8 Silverlight, Windows 8.1 / Windows Phone 8.1, Windows 10 Mobile / Windows 10  |
 
 ## Next Steps
- - [Getting started on Windows]({%slug getting-started%})
- - [Getting started on Mac]({%slug getting-started-mac%})
- - [System Requirements]({% slug system-requirements %})
- - [UI for Xamarin Support and Learning Resources](http://www.telerik.com/support/xamarin-ui)
+
+- [System Requirements]({% slug system-requirements %})
+- [Getting started on Windows]({%slug getting-started-windows%})
+- [Getting started on Mac]({%slug getting-started-mac%})
+- [UI for Xamarin Support and Learning Resources](http://www.telerik.com/support/xamarin-ui)

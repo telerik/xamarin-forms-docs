@@ -23,11 +23,14 @@ We will load the data automatically using event. In this case Here is how the se
 We use the following snippet:
 <snippet id='sdk-lv-lod-auto-event-xaml'/>
 
-We would also need to define the listview namespace
+We would also need to define the listview namespace:
  <snippet id='xmlns-telerikListView'/>
 
 ###Add the code to load the data in the LoadOnDemand event
-We use the following snippet:
+First, we set listview itemsSource in page constructor:
+<snippet id='sdk-lv-lod-auto-event-init-cs'/>
+
+Then We use the following snippet:
 <snippet id='sdk-lv-lod-auto-event-cs'/>
 
 ## Manual loading mode
@@ -41,7 +44,10 @@ We would also need to define the listview namespace
  <snippet id='xmlns-telerikListView'/>
 
 ###Add the code to load the data in the LoadOnDemand event
-We use the following snippet:
+First, we set listview itemsSource in page constructor:
+<snippet id='sdk-lv-lod-manual-event-init-cs'/>
+
+Then, we use the following snippet:
 <snippet id='sdk-lv-lod-manual-event-cs'/>
 
 Figure 1: Manual Loading on demand
@@ -62,8 +68,8 @@ We would also need to define the listview namespace
 We use the following snippet:
 <snippet id='sdk-lv-lod-auto-collection-model-cs'/>
 
-###Bind the DataContext
-We use the following snippet:
+###Bind the BindingContext 
+We use the following snippet in the page constructor:
 <snippet id='sdk-lv-lod-auto-collection-cs'/>
 
 ## Advanced options

@@ -79,7 +79,7 @@ The final step is to register the control renderers. These articles will show yo
 - [Chart Register Renderer]({%slug chart-getting-started-register-renderer%})
 - [DataForm Register Renderer]({%slug dataform-getting-started-register-renderer%})
 - [ListView Register Renderer]({%slug listview-getting-started-register-renderer%})
-- [SideDrawer Register Renderer]({%slug sidedrawer-getting-register-renderer%})
+- [SideDrawer Register Renderer]({%slug sidedrawer-getting-started-register-renderer%})
 
 ## See Also
 

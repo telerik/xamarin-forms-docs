@@ -31,9 +31,7 @@ Follow the steps in the wizard until your app is created. It should contain the 
 
 Make sure that your Xamarin.Forms packages are up to date.
 
->The **Android project** requires multiple packages with specific versions. The **Xamarin.Forms** package will install most of the required packages as its dependencies. You can then go to [Required Android Support Libraries]({% slug required-android-support-libraries %}) article and check if you have all required files and versions.
-
-You can either use the Xamarin Studio UI to update all packages to the required versions, or you can do it manually by editing the *packages.config* file in each project.
+You can either use the [Xamarin Studio UI]({%slug getting-started-mac%}#update-packages-using-xamarin-studio-ui) to update all packages to the required versions, or you can do it [manually]({%slug getting-started-mac%}#update-packages-using-packagesconfig-files) by editing the *packages.config* file in each project.
 
 ### Update packages using Xamarin Studio UI
 
@@ -51,7 +49,7 @@ You have to search for the package and select the correct version:
 
 ![](images/getting-started-mac-add-packages-2.png)
 
-> Please, proceed to the [next step]({%slug getting-started-mac%}#3-add-reference-to-telerik-components).
+>The **Android project** requires multiple packages with specific versions. The **Xamarin.Forms** package will install most of the required packages as its dependencies. You can then go to [Required Android Support Libraries]({% slug required-android-support-libraries %}) article and check if you have all required files and versions.
 
 ### Update packages using *packages.config* files
 
@@ -101,7 +99,7 @@ The final step is to register the control renderers. These articles will show yo
 - [Chart Register Renderer]({%slug chart-getting-started-register-renderer%})
 - [DataForm Register Renderer]({%slug dataform-getting-started-register-renderer%})
 - [ListView Register Renderer]({%slug listview-getting-started-register-renderer%})
-- [SideDrawer Register Renderer]({%slug sidedrawer-getting-register-renderer%})
+- [SideDrawer Register Renderer]({%slug sidedrawer-getting-started-register-renderer%})
 
 ## See Also
 

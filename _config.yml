@@ -28,7 +28,6 @@ navigation:
     ## Calendar
     controls/calendar:
         title: "Calendar"
-        position: 1
         ## Calendar Sub-Folders
     controls/calendar/features:
         title: "Features"
@@ -44,7 +43,6 @@ navigation:
     ## Chart
     controls/chart:
         title: "Chart"
-        position: 2
         ## Chart Sub-Folders
     controls/chart/axes:
         title: "Axes"
@@ -79,7 +77,6 @@ navigation:
     ## DataForm
     controls/dataform:
         title: "DataForm"
-        position: 3
         ## DataForm Sub-Folders
     controls/dataform/annotations:
         title: "Data Annotations"
@@ -95,7 +92,6 @@ navigation:
     ## ListView
     controls/listview:
         title: "ListView"
-        position: 4
         ## ListView Sub-Folders
     controls/listview/features:
         title: "Features"
@@ -105,14 +101,11 @@ navigation:
     ## SideDrawer
     controls/sidedrawer:
         title: "SideDrawer"
-        position: 5
         ## SideDrawer Sub-Folders
     controls/sidedrawer/features:
         title: "Features"
         position: 5
         ## End SideDrawer Sub-Folders
-    controls/dataform:
-        title: "Data Form"
     ## End SideDrawer
 ## End Controls Sub-Folders
 

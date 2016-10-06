@@ -28,6 +28,8 @@ You also have to add the following namespace:
 <snippet id='xmlns-telerikprimitives'/>
 <snippet id='ns-telerikprimitives'/>
 
+Finally, set the drawer as content of your page.
+
 Here is the result:
  
 ![SideDrawer example](../images/sidedrawer-gettingstarted.png)

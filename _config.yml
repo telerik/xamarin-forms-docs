@@ -29,6 +29,9 @@ navigation:
     controls/calendar:
         title: "Calendar"
         ## Calendar Sub-Folders
+    controls/calendar/getting-started:
+        title: "Getting Started";
+        position: 2
     controls/calendar/features:
         title: "Features"
         position: 5
@@ -44,6 +47,9 @@ navigation:
     controls/chart:
         title: "Chart"
         ## Chart Sub-Folders
+    controls/chart/getting-started:
+        title: "Getting Started"
+        position: 2
     controls/chart/axes:
         title: "Axes"
         position: 4
@@ -78,6 +84,9 @@ navigation:
     controls/dataform:
         title: "DataForm"
         ## DataForm Sub-Folders
+    controls/dataform/getting-started:
+        title: "Getting Started"
+        position: 1
     controls/dataform/annotations:
         title: "Data Annotations"
         position: 4
@@ -93,6 +102,9 @@ navigation:
     controls/listview:
         title: "ListView"
         ## ListView Sub-Folders
+    controls/listview/getting-started:
+        title: "Getting Started"
+        position: 1
     controls/listview/features:
         title: "Features"
         position: 4
@@ -102,6 +114,9 @@ navigation:
     controls/sidedrawer:
         title: "SideDrawer"
         ## SideDrawer Sub-Folders
+    controls/sidedrawer/getting-started:
+        title: "Getting Started"
+        position: 1    
     controls/sidedrawer/features:
         title: "Features"
         position: 5

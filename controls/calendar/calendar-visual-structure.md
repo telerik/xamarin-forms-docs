@@ -1,7 +1,7 @@
 ---
 title: Visual Structure
 page_title: RadCalendar Visual Structure
-position: 2
+position: 1
 slug: calendar-visual-structure
 ---
 

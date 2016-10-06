@@ -28,7 +28,10 @@ You also need to add the following namespace:
 <snippet id='xmlns-telerikinput'/>
 <snippet id='ns-telerikinput'/>
 
-Here is the result:  
+Finally, set the calendar as content of your page.
+
+Here is the result:
+
 ![Basic RadCalendar Example](../images/calendar-gettingstarted.png "Basic RadCalendar")
 
 ## See Also

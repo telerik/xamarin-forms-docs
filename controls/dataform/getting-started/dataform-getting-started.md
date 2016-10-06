@@ -18,51 +18,33 @@ This example will guide you through the steps needed to add a basic **RadDataFor
 
 If your app is setup, you are ready to add a **RadDataForm** control.
 
-Here is a sample data class:
+Here is a sample class that will be the view model of the data form:
 
-	public class Person : NotifyPropertyChangedBase
-	{
-	    private string name;
-	
-	    [DisplayOptions(Header = "Name", PlaceholderText = "name")]
-	    [StringLengthValidator(2, int.MaxValue, "Name should be longer than 2 symbols.")]
-	    public string Name
-	    {
-	        get
-	        {
-	            return this.name;
-	        }
-	        set
-	        {
-	            if (this.name != value)
-	            {
-	                this.name = value;
-	                this.OnPropertyChanged();
-	            }
-	        }
-	    }
-	}
+<snippet id='dataform-gettingstarted-source'/>
 
-You can define the data form in XAML:
+Here is the setup of the data form:
 
-	<telerikInput:RadDataForm x:Name="dataForm"/>
+<snippet id='dataform-gettingstarted-setup-xaml'/>
+<snippet id='dataform-gettingstarted-setup-csharp'/>
 
-Where:
+You also need to add the following namespace:
 
-	xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+<snippet id='xmlns-telerikinput'/>
+<snippet id='ns-telerikinput'/>
 
-And finally set the Source of the form to an instance of the data class:
+After that you have to specify the editor types:
 
-	dataForm.Source = new Person{ Name = "Peter" };
+<snippet id='dataform-gettingstarted-register-editors'/>
 
-Or you can use binding if you have set a proper BindingContext:
+And finally set the data form as content of your page.
 
+Here is the result:
 
-	<telerikInput:RadDataForm Source={Binding SourceObject}/>	
+![](../images/dataform-gettingstarted.png)
 	
 ## See Also
 
-- [Editors]({%slug dataform-editors%})
+- [DataForm Editors]({%slug dataform-editors%})
 - [Project Wizard]({% slug project-wizard %})
 - [Getting Started on Windows]({% slug getting-started-windows %})
 - [Getting Started on Mac]({% slug getting-started-mac %})

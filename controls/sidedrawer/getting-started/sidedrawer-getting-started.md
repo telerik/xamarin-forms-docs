@@ -20,36 +20,17 @@ If your app is setup, you are ready to add a **RadSideDrawer** control.
 
 You can proceed with defining the component:
 
-	<primitives:RadSideDrawer>
-	  <primitives:RadSideDrawer.DrawerLength>
-	    <OnPlatform x:TypeArguments="x:Double" iOS="150" Android="200"/>
-	  </primitives:RadSideDrawer.DrawerLength>
-	  <primitives:RadSideDrawer.MainContent>
-	    <Label Text="Main Content" FontSize="Large" HorizontalOptions="Center"/>
-	  </primitives:RadSideDrawer.MainContent>
-	  <primitives:RadSideDrawer.DrawerContent>
-	    <StackLayout>
-	      <Label Text="Drawer Content" FontSize="Medium" HorizontalOptions="Center"/>
-	      <Button Text="Mail"/>
-	      <Button Text="Calendar"/>
-	      <Button Text="People"/>
-	      <Button Text="Tasks"/>
-	    </StackLayout>
-	  </primitives:RadSideDrawer.DrawerContent>
-	</primitives:RadSideDrawer>
+<snippet id='sidedrawer-gettingstarted-xaml'/>
+<snippet id='sidedrawer-gettingstarted-csharp'/>
 
+You also have to add the following namespace:
 
-Where the *primitives* namespace is defined like this:
+<snippet id='xmlns-telerikprimitives'/>
+<snippet id='ns-telerikprimitives'/>
 
-	xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
-
-### Drawer Closed
-
-![SideDrawer example](../images/sidedrawer-getting-started-closed.png)
-
-### Drawer Opened
-
-![SideDrawer example](../images/sidedrawer-getting-started-opened.png)
+Here is the result:
+ 
+![SideDrawer example](../images/sidedrawer-gettingstarted.png)
 
 ## See Also
 

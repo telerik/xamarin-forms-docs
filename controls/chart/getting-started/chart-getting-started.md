@@ -21,7 +21,7 @@ If your app is setup, you are ready to add a **RadChart** control.
 
 This example demonstrates how to create a basic cartesian chart with bar series like this one.
 
-![Basic RadCartesianChart Example](../images/chart-getting-started-example.png "Basic RadCartesianChart")
+![Basic RadCartesianChart Example](../images/chart-gettingstarted.png "Basic RadCartesianChart")
 
 Here is the chart setup:
 

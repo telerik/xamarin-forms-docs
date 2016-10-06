@@ -18,27 +18,25 @@ This example will guide you through the steps needed to add a basic **RadListVie
 
 If your app is setup, you are ready to add a **RadDataForm** control.
 
-Users can visualize the **RadListView** using XAML code like this:
+First, lets create a simple data and view model classes:
 
-	<telerikDataControls:RadListView x:Name="LV"/> 
+<snippet id='listview-gettingstarted-source'/>
 
-where the **telerik** namespace is defined like this:
+Here is the setup of the list view:
 
-	xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
-The next step is to add the items that will be visualized. This can be done in code like this:
+<snippet id='listview-gettingstarted-listview-xaml'/>
+<snippet id='listview-gettingstarted-listview-csharp'/>
 
-	InitializeComponent();
-	this.LV.ItemsSource = Enum.GetNames(typeof(DayOfWeek)).ToList();
-An alternative way to visualize the component is to create it entirely in code. This can be done like this:
+You have to add the following namespaces:
 
-	var listView = new RadListView();
-	this.LV.ItemsSource = Enum.GetNames(typeof(DayOfWeek)).ToList();
-	this.Content = listView;
-The result will be similar to the following pictures.
+<snippet id='xmlns-teleriklistview'/>
+<snippet id='ns-teleriklistview'/>
 
-Figure 1: RadListView in Android, iOS and WinRT.Phone
+Finally set the list view as content of your page.
 
-![RadListView](../images/listview-getting-started.png)
+This is the result:
+
+![RadListView](../images/listview-gettingstarted.png)
 
 ## See Also
 

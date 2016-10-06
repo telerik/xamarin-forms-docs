@@ -10,7 +10,7 @@ slug: calendar-getting-started-required-assemblies
 This article contains information about which assemblies are required by the controls in the **RadCalendar** control.
 
 > The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls. The default location is:  
-> `C:\Program Files (x86)\Telerik\UI for Xamarin QX XXX\Binaries`.
+> `C:\Program Files (x86)\Telerik\UI for Xamarin RX XXX\Binaries`.
 
 Here are listed all assemblies required by the RadCalendar control.
 
@@ -205,3 +205,6 @@ Telerik.XamarinForms.Common.WinPhone
 <table>
  
 ## See Also
+
+- [Calendar Getting Started]({% slug calendar-getting-started %})
+- [Register Calendar Renderer]({% slug calendar-getting-started-register-renderer %})

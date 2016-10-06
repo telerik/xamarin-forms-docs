@@ -23,7 +23,7 @@ You also have to call the `TelerikForms.Init()` method right after the `Forms.In
 
 <snippet id='chart-getting-started-ios-init'/>
 
-## Windows Universal Platform Projects
+## UWP Projects
 
 You have to add the following lines to edit the **MainPage.xaml.cs** file outside the scope of the namespace just after the using statements:
 
@@ -41,4 +41,6 @@ You have to add the following lines to the **MainPage.xaml.cs** file outside the
 
 <snippet id='chart-getting-started-wp8-renderers'/>
 
-## See Also
+# See Also
+
+- [Chart Getting Started]({% slug chart-getting-started %})

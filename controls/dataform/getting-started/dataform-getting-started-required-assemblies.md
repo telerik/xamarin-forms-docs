@@ -10,7 +10,7 @@ slug: dataform-getting-started-required-assemblies
 This article contains information about which assemblies are required by the controls in the **RadDataForm** control.
 
 > The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls. The default location is:  
-> `C:\Program Files (x86)\Telerik\UI for Xamarin QX XXX\Binaries`.
+> `C:\Program Files (x86)\Telerik\UI for Xamarin RX XXX\Binaries`.
 
 Here are listed all assemblies required by the RadDataForm control.
 
@@ -188,3 +188,6 @@ Telerik.XamarinForms.InputRenderer.WinRT.WindowsPhone
 <table>
 
 ## See Also
+
+- [DataForm Getting Started]({% slug dataform-getting-started %})
+- [Register DataForm Renderer]({% slug dataform-getting-started-register-renderer %})

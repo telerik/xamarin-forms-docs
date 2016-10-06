@@ -11,24 +11,30 @@ slug: listview-getting-started-register-renderer
 
 You have to add the following lines to the **MainActivity.cs** file outside the scope of the namespace just after the using statements:
 
-	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.DataControls.RadListView), typeof(Telerik.XamarinForms.DataControlsRenderer.Android.ListViewRenderer))]
+<snippet id='listview-getting-started-android-renderer'/>
 
 ## iOS Project
 
 You have to add the following lines to the **AppDelegate.cs** file outside the scope of the namespace just after the using statements:
 
-	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.DataControls.RadListView), typeof(Telerik.XamarinForms.DataControlsRenderer.iOS.ListViewRenderer))]
+<snippet id='listview-getting-started-ios-renderer'/>
+
+You also have to create an instance of the renderer in the `FinishedLaunching(...)` method before the `Forms.Init()` call which is called right before the `TelerikForms.Init()` call.
+
+<snippet id='listview-getting-started-ios-init'/>
  
-## UWP
+## UWP Project
 
 You have to add the following lines to edit the **MainPage.xaml.cs** file outside the scope of the namespace just after the using statements:
 
-	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(Telerik.XamarinForms.DataControls.RadListView), typeof(Telerik.XamarinForms.DataControlsRenderer.UWP.ListViewRenderer))]
+<snippet id='listview-getting-started-uwp-renderer'/>
 
 ## Windows 8.1 and Windows Phone 8.1 Projects
 
 You have to add the following lines to edit the **MainPage.xaml.cs** file outside the scope of the namespace just after the using statements:
 
-	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(Telerik.XamarinForms.DataControls.RadListView), typeof(Telerik.XamarinForms.DataControlsRenderer.WinRT.ListViewRenderer))]
+<snippet id='listview-getting-started-winrt-renderer'/>
 
 ## See Also
+
+- [ListView Getting Started]({% slug listview-getting-started %})

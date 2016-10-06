@@ -11,44 +11,37 @@ slug: calendar-getting-started-register-renderer
 
 You have to add the following line to the **MainActivity.cs** file outside the scope of the namespace just after the using statements:
 
-	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.Android.CalendarRenderer))]
-
+<snippet id='calendar-getting-started-android-renderer'/>
 
 ## iOS Project
 
 You have to add the following line to the **AppDelegate.cs** file outisde the scope of the namespace just after the using statements:
 
-	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.iOS.CalendarRenderer))]
+<snippet id='calendar-getting-started-ios-renderer'/>
 
 You also have to create an instance of the renderer in the `FinishedLaunching(...)` method before the `Forms.Init()` call and right after it call the `TelerikForms.Init()`.
 
-	public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-    {
-        new CalendarRenderer();
-
-        global::Xamarin.Forms.Forms.Init();
-        Telerik.XamarinForms.Common.iOS.TelerikForms.Init();
-        LoadApplication(new App());
-
-        return base.FinishedLaunching(app, options);
-    }
+<snippet id='calendar-getting-started-ios-init'/>
     
 ## UPW Project
 
-<!--TODO-->
+You have to add the following line to the **MainPage.xaml.cs** file outisde the scope of the namespace just after the using statements:
+
+<snippet id='calendar-getting-started-uwp-renderer'/>
 
 ## Windows 8.1 and Windows Phone 8.1 Projects
 
 You have to add the following line to the **MainPage.xaml.cs** file outisde the scope of the namespace just after the using statements:
 
-	[assembly: Xamarin.Forms.Platform.WinRT.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.WinRT.CalendarRenderer))]
+<snippet id='calendar-getting-started-winrt-renderer'/>
 
 ## Windows Phone 8 Project
 
 You have to add the following line to the **MainPage.xaml.cs** file outisde the scope of the namespace just after the using statements:
 
-	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.WinPhone.CalendarRenderer))]
-
+<snippet id='calendar-getting-started-wp8-renderer'/>
 
 
 ## See Also
+
+- [Calendar Getting Started]({% slug calendar-getting-started %})

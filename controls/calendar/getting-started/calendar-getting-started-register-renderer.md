@@ -39,8 +39,7 @@ You have to add the following line to the **MainPage.xaml.cs** file outisde the 
 
 You have to add the following line to the **MainPage.xaml.cs** file outisde the scope of the namespace just after the using statements:
 
-<snippet id='calendar-getting-started-wp8-renderer'/>
-
+<snippet id='chart-getting-started-wp-renderers'/>
 
 ## See Also
 

@@ -39,7 +39,7 @@ You have to add the following lines to edit the **MainPage.xaml.cs** file outsid
 
 You have to add the following lines to the **MainPage.xaml.cs** file outside the scope of the namespace just after the using statements:
 
-<snippet id='chart-getting-started-wp8-renderers'/>
+<snippet id='chart-getting-started-wp-renderers'/>
 
 # See Also
 

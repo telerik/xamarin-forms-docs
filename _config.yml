@@ -30,7 +30,7 @@ navigation:
         title: "Calendar"
         ## Calendar Sub-Folders
     controls/calendar/getting-started:
-        title: "Getting Started";
+        title: "Getting Started"
         position: 2
     controls/calendar/features:
         title: "Features"

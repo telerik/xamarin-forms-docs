@@ -20,6 +20,7 @@ This example will guide you through the steps needed to add a basic **RadCalenda
 If your app is setup, you are ready to add a **RadCalendar** control as content of your page.
 
 <snippet id='calendar-gettingstarted-xaml'/>
+
 <snippet id='calendar-gettingstarted-csharp'/>
 
 You also need to add the following namespace:

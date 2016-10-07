@@ -4,13 +4,13 @@ page_title: Cell Types
 position: 3
 slug: listview-cells
 ---
-## Overview
+# ListView Cell Types
 Cells are non visual objects used to describe a template for creating a visual element inside each ListView item. There are two types of cells:
 
 - **ListViewTextCell**: derives from Xamarin.Forms.**TextCell** and is meant to visualize text and optionally detail text rendered as second row inside list view item. This is the default cell of the RadListView.
 - **ListViewTemplateCell**: derives from Xamarin.Forms.**ViewCell** and is used to present complex data set as RadListView.**ItemTemplate**.
 
-### ListViewTextCell Example
+## ListViewTextCell Example
 
 This example demonstrates how to create a list view with text cells, like this:
 
@@ -32,7 +32,7 @@ You also have to add the following namespaces:
 
 Finally, set the list view as content of your page.
 
-### ListViewTemplateCell Example
+## ListViewTemplateCell Example
 
 This example demonstrates how to create a list view with templated cells, like this:
 
@@ -42,7 +42,7 @@ Let's create a view model that will be the source of the list view.
 
 <snippet id='listview-celltypes-templatecell-viewmodel'/>
 
-#### Definition in Xaml
+### Definition in Xaml
 
 You can define the list view in Xaml like this:
 
@@ -52,7 +52,7 @@ Where:
 
 <snippet id='xmlns-teleriklistview'/>
 
-#### Definition in code behind
+### Definition in code behind
 
 For clarity, let's build the template of the list view cell in a separate method:
 

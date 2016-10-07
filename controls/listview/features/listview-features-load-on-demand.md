@@ -24,7 +24,7 @@ We use the following snippet:
 <snippet id='listview-loadondemand-loadondemandeventauto-declaration'/>
 
 We would also need to define the listview namespace:
- <snippet id='xmlns-telerikListView'/>
+ <snippet id='xmlns-telerikdatacontrols'/>
 
 ###Add the code to load the data in the LoadOnDemand event
 First, we set listview itemsSource in page constructor:
@@ -41,7 +41,7 @@ We use the following snippet:
 <snippet id='listview-loadondemand-loadondemandeventmanual-declaration'/>
 
 We would also need to define the listview namespace
- <snippet id='xmlns-telerikListView'/>
+ <snippet id='xmlns-telerikdatacontrols'/>
 
 ###Add the code to load the data in the LoadOnDemand event
 First, we set listview itemsSource in page constructor:
@@ -62,7 +62,7 @@ Define the listview in xaml and bind its ItemsSource to the data in the viewmode
 <snippet id='listview-loadondemand-loadondemandcollection-declaration'/>
 
 We would also need to define the listview namespace
- <snippet id='xmlns-telerikListView'/>
+ <snippet id='xmlns-telerikdatacontrols'/>
 
 ###Define the Viewmodel
 We use the following snippet:

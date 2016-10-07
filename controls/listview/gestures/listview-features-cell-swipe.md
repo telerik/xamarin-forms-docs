@@ -58,6 +58,10 @@ ListView:
 
 <snippet id='listview-gestures-cell-swipe-listview'/>
 
+Where:
+
+<snippet id='xmlns-teleriklistview'/>
+
 Delete:
 
 <snippet id='listview-gestures-cell-swipe-delete-item'/>

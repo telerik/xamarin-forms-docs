@@ -21,28 +21,34 @@ We will load the data automatically using event. In this case Here is how the se
 
 ###Define the listview in xaml
 We use the following snippet:
-<snippet id='sdk-lv-lod-auto-event-xaml'/>
+<snippet id='listview-loadondemand-loadondemandeventauto-declaration'/>
 
-We would also need to define the listview namespace
+We would also need to define the listview namespace:
  <snippet id='xmlns-telerikListView'/>
 
 ###Add the code to load the data in the LoadOnDemand event
-We use the following snippet:
-<snippet id='sdk-lv-lod-auto-event-cs'/>
+First, we set listview itemsSource in page constructor:
+<snippet id='listview-loadondemand-loadondemandeventauto-bind'/>
+
+Then We use the following snippet:
+<snippet id='listview-loadondemand-loadondemandeventauto-event'/>
 
 ## Manual loading mode
 Alternatively you can request items only explicitely when pressing the load more button rendered at the end of the loaded items.
 
 ###Define the listview in xaml with manual loading mode
 We use the following snippet:
-<snippet id='sdk-lv-lod-manual-event-xaml'/>
+<snippet id='listview-loadondemand-loadondemandeventmanual-declaration'/>
 
 We would also need to define the listview namespace
  <snippet id='xmlns-telerikListView'/>
 
 ###Add the code to load the data in the LoadOnDemand event
-We use the following snippet:
-<snippet id='sdk-lv-lod-manual-event-cs'/>
+First, we set listview itemsSource in page constructor:
+<snippet id='listview-loadondemand-loadondemandeventmanual-bind'/>
+
+Then, we use the following snippet:
+<snippet id='listview-loadondemand-loadondemandeventmanual-event'/>
 
 Figure 1: Manual Loading on demand
 
@@ -53,18 +59,18 @@ In many sceanarios you would like to control the loading of the data directly fr
 
 ###Define the listview in xaml
 Define the listview in xaml and bind its ItemsSource to the data in the viewmodel.
-<snippet id='sdk-lv-lod-auto-collection-xaml'/>
+<snippet id='listview-loadondemand-loadondemandcollection-declaration'/>
 
 We would also need to define the listview namespace
  <snippet id='xmlns-telerikListView'/>
 
 ###Define the Viewmodel
 We use the following snippet:
-<snippet id='sdk-lv-lod-auto-collection-model-cs'/>
+<snippet id='listview-loadondemand-loadondemandcollection-viewmodel'/>
 
-###Bind the DataContext
-We use the following snippet:
-<snippet id='sdk-lv-lod-auto-collection-cs'/>
+###Bind the BindingContext 
+We use the following snippet in the page constructor:
+<snippet id='listview-loadondemand-loadondemandcollection-binding'/>
 
 ## Advanced options
 
@@ -74,9 +80,9 @@ This feature works in conjunction with [LoadOnDemandMode.Automatic mode of the l
 ###Change the appearance of Manual load button
 This feature works in conjunction with [LoadOnDemandMode.Manual mode of the listview]({%slug listview-features-load-on-demand%}#manual-loading-mode)
 You can control load more button content through the **LoadOnDemandItemTemplate** property.
-<snippet id='sdk-lv-lod-customize-loadbutton-xaml'/>
+<snippet id='listview-loadondemand-loadondemandcustomizations-lodbutton'/>
 
 ###Change the appearance of Manual loading indicator
 This feature works in conjunction with [LoadOnDemandMode.Manual mode of the listview]({%slug listview-features-load-on-demand%}#manual-loading-mode)
 You can control the loadinf indicator content through the **LoadingOnDemandItemTemplate** property.
-<snippet id=' sdk-lv-lod-customize-loading-ind-xaml'/>
+<snippet id='listview-loadondemand-loadondemandcustomizations-loadingindicator'/>

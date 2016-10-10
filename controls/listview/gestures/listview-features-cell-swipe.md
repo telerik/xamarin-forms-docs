@@ -44,26 +44,57 @@ The following RadListView events are related to the sell swiping feature:
  - **Item** (object): The item that has been swiped.
  - **Offset** (double): The swipe offset at which the item has been dropped.
 
-## Example
+## Examples
 
-The following example demonstrates how to add a delete button as swipe content.
+With the RadListView swipe events, we can perform custom actions depending on the swipe direction, the swiped amount or the data item.
 
-![CellSwipe](../images/listview-gestures-cell-swipe.png)
+Alternatively, we can add interactive elements to the swipe content and use the swipe gesture only to reveal this content. The user then can choose how to interact with the revealed content.
 
-View model:
+### Use swipe events
 
-<snippet id='listview-gestures-cell-swipe-view-model'/>
+The following example demonstrates how to use the **ItemSwipeCompleted** event and depending on the swipe distance, we will modify the data item or remove it from the source.
 
-ListView:
+![CellSwipe](images/listview-gestures-swipe-swipe-event.png)
 
-<snippet id='listview-gestures-cell-swipe-listview'/>
+Here is the view model for the list view:
+
+<snippet id='listview-gestures-cellswipe-swipeevents-viewmodel'/>
+
+Below is the setup of the list view. Swiping left or right will reveal content with a hint for what will happen if the user completes the swipe action. Setting the SwipeThreshold and the SwipeOffset to the same value ensures that the action will be performed only when the hint is completely revealed.
+
+<snippet id='listview-gestures-cellswipe-swipeevents-listview'/>
 
 Where:
 
 <snippet id='xmlns-teleriklistview'/>
 
-Delete:
+Finally, here is what happens when the user has completed the swipe gesture:
 
-<snippet id='listview-gestures-cell-swipe-delete-item'/>
+<snippet id='listview-gestures-cellswipe-swipeevents-swipecompleted'/> 
+
+We call the **EndItemSwipe()** method to force the item to go to its default position, since the scenario does not require any interaction with the swipe content itself.
+
+### Use interactive content
+
+The following example demonstrates how to add a delete button to the swipe content and using the button `Clicked` event handler, delete an item from the list view source.
+
+![CellSwipe](images/listview-gestures-swipe-interactive-content.png)
+
+Here is the view model for the list view. 
+
+<snippet id='listview-gestures-cellswipe-externalevents-viewmodel'/>
+
+Below is the setup of the list view. Note that the SwipeOffset is equal to the width of the button in the swipe content. Thus when the swipe is complete, the revealed content will be the whole button.
+
+<snippet id='listview-gestures-cellswipe-externalevents-listview'/>
+
+Where:
+
+<snippet id='xmlns-teleriklistview'/>
+
+The BindingContext of the swipe content is the data item. This could be used to perform operations on the data. In our case we will delete the item from the source.
+
+<snippet id='listview-gestures-cellswipe-externalevents-deleteitem'/>
+
 
 ## See Also

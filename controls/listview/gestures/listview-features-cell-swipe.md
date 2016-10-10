@@ -50,7 +50,7 @@ With the RadListView swipe events, we can perform custom actions depending on th
 
 Alternatively, we can add interactive elements to the swipe content and use the swipe gesture only to reveal this content. The user then can choose how to interact with the revealed content.
 
-### Use swipe events
+### Example with swipe events
 
 The following example demonstrates how to use the **ItemSwipeCompleted** event and depending on the swipe distance, we will modify the data item or remove it from the source.
 
@@ -74,7 +74,7 @@ Finally, here is what happens when the user has completed the swipe gesture:
 
 We call the **EndItemSwipe()** method to force the item to go to its default position, since the scenario does not require any interaction with the swipe content itself.
 
-### Use interactive content
+### Example with interactive content
 
 The following example demonstrates how to add a delete button to the swipe content and using the button `Clicked` event handler, delete an item from the list view source.
 
@@ -82,11 +82,11 @@ The following example demonstrates how to add a delete button to the swipe conte
 
 Here is the view model for the list view. 
 
-<snippet id='listview-gestures-cellswipe-externalevents-viewmodel'/>
+<snippet id='listview-gestures-cellswipe-interactivecontent-viewmodel'/>
 
 Below is the setup of the list view. Note that the SwipeOffset is equal to the width of the button in the swipe content. Thus when the swipe is complete, the revealed content will be the whole button.
 
-<snippet id='listview-gestures-cellswipe-externalevents-listview'/>
+<snippet id='listview-gestures-cellswipe-interactivecontent-listview'/>
 
 Where:
 
@@ -94,7 +94,7 @@ Where:
 
 The BindingContext of the swipe content is the data item. This could be used to perform operations on the data. In our case we will delete the item from the source.
 
-<snippet id='listview-gestures-cellswipe-externalevents-deleteitem'/>
+<snippet id='listview-gestures-cellswipe-interactivecontent-deleteitem'/>
 
 
 ## See Also

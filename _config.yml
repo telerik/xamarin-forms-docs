@@ -105,6 +105,9 @@ navigation:
     controls/listview/getting-started:
         title: "Getting Started"
         position: 1
+    controls/listview/gestures:
+        title: "Gestures"
+        position: 3
     controls/listview/features:
         title: "Features"
         position: 4

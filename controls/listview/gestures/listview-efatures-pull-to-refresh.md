@@ -22,19 +22,19 @@ This example demonstrates how to enable the pull to refresh functionality.
 
 Here is the definition of the list view in Xaml:
 
-<source id='listview-gestures-pulltorefresh-listview'/>
+<snippet id='listview-gestures-pulltorefresh-listview'/>
 
 Where:
 
-<source id='xmlns-telerikdatacontrols'/>
+<snippet id='xmlns-telerikdatacontrols'/>
 
 Let's set some simple source to the list view in the code behind of the page:
 
-<source id='listview-gestures-pulltorefresh-source'/>
+<snippet id='listview-gestures-pulltorefresh-source'/>
 
 And this is the method that updates the source of the list view when refresh is triggered:
 
-<source id='listview-gestures-pulltorefresh-event'/>
+<snippet id='listview-gestures-pulltorefresh-event'/>
 
 This is how the refresh indicator looks like:
 

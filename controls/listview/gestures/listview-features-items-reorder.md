@@ -17,7 +17,7 @@ This example will demonstrate how to enable the items reorder functionality and 
 
 Here is the definition of the list view in Xaml:
 
-<snippet id='listview-gestures-cellswipe-reorderitems-listview'/>
+<snippet id='listview-gestures-reorderitems-listview'/>
 
 Where:
 
@@ -25,7 +25,7 @@ Where:
 
 We will set the source in the code behind of the page:
 
-<snippet id='listview-gestures-cellswipe-reorderitems-code'/>
+<snippet id='listview-gestures-reorderitems-code'/>
 
 Here is the result:
 

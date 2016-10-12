@@ -19,6 +19,10 @@ Here is the definition of the list view in Xaml:
 
 <snippet id='listview-gestures-cellswipe-reorderitems-listview'/>
 
+Where:
+
+<snippet id='xmlns-teleriklistview'/>
+
 We will set the source in the code behind of the page:
 
 <snippet id='listview-gestures-cellswipe-reorderitems-code'/>

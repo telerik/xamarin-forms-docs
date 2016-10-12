@@ -107,7 +107,7 @@ navigation:
         position: 1
     controls/listview/gestures:
         title: "Gestures"
-        position: 3
+        position: 4
     controls/listview/features:
         title: "Features"
         position: 4

@@ -7,75 +7,74 @@ slug: listview-features-layouts
 
 # Layouts
 
-The **RadListView** component allows users to set either linear or grid layout definition. This can be done by changing the default setting of the **RadListView.LayoutDefinition**. This property is of type ListViewLayoutBase and gets or sets the layout of the control. 
+The **RadListView** control supports two layouts: linear and grid through the **LayoutDefinition** property. It accepts values of type ListViewLayoutBase which is a base class for all list view layouts. 
 
-## Common properties
-
-Both layouts share common functionality in addition to the arrangement of the items. They allow users to control the size of the items and the spacing in between. Both layouts expose the following properties:
+Here are the properties exposed by the ListViewLayoutBase class: 
 
 - **VerticalItemSpacing** (double): Gets or sets the vertical space between two items.
 - **HorizontalItemSpacing** (double): Gets or sets the horizontal space between two items.
 - **ItemLength** (double): Gets or sets the width or height (depending on the layout orientation) of the items. The default value is -1 which means that the items will be sized according to the targeted platform default behavior.
 - **GroupHeaderLength** (double): Gets or sets the width or height (depending on the layout orientation) of the group headers. The default value is -1 which means that the items will be sized according to the targeted platform default behavior.
-- **Orientation** (Orientation): Gets or sets a value describing how the list should be visualized.
+- **Orientation** (Orientation): Gets or sets the orientation (scroll direction) of the layout.
 
 ## Linear Layout
 
 Linear layout is the default layout of the control. It can be explicitly set by creating an instance of the **ListViewLinearLayout** class and assigning it to the **RadListView.LayoutDefinition** property.
 
-Here is how the linear layouts look like:
+### Example
 
-Figure 1: Linear Vertical Layout (default layout)
+This example will demonstrate how to use the **RadListViewLinearLayout**.
 
-	<telerikDataControls:RadListView/>
+Here is the list view definition in Xaml:
 
-![Linear Vertical](images/listview-features-layout.png)
+<snippets id='listview-layouts-linearlayout-listview'/>
 
-Figure 2: Linear Horizontal Layout
-	
-	<telerikDataControls:RadListView>
-		<telerikDataControls:RadListView.LayoutDefinition>
-			<telerikListView:ListViewLinearLayout Orientation="Horizontal"/>
-		</telerikDataControls:RadListView.LayoutDefinition>
-	</telerikDataControls:RadListView>
+Where:
 
-![Linear Horizontal](images/listview-features-horizontal-layout.png)
+<snippet id='xmlns-teleriklistview'/>
+
+The ItemsSource of the control can be set in the code behind of the page:
+
+<snippets id='listview-layouts-linearlayout-source'/>
+
+And here is the data class used in this example:
+
+<snippets id='listview-layouts-linearlayout-model'/>
+
+This is the result:
+
+![Linear Vertical](images/listview-layouts-linear.png)
 
 ## Grid Layout
 
-The Grid Layout is an alternative layout provided by the **RadListView** out of the box. It allows distributing cells in a fixed number of columns/rows. In addition to the properties of the linear layout it exposes the **SpanCount** property. It is of type **int** and gets or sets the count of the Columns/Rows (depending on the orientation) of the list. 
+The Grid Layout allows distributing cells in a fixed number of columns/rows. It exposes the following properties in addition to the basic layout properties:
+
+- **SpanCount** (int): Gets or sets the count of the columns / rows (depending on the orientation) of the list. 
 
 The grid layout can be utilized by setting the **RadListView.LayoutDefinition** property to a new instance of the **ListViewGridLayout** class.
 
-Here is how the Grid Layout looks like:
+### Example
 
-Figure 3: Grid Vertical Layout
+This example will demonstrate how to use the **RadListViewGridLayout**.
 
-	<telerikDataControls:RadListView x:Name="list">
-		<telerikDataControls:RadListView.LayoutDefinition>
-			<telerikListView:ListViewGridLayout />
-		</telerikDataControls:RadListView.LayoutDefinition>
-	</telerikDataControls:RadListView>
+Here is the list view definition in Xaml:
 
-![Grid Vertical](images/listview-features-grid-layout.png)
+<snippets id='listview-layouts-gridlayout-listview'/>
 
-Figure 4: Grid Horizontal Layout
+Where:
 
-	<telerikDataControls:RadListView x:Name="list">
-		<telerikDataControls:RadListView.LayoutDefinition>
-			<telerikListView:ListViewGridLayout Orientation="Horizontal"/>
-		</telerikDataControls:RadListView.LayoutDefinition>
-	</telerikDataControls:RadListView>
+<snippet id='xmlns-teleriklistview'/>
 
-![Grid Horizontal](images/listview-features-horizontal-grid-layout.png)
+The ItemsSource of the control can be set in the code behind of the page:
 
-Figure 5: Grid Vertical Layout with 3 columns
+<snippets id='listview-layouts-gridlayout-source'/>
 
-	<telerikDataControls:RadListView x:Name="list">
-		<telerikDataControls:RadListView.LayoutDefinition>
-			<telerikListView:ListViewGridLayout SpanCount="3"/>
-		</telerikDataControls:RadListView.LayoutDefinition>
-	</telerikDataControls:RadListView>
+And here is the data class used in this example:
 
-![Grid Horizontal](images/listview-features-spancount-grid-layout.png)
+<snippets id='listview-layouts-gridlayout-model'/>
 
+This is the result:
+
+![Linear Vertical](images/listview-layouts-grid.png)
+
+## See Also

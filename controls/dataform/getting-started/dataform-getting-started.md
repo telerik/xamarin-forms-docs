@@ -18,6 +18,8 @@ This example will guide you through the steps needed to add a basic **RadDataFor
 
 If your app is setup, you are ready to add a **RadDataForm** control.
 
+![](../images/dataform-gettingstarted.png)
+
 Here is a sample class that will be the view model of the data form:
 
 <snippet id='dataform-gettingstarted-source'/>
@@ -37,10 +39,6 @@ After that you have to specify the editor types:
 <snippet id='dataform-gettingstarted-register-editors'/>
 
 And finally set the data form as content of your page.
-
-Here is the result:
-
-![](../images/dataform-gettingstarted.png)
 	
 ## See Also
 

@@ -27,7 +27,7 @@ This example will demonstrate how to use the **RadListViewLinearLayout**.
 
 Here is the list view definition in Xaml:
 
-<snippets id='listview-layouts-linearlayout-listview'/>
+<snippet id='listview-layouts-linearlayout-listview'/>
 
 Where:
 
@@ -35,11 +35,11 @@ Where:
 
 The ItemsSource of the control can be set in the code behind of the page:
 
-<snippets id='listview-layouts-linearlayout-source'/>
+<snippet id='listview-layouts-linearlayout-source'/>
 
 And here is the data class used in this example:
 
-<snippets id='listview-layouts-linearlayout-model'/>
+<snippet id='listview-layouts-linearlayout-model'/>
 
 This is the result:
 
@@ -59,7 +59,7 @@ This example will demonstrate how to use the **RadListViewGridLayout**.
 
 Here is the list view definition in Xaml:
 
-<snippets id='listview-layouts-gridlayout-listview'/>
+<snippet id='listview-layouts-gridlayout-listview'/>
 
 Where:
 
@@ -67,11 +67,11 @@ Where:
 
 The ItemsSource of the control can be set in the code behind of the page:
 
-<snippets id='listview-layouts-gridlayout-source'/>
+<snippet id='listview-layouts-gridlayout-source'/>
 
 And here is the data class used in this example:
 
-<snippets id='listview-layouts-gridlayout-model'/>
+<snippet id='listview-layouts-gridlayout-model'/>
 
 This is the result:
 

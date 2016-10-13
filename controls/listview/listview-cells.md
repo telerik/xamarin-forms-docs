@@ -65,3 +65,6 @@ You can define the list view in code like this:
 Finally, set the list view as content of your page.
 
 ## See Also
+
+- [ListView Layouts]({% slug listview-features-layouts %})
+- [Items Styling]({% slug listview-features-styling %})

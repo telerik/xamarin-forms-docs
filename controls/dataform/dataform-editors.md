@@ -153,11 +153,7 @@ DataFormRenderer available methods for override:
 
 				
 ## See Also
-- [Validation Attribute]({%slug dataform-annotations-validation%})
-- [Data Source Key Attribute]({%slug dataform-annotations-data-source-key%})
-- [Display Options Attribute]({%slug dataform-annotations-display-options%})
-- [Display Value Format Attribute]({%slug dataform-annotations-display-value-format%})
-- [Ignore Attribute]({%slug dataform-annotations-ignore%})
-- [Read Only Attribute]({%slug dataform-annotations-read-only%})
-- [Converter Attribute]({%slug dataform-annotations-converter%})
-- [Validate and commit]({%slug dataform-validate-and-commit%})
+
+- [DataForm Source]({% slug dataform-source %})
+- [DataForm Layouts]({% slug dataform-group-layouts %})
+- [Validate and Commit]({% slug dataform-validate-and-commit %})

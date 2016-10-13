@@ -37,10 +37,6 @@ The ItemsSource of the control can be set in the code behind of the page:
 
 <snippet id='listview-layouts-linearlayout-source'/>
 
-And here is the data class used in this example:
-
-<snippet id='listview-layouts-linearlayout-model'/>
-
 This is the result:
 
 ![Linear Vertical](images/listview-layouts-linear.png)
@@ -68,10 +64,6 @@ Where:
 The ItemsSource of the control can be set in the code behind of the page:
 
 <snippet id='listview-layouts-gridlayout-source'/>
-
-And here is the data class used in this example:
-
-<snippet id='listview-layouts-gridlayout-model'/>
 
 This is the result:
 

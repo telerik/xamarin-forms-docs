@@ -21,87 +21,98 @@ The values from the **EditorType** enumeration are interpreted differently by ea
 <table>
 	<tr>
 		<th>EditorType</th>
-		<th>Android native editor</th>
-		<th>iOS native editor</th>
-		<th>editor value type</th>
+		<th>Android<br/>native editor</th>
+		<th>iOS<br/>native editor</th>
+		<th>WinRT/UWP<br/>native editor</th>
+		<th>value type</th>
 	</tr>
 	<tr>
 		<td>SliderEditor</td>
 		<td>AndroidDataFormSeekBarEditor</td>
 		<td>TKDataFormSliderEditor</td>
+		<td>SliderCustomEditor</td>
 		<td>float</td>
 	</tr>
 	<tr>
 		<td>PickerEditor</td>
 		<td>DataFormSpinnerEditor</td>
 		<td>TKDataFormPickerViewEditor</td>
-        <td>*requires PropertyDataSourceProvider</td>
+		<td>ListEditor</td>
+		<td>**requires PropertyDataSourceProvider</td>
 	</tr>
 	<tr>
 		<td>TextEditor</td>
 		<td>DataFormTextEditor</td>
 		<td>TKDataFormTextFieldEditor</td>
+		<td>StringEditor</td>
 		<td>string</td>
 	</tr>
 	<tr>
 		<td>SegmentedEditor</td>
 		<td>DataFormSegmentedEditor</td>
 		<td>TKDataFormSegmentedEditor</td>
-		<td>*requires PropertyDataSourceProvider</td>
+		<td>SegmentedCustomEditor</td>
+		<td>**requires PropertyDataSourceProvider</td>
 	</tr>
 	<tr>
 		<td>NumberPickerEditor</td>
 		<td>DataFormNumberPickerEditor</td>
 		<td>TKDataFormStepperEditor</td>
+		<td>NumericEditor</td>
 		<td>double</td>
 	</tr>
     <tr>
 		<td>IntegerEditor</td>
 		<td>DataFormIntegerEditor</td>
 		<td>TKDataFormNumberEditor</td>
+		<td>*StringEditor</td>
 		<td>int</td>
 	</tr>
     <tr>
 		<td>DecimalEditor</td>
 		<td>DataFormDecimalEditor</td>
 		<td>TKDataFormDecimalEditor</td>
+		<td>*StringEditor</td>
 		<td>double</td>
 	</tr>
 	<tr>
 		<td>CheckBoxEditor</td>
 		<td>DataFormCheckBoxEditor</td>
-		<td>TKDataFormSwitchEditor instead</td>
+		<td>*TKDataFormSwitchEditor</td>
+		<td>BooleanEditor</td>
 		<td>bool</td>
 	</tr>
 	<tr>
 		<td>ToggleButtonEditor</td>
 		<td>DataFormToggleButtonEditor</td>
 		<td>TKDataFormSwitchEditor instead</td>
+		<td>*BooleanEditor</td>
 		<td>bool</td>
 	</tr>
     <tr>
 		<td>DateEditor</td>
 		<td>DataFormDateEditor</td>
 		<td>TKDataFormDatePickerEditor</td>
+		<td>DateEditor</td>
 		<td>DateTime</td>
 	</tr>
     <tr>
 		<td>TimeEditor</td>
 		<td>DataFormTimeEditor</td>
 		<td>TKDataFormTimePickerEditor</td>
+		<td>TimeEditor</td>
 		<td>DateTime</td>
 	</tr>
 	<tr>
 		<td>Custom</td>
-		<td>custom</td>
-		<td>custom</td>
-		<td>requires custom editors</td>
+		<td colspan="4">Specifies that custom editor control will be provided.</td>
 	</tr>
 </table>
- 
-\* **[PropertyDataSourceProvider]({%slug dataform-annotations-data-source-key%})**
 
-<!--Sometimes your property type will not be the same as the editor type, e.g. when you wish to edit integers with a NumberPicker editor. In this case you will have to use a **[converter]({%slug dataform-data-annotations%}#converterattribute)**.-->
+\* Some editors are not supported in all native platforms. In these cases we use the closest substitute.  
+\** **[PropertyDataSourceProvider]({%slug dataform-annotations-data-source-key%})**
+
+> Sometimes your property type will not be the same as the type supported by the editor, e.g. when you wish to edit integers with a NumberPicker editor. In this case you will have to use a **[converter]({%slug dataform-annotations-converter%})**.
 
 ## Custom Editors
 
@@ -142,11 +153,7 @@ DataFormRenderer available methods for override:
 
 				
 ## See Also
-- [Validation Attribute]({%slug dataform-annotations-validation%})
-- [Data Source Key Attribute]({%slug dataform-annotations-data-source-key%})
-- [Display Option Attribute]({%slug dataform-annotations-display-option%})
-- [Display Value Format Attribute]({%slug dataform-annotations-display-value-format%})
-- [Ignore Attribute]({%slug dataform-annotations-ignore%})
-- [Read Only Attribute]({%slug dataform-annotations-read-only%})
-- [Converter Attribute]({%slug dataform-annotations-converter%})
-- [Validate and commit]({%slug dataform-validate-and-commit%})
+
+- [DataForm Source]({% slug dataform-source %})
+- [DataForm Layouts]({% slug dataform-group-layouts %})
+- [Validate and Commit]({% slug dataform-validate-and-commit %})

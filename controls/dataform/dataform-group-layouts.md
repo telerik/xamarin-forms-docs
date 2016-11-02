@@ -16,7 +16,7 @@ RadDataForm supports different group layouts through the following properties:
 
 > If no groups are defined all editors are arranged in a default group.
 
-The information for editors arrangement is defined in the source class metadata with the [DisplayOptionsAttribute]({%slug dataform-annotations-display-option%}). Here are all **DisplayOptionsAttribute** properties that are interpreted by the layouts:
+The information for editors arrangement is defined in the source class metadata with the [DisplayOptionsAttribute]({%slug dataform-annotations-display-options%}). Here are all **DisplayOptionsAttribute** properties that are interpreted by the layouts:
 
 - **Position**: default value: 0
 - **ColumnPosition**: default value: 0
@@ -77,3 +77,9 @@ The following sample demonstrates how to use layout selector in data form:
 Here is the result:
 
 ![](images/dataform-layouts-selector.png)
+
+## See Also
+
+- [DataForm Source]({% slug dataform-source %})
+- [DataForm Editors]({% slug dataform-editors %})
+- [Validate and Commit]({% slug dataform-validate-and-commit %})

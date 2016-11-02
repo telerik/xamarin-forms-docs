@@ -1,116 +1,70 @@
 ---
-title: Cells	
-page_title: Cells
+title: Cell Types
+page_title: Cell Types
 position: 3
 slug: listview-cells
 ---
-## Overview
-Cells are non visual objects used to describe a template for creating a visual element inside each ListView item.
+# ListView Cell Types
+Cells are non visual objects used to describe a template for creating a visual element inside each ListView item. There are two types of cells:
 
-- **ListViewTextCell** - derives from Xamarin.Forms.**TextCell** and is meant to visualize text and optionally detail text rendered as second row inside ListView item. This is the default cell of the RadListView.
-- **ListViewTemplateCell** - derives from Xamarin.Forms.**ViewCell** and is used to present complex data set as RadListView.**ItemTemplate**.
+- **ListViewTextCell**: derives from Xamarin.Forms.**TextCell** and is meant to visualize text and optionally detail text rendered as second row inside list view item. This is the default cell of the RadListView.
+- **ListViewTemplateCell**: derives from Xamarin.Forms.**ViewCell** and is used to present complex data set as RadListView.**ItemTemplate**.
 
-### ListViewTextCell Example
+## ListViewTextCell Example
 
-#### XAML
+This example demonstrates how to create a list view with text cells, like this:
 
-	<telerikDataControls:RadListView x:Name="EventsList">
-	    <telerikDataControls:RadListView.ItemTemplate>
-	      <DataTemplate>
-	        <telerikListView:ListViewTextCell Text="{Binding Content}" TextColor="Red" Detail="{Binding EventDetais}" DetailColor="Green"/>
-	      </DataTemplate>
-	    </telerikDataControls:RadListView.ItemTemplate>
-  	</telerikDataControls:RadListView>
+![](images/listview-celltypes-textcell.png)
 
-Where the namespaces are defined like this:
+Let's create a view model that will be the source of the list view.
 
-             xmlns:telerikListView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
-             xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+<snippet id='listview-celltypes-textcell-viewmodel'/>
 
-#### C# 
+And here is the definition of the listview control:
 
-    public partial class StartPage : ContentPage
-    {
-        public StartPage()
-        {
-            InitializeComponent();
+<snippet id='listview-celltypes-textcell-listview-xaml'/>
+<snippet id='listview-celltypes-textcell-listview-csharp'/>
 
-            this.EventsList.ItemsSource = this.GenerateSource();
-        }
+You also have to add the following namespaces:
 
-        private System.Collections.IEnumerable GenerateSource()
-        {
-            var results = new List<Event>();
+<snippet id='xmlns-teleriklistview'/>
+<snippet id='ns-teleriklistview'/>
 
-            results.Add(new Event() { Content = "Content of the item", EventDetais = "details goes here", Day = "Today" });
-            results.Add(new Event() { Content = "This also happens today", EventDetais = "no reason why", Day = "Today" });
-            results.Add(new Event() { Content = "More events today", EventDetais = "no details for them", Day = "Today" });
-            results.Add(new Event() { Content = "Go shopping after 19:00", EventDetais = "at the centre mall", Day = "Today" });
-            results.Add(new Event() { Content = "You are now free to do whathever", EventDetais = "partyyy :)", Day = "Today" });
+Finally, set the list view as content of your page.
 
-            results.Add(new Event() { Content = "For tommorow", EventDetais = "go to see the doc", Day = "Tommorow" });
-            results.Add(new Event() { Content = "It is a free day", EventDetais = "(the rest of the day)", Day = "Tommorow" });
-            results.Add(new Event() { Content = "Go have some fun", EventDetais = ":)", Day = "Tommorow" });
-            results.Add(new Event() { Content = "Party", EventDetais = "", Day = "Tommorow" });
+## ListViewTemplateCell Example
 
-            return results;
-        }
-    }
+This example demonstrates how to create a list view with templated cells, like this:
 
-### ListViewTemplateCell Example
+![](images/listview-celltypes-templatecell.png)
 
-#### XAML
+Let's create a view model that will be the source of the list view.
 
-  	<telerikDataControls:RadListView x:Name="EventsList">
-	    <telerikDataControls:RadListView.ItemTemplate>
-	      <DataTemplate>
-	        <telerikListView:ListViewTemplateCell>
-	          <telerikListView:ListViewTemplateCell.View>
-	            <Grid Padding="16, 0, 16, 0">
-	              <Grid.RowDefinitions>
-	                <RowDefinition />
-	                <RowDefinition />
-	              </Grid.RowDefinitions>
-	              <Label Text="{Binding Content}" FontSize="Large"/>
-	              <Label Text="{Binding EventDetais}" FontSize="Small" HorizontalOptions="End" Grid.Row="1"/>
-	            </Grid>
-	          </telerikListView:ListViewTemplateCell.View>
-	        </telerikListView:ListViewTemplateCell>
-	      </DataTemplate>
-	    </telerikDataControls:RadListView.ItemTemplate>
-  	</telerikDataControls:RadListView>
+<snippet id='listview-celltypes-templatecell-viewmodel'/>
 
-Where the namespaces are defined like this:
+### Definition in Xaml
 
-             xmlns:telerikListView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
-             xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+You can define the list view in Xaml like this:
 
-#### C# 
+<snippet id='listview-celltypes-templatecell-listview-xaml'/>
 
- 	public partial class StartPage : ContentPage
-    {
-        public StartPage()
-        {
-            InitializeComponent();
+Where:
 
-            this.EventsList.ItemsSource = this.GenerateSource();
-        }
+<snippet id='xmlns-teleriklistview'/>
 
-        private System.Collections.IEnumerable GenerateSource()
-        {
-            var results = new List<Event>();
+### Definition in code behind
 
-            results.Add(new Event() { Content = "Content of the item", EventDetais = "details goes here", Day = "Today" });
-            results.Add(new Event() { Content = "This also happens today", EventDetais = "no reason why", Day = "Today" });
-            results.Add(new Event() { Content = "More events today", EventDetais = "no details for them", Day = "Today" });
-            results.Add(new Event() { Content = "Go shopping after 19:00", EventDetais = "at the centre mall", Day = "Today" });
-            results.Add(new Event() { Content = "You are now free to do whathever", EventDetais = "partyyy :)", Day = "Today" });
+For clarity, let's build the template of the list view cell in a separate method:
 
-            results.Add(new Event() { Content = "For tommorow", EventDetais = "go to see the doc", Day = "Tommorow" });
-            results.Add(new Event() { Content = "It is a free day", EventDetais = "(the rest of the day)", Day = "Tommorow" });
-            results.Add(new Event() { Content = "Go have some fun", EventDetais = ":)", Day = "Tommorow" });
-            results.Add(new Event() { Content = "Party", EventDetais = "", Day = "Tommorow" });
+<snippet id='listview-celltypes-templatecell-cellcontent'/>
 
-            return results;
-        }
-    }
+You can define the list view in code like this:
+
+<snippet id='listview-celltypes-templatecell-listview-code'/>
+
+Finally, set the list view as content of your page.
+
+## See Also
+
+- [ListView Layouts]({% slug listview-features-layouts %})
+- [Items Styling]({% slug listview-features-styling %})

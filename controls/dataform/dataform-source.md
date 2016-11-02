@@ -11,7 +11,7 @@ slug: data-form-data-source
 
 One way to set data form source is to use a class and decorate its properties with data annotations. These data annotations are used to build metadata for each property used by the data form to customize its UI. Here are listed all available data annotations:
 
-- [Display Option Attribute]({%slug dataform-annotations-display-option%})
+- [Display Options Attribute]({%slug dataform-annotations-display-options%})
 - [Ignore Attribute]({%slug dataform-annotations-ignore%})
 - [Read Only Attribute]({%slug dataform-annotations-read-only%})
 - [Data Source Key Attribute]({%slug dataform-annotations-data-source-key%})
@@ -55,3 +55,9 @@ You also need a custom entity property class that is responsible for committing 
 Here is the data form setup:
 
 <snippet id='dataform-source-customsource-dataform-setup'/>
+
+## See Also
+
+- [DataForm Editors]({% slug dataform-editors %})
+- [DataForm Layouts]({% slug dataform-group-layouts %})
+- [Validate and Commit]({% slug dataform-validate-and-commit %})

@@ -1,14 +1,14 @@
 ---
-title: Visual Studio 2017 Support
-page_title: Visual Studio 2017 Support
+title: Manual Installation for Visual Studio
+page_title: Manual Installation for Visual Studio
 slug: vs2017-support
 position: 4
-previous_url: devtools/xamarin/installation-and-deployment/vs2017-support
+previous_url: devtools/xamarin/installation-and-deployment/manual-installation
 ---
 
 ## How to manually install Telerik UI for Xamarin
 
-**Visual Studio 15 RC** is already here and we are quite excited about the improvements it gives and the benefits it will generate for everyone. I am glad to say that we already tested **UI for Xamarin** against this latest version of Visual Studio and we are working without any issues.
+In case you do not want to or can't use the MSI for some reason. UI for Xamarin offers means for manual installation. This will allow you to enable the Telerik Project Template as well as the Project Wizard in Visual Studio.
 
 ![Visual Studio 2017 support](../images/telerik-ui-for-xamarin-vs2017.png)
 
@@ -56,12 +56,6 @@ Another way to correctly reference the binaries is to open each of the created *
     <BinariesFolder>C:\TelerikManualInstallation\Binaries</BinariesFolder>
 </PropertyGroup>
 ```
-### Registry update
-
-The second approach for fixing the references is to manually create the **RegistryKey** that we rely on. That registry should exist in: **HKEY\_LOCAL\_MACHINE/SOFTWARE/WOW6432Node/Telerik/UIForXamarin/[*release version*]/**. The registry itself should be a string value (*REG_SZ*) type. With **Name** “*InstallDir*” and **Data** “[*path of the install dir*]” e.g. “*C:\\TelerikManualInstallation\\*”. Once this registry is added, the **Project Wizard** will use it and will create projects with correct references. The benefit of this approach is that as long as the binaries are present in the mentioned folder, the created projects will have correct references and the additional steps should be made once.
-
-![Telerik RegistryKey](../images/visual-studio-2017-registry.png)
-
 There you go, you can now create Project Wizard-supported projects with UI for Xamarin in Visual Studio 15. Happy coding!
 
 

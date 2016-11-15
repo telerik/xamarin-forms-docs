@@ -6,7 +6,7 @@ position: 4
 previous_url: devtools/xamarin/installation-and-deployment/vs2017-support
 ---
 
-# How to manually install Telerik UI for Xamarin
+## How to manually install Telerik UI for Xamarin
 
 
 Visual Studio 15 RC is already here and we are quite excited about the improvements it gives and the benefits it will generate for everyone. I am glad to say that we already tested UI for Xamarin against this latest version of Visual Studio and we are working without any issues.
@@ -32,14 +32,14 @@ First, you need to log into your Telerik account and download the latest ZIP pac
 These steps will allow you to create projects using the Project Wizard. However, the projects will not build out of the box due to incorrect references.
 
 
-# What breaks the wizard?
+## What breaks the wizard?
 
 
 When our components are installed using the MSI we know where the binaries are copied. Also we create a special RegistryKey during the installation. Later on, when customers use the Project Wizard to create new solution, we rely on that particular key to create all projects with correct references to our binaries. When this registry key does not exist all references inside the newly created projects will be incorrect.
 
-# How to fix the projects? 
+## How to fix the projects? 
 
-## Manual reference update
+### Manual reference update
 
 
 One possible way to fix the issue is to manually update the references by deleting the existing ones and creating new ones pointing to the folder of the manual installation. This approach will resolve the binaries from the new folder and the references will be correct. 
@@ -68,7 +68,7 @@ Another way to correctly reference the binaries is to open each of the created *
 </PropertyGroup>
 ```
 
-## Registry update
+### Registry update
 
 
 The second approach for fixing the references is to manually create the **RegistryKey** that we rely on. That registry should exist in: **HKEY\_LOCAL\_MACHINE/SOFTWARE/WOW6432Node/Telerik/UIForXamarin/[release version]/**. The registry itself should be a string value (*REG_SZ*) type. With **Name** “*InstallDir*” and Data “[*path of the install dir*]” e.g. “*C:\\TelerikManualInstallation\\*”. Once this registry is added, the *Project Wizard* will use it and will create projects with correct references. The benefit of this approach is that as long as the binaries are present in the mentioned folder, the created projects will have correct references and the additional steps should be made once.

@@ -4,20 +4,19 @@ page_title: Manual Installation for Visual Studio
 slug: manual-installation-support
 position: 4
 previous_url: devtools/xamarin/installation-and-deployment/manual-installation
-published:false
 ---
 
 ## How to manually install Telerik UI for Xamarin
 
 In case you do not want to or can't use the MSI for some reason. UI for Xamarin offers means for manual installation. This will allow you to enable the Telerik Project Template as well as the Project Wizard in Visual Studio.
 
-![Visual Studio 2017 support](../images/telerik-ui-for-xamarin-vs2017.png)
+![Visual Studio](../images/telerik-ui-for-xamarin.png)
 
-Some additional work is required, however, to finalize the installers that will provide smooth out-of-the-box integration experience between UI for Xamarin and Visual Studio RC 15, in the face of our **Project Template** and **Project Wizard**.
+Some additional work is required, however, to finalize the installers that will provide smooth out-of-the-box integration experience between UI for Xamarin and Visual Studio, in the face of our **Project Template** and **Project Wizard**.
 
-![Project Wizard in Visual Studio 2017](../images/telrik-project-wizard-vs2017.png)
+![Project Wizard in Visual Studio](../images/telrik-project-wizard.png)
 
-If you are eager to try **UI for Xamarin** on Visual Studio 15 and get the integration goodies set up, there’s still a relatively easy and quick and easy way to install them manually. This approach will also find its place in the cases where, for one reason or another, our organization does not allow usage of downloaded MSI installers. Here is the general flow when manual installation is used.
+If you are eager to try **UI for Xamarin** on Visual Studio and get the integration goodies set up, there’s still a relatively easy and quick and easy way to install them manually. This approach will also find its place in the cases where, for one reason or another, our organization does not allow usage of downloaded MSI installers. Here is the general flow when manual installation is used.
 
 First, you need to log into your Telerik account and download the latest ZIP package. Unzip its content to any folder (for the purpose of this article *C:\\TelerikManualInstallation* will be used) and manually install the **Project Wizard** by triggering the **ProjectTemplateVS14.VSIX.vsix** file.
 
@@ -57,8 +56,6 @@ Another way to correctly reference the binaries is to open each of the created *
     <BinariesFolder>C:\TelerikManualInstallation\Binaries</BinariesFolder>
 </PropertyGroup>
 ```
-There you go, you can now create Project Wizard-supported projects with UI for Xamarin in Visual Studio 15. Happy coding!
-
 
 ## See Also
 - [System Requirements]({%slug system-requirements%})

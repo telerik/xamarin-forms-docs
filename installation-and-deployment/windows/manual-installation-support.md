@@ -1,7 +1,7 @@
 ---
 title: Manual Installation for Visual Studio
 page_title: Manual Installation for Visual Studio
-slug: vs2017-support
+slug: manual-installation-support
 position: 4
 previous_url: devtools/xamarin/installation-and-deployment/manual-installation
 ---

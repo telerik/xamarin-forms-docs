@@ -127,7 +127,7 @@ When a Custom editor type is registered, specific renderer methods will be calle
 	    ...
 	}
 
-> For more detailed example you can take a look at the [Further Customization]({%slug dataform-further-customization%}) article.
+> For more detailed example you can take a look at the [Further Customization]({%slug dataform-styling-editors%}) article.
 > 
 > The DataFormRenderer works differently on each platform - see the specific methods available for override below.
 

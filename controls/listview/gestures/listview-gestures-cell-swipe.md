@@ -102,4 +102,4 @@ The BindingContext of the swipe content is the data item. This could be used to 
 - [ListView Cell Types]({% slug listview-cells %})
 - [ListView Layouts]({% slug listview-features-layouts %})
 - [Pull to Refresh]({% slug listview-features-pull-to-refresh %})
-- [Reorder Items]({% slug listview-features-items-reorder %})
+- [Reorder Items]({% slug listview-features-reorder-items %})

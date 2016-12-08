@@ -180,4 +180,4 @@ Telerik.XamarinForms.PrimitivesRenderer.WinRT.WindowsPhone
 ## See Also
 
 - [SideDrawer Getting Started]({% slug sidedrawer-getting-started %})
-- [Register SideDrawer Renderer]({% slug sidedrawer-getting-started-register-renderer %})
+- [Register SideDrawer Renderer]({% slug sidedrawer-getting-started--register-renderer %})

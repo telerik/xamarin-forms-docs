@@ -14,6 +14,8 @@ In order to set up the gauge you need to set up the elements of the gauge you wa
 >- [Setup on Windows]({%slug getting-started-windows%})
 >- [Setup on Mac]({%slug getting-started-mac%})
 
+> **RadRadialGauge** is a rendered via the SkiaSharp graphics library so you need to install the SkiaSharp.Forms.Views nuget.
+
 ## Example
 
 Below you can see an example of a **RadRadialGauge** with a linear axis, two indicators and three gauge ranges.

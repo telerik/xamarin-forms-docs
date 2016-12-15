@@ -98,6 +98,15 @@ navigation:
         position: 10
         ## End DataForm Sub-Folders
     ## End DataForm
+    ## Gauge
+    controls/gauge:
+        title: "Gauge"
+        ## Gauge Sub-Folders
+    controls/gauge/getting-started:
+        title: "Getting Started"
+        position: 1
+        ## End Gauge Sub-Folders
+    ## End Gauge
     ## ListView
     controls/listview:
         title: "ListView"

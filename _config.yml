@@ -25,6 +25,15 @@ navigation:
         position: 3
 ## End Intallation Sub-Folders
 ## Controls Sub-Folders
+    ## AutoComplete
+    controls/autocomplete:
+        title: "Autocomplete (Beta)"
+        ## AutoComplete Sub-Folders
+    controls/autocomplete/getting-started:
+        title: "Getting Started"
+        position: 1
+        ## End AutoComplete Sub-Folders
+    ## End AutoComplete
     ## Calendar
     controls/calendar:
         title: "Calendar"

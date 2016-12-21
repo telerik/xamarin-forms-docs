@@ -12,3 +12,5 @@ REM call npm install
 node . --root=%SOURCEDIR% --docsroot=Output --sourceext=".cs|.xaml" --snippettitles="C#|XAML"
 
 cd ..
+
+REM rd /s /q markdown-snippet-injector

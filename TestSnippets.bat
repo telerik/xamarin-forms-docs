@@ -1,4 +1,4 @@
-@echo off
+@echo on
 SET SOURCEDIR=C:\work\GitHub\Xamarin-forms\Examples\XamarinForms\SDKBrowser
 REM rd /s /q
 REM robocopy ../Source Output /s /e
@@ -13,4 +13,4 @@ node . --root=%SOURCEDIR% --docsroot=Output --sourceext=".cs|.xaml" --snippettit
 
 cd ..
 
-REM rd /s /q markdown-snippet-injector
+

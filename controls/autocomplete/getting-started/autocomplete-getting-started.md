@@ -19,12 +19,17 @@ This example will guide you through the steps needed to add a basic **RadAutoCom
 
 If your app is setup, you are ready to add a **RadAutoComplete** control as content of your page.
 
-<snippet id='autoComplete-gettingstarted-xaml'/>
-<snippet id='autoComplete-gettingstarted-xaml-codeBehind'/>
+<snippet id='autocomplete-gettingstarted-xaml'/>
+<snippet id='autocomplete-gettingstarted-xaml-codebehind'/>
+
+test
+
+<snippet id='gauge-getting-started-xaml'/>
+<snippet id='gauge-getting-started-csharp'/>
 
 Or you can do this entirely in code like this:
 
-<snippet id='autoComplete-gettingstarted-csharp'/>
+<snippet id='autocomplete-gettingstarted-csharp'/>
 
 In addition to this you need to add the following namespace:
 

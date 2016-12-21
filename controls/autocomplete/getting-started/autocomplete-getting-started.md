@@ -22,11 +22,6 @@ If your app is setup, you are ready to add a **RadAutoComplete** control as cont
 <snippet id='autocomplete-gettingstarted-xaml'/>
 <snippet id='autocomplete-gettingstarted-xaml-codebehind'/>
 
-test
-
-<snippet id='gauge-getting-started-xaml'/>
-<snippet id='gauge-getting-started-csharp'/>
-
 Or you can do this entirely in code like this:
 
 <snippet id='autocomplete-gettingstarted-csharp'/>

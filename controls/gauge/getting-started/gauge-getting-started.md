@@ -14,7 +14,7 @@ In order to set up the gauge you need to set up the elements of the gauge you wa
 >- [Setup on Windows]({%slug getting-started-windows%})
 >- [Setup on Mac]({%slug getting-started-mac%})
 
-> **RadRadialGauge** is rendered via the SkiaSharp graphics library so you need to install [SkiaSharp.Forms.Views](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.55.0).
+> **RadRadialGauge** is rendered via the SkiaSharp graphics library so you need to install [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.55.0).
 
 ## Example
 

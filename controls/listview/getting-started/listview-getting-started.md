@@ -16,7 +16,7 @@ This example will guide you through the steps needed to add a basic **RadListVie
 
 ## Example
 
-If your app is setup, you are ready to add a **RadDataForm** control.
+If your app is setup, you are ready to add a **RadListView** control.
 
 First, lets create a simple data and view model classes:
 

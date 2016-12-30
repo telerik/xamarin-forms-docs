@@ -32,6 +32,9 @@ navigation:
     controls/autocomplete/getting-started:
         title: "Getting Started"
         position: 1
+    controls/autocomplete/features:
+        title: "Features"
+        position: 2
         ## End AutoComplete Sub-Folders
     ## End AutoComplete
     ## Calendar

@@ -19,15 +19,17 @@ Setting this property will force the **RadAutoComplete** component to use a defa
 
 #### Example
 
-##### Business Object
+##### Defining Business Object
 
 <snippet id='autocomplete-data-binding-business-object'/>
 
-##### RadAutoComplete setting
+##### Defining RadAutoComplete
 
 <snippet id='autocomplete-data-binding-xaml'/>
 
 ### ImagePath
+
+This property is optional. It can be used to skip defining custom SuggestionItemTemplate.
 
 - **ImagePath** (string): Gets or sets the name of the property holding a path to an image.
 
@@ -37,3 +39,4 @@ Setting this property will force the **RadAutoComplete** component to use a defa
 
 # See Also
 
+- [SuggestionItem Template]({% slug  autocomplete-suggestion-item-template %})

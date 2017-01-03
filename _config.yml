@@ -143,6 +143,10 @@ navigation:
         position: 5
         ## End SideDrawer Sub-Folders
     ## End SideDrawer
+    ## ZipLibrary
+    controls/ziplibrary:
+        title: "ZipLibrary"
+    ## End ZipLibrary
 ## End Controls Sub-Folders
 
 ## The application virtual path

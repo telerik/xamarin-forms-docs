@@ -147,6 +147,10 @@ navigation:
     controls/ziplibrary:
         title: "ZipLibrary"
     ## End ZipLibrary
+    ## SpreadStreamProcessing
+    controls/spreadstreamprocessing:
+        title: "SpreadStreamProcessing"
+    ## End SpreadStreamProcessing
 ## End Controls Sub-Folders
 
 ## The application virtual path

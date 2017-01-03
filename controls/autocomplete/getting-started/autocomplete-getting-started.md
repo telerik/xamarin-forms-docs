@@ -10,7 +10,7 @@ slug: autocomplete-getting-started
 This example will guide you through the steps needed to add a basic **RadAutoComplete** control in your application.
 
 >Before you proceed, please, take a look at these articles and follow the instructions to setup your app:
-
+>
 >- [Setup on Windows]({%slug getting-started-windows%})
 >- [Setup on Mac]({%slug getting-started-mac%})
 
@@ -19,13 +19,12 @@ This example will guide you through the steps needed to add a basic **RadAutoCom
 
 If your app is setup, you are ready to add a **RadAutoComplete** control as content of your page.
 
-<snippet id='autoComplete-gettingstarted-xaml'/>
+<snippet id='autocomplete-gettingstarted-xaml'/>
+<snippet id='autocomplete-gettingstarted-xaml-codebehind'/>
 
-<snippet id='autoComplete-gettingstarted-xaml-codeBehind'/>
+Or you can do this entirely in code like this:
 
-Or you can do this entirely in code like this
-
-<snippet id='autoComplete-gettingstarted-csharp'/>
+<snippet id='autocomplete-gettingstarted-csharp'/>
 
 In addition to this you need to add the following namespace:
 

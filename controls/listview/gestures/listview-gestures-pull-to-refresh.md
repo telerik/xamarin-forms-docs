@@ -45,4 +45,4 @@ This is how the refresh indicator looks like:
 - [ListView Cell Types]({% slug listview-cells %})
 - [ListView Layouts]({% slug listview-features-layouts %})
 - [Cell Swipe]({% slug listview-features-cell-swipe %})
-- [Reorder Items]({% slug listview-features-items-reorder %})
+- [Reorder Items]({% slug listview-features-reorder-items %})

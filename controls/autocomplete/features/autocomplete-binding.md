@@ -37,6 +37,10 @@ This property is optional. It can be used to skip defining custom SuggestionItem
 
 <snippet id='autocomplete-default-suggestion-item-template'/>
 
+Here is how the default template look in the different platforms:
+
+![Default template](../images/autocomplete-default-template.png "Default template")
+
 # See Also
 
 - [SuggestionItem Template]({% slug  autocomplete-suggestion-item-template %})

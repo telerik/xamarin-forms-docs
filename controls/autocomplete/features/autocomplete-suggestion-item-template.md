@@ -14,3 +14,7 @@ Whenever the default templates does not fit a particular scenario customers can 
 #### Example
 
 <snippet id='autocomplete-suggestion-item-template'/>
+
+Here is how the customized Item template looks like:
+
+![Custom template](../images/autocomplete-custom-item-template.png "Custom template")

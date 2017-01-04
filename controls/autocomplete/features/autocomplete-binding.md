@@ -23,9 +23,14 @@ Setting this property will force the **RadAutoComplete** component to use a defa
 
 <snippet id='autocomplete-data-binding-business-object'/>
 
+##### Creating ViewModel
+
+<snippet id='autocomplete-viewmodel'/>
+
 ##### Defining RadAutoComplete
 
 <snippet id='autocomplete-data-binding-xaml'/>
+<snippet id='autocomplete-data-binding-codebehind'/>
 
 ### ImagePath
 
@@ -36,6 +41,7 @@ This property is optional. It can be used to skip defining custom SuggestionItem
 #### Example
 
 <snippet id='autocomplete-default-suggestion-item-template'/>
+<snippet id='autocomplete-data-binding-codebehind'/>
 
 Here is how the default template look in the different platforms:
 

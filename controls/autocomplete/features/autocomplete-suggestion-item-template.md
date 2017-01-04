@@ -13,8 +13,23 @@ Whenever the default templates does not fit a particular scenario customers can 
 
 #### Example
 
+##### Defining Business Object
+
+<snippet id='autocomplete-data-binding-business-object'/>
+
+##### Creating ViewModel
+
+<snippet id='autocomplete-viewmodel'/>
+
+##### Defining RadAutoComplete
+
 <snippet id='autocomplete-suggestion-item-template'/>
+<snippet id='autocomplete-data-binding-codebehind'/>
 
 Here is how the customized Item template looks like:
 
 ![Custom template](../images/autocomplete-custom-item-template.png "Custom template")
+
+# See Also
+
+- [Data Binding]({% slug  autocomplete-binding %})

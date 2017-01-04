@@ -43,7 +43,7 @@ This property is optional. It can be used to skip defining custom SuggestionItem
 <snippet id='autocomplete-default-suggestion-item-template'/>
 <snippet id='autocomplete-data-binding-codebehind'/>
 
-Here is how the default template look in the different platforms:
+Here is how the default template looks in the different platforms:
 
 ![Default template](../images/autocomplete-default-template.png "Default template")
 

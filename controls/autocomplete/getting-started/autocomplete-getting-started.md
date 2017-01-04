@@ -20,11 +20,15 @@ This example will guide you through the steps needed to add a basic **RadAutoCom
 If your app is setup, you are ready to add a **RadAutoComplete** control as content of your page.
 
 <snippet id='autocomplete-gettingstarted-xaml'/>
-<snippet id='autocomplete-gettingstarted-xaml-codebehind'/>
+<snippet id='autocomplete-gettingstarted-csharp'/>
+
+Here is how the ItemsSouce can be set:
+
+<snippet id='autocomplete-gettingstarted-items-source'/>
 
 Or you can do this entirely in code like this:
 
-<snippet id='autocomplete-gettingstarted-csharp'/>
+<snippet id='autocomplete-gettingstarted-code'/>
 
 In addition to this you need to add the following namespace:
 

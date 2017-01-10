@@ -19,7 +19,7 @@ Whenever the default templates does not fit a particular scenario customers can 
 
 ##### Creating ViewModel
 
-<snippet id='autocomplete-viewmodel'/>
+<snippet id='autocomplete-suggestion-item-template-viewmodel'/>
 
 ##### Defining RadAutoComplete
 

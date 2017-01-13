@@ -7,13 +7,40 @@ slug: calendar-styling-cell
 
 ## Cell Styling
  
-The Calendar exposes a property which enables you to control the way the calendar cells are rendered. This article describes the APIs used to customize the look and feel of the calendar cells.
+This article describes the APIs used to customize the look of the calendar cells. The RadCalendar component exposes a property which enables you to provide a custom style for each cell.
 
 - **SetStyleForCell** (Func&lt;CalendarCell, CalendarCellStyle&gt;): This property should be assigned to a method that returns a CalendarCellStyle object. The method will be called for each calendar cell and the returned style will be applied. If the return value is null, the default style of the cell will be used.
  
-The only parameter passed to the method assigned to the **SetStyleForCell** property is an object of CalendarCell type which helps identify the cell for which a CalendarCellStyle should be returned. The CalendarCell object contains a Type property of the enum type CalendarCellType which value can be Date, WeekNumber or DayName.
+The only parameter passed to this method is an object of type CalendarCell which helps to identify the cell. The CalendarCell is the base class for all calendar cells and it has the following properties:
+
+**CalendarCell**
+
+- **Text** (string): Gets the text displayed in the cell.
+- **Type** (CalendarCellType): Gets the type of the cell.
+
+There are several other cells which are delivered from the **CalendarCell**:
+
+**CalendarDateCell**
+
+- **IsEnabled** (bool): Gets a value that specifies whether the cell is enabled (inside the calendar MinDate and MaxDate range).
+- **IsSelected** (bool): Gets a value that specifies whether the cell is currently selected.
+- **Date** (DateTime): Gets the date that corresponds to the cell.
+
+>**Type**: The only allowed type of CalendarDateCell is `Date`.
+
+**CalendarDayCell**
+
+- **IsFromCurrentMonth** (bool): Gets a value that specifies whether the cell is from the current month in month view.
+- **IsToday** (bool): Gets a value that specifies whether the cell date is today.
+
+>**Type**: The only allowed type of CalendarDayCell is `Date`.
+
+**CalendarTextCell**
+
+>**Type**: The only allowed types of CalendarTextCell are `WeekNumber` and `DayName`.
+
  
-Here are all properties defined in the the **CalendarCellStyle** class:
+Here are all properties defined in the **CalendarCellStyle** class:
 
  - **BackgroundColor** (Color)
  - **BorderColor** (Color)

@@ -26,41 +26,11 @@ Here are all properties defined in the the **CalendarCellStyle** class:
 
 This example demonstrates how you can change the style of the cells which type is DayName and the cell containing a specific date:
 
-    var calendar = new RadCalendar();
-    calendar.SetStyleForCell = this.EvaluateCellStyle;
+<snippet id='calendar-features-cellstyling-setstyleforcell'/>
 
 And this is the method:
 
-    private CalendarCellStyle EvaluateCellStyle(CalendarCell cell)
-    {
-        if (cell.Type == CalendarCellType.DayName)
-        {
-            return new CalendarCellStyle
-            {
-                BackgroundColor = Color.White,
-                ForegroundColor = Color.FromRgb(163, 118, 222),
-                FontSize = 15,                   
-                FontWeight = FontWeight.Bold
-            };
-        }
-
-    
-        var dayCell = cell as CalendarDayCell;
-        if(dayCell != null && dayCell.Date.Date == new DateTime(2015, 3, 14))
-        {
-            return new CalendarCellStyle
-            {
-                BackgroundColor = Color.White,
-                ForegroundColor = Color.FromRgb(218, 112, 214),
-                FontSize = 20,
-                FontWeight = FontWeight.Bold,
-                BorderColor = Color.FromRgb(218, 112, 214),
-                BorderThickness = 3
-            }; 
-        }
-    
-        return null;
-    }
+<snippet id='calendar-features-cellstyling-setstyleforcell'/>
 
 Here is the result:
 

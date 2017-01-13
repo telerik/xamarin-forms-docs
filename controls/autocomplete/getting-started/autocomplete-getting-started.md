@@ -19,20 +19,20 @@ This example will guide you through the steps needed to add a basic **RadAutoCom
 
 If your app is setup, you are ready to add a **RadAutoComplete** control as content of your page.
 
-<snippet id='autocomplete-gettingstarted-xaml'/>
-<snippet id='autocomplete-gettingstarted-xaml-codebehind'/>
-
-Or you can do this entirely in code like this:
-
-<snippet id='autocomplete-gettingstarted-csharp'/>
+<snippet id='autocomplete-getting-started-xaml'/>
+<snippet id='autocomplete-getting-started-csharp'/>
 
 In addition to this you need to add the following namespace:
 
 <snippet id='xmlns-telerikinput'/>
 <snippet id='ns-telerikinput'/>
 
+You also have to provide an items source for the suggestions list:
+
+<snippet id='autocomplete-getting-started-items-source'/>
+
 Finally, set the AutoComplete as content of your page.
 
 Here is the result:
 
-![Basic RadCalendar Example](../images/autoComplete-gettingstarted.png "Basic RadAutoComplete")
+![Basic RadCalendar Example](../images/autocomplete-getting-started.png "Basic RadAutoComplete")

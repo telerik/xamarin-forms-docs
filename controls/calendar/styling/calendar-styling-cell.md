@@ -57,7 +57,7 @@ This example demonstrates how you can change the style of the cells which type i
 
 And this is the method:
 
-<snippet id='calendar-features-cellstyling-setstyleforcell'/>
+<snippet id='calendar-features-cellstyling-evaluatecellstyle'/>
 
 Here is the result:
 

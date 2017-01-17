@@ -7,7 +7,7 @@ slug: gauge-axis
 
 # Gauge Axis
 
-The axis is a gauge element that is used to control everything related to the display of the axis. This includes ticks, labels, appearance and axisrange. 
+The axis is a gauge element that is used to control everything related to the display of the axis. This includes ticks, labels, appearance and axis range. 
 
 ## Namespaces
 
@@ -24,7 +24,7 @@ Presently, the axis does not have an auto-range mechanism so it is mandatory tha
 
 ## Appearance
 
-You can control the stroke of the axis line and ticks via the Stroke property. If you need to have a different color for the ticks you need to set the **TickStroke** property. Similarly, setting the **StrokeThickness** affects both the axis line and ticks. If you need ticks with a different stroke thickness you need to set the **TickThickness** property.
+You can control the stroke of the axis line and ticks via the **Stroke** property. If you need to have a different color for the ticks you need to set the **TickStroke** property. Similarly, setting the **StrokeThickness** affects both the axis line and ticks. If you need ticks with a different stroke thickness you need to set the **TickThickness** property.
 
 <snippet id='gauge-axis-appearance'/>
 

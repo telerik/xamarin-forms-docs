@@ -7,7 +7,7 @@ slug: gauge-axis
 
 # Gauge Axis
 
-The axis is a gauge element that is used to control everything related to the display of the axis. This includes ticks, labels, appearance and range. 
+The axis is a gauge element that is used to control everything related to the display of the axis. This includes ticks, labels, appearance and axisrange. 
 
 ## Namespaces
 
@@ -28,6 +28,8 @@ You can control the stroke of the axis line and ticks via the Stroke property. I
 
 <snippet id='gauge-axis-appearance'/>
 
+![Gauge example](../images/gauge-axis-appearance.png)
+
 ## Font Style
 
 You can control the appearance of the labels via the **FontSize**, **FontFamily** and **FontAttributes** properties.
@@ -46,11 +48,15 @@ You can control the numeric format of the content of the labels. The default lab
 
 <snippet id='gauge-axis-label-format'/>
 
+![Gauge example](../images/gauge-axis-label-format.png)
+
 ## Label And Tick Position
 
 In the radial gauge, the gauge elements can be positioned on the inside or on the outside of the axis line. Some of the elements, such as the ticks, can also be centered on the axis line. This is controled by the Position property of the concrete element.
 
 <snippet id='gauge-axis-label-and-tick-position'/>
+
+![Gauge example](../images/gauge-axis-label-and-tick-position.png)
 
 ## Offset And Length
 

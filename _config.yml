@@ -117,6 +117,9 @@ navigation:
     controls/gauge/getting-started:
         title: "Getting Started"
         position: 1
+    controls/gauge/features:
+        title: "Features"
+        position: 2
         ## End Gauge Sub-Folders
     ## End Gauge
     ## ListView

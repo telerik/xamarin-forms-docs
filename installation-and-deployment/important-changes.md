@@ -12,77 +12,64 @@ slug: important-changes
 
 With the official release of **R1 2017** we have introduces some changes in the RadDataForm control that affect the entity property and metadata. Now the metadata can be accessed through the entity property and all methods that previously had metadata as parameter use the entity propertyn instead. The changes are listed below.
 
-#### Assembly: Telerik.XamarinForms.Input
-
-- **DataForm.EntityProperty** class is now interface: **DataForm.IEntityProperty**.
-
-#### Assembly: Telerik.XamarinForms.InputRenderer.Android
-
-- **DataForm.AndroidEntityProperty** has updated constructor:
- - ctor(XF.Input.DataForm.IEntityProperty, Java.Lang.Class, XF.InputRenderer.Android.DataForm.AndroidEntity)
-- Changed the signature of the following methods in **DataFormRenderer**:
- - **UpdateEditor**(NativeViz.EntityPropertyEditor, XF.Input.DataForm.EntityPropertyMetadata) -> (NativeViz.EntityPropertyEditor, XF.Input.DataForm.IEntityProperty)
- - **UpdateViewer**(NativeViz.EntityPropertyViewer, XF.Input.DataForm.EntityPropertyMetadata) -> (NativeViz.EntityPropertyViewer, XF.Input.DataForm.IEntityProperty)
--  Removed **CLRConverter** property from **DataForm.AndroidEntityProperty** class.
+- **Assembly: Telerik.XamarinForms.Input**
+ - **DataForm.EntityProperty** class is now interface: **DataForm.IEntityProperty**.
+- **Assembly: Telerik.XamarinForms.InputRenderer.Android**
+ - **DataForm.AndroidEntityProperty** has updated constructor:  
+ ctor(XF.Input.DataForm.IEntityProperty, Java.Lang.Class, XF.InputRenderer.Android.DataForm.AndroidEntity)
+ - Changed the signature of the following methods in **DataFormRenderer**:  
+ **UpdateEditor**(NativeViz.EntityPropertyEditor, XF.Input.DataForm.EntityPropertyMetadata) -> (NativeViz.EntityPropertyEditor, XF.Input.DataForm.IEntityProperty)  
+ **UpdateViewer**(NativeViz.EntityPropertyViewer, XF.Input.DataForm.EntityPropertyMetadata) -> (NativeViz.EntityPropertyViewer, XF.Input.DataForm.IEntityProperty)  
+ - Removed **CLRConverter** property from **DataForm.AndroidEntityProperty** class.
  
-Where:
- 
-- **XF**: Telerik.XamarinForms
-- **NativeViz**: Com.Telerik.Widget.Dataform.Visualization.Core
- 
-#### Assembly: Telerik.XamarinForms.InputRenderer.iOS
-
-- **DataForm.IOSEntityProperty** has updated constructor:
- - ctor(DataFormEntityDataSource, DF.IEntityProperty, DF.IPropertyValidationCompletedListener DF.IPropertyDataSourceProvider)
-- Changed the signature of the following methods in **DataFormRenderer**:
- - **InitEditor**(TelerikUI.TKDataFormEditor, TelerikUI.TKEntityProperty, DF.EntityPropertyMetadata) -> (TelerikUI.TKDataFormEditor, DF.IEntityProperty)
- - **UpdateEditor**(TelerikUI.TKDataFormEditor, TelerikUI.TKEntityProperty, DF.EntityPropertyMetadata) -> (TelerikUI.TKDataFormEditor, DF.IEntityProperty)
-- Removed the following members from **DataFormRenderer**:
- - **CLRPropertyType**
- - **Converter**
-
-Where:
-
-- **XF**: Telerik.XamarinForms
-- **DF**: Telerik.XamarinForms.Input.DataForm
-
-#### Assembly: Telerik.XamarinForms.InputRenderer.UWP
+ Where:
 	
-- Changed the signature of the following method in **DataFormRenderer**:
- - **UpdateEditor**(Native.EntityPropertyControl, DF.EntityPropertyMetadata) -> (Native.EntityPropertyControl, DF.IEntityProperty)
-- **WindowsEntityProperty** has updated constructor:
- - ctor(DF.IEntityProperty, System.Object, DF.IPropertyDataSourceProvider)
-- **WindowsEntityProperty** has new property: **DF.IEntityProperty** XFEntityProperty
+ - **XF**: Telerik.XamarinForms
+ - **NativeViz**: Com.Telerik.Widget.Dataform.Visualization.Core
+- **Assembly: Telerik.XamarinForms.InputRenderer.iOS**
+ - **DataForm.IOSEntityProperty** has updated constructor:  
+ ctor(DataFormEntityDataSource, DF.IEntityProperty, DF.IPropertyValidationCompletedListener DF.IPropertyDataSourceProvider)
+ - Changed the signature of the following methods in **DataFormRenderer**:  
+ **InitEditor**(TelerikUI.TKDataFormEditor, TelerikUI.TKEntityProperty, DF.EntityPropertyMetadata) -> (TelerikUI.TKDataFormEditor, DF.IEntityProperty)  
+ **UpdateEditor**(TelerikUI.TKDataFormEditor, TelerikUI.TKEntityProperty, DF.EntityPropertyMetadata) -> (TelerikUI.TKDataFormEditor, DF.IEntityProperty)
+ - Removed the following members from **DataFormRenderer**:  
+ **CLRPropertyType**  
+ **Converter**  
 
-Where:
+ Where:
 
-- **Native**: Telerik.UI.Xaml.Controls.Data
-- **DF**: Telerik.XamarinForms.Input.DataForm
+ - **XF**: Telerik.XamarinForms
+ - **DF**: Telerik.XamarinForms.Input.DataForm
+
+- **Assembly: Telerik.XamarinForms.InputRenderer.UWP**
+ - Changed the signature of the following method in **DataFormRenderer**:  
+ **UpdateEditor**(Native.EntityPropertyControl, DF.EntityPropertyMetadata) -> (Native.EntityPropertyControl, DF.IEntityProperty)
+ - **WindowsEntityProperty** has updated constructor:  
+ ctor(DF.IEntityProperty, System.Object, DF.IPropertyDataSourceProvider)
+ - **WindowsEntityProperty** has new property: **DF.IEntityProperty** XFEntityProperty
+
+ Where:
+
+ - **Native**: Telerik.UI.Xaml.Controls.Data
+ - **DF**: Telerik.XamarinForms.Input.DataForm
  
 ### Type conversion changes
 
 Changes also affect the mechanism for conversion from CLR DateTime objects to native Android and iOS types. Previously there was no adequate conversion for dates with different DateTimeKind. Now we have introduced several parameters to provide conversion context. The changes are listed below.
 
-#### Assembly: Telerik.XamarinForms.Common
-
-- Added new data form data annotation **DataAnnotations.NativeConvertionContextAttribute** to provide additional information for conversion.
-- Removed unnecessary **TargetType** property from **DataAnnotations.IPropertyConverter** 
-
-#### Assembly: Telerik.XamarinForms.Common.Android
-
-- **DateTimeTools.ToDateTime** method has changed signature: 
- - **ToDateTime**(Java.Util.Calendar) -> (Java.Util.Calendar, System.DateTimeKind?)
-- **AndroidDateFormatter** class has changed constructor:
- - ctor(System.String, System.DateTimeKind?)
-
-#### Assembly: Telerik.XamarinForms.Common.iOS
-
-- **IOSDateFormatter** class has changed constructor:
- - ctor(System.String, System.String, Telerik.XamarinForms.Common.DataAnnotations.IPropertyConverter, System.Type, System.DateTimeKind?)
-
-#### Assembly: Telerik.XamarinForms.Input
-
-- **DataForm.EntityPropertyMetadata** has new property **NativeConvertionContext** of type object.
+- **Assembly: Telerik.XamarinForms.Common**
+ - Added new data form data annotation **DataAnnotations.NativeConvertionContextAttribute** to provide additional information for conversion.
+ - Removed unnecessary **TargetType** property from **DataAnnotations.IPropertyConverter** 
+- **Assembly: Telerik.XamarinForms.Common.Android**
+ - **DateTimeTools.ToDateTime** method has changed signature:  
+ **ToDateTime**(Java.Util.Calendar) -> (Java.Util.Calendar, System.DateTimeKind?)
+ - **AndroidDateFormatter** class has changed constructor:  
+ ctor(System.String, System.DateTimeKind?)
+- **Assembly: Telerik.XamarinForms.Common.iOS**
+ - **IOSDateFormatter** class has changed constructor:  
+ ctor(System.String, System.String, Telerik.XamarinForms.Common.DataAnnotations.IPropertyConverter, System.Type, System.DateTimeKind?)
+- **Assembly: Telerik.XamarinForms.Input**
+ - **DataForm.EntityPropertyMetadata** has new property **NativeConvertionContext** of type object.
 
 ### Chart changes
 

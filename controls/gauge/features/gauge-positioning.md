@@ -11,7 +11,7 @@ The gauge positions most of its elements by taking into consideration the respec
 
 ## Offset
 
-The offset is in absolute units, device independent pixels, and is the distance from the axis line to the element. The gauge does not have any strategy to avoid overlapping of elements, so you will need to set adequate offsets to ensure that they are not positioned on top of each other. In the example below, all elements are arranged so that they are 2 pixels apart and never overlap each other.
+The offset is in absolute units, device independent pixels, and is the distance from the axis line to the element. The gauge does not have any strategy to avoid overlapping of elements, so you will need to set adequate offset values to ensure that they are not positioned on top of each other. In the example below, all elements are arranged so that they are 2 pixels apart and never overlap each other.
 
 <snippet id='gauge-positioning'/>
 
@@ -19,7 +19,7 @@ The offset is in absolute units, device independent pixels, and is the distance 
 
 ## Radial Gauge Specifics
 
-While the offset is the absolute distance from the axis line to the element, the position of the axis line itself is determined by the **AxisRadiusFactor** property, which is a relative value between 0 and 1. When the radial gauge is arranged, it calculates the largest square box in the middle of its arrange bounds and the gauge is laid out within this square box. The **AxisRadiusFactor** determines the position of the axis line inside this box. Setting the radius factor to 1.0 results in the axis line occupying as much space as possible.
+While the offset is the absolute distance from the axis line to the element, the position of the axis line itself is determined by the **AxisRadiusFactor** property, which is a relative value between 0 and 1. When the radial gauge is arranged, it calculates the largest square box in the middle of its arrange bounds and the gauge is laid out within this square box. The **AxisRadiusFactor** determines the size of the radius of the axis arc inside this box. Setting the radius factor to 1.0 results in the axis line occupying as much space as possible.
 
 ## See Also
 

@@ -127,29 +127,37 @@ When a Custom editor type is registered, specific renderer methods will be calle
 	    ...
 	}
 
-> For more detailed example you can take a look at the [Further Customization]({%slug dataform-styling-editors%}) article.
-> 
 > The DataFormRenderer works differently on each platform - see the specific methods available for override below.
 
 ### Android
 
 DataFormRenderer available methods for override:
 
-- EntityPropertyEditor **GetCustomEditorForProperty**(IEntityProperty *property*, EntityPropertyMetadata *metadata*)
-- EntityPropertyViewer **GetCustomViewerForProperty**(IEntityProperty *property*, EntityPropertyMetadata *metadata*)
-- void **UpdateEditor**(EntityPropertyEditor *editor*, EntityPropertyMetadata *metadata*)
-- void **UpdateViewer**(EntityPropertyViewer *viewer*, EntityPropertyMetadata *metadata*)
+- **UpdateEditor**(*Droid.EntityPropertyEditor*, *XF.IEntityProperty*)
+- **UpdateViewer**(*Droid.EntityPropertyViewer*, *XF.IEntityProperty*)
+- **GetCustomEditorForProperty**(*Droid.IEntityProperty*, *XF.IEntityProperty*)
+- **GetCustomViewerForProperty**(*Droid.IEntityProperty*, *XF.IEntityProperty*)
+
+Where:
+
+- Droid = Com.Telerik.Widget.Dataform.Visualization.Core;
+- XF = Telerik.XamarinForms.Input.DataForm;
 
 > On Android if a property is read-only, a viewer is used.
+
+
 
 ### iOS
 
 DataFormRenderer available methods for override:
 
-- Type **GetCustomEditorType**(string *propertyName*, Type *propertyType*)
-- void **UpdateEditor**(TKDataFormEditor *editor*, TKEntityProperty *property*, EntityPropertyMetadata *metadata*)
+- **GetCustomEditorType**(string *propertyName*, Type *propertyType*)
+- **InitEditor**(*TKDataFormEditor*, *IEntityProperty*)
+- **UpdateEditor**(*TKDataFormEditor*, *IEntityProperty*)
 
 > On iOS if a property is read-only, the editor is disabled.
+
+### UWP
 
 				
 ## See Also

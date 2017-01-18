@@ -146,6 +146,14 @@ navigation:
         position: 5
         ## End SideDrawer Sub-Folders
     ## End SideDrawer
+    ## ZipLibrary
+    controls/ziplibrary:
+        title: "ZipLibrary"
+    ## End ZipLibrary
+    ## SpreadStreamProcessing
+    controls/spreadstreamprocessing:
+        title: "SpreadStreamProcessing"
+    ## End SpreadStreamProcessing
 ## End Controls Sub-Folders
 
 ## The application virtual path

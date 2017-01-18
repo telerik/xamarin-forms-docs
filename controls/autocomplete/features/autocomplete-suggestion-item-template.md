@@ -31,6 +31,7 @@ Where:
 
 Here is the result:
 
+![AutoComplete SuggestionItemTemplate Example](../images/autocomplete-item-template.png "AutoComplete SuggestionItemTemplate Example")
 
 ## Custom Highlight
 
@@ -45,6 +46,8 @@ Where:
 <snippet id='xmlns-telerikinput'/>
 
 Here is the result:
+
+![AutoComplete Custom Highlight Example](../images/autocomplete-custom-highlight.png "AutoComplete Custom Highlight Example")
 
 ## See Also
 

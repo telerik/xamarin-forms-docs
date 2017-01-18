@@ -35,4 +35,4 @@ Finally, set the AutoComplete as content of your page.
 
 Here is the result:
 
-![Basic RadCalendar Example](../images/autocomplete-getting-started.png "Basic RadAutoComplete")
+![AutoComplete Getting Started Example](../images/autocomplete-getting-started.png "AutoComplete Getting Started Example")

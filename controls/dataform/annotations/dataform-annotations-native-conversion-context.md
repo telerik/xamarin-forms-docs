@@ -8,7 +8,7 @@ slug: dataform-annotations-native-convertion-context
 
 Working with properties of type DateTime could be tricky because of the DateTime.Kind property. There is no straightforward way to map the kind while converting between CLR DateTime and Android/iOS dates. This is why sometimes the customer should explicitly specify the kind of the property. This can be done with the **NativeConvertionContextAttribute**.
 
-<snippet id="dataform-dataannotations-native-conversion-context-source"/>
+<snippet id='dataform-dataannotations-native-conversion-context-source'/>
 	
 ## See Also
 

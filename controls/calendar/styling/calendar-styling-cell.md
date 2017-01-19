@@ -13,7 +13,7 @@ This article describes the APIs used to customize the look of the calendar cells
 
 ## Calendar cell types
 
-The base class of all calendar cell is the **CalendarCell**. Here are all cell types and all of properties which they expose:
+The base class of all calendar cells is the **CalendarCell**. Here are all cell types and all of properties which they expose:
 
 ### CalendarCell
 

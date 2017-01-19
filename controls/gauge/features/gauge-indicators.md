@@ -51,11 +51,7 @@ You can use a custom shape for the **GaugeShapeIndicator** by taking advantage o
 
 When the gauge draws the shape, the geometry is scaled to the size it will be displayed with. Then it is moved to the point defined by the Position and Offset properties. It is then rotated so that the shape points at the axis line. In the example below, the indicator's value is 3.5 and the angle of rotation is 35 degrees.
 
-![Gauge example](../images/gauge-shape-indicator-shape.png)
-![Gauge example](../images/gauge-shape-indicator-shape-rotated-1.png)
-![Gauge example](../images/gauge-shape-indicator-shape-rotated-2.png)
-![Gauge example](../images/gauge-shape-indicator-shape-rotated-3.png)
-![Gauge example](../images/gauge-shape-indicator.png)
+![Gauge example](../images/gauge-shape-indicator-gif.gif)
 
 Here is an example of a custom shape:
 

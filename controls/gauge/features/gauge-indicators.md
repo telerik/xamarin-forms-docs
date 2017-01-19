@@ -59,6 +59,18 @@ Here is an example of a custom shape:
 
 ![Gauge example](../images/gauge-shape-custom-shape.png)
 
+## Bar Indicator
+
+The **GaugeBarIndicator** presents a single value set by the **Value** property. The bar indicator is drawn alongside the axis line (parallel to it) and is drawn from the axis origin value. 
+
+<snippet id='gauge-bar-indicator'/>
+
+## Range Bar Indicator
+
+The **GaugeBarIndicator** presents a value range set by the **From** and **To** properties. 
+
+<snippet id='gauge-range-bar-indicator'/>
+
 ## See Also
 
 - [Project Wizard]({% slug project-wizard %})

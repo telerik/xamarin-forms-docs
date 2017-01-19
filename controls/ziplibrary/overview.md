@@ -10,12 +10,6 @@ position: 0
 
 # Overview
 
-
-
->**RadZipLibrary** is part of the **Telerik Document Processing** libraries. The full documentation for this component is available at [http://docs.telerik.com/devtools/document-processing/libraries/radziplibrary](http://docs.telerik.com/devtools/document-processing/libraries/radziplibrary/overview).
-
-## 
-
 Have you ever wondered how to increase the responsiveness of your applications by compressing the data that you send over the internet? With the new __Zip Library__ you can compress data like images, docx or pdf files and send them over the wire. Thus, you will achieve fast and secure transactions. 
 
 This is a list with short descriptions of the top-of-the-line features of Telerik's __Zip Library__ control:
@@ -31,4 +25,13 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
             
 
 * __Support for encryption__: You can protect your ZIP file with password for better security.
+
+# Required references
+
+In order to use the __Zip Library__ you have to add references to the following assemblies:
+
+- Telerik.Zip.dll
+
+
+>**RadZipLibrary** is part of the **Telerik Document Processing** libraries. The full documentation for this component is available at [http://docs.telerik.com/devtools/document-processing/libraries/radziplibrary](http://docs.telerik.com/devtools/document-processing/libraries/radziplibrary/gettingstarted).
             

@@ -5,11 +5,51 @@ position: 3
 slug: calendar-styling-cell
 ---
 
-## Cell Styling
+# Cell Styling
  
-- **SetStyleForCell** (Func&lt;CalendarCell, CalendarCellStyle&gt;): This property should be assigned to a method that returns a CalendarCellStyle object. The method will be called for every calendar cell and the returned style will be applied. If the return value is null, the default style of the cell will be used.
- 
-Here are all properties defined in the the **CalendarCellStyle** class:
+This article describes the APIs used to customize the look of the calendar cells.
+
+The RadCalendar component exposes a property which enables you to provide a custom style for each cell.
+
+- **SetStyleForCell** (Func&lt;CalendarCell, CalendarCellStyle&gt;): This property should be assigned to a method that provides a **CalendarCellStyle** for each calendar cell.
+
+
+## CalendarCell types
+
+The **CalendarCell** objects are not actual visual elements, but they provide context that the user can use to style different parts of the calendar. [Here]({% slug calendar-visual-structure %}) you can find more information about the calendar visual structure.
+
+All cells share a common base class - the **CalendarCell**. Here are its properties:
+
+- **Text** (string): Gets the text displayed in the cell.
+- **Type** (CalendarCellType): Gets the type of the cell. The possible values are:
+ - **Date**: all cells that correspond to actual dates has this type
+ - **WeekNumber**: cells that hold week numbers
+ - **DayName**: cells that hold the days of the week
+
+Below are described the specific calendar cells and their properties.
+
+### CalendarDateCell
+
+These cells hold date values (days, months, years). The Type of CalendarDateCell is `Date`.
+
+- **IsEnabled** (bool): Gets a value that specifies whether the cell is enabled (inside the calendar MinDate and MaxDate range).
+- **IsSelected** (bool): Gets a value that specifies whether the cell is currently selected.
+- **Date** (DateTime): Gets the date that corresponds to the cell.
+
+### CalendarDayCell
+
+These cells hold dates in Month and Week view. The CalendarDayCell inherits from CalendarDateCell and its Type is also `Date`. 
+
+- **IsFromCurrentMonth** (bool): Gets a value that specifies whether the cell is from the current month in month view.
+- **IsToday** (bool): Gets a value that specifies whether the cell date is today.
+
+### CalendarTextCell
+
+These cells hold elements different from dates: week numbers and week day names and correspondingly have Type `WeekNumber` or `DayName`.
+
+## CalendarCellStyle
+
+The **CalendarCellStyle** class provides the following properties:
 
  - **BackgroundColor** (Color)
  - **BorderColor** (Color)
@@ -18,47 +58,15 @@ Here are all properties defined in the the **CalendarCellStyle** class:
  - **FontWeight** (FontWeight): Bold or Normal.
  - **ForegroundColor** (Color)
 
-You can find more information about the calendar cells in this article: [Calendar Cell Types]({% slug calendar-cell-types %}) 
+## Example
 
-#### Example ####
+This example demonstrates how you can apply styles to different calendar cell types.
 
-This example demonstrates how you can change the style of the cells of type DayName and a specific date:
-
-    var calendar = new RadCalendar();
-    calendar.SetStyleForCell = this.EvaluateCellStyle;
+<snippet id='calendar-features-cellstyling-setstyleforcell'/>
 
 And this is the method:
 
-    private CalendarCellStyle EvaluateCellStyle(CalendarCell cell)
-    {
-        if (cell.Type == CalendarCellType.DayName)
-        {
-            return new CalendarCellStyle
-            {
-                BackgroundColor = Color.White,
-                ForegroundColor = Color.FromRgb(163, 118, 222),
-                FontSize = 15,                   
-                FontWeight = FontWeight.Bold
-            };
-        }
-
-    
-        var dayCell = cell as CalendarDayCell;
-        if(dayCell != null && dayCell.Date.Date == new DateTime(2015, 3, 14))
-        {
-            return new CalendarCellStyle
-            {
-                BackgroundColor = Color.White,
-                ForegroundColor = Color.FromRgb(218, 112, 214),
-                FontSize = 20,
-                FontWeight = FontWeight.Bold,
-                BorderColor = Color.FromRgb(218, 112, 214),
-                BorderThickness = 3
-            }; 
-        }
-    
-        return null;
-    }
+<snippet id='calendar-features-cellstyling-evaluatecellstyle'/>
 
 Here is the result:
 

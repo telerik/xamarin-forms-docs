@@ -28,7 +28,7 @@ Then you have to inherit from the default **DataFormRenderer** and override the 
 	        return base.GetCustomEditorForProperty(form, nativeProperty, property);
 	    }
 	
-	    protected override void UpdateEditor(Com.Telerik.Widget.Dataform.Visualization.Core.EntityPropertyEditor editor, Telerik.XamarinForms.Input.DataForm.IEntityProperty property)
+	    protected override void UpdateEditor(NativeCore.EntityPropertyEditor editor, IEntityProperty property)
 	    {
 	        base.UpdateEditor(editor, property);
 	

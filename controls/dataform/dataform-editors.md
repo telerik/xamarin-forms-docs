@@ -131,35 +131,32 @@ When a Custom editor type is registered, specific renderer methods will be calle
 
 ### Android
 
-DataFormRenderer available methods for override:
+Android DataFormRenderer available methods for override:
 
-- **UpdateEditor**(*Droid.EntityPropertyEditor*, *XF.IEntityProperty*)
-- **UpdateViewer**(*Droid.EntityPropertyViewer*, *XF.IEntityProperty*)
-- **GetCustomEditorForProperty**(*Droid.IEntityProperty*, *XF.IEntityProperty*)
-- **GetCustomViewerForProperty**(*Droid.IEntityProperty*, *XF.IEntityProperty*)
-
-Where:
-
-- Droid = Com.Telerik.Widget.Dataform.Visualization.Core;
-- XF = Telerik.XamarinForms.Input.DataForm;
+- **GetCustomEditorForProperty**
+- **GetCustomViewerForProperty**
+- **UpdateEditor**
+- **UpdateViewer**
 
 > On Android if a property is read-only, a viewer is used.
 
-
-
 ### iOS
 
-DataFormRenderer available methods for override:
+iOS DataFormRenderer available methods for override:
 
-- **GetCustomEditorType**(string *propertyName*, Type *propertyType*)
-- **InitEditor**(*TKDataFormEditor*, *IEntityProperty*)
-- **UpdateEditor**(*TKDataFormEditor*, *IEntityProperty*)
+- **GetCustomEditorType**
+- **InitEditor**
+- **UpdateEditor**
 
 > On iOS if a property is read-only, the editor is disabled.
 
 ### UWP
 
-				
+UWP DataFormRenderer available methods for override:
+
+- **GetCustomEditorType**
+- **UpdateEditor**
+
 ## See Also
 
 - [DataForm Layouts]({% slug dataform-group-layouts %})

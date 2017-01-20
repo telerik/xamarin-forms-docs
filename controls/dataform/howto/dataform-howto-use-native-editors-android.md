@@ -18,20 +18,20 @@ Then you have to inherit from the default **DataFormRenderer** and override the 
 	{
 	    private readonly Java.Lang.Object[] items = new Java.Lang.Object[] { "pretty cat", "fat cat", "fluffy cat" };
 	
-	    protected override EntityPropertyEditor GetCustomEditorForProperty(RadDataForm form, IEntityProperty property, EntityPropertyMetadata metadata)
-	    {           
-	        if (property.Name() == "Animal")
+	    protected override NativeCore.EntityPropertyEditor GetCustomEditorForProperty(NativeViz.RadDataForm form, NativeEngine.IEntityProperty nativeProperty, IEntityProperty property)
+	    {
+	        if (nativeProperty.Name() == "Animal")
 	        {
-	            return new DataFormAutoCompleteEditor(form, property);
+	            return new DataFormAutoCompleteEditor(form, nativeProperty);
 	        }
 	
-	        return base.GetCustomEditorForProperty(form, property, metadata);
+	        return base.GetCustomEditorForProperty(form, nativeProperty, property);
 	    }
 	
-	    protected override void UpdateEditor(EntityPropertyEditor editor, EntityPropertyMetadata metadata)
+	    protected override void UpdateEditor(Com.Telerik.Widget.Dataform.Visualization.Core.EntityPropertyEditor editor, Telerik.XamarinForms.Input.DataForm.IEntityProperty property)
 	    {
-			base.UpdateEditor(editor, metadata);
-
+	        base.UpdateEditor(editor, property);
+	
 	        if (editor.Property().Name() == "Animal")
 	        {
 	            var autoComplete = editor.EditorView as AutoCompleteTextView;
@@ -39,6 +39,12 @@ Then you have to inherit from the default **DataFormRenderer** and override the 
 	        }
 	    }
 	}
+	
+Where:
+
+	using NativeViz = Com.Telerik.Widget.Dataform.Visualization;
+	using NativeEngine = Com.Telerik.Widget.Dataform.Engine;
+	using NativeCore = Com.Telerik.Widget.Dataform.Visualization.Core;
 
 You have to define the **data\_form\_autocomplete\_item** resource in the **Resources\\layout** folder of the Android project. If the folder is missing, you have to create it. Then add the the following file: data\_form\_autocomplete\_item\.xml
 

@@ -127,31 +127,36 @@ When a Custom editor type is registered, specific renderer methods will be calle
 	    ...
 	}
 
-> For more detailed example you can take a look at the [Further Customization]({%slug dataform-styling-editors%}) article.
-> 
 > The DataFormRenderer works differently on each platform - see the specific methods available for override below.
 
 ### Android
 
-DataFormRenderer available methods for override:
+Android DataFormRenderer available methods for override:
 
-- EntityPropertyEditor **GetCustomEditorForProperty**(IEntityProperty *property*, EntityPropertyMetadata *metadata*)
-- EntityPropertyViewer **GetCustomViewerForProperty**(IEntityProperty *property*, EntityPropertyMetadata *metadata*)
-- void **UpdateEditor**(EntityPropertyEditor *editor*, EntityPropertyMetadata *metadata*)
-- void **UpdateViewer**(EntityPropertyViewer *viewer*, EntityPropertyMetadata *metadata*)
+- **GetCustomEditorForProperty**
+- **GetCustomViewerForProperty**
+- **UpdateEditor**
+- **UpdateViewer**
 
 > On Android if a property is read-only, a viewer is used.
 
 ### iOS
 
-DataFormRenderer available methods for override:
+iOS DataFormRenderer available methods for override:
 
-- Type **GetCustomEditorType**(string *propertyName*, Type *propertyType*)
-- void **UpdateEditor**(TKDataFormEditor *editor*, TKEntityProperty *property*, EntityPropertyMetadata *metadata*)
+- **GetCustomEditorType**
+- **InitEditor**
+- **UpdateEditor**
 
 > On iOS if a property is read-only, the editor is disabled.
 
-				
+### UWP
+
+UWP DataFormRenderer available methods for override:
+
+- **GetCustomEditorType**
+- **UpdateEditor**
+
 ## See Also
 
 - [DataForm Layouts]({% slug dataform-group-layouts %})

@@ -25,7 +25,7 @@ Now you can create a new project using the Telerik Project Template.
 
 ![Xamarin Studio Create new project](images/xs-project-wizard-new-project-1.png)
 
-The **Telerik Forms App** template can be found in *Other > Miscellaneous* section.
+The **Telerik Forms App** template can be found in *Other > .NET* section.
 
 ![Xamarin Studio Telerik Project Template](images/xs-project-wizard-new-project-2.png)
 

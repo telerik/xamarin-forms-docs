@@ -27,7 +27,7 @@ navigation:
 ## Controls Sub-Folders
     ## AutoComplete
     controls/autocomplete:
-        title: "Autocomplete (Beta)"
+        title: "Autocomplete"
         ## AutoComplete Sub-Folders
     controls/autocomplete/getting-started:
         title: "Getting Started"

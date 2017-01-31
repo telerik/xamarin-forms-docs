@@ -7,11 +7,11 @@ slug: calendar-selection
 
 # Selection
 
-The RadCalendar provides a selection. The selected dates change when the user taps on a cell of the calendar.
+The RadCalendar supports single selection functionality. The selected date can be changed programmatically or when the user taps on a calendar cell.
 
 ## Properties
  
-- **SelectedDate** (DateTime?): Gets or sets the currently selected date. 
+- **SelectedDate** (DateTime?): Gets or sets the currently selected date.
 
 ## Events
 

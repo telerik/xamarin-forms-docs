@@ -19,6 +19,8 @@ Navigate to the **ProjectTemplateXamarin.mpack** file. It is located in the *Pro
 
 ![Xamarin Studio Project Wizard Add-in](images/xs-project-wizard-addin-manager-2.png)
 
+**Restart Xamarin Studio** to complete the installation.
+
 ## New Telerik Forms App
 
 Now you can create a new project using the Telerik Project Template.

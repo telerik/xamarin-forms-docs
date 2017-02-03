@@ -19,11 +19,15 @@ To read more about the benefits of using UI for Xamarin, please visit the [produ
 
 Our suite offers the following controls for cross-platform development with Xamarin forms:
 
-- [Calendar for Xamarin.Forms]({% slug calendar-overview %})
-- [Chart for Xamarin.Forms]({% slug chart-overview %})
-- [DataForm for Xamarin.Forms]({% slug dataform-overview %})
-- [ListView for Xamarin.Forms]({% slug listview-overview %})
-- [SideDrawer for Xamarin.Forms]({% slug sidedrawer-overview %})
+- [AutoComplete]({% slug autocomplete-overview %})
+- [Calendar]({% slug calendar-overview %})
+- [Chart]({% slug chart-overview %})
+- [DataForm]({% slug dataform-overview %})
+- [Gauge]({% slug gauge-overview %})
+- [ListView]({% slug listview-overview %})
+- [SideDrawer]({% slug sidedrawer-overview %})
+- [SpreadStreamProcessing]({% slug radspreadstreamprocessing-overview %})
+- [ZipLibrary]({% slug radziplibrary-overview %})
 
 
 ### UI for Xamarin.Android

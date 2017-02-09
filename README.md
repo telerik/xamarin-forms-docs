@@ -1,167 +1,83 @@
-# Documentation Base
+---
+title: Telerik Xamarin Documentation Repo
+publish: false
+---
 
-This repository contains the common infrastructure for building markdown documentation with [Jekyll](http://jekyllrb.com/).
 
-## Set up a new documentation repository
+# Telerik UI for Xamarin Public Documentation
 
-1. Install Ruby 1.9.x (2.x may or may not work).
-2. Install NodeJS (or delete the line ` js_compressor: uglifier` from `_config.yml`).
-1. Open a terminal or "Git Bash" if on Windows.
-1. `cd` to the directory where your markdown documentation github repository is.
-1. Add a new git remote to the docs-base repository. This will be used to merge any new features and fixes from the documentation base repository.
+Welcome to the GitHub repo for [Telerik UI for Xamarin](http://docs.telerik.com/devtools/xamarin) documentation. This repository contains the source content — written in Markdown — that we use to power the Telerik UI for Xamarin Documentation at [docs.telerik.com/devtools/xamarin](http://docs.telerik.com/devtools/xamarin). If you've arrived here wanting to search and peruse our docs, you'd be better served heading over to [docs.telerik.com/devtools/xamarin/](http://docs.telerik.com/devtools/xamarin) where our content is prettified and searchable.
 
-         git remote add base git@github.com:telerik/docs-base.git
-1. Fetch the "base" remote. This will retrieve the latest files.
-      
-         git fetch base
-1. Merge the "base/master" branch to your documentation repository branch. 
-         
-         git merge --no-ff base/master
-1. Resolve any conflicts (available via `git status`) and commit `git commit`. Make sure you don't remove any customizations you have made to some of the base files.
-1. Open the "_config.yml" file and set the `baseurl` and `url` attributes. The first is used for resolving the path to images and hyperlinks. The second is the online URL of the documentation and is used for creating `sitemap.xml`.
-         
-         url: "http://docs.telerik.com/devtools/ios"
-         baseurl: "/devtools/ios"
+We believe that the documentation for a product is at its best when the content is a collaboration between the builders and consumers of that product. As such, this documentation is both public, and open sourced under and MIT license (see below). That means you can clone this repository, read the docs off line, or even load the entire thing to an Apple Newton, if that's your thing.
 
-1. Create a Google Custom Search Engine (or ask one to be created for you). Set the `google_custom_search` attribute in "_config.yml". If you forget this step the search results will be from the Kendo UI documentation.
-1. Run `bundle install`. If the `bundle` command is not found run `gem install bundler`. This will install Jekyll and all other required packages.
-1. Run `jekyll serve`. After a while jekyll build the documentation and start a web server at `http://0.0.0.0:4000/<baseurl>` e.g. `http://0.0.0.0:4000/devtools/ios`. You can now view the documentation in your browser.
-1. Exclude the `_site` directory from git by adding `_site` to your `.gitignore`.
- 
-Jekyll builds a static HTML site in the `_site` directory. This contents of this directory can be deployed on a live server. 
+It also means that you can play a role in making our docs better for everyone, and if helping us make the Telerik UI for Xamarin docs better sounds interesting to you, read on.
 
-> Important: Jekyll creates .html pages by default. However the documentation creates links without .html extension. A `web.config` with rewrite rules is included out of the box. 
+## Contributing
 
-## Getting latest changes from the docs-base repository in your documentation
-1. Open a terminal or "Git Bash" if on Windows.
-1. `cd` to the directory where your markdown documentation github repository is.
-1. Fetch the "base" remote. This will retrieve the latest commits from the base repo. If git complains that there is no "base" remote run `git remote add base git@github.com:telerik/docs-base.git`
-1. Use `git cherry-pick` to get the commit you are interested in. For example to get the last commit run `git cherry-pick base/master`. If there are any conflicts resolve them and run `git cherry-pick --continue`
-1. Push the new commits to github.
+There are two ways you can contribute to the public Telerik UI for Xamarin documentation: either create an issue in this repository, or fork the repo, make the change and send us a pull request!
 
-## Some Jekyll info
+* **Create an issue** - If you find an issue with our docs that needs to be addressed, the best way to let us know about it is by [creating an issue in this repository](https://github.com/telerik/Xamarin-Forms-docs/issues?state=open). When creating an issue, provide a descriptive title, be as specific as possible and link to the document in question (If you can provide a link to the closest anchor to the issue, all the better). Here's an example:
 
-Jekyll is a tool for creating static html web sites. It supports markdown which makes it a good fit for our needs. It is also highly customizable which makes delivering new documentation features a breeze.
+        Title: api/DataViz/chart.md is missing an image
+        Description : Example 3 is missing an image right after the code sample. https://github.com/telerik/Xamarin-Forms-docs/issues?state=open
 
-### Jekyll Directory structure
+> Note: When creating issues, please don't modify the assignee or milestone fields. Also, please create one issue per fix or change. "Bundled" entries will be deleted.
 
-#### _assets
+* **Send us a pull request** - Creating an issue is great — and we certainly appreciate them — but what we really love are pull requests. So, if you find an issue in the docs, or even feel like creating new content, we'd be happy to have your contributions! If you're just getting started with open source, Git and GitHub, we suggest you first read up on [forking repositories](https://help.github.com/articles/fork-a-repo) and [sending pull requests](https://help.github.com/articles/using-pull-requests), both great articles from the GitHub bootcamp.
 
-Contains CSS and JavaScript files.
+    Once you've read these — or you've already memorized them — you're ready to contribute to the Telerik UI for Xamarin docs. Start by creating a local clone of our repo either using [GitHub for Windows](http://windows.github.com/), [GitHub for Mac](http://mac.github.com/) or your friendly command-line:
 
-#### _includes
+        git@github.com:telerik/Xamarin-Forms-docs.git
 
-Contains common include files used by the layout pages. Not included in the final output in the `_site` directory.
+    Then, open up the Xamarin-Forms-docs folder in your favorite text editor and contribute away! Of course, as you work with the docs, we do ask that you follow a couple of ground rules:
 
-#### _layouts
-
-The layout pages used by the documentation site. They define the common HTML which contains navigation, search and other common UI. Not included in the final output.
-
-#### _plugins
-
-Contains [Jekyll plugins](http://jekyllrb.com/docs/plugins/) (Ruby classes) which are needed for producing the final output. Not included in the final output. 
-
-#### images
-
-Contains images used in the web site.
-
-#### fonts
-
-Custom fonts used in the web site.
-
-The following plugins are currently available:
-
-* breadcrumb.rb - renders breadcrumb navigation
-* markdown_processor.rb - creates HTML from Markdown using [html-pipeline](https://github.com/jch/html-pipeline). We are not using the default markdown conversion as we need to tweak the output to our needs.
-* navigation_generator.rb - creates a JSON TOC file used for the left-hand treeview navigation.
-* redirect_generator.rb - creates IIS redirect rules in the `web.config` to handle the `previous_url` attribute. 
-* sitemap_generator.rb - creates sitemap.xml which is used by search engines for crawling.
-* slug.rb - gets the URL of a help article from its slug.
-
-#### assets
-
-Contains CSS, JavaScript and image files used by the documentation. Included in the final output.
-
-### Which files from the common documentation repository can be changed?
-
-Any file can be changed per your requirements. However you will have to handle merge conflicts once you need to update to the latest documentation base changes. The following files are likely to be customized:
-
-* _layouts/index.html
-* _layouts/page.html
-* assets/css/styles.css
-* _config.yml
-
-## Writing markdown documents
-
-### Files and directories
-
-You can organize your help topics in directories. The directory and filename will determine the final url of your topic. For example `getting-started/introduction.md` will lead to `getting-started/introduction`
-
-### Markdown content
-
-Your markdown file must start with the so called "front matter". This is some metadata used by jekyll and the documentation. Here is an example.
+    - Fixing grammar, punctuation and other general errors is always appreciated. So are changes that expand on key ideas or correct errors in logic phrasing or otherwise. If your ambitions are greater, however, and you want to add completely new content to the site — like a new tutorial on using Xamarin UI with an Atari 2600, for instance — we suggest you contact a member of the team first (or enter an issue!) to vet your idea.
+    - Each document in this repo contains a section of YAML Front Matter at the very top. This content, which looks like the text below, is used by our auto-import tool when content is processed for the live documentation site. Please don't edit the content in this section of a document.
 
          ---
-         title: Getting started
-         page_title: Getting started with Kendo UI
-         description: Installation and getting started instructions for Kendo UI
-         position: 0
-         slug: getting-started
-         previous_url: /introduction/start
+
+        title: Introduction
+
+        page_title: Introduction 
+
+        description: Introduction
+
+        slug: introduction
+
+        tags: introduction
+
+        published: True
+
+        position: 1
+
          ---
+         
 
-The supported attributes are:
+    - When adding content or making changes, please use only standard Markdown syntax, and make to preview your additions or changes before sending us a pull request. You can use an online tool like [Dillinger.io](http://dillinger.io/) or [Marked](http://markedapp.com/) on OSX to view what your changes will look like when ported to HTML.
 
-#### title (required)
+    Once you've made your changes, commit, pull, merge, push and [send us a pull request](https://help.github.com/articles/using-pull-requests)! We — and Xamarin users everywhere — thank you for making our docs the best front-end library documentation on the web!
 
-Determines the text displayed in the TOC navigation (the treeview in the left).
+## Running locally
 
-#### page_title (optional but recommended)
+You can generate a static web site from the Telerik UI for Xamarin the documentation and browse it locally.
 
-The contents of the `<title>` in the final output. If `page_title` is not set the value of `title` is usded. Blade name was `meta_title`.
+ 1. Clone the repository `git clone git@github.com:telerik/Xamarin-Forms-docs.git`
+ 2. Run `bundle install` (you must have ruby and bundler installed beforehand)
+ 3. Run `jekyll serve`
+ 4. Open "http://localhost:4000/devtools/xamarin" in your browser
+        
 
-#### description (optional but recommended)
+## License
 
-Used to set the contents of the `<meta name="description">` in the final output. Improves SEO. Blade name was  `meta_description`.
+The Telerik UI for Xamarin Documentation is licensed under an MIT license. This license applies to the markdown (.md) files in this site **ONLY**, and does not convey, override or modify any existing licenses covering the runtime source and components of Telerik UI for Xamarin. For information about available licenses for the Telerik UI for Xamarin Cross-Platform click [here](http://www.telerik.com/purchase/license-agreement/ui-for-xamarin-cross-platform), for Telerik UI for Xamarin.Android click [here](http://www.telerik.com/purchase/license-agreement/ui-for-xamarin.android) and for Telerik UI for Xamarin.iOS click [here](http://www.telerik.com/purchase/license-agreement/ui-for-xamarin.ios).
 
-#### position (optional)
+### MIT License
 
-The position this document will appear at in the TOC navigation. Blade name was `ordinal`.
+Copyright (c) 2012-2017 Telerik
 
-#### slug (optional)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software" ), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-The optional unique identifier of the page. Can be used to link to the current page `[Getting-started]({% slug getting-started%})`
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-#### previous_url
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-The previous URL of this page. Used to create IIS redirect rules in `web.config`. Supports comma separated values if there is more than one previous url `previous_url: /foo/bar, /bar/foo`.
-
-### Customizing the TOC
-
-The TOC displays an entry for all directories and files. 
-
-#### Files
-
-The the `title` attribute of the markdown file determines the text displayed for that file in the TOC. The `position` attribute determines its position in the TOC. If `position` is not set the file will appear in its alphabetical order after all directories.
-
-#### Directories
-
-By default directories come before the files which don't have `position` set. The directory name determines the text displayed in the TOC. To change it you have to add an entry in `_config.yml` under `navigation`.
-
-For example we want the `introduction/getting-started` directory to appear as `Getting Started` in the TOC. Open `_config.yml` and find the `navigation` attribute. Add a new item:
-
-```
-navigation
--
-   introduction/getting-started
-       title: Getting Started
-```
-
-Directories appear alphabetically sorted by default. You can change their position again from `_config.yml`.
-```
-navigation
--
-   introduction/getting-started
-       title: Getting Started
-       position: 0
-```

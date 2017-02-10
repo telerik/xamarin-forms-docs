@@ -35,6 +35,7 @@ layout: index
         <article>
             {{ content }}
         </article>
+		{% if site.ff-sheet-id %}{% include feedback-form.html %}{% endif %}
         {% include footer.html %}
     </div>
 </div>

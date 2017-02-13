@@ -50,7 +50,7 @@ navigation:
     controls/calendar/styling:
         title: "Styling"
         position: 6
-    controls/calendar/styling/custom-renderers:
+    controls/calendar/features/custom-renderers:
         title: "Custom Renderers"
     controls/calendar/how-to:
         title: "How To"

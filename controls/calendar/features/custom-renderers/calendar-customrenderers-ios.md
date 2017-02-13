@@ -15,11 +15,11 @@ Sometimes, you might find that certain feature is available in the native contro
 
 Let us consider the following example: we need to customize how the calendar looks on iOS. Create a class which inherits from Telerik.XamarinForms.InputRenderer.iOS.CalendarRenderer and override the CreateCalendarDelegateOverride method:
 
-<snippet id='calendar-styling-custom-renderers-ios-renderer'/>
+<snippet id='calendar-features-custom-renderers-ios-renderer'/>
 
 The method should return object of class delivered from Telerik.XamarinForms.InputRenderer.iOS.CalendarDelegate:
 
-<snippet id='calendar-styling-custom-renderers-custom-delegate'/>
+<snippet id='calendar-features-custom-renderers-custom-delegate'/>
 
 Here is the result:
 

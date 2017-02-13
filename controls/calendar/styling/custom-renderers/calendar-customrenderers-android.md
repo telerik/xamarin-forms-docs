@@ -15,11 +15,11 @@ Sometimes, you might find that certain feature is available in the native contro
 
 Let us consider the following example: we need to customize how the calendar looks on Android. Create a class which inherits from Telerik.XamarinForms.InputRenderer.Android.CalendarRenderer and override the OnElementChanged method:
 
-<snippet id='calendar-features-custom-renderers-android-renderer'/>
+<snippet id='calendar-styling-custom-renderers-android-renderer'/>
 
 The CellDecorationsLayer.Color property changes the border color of the currently selected cell. The CustomizationRule property takes an object which implements the Com.Telerik.Android.Common.IProcedure interface:
 
-<snippet id='calendar-features-custom-renderers-customization-rule'/>
+<snippet id='calendar-styling-custom-renderers-customization-rule'/>
 
 Here is the result:
 

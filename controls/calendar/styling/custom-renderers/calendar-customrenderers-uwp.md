@@ -15,11 +15,11 @@ Sometimes, you might find that certain feature is available in the native contro
 
 Let us consider the following example: we need to customize how the calendar looks on UWP. Create a class which inherits from Telerik.XamarinForms.InputRenderer.UWP.CalendarRenderer and override the OnElementChanged method:
 
-<snippet id='calendar-features-custom-renderers-uwp-renderer'/>
+<snippet id='calendar-styling-custom-renderers-uwp-renderer'/>
 
 The styles used in the code snippet above are defined in a XAML resource dictionary merged with the main page resources of the application:
 
-<snippet id='calendar-features-custom-renderers-styles'/>
+<snippet id='calendar-styling-custom-renderers-styles'/>
 
 Here is the result:
 

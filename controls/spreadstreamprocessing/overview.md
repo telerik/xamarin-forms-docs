@@ -46,6 +46,6 @@ You can use RadSpreadStreamProcessing to create and export large amount of data 
 
 In order to use the __RadSpreadStreamProcessing__ you have to add references to the following assemblies:
 
-- **Telerik.Windows.Zip.dll**
+- **Telerik.Zip.dll**
 - **Telerik.Documents.SpreadsheetStreaming.dll**
 

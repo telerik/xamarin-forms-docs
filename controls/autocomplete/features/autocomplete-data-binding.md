@@ -5,7 +5,7 @@ position: 0
 slug: autocomplete-data-binding
 ---
 
-# Data Bindig
+# Data Binding
 
 For all cases where the business items are not simple strings data-binding is necessary in order to correctly visualize information. The **RadAutoComplete** component supports data binding in the form of path properties.
 

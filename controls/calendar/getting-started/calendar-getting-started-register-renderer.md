@@ -23,7 +23,7 @@ You also have to create an instance of the renderer in the `FinishedLaunching(..
 
 <snippet id='calendar-getting-started-ios-init'/>
     
-## UPW Project
+## UWP Project
 
 You have to add the following line to the **MainPage.xaml.cs** file outisde the scope of the namespace just after the using statements:
 

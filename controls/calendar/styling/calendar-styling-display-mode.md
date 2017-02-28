@@ -9,12 +9,12 @@ slug: calendar-styling-display-mode
 
 Sometimes you would like to change the appearance of the calendar by hiding the day names or week numbers. This article will explain how you can acheive this.
 
-The calendar provides properties that control the visibility of its elements each of them gets or returns value of type DisplayMode.
+The calendar provides properties that control the visibility of its elements.
 
 - **DayNamesDisplayMode** (DisplayMode): Gets or sets a value that specifies whether the day names will be visible.
 - **WeekNumbersDisplayMode** (DisplayMode): Gets or sets a value that specifies whether the day names will be visible.
 
-The **DisplayMode** enumeration has the following values:
+The two described properties are both of type **DisplayMode**, which is enumeration and has the following values:
 
 - **Show**: The element will be visible.
 - **Hide**: The element will not be visible.

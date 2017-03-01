@@ -39,6 +39,21 @@ After that you have to specify the editor types:
 <snippet id='dataform-gettingstarted-register-editors'/>
 
 And finally set the data form as content of your page.
+
+
+> **IMPORTANT** 
+> 
+> Due to the fact that the RadDataForm renders a scrollable area to allow for items 
+> longer that the visible area, you cannot nest the RadDataForm in a container that measures 
+> to infinity. The result will be that the RadDataForm will not render its editor(s) on some platforms.
+>
+> For example, do not use the RadDataform in either of the following
+> - A `StackLayout`
+> - A `Grid` with a `RowDefinition` with `Height="Auto"` (Use `Height="*"` instead )
+>
+
+
+
 	
 ## See Also
 

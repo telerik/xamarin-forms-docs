@@ -24,8 +24,8 @@ The two described properties are both of type **DisplayMode**, which is enumerat
 
 This example demonstrates how you can display the week numbers and hide the day names of the calendar:
 
-<snippet id='calendar-styling-display-mode'/>
+<snippet id='calendar-styling-elements-display-mode'/>
 
 Here are the results from the code above:
 
-![Display Mode](images/display-mode.png "Display mode")
+![Display Mode](images/elements-display-mode.png "Display mode")

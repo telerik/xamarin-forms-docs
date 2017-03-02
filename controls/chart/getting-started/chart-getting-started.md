@@ -36,6 +36,9 @@ You also need to add the following namespace:
 And here is the sample data used as binding context:
 
 <snippet id='chart-getting-started-viewmodel'/>
+
+Here is how the business model is defined:
+
 <snippet id='categorical-data-model'/>
 
 ## See Also

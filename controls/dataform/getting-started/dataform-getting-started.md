@@ -37,8 +37,6 @@ You also need to add the following namespace:
 After that you have to specify the editor types:
 
 <snippet id='dataform-gettingstarted-register-editors'/>
-
-And finally set the data form as content of your page.
 	
 ## See Also
 

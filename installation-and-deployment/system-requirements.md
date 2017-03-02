@@ -12,7 +12,7 @@ In order to develop applications with **Telerik UI for Xamarin.Forms** you need 
 ## Windows
 
 - Windows 8.1 or higher. You would need [Windows 10](https://www.microsoft.com/en-us/windows/get-windows-10) in order to develop for UWP.
-- Visual Studio 2013 and Xamarin installer (downloaded separately) or [Visual Studio 2015](https://www.visualstudio.com/). 
+- Visual Studio 2013 and Xamarin installer (downloaded separately) or [Visual Studio 2015](https://www.visualstudio.com/downloads/) or [Visual Studio 2017](https://www.visualstudio.com/downloads/).
 - For building iOS apps - [configured iOS build host](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/)
 
 For more information on how to setup your development environment check [this MSDN article](https://msdn.microsoft.com/en-us/library/mt299001.aspx)

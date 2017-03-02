@@ -14,7 +14,7 @@ This article introduces the **Telerik UI for Xamarin.Forms Project Wizard**. The
 
 It allows customers to select which platform(s) their application targets and the wizard will automatically reference all required Telerik binaries and packages.
 
->With the minor release R1 **2017.1.10301** the **Project Wizard** is part of our installer. The installer is integrated with **Visual Studio 2017** and automatically installs both the Project Wizard and the available Item Templates.
+>With the official **Q2 2016** release the Project Wizard is included in the automatic installation of the Telerik UI for Xamarin.Forms suite of controls. With the minor release **R1 2017.1.10301** the Project Wizard is integrated with **Visual Studio 2017**.
 
 # New Project
 

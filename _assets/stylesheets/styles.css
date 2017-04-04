@@ -107,8 +107,13 @@ code, em {
 #logo-bar {
     float: left;
     margin-top: 1.617em;
-    margin-bottom: 1.717em;
+    margin-bottom: 0.717em;
     margin-left: 1.833em;
+}
+
+.logo{
+    width: 380px;
+    height: 45px;
 }
 
 .nav-buttons {

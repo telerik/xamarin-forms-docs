@@ -1,0 +1,1 @@
+this is the getting started article

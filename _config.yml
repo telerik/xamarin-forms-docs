@@ -151,6 +151,10 @@ navigation:
         position: 5
         ## End SideDrawer Sub-Folders
     ## End SideDrawer
+    ## Rating
+    controls/rating:
+        title: "Rating"
+    ## End Rating
     ## ZipLibrary
     controls/ziplibrary:
         title: "ZipLibrary"

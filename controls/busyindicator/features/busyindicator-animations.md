@@ -29,9 +29,9 @@ You can create a custom animation using a combination of 3 properties - Animatio
 The following example demonstrates how to create a custom animation that changes the opacity of a text (blinking effect).
 
 <snippet id='busyindicator-animations-xaml'/>
-<snippet id='busyindicator-animations-csharp-1'/>
+<snippet id='busyindicator-animations-code'/>
 
-<snippet id='busyindicator-animations-csharp-0'/>
+<snippet id='busyindicator-animations-csharp'/>
 
 ## See Also
 

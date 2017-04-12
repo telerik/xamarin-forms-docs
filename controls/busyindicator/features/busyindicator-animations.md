@@ -31,6 +31,8 @@ The following example demonstrates how to create a custom animation that changes
 <snippet id='busyindicator-animations-xaml'/>
 <snippet id='busyindicator-animations-code'/>
 
+<!-- -->
+
 <snippet id='busyindicator-animations-csharp'/>
 
 ## See Also

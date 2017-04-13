@@ -7,16 +7,21 @@ slug: busyindicator-features-animations
 
 # Animations
 
-**RadBusyIndicator** provides couple built-in animations which you can use. They can be changed via the **AnimationType** property. 
+**RadBusyIndicator** provides a set of built-in animations which you can use. They can be changed via the **AnimationType** property. 
 
-The property is of type AnimationType enum and it accepts the following values:
+The property is an enum called AnimationType and it accepts values named **Animation1** to **Animation8**. Animation1, Animation2, Animation3, etc. to Animation8. **Animation1** is the default animation. 
 
-- **SpinningBalls**: This is the default animation.
-	![BusyIndicator animations spinningball](../images/busyindicator-features-animations-0.png) 
-- **SpinningArcs**
-	![BusyIndicator animations spinningarcs](../images/busyindicator-features-animations-1.png) 
+![BusyIndicator animations list](../images/busyindicator-features-animations-0.png) 
 
 > The animation will be displayed only when the **IsBusy** property is set to **True**.
+	
+### Changing animation size and color
+
+You can set the size of the animation content, which is the animated element. This can be done via the **AnimationContentWidthRequest** and **AnimationContentHeightRequest** properties. By default the size of the default animation content is 25x25 pixels.
+
+You can also change the color of the animation with the **AnimationColor** property.
+
+> **AnimationContentWidthRequest**, **AnimationContentHeightRequest** and **AnimationColor** won't be applied if you use custom animation.
 	
 ## Custom animation
 

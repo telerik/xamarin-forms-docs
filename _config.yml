@@ -37,6 +37,18 @@ navigation:
         position: 2
         ## End AutoComplete Sub-Folders
     ## End AutoComplete
+    ## BusyIndicator
+    controls/busyindicator:
+        title: "BusyIndicator"
+        ## BusyIndicator Sub-Folders
+    controls/busyindicator/getting-started:
+        title: "Getting Started"
+        position: 1
+    controls/busyindicator/features:
+        title: "Features"
+        position: 2
+        ## End BusyIndicator Sub-Folders
+    ## End BusyIndicator
     ## Calendar
     controls/calendar:
         title: "Calendar"

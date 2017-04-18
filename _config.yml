@@ -154,6 +154,11 @@ navigation:
     ## Rating
     controls/rating:
         title: "Rating"
+        ## SideDrawer Sub-Folders
+    controls/rating/getting-started:
+        title: "Getting Started"
+        position: 1
+        ## End SideDrawer Sub-Folders
     ## End Rating
     ## ZipLibrary
     controls/ziplibrary:

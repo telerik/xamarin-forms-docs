@@ -131,9 +131,12 @@ navigation:
     controls/gauge/getting-started:
         title: "Getting Started"
         position: 1
+    controls/gauge/gauge-types:
+        title: "Gauge Types"
+        position: 2
     controls/gauge/features:
         title: "Features"
-        position: 2
+        position: 3
         ## End Gauge Sub-Folders
     ## End Gauge
     ## ListView

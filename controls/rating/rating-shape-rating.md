@@ -22,19 +22,15 @@ For easy and fast setup we provide several simple shapes that can be used for ra
 Here is how each of the geometries look like:
 
  - **Star**
-
- ![](images/rating-overview.png)
+![](images/rating-overview.png)
 
  - **Circle**
-
 ![](images/rating-circle.png)
 
 - **Diamond**
-
- ![](images/rating-diamond.png)
+![](images/rating-diamond.png)
 
  - **Heart**
-
- ![](images/rating-heart.png)
+![](images/rating-heart.png)
 
 Here is an example demonstrating how each of these predefined shapes can be used.

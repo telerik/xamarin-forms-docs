@@ -5,8 +5,16 @@ position: 0
 slug: rating-overview
 ---
 
-## Overview
-
-![](images/rating-overview.png)
+# Overview
 
 **RadRating** is UI component that allows users to intuitively rate by selecting number of items [stars] from a predefined number of items.
+
+> **RadRating** is available for the following platforms:
+> 
+> - **Android**
+> - **iOS**
+> - **Universal Windows Platform**
+
+Figure 1: Overview
+
+![RatingOverview](images/rating-overview.png)

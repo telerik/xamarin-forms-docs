@@ -28,7 +28,7 @@ or in code:
 
 By default the control is defined in a way that five start will be visualized and non of them will be selected.
 
-![](images/rating-overview.png)
+![](..images/rating-overview.png)
 
 You have to add the following namespaces:
 

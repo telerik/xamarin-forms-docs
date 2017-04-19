@@ -23,9 +23,9 @@ Here are listed all assemblies required by the RadRating control.
 </tr>
 </thead>
 <tr>
-<th>Portable</th>
-<th>XamarinForms\Common\</th>
-<th>Telerik.XamarinForms.Controls.SkiaSharp<br>Telerik.XamarinForms.Common</th>
+<td>Portable</td>
+<td>XamarinForms\Common\</td>
+<ttdh>Telerik.XamarinForms.Controls.SkiaSharp<br>Telerik.XamarinForms.Common</td>
 </tr>
 <tr>
 <td>Android</td>

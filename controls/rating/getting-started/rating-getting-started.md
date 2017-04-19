@@ -21,14 +21,11 @@ If your app is setup, you are ready to add a **RadRating** control.
 The simplest and fastest way to include the control is by simply defining it like this in XAML:
 
 <snippet id='rating-gettingstarted-xaml'/>
-
-or in code:
-
 <snippet id='rating-gettingstarted-csharp'/>
 
 By default the control is defined in a way that five start will be visualized and non of them will be selected.
 
-![](..images/rating-overview.png)
+![](../images/rating-overview.png)
 
 You have to add the following namespaces:
 

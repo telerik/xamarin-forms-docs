@@ -5,4 +5,3 @@ position: 0
 slug: rating-getting-started
 ---
 
-this is the getting started article

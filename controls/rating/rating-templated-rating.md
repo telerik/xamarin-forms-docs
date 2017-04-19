@@ -11,3 +11,9 @@ The **RadTemplatedRating** component is designed to be used in the cases where i
 
  - (DataTemplate) **ItemTemplate** - Gets or sets the template used in the rating item.
  - (DataTempalte) **SelectedItemTemplate** - Gets or sets the template used in the selected rating item.
+
+Here is how the rating component can be setup:
+
+<snippet id='rating-templates'/>
+
+![](images/rating-templates.png)

@@ -15,4 +15,4 @@ slug: rating-base
  - (double) **Value** - Gets or sets the number of the selected rating items.
  - (event) **ValueChanged** - Invoked whenever Value property is changed.
 
-The rest of the features come with the other two components [RadShapeRating]({% slug shape-rating %}) and [RadTemplatedRating]({% slug templated-rating %}).
+The rest of the features are provided by the other two classes [RadShapeRating]({% slug shape-rating %}) and [RadTemplatedRating]({% slug templated-rating %}).

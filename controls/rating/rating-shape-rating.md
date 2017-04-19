@@ -17,20 +17,30 @@ The **RadShapeRating** component is designed to be used in the simplest scenario
 - (double) **SelectedItemStrokeThickness** - Gets or sets the width of the border around the selected geometry.
 - (RadPathGeometry) **ItemShape** - Gets or sets the geometry that will be visualized inside the rating item.
 
-For easy and fast setup we provide several simple shapes that can be used for rating items out of the box. We provide the static **Geometries** class which resides in the **Telerik.XamarinForms.Controls.SkiaSharp.Rating** namespace. This class exposes static properties that return predefined shapes. All properties are of type **RadPathGeometry** and can be set as **ItemShape** of the RadShapeRating component.
+For easy and fast setup we provide several simple shapes that can be used for rating items out of the box. We provide the static **Geometries** class which resides in the **Telerik.XamarinForms.Primitives.SkiaSharp.Rating** namespace. This class exposes static properties that return predefined shapes. All properties are of type **RadPathGeometry** and can be set as **ItemShape** of the RadShapeRating component.
 
-Here is how each of the geometries look like:
+Here is how each of the geometries can be used:
 
-- **Star**
+- **Star** (default)
+
+<snippet id='rating-geometries-star'/>
+
 ![](images/rating-overview.png)
 
 - **Circle**
+
+<snippet id='rating-geometries-circle'/>
+
 ![](images/rating-circle.png)
 
 - **Diamond**
+
+<snippet id='rating-geometries-diamond'/>
+
 ![](images/rating-diamond.png)
 
 - **Heart**
-![](images/rating-heart.png)
 
-Here is an example demonstrating how each of these predefined shapes can be used.
+<snippet id='rating-geometries-heart'/>
+
+![](images/rating-heart.png)

@@ -13,9 +13,7 @@ This article demonstrates how to create a sample application that contains **Rad
 
 >- [Setup on Windows]({%slug getting-started-windows%})
 >- [Setup on Mac]({%slug getting-started-mac%})
-
-<!-- -->
-
+>- [Required Telerik Assemblies]({%slug busyindicator-getting-started-required-assemblies%})
 > **RadBusyIndicator** is rendered via the SkiaSharp graphics library so you need to install [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.55.0).
 
 The busy indicator is a layout control that can display two views depending on its current state - busy and not-busy. You can define the state of the control via its **IsBusy** property. The default value is False and the control's normal content is displayed. If you change it to True, the busy content is displayed, which by default is a spinning balls animation. Check the [Animations]({%slug busyindicator-features-animations%}) article to see the built-in animations, how to change them and how to us a custom animation.
@@ -38,7 +36,7 @@ Proceed with defining the component:
 #### __Figure 2: RadBusyIndicator when IsBusy is False__  
 ![BusyIndicator example](../images/busyindicator-gettingstarted-1.png)
 
-## See Also
+### See Also
 
 - [Project Wizard]({% slug project-wizard %})
 - [Getting Started on Windows]({% slug getting-started-windows %})

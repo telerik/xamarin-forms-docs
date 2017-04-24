@@ -15,10 +15,10 @@ In order to set up the gauge you need to define the elements of the gauge you wa
 
 >- [Setup on Windows]({%slug getting-started-windows%})
 >- [Setup on Mac]({%slug getting-started-mac%})
-
+>- [Required Telerik Assemblies]({%slug gauge-getting-started-required-assemblies%})
 > **RadRadialGauge** is rendered via the SkiaSharp graphics library so you need to install [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.55.0).
 
-## Setting up the gauge
+### Setting up the gauge
 
 Below you can see an example of a **RadRadialGauge** with a linear axis, two indicators and three gauge ranges.
 
@@ -38,11 +38,11 @@ Here is the result:
 
 > You can follow this tutorial to set up also the RadVerticalGauge and RadHorizontalGauge controls which expose the same API.
 
-## Gauge types
+### Gauge types
 
 There are 3 gauge types that you can use to display different layout - radial and linear. You can read more about this in the [Gauge Types]({%slug gauge-types-radial%}) section.
 
-## See Also
+### See Also
 
 - [Project Wizard]({% slug project-wizard %})
 - [Getting Started on Windows]({% slug getting-started-windows %})

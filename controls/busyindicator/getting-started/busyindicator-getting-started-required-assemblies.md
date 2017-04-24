@@ -21,6 +21,7 @@ This article contains a list with the assemblies required by the **RadBusyIndica
 | Portable | XamarinForms\Common\ | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll <br/> Telerik.XamarinForms.Controls.SkiaSharp |
 | Android  | XamarinForms\Android\ | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll <br/> Telerik.XamarinForms.Controls.SkiaSharp |
 | iOS      | XamarinForms\iOS\ | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll <br/> Telerik.XamarinForms.Controls.SkiaSharp |
+| UWP      | XamarinForms\UWP\ | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll <br/> Telerik.XamarinForms.Controls.SkiaSharp |
  
 ## See Also
 

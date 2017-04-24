@@ -6,19 +6,20 @@ position: 1
 slug: install-msi
 ---
 # Download Steps #
+
 To install UI for Xamarin on your machine from the Windows Installer MSI file, follow the instructions below:
 
-1. Log into your Telerik account and click on Products & Subscriptions from the top menu.
+1. Log into your Telerik account and click on **Downloads** from the top menu.
 
-1. In the dropdown that appears choose from your purchased products or trial downloads the Telerik UI for Xamarin, and click on it. If you have purchased a collection you would need to click on it and the trial downloads page will show all trial downlads directly.
+2. In the list with all available products find **UI for Xamarin Cross-Platform**, and click on it. This will open the page with all available downloads for the product.
 
-1. Click on Download Installer and other resources (the Download link next to the suite if you are a trial user). You need to choose the UI for Xamarin suite if you have purchased the collection and click its Browse all product files button.
+3. Here you can **download the automatic installation (MSI) file**. Or the ZIP file with the dlls.
 
-1. Download the Automatic installation (MSI) file.
+4. Once the download completes, **run the MSI file** and follow the instructions. On a 32bit machine the wizard will install the UI for Xamarin component in the following folder unless you specify otherwise: *C:\Program Files\Telerik\* or *C:\Program Files (x86)\Telerik\* for a 64bit machine.
 
-1. Once the download completes, run the MSI file and follow the instructions.On a 32bit machine the wizard will install the UI for Xamarin component in the following folder unless you specify otherwise: C:\Program Files\Telerik\ and the path is C:\Program Files (x86)\Telerik\ for a 64bit machine.
+> If you prefer using the ZIP file with the dlls instead of the automatic installation you can check the [Manual Installation for Visual Studio]({%slug manual-installation-support%}) help article.
 
-## Next Steps ##
+### Next Steps
 - [Using project wizard for Visual Studio]({% slug project-wizard %})
 - [Getting started on Windows]({%slug getting-started-windows%})
 - [Getting started on Mac]({%slug getting-started-mac%})

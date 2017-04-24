@@ -20,6 +20,7 @@ To read more about the benefits of using UI for Xamarin, please visit the [produ
 Our suite offers the following controls for cross-platform development with Xamarin forms:
 
 - [AutoComplete]({% slug autocomplete-overview %})
+- [BusyIndicator]({% slug busyindicator-overview %})
 - [Calendar]({% slug calendar-overview %})
 - [Chart]({% slug chart-overview %})
 - [DataForm]({% slug dataform-overview %})
@@ -32,11 +33,11 @@ Our suite offers the following controls for cross-platform development with Xama
 
 ### UI for Xamarin.Android
 
-For information about the Xamarin.iOS bindings API and features, please check our documentation of [UI for iOS](http://docs.telerik.com/devtools/ios/).
+For information about the Xamarin.Android wrappers API and features, refer to the documentation set of [UI for Android](http://docs.telerik.com/devtools/android/).
 
 ### UI for Xamarin.iOS
 
-For information about the Xamarin.Android wrappers API and features, refer to the documentation set of [UI for Android](http://docs.telerik.com/devtools/android/).
+For information about the Xamarin.iOS bindings API and features, please check our documentation of [UI for iOS](http://docs.telerik.com/devtools/ios/).
 
 ### UI for UWP
 
@@ -52,7 +53,7 @@ You can use UI for Xamarin.Forms for application development for the following m
 |iOS				|7.0 or higher|
 |Windows							|Windows Phone 8 Silverlight, Windows 8.1 / Windows Phone 8.1, Windows 10 Mobile / Windows 10  |
 
-## Next Steps
+### Next Steps
 
 - [System Requirements]({% slug system-requirements %})
 - [Getting started on Windows]({%slug getting-started-windows%})

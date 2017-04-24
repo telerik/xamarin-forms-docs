@@ -8,13 +8,13 @@ navigation:
 ## Root Level
     installation-and-deployment:
         title: "Installation and Deployment"
-        position: 2
+        position: 3
     controls:
         title: "Controls"
-        position: 3
+        position: 4
     troubleshooting:
         title: "Troubleshooting"
-        position: 4
+        position: 5
 ## End Root Level
 ## Intallation Sub-Folders
     installation-and-deployment/windows:

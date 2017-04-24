@@ -11,7 +11,7 @@ This article will guide you through the basics of UI for Xamarin and how to star
 
 ### Xamarin Forms
 
-Before proceed reading the **UI for Xamarin Forms** documentation we recommend that you check the fundamental concepts of [Xamarin Forms](https://developer.xamarin.com/guides/xamarin-forms/). In general, Xamarin is a cross-platform UI framework that allows you to create native applications shared between Windows (UWP, Windows Phone), Android and iOS.
+Before proceeding with the **UI for Xamarin Forms** documentation we recommend that you check the fundamental concepts of [Xamarin Forms](https://developer.xamarin.com/guides/xamarin-forms/). In general, Xamarin is a cross-platform UI framework that allows you to create native applications shared between Windows (UWP, Windows Phone), Android and iOS.
 
 ### Check the system requirements
 

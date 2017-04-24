@@ -12,10 +12,6 @@ This article contains a list with the assemblies required by the **RadBusyIndica
 > The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls. The default location is:  
 > `C:\Program Files (x86)\Telerik\UI for Xamarin RX XXX\Binaries`.
 
-* Telerik.XamarinForms.Common.dll
-* Telerik.XamarinForms.Primitives.dll
-* Telerik.XamarinForms.Controls.SkiaSharp
-
 | Platform | Location | Assemblies |
 | -------- | -------- | ---------- |
 | Portable | XamarinForms\Common\ | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll <br/> Telerik.XamarinForms.Controls.SkiaSharp |

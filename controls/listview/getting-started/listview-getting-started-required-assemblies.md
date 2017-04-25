@@ -7,7 +7,7 @@ slug: listview-getting-started-required-assemblies
 
 # Required Telerik Assemblies
 
-This article contains information about which assemblies are required by the controls in the **RadListView** control.
+This article contains information about which assemblies are required by the **RadListView** control.
 
 > The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls. The default location is:  
 > `C:\Program Files (x86)\Telerik\UI for Xamarin RX XXX\Binaries`.

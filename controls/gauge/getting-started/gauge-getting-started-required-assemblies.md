@@ -14,7 +14,7 @@ This article contains a list with the assemblies required by the **RadGauge** co
 
 | Platform | Location | Assemblies |
 | -------- | -------- | ---------- |
-| Portable | XamarinForms\Common\ | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.DataVisualization.dll <br/> Telerik.XamarinForms.Controls.SkiaSharp |
+| Portable | XamarinForms\Portable\ | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.DataVisualization.dll <br/> Telerik.XamarinForms.Controls.SkiaSharp |
 | Android  | XamarinForms\Android\ | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.DataVisualization.dll <br/> Telerik.XamarinForms.Controls.SkiaSharp |
 | iOS      | XamarinForms\iOS\ | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.DataVisualization.dll <br/> Telerik.XamarinForms.Controls.SkiaSharp |
 | UWP      | XamarinForms\UWP\ | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.DataVisualization.dll <br/> Telerik.XamarinForms.Controls.SkiaSharp |

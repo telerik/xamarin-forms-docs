@@ -65,19 +65,19 @@ The first change is in the structure of the Binaries folder. Now it looks like t
 
 ![](images/binaries-structure.png)
 
-The XamarinForms folder no longer exists and all binaries that were inside it are now shipped with the respective platform folders. 
+The **XamarinForms** folder no longer exists and all binaries that were inside it are now shipped with the respective platform folders. 
 
-For example, the portable Telerik.XamarinForms.Common.dll that was previously shipped in the Binaries/XamarinForms/Common folder is now shipped in the Binaries/Portable folder (as well as all other portable binaries).
+For example, the _portable_ **Telerik.XamarinForms.Common.dll** that was previously shipped in the **Binaries/XamarinForms/Common folder** is now shipped in the **Binaries/Portable** folder (as well as all other portable binaries).
 
-The platform specific Telerik.XamarinForms.Common.Android.dll that was previously shipped in the Binaries/XamarinForms/Android folder is now shipped in the Binaries/Android folder.
+The _platform specific_ **Telerik.XamarinForms.Common.Android.dll** that was previously shipped in the **Binaries/XamarinForms/Android** folder is now shipped in the **Binaries/Android** folder.
 
-The more significant change is renaming of the platform specific binaries. We decided to remove the “Renderer.[platform]” part of the name of all binaries. 
+The more significant change is renaming of the platform specific binaries. We decided to remove the “_Renderer.[platform]_” part of the name of all binaries. 
 
-For example, the Telerik.XamarinForms.ChartRenderer.Android.dll binary previously shipped in the Binaries/XamarinForms/Android folder is now called Telerik.XamarinForms.Chart.dll and is now shipped in the Binaries/Android folder.
+For example, the Telerik.XamarinForms.ChartRenderer.Android.dll binary previously shipped in the **Binaries/XamarinForms/Android** folder is now called **Telerik.XamarinForms.Chart.dll** and is now shipped in the **Binaries/Android** folder.
 
 These two changes allow customers to easily find all binaries required by a platform in one place. All Telerik binaries, native, platform specific and portable are now collected in a single directory. Now there is no need to switch folders when referencing binaries in a single platform.
 
-For example, all binaries that are built for the Android platform are shipped in the Binaries/Android folder. This is true for all supported platforms.
+For example, all binaries that are built for the Android platform are shipped in the **Binaries/Android** folder. This is true for all supported platforms.
 
 Here is how the references look with the new structure:
 

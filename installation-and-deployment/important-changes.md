@@ -6,6 +6,87 @@ slug: important-changes
 
 # Important Changes
 
+## R2 2017
+
+### Binaries folder changes
+
+With the **R2 2017** we introduced changes in the binaries we provide. These changes tend to simplify the getting started experience of our customers as well as to reduce the amount of references required in each platform. Here is how the Binaries folder looked like before the change:
+
+![](images/legacy-binaries-structure.png)
+
+The native binaries were separated from the cross-platform ones. We realized that this structure is not optimal and it forces customers to make additional efforts when it comes to manually referencing our binaries.
+
+#### What customers had to do in order to reference our binaries in a single platform (e.g. Android)?
+Here are the steps:
+
+1. Reference the native binaries from the Binaries/Android folder.
+1. Reference the portable binaries from the Binaries/XamarinForms/Common folder.
+1. Reference the platform specific renderer binaries from the Binaries/XamarinForms/Android folder.
+1. Register the respective renderers.
+1. Call Telerik.Init() method.
+
+To target the rest of the platforms the same steps needed to be repeated for each one. On top of this the binaries in each folder were with their respective name which lead to references that can be visualized like this:
+
+![](images/legacy-binaries-references.png)
+
+After having the correct references customers had to manually register the XamarinForms components with their respective renderer in each platform. In Android, this step was executed by adding the following attributes in the **MainActivity.cs** file:
+
+<pre><code class='language-cs'>
+[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.Android.CartesianChartRenderer))]
+[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.Android.PieChartRenderer))]
+[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadCalendar), typeof(Telerik.XamarinForms.InputRenderer.Android.CalendarRenderer))]
+[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.DataControls.RadListView), typeof(Telerik.XamarinForms.DataControlsRenderer.Android.ListViewRenderer))]
+[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Primitives.RadSideDrawer), typeof(Telerik.XamarinForms.PrimitivesRenderer.Android.SideDrawerRenderer))]
+[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadAutoComplete), typeof(Telerik.XamarinForms.InputRenderer.Android.AutoCompleteRenderer))]
+[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Input.RadDataForm), typeof(Telerik.XamarinForms.InputRenderer.Android.DataFormRenderer))]
+</code></pre>
+
+In addition to this there was a method that had to be called after the initialization of the XamarinForms application to ensure that the resources used by our components are properly loaded:
+
+<pre><code class='language-cs'>
+public class MainActivity : Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+{
+    protected override void OnCreate(Bundle bundle)
+    {
+        base.OnCreate(bundle);
+
+        global::Xamarin.Forms.Forms.Init(this, bundle);
+        Telerik.XamarinForms.Common.Android.TelerikForms.Init();
+        LoadApplication(new Portable.App());
+    }
+}
+</code></pre>
+
+We realized these steps can be overwhelming for new comers and therefore decided to invest in simplifying these requirements.
+
+#### What we did to improve this?
+
+The first change is in the structure of the Binaries folder. Now it looks like this:
+
+![](images/binaries-structure.png)
+
+The XamarinForms folder no longer exists and all binaries that were inside it are now shipped with the respective platform folders. 
+
+For example, the portable Telerik.XamarinForms.Common.dll that was previously shipped in the Binaries/XamarinForms/Common folder is now shipped in the Binaries/Portable folder (as well as all other portable binaries).
+
+The platform specific Telerik.XamarinForms.Common.Android.dll that was previously shipped in the Binaries/XamarinForms/Android folder is now shipped in the Binaries/Android folder.
+
+The more significant change is renaming of the platform specific binaries. We decided to remove the “Renderer.[platform]” part of the name of all binaries. 
+
+For example, the Telerik.XamarinForms.ChartRenderer.Android.dll binary previously shipped in the Binaries/XamarinForms/Android folder is now called Telerik.XamarinForms.Chart.dll and is now shipped in the Binaries/Android folder.
+
+These two changes allow customers to easily find all binaries required by a platform in one place. All Telerik binaries, native, platform specific and portable are now collected in a single directory. Now there is no need to switch folders when referencing binaries in a single platform.
+
+For example, all binaries that are built for the Android platform are shipped in the Binaries/Android folder. This is true for all supported platforms.
+
+Here is how the references look with the new structure:
+
+![](images/binaries-references.png)
+
+On top of this, there is no need to manually apply annotations and to call initialization methods any more. We are now registering all renderers internally. 
+
+Users need to figure out which binaries they need, reference them in the respective project and they are ready to go.
+
 ## R1 2017
 
 ### DataForm changes

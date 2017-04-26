@@ -21,7 +21,7 @@ To use the tabview control you can include the following namespaces:
 <snippet id='xmlns-telerikprimitives'/>
 <snippet id='ns-telerikprimitives'/>
 
-To display something in the tab you can define [TabViewItem]({%slug tabview-features-tabviewitem}) elements in its **Items** collection.
+To display something in the tab you can define [TabViewItem]({%slug tabview-features-tabviewitem%}) elements in its **Items** collection.
 
 <snippet id='tabview-getting-started-xaml'/>
 <snippet id='tabview-getting-started-csharp'/>
@@ -33,6 +33,6 @@ To define the header of a TabViewItem you can use its **HeaderText** property as
 
 ### See Also
 
-- [Project Wizard]({% slug project-wizard %})
-- [Getting Started on Windows]({% slug getting-started-windows %})
-- [Getting Started on Mac]({% slug getting-started-mac %})
+- [Project Wizard]({%slug project-wizard%})
+- [Getting Started on Windows]({%slug getting-started-windows%})
+- [Getting Started on Mac]({%slug getting-started-mac%})

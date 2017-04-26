@@ -22,7 +22,7 @@ position: 0
 ### Key features
 
 - **Flexible header and content of the items**: You can easily customize the header and the content of the tabview items.
-- **Customizable tab strip area position**: The tab strip can be positioned top or bottom. Check the [TabViewHeader]({%slug tabview-features-tabviewheader}) help article.
+- **Customizable tab strip area position**: The tab strip can be positioned top or bottom. Check the [TabViewHeader]({%slug tabview-features-tabviewheader%}) help article.
 
 ### See Also
 

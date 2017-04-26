@@ -73,7 +73,7 @@ The _platform specific_ **Telerik.XamarinForms.Common.Android.dll** that was pre
 
 The more significant change is renaming of the platform specific binaries. We decided to remove the “_Renderer.[platform]_” part of the name of all binaries. 
 
-For example, the Telerik.XamarinForms.ChartRenderer.Android.dll binary previously shipped in the **Binaries/XamarinForms/Android** folder is now called **Telerik.XamarinForms.Chart.dll** and is now shipped in the **Binaries/Android** folder.
+For example, the **Telerik.XamarinForms.ChartRenderer.Android.dll** binary previously shipped in the **Binaries/XamarinForms/Android** folder is now called **Telerik.XamarinForms.Chart.dll** and is now shipped in the **Binaries/Android** folder.
 
 These two changes allow customers to easily find all binaries required by a platform in one place. All Telerik binaries, native, platform specific and portable are now collected in a single directory. Now there is no need to switch folders when referencing binaries in a single platform.
 

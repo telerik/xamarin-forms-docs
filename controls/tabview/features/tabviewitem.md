@@ -13,21 +13,21 @@ position: 0
 
 ### Displaying TabViewItem
 
-To display a TabViewItem you can add it in the **Items** collection of **RadTabView**. You can see this demonstrated in the [Example](#example) section of this article.
+To display a TabViewItem you can add it in the **Items** collection of **RadTabView**.
 
 ### Defining header
 
-You can define a header for TabViewItem using its **Header** or **HeaderText** properties. HeaderText can be used to set a simple string header. On the other hand the **Header** allows you to create a more **complex layout** for the tabview using the *TabViewHeaderItem* control. You can see both properties demonstrated in the [Example](#example) section of this article.
+You can define a header for TabViewItem using its **Header** or **HeaderText** properties. HeaderText can be used to set a simple string header. On the other hand the **Header** allows you to create a more **complex layout** for the tabview using the **TabViewHeaderItem** control. You can see both properties demonstrated in the [Example](#example) section of this article.
 
 ### Defining content
 
-You can define the content of a TabViewItem via its **Content** property. It is of type View, so you can use any UI element that implements the View class. You can see this demonstrated in the [Example](#example) section of this article.
+You can define the content of a TabViewItem via its **Content** property. It is of type View, so you can use any UI element that implements the View class.
 
 > The RadTabView control will display only the content of the selected item.
 
 ### Selecting an item
 
-You can manually select TabViewItem via its **IsSelected** bool property. Selecting an item will deselect all the others from the Items collection.
+You can manually select TabViewItem via its **IsSelected** bool property. Selecting an item will deselect all the others from the Items collection. See also the [Selection]({%slug tabview-features-selection%}) article.
 
 ### Example
 
@@ -42,3 +42,4 @@ This example demonstrates how to define RadTabView with TabViewItems and set the
 ### See Also
 
 - [Getting Started]({%slug tabview-getting-started%})
+- [Selection]({%slug tabview-features-selection%})

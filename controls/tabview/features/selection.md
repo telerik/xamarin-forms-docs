@@ -27,7 +27,8 @@ This example shows how to set the selection manually.
 
 <snippet id='tabview-features-selection-csharp'/>
 
-![TabView selection example](images/tabview-features-selection-0.png) 
+#### __Figure 1: Selection example__  
+![TabView selection example](../images/tabview-features-selection-0.png) 
 
 ### See Also
 - [Getting Started]({%slug tabview-getting-started%})

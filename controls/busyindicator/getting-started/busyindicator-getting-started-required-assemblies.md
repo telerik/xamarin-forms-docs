@@ -9,6 +9,24 @@ slug: busyindicator-getting-started-required-assemblies
 
 This article contains a list with the assemblies required by the **RadBusyIndicator** control.
 
+## References after R2 2017
+
+> The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls. The default location is:  
+> `C:\Program Files (x86)\Telerik\UI for Xamarin RX XXX\Binaries`.
+
+> Please keep in mind that all binaries built for a specific platform are placed in a folder named after that platform.
+
+| Platform | Assemblies |
+| -------- | ---------- |
+| Portable | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll <br/> Telerik.XamarinForms.Controls.SkiaSharp |
+| Android  | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll <br/> Telerik.XamarinForms.Controls.SkiaSharp |
+| iOS      | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll <br/> Telerik.XamarinForms.Controls.SkiaSharp |
+| UWP      | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll <br/> Telerik.XamarinForms.Controls.SkiaSharp |
+
+RadBusyIndicator is rendered via the SkiaSharp graphics library so you need to install also [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.55.0) in all projects of the xamarin solution (portable/common, android, ios, etc). 
+
+## References prior R2 2017
+
 > The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls. The default location is:  
 > `C:\Program Files (x86)\Telerik\UI for Xamarin RX XXX\Binaries`.
 

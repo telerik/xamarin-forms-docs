@@ -9,96 +9,23 @@ slug: autocomplete-getting-started-required-assemblies
 This article contains information about which assemblies are required by the controls in the **RadAutoComplete** control.
 
 > The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls. The default location is:  
-> `C:\Program Files (x86)\Telerik\UI for Xamarin RX XXX\Binaries`. Please keep in mind that all binaries built for a specific platform are placed in a folder named after that platform.
+> `C:\Program Files (x86)\Telerik\UI for Xamarin RX XXX\Binaries`. 
+
+> Please keep in mind that all binaries built for a specific platform are placed in a folder named after that platform.
 
 Here are listed all assemblies required by the RadAutoComplete control.
 
 ## References after R2 2017
 
-<table>
-<thead>
-
-<tr>
-<th>Platform</th>
-<th>Assemblies</th>
-</tr>
-</thead>
-<tbody>
-
-<tr>
-<td>Portable</td>
-<td>
-Telerik.XamarinForms.Input<br/>
-Telerik.XamarinForms.Common<br/>
-Telerik.XamarinForms.DataControls
-</td>
-</tr>
-
-<tr>
-<td>Android</td>
-<td>
-Telerik.Xamarin.Android.Common<br/>
-Telerik.Xamarin.Android.Input<br/>
-Telerik.Xamarin.Android.List<br/>
-Telerik.Xamarin.Android.Primitives<br/>
-Telerik.XamarinForms.Common<br/>
-Telerik.XamarinForms.Input<br/>
-Telerik.XamarinForms.DataControls
-</td>
-</tr>
-
-<tr>
-<td>iOS</td>
-<td>
-Telerik.Xamarin.iOS<br/>
-Telerik.XamarinForms.Input<br/>
-Telerik.XamarinForms.Common<br/>
-Telerik.XamarinForms.DataControls
-</td>
-</tr>
-
-<tr>
-<td>UWP</td>
-<td>
-Telerik.Core<br/>
-Telerik.UI.Xaml.Input.UWP<br/>
-Telerik.UI.Xaml.Primitives.UWP<br/>
-Telerik.XamarinForms.Common<br/>
-Telerik.XamarinForms.Input<br/>
-Telerik.XamarinForms.DataControls
-</td>
-</tr>
-
-<tr>
-<td>Windows 8.1</td>
-<td>
-WinRT\Common\Telerik.Core<br/>
-WinRT\Windows 8.1\Telerik.UI.Xaml.Input<br/>
-WinRT\Windows 8.1\Telerik.UI.Xaml.Primitives<br/>
-Telerik.XamarinForms.Common<br/>
-Telerik.XamarinForms.Input<br/>
-Telerik.XamarinForms.DataControls
-</td>
-</tr>
-
-<tr>
-<td>Windows Phone 8.1</td>
-<td>
-WinRT\Common\Telerik.Core<br/>
-WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Input<br/>
-WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Primitives<br/>
-Telerik.XamarinForms.Common<br/>
-Telerik.XamarinForms.Input<br/>
-Telerik.XamarinForms.DataControls
-</td>
-</tr>
-
-<tr>
-<td>Windows Phone 8</td>
-<td><strong>RadAutoComplete</strong> is not available for Windows Phone 8.</td>
-</tr>
-</tbody>
-<table>
+| Platform | Assemblies |
+| -------- | ---------- |
+| Portable | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> Telerik.XamarinForms.DataControls.dll |
+| Android  | Telerik.Xamarin.Android.Common.dll <br/> Telerik.Xamarin.Android.Input.dll <br/> Telerik.Xamarin.Android.List.dll <br/> Telerik.Xamarin.Android.Primitives.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> Telerik.XamarinForms.DataControls.dll |
+| iOS      | Telerik.Xamarin.iOS.dll  <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> Telerik.XamarinForms.DataControls.dll |
+| UWP      | Telerik.Core.dll <br/> Telerik.UI.Xaml.Input.UWP.dll <br/> Telerik.UI.Xaml.Primitives.UWP.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> Telerik.XamarinForms.DataControls.dll |
+| Windows 8.1 | WinRT\Common\Telerik.Core.dll <br/> WinRT\Windows 8.1\Telerik.UI.Xaml.Input.dll <br/> WinRT\Windows 8.1\Telerik.UI.Xaml.Primitives.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> Telerik.XamarinForms.DataControls.dll |
+| Windows Phone 8.1 | WinRT\Common\Telerik.Core.dll <br/> WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Input.dll <br/> WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Primitives.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> Telerik.XamarinForms.DataControls.dll |
+| Windows Phone 8.0 | **RadAutoComplete** is not available |
 
 ## References prior R2 2017
 

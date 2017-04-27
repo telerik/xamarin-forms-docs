@@ -12,29 +12,16 @@ This article contains information about which assemblies are required by the **R
 > The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls. The default location is:  
 > `C:\Program Files (x86)\Telerik\UI for Xamarin RX XXX\Binaries`.
 
-Here are listed all assemblies required by the RadRating control.
+> Please keep in mind that all binaries built for a specific platform are placed in a folder named after that platform.
 
-<table>
-<thead>
-<tr>
-<th>Platform</th>
-<th>Location</th>
-<th>Assemblies</th>
-</tr>
-</thead>
-<tr>
-<td>Portable</td>
-<td>XamarinForms\Common\</td>
-<ttdh>Telerik.XamarinForms.Controls.SkiaSharp<br>Telerik.XamarinForms.Common</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>XamarinForms\Android\</td>
-<td>Telerik.XamarinForms.Controls.SkiaSharp<br>Telerik.XamarinForms.Common</td>
-</tr>
-<tr>
-<td>iOS</td>
-<td>XamarinForms\iOS\</td>
-<td>Telerik.XamarinForms.Controls.SkiaSharp<br>Telerik.XamarinForms.Common</td>
-</tr>
-</table>
+| Platform | Assemblies |
+| -------- | ---------- |
+| Portable | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> Telerik.XamarinForms.SkiaSharp.dll |
+| Android  | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> Telerik.XamarinForms.SkiaSharp.dll |
+| iOS      | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> Telerik.XamarinForms.SkiaSharp.dll |
+| UWP      | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> Telerik.XamarinForms.SkiaSharp.dll |
+| Windows 8.1 | **RadGauge** is not available |
+| Windows Phone 8.1 | **RadGauge** is not available |
+| Windows Phone 8.0 | **RadGauge** is not available |
+
+The gauge controls are rendered via the SkiaSharp graphics library so you need to install also [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.55.0) in all projects of the xamarin solution (portable, android, ios, etc). 

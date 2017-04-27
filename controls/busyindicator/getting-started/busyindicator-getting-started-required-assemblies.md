@@ -22,8 +22,9 @@ This article contains a list with the assemblies required by the **RadBusyIndica
 | UWP      | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll <br/> Telerik.XamarinForms.SkiaSharp.dll |
 | Windows 8.1 | **RadBusyIndicator** is not available |
 | Windows Phone 8.1 | **RadBusyIndicator** is not available |
+| Windows Phone 8.0 | **RadBusyIndicator** is not available |
 
-RadBusyIndicator is rendered via the SkiaSharp graphics library so you need to install also [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.55.0) in all projects of the xamarin solution (portable/common, android, ios, etc). 
+RadBusyIndicator is rendered via the SkiaSharp graphics library so you need to install also [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.55.0) in all projects of the xamarin solution (portable, android, ios, etc). 
 
 ### See Also
 

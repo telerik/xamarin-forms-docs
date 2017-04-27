@@ -25,7 +25,7 @@ Here are listed all assemblies required by the RadAutoComplete control.
 | UWP      | Telerik.Core.dll <br/> Telerik.UI.Xaml.Input.UWP.dll <br/> Telerik.UI.Xaml.Primitives.UWP.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> Telerik.XamarinForms.DataControls.dll |
 | Windows 8.1 | WinRT\Common\Telerik.Core.dll <br/> WinRT\Windows 8.1\Telerik.UI.Xaml.Input.dll <br/> WinRT\Windows 8.1\Telerik.UI.Xaml.Primitives.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> Telerik.XamarinForms.DataControls.dll |
 | Windows Phone 8.1 | WinRT\Common\Telerik.Core.dll <br/> WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Input.dll <br/> WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Primitives.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> Telerik.XamarinForms.DataControls.dll |
-| Windows Phone 8 | **RadAutoComplete** is not available |
+| Windows Phone 8.0 | **RadAutoComplete** is not available |
 
 ## References prior R2 2017
 

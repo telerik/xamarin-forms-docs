@@ -12,7 +12,7 @@ slug: important-changes
 
 With the **R2 2017** we introduced changes in the binaries we provide. These changes tend to simplify the getting started experience of our customers as well as to reduce the amount of references required in each platform. Here is how the Binaries folder looked like before the change:
 
-##### Figure 1: Binaries folder structure prior R2 2017
+##### Figure 1: Binaries folder structure prior R2 2017 (old)
 
 ![](images/legacy-binaries-structure.png)
 
@@ -29,7 +29,7 @@ Here are the steps:
 
 To target the rest of the platforms the same steps needed to be repeated for each one. On top of this the binaries in each folder were with their respective name which lead to references that can be visualized like this:
 
-##### Figure 2: Binary references prior R2 2017
+##### Figure 2: Binary references prior R2 2017 (old)
 
 ![](images/legacy-binaries-references.png)
 
@@ -67,7 +67,7 @@ We realized these steps can be overwhelming for new comers and therefore decided
 
 The first change is in the structure of the Binaries folder. Now it looks like this:
 
-##### Figure 3: Binaries folder structure after R2 2017
+##### Figure 3: Binaries folder structure after R2 2017 (new)
 
 ![](images/binaries-structure.png)
 
@@ -88,7 +88,7 @@ For example, all binaries that are built for the Android platform are shipped in
 
 Here is how the references look with the new structure:
 
-##### Figure 4: Binariy references after R2 2017
+##### Figure 4: Binariy references after R2 2017 (new)
 
 ![](images/binaries-references.png)
 

@@ -18,7 +18,6 @@ Here are listed all assemblies required by the RadAutoComplete control.
 
 <tr>
 <th>Platform</th>
-<th>Location</th>
 <th>Assemblies</th>
 </tr>
 </thead>
@@ -26,7 +25,6 @@ Here are listed all assemblies required by the RadAutoComplete control.
 
 <tr>
 <td>Portable</td>
-<td>XamarinForms\Common\ </td>
 <td>
 Telerik.XamarinForms.Input<br/>
 Telerik.XamarinForms.Common<br/>
@@ -35,19 +33,12 @@ Telerik.XamarinForms.DataControls
 </tr>
 
 <tr>
-<td rowspan="3">Android</td>
-<td>Android\ </td>
+<td>Android</td>
 <td>
 Telerik.Xamarin.Android.Common<br/>
 Telerik.Xamarin.Android.Input<br/>
 Telerik.Xamarin.Android.List<br/>
-Telerik.Xamarin.Android.Primitives
-</td>
-</tr>
-
-<tr>
-<td>XamarinForms\Common\ </td>
-<td>
+Telerik.Xamarin.Android.Primitives<br/>
 Telerik.XamarinForms.Common<br/>
 Telerik.XamarinForms.Input<br/>
 Telerik.XamarinForms.DataControls
@@ -55,24 +46,8 @@ Telerik.XamarinForms.DataControls
 </tr>
 
 <tr>
-<td>XamarinForms\Android\ </td>
-<td>
-Telerik.XamarinForms.InputRenderer.Android<br/>
-Telerik.XamarinForms.Common.Android
-</td>
-</tr>
-
-<tr>
-<td rowspan="3">iOS</td>
-<td>iOS\ </td>
-<td>
-Telerik.Xamarin.iOS
-</td>
-</tr>
-
-<tr>
-<td>XamarinForms\Common\ </td>
-<td>
+<td>iOS</td>
+Telerik.Xamarin.iOS<br/>
 Telerik.XamarinForms.Input<br/>
 Telerik.XamarinForms.Common<br/>
 Telerik.XamarinForms.DataControls
@@ -80,26 +55,11 @@ Telerik.XamarinForms.DataControls
 </tr>
 
 <tr>
-<td>XamarinForms\iOS\ </td>
-<td>
-Telerik.XamarinForms.InputRenderer.iOS<br/>
-Telerik.XamarinForms.Common.iOS
-</td>
-</tr>
-
-<tr>
-<td rowspan="3">UWP</td>
-<td>UWP\ </td>
+<td>UWP</td>
 <td>
 Telerik.Core<br/>
 Telerik.UI.Xaml.Input.UWP<br/>
-Telerik.UI.Xaml.Primitives.UWP
-</td>
-</tr>
-
-<tr>
-<td>XamarinForms\Common\ </td>
-<td>
+Telerik.UI.Xaml.Primitives.UWP<br/>
 Telerik.XamarinForms.Common<br/>
 Telerik.XamarinForms.Input<br/>
 Telerik.XamarinForms.DataControls
@@ -107,32 +67,11 @@ Telerik.XamarinForms.DataControls
 </tr>
 
 <tr>
-<td>XamarinForms\UWP\ </td>
+<td>Windows 8.1</td>
 <td>
-Telerik.XamarinForms.Common.UWP<br/>
-Telerik.XamarinForms.InputRenderer.UWP
-</td>
-</tr>
-
-<tr>
-<td rowspan="4">Windows 8.1</td>
-<td>WinRT\Common\ </td>
-<td>
-Telerik.Core
-</td>
-</tr>
-
-<tr>
-<td>WinRT\Windows 8.1\ </td>
-<td>
-Telerik.UI.Xaml.Input<br/>
-Telerik.UI.Xaml.Primitives
-</td>
-</tr>
-
-<tr>
-<td>XamarinForms\Common\ </td>
-<td>
+WinRT\Common\Telerik.Core<br/>
+WinRT\Windows 8.1\Telerik.UI.Xaml.Input<br/>
+WinRT\Windows 8.1\Telerik.UI.Xaml.Primitives<br/>
 Telerik.XamarinForms.Common<br/>
 Telerik.XamarinForms.Input<br/>
 Telerik.XamarinForms.DataControls
@@ -140,49 +79,21 @@ Telerik.XamarinForms.DataControls
 </tr>
 
 <tr>
-<td>XamarinForms\WinRT\Windows\ </td>
+<td>Windows Phone 8.1</td>
 <td>
-Telerik.XamarinForms.Common.WinRT.Windows<br/>
-Telerik.XamarinForms.InputRenderer.WinRT.Windows
-</td>
-</tr>
-
-<tr>
-<td rowspan="4">Windows Phone 8.1</td>
-<td>WinRT\Common\ </td>
-<td>
-Telerik.Core
-</td>
-</tr>
-
-<tr>
-<td>WinRT\Windows Phone 8.1\ </td>
-<td>
-Telerik.UI.Xaml.Input<br/>
-Telerik.UI.Xaml.Primitives<br/>
+WinRT\Common\Telerik.Core<br/>
+WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Input<br/>
+WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Primitives<br/>
+WinRT\Windows Phone 8.1\Telerik.XamarinForms.DataControls<br/>
+Telerik.XamarinForms.Common<br/>
+Telerik.XamarinForms.Input<br/>
 Telerik.XamarinForms.DataControls
 </td>
 </tr>
 
 <tr>
-<td>XamarinForms\Common\ </td>
-<td>
-Telerik.XamarinForms.Common<br/>
-Telerik.XamarinForms.Input
-</td>
-</tr>
-
-<tr>
-<td>XamarinForms\WinRT\WinPhone\ </td>
-<td>
-Telerik.XamarinForms.Common.WinRT.WindowsPhone<br/>
-Telerik.XamarinForms.InputRenderer.WinRT.WindowsPhone
-</td>
-</tr>
-
-<tr>
-<td rowspan="3">Windows Phone 8</td>
-<td colspan="2"><strong>RadAutoComplete</strong> is not available for Windows Phone 8.</td>
+<td>Windows Phone 8</td>
+<td><strong>RadAutoComplete</strong> is not available for Windows Phone 8.</td>
 </tr>
 </tbody>
 <table>

@@ -18,3 +18,9 @@ slug: rating-overview
 Figure 1: Overview
 
 ![RatingOverview](images/rating-overview.png)
+
+## Key features
+
+1. Visualizing of predefined shapes
+1. Customizing shapes
+1. Visualizing custom templates

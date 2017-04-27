@@ -18,12 +18,12 @@ This article contains information about which assemblies are required by the con
 
 | Platform | Assemblies |
 | -------- | ---------- |
-| Portable | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll |
-| Android  | Telerik.Xamarin.Android.Common.dll <br/> Telerik.Xamarin.Android.Primitives.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll |
-| iOS      | Telerik.Xamarin.iOS.dll  <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll |
-| UWP      | Telerik.Core.dll <br/> Telerik.UI.Xaml.Primitives.UWP.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll |
-| Windows 8.1 | WinRT\Common\Telerik.Core.dll <br/>  WinRT\Windows 8.1\Telerik.UI.Xaml.Primitives.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll |
-| Windows Phone 8.1 | WinRT\Common\Telerik.Core.dll <br/>  WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Primitives.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll |
+| Portable | Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
+| Android  | Telerik.Xamarin.Android.Common.dll<br/>Telerik.Xamarin.Android.Primitives.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
+| iOS      | Telerik.Xamarin.iOS.dll <br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
+| UWP      | Telerik.Core.dll<br/>Telerik.UI.Xaml.Primitives.UWP.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
+| Windows 8.1 | WinRT\Common\Telerik.Core.dll<br/> WinRT\Windows 8.1\Telerik.UI.Xaml.Primitives.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
+| Windows Phone 8.1 | WinRT\Common\Telerik.Core.dll<br/> WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Primitives.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
 | Windows Phone 8.0 | **RadListView** is not available |
 
 

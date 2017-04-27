@@ -16,15 +16,15 @@ This article contains information about which assemblies are required by the con
 
 > Please keep in mind that all binaries built for a specific platform are placed in a folder named after that platform.
 
-| Platform | Assemblies |
-| -------- | ---------- |
-| Portable | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll |
-| Android  | Telerik.Xamarin.Android.Common.dll <br/> Telerik.Xamarin.Android.Input.dll <br/> Telerik.Xamarin.Android.Primitives.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll |
-| iOS      | Telerik.Xamarin.iOS.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll |
-| UWP      | Telerik.Core.dll <br/> Telerik.UI.Xaml.Input.UWP.dll <br/> Telerik.UI.Xaml.Primitives.UWP.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> |
-| Windows 8.1 | WinRT\Common\Telerik.Core.dll <br/> WinRT\Windows 8.1\Telerik.UI.Xaml.Input.dll <br/> WinRT\Windows 8.1\Telerik.UI.Xaml.Primitives.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> |
-| Windows Phone 8.1 | WinRT\Common\Telerik.Core.dll <br/> WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Input.dll <br/> WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Primitives.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll |
-| Windows Phone 8.0 | Telerik.Windows.Controls.Input.dll <br/> Telerik.Windows.Controls.Primitives.dll <br/> Telerik.Windows.Core.dll <br/> Telerik.XamarinForms.Input.dll <br/> Telerik.XamarinForms.Common.dll |
+| Platform          | Assemblies |
+| ----------------- | ---------- |
+| Portable          | Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Input.dll |
+| Android           | Telerik.Xamarin.Android.Common.dll<br/>Telerik.Xamarin.Android.Input.dll<br/>Telerik.Xamarin.Android.Primitives.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Input.dll |
+| iOS               | Telerik.Xamarin.iOS.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Input.dll |
+| UWP               | Telerik.Core.dll<br/>Telerik.UI.Xaml.Input.UWP.dll<br/>Telerik.UI.Xaml.Primitives.UWP.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Input.dll |
+| Windows 8.1       | WinRT\Common\Telerik.Core.dll<br/>WinRT\Windows 8.1\Telerik.UI.Xaml.Input.dll<br/>WinRT\Windows 8.1\Telerik.UI.Xaml.Primitives.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Input.dll |
+| Windows Phone 8.1 | WinRT\Common\Telerik.Core.dll<br/>WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Input.dll<br/>WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Primitives.dll<br/>Telerik.XamarinForms.Common.dll<br/> Telerik.XamarinForms.Input.dll |
+| Windows Phone 8.0 | Telerik.Windows.Controls.Input.dll<br/>Telerik.Windows.Controls.Primitives.dll<br/>Telerik.Windows.Core.dll<br/>Telerik.XamarinForms.Input.dll<br/>Telerik.XamarinForms.Common.dll |
 
 ## References prior R2 2017
 

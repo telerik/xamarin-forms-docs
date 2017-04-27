@@ -21,6 +21,6 @@ Figure 1: Overview
 
 ## Key features
 
-1. Visualizing of predefined shapes
+1. Visualizing predefined shapes
 1. Customizing shapes
 1. Visualizing custom templates

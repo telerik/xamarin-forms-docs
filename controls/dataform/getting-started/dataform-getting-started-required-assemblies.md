@@ -18,12 +18,12 @@ This article contains information about which assemblies are required by the con
 
 | Platform | Assemblies |
 | -------- | ---------- |
-| Portable | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll |
-| Android  | Telerik.Xamarin.Android.Common.dll <br/> Telerik.Xamarin.Android.Input.dll <br/> Telerik.Xamarin.Android.Primitives.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll |
-| iOS      | Telerik.Xamarin.iOS.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll |
-| UWP      | Telerik.Core.dll <br/> Telerik.Data.dll <br/> Telerik.UI.Xaml.Input.UWP.dll <br/> Telerik.UI.Xaml.Controls.Data.UWP.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> |
-| Windows 8.1 | WinRT\Common\Telerik.Core.dll <br/> WinRT\Common\Telerik.Data.dll <br/> WinRT\Windows 8.1\Telerik.UI.Xaml.Input.dll <br/> WinRT\Windows 8.1\Telerik.UI.Xaml.Primitives.dll <br/> WinRT\Windows 8.1\Telerik.UI.Xaml.Controls.Data.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> |
-| Windows Phone 8.1 | WinRT\Common\Telerik.Core.dll <br/> WinRT\Common\Telerik.Data.dll<br/> WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Input.dll <br/> WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Primitives.dll <br/> WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Controls.Data.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll |
+| Portable | Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Input.dll |
+| Android  | Telerik.Xamarin.Android.Common.dll<br/>Telerik.Xamarin.Android.Input.dll<br/>Telerik.Xamarin.Android.Primitives.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Input.dll |
+| iOS      | Telerik.Xamarin.iOS.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Input.dll |
+| UWP      | Telerik.Core.dll<br/>Telerik.Data.dll<br/>Telerik.UI.Xaml.Input.UWP.dll<br/>Telerik.UI.Xaml.Controls.Data.UWP.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Input.dll<br/>|
+| Windows 8.1 | WinRT\Common\Telerik.Core.dll<br/>WinRT\Common\Telerik.Data.dll<br/>WinRT\Windows 8.1\Telerik.UI.Xaml.Input.dll<br/>WinRT\Windows 8.1\Telerik.UI.Xaml.Primitives.dll<br/>WinRT\Windows 8.1\Telerik.UI.Xaml.Controls.Data.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Input.dll<br/>|
+| Windows Phone 8.1 | WinRT\Common\Telerik.Core.dll<br/>WinRT\Common\Telerik.Data.dll<br/> WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Input.dll<br/>WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Primitives.dll<br/> WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Controls.Data.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Input.dll |
 | Windows Phone 8.0 | **RadDataForm** is not available |
 
 ## References prior R2 2017

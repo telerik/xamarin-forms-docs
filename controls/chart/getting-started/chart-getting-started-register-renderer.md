@@ -3,6 +3,7 @@ title: Register Chart Renderers
 page_title: Register Chart Renderers
 position: 2
 slug: chart-getting-started-register-renderer
+isVisible: false
 ---
 
 # Register the RadChart renderer

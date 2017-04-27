@@ -13,6 +13,8 @@ This article contains information about which assemblies are required by the con
 
 Here are listed all assemblies required by the RadAutoComplete control.
 
+## References after R2 2017
+
 <table>
 <thead>
 
@@ -47,6 +49,7 @@ Telerik.XamarinForms.DataControls
 
 <tr>
 <td>iOS</td>
+<td>
 Telerik.Xamarin.iOS<br/>
 Telerik.XamarinForms.Input<br/>
 Telerik.XamarinForms.Common<br/>
@@ -84,7 +87,6 @@ Telerik.XamarinForms.DataControls
 WinRT\Common\Telerik.Core<br/>
 WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Input<br/>
 WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Primitives<br/>
-WinRT\Windows Phone 8.1\Telerik.XamarinForms.DataControls<br/>
 Telerik.XamarinForms.Common<br/>
 Telerik.XamarinForms.Input<br/>
 Telerik.XamarinForms.DataControls
@@ -97,6 +99,10 @@ Telerik.XamarinForms.DataControls
 </tr>
 </tbody>
 <table>
+
+## References prior R2 2017
+
+
 
 ## See Also
 

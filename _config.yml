@@ -175,6 +175,18 @@ navigation:
         position: 1
         ## End SideDrawer Sub-Folders
     ## End Rating
+    ## SegmentControl
+    controls/segmentcontrol:
+        title: "SegmentControl"
+        ## SegmentControl Sub-Folders
+    controls/segmentcontrol/getting-started:
+        title: "Getting Started"
+        position: 1
+    controls/segmentcontrol/features:
+        title: "Features"
+        position: 2
+        ## End SegmentControl Sub-Folders
+    ## End SegmentControl
     ## ZipLibrary
     controls/ziplibrary:
         title: "ZipLibrary"

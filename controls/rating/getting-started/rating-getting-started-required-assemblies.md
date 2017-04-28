@@ -20,8 +20,8 @@ This article contains information about which assemblies are required by the **R
 | Android  | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> Telerik.XamarinForms.SkiaSharp.dll |
 | iOS      | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> Telerik.XamarinForms.SkiaSharp.dll |
 | UWP      | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> Telerik.XamarinForms.SkiaSharp.dll |
-| Windows 8.1 | **RadGauge** is not available |
-| Windows Phone 8.1 | **RadGauge** is not available |
-| Windows Phone 8.0 | **RadGauge** is not available |
+| Windows 8.1 | **RadRating** is not available |
+| Windows Phone 8.1 | **RadRating** is not available |
+| Windows Phone 8.0 | **RadRating** is not available |
 
 The gauge controls are rendered via the SkiaSharp graphics library so you need to install also [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.55.0) in all projects of the xamarin solution (portable, android, ios, etc). 

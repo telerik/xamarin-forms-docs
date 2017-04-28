@@ -196,8 +196,9 @@ Telerik.XamarinForms.PrimitivesRenderer.WinRT.WindowsPhone
 
 </tbody>
 </table>
+
+>To manually register the renderer users should follow these steps [Register SideDrawer Renderer]({% slug sidedrawer-getting-started--register-renderer %})
  
 ## See Also
 
 - [SideDrawer Getting Started]({% slug sidedrawer-getting-started %})
-- [Register SideDrawer Renderer]({% slug sidedrawer-getting-started--register-renderer %})

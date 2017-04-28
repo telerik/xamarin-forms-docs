@@ -206,7 +206,8 @@ Telerik.XamarinForms.InputRenderer.WinRT.WindowsPhone
 </tbody>
 <table>
 
+>To manually register the renderer users should follow these steps [Register DataForm Renderer]({% slug dataform-getting-started-register-renderer %})
+
 ## See Also
 
 - [DataForm Getting Started]({% slug dataform-getting-started %})
-- [Register DataForm Renderer]({% slug dataform-getting-started-register-renderer %})

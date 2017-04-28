@@ -221,7 +221,8 @@ Telerik.XamarinForms.Common.WinPhone
 </tbody>
 <table>
 
+>To manually register the renderer users should follow these steps [Register Chart Renderer]({% slug chart-getting-started-register-renderer %})
+
 ## See Also
 
 - [Chart Getting Started]({% slug chart-getting-started %})
-- [Register Chart Renderer]({% slug chart-getting-started-register-renderer %})

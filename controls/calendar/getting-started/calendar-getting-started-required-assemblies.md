@@ -222,8 +222,9 @@ Telerik.XamarinForms.Common.WinPhone
 
 </tbody>
 <table>
+
+>To manually register the renderer users should follow these steps [Register Calendar Renderer]({% slug calendar-getting-started-register-renderer %})
  
 ## See Also
 
 - [Calendar Getting Started]({% slug calendar-getting-started %})
-- [Register Calendar Renderer]({% slug calendar-getting-started-register-renderer %})

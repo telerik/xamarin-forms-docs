@@ -208,7 +208,8 @@ Telerik.XamarinForms.InputRenderer.WinRT.WindowsPhone
 </tbody>
 <table>
 
+>To manually register the renderer users should follow these steps [Register AutoComplete Renderers]({% slug autocomplete-getting-started-register-renderer %})
+
 ## See Also
 
-- [Register AutoComplete Renderers]({% slug autocomplete-getting-started-register-renderer %})
 - [AutoComplete Getting Started]({% slug autocomplete-getting-started %})

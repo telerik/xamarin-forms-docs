@@ -205,9 +205,10 @@ Telerik.XamarinForms.Common.WinRT.WindowsPhone
 </tr>
 
 </tbody>
-</table>  
+</table>
+
+>To manually register the renderer users should follow these steps [Register ListView Renderer]({% slug listview-getting-started-register-renderer %})
 
 ## See Also
 
 - [ListView Getting Started]({% slug listview-getting-started %})
-- [Register ListView Renderer]({% slug listview-getting-started-register-renderer %})

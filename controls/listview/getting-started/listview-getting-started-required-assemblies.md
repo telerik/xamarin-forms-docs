@@ -9,6 +9,25 @@ slug: listview-getting-started-required-assemblies
 
 This article contains information about which assemblies are required by the **RadListView** control.
 
+## References after R2 2017
+
+> The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls. The default location is:  
+> `C:\Program Files (x86)\Telerik\UI for Xamarin RX XXX\Binaries`.
+
+> Please keep in mind that all binaries built for a specific platform are placed in a folder named after that platform.
+
+| Platform | Assemblies |
+| -------- | ---------- |
+| Portable | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.DataControls.dll |
+| Android  | Telerik.Xamarin.Android.Common.dll <br/> Telerik.Xamarin.Android.Data.dll <br/> Telerik.Xamarin.Android.Input.dll <br/> Telerik.Xamarin.Android.List.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.DataControls.dll |
+| iOS      | Telerik.Xamarin.iOS.dll  <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.DataControls.dll |
+| UWP      | Telerik.Core.dll <br/> Telerik.Data.dll <br/> Telerik.UI.Xaml.Controls.Data.UWP.dll <br/> Telerik.UI.Xaml.Primitives.UWP.dll <br/> Telerik.UI.Xaml.Input.UWP.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.DataControls.dll |
+| Windows 8.1 | WinRT\Common\Telerik.Core.dll <br/> WinRT\Common\Telerik.Data.dll <br/> WinRT\Windows 8.1\Telerik.UI.Xaml.Controls.Data.dll <br/> WinRT\Windows 8.1\Telerik.UI.Xaml.Primitives.dll <br/> WinRT\Windows 8.1\Telerik.UI.Xaml.Input.dll<br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.DataControls.dll |
+| Windows Phone 8.1 | WinRT\Common\Telerik.Core.dll <br/> WinRT\Common\Telerik.Data.dll <br/> WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Controls.Data.dll <br/> WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Primitives.dll <br/> WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Input.dll<br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.DataControls.dll |
+| Windows Phone 8.0 | **RadListView** is not available |
+
+## References prior R2 2017
+
 > The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls. The default location is:  
 > `C:\Program Files (x86)\Telerik\UI for Xamarin RX XXX\Binaries`.
 
@@ -186,9 +205,10 @@ Telerik.XamarinForms.Common.WinRT.WindowsPhone
 </tr>
 
 </tbody>
-</table>  
+</table>
+
+>To manually register the renderer users should follow these steps [Register ListView Renderer]({% slug listview-getting-started-register-renderer %})
 
 ## See Also
 
 - [ListView Getting Started]({% slug listview-getting-started %})
-- [Register ListView Renderer]({% slug listview-getting-started-register-renderer %})

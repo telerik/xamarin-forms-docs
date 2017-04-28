@@ -12,7 +12,9 @@ The **RadTemplatedRating** component is designed to be used in the cases where i
  - (DataTemplate) **ItemTemplate** - Gets or sets the template used in the rating item.
  - (DataTempalte) **SelectedItemTemplate** - Gets or sets the template used in the selected rating item.
 
->note Both templates should be set in order the control to function as expected.
+> Both templates should be set in order the control to function as expected.
+
+
 
 Here is how the rating component can be setup:
 

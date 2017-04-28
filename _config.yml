@@ -187,6 +187,18 @@ navigation:
         position: 2
         ## End SegmentControl Sub-Folders
     ## End SegmentControl
+    ## TabView
+    controls/tabview:
+        title: "TabView"
+        ## TabView Sub-Folders
+    controls/tabview/getting-started:
+        title: "Getting Started"
+        position: 1
+    controls/tabview/features:
+        title: "Features"
+        position: 2
+        ## End TabView Sub-Folders
+    ## End TabView
     ## ZipLibrary
     controls/ziplibrary:
         title: "ZipLibrary"

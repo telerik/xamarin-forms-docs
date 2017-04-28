@@ -25,7 +25,7 @@ There are different colors applied to the segments in their different states. Th
 
 This example shows setting the different segment colors.
 
-<snippet id='segmentcontrol-features-customizecolorsn-xaml'/>
+<snippet id='segmentcontrol-features-customizecolors-xaml'/>
 <snippet id='segmentcontrol-features-customizecolors-csharp'/>
 
 #### __Figure 1: Customized segment colors__  

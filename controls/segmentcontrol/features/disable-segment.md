@@ -21,8 +21,8 @@ You can set the text color of the disabled segment through the **DisabledSegment
 
 The following example shows how to disable a segment and define a color.
 
-<snippet id='segmentcontrol-features-disable-segment-xaml'/>
-<snippet id='segmentcontrol-features-disable-segment-csharp'/>
+<snippet id='segmentcontrol-features-disablesegment-xaml'/>
+<snippet id='segmentcontrol-features-disablesegment-csharp'/>
 
 #### __Figure 1: Disabled segment__  
 ![SegmentControl disable segment example](../images/segmentcontrol-features-disablesegment-0.png) 

@@ -30,7 +30,7 @@ RadSegmentControl exposes a **SelectionChanged event** which is fired when the s
 
 This example shows how to set the selection manually.
 
-<snippet id='segmetncontrol-features-selection-xaml'/>
+<snippet id='segmentcontrol-features-selection-xaml'/>
 
 #### __Figure 1: Selection example__  
 ![SegmentControl selection example](../images/segmentcontrol-features-selection-0.png) 

@@ -3,6 +3,7 @@ title: Register DataForm Renderer
 page_title: Register DataForm Renderer
 position: 2
 slug: dataform-getting-started-register-renderer
+publish: false
 ---
 
 # Register the RadDataForm renderer

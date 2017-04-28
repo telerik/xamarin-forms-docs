@@ -3,6 +3,7 @@ title: Register Calendar Renderer
 page_title: Register Calendar Renderer
 position: 2
 slug: calendar-getting-started-register-renderer
+publish: false
 ---
 
 # Register the RadCalendar renderer

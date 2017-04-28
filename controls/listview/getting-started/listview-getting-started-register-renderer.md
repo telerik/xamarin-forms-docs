@@ -3,6 +3,7 @@ title: Register ListView Renderer
 page_title: Register ListView Renderer
 position: 2
 slug: listview-getting-started-register-renderer
+publish: false
 ---
 
 # Register the RadListView renderer

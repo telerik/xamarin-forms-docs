@@ -3,6 +3,7 @@ title: Register SideDrawer Renderer
 page_title: Register SideDrawer Renderer
 position: 2
 slug: sidedrawer-getting-started--register-renderer
+publish: false
 ---
 
 # Register the RadSideDrawer renderer

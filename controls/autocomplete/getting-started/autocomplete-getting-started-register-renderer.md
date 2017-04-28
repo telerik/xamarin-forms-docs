@@ -3,6 +3,7 @@ title: Register AutoComplete Renderer
 page_title: Register AutoComplete Renderer
 position: 2
 slug: autocomplete-getting-started-register-renderer
+publish: false
 ---
 
 # Register the AutoComplete renderer

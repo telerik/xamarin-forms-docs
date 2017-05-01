@@ -9,8 +9,10 @@ slug: tabview-required-assemblies
 
 This article contains a list with the assemblies required by the **RadTabView** control.
 
-> The path of the assemblies is relative to the UI for Xamarin `installation folder`. The default location is:  
-> `C:\Program Files (x86)\Telerik\UI for Xamarin RX XXX`.
+> The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls. The default location is:  
+> `C:\Program Files (x86)\Telerik\UI for Xamarin RX XXX\Binaries`.
+
+> Please keep in mind that all binaries built for a specific platform are placed in a folder named after that platform.
 
 | Platform | Location | Assemblies |
 | -------- | -------- | ---------- |

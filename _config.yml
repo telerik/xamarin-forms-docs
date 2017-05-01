@@ -173,6 +173,9 @@ navigation:
     controls/rating/getting-started:
         title: "Getting Started"
         position: 1
+    controls/rating/features:
+        title: "Features"
+        position: 2
         ## End SideDrawer Sub-Folders
     ## End Rating
     ## SegmentControl

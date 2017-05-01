@@ -20,4 +20,4 @@ Here is how the rating component can be setup:
 
 <snippet id='rating-templates'/>
 
-![](images/rating-templates.png)
+![](../images/rating-templates.png)

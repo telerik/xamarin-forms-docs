@@ -25,22 +25,22 @@ Here is how each of the geometries can be used:
 
 <snippet id='rating-geometries-star'/>
 
-![](images/rating-overview.png)
+![](../images/rating-overview.png)
 
 - **Circle**
 
 <snippet id='rating-geometries-circle'/>
 
-![](images/rating-circle.png)
+![](../images/rating-circle.png)
 
 - **Diamond**
 
 <snippet id='rating-geometries-diamond'/>
 
-![](images/rating-diamond.png)
+![](../images/rating-diamond.png)
 
 - **Heart**
 
 <snippet id='rating-geometries-heart'/>
 
-![](images/rating-heart.png)
+![](../images/rating-heart.png)

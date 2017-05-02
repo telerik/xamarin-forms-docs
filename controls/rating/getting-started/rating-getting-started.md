@@ -13,6 +13,8 @@ This example will guide you through the steps needed to add a basic **RadRating*
 
 >- [Setup on Windows]({%slug getting-started-windows%})
 >- [Setup on Mac]({%slug getting-started-mac%})
+>- [Required Telerik Assemblies]({%slug rating-getting-started-required-assemblies%})
+> **RadRating** is rendered via the SkiaSharp graphics library so you need to install [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.55.0).
 
 ## Example
 

@@ -14,12 +14,12 @@ This article contains a list with the assemblies required by the **RadTabView** 
 
 > Please keep in mind that all binaries built for a specific platform are placed in a folder named after that platform.
 
-| Platform | Location | Assemblies |
-| -------- | -------- | ---------- |
-| Portable | \Binaries\Portable\ | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll |
-| Android  | \Binaries\Android\ | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll |
-| iOS      | \Binaries\iOS\ | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll  |
-| UWP      | \Binaries\UWP\ | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll |
+| Platform | Assemblies |
+| -------- | ---------- |
+| Portable | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll |
+| Android  | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll |
+| iOS      | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll  |
+| UWP      | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll |
 
 ### See Also
 

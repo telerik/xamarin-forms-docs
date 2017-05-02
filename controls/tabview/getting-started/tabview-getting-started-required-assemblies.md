@@ -18,7 +18,7 @@ This article contains a list with the assemblies required by the **RadTabView** 
 | -------- | ---------- |
 | Portable | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll |
 | Android  | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll |
-| iOS      | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll  |
+| iOS      | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll |
 | UWP      | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Primitives.dll |
 
 ### See Also

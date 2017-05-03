@@ -2,19 +2,19 @@
 title: Overview
 page_title: Overview
 position: 0
-slug: segmentcontrol-overview
+slug: segmentedcontrol-overview
 ---
 
 # Overview
 
-**RadSegmentControl** allows you to display a list of horizontally aligned, mutually exclusive options, which can be selected by the user. Each option is a button that can display a text or an image.
+**RadSegmentedControl** allows you to display a list of horizontally aligned, mutually exclusive options, which can be selected by the user. Each option is a button that can display a text or an image.
 
-> **RadSegmentControl** is available for the following platforms:
+> **RadSegmentedControl** is available for the following platforms:
 > - **Android**
 > - **iOS**
 > - **Universal Windows Platform**
 
-![RadSegmentControl example](images/segmentcontrol-overview-0.png) 
+![RadSegmentedControl example](images/segmentcontrol-overview-0.png) 
 
 ### Key features
 

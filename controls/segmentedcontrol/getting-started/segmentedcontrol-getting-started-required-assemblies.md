@@ -2,12 +2,12 @@
 title: Required Telerik Assemblies
 page_title: Required Telerik Assemblies
 position: 1
-slug: segmentcontrol-required-assemblies
+slug: segmentedcontrol-required-assemblies
 ---
 
 # Required Telerik Assemblies
 
-This article contains a list with the assemblies required by the **RadSegmentControl** component.
+This article contains a list with the assemblies required by the **RadSegmentedControl** component.
 
 > The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls. The default location is:  
 > `C:\Program Files (x86)\Telerik\UI for Xamarin RX XXX\Binaries`.
@@ -24,4 +24,4 @@ This article contains a list with the assemblies required by the **RadSegmentCon
 ### See Also
 
 - [Required Android Support Libraries]({%slug required-android-support-libraries%})
-- [Getting Started]({%slug segmentcontrol-getting-started%})
+- [Getting Started]({%slug segmentedcontrol-getting-started%})

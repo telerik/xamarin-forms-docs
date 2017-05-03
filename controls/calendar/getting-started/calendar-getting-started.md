@@ -36,7 +36,7 @@ Here is the result:
 
 ## See Also
 
-- [Register AutoComplete Renderers]({% slug autocomplete-getting-started-register-renderer %})
-- [AutoComplete Required Assemblies]({% slug autocomplete-getting-started-required-assemblies %})
+- [Register Calendar Renderers]({% slug calendar-getting-started-register-renderer %})
+- [Calendar Required Assemblies]({% slug calendar-getting-started-required-assemblies %})
 - [Project Wizard]({% slug project-wizard %})
 - [Getting Started on Mac]({% slug getting-started-mac %})

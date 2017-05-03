@@ -52,33 +52,89 @@ Or subscribe to the **DisplayDateChanged** event:
 
  - **ViewMode** (CalendarViewMode): Gets the current view mode of the calendar (use the **TrySetViewMode** method to set the current view).  
 Here are listed the supported view modes for each platform:
-![Calendar View Modes](images/calendar-view-mode-support.png "Supported view modes")
+
+<table>
+<tbody>
+	<tr>
+		<th>View Mode</th>
+		<th>iOS</th>
+		<th>Android</th>
+		<th>UWP</th>
+	</tr>
+	<tr>
+		<td>Month</td>
+		<td>&#x2714;</td>
+		<td>&#x2714;</td>
+		<td>&#x2714;</td>
+	</tr>
+	<tr>
+		<td>Day</td>
+		<td>&#x2714;</td>
+		<td>&#x2714;</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>Year</td>
+		<td>&#x2714;</td>
+		<td>&#x2714;</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>Week</td>
+		<td>&#x2714;</td>
+		<td>&#x2714;</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>MonthNames</td>
+		<td>&#x2714;</td>
+		<td>-</td>
+		<td>&#x2714;</td>
+	</tr>
+	<tr>
+		<td>YearNumbers</td>
+		<td>&#x2714;</td>
+		<td>-</td>
+		<td>&#x2714;</td>
+	</tr>
+	<tr>
+		<td>Flow</td>
+		<td>&#x2714;</td>
+		<td>-</td>
+		<td>-</td>
+	</tr>
+</tbody>
+</table>
 
 ### Events:
 
 - **ViewChanged** (ValueChangedEventArgs&lt;CalendarViewMode&gt;): Occurs when the calendar view mode is changed. 
-- **NativeControlLoaded** (EventArgs): Occurs when the renderer has finished preparing the native control.
-- **NativeControlUnloaded** (EventArgs): Occurs when the native control is in invalid state.
 
 ### Methods:
 
-> **Important**: All calendar methods should be called after the native element has been loaded - when the **NativeControlLoaded** event is raised.
- 
+> **Important**: All calendar navigation methods should be called after the native element has been loaded. Here are the events that you can use:
+> 
+> - **NativeControlLoaded** (EventArgs): Occurs when the renderer has finished preparing the native control.
+> - **NativeControlUnloaded** (EventArgs): Occurs when the native control is in invalid state.
+
  - bool **TrySetViewMode**(CalendarViewMode *view*, bool *isAnimated* = true): Tries to set the view mode of the calendar to the specified value. If the view mode is supported, the method returns `true`, otherwise returns `false`.
  - bool **TryNavigateToUpperView** (bool *isAnimated* = true): Navigates to upper view if possible. Returns `true` if navigation has been successful, `false` otherwise. 
-  - **Windows Phone**: Since only one view mode is supported, this method always returns `false`.
-  - **iOS**: `Month` > `MonthNames` > `YearNumbers`
-  - **Android**: `Month` > `Year` 
+   - **iOS**: `Month` > `MonthNames` > `YearNumbers`
+  - **Android**: `Month` > `Year`
+  - **UWP**: `Month` > `MonthNames` > `YearNumbers`
  - bool **TryNavigateToLowerView** (bool isAnimated = true): Navigates to lower view if possible. Returns `true` if navigation has been successful, `false` otherwise. 
-  - **Windows Phone**: Since only one view mode is supported, this method always returns `false`.
-  - **iOS**: `YearNumbers` > `MonthNames` > `Month` 
-  - **Android**: `Year` > `Month` 
+  - **iOS**: `YearNumbers` > `MonthNames` > `Month`
+  - **Android**: `Year` > `Month`
+  - **UWP**: `YearNumbers` > `MonthNames` > `Month`
 
+### Example
 
-Example:
+You need to attach to the **NativeControlLoaded** event:
 
 	var calendar = new RadCalendar();
 	calendar.NativeControlLoaded += CalendarLoaded;
+	
+When the control is loaded, you can change the view mode.  
 	
 	private void CalendarLoaded(object sender, EventArgs args)
 	{

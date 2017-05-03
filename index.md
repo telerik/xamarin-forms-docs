@@ -26,8 +26,11 @@ Our suite offers the following controls for cross-platform development with Xama
 - [DataForm]({% slug dataform-overview %})
 - [Gauge]({% slug gauge-overview %})
 - [ListView]({% slug listview-overview %})
+- [Rating]({% slug rating-overview%})
+- [SegmentedControl]({% slug segmentedcontrol-overview%})
 - [SideDrawer]({% slug sidedrawer-overview %})
 - [SpreadStreamProcessing]({% slug radspreadstreamprocessing-overview %})
+- [TabView]({% slug tabview-overview%})
 - [ZipLibrary]({% slug radziplibrary-overview %})
 
 

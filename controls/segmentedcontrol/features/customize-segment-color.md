@@ -35,3 +35,4 @@ This example shows setting the different segment colors.
 
 - [Getting Started]({%slug segmentedcontrol-getting-started%})
 - [Selection]({%slug segmentedcontrol-features-selection%})
+- [Disable segment]({%slug segmentedcontrol-features-disable-segment%})

@@ -12,6 +12,9 @@ RadCalendar can display appointments in its month view by using its **Appointmen
 - **StartDate** 
 - **EndDate**
 - **Title**
+- **Detail**
+- **Color**
+- **IsAllDay**
 
 ## Example ##
 
@@ -46,6 +49,8 @@ where **Appointment** class implements **IAppointment** interface:
 		public bool IsAllDay { get; set; }
 
 		public Color Color { get; set; }
+
+		public string Detail { get; set; }
 	}
 
 ![Appointments](images/calendar-appointments.png)

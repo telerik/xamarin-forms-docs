@@ -23,11 +23,13 @@ RadCalendar can display appointments in its month view by using its **Appointmen
 			StartDate = DateTime.Today.AddDays(1), 
 			EndDate = DateTime.Today.AddDays(2).AddTicks(-1), 
 			Title = "Mom's Birthday",
+			IsAllDay = true,
 			Color = Color.Red },
 		new Appointment() { 
 			StartDate = DateTime.Today.AddDays(3).AddHours(17), 
 			EndDate = DateTime.Today.AddDays(3).AddHours(22), 
 			Title = "Big Game",
+			Detail = "The Spurs are playing the Warriors",
 			Color = Color.Green },
 		new Appointment() {
 			StartDate = DateTime.Today.AddDays(11).AddHours(20), 

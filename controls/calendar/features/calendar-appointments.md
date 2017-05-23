@@ -16,7 +16,7 @@ RadCalendar can display appointments in its month view by using its **Appointmen
 - **Color** *(Color)*
 - **IsAllDay** *(bool)*
 
->important In **2017 R2** we have introduced a breaking change in the **IAppointment** interface by adding the **Detail** property. 
+> In **R2 2017** we have introduced a breaking change in the **IAppointment** interface by adding the **Detail** property. 
 
 ## Example ##
 

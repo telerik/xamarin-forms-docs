@@ -1,7 +1,7 @@
 # The public documentation URL, used for sitemap.xml
 url: "http://docs.telerik.com/devtools/xamarin"
 
-# Exclude files which should not be in the output
+# Exclude files which should not be in the output 
 exclude: [README.md,Gemfile,Gemfile.lock]
 navigation:
 ## List your directory names and order here, like this:

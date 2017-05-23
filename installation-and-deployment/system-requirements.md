@@ -19,7 +19,7 @@ For more information on how to setup your development environment check [this MS
 
 ## OS X
 
-You will be able to develop **Android** and **iOS** apps. The **iOS** apps will require iOS 7 and higher. Windows apps are not supported on OS X.
+You will be able to develop **Android** and **iOS** apps. The **iOS** apps will require iOS 8 and higher. Windows apps are not supported on OS X.
 
 -  [OS X Yosemite 10.10.5 or higher](http://www.apple.com/osx/)
 -  [Xamarin Studio](http://xamarin.com/download)

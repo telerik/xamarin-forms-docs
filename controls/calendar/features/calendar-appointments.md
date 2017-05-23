@@ -7,52 +7,26 @@ slug: calendar-appointments
 
 # Appointments #
 
-RadCalendar can display appointments in its month view by using its **AppointmentsSource** property. It accepts a collection of objects, which implement the **Telerik.XamarinForms.IAppointment** interface. This interface defines 3 members:
+RadCalendar can display appointments in its month view by using its **AppointmentsSource** property. It accepts a collection of objects, which implement the **Telerik.XamarinForms.IAppointment** interface. This interface defines 6 members:
 
-- **StartDate** 
-- **EndDate**
-- **Title**
-- **Detail**
-- **Color**
-- **IsAllDay**
+- **StartDate** *(DateTime)*
+- **EndDate** *(DateTime)*
+- **Title** *(string)*
+- **Detail** *(string)*
+- **Color** *(Color)*
+- **IsAllDay** *(bool)*
+
+>important In **2017 R2** we have introduced a breaking change in the **IAppointment** interface by adding the **Detail** property. 
 
 ## Example ##
 
-	calendar.AppointmentsSource = new List<Appointment>() {
-		new Appointment() { 
-			StartDate = DateTime.Today.AddDays(1), 
-			EndDate = DateTime.Today.AddDays(2).AddTicks(-1), 
-			Title = "Mom's Birthday",
-			IsAllDay = true,
-			Color = Color.Red },
-		new Appointment() { 
-			StartDate = DateTime.Today.AddDays(3).AddHours(17), 
-			EndDate = DateTime.Today.AddDays(3).AddHours(22), 
-			Title = "Big Game",
-			Detail = "The Spurs are playing the Warriors",
-			Color = Color.Green },
-		new Appointment() {
-			StartDate = DateTime.Today.AddDays(11).AddHours(20), 
-			EndDate = DateTime.Today.AddDays(12).AddHours(4), 
-			Title = "Progress Party",
-			Color = Color.Red }
-	};
+<snippet id='calendar-gettingstarted-appointmentssource-csharp'/>
 
 where **Appointment** class implements **IAppointment** interface:
 
-	public class Appointment : IAppointment
-	{
-		public DateTime StartDate { get; set; }
-
-		public DateTime EndDate {  get; set; }
-
-		public string Title { get; set; }
-
-		public bool IsAllDay { get; set; }
-
-		public Color Color { get; set; }
-
-		public string Detail { get; set; }
-	}
+<snippet id='calendar-getting-started-appointment-class'/>
 
 ![Appointments](images/calendar-appointments.png)
+
+## See Also
+

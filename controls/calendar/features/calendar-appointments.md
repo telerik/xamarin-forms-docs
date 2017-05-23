@@ -30,3 +30,6 @@ where **Appointment** class implements **IAppointment** interface:
 
 ## See Also
 
+* [Navigation and View Mode]({%slug calendar-features-navigation-and-view-mode%})
+* [Calendar Selection]({%slug calendar-selection%})
+

@@ -40,7 +40,7 @@ To display any segments you can set the control's ItemsSource property and popul
 <snippet id='segmentcontrol-gettingstarted-xaml'/>
 <snippet id='segmentcontrol-gettingstarted-csharp'/>
 
-#### __Figure 1: RadSegmentedControl when IsBusy is True__  
+#### __Figure 1: RadSegmentedControl example__  
 ![SegmentControl example](../images/segmentcontrol-gettingstarted-0.png)
 
 ### See Also

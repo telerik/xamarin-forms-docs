@@ -462,11 +462,27 @@ ul, ol {
 }
 
 blockquote {
-    padding: 10px 30px;
+    padding: 10px 60px;
     margin: 30px 0;
     min-height: 70px;
     position: relative;
     box-sizing: border-box;
+}
+
+blockquote.note{
+	background: #d9f0f7 url(../images/note-icon.png) no-repeat 15px center;
+}
+
+blockquote.important {
+	background: #f8eee3 url(../images/important-icon.png) no-repeat 15px center;
+}
+
+blockquote.caution {
+	background: #eddee1 url(../images/caution-icon.png) no-repeat 15px center;
+}
+
+blockquote.tip {
+	background: #def4e4 url(../images/tip-icon.png) no-repeat 15px center;
 }
 
 blockquote table {

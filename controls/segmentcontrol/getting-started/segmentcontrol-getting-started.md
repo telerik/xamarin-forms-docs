@@ -30,7 +30,7 @@ You can find an example with the selected color properties in the [Selection]() 
 
 ### Setting up RadSegmentControl
 
-To use the tabview control you can include the following namespaces:
+To use the segmented control you can include the following namespaces:
 
 <snippet id='xmlns-telerikinput'/>
 <snippet id='ns-telerikinput'/>
@@ -40,7 +40,7 @@ To display any segments you can set the control's ItemsSource property and popul
 <snippet id='segmentcontrol-gettingstarted-xaml'/>
 <snippet id='segmentcontrol-gettingstarted-csharp'/>
 
-#### __Figure 1: RadBusyIndicator when IsBusy is True__  
+#### __Figure 1: RadSegmentedControl when IsBusy is True__  
 ![SegmentControl example](../images/segmentcontrol-gettingstarted-0.png)
 
 ### See Also

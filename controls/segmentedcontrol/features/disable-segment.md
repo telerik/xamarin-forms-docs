@@ -2,12 +2,12 @@
 title: Disable a Segment
 page_title: Disable a Segment
 position: 1
-slug: segmentcontrol-features-disable-segment
+slug: segmentedcontrol-features-disable-segment
 ---
 
 # Disable a Segment
 
-RadSegmentControl allows you to disable each of its segments individually. 
+RadSegmentedControl allows you to disable each of its segments individually. 
 
 To disable a segment you can use the **SetSegmentEnabled** method. The method accepts two arguments **index** that determines the index of the segment. And **isEnabled** that determines whether the item is enabled or not.
 
@@ -25,10 +25,10 @@ The following example shows how to disable a segment and define a color.
 <snippet id='segmentcontrol-features-disablesegment-csharp'/>
 
 #### __Figure 1: Disabled segment__  
-![SegmentControl disable segment example](../images/segmentcontrol-features-disablesegment-0.png) 
+![SegmentedControl disable segment example](../images/segmentcontrol-features-disablesegment-0.png) 
 
 ### See Also
 
 - [Project Wizard]({% slug project-wizard %})
-- [Getting Started]({% slug segmentcontrol-getting-started %})
-- [Customize Segment Colors]({%slug segmentcontrol-features-customizesegmentcolors%})
+- [Getting Started]({% slug segmentedcontrol-getting-started %})
+- [Customize Segment Colors]({%slug segmentedcontrol-features-customizesegmentcolors%})

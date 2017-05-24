@@ -2,12 +2,12 @@
 title: Customize Segment Colors
 page_title: Customize Segment Colors
 position: 2
-slug: segmentcontrol-features-customizesegmentcolors
+slug: segmentedcontrol-features-customizesegmentcolors
 ---
 
 # Customize Segment Colors
 
-**RadSegmentControl** has several properties which you can use to customize the text and background colors of the segments.
+**RadSegmentedControl** has several properties which you can use to customize the text and background colors of the segments.
 
 ### List of color properties
 
@@ -29,10 +29,10 @@ This example shows setting the different segment colors.
 <snippet id='segmentcontrol-features-customizecolors-csharp'/>
 
 #### __Figure 1: Customized segment colors__  
-![SegmentControl colors customization](../images/segmentcontrol-features-customizecolors-0.png) 
+![SegmentedControl colors customization](../images/segmentcontrol-features-customizecolors-0.png) 
 
 ### See Also
 
-- [Getting Started]({%slug segmentcontrol-getting-started%})
-- [Selection]({%slug segmentcontrol-features-selection%})
-- [Disable segment]({%slug segmentcontrol-features-disable-segment%})
+- [Getting Started]({%slug segmentedcontrol-getting-started%})
+- [Selection]({%slug segmentedcontrol-features-selection%})
+- [Disable segment]({%slug segmentedcontrol-features-disable-segment%})

@@ -20,7 +20,7 @@ The following example shows a **RadRadialGauge**'s basic set up.
 
 ## Setting rotation and radius
 
-The radial gauge allows you to define the radius of its axis. This can be done via the **AxisRadiusFactor** property of **RadRadialGauge**. Read more about the property in the [Positioning](%slug gauge-positioning%#radial-gauge-specifics) help article.
+The radial gauge allows you to define the radius of its axis. This can be done via the **AxisRadiusFactor** property of **RadRadialGauge**. Read more about the property in the [Positioning]({%slug gauge-positioning%}#radial-gauge-specifics) help article.
 
 You can also control the start angle, the sweep angle and sweep direction of the axis. This can be done via the following properties:
 - **StartAngle**: The start angle determines the origin position of the axis.

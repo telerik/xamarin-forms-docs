@@ -25,14 +25,14 @@ Here is a list of the available item templates:
 
 ## Stocks View
 
-The Stocks View represents a list of several companies and information related to their stocks such as current price, trends, percentage difference, etc. The main controls which are utilized are the [RadListView]({%slug listview-overview%}) and [RadCartesianChart]({%slug chart-getting-started%}) controls. **Figure 2** shows the default appearance of the view.
+The Stocks View represents a list of several companies and information related to their stocks such as current price, trends, percentage difference, etc. The main controls which are utilized are the [RadListView]({%slug listview-overview%}) and [RadCartesianChart]({%slug chart-types-cartesian-chart%}) controls. **Figure 2** shows the default appearance of the view.
 
 #### Figure 2: Stocks View's default appearance
 ![custom item templates](images/item-templates/stocks-view-canvas.png) 
   
 ## Activity View
 
-The Activity View provides an information regarding a specific user and information regarding his daily physical activity such as calories burned, average steps and active time. The view utilizes the [RadCartesianChart]({%slug chart-getting-started%}), [RadRadialGauge]({%slug gauge-types-radial%}) and [RadHorizontalGauge]({%slug gauge-types-horizontal%}) controls. **Figure 3** shows the default appearance of the Activity View:
+The Activity View provides an information regarding a specific user and information regarding his daily physical activity such as calories burned, average steps and active time. The view utilizes the [RadCartesianChart]({%slug chart-types-cartesian-chart%}), [RadRadialGauge]({%slug gauge-types-radial%}) and [RadHorizontalGauge]({%slug gauge-types-horizontal%}) controls. **Figure 3** shows the default appearance of the Activity View:
 
 #### Figure 3: Activity View's default appearance
 ![activity view](images/item-templates/activitiy-view-canvas.png) 

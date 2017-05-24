@@ -2,12 +2,12 @@
 title: Getting Started
 page_title: Getting Started
 position: 0
-slug: segmentcontrol-getting-started
+slug: segmentedcontrol-getting-started
 ---
 
 # Getting Started
 
-This article demonstrates how to create a sample application that contains **RadSegmentControl**.
+This article demonstrates how to create a sample application that contains **RadSegmentedControl**.
 
 >Before you proceed, please, take a look at these articles and follow the instructions to setup your app:
 
@@ -18,7 +18,7 @@ You can find the assemblies needed by the control in the [Required Telerik Assem
 
 ### Populating with data
 
-The segment control allows you to work with two types of data - string and image. You can use the **ItemsSource** property of RadSegmentControl to provide **IEnumerable** collection of strings or image sources. The control will display a segment for each item in the items source. 
+The segment control allows you to work with two types of data - string and image. You can use the **ItemsSource** property of RadSegmentedControl to provide **IEnumerable** collection of strings or image sources. The control will display a segment for each item in the items source. 
 
 ### Setting segment colors
 
@@ -26,7 +26,7 @@ You can set the background of the segments via the **SegmentBackgroundColor** pr
 
 To set the text color of the strings in the items via the **SegmentTextColor** property. The color of the selected segment can be set via the **SelectedSegmentTextColor** property.
 
-You can find an example with the selected color properties in the [Selection]() article.
+You can find an example with the selected color properties in the [Selection]({%slug segmentedcontrol-features-selection%}) article.
 
 ### Setting up RadSegmentControl
 

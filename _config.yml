@@ -178,18 +178,18 @@ navigation:
         position: 2
         ## End SideDrawer Sub-Folders
     ## End Rating
-    ## SegmentControl
-    controls/segmentcontrol:
-        title: "SegmentControl"
-        ## SegmentControl Sub-Folders
-    controls/segmentcontrol/getting-started:
+    ## SegmentedControl
+    controls/segmentedcontrol:
+        title: "SegmentedControl"
+        ## SegmentedControl Sub-Folders
+    controls/segmentedcontrol/getting-started:
         title: "Getting Started"
         position: 1
-    controls/segmentcontrol/features:
+    controls/segmentedcontrol/features:
         title: "Features"
         position: 2
-        ## End SegmentControl Sub-Folders
-    ## End SegmentControl
+        ## End SegmentedControl Sub-Folders
+    ## End SegmentedControl
     ## TabView
     controls/tabview:
         title: "TabView"

@@ -11,9 +11,21 @@ position: 1
 
 The tab strip area of RadTabView is visualized via the **TabViewHeader** element. You can use the **Header** property of **RadTabView** to set a custom header.
 
-## Setting header position
+## Setting the Header's Position
 
-You can use the **HeaderPosition** property of RadTabView to change the position of the header. The property allows you to place the header at the **top** of the control where is by default. Or at the **bottom**, under the content of the selected tab.
+You can use the **HeaderPosition** property of RadTabView to control the position of the header. The property allows you to place the header at the **top** of the control where is by default or at the **bottom**, under the content of the selected tab.
+
+<snippet id='tabview-features-header-position'/>
+
+## TabViewHeader Custom Template
+
+You can further customize the appearance of each **TabViewItem** header by modifying the template of the **TabViewHeaderItem**. Below you can find a sample scenario where a custom control template is declared and set to the **ControlTemplate** property of the **TabViewHeaderItem**. You can use this approach to control the color of the selected header as well.
+
+### Example 
+<snippet id='tabview-features-tabviewheader-custom-template-xaml'/>
+
+#### **Figure 1: TabViewHeaderItem with Custom Control Template**
+![TabViewHeaderItem Template](../images/tabviewheaderitem-custom-template.png)
 
 ## Customizing the overflow button
 
@@ -31,18 +43,9 @@ This example demonstrates how to replace the default header of the RadTabView co
 
 Additionally, you can work with the already assigned header instead of replacing it with a new one. For example - `tabView.Header.BackgroundColor = Color.Green`. 
 
-#### __Figure 1: Custom TabViewHeader example__  
+#### __Figure 2: Custom TabViewHeader example__  
 ![Custom TabViewHeader](../images/tabview-features-tabviewheader-0.png)
 
-## TabViewHeader Custom Template
-
-You can further customize the appearance of the **TabViewHeader** by modifying the template of the **TabViewHeaderItem**. Below you can find a sample scenario where a custom control template is declared and set to the ControlTemplate property of the TabViewHeaderItem.
-
-### Example 
-<snippet id='tabview-features-tabviewheader-custom-template-xaml'/>
-
-#### **Figure 2: TabViewHeaderItem with Custom Control Template**
-![TabViewHeaderItem Template](../images/tabviewheaderitem-custom-template.png)
 
 ### See Also
 

@@ -13,7 +13,7 @@ Changing the selection will highlight the corresponding item and show its conten
 
 The **RadTabView** control exposes few useful properties which can help you work with the items selection. 
 
-### Setting the selected item 
+## Setting the Selected Item 
 
 The tabview control has a **SelectedItem** property which you can use to set up the selection. The property is of type **TabViewItem** and it can be assigned to any item from the Items collection of RadTabView. 
 
@@ -30,7 +30,11 @@ This example shows how to set the selection manually.
 #### __Figure 1: Selection example__  
 ![TabView selection example](../images/tabview-features-selection-0.png) 
 
-### See Also
+## Customizing the Selected Item
+
+In order to customize the appearance of the selected item, you can modify the control template of the TabViewHeaderItem. More information can be found in the [TabViewHeader Custom Template]({%slug tabview-features-tabviewheader%}#tabviewheader-custom-template) topic.
+
+## See Also
 - [Getting Started]({%slug tabview-getting-started%})
 - [TabViewItem]({%slug tabview-features-tabviewitem%})
 - [TabViewHeader]({%slug tabview-features-tabviewheader%})

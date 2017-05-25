@@ -1,25 +1,26 @@
 ---
-title: TabViewHeader
-page_title: TabViewHeader
-description: TabViewHeader
+title: TabViewHeaderItem
+page_title: TabViewHeaderItem
+description: TabViewHeaderItem
 slug: tabview-features-tabviewheader
-tags: tabviewheader
+tags: tabviewheaderitem,header,
 position: 1
 ---
 
-# TabViewHeader
+# TabViewHeaderItem
 
-The tab strip area of RadTabView is visualized via the **TabViewHeader** element. You can use the **Header** property of **RadTabView** to set a custom header.
+The tab strip area of RadTabView is visualized via the **TabViewHeaderItem** elements. You can use the **Header** property of **RadTabView** to set a custom header.
 
 ## Setting the Header's Position
 
-You can use the **HeaderPosition** property of RadTabView to control the position of the header. The property allows you to place the header at the **top** of the control where is by default or at the **bottom**, under the content of the selected tab.
+You can use the **HeaderPosition** property of RadTabView to control the position of the header. The property allows you to place the header at the **top** of the control where is by default or at the **bottom**, under the content of the selected tab. 
 
-<snippet id='tabview-features-header-position'/>
 
 ## TabViewHeader Custom Template
 
-You can further customize the appearance of each **TabViewItem** header by modifying the template of the **TabViewHeaderItem**. Below you can find a sample scenario where a custom control template is declared and set to the **ControlTemplate** property of the **TabViewHeaderItem**. You can use this approach to control the color of the selected header as well.
+You can customize the appearance of each **TabViewHeaderItem** by replacing its default template with one of your choice. Below you can find a sample scenario where a custom control template is declared and set to the **ControlTemplate** property of the **TabViewHeaderItem**. 
+
+>tip You can alter the control template of the **TabViewHeaderItem** in order to control the color of the selected item. 
 
 ### Example 
 <snippet id='tabview-features-tabviewheader-custom-template-xaml'/>
@@ -27,7 +28,7 @@ You can further customize the appearance of each **TabViewItem** header by modif
 #### **Figure 1: TabViewHeaderItem with Custom Control Template**
 ![TabViewHeaderItem Template](../images/tabviewheaderitem-custom-template.png)
 
-## Customizing the overflow button
+## Customizing the Overflow Button
 
 If there are too many items in the tabview control and they cannot fit into the tab strip area, an overflow button will be displayed. You can customize the button through the following properties.
 
@@ -45,7 +46,6 @@ Additionally, you can work with the already assigned header instead of replacing
 
 #### __Figure 2: Custom TabViewHeader example__  
 ![Custom TabViewHeader](../images/tabview-features-tabviewheader-0.png)
-
 
 ### See Also
 

@@ -7,7 +7,9 @@ slug: calendar-appointments
 
 # Appointments #
 
-RadCalendar can display appointments by setting its **AppointmentsSource** property. It accepts a collection of objects, which implement the **Telerik.XamarinForms.IAppointment** interface. This interface defines 6 members:
+## Creating an Appointment ##
+
+RadCalendar can display appointments by setting its **AppointmentsSource** property. It accepts a collection of objects, which should implement the **Telerik.XamarinForms.IAppointment** interface. This interface defines 6 members:
 
 - **StartDate** *(DateTime)*
 - **EndDate** *(DateTime)*
@@ -16,7 +18,7 @@ RadCalendar can display appointments by setting its **AppointmentsSource** prope
 - **Color** *(Color)*
 - **IsAllDay** *(bool)*
 
-> In **R2 2017** we have introduced a breaking change in the **IAppointment** interface by adding the **Detail** property. 
+>caution In **R2 2017** we have introduced a breaking change in the **IAppointment** interface by adding the **Detail** property. 
 
 ## Example ##
 
@@ -27,10 +29,14 @@ where **Appointment** class implements **IAppointment** interface:
 <snippet id='calendar-getting-started-appointment-class'/>
 
 #### **Figure 1: Appearance of the RadCalendar control in month view mode**
-![Appointments](images/calendar-appointments-month.png)
+![Appointments](images/monthviews.png)
 
 #### **Figure 2: Appearance of the RadCalendar control in day view mode**
-![Appointments](images/calendar-appointments-day.png)
+![Appointments](images/dayviews.png)
+
+## Events ##
+ 
+**AppointmentTapped**(AppointmentTappedEventArgs): Occurs when you tap over a specific appointment. It can be used to get all the information regarding the appointment.
 
 ## See Also
 

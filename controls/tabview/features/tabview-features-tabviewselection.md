@@ -11,7 +11,7 @@ position: 2
 
 Changing the selection will highlight the corresponding item and show its content under the tab strip area.
 
-The **RadTabView** control exposes few useful properties which can help you work with the items selection. 
+The **RadTabView** control exposes a few useful properties which can help you work with the items selection. 
 
 ## Setting the Selected Item 
 
@@ -36,5 +36,5 @@ In order to customize the appearance of the selected item, you can modify the co
 
 ## See Also
 - [Getting Started]({%slug tabview-getting-started%})
-- [TabViewItem]({%slug tabview-features-tabviewitem%})
+- [TabViewHeaderItem]({%slug tabview-features-tabviewitem%})
 - [TabViewHeader]({%slug tabview-features-tabviewheader%})

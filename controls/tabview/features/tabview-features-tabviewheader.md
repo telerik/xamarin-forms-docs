@@ -9,7 +9,7 @@ position: 1
 
 # TabViewHeaderItem
 
-The tab strip area of RadTabView contains a special toolbar panel that hosts all **TabViewHeaderItem** elements. The **RadTabView** control exposes a **Header** property which you can use to modify the header's appearance. Each individual **TabViewItem** has a **Header** property as well so you can set a specific **TabViewHeaderItem** for each individual tab.
+The tab strip area of RadTabView contains a special toolbar panel that hosts all **TabViewHeaderItem** elements. The **RadTabView** control exposes a **Header** property which you can use to modify the header's appearance. Each individual **TabViewItem** has a **Header** property as well so you can set a specific **TabViewHeaderItem** for each tab.
 
 ## Setting the Header's Position
 

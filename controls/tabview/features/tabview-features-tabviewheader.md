@@ -25,8 +25,8 @@ You can customize the appearance of each **TabViewHeaderItem** by replacing its 
 ### Example 
 <snippet id='tabview-features-tabviewheader-custom-template-xaml'/>
 
-#### **Figure 1: TabViewHeaderItem with Custom Control Template**
-![TabViewHeaderItem Template](../images/tabviewheaderitem-custom-template.png)
+#### **Figure 1: TabViewHeaderItem with custom Control Template**
+![TabViewHeaderItem Template](../images/tabview-customtemplateheaders-gray.png)
 
 ## Customizing the Overflow Button
 
@@ -45,7 +45,7 @@ This example demonstrates how to replace the default header of the RadTabView co
 Additionally, you can work with the already assigned header instead of replacing it with a new one. For example - `tabView.Header.BackgroundColor = Color.Green`. 
 
 #### __Figure 2: Custom TabViewHeader example__  
-![Custom TabViewHeader](../images/tabview-features-tabviewheader-0.png)
+![Custom TabViewHeader](../images/overflowbuttons-updated.png)
 
 ### See Also
 

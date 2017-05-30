@@ -9,14 +9,13 @@ position: 1
 
 # TabViewHeaderItem
 
-The tab strip area of RadTabView is visualized via the **TabViewHeaderItem** elements. You can use the **Header** property of **RadTabView** to set a custom header.
+The tab strip area of RadTabView contains a special toolbar panel that hosts all **TabViewHeaderItem** elements. The **RadTabView** control exposes a **Header** property which you can use to modify the header's appearance. Each individual **TabViewItem** has a **Header** property as well so you can set a specific **TabViewHeaderItem** for each individual tab.
 
 ## Setting the Header's Position
 
 You can use the **HeaderPosition** property of RadTabView to control the position of the header. The property allows you to place the header at the **top** of the control where is by default or at the **bottom**, under the content of the selected tab. 
 
-
-## TabViewHeader Custom Template
+## Custom TabViewHeader 
 
 You can customize the appearance of each **TabViewHeaderItem** by replacing its default template with one of your choice. Below you can find a sample scenario where a custom control template is declared and set to the **ControlTemplate** property of the **TabViewHeaderItem**. 
 

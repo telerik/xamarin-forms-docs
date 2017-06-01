@@ -14,7 +14,7 @@ This article demonstrates how to create a sample application that contains **Rad
 >- [Setup on Mac]({%slug getting-started-mac%})
 >- [Required Telerik Assemblies]({%slug tabview-required-assemblies%})
 
-### Defining RadTabView
+## Defining RadTabView
 
 To use the tabview control you can include the following namespaces:
 
@@ -31,7 +31,7 @@ To define the header of a TabViewItem you can use its **HeaderText** property as
 #### __Figure 1: TabView example__  
 ![BusyIndicator example](../images/tabview-gettingstarted-0.png)
 
-### See Also
+## See Also
 
 - [Project Wizard]({%slug project-wizard%})
 - [Getting Started on Windows]({%slug getting-started-windows%})

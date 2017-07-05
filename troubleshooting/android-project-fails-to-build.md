@@ -1,11 +1,12 @@
 ---
-title: Android Project Fails To Build
-page_title: Android Project Fails To Build
+title: Android "OutOfMemory Exception"
+page_title: Android "OutOfMemory Exception"
 slug: android-project-fails-to-build
 position: 1
 ---
 
-# Android Project fails to build #
+# Android Exception "java.lang.OutOfMemoryError thrown" #
+
 What to do if Android project fails to build with the following error:
 
 	COMPILETODALVIK : UNEXPECTED TOP-LEVEL error : 

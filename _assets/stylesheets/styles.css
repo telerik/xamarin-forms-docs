@@ -45,6 +45,61 @@ code, em {
   font-family: "Roboto Mono", "Ubuntu Mono", "Consolas", "Monaco", monospace;
 }
 
+.TK-Hat {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid #eff0f1;
+    color: #4d4f52;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 42042;
+}
+.TK-Hat::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.TK-Hat *,
+.TK-Hat:after,
+.TK-Hat:before {
+    box-sizing: border-box;
+}
+.TK-Hat-Brand {
+    float: left;
+    width: 150px;
+    margin: 0;
+}
+.TK-PRGS-Logo {
+    display: block;
+    outline: none!important;
+    text-decoration: none!important;
+    transition: color .1s linear, background .1s linear, opacity .1s linear;
+}
+.TK-PRGS-Logo:focus,
+.TK-PRGS-Logo:hover {
+    opacity: .75;
+}
+.TK-PRGS-Logo svg {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+@media only screen and (max-width: 1100px) and (min-width: 880px) {
+   .TK-Hat-Brand {
+         width: 120px;
+         min-width: 120px;
+     }
+}
+@media only screen and (max-width: 880px) {
+    .TK-Hat-Brand {
+        width: 100px;
+        min-width: 100px;
+    }
+}
+
 /* Header */
 
 #page-header {
@@ -53,6 +108,11 @@ code, em {
     width: 100%;
     font-size: 12px;
     z-index: 100;
+    background-color: #2a2d33;
+	height: 80px;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    top: 41px;
 }
 
 /* adjust anchors for fixed header*/
@@ -106,17 +166,21 @@ code, em {
 
 #logo-bar {
     float: left;
-    margin-top: 1.617em;
-    margin-bottom: 1.217em;
-    margin-left: 1.833em;
+    font-size: 14px;
+	width: 404px;
+}
+
+#logo-bar a img {
+    height: 40px;
+    width: 323px;
 }
 
 .nav-buttons {
     float: right;
-    margin-top: .92em;
 }
 
 #page-header a.btn {
+    margin: 0;
     margin-left: .3em;
 }
 
@@ -124,7 +188,7 @@ code, em {
 
 #page-nav {
     position: fixed;
-    top: 79px;
+    top: 120px;
     bottom: 0;
     left: 0;
     width: 18%;
@@ -709,7 +773,7 @@ footer p {
     background: transparent;
     display: none;
     position: relative;
-    margin-left: 1.833em;
+    margin: 0 0 6px 0;
     cursor: pointer;
 }
 
@@ -721,12 +785,12 @@ footer p {
     display: block;
     position: relative;
     margin-top: 0;
-    top: 0;
-    left: 1.83em;
-    right: 1.83em;
+    top: -40px;
+    left: 3em;
+    right: 4em;
     background-color: #2a2d33;
     width: 70%;
-    width: calc(100% - 3.666em);
+    width: calc(100% - 7em);
 }
 
 .show-search {
@@ -920,6 +984,13 @@ footer p {
     #page-header .show-search {
       margin: 0 1em;
       position: static;
+    }
+    .toggle-nav{
+        margin: 0;
+    }
+    #page-search.search-visibility{
+        top:5px;
+        left: 0;
     }
 }
 

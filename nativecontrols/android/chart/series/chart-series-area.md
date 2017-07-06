@@ -1,0 +1,77 @@
+---
+title: AreaSeries
+page_title: AreaSeries | RadChartView | Telerik UI for Android Documentation
+description: A page desribing the AreaSeries in RadChartView for Android. This article explains the most important things you need to know before using AreaSeries.
+slug: chart-series-area
+tags: radchartview, areaseries, area, chart
+publish: true
+position: 3
+---
+
+# RadChartView: AreaSeries
+
+**RadCartesianChartView** visualizes **AreaSeries** as an area on the chart that is enclosed by the coordinate axes and straight line segments that connect the data points represented by these series. The **AreaSeries** extend **CategoricalStrokedSeries**, so they are also **CategoricalSeries** and require one **CategoricalAxis** and one **LinearAxis**.
+
+## Example
+
+You can read from the [Getting Started]({% slug chart-gettingstarted %} "Read how to define the MonthResult type") page how to define the `MonthResult` type and declare the **initData()** method.
+
+After you create the method for initialization of sample data, you can create a **RadCartesianChartView** with **AreaSeries** by adding the following code to the **onCreate()** method of your Activity.
+
+```Java
+	initData();
+
+	RadCartesianChartView chartView = new RadCartesianChartView(this);
+
+	AreaSeries areaSeries = new AreaSeries();
+	areaSeries.setCategoryBinding(new PropertyNameDataPointBinding("Month"));
+	areaSeries.setValueBinding(new PropertyNameDataPointBinding("Result"));
+	areaSeries.setData(this.monthResults);
+	chartView.getSeries().add(areaSeries);
+
+	CategoricalAxis horizontalAxis = new CategoricalAxis();
+	chartView.setHorizontalAxis(horizontalAxis);
+
+	LinearAxis verticalAxis = new LinearAxis();
+	chartView.setVerticalAxis(verticalAxis);
+
+	ViewGroup rootView = (ViewGroup)findViewById(R.id.container);
+	rootView.addView(chartView);
+```
+```C#
+	InitData();
+
+	RadCartesianChartView chartView = new RadCartesianChartView(this);
+
+	AreaSeries areaSeries = new AreaSeries();
+	areaSeries.CategoryBinding = new MonthResultDataBinding ("Month");
+	areaSeries.ValueBinding = new MonthResultDataBinding ("Result");
+	areaSeries.Data = (Java.Lang.IIterable)this.monthResults;
+	chartView.Series.Add(areaSeries);
+
+	CategoricalAxis horizontalAxis = new CategoricalAxis();
+	chartView.HorizontalAxis = horizontalAxis;
+
+	LinearAxis verticalAxis = new LinearAxis();
+	chartView.VerticalAxis = verticalAxis;
+
+	ViewGroup rootView = (ViewGroup)FindViewById(Resource.Id.container);
+	rootView.AddView(chartView);
+```
+
+> This example assumes that your root container has id `container`
+
+Here's the result:
+
+![TelerikUI-Chart-Series-Area](images/chart-series-area-1.png "Demo of Cartesian chart with AreaSeries.")
+
+## Customization
+
+**AreaSeries** extend **CategoricalStrokedSeries** which provide the following way to change their style:
+
+* **setStrokeColor(int)**: changes the color used to draw lines. In order to get the current value, use **getStrokeColor()**.
+* **setStrokeThickness(float)**: changes the width of the lines. In order to get the current value, use **getStrokeThickness()**.
+
+Additionally, **AreaSeries** can change the color of their fill with the method **setFillColor(int)**. **getFillColor()** returns the current value of the color used to fill the series.
+
+You can also customize the appearance of **AreaSeries** by using [Palettes]({% slug chart-palettes %} "Read how to use Palettes in RadChartView").

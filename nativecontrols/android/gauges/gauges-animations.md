@@ -1,0 +1,36 @@
+---
+title: Animations
+page_title: RadGaugeView Animations | Telerik UI for Android Documentation
+description: This article explains how to use animations with **RadGaugeView**
+slug: gauge-animations
+tags: radgaugeview, gauge, animations
+position: 4
+publish: true
+---
+
+#Gauges: Animations
+
+##Built in animations
+
+**RadGaugeView** has built in animations that allows animating its indicators. Turning the animations on is as easy as setting 2 properties. You shoud use <code>setAnimated()</code> setter of an indicator to allow the animations and then use <code>setAnimationDuration</code> which, as its name says, is used to set the duration of the animation.
+
+```Java
+needle.setAnimated(true);
+needle.setAnimationDuration(500);
+```
+```C#
+needle.Animated = true;
+needle.AnimationDuration = 500;
+```
+
+You can also set a timing function using TimeInterpolator.
+
+```Java
+needle.setInterpolator(new AccelerateDecelerateInterpolator());
+```
+```C#
+needle.Interpolator = new AccelerateDecelerateInterpolator();
+```
+
+After the indicator's animations are turned on, when a change in its value occurs runtime, the indicator will be animated from the previous to the new value. It is also possible to set a value from which the animations start every time the value is changed. This can be achieved through indicator's <code>setAnimationStartValue()</code>.
+

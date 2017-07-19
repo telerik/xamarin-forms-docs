@@ -2,7 +2,7 @@
 title: Lite vs Standard Assemblies
 page_title: Lite vs Standard Assemblies
 slug: telerik-light-assemblies
-position:
+position: 9
 ---
 
 ## Lite Assemblies

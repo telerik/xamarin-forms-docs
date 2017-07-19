@@ -2,6 +2,7 @@
 title: Important Changes
 page_title: Important Changes
 slug: important-changes
+position: 7
 ---
 
 # Important Changes

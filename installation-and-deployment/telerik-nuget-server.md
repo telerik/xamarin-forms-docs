@@ -2,7 +2,7 @@
 title: Telerik NuGet Server
 page_title: Telerik NuGet Server
 slug: telerik-nuget-server
-position:
+position: 8
 ---
 
 # Telerik NuGet Server

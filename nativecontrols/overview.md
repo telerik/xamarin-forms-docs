@@ -7,18 +7,26 @@ position: 0
 publish: true
 ---
 
-# Native Controls Overview
+# Native Controls Wrappers Overview
 
-If you decide to not take the [Xamarin Cross-Platform development approach](https://developer.xamarin.com/guides/cross-platform/getting_started/) but would rather work with native elements and APIs you can develop your applications through the [Xamarin.Android](https://developer.xamarin.com/guides/android/getting_started/) or [Xamarin.iOS](https://developer.xamarin.com/guides/ios/getting_started/) solutions.
 
-  The controls section of the documentation provides information regarding the available cross-platform controls whose features and functionalities are shared among the different platforms. If you decide to develop your application directly through the Xamarin.iOS or Xamarin.Android solutions, you have access to
-    
-Aside from the Xamarin.Forms Controls whose functionalities are shared between platform, you have the option to use some additional platform-specific features of the custom controls as most of the Xamarin.Forms controls are based on the native controls which were previously developed as separate products - **UI for Android** and **UI for iOS**. With this in mind, a specific functionality you are looking for might be available in the native controls or it might be easier to achieve it by directly working with the native APIs. This section provides more information regarding the native controls implementations and the features they include.
+## Native Controls Wrappers vs Xamarin Forms Controls
+
+There are two approaches that you can take when developing cross-platform applications through Xamarin. 
+
+* Xamarin.Forms solution: The approach is preferrable when you would like to have common...
+* Xamarin.iOS and Xamarin.Android solutions: You should choose this approach if you require implementing native behaviors or need to use platform-specific APIs, features and UI. 
+
+
+## Native Controls Wrappers Getting Started
+
+If you decide to not take the [Xamarin Cross-Platform development approach](https://developer.xamarin.com/guides/cross-platform/getting_started/) but would rather work with native elements and API, you can develop your applications through the [Xamarin.Android](https://developer.xamarin.com/guides/android/getting_started/) or [Xamarin.iOS](https://developer.xamarin.com/guides/ios/getting_started/) solutions.
+ 
+The following section provides information regarding the native controls and their specific implementations. 
 
 ## Android Controls
 
-bla bal bla
-
+The controls available 
 
 ## iOS Controls
 

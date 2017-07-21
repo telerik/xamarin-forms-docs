@@ -1,7 +1,7 @@
 ---
 title: Cell Types
 page_title: Cell Types
-position: 3
+position: 1
 slug: listview-cells
 ---
 # ListView Cell Types
@@ -14,7 +14,7 @@ Cells are non visual objects used to describe a template for creating a visual e
 
 This example demonstrates how to create a list view with text cells, like this:
 
-![](images/listview-celltypes-textcell.png)
+![](../images/listview-celltypes-textcell.png)
 
 Let's create a view model that will be the source of the list view.
 
@@ -36,7 +36,7 @@ Finally, set the list view as content of your page.
 
 This example demonstrates how to create a list view with templated cells, like this:
 
-![](images/listview-celltypes-templatecell.png)
+![](../images/listview-celltypes-templatecell.png)
 
 Let's create a view model that will be the source of the list view.
 
@@ -65,6 +65,6 @@ You can define the list view in code like this:
 Finally, set the list view as content of your page.
 
 ## See Also
-
+- [ListView Item TemplateSelector]({%slug listview-item-template-selector%})
 - [ListView Layouts]({% slug listview-features-layouts %})
 - [Items Styling]({% slug listview-features-styling %})

@@ -40,9 +40,20 @@ Here are listed all supported series grouped by the chart types that can use the
 
 ### Common Features ###
 
-* **ItemsSource**: Defines the data set that will fill the series data points. It supports a large variety of different data sources as the property is of type IEnumerable. 
-* **ShowLabels**: Defines whether the series will display labels for each plotted data point.
-* **DisplayName**
+* **ItemsSource** (IList): Defines the data set that will fill the series data points. 
+* **DisplayName** (string): The display name of the series.
+
+#### Selection
+
+* **AllowSelect** (bool): Specifies whether the series is selectable. If the property value is `true`, the selection is handled by the chart selection behavior.  
+* **IsSelected** (bool): Specifies whether the series is selected.
+
+#### Labels customization
+
+* **ShowLabels** (bool): Defines whether the series will display labels for each plotted data point.
+* **LabelBinding** (PropertyNameDataPointBinding): Allows the user to bind the series labels to a property of the data point item.
+* **LabelFormat** (string): Sets label format string, e.g. "{0} items".
+* **LabelFormatter** (ILabelFormatter): Allows custom series label formatting. 
 
 ### Categorical Series Features ###
 

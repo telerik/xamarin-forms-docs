@@ -280,14 +280,14 @@
 #page-nav .k-group .k-group .k-group .k-group .k-group .current-topic .k-group .k-in a { padding-left: 92px; }
 
 .btn {
-    color: #fff;
+    color: #fff !important;
     background-color: #2a2d33;
     border: 1px solid #505156;
-    background-clip: padding-box;
+	background-clip: padding-box;
     position: relative;
     display: inline-block;
-    padding: 0.667em 2.000em;
-    line-height: 0.933em;
+    padding: 5px 30px;
+    line-height: 1.33334;
     transition-property: background-color, color;
     transition-duration: 0.2s;
     transition-timing-function: ease;
@@ -296,7 +296,7 @@
     font-size: 15px;
     font-weight: bold;
     text-align: center;
-    margin: 0.7em 0;
+    margin: 0px 4px;
     cursor: pointer;
 }
 

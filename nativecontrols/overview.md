@@ -20,6 +20,8 @@ Using this approach you can quickly achieve similar look and feel on all availab
 
 * You feel comfortable creating your UI through XAML
 
+*For more details check the official [Xamarin.Forms documentation](https://developer.xamarin.com/guides/xamarin-forms/getting-started/)*
+
 ### Develop through **Xamarin Native**(Xamarin.iOS & Xamarin.Android)
 
 By choosing this approach, you can take full advantage of each platform. You are free to create platform-specific views to achieve the desired appearance in the smallest details. You can access native APIs and utilize device-specific features. You should consider this approach for:
@@ -30,6 +32,9 @@ By choosing this approach, you can take full advantage of each platform. You are
 
 * Apps where you need to achieve custom UI according to the target platform
 
+*For more details check the official [Xamarin.iOS](https://developer.xamarin.com/guides/ios/getting_started) and [Xamarin.Android](https://developer.xamarin.com/guides/android/getting_started) documentation pages*
+
+
 ## Native Controls Wrappers
 
 Aside from the Xamarin.Forms control that the **Progress Telerik UI for Xamarin** suite provides, you can take advantage of the **Native Controls Wrappers**. 
@@ -38,33 +43,33 @@ Aside from the Xamarin.Forms control that the **Progress Telerik UI for Xamarin*
 
 The Android Wrappers are built on top of the truly native controls from the **UI for Android** suite(discontinued as a separate product as of April 20th 2017). The following controls are available for Xamarin.Android development:
 
-* [AutoComplete]({%slug autocomplete-overview%})
-* [Calendar]({%slug %})
-* [Chart]({%slug %})
-* [DataForm]({%slug %})
-* [DataSource]({%slug %})
-* [Feedback]({%slug %})
-* [Gauges]({%slug %})
-* [ListView]({%slug %})
-* [NumberPicker]({%slug %})
-* [ScrollView]({%slug %})
-* [SideDrawer]({%slug %})
-* [TabView]({%slug %})
+* [AutoComplete]({%slug android-autocomplete-overview%})
+* [Calendar]({%slug android-calendar-overview%})
+* [Chart]({%slug android-chart-overview%})
+* [DataForm]({%slug android-dataform-overview%})
+* [DataSource]({%slug android-datasource-overview%})
+* [Feedback]({%slug android-feedback-overview%})
+* [Gauges]({%slug android-gauges-overview%})
+* [ListView]({%slug android-listview-overview%})
+* [NumberPicker]({%slug android-numberpicker-overview%})
+* [ScrollView]({%slug android-scrollview-overview%})
+* [SideDrawer]({%slug android-sidedrawer-overview%})
+* [TabView]({%slug android-tabview-overview%})
 
 ### iOS Controls
 
 The iOS Wrappers are built on top of the truly native controls from the **UI for iOS** suite(discontinued as a separate product as of April 20th 2017). The following controls are available for Xamarin.iOS development:
 
-*[Alert]({%slug %})
-*[AppFeedback]({%slug %})
-*[AutoCompleteTextView]({%slug %})
-*[Calendar]({%slug %})
-*[Chart]({%slug %})
-*[DataForm]({%slug %})
-*[DataSource]({%slug %})
-*[Gauges]({%slug %})
-*[ListView]({%slug %})
-*[SideDrawer]({%slug %})
-*[TabView]({%slug %})
+* [Alert]({%slug ios-alert-overview%})
+* [AppFeedback]({%slug ios-appfeedback-overview%})
+* [AutoCompleteTextView]({%slug ios-autocompletetextview-overview%})
+* [Calendar]({%slug ios-calendar-overview%})
+* [Chart]({%slug ios-chart-overview%})
+* [DataForm]({%slug ios-dataform-overview%})
+* [DataSource]({%slug ios-datasource-overview%})
+* [Gauges]({%slug ios-gauges-overview%})
+* [ListView]({%slug ios-listview-overview%})
+* [SideDrawer]({%slug ios-sidedrawer-overview%})
+* [TabView]({%slug ios-tabview-overview%})
 
 >important Though the **UI for iOS** and **UI for Android** suites have been discontinued as available products we are using them as basis for the **Xamarin.Android** and **Xamarin.iOS** controls. With this in mind, we are still dedicated to improving their quality and features so they fit nicely and provide smooth development experience in the Xamarin world.

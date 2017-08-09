@@ -1,6 +1,7 @@
 ---
 title: Getting Started
 page_title: Calendar Getting Started
+slug: ios-calendar-overview
 position: 2
 ---
 

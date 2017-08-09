@@ -1,6 +1,7 @@
 ---
 title: View Modes
 page_title: Calendar View Modes
+slug: ios-calendar-view-modes
 position: 4
 ---
 

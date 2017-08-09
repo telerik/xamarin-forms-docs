@@ -2,7 +2,7 @@
 title: Overview
 page_title: RadFeedback Overview  | Telerik UI for Android Documentation
 description: An overview page of RadFeedback for Android. This article explains the most important things you need to know before using RadFeedback.
-slug: feedback-overview
+slug: android-feedback-overview
 tags: radfeedback, feedback, overview
 position: 0
 publish: true

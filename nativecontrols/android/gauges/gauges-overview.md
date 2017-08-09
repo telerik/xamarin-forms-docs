@@ -2,7 +2,7 @@
 title: Overview
 page_title: RadGaugeView Overview | Telerik UI for Android Documentation
 description: An overview of RadGaugeView for Android.
-slug: gauge-overview
+slug: android-gauges-overview
 tags: radgaugeview, overview, gauge
 position: 0
 publish: true

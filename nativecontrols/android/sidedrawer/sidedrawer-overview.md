@@ -2,7 +2,7 @@
 title: Overview
 page_title: RadSideDrawer Overview | Telerik UI for Android Documentation
 description: This article is a short description and summary of RadSideDrawer's features.
-slug: sidedrawer-overview
+slug: android-sidedrawer-overview
 tags: radsidedrawer, overview, drawer
 position: 1
 publish: true

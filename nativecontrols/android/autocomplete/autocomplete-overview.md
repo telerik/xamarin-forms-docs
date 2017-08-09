@@ -2,7 +2,7 @@
 title: Overview
 page_title: RadAutoCompleteTextView Overview | Telerik UI for Android Documentation
 description: Short overview of the RadAutoCompleteTextView component.
-slug: autocomplete-overview
+slug: android-autocomplete-overview
 tags: radautocompletetextview, overview, autocomplete, list
 position: 0
 publish: true

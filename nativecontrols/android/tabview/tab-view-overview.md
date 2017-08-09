@@ -2,7 +2,7 @@
 title: Overview
 page_title: RadTabView Overview | Telerik UI for Android Documentation
 description: This article is a short description and summary of RadTabView.
-slug: tabview-overview
+slug: android-tabview-overview
 tags: radtabview, overview, tabs
 position: 1
 publish: true

@@ -2,7 +2,7 @@
 title: Overview
 page_title: RadDataSource Overview | Telerik UI for Android Documentation
 description: Provides a summary of the RadDataSource component.
-slug: datasource-overview
+slug: android-datasource-overview
 tags: raddatasource, overview, datasource
 position: 1
 publish: true

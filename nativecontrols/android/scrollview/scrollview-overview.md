@@ -2,7 +2,7 @@
 title: Overview
 page_title: RadScrollView Overview  | Telerik UI for Android Documentation
 description: An overview page of RadScrollView for Android. This article explains the most important things you need to know before using RadScrollView.
-slug: scrollview-overview
+slug: android-scrollview-overview
 tags: radscrollview, scrollview, overview
 position: 0
 publish: true

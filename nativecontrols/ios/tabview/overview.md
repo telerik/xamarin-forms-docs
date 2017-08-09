@@ -2,7 +2,7 @@
 title: Overview
 page_title: TKTabview Overview
 position: 1
-slug: tabview-overview
+slug: ios-tabview-overview
 ---
 
 # TKTabView Overview

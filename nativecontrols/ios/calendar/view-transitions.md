@@ -6,7 +6,7 @@ position: 5
 
 # Calendar: View Transitions
 
-View transitions allow for switching to the next/previous month with different animation effects. Those effects are available in all view mode presenters that inherit from <code>TKCalendarPresenterBase</code>. These include: month, month names, year numbers. Detailed information about view modes is available in this help article: [View modes]({%slug view-mode%})
+View transitions allow for switching to the next/previous month with different animation effects. Those effects are available in all view mode presenters that inherit from <code>TKCalendarPresenterBase</code>. These include: month, month names, year numbers. Detailed information about view modes is available in this help article: [View modes]({%slug ios-calendar-view-modes%})
 
 <img src="../images/calendar-view-transitions001.png"/>
 

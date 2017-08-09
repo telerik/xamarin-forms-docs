@@ -1,6 +1,7 @@
 ---
 title: Overview
 page_title: TKSideDrawer Overview
+slug: ios-sidedrawer-overview
 position: 1
 ---
 

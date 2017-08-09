@@ -249,7 +249,7 @@ To listen for validation errors call **addValidationCompletedListener()** on the
 
 ## Customizing the editors layout
 
-Supporting multiple screen sizes on android is a necessity so RadDataForm allows developers to specify a [layout manager]({% slug data-form-layout %} "Read more the data form layout.") that will be used to arrange the editors. 
+Supporting multiple screen sizes on android is a necessity so RadDataForm allows developers to specify a [layout manager]({% slug data-form-linear-layout %} "Read more the data form layout.") that will be used to arrange the editors. 
 The default layout manager arranges the editors in a table layout.
 
 ## Read-Only mode

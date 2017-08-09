@@ -2,7 +2,7 @@
 title: Overview
 page_title: RadCalendarView Overview  | Telerik UI for Android Documentation
 description: An overview page of RadCalendarView for Android. This article explains the most important things you need to know before using RadCalendarView.
-slug: calendar-overview
+slug: android-calendar-overview
 tags: radcalendarview, calendar, overview
 position: 0
 publish: true

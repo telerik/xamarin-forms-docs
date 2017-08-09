@@ -1,6 +1,7 @@
 ---
 title: Overview
 page_title: Gauges Overview
+slug: ios-gauges-overview
 position: .1
 ---
 

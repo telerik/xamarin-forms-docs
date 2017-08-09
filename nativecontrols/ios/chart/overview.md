@@ -1,5 +1,6 @@
 ---
 title: Overview
+slug: ios-chart-overview
 position: .1
 ---
 

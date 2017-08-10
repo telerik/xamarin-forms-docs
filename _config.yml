@@ -151,7 +151,10 @@ navigation:
         position: 4
     controls/listview/features:
         title: "Features"
-        position: 4
+        position: 3
+    controls/listview/cells:
+        title: Cells
+        position: 2
         ## End ListView Sub-Folders
     ## End ListView
     ## SideDrawer

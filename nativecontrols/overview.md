@@ -20,7 +20,9 @@ Using this approach you can quickly achieve similar look and feel on all availab
 
 * You feel comfortable creating your UI through XAML
 
-*For more details check the official [Xamarin.Forms documentation](https://developer.xamarin.com/guides/xamarin-forms/getting-started/)*
+If you choose this approach, you should refer to the available custom controls from the **Xamarin Forms Controls** section.
+
+*For more details check the official [Xamarin.Forms documentation](https://developer.xamarin.com/guides/xamarin-forms/getting-started/).*
 
 ### Develop through **Xamarin Native**(Xamarin.iOS & Xamarin.Android)
 
@@ -32,7 +34,7 @@ By choosing this approach, you can take full advantage of each platform. You are
 
 * Apps where you need to achieve custom UI according to the target platform
 
-*For more details check the official [Xamarin.iOS](https://developer.xamarin.com/guides/ios/getting_started) and [Xamarin.Android](https://developer.xamarin.com/guides/android/getting_started) documentation pages*
+*For more details check the official [Xamarin.iOS](https://developer.xamarin.com/guides/ios/getting_started) and [Xamarin.Android](https://developer.xamarin.com/guides/android/getting_started) documentation pages.*
 
 
 ## Native Controls Wrappers

@@ -10,7 +10,7 @@ navigation:
         title: "Installation and Deployment"
         position: 3
     controls:
-        title: "Xamarin Forms Controls"
+        title: "<b>Xamarin Forms Controls</b>"
         position: 4
     nativecontrols:
         title: "Native Controls Wrappers"

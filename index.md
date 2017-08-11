@@ -1,10 +1,10 @@
 ---
-title: Welcome to UI for Xamarin
+title: Welcome to Telerik UI for Xamarin
 page_title: Telerik UI for Xamarin Documentation
 position: 1
 ---
 
-# Welcome to UI for Xamarin
+# Welcome to Telerik UI for Xamarin
 
 ## Overview
 
@@ -15,7 +15,7 @@ To read more about the benefits of using UI for Xamarin, please visit the [produ
 ![Telerik UI for Xamarin](front-image.jpg)
 
 
-### UI for Xamarin Forms
+### Telerik UI for Xamarin Forms
 
 Our suite offers the following controls for cross-platform development with Xamarin forms:
 
@@ -31,15 +31,15 @@ Our suite offers the following controls for cross-platform development with Xama
 - [ZipLibrary]({% slug radziplibrary-overview %})
 
 
-### UI for Xamarin.Android
+### Telerik UI for Xamarin.Android
 
 For information about the Xamarin.Android wrappers API and features, refer to the documentation set of [UI for Android](http://docs.telerik.com/devtools/android/).
 
-### UI for Xamarin.iOS
+### Telerik UI for Xamarin.iOS
 
 For information about the Xamarin.iOS bindings API and features, please check our documentation of [UI for iOS](http://docs.telerik.com/devtools/ios/).
 
-### UI for UWP
+### Telerik UI for UWP
 
 For information about the control set, API and features, refer to the documentation set of [UI for UWP](http://docs.telerik.com/windows-universal/).
 

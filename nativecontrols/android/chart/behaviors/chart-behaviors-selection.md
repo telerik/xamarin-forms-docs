@@ -19,9 +19,7 @@ ChartSelectionBehavior does not have any special intialization requirements. Sim
 RadChartView.
 For example:
 
-```Java
-	cartesianChart.getBehaviors().add(new ChartSelectionBehavior());
-```
+
 ```C#
 	chartView.Behaviors.Add(new ChartSelectionBehavior());
 ```
@@ -36,10 +34,7 @@ The selection always works in toggle mode. If you select a data point or a serie
 end up with a selected series or data point that they can't deselect.
 Here is an example of how to set the selection mode:
 
-```Java
-	selectionBehavior.setSeriesSelectionMode(ChartSelectionMode.MULTIPLE);
-	selectionBehavior.setDataPointsSelectionMode(ChartSelectionMode.NONE);
-```
+
 ```C#
 	selectionBehavior.SeriesSelectionMode = ChartSelectionMode.Multiple;
 	selectionBehavior.DataPointsSelectionMode = ChartSelectionMode.None;
@@ -51,26 +46,14 @@ Here is an example of how to set the selection mode:
 Developers can also listen for selection changes by calling the setSelectionChangeListener() method and providing an implementor of the
 ChartSelectionChangeListener interface. For example:
 
-```Java
-	selectionBehavior.setSelectionChangeListener(listener);
-```
+
 ```C#
 	selectionBehavior.SetSelectionChangeListener (new MySelectionChangedListener ());
 ```
 
 An simple implementation of ChartSelectionChangeListener would look like this:
 
-```Java
-	public void onChartSelectionChanged(ChartSelectionContext context) {
-		DataPoint selectedPoint = context.selectedDataPoint();
-		if(selectedPoint == null) {
-			return;
-		}
 
-		// Display some detailed information about the data point.
-		// selectedPoint.getDataItem() would return the actual data object that the point represents.
-	}
-```
 ```C#
 	class MySelectionChangedListener : Java.Lang.Object, IChartSelectionChangeListener
 	{
@@ -91,15 +74,7 @@ An simple implementation of ChartSelectionChangeListener would look like this:
 >Note that selection context returns a selected data point. But if many points are selected and you need to get all of them, you will have to access the selection behavior
 itself. It has two methods called selectedSeries() and selectedDataPoints(). A reference to the selection behavior is actually included in the selection context. For example:
 
-```Java
-	public void onChartSelectionChanged(ChartSelectionContext context) {
-		Iterable<DataPoint> selectedPoints = context.selectionBehavior().selectedDataPoints();
 
-		for(DataPoint point : selectedPoints) {
-			// Do something with the selected points.
-		}
-	}
-```
 ```C#
 	public void OnSelectionChanged (ChartSelectionContext p0)
 	{

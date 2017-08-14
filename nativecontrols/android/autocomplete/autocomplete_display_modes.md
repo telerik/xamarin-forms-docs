@@ -17,9 +17,7 @@ publish: true
 
 Display mode can be changed with the `setDisplayMode` method of the **RadAutoCompleteTextView**. The default value is `DisplayMode.PLAIN`.
 
-```Java
-autocomplete.setDisplayMode(DisplayMode.TOKENS);
-```
+
 ```C#
 this.autocomplete.DisplayMode = DisplayMode.Tokens;
 ```
@@ -42,9 +40,7 @@ When **RadAutoCompleteTextView** is working in DisplayMode.TOKENS, you can apply
 The layout mode of the tokens can be changed with the `setLayoutMode` method of the **RadAutoCompleteTextView**.
 The default value is `DisplayMode.WRAP`.
 
-```Java
-autocomplete.setTokensLayoutMode(LayoutMode.HORIZONTAL);
-```
+
 ```C#
 this.autocomplete.TokensLayoutMode = LayoutMode.Horizontal;
 ```

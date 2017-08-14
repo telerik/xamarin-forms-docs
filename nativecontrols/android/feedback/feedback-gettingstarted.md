@@ -56,12 +56,7 @@ the required references are added you can initialize the component using the fol
 >You will have to extend your AndroidManifest.xml by adding the INTERNET permission if you haven't already done so. This is achieved by inserting the `<uses-permission android:name="android.permission.INTERNET" />` line directly below your `<manifest>` tag in the AndroidManifest.xml
 
 To initialize the component with the required settings you need to call the `init(String apiKey, String serviceUri, String uid)` method on the **RadFeedback** instance as shown below:
-```Java
-	RadFeedback.instance().init(
-			"1234-5678-9101-1121", 
-			"https://platform.telerik.com/feedback/api/v1",
-			"<current_user_email>");
-```
+
 ```C#
 	RadFeedback.Instance ().Init (
 			"1234-5678-9101-1121",
@@ -72,14 +67,7 @@ To initialize the component with the required settings you need to call the `ini
 >**RadFeedback** implements the singleton pattern, i.e. there is only one **RadFeedback** instance in memory during the lifetime of your Android application.
 
 After initializing the component following the instructions above, you can call the `show(Context context)` method providing an instance of the `Context` class which in most of the cases is the calling `Activity`:
-```Java
-    this.btnSendFeedback.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            feedback.show(MyActivity.this);
-        }
-    });
-```
+
 ```C#
     Button button = FindViewById<Button> (Resource.Id.myButton);
     

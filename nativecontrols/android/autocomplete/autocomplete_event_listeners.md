@@ -27,15 +27,7 @@ All five of the listeners have identical logical structure and identical workflo
 ##Usage
 In order to get notified when one of the above-mentioned events occur, you should use the following structure with the type of listener you want to use.
 
-```Java
-        autocomplete.addTokenAddedListener(new TokenAddedListener() {
-            @Override
-            public void onTokenAdded
-            (RadAutoCompleteTextView radAutoCompleteTextView, TokenModel tokenModel) {
-                // do something
-            }
-        });
-```
+
 ```C#
 	this.autocomplete.AddTokenAddedListener(new TokenAddedListenerImpl());
 	

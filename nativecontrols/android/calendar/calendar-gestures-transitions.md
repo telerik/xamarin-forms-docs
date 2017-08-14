@@ -56,9 +56,7 @@ You can use methods provided by **RadCalendarView** to change the value of the d
 to change the display mode with transition between the modes. The first parameter is the display mode that needs to be set and the second parameter specifies whether the transition will be played. Here's an example of
 a call which sets the display mode to `Year` with animation between the states:
 
-```Java
-	calendarView.changeDisplayMode(CalendarDisplayMode.Year, true);
-```
+
 ```C#
 	calendarView.ChangeDisplayMode(CalendarDisplayMode.Year, true);
 ```

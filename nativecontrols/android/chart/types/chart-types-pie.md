@@ -24,43 +24,7 @@ publish: true
 
 Creating a new pie chart is very similar to creating a new Cartesian chart. Again we will need to initialize the data that we will use to visualize:
 
-```Java
-    private List<MonthResult> monthResults;
 
-    private void initData() {
-        monthResults = new ArrayList<MonthResult>();
-        monthResults.add(new MonthResult("Jan", 12));
-        monthResults.add(new MonthResult("Feb", 5));
-        monthResults.add(new MonthResult("Mar", 10));
-        monthResults.add(new MonthResult("Apr", 7));
-    }
-
-    public class MonthResult {
-        private String month;
-        private double result;
-
-        public MonthResult(String month, double result) {
-            this.setMonth(month);
-            this.setResult(result);
-        }
-
-        public double getResult() {
-            return this.result;
-        }
-
-        public void setResult(double value) {
-            this.result = value;
-        }
-
-        public String getMonth() {
-            return this.month;
-        }
-
-        public void setMonth(String value) {
-            this.month = value;
-        }
-    }
-```
 ```C#
 	private Java.Util.ArrayList monthResults;
 	
@@ -105,25 +69,7 @@ Creating a new pie chart is very similar to creating a new Cartesian chart. Agai
 	
 And inside the activity that will visualize the chart, we need to find a container and create a new chart instance. **RadPieChartView** doesn't have any axes, so you need to simply add series:
 
-```Java
-	initData();
-	
-    RadPieChartView chartView = new RadPieChartView(this);
 
-    PieSeries pieSeries = new PieSeries();
-    pieSeries.setValueBinding(new DataPointBinding() {
-        @Override
-        public Object getValue(Object o) throws IllegalArgumentException {
-            return ((MonthResult) o).getResult();
-        }
-    });
-    pieSeries.setData(this.monthResults);
-
-    chartView.getSeries().add(pieSeries);
-
-    ViewGroup rootView = (ViewGroup)findViewById(R.id.container);
-    rootView.addView(chartView);
-```
 ```C#
 	InitData();
 

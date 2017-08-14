@@ -28,9 +28,7 @@ After your project is set up referencing the library you are ready to add a gaug
 
 Then you can access the gauge in your activity and add scales and indicators to it.
 
-```Java
-RadRadialGaugeView gauge = Util.getLayoutPart(rootView, R.id.radial_gauge, RadRadialGaugeView.class);
-```
+
 ```C#
 RadRadialGaugeView gauge = (RadRadialGaugeView)rootView.FindViewById(Resource.Id.radial_gauge);
 ```
@@ -39,17 +37,7 @@ RadRadialGaugeView gauge = (RadRadialGaugeView)rootView.FindViewById(Resource.Id
 
 After the gauge is loaded in the activity/fragment you are ready to add scales and indicators to it. The base class that represents a scale in **RadGaugeView** is **GaugeScale**. It has maximum and minimum values and a set of indicators that show values on the scale. You can also set the count of labels and ticks drawn on the scale. The code below demonstrates how to instanciate and configure a scale:
 
-```Java
-GaugeRadialScale scale = new GaugeRadialScale(getContext());
-scale.setMinimum(0);
-scale.setMaximum(6);
-scale.setMajorTicksCount(7);
-scale.setMinorTicksCount(9);
-scale.setLabelsCount(7);
-scale.setLineVisible(false);
-scale.setRadius(0.95f);
-scale.setTicksOffset(0);
-```
+
 ```C#
 GaugeRadialScale scale = new GaugeRadialScale(this.Context);
 scale.Minimum = 0;
@@ -64,30 +52,7 @@ scale.TicksOffset = 0;
 
 After the scale is configured you are ready to add indicators to it. In this example you will add a radial needle and radial bar indicators to the scale. The needle points to a specific value and the bar shows a range on the scale.
 
-```Java
-int[] colors = new int[] {
-        Color.rgb(221,221,221),
-        Color.rgb(157,202,86),
-        Color.rgb(240,196,77),
-        Color.rgb(226,118,51),
-        Color.rgb(167,1,14)
-};
 
-float rangeWidth = scale.getMaximum() / colors.length;
-float start = 0;
-for (int color : colors) {
-    GaugeRadialBarIndicator indicator = new GaugeRadialBarIndicator(getContext());
-    indicator.setMinimum(start);
-    indicator.setMaximum(start + rangeWidth);
-    indicator.setFillColor(color);
-    scale.addIndicator(indicator);
-    start += rangeWidth;
-}
-
-GaugeRadialNeedle needle = new GaugeRadialNeedle(getContext());
-needle.setValue(2);
-scale.addIndicator(needle);
-```
 ```C#
 int[] colors = new int[] {
     Color.Rgb(221,221,221),
@@ -116,9 +81,7 @@ scale.AddIndicator(needle);
 
 The last thing that you need to do is to add the scale to the gauge:
 
-```Java
-gauge.addScale(scale);
-```
+
 ```C#
 gauge.AddScale(scale);
 ```

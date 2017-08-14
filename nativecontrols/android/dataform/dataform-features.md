@@ -15,10 +15,7 @@ publish: true
 Before the data form editors are explained it is important to define the concept of **properties**.
 A property is a field of a class that has a public getter and, optionally, a setter method. For example if a Person class has a field that stores the age of the person, it should have
 a public getter and setter with the following signature:
-```Java
-public void setAge(int value);
-public int getAge();
-```
+
 ```C#
 public int Age {
 	get;
@@ -37,17 +34,7 @@ RadDataForm has a priority list when it decides which editor to show for a given
 
 If the metadata does not define an editor, a special callback (editor provider) will be attempted next.
 The callback is set by calling **dataForm.getAdapter().setEditorProvider()**. The callback is a function that accepts an EntityProperty and returns an EntityPropertyEditor. For example:
-```Java
-dataForm.getAdapter().setEditorProvider(new Function<EntityProperty, EntityPropertyEditor>() {
-    @Override
-    public EntityPropertyEditor apply(EntityProperty argument) {
-        if(argument.type() == Boolean.class) {
-            return new DataFormSwitchEditor(dataForm, argument);
-        }
-        return null;
-    }
-});
-```
+
 ```C#
 dataForm.Adapter.SetEditorProvider(new EditorProviderImpl(dataForm));
 
@@ -75,20 +62,14 @@ The next option is the **editor registry**. The registry contains pre-defined ed
 property provided. If it doesn't it finally tries to map the property type to a default editor. If an editor is not found at all, the property is not displayed for editing. Developers can modify the registry
 as required. For example the default types can be mapped to custom editors and the editors for custom types can also be defined:
 
-```Java
-dataForm.getAdapter().getEditorRegistry().addEditorForProperty(
-	MyCustomEditor.class, "MyProperty");
-```
+
 ```C#
 dataForm.Adapter.EditorRegistry.AddEditorForProperty(
 	Java.Lang.Class.FromType(typeof(DataFormSwitchEditor)), "MyProperty");
 ```
 
 Similarly to set a single editor for multiple types developers have to edit the registry like this:
-```Java
-dataForm.getAdapter().getEditorRegistry().addEditorForTypes(MyCustomEditor.class,
-	new Class[] { CustomType1.class, CustomType2.class });
-```
+
 ```C#
 dataForm.Adapter.EditorRegistry.AddEditorForTypes(Java.Lang.Class.FromType(
 	typeof(MyCustomEditor)), new Java.Lang.Class[] {CustomType1.Type, CustomType2.Type});
@@ -97,10 +78,7 @@ dataForm.Adapter.EditorRegistry.AddEditorForTypes(Java.Lang.Class.FromType(
 When in **read-only** mode RadDataForm creates property viewers instead of property editors. Developers can use the exact same mechanism for viewer resolution: metadata, viewer provider callback and viewer registry modification. The editor registry of
 the data form adapter has corresponding methods for registering viewers, just like the editors. For example:
 
-```Java
-dataForm.getAdapter().getEditorRegistry().addViewerForTypes(MyCustomViewer.class,
-	new Class[] { CustomType1.class, CustomType2.class });
-```
+
 ```C#
 dataForm.Adapter.EditorRegistry.AddViewerForTypes(Java.Lang.Class.FromType(
 	typeof(MyCustomViewer)), new Java.Lang.Class[] {CustomType1.Type, CustomType2.Type});
@@ -113,10 +91,7 @@ For more information on how to create a custom editor or viewer see the [custom 
 Every editor in RadDataForm can validate the entered data before it is committed to the object being edited. There are two ways to set a validator for a property. The first way is to specify it when defining the property
 metadata. The second way is to get the editor for the required property during run-time and set a validator on the editor. For example:
 
-```Java
-MailValidator validator = new MailValidator();
-dataForm.getExistingEditorForProperty("EMail").property().setValidator(validator);
-```
+
 ```C#
 MailValidator validator = new MailValidator();
 dataForm.GetExistingEditorForProperty ("EMail").Property ().Validator = validator;
@@ -124,15 +99,7 @@ dataForm.GetExistingEditorForProperty ("EMail").Property ().Validator = validato
 
 Any validator can be set this way provided it implements the **PropertyValidator** interface.
 For example here is how MailValidator is implemented:
-```Java
-public class MailValidator extends PropertyValidatorBase {
-    @Override
-    protected boolean validateCore(Object input, String propertyName) {
-        String mail = (String)input;
-        return android.util.Patterns.EMAIL_ADDRESS.matcher(mail).matches();
-    }
-}
-```
+
 ```C#
 public class MailValidator : Com.Telerik.Widget.Dataform.Engine.PropertyValidatorBase {
 	protected override bool ValidateCore(Java.Lang.Object input, String propertyName) {
@@ -153,22 +120,7 @@ the mail field that is not an e-mail, a validation error will be displayed like 
 RadDataForm can associate property value converters with the properties of the edited object. For example the developer decides to use a text editor to display an integer, they will have to specify a way to convert
 that integer to and from a string. For example:
 
-```Java
-dataForm.getExistingEditorForProperty("Age").property().setConverter(
-	new IntegerToStringConverter());
 
-public class IntegerToStringConverter implements PropertyConverter {
-	@Override
-	public Object convertTo(Object source) {
-		return source.toString();
-	}
-
-	@Override
-	public Object convertFrom(Object source) {
-		return Integer.parseInt(source.toString());
-	}
-}
-```
 ```C#
 dataForm.GetExistingEditorForProperty("Age").Property().Converter = 
 	new IntegerToStringConverter();
@@ -192,19 +144,7 @@ Some data entry forms contain editors that depend on each other. For example if 
 A practical case is when the user selects the country in which they live, then another editor can be enabled so that they can choose a city from the selected country and so on. 
 An editor relation is just a callback method that is called when an editor value changes:
 
-```Java
-dataForm.addEditorDependency("City", 
-	new Procedure2<RadDataForm, EntityPropertyEditor>() {
-	
-    @Override
-    public void apply(RadDataForm dataForm, EntityPropertyEditor cityEditor) {
-        Spinner citiesSpinner = (Spinner)cityEditor.getEditorView();
-        String selectedCountry = 
-			(String)dataForm.getExistingEditorForProperty("Country").value();
-        citiesSpinner.setAdapter(createAdapterForCountry(selectedCountry));
-    }
-}, "Country");
-```
+
 ```C#
 dataForm.AddEditorDependency("City", new Procedure2Impl());
 
@@ -236,9 +176,7 @@ RadDataForm supports three commit modes. These are **IMMEDIATE**, **ON_LOST_FOCU
 editors that can be focused, like a text field for example. Editors that can't be focused can work only in immediate or manual mode. Finally manual mode allows the developer to dictate when to validate and commit
 all or some the edited properties by calling the dataForm.commitChanges() method. To commit a single property the EntityProperty object for the property must be obtained and then its commit() method must be called:
 
-```Java
-dataForm.getExistingEditorForProperty("Age").property().commit();
-```
+
 ```C#
 dataForm.GetExistingEditorForProperty("Age").Property().Commit();
 ```
@@ -265,9 +203,7 @@ RadDataForm can be extended by [creating custom editors]({% slug data-form-custo
 
 RadDataForm has two options for layout of the labels and the editors. The default label position is on top of the editor, but with the **setLabelPosition** method you can change that so that the labels and the editors are on the same row. Here’s how:
 
-```Java
-dataForm.setLabelPosition(LabelPosition.LEFT);
-```
+
 ```C#
 dataForm.LabelPosition = LabelPosition.Left;
 ```
@@ -280,13 +216,7 @@ And here’s the result:
 
 RadDataForm allows you to use images as labels of your editor. You can supply the image resource through the [@DataFormProperty]({% slug data-form-metadata %} "Read more about the data form metadata.") annotation. Here's an example:
 
-```Java
-@DataFormProperty(label = "", hint = "name", index = 0,
-        imageResource = R.drawable.ic_dataform_guest)
-public String getName() {
-    return name;
-}
-```
+
 ```C#
 [DataFormProperty(Label = "", Hint = "name", Index = 0,
                   ImageResource = Resource.Drawable.ic_dataform_guest)]

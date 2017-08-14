@@ -32,33 +32,7 @@ The **CategoricalSeries** is an abstract class which is extended by series which
 The **CategoricalSeries** class contains **setCategoryBinding(DataPointBinding)** and **setValueBinding(DataPointBinding)** methods which accept a `DataPointBinding` object as a parameter which defines the way the 
 necessary information will be extracted from each data item. For example if our data item type is defined as follows:
 
-```Java
-    public class MonthResult {
-        private String month;
-        private double result;
 
-        public MonthResult(String month, double result) {
-            this.setMonth(month);
-            this.setResult(result);
-        }
-
-        public double getResult() {
-            return this.result;
-        }
-
-        public void setResult(double value) {
-            this.result = value;
-        }
-
-        public String getMonth() {
-            return this.month;
-        }
-
-        public void setMonth(String value) {
-            this.month = value;
-        }
-    }
-```
 ```C#
 	public class MonthResult : Java.Lang.Object {
 
@@ -74,9 +48,7 @@ necessary information will be extracted from each data item. For example if our 
 
 If we want to use the result of the data item as a value for our data points that will be visualized by the chart, we can define the `DataPointBinding` object for the value like this:
 
-```Java
-	DataPointBinding valueBinding = new PropertyNameDataPointBinding("Result");
-```
+
 ```C#
 	class MonthResultDataBinding : DataPointBinding {
 
@@ -100,9 +72,7 @@ If we want to use the result of the data item as a value for our data points tha
 
 Similarly, if we want to use the month of the data item as a category for our data points that will be visualized by the chart, we can define the `DataPointBinding` object for the category like this:
 
-```Java
-	DataPointBinding categoryBinding = new PropertyNameDataPointBinding("Month");
-```
+
 ```C#	
 	class MonthResultDataBinding : DataPointBinding {
 
@@ -126,11 +96,7 @@ Similarly, if we want to use the month of the data item as a category for our da
 
 Then, we can use these objects with series that extend **CategoricalSeries**, for example **LineSeries**:
 
-```Java
-	LineSeries lineSeries = new LineSeries();
-	lineSeries.setCategoryBinding(categoryBinding);
-	lineSeries.setValueBinding(valueBinding);
-```
+
 ```C#
 	LineSeries lineSeries = new LineSeries();
 	lineSeries.CategoryBinding = new MonthResultDataBinding ("Month");
@@ -150,10 +116,7 @@ When the series in a **RadCartesianChartView** are more than one, a few differen
 
 The default combine mode is `None`. You can get the current value through the **getCombineMode()** method and set a new value through **setCombineMode(ChartSeriesCombineMode value)**. For example if you have two **BarSeries**, you need to set the combine mode to both of them if you want to make them stacked:
 
-```Java
-	barSeries1.setCombineMode(ChartSeriesCombineMode.STACK);
-	barSeries2.setCombineMode(ChartSeriesCombineMode.STACK);
-```
+
 ```C#
 	barSeries1.CombineMode = ChartSeriesCombineMode.Stack;
 	barSeries2.CombineMode = ChartSeriesCombineMode.Stack;

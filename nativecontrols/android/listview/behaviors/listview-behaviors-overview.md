@@ -20,10 +20,7 @@ detected, **SelectionBehavior** will select the item that was long pressed.
 A behavior can be added to a list view instance through the **addBehavior(ListViewBehavior)** method and removed through **removeBehavior(ListViewBehavior)**. Additionally you can remove all
 currently added behaviors with **clearBehaviors()**. Here's an example of adding the **LoadOnDemandBehavior** to a list view instance:
 
-```Java
-LoadOnDemandBehavior loadOnDemandBehavior = new LoadOnDemandBehavior();
-listView.addBehavior(loadOnDemandBehavior);
-```
+
 ```C#
 LoadOnDemandBehavior loadOnDemandBehavior = new LoadOnDemandBehavior ();
 listView.AddBehavior (loadOnDemandBehavior);

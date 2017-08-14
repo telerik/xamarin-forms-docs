@@ -19,24 +19,7 @@ The **DateTimeCategoricalAxis** is a special axis that extends the **Categorical
 Again, we will use the `MonthResult` type as defined in the [Getting Started]({% slug chart-gettingstarted %} "Read how to define the MonthResult type") page but this type we will extend this type
 with additional field which will contain our `Calendar` component:
 
-```Java
-    public class ExtendedMonthResult extends MonthResult {
-        private Calendar date;
 
-        public ExtendedMonthResult(String month, double result, Calendar date) {
-            super(month, result);
-            this.setDate(date);
-        }
-
-        public Calendar getDate() {
-            return this.date;
-        }
-
-        public void setDate(Calendar value) {
-            this.date = value;
-        }
-    }
-```
 ```C#
 	public class ExtendedMonthResult : MonthResult
 	{
@@ -52,25 +35,7 @@ with additional field which will contain our `Calendar` component:
 
 We will also need a list of items from the new type and initialize it with proper data:
 
-```Java
-    private List<ExtendedMonthResult> extendedMonthResults;
 
-    private void initCalendarData() {
-        extendedMonthResults = new ArrayList<ExtendedMonthResult>();
-
-        extendedMonthResults.add(new ExtendedMonthResult(
-			"Jan", 5, new GregorianCalendar(2014, Calendar.JANUARY, 5)));
-			
-        extendedMonthResults.add(new ExtendedMonthResult(
-			"Feb", 8, new GregorianCalendar(2014, Calendar.FEBRUARY, 8)));
-			
-        extendedMonthResults.add(new ExtendedMonthResult(
-			"Mar", 3, new GregorianCalendar(2014, Calendar.MARCH, 3)));
-		
-        extendedMonthResults.add(new ExtendedMonthResult(
-			"Mar", 12, new GregorianCalendar(2014, Calendar.MARCH, 22)));
-    }
-```
 ```C#
 	private Java.Util.ArrayList extendedMonthResults;
 	
@@ -112,28 +77,7 @@ We will also need a list of items from the new type and initialize it with prope
 
 Now we can go to the Activity where we want to add a **RadCartesianChartView** with **DateTimeCategoricalAxis** and add the following code:
 
-```Java
-	initCalendarData();
 
-	RadCartesianChartView chartView = new RadCartesianChartView(this);
-
-	BarSeries barSeries = new BarSeries();
-	barSeries.setCategoryBinding(new PropertyNameDataPointBinding("Date"));
-	barSeries.setValueBinding(new PropertyNameDataPointBinding("Result"));
-	barSeries.setData(this.extendedMonthResults);
-	chartView.getSeries().add(barSeries);
-
-	DateTimeCategoricalAxis horizontalAxis = new DateTimeCategoricalAxis();
-	horizontalAxis.setDateTimeComponent(DateTimeComponent.MONTH);
-	horizontalAxis.setDateTimeFormat(new SimpleDateFormat("MMM-yyyy"));
-	chartView.setHorizontalAxis(horizontalAxis);
-
-	LinearAxis verticalAxis = new LinearAxis();
-	chartView.setVerticalAxis(verticalAxis);
-
-	ViewGroup rootView = (ViewGroup)findViewById(R.id.container);
-	rootView.addView(chartView);
-```
 ```C#
 	InitCalendarData();
 

@@ -17,40 +17,7 @@ To get started using the `SwipeActionsBehavior` you need to create an instance o
 ## Callbacks
 The following code snippet demonstrates how to instantiate the `SwipeAcitonsBehavior` and provide a listener for its callbacks:
 
-```Java
-this.sab = new SwipeActionsBehavior();
-this.sab.addListener(new SwipeActionsBehavior.SwipeActionsListener() {
 
-    @Override
-    public void onSwipeStarted(SwipeActionsBehavior.SwipeActionEvent swipeActionEvent) {
-        // Fired when the user starts swiping an item.
-    }
-
-    @Override
-    public void onSwipeProgressChanged(SwipeActionsBehavior.SwipeActionEvent swipeActionEvent) {
-        // Continuously fired while the user swipes an item.
-    }
-
-    @Override
-    public void onSwipeEnded(SwipeActionsBehavior.SwipeActionEvent swipeActionEvent) {
-        // Fired when the user releases the item being swiped.
-    }
-
-    @Override
-    public void onExecuteFinished(SwipeActionsBehavior.SwipeActionEvent swipeActionEvent) {
-        // Fired when the swipe-execute procedure has ended, i.e. the item being swiped is at
-        // its original position.
-    }
-
-    @Override
-    public void onSwipeStateChanged(SwipeActionsBehavior.SwipeActionsState swipeActionsState, SwipeActionsBehavior.SwipeActionsState swipeActionsState1) {
-
-    }
-
-});
-
-this.listView.addBehavior(this.sab);
-```
 ```C#
 public class ListViewSwipeActionsGettingStartedFragment : Fragment, ExampleFragment, SwipeActionsBehavior.ISwipeActionsListener
 {
@@ -142,21 +109,7 @@ All of these getters are helpful when implementing various Swipe Actions scenari
 ## Adapter overrides
 Besides implementing the `SwipeActionsListener` interface you will also need to extend the adapter assigned to `RadListView` by overriding the `onBindSwipeContentHolder` and `onCreateSwipeContentHolder` methods:
 
-```Java
-@Override
-public ListViewHolder onCreateSwipeContentHolder(ViewGroup viewGroup) {
-    LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext());
-    View swipeContentView = inflater.inflate(R.layout.example_list_view_swipe_actions_gs_swipe_content, viewGroup, false);
-    MySwipeContentViewHolder vh = new MySwipeContentViewHolder(swipeContentView);
-    return vh;
-}
 
-@Override
-public void onBindSwipeContentHolder(final ListViewHolder viewHolder, final int position) {
-    final EmailMessage currentMessage = (EmailMessage)getItem(position);
-    MySwipeContentViewHolder swipeContentHolder = (MySwipeContentViewHolder)viewHolder;
-}
-```
 ```C#
 class ListViewSwipeActionsAdapter : ListViewAdapter
 {
@@ -239,68 +192,7 @@ Some of the scenarios are demonstrated in the SDK examples of UI for Android ava
 ## Sticky swipe actions
 Using the `SwipeActionsListener` you can implement the popular scenario in which the swipe actions displayed below the item's main content are animated while swiping. Here's a basic example:
 
-```Java
-this.sab = new SwipeActionsBehavior();
-this.sab.addListener(new SwipeActionsBehavior.SwipeActionsListener() {
-    private int leftWidth = -1;
-    private int rightWidth = -1;
-    private ViewGroup swipeView;
-    private View leftActionView;
-    private View rightActionView;
 
-    @Override
-    public void onSwipeStarted(SwipeActionsBehavior.SwipeActionEvent swipeActionEvent) {
-        this.swipeView = (ViewGroup)swipeActionEvent.swipeView();
-        this.leftActionView = this.swipeView.getChildAt(0);
-        this.rightActionView = this.swipeView.getChildAt(1);
-
-        if (leftWidth == -1) {
-            leftWidth = this.leftActionView.getWidth();
-        }
-
-        if (rightWidth == -1) {
-            rightWidth = this.rightActionView.getWidth();
-        }
-    }
-
-    @Override
-    public void onSwipeProgressChanged(SwipeActionsBehavior.SwipeActionEvent swipeActionEvent) {
-
-        if (swipeActionEvent.currentOffset() > leftWidth){
-            ViewGroup.LayoutParams lp = this.leftActionView.getLayoutParams();
-            lp.width = swipeActionEvent.currentOffset();
-            this.leftActionView.setLayoutParams(lp);
-        }
-
-        if (swipeActionEvent.currentOffset() < -rightWidth){
-            ViewGroup.LayoutParams lp = this.rightActionView.getLayoutParams();
-            lp.width = -swipeActionEvent.currentOffset();
-            this.rightActionView.setLayoutParams(lp);
-        }
-    }
-
-    @Override
-    public void onSwipeEnded(SwipeActionsBehavior.SwipeActionEvent swipeActionEvent) {
-        // Fired when the user releases the item being swiped.
-    }
-
-    @Override
-    public void onExecuteFinished(SwipeActionsBehavior.SwipeActionEvent swipeActionEvent) {
-        // Fired when the swipe-execute procedure has ended, i.e. the item being swiped is at
-        // its original position.
-        this.leftWidth = -1;
-        this.rightWidth = -1;
-    }
-
-    @Override
-    public void onSwipeStateChanged(SwipeActionsBehavior.SwipeActionsState swipeActionsState, SwipeActionsBehavior.SwipeActionsState swipeActionsState1) {
-
-    }
-
-});
-
-this.listView.addBehavior(this.sab);
-```
 ```C#
 public void OnExecuteFinished(SwipeActionsBehavior.SwipeActionEvent p0)
 {
@@ -359,44 +251,7 @@ In short, the `onSwipeStarted` callback is used to acquire the two `View` instan
 ## Swipe thresholds
 By using the `swipeThresholdStart` and `swipeThresholdEnd` properties we can implement a behavior in which the item being swiped sticks open revealing an action or set of actions. Similar to popular Mail apps, we can implement a scenario which allows the end user to archive or delete an item from the list by using the thresholds. Take a look at the source below:
 
-```Java
-this.sab = new SwipeActionsBehavior();
-this.sab.addListener(new SwipeActionsBehavior.SwipeActionsListener() {
-    private int leftContentSize = -1;
-    private int rightContentSize = -1;
-    @Override
-    public void onSwipeStarted(SwipeActionsBehavior.SwipeActionEvent swipeActionEvent) {
-        View swipeView = swipeActionEvent.swipeView();
-        if (this.leftContentSize == -1 || rightContentSize == -1) {
-            sab.setSwipeThresholdStart((((ViewGroup)swipeView).getChildAt(0)).getWidth());
-            sab.setSwipeThresholdEnd((((ViewGroup)swipeView).getChildAt(1)).getWidth());
-        }
-    }
 
-    @Override
-    public void onSwipeProgressChanged(SwipeActionsBehavior.SwipeActionEvent swipeActionEvent) {
-
-    }
-
-    @Override
-    public void onSwipeEnded(SwipeActionsBehavior.SwipeActionEvent swipeActionEvent) {
-
-    }
-
-    @Override
-    public void onExecuteFinished(SwipeActionsBehavior.SwipeActionEvent swipeActionEvent) {
-
-    }
-
-    @Override
-    public void onSwipeStateChanged(SwipeActionsBehavior.SwipeActionsState swipeActionsState, SwipeActionsBehavior.SwipeActionsState swipeActionsState1) {
-
-    }
-
-});
-
-this.listView.addBehavior(this.sab);
-```
 ```C#
 public void OnExecuteFinished(SwipeActionsBehavior.SwipeActionEvent p0)
 {
@@ -430,89 +285,7 @@ public void OnSwipeStarted(SwipeActionsBehavior.SwipeActionEvent swipeActionEven
 ## Action animations
 A popular scenario with Swipe Actions is to animate the swipe content once the user reaches beyond a given threshold. The purpose of this behavior is to inform the users of the app that the corresponding swipe action will be executed. This behavior can be implemented by using the `onSwipeProgressChanged` callback. Take a look at the following snippet:
 
-```Java
-this.sab = new SwipeActionsBehavior();
-this.sab.addListener(new SwipeActionsBehavior.SwipeActionsListener() {
-    private int leftWidth = -1;
-    private int rightWidth = -1;
-    private ViewGroup swipeView;
-    private ViewGroup leftActionView;
-    private ViewGroup rightActionView;
-    private boolean animationApplied;
-    @Override
-    public void onSwipeStarted(SwipeActionsBehavior.SwipeActionEvent swipeActionEvent) {
-        this.animationApplied = false;
-        this.swipeView = (ViewGroup)swipeActionEvent.swipeView();
-        this.leftActionView = (ViewGroup) this.swipeView.getChildAt(0);
-        this.rightActionView = (ViewGroup) this.swipeView.getChildAt(1);
 
-        if (leftWidth == -1) {
-            leftWidth = this.leftActionView.getWidth();
-        }
-
-        if (rightWidth == -1) {
-            rightWidth = this.rightActionView.getWidth();
-        }
-    }
-
-    @Override
-    public void onSwipeProgressChanged(SwipeActionsBehavior.SwipeActionEvent swipeActionEvent) {
-
-        if (swipeActionEvent.currentOffset() > leftWidth){
-            ViewGroup.LayoutParams lp = this.leftActionView.getLayoutParams();
-            lp.width = swipeActionEvent.currentOffset();
-            this.leftActionView.setLayoutParams(lp);
-        }
-
-        if (swipeActionEvent.currentOffset() < -rightWidth){
-            ViewGroup.LayoutParams lp = this.rightActionView.getLayoutParams();
-            lp.width = -swipeActionEvent.currentOffset();
-            this.rightActionView.setLayoutParams(lp);
-        }
-
-        if (!this.animationApplied) {
-            if (Math.abs(swipeActionEvent.currentOffset()) > Math.abs(leftWidth) * 1.5f) {
-                if (swipeActionEvent.currentOffset() < 0) {
-                    this.rightActionView.getChildAt(0).clearAnimation();
-                    RotateAnimation ra = new RotateAnimation(0, 360, 0.5f, 0.5f);
-                    ra.setInterpolator(new AccelerateDecelerateInterpolator());
-                    ra.setDuration(200);
-                    this.rightActionView.getChildAt(0).startAnimation(ra);
-                } else if (swipeActionEvent.currentOffset() > 0) {
-                    this.leftActionView.getChildAt(0).clearAnimation();
-                    RotateAnimation ra = new RotateAnimation(0, 360, 0.5f, 0.5f);
-                    ra.setInterpolator(new AccelerateDecelerateInterpolator());
-                    ra.setDuration(200);
-                    this.leftActionView.getChildAt(0).startAnimation(ra);
-                }
-                this.animationApplied = true;
-            }
-        }
-    }
-
-    @Override
-    public void onSwipeEnded(SwipeActionsBehavior.SwipeActionEvent swipeActionEvent) {
-        // Fired when the user releases the item being swiped.
-    }
-
-    @Override
-    public void onExecuteFinished(SwipeActionsBehavior.SwipeActionEvent swipeActionEvent) {
-        // Fired when the swipe-execute procedure has ended, i.e. the item being swiped is at
-        // its original position.
-        this.leftWidth = -1;
-        this.rightWidth = -1;
-        this.animationApplied = false;
-    }
-
-    @Override
-    public void onSwipeStateChanged(SwipeActionsBehavior.SwipeActionsState swipeActionsState, SwipeActionsBehavior.SwipeActionsState swipeActionsState1) {
-
-    }
-
-});
-
-this.listView.addBehavior(this.sab);
-```
 ```C#
 public void OnExecuteFinished(SwipeActionsBehavior.SwipeActionEvent p0)
 {

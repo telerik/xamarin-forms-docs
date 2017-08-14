@@ -22,23 +22,7 @@ In order to provide the default styles for its series, **RadChartView** uses pal
 
 All chart objects (RadPieChartView and RadCartesianChartView) have a method **setPalette(ChartPalette)** which allows you to set a new palette that you have defined. Here's an example of setting a custom palette to an instance of **RadCartesianChartView**. We will start with the chart that we have created in the [Bar Series]({% slug chart-series-bar %} "Read how to create a chart with BarSeries") example:
 
-```Java
-	// Use a copy of the existing palette in order to avoid redefining the whole palette.
-	// We are only interested in changing the color of the bar series.
-	ChartPalette customPalette = chartView.getPalette().clonePalette();
-	
-	// Get the entry for the first bar series.
-	PaletteEntry barEntry = customPalette.getEntry(ChartPalette.BAR_FAMILY);
-	barEntry.setFill(Color.GREEN);
-	
-	// Also if there are more than one bar series we can get the entry
-	// for any of them with their index in the collection.
-	// Edit the entry for the second bar series.
-	barEntry = customPalette.getEntry(ChartPalette.BAR_FAMILY, 1);
-	barEntry.setFill(Color.CYAN);
 
-	chartView.setPalette(customPalette);
-```
 ```C#
 	// Use a copy of the existing palette in order to avoid redefining the whole palette.
 	// We are only interested in changing the color of the bar series.

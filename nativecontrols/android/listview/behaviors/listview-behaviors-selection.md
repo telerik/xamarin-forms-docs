@@ -22,10 +22,7 @@ If you have read the [Getting Started page]({% slug listview-gettingstarted %} "
 the [Behaviors Overview]({% slug listview-behaviors-overview %} "Read the behaviors overview page for RadListView") we introduced the behaviors and now we will go into more details about the **SelectionBehavior**.
 If we were using an instance of the default ListViewAdapter, adding the **SelectionBehavior** to the list view instance would have been enough to enable the selection:
 
-```Java
-SelectionBehavior selectionBehavior = new SelectionBehavior();
-listView.addBehavior(selectionBehavior);
-```
+
 ```C#
 SelectionBehavior selectionBehavior = new SelectionBehavior ();
 listView.AddBehavior (selectionBehavior);
@@ -75,9 +72,7 @@ Now if you long press an item, it will change its state to show the selection la
 The **SelectionBehavior** can be also used for selection of a single item at a time. This can be done by the **setSelectionMode(SelectionBehavior.SelectionMode)** method. To see the current mode you can use 
 **getSelectionMode()**. The default value is `MULTIPLE`. Let's change the mode to `SINGLE`:
 
-```Java
-selectionBehavior.setSelectionMode(SelectionBehavior.SelectionMode.SINGLE);
-```
+
 ```C#
 selectionBehavior.SetSelectionMode (SelectionBehavior.SelectionMode.Single);
 ```
@@ -96,9 +91,7 @@ Sometimes it may be useful to have a certain item(s) preselected. Then you will 
 item at the specified position. In other words, if it was not selected, it will become selected, and if it was selected already, it will be deselected. Here's an example of how to manually select the first item
 from your list:
 
-```Java
-selectionBehavior.changeIsSelected(0);
-```
+
 ```C#
 selectionBehavior.ChangeIsSelected (0);
 ```
@@ -111,39 +104,7 @@ Usually you will need to monitor the items that the user selects. You can do thi
 so we can get back to the default selection mode. Now we are going to add a new **android.support.v7.view.ActionMode.Callback** instance that we will use in a **SelectionChangedListener** in order to properly reflect the current selection.
 Here's the callback that we will use:
 
-```Java
-final android.support.v7.view.ActionMode.Callback actionModeCallback = 
-	new android.support.v7.view.ActionMode.Callback() {
-	
-	@Override
-	public boolean onCreateActionMode(android.support.v7.view.ActionMode actionMode, 
-		Menu menu) {
-		
-		MenuInflater inflater = actionMode.getMenuInflater();
-		inflater.inflate(R.menu.menu_main, menu);
-		return true;
-	}
 
-	@Override
-	public boolean onPrepareActionMode(android.support.v7.view.ActionMode actionMode, 
-		Menu menu) {
-		
-		return false;
-	}
-
-	@Override
-	public boolean onActionItemClicked(android.support.v7.view.ActionMode actionMode, 
-		MenuItem menuItem) {
-		
-		return false;
-	}
-
-	@Override
-	public void onDestroyActionMode(android.support.v7.view.ActionMode actionMode) {
-		selectionBehavior.endSelection();
-	}
-};
-```
 ```C#
 public class SelectionCallback : Java.Lang.Object, ActionMode.ICallback {
 	private SelectionBehavior selectionBehavior;
@@ -189,27 +150,7 @@ named `menu_main` with the following (or similar) content:
 
 Here's the **SelectionChangedListener** that we will use:
 
-```Java
-SelectionBehavior.SelectionChangedListener selectionListener = 
-	new SelectionBehavior.SelectionChangedListener() {
-	
-	@Override
-	public void onSelectionStarted() {
-		actionMode = startSupportActionMode(actionModeCallback);
-	}
 
-	@Override
-	public void onItemIsSelectedChanged(int position, boolean newValue) {
-		int selectionCount = selectionBehavior.selectedItems().size();
-		actionMode.setTitle(String.valueOf(selectionCount));
-	}
-
-	@Override
-	public void onSelectionEnded() {
-		actionMode.finish();
-	}
-};
-```
 ```C#
 public class SelectionListener : Java.Lang.Object, 
 	SelectionBehavior.ISelectionChangedListener {
@@ -243,9 +184,7 @@ public class SelectionListener : Java.Lang.Object,
 
 Now that we have the callback and the listener, all that's left is to add the listener to our **SelectionBehavior**:
 
-```Java
-selectionBehavior.addListener(selectionListener);
-```
+
 ```C#
 SelectionListener selectionListener = new SelectionListener (this, selectionBehavior);
 selectionBehavior.AddListener (selectionListener);

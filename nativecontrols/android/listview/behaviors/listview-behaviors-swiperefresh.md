@@ -20,10 +20,7 @@ If you have read the [Getting Started page]({% slug listview-gettingstarted %} "
 the [Behaviors Overview]({% slug listview-behaviors-overview %} "Read the behaviors overview page for RadListView") we introduced the behaviors and now we will go into more details about the **SwipeRefreshBehavior**.
 Here's how to add the **SwipeRefreshBehavior** to your list view instance:
 
-```Java
-SwipeRefreshBehavior swipeRefreshBehavior = new SwipeRefreshBehavior();
-listView.addBehavior(swipeRefreshBehavior);
-```
+
 ```C#
 SwipeRefreshBehavior swipeRefreshBehavior = new SwipeRefreshBehavior ();
 listView.AddBehavior (swipeRefreshBehavior);
@@ -35,17 +32,7 @@ This will show a loading indicator when the user swipes from the top of the list
 
 The **SwipeRefreshListener** should be used to get notification that refresh is requested. Here's one simple implementation:
 
-```Java
-SwipeRefreshBehavior.SwipeRefreshListener swipeRefreshListener = 
-	new SwipeRefreshBehavior.SwipeRefreshListener() {
-	
-	@Override
-	public void onRefreshRequested() {
-		cityAdapter.refreshList();
-		cityAdapter.notifyRefreshFinished();
-	}
-};
-```
+
 ```C#
 public class SwipeListener : Java.Lang.Object, SwipeRefreshBehavior.ISwipeRefreshListener {
 	private CityAdapter cityAdapter;
@@ -67,9 +54,7 @@ to call SwipeRefreshBehavior's **endRefresh()** method and the effect will be th
 
 Now we can add the listener to our behavior:
 
-```Java
-swipeRefreshBehavior.addListener(swipeRefreshListener);
-```
+
 ```C#
 SwipeListener swipeRefreshListener = new SwipeListener ();
 swipeRefreshBehavior.AddListener(swipeRefreshListener)

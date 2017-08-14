@@ -72,23 +72,7 @@ male and female as possible values, etc.
 
 Here's how to apply the schema to the data form:
 
-```Java
-// The files person_extended.json and person_schema.json are 
-// in the res/raw folder of the project
-String json = loadJSONFromAsset(R.raw.person_extended);
 
-try {
-	JSONObject jsonObject = new JSONObject(json);
-	dataForm.setEntity(jsonObject);
-
-	String schema = loadJSONFromAsset(R.raw.person_schema);
-	JSONObject jsonSchema = new JSONObject(schema);
-	DataFormMetadata metadata = new DataFormMetadata(jsonSchema);
-	dataForm.setMetadata(metadata);
-} catch (JSONException e) {
-	Log.e("json", "error parsing json", e);
-}
-```
 ```C#
 // The files PersonExtended.json and PersonSchema.json are
 // in the Assets folder of the project

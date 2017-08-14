@@ -18,20 +18,7 @@ You can read from the [Getting Started]({% slug chart-gettingstarted %} "Read ho
 
 After you create the method for initialization of sample data, you can create a **RadPieChartView** with **DoughnutSeries** by adding the following code to the **onCreate()** method of your Activity.
 
-```Java
-	initData();
 
-	RadPieChartView chartView = new RadPieChartView(this);
-
-	DoughnutSeries doughnutSeries = new DoughnutSeries();
-
-	doughnutSeries.setValueBinding(new PropertyNameDataPointBinding("Result"));
-	doughnutSeries.setData(this.monthResults);
-	chartView.getSeries().add(doughnutSeries);
-
-	ViewGroup rootView = (ViewGroup)findViewById(R.id.container);
-	rootView.addView(chartView);
-```
 ```C#
 	InitData();
 
@@ -61,9 +48,7 @@ The **DoughnutSeries** class inherit from [PieSeries]({% slug chart-series-pie %
 
 Here's an example of how to enlarge the blank portion:
 
-```Java
-	doughnutSeries.setInnerRadiusFactor(0.85f);
-```
+
 ```C#
 	doughnutSeries.InnerRadiusFactor = 0.85f;
 ```
@@ -80,14 +65,7 @@ The default colors used for **DoughnutSeries** come from the default palette, yo
 
 The **SliceStyle** class allow you to create a set of stroke and fill colors which you can easily apply to the slices in a pie chart. Here's one simple **SliceStyle**:
 
-```Java
-	SliceStyle style1 = new SliceStyle();
-	style1.setFillColor(Color.argb(255, 51, 181, 229));
-	style1.setStrokeColor(Color.argb(255, 0, 130, 173));
-	style1.setStrokeWidth(2);
-	style1.setArcColor(Color.WHITE);
-	style1.setArcWidth(2);
-```
+
 ```C#
 	SliceStyle style1 = new SliceStyle();
 	style1.FillColor = Color.Argb(255, 51, 181, 229);
@@ -99,11 +77,7 @@ The **SliceStyle** class allow you to create a set of stroke and fill colors whi
 
 As you can see, you can modify the color of the fill of the segments, their stroke color and width and additionally you can add an arc that is drawn between the stroke and the fill. Please note, that the arc is drawn not around the whole segment but only on its arc. Once you have create a few styles, you can add them in a `List<SliceStyle>` and set it to your **DoughnutSeries** instance:
 
-```Java
-	List<SliceStyle> styles = new ArrayList<SliceStyle>();
-	styles.add(style1);
-	doughnutSeries.setSliceStyles(styles);
-```
+
 ```C#
 	List<SliceStyle> styles = new List<SliceStyle>();
 	styles.Add(style1);
@@ -118,9 +92,7 @@ Here's the result when we add a collection of four styles similar to the one in 
 
 As you may have noticed, there is a thin line between the segments. You can change its width through the method **setSliceOffset(float)**. If you set it to `0`, the line will be removed:
 
-```Java
-	doughnutSeries.setSliceOffset(0);
-```
+
 ```C#
 	doughnutSeries.SliceOffset = 0;
 ```

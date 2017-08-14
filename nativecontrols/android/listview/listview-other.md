@@ -47,11 +47,7 @@ as a parameter for this method. Here's one example where we have create a dedica
 
 Then we need to inflate this layout and set the resulted view as empty content:
 
-```Java
-LayoutInflater inflater = LayoutInflater.from(this);
-View emptyContentView = inflater.inflate(R.layout.empty_content, listView, false);
-listView.setEmptyContent(emptyContentView);
-```
+
 ```C#
 LayoutInflater inflater = LayoutInflater.From (this);
 View emptyContentView = inflater.Inflate (Resource.Layout.empty_content, listView, false);
@@ -66,9 +62,7 @@ Now if our list view doesn't contain an adapter or if it has no items, it would 
 
 If all you need to display is a simple TextView, you can take advantage of our default empty content. Here's how:
 
-```Java
-listView.setEmptyContentEnabled(true);
-```
+
 ```C#
 listView.EmptyContentEnabled = true;
 ```
@@ -80,12 +74,7 @@ after you have enabled it as just shown (setEmptyContentEnabled(true)).
 
 **RadListView** allows you to add a custom view as a header or as a footer to your list. The header will be displayed on top of the list and the footer will be at the bottom. Here's how to add a header:
 
-```Java
-TextView headerView = new TextView(this);
-headerView.setText("CITIES");
 
-listView.setHeaderView(headerView);
-```
 ```C#
 TextView headerView = new TextView(this);
 headerView.Text = "CITIES";
@@ -101,19 +90,7 @@ modify it if necessary.
 Often you will need to listen for item clicks in order to provide more information for the clicked item, for example for a master-detail scenario. Here's one simple example that demonstrates how to add
 a toast with the content of the clicked item:
 
-```Java
-RadListView.ItemClickListener itemClickListener = new RadListView.ItemClickListener() {
-	@Override
-	public void onItemClick(int position, MotionEvent motionEvent) {
-		Toast.makeText(listView.getContext(), cityAdapter.getItem(position).toString(), 
-			Toast.LENGTH_SHORT).show();
-	}
 
-	@Override
-	public void onItemLongClick(int position, MotionEvent motionEvent) {
-	}
-};
-```
 ```C#
 public class CityClickListener : Java.Lang.Object, RadListView.IItemClickListener {
 	private Context context;
@@ -135,9 +112,7 @@ public class CityClickListener : Java.Lang.Object, RadListView.IItemClickListene
 
 And now let's add it to our list view:
 
-```Java
-listView.addItemClickListener(itemClickListener);
-```
+
 ```C#
 CityClickListener cityClickListener = new CityClickListener (this, cityAdapter);
 listView.AddItemClickListener (cityClickListener);

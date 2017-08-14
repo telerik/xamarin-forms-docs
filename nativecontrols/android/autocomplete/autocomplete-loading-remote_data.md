@@ -24,11 +24,7 @@ For the purpose of the example we will use .json data containing description of 
 In order to start loading remote data into the **RadAutoCompleteTextView** you need to notify the control that you will provide the suggestions on later point of the execution. Meaning,  you will initialize the adapter with empty collection of suggestions and then, every time the user types a character, you will update the control with the loaded suggestions from your request.
 All you need to do is set the `setUsingAsyncData` to true. This way the **RadAutoCompleteTextView** will be aware of the remote data loading and will operate in a tolerant manner.
 
-```Java
-autocomplete.setUsingAsyncData(true);
-adapter = new AutoCompleteAdapter(this.getContext(), new ArrayList<TokenModel>(),
-        R.layout.suggestion_item_layout);
-```
+
 ```C#
 this.autocomplete.UsingAsyncData = true;
 this.adapter = new AutoCompleteAdapter(
@@ -42,18 +38,7 @@ By default the autocomplete supports two completion modes - `STARTS_WITH` and `C
 
 To plug your logic into the **RadAutoCompleteTextView** workflow you should implement custom completion mode and execute the remote request logic in it.
 
-```Java
-public Function2Async<String, List<TokenModel>, List<TokenModel>> STARTS_WITH_REMOTE
-        = new Function2Async<String, List<TokenModel>, List<TokenModel>>() {
-    @Override
-    public void apply(String filterString, List<TokenModel> originalCollection,
-                      Procedure<List<TokenModel>> callback) {
-        FeedAutoCompleteTask task =
-                new FeedAutoCompleteTask(callback, filterString);
-        task.execute();
-    }
-};
-```
+
 ```C#
 public class StartsWithRemote : Java.Lang.Object, IFunction2Async
 {
@@ -83,56 +68,7 @@ public class StartsWithRemote : Java.Lang.Object, IFunction2Async
 In order to achieve a smooth behavior you will need to create a class responsible for the connection to the remote server and the processing of the request. This class should extend the `AsyncTask` class and implement the doInBackground and `onPostExecute` methods.
 In the `doInBackground` method is placed the request to the server. In case the request has succeeded we are saving the response as `JSONArray`.
 
-```Java
-@Override
-protected Void doInBackground(String... params) {
-    HttpURLConnection urlConnection = null;
-    try {
-        URL url = new URL
-                ("http://www.telerik.com/docs/default-source/ui-for-ios/airports.json?sfvrsn=2");
 
-        urlConnection = (HttpURLConnection) url.openConnection();
-
-        urlConnection.setRequestMethod("GET");
-        urlConnection.setRequestProperty("Content-length", "0");
-        urlConnection.setUseCaches(false);
-        urlConnection.setAllowUserInteraction(false);
-        urlConnection.connect();
-        int status = urlConnection.getResponseCode();
-
-        if (status == 200) {
-            BufferedReader reader = new BufferedReader
-                    (new InputStreamReader(urlConnection.getInputStream()));
-            char[] buffer = new char[1024];
-            int n;
-            Writer writer = new StringWriter();
-
-            while ((n = reader.read(buffer)) != -1) {
-                writer.write(buffer, 0, n);
-            }
-
-            String json = writer.toString();
-
-            try {
-                JSONObject jObj = new JSONObject(json);
-                data = jObj.getJSONArray("airports");
-            } catch (JSONException ex) {
-                ex.printStackTrace();
-            }
-        }
-
-    } catch (IOException e) {
-        Log.e("IOException", e.toString());
-        e.printStackTrace();
-    } finally {
-        if (urlConnection != null) {
-            urlConnection.disconnect();
-        }
-    }
-
-    return null;
-}
-```
 ```C#
 protected override Java.Lang.Void RunInBackground(params string[] @params)
 {
@@ -196,23 +132,7 @@ protected override Java.Lang.Void RunInBackground(params string[] @params)
 Right after the `doInBackground` method has finished execution the `onPostExecute` callback will be triggered.
 After you have obtained the suggestions, you should filter them according the user input and notify the autocomplete that the suggestion data is available.
 
-```Java
-@Override
-protected void onPostExecute(Void result) {
-    List<TokenModel> filtered = new ArrayList<>();
-    remoteData = getTokenModelObjects(data);
-    for (TokenModel item : remoteData) {
-        String text = item.getText();
-        if (text.toLowerCase().startsWith(filter.toLowerCase())) {
-            filtered.add(item);
-        }
-    }
-    remoteCallback.apply(filtered);
-    autocomplete.resolveAfterFilter(autocomplete.getTextField().getText().toString(),
-            true);
 
-}
-```
 ```C#
 protected override void OnPostExecute(Java.Lang.Void result)
 {
@@ -247,99 +167,7 @@ Have in mind these few notes on the snippet above:
 
 This is the full code for the custom completion mode and the custom aync task.
 
-```Java
-private class FeedAutoCompleteTask extends AsyncTask<String, String, Void> {
-    JSONArray data;
-    private Procedure<List<TokenModel>> remoteCallback;
-    private String filter;
 
-    public FeedAutoCompleteTask(Procedure<List<TokenModel>> callback, String filterString) {
-        this.remoteCallback = callback;
-        this.filter = filterString;
-    }
-
-    protected void onPreExecute() {
-
-    }
-
-    @Override
-    protected Void doInBackground(String... params) {
-        HttpURLConnection urlConnection = null;
-        try {
-            URL url = new URL
-                    ("http://www.telerik.com/docs/default-source/ui-for-ios/airports.json?sfvrsn=2");
-
-            urlConnection = (HttpURLConnection) url.openConnection();
-
-            urlConnection.setRequestMethod("GET");
-            urlConnection.setRequestProperty("Content-length", "0");
-            urlConnection.setUseCaches(false);
-            urlConnection.setAllowUserInteraction(false);
-            urlConnection.connect();
-            int status = urlConnection.getResponseCode();
-
-            if (status == 200) {
-                BufferedReader reader = new BufferedReader
-                        (new InputStreamReader(urlConnection.getInputStream()));
-                char[] buffer = new char[1024];
-                int n;
-                Writer writer = new StringWriter();
-
-                while ((n = reader.read(buffer)) != -1) {
-                    writer.write(buffer, 0, n);
-                }
-
-                String json = writer.toString();
-
-                try {
-                    JSONObject jObj = new JSONObject(json);
-                    data = jObj.getJSONArray("airports");
-                } catch (JSONException ex) {
-                    ex.printStackTrace();
-                }
-            }
-
-        } catch (IOException e) {
-            Log.e("IOException", e.toString());
-            e.printStackTrace();
-        } finally {
-            if (urlConnection != null) {
-                urlConnection.disconnect();
-            }
-        }
-
-        return null;
-    }
-
-    @Override
-    protected void onPostExecute(Void result) {
-        List<TokenModel> filtered = new ArrayList<>();
-        remoteData = getTokenModelObjects(data);
-        for (TokenModel item : remoteData) {
-            String text = item.getText();
-            if (text.toLowerCase().startsWith(filter.toLowerCase())) {
-                filtered.add(item);
-            }
-        }
-        remoteCallback.apply(filtered);
-        autocomplete.resolveAfterFilter(autocomplete.getTextField().getText().toString(),
-                true);
-
-    }
-
-}
-
-public Function2Async<String, List<TokenModel>, List<TokenModel>> STARTS_WITH_REMOTE
-        = new Function2Async<String, List<TokenModel>, List<TokenModel>>() {
-    @Override
-    public void apply(String filterString, List<TokenModel> originalCollection,
-                      Procedure<List<TokenModel>> callback) {
-        FeedAutoCompleteTask task =
-                new FeedAutoCompleteTask(callback, filterString);
-        task.execute();
-    }
-};
-```
 ```C#
 public class StartsWithRemote : Java.Lang.Object, IFunction2Async
 {

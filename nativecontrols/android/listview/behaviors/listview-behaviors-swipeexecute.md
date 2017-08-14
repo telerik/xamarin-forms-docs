@@ -21,10 +21,7 @@ If you have read the [Getting Started page]({% slug listview-gettingstarted %} "
 the [Behaviors Overview]({% slug listview-behaviors-overview %} "Read the behaviors overview page for RadListView") we introduced the behaviors and now we will go into more details about the **SwipeExecuteBehavior**.
 Here's how to add the **SwipeExecuteBehavior** to your list view instance:
 
-```Java
-SwipeExecuteBehavior swipeExecuteBehavior = new SwipeExecuteBehavior();
-listView.addBehavior(swipeExecuteBehavior);
-```
+
 ```C#
 SwipeExecuteBehavior swipeExecuteBehavior = new SwipeExecuteBehavior ();
 listView.AddBehavior (swipeExecuteBehavior);
@@ -36,32 +33,7 @@ This will allow you to swipe items to the direction that is opposite of the layo
 
 The **SwipeExecuteListener** should be used to get notification that an item is swiped, so you can perform the desired action on that item, for example to delete it. Here's one simple implementation:
 
-```Java
-SwipeExecuteBehavior.SwipeExecuteListener swipeExecuteListener = 
-	new SwipeExecuteBehavior.SwipeExecuteListener() {
-	
-	@Override
-	public void onSwipeStarted(int position) {
-	}
 
-	@Override
-	public void onSwipeProgressChanged(int position, int offset, View swipeContent) {
-	}
-
-	@Override
-	public void onSwipeEnded(int position, int offset) {
-		int absOffset = Math.abs(offset);
-		if (absOffset > 300) {
-			cityAdapter.remove(position);
-		}
-		cityAdapter.notifySwipeExecuteFinished();
-	}
-
-	@Override
-	public void onExecuteFinished(int position) {
-	}
-};
-```
 ```C#
 public class SwipeExecuteListener: Java.Lang.Object, 
 	SwipeExecuteBehavior.ISwipeExecuteListener {
@@ -91,9 +63,7 @@ Additionally if there is a special content that is revealed you will be notified
 The sample implementation that we have just made simply checks if the item that is swiped
 has travelled at least `300` pixels in any supported direction (left or right) and if it has, it is removed. Let's add this listener to our behavior and see it in action:
 
-```Java
-swipeExecuteBehavior.addListener(swipeExecuteListener);
-```
+
 ```C#
 SwipeExecuteListener swipeExecuteListener = new SwipeExecuteListener ();
 swipeExecuteBehavior.AddListener(swipeExecuteListener)
@@ -107,26 +77,7 @@ Now let's see the other scenario, where we need to add buttons that will be reve
 **onBindSwipeContentHolder(ListViewHolder holder, int position)**. This method is very similar to the **onBindViewHolder** method that we used to populate our items. What you get as a parameter is a view holder 
 that will contain the swipe content and the position of the swiped item. Here's one simple implementation of this method:
 
-```Java
-@Override
-public void onBindSwipeContentHolder(ListViewHolder holder, int position) {
-	RelativeLayout mainLayout = (RelativeLayout)holder.itemView;
-	LinearLayout leftLayout = (LinearLayout)mainLayout.getChildAt(0);
-	LinearLayout rightLayout = (LinearLayout)mainLayout.getChildAt(1);
 
-	Button leftButton = new Button(mainLayout.getContext());
-	leftButton.setText("edit");
-
-	Button rightButton = new Button(mainLayout.getContext());
-	rightButton.setText("delete");
-
-	leftLayout.removeAllViews();
-	leftLayout.addView(leftButton);
-
-	rightLayout.removeAllViews();
-	rightLayout.addView(rightButton);
-}
-```
 ```C#
 public override void OnBindSwipeContentHolder (ListViewHolder holder, int position)
 {
@@ -160,10 +111,7 @@ The default value is `true`, which means that the item will fade as you swipe it
 
 By default, an item can be swiped away from the screen. If you need to set a limit so that it can be swiped only 50 pixels in each direction, here's how to do it:
 
-```Java
-swipeExecuteBehavior.setSwipeLimitStart(-50);
-swipeExecuteBehavior.setSwipeLimitEnd(50);
-```
+
 ```C#
 swipeExecuteBehavior.SwipeLimitStart = -50;
 swipeExecuteBehavior.SwipeLimitEnd = 50;

@@ -26,25 +26,7 @@ The Event class that is used by the calendar contains the following information 
 
 The first three are mandatory and must be provided as parameters of the event's constructor. Here's a simple example of how to create an event and add it to the instance of the calendar:
 
-```Java
-	Calendar calendar = Calendar.getInstance();
-    calendar.set(Calendar.HOUR_OF_DAY, 20);
-    calendar.set(Calendar.MINUTE, 0);
-    calendar.set(Calendar.SECOND, 0);
-    calendar.set(Calendar.MILLISECOND, 0);
 
-    long eventStart = calendar.getTimeInMillis();
-
-    calendar.add(Calendar.HOUR, 3);
-    long eventEnd = calendar.getTimeInMillis();
-
-    Event event = new Event("Dinner with Jane", eventStart, eventEnd);
-
-    List<Event> events = new ArrayList<Event>();
-    events.add(event);
-
-    calendarView.getEventAdapter().setEvents(events);
-```
 ```C#
 	Calendar calendar = Calendar.Instance;
 	calendar.Set(CalendarField.HourOfDay, 20);
@@ -74,33 +56,7 @@ Here's the result:
 If you would like to present more information about the events for a certain cell when it's pressed, you can use a **RadCalendarView.OnCellClickListener** to get notified when this happens. Here's an example which demonstrates how to display more
 information about the event that we have just added when the user taps on the cell that contains it:
 
-```Java
-	calendarView.setOnCellClickListener(new RadCalendarView.OnCellClickListener() {
-		@Override
-		public void onCellClick(CalendarCell calendarCell) {
-			if (!(calendarCell instanceof CalendarDayCell))
-				return;
 
-			CalendarDayCell calendarDayCell = (CalendarDayCell) calendarCell;
-
-			if(calendarDayCell.getEvents() != null &&
-					calendarDayCell.getEvents().size() > 0) {
-
-				Event firstEvent = calendarDayCell.getEvents().get(0);
-
-				String eventInfo = String.format("%tT - %tT: %s",
-						firstEvent.getStartDate(),
-						firstEvent.getEndDate(),
-						firstEvent.getTitle());
-
-				Toast.makeText(
-						getApplicationContext(),
-						eventInfo,
-						Toast.LENGTH_SHORT).show();
-            }
-        }
-    });
-```
 ```C#
 	calendarView.SetOnCellClickListener(new CellClickListenerExample());
 	
@@ -159,10 +115,7 @@ The default value is `ShapeAndText`, which as you can see from the previous exam
 simply with the text of their title written with their event color. When the mode is `Shape`, they will be presented with a rectangle which indicates their duration and the time of their occurrence. For example if one event
 lasts longer than another, it will consume more space. Also, if time when one event is happening is before the time of another it will be drawn higher. Here's how to set the render mode to `Shape`:
 
-```Java
-	calendarView.getEventAdapter().getRenderer().
-		setEventRenderMode(EventRenderMode.Shape);
-```
+
 ```C#
 	calendarView.EventAdapter.Renderer.EventRenderMode = EventRenderMode.Shape;
 ```
@@ -172,49 +125,7 @@ You can get the current mode by calling the renderer's **getEventRenderMode()** 
 If the modes provided by the default event renderer do not suit your needs, you can extend it and override its **renderEvents(Canvas, CalendarCell)** method. This method is responsible for the drawing of the event representation
 of the events from the cell that is the second parameter to the canvas that is the first. Here's an example which draws a circle for each of the events:
 
-```Java
-public class MyEventRenderer extends EventRenderer {
 
-    int shapeSpacing = 25;
-    int shapeRadius = 10;
-    Paint paint;
-
-    public MyEventRenderer(Context context) {
-        super(context);
-
-        paint = new Paint();
-        paint.setAntiAlias(true);
-    }
-
-    @Override
-    public void renderEvents(Canvas canvas, CalendarDayCell cell) {
-        int startX = cell.getLeft() + shapeSpacing;
-        int startY = cell.getTop() + shapeSpacing;
-
-        Rect drawTextRect = new Rect();
-        if (cell.getText() != null) {
-            String text = cell.getText();
-            cell.getTextPaint().getTextBounds(text, 0, text.length(), drawTextRect);
-        }
-
-        int x = startX;
-        int y = startY;
-
-        int spacingForDate = drawTextRect.width();
-
-        for(int i = 0; i < cell.getEvents().size();i++) {
-            Event e = cell.getEvents().get(i);
-            paint.setColor(e.getEventColor());
-            canvas.drawCircle(x, y, shapeRadius, paint);
-            x += shapeSpacing;
-            if(x > cell.getRight() - spacingForDate - shapeSpacing) {
-                x = startX;
-                y += shapeSpacing;
-            }
-        }
-    }
-}
-```
 ```C#
 public class MyEventRenderer : EventRenderer
 {
@@ -266,10 +177,7 @@ public class MyEventRenderer : EventRenderer
 
 When your custom renderer is created you can set it to the **EventAdapter** by using its **setRenderer(EventRenderer)** method:
 
-```Java
-MyEventRenderer eventRenderer = new MyEventRenderer(getContext());
-calendarView.getEventAdapter().setRenderer(eventRenderer);
-```
+
 ```C#
 MyEventRenderer eventRenderer = new MyEventRenderer(Context);
 calendarView.EventAdapter.Renderer = eventRenderer;

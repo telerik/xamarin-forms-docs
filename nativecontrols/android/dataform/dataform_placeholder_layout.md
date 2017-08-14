@@ -11,12 +11,7 @@ publish: true
 # RadDataForm: Using DataFormPlaceholderLayoutManager
 
 To use the placeholder layout developers must create an instance of the **DataFormPlaceholderLayoutManager** class.
-```Java
-// The second argument must have a ViewGroup as the root element in the XML. 
-// This can be any view group.
-dataForm.setLayoutManager(
-	new DataFormPlaceholderLayoutManager(context, R.layout.placeholder_layout));
-```
+
 ```C#
 // The second argument must have a ViewGroup as the root element in the XML. 
 // This can be any view group.

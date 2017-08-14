@@ -28,10 +28,7 @@ Note that this animations will be played when items are added or removed (for ex
 
 Here's how we can add a **FadeItemAnimator** to a list view instance:
 
-```Java
-FadeItemAnimator fadeItemAnimator = new FadeItemAnimator();
-listView.setItemAnimator(fadeItemAnimator);
-```
+
 ```C#
 FadeItemAnimator fadeItemAnimator = new FadeItemAnimator ();
 listView.SetItemAnimator (fadeItemAnimator);
@@ -46,10 +43,7 @@ full transparency and `1` means no transparency.
 
 Here's how we can add a **SlideItemAnimator** to a list view instance:
 
-```Java
-SlideItemAnimator slideItemAnimator = new SlideItemAnimator();
-listView.setItemAnimator(slideItemAnimator);
-```
+
 ```C#
 SlideItemAnimator slideItemAnimator = new SlideItemAnimator ();
 listView.SetItemAnimator (slideItemAnimator);
@@ -64,10 +58,7 @@ SlideItemAnimator.DIRECTION_LEFT, SlideItemAnimator.DIRECTION_TOP, SlideItemAnim
 
 Here's how we can add a **SlideItemAnimator** to a list view instance:
 
-```Java
-ScaleItemAnimator scaleItemAnimator = new ScaleItemAnimator();
-listView.setItemAnimator(scaleItemAnimator);
-```
+
 ```C#
 ScaleItemAnimator scaleItemAnimator = new ScaleItemAnimator ();
 listView.SetItemAnimator (scaleItemAnimator);
@@ -84,19 +75,7 @@ You can change these values by using ScaleItemAnimator's
 You can use the **ItemAnimatorSet** class to combine the animators. Additionally the animators have a **setType** method that allows you to define whether an animator will be used for animation when an item is added or 
 removed or both. Here's how to include use scale animator when an item is added and slide animator when an item is removed.
 
-```Java
-ScaleItemAnimator scaleItemAnimator = new ScaleItemAnimator();
-scaleItemAnimator.setType(ListViewItemAnimator.ADD);
 
-SlideItemAnimator slideItemAnimator = new SlideItemAnimator();
-slideItemAnimator.setType(ListViewItemAnimator.REMOVE);
-
-ItemAnimatorSet itemAnimatorSet = new ItemAnimatorSet();
-itemAnimatorSet.addAnimator(scaleItemAnimator);
-itemAnimatorSet.addAnimator(slideItemAnimator);
-
-listView.setItemAnimator(itemAnimatorSet);
-```
 ```C#
 ScaleItemAnimator scaleItemAnimator = new ScaleItemAnimator();
 scaleItemAnimator.Type = ListViewItemAnimator.Add;

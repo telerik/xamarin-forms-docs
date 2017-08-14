@@ -15,9 +15,7 @@ publish: true
 ## Inline events
 
 In this mode the calendar will crack open below the selected cell and will display the events as a scrollable list, which will fill the entire width of the calendar. The height will be determined by the height and the number of events, that need to be displayed. It will however be limited to the height of 4 calendar rows.
-```Java
-	calendarView.setEventsDisplayMode(EventsDisplayMode.Inline);
-```
+
 ```C#
 	calendarView.EventsDisplayMode = EventsDisplayMode.Inline;
 ```
@@ -25,9 +23,7 @@ In this mode the calendar will crack open below the selected cell and will displ
 
 ## Popup events
 In this mode the events will be displayed as a popup window, which will load at most four of the cell's events inside a list view and will take place at the lower part of the cell's location.
-```Java
-	calendarView.setEventsDisplayMode(EventsDisplayMode.Popup);
-```
+
 ```C#
 	calendarView.EventsDisplayMode = EventsDisplayMode.Popup;
 ```
@@ -62,52 +58,7 @@ Customization is being done using the calendar adapter for both modes. The prope
 
 If this is not enough, you can further customize the events by setting a new adapter which extends ArrayAdapter for the inline events. Here's an example which shows how to use a single view to show both start and end time of an event:
 
-```Java
-public class MyInlineEventsAdapter extends ArrayAdapter<EventsManager.EventInfo> {
-    private LayoutInflater layoutInflater;
 
-    public MyInlineEventsAdapter(Context context) {
-        super(context, R.layout.custom_inline_event_layout);
-        this.layoutInflater = (LayoutInflater) context.
-                getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-    }
-
-    @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-
-        View view = convertView;
-        ViewHolder holder;
-
-        if (view == null) {
-            view = layoutInflater.inflate(
-                    R.layout.custom_inline_event_layout, parent, false);
-
-            holder = new ViewHolder();
-            holder.eventTitle = (TextView) view.findViewById(R.id.event_title);
-            holder.eventTime = (TextView) view.findViewById(R.id.event_time);
-
-            view.setTag(holder);
-        } else {
-            holder = (ViewHolder) view.getTag();
-        }
-
-        EventsManager.EventInfo eventInfo = getItem(position);
-        Event event = eventInfo.originalEvent();
-        holder.eventTitle.setTextColor(event.getEventColor());
-        holder.eventTitle.setText(event.getTitle());
-        String eventTime = String.format("%s - %s",
-                eventInfo.startTimeFormatted(), eventInfo.endTimeFormatted());
-        holder.eventTime.setText(eventTime);
-
-        return view;
-    }
-
-    class ViewHolder {
-        TextView eventTitle;
-        TextView eventTime;
-    }
-}
-```
 ```C#
 public class MyInlineEventsAdapter : ArrayAdapter
 {
@@ -190,10 +141,7 @@ This example is using a resource file with the following content:
 
 You can use an instance of the new adapter and set it to your calendar's event manager:
 
-```Java
-MyInlineEventsAdapter adapter = new MyInlineEventsAdapter(getContext());
-calendarView.eventsManager().setAdapter(adapter);
-```
+
 ```C#
 MyInlineEventsAdapter adapter = new MyInlineEventsAdapter(Context);
 calendarView.EventsManager().Adapter = adapter;
@@ -205,15 +153,7 @@ calendarView.EventsManager().Adapter = adapter;
 
 If you need to display additional information about events, you can listen for item clicks. Here's an example to show a toast that an event is clicked:
 
-```Java
-	calendarView.eventsManager().setOnItemClickListener(new AdapterView.OnItemClickListener() {
-		@Override
-		public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-			Toast.makeText(getContext(), parent.getAdapter().getItem(position).toString() + 
-				" clicked!", Toast.LENGTH_SHORT).show();
-		}
-	});
-```
+
 ```C#
 calendarView.EventsManager ().SetOnItemClickListener (new MyClickListener());
 

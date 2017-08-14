@@ -24,9 +24,7 @@ This is the default display mode for **RadCalendarView** and means that the cont
 
 This mode represents the dates from one week and they look as one of the rows that are displayed while the control is in Month display mode. Let's set the display mode of our **RadCalendarView** instance to `Week`:
 
-```Java
-	calendarView.setDisplayMode(CalendarDisplayMode.Week);
-```
+
 ```C#
 	calendarView.DisplayMode = CalendarDisplayMode.Week;
 ```

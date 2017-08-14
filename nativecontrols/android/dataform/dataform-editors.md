@@ -34,20 +34,7 @@ The **RadDataForm** contains many built-in property editors that are either auto
 
 The RadDataForm 'annotations' can be used to easily assign an editor to a property of the set Entity. The next example demonstrates how to set the editor of a property via the described annotations:
 
-```Java
-@DataFormProperty(
-        label = "From",
-        index = 0,
-        editor = DataFormRadAutoCompleteEditor.class
-)
-public String[] getFrom() {
-    return from;
-}
-public void setFrom(String[] value) {
-    from = value;
-    notifyListeners("From", value);
-}
-```
+
 
 # Using the 'DataFormRadAutoCompleteEditor'
 
@@ -63,15 +50,11 @@ Passing this data can be done in multiple different approaches depending on whic
 - By creating an `AutoCompleteAdapter` and setting it to the DataFormRadAutoCompleteEditor via its `setAdapter()` method
 - Or by directly by calling the `updateValues()` of the specific `EntityPropertyCore` object. The next code snippet shows how you can use the mentioned 'updateValues' method on an existing 'from' property of the RadDataForm, the `list` object is a simple `List<String>` :
 
- ```Java
-((EntityPropertyCore)this.dataForm.getPropertyByName("From")).updateValues(list.toArray());
-```
+ 
 
  Because calling the updateValues can be done after the editor has been rendered you need to make sure you also update the DataFormRadAutoCompleteEditor itself by simply calling its `updateAdapter()` method:
 
- ```Java
-fromEditor.updateAdapter();
-```
+ 
 
 ## Setting the DisplayMode
 
@@ -82,9 +65,7 @@ If you are familiar with the RadAutoCompleteTextView element you know that is su
 
 When using the `DataFormRadAutoCompleteEditor` you too have the option to change the editor's `displayMode` by simply calling its `setDisplayMode()` and passing the desired mode:
 
- ```Java
-fromEditor.setDisplayMode(DisplayMode.TOKENS);
-```
+ 
 
  When the displayMode is set to `TOKEN` if the bound to that editor property of your EntityProperty is of type `String[]` and each of its elements is present in the "suggestion source" those items from the array will be rendered as separate tokens.
 

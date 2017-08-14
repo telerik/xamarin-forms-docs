@@ -18,32 +18,7 @@ You can read from the [Getting Started]({% slug chart-gettingstarted %} "Read ho
 
 After you create the method for initialization of sample data, you can create a **RadCartesianChartView** with **RangeBarSeries** by adding the following code to the **onCreate()** method of your Activity. For the purposes of the example, we are going to use the **Result** property of our data object for both low value and high value. In order to actually have different values so that bars that are visible, we will multiply the original value by a constant and the product will be our high value.
 
-```Java
-	initData();
 
-	RadCartesianChartView chartView = new RadCartesianChartView(this);
-
-	RangeBarSeries rangeBarSeries = new RangeBarSeries();
-	rangeBarSeries.setCategoryBinding(new PropertyNameDataPointBinding("Month"));
-	rangeBarSeries.setLowBinding(new PropertyNameDataPointBinding("Result"));
-	rangeBarSeries.setHighBinding(new GenericDataPointBinding<MonthResult, Double> (new Function<MonthResult, Double>() {
-		@Override
-		public Double apply(MonthResult argument) {
-			return argument.getResult() * 4;
-		}
-	}));
-	rangeBarSeries.setData(this.monthResults);
-	chartView.getSeries().add(rangeBarSeries);
-
-	CategoricalAxis horizontalAxis = new CategoricalAxis();
-	chartView.setHorizontalAxis(horizontalAxis);
-
-	LinearAxis verticalAxis = new LinearAxis();
-	chartView.setVerticalAxis(verticalAxis);
-
-	ViewGroup rootView = (ViewGroup)findViewById(R.id.container);
-	rootView.addView(chartView);
-```
 ```C#
 	InitData();
 
@@ -95,10 +70,7 @@ Here's the result:
 
 The bars that are used to represent the data points in **RangeBarSeries** can have their corners rounded. This can be achieved by using the **setAreBarsRounded(boolean value)** method. When the value that is set is `true`, the corners are rounded. You can use **getAreBarsRounded()** in order to check the current value. The rounding radius can be checked and modified by using the **getRoundBarsRadius()** and **setRoundBarsRadius(float value)**. If you try to set a negative value, an `IllegalArgumentException` will be thrown. Here's how the **RangeBarSeries** look when their round bar radius is set to `10`:
 
-```Java
-	rangeBarSeries.setAreBarsRounded(true);
-	rangeBarSeries.setRoundBarsRadius(10);
-```
+
 ```C#
 	rangeBarSeries.AreBarsRounded = true;
 	rangeBarSeries.RoundBarsRadius = 10;

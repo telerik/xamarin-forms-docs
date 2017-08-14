@@ -18,12 +18,7 @@ In this article, you will learn to get started with **RadChartView for Android**
 
 The easiest way to add an instance of **RadChartView** is to find the root view by id and add the chart as a child view, for example in the method **onCreate()** of your Activity. Here's how to add a Cartesian chart, to the root view (with id `container`):
 
-```Java
-	RadCartesianChartView chartView = new RadCartesianChartView(this);
 
-	ViewGroup rootView = (ViewGroup)findViewById(R.id.container);
-	rootView.addView(chartView);
-```
 ```C#
 	RadCartesianChartView chartView = new RadCartesianChartView(this);
 
@@ -37,17 +32,7 @@ At this point that chart will be added to the view, but it will simply indicate 
 
 Let's create a method that will initialize some data items:
 
-```Java
-    private List<MonthResult> monthResults;
 
-    private void initData() {
-        monthResults = new ArrayList<MonthResult>();
-        monthResults.add(new MonthResult("Jan", 12));
-        monthResults.add(new MonthResult("Feb", 5));
-        monthResults.add(new MonthResult("Mar", 10));
-        monthResults.add(new MonthResult("Apr", 7));
-    }
-```
 ```C#
 	private Java.Util.ArrayList monthResults;
 	
@@ -62,33 +47,7 @@ Let's create a method that will initialize some data items:
 
 Here, `MonthResult` is a custom type that we have defined as follows. Additionally, in C#, you will need a class that inherits from `DataPointBinding` that will be used for the proper data retrieval:
 
-```Java
-    public class MonthResult {
-        private String month;
-        private double result;
 
-        public MonthResult(String month, double result) {
-            this.setMonth(month);
-            this.setResult(result);
-        }
-
-        public double getResult() {
-            return this.result;
-        }
-
-        public void setResult(double value) {
-            this.result = value;
-        }
-
-        public String getMonth() {
-            return this.month;
-        }
-
-        public void setMonth(String value) {
-            this.month = value;
-        }
-    }
-```
 ```C#
 	public class MonthResult : Java.Lang.Object {
 
@@ -127,15 +86,7 @@ Now that we have the data, we need to add it to a series instance.
 
 For this example we will create a chart with **LineSeries**. After we create the series, we need to define data point bindings for both value and category, which will determine how this information will be extracted from each of the data items.
 
-```Java
-	initData();
 
-	LineSeries lineSeries = new LineSeries();
-	lineSeries.setCategoryBinding(new PropertyNameDataPointBinding("Month"));
-	lineSeries.setValueBinding(new PropertyNameDataPointBinding("Result"));
-	lineSeries.setData(this.monthResults);
-	chartView.getSeries().add(lineSeries);
-```
 ```C#
 	InitData();
 
@@ -158,13 +109,7 @@ All that's left is to define what will be type of the axes. For the **LineSeries
 
 In this example, we will use one **CategoricalAxis** and one **LinearAxis**.
 
-```Java
-	CategoricalAxis horizontalAxis = new CategoricalAxis();
-	chartView.setHorizontalAxis(horizontalAxis);
 
-	LinearAxis verticalAxis = new LinearAxis();
-	chartView.setVerticalAxis(verticalAxis);
-```
 ```C#
 	CategoricalAxis horizontalAxis = new CategoricalAxis();
 	chartView.HorizontalAxis = horizontalAxis;

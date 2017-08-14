@@ -29,12 +29,7 @@ You can read from the [Bar Series]({% slug chart-series-bar %} "Read how to crea
 
 The **GridLineAnnotation** represents a vertical or horizontal line that crosses the entire plot area. Here is an example that demonstrates how to define a vertical **CartesianGridLineAnnotation** in the chart that [we have created]({% slug chart-series-bar %} "Read how to create a simple chart with BarSeries"). In the constructor of the annotation you need to specify the axis that will be annotated and the value which determines the position.
 
-```Java
-	CartesianGridLineAnnotation annotation = new CartesianGridLineAnnotation(verticalAxis, 8);
-	chartView.getAnnotations().add(annotation);
-	annotation.setStrokeColor(Color.GREEN);
-	annotation.setStrokeWidth(4);
-```
+
 ```C#
 	CartesianGridLineAnnotation annotation = 
 		new CartesianGridLineAnnotation(verticalAxis, 8);
@@ -50,9 +45,7 @@ Here's the result:
 
 You can modify the width and the color of the annotation with the **setStrokeWidth(float)** and **setStrokeColor(int)** methods as shown in the example. In order to get the current values, you can use **getStrokeWidth()** and **getStrokeColor()** respectively. Optionally you can also provide a `PathEffect` that will be used for the line that is drawn by using the **setStrokeEffect(PathEffect)**. For example if you want to have a dashed line, instead of solid, you can use the following approach:
 
-```Java
-	annotation.setStrokeEffect(new DashPathEffect(new float[] {20, 10}, 0));
-```
+
 ```C#
 	annotation.StrokeEffect = new DashPathEffect (new float[] { 20, 10 }, 0);
 ```
@@ -61,13 +54,7 @@ You can modify the width and the color of the annotation with the **setStrokeWid
 
 The **PlotBandAnnotation** represents a vertical or horizontal area that crosses the entire plot area. Here is an example that demonstrates how to define a vertical **CartesianPlotBandAnnotation** in the chart that [we have created]({% slug chart-series-bar %} "Read how to create a simple chart with BarSeries"). In the constructor of the annotation you need to specify the axis that will be annotated and the two values that will determine the range for the annotation.
 
-```Java
-	CartesianPlotBandAnnotation annotation = new CartesianPlotBandAnnotation(verticalAxis, 6, 8);
-	chartView.getAnnotations().add(annotation);
-	annotation.setFillColor(Color.GREEN);
-	annotation.setStrokeColor(Color.CYAN);
-	annotation.setStrokeWidth(4);
-```
+
 ```C#
 	CartesianPlotBandAnnotation annotation = 
 		new CartesianPlotBandAnnotation(verticalAxis, 6, 8);
@@ -88,10 +75,7 @@ You can modify the fill of the annotation as well as the width and the color of 
 
 The **CustomAnnotation** provides a way to draw custom annotations. In the constructor of the annotation you need to specify both vertical and horizontal axes as well as values for both of them. They will be used to determine the position for the annotation. When the axis is numerical (Linear or Logarithmic) a numeric value is expected, and when it is categorical - a category is expected. You also need to set the content for the annotation. Here's an example which adds a text annotation to a specific position in the chart that [we have created]({% slug chart-series-bar %} "Read how to create a simple chart with BarSeries").
 
-```Java
-	CartesianCustomAnnotation annotation = new CartesianCustomAnnotation(verticalAxis, horizontalAxis, 6, "Feb", "TARGET");
-	chartView.getAnnotations().add(annotation);
-```
+
 ```C#
 	CartesianCustomAnnotation annotation = 
 		new CartesianCustomAnnotation(verticalAxis, horizontalAxis, 6, "Feb", "TARGET");
@@ -101,42 +85,7 @@ The **CustomAnnotation** provides a way to draw custom annotations. In the const
 
 Now the annotation will be the text `TARGET` and it will be drawn where the vertical axis has value `6` and the horizontal axis has value `Feb`. Additionally, you can provide a custom renderer for the annotation with the method **setContentRenderer(CustomAnnotationRenderer)**. The custom renderer must implement the interface **CustomAnnotationRenderer**. Here's an example for such a renderer which draws a text annotation with custom style:
 
-```Java
-    public class CustomTextRenderer implements CustomAnnotationRenderer {
-        Paint contentPaint = new Paint();
 
-        public CustomTextRenderer() {
-            contentPaint.setTextSize(36);
-            contentPaint.setColor(Color.RED);
-            contentPaint.setTypeface(Typeface.create("sans-serif-light", Typeface.NORMAL));
-        }
-
-        @Override
-        public RadSize measureContent(Object content) {
-            if (content == null) {
-                return RadSize.getEmpty();
-            }
-
-            String text = content.toString();
-            Rect textBounds = new Rect();
-            contentPaint.getTextBounds(text, 0, text.length(), textBounds);
-
-            return new RadSize(textBounds.width(), textBounds.height());
-        }
-
-        @Override
-        public void render(Object content, RadRect layoutSlot, Canvas canvas, Paint paint) {
-            if (content == null) {
-                return;
-            }
-
-            String text = content.toString();
-            canvas.drawText(
-                    text, (float) layoutSlot.getX() - (float) (layoutSlot.getWidth() / 2.0),
-                    (float) layoutSlot.getBottom() - (float)layoutSlot.getHeight() / 2, contentPaint);
-        }
-    }
-```
 ```C#
 	class CustomTextRenderer : Java.Lang.Object, ICustomAnnotationRenderer {
 
@@ -181,9 +130,7 @@ Now the annotation will be the text `TARGET` and it will be drawn where the vert
 
 After you set a new instance of our renderer to the chart from the previous example, you will see the formatted text annotation:
 
-```Java
-	annotation.setContentRenderer(new CustomTextRenderer());
-```
+
 ```C#
 	annotation.ContentRenderer = new CustomTextRenderer();
 ```

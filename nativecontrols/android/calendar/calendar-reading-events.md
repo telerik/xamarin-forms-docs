@@ -16,11 +16,7 @@ There is no need for the developer to bother using any SQL queries since the def
 ## Setting the read adapter
 
 The read adapter is rather easy to be set in the default scenario. All that has to be done is to set an instance of the adapter to the calendar and to trigger the reading of events like this:
-```Java
-	EventReadAdapter eventAdapter = new EventReadAdapter(calendarView);
-	calendarView.setEventAdapter(eventAdapter);
-	eventAdapter.readEventsAsync();
-```
+
 ```C#
 	EventReadAdapter eventAdapter = new EventReadAdapter (calendarView);
 	calendarView.EventAdapter = eventAdapter;
@@ -36,16 +32,7 @@ This will get the events from the calendar with id 1, or the first calendar on t
 The events are being collected by the read adapter using queries. By changing the queries the developer can determine the set of events, that will be red and displayed in the calendar. There is a set of basic queries,
 that will cover most scenarios. Here is an example for getting the events from today to a week from today for the first three calendars on the device:
 
-```Java
-	EventQueryToken token = EventQueryToken.getCalendarsById(new String[]{"1", "2", "3"});
-	Calendar calendar = Calendar.getInstance();
-	long start = calendar.getTimeInMillis();
-	calendar.add(Calendar.DATE, 7);
-	long end = calendar.getTimeInMillis();
-	token.setRange(start, end);
-	
-	eventAdapter.setEventsQueryToken(token);
-```
+
 ```C#
 	EventQueryToken token = EventQueryToken.GetCalendarsById(new String[]{"1", "2", "3"});
 	Calendar calendar = Calendar.Instance;
@@ -58,20 +45,7 @@ that will cover most scenarios. Here is an example for getting the events from t
 ```
 
 Here is how to get all calendars belonging to a specific user using the provided helper methods:
-```Java
-	final RadCalendarView calendarView = new RadCalendarView(this);
-	final EventReadAdapter eventAdapter = new EventReadAdapter(calendarView);
-	calendarView.setEventAdapter(eventAdapter);
 
-	EventReadAdapter.getCurrentUserAsync(this, new GenericResultCallback<String>() {
-		@Override
-		public void onResult(String result) {
-			EventQueryToken token = EventQueryToken.getCalendarsByOwner(result);
-			eventAdapter.setEventsQueryToken(token);
-			eventAdapter.readEventsAsync();
-		}
-	});
-```
 ```C#
 	public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{
@@ -109,33 +83,7 @@ However since there is no standard on the order or the owners of calendars there
 the first calendar (with id of 1) is the Outlook calendar and others where there is only one user, which doesn't own the calendar of the device, but the owner is rather something like "Phone".
 
 In these cases there can be a more controlled selection of events as presented in this example:
-```Java
-	final RadCalendarView calendarView = new RadCalendarView(this);
-	final EventReadAdapter eventAdapter = new EventReadAdapter(calendarView);
-	calendarView.setEventAdapter(eventAdapter);
 
-	EventReadAdapter.getAllCalendarsAsync(this, new GenericResultCallback<EventReadAdapter.CalendarInfo[]>() {
-		@Override
-		public void onResult(EventReadAdapter.CalendarInfo[] result) {
-			List<String> calendarsFromResult = new ArrayList<String>();
-
-			for (EventReadAdapter.CalendarInfo calendar : result) {
-				if (true) { // add custom logic here
-					calendarsFromResult.add(calendar.id);
-				}
-			}
-
-			String[] selectedCalendars = new String[calendarsFromResult.size()];
-			for (int i = 0; i < calendarsFromResult.size(); i++) {
-				selectedCalendars[i] = calendarsFromResult.get(i);
-			}
-
-			EventQueryToken token = EventQueryToken.getCalendarsById(selectedCalendars);
-			eventAdapter.setEventsQueryToken(token);
-			eventAdapter.readEventsAsync();
-		}
-	});
-```
 ```C#
 	EventReadAdapter eventAdapter;
 
@@ -188,21 +136,7 @@ In any case the events are being red after the method for asynchronous reading i
 
 The recurring events are also available for reading and displaying in the **RadCalendarView**, however the rules are not complete and will be updated with the following releases of the calendar. The recurring events can be 
 stopped or enabled using the setReadingRecurringEvents(boolean) method of the adapter. The functionality can be easily extended by providing manual implementation over the existing one like this:
-```Java
-	public class CustomEventReadAdapter extends EventReadAdapter {
 
-        public CustomEventReadAdapter(RadCalendarView owner) {
-            super(owner);
-        }
-
-        @Override
-        protected boolean eventShouldRecur(RecurringEvent event, long dateStart) {
-            // Add custom logic here...
-
-            return super.eventShouldRecur(event, dateStart);
-        }
-    }
-```
 ```C#
 	public class CustomEventReadAdapter : EventReadAdapter
 	{

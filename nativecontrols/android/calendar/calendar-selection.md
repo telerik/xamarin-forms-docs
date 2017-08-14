@@ -20,21 +20,7 @@ The selected dates change when the user taps on a cell of the calendar. The sele
 This is the default calendar selection mode. When the calendar is using this mode each cell that is tapped changes its selected state, this means that when a cell is tapped for first time it gets added to the current selection and
 when it is tapped again it is removed from the selection. Here's an example of how to select the Monday, Wednesday and Friday from the current week:
 
-```Java
-	Calendar calendar = Calendar.getInstance();
-	List<Long> dates = new ArrayList<Long>();
 
-	calendar.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
-	dates.add(calendar.getTimeInMillis());
-
-	calendar.set(Calendar.DAY_OF_WEEK, Calendar.WEDNESDAY);
-	dates.add(calendar.getTimeInMillis());
-
-	calendar.set(Calendar.DAY_OF_WEEK, Calendar.FRIDAY);
-	dates.add(calendar.getTimeInMillis());
-
-	calendarView.setSelectedDates(dates);
-```
 ```C#
 	Calendar calendar = Calendar.Instance;
 	List<Java.Lang.Long> dates = new List<Java.Lang.Long>();
@@ -69,18 +55,7 @@ selected range programmatically, you can use the same methods as in the other mo
 **setSelectedRange(DateRange)** to get or set the range that is selected. They use an object of type `DateRange` to represent the selection. This is a simple type which contains information about the start and the end of one range of dates.
 Here's an example of how to use the `DateRange` to set the selection to the three dates which start from today:
 
-```Java
-	calendarView.setSelectionMode(CalendarSelectionMode.Range);
 
-	Calendar calendar = Calendar.getInstance();
-	long start = calendar.getTimeInMillis();
-
-	calendar.add(Calendar.DATE, 2);
-	long end = calendar.getTimeInMillis();
-
-	DateRange dateRange = new DateRange(start, end);
-	calendarView.setSelectedRange(dateRange);
-```
 ```C#
 	calendarView.SelectionMode = CalendarSelectionMode.Range;
 
@@ -104,20 +79,7 @@ You can read more about scroll modes [here]({% slug calendar-gesturestransitions
 
 You can use the **RadCalendarView.OnSelectedDatesChangedListener** to get notified about changes in the selection. For example here's how to show a Toast with the selected date:
 
-```Java
-	calendarView.setSelectionMode(CalendarSelectionMode.Single);
-	calendarView.setOnSelectedDatesChangedListener(new RadCalendarView.
-											OnSelectedDatesChangedListener() {
-		@Override
-		public void onSelectedDatesChanged(
-			RadCalendarView.SelectionContext context) {
-			
-			Toast.makeText(getApplicationContext(), 
-			  String.format("%tF", context.newSelection().get(0)), 
-			  Toast.LENGTH_SHORT).show();
-		}
-	});
-```
+
 ```C#
 	calendarView.SelectionMode = CalendarSelectionMode.Single;
 	calendarView.OnSelectedDatesChangedListener = 
@@ -174,13 +136,7 @@ There are a few decorators offering the functionality of decorating the currentl
 ![TelerikUI-Calendar-Selection-Segment-Decorator](images/calendar-selection-segment-decorator.png "This is the segment decorator of the RadCalendarView.")
 
 This is the default decorator of the **RadCalendarView**. It is used for any type of selection in the calendar. The way to set it is the following:
-```Java
-	SegmentDecorator decorator = new SegmentDecorator(calendarView);
-	decorator.setColor(Color.parseColor("#009688"));
-	decorator.setStrokeWidth(Util.getDimen(TypedValue.COMPLEX_UNIT_DIP, 3));
 
-	calendarView.setCellDecorator(decorator);
-```
 ```C#
 	SegmentDecorator decorator = new SegmentDecorator(calendarView);
 	decorator.Color = Android.Graphics.Color.ParseColor("#009688");
@@ -202,18 +158,7 @@ The current cell decorators are:
 
 Here is an example of how the set one:
 
-```Java
-	calendarView.getAdapter().setDateTextPosition(CalendarElement.CENTER);
-	calendarView.getAdapter().setDateCellBackgroundColor(Color.WHITE, Color.WHITE);
-	calendarView.getAdapter().setSelectedCellBackgroundColor(Color.WHITE);
 
-	CellDecorator decorator = new CircularCellDecorator(calendarView);
-	decorator.setColor(Color.parseColor("#ed742c"));
-	decorator.setStrokeWidth(Util.getDimen(TypedValue.COMPLEX_UNIT_DIP, 2));
-	decorator.setScale(.75f);
-
-	calendarView.setCellDecorator(decorator);
-```
 ```C#
 	calendarView.Adapter.DateTextPosition = CalendarElement.Center;
 	calendarView.Adapter.SetDateCellBackgroundColor(Android.Graphics.Color.White, 
@@ -231,9 +176,7 @@ Here is an example of how the set one:
 
 Cell decorators can be either stroked or filled. This is determined by the stroked property:
 
-```Java
-	decorator.setStroked(false);
-```
+
 ```C#
 	decorator.Stroked = false;
 ```
@@ -250,23 +193,7 @@ The range decorators that are currently available are:
 * **SquareRangeDecorator** - draws a rectangular shape and a square indicator.
 
 Here is an example of a circular decorator:
-```Java
-	calendarView.getAdapter().setDateTextPosition(CalendarElement.CENTER);
-	calendarView.getAdapter().setDateCellBackgroundColor(Color.WHITE, Color.WHITE);
-	calendarView.getAdapter().setSelectedCellBackgroundColor(Color.WHITE);
-	calendarView.getAdapter().setSelectedCellTextColor(Color.WHITE);
-	calendarView.setSelectionMode(CalendarSelectionMode.Range);
 
-	RangeDecorator decorator = new CircularRangeDecorator(calendarView);
-	decorator.setColor(Color.parseColor("#f85725"));
-	decorator.setShapeColor(Color.parseColor("#8bcc46"));
-	decorator.setStrokeWidth(Util.getDimen(TypedValue.COMPLEX_UNIT_DIP, 2));
-	decorator.setScale(.65f);
-	decorator.setShapeScale(.75f);
-	decorator.setStroked(false);
-
-	calendarView.setCellDecorator(decorator);
-```
 ```C#
 	calendarView.Adapter.DateTextPosition = CalendarElement.Center;
 	calendarView.Adapter.SetDateCellBackgroundColor(Android.Graphics.Color.White, 
@@ -293,62 +220,7 @@ Here is an example of a circular decorator:
 Every of the different types of decorators is designed for easy and seamless extension. Before deciding to extend one of them the developer must decide which functionality is needed and to turn to the one that is closer to the final goal.
 In this case the desired decorator is a flag-like decorator, which goes all the way on the vertical axis, but has a little space on the sides. Since it will be applied to all cells separately it is a good idea to extend the CellDecorator:
 
-```Java
-	@Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
 
-        RadCalendarView calendarView = new RadCalendarView(this);
-
-        calendarView.getAdapter().setDateTextPosition(CalendarElement.CENTER);
-        calendarView.getAdapter().setDateCellBackgroundColor(Color.WHITE, Color.WHITE);
-        calendarView.getAdapter().setSelectedCellBackgroundColor(Color.WHITE);
-        calendarView.getAdapter().setSelectedCellTextColor(Color.WHITE);
-        calendarView.setSelectionMode(CalendarSelectionMode.Range);
-        calendarView.getGridLinesLayer().setWidth(
-			Util.getDimen(TypedValue.COMPLEX_UNIT_DIP, 2));
-
-        CellDecorator decorator = new FlagCellDecorator(calendarView);
-        decorator.setColor(Color.parseColor("#2babda"));
-        decorator.setStrokeWidth(Util.getDimen(TypedValue.COMPLEX_UNIT_DIP, 2));
-        decorator.setScale(.45f);
-        decorator.setStroked(false);
-
-        calendarView.setCellDecorator(decorator);
-
-        setContentView(calendarView);
-    }
-
-	private class FlagCellDecorator extends CellDecorator {
-
-        private float offsetVertical;
-
-        public FlagCellDecorator(RadCalendarView owner) {
-            super(owner);
-
-            this.offsetVertical = owner.getGridLinesLayer().getWidth() / 2;
-        }
-
-        @Override
-        protected void renderDecorationForCell(Canvas canvas, CalendarCell cell) {
-            int offsetHorizontal = 
-				(cell.getWidth() - (int)(cell.getWidth() * this.scale)) / 2;
-				
-            canvas.drawRect(
-                    cell.virtualLeft() + offsetHorizontal,
-                    cell.virtualTop() + this.offsetVertical,
-                    cell.virtualRight() - offsetHorizontal,
-                    cell.virtualBottom() - this.offsetVertical,
-                  this.paint
-            );
-
-            canvas.drawText(cell.getText(),
-                    cell.textPositionX() + cell.getVirtualOffsetX(),
-                    cell.textPositionY() + cell.getVirtualOffsetY(),
-                    cell.getTextPaint());
-        }
-    }
-```
 ```C#
 	public override View OnCreateView (LayoutInflater inflater, ViewGroup container, 
 		Bundle savedInstanceState)

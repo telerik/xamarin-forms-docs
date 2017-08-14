@@ -33,15 +33,7 @@ You can easily add **RadCalendarView** in the layout file for the main activity 
 
 You can access the control from the activity in order to be able to apply further modifications:
 
-```Java
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
 
-		RadCalendarView calendarView = (RadCalendarView)findViewById(R.id.calendarView);
-	}
-```
 ```C#
 	protected override void OnCreate (Bundle bundle)
 	{
@@ -57,10 +49,7 @@ You can access the control from the activity in order to be able to apply furthe
 
 By default when the calendar is loaded, it shows the current month. If you need to change the month that is currently visible, you can use the method **setDisplayDate(long)**. If you want the month that is visible to be January 2014, you need to set the display date to a time during this month. Here's an example:
 
-```Java
-	Calendar calendar = new GregorianCalendar(2014, Calendar.JANUARY, 1);
-	calendarView.setDisplayDate(calendar.getTimeInMillis());
-```
+
 ```C#
 	Calendar calendar = new GregorianCalendar(2014, Calendar.January, 1);
 	calendarView.DisplayDate = calendar.TimeInMillis;
@@ -80,9 +69,7 @@ At this point the calendar already looks like the screen shot from the beginning
 
 By default the selected option is `None` which explains why the numbers are not currently visible. You can get the current value by using the **getWeekNumbersDisplayMode()** method and modify it with the method **setWeekNumbersDisplayMode(WeekNumbersDisplayMode)**. Here's how to make the calendar display the week numbers inside the cell of the first date of each week:
 
-```Java
-	calendarView.setWeekNumbersDisplayMode(WeekNumbersDisplayMode.Inline);
-```
+
 ```C#
 	calendarView.WeekNumbersDisplayMode = WeekNumbersDisplayMode.Inline;
 ```

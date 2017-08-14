@@ -19,22 +19,7 @@ addCommitListener() and removeCommitListener(). The methods accept a single argu
 of type **EntityPropertyCommitListener**.
 
 Here is a sample implementation of the interface:
-```Java
-@Override
-public boolean onBeforeCommit(EntityProperty entityProperty) {
-    // To cancel the commit for a given property return true.
-    if(entityProperty.name().equals("Age")) {
-        return true;
-    }
 
-    return false;
-}
-
-@Override
-public void onAfterCommit(EntityProperty entityProperty) {
-    // Do something after a property has been committed.
-}
-```
 ```C#
 public class CommitListener : Java.Lang.Object, IEntityPropertyCommitListener
 {
@@ -56,11 +41,7 @@ public class CommitListener : Java.Lang.Object, IEntityPropertyCommitListener
 ```
 
 Then to use listener simply add it to the data form commit listeners:
-```Java
-// The commit listener will be notified before and after each property is committed.
-// The global data form commit listeners are only notified when the CommitMode is set to Manual.
-form.addCommitListener(this);
-```
+
 ```C#
 dataForm.BeforeCommit += (object sender, Com.Telerik.Widget.Dataform.Engine.BeforeCommitEventArgs e) => {
     e.Handled = true;
@@ -71,11 +52,7 @@ dataForm.AfterCommit += (object sender, Com.Telerik.Widget.Dataform.Engine.After
 ```
 
 To listen for changes of a single property this code can be used:
-```Java
-// Add a commit listener for a specific property. This way the listener will be notified whenever a
-// commit is attempted regardless of the data form commit mode.
-form.getExistingEditorForProperty("Age").property().addCommitListener(this);
-```
+
 ```C#
 CommitListener commitListener = new CommitListener ();
 dataForm.GetExistingEditorForProperty ("Age").Property().AddCommitListener(commitListener);

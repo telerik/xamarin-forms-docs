@@ -18,27 +18,7 @@ When **RadCartesianChartView** visualizes **CategoricalSeries**, it needs an axi
 
 We are going to use the **initCalendarData()** method and the `ExtendedMonthResult` type like in the example with [DateTimeCategoricalAxis]({% slug chart-axes-datetimecategorical %} "Read how to use the DateTimeCategoricalAxis"). But this time we will use the **LineSeries** in order to better indicate the continuosity of the axis. Go to the Activity where we want to add a **RadCartesianChartView** with **DateTimeContinuousAxis** and add the following code:
 
-```Java
-	initCalendarData();
 
-	RadCartesianChartView chartView = new RadCartesianChartView(this);
-
-	LineSeries lineSeries = new LineSeries();
-	lineSeries.setCategoryBinding(new PropertyNameDataPointBinding("Date"));
-	lineSeries.setValueBinding(new PropertyNameDataPointBinding("Result"));
-	lineSeries.setData(this.extendedMonthResults);
-	chartView.getSeries().add(lineSeries);
-
-	DateTimeContinuousAxis horizontalAxis = new DateTimeContinuousAxis();
-    horizontalAxis.setLabelFitMode(AxisLabelFitMode.ROTATE);
-	chartView.setHorizontalAxis(horizontalAxis);
-
-	LinearAxis verticalAxis = new LinearAxis();
-	chartView.setVerticalAxis(verticalAxis);
-
-	ViewGroup rootView = (ViewGroup)findViewById(R.id.container);
-	rootView.addView(chartView);
-```
 ```C#
 	InitCalendarData();
 
@@ -81,10 +61,7 @@ Defines the distance (in logical units) between two adjacent categories. Default
 
 The major step represents the value difference between two visible ticks on the axis. The major step unit is used to determine what exactly the value of the major step represents. For example if you want to have 10 days between two ticks on the axis you need to use both **setMajorStep(double)** and **setMajorStepUnit(TimeInterval)**:
 
-```Java
-	horizontalAxis.setMajorStepUnit(TimeInterval.DAY);
-	horizontalAxis.setMajorStep(10);
-```
+
 ```C#
 	horizontalAxis.MajorStepUnit = TimeInterval.Day;
 	horizontalAxis.MajorStep = 10;

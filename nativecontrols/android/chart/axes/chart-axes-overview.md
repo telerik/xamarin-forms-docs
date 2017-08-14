@@ -54,18 +54,7 @@ Below is a description with examples of several properties which accept complex 
 
 # LabelValueToStringConverter
 This is an interface that can be used to convert the actual label to value to an arbitrary string before rendering.
-```Java
-	LinearAxis axis = new LinearAxis();
-	axis.setLabelValueToStringConverter(new Function<Object, String>() {
-		@Override
-		public String apply(Object argument) {
-			Double labelValue = ((MajorTickModel)argument).value();
-			// Insert formatting logic here.
-			String format = "Value is: %s";
-			return String.format(format, labelValue);
-		}
-	});
-```
+
 ```C#
 	LinearAxis verticalAxis = new LinearAxis();
     verticalAxis.LabelValueToStringConverter = new LabelValueConverter();
@@ -83,52 +72,7 @@ This is an interface that can be used to convert the actual label to value to an
 
 # LabelRenderer
 An interface that allows developers to swap the label rendering with their own implementation.
-```Java
-	public class MyLabelRenderer extends CartesianAxisLabelRenderer {
-		public MyLabelRenderer(CartesianAxis axis) {
-			super(axis);
-		}
-		
-		@Override
-		protected void renderLabelNoFitMode(Canvas canvas, RadRect layoutSlot, String labelContent, AxisLabelModel labelModel) {
-			// Draw something only when label fit mode is NONE
-			Paint pink = new Paint();
-			pink.setColor(Color.parseColor("#ff69b4"));
-			canvas.drawRect(Util.convertToRectF(layoutSlot), pink);
-			super.renderLabelNoFitMode(canvas, layoutSlot, labelContent, labelModel);
-		}
-		
-		@Override
-		protected void renderLabelMultiLine(Canvas canvas, RadRect layoutSlot, String labelContent, AxisLabelModel labelModel) {
-			// Draw something only when label fit mode is MULTILINE
-			Paint khaki = new Paint();
-			khaki.setColor(Color.parseColor("#F0E68C"));
-			canvas.drawRect(Util.convertToRectF(layoutSlot), khaki);
-			super.renderLabelMultiLine(canvas, layoutSlot, labelContent, labelModel);
-		}
-		
-		@Override
-		protected void renderLabelRotate(Canvas canvas, RadRect layoutSlot, String labelContent, AxisLabelModel labelModel) {
-			// Draw something only when label fit mode is ROTATE
-			Paint moccasin = new Paint();
-			moccasin.setColor(Color.parseColor("#ffe4b5"));
-			canvas.drawRect(Util.convertToRectF(layoutSlot), moccasin);
-			super.renderLabelRotate(canvas, layoutSlot, labelContent, labelModel);
-		}
-		
-		@Override
-		public void renderLabel(Canvas canvas, ChartNode dataPoint) {
-			// Always draw something before the given label is drawn.
-			super.renderLabel(canvas, dataPoint);
-		}
-		
-		@Override
-		public RadSize measureLabel(AxisLabelModel label, Object content) {
-			// Plug some logic when the label is being measured.
-			return super.measureLabel(label, content);
-		}
-	}
-```
+
 ```C#
 	public class MyLabelRenderer : CartesianAxisLabelRenderer
 	{

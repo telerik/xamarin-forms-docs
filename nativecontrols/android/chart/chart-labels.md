@@ -16,9 +16,7 @@ In this article, you will learn to use the labels in **RadChartView for Android*
 
 All series have their default labels. In order to display them, you simply need to set show labels of the series to `true`:
 
-```Java
-	series.setShowLabels(true);
-```
+
 ```C#
 	series.ShowLabels = true;
 ```
@@ -27,9 +25,7 @@ All series have their default labels. In order to display them, you simply need 
 
 All axes have their default labels. They are visible by default. In order to hide them, you simply need to set show labels of the axis to `false`:
 
-```Java
-	axis.setShowLabels(false);
-```
+
 ```C#
 	axis.ShowLabels = false;
 ```
@@ -48,58 +44,7 @@ Additionally, you can provide a custom label render in order to completely chang
 In order to set the renderer you need to use the **setLabelRenderer(ChartLabelRenderer)** method. 
 Here's an excerpt from a custom label renderer:
 
-```Java
-private class CustomLabelRenderer extends BaseLabelRenderer {
-    private String labelFormat = "%s";
-    private TextPaint paint = new TextPaint();
-    private Paint strokePaint = new Paint();
-    private Paint fillPaint = new Paint();
-    private float labelMargin = 10.0f;
-    private float labelPadding = 20.0f;
-    public CustomLabelRenderer(ChartSeries series) {
-        super(series);
-        this.strokePaint.setStyle(Paint.Style.STROKE);
-        this.strokePaint.setColor(Color.WHITE);
-        this.strokePaint.setStrokeWidth(2);
-        this.fillPaint.setColor(0xffF5413F);
-        this.paint.setTextSize(35.0f);
-        this.paint.setColor(Color.WHITE);
-    }
-    @Override
-    public void renderLabel(Canvas canvas, ChartNode relatedLabelNode) {
-        CategoricalDataPoint dataPoint = (CategoricalDataPoint) relatedLabelNode;
-        RadRect dataPointSlot = dataPoint.getLayoutSlot();
-        Double val = dataPoint.getValue();
-        String labelText = String.format(this.labelFormat, val.intValue());
-        StaticLayout textInfo = this.createTextInfo(labelText, dataPoint);
-        this.renderLabel(canvas, dataPointSlot, labelText, textInfo);
-    }
-    private StaticLayout createTextInfo(String labelText, CategoricalDataPoint dataPoint) {
-        return new StaticLayout(labelText,
-                0,
-                labelText.length(),
-                this.paint,
-                Math.round((float) dataPoint.getLayoutSlot().getWidth()),
-                Layout.Alignment.ALIGN_CENTER,
-                1.0f,
-                1.0f,
-                false);
-    }
-    private void renderLabel(Canvas canvas, RadRect dataPointSlot, String labelText, StaticLayout textBounds) {
-        RectF labelBounds = new RectF();
-        float height = textBounds.getHeight() + this.labelPadding * 2;
-        float top = (float) dataPointSlot.getY() - this.labelMargin - height;
-        labelBounds.set((float) dataPointSlot.getX(),
-                top,
-                (float) dataPointSlot.getRight(),
-                top + height);
-        canvas.drawRect(labelBounds.left, labelBounds.top, labelBounds.right, labelBounds.bottom, this.fillPaint);
-        canvas.drawRect(labelBounds.left, labelBounds.top, labelBounds.right, labelBounds.bottom, this.strokePaint);
-        canvas.drawText(labelText, (float) dataPointSlot.getX() + (float) (dataPointSlot.getWidth() / 2.0) - textBounds.getLineWidth(0) / 2.0f, 
-		labelBounds.centerY() + textBounds.getLineBottom(0) - textBounds.getLineBaseline(0), paint);
-    }
-}
-```
+
 ```C#
 	class CustomLabelRenderer : BaseLabelRenderer {
 

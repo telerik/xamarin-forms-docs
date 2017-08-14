@@ -27,11 +27,7 @@ By default **RadListView** will use **LinearLayoutManager** but you can easily c
 Each of these layouts can layout the items either horizontally or vertically. More information about the first three layouts is available in their own documentation. The others are demonstrated below. 
 Here's one example of setting grid layout with two columns and horizontal layout:
 
-```Java
-GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2, 
-	LinearLayoutManager.HORIZONTAL, false);
-listView.setLayoutManager(gridLayoutManager);
-```
+
 ```C#
 GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2, 
 	LinearLayoutManager.Horizontal, false);
@@ -49,11 +45,7 @@ moves forward:
 
 Just like the other layout managers, all you need to do, is to create a new instance of the layout and add it through RadListView's **setLayoutManager** method:
 
-```Java
-DeckOfCardsLayoutManager deckOfCardsLayoutManager = 
-	new DeckOfCardsLayoutManager(this);
-listView.setLayoutManager(deckOfCardsLayoutManager);
-```
+
 ```C#
 DeckOfCardsLayoutManager deckOfCardsLayoutManager = 
 	new DeckOfCardsLayoutManager (this);
@@ -63,12 +55,7 @@ listView.SetLayoutManager (deckOfCardsLayoutManager);
 Similarly to **LinearLayoutManager**, **DeckOfCardsLayoutManager** provides additional constructor, which allows you to change the orientation to Horizontal and/or reverse the layout, so that the perspective items are shown
 on a different side of front item. For example:
 
-```Java
-DeckOfCardsLayoutManager deckOfCardsLayoutManager = 
-	new DeckOfCardsLayoutManager(this, 
-		OrientationHelper.HORIZONTAL, true);
-listView.setLayoutManager(deckOfCardsLayoutManager);
-```
+
 ```C#
 DeckOfCardsLayoutManager deckOfCardsLayoutManager = 
 	new DeckOfCardsLayoutManager (this, 
@@ -83,9 +70,7 @@ This way the perspective items will be laid out to the right of the front item a
 Speaking of perspective items, by default you will see 2 items behind the front view,
 which can be changed through **setPerspectiveItemsCount(int)**. The current value is accessible with **getPerspectiveItemsCount()**.
 
-```Java
-deckOfCardsLayoutManager.setPerspectiveItemsCount(5);
-```
+
 ```C#
 deckOfCardsLayoutManager.PerspectiveItemsCount = 5;
 ```
@@ -101,18 +86,7 @@ In that case you can also disable the scrolling through swipe with **setScrollEn
 If you need to determine which item is the one that is fully visible, you can get its position through **getCurrentPosition()**. Alternatively you can change it with **setCurrentPosition(int)**. You can also track any changes
 by creating a **CurrentPositionChangeListener**:
 
-```Java
-CurrentPositionChangeListener listener = 
-	new CurrentPositionChangeListener() {
-	
-    @Override
-    public void onCurrentPositionChanged(int oldPosition, int newPosition) {
-        Toast.makeText(getApplicationContext(), 
-			"Position changed from " + oldPosition + " to " + newPosition, 
-			Toast.LENGTH_SHORT).show();
-    }
-};
-```
+
 ```C#
 public class MyItemChangeListener : Java.Lang.Object, 
 	Com.Telerik.Widget.List.ICurrentPositionChangeListener 
@@ -135,9 +109,7 @@ public class MyItemChangeListener : Java.Lang.Object,
 
 Then you need to set it to your deck of cards layout:
 
-```Java
-deckOfCardsLayoutManager.addListener(listener);
-```
+
 ```C#
 MyItemChangeListener listener = new MyItemChangeListener (this);
 deckOfCardsLayoutManager.AddListener (listener);
@@ -148,11 +120,7 @@ deckOfCardsLayoutManager.AddListener (listener);
 The deck of cards layout provides a transformation object which allows you to tweak the transformation that are applied to the perspective items. That object is available as **perspective()** and you can use it to change
 the way the perspective items are visible behind the front view item. For example, if you would like to have a bigger visible part and change the way the perspective is oriented, here's what you can do:
 
-```Java
-deckOfCardsLayoutManager.perspective().setTranslateStart(-50);
-deckOfCardsLayoutManager.perspective().setTranslateTop(-50);
-deckOfCardsLayoutManager.perspective().setTranslateEnd(-50);
-```
+
 ```C#
 deckOfCardsLayoutManager.Perspective ().TranslateStart = -50;
 deckOfCardsLayoutManager.Perspective ().TranslateTop = -50;
@@ -183,11 +151,7 @@ The **SlideLayoutManager** is a layout manager which lays out the items in a gal
 
 Just like the other layout managers, all you need to do, is to create a new instance of the layout and add it through RadListView's **setLayoutManager** method:
 
-```Java
-SlideLayoutManager slideLayoutManager = 
-	new SlideLayoutManager(this);
-listView.setLayoutManager(slideLayoutManager);
-```
+
 ```C#
 SlideLayoutManager slideLayoutManager = 
 	new SlideLayoutManager (this);
@@ -196,12 +160,7 @@ listView.SetLayoutManager (slideLayoutManager);
 
 **SlideLayoutManager** provides additional constructor, which allows you to change its orientation to Vertical:
 
-```Java
-SlideLayoutManager slideLayoutManager = 
-	new SlideLayoutManager(this, 
-		OrientationHelper.VERTICAL);
-listView.setLayoutManager(slideLayoutManager);
-```
+
 ```C#
 SlideLayoutManager slideLayoutManager = 
 	new SlideLayoutManager (this, 
@@ -216,9 +175,7 @@ This way the adjacent items will be laid out to the top and to the bottom of the
 In the example from the screen shot, we have added margin to the item layout and this is why there is visible space between the items. Another option to have space between items, which will not consume place on the screen is the 
 item spacing feature. In other words you can have an item stretched to fill the screen and still have space between the adjacent items. Here's how to add a spacing of 20 pixels:
 
-```Java
-slideLayoutManager.setItemSpacing(20);
-```
+
 ```C#
 slideLayoutManager.ItemSpacing = 20;
 ```
@@ -229,10 +186,7 @@ Of course, you can get the current value with **getItemSpacing()**. The default 
 
 If you don't want to occupy the whole space with only one item, you can show its adjacent items on the left and/or on the right. Here's an example:
 
-```Java
-slideLayoutManager.setPreviousItemPreview(100);
-slideLayoutManager.setNextItemPreview(100);
-```
+
 ```C#
 slideLayoutManager.PreviousItemPreview = 100;
 slideLayoutManager.NextItemPreview = 100;
@@ -247,10 +201,7 @@ you can turn it off through **setScrollOnTap(false)**.
 The default transition mode in **SlideLayoutManager** is called `SLIDE_AWAY`. This means that when the user swipes, the current item slides away in the direction of the swipe and another appears from the opposite side. The mode
 can be changed to `SLIDE_OVER` which means that the items will appear stacked in a way that one item slides over the one that is current. This mode resembles the behavior in the default Android Photos app. Here's how you can change it:
 
-```Java
-slideLayoutManager.setTransitionMode(
-	SlideLayoutManager.Transition.SLIDE_OVER);
-```
+
 ```C#
 slideLayoutManager.TransitionMode = 
 	SlideLayoutManager.Transition.SlideOver;
@@ -269,18 +220,7 @@ In that case you can also disable the scrolling through swipe with **setScrollEn
 If you need to determine which item is the one that is currently in front, you can get its position through **getCurrentPosition()**. Alternatively you can change it with **setCurrentPosition(int)**. You can also track any changes
 by creating a **CurrentPositionChangeListener**:
 
-```Java
-CurrentPositionChangeListener listener = 
-	new CurrentPositionChangeListener() {
-	
-    @Override
-    public void onCurrentPositionChanged(int oldPosition, int newPosition) {
-        Toast.makeText(getApplicationContext(), 
-			"Position changed from " + oldPosition + " to " + newPosition, 
-			Toast.LENGTH_SHORT).show();
-    }
-};
-```
+
 ```C#
 public class MyItemChangeListener : Java.Lang.Object, 
 	Com.Telerik.Widget.List.ICurrentPositionChangeListener 
@@ -303,9 +243,7 @@ public class MyItemChangeListener : Java.Lang.Object,
 
 Then you need to set it to your slide layout:
 
-```Java
-slideLayoutManager.addListener(listener);
-```
+
 ```C#
 MyItemChangeListener listener = new MyItemChangeListener (this);
 slideLayoutManager.AddListener (listener);
@@ -320,11 +258,7 @@ it creates a new line and continues the layout process there. This repeats until
 
 Just like the other layout managers, all you need to do, is to create a new instance of the layout and add it through RadListView's **setLayoutManager** method:
 
-```Java
-WrapLayoutManager wrapLayoutManager = 
-	new WrapLayoutManager(this);
-listView.setLayoutManager(wrapLayoutManager);
-```
+
 ```C#
 WrapLayoutManager wrapLayoutManager = 
 	new WrapLayoutManager (this);
@@ -333,12 +267,7 @@ listView.SetLayoutManager (wrapLayoutManager);
 
 **WrapLayoutManager** provides additional constructor, which allows you to change its orientation to Horizontal:
 
-```Java
-WrapLayoutManager wrapLayoutManager = 
-	new WrapLayoutManager(this, 
-		OrientationHelper.HORIZONTAL);
-listView.setLayoutManager(wrapLayoutManager);
-```
+
 ```C#
 WrapLayoutManager wrapLayoutManager = 
 	new WrapLayoutManager (this, 
@@ -377,9 +306,7 @@ The vertical meaningful values are: TOP, BOTTOM, CENTER_VERTICAL. Depending on t
 
 When the orientation is horizontal, the logic is reverted - the horizontal values are applied for alignment to the edge of the lines and the vertical values reflect the distribution of the empty space on each line.
 This also means that you can use FILL_VERTICAL to distribute the empty space between items in a column and that FILL_HORIZONTAL will not make sense for this orientation. Here's an example for changing the gravity:
-```Java
-wrapLayoutManager.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM);
-```
+
 ```C#
 wrapLayoutManager.Gravity = (int)(GravityFlags.CenterHorizontal | GravityFlags.Bottom); 
 ```

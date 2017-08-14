@@ -31,29 +31,7 @@ The following examples will cover the common settings for every type as well as 
 
 All the examples expect you to provide your own ohlc data. The class used in the examples is as follows:
 
-```Java
-    import java.util.Calendar;
 
-    public class FinancialDataClass {
-
-        public float open;
-        public float high;
-        public float low;
-        public float close;
-        public float volume;
-
-        public Calendar date;
-
-        public FinancialDataClass(Calendar date, float open, float high, float low, float close, float volume) {
-            this.open = open;
-            this.high = high;
-            this.low = low;
-            this.close = close;
-            this.date = date;
-            this.volume = volume;
-        }
-    }
-```
 ```C#
 	public class FinancialDataClass : Java.Lang.Object {
 
@@ -86,14 +64,7 @@ Indicators from the first type are: **ExponentialMovingAverageIndicator, Modifie
 
 Initializing any of these is the same, so the next example shows the process with only one of them:
 
-```Java
-    MovingAverageIndicator indicator = new MovingAverageIndicator();
-    indicator.setPeriod(5);
-    indicator.setCategoryBinding(new FieldNameDataPointBinding("date"));
-    indicator.setValueBinding(new FieldNameDataPointBinding("close"));
-    indicator.setData(getData());
-    chart.getSeries().add(indicator);
-```
+
 ```C#
 	MovingAverageIndicator indicator = new MovingAverageIndicator();
 	indicator.Period = 5;
@@ -119,14 +90,7 @@ Indicators of the second type are: **AverageTrueRangeIndicator, CommodityChannel
 
 All indicators from the second type are binded to multiple values, instead of just one value(close). Some of them have multiple periods, some use one and some use no periods. The initialization for all of them includes setting the proper bindings:
 
-```Java
-    TrueRangeIndicator indicator = new TrueRangeIndicator();
-    indicator.setCategoryBinding(new FieldNameDataPointBinding("date"));
-    indicator.setCloseBinding(new FieldNameDataPointBinding("close"));
-    indicator.setHighBinding(new FieldNameDataPointBinding("high"));
-    indicator.setLowBinding(new FieldNameDataPointBinding("low"));
-    chart.getSeries().add(indicator);
-```
+
 ```C#
 	TrueRangeIndicator indicator = new TrueRangeIndicator();
 	indicator.CategoryBinding = new OhlcDataBinding("category");
@@ -153,76 +117,7 @@ Here are two indicators in action:
 
 And here is the code for the example:
 
-```Java
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <TextView
-            style="@style/WrapContent.ChartTitle"
-            android:text="Dow Jones financial data" />
-
-        <com.telerik.widget.chart.visualization.cartesianChart.RadCartesianChartView
-            android:id="@+id/chart"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-    </RelativeLayout>
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        RadCartesianChartView chart = (RadCartesianChartView) findViewById(R.id.chart);
-
-        DateTimeCategoricalAxis horizontalAxis = new DateTimeCategoricalAxis();
-        horizontalAxis.setDateTimeFormat(new SimpleDateFormat("MM/dd"));
-        horizontalAxis.setDateTimeComponent(DateTimeComponent.DATE);
-
-        LinearAxis verticalAxis = new LinearAxis();
-
-        DataPointBinding categoryBinding = new FieldNameDataPointBinding("date");
-        DataPointBinding openBinding = new FieldNameDataPointBinding("open");
-        DataPointBinding highBinding = new FieldNameDataPointBinding("high");
-        DataPointBinding lowBinding = new FieldNameDataPointBinding("low");
-        DataPointBinding closeBinding = new FieldNameDataPointBinding("close");
-
-        Iterable<FinancialDataClass> data = ExampleDataProvider.indicatorsDataOneMonth(getResources());
-
-        CandlestickSeries series = new CandlestickSeries();
-        series.setCategoryBinding(categoryBinding);
-        series.setOpenBinding(openBinding);
-        series.setHighBinding(highBinding);
-        series.setLowBinding(lowBinding);
-        series.setCloseBinding(closeBinding);
-        series.setData(data);
-
-        BollingerBandsIndicator bollingerBands = new BollingerBandsIndicator();
-        bollingerBands.setCategoryBinding(categoryBinding);
-        bollingerBands.setValueBinding(closeBinding);
-        bollingerBands.setPeriod(5);
-        bollingerBands.setStandardDeviations(2);
-        bollingerBands.setData(data);
-
-        MovingAverageIndicator movingAverage = new MovingAverageIndicator();
-        movingAverage.setCategoryBinding(categoryBinding);
-        movingAverage.setValueBinding(closeBinding);
-        movingAverage.setPeriod(5);
-        movingAverage.setData(data);
-
-        chart.setVerticalAxis(verticalAxis);
-        chart.setHorizontalAxis(horizontalAxis);
-        chart.getSeries().add(series);
-        chart.getSeries().add(bollingerBands);
-        chart.getSeries().add(movingAverage);
-
-        // irrelevant
-        horizontalAxis.setLabelFitMode(AxisLabelFitMode.ROTATE);
-        verticalAxis.setMinimum(10500);
-        verticalAxis.setMajorStep(200);
-    }
-```
 ```C#
 	RadCartesianChartView chart = new RadCartesianChartView(this);
 

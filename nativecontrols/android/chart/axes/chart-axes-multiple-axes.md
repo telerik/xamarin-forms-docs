@@ -20,45 +20,7 @@ The image below illustrates a scenario in which we have two series - **LineSerie
 
 In order to achieve this, you need to create two series and set their own axes. You also need to set their location. In this case you don't need to set axes to the whole chart. You can read from the [Getting Started]({% slug chart-gettingstarted %} "Read how to define the MonthResult type") page how to define the `MonthResult` type and declare the **initData()** and **initCalendarData()** methods. Then you can add the following code to your Activity:
 
-```Java
-	initData();
-	initCalendarData();
 
-	RadCartesianChartView chartView = new RadCartesianChartView(this);
-
-	BarSeries barSeries = new BarSeries();
-	barSeries.setCategoryBinding(new PropertyNameDataPointBinding("Month"));
-	barSeries.setValueBinding(new PropertyNameDataPointBinding("Result"));
-	barSeries.setData(this.monthResults);
-	chartView.getSeries().add(barSeries);
-
-	LineSeries lineSeries = new LineSeries();
-	lineSeries.setCategoryBinding(new PropertyNameDataPointBinding("Date"));
-	lineSeries.setValueBinding(new PropertyNameDataPointBinding("Result"));
-	lineSeries.setData(this.extendedMonthResults);
-	chartView.getSeries().add(lineSeries);
-
-	CategoricalAxis horizontalAxisBar = new CategoricalAxis();
-	horizontalAxisBar.setVerticalLocation(AxisVerticalLocation.BOTTOM);
-	barSeries.setHorizontalAxis(horizontalAxisBar);
-
-	LinearAxis verticalAxisBar = new LinearAxis();
-	verticalAxisBar.setHorizontalLocation(AxisHorizontalLocation.RIGHT);
-	barSeries.setVerticalAxis(verticalAxisBar);
-
-	DateTimeCategoricalAxis horizontalAxisLine = new DateTimeCategoricalAxis();
-	horizontalAxisLine.setDateTimeComponent(DateTimeComponent.DAY);
-	horizontalAxisLine.setDateTimeFormat(new SimpleDateFormat("dd-MM"));
-	horizontalAxisLine.setVerticalLocation(AxisVerticalLocation.TOP);
-	lineSeries.setHorizontalAxis(horizontalAxisLine);
-
-	LinearAxis verticalAxisLine = new LinearAxis();
-	verticalAxisLine.setHorizontalLocation(AxisHorizontalLocation.LEFT);
-	lineSeries.setVerticalAxis(verticalAxisLine);
-
-	ViewGroup rootView = (ViewGroup)findViewById(R.id.container);
-	rootView.addView(chartView);
-```
 ```C#
 	InitData();
 	InitCalendarData();

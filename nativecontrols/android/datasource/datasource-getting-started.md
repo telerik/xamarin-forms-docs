@@ -12,11 +12,7 @@ publish: true
 
 To use **RadDataSource** developers first need raw data in a collection of some sort. Then RadDataSource can be constructed like this:
 
-```Java
-// This method gets the raw data from somewhere. (web service, file etc.)
-ArrayList<Person> rawData = getData(); 
-RadDataSource<Person> dataSource = new RadDataSource<Person>(rawData);
-```
+
 ```C#
 // This method gets the raw data from somewhere. (web service, file etc.)
 Java.Util.ArrayList rawData = GetData();
@@ -25,31 +21,7 @@ RadDataSource dataSource = new RadDataSource (rawData);
 
 Once the data source is constructed the data can be filtered, sorted and grouped:
 
-```Java
-// Get all people less than 18 years of age.
-dataSource.filterDescriptors().add(new Function<Person, Boolean>() {
-	@Override
-	public Boolean apply(Person argument) {
-		return argument.age < 18;
-	}
-});
 
-// Sort them by name
-dataSource.sortDescriptors().add(new Function2<Person, Person, Integer>() {
-	@Override
-	public Integer apply(Person argument1, Person argument2) {
-		return argument1.name.compareTo(argument2.name);
-	}
-});
-
-// Finally group them by nationality.
-dataSource.groupDescriptors().add(new Function<Person, Object>() {
-	@Override
-	public Object apply(Person argument) {
-		return argument.nationality;
-	}
-});
-```
 
 ```C#
 public class Person : Java.Lang.Object
@@ -95,15 +67,7 @@ Finally when the data is processed it can be consumed in two ways. One is the **
 as the method name says, returns the hierarchical data flattened to a single level. Both methods return lists of DataItem<Person>. The **DataItem** class wraps the native data so that the data source can represent 
 groups and actual data items. A DataItem<Person> is a group if it does not have an entity associated, that is if its **entity()** method returns null. A group can also be recognized if it has a non-null **groupKey()** value.
 
-```Java
-for(DataItem<Person> dataItem : dataSource.flatView()) {
-	if(dataItem.entity() == null) {
-		Log.d("DataSource: ", dataItem.groupKey().toString());
-	} else {
-		Log.d("DataSource:", dataItem.entity().toString());
-	}
-}
-```
+
 
 ```C#
 foreach (Java.Lang.Object data in dataSource.FlatView()) 

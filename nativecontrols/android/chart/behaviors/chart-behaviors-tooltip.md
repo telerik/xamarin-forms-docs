@@ -18,10 +18,7 @@ to its relevant data point.
 The ChartTooltipBehavior class is used by creating an instance of it and adding the instance to the behaviors collection of a chart view.
 For example:
 
-```Java
-	ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior(context);
-	cartesianChart.getBehaviors().add(tooltipBehavior);
-```
+
 ```C#
 	ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior(this);
 	chartView.Behaviors.Add(tooltipBehavior);

@@ -17,9 +17,7 @@ publish: true
 
 The completion mode can be changed with the `setCompletionMode` method of the TKAutoCompleteTextView's adapter. The default value is `CompletionMode.STARTS_WITH`.
 
-```Java
-adapter.setCompletionMode(CompletionMode.STARTS_WITH);
-```
+
 ```C#
 this.adapter.CompletionMode = CompletionMode.StartsWith;
 ```

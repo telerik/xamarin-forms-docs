@@ -14,10 +14,7 @@ publish: true
 
 **RadGaugeView** has built in animations that allows animating its indicators. Turning the animations on is as easy as setting 2 properties. You shoud use <code>setAnimated()</code> setter of an indicator to allow the animations and then use <code>setAnimationDuration</code> which, as its name says, is used to set the duration of the animation.
 
-```Java
-needle.setAnimated(true);
-needle.setAnimationDuration(500);
-```
+
 ```C#
 needle.Animated = true;
 needle.AnimationDuration = 500;
@@ -25,9 +22,7 @@ needle.AnimationDuration = 500;
 
 You can also set a timing function using TimeInterpolator.
 
-```Java
-needle.setInterpolator(new AccelerateDecelerateInterpolator());
-```
+
 ```C#
 needle.Interpolator = new AccelerateDecelerateInterpolator();
 ```

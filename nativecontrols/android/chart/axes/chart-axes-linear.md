@@ -21,26 +21,7 @@ You can read from the [Getting Started]({% slug chart-gettingstarted %} "Read ho
 
 After you create the method for initialization of sample data, you can create a **RadCartesianChartView** with **LinearAxis** by adding the following code to the **onCreate()** method of your Activity.
 
-```Java
-	initData();
 
-	RadCartesianChartView chartView = new RadCartesianChartView(this);
-
-	LineSeries lineSeries = new LineSeries();
-	lineSeries.setCategoryBinding(new PropertyNameDataPointBinding("Month"));
-	lineSeries.setValueBinding(new PropertyNameDataPointBinding("Result"));
-	lineSeries.setData(this.monthResults);
-	chartView.getSeries().add(lineSeries);
-
-	CategoricalAxis horizontalAxis = new CategoricalAxis();
-	chartView.setHorizontalAxis(horizontalAxis);
-
-	LinearAxis verticalAxis = new LinearAxis();
-	chartView.setVerticalAxis(verticalAxis);
-
-	ViewGroup rootView = (ViewGroup)findViewById(R.id.container);
-	rootView.addView(chartView);
-```
 ```C#
 	InitData();
 
@@ -72,9 +53,7 @@ Here's the result:
 
 The Major Step specifies the step at which the major ticks are positioned on the axis. If this property is set to `0` (by default), the axis automatically calculates the step so that the data will be visualized in the best possible way. For example, if you want to set the distance between the ticks to a fixed value like 10, you can use the method **setMajorStep(double)**:
 
-```Java
-	verticalAxis.setMajorStep(10);
-```
+
 ```C#
 	verticalAxis.MajorStep = 10;
 ```

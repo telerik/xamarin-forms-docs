@@ -20,28 +20,7 @@ binding, a high binding, a low binding and a close binding.
 
 To initialize a sample financial chart the following code can be used:
 
-```Java
-	RadCartesianChartView chartView = new RadCartesianChartView(context); // context is an instance of Context.
 
-	CandlestickSeries series = new CandlestickSeries();
-	series.setCategoryBinding(new FieldNameDataPointBinding("category"));
-	series.setOpenBinding(new FieldNameDataPointBinding("open"));
-	series.setHighBinding(new FieldNameDataPointBinding("high"));
-	series.setLowBinding(new FieldNameDataPointBinding("low"));
-	series.setCloseBinding(new FieldNameDataPointBinding("close"));
-
-	series.setData(this.generateOhlcData());
-	chartView.getSeries().add(series);
-
-	CategoricalAxis horizontalAxis = new CategoricalAxis();
-	chartView.setHorizontalAxis(horizontalAxis);
-
-	LinearAxis verticalAxis = new LinearAxis();
-	chartView.setVerticalAxis(verticalAxis);
-
-	ViewGroup rootView = (ViewGroup)this.findViewById(R.id.container);
-	rootView.addView(chartView);
-```
 ```C#
 	RadCartesianChartView chartView = new RadCartesianChartView(this);
 
@@ -69,37 +48,7 @@ To initialize a sample financial chart the following code can be used:
 
 Here are also the OhlcData class and the generateOhlcData() method:
 
-```Java
-	public class OhlcData {
-		public String category;
-		public int open;
-		public int high;
-		public int low;
-		public int close;
-	}
 
-	private ArrayList<OhlcData> generateOhlcData() {
-		ArrayList<OhlcData> data = new ArrayList<OhlcData>();
-		int size = 10;
-
-		for (int i = 1; i <= size; ++i) {
-			OhlcData ohlc = new OhlcData();
-			ohlc.category = Integer.toString(i);
-			ohlc.high = r.nextInt(100);
-			if (ohlc.high < 2) {
-				ohlc.high = 2;
-			}
-
-			ohlc.low = r.nextInt(ohlc.high - 1);
-			ohlc.open = ohlc.low + r.nextInt(ohlc.high - ohlc.low);
-			ohlc.close = ohlc.low + r.nextInt(ohlc.high - ohlc.low);
-
-			data.add(ohlc);
-	        }
-
-        	return data;
-    	}
-```
 ```C#
 	public class OhlcData : Java.Lang.Object {
 		public String category;

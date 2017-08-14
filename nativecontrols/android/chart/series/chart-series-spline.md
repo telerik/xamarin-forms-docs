@@ -18,26 +18,7 @@ You can read from the [Getting Started]({% slug chart-gettingstarted %} "Read ho
 
 After you create the method for initialization of sample data, you can create a **RadCartesianChartView** with **SplineSeries** by adding the following code to the **onCreate()** method of your Activity.
 
-```Java
-	initData();
 
-	RadCartesianChartView chartView = new RadCartesianChartView(this);
-
-	SplineSeries splineSeries = new SplineSeries();
-	splineSeries.setCategoryBinding(new PropertyNameDataPointBinding("Month"));
-	splineSeries.setValueBinding(new PropertyNameDataPointBinding("Result"));
-	splineSeries.setData(this.monthResults);
-	chartView.getSeries().add(splineSeries);
-
-	CategoricalAxis horizontalAxis = new CategoricalAxis();
-	chartView.setHorizontalAxis(horizontalAxis);
-
-	LinearAxis verticalAxis = new LinearAxis();
-	chartView.setVerticalAxis(verticalAxis);
-
-	ViewGroup rootView = (ViewGroup)findViewById(R.id.container);
-	rootView.addView(chartView);
-```
 ```C#
 	InitData();
 

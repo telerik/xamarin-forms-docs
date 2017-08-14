@@ -12,10 +12,7 @@ publish: true
 
 To separate the data form editors into groups, developers must use **DataFormGroupLayoutManager**.
 
-```Java
-// The context argument is the app context/activity.
-dataForm.setLayoutManager(new DataFormGroupLayoutManager(context));
-```
+
 ```C#
 // The context argument is the app context/activity.
 dataForm.LayoutManager = new DataFormGroupLayoutManager (context);
@@ -23,20 +20,7 @@ dataForm.LayoutManager = new DataFormGroupLayoutManager (context);
 
 Each editor will be put in the group specified in the [@DataFormProperty]({% slug data-form-metadata %} "Read more about @DataFormProperty") annotation of the associated property. 
 For example if we have a Reservation class with a ReservationDate property:
-```Java
-public class Reservation {
-private long reservationDate;
 
-	@DataFormProperty(group = "Reservation Date")
-    public long getReservationDate() {
-        return reservationDate;
-    }
-
-    public void setReservationDate(long reservationDate) {
-        this.reservationDate = reservationDate;
-    }
-}
-```
 ```C#
 public class Reservation 
 {
@@ -57,9 +41,7 @@ will be used to arrange its editors. By default EditorGroup uses [DataFormLinear
 ## Specifying a layout manager for each group
 
 Developers can specify a custom layout manager with the setLayaoutManager() method just like setLayoutManager() on RadDataForm:
-```Java
-editorGroup.setLayoutManager(new DataFormPlaceholderLayoutManager());
-```
+
 ```C#
 editorGroup.LayoutManager = new DataFormPlaceholderLayoutManager();
 ```
@@ -67,23 +49,7 @@ editorGroup.LayoutManager = new DataFormPlaceholderLayoutManager();
 ## Creating special groups or modifying the default ones
 
 To get a reference to the required EditorGroup object, developers can supply a callback that creates groups for every group name. For example:
-```Java
-groupLayoutManager.setCreateGroup(new Function2<Context, String, EditorGroup>() {
-            @Override
-            public EditorGroup apply(Context context, String groupName) {
-				if(groupName.equals("Reservation Date")) {
-					EditorGroup group = new EditorGroup(context, groupName);
-					group.setLayoutManager(
-						new DataFormPlaceholderLayoutManager(context, 
-							R.layout.placeholder_layout));
-					return group;
-				}
-				
-				// Returning null will invoke the default group creation logic.
-                return null;
-            }
-        });
-```
+
 ```C#
 groupLayoutManager.CreateGroup = new CreateGroupImpl();
 
@@ -110,10 +76,7 @@ If a property does not a have group set to it, it will be added to the default g
 
 When creating an EditorGroup developers can use another constructor that accepts a layout as its third argument. This allows custom group headers
 and custom positioning of the group header compared to the editors container. For example:
-```Java
-EditorGroup group = 
-	new EditorGroup(context, groupName, R.layout.custom_editor_group);
-```
+
 ```C#
 EditorGroup group = 
 	new EditorGroup(context, groupName, Resource.Layout.custom_editor_group);
@@ -143,19 +106,7 @@ Here the TextView with id data_form_group_header and the ViewGroup with id data_
 ## Sorting the editor groups
 
 The editor groups in DataFormGroupLayoutManager can be sorted by providing a simple callback by calling setSortGroups(). For example:
-```Java
-groupLayoutManager.setSortGroups(new Procedure<List<EditorGroup>>() {
-		@Override
-		public void apply(List<EditorGroup> argument) {
-			Collections.sort(argument, new Comparator<EditorGroup>() {
-				@Override
-				public int compare(EditorGroup lhs, EditorGroup rhs) {
-					return lhs.name().compareTo(rhs.name());
-				}
-			});
-		}
-	});
-```
+
 ```C#
 groupLayoutManager.SortGroups = new SortGroupsImpl();
 
@@ -184,12 +135,7 @@ The ExpandableEditorGroup class has one property - **IsExpanded**.
 ExpandableEditorGroup can also be created with a flag that indicates that it can be expanded only
 once. After it is expanded, the collapse button disappears.
 
-```Java
-// The third argument indicates whether the group can be expanded only once.
-ExpandableEditorGroup expandableGroup = 
-	new ExpandableEditorGroup(context, "Reservation Date", true);
-expandableGroup.setIsExpanded(false);
-```
+
 ```C#
 // The third argument indicates whether the group can be expanded only once.
 ExpandableEditorGroup expandableGroup = 

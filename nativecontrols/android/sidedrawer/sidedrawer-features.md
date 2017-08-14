@@ -16,9 +16,7 @@ PushTransition, FallDownTransition, RevealTransition, SlideAlongTransition, Scal
 The rest can be found in the **com.telerik.android.primitives.widget.sidedrawer.transitions** package.
 
 To set a transition simply create a new instance of the transition of choice and pass it to the drawer.setDrawerTransition() method.
-```Java
-drawer.setDrawerTransition(new PushTransition());
-```
+
 
 ```C#
 drawer.DrawerTransition = new PushTransition();
@@ -32,31 +30,7 @@ Developers can also listen for the end of the transition by setting a DrawerTran
 RadSideDrawer exposes notifications for when the drawer is opened, closed, opening and closing. The opened and closed notifications are invoked after the open or close transition has ended whereas
 opening and closing are invoked as soon as the close/open operation is started and provide means to cancel the open/close operation. For example:
 
-```Java
-drawer.addChangeListener(new DrawerChangeListener() {
-		@Override
-		public boolean onDrawerOpening(RadSideDrawer drawer) {
-			// Return true to cancel opening.
-			return false;
-		}
 
-		@Override
-		public void onDrawerOpened(RadSideDrawer drawer) {
-
-		}
-
-		@Override
-		public boolean onDrawerClosing(RadSideDrawer drawer) {
-		// Return true to cancel closing.
-			return false;
-		}
-
-		@Override
-		public void onDrawerClosed(RadSideDrawer drawer) {
-
-		}
-	});
-```
 
 ```C#
 public class DrawerListener : Java.Lang.Object, IDrawerChangeListener
@@ -96,9 +70,7 @@ specified view. When the drawer is opened, this fade layer is stretched over the
 
 The side drawer can be shown from all edges of the screen, not just the left side. For example:
 
-```Java
-drawer.setDrawerLocation(DrawerLocation.RIGHT);
-```
+
 
 ```C#
 drawer.DrawerLocation = DrawerLocation.Right;
@@ -107,9 +79,7 @@ drawer.DrawerLocation = DrawerLocation.Right;
 The gesture can only be initiated from the edge of the screen and the touchable area can be tweaked with the setTouchTargetThreshold() method. It accepts the number of pixels from the screen that will be treated as touchable. By
 default it is **20dp**.
 
-```Java
-drawer.setTouchTargetThreshold(Util.getDimen(TypedValue.COMPLEX_UNIT_DIP, 30));
-```
+
 
 ```C#
 drawer.TouchTargetThreshold = (int)Com.Telerik.Android.Common.Util.GetDimen ((int)Android.Util.ComplexUnitType.Dip, 30.0f);
@@ -117,9 +87,7 @@ drawer.TouchTargetThreshold = (int)Com.Telerik.Android.Common.Util.GetDimen ((in
 
 Also once the drawer is opened, developers decide if they want the drawer closed on outside tap or not:
 
-```Java
-drawer.setTapOutsideToClose(true);
-```
+
 
 ```C#
 drawer.TapOutsideToClose = true;
@@ -128,9 +96,7 @@ drawer.TapOutsideToClose = true;
 Another way to close the drawer is to use the back button on the device.
 Cosing on back press can be enabled or disabled with setCloseOnBackPress().
 
-```Java
-drawer.setCloseOnBackPress(true);
-```
+
 
 ```C#
 drawer.CloseOnBackPress = true;
@@ -138,9 +104,7 @@ drawer.CloseOnBackPress = true;
 
 Finally the side drawer can be locked in place. It can be locked in both the closed and opened states. The lock only affects screen gestures. The lock can be **bypassed** through code if the developer decides to call setIsOpen().
 
-```Java
-drawer.setIsLocked(true);
-```
+
 
 ```C#
 drawer.IsLocked = true;
@@ -152,9 +116,7 @@ The drawer content by default is left to be auto sized in the main dimension. Th
 otherwise it would be the y axis (height). The content by default will take as much space as it needs. By set calling setDrawerSize(); with a number different than 0 the drawer content will be arranged with the provided size.
 Setting the drawer size back to 0 reverts the drawer content to being auto sized.
 
-```Java
-drawer.setDrawerSize(Util.getDimen(TypedValue.COMPLEX_UNIT_DIP, 300));
-```
+
 
 ```C#
 drawer.DrawerSize = (int)Com.Telerik.Android.Common.Util.GetDimen ((int)Android.Util.ComplexUnitType.Dip, 300.0f);
@@ -165,11 +127,7 @@ drawer.DrawerSize = (int)Com.Telerik.Android.Common.Util.GetDimen ((int)Android.
 RadSideDrawer can be used with the native Toolbar and ActionBar components. To make the connection between RadSideDrawer and the toolbar developers need to use the SideDrawerToggle class.
 For example:
 
-```Java
-SideDrawerToggle drawerToggle = new SideDrawerToggle(drawer, toolbar);
-// To use SideDrawerToggle with ActionBar instead of Toolbar, the "new SideDrawerToggle(drawer)" constructor must be used and
-// the activity must be an ActionBarActivity.
-```
+
 
 ```C#
 SideDrawerToggle drawerToggle = new SideDrawerToggle(drawer, toolbar);

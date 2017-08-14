@@ -24,17 +24,7 @@ Here's an example of vertical lines in a chart with bar series:
 
 In order to create such a chart you can start from the [Bar Series Example]({% slug chart-series-bar %} "Read how to create a chart with BarSeries") and add the following code:
 
-```Java
-	CartesianChartGrid grid = new CartesianChartGrid();
-	grid.setMajorYLinesRenderMode(GridLineRenderMode.INNER_AND_LAST);
-	grid.setLineThickness(1);
-	grid.setLineColor(Color.WHITE);
-	grid.setMajorLinesVisibility(GridLineVisibility.Y);
-	grid.setStripLinesVisibility(GridLineVisibility.Y);
-	ObservableCollection<Paint> yBrushes = grid.getYStripeBrushes();
-	yBrushes.clear();
-	chartView.setGrid(grid);
-```
+
 ```C#
 	CartesianChartGrid grid = new CartesianChartGrid();
 	grid.MajorYLinesRenderMode = GridLineRenderMode.InnerAndLast;

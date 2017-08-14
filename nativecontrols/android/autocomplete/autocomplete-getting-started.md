@@ -30,9 +30,7 @@ The common way to do this is to create an RauAutoCompleteTextView in the XML lay
 
 Then you should access the autocomplete object in your activity/fragment and populate it with data.
 
-```Java
-autocomplete = (RadAutoCompleteTextView) rootView.findViewById(R.id.autocmp);
-```
+
 ```C#
 this.autocomplete = (RadAutoCompleteTextView)rootView.FindViewById(Resource.Id.autocmp);
 ```
@@ -41,13 +39,7 @@ this.autocomplete = (RadAutoCompleteTextView)rootView.FindViewById(Resource.Id.a
 In order to populate the autocomplete you need to create an `AutoCompleteAdapter` object and pass it the array of suggestions which should be `TokenModel` objects. The `TokenModel` is a unified object used by the autocomplete to represent data objects as suggestions or tokens.
 
 We will use the following list of string for the purposes of the examples.
-```Java
-private String[] data = new String[]{"Australia", "Albania","Austria", "Argentina", "Maldives","Bulgaria","Belgium","Cyprus","Italy","Japan",
-                                    "Denmark","Finland","France","Germany","Greece","Hungary","Ireland",
-                                    "Latvia","Luxembourg","Macedonia","Moldova","Monaco","Netherlands","Norway",
-                                    "Poland","Romania","Russia","Sweden","Slovenia","Slovakia","Turkey","Ukraine",
-                                    "Vatican City", "Chad", "China", "Chile"};
-```
+
 ```C#
 this.data = new List<string>() { "Australia", "Albania","Austria", "Argentina", "Maldives","Bulgaria","Belgium","Cyprus","Italy","Japan",
                             "Denmark","Finland","France","Germany","Greece","Hungary","Ireland",
@@ -57,17 +49,7 @@ this.data = new List<string>() { "Australia", "Albania","Austria", "Argentina", 
 ```
 
 Then we will create TokenModel object out ot the original data array.
-```Java
-private ArrayList<TokenModel> getTokenModelObjects() {
-    ArrayList<TokenModel> feedData = new ArrayList<TokenModel>();
-    for(int i = 0; i < this.data.length; i++){
-        TokenModel token = new TokenModel(this.data[i], null);
-        feedData.add(token);
-    }
 
-    return feedData;
-}
-```
 ```C#
 private List<TokenModel> GetTokenObjects()
 {
@@ -83,11 +65,7 @@ private List<TokenModel> GetTokenObjects()
 ```
 
 Finally, we will create a AutoCompleteAdapter with the list of TokenModel objects.
-```Java
-adapter = new AutoCompleteAdapter(this.getContext(),this.getTokenModelObjects(), R.layout.suggestion_item_layout);
-adapter.setCompletionMode(CompletionMode.STARTS_WITH);
-autocomplete.setAdapter(adapter);
-```
+
 ```C#
 this.adapter = new AutoCompleteAdapter(this.Context, this.GetTokenObjects(), Java.Lang.Integer.ValueOf(Resource.Layout.suggestion_item_layout));
 this.adapter.CompletionMode = CompletionMode.StartsWith;
@@ -96,10 +74,7 @@ this.autocomplete.Adapter = this.adapter;
 
 Autocomplete is now ready to use. You can additionnaly set up its suggest and display modes according your needs.
 
-```Java
-autocomplete.setSuggestMode(SuggestMode.SUGGEST);
-autocomplete.setDisplayMode(DisplayMode.PLAIN);
-```
+
 ```C#
 this.autocomplete.SuggestMode = SuggestMode.Suggest;
 this.autocomplete.DisplayMode = DisplayMode.Plain;

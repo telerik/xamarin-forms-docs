@@ -18,12 +18,7 @@ Each chart can be enabled with interactivity through its Behaviors. A behavior i
 
 In order to add a behavior, you simply need to add a new behavior of the desired type to the behaviors collection of your chart instance:
 
-```Java
-	RadCartesianChartView chartView = new RadCartesianChartView(this);
 
-	ChartPanAndZoomBehavior behavior = new ChartPanAndZoomBehavior();
-	chartView.getBehaviors().add(behavior);
-```
 ```C#
 	RadCartesianChartView chartView = new RadCartesianChartView(this);
 

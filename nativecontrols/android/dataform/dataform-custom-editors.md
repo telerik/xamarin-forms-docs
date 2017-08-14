@@ -15,35 +15,7 @@ Creating a custom editor for RadDataForm consists of two things: creating an **e
 To create a custom editor developers need to create a class that inherits from **EntityPropertyEditor** and provide a constructor that accepts a **Context** as
 its first argument and an **EntityProperty** object as its second argument. For example:
 
-```Java
-public class CustomEditor extends EntityPropertyEditor {
-    public CustomEditor(RadDataForm form, EntityProperty property) {
-        this(form,
-                R.layout.custom_editor_layout,
-                R.layout.custom_editor_header_layout,
-                R.id.custom_editor_header,
-                R.layout.custom_editor_core,
-                R.id.custom_editor,
-                R.layout.custom_editor_validation_layout,
-                property);
-    }
-    public CustomEditor(RadDataForm dataForm, int layoutId, int headerLayoutId, 
-		int headerViewId, int editorLayoutId, int editorViewId, int validationLayoutId, 
-		EntityProperty property) {
-		
-        super(dataForm, layoutId, headerLayoutId, headerViewId, editorLayoutId, editorViewId, 
-			validationLayoutId, property);
-    }
-    @Override
-    public Object value() {
-        return ((EditText)editorView).getText().toString();
-    }
-    @Override
-    protected void applyEntityValueToEditor(Object entityValue) {
-        ((EditText)editorView).setText(entityValue.toString());
-    }
-}
-```
+
 ```C#
 public class CustomEditor : EntityPropertyEditor {
 	public CustomEditor(RadDataForm form, IEntityProperty property) : base(form,

@@ -14,10 +14,7 @@ publish: true
 This means that there are no restrictions. If you would like to use the calendar for hotel/flight reservation, you wouldn't want the selection to be possible for dates that are in the past. In this scenario the minimum date
 comes useful. Here's the example:
 
-```Java
-	Calendar calendar = Calendar.getInstance();
-	calendarView.setMinDate(calendar.getTimeInMillis());
-```
+
 ```C#
 	Calendar calendar = Calendar.Instance;
 	calendarView.MinDate = calendar.TimeInMillis;

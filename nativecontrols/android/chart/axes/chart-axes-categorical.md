@@ -20,26 +20,7 @@ You can read from the [Getting Started]({% slug chart-gettingstarted %} "Read ho
 
 After you create the method for initialization of sample data, you can create a **RadCartesianChartView** with **LineSeries** by adding the following code to the **onCreate()** method of your Activity.
 
-```Java
-	initData();
 
-	RadCartesianChartView chartView = new RadCartesianChartView(this);
-
-	LineSeries lineSeries = new LineSeries();
-	lineSeries.setCategoryBinding(new PropertyNameDataPointBinding("Month"));
-	lineSeries.setValueBinding(new PropertyNameDataPointBinding("Result"));
-	lineSeries.setData(this.monthResults);
-	chartView.getSeries().add(lineSeries);
-
-	CategoricalAxis horizontalAxis = new CategoricalAxis();
-	chartView.setHorizontalAxis(horizontalAxis);
-
-	LinearAxis verticalAxis = new LinearAxis();
-	chartView.setVerticalAxis(verticalAxis);
-
-	ViewGroup rootView = (ViewGroup)findViewById(R.id.container);
-	rootView.addView(chartView);
-```
 ```C#
 	InitData();
 
@@ -89,9 +70,7 @@ Defines the distance (in logical units) between two adjacent categories. Default
 Defines the step at which major ticks are generated. The default and also minimum value is 1. This property also affects axis labels as they are generated on a per major tick basis.
 You can get the current value with the **getMajorTicksInterval()** method and set a new value with **setMajorTickInterval(int)**. For example, if you don't want to display all ticks, but instead only half of them (display the first, third, fifth, etc. ticks), you should set the major tick interval to `2`:
 
-```Java
-	horizontalAxis.setMajorTickInterval(2);
-```
+
 ```C#
 	horizontalAxis.MajorTickInterval = 2;
 ```

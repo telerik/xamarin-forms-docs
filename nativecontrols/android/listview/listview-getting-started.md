@@ -53,15 +53,7 @@ Now that the project is setup, you can easily add **RadListView** in the layout 
 
 You can access the control from the activity in order to be able to apply further modifications:
 
-```Java
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-	super.onCreate(savedInstanceState);
-	setContentView(R.layout.activity_main);
 
-	RadListView listView = (RadListView)findViewById(R.id.listView);
-}
-```
 ```C#
 protected override void OnCreate (Bundle bundle)
 {
@@ -81,38 +73,7 @@ Then 7 view holders should be enough to represent all the data. Later when the u
 The default adapter that is used by **RadListView** is called **ListViewAdapter**. 
 In order to create a new instance, you simply need to pass a list of items to the constructor of the adapter. Let's create a simple class that we will use later to populate the list:
 
-```Java
-public class City {
-	private String name;
-	private String country;
 
-	public City(String name, String country) {
-		this.name = name;
-		this.country = country;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getCountry() {
-		return country;
-	}
-
-	public void setCountry(String country) {
-		this.country = country;
-	}
-
-	@Override
-	public String toString() {
-		return String.format("%s (%s)", name, country);
-	}
-}
-```
 ```C#
 public class City : Java.Lang.Object {
 	public String Name { get; set; }
@@ -131,22 +92,7 @@ public class City : Java.Lang.Object {
 
 Now, let's create a method that will create a list of items that we can use for our list view adapter:
 
-```Java
-private List<City> getListOfCities() {
-	List<City> cities = new ArrayList<>();
-	cities.add(new City("London", "United Kingdom"));
-	cities.add(new City("Berlin", "Germany"));
-	cities.add(new City("Madrid", "Spain"));
-	cities.add(new City("Rome", "Italy"));
-	cities.add(new City("Paris", "France"));
-	cities.add(new City("Hamburg", "Germany"));
-	cities.add(new City("Barcelona", "Spain"));
-	cities.add(new City("Munich", "Germany"));
-	cities.add(new City("Milan", "Italy"));
-	cities.add(new City("Cologne", "Germany"));
-	return cities;
-}
-```
+
 ```C#
 private List<City> GetListOfCities() {
 	List<City> cities = new List<City> ();
@@ -166,10 +112,7 @@ private List<City> GetListOfCities() {
 
 We are now ready to create a new adapter from the list and pass it to the list view instance:
 
-```Java
-ListViewAdapter listViewAdapter = new ListViewAdapter(getListOfCities());
-listView.setAdapter(listViewAdapter);
-```
+
 ```C#
 ListViewAdapter listViewAdapter = new ListViewAdapter (GetListOfCities ());
 listView.SetAdapter (listViewAdapter);
@@ -179,41 +122,7 @@ More often than not, you will want your list view items to include a bit more co
 **onBindViewHolder** methods. The first one is responsible for creating a new view holder that will be later reused to visualize different data items. The second is responsible for the binding of a view holder with information
 about a specific item from the list. Here's one way to extend the default adapter:
 
-```Java
-public class CityAdapter extends ListViewAdapter {
-	public CityAdapter(List items) {
-		super(items);
-	}
 
-	@Override
-	public ListViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-		final LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-		View view = inflater.inflate(R.layout.city_list_item, parent, false);
-		return new CityViewHolder(view);
-	}
-
-	@Override
-	public void onBindViewHolder(ListViewHolder holder, int position) {
-		CityViewHolder viewHolder = (CityViewHolder)holder;
-		City city = (City)getItems().get(position);
-		viewHolder.nameView.setText(city.getName());
-		viewHolder.countryView.setText(city.getCountry());
-	}
-
-	public static class CityViewHolder extends ListViewHolder {
-
-		TextView nameView;
-		TextView countryView;
-
-		public CityViewHolder(View itemView) {
-			super(itemView);
-
-			nameView = (TextView)itemView.findViewById(R.id.nameView);
-			countryView = (TextView)itemView.findViewById(R.id.countryView);
-		}
-	}
-}
-```
 ```C#
 public class CityAdapter : ListViewAdapter
 {
@@ -276,10 +185,7 @@ The resource city_list_item that is used in the adapter is a new layout resource
 	</LinearLayout>
 
 When you set an instance of your new adapter to the list view, it will look as the one in image from the beginning of the article:
-```Java
-CityAdapter cityAdapter = new CityAdapter(getListOfCities());
-listView.setAdapter(cityAdapter);
-```
+
 ```C#
 CityAdapter cityAdapter = new CityAdapter (GetListOfCities ());
 listView.SetAdapter (cityAdapter);

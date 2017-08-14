@@ -18,26 +18,7 @@ You can read from the [Getting Started]({% slug chart-gettingstarted %} "Read ho
 
 After you create the method for initialization of sample data, you can create a **RadCartesianChartView** with **BarSeries** by adding the following code to the **onCreate()** method of your Activity.
 
-```Java
-	initData();
 
-	RadCartesianChartView chartView = new RadCartesianChartView(this);
-
-	BarSeries barSeries = new BarSeries();
-	barSeries.setCategoryBinding(new PropertyNameDataPointBinding("Month"));
-	barSeries.setValueBinding(new PropertyNameDataPointBinding("Result"));
-	barSeries.setData(this.monthResults);
-	chartView.getSeries().add(barSeries);
-
-	CategoricalAxis horizontalAxis = new CategoricalAxis();
-	chartView.setHorizontalAxis(horizontalAxis);
-
-	LinearAxis verticalAxis = new LinearAxis();
-	chartView.setVerticalAxis(verticalAxis);
-
-	ViewGroup rootView = (ViewGroup)findViewById(R.id.container);
-	rootView.addView(chartView);
-```
 ```C#
 	InitData();
 
@@ -71,10 +52,7 @@ Here's the result:
 
 The bars that are used to represent the data points in **BarSeries** can have their corners rounded. This can be achieved by using the **setAreBarsRounded(boolean)** method. When the value that is set is `true`, the corners are rounded. You can use **getAreBarsRounded()** in order to check the current value. The rounding radius can be checked and modified by using the **getRoundBarsRadius()** and **setRoundBarsRadius(float)**. If you try to set a negative value, an `IllegalArgumentException` will be thrown. Here's an example of **BarSeries** when their round bar radius is set to `10`:
 
-```Java
-	barSeries.setAreBarsRounded(true);
-	barSeries.setRoundBarsRadius(10);
-```
+
 ```C#
 	barSeries.AreBarsRounded = true;
 	barSeries.RoundBarsRadius = 10;

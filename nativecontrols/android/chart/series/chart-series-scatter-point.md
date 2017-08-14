@@ -20,43 +20,7 @@ noted that the chart must have a LinearAxis set for both the horizontal and vert
 
 Immediately below is the implementation of the **initScatterData()** method which is used to populate the scatter series with data along with the ScatterPoint class which serves as the actual chart data.
 
-```Java
-	public class ScatterPoint {
-		private int x;
-		private int y;
-		
-		public ScatterPoint(int x, int y) {
-			this.x = x;
-			this.y = y;
-		}
-		
-		public int getX() {
-			return this.x;
-		}
-		
-		public void setX(int value) {
-			this.x = value;
-		}
-		
-		public int getY() {
-			return this.y;
-		}
-		
-		public void setY(int value) {
-			this.y = value;
-		}
-	}
 
-	public Iterable initScatterData() {
-		ArrayList<ScatterPoint> data = new ArrayList<ScatterPoint>();
-		Random random = new Random();
-		for(int i = 0; i < 20; ++i) {
-			data.add(new ScatterPoint(random.nextInt(50), random.nextInt(50)));
-		}
-		
-		return data;
-	}
-```
 
 ```C#
 	public class ScatterPoint : Java.Lang.Object 
@@ -87,24 +51,7 @@ Immediately below is the implementation of the **initScatterData()** method whic
 
 After you create the method for initialization of sample data, you can create a **RadCartesianChartView** with **ScatterPointSeries** by adding the following code to the **onCreate()** method of your Activity.
 
-```Java
-	RadCartesianChartView chartView = new RadCartesianChartView(this);
 
-	ScatterPointSeries scatterSeries = new ScatterPointSeries();
-	scatterSeries.setXValueBinding(new PropertyNameDataPointBinding("X"));
-	scatterSeries.setYValueBinding(new PropertyNameDataPointBinding("Y"));
-	scatterSeries.setData(initScatterData());
-	chartView.getSeries().add(scatterSeries);
-
-	LinearAxis horizontalAxis = new LinearAxis();
-	chartView.setHorizontalAxis(horizontalAxis);
-
-	LinearAxis verticalAxis = new LinearAxis();
-	chartView.setVerticalAxis(verticalAxis);
-
-	ViewGroup rootView = (ViewGroup)findViewById(R.id.container);
-	rootView.addView(chartView);
-```
 
 ```C#
 	RadCartesianChartView chartView = new RadCartesianChartView(this);

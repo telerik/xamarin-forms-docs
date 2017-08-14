@@ -46,10 +46,7 @@ add an image element that will hold an indication arrow. Change the `city_group_
 
 Now we can create a new instance of the collapsible groups behavior and add it to the list view:
 
-```Java
-CollapsibleGroupsBehavior collapsibleGroupsBehavior = new CollapsibleGroupsBehavior();
-listView.addBehavior(collapsibleGroupsBehavior);
-```
+
 ```C#
 CollapsibleGroupsBehavior collapsibleGroupsBehavior = new CollapsibleGroupsBehavior ();
 listView.AddBehavior (collapsibleGroupsBehavior);
@@ -64,23 +61,7 @@ provide a different image of the collapsed state by using **setExpandImageResour
 
 The CollapseGroupListener can be used to get notification that a group is collapsed or expanded. Here's one simple implementation:
 
-```Java
-CollapsibleGroupsBehavior.CollapseGroupListener listener =
-	new CollapsibleGroupsBehavior.CollapseGroupListener() {
 
-	@Override
-	public void onGroupCollapsed(Object o) {
-		Toast.makeText(getBaseContext(), String.format(
-			"Group %s was collapsed", o.toString()), Toast.LENGTH_SHORT).show();
-	}
-
-	@Override
-	public void onGroupExpanded(Object o) {
-		Toast.makeText(getBaseContext(), String.format(
-			"Group %s was expanded", o.toString()), Toast.LENGTH_SHORT).show();
-	}
-};
-```
 ```C#
 public class CollapseListener : Java.Lang.Object,
 	CollapsibleGroupsBehavior.ICollapseGroupListener {
@@ -106,9 +87,7 @@ public class CollapseListener : Java.Lang.Object,
 
 Now we can add the listener to our behavior:
 
-```Java
-collapsibleGroupsBehavior.addListener(listener);
-```
+
 ```C#
 CollapseListener listener = new CollapseListener (Context);
 collapsibleGroupsBehavior.AddListener (listener);

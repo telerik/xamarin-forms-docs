@@ -19,34 +19,7 @@ To see the base ScatterPointSeries configuration see [here]({% slug chart-series
 
 ## Example
 
-```Java
-	public class ScatterBubblePoint extends ScatterPoint {
-		protected int area;
-	
-		public ScatterBubblePoint(int x, int y, int area) {
-			super(x, y);
-			
-			this.area = area;
-		}
-		
-		public int getArea() {
-			return this.area;
-		}
-		
-		public void setArea(int value) {
-			this.area = value;
-		}
-	}
-	
-	public Iterable initScatterBubbleData() {
-		ArrayList<ScatterBubblePoint> data = new ArrayList<ScatterBubblePoint>();
-		Random random = new Random();
-		for(int i = 0; i < 20; ++i) {
-			data.add(new ScatterBubblePoint(random.nextInt(50), random.nextInt(50), random.nextInt(5000)));
-		}
-		return data;
-	}
-```
+
 
 ```C#
 	public class ScatterBubblePoint : ScatterPoint
@@ -81,31 +54,7 @@ To see the base ScatterPointSeries configuration see [here]({% slug chart-series
 
 Now with the bubble data intialization in place we can create our chart.
 
-```Java
-	RadCartesianChartView chartView = new RadCartesianChartView(this);
 
-	ScatterBubbleSeries scatterSeries = new ScatterBubbleSeries();
-	scatterSeries.setXValueBinding(new PropertyNameDataPointBinding("X"));
-	scatterSeries.setYValueBinding(new PropertyNameDataPointBinding("Y"));
-	scatterSeries.setBubbleSizeBinding(new GenericDataPointBinding<ScatterBubblePoint, Integer>(new Function<ScatterBubblePoint, Integer>() {
-		@Override
-		public Integer apply(ScatterBubblePoint data) {
-			// If the incoming data does not contain information about the bubble area here is a good place to calculate it.
-			return data.getArea();
-		}
-	}));
-	scatterSeries.setData(initScatterBubbleData());
-	chartView.getSeries().add(scatterSeries);
-
-	LinearAxis horizontalAxis = new LinearAxis();
-	chartView.setHorizontalAxis(horizontalAxis);
-
-	LinearAxis verticalAxis = new LinearAxis();
-	chartView.setVerticalAxis(verticalAxis);
-
-	ViewGroup rootView = (ViewGroup)findViewById(R.id.container);
-	rootView.addView(chartView);
-```
 
 ```C#
 	RadCartesianChartView chartView = new RadCartesianChartView(this);

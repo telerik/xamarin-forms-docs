@@ -18,9 +18,7 @@ publish: true
 
 The suggest mode can be changed with the `setSuggestionMode` method of the TKAutoCompleteTextView. The default value is `SuggestMode.SUGGEST`.
 
-```Java
-autocomplete.setSuggestMode(SuggestMode.SUGGEST);
-```
+
 ```C#
 this.autocomplete.SuggestMode = SuggestMode.Suggest;
 ```

@@ -45,25 +45,7 @@ And here's what you can customize with a CalendarDayCellStyle:
 
 Here's an example that changes the text color for weekends to `RED` and the border for today to `GREEN`, 4 dps wide:
 
-```Java
-CalendarDayCellFilter weekendCellFilter = new CalendarDayCellFilter();
-weekendCellFilter.setIsWeekend(true);
-CalendarDayCellStyle weekendCellStyle = new CalendarDayCellStyle();
-weekendCellStyle.setFilter(weekendCellFilter);
-weekendCellStyle.setTextColor(Color.RED);
-calendarView.addDayCellStyle(weekendCellStyle);
 
-CalendarDayCellFilter todayCellFilter = new CalendarDayCellFilter();
-todayCellFilter.setIsToday(true);
-CalendarDayCellStyle todayCellStyle = new CalendarDayCellStyle();
-todayCellStyle.setFilter(todayCellFilter);
-todayCellStyle.setBorderColor(Color.GREEN);
-float widthInDp = 4;
-float widthInPixels = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
-        widthInDp, getResources().getDisplayMetrics());
-todayCellStyle.setBorderWidth(widthInPixels);
-calendarView.addDayCellStyle(todayCellStyle);
-```
 ```C#
 CalendarDayCellFilter weekendCellFilter = new CalendarDayCellFilter();
 weekendCellFilter.IsWeekend = new Java.Lang.Boolean(true);
@@ -104,14 +86,7 @@ While the styles for the month cells are very similar to the day cell style, the
 
 Here's an example that changes the text color of the month names for all month cells to `BLUE`:
 
-```Java
-CalendarMonthCellFilter monthCellTitleFilter = new CalendarMonthCellFilter();
-monthCellTitleFilter.setTextIsMonthName(true);
-CalendarMonthCellStyle monthCellTitleStyle = new CalendarMonthCellStyle();
-monthCellTitleStyle.setFilter(monthCellTitleFilter);
-monthCellTitleStyle.setTextColor(Color.BLUE);
-calendarView.addMonthCellStyle(monthCellTitleStyle);
-```
+
 ```C#
 CalendarMonthCellFilter monthCellTitleFilter = new CalendarMonthCellFilter();
 monthCellTitleFilter.TextIsMonthName = new Java.Lang.Boolean(true);
@@ -133,25 +108,7 @@ You can define a customization rule which contains a list of operations that sho
 through the method **setCustomizationRule(Procedure<CalendarCell>)**. For example, if we want to mark a specific important date with custom background,
 here's how we can do it:
 
-```Java
-final Calendar calendar = Calendar.getInstance();
-calendarView.setCustomizationRule(new Procedure<CalendarCell>() {
-    @Override
-    public void apply(CalendarCell calendarCell) {
-        if(calendarCell.getCellType() != CalendarCellType.Date) {
-            return;
-        }
-        calendar.setTimeInMillis(calendarCell.getDate());
-        if(calendar.get(Calendar.DAY_OF_MONTH) == 21 &&
-                calendar.get(Calendar.MONTH) ==
-                        Calendar.getInstance().get(Calendar.MONTH)) {
-            calendarCell.setBackgroundColor(
-                    Color.parseColor("#FF00A1"),
-                    Color.parseColor("#F988CF"));
-        }
-    }
-});
-```
+
 ```C#
     Calendar calendar = Calendar.GetInstance(Java.Util.TimeZone.Default);
     calendarView.CustomizationRule = new CustomizationRuleExample ();
@@ -188,19 +145,7 @@ This example changes the background of the cell which contains the 21st day of t
 If the required change for marking a cell as special is simply changing the text color you can use the method **setDateToColor(Function<Long, Integer>)** to define a color that is used for a date. Here's an example, which marks
 all Sundays in Red:
 
-```Java
-final Calendar calendar = Calendar.getInstance();
-calendarView.setDateToColor(new Function<Long, Integer>() {
-    @Override
-    public Integer apply(Long aLong) {
-        calendar.setTimeInMillis(aLong);
-        if(calendar.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY) {
-            return Color.RED;
-        }
-        return null;
-    }
-});
-```
+
 ```C#
     Calendar calendar = Calendar.GetInstance(Java.Util.TimeZone.Default);
     calendarView.DateToColor = new DateToColorExample ();
@@ -240,9 +185,7 @@ Another visual element of **RadCalendarView** is the layer which is responsible 
 **getShowGridLines()**. The XML attribute which can be used to control whether the grid lines are visible is **showGridLines**. The default **GridLinesLayer** provides method for changing the color that is used for the grid lines, as well as their width. These methods are **setColor(int)** and **setStrokeWidth(float)**.
 These methods are implemented in the layer, whose instance you can take with calendar's **getGridLinesLayer()**. This means that this way you can change the lines to `Green`, for example:
 
-```Java
-	calendarView.getGridLinesLayer().setColor(Color.GREEN);
-```
+
 ```C#
 	calendarView.GridLinesLayer.Color = Color.Green;
 ```
@@ -257,9 +200,7 @@ You can easily remove this decoration by using calendar's **setShowCellDecoratio
 The XML attribute which can be used to control whether the grid lines are visible is **showCellDecorations**. You can also easily change the color or the width of the decorations
 with **CellDecorationLayer**'s **setColor(int)** and **setStrokeWidth(float)**. Here's how you can change the decorations around the selected cells to `Green`, for example:
 
-```Java
-	calendarView.getCellDecorationsLayer().setColor(Color.GREEN);
-```
+
 ```C#
 	calendarView.CellDecorationsLayer.Color = Color.Green;
 ```

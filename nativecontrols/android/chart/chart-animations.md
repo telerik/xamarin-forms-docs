@@ -29,9 +29,7 @@ animationPanel.Chart = chart;
 ```
 
 Then when the chart is added, developers have to add animations for each series. The animations are added with the animationPanel.addAnimation() method:
-```Java
-animationPanel.addAnimation(new ChartFadeAnimation(series));
-```
+
 ```C#
 animationPanel.AddAnimation(new ChartFadeAnimation(series));
 ```
@@ -46,10 +44,7 @@ The currently supported animations are ChartFadeAnimation, ChartTranslateAnimati
 
 ## ChartFadeAnimation
 
-```Java
-ChartFadeAnimation fade = new ChartFadeAnimation(series);
-fade.setStartOpacity(0.3f);
-```
+
 ```C#
 ChartFadeAnimation fade = new ChartFadeAnimation(series);
 fade.StartOpacity = 0.3f;
@@ -58,11 +53,7 @@ fade.StartOpacity = 0.3f;
 ## ChartTranslateAnimation
 
 ChartTranslateAnimation is used, as the name suggests, to move a series into view.
-```Java
-ChartTranslateAnimation translateAnimation = new ChartTranslateAnimation(series);
-translateAnimation.setStartX(-200);
-translateAnimation.setStartY(-200);
-```
+
 ```C#
 ChartTranslateAnimation translateAnimation = new ChartTranslateAnimation(series);
 translateAnimation.StartX = -200;
@@ -71,12 +62,7 @@ translateAnimation.StartY = -200;
 
 ## ChartRotateAnimation
 
-```Java
-ChartRotateAnimation rotateAnimation = new ChartRotateAnimation(series);
-rotateAnimation.setStartAngle(-90f);
-rotateAnimation.setPivotX(500);
-rotateAnimation.setPivotY(500);
-```
+
 ```C#
 ChartRotateAnimation rotateAnimation = new ChartRotateAnimation(series);
 rotateAnimation.StartAngle = -90f;
@@ -91,12 +77,7 @@ The child animations can be started either in SEQUENTIAL or CONCURRENT mode. Thi
 If the sequence mode is SEQUENTIAL the duration of group itself will be divided by the number of children and each child animation
 will be as long as the result from that division.
 
-```Java
-ChartAnimationGroup group = new ChartAnimationGroup(series);
-group.setSequenceMode(ChartAnimationSequenceMode.SEQUENTIAL);
-group.addAnimation(new ChartFadeAnimation());
-group.addAnimation(new ChartScaleAnimation());
-```
+
 ```C#
 ChartAnimationGroup group = new ChartAnimationGroup(series);
 group.SequenceMode = ChartAnimationSequenceMode.SEQUENTIAL;
@@ -107,21 +88,7 @@ group.AddAnimation(new ChartScaleAnimation());
 ## Common API
 
 Finally every animation has a common API. Each animation implements the ChartAnimationInterface which looks like this:
-```Java
-public interface ChartAnimation {
-    ViewPropertyAnimatorCompat start(SeriesAnimationView viewToAnimate);
-    void setInitialValues(SeriesAnimationView view);
-    void setDuration(long value);
-    long getDuration();
-    void setInterpolator(Interpolator value);
-    Interpolator getInterpolator();
-    void setInitialDelay(long value);
-    long getInitialDelay();
-    ChartSeries getSeries();
-    void addAnimationFinishedListener(ChartAnimationFinishedListener listener);
-    void removeAnimationFinishedListener(ChartAnimationFinishedListener listener);
-}
-```
+
 ```C#
 public interface ChartAnimation
 {

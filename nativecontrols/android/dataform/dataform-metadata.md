@@ -76,61 +76,7 @@ Custom parameters used to properly set up the validator.
 
 To annotate a class with @DataFormProperty, **only the getters of the properties should be annotated**. Any annotations on the setters will be ignored:
 
-```Java
-public class Person {
-    private Integer age;
-    private Boolean isEmployed;
-    private EmployeeType employeeType;
-    private String name;
-    private String mail;
-    private Long birthDate;
-	
-    @DataFormProperty(label = "Age", index = 1, validator = RangeValidator.class,
-            validatorParams = @DataFormValidatorParams(min = 18, max = 70))
-    public Integer getAge() {
-        return age;
-    }
-    public void setAge(Integer value) {
-        age = value;
-    }
-    @DataFormProperty(label = "Employee Type", index = 4)
-    public EmployeeType getEmployeeType() {
-        return employeeType;
-    }
-    public void setEmployeeType(EmployeeType value) {
-        employeeType = value;
-    }
-    @DataFormProperty(label = "Name", index = 0)
-    public String getName() {
-        return name;
-    }
-    public void setName(String value) {
-        name = value;
-    }
-    @DataFormProperty(label = "E-mail", index = 2, validator = MailValidator.class)
-    public String getMail() {
-        return mail;
-    }
-    public void setMail(String value) {
-        this.mail = value;
-    }
-    @DataFormProperty(label = "Employed", index = 3, required = true)
-    public boolean getIsEmployed() {
-        return isEmployed;
-    }
-    public void setIsEmployed(boolean value) {
-        isEmployed = value;
-    }
-    @DataFormProperty(label = "Birth Date", index = 5, 
-		editor = DataFormTimeEditor.class, readOnly = true)
-    public long getBirthDate() {
-        return birthDate;
-    }
-    public void setBirthDate(long birthDate) {
-        this.birthDate = birthDate;
-    }
-}
-```
+
 ```C#
 public class Person : Java.Lang.Object
 {

@@ -37,11 +37,7 @@ The positive behavior adds two more properties:
 * ValidDrawable
 
 To use any of the described behaviors developers have to do this:
-```Java
-EntityPropertyEditor editor = 
-	(EntityPropertyEditor)dataForm.getExistingEditorForProperty("Name");
-editor.setValidationViewBehavior(new DataFormValidationViewBehavior(context));
-```
+
 ```C#
 EntityPropertyEditor editor = 
 	Android.Runtime.Extensions.JavaCast<EntityPropertyEditor>(

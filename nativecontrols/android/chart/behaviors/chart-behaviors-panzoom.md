@@ -18,29 +18,7 @@ You can read from the [Getting Started]({% slug chart-gettingstarted %} "Read ho
 
 After you create the method for initialization of sample data, you can create a **RadCartesianChartView** with **LineSeries** and add a **ChartPanAndZoomBehavior** by adding the following code to the **onCreate()** method of your Activity.
 
-```Java
-	initData();
 
-	RadCartesianChartView chartView = new RadCartesianChartView(this);
-
-	ChartPanAndZoomBehavior behavior = new ChartPanAndZoomBehavior();
-	chartView.getBehaviors().add(behavior);
-
-	LineSeries lineSeries = new LineSeries();
-	lineSeries.setCategoryBinding(new PropertyNameDataPointBinding("Month"));
-	lineSeries.setValueBinding(new PropertyNameDataPointBinding("Result"));
-	lineSeries.setData(this.monthResults);
-	chartView.getSeries().add(lineSeries);
-
-	CategoricalAxis horizontalAxis = new CategoricalAxis();
-	chartView.setHorizontalAxis(horizontalAxis);
-
-	LinearAxis verticalAxis = new LinearAxis();
-	chartView.setVerticalAxis(verticalAxis);
-
-	ViewGroup rootView = (ViewGroup)findViewById(R.id.container);
-	rootView.addView(chartView);
-```
 ```C#
 	InitData();
 
@@ -87,9 +65,7 @@ since you will have to do a lot of pinching to get to the desired zoom level. In
 This rectangle defines the area which will be stretched to fill the whole chart plot area, the smaller the chosen rectangle, the larger the zoom will be.
 
 Developers can set the zoom strategy like so:
-```Java
-	panZoomBehavior.setZoomStrategy(ChartZoomStrategy.DEFERRED);
-```
+
 ```C#
 	panZoomBehavior.ZoomStrategy = ChartZoomStrategy.Deferred;
 ```
@@ -103,9 +79,7 @@ Here is what the zoom rect looks like:
 By default, the pan and zoom behavior also provides zooming capabilities for the double tap gesture. 
 This means that the chart will be zoomed in or zoomed out when this gesture occurs. This can be changed with the method **setHandleDoubleTap(boolean)**:
 
-```Java
-	behavior.setHandleDoubleTap(false);
-```
+
 ```C#
 	behavior.HandleDoubleTap = false;
 ```

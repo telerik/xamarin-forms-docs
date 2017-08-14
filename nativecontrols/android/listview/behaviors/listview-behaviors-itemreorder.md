@@ -36,10 +36,7 @@ If you have read the [Getting Started page]({% slug listview-gettingstarted %} "
 the [Behaviors Overview]({% slug listview-behaviors-overview %} "Read the behaviors overview page for RadListView") we introduced the behaviors and now we will go into more details about the **ItemReorderBehavior**.
 All you need to do, in order to enable the reorder is to add an instance of the **ItemReorderBehavior** to your list view instance:
 
-```Java
-ItemReorderBehavior itemReorderBehavior = new ItemReorderBehavior();
-listView.addBehavior(itemReorderBehavior);
-```
+
 ```C#
 ItemReorderBehavior itemReorderBehavior = new ItemReorderBehavior ();
 listView.AddBehavior (itemReorderBehavior);
@@ -58,23 +55,7 @@ The **ListViewAdapter** class allows you to have more control on the reorder pro
 **reorderItem(int oldPosition, int newPosition)**. The first can be used to disable reordering of an item with a specific position and the second can be used for disabling specific reorder operations. Here's an example of
 how we can override these methods in our custom adapter implementation:
 
-```Java
-@Override
-public boolean canReorder(int position) {
-	if(position == 0) {
-		return false;
-	}
-	return true;
-}
 
-@Override
-public boolean reorderItem(int oldPosition, int newPosition) {
-	if(newPosition == 0) {
-		return false;
-	}
-	return super.reorderItem(oldPosition, newPosition);
-}
-```
 ```C#
 public override bool CanReorder (int position)
 {

@@ -25,20 +25,7 @@ If the user swipes from the left edge to the right, the drawer appears and fades
 
 Below is a very simple code example that shows the minimum steps required to display RadSideDrawer with some static content:
 
-```Java
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-	super.onCreate(savedInstanceState);
-	setContentView(R.layout.activity_main);
-	
-	RadSideDrawer drawer = new RadSideDrawer(this);
-	drawer.setMainContent(R.layout.drawer_main_content);
-	drawer.setDrawerContent(R.layout.drawer_side_content);
 
-	ViewGroup rootPanel = (ViewGroup)this.findViewById(R.id.rootPanel);
-	rootPanel.addView(drawer);
-}
-```
 
 ```C#
 protected override void OnCreate (Bundle bundle)

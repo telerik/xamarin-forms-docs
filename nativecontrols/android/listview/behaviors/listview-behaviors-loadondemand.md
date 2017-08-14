@@ -20,10 +20,7 @@ If you have read the [Getting Started page]({% slug listview-gettingstarted %} "
 the [Behaviors Overview]({% slug listview-behaviors-overview %} "Read the behaviors overview page for RadListView") we introduced the behaviors and now we will go into more details about the **LoadOnDemandBehavior**.
 Here's how to add the **LoadOnDemandBehavior** to your list view instance:
 
-```Java
-LoadOnDemandBehavior loadOnDemandBehavior = new LoadOnDemandBehavior();
-listView.addBehavior(loadOnDemandBehavior);
-```
+
 ```C#
 LoadOnDemandBehavior loadOnDemandBehavior = new LoadOnDemandBehavior ();
 listView.AddBehavior (loadOnDemandBehavior);
@@ -35,22 +32,7 @@ This will only show a button at the end of the list, but in order to actually lo
 
 The **LoadOnDemandListener** should be used to get notification that loading is requested. Here's one simple implementation:
 
-```Java
-LoadOnDemandBehavior.LoadOnDemandListener loadOnDemandListener = 
-	new LoadOnDemandBehavior.LoadOnDemandListener() {
-	
-	@Override
-	public void onLoadStarted() {
-		City city = new City("Naples", "Italy");
-		cityAdapter.add(city);
-		cityAdapter.notifyLoadingFinished();
-	}
 
-	@Override
-	public void onLoadFinished() {
-	}
-};
-```
 ```C#
 public class LoadListener : Java.Lang.Object, LoadOnDemandBehavior.ILoadOnDemandListener {
 	private ListViewAdapter listViewAdapter;
@@ -73,9 +55,7 @@ That will result in addition of a new city at the end of the list every time the
 ListViewAdapter's **notifyLoadingFinished()** method or with LoadOnDemandBehavior's **endLoad()**. The result is the same, so you can use the one that is more suitable for you. 
 Now what's left to do is to add the listener to the behavior:
 
-```Java
-loadOnDemandBehavior.addListener(loadOnDemandListener);
-```
+
 ```C#
 LoadListener loadListner = new LoadListener (cityAdapter);
 loadOnDemandBehavior.AddListener (loadListner);
@@ -86,9 +66,7 @@ loadOnDemandBehavior.AddListener (loadListner);
 The **LoadOnDemandBehavior** also provides an automatic mode that allow loading of items in a way in which the end user may not even realize that all items were not loaded at the start. 
 Here's how we can switch the mode to automatic:
 
-```Java
-loadOnDemandBehavior.setMode(LoadOnDemandBehavior.LoadOnDemandMode.AUTOMATIC);
-```
+
 ```C#
 loadOnDemandBehavior.Mode = LoadOnDemandBehavior.LoadOnDemandMode.Automatic;
 ```

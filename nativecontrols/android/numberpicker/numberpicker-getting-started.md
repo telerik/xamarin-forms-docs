@@ -12,9 +12,7 @@ publish: true
 
 To use RadNumberPicker a dependency to the **Input** library must be added.
 Creating RadNumberPicker is like creating any other widget:
-```Java
-RadNumberPicker picker = new RadNumberPicker(context);
-```
+
 ```C#
 RadNumberPicker picker = new RadNumberPicker(context);
 ```
@@ -32,17 +30,7 @@ the rest of the values PluralFormatString will be used.
 
 Finally RadNumberPicker has **addPropertyChangeListener()** and **removePropertyChangedListener()** methods that can be used to listen for changes in the number picker. For example to
 listen for value changes the following code is in order:
-```Java
-picker.addPropertyChangedListener(new PropertyChangedListener() {
-    @Override
-    public void onPropertyChanged(String propertyName, Object value) {
-        if(propertyName.equals("Value")) {
-            double newValue = (Double)value;
-            // do something with the new value.
-        }
-    }
-});
-```
+
 ```C#
 picker.AddPropertyChangedListener(new MyPropertyChangedListener());
 

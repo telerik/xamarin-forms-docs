@@ -19,9 +19,7 @@ run on a device where the language is set to English (United States):
 
 If you want to provide a static locale which disregards the user's preferences, you can use the calendar's **setLocale(Locale)** method and set the locale of your preference. Here's an example with the local `France`:
 
-```Java
-	calendarView.setLocale(Locale.FRANCE);
-```
+
 ```C#
 	calendarView.Locale = Java.Util.Locale.France;
 ```

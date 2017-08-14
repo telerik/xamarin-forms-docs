@@ -10,11 +10,14 @@ navigation:
         title: "Installation and Deployment"
         position: 3
     controls:
-        title: "Controls"
+        title: "<b>Xamarin Forms Controls</b>"
         position: 4
+    nativecontrols:
+        title: "Native Controls Wrappers"
+        position: 5
     troubleshooting:
         title: "Troubleshooting"
-        position: 5
+        position: 6
 ## End Root Level
 ## Intallation Sub-Folders
     installation-and-deployment/windows:
@@ -24,10 +27,138 @@ navigation:
         title: "Mac"
         position: 3
 ## End Intallation Sub-Folders
+## Native Controls Sub-Folders
+    nativecontrols/android:
+        title: "Android"
+        position: 1
+    nativecontrols/ios:
+        title: "iOS"
+        position: 2
+    nativecontrols/android/android-native-controls:
+        title: "Android Native Controls"
+    nativecontrols/ios/ios-native-controls:
+        title: "iOS Native Controls"
+## End Native Controls Sub-Folders
+
+## Android Controls
+    nativecontrols/android/autocomplete:
+        title: AutoComplete
+        position: 2
+    nativecontrols/android/calendar:
+        title: Calendar
+        position: 3
+    nativecontrols/android/chart:
+        title: Chart
+        position: 4
+    nativecontrols/android/dataform:
+        title: DataForm
+        position: 5
+    nativecontrols/android/datasource:
+        title: DataSource
+        position: 6
+    nativecontrols/android/feedback:
+        title: Feedback
+        position: 7
+    nativecontrols/android/agauges:
+        title: Gauges
+        position: 8
+    nativecontrols/android/listview:
+        title: ListView
+        position: 9
+    nativecontrols/android/numberpicker:
+        title: NumberPicker
+        position: 10
+    nativecontrols/android/spreadstreamprocessing:
+        title: SpreadStreamProcessing
+        position: 11
+    nativecontrols/android/tabview:
+        title: TabView
+        position: 12
+    nativecontrols/android/ziplibrary:
+        title: ZipLibrary
+        position: 13
+    nativecontrols/android/scrollview:
+        title: ScrollView
+        position: 14
+    nativecontrols/android/sidedrawer:
+        title: SideDrawer
+        position: 15
+    nativecontrols/android/gauges:
+        title: Gauges
+        position: 16
+## End Android Controls
+
+## Android Controls SubFolders
+    nativecontrols/android/chart/axes:
+        title: Axes
+    nativecontrols/android/chart/behaviors:
+        title: Behaviors
+    nativecontrols/android/chart/series:
+        title: Series
+    nativecontrols/android/chart/types:
+        title: Types
+    nativecontrols/android/listview/behaviors:
+        title: Behaviors
+## End Android Controls SubFolders
+
+## IOS Controls
+    nativecontrols/ios/alert:
+        title: Alert
+        position: 1
+    nativecontrols/ios/appfeedback:
+        title: AppFeedback
+        position: 2
+    nativecontrols/ios/autocompletetextview:
+        title: AutoCompleteTextView
+        position: 3
+    nativecontrols/ios/calendar:
+        title: Calendar
+        position: 4
+    nativecontrols/ios/chart:
+        title: Chart
+        position: 5
+    nativecontrols/ios/dataform:
+        title: DataForm
+        position: 6
+    nativecontrols/ios/datasource:
+        title: DataSource
+        position: 7
+    nativecontrols/ios/gauges:
+        title: Gauges
+        position: 8
+    nativecontrols/ios/listview:
+        title: ListView
+        position: 9
+    nativecontrols/ios/sidedrawer:
+        title: SideDrawer
+        position: 10
+    nativecontrols/ios/spreadstreamprocessing:
+        title: SpreadStreamProcessing
+        position: 11
+    nativecontrols/ios/tabview:
+        title: TabView
+        position: 12
+    nativecontrols/ios/ziplibrary:
+        title: ZipLibrary
+        position: 13
+## End IOS Controls
+
+## iOS Controls SubFolders
+
+    nativecontrols/ios/chart/animations:
+        title: Animations
+    nativecontrols/ios/chart/axes:
+        title: Axes
+    nativecontrols/ios/chart/pointlabels:
+        title: PointLabels
+    nativecontrols/ios/chart/series:
+        title: Series
+## End iOS Controls SubFolders
+
 ## Controls Sub-Folders
     ## AutoComplete
     controls/autocomplete:
-        title: "Autocomplete"
+        title: "AutoComplete"
         ## AutoComplete Sub-Folders
     controls/autocomplete/getting-started:
         title: "Getting Started"

@@ -1,6 +1,6 @@
 ---
 title: Grid
-page_title: RadChartView Grid | Telerik UI for Android Documentation
+page_title: RadChartView Grid | Telerik UI for Xamarin.Android Documentation
 description: A page that explains how to display gridlines in RadChartView for Android.
 slug: chart-grid
 tags: radchartview, grid, chart

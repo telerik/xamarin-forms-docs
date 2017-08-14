@@ -1,6 +1,6 @@
 ---
 title: Pie
-page_title: RadPieChartView  | Telerik UI for Android Documentation
+page_title: RadPieChartView  | Telerik UI for Xamarin.Android Documentation
 description: An overview page of RadPieChartView for Android. This article explains the most important things you need to know before using RadPieChartView.
 slug: chart-pie
 tags: radchartview, radpiechartview, chart, pie

@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: RadChartView Behaviors  | Telerik UI for Android Documentation
+page_title: RadChartView Behaviors  | Telerik UI for Xamarin.Android Documentation
 description: A page about the behaviours in RadChartView for Android. This article explains how to use the behaviors supported in RadChartView.
 slug: chart-behaviors-overview
 tags: radchartview, behaviors, overview, chart

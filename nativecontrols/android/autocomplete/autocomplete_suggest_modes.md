@@ -1,6 +1,6 @@
 ---
 title: Suggest modes
-page_title: RadAutoCompleteTextView Suggest Modes | Telerik UI for Android Documentation
+page_title: RadAutoCompleteTextView Suggest Modes | Telerik UI for Xamarin.Android Documentation
 description: This page is dedicated to the Suggest Modes provided by the RadAutoCompleteTextView control.
 slug: autocomplete-suggest-modes
 tags: radautocompletetextview, suggestmodes

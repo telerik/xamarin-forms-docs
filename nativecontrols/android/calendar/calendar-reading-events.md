@@ -1,6 +1,6 @@
 ---
 title: Reading events
-page_title: RadCalendarView Reading Events  | Telerik UI for Android Documentation
+page_title: RadCalendarView Reading Events  | Telerik UI for Xamarin.Android Documentation
 description: A page which explains how to integrate the reading of events in RadCalendarView for Android.
 slug: calendar-reading-events
 tags: radcalendarview, calendar, events, reading

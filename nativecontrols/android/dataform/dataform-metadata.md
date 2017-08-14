@@ -1,6 +1,6 @@
 ---
 title: Metadata
-page_title: RadDataForm Metadata  | Telerik UI for Android Documentation
+page_title: RadDataForm Metadata  | Telerik UI for Xamarin.Android Documentation
 description: This page describes how to use the data form metadata.
 slug: data-form-metadata
 tags: dataform, data, form, metadata

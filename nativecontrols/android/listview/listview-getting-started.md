@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: RadListView Getting Started | Telerik UI for Android Documentation
+page_title: RadListView Getting Started | Telerik UI for Xamarin.Android Documentation
 description: A getting started page of RadListView for Android. This article explains what are the steps to create a RadListView instance from scratch.
 slug: listview-gettingstarted
 tags: radlistview, gettingstarted, listview, list

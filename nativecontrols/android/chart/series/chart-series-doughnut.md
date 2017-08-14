@@ -1,6 +1,6 @@
 ---
 title: DoughnutSeries
-page_title: DoughnutSeries | RadChartView | Telerik UI for Android Documentation
+page_title: DoughnutSeries | RadChartView | Telerik UI for Xamarin.Android Documentation
 description: A page desribing the DoughnutSeries in RadChartView for Android. This article explains the most important things you need to know before using DoughnutSeries.
 slug: chart-series-doughnut
 tags: radchartview, doughnutseries, doughnut, chart

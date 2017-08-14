@@ -1,6 +1,6 @@
 ---
 title: Selection
-page_title: RadCalendarView Selection  | Telerik UI for Android Documentation
+page_title: RadCalendarView Selection  | Telerik UI for Xamarin.Android Documentation
 description: This page explains how to use RadCalendarView for Android to select dates.
 slug: calendar-selection
 tags: radcalendarview, calendar, selection

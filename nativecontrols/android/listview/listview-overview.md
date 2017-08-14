@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: RadListView Overview  | Telerik UI for Android Documentation
+page_title: RadListView Overview  | Telerik UI for Xamarin.Android Documentation
 description: An overview page of RadListView for Android. This article explains the most important things you need to know before using RadListView.
 slug: android-listview-overview
 tags: listview, chart, overview, list

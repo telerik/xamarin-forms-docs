@@ -1,6 +1,6 @@
 ---
 title: Animations
-page_title: RadGaugeView Animations | Telerik UI for Android Documentation
+page_title: RadGaugeView Animations | Telerik UI for Xamarin.Android Documentation
 description: This article explains how to use animations with **RadGaugeView**
 slug: gauge-animations
 tags: radgaugeview, gauge, animations

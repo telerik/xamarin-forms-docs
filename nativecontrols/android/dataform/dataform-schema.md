@@ -1,6 +1,6 @@
 ---
 title: Schema
-page_title: RadDataForm Schema  | Telerik UI for Android Documentation
+page_title: RadDataForm Schema  | Telerik UI for Xamarin.Android Documentation
 description: This page describes how to use the data form schema.
 slug: data-form-schema
 tags: dataform, data, form, schema

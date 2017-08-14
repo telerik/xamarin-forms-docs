@@ -1,6 +1,6 @@
 ---
 title: Features
-page_title: RadSideDrawer Features | Telerik UI for Android Documentation
+page_title: RadSideDrawer Features | Telerik UI for Xamarin.Android Documentation
 description: This article walks developers through the complete RadSideDrawer api.
 slug: sidedrawer-features
 tags: radsidedrawer, features, drawer

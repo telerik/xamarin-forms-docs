@@ -1,16 +1,16 @@
 ---
 title: Overview
 position: .1
-page_title: Telerik UI for iOS Documentation
+page_title: Telerik UI for Xamarin.iOS Documentation
 ---
 
-## What is Telerik UI for iOS
+## What is Telerik UI for Xamarin.iOS
 
-**Telerik UI for iOS** suite delivers functionalities, built with performance in mind, that allow you to build unique and visually stunning iOS applications. The methods and properties are self-explanatory, the architecture is easy to follow. Our controls give you great customization flexibility to accommodate as many app scenarios as possible. The controls provided by the **Telerik UI for iOS** are used as basis for the iOS controls from **Telerik UI for Xamarin** suite.  
+**Telerik UI for Xamarin.iOS** suite delivers functionalities, built with performance in mind, that allow you to build unique and visually stunning iOS applications. The methods and properties are self-explanatory, the architecture is easy to follow. Our controls give you great customization flexibility to accommodate as many app scenarios as possible. 
 
 ## Examples
 
-Here are some of the available **UI for iOS** components at a glance:
+Here are some of the available **UI for Xamarin.iOS** components at a glance:
 
 **TKAlert** is a highly customizable alert view component that offers different predefined animations, easy to use Block API, many customization options. 
 

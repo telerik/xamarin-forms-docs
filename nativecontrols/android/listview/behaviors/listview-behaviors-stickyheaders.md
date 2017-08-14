@@ -1,6 +1,6 @@
 ---
 title: Sticky Headers
-page_title: Sticky Header Behavior | Telerik UI for Android Documentation
+page_title: Sticky Header Behavior | Telerik UI for Xamarin.Android Documentation
 description: A help topic about StickyHeaderBehavior in RadListView for Android.
 slug: listview-behaviors-stickyheaders
 tags: radlistview, behaviors, stickyheaders, list, listview

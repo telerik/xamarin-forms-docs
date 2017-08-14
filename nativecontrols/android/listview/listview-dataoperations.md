@@ -1,6 +1,6 @@
 ---
 title: Group, Sort and Filter
-page_title: ListView Data Operations | Telerik UI for Android Documentation
+page_title: ListView Data Operations | Telerik UI for Xamarin.Android Documentation
 description: An article about the grouping, sorting and filtering in RadListView for Android. This article explains how to use descriptors to reshape your data by sorting, filtering or grouping.
 slug: listview-data
 tags: radlistview, data, list, group, sort, filter

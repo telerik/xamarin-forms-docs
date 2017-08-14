@@ -1,6 +1,6 @@
 ---
 title: Legend
-page_title: RadChartView Legend | Telerik UI for Android Documentation
+page_title: RadChartView Legend | Telerik UI for Xamarin.Android Documentation
 description: An article about the legend in RadChartView for Android. This article explains how to add legend to your RadChartView and how to accosiate it to the different visualizations.
 slug: chart-legend
 tags: radchartview, legend, chart

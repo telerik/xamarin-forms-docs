@@ -1,6 +1,6 @@
 ---
 title: Collapsible Groups
-page_title: Collapsible Groups Behavior | Telerik UI for Android Documentation
+page_title: Collapsible Groups Behavior | Telerik UI for Xamarin.Android Documentation
 description: A help topic about CollapsibleGroupsBehavior in RadListView for Android.
 slug: listview-behaviors-collapsiblegroups
 tags: radlistview, behaviors, collapsiblegroups, list, listview

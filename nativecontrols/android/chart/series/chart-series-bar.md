@@ -1,6 +1,6 @@
 ---
 title: BarSeries
-page_title: BarSeries | RadChartView | Telerik UI for Android Documentation
+page_title: BarSeries | RadChartView | Telerik UI for Xamarin.Android Documentation
 description: A page desribing the BarSeries in RadChartView for Android. This article explains the most important things you need to know before using BarSeries.
 slug: chart-series-bar
 tags: radchartview, barseries, bar, chart

@@ -1,6 +1,6 @@
 ---
 title: Listening for changes
-page_title: RadTabView Listeners | Telerik UI for Android Documentation
+page_title: RadTabView Listeners | Telerik UI for Xamarin.Android Documentation
 description: This article shows how to listen for changes in RadTabView.
 slug: tabview-change-listeners
 tags: radtabview, change, tabs, notification

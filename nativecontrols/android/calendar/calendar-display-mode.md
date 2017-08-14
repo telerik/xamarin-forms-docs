@@ -1,6 +1,6 @@
 ---
 title: Display Mode
-page_title: RadCalendarView DisplayMode  | Telerik UI for Android Documentation
+page_title: RadCalendarView DisplayMode  | Telerik UI for Xamarin.Android Documentation
 description: This page explains how to change the display mode of RadCalendarView for Android.
 slug: calendar-displaymode
 tags: radcalendarview, calendar, displaymode

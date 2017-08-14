@@ -1,6 +1,6 @@
 ---
 title: Group Layout
-page_title: RadDataForm Group Layout | Telerik UI for Android Documentation
+page_title: RadDataForm Group Layout | Telerik UI for Xamarin.Android Documentation
 description: Explains how to use and customize the data form group layout.
 slug: data-form-group-layout
 tags: dataform, data, form, layout

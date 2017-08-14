@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: RadGaugeView Getting Started | Telerik UI for Android Documentation
+page_title: RadGaugeView Getting Started | Telerik UI for Xamarin.Android Documentation
 description: A getting started page for RadGaugeView for Android. This article explains what are the steps to create a RadGaugeView instance from scratch.
 slug: gauge-gettingstarted
 tags: radgaugeview, gettingstarted, gauge
@@ -14,7 +14,7 @@ This article demonstrates how to setup an instance of **RadGaugeView** from scra
 
 #Initialization
 
-In order to use **RadGuageView** you need to add reference to the **Gauges** library which is part of Telerik UI for Android.
+In order to use **RadGuageView** you need to add reference to the **Gauges** library which is part of Telerik UI for Xamarin.Android.
 
 After your project is set up referencing the library you are ready to add a gauge to your activity. **RadGaugeView** is a base class for TelerikUI gauges so you need to instanciate a subclass. The most common way is to describe the gauge in the XML layout of your activity.
 

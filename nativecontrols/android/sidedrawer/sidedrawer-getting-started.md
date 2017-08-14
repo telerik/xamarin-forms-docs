@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: RadSideDrawer Getting Started | Telerik UI for Android Documentation
+page_title: RadSideDrawer Getting Started | Telerik UI for Xamarin.Android Documentation
 description: A getting started page of RadSideDrawer for Android. This article explains what are the steps to create a RadSideDrawer instance from scratch.
 slug: sidedrawer-gettingstarted
 tags: radsidedrawer, gettingstarted, drawer

@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: RadDataSource Getting Started | Telerik UI for Android Documentation
+page_title: RadDataSource Getting Started | Telerik UI for Xamarin.Android Documentation
 description: A simple example of how to get up and running with RadDataSource.
 slug: datasource-getting-started
 tags: raddatasource, gettingstarted, datasource

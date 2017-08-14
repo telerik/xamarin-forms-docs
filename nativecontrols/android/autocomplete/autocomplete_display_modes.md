@@ -1,6 +1,6 @@
 ---
 title: Display modes
-page_title: RadAutoCompleteTextView Display Modes | Telerik UI for Android Documentation
+page_title: RadAutoCompleteTextView Display Modes | Telerik UI for Xamarin.Android Documentation
 description: This page is dedicated to the Display Modes provided by the RadAutoCompleteTextView control.
 slug: autocomplete-display-modes
 tags: radautocompletetextview, displaymodes

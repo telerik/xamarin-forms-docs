@@ -1,6 +1,6 @@
 ---
 title: Swipe to Execute
-page_title: Swipe to Execute Behavior | Telerik UI for Android Documentation
+page_title: Swipe to Execute Behavior | Telerik UI for Xamarin.Android Documentation
 description: A help topic about SwipeExecuteBehavior in RadListView for Android.
 slug: listview-behaviors-swipeexecute
 tags: radlistview, behaviors, swipeexecute, list, listview

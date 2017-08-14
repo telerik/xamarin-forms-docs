@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: RadScrollView Getting Started | Telerik UI for Android Documentation
+page_title: RadScrollView Getting Started | Telerik UI for Xamarin.Android Documentation
 description: An getting started page of RadScrollView for Android. This article provides the basics you need to know to be able to integrate the RadScrollView component into your Android app.
 slug: scrollview-gettingstarted
 tags: radscrollview, scrollview, getting started

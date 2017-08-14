@@ -1,6 +1,6 @@
 ---
 title: AreaSeries
-page_title: AreaSeries | RadChartView | Telerik UI for Android Documentation
+page_title: AreaSeries | RadChartView | Telerik UI for Xamarin.Android Documentation
 description: A page desribing the AreaSeries in RadChartView for Android. This article explains the most important things you need to know before using AreaSeries.
 slug: chart-series-area
 tags: radchartview, areaseries, area, chart

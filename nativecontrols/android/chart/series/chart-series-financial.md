@@ -1,6 +1,6 @@
 ---
 title: FinancialSeries
-page_title: Financial Series | RadChartView | Telerik UI for Android Documentation
+page_title: Financial Series | RadChartView | Telerik UI for Xamarin.Android Documentation
 description: A page desribing the OHLC and Candlestick series in RadChartView for Android.
 slug: chart-series-financial
 tags: radchartview, ohlc, candlestick, chart, series

@@ -1,6 +1,6 @@
 ---
 title: Logarithmic
-page_title: LogarithmicAxis | RadChartView | Telerik UI for Android Documentation
+page_title: LogarithmicAxis | RadChartView | Telerik UI for Xamarin.Android Documentation
 description: A page desribing the LogarithmicAxis in RadChartView for Android. This article explains the most important things you need to know before using Value axes.
 slug: chart-axes-logarithmic
 tags: radchartview, valueaxes, value, chart, logarithmic

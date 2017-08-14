@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: RadFeedback Localization  | Telerik UI for Android Documentation
+page_title: RadFeedback Localization  | Telerik UI for Xamarin.Android Documentation
 description: This article explains how to localize strings used throughout the AppFeedback component.
 slug: feedback-localization
 tags: radfeedback, feedback, localization

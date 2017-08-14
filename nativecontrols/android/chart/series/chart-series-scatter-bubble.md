@@ -1,6 +1,6 @@
 ---
 title: ScatterBubbleSeries
-page_title: ScatterBubbleSeries | RadChartView | Telerik UI for Android Documentation
+page_title: ScatterBubbleSeries | RadChartView | Telerik UI for Xamarin.Android Documentation
 description: A page desribing the ScatterBubbleSeries in RadChartView for Android. This article explains the most important things you need to know before using ScatterBubbleSeries.
 slug: chart-series-scatter-bubble
 tags: radchartview, scatterseries, line, chart

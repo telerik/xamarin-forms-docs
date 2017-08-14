@@ -1,6 +1,6 @@
 ---
 title: Scales
-page_title: RadGaugeView Scales | Telerik UI for Android Documentation
+page_title: RadGaugeView Scales | Telerik UI for Xamarin.Android Documentation
 description: This article explains how to create and configure **GaugeScale** instances.
 slug: gauge-scales
 tags: radgaugeview, gauge, scale

@@ -1,6 +1,6 @@
 ---
 title: Animations
-page_title: RadChartView Animations | Telerik UI for Android Documentation
+page_title: RadChartView Animations | Telerik UI for Xamarin.Android Documentation
 description: An article about the animations in RadChartView for Android. This article explains how to use the chart animations.
 slug: chart-animations
 tags: radchartview, animations, chart

@@ -1,6 +1,6 @@
 ---
 title: DateTimeCategorical
-page_title: DateTimeCategoricalAxis | RadChartView | Telerik UI for Android Documentation
+page_title: DateTimeCategoricalAxis | RadChartView | Telerik UI for Xamarin.Android Documentation
 description: A page desribing the DateTimeCategoricalAxis in RadChartView for Android. This article explains the most important things you need to know before using Category axes.
 slug: chart-axes-datetimecategorical
 tags: radchartview, categoryaxes, category, chart, datetimecategorical

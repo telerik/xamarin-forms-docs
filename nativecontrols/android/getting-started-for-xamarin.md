@@ -1,7 +1,7 @@
 ---
 title: Getting Started for Xamarin
-page_title: Getting Started for Xamarin | Telerik UI for Android Documentation
-description: An article which explains how to start using Telerik UI for Android in Xamarin.
+page_title: Getting Started for Xamarin | Telerik UI for Xamarin.Android Documentation
+description: An article which explains how to start using Telerik UI for Xamarin.Android in Xamarin.
 slug: getting-started-xamarin
 tags: getting-started, xamarin
 publish: true
@@ -10,10 +10,10 @@ position: 1
 
 # Getting Started for Xamarin
 
-This article explains how to start using **Telerik UI for Android** in **Xamarin**.
+This article explains how to start using **Telerik UI for Xamarin.Android** in **Xamarin**.
 
 ## Overview
-The **Telerik UI for Android** Xamarin distribution comes as a set of **Dynamic Link Libraries**. To be able to use Telerik UI for Android in Xamarin, you will need to complete the following steps:
+The **Telerik UI for Xamarin.Android** Xamarin distribution comes as a set of **Dynamic Link Libraries**. To be able to use Telerik UI for Xamarin.Android in Xamarin, you will need to complete the following steps:
 
 1. Add references to the libraries inside your project.
 2. Add the appcompat and the recyclerview packages using the NuGet.
@@ -38,7 +38,7 @@ The **Telerik UI for Android** Xamarin distribution comes as a set of **Dynamic 
 	* Xamarin Support Library v8 RenderScript (required by the Primitives assembly)
 	![TelerikUI-Installation-Xamarin-Add-NuGet-Packages](images-download-deployment/installation-xamarin-screen-3.png "Add packages.")
 
-5. Your solution is now ready to use Telerik UI for Android.
+5. Your solution is now ready to use Telerik UI for Xamarin.Android.
 ![TelerikUI-Installation-Xamarin-User-Project](images-download-deployment/installation-xamarin-screen-4.png "Integration complete.")
 
 ## Opening the Examples solution

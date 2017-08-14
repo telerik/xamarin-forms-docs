@@ -1,6 +1,6 @@
 ---
 title: Pan And Zoom Behavior
-page_title: Pan And Zoom Behavior  | Telerik UI for Android Documentation
+page_title: Pan And Zoom Behavior  | Telerik UI for Xamarin.Android Documentation
 description: A page about the pan and zoom behavior in RadChartView for Android. This article explains how to use the pan and zoom behavior in RadChartView.
 slug: chart-behaviors-panzoom
 tags: radchartview, behaviors, pan, zoom, chart

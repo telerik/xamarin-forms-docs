@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: RadCalendarView Getting Started | Telerik UI for Android Documentation
+page_title: RadCalendarView Getting Started | Telerik UI for Xamarin.Android Documentation
 description: A getting started page of RadCalendarView for Android. This article explains what are the step to create a RadCalendarView instance from scratch.
 slug: calendar-gettingstarted
 tags: radcalendarview, gettingstarted, calendar

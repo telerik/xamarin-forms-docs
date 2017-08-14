@@ -1,6 +1,6 @@
 ---
 title: SplineSeries
-page_title: SplineSeries | RadChartView | Telerik UI for Android Documentation
+page_title: SplineSeries | RadChartView | Telerik UI for Xamarin.Android Documentation
 description: A page desribing the SplineSeries in RadChartView for Android. This article explains the most important things you need to know before using SplineSeries.
 slug: chart-series-spline
 tags: radchartview, splineseries, spline, chart

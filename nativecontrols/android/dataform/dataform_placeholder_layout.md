@@ -1,6 +1,6 @@
 ---
 title: Placeholder Layout
-page_title: RadDataForm Placeholder Layout | Telerik UI for Android Documentation
+page_title: RadDataForm Placeholder Layout | Telerik UI for Xamarin.Android Documentation
 description: Explains how to use and customize the data form placeholder layout.
 slug: data-form-placeholder-layout
 tags: dataform, data, form, layout

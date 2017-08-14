@@ -1,6 +1,6 @@
 ---
 title: Customizations
-page_title: RadCalendarView Customizations  | Telerik UI for Android Documentation
+page_title: RadCalendarView Customizations  | Telerik UI for Xamarin.Android Documentation
 description: A page which contains information about how to customize the appearance of RadCalendarView for Android.
 slug: calendar-customizations
 tags: radcalendarview, calendar, customizations

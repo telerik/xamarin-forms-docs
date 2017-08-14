@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: RadNumberPicker Getting Started  | Telerik UI for Android Documentation
+page_title: RadNumberPicker Getting Started  | Telerik UI for Xamarin.Android Documentation
 description: This article explains how to start using RadNumberPicker.
 slug: number-picker-getting-started
 tags: numberpicker, number, picker, overview

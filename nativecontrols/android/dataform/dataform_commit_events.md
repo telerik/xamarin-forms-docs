@@ -1,6 +1,6 @@
 ---
 title: Commit Events
-page_title: RadDataForm Commit Events | Telerik UI for Android Documentation
+page_title: RadDataForm Commit Events | Telerik UI for Xamarin.Android Documentation
 description: Explains how to add events for commit operations.
 slug: data-form-commit-events
 tags: dataform, data, form, commit, events

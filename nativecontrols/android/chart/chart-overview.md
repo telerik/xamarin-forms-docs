@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: RadChartView Overview  | Telerik UI for Android Documentation
+page_title: RadChartView Overview  | Telerik UI for Xamarin.Android Documentation
 description: An overview page of RadChartView for Android. This article explains the most important things you need to know before using RadChartView.
 slug: android-chart-overview
 tags: radchartview, chart, overview

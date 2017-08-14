@@ -1,6 +1,6 @@
 ---
 title: Displaying events
-page_title: RadCalendarView Displaying Events  | Telerik UI for Android Documentation
+page_title: RadCalendarView Displaying Events  | Telerik UI for Xamarin.Android Documentation
 description: A page which explains how to display the events in RadCalendarView for Android.
 slug: calendar-displaying-events
 tags: radcalendarview, calendar, events, displaying

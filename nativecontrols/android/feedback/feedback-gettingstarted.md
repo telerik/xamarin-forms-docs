@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: RadFeedback Getting Started | Telerik UI for Android Documentation
+page_title: RadFeedback Getting Started | Telerik UI for Xamarin.Android Documentation
 description: An getting started page of RadFeedback for Android. This article provides the basics you need to know to be able to integrate the RadFeedback component into your Android app.
 slug: feedback-gettingstarted
 position: 1
@@ -10,7 +10,7 @@ publish: true
 
 ## RadFeedback: Getting started
 ### Finding the needed packages
-**RadFeedback** is distributed in a separate library as a part of the Telerik UI for Android suite. If you are using Eclipse as your development environment you can find the component in the **\Controls\Eclipse\Feedback** folder part of the main folder of your Telerik UI for Android installation. If you are using **Android Studio** as your development environment you can find an _.aar_ package in the **\Controls\Android Studio** folder.
+**RadFeedback** is distributed in a separate library as a part of the Telerik UI for Xamarin.Android suite. If you are using Eclipse as your development environment you can find the component in the **\Controls\Eclipse\Feedback** folder part of the main folder of your Telerik UI for Xamarin.Android installation. If you are using **Android Studio** as your development environment you can find an _.aar_ package in the **\Controls\Android Studio** folder.
 ### Getting started with Xamarin Studio
 **RadFeedback** is distributed as part Telerik UI for Xamarin as well. To be able to use the component in your Android Xamarin application, you will need to reference the following wrapper DLLs:
 

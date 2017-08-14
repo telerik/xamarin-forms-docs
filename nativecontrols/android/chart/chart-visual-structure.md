@@ -1,6 +1,6 @@
 ---
 title: Visual Structure
-page_title: RadChartView Visual Structure | Telerik UI for Android Documentation
+page_title: RadChartView Visual Structure | Telerik UI for Xamarin.Android Documentation
 description: A page that explains the visual structure of RadChartView for Android.
 slug: chart-visualstructure
 tags: radchartview, visualstructure, chart

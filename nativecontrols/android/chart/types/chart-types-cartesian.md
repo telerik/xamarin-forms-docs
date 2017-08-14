@@ -1,6 +1,6 @@
 ---
 title: Cartesian
-page_title: RadCartesianChartView  | Telerik UI for Android Documentation
+page_title: RadCartesianChartView  | Telerik UI for Xamarin.Android Documentation
 description: An overview page of RadCartesianChartView for Android. This article explains the most important things you need to know before using RadCartesianChartView.
 slug: chart-cartesian
 tags: radchartview, radcartesianchartview, chart, cartesian

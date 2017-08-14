@@ -1,6 +1,6 @@
 ---
 title: Gestures and Transitions
-page_title: RadCalendarView Gestures and Transitions  | Telerik UI for Android Documentation
+page_title: RadCalendarView Gestures and Transitions  | Telerik UI for Xamarin.Android Documentation
 description: A page which contains information about gestures handled by RadCalendarView for Android. The article also explains how to animate the changes in the display date and display mode.
 slug: calendar-gesturestransitions
 tags: radcalendarview, calendar, transitions, gestures

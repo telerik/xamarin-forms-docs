@@ -1,6 +1,6 @@
 ---
 title: Other Features
-page_title: RadListView Other Features | Telerik UI for Android Documentation
+page_title: RadListView Other Features | Telerik UI for Xamarin.Android Documentation
 description: An article about the other features in RadListView for Android.
 slug: listview-other
 tags: radlistview, features, list

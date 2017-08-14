@@ -1,6 +1,6 @@
 ---
 title: Indicators
-page_title: RadGaugeView Indicators | Telerik UI for Android Documentation
+page_title: RadGaugeView Indicators | Telerik UI for Xamarin.Android Documentation
 description: This article explains how to create and configure **GaugeIndicator** instances.
 slug: gauge-indicators
 tags: radgaugeview, gauge, indicator

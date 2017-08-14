@@ -1,6 +1,6 @@
 ---
 title: Features
-page_title: RadDataForm Features | Telerik UI for Android Documentation
+page_title: RadDataForm Features | Telerik UI for Xamarin.Android Documentation
 description: Describes what features RadDataForm provides.
 slug: data-form-features
 tags: dataform, data, form, features

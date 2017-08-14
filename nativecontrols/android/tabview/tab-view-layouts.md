@@ -1,6 +1,6 @@
 ---
 title: Layouts
-page_title: RadTabView Layouts | Telerik UI for Android Documentation
+page_title: RadTabView Layouts | Telerik UI for Xamarin.Android Documentation
 description: This article shows how to modify the layout of the tabs in the tab strip.
 slug: tabview-layouts
 tags: radtabview, layout, tabs

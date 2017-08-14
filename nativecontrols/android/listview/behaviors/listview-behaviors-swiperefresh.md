@@ -1,6 +1,6 @@
 ---
 title: Swipe to Refresh
-page_title: Swipe to Refresh Behavior | Telerik UI for Android Documentation
+page_title: Swipe to Refresh Behavior | Telerik UI for Xamarin.Android Documentation
 description: A help topic about SwipeRefreshBehavior in RadListView for Android.
 slug: listview-behaviors-swiperefresh
 tags: radlistview, behaviors, swiperefresh, list, listview

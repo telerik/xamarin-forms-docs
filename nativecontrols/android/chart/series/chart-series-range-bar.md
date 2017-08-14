@@ -1,6 +1,6 @@
 ---
 title: RangeBarSeries
-page_title: RangeBarSeries | RadChartView | Telerik UI for Android Documentation
+page_title: RangeBarSeries | RadChartView | Telerik UI for Xamarin.Android Documentation
 description: A page desribing the RangeBarSeries in RadChartView for Android. This article explains the most important things you need to know before using RangeBarSeries.
 slug: chart-series-rangebar
 tags: radchartview, rangebarseries, bar, range, chart

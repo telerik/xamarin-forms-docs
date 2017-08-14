@@ -32,7 +32,7 @@ TKAlert supports tree predefined show/dismiss animations:
 
 </table>
 
-> The animated images above are just for illustration purposes. They are missing some fps quality because of the image processing software used to create these images. In order to get a real understanding of how the animations look and feel, check the Demo application that ships with the UI for iOS suite.
+> The animated images above are just for illustration purposes. They are missing some fps quality because of the image processing software used to create these images. In order to get a real understanding of how the animations look and feel, check the Demo application that ships with the UI for Xamarin suite.
 
 These animations can be applied when TKAlert is being shown or dismissed.
 

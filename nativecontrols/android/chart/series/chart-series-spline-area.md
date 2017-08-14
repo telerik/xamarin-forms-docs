@@ -1,6 +1,6 @@
 ---
 title: SplineAreaSeries
-page_title: SplineAreaSeries | RadChartView | Telerik UI for Android Documentation
+page_title: SplineAreaSeries | RadChartView | Telerik UI for Xamarin.Android Documentation
 description: A page desribing the SplineAreaSeries in RadChartView for Android. This article explains the most important things you need to know before using SplineAreaSeries.
 slug: chart-series-splinearea
 tags: radchartview, splineareaseries, spline, area, chart

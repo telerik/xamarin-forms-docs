@@ -1,6 +1,6 @@
 ---
 title: Customizing Validation
-page_title: RadDataForm Customizing Validation | Telerik UI for Android Documentation
+page_title: RadDataForm Customizing Validation | Telerik UI for Xamarin.Android Documentation
 description: Explains how to visually customize the data form validation.
 slug: data-form-customizing-validation
 tags: dataform, data, form, validation

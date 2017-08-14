@@ -1,6 +1,6 @@
 ---
 title: Completion modes
-page_title: RadAutoCompleteTextView Completion Modes | Telerik UI for Android Documentation
+page_title: RadAutoCompleteTextView Completion Modes | Telerik UI for Xamarin.Android Documentation
 description: This page is dedicated to the Completion Modes provided by the RadAutoCompleteTextView control.
 slug: autocomplete-suggest-modes
 tags: radautocompletetextview, completionmodes

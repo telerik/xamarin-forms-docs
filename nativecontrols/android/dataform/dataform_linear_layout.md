@@ -1,6 +1,6 @@
 ---
 title: Linear Layout
-page_title: RadDataForm Linear Layout | Telerik UI for Android Documentation
+page_title: RadDataForm Linear Layout | Telerik UI for Xamarin.Android Documentation
 description: Explains how to use and customize the data form linear layout.
 slug: data-form-linear-layout
 tags: dataform, data, form, layout

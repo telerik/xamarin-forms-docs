@@ -1,6 +1,6 @@
 ---
 title: Layouts
-page_title: RadListView Layouts | Telerik UI for Android Documentation
+page_title: RadListView Layouts | Telerik UI for Xamarin.Android Documentation
 description: An article about the layouts in RadListView for Android. This article demonstrates the different layouts that can be used with RadListView.
 slug: listview-layouts
 tags: radlistview, layouts, list

@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: RadListView Behaviors  | Telerik UI for Android Documentation
+page_title: RadListView Behaviors  | Telerik UI for Xamarin.Android Documentation
 description: A page about the behaviors in RadListView for Android. This article explains how to use the behaviors supported in RadListView.
 slug: listview-behaviors-overview
 tags: radlistview, behaviors, overview, list, listview

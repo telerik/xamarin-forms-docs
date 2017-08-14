@@ -1,6 +1,6 @@
 ---
 title: Tabs position
-page_title: RadTabView Tabs Position | Telerik UI for Android Documentation
+page_title: RadTabView Tabs Position | Telerik UI for Xamarin.Android Documentation
 description: This article shows how to customize the location of the tab strip.
 slug: tabview-tabs-position
 tags: radtabview, init, tabs

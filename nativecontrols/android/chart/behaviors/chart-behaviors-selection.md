@@ -1,6 +1,6 @@
 ---
 title: Selection Behavior
-page_title: Selection Behavior | Telerik UI for Android Documentation
+page_title: Selection Behavior | Telerik UI for Xamarin.Android Documentation
 description: A help topic about ChartSelectionBehavior in RadChartView for Android.
 slug: chart-behaviors-selection
 tags: radchartview, behaviors, selection

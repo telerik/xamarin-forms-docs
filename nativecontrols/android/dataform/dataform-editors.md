@@ -1,6 +1,6 @@
 ---
 title: Editors
-page_title: RadDataForm Editors  | Telerik UI for Android Documentation
+page_title: RadDataForm Editors  | Telerik UI for Xamarin.Android Documentation
 description: Explains how to use the built-in editors for RadDataForm
 slug: data-form-editors
 tags: dataform, data, form, editors

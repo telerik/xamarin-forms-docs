@@ -1,6 +1,6 @@
 ---
 title: LineSeries
-page_title: LineSeries | RadChartView | Telerik UI for Android Documentation
+page_title: LineSeries | RadChartView | Telerik UI for Xamarin.Android Documentation
 description: A page desribing the LineSeries in RadChartView for Android. This article explains the most important things you need to know before using LineSeries.
 slug: chart-series-line
 tags: radchartview, lineseries, line, chart

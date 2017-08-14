@@ -1,6 +1,6 @@
 ---
 title: Palettes
-page_title: RadChartView Palettes | Telerik UI for Android Documentation
+page_title: RadChartView Palettes | Telerik UI for Xamarin.Android Documentation
 description: An article about the palettes in RadChartView for Android. This article explains how to use the predefined palettes in RadChartView and how to create custom palettes.
 slug: chart-palettes
 tags: radchartview, palettes, chart

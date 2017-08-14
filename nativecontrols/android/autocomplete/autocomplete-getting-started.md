@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: RadAutoCompleteTextView Getting Started | Telerik UI for Android Documentation
+page_title: RadAutoCompleteTextView Getting Started | Telerik UI for Xamarin.Android Documentation
 description: A getting started page for RadAutoCompleteTextView for Android. This article explains what are the steps to create a RadAutoCompleteTextView instance from scratch.
 slug: autocomplete-gettingstarted
 tags: radautocompletetextview, gettingstarted, autocomplete, list
@@ -13,7 +13,7 @@ publish: true
 In this article, you will learn how to initialize **RadAutoCompleteTextView** and use it with it's basic configuration. 
 
 # Initialization
-In order to use **RadAutoCompleteTextView** you need to add references to the **Input**, **Common**, **List** and **Primitives** libraries which are part of Telerik UI for Android.
+In order to use **RadAutoCompleteTextView** you need to add references to the **Input**, **Common**, **List** and **Primitives** libraries which are part of Telerik UI for Xamarin.Android.
 
 After your project is set up and ready to use TelerikUI, you need to create an instance of **RadAutoCompleteTextView**.
 The common way to do this is to create an RauAutoCompleteTextView in the XML layout of your activity.

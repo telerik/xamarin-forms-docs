@@ -1,6 +1,6 @@
 ---
 title: PieSeries
-page_title: PieSeries | RadChartView | Telerik UI for Android Documentation
+page_title: PieSeries | RadChartView | Telerik UI for Xamarin.Android Documentation
 description: A page desribing the PieSeries in RadChartView for Android. This article explains the most important things you need to know before using PieSeries.
 slug: chart-series-pie
 tags: radchartview, pieseries, pie, chart

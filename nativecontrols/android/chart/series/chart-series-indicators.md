@@ -1,6 +1,6 @@
 ---
 title: IndicatorSeries
-page_title: Indicators | Financial | RadChartView | Telerik UI for Android Documentation
+page_title: Indicators | Financial | RadChartView | Telerik UI for Xamarin.Android Documentation
 description: A page describing the financial indicators in the Telerik RadChart for Android UI. This article is meant to serve as a starting point for learning the basics of the indicators and how to use them in the RadChart.
 slug: chart-series-indicators
 tags: radchartview, indicatorseries, indicator, chart

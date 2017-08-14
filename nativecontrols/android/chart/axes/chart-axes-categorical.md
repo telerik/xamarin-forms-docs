@@ -1,6 +1,6 @@
 ---
 title: Categorical
-page_title: CategoricalAxis | RadChartView | Telerik UI for Android Documentation
+page_title: CategoricalAxis | RadChartView | Telerik UI for Xamarin.Android Documentation
 description: A page desribing the CategoricalAxis in RadChartView for Android. This article explains the most important things you need to know before using Category axes.
 slug: chart-axes-categorical
 tags: radchartview, categoryaxes, category, chart, categorical

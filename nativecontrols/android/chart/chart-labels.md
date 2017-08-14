@@ -1,6 +1,6 @@
 ---
 title: Labels
-page_title: RadChartView Labels | Telerik UI for Android Documentation
+page_title: RadChartView Labels | Telerik UI for Xamarin.Android Documentation
 description: An article about the labels in RadChartView for Android. This article explains what are the types of labels and how they can be customized.
 slug: chart-labels
 tags: radchartview, labels, chart

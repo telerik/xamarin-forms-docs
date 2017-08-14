@@ -1,6 +1,6 @@
 ---
 title: Disabled Dates
-page_title: RadCalendarView Disabled Dates  | Telerik UI for Android Documentation
+page_title: RadCalendarView Disabled Dates  | Telerik UI for Xamarin.Android Documentation
 description: A page which explains how to restrict the dates that are visible and/or selectable in RadCalendarView for Android.
 slug: calendar-disableddates
 tags: radcalendarview, calendar, disableddates

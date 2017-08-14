@@ -1,6 +1,6 @@
 ---
 title: Load on Demand
-page_title: Load on Demand Behavior | Telerik UI for Android Documentation
+page_title: Load on Demand Behavior | Telerik UI for Xamarin.Android Documentation
 description: A help topic about LoadOnDemandBehavior in RadListView for Android.
 slug: listview-behaviors-loadondemand
 tags: radlistview, behaviors, loadondemand, list, listview

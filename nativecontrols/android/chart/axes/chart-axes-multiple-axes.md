@@ -1,6 +1,6 @@
 ---
 title: Multiple Axes
-page_title: Multiple Axes | RadChartView | Telerik UI for Android Documentation
+page_title: Multiple Axes | RadChartView | Telerik UI for Xamarin.Android Documentation
 description: A page desribing how to display multiple axes in a single instance of RadChartView for Android.
 slug: chart-axes-multiple
 tags: radchartview, multipleaxes, axes, chart

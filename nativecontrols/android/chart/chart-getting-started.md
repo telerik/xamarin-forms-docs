@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: RadChartView Getting Started | Telerik UI for Android Documentation
+page_title: RadChartView Getting Started | Telerik UI for Xamarin.Android Documentation
 description: A getting started page of RadChartView for Android. This article explains what are the step to create a RadChartView instance from scratch.
 slug: chart-gettingstarted
 tags: radchartview, gettingstarted, chart

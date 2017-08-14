@@ -1,6 +1,6 @@
 ---
 title: Item Animation
-page_title: RadListView Item Animation | Telerik UI for Android Documentation
+page_title: RadListView Item Animation | Telerik UI for Xamarin.Android Documentation
 description: An article about the item animations in RadListView for Android. This article demonstrates the different animations that can be used with RadListView.
 slug: listview-itemanimations
 tags: radlistview, animations, list

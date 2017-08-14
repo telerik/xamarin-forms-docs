@@ -1,6 +1,6 @@
 ---
 title: Item Reorder
-page_title: Item Reorder Behavior | Telerik UI for Android Documentation
+page_title: Item Reorder Behavior | Telerik UI for Xamarin.Android Documentation
 description: A help topic about ItemReorderBehavior in RadListView for Android.
 slug: listview-behaviors-itemreorder
 tags: radlistview, behaviors, itemreorder, list, listview

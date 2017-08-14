@@ -1,6 +1,6 @@
 ---
 title: Swipe Actions
-page_title: Swipe Actions Behavior | Telerik UI for Android Documentation
+page_title: Swipe Actions Behavior | Telerik UI for Xamarin.Android Documentation
 description: A help topic about SwipeActionsBehavior in RadListView for Android.
 slug: listview-behaviors-swipeactions
 tags: radlistview, behaviors, swipeexecute, list, listview

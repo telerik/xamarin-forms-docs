@@ -1,6 +1,6 @@
 ---
 title: Using Remote Data
-page_title: RadAutoCompleteTextView Using Remote Data | Telerik UI for Android Documentation
+page_title: RadAutoCompleteTextView Using Remote Data | Telerik UI for Xamarin.Android Documentation
 description: This article explains how to implement remote filtering of suggestions with RadAutoCompleteTextView.
 slug: autocomplete-usingremotedata
 tags: radautocompletetextview, remotedata, autocomplete, remote

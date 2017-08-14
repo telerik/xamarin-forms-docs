@@ -1,6 +1,6 @@
 ---
 title: Selection
-page_title: Selection Behavior | Telerik UI for Android Documentation
+page_title: Selection Behavior | Telerik UI for Xamarin.Android Documentation
 description: A help topic about SelectionBehavior in RadListView for Android.
 slug: listview-behaviors-selection
 tags: radlistview, behaviors, selection, list, listview

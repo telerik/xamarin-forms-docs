@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Axes | RadChartView | Telerik UI for Android Documentation
+page_title: Axes | RadChartView | Telerik UI for Xamarin.Android Documentation
 description: A page desribing the types of axes in RadChartView for Android. This article explains the most important things you need to know about the different axes types.
 slug: chart-axes-overview
 tags: radchartview, axes, overview, chart

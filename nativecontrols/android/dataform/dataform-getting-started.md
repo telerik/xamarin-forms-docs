@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: RadDataForm Getting Started  | Telerik UI for Android Documentation
+page_title: RadDataForm Getting Started  | Telerik UI for Xamarin.Android Documentation
 description: Describes how to start using RadDataForm.
 slug: data-form-getting-started
 tags: dataform, data, form, getting-started

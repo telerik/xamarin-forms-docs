@@ -1,6 +1,6 @@
 ---
 title: Customizing Editors
-page_title: RadDataForm Customizing Editors | Telerik UI for Android Documentation
+page_title: RadDataForm Customizing Editors | Telerik UI for Xamarin.Android Documentation
 description: Explains how to visually customize the data form editors.
 slug: data-form-customizing-editors
 tags: dataform, data, form, editors

@@ -25,4 +25,4 @@ slug: segmentedcontrol-overview
 ### See Also
 
 - [Project Wizard]({% slug project-wizard %})
-- [Getting Started]({% slug busyindicator-getting-started %})
+- [Getting Started]({% slug segmentedcontrol-getting-started %})

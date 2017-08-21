@@ -96,11 +96,6 @@ For this example we will create a chart with **LineSeries**. After we create the
 	lineSeries.Data = (Java.Lang.IIterable)this.monthResults;
 	chartView.Series.Add(lineSeries);
 
-	CategoricalAxis horizontalAxis = new CategoricalAxis();
-	chartView.HorizontalAxis = horizontalAxis;
-
-	LinearAxis verticalAxis = new LinearAxis();
-	chartView.VerticalAxis = verticalAxis;
 ```
 
 All that's left is to define what will be type of the axes. For the **LineSeries**, we will need one axis that can visualize category and one that can visualize value.

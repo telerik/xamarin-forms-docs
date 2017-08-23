@@ -33,12 +33,15 @@ You need to set the **Geometry** property of the **RadPath** instance for it to 
 
 You are free to create a custom geometry which will be visualized by the **RadPath** control. For that purpose, you need to create object of type **RadPathGeometry**.
 The definition of the RadPath is similar:
+
 <snippet id='path-gettingstarted-custompath-xaml'/>	
 
 Assigning the custom geometry:
+
 <snippet id='path-gettingstarted-assigning-custom-geometry'/>	
 
 The Custom geometry definition:
+
 <snippet id='path-gettingstarted-custom-geometry'/>	
 
 Both RadPath objects appearance can be reviewed in **Figure 1**. 

@@ -14,6 +14,16 @@ This example will guide you through the steps needed to add a basic **RadPath** 
 >- [Setup on Windows]({%slug getting-started-windows%})
 >- [Setup on Mac]({%slug getting-started-mac%})
 
+## Important properties
+
+The RadPath element exposes the following properties:
+
+* **Fill:** Used for setting up the color within the figures. You should set an object of type **RadBrush**. This can be a **RadSolidColorBrush** or a **RadSweepGradientBrush**
+* **Geometry:** You should set an object of type **RadPathGeometry** which will provide the geometry that needs to be visualized. The RadPathGeometry consists of different RadPathFigures.
+* **Stroke:** You can use this property to set the stroke color.
+* **StrokeThickness:** You can use this property to set the thickness of the stroke.
+* **BackgroundColor:** You can use this property to modify the color of the rectangle which contains the specific figure.
+
 
 ## Creating RadPath with built-in geometry
 
@@ -48,3 +58,5 @@ Both RadPath objects appearance can be reviewed in **Figure 1**.
 
 **Figure 1:**
 ![RadPath Figures](../images/custom_default_paths.png)
+
+## See Also

@@ -6,9 +6,7 @@ position: 3
 
 # Chart Legend #
 
-## Overview
-
-The Legend feature of the **RadChart** makes it easy for you to provide description regarding the series which are visualized within the control. In order to visualize the legend, you need to initialize a new object of type RadLegend. 
+The Legend feature of the **RadChart** makes it easy for you to provide description regarding the series which are visualized within the control. In order to visualize the legend, you need to initialize a new object of type **RadLegend**. 
 
 Chart Legend definition:
 
@@ -39,7 +37,7 @@ The control can be used in combination with **RadCartesianChart** as well.
 
 ## LegendTitleBinding
 
-The **LegendTitleBinding** is a property which can be set specifically for the PieSeries. It points to the property of the data item which will be used as a title in the legend. For all other series, the DisplayName property will be used instead.
+The **LegendTitleBinding** is a property which can be set specifically for the **PieSeries**. It points to the property of the data item which will be used as a title in the legend. For all other series, the **DisplayName** property will be used instead.
 
 <snippet id='chart-features-piechart-legendtitlebinding-xaml'/>
 <snippet id='chart-features-piechart-legendtitlebinding-cs'/>

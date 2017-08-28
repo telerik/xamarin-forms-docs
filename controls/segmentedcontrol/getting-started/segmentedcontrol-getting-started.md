@@ -14,7 +14,7 @@ This article demonstrates how to create a sample application that contains **Rad
 >- [Setup on Windows]({%slug getting-started-windows%})
 >- [Setup on Mac]({%slug getting-started-mac%})
 
-You can find the assemblies needed by the control in the [Required Telerik Assemblies]({%slug busyindicator-getting-started-required-assemblies%}) article.
+You can find the assemblies needed by the control in the [Required Telerik Assemblies]({%slug segmentcontrol-getting-started-required-assemblies%}) article.
 
 ### Populating with data
 
@@ -40,7 +40,7 @@ To display any segments you can set the control's ItemsSource property and popul
 <snippet id='segmentcontrol-gettingstarted-xaml'/>
 <snippet id='segmentcontrol-gettingstarted-csharp'/>
 
-#### __Figure 1: RadBusyIndicator when IsBusy is True__  
+#### __Figure 1: RadSegmentedControl example__  
 ![SegmentControl example](../images/segmentcontrol-gettingstarted-0.png)
 
 ### See Also

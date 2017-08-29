@@ -7,27 +7,54 @@ slug: common-getting-started
 
 # Getting Started
 
-This article will guide you through the basics of UI for Xamarin and how to start using the suite.
+This article will guide you through the basics of Telerik UI for Xamarin and how to start using the suite.
 
 ### Xamarin Forms
 
-Before proceeding with the **UI for Xamarin Forms** documentation we recommend that you check the fundamental concepts of [Xamarin Forms](https://developer.xamarin.com/guides/xamarin-forms/). In general, Xamarin is a cross-platform UI framework that allows you to create native applications shared between Windows (UWP, Windows Phone), Android and iOS.
+Before proceeding with **Telerik UI for Xamarin** documentation we recommend that you check the fundamental concepts of [Xamarin Forms](https://developer.xamarin.com/guides/xamarin-forms/). In general, Xamarin is a cross-platform UI framework that allows you to create native applications shared between Windows (UWP, Windows Phone), Android and iOS.
+
+There are two approaches you could take for developing Xamarin applications – we will summarize the main points here.
+
+##### Develop through Xamarin.Forms
+
+Using this approach, you can quickly achieve similar look and feel on all available platforms by sharing the same code base. All controls and views are eventually translated to platform-specific native elements without the need of any further actions from your side. You should consider this approach for:
+
+* Apps that require little platform-specific functionality
+* Apps where code sharing is more important than custom UI and platform-specific features
+* You feel comfortable creating your UI through XAML
+
+If you choose this approach, you should refer to the available custom controls from the **Xamarin Forms Controls** section.
+
+##### Develop through Xamarin Native (Xamarin.iOS & Xamarin.Android)
+
+By choosing this approach, you can take full advantage of each platform. You are free to create platform-specific views to achieve the desired appearance in the smallest details. You can access native APIs and utilize device-specific features.  
+
+For more details check the official [Xamarin.iOS](https://developer.xamarin.com/guides/ios/getting_started) and [Xamarin.Android](https://developer.xamarin.com/guides/android/getting_started) documentation pages.
+
+**Telerik UI for Xamarin** suite provides native controls wrappers that could be used for Xamarin.Android and Xamarin.iOS development. For more detailed information you could refer to the **Native Controls Wrappers** section.
 
 ### Check the system requirements
 
-You can check the requirements for the UI for Xamarin Forms suite in the [System Requirements]({%slug system-requirements%}) help article.
+You can check the requirements for Telerik UI for Xamarin suite in the [System Requirements]({%slug system-requirements%}) help article.
 
 ### Download and install UI for Xamarin
 
-See how to download and install the components suite in the [Download Steps]({%slug install-msi%}) help article.
+See how to download and install the components suite in the following help articles:
+
+* [Download Product Files]({%slug download-product-files%})
+* [Installing Telerik UI for Xamarin]({%slug install-msi%})
 
 ### Setting up UI for Xamarin project
 
-To start using the UI for Xamarin controls you can create a new Xamarin Forms project and add the required dependenices. You can see how to to this in the [Getting Started on Windows]({%slug getting-started-windows%}) and [Getting Started on Mac]({%slug getting-started-mac%}) articles.
+To start using the Telerik UI for Xamarin controls you can create a new Xamarin Forms project and add the required dependenices. You can see how to to this in the [Getting Started on Windows]({%slug getting-started-windows%}) and [Getting Started on Mac]({%slug getting-started-mac%}) articles.
 
 You can avoid adding all the assemblies manually by **using the Project Wizard of your IDE**. This will automatically set up a new project with all required dlls. Read more about this in the [Project Wizard for Xamarin Studio]({%slug project-wizard-xamarin-studio%}) and [Project Wizard for Visual Studio]({%slug project-wizard%}) help articles. 
 
 > The wizard will include the dlls for all controls from the UI for Xamarin suite. You can remove the ones that you don't need manually after the project is created.
+
+### Using Visual Studio Item Templates
+
+There are several __predefined item templates for Visual Studio__ included in the Telerik UI for Xamarin suite which come by default with the installation of the product. You can directly include them in your Xamarin Forms project and use them as footprints for similar scenarios in your application. Read more about this in the [Visual Studio Item Templates]({%slug installation-visual-studio-item-templates%}) article.
 
 ### Getting started with the controls
 

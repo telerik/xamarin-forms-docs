@@ -5,19 +5,27 @@ description: This article will guide you through the steps you have to follow in
 position: 1 
 slug: install-msi
 ---
-# Download Steps #
+# Installing Telerik UI for Xamarin from MSI file #
 
-To install UI for Xamarin on your machine from the Windows Installer MSI file, follow the instructions below:
+To install Telerik UI for Xamarin on your machine from the Windows Installer MSI file, follow the instructions below:
 
-1. Log into your Telerik account and click on **Downloads** from the top menu.
+1. Go to to the Telerik UI for Xamarin download page following the instructions in [Download Product Files]({%slug download-product-files%}) topic.
 
-2. In the list with all available products find **UI for Xamarin Cross-Platform**, and click on it. This will open the page with all available downloads for the product.
+2. Download the automatic installation (MSI) file.
 
-3. Here you can **download the automatic installation (MSI) file**. Or the ZIP file with the dlls.
-
-4. Once the download completes, **run the MSI file** and follow the instructions. On a 32bit machine the wizard will install the UI for Xamarin component in the following folder unless you specify otherwise: *C:\Program Files\Telerik\* or *C:\Program Files (x86)\Telerik\* for a 64bit machine.
+3. Once the download completes, **run the MSI file** and follow the instructions. On a 32bit machine the wizard will install the UI for Xamarin component in the following folder unless you specify otherwise: *C:\Program Files\Telerik\* or *C:\Program Files (x86)\Telerik\* for a 64bit machine.
 
 > If you prefer using the ZIP file with the dlls instead of the automatic installation you can check the [Manual Installation for Visual Studio]({%slug manual-installation-support%}) help article.
+
+#### Exploring the installation folder
+
+If you open the installation folder you will probably note the following sub directories:
+
+* Binaries
+* Examples
+* LicenseAgreements
+* QSF
+* VSExtensions
 
 ### Next Steps
 - [Using project wizard for Visual Studio]({% slug project-wizard %})

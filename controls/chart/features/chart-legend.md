@@ -6,17 +6,17 @@ position: 3
 
 # Chart Legend #
 
-The Legend feature of the **RadChart** makes it easy for you to provide description regarding the series which are visualized within the control. In order to visualize the legend, you need to initialize a new object of type **RadLegend**. 
+The Legend feature of the **RadChart** makes it easy for you to provide description regarding the series which are visualized within the control. In order to add the legend feature in your application, you need to initialize a new object of type **RadLegend**. 
 
 Chart Legend definition:
 
 <snippet id='chart-features-piechart-legend-definition-xaml'/>
 <snippet id='chart-features-piechart-legend-definition-cs'/>
 
-**Figure 1: RadLegend in combination with PieChart**
+#### **Figure 1: RadLegend in combination with PieChart**
 ![Pie Chart legend](../images/piechart-legend.png)
 
-As shown in **Figure 1**, each item within the **RadLegend** represents particular series. The most important property which you need to set is the **LegendProvider** and it should point to the chart object whose series will be included in the legend. 
+As shown in **Figure 1**, each item within the **RadLegend** represents particular series. The most important property which you need to set is the **LegendProvider**. It should point to the chart object whose series will be included in the legend. 
 
 Here are the most important properties of the **RadLegend** control. In brackets is commented the type of the property:
 
@@ -32,7 +32,7 @@ The control can be used in combination with **RadCartesianChart** as well.
 <snippet id='chart-features-cartesianchart-legend-definition-xaml'/>
 <snippet id='chart-features-cartesianchart-legend-definition-cs'/>
 
-**Figure 2: RadLegend in combination with CartesianChart**
+#### **Figure 2: RadLegend in combination with CartesianChart**
 ![Cartesian Chart legend](../images/cartesianchart-legend.png)
 
 ## LegendTitleBinding

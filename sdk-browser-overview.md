@@ -7,11 +7,11 @@ position: 6
 
 # Developer Focused Examples
 
+**Telerik UI for Xamarin** provides an easy-to-use infrastructure with many developer focused examples demonstrating our Xamarin controls.
+
 ## SDK Browser Application
 
-**Telerik UI for Xamarin** provides an easy-to-use infrastructure with many developer focused examples demonstrating our Xamarin controls. 
-
-The examples are provided via а Visual Studio Xamarin.Forms solution under the name __Xamarin.Forms SDK Browser__. 
+Some examples are provided via а Visual Studio Xamarin.Forms solution under the name __Xamarin.Forms SDK Browser__. 
 
 The SDK Browser can be downloaded from the __[telerik/xamarin-forms-sdk](https://github.com/telerik/xamarin-forms-sdk)__ GitHub repository. The code specific for each demo can be found in the following folder from the repository: [telerik/xamarin-forms-sdk/XamarinSDK/SDKBrowser/SDKBrowser/Examples](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples). 
 

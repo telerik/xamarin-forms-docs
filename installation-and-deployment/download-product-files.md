@@ -16,19 +16,19 @@ When you have an active trial or developer license, you can download the followi
 
 In order to download these you need to take the following steps:
 
-1. Log into your [Telerik account](https://www.telerik.com/account/).
+**1. Log into your [Telerik account](https://www.telerik.com/account/).**
 
-2. Click on the __Downloads__ tab:
+**2. Click on the __Downloads__ tab:**
 
-	![](images/download_product_files_1.png)
+![](images/download_product_files_1.png)
 
-3. Select __Telerik UI for Xamarin__ product title:
-	
-	![](images/download_product_files_2.png)
+**3. Select __Telerik UI for Xamarin__ product title:**
 
-4. The next page allows you to download the Automatic Installation msi file, DLLs and NuGet Packages.
+![](images/download_product_files_2.png)
 
-	![](images/download_product_files_3.png)
+**4. The next page allows you to download the Automatic Installation msi file, DLLs and NuGet Packages.**
+
+![](images/download_product_files_3.png)
 
 Below you could find a list of the available files:
 

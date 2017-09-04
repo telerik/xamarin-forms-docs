@@ -344,6 +344,16 @@ navigation:
     controls/spreadstreamprocessing:
         title: "SpreadStreamProcessing"
     ## End SpreadStreamProcessing
+    ## MaskedInput
+    controls/maskedinput:
+        title: "MaskedInput"
+    controls/maskedinput/getting-started:
+        title: "Getting Started"
+        position: 1
+    controls/maskedinput/features:
+        title: "Features"
+        position: 2
+    ## End MaskedInput
 ## End Controls Sub-Folders
 
 ## The application virtual path

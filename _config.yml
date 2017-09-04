@@ -22,10 +22,10 @@ navigation:
 ## Intallation Sub-Folders
     installation-and-deployment/windows:
         title: "Windows"
-        position: 2
+        position: 3
     installation-and-deployment/mac:
         title: "Mac"
-        position: 3
+        position: 4
 ## End Intallation Sub-Folders
 ## Native Controls Sub-Folders
     nativecontrols/android:

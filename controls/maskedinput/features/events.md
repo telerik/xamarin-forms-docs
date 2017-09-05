@@ -35,12 +35,18 @@ The event occurs when you have already typed the symbol and the mask is already 
 ## Examples
 
 #### ApplyMaskStarted example
+Attaching the event handler:
 <snippet id='maskedinput-features-events-applymaskstarted-csharp'/>
+
+The Handler implementation:
 <snippet id='maskedinput-features-events-applymaskstarted-handler'/>
 
 #### ApplyMaskFinished example
 
+Attaching the event handler:
 <snippet id='maskedinput-features-events-applymaskfinished-csharp'/>
+
+The Handler implementation:
 <snippet id='maskedinput-features-events-applymaskfinished-handler'/>
 
 >note You can find a working demo labeled **Events** in the MaskedInput/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}). 

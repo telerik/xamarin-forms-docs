@@ -156,6 +156,12 @@ navigation:
 ## End iOS Controls SubFolders
 
 ## Controls Sub-Folders
+    ## Path
+    controls/path:
+        title: "Path"
+    controls/path/getting-started:
+        title: "Getting Started"
+    ## End Path
     ## AutoComplete
     controls/autocomplete:
         title: "AutoComplete"
@@ -212,6 +218,9 @@ navigation:
         position: 4
     controls/chart/behaviors:
         title: "Behaviors"
+        position: 6
+    controls/chart/features:
+        title: "Features"
         position: 6
     controls/chart/series:
         title: "Series"

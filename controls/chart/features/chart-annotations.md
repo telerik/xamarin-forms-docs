@@ -1,6 +1,6 @@
 ---
 title: Annotations
-position: 7
+position: 1
 slug: chart-annotations
 ---
 
@@ -88,4 +88,4 @@ In the code behind:
 	this.chart.Annotations.Add(lineAnnotation);
 	this.chart.Annotations.Add(bandAnnotation);
 
-![Annotations](images/chart-annotations.png)
+![Annotations](../images/chart-annotations.png)

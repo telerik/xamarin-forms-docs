@@ -156,6 +156,12 @@ navigation:
 ## End iOS Controls SubFolders
 
 ## Controls Sub-Folders
+    ## Path
+    controls/path:
+        title: "Path"
+    controls/path/getting-started:
+        title: "Getting Started"
+    ## End Path
     ## AutoComplete
     controls/autocomplete:
         title: "AutoComplete"

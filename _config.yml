@@ -219,6 +219,9 @@ navigation:
     controls/chart/behaviors:
         title: "Behaviors"
         position: 6
+    controls/chart/features:
+        title: "Features"
+        position: 6
     controls/chart/series:
         title: "Series"
         position: 5

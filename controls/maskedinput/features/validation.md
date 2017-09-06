@@ -43,6 +43,6 @@ The string set to the **RejectedSymbolErrorText** will be observed in case the i
 
 ## See Also
 
-* [RadMaskedInput Tokens]({%slug maskedinput-features-tokens%})
+* [RadMaskedInput Tokens]({%slug maskedinput-features-mask-tokens%})
 * [RadMaskedInput Events]({%slug maskedinput-features-events%})
 * [RadMaskedInput Commands]({%slug maskedinput-features-commands%})

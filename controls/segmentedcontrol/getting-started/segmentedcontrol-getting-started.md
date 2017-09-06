@@ -14,7 +14,7 @@ This article demonstrates how to create a sample application that contains **Rad
 >- [Setup on Windows]({%slug getting-started-windows%})
 >- [Setup on Mac]({%slug getting-started-mac%})
 
-You can find the assemblies needed by the control in the [Required Telerik Assemblies]({%slug segmentcontrol-getting-started-required-assemblies%}) article.
+You can find the assemblies needed by the control in the [Required Telerik Assemblies]({%slug segmentedcontrol-required-assemblies%}) article.
 
 ### Populating with data
 

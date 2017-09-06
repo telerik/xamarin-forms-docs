@@ -9,11 +9,9 @@ slug: maskedinput-getting-started
 
 In this article you will familiarize yourselves with the most important properties of the **RadMaskedInput** Control. We will also cover some basic scenarios in which the **RadMaskedInput** control can be used. 
 
-
-
 ## Mask Types
 
-The **RadMaskedInput** control exposes a **MaskType** property which can be either "**Text**" or "**Regex**". It controls the type of the validation. If you choose to use a Text type, the Mask of the control should be set by utilizing the [Mask Tokens]({%slug maskedinput-mask-tokens%}). In case you decide to use a Regex for validating the input, you should set such to the **Mask** property. 
+The **RadMaskedInput** control exposes a **MaskType** property which can be either "**Text**" or "**Regex**". It controls the type of the validation. If you choose to use a Text type, the Mask of the control should be set by utilizing the [Mask Tokens]({%slug maskedinput-features-mask-tokens%}). In case you decide to use a Regex for validating the input, you should set such to the **Mask** property. 
 
 ## Important Properties
 
@@ -54,5 +52,5 @@ The following examples show how to add a **RadMaskedInput** to your project.
 
 ## See Also
 
-* [RadMaskedInput Tokens]({%slug maskedinput-features-tokens%})
+* [RadMaskedInput Tokens]({%slug maskedinput-features-mask-tokens%})
 * [RadMaskedInput Events]({%slug maskedinput-features-events%})

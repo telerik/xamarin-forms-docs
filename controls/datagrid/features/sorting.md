@@ -21,7 +21,9 @@ You can sort the data in a DataGrid by pointing a property  from the class that 
 * **PropertyName:** Gets or sets the name of the property that is used to retrieve the key to sort by.
 * **SortOrder:** Gets or sets the order of the sorting. It can be Ascending or Descending.
 
---ADD EXAMPLE--
+#### PropertySortDescriptor Example
+
+<snippet id='calendar-propertysortdescriptor-xaml'/>
 
 ## DelegateSortDescriptor
 
@@ -32,7 +34,15 @@ The difference between the **DelegateSortDescriptor** and the **PropertySortDesc
 
 To use a DelegateSortDescriptor, you need to create a class that implements the IKeyLookup interface which will return the Key you want to sort by. Then you need to add DelegateSortDescriptor to the RadDataGrid.SortDescriptors collection and set its KeyLookUp property.
 
---ADD EXAMPLE--
+#### DelegateSortDescriptor Example
+
+The Custom **IKeyLookup** implementation
+
+<snippet id='calendar-delegatesortdescriptor-ikeylookup'/>
+
+Adding it to the **GroupDescriptors** collection of the RadDataGrid:
+
+<snippet id='calendar-delegatesortdescriptor-csharp'/>
 
 ## See Also
 

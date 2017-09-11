@@ -22,10 +22,10 @@ To use the PropertyGroupDescriptor you have to set its property PropertyName.
 
 >note You can easily sort the groups in ascending or descending order using the **SortOrder** property.
 
---ADD EXAMPLE--
+#### PropertyGroupDescriptor Example
 
+<snippet id='calendar-propertygroupdescriptor-xaml'/>
 
-Post a reply  
 ## DelegateGroupDescriptor ##
 
 The difference between the **DelegateGroupDescriptor** and the **PropertyGroupDescriptor** is that DelegateGroupDescriptor groups data by a custom Key while the PropertyGroupDescriptor groups by a defined Key which is a property from our model.
@@ -38,7 +38,15 @@ You have to set the following property of the DelegateGroupDescriptor:
 
 You have to create a class that implements the **IKeyLookup** interface which will return the Key you want to group by. Then you need to add the **DelegateGroupDescriptor** to the RadDataGrid.GroupDescriptors collection and set its **KeyLookUp** property.
 
---ADD EXAMPLE --
+#### PropertyGroupDescriptor Example
+
+The Custom **IKeyLookup** implementation
+
+<snippet id='calendar-delegategroupdescriptor-csharp'/>
+
+Adding it to the **GroupDescriptors** collection of the RadDataGrid:
+
+<snippet id='calendar-delegategroupdescriptor-csharp'/>
 
 ## See Also
 

@@ -9,12 +9,12 @@ slug: datagrid-filtering-overview
 
 The **RadDataGrid** supports programmatic filtering. This is achieved by adding different filter descriptors in the **FilterDescriptor** collection of the control. The following descriptor types are supported:
 
-* **TextFilterDescriptor**: TextFilterDescriptor is a descriptor which filters by property of System.String data type.
-* **NumericalFilterDescriptor**: Represents a Descriptor which filters by property of numerical data type.
+* **TextFilterDescriptor**
+* **NumericalFilterDescriptor**
 * **DelegateFilterDescriptor:**
-* **DateTimeFilterDescriptor**:
-* **BooleanFilterDescriptor**:
-* **CompositeFilterDescriptor**:
+* **DateTimeFilterDescriptor**
+* **BooleanFilterDescriptor**
+* **CompositeFilterDescriptor**
 
 ## TextFilterDescriptor
 

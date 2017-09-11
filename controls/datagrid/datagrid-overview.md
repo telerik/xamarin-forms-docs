@@ -11,14 +11,14 @@ Most of the data on the Internet is stored in tables within a database. **RadDat
 
 Some of the **RadDataGrid** Key Features are:
 
-* UI Virtualization 
-* Different column types
-* Commands
-* Editing
-* Sorting
-* Filtering
-* Grouping
-* Selection
+* **UI Virtualization** 
+* **Different column types**
+* **Commands**
+* **Editing**
+* **Sorting**
+* **Filtering**
+* **Grouping**
+* **Selection**
 
 > **RadAutoComplete** is available for the following platforms:
 
@@ -26,4 +26,3 @@ Some of the **RadDataGrid** Key Features are:
 > - **iOS**
 > - **Universal Windows Platform**
 
-#### **Figure 1: RadDataGrid Overview**

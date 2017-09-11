@@ -23,7 +23,7 @@ You can sort the data in a DataGrid by pointing a property  from the class that 
 
 #### PropertySortDescriptor Example
 
-<snippet id='calendar-propertysortdescriptor-xaml'/>
+<snippet id='datagrid-propertysortdescriptor-xaml'/>
 
 ## DelegateSortDescriptor
 
@@ -38,11 +38,11 @@ To use a DelegateSortDescriptor, you need to create a class that implements the 
 
 The Custom **IKeyLookup** implementation
 
-<snippet id='calendar-delegatesortdescriptor-ikeylookup'/>
+<snippet id='datagrid-delegatesortdescriptor-ikeylookup'/>
 
 Adding it to the **GroupDescriptors** collection of the RadDataGrid:
 
-<snippet id='calendar-delegatesortdescriptor-csharp'/>
+<snippet id='datagrid-delegatesortdescriptor-csharp'/>
 
 ## See Also
 

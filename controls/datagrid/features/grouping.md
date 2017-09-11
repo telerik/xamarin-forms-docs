@@ -24,7 +24,7 @@ To use the PropertyGroupDescriptor you have to set its property PropertyName.
 
 #### PropertyGroupDescriptor Example
 
-<snippet id='calendar-propertygroupdescriptor-xaml'/>
+<snippet id='datagrid-propertygroupdescriptor-xaml'/>
 
 ## DelegateGroupDescriptor ##
 
@@ -42,11 +42,11 @@ You have to create a class that implements the **IKeyLookup** interface which wi
 
 The Custom **IKeyLookup** implementation
 
-<snippet id='calendar-delegategroupdescriptor-csharp'/>
+<snippet id='datagrid-delegategroupdescriptor-csharp'/>
 
-Adding it to the **GroupDescriptors** collection of the RadDataGrid:
+Adding it to the **GroupDescriptors** collection of the **RadDataGrid**:
 
-<snippet id='calendar-delegategroupdescriptor-csharp'/>
+<snippet id='datagrid-delegategroupdescriptor-csharp'/>
 
 ## See Also
 

@@ -28,7 +28,7 @@ Properties:
 To use **TextFilterDescriptor** you need to add its instance to the **RadDataGrid.FilterDescriptors** collection and to set its **PropertyName** property to associate it with the property from your custom objects. Then through the **Operator** and **Value** properties you need to set the filter condition and the value to compare. You can also take advantage of the **IsCaseSensitive** property to determine if the text comparisons will be case-sensitive or not.
 
 #### TextFilterDescriptor Example
-<snippet id='grid-textfilterdescriptor-xaml'/>
+<snippet id='datagrid-textfilterdescriptor-xaml'/>
 
 ## NumericalFilterDescriptor
 
@@ -39,7 +39,7 @@ Represents a Descriptor which filters by property of numerical data type. It exp
 * **Operator**: Gets or sets the NumericalOperator value that defines the boolean logc behind the left and right operand comparison.
 
 #### NumericalFilterDescriptor Example
-<snippet id='calendar-numericalfilterdecsriptor-xaml'/>
+<snippet id='datagrid-numericalfilterdecsriptor-xaml'/>
 
 ## DateTimeFilterDescriptor
 
@@ -50,7 +50,7 @@ The DateTimeFilterDescriptor is a Descriptor which filters by property of System
 * **Operator**: Gets or sets the NumericalOperator value that defines the boolean logic behind the left and right operand comparison.
 
 #### DateTimeFilterDescriptor Example
-<snippet id='calendar-datetimefilterdescriptor-xaml'/>
+<snippet id='datagrid-datetimefilterdescriptor-xaml'/>
 
 ## BooleanFilterDescriptor
 
@@ -61,7 +61,7 @@ The BooleanFilterDescriptor is a Descriptor which filters by property of System.
  
 #### BooleanFilterDescriptor Example
 
-<snippet id='calendar-booleanfilterdescriptor-xaml'/>
+<snippet id='datagrid-booleanfilterdescriptor-xaml'/>
 
 ## CompositeFilterDescriptor
 
@@ -69,7 +69,7 @@ The CompositeFilterDescriptor represents a special FilterDescriptorBase that sto
 
 #### CompositeFilterDescriptor Example
 
-<snippet id='calendar-compositefilterdescriptor-xaml'/>
+<snippet id='datagrid-compositefilterdescriptor-xaml'/>
 
 ## DelegateFilterDescriptor
 
@@ -85,11 +85,11 @@ Then you need to add a DelegateFilterDescriptor to the RadDataGrid.FilterDescrip
 
 The **CustomFilter** implementation:
 
-<snippet id='calendar-delegatefilterdescriptor-csharp'/>
+<snippet id='datagrid-delegatefilterdescriptor-csharp'/>
 
 Adding the **DelegateFilterDescriptor** to the **RadDataGrid**:
 
-<snippet id='calendar-delegatefilterdescriptor-added'/>
+<snippet id='datagrid-delegatefilterdescriptor-added'/>
 
 ## See Also
 

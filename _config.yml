@@ -17,8 +17,16 @@ navigation:
         position: 5
     troubleshooting:
         title: "Troubleshooting"
+        position: 7
+    styling-and-appearance:
+        title: "Styling and Appearance"
         position: 6
 ## End Root Level
+## Styling Sub-Folders
+    styling-and-appearance/xamarin-forms-theming:
+        title: "Xamarin Forms Theming"
+        position: 1
+## End Styling Sub-Folders
 ## Intallation Sub-Folders
     installation-and-deployment/windows:
         title: "Windows"

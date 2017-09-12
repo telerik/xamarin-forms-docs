@@ -371,6 +371,16 @@ navigation:
         title: "Features"
         position: 2
     ## End MaskedInput
+    ## SlideView
+    controls/slideview:
+        title: "SlideView"
+    controls/slideview/getting-started:
+        title: "Getting Started"
+        position: 3
+    controls/slideview/features:
+        title: "Features"
+        position: 4
+    ## End SlideView
 ## End Controls Sub-Folders
 
 ## The application virtual path

@@ -14,7 +14,7 @@ slug: slideview-overview
 > - **iOS**
 > - **Universal Windows Platform**
 
-![RadSlideView example](images/slideview-overview-0.png) 
+![RadSlideView example](images/slideview-overview.png)  
 
 ### Key features
 

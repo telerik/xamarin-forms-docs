@@ -29,6 +29,7 @@ Our suite offers the following controls for cross-platform development with Xama
 - [Rating]({% slug rating-overview%})
 - [SegmentedControl]({% slug segmentedcontrol-overview%})
 - [SideDrawer]({% slug sidedrawer-overview %})
+- [SlideView]({% slug slideview-overview %})
 - [SpreadStreamProcessing]({% slug radspreadstreamprocessing-overview %})
 - [TabView]({% slug tabview-overview%})
 - [ZipLibrary]({% slug radziplibrary-overview %})

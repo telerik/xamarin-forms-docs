@@ -17,8 +17,16 @@ navigation:
         position: 5
     troubleshooting:
         title: "Troubleshooting"
+        position: 7
+    styling-and-appearance:
+        title: "Styling and Appearance"
         position: 6
 ## End Root Level
+## Styling Sub-Folders
+    styling-and-appearance/xamarin-forms-theming:
+        title: "Xamarin Forms Theming"
+        position: 1
+## End Styling Sub-Folders
 ## Intallation Sub-Folders
     installation-and-deployment/windows:
         title: "Windows"
@@ -156,6 +164,29 @@ navigation:
 ## End iOS Controls SubFolders
 
 ## Controls Sub-Folders
+    ## DataGrid
+    controls/datagrid:
+        title: "DataGrid"
+    controls/datagrid/getting-started: 
+        title: "Getting Started"
+        position: 1
+    controls/datagrid/columns: 
+        title: "Columns"
+        position: 2
+    controls/datagrid/columns/column-types: 
+        title: "Column Types"
+        position: 1
+    controls/datagrid/features: 
+        title: "Features"
+        position: 3
+    ## End DataGrid
+
+    ## Path
+    controls/path:
+        title: "Path"
+    controls/path/getting-started:
+        title: "Getting Started"
+    ## End Path
     ## AutoComplete
     controls/autocomplete:
         title: "AutoComplete"
@@ -212,6 +243,9 @@ navigation:
         position: 4
     controls/chart/behaviors:
         title: "Behaviors"
+        position: 6
+    controls/chart/features:
+        title: "Features"
         position: 6
     controls/chart/series:
         title: "Series"
@@ -344,6 +378,26 @@ navigation:
     controls/spreadstreamprocessing:
         title: "SpreadStreamProcessing"
     ## End SpreadStreamProcessing
+    ## MaskedInput
+    controls/maskedinput:
+        title: "MaskedInput"
+    controls/maskedinput/getting-started:
+        title: "Getting Started"
+        position: 1
+    controls/maskedinput/features:
+        title: "Features"
+        position: 2
+    ## End MaskedInput
+    ## SlideView
+    controls/slideview:
+        title: "SlideView"
+    controls/slideview/getting-started:
+        title: "Getting Started"
+        position: 3
+    controls/slideview/features:
+        title: "Features"
+        position: 4
+    ## End SlideView
 ## End Controls Sub-Folders
 
 ## The application virtual path

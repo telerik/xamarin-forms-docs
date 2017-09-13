@@ -1,7 +1,7 @@
 ---
 title: CartesianChartGrid
 slug: cartesian-chart-grid
-position: 8
+position: 2
 ---
 
 # CartesianChartGrid #
@@ -62,4 +62,4 @@ In the code behind:
 
 Here is the result:
 
-![Chart Grid](images/chart-grid-example.png)
+![Chart Grid](../images/chart-grid-example.png)

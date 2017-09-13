@@ -25,6 +25,10 @@ You can sort the data in a DataGrid by pointing a property  from the class that 
 
 <snippet id='datagrid-propertysortdescriptor-xaml'/>
 
+			<grid:RadDataGrid.SortDescriptors>
+                <common:PropertySortDescriptor PropertyName="Name"/>
+            </grid:RadDataGrid.SortDescriptors>
+
 ## DelegateSortDescriptor
 
 The difference between the **DelegateSortDescriptor** and the **PropertySortDescriptor** is that DelegateSortDescriptor sorts data by a custom Key, while the PropertySortDescriptor sorts by a defined Key, which is a property from our model. It exposes the following properties:
@@ -39,10 +43,20 @@ To use a DelegateSortDescriptor, you need to create a class that implements the 
 The Custom **IKeyLookup** implementation
 
 <snippet id='datagrid-delegatesortdescriptor-ikeylookup'/>
+	
+	    public class CustomIKeyLookup : IKeyLookup
+        {
+            public object GetKey(object instance)
+            {
+                return (instance as Club).Name.Length;
+            }
+        }
 
 Adding it to the **GroupDescriptors** collection of the RadDataGrid:
 
 <snippet id='datagrid-delegatesortdescriptor-csharp'/>
+
+	 this.grid.SortDescriptors.Add(new DelegateSortDescriptor() { KeyLookup = new CustomIKeyLookup()});
 
 ## See Also
 

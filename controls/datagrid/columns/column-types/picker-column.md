@@ -5,7 +5,7 @@ position: 0
 slug: datagrid-columns-picker-column
 ---
 
-# DataGridPickerColumn # ?? check properties
+# DataGridPickerColumn  
 
 The DataGridPickerColumn uses a Picker control in Edit mode to select a value from list of possibilities.
 
@@ -19,3 +19,7 @@ Here are the specific properties defined for DataGridPickerColumn:
 * **SelectedValuePath** (string): Sets the value that is actually selected in the ComboBox (could be different from the display value) and is passed to the property that is edited in the ComboBox column.
 
 ## Example 
+
+	  <telerikGrid:DataGridPickerColumn PropertyName="Country"
+                                        HeaderText="Country"
+                                        ItemsSourcePath="Countries"/>

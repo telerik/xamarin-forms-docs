@@ -21,3 +21,12 @@ Here are the specific properties for TextColumns:
 * **CellContentFormat**: Gets or sets the custom format for each cell value. The String.Format routine is used and the format passed should be in the form required by this method.
 
 ## Example
+
+ 			<telerikGrid:DataGridTextColumn PropertyName="Name"
+                                                HeaderText="Name">
+                    <telerikGrid:DataGridTextColumn.CellContentStyle>
+                        <telerikGrid:DataGridTextCellStyle TextColor="Green" 
+                                                           FontSize="15" 
+                                                           SelectedTextColor="Orange"  />
+                    </telerikGrid:DataGridTextColumn.CellContentStyle>
+             </telerikGrid:DataGridTextColumn>

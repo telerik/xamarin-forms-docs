@@ -42,3 +42,8 @@ Header - Gets or sets the content to be displayed in the Header UI that represen
 * **SortDirection**: Gets or sets a value that defines the visual state of the SortingDirectionGlyph. This property is used for visualization purposes only and does not affect the actual sort state of the column. To add sorting to the column, you have to use a Sort Descriptor.
 * **CanUserEdit** (bool): Gets or sets a value indicating whether the user can edit the values in this column.
 * **IsVisible** (bool): Gets a value indicating if a specific column should be visualized.
+
+## Example - Adding columns to the RadDataGrid:
+
+
+

@@ -12,6 +12,9 @@ The **RadDataGrid** control provides programmatic approach for grouping. You can
 * Add a **PropertyGroupDescriptor**: using a property from the model as a group key.
 * Add a **DelegateGroupDescriptor**: create a custom group key which you can use.
 
+> All GroupDescriptors are located in the Telerik.XamarinForms.Common.Data namespace:
+> **xmlns:common="clr-namespace:Telerik.XamarinForms.Common.Data;assembly=Telerik.XamarinForms.Common"**
+
 ## PropertyGroupDescriptor ##
 
 The PropertyGroupDescriptor is used to group the data in a DataGrid by property from the class that defines your objects.
@@ -26,6 +29,10 @@ To use the PropertyGroupDescriptor you have to set its property PropertyName.
 
 <snippet id='datagrid-propertygroupdescriptor-xaml'/>
 
+	 		<grid:RadDataGrid.GroupDescriptors>
+                <common:PropertyGroupDescriptor PropertyName="Country"/>
+            </grid:RadDataGrid.GroupDescriptors>
+
 ## DelegateGroupDescriptor ##
 
 The difference between the **DelegateGroupDescriptor** and the **PropertyGroupDescriptor** is that DelegateGroupDescriptor groups data by a custom Key while the PropertyGroupDescriptor groups by a defined Key which is a property from our model.
@@ -38,15 +45,25 @@ You have to set the following property of the DelegateGroupDescriptor:
 
 You have to create a class that implements the **IKeyLookup** interface which will return the Key you want to group by. Then you need to add the **DelegateGroupDescriptor** to the RadDataGrid.GroupDescriptors collection and set its **KeyLookUp** property.
 
-#### PropertyGroupDescriptor Example
+#### DelegateGroupDescriptor Example
 
 The Custom **IKeyLookup** implementation
 
 <snippet id='datagrid-delegategroupdescriptor-csharp'/>
 
+	class CustomIKeyLookup : IKeyLookup
+    {
+        public object GetKey(object instance)
+        {
+            return (instance as Club).Country[0];
+        }
+    }
+
 Adding it to the **GroupDescriptors** collection of the **RadDataGrid**:
 
 <snippet id='datagrid-delegategroupdescriptor-csharp'/>
+
+	this.grid.GroupDescriptors.Add(new DelegateGroupDescriptor() { KeyLookup = new CustomIKeyLookup() });
 
 ## See Also
 

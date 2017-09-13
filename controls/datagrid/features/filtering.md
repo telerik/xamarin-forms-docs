@@ -16,6 +16,9 @@ The **RadDataGrid** supports programmatic filtering. This is achieved by adding 
 * **BooleanFilterDescriptor**
 * **CompositeFilterDescriptor**
 
+> All FilterDescriptors are located in the Telerik.XamarinForms.Common.Data namespace:
+> **xmlns:common="clr-namespace:Telerik.XamarinForms.Common.Data;assembly=Telerik.XamarinForms.Common"**
+
 ## TextFilterDescriptor
 
 Properties:
@@ -30,6 +33,11 @@ To use **TextFilterDescriptor** you need to add its instance to the **RadDataGri
 #### TextFilterDescriptor Example
 <snippet id='datagrid-textfilterdescriptor-xaml'/>
 
+	  <common:TextFilterDescriptor PropertyName="Country"
+                                             Operator="StartsWith"
+                                             IsCaseSensitive="False" 
+                                             Value="En"/>
+
 ## NumericalFilterDescriptor
 
 Represents a Descriptor which filters by property of numerical data type. It exposes the following properties.
@@ -41,6 +49,10 @@ Represents a Descriptor which filters by property of numerical data type. It exp
 #### NumericalFilterDescriptor Example
 <snippet id='datagrid-numericalfilterdecsriptor-xaml'/>
 
+	 <common:NumericalFilterDescriptor PropertyName="StadiumCapacity"
+                                                  Operator="IsLessThan"
+                                                  Value="80000"/>
+
 ## DateTimeFilterDescriptor
 
 The DateTimeFilterDescriptor is a Descriptor which filters by property of System.DateTime data type. It exposes the following properties:
@@ -51,6 +63,10 @@ The DateTimeFilterDescriptor is a Descriptor which filters by property of System
 
 #### DateTimeFilterDescriptor Example
 <snippet id='datagrid-datetimefilterdescriptor-xaml'/>
+	
+	 <common:DateTimeFilterDescriptor PropertyName="Established"
+                                                 Operator="IsLessThan"
+                                                 Value="1900/01/01"/>
 
 ## BooleanFilterDescriptor
 
@@ -63,6 +79,9 @@ The BooleanFilterDescriptor is a Descriptor which filters by property of System.
 
 <snippet id='datagrid-booleanfilterdescriptor-xaml'/>
 
+	 <common:BooleanFilterDescriptor PropertyName="IsChampion"
+                                                Value="true"/>
+
 ## CompositeFilterDescriptor
 
 The CompositeFilterDescriptor represents a special FilterDescriptorBase that stores an arbitrary number of other Descriptors instances. The logical AND or OR operator is applied upon all composed filters to determine the result of the PassesFilter routine.
@@ -70,6 +89,17 @@ The CompositeFilterDescriptor represents a special FilterDescriptorBase that sto
 #### CompositeFilterDescriptor Example
 
 <snippet id='datagrid-compositefilterdescriptor-xaml'/>
+
+	 <common:CompositeFilterDescriptor Operator="And">
+                        <common:CompositeFilterDescriptor.Descriptors>
+                            <common:NumericalFilterDescriptor PropertyName="StadiumCapacity"
+                                       Operator="IsGreaterThan"
+                                       Value="55000"/>
+                            <common:NumericalFilterDescriptor PropertyName="StadiumCapacity"
+                                       Operator="IsLessThan"
+                                       Value="85000"/>
+                        </common:CompositeFilterDescriptor.Descriptors>
+     </common:CompositeFilterDescriptor>
 
 ## DelegateFilterDescriptor
 
@@ -87,9 +117,26 @@ The **CustomFilter** implementation:
 
 <snippet id='datagrid-delegatefilterdescriptor-csharp'/>
 
+	class CustomFilter : IFilter
+    {
+        public bool PassesFilter(object item)
+        {
+            if ((item as Club).StadiumCapacity > 60000 && (item as Club).StadiumCapacity <85000)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+    }
+
 Adding the **DelegateFilterDescriptor** to the **RadDataGrid**:
 
 <snippet id='datagrid-delegatefilterdescriptor-added'/>
+
+	 grid.FilterDescriptors.Add(new DelegateFilterDescriptor() { Filter = new CustomFilter()});
 
 ## See Also
 

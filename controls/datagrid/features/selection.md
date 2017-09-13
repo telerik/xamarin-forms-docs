@@ -44,3 +44,6 @@ Additional functionalities for programmatic selecting and deselecting items are 
 * **DeselectAll**(): Clears the current selected items as defined by the SelectionUnit property.
 
 ## See Also
+
+* [DataGrid Sorting]({%slug datagrid-sorting-overview%})
+* [DataGrid Commands]({%slug datagrid-commands-overview%})

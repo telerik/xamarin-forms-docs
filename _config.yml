@@ -164,6 +164,23 @@ navigation:
 ## End iOS Controls SubFolders
 
 ## Controls Sub-Folders
+    ## DataGrid
+    controls/datagrid:
+        title: "DataGrid"
+    controls/datagrid/getting-started: 
+        title: "Getting Started"
+        position: 1
+    controls/datagrid/columns: 
+        title: "Columns"
+        position: 2
+    controls/datagrid/columns/column-types: 
+        title: "Column Types"
+        position: 1
+    controls/datagrid/features: 
+        title: "Features"
+        position: 3
+    ## End DataGrid
+
     ## Path
     controls/path:
         title: "Path"

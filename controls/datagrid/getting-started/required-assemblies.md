@@ -19,7 +19,7 @@ This article contains a list with the assemblies required by the **RadDataGrid**
 | UWP      | Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.DataGrid.dll<br/>Telerik.XamarinForms.SkiaSharp.dll|
 
 > The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls. The default location is:  
-> `C:\Program Files (x86)\Telerik\UI for Xamarin RX XXX\Binaries`.
+> `C:\Program Files (x86)\Progress\UI for Xamarin RX XXX\Binaries`.
 
 
 ## See Also

@@ -23,7 +23,7 @@ Some of the **RadDataGrid** Key Features are:
 * **Grouping**
 * **Selection**
 
-> **RadAutoComplete** is available for the following platforms:
+> **RadDataGrid** is available for the following platforms:
 
 > - **Android**
 > - **iOS**

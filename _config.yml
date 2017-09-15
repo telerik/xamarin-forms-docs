@@ -166,7 +166,7 @@ navigation:
 ## Controls Sub-Folders
     ## DataGrid
     controls/datagrid:
-        title: "DataGrid"
+        title: "DataGrid CTP"
     controls/datagrid/getting-started: 
         title: "Getting Started"
         position: 1

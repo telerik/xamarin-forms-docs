@@ -9,7 +9,7 @@ slug: calendar-custom-renderers-android
 
 Sometimes, you might find that certain feature is available in the native control on a given platform, but is not exposed in Xamarin Forms or you might want to customize the calendar look for each platform. This is when you would need to create a custom renderer. This will allow you to access the native control and configure it as per your needs.
 
->The native **Calendar** control documentation can be found [here](http://docs.telerik.com/devtools/android/controls/calendar/calendar-overview).
+>The native **Calendar** control documentation can be found [here](http://docs.telerik.com/devtools/xamarin/nativecontrols/android/calendar/calendar-overview).
 
 ## Example
 

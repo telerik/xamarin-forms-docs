@@ -37,6 +37,8 @@ You also need to add the following namespace:
 After that you have to specify the editor types:
 
 <snippet id='dataform-gettingstarted-register-editors'/>
+
+>important The **SDK Browser** and the **QSF** applications contain different examples that show RadDataForm's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
 	
 ## See Also
 

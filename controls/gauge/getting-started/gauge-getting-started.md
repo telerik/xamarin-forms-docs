@@ -42,6 +42,8 @@ Here is the result:
 
 There are 3 gauge types that you can use to display different layout - radial and linear. You can read more about this in the [Gauge Types]({%slug gauge-types-radial%}) section.
 
+>important The **SDK Browser** and the **QSF** applications contain different examples that show Gauges' main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
+
 ### See Also
 
 - [Project Wizard]({% slug project-wizard %})

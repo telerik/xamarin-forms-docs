@@ -64,6 +64,8 @@ To get started with a control we recommend to **read its Getting Started article
 
 ## Developer Focused Examples
 
+There are several applications that are shipped with the installation of the **Telerik UI for Xamarin** suite. You can check them in order to review different scenarios in which the controls can be used and to familiarize yourself with the controls' main features. 
+
 #### SDK Samples Application
 
 The developer focused examples is an infrastrucutre with many demos showing our controls. Read more about this in the [corresponding help article]({%slug developer-focused-examples%}). You can find the demos in the [telerik/xamarin-forms-sdk](https://github.com/telerik/xamarin-forms-sdk) GitHub repository.

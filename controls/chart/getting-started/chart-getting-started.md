@@ -41,6 +41,8 @@ Here is how the business model is defined:
 
 <snippet id='categorical-data-model'/>
 
+>important The **SDK Browser** and the **QSF** applications contain different examples that show RadChart's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
+
 ## See Also
 
 - [Project Wizard]({% slug project-wizard %})

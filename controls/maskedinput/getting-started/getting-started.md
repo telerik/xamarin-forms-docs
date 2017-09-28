@@ -50,6 +50,8 @@ The following examples show how to add a **RadMaskedInput** to your project.
 **MaskedInput with MaskType RegEx:**
 <snippet id='maskedinput-gettingstarted-regex-xaml'/>
 
+>important The **SDK Browser** and the **QSF** applications contain different examples that show RadMaskedInput's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
+
 ## See Also
 
 * [RadMaskedInput Tokens]({%slug maskedinput-features-mask-tokens%})

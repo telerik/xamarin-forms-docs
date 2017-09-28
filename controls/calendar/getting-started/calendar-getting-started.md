@@ -34,6 +34,8 @@ Here is the result:
 
 ![Basic RadCalendar Example](../images/calendar-gettingstarted.png "Basic RadCalendar")
 
+>important The **SDK Browser** and the **QSF** applications contain different examples that show RadCalendar's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
+
 ## See Also
 
 - [Register AutoComplete Renderers]({% slug autocomplete-getting-started-register-renderer %})

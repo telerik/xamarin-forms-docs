@@ -36,6 +36,8 @@ Proceed with defining the component:
 #### __Figure 2: RadBusyIndicator when IsBusy is False__  
 ![BusyIndicator example](../images/busyindicator-gettingstarted-1.png)
 
+>important The **SDK Browser** and the **QSF** applications contain different examples that show RadBusyIndicator's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
+
 ### See Also
 
 - [Project Wizard]({% slug project-wizard %})

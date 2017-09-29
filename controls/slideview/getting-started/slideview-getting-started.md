@@ -47,6 +47,8 @@ To display any items you can set the control's ItemsSource property and populate
 
 Check the [ItemTemplate]({% slug slideview-features-itemtemplate %}) article to see how to populate the control with business items and customize their appearance.
 
+>important **SDK Browser** and **QSF** applications contain different examples that show RadSlideViews's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
+
 ### See Also
 - [Project Wizard]({% slug project-wizard %})
 - [Getting Started on Windows]({% slug getting-started-windows %})

@@ -34,6 +34,8 @@ Here is the result:
  
 ![SideDrawer example](../images/sidedrawer-gettingstarted.png)
 
+>important **SDK Browser** and **QSF** applications contain different examples that show RadSideDrawer's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
+
 ## See Also
 
 - [Project Wizard]({% slug project-wizard %})

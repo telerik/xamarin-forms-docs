@@ -14,7 +14,7 @@ For all cases where the business items are not simple strings data-binding is ne
 
 >The **TextSearchPath** property is required in data-binding scenarios.
 
-The RadAutoComplete component provides a default template for suggestion items that cannot be modified. You can use a [custom template]({% slug autocomplete-suggestion-item-template %}) if you need to customize the suggestion items.
+The RadAutoComplete component provides a default template for suggestion items that cannot be modified. You can use a [custom template]({%slug autocomplete-suggestion-item-template %}) if you need to customize the suggestion items.
 
 ## Example
 

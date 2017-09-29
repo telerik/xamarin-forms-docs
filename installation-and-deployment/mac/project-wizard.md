@@ -1,23 +1,35 @@
 ---
-title: Project Wizard for Xamarin Studio
-page_title: Project Wizard for Xamarin Studio
+title: Project Wizard for Visual Studio for Mac
+page_title: Project Wizard for Visual Studio for Mac
 slug: project-wizard-xamarin-studio
 position: 
 ---
 
-# Project Wizard for Xamarin Studio
+# Project Wizard for Visual Studio for Mac
 
-This article introduces the **Telerik UI for Xamarin.Forms Project Wizard for Xamarin Studio**. The project wizard is a Xamarin Studio add-in that improves the getting started experience for Telerik customers. It provides a project template that is pre-setup with all requirements to run our components so the customers can start writing their app right away.
+This article introduces the **Telerik UI for Xamarin.Forms Project Wizard for Visual Studio for Mac**. The project wizard is a Visual Studio add-in that improves the getting started experience for Telerik customers. It provides a project template that is pre-setup with all requirements to run our components so the customers can start writing their apps right away.
 
 ## Installation
 
-First, you have to install the project wizard add-in package. Open the Xamarin Studio **Add-in manager** and select the *Install form file...* option.
+First, you have to install the project wizard add-in package. Open the Visual Studio **Extension Manager** and select the *Install form file...* option. __Figure 1__ shows how to access the Extension Manager.
 
-![Xamarin Studio Add-in Manager](images/xs-project-wizard-addin-manager-1.png)
+#### __Figure 1: Accessing Visual Studio Extensions__
 
-Navigate to the **ProjectTemplateXamarin.mpack** file. It is located in the *ProjectTemplates* folder inside the installation folder of the suite. If the add-in is successfully added to Xamarin Studio you should see it in the IDE extensions section.
+![Visual Studio Extensions](images/project-wizard/VisualStudioExtensions.png)
 
-![Xamarin Studio Project Wizard Add-in](images/xs-project-wizard-addin-manager-2.png)
+Once you have accessed the **Extension Manager**, the following dialog will appear and you should look for the **Install from file** option.
+
+#### __Figure 2: Reaching the Extension Manager__
+
+![Visual Studio Extensions](images/project-wizard/ExtensionManager.png)
+
+Navigate to the **ProjectTemplateXamarin.mpack** file. It is located in the *Extensions* folder inside the installation folder of the suite. 
+
+#### __Figure 3: The ProjectTemplate location__
+
+![Visual Studio Extensions](images/project-wizard/InstallExtensionPackage.png)
+
+If the add-in is successfully added to Visual Studio, you should see it in the **IDE** extensions section.
 
 **Restart Xamarin Studio** to complete the installation.
 
@@ -25,15 +37,17 @@ Navigate to the **ProjectTemplateXamarin.mpack** file. It is located in the *Pro
 
 Now you can create a new project using the Telerik Project Template.
 
-![Xamarin Studio Create new project](images/xs-project-wizard-new-project-1.png)
+#### __Figure 4: Create New Project Dialog__
 
-The **Telerik Forms App** template can be found in *Other > .NET* section.
+![Xamarin Studio Create new project](images/project-wizard/CreateNewProject.png)
 
-![Xamarin Studio Telerik Project Template](images/xs-project-wizard-new-project-2.png)
+The **Telerik Forms App** template can be found in *Other > Miscellaneous* section.
+
+#### __Figure 5: Telerik Forms App template__
+
+![Xamarin Studio Create new project](images/project-wizard/ChooseTemplate.png)
 
 Follow the steps to setup your app.
-
-![Xamarin Studio Telerik Project Template Steps](images/xs-project-wizard-new-project-3.png) 
 
 When you are done the project will contain all required packages and binaries and you can start writing your app right away.
 

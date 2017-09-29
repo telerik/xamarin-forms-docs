@@ -21,6 +21,9 @@ The **RadMaskedInput** control exposes the following properties which you can co
 
 * **MaskType**(MaskType): Used to set the validation type of the **RadMaskedInput**. You can set it to either **Text** or **Regex**.
 * **Mask**(string): You should use this property to set the Mask of the control. It is of type string. In case of using Text validation, you should use the available Mask Tokens. Otherwise, a regular expression should be set.
+* **IsMaskFull**(bool): Gets a value indicating if all required symbols are filled. The default value is true. Can be false only when required symbols tokens are present in the mask. (*ReadOnly*)
+* **InputValue**(string): Gets or sets the whole input value.
+* **IsInputAccepted**(bool): Gets a value indicating whether the input matches the mask.(*ReadOnly*)
 
 #### Appearance-related properties: 
 
@@ -30,7 +33,8 @@ The **RadMaskedInput** control exposes the following properties which you can co
 * **DisplayedTextColor**: Gets or sets the color of the displayed text.
 * **DisplayedTextFont**: Gets or sets the font of the displayed text
 * **DisplayedTextFontSize**: Gets or sets the size of the font used for the displayed text.
-
+* **BorderStyle**: Gets or sets a **BorderStyle** object that is used to define the border of the MaskedInput.
+* **Placeholder**: Gets or sets the symbol that will be used to mark an empty position. The default value is '_'.
 
 #### Validation-related properties: 
 
@@ -38,7 +42,7 @@ The **RadMaskedInput** control exposes the following properties which you can co
 * **ErrorColor**: Gets or sets the color of the error text.
 * **ErrorFontSize**: Gets or sets the font size of the error text.
 * **RejectedSymbolErrorText**:  Gets or sets the error text when a symbol was rejected.
-
+* **IsErrorTextVisible**(bool): Gets a value indicating whether the error text is visible. (*ReadOnly*)
 
 ## Example
 

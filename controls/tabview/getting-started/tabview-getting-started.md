@@ -31,7 +31,7 @@ To define the header of a TabViewItem you can use its **HeaderText** property as
 #### __Figure 1: TabView example__  
 ![BusyIndicator example](../images/tabview-gettingstarted-0.png)
 
->important The **SDK Browser** and the **QSF** applications contain different examples that show RadTabView's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
+>important **SDK Browser** and **QSF** applications contain different examples that show RadTabView's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
 
 ## See Also
 

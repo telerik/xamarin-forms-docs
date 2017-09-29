@@ -43,7 +43,7 @@ To display any segments you can set the control's ItemsSource property and popul
 #### __Figure 1: RadSegmentedControl example__  
 ![SegmentControl example](../images/segmentcontrol-gettingstarted-0.png)
 
->important The **SDK Browser** and the **QSF** applications contain different examples that show RadSegmentedControl's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
+>important **SDK Browser** and **QSF** applications contain different examples that show RadSegmentedControl's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
 
 ### See Also
 

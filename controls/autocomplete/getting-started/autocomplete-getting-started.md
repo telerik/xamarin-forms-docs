@@ -37,4 +37,4 @@ Here is the result:
 
 ![AutoComplete Getting Started Example](../images/autocomplete-getting-started.png "AutoComplete Getting Started Example")
 
->important The **SDK Browser** and the **QSF** applications contain different examples that show RadAutoComplete's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
+>important **SDK Browser** and **QSF** applications contain different examples that show RadAutoComplete's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.

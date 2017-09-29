@@ -45,7 +45,7 @@ After you have created your collection of custom objects, you should assign it t
 #### Figure 1: RadDataGrid declaration:
 ![datagrid-itemssource](../images/datagrid-itemssource.png)
 
->important The **SDK Browser** and the **QSF** applications contain different examples that show RadDataGrid's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
+>important **SDK Browser** and **QSF** applications contain different examples that show RadDataGrid's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
 
 ## See Also
 

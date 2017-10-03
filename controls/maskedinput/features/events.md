@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events
-position: 1
+position: 2
 slug: maskedinput-features-events
 ---
 
@@ -14,21 +14,21 @@ The RadMaskedInput exposes the following events which can be utilized for additi
 
 ### ApplyMaskStarted
 
-The event occurs when you type in a symbol in the **RadMaskedInput** and the mask is about to be applied. It takes parameter of type **ApplyMaskStartedEventArgs** with the following properties:
+The event occurs when you type in a symbol in the **RadMaskedInput** and the mask is about to be applied. The event arguments are of type **ApplyMaskStartedEventArgs** and expose following properties:
 
 * **NewDisplayedText**: The updated text of the **MaskedInput** control after the symbol is added.
-* **NewInputValue**: The new **InputValue**(the whole value that the mask contains).
+* **NewInputValue**: The new **InputValue**(the whole string value that the mask contains).
 * **OldDisplayedText**: The text of the **MaskedInput** before the symbol is added.
 * **OldInputValue**: The previous input value. Returns empty string if such is not available. 
 
 ### ApplyMaskFinished
 
-The event occurs when the mask is already applied. It takes parameter of type **ApplyMaskFinishedEventArgs** with the following properties:
+The event occurs when the mask is already applied. The event arguments are of type **ApplyMaskFinishedEventArgs** and expose the following properties:
 
 * **CaretPosition**: The position of the caret after the symbol was typed. It can be controlled to manually set the caret position.
 * **IsAccepted**: Boolean property that indicates whether the symbol was accepted by the mask. It can be set to manually control the action.
 * **NewDisplayedText**: The updated text of the **MaskedInput** control after the symbol is added.
-* **NewInputValue**: The new **InputValue**(the whole value that the mask contains).
+* **NewInputValue**: The new **InputValue**(the whole string value that the mask contains).
 * **OldDisplayedText**: The text of the **MaskedInput** before the symbol is added.
 * **OldInputValue**: The previous input value. Returns empty string if such is not available. 
 

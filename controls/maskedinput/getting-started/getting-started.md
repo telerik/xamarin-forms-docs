@@ -51,10 +51,10 @@ The following examples show how to add a **RadMaskedInput** to your project.
 **MaskedInput with MaskType Text:**
 <snippet id='maskedinput-gettingstarted-text-xaml'/>
 
-**MaskedInput with MaskType RegEx:**
-<snippet id='maskedinput-gettingstarted-regex-xaml'/>
+#### **Figure 1: MaskedInput**
+![Getting started](../images/maskedinput_gettingstarted.png)
 
 ## See Also
 
-* [RadMaskedInput Tokens]({%slug maskedinput-features-mask-tokens%})
-* [RadMaskedInput Events]({%slug maskedinput-features-events%})
+* [Tokens]({%slug maskedinput-features-mask-tokens%})
+* [Events]({%slug maskedinput-features-events%})

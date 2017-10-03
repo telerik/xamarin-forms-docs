@@ -1,6 +1,6 @@
 ---
-title: Validation
-page_title: Validation
+title: Validation UI
+page_title: Validation UI
 position: 3
 slug: maskedinput-features-validation
 ---

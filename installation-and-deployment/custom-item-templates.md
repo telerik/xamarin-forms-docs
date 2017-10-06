@@ -11,62 +11,77 @@ There are several **predefined item templates for Visual Studio** included in th
 
 > The Item Templates are installed through a Visual Studio extension file(vsix) which can be found in the **VSExtensions** folder of your local installation. 
 
+## Adding Item Templates to your project
+
 As these item templates will be automatically added when you run the **UI for Xamarin** installation, you can find them when you try adding a new item to your Xamarin Forms project, as shown in **Figure 1**.
 
-#### Figure 1: Adding a custom item to your Xamarin Forms project
+##### Figure 1: Adding a custom item to your Xamarin Forms project
 
 ![custom item templates](images/item-templates/custom-item-templates-highlight.png) 
 
-Here is a list of the available item templates:
+You can also add them through the Telerik menu of Visual Studio as shown in **Figure 2**:
+
+##### Figure 2: Adding a custom item to your Xamarin Forms project through Telerik menu:
+
+![custom item templates telerik menu](images/item-templates/item-templates-telerik-menu.png) 
+
+Or through the context menu of your Visual Studio project:
+
+##### Figure 3: Adding a custom item to your Xamarin Forms project through the context menu:
+![custom item templates context menu](images/item-templates/item-templates-context-menu.png) 
+
+## Views
+
+The available item templates are listed below:
 
 * [Stocks View](#stocks-view)
 * [Activity View](#activity-view)
 * [Search View](#search-view)
 
-## Stocks View
+### Stocks View
 
 The Stocks View represents a list of several companies and information related to their stocks such as current price, trends, percentage difference, etc. The main controls which are utilized are the [RadListView]({%slug listview-overview%}) and [RadCartesianChart]({%slug chart-types-cartesian-chart%}) controls. **Figure 2** shows the default appearance of the view.
 
-#### Figure 2: Stocks View's default appearance
+##### Figure 4: Stocks View's default appearance
 ![custom item templates](images/item-templates/stocks-view-canvas.png) 
   
-## Activity View
+### Activity View
 
 The Activity View provides an information regarding a specific user and information regarding his daily physical activity such as calories burned, average steps and active time. The view utilizes the [RadCartesianChart]({%slug chart-types-cartesian-chart%}), [RadRadialGauge]({%slug gauge-types-radial%}) and [RadHorizontalGauge]({%slug gauge-types-horizontal%}) controls. **Figure 3** shows the default appearance of the Activity View:
 
-#### Figure 3: Activity View's default appearance
+##### Figure 5: Activity View's default appearance
 ![activity view](images/item-templates/activitiy-view-canvas.png) 
 
-## Search View
+### Search View
 
 There are several Search View custom items which show the same setup with a slightly different visualization. All of the item templates use the [RadAutoComplete]({%slug autocomplete-overview%}) and [RadListView]({%slug listview-overview%}) controls with different modifications in order to achieve a diverse look. The **RadAutoComplete** control is used to filter the visible collection according to a certain user input.
 
-### Multiline Items
+#### Multiline Items
 
 In the **SearchViewMultiLineItems** template, the items within the **RadListView** have multiple line description.
 
-#### Figure 4: Search View Multiline Items 
+##### Figure 6: Search View Multiline Items 
 ![search view multiline](images/item-templates/search-view-multiline.png) 
 
-### Singleline Items
+#### Singleline Items
 
 In the **SearchViewSingleLineItems** template, only a single line of information regarding the specific item is present.
 
-#### Figure 5: Search View Singleline Items 
+##### Figure 7: Search View Singleline Items 
 ![search view singleline](images/item-templates/search-view-singleline.png) 
 
-### Singleline Items Big Image
+#### Singleline Items Big Image
 
 The **SearchViewSingleLineItemsBigImage** template is similar to the **SearchViewSingleLineItems** template, however, the look of the item within the **RadListView** is slightly tweaked for a distinctive appearance that emphasizes on the image.
 
-#### Figure 6: Search View Singleline Items Big Image 
+##### Figure 8: Search View Singleline Items Big Image 
 ![search view singleline](images/item-templates/search-view-singlelineimage.png) 
 
-### Twoline Items
+#### Twoline Items
 
 The **SearchViewTwoLinesItems** template once again shows a different approach of modifying RadListView's ItemTemplate.
 
-#### Figure 7: Search View Twolines Items 
+#### Figure 9: Search View Twolines Items 
 ![search view singleline](images/item-templates/search-view-twoline.png) 
 
 

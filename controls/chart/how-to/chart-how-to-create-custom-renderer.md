@@ -4,11 +4,11 @@ slug: chart-how-to-create-custom-renderer
 ---
 
 # Custom Chart Renderer #
-Sometimes, you might find that certain feature is available in the native control on a given platform, but is not exposed in Xamarin Forms. This is when you would need to create a custom renderer. This will allow you to access the native control and configure it as per your needs.
+Sometimes, you might find that certain feature is available in the native control on a given platform, but is not exposed in Xamarin Forms. This is when you would need to create a **custom renderer**. This will allow you to access the native control and configure it as per your needs.
 
 ## Example ##
 
-Let us consider the following example: we need to apply animation to LineSeries in iOS. Create a class which inherits from Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartRenderer and override the UpdataNativeWidget and CreateChartDelegateOverride methods:
+Let us consider the following example: we need to apply animation to **LineSeries** in **iOS**. Create a class which inherits from **Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartRenderer** and override the **UpdataNativeWidget** and **CreateChartDelegate** methods:
 
 	public class LineWithAnimationRenderer : CartesianChartRenderer
 	{
@@ -22,13 +22,13 @@ Let us consider the following example: we need to apply animation to LineSeries 
 			this.Control.AllowAnimations = true;
 		}
 
-		protected override CartesianChartDelegate CreateChartDelegateOverride()
-		{
-			return new ChartWithAnimationDelegate();
-		}
+		protected override TKChartDelegate CreateChartDelegate(RadCartesianChart chart)
+        {
+            return new ChartWithAnimationDelegate(chart);
+        }
 	}
 
-UpdateNativeWidget method takes care of allowing animations for the chart. CreateChartDelegateOverride supplies an instance of a class that inherits from TKChartDelegate, configured with animations as per the [iOS chart help](http://docs.telerik.com/devtools/ios/Chart/Animations/custom). ChartWithAnimationDelegate inherits from Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartDelegate, which in turn inherits from TKChartdelegate. This way you only need to extend it with the desired features:
+**UpdateNativeWidget** method takes care of allowing animations for the chart. **CreateChartDelegate** supplies an instance of a class that inherits from **TKChartDelegate**, configured with animations as per the [iOS chart help](https://docs.telerik.com/devtools/xamarin/nativecontrols/ios/chart/animations/custom). **ChartWithAnimationDelegate** inherits from Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartDelegate, which in turn inherits from **TKChartdelegate**. This way you only need to extend it with the desired features:
 
 	public class ChartWithAnimationDelegate : CartesianChartDelegate
 	{

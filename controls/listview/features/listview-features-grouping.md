@@ -41,7 +41,7 @@ This descriptor enables you to group by a custom key (e.g. some complex expressi
 	      </DataTemplate>
 	    </telerikDataControls:RadListView.ItemTemplate>
 	    <telerikDataControls:RadListView.GroupDescriptors>
-	      <listView:PropertyGroupDescriptor PropertyName="Day"/>
+	      <telerikListView:PropertyGroupDescriptor PropertyName="Day"/>
 	    </telerikDataControls:RadListView.GroupDescriptors>
 	    <telerikDataControls:RadListView.GroupHeaderTemplate>
 	      <DataTemplate>

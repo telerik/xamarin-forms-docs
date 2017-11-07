@@ -97,6 +97,10 @@ On top of this, there is no need to manually apply annotations and to call initi
 
 Users need to figure out which binaries they need, reference them in the respective project and they are ready to go.
 
+### Calendar changes
+
+The **Telerik.XamarinForms.IAppointment** interface has been modified to include an additional **Detail** property.
+
 ## R1 2017
 
 ### DataForm changes

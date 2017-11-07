@@ -7,45 +7,49 @@ slug: calendar-appointments
 
 # Appointments #
 
-RadCalendar can display appointments in its month view by using its **AppointmentsSource** property. It accepts a collection of objects, which implement the **Telerik.XamarinForms.IAppointment** interface. This interface defines 3 members:
+## Creating an Appointment ##
 
-- **StartDate** 
-- **EndDate**
-- **Title**
+RadCalendar can display appointments by setting its **AppointmentsSource** property. It accepts a collection of objects, which should implement the **Telerik.XamarinForms.IAppointment** interface. This interface defines 6 members:
 
-## Example ##
+- **StartDate** *(DateTime)*
+- **EndDate** *(DateTime)*
+- **Title** *(string)*
+- **Detail** *(string)*
+- **Color** *(Color)*
+- **IsAllDay** *(bool)*
 
-	calendar.AppointmentsSource = new List<Appointment>() {
-		new Appointment() { 
-			StartDate = DateTime.Today.AddDays(1), 
-			EndDate = DateTime.Today.AddDays(2).AddTicks(-1), 
-			Title = "Mom's Birthday",
-			Color = Color.Red },
-		new Appointment() { 
-			StartDate = DateTime.Today.AddDays(3).AddHours(17), 
-			EndDate = DateTime.Today.AddDays(3).AddHours(22), 
-			Title = "Big Game",
-			Color = Color.Green },
-		new Appointment() {
-			StartDate = DateTime.Today.AddDays(11).AddHours(20), 
-			EndDate = DateTime.Today.AddDays(12).AddHours(4), 
-			Title = "Progress Party",
-			Color = Color.Red }
-	};
+>caution In **R2 2017** we have introduced a breaking change in the **IAppointment** interface by adding the **Detail** property. 
+
+### Appointments Example ###
+
+<snippet id='calendar-gettingstarted-appointmentssource-csharp'/>
 
 where **Appointment** class implements **IAppointment** interface:
 
-	public class Appointment : IAppointment
-	{
-		public DateTime StartDate { get; set; }
+<snippet id='calendar-getting-started-appointment-class'/>
 
-		public DateTime EndDate {  get; set; }
+#### **Figure 1: Appearance of the RadCalendar control in month view mode**
+![Appointments monthview](images/monthviews.png)
 
-		public string Title { get; set; }
+#### **Figure 2: Appearance of the RadCalendar control in day view mode**
+![Appointments dayview](images/dayviews.png)
 
-		public bool IsAllDay { get; set; }
+## Events ##
+ 
+**AppointmentTapped**(AppointmentTappedEventArgs): Occurs when you tap over a specific appointment when in DayView mode. It can be used to get all the information regarding the appointment.
 
-		public Color Color { get; set; }
-	}
+### AppointmentTapped Example ###
 
-![Appointments](images/calendar-appointments.png)
+First you need to set the ViewMode to Day:
+
+<snippet id='calendar-features-setviewmode-csharp'/>
+
+Eventually, you can utilize the event: 
+
+<snippet id='calendar-features-appointmenttapped-csharp'/>
+
+## See Also
+
+* [Navigation and View Mode]({%slug calendar-features-navigation-and-view-mode%})
+* [Calendar Selection]({%slug calendar-selection%})
+

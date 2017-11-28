@@ -18,13 +18,13 @@ All members related to validation are listed below:
 
 ### Methods
 
-- void **ValidateAll**(): Validates all properties and when finished, raises the **FormValidationFinished** event.
-- void **ValidateProperty**(string *propertyName*): Validates the property with the specified name and when finished raises the **PropertyValidationFinished** event.
+- void **ValidateAll**(): Validates all properties and when finished, raises the **FormValidationCompleted** event.
+- void **ValidateProperty**(string *propertyName*): Validates the property with the specified name and when finished raises the **PropertyValidationCompleted** event.
 
 ### Events
 
-- **FormValidationFinished**: Occurs when a property validation has finished. Provides information about whether the property has passed validation.
-- **PropertyValidationFinished**: Occurs when all form properties are validated. Provides a list of failed properties.
+- **FormValidationCompleted**: Occurs when all form properties are validated. Provides a list of failed properties.
+- **PropertyValidationCompleted**: Occurs when a property validation has finished. Provides information about whether the property has passed validation.
 
 ## Commit
 

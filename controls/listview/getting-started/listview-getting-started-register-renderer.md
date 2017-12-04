@@ -8,6 +8,8 @@ publish: false
 
 # Register the RadListView renderer
 
+>important With R2 2017 release of UI for Xamarin you do not need to manually define control renderers. The following instructions are valid for versions prior R2 2017. 
+
 ## Android Project
 
 You have to add the following lines to the **MainActivity.cs** file outside the scope of the namespace just after the using statements:

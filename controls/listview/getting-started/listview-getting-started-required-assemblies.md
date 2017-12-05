@@ -26,7 +26,7 @@ This article contains information about which assemblies are required by the **R
 | Windows Phone 8.1 | WinRT\Common\Telerik.Core.dll <br/> WinRT\Common\Telerik.Data.dll <br/> WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Controls.Data.dll <br/> WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Primitives.dll <br/> WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Input.dll<br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.DataControls.dll |
 | Windows Phone 8.0 | **RadListView** is not available |
 
->important As some of the controls included in **UI for Xamarin** suite rely on the **SkiaSharp** rendering library, you should either install [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.59.0) in all projects included in the Xamarin solution (portable, android, ios, etc.) or in case you do not intend to use any of the Skia-dependent components (Gauges, Rating, BusyIndicator), you could reference the [Lite assemblies]({%slug telerik-light-assemblies%}).
+>important As some of the controls included in **Telerik UI for Xamarin** suite rely on the **SkiaSharp** rendering library, you should either install [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.59.0) in all projects included in the Xamarin solution (portable, android, ios, etc.) or in case you do not intend to use any of the Skia-dependent components (Gauges, Rating, BusyIndicator), you could reference the [Lite assemblies]({%slug telerik-light-assemblies%}).
 
 ## References prior R2 2017
 

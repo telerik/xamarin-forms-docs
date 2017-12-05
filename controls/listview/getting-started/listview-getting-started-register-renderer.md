@@ -8,7 +8,7 @@ publish: false
 
 # Register the RadListView renderer
 
->important With R2 2017 release of UI for Xamarin you do not need to manually define control renderers. The following instructions are valid for versions prior R2 2017. 
+>important With R2 2017 release of Telerik UI for Xamarin you do not need to manually define control renderers. The following instructions are valid for versions prior R2 2017. 
 
 ## Android Project
 

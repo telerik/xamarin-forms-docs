@@ -1,0 +1,11 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <CurrentDate>$([System.DateTime]::Now.ToString(Md))</CurrentDate>
+    <CurrentYear>$([System.DateTime]::Now.ToString(yyyy))</CurrentYear>
+    <ControlsRelease Condition=" '$(ControlsRelease)' != '' ">R1</ControlsRelease>
+
+    <HelpTitle>Xamarin Forms API Reference</HelpTitle>
+    <HtmlHelpName>Telerik_Xamarin_Forms_ApiReference</HtmlHelpName>
+    <CopyrightText>© 2008-$(CurrentYear) Telerik, All Rights Reserved.</CopyrightText>
+  </PropertyGroup>
+</Project>

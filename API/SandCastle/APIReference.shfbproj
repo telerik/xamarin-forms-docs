@@ -14,10 +14,10 @@
     <Name>Documentation</Name>
     <!-- SHFB properties -->
     <FrameworkVersion>.NET Framework 4.5</FrameworkVersion>
-    <OutputPath>..\ActualDocumentation\TEST\</OutputPath>
+    <RelativeTempFolder>..\..\Api\Temp</RelativeTempFolder>
+    <OutputPath>..\..\ApiReference\</OutputPath>
     <HtmlHelpName>Documentation</HtmlHelpName>
     <Language>en-US</Language>
-    <RelativeTempFolder>..\..\Temp</RelativeTempFolder>
     <DocumentationSources>
       <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.Documents.SpreadsheetStreaming.dll" />
       <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.XamarinForms.Chart.dll" />
@@ -34,7 +34,20 @@
       <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.XamarinForms.Primitives.xml" />
       <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.XamarinForms.SkiaSharp.dll" />
       <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.XamarinForms.SkiaSharp.xml" />
-      <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.Zip.dll" />
+	  <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Android\Telerik.Xamarin.Android.Chart.dll" />
+	  <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Android\Telerik.Xamarin.Android.Common.dll" />
+      <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Android\Telerik.Xamarin.Android.Data.dll" />
+	  <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Android\Telerik.Xamarin.Android.Feedback.dll" />
+	  <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Android\Telerik.Xamarin.Android.Gauges.dll" />
+	  <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Android\Telerik.Xamarin.Android.Input.dll" />
+	  <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Android\Telerik.Xamarin.Android.List.dll" />
+	  <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Android\Telerik.Xamarin.Android.Primitives.dll" />
+	  <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\iOS\Telerik.Core.dll" />
+	  <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\UWP\Telerik.Data.dll" />
+      <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\UWP\Telerik.UI.Xaml.Chart.UWP.dll" />
+	  <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\UWP\Telerik.UI.Xaml.Controls.Data.UWP.dll" />
+	  <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\UWP\Telerik.UI.Xaml.Input.UWP.dll" />
+	  <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\UWP\Telerik.UI.Xaml.Primitives.UWP.dll" />
     </DocumentationSources>
     <HtmlHelp1xCompilerPath>
     </HtmlHelp1xCompilerPath>

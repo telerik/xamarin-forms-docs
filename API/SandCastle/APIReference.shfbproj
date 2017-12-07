@@ -18,22 +18,23 @@
     <HtmlHelpName>Documentation</HtmlHelpName>
     <Language>en-US</Language>
     <DocumentationSources>
-      <DocumentationSource sourceFile="$(TempWorkFolder)\Binaries\Portable\Telerik.Documents.SpreadsheetStreaming.dll" />
-<DocumentationSource sourceFile="$(TempWorkFolder)\Binaries\Portable\Telerik.XamarinForms.Chart.dll" />
-<DocumentationSource sourceFile="$(TempWorkFolder)\Binaries\Portable\Telerik.XamarinForms.Chart.xml" />
-<DocumentationSource sourceFile="$(TempWorkFolder)\Binaries\Portable\Telerik.XamarinForms.Common.dll" />
-<DocumentationSource sourceFile="$(TempWorkFolder)\Binaries\Portable\Telerik.XamarinForms.Common.xml" />
-<DocumentationSource sourceFile="$(TempWorkFolder)\Binaries\Portable\Telerik.XamarinForms.DataControls.dll" />
-<DocumentationSource sourceFile="$(TempWorkFolder)\Binaries\Portable\Telerik.XamarinForms.DataControls.xml" />
-<DocumentationSource sourceFile="$(TempWorkFolder)\Binaries\Portable\Telerik.XamarinForms.DataVisualization.dll" />
-<DocumentationSource sourceFile="$(TempWorkFolder)\Binaries\Portable\Telerik.XamarinForms.DataVisualization.xml" />
-<DocumentationSource sourceFile="$(TempWorkFolder)\Binaries\Portable\Telerik.XamarinForms.Input.dll" />
-<DocumentationSource sourceFile="$(TempWorkFolder)\Binaries\Portable\Telerik.XamarinForms.Input.xml" />
-<DocumentationSource sourceFile="$(TempWorkFolder)\Binaries\Portable\Telerik.XamarinForms.Primitives.dll" />
-<DocumentationSource sourceFile="$(TempWorkFolder)\Binaries\Portable\Telerik.XamarinForms.Primitives.xml" />
-<DocumentationSource sourceFile="$(TempWorkFolder)\Binaries\Portable\Telerik.XamarinForms.SkiaSharp.dll" />
-<DocumentationSource sourceFile="$(TempWorkFolder)\Binaries\Portable\Telerik.XamarinForms.SkiaSharp.xml" />
-<DocumentationSource sourceFile="$(TempWorkFolder)\Binaries\Portable\Telerik.Zip.dll" /></DocumentationSources>
+      <RelativeTempFolder>..\..\Temp</RelativeTempFolder>
+      <DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.Documents.SpreadsheetStreaming.dll" />
+<DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.XamarinForms.Chart.dll" />
+<DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.XamarinForms.Chart.xml" />
+<DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.XamarinForms.Common.dll" />
+<DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.XamarinForms.Common.xml" />
+<DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.XamarinForms.DataControls.dll" />
+<DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.XamarinForms.DataControls.xml" />
+<DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.XamarinForms.DataVisualization.dll" />
+<DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.XamarinForms.DataVisualization.xml" />
+<DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.XamarinForms.Input.dll" />
+<DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.XamarinForms.Input.xml" />
+<DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.XamarinForms.Primitives.dll" />
+<DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.XamarinForms.Primitives.xml" />
+<DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.XamarinForms.SkiaSharp.dll" />
+<DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.XamarinForms.SkiaSharp.xml" />
+<DocumentationSource sourceFile="$(RelativeTempFolder)\Binaries\Portable\Telerik.Zip.dll" /></DocumentationSources>
     <HtmlHelp1xCompilerPath>
     </HtmlHelp1xCompilerPath>
     <MaximumGroupParts>2</MaximumGroupParts>

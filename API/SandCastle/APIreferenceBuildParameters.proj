@@ -7,5 +7,8 @@
     <HelpTitle>Xamarin Forms API Reference</HelpTitle>
     <HtmlHelpName>Telerik_Xamarin_Forms_ApiReference</HtmlHelpName>
     <CopyrightText>© 2008-$(CurrentYear) Telerik, All Rights Reserved.</CopyrightText>
+    
+    <BinariesFolder>..\..\..\Xamarin-forms\Examples\XamarinForms.documentation\Binaries</BinariesFolder>
+    <OutputPath>..\..\..\Xamarin-Forms-docs\ApiReference\</OutputPath>
   </PropertyGroup>
 </Project>

@@ -32,20 +32,20 @@
       <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.Primitives.xml" />
       <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.SkiaSharp.dll" />
       <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.SkiaSharp.xml" />
-	  <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.Chart.dll" />
-	  <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.Common.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.Chart.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.Common.dll" />
       <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.Data.dll" />
-	  <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.Feedback.dll" />
-	  <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.Gauges.dll" />
-	  <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.Input.dll" />
-	  <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.List.dll" />
-	  <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.Primitives.dll" />
-	  <DocumentationSource sourceFile="$(BinariesFolder)\iOS\Telerik.Core.dll" />
-	  <DocumentationSource sourceFile="$(BinariesFolder)\UWP\Telerik.Data.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.Feedback.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.Gauges.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.Input.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.List.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.Primitives.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\iOS\Telerik.Core.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\UWP\Telerik.Data.dll" />
       <DocumentationSource sourceFile="$(BinariesFolder)\UWP\Telerik.UI.Xaml.Chart.UWP.dll" />
-	  <DocumentationSource sourceFile="$(BinariesFolder)\UWP\Telerik.UI.Xaml.Controls.Data.UWP.dll" />
-	  <DocumentationSource sourceFile="$(BinariesFolder)\UWP\Telerik.UI.Xaml.Input.UWP.dll" />
-	  <DocumentationSource sourceFile="$(BinariesFolder)\UWP\Telerik.UI.Xaml.Primitives.UWP.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\UWP\Telerik.UI.Xaml.Controls.Data.UWP.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\UWP\Telerik.UI.Xaml.Input.UWP.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\UWP\Telerik.UI.Xaml.Primitives.UWP.dll" />
     </DocumentationSources>
     <HtmlHelp1xCompilerPath>
     </HtmlHelp1xCompilerPath>
@@ -260,6 +260,7 @@
     <HtmlHelp2xCompilerPath />
     <WorkingPath />
     <ComponentPath />
+    <OutputPath>..\..\..\Xamarin-Forms-docs\ApiReference\</OutputPath>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->

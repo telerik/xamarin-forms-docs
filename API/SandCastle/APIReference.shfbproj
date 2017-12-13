@@ -25,6 +25,8 @@
       <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.Common.xml" />
       <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.DataControls.dll" />
       <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.DataControls.xml" />
+	  <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.DataGrid.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.DataGrid.xml" />
       <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.DataVisualization.dll" />
       <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.DataVisualization.xml" />
       <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.Input.dll" />

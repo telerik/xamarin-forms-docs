@@ -15,7 +15,7 @@
     <!-- SHFB properties -->
     <FrameworkVersion>.NET Framework 4.5</FrameworkVersion>
     <HtmlHelpName>Documentation</HtmlHelpName>
-	<BinariesFolder>..\..\..\Xamarin-forms\Examples\XamarinForms.documentation\Binaries</BinariesFolder>
+    <BinariesFolder>..\..\..\Xamarin-forms\Examples\XamarinForms.documentation\Binaries</BinariesFolder>
     <Language>en-US</Language>
     <DocumentationSources>
       <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.Documents.SpreadsheetStreaming.dll" />
@@ -25,7 +25,7 @@
       <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.Common.xml" />
       <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.DataControls.dll" />
       <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.DataControls.xml" />
-	  <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.DataGrid.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.DataGrid.dll" />
       <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.DataGrid.xml" />
       <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.DataVisualization.dll" />
       <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.DataVisualization.xml" />
@@ -63,7 +63,7 @@
     <HelpTitle>Xamarin.Forms Documentation API</HelpTitle>
     <ContentPlacement>AboveNamespaces</ContentPlacement>
     <VisibleItems>ExplicitInterfaceImplementations, Protected, ProtectedInternalAsProtected</VisibleItems>
-    <MissingTags>Summary, Parameter, Returns, AutoDocumentCtors, Namespace, TypeParameter</MissingTags>
+    <MissingTags>Summary, Parameter, Returns, AutoDocumentCtors, TypeParameter</MissingTags>
     <PlugInConfigurations>
       <PlugInConfig id="Assembly Binding Redirection" enabled="True">
         <configuration useGAC="true">

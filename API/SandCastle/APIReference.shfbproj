@@ -56,11 +56,11 @@
     <NamespaceGrouping>True</NamespaceGrouping>
     <SyntaxFilters>C#</SyntaxFilters>
     <SdkLinkTarget>Blank</SdkLinkTarget>
-    <RootNamespaceContainer>True</RootNamespaceContainer>
+    <RootNamespaceContainer>False</RootNamespaceContainer>
     <PresentationStyle>VS2013</PresentationStyle>
     <Preliminary>False</Preliminary>
     <NamingMethod>Guid</NamingMethod>
-    <HelpTitle>Xamarin.Forms Documentation API</HelpTitle>
+    <HelpTitle>Telerik UI for Xamarin.Forms Documentation API</HelpTitle>
     <ContentPlacement>AboveNamespaces</ContentPlacement>
     <VisibleItems>ExplicitInterfaceImplementations, Protected, ProtectedInternalAsProtected</VisibleItems>
     <MissingTags>AutoDocumentCtors</MissingTags>

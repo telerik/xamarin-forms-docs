@@ -63,7 +63,7 @@
     <HelpTitle>Xamarin.Forms Documentation API</HelpTitle>
     <ContentPlacement>AboveNamespaces</ContentPlacement>
     <VisibleItems>ExplicitInterfaceImplementations, Protected, ProtectedInternalAsProtected</VisibleItems>
-    <MissingTags>Summary, Parameter, Returns, AutoDocumentCtors, TypeParameter</MissingTags>
+    <MissingTags>AutoDocumentCtors</MissingTags>
     <PlugInConfigurations>
       <PlugInConfig id="Assembly Binding Redirection" enabled="True">
         <configuration useGAC="true">

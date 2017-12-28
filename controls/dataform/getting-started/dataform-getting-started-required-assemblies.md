@@ -12,7 +12,7 @@ This article contains a list with the assemblies required by the **RadDataForm**
 ## References after R2 2017
 
 > The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls. The default location is:  
-> `C:\Program Files (x86)\Progress\UI for Xamarin RX XXX\Binaries`.
+> `C:\Program Files (x86)\Progress\Telerik UI for Xamarin RX XXX\Binaries`.
 
 > Please keep in mind that all binaries built for a specific platform are placed in a folder named after that platform.
 

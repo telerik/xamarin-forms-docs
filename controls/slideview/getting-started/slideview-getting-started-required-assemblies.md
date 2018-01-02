@@ -10,7 +10,7 @@ slug: slideview-required-assemblies
 This article contains a list with the assemblies required by the **RadSlideView** component.
 
 > The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls. The default location is:  
-> `C:\Program Files (x86)\Telerik\UI for Xamarin RX XXX\Binaries`.
+> `C:\Program Files (x86)\Progress\Telerik UI for Xamarin RX XXX\Binaries`.
 
 > Please keep in mind that all binaries built for a specific platform are placed in a folder named after that platform.
 
@@ -21,7 +21,9 @@ This article contains a list with the assemblies required by the **RadSlideView*
 | iOS      | Telerik.Xamarin.iOS.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
 | UWP      | Telerik.Core.dll<br/>Telerik.UI.Xaml.Primitives.UWP.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll|
 
+>important As some of the controls included in **UI for Xamarin** suite rely on the **SkiaSharp** rendering library, you should either install [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.59.0) in all projects included in the Xamarin solution (portable, android, ios, etc.) or in case you do not intend to use any of the Skia-dependent components (Gauges, Rating, BusyIndicator), you could reference the [Lite assemblies]({%slug telerik-light-assemblies%}).
+
 ### See Also
 
 - [Required Android Support Libraries]({%slug required-android-support-libraries%})
-- [Getting Started]({%slug slideview-getting-started%})
+- [SlideView Getting Started]({%slug slideview-getting-started%})

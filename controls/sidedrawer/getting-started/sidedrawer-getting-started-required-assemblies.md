@@ -7,12 +7,12 @@ slug: sidedrawer-getting-started-required-assemblies
 
 # Required Telerik Assemblies
 
-This article contains information about which assemblies are required by the controls in the **RadSideDrawer** control.
+This article contains a list of the assemblies required by the **RadSideDrawer** control.
 
 ## References after R2 2017
 
 > The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls. The default location is:  
-> `C:\Program Files (x86)\Telerik\UI for Xamarin RX XXX\Binaries`.
+> `C:\Program Files (x86)\Progress\Telerik UI for Xamarin RX XXX\Binaries`.
 
 > Please keep in mind that all binaries built for a specific platform are placed in a folder named after that platform.
 
@@ -26,6 +26,7 @@ This article contains information about which assemblies are required by the con
 | Windows Phone 8.1 | WinRT\Common\Telerik.Core.dll<br/> WinRT\Windows Phone 8.1\Telerik.UI.Xaml.Primitives.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
 | Windows Phone 8.0 | **RadListView** is not available |
 
+>important As some of the controls included in **UI for Xamarin** suite rely on the **SkiaSharp** rendering library, you should either install [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.59.0) in all projects included in the Xamarin solution (portable, android, ios, etc.) or in case you do not intend to use any of the Skia-dependent components (Gauges, Rating, BusyIndicator), you could reference the [Lite assemblies]({%slug telerik-light-assemblies%}).
 
 ## References prior R2 2017
 
@@ -197,7 +198,7 @@ Telerik.XamarinForms.PrimitivesRenderer.WinRT.WindowsPhone
 </tbody>
 </table>
 
->To manually register the renderer users should follow these steps [Register SideDrawer Renderer]({% slug sidedrawer-getting-started--register-renderer %})
+>Prior R2 2017 you would still need to manually register the SideDrawer renderer following these steps [Register SideDrawer Renderer]({% slug sidedrawer-getting-started--register-renderer %})
  
 ## See Also
 

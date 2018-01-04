@@ -7,7 +7,7 @@ slug: calendar-getting-started-required-assemblies
 
 # Required Telerik Assemblies
 
-This article contains a list with the assemblies required by the **RadCalendar** control.
+This article contains a list of the assemblies required by the **RadCalendar** control.
 
 ## References after R2 2017
 

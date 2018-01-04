@@ -7,7 +7,7 @@ slug: sidedrawer-getting-started-required-assemblies
 
 # Required Telerik Assemblies
 
-This article contains a list with the assemblies  required by the **RadSideDrawer** control.
+This article contains a list of the assemblies required by the **RadSideDrawer** control.
 
 ## References after R2 2017
 

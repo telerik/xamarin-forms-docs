@@ -7,7 +7,7 @@ slug: dataform-getting-started-required-assemblies
 
 # Required Telerik Assemblies
 
-This article contains a list with the assemblies required by the **RadDataForm** control.
+This article contains a list of the assemblies required by the **RadDataForm** control.
 
 ## References after R2 2017
 

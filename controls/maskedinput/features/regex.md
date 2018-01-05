@@ -7,7 +7,7 @@ slug: maskedinput-features-mask-extensions
 
 ## Validation through custom Regular Expressions
 
-One of the main features that the **RadMaskedInput** supports is validation through a custom regular expression. You can define a input pattern of your choice and set it to the Mask property of the control. In order to use the validation through regular expressions, you should set the **MaskType** to **Regex**.
+One of the main features that **RadMaskedInput** supports is validation through a custom regular expression. You can define a input pattern of your choice and set it to the Mask property of the control. In order to use the validation through regular expressions, you should set the **MaskType** to **Regex**.
 
 ### Custom Regex Example
 

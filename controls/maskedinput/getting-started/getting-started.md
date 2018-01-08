@@ -7,7 +7,7 @@ slug: maskedinput-getting-started
 
 #  Getting Started
 
-In this article you will familiarize yourselves with the most important properties of the **RadMaskedInput** Control. We will also cover some basic scenarios in which the **RadMaskedInput** control can be used. 
+This article provides information regarding the most important properties of the **RadMaskedInput** Control. We will also cover some basic scenarios in which the **RadMaskedInput** control can be used. 
 
 ## Mask Types
 

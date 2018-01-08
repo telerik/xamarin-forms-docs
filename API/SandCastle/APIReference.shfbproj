@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <!-- The configuration and platform will be used to determine which assemblies to include from solution and
+				 project documentation sources -->
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25ad40d4-7835-4f91-a6e2-f7fb1b820857}</ProjectGuid>
+    <SHFBSchemaVersion>1.9.9.0</SHFBSchemaVersion>
+    <!-- AssemblyName, Name, and RootNamespace are not used by SHFB but Visual Studio adds them anyway -->
+    <AssemblyName>Documentation</AssemblyName>
+    <RootNamespace>Documentation</RootNamespace>
+    <Name>Documentation</Name>
+    <!-- SHFB properties -->
+    <FrameworkVersion>.NET Framework 4.5</FrameworkVersion>
+    <HtmlHelpName>Documentation</HtmlHelpName>
+    <BinariesFolder>..\..\..\Xamarin-forms\Examples\XamarinForms.documentation\Binaries</BinariesFolder>
+    <Language>en-US</Language>
+    <DocumentationSources>
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.Documents.SpreadsheetStreaming.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.Chart.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.Chart.xml" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.Common.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.Common.xml" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.DataControls.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.DataControls.xml" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.DataGrid.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.DataGrid.xml" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.DataVisualization.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.DataVisualization.xml" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.Input.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.Input.xml" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.Primitives.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.Primitives.xml" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.SkiaSharp.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.SkiaSharp.xml" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.Chart.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.Common.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.Data.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.Feedback.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.Gauges.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.Input.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.List.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Android\Telerik.Xamarin.Android.Primitives.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\iOS\Telerik.Core.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\UWP\Telerik.Data.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\UWP\Telerik.UI.Xaml.Chart.UWP.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\UWP\Telerik.UI.Xaml.Controls.Data.UWP.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\UWP\Telerik.UI.Xaml.Input.UWP.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\UWP\Telerik.UI.Xaml.Primitives.UWP.dll" />
+    </DocumentationSources>
+    <HtmlHelp1xCompilerPath>
+    </HtmlHelp1xCompilerPath>
+    <MaximumGroupParts>2</MaximumGroupParts>
+    <NamespaceGrouping>True</NamespaceGrouping>
+    <SyntaxFilters>C#</SyntaxFilters>
+    <SdkLinkTarget>Blank</SdkLinkTarget>
+    <RootNamespaceContainer>False</RootNamespaceContainer>
+    <PresentationStyle>VS2013</PresentationStyle>
+    <Preliminary>False</Preliminary>
+    <NamingMethod>Guid</NamingMethod>
+    <HelpTitle>Telerik UI for Xamarin.Forms Documentation API</HelpTitle>
+    <ContentPlacement>AboveNamespaces</ContentPlacement>
+    <VisibleItems>ExplicitInterfaceImplementations, Protected, ProtectedInternalAsProtected</VisibleItems>
+    <MissingTags>AutoDocumentCtors</MissingTags>
+    <PlugInConfigurations>
+      <PlugInConfig id="Assembly Binding Redirection" enabled="True">
+        <configuration useGAC="true">
+          <assemblyBinding />
+          <ignoreIfUnresolved>
+            <assemblyIdentity name="BusinessObjects.Licensing.KeycodeDecoder" />
+            <assemblyIdentity name="FormsViewGroup" />
+            <assemblyIdentity name="Mono.Android" />
+            <assemblyIdentity name="SkiaSharp" />
+            <assemblyIdentity name="SkiaSharp.Forms" />
+            <assemblyIdentity name="SkiaSharp.Views" />
+            <assemblyIdentity name="SkiaSharp.Views.Forms" />
+            <assemblyIdentity name="System" />
+            <assemblyIdentity name="System.Collections" />
+            <assemblyIdentity name="System.ComponentModel" />
+            <assemblyIdentity name="System.Configuration" />
+            <assemblyIdentity name="System.Core" />
+            <assemblyIdentity name="System.Data" />
+            <assemblyIdentity name="System.Deployment" />
+            <assemblyIdentity name="System.Device" />
+            <assemblyIdentity name="System.Diagnostics.Debug" />
+            <assemblyIdentity name="System.Dynamic" />
+            <assemblyIdentity name="System.Dynamic.Runtime" />
+            <assemblyIdentity name="System.EnterpriseServices" />
+            <assemblyIdentity name="System.Globalization" />
+            <assemblyIdentity name="System.IO" />
+            <assemblyIdentity name="System.Linq" />
+            <assemblyIdentity name="System.Management" />
+            <assemblyIdentity name="System.Media" />
+            <assemblyIdentity name="System.Messaging" />
+            <assemblyIdentity name="System.Net" />
+            <assemblyIdentity name="System.Numerics" />
+            <assemblyIdentity name="System.Numerics.Vectors" />
+            <assemblyIdentity name="System.ObjectModel" />
+            <assemblyIdentity name="System.Reflection" />
+            <assemblyIdentity name="System.Resources" />
+            <assemblyIdentity name="System.Runtime" />
+            <assemblyIdentity name="System.Runtime.Extensions" />
+            <assemblyIdentity name="System.Runtime.WindowsRuntime" />
+            <assemblyIdentity name="System.Security" />
+            <assemblyIdentity name="System.Threading" />
+            <assemblyIdentity name="System.Threading.Tasks" />
+            <assemblyIdentity name="System.Timers" />
+            <assemblyIdentity name="System.Xml" />
+            <assemblyIdentity name="Windows.Foundation.FoundationContract" />
+            <assemblyIdentity name="Windows.Foundation.UniversalApiContract" />
+            <assemblyIdentity name="Xamarin.Android.Support.v4" />
+            <assemblyIdentity name="Xamarin.Android.Support.v7.AppCompat" />
+            <assemblyIdentity name="Xamarin.Android.Support.v7.RecyclerView" />
+            <assemblyIdentity name="Xamarin.Forms" />
+            <assemblyIdentity name="Xamarin.Forms.Core" />
+            <assemblyIdentity name="Xamarin.Forms.Platform.Android" />
+            <assemblyIdentity name="Xamarin.Forms.Platform.iOS" />
+            <assemblyIdentity name="Xamarin.Forms.Xaml" />
+            <assemblyIdentity name="Xamarin.iOS" />
+          </ignoreIfUnresolved>
+        </configuration>
+      </PlugInConfig>
+    </PlugInConfigurations>
+    <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
+    <HelpFileFormat>Website</HelpFileFormat>
+    <IndentHtml>False</IndentHtml>
+    <KeepLogFile>True</KeepLogFile>
+    <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
+    <CppCommentsFixup>False</CppCommentsFixup>
+    <CleanIntermediates>True</CleanIntermediates>
+    <NamespaceSummaries>
+      <NamespaceSummaryItem name="Android.Support.V4.View" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="ChartBindings" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik (Group)" isGroup="True" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Android.Common" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Android.Common.Animations" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Android.Common.Exceptions" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Android.Common.Licensing" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Android.Common.Math" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Android.Data" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Android.Primitives.Widget.Sidedrawer" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Android.Primitives.Widget.Sidedrawer.Contents" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Android.Primitives.Widget.Sidedrawer.Transitions" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Android.Primitives.Widget.Slideview" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Android.Primitives.Widget.Tabstrip" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Android.Primitives.Widget.Tabview" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Android.Primitives.Widget.Tooltip" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Android.Primitives.Widget.Tooltip.Containers" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Android.Primitives.Widget.Tooltip.Contracts" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Android.Primitives.Widget.Tooltip.Views" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Autocomplete" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Calendar" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Calendar.Dayview" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Calendar.Decorations" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Calendar.Events" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Calendar.Events.Read" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.Axes" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.Axes.Categorical" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.Axes.Common" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.Axes.Common.Layout" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.Axes.Continuous" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.ChartAreas" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.Databinding" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.Databinding.Datasources" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.Databinding.Datasources.Financial" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.DataPoints" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.Decorations" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.Decorations.Annotations" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.Decorations.Annotations.Custom" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.Decorations.Annotations.Line" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.Decorations.Annotations.PlotBand" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.ElementTree" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.ElementTree.Events" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.PropertyStore" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.Series" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.Series.Combination" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.Series.Combination.BarSeries" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.Series.RangeSeries" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Engine.View" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Visualization.Annotations" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Visualization.Annotations.Cartesian" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Visualization.Behaviors" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Visualization.Behaviors.Animations" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Visualization.Behaviors.Views" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Visualization.CartesianChart" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Visualization.CartesianChart.Axes" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Visualization.CartesianChart.Indicators" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Visualization.CartesianChart.Series" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Visualization.CartesianChart.Series.Categorical" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Visualization.CartesianChart.Series.Pointrenderers" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Visualization.CartesianChart.Series.Scatter" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Visualization.Common" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Visualization.Common.Renderers" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Chart.Visualization.PieChart" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Dataform.Engine" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Dataform.Visualization" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Dataform.Visualization.Annotations" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Dataform.Visualization.Core" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Dataform.Visualization.Editors" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Dataform.Visualization.Editors.Adapters" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Dataform.Visualization.Metadata" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Dataform.Visualization.Registries" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Dataform.Visualization.Viewers" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Feedback" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Gauge" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Indicators" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.List" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Numberpicker" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Palettes" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Primitives.Legend" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Primitives.Panels" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Scales" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Com.Telerik.Widget.Segmented" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik (Group)" isGroup="True" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.Charting" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.Core" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.Core.Data" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.Data.Core" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.Documents.SpreadsheetStreaming" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI (Group)" isGroup="True" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Automation.Peers" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Chart" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Chart.Chart_UWP_XamlTypeInfo" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Chart.Primitives" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Data" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Data.DataBoundListBox" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Data.DataControls_UWP_XamlTypeInfo" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Data.DataForm" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Data.DataForm.Commands" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Data.HexView" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Data.ListView" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Data.ListView.Commands" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Data.ListView.Primitives" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Input" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Input.AutoCompleteBox" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Input.Calendar" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Input.Calendar.Commands" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Input.DateTimePickers" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Input.Input_UWP_XamlTypeInfo" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Input.NumericBox" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Input.RangeSlider" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Primitives" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Primitives.BusyIndicator" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Primitives.Common" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Primitives.HubTile" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Primitives.License" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Primitives.LoopingList" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Primitives.Menu" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Primitives.Menu.Commands" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Primitives.Pagination" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Primitives.Primitives_UWP_XamlTypeInfo" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Primitives.RangeSlider" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Primitives.Scale" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Primitives.SideDrawer" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.UI.Xaml.Controls.Primitives.SideDrawer.Commands" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="Telerik.Zip" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="TelerikUI" isDocumented="False" xmlns="" />
+    </NamespaceSummaries>
+    <BuildLogFile />
+    <HtmlHelp2xCompilerPath />
+    <WorkingPath />
+    <ComponentPath />
+    <OutputPath>..\..\..\Xamarin-Forms-docs\ApiReference\</OutputPath>
+  </PropertyGroup>
+  <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
+			 the build.  The others are optional common platform types that may appear. -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Win32' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Win32' ">
+  </PropertyGroup>
+  <!-- Import the SHFB build targets -->
+  <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
+</Project>

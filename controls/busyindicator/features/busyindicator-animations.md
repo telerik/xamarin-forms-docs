@@ -9,7 +9,7 @@ slug: busyindicator-features-animations
 
 **RadBusyIndicator** provides a set of built-in animations which you can use. They can be changed via the **AnimationType** property. 
 
-The property is an enum called AnimationType and it accepts values named **Animation1** to **Animation8**. Animation1, Animation2, Animation3, etc. to Animation8. **Animation1** is the default one. 
+The property is an enum called AnimationType and it accepts values named **Animation1** to **Animation9**. Animation1, Animation2, Animation3, etc. to Animation9. **Animation1** is the default one. 
 
 ![BusyIndicator animations list](../images/busyindicator-features-animations-0.png) 
 

@@ -1,26 +1,29 @@
 # The public documentation URL, used for sitemap.xml
-url: "https://docs.telerik.com/devtools/xamarin"
+url: "http://docs.telerik.com/devtools/xamarin"
 
 # Exclude files which should not be in the output 
 exclude: [README.md,Gemfile,Gemfile.lock]
 navigation:
 ## List your directory names and order here, like this:
 ## Root Level
+    licensing:
+        title: "Licensing"
+        position: 3
     installation-and-deployment:
         title: "Installation and Deployment"
-        position: 3
+        position: 4
     controls:
         title: "<b>Xamarin Forms Controls</b>"
-        position: 4
+        position: 5
     nativecontrols:
         title: "Native Controls Wrappers"
-        position: 5
+        position: 6
     troubleshooting:
         title: "Troubleshooting"
-        position: 7
+        position: 8
     styling-and-appearance:
         title: "Styling and Appearance"
-        position: 6
+        position: 7
 ## End Root Level
 ## Styling Sub-Folders
     styling-and-appearance/xamarin-forms-theming:

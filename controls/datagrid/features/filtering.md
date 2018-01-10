@@ -7,7 +7,7 @@ slug: datagrid-filtering-overview
 
 # Filtering #
 
-The **RadDataGrid** supports programmatic filtering. This is achieved by adding different filter descriptors in the **FilterDescriptor** collection of the control. The following descriptor types are supported:
+The **RadDataGrid** supports both programmatic filtering and such applied through the UI. Programmatic filtering is achieved by adding different filter descriptors in the **FilterDescriptor** collection of the control. The following descriptor types are supported:
 
 * **TextFilterDescriptor**
 * **NumericalFilterDescriptor**

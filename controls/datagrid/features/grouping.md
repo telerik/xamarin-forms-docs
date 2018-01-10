@@ -7,7 +7,12 @@ slug: datagrid-grouping-overview
 
 # Grouping #
 
-The **RadDataGrid** control provides programmatic approach for grouping. You can achieve the functionality by utilizing the control's **GroupDescriptors** collection. You can choose one of the following approaches to achieve the grouping:
+The **RadDataGrid** control supports grouping operations either through the UI or programmatically. When grouping through code, you can achieve the functionality by utilizing the control's **GroupDescriptors** collection. 
+
+#### Figure 1: Grouped RadDataGrid
+![](../images/datagrid_grouping.png)
+
+You can choose one of the following approaches to achieve the grouping:
 
 * Add a **PropertyGroupDescriptor**: using a property from the model as a group key.
 * Add a **DelegateGroupDescriptor**: create a custom group key which you can use.

@@ -7,7 +7,7 @@ slug: datagrid-grouping-overview
 
 # Grouping #
 
-The **RadDataGrid** control supports grouping operations either through the UI or programmatically. When grouping through code, you can achieve the functionality by utilizing the control's **GroupDescriptors** collection. 
+**RadDataGrid** supports grouping operations either through the UI or programmatically. When grouping through code, you can achieve the functionality by utilizing the control's **GroupDescriptors** collection. 
 
 #### Figure 1: Grouped RadDataGrid
 ![](../images/datagrid_grouping.png)

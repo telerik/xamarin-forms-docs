@@ -13,7 +13,7 @@ In specific cases you may need to load data in the **RadDataGrid** when the cont
 
 **RadDataGrid** offers two loading modes which are present in the **LoadOnDemandMode** enumeration:
 
-* **Automatic**: The load on demand mechanism is activated when you scroll down near the last item present in the view port. 
+* **Automatic**: The load-on-demand mechanism is activated when you scroll down near the last item present in the view port. 
  
 >important You can control when the items will start loading more precisely by setting the **LoadOnDemandBufferItemsCount** property. It indicates at what point the additional items will start loading. For example, setting it to 20 will cause the new items to be loaded when you have scrolled the RadDataGrid so that only 20 of the originally loaded items are left below.
 
@@ -23,9 +23,9 @@ In specific cases you may need to load data in the **RadDataGrid** when the cont
 
 There are three different options for using the load-on-demand feature. You can choose the most convenient for you based on your application requirements:
 
- * [Using the LoadOnDemand Collection](#LoadOnDemandCollection)
+ * [Using the LoadOnDemand Collection](#loadondemandcollection)
  * [Using the LoadOnDemand event](#loadondemand-event)
- * [Using the LoadMoreData Command](#LoadMoreData-command)
+ * [Using the LoadMoreData Command](#loadmoredata-command)
 
 ### LoadOnDemandCollection
 
@@ -39,17 +39,17 @@ where the **Items** property is declared as follows:
 
 ### LoadOnDemand Event
 
-You can load new items by utilizing the **LoadOnDemand** event. It uses LoadOnDemandEventArgs arguments where you need to indicate when the data is loaded so that the event is correctly fired afterward. Here is an example:
+You can load new items by utilizing the **LoadOnDemand** event. It uses LoadOnDemandEventArgs arguments through which you need to indicate when the data is loaded so that the event is correctly fired afterwards. Here is an example:
 
 <snippet id='datagrid-loadondemand-event-csharp'/>
 
 ### LoadMoreData Command
 
-The **LoadMoreData** command is another alternative which you can use which is suitable for MVVM scenarios. Here is how you can create such command:
+The **LoadMoreData** command is another alternative which you can use which is suitable for MVVM scenarios. Here is how you can create such a command:
 
 <snippet id='datagrid-customloadmoredatacommand-csharp'/>
 
-Eventually, you need to add this custom command to the Commands collection of the RadDataGrid.
+Eventually, you need to add this custom command to the **Commands** collection of the **RadDataGrid**.
 
 <snippet id='datagrid-customloadmoredatacommand-addtocollection-csharp'/>
 

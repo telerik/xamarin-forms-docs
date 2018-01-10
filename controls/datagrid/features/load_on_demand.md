@@ -17,20 +17,19 @@ In specific cases you may need to load data in the **RadDataGrid** when the cont
  
 >important You can control when the items will start loading more precisely by setting the **LoadOnDemandBufferItemsCount** property. It indicates at what point the additional items will start loading. For example, setting it to 20 will cause the new items to be loaded when you have scrolled the RadDataGrid so that only 20 of the originally loaded items are left below.
 
-* **Manual**: A "Load More" button is present at the bottom of the RadDataGrid. Clicking it will load additional items.
+* **Manual**: A "Load More" button is present at the bottom of the RadDataGrid. Clicking it will load additional items based on the approach you have chosen for loading the items(through the event, the command or the collection).
 
-
-## Approaches
+## Approaches 
 
 There are three different options for using the load-on-demand feature. You can choose the most convenient for you based on your application requirements:
 
- * [Using the LoadOnDemand Collection](#load-on-demand-collection)
- * [Using the LoadOnDemand event](#load-on-demand-event)
- * [Using the LoadMoreData Command](#load-on-demand-command)
+ * [Using the LoadOnDemand Collection](#LoadOnDemandCollection)
+ * [Using the LoadOnDemand event](#loadondemand-event)
+ * [Using the LoadMoreData Command](#LoadMoreData-command)
 
-### LoadOnDemandCollection<T>
+### LoadOnDemandCollection
 
-In order to use this approach, you should feed the RadDataGrid with a collection of type LoadOnDemandCollection. It is a generic type, so you need to point the type of objects it will contain. It extends the ObservableCollection<T> class and expects a Func<CancellationToken, IEnumerable> in the constructor. Here is a simple setup that shows how to use the collection:
+In order to use this approach, you should feed the **RadDataGrid** with a collection of type **LoadOnDemandCollection**. It is a generic type, so you need to point the type of objects it will contain. It extends the ObservableCollection<T> class and expects a Func<CancellationToken, IEnumerable> in the constructor. Here is a simple setup that shows how to use the collection:
 
 <snippet id='datagrid-loadondemand-collection-csharp'/>
 
@@ -52,11 +51,9 @@ The **LoadMoreData** command is another alternative which you can use which is s
 
 Eventually, you need to add this custom command to the Commands collection of the RadDataGrid.
 
-<snippet id='datagrid-customloadmoredatacommand-addtocollection-csharp/>
-
+<snippet id='datagrid-customloadmoredatacommand-addtocollection-csharp'/>
 
 >important Invoking the **ShowLoadOnDemandLoadingIndicator** and **HideLoadOnDemandLoadingIndicators** is a noteable part as without calling these methods the BusyIndicator used for the functionality will not be visualized.
-
 
 ## Styling
 

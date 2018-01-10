@@ -7,7 +7,7 @@ slug: datagrid-features-loadondemand
 
 # Load On Demand #
 
-In specific cases you may need to load data in the **RadDataGrid** when the control is already loaded as this can improve the performance and save computing resources. Loading a large data set on a mobile device has its chalenges. On of the most popular approaches is using incremental data loading in the moment the items need to be visualized. 
+In specific cases you may need to load data in the **RadDataGrid** when the control is already displayed as this can improve the performance and save computing resources. Loading a large data set on a mobile device has its challenges. On of the most popular approaches is using incremental data loading in the moment the items need to be visualized. 
 
 ## Modes
 
@@ -54,7 +54,9 @@ Eventually, you need to add this custom command to the Commands collection of th
 
 <snippet id='datagrid-customloadmoredatacommand-addtocollection-csharp/>
 
+
 >important Invoking the **ShowLoadOnDemandLoadingIndicator** and **HideLoadOnDemandLoadingIndicators** is a noteable part as without calling these methods the BusyIndicator used for the functionality will not be visualized.
+
 
 ## Styling
 
@@ -64,18 +66,39 @@ Besides the different approaches for loading the data, we have introduced severa
 
 Setting this property will modify the appearance of the load on demand indicator when the **LoadOnDemandMode** is **Automatic**.
 
+Here is an example of custom DataTemplate:
 <snippet id='datagrid-loadondemandautotemplate-xaml'/>
 
-### LoadOnDemandRowStyle 
-This property can be used to style the appearance of the row that contains the "Load More" button when the LoadOnDemandMode is Manual.
+And how you set it to the LoadOnDemandAutoTemplate property of the RadDataGrid:
+<snippet id='datagrid-setting-loadondemandautotemplate-xaml'/>
 
+#### Figure 1: The appearance of the row after setting the LoadOnDemandAutoTemplate
+![](../images/datagrid-autotemplate.png)
+
+### LoadOnDemandRowStyle 
+This property can be used to style the appearance of the row that contains the "Load More" button when the **LoadOnDemandMode** is **Manual**.
+
+The custom style is of type DataGridLoadOnDemandRowStyle:
 <snippet id='datagrid-loadondemandrowstyle-xaml'/>
+
+And you should set it to the LoadOnDemandRowStyle property of the RadDataGrid:
+<snippet id='datagrid-setting-loadondemandrowstyle-xaml'/>
+
+#### Figure 2: The appearance of the row after setting the LoadOnDemandRowStyle
+![](../images/datagrid-rowstyle.png)
 
 ### LoadOnDemandRowTemplate 
 
-This property can be used to set the template of the row that contains the "Load More" button when the LoadOnDemandMode is Manual.
+This property can be used to set the template of the row that contains the "Load More" button when the **LoadOnDemandMode** is **Manual**.
 
+Here is a custom DataTemplate:
 <snippet id='datagrid-loadondemandrowtemplate-xaml'/>
+
+And how you set the property:
+<snippet id='datagrid-setting-loadondemandrowtemplate-xaml'/>
+
+#### Figure 3: The appearance of the row after setting the LoadOnDemandRowTemplate
+![](../images/datagrid-rowtemplate.png)
 
 
 ## See Also

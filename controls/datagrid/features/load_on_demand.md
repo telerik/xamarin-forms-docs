@@ -7,7 +7,7 @@ slug: datagrid-features-loadondemand
 
 # Load On Demand #
 
-In specific cases you may need to load data in the **RadDataGrid** when the control is already displayed as this can improve the performance and save computing resources. Loading a large data set on a mobile device has its challenges. On of the most popular approaches is using incremental data loading in the moment the items need to be visualized. 
+In specific cases you may need to load data in the **RadDataGrid** when the control is already displayed as this can improve the performance and save computing resources. Loading a large data set on a mobile device has its challenges. One of the most popular approaches is using incremental data loading in the moment the items need to be visualized. 
 
 ## Modes
 

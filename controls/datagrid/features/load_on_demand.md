@@ -1,7 +1,7 @@
 ---
 title: Load On Demand
 page_title: Load on Demand
-position: 3
+position: 6
 slug: datagrid-features-loadondemand
 ---
 

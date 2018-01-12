@@ -214,6 +214,18 @@ navigation:
         position: 2
         ## End BusyIndicator Sub-Folders
     ## End BusyIndicator
+    ## Button
+    controls/button:
+        title: "Button"
+        ## Button Sub-Folders
+    controls/button/getting-started:
+        title: "Getting Started"
+        position: 1
+    controls/button/features:
+        title: "Features"
+        position: 2
+        ## End Button Sub-Folders
+    ## End Button
     ## Calendar
     controls/calendar:
         title: "Calendar"

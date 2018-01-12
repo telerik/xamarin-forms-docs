@@ -57,7 +57,7 @@ Eventually, you need to add this custom command to the **Commands** collection o
 
 ## Styling
 
-Besides the different approaches for loading the data, we have introduced several mechanisms related to the styling of the functionality which you can use according to the approach you have chosen.
+Besides the different approaches for loading the data, **RadDataGrid** exposes several mechanisms related to the styling of the functionality which you can use according to the approach you have chosen.
 
 ### LoadOnDemandAutoTemplate
 

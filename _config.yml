@@ -169,7 +169,7 @@ navigation:
 ## Controls Sub-Folders
     ## DataGrid
     controls/datagrid:
-        title: "DataGrid CTP"
+        title: "DataGrid"
     controls/datagrid/getting-started: 
         title: "Getting Started"
         position: 1
@@ -183,7 +183,20 @@ navigation:
         title: "Features"
         position: 3
     ## End DataGrid
-
+    
+    ## Entry
+    controls/entry:
+        title: "Entry"
+        ## Entry Sub-Folders
+    controls/entry/getting-started:
+        title: "Getting Started"
+        position: 1
+    controls/entry/features:
+        title: "Features"
+        position: 2
+        ## End Entry Sub-Folders
+    ## End Entry
+    
     ## Path
     controls/path:
         title: "Path"

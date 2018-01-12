@@ -17,11 +17,11 @@ This example will guide you through the steps needed to add a basic **RadButton*
 
 ## Example
 
-If your app is setup, you are ready to add a **RadButton** control to the page:
+If your app is correctly set, you are ready to add a **RadButton** control to the page:
 
 <snippet id='button-getting-started-xaml'/>
 
-In addition to this you need to add the following namespace:
+In addition to this, you need to add the following namespace:
 
 <snippet id='xmlns-telerikinput'/>
 <snippet id='ns-telerikinput'/>

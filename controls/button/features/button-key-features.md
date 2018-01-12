@@ -23,7 +23,7 @@ Where:
 
 ## Border Thickness
 
-**BorderThickness** property is of type Xamarin.Forms.Thickness and is used to set the borders’ width.  Type Thickness gives you the option to define different border on each side of the Button.
+The **BorderThickness** property is of type Xamarin.Forms.Thickness and is used to set the borders’ width.  Type Thickness gives you the option to define different border on each side of the Button.
 
 The snippet below demonstrates how BorderThickness could be defined.
 
@@ -31,9 +31,9 @@ The snippet below demonstrates how BorderThickness could be defined.
 
 ## Background Image
 
-BackgroundImage property is of type ImageSource and is used to set a graphic as a background of RadButton control.   
+The **BackgroundImage** property is of type ImageSource and is used to set a graphic as a background of the RadButton control.   
 
-The next snippet shows how you coud apply the background image.
+The next snippet shows how you can apply the background image.
 
 <snippet id='button-features-backgroundimage'/>
 

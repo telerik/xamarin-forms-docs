@@ -27,7 +27,7 @@ RadEntry provides **IsPassword** Boolean property, which when set to True, repla
 
 ## BorderStyle
 
-**BorderStyle** property allows you to customize the border around the Entry through the following properties: BorderColor, BorderThickness and CornerRadius. The default value is defined by the OS.
+The **BorderStyle** property allows you to customize the border around the Entry through the following properties: BorderColor, BorderThickness and CornerRadius. The default value is defined by the OS.
 
 You could define the **BorderStyle** in the Resources of your page as shown in the example below:
 

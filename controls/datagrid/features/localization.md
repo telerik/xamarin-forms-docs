@@ -2,12 +2,12 @@
 title: Localization
 page_title: Localization
 position: 3
-slug: datagrid-featres-localization
+slug: datagrid-features-localization
 ---
 
 # Localization #
 
-**RadDataGrid** supports localization(the translation of application resources into localized versions for the specific cultures or into customized resources). In order to apply the localization you need to update the DataGridLocalizationManager.Manager by either creating a custom **DataGridLocalizationManager** or set its **ResourceManager** property.
+**RadDataGrid** supports localization (the translation of application resources into localized versions for the specific cultures or into customized resources). In order to apply the localization you need to update the DataGridLocalizationManager.Manager by either creating a custom **DataGridLocalizationManager** or set its **ResourceManager** property.
 
 ## Custom DataGridLocalizationManager
 
@@ -28,7 +28,7 @@ Eventually, you should set it as the **DataGridLocalizationManager.Manager**:
 
 ## Custom ResourceManager
 
-The second option for applying the localization is through setting a custom **ResourceManager**:
+The second option for applying localization is through setting a custom **ResourceManager**:
 
 <snippet id='datagrid-setting-the-custom-resource-manager-csharp'/> 
 

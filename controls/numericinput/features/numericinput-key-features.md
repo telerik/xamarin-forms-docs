@@ -11,9 +11,9 @@ The purpose of this help article is to show you the key features of the **RadNum
 
 ## Setting and reading numbers
 
-RadNumericInput exposes **Value** property that is used to set and read the number presented by the control. 
+RadNumericInput exposes a **Value** property that is used to set and read the number presented by the control. 
 
-The **Value** property is of type nullable double, which enables the NumericInput to accept null value as well.
+The **Value** property is of type nullable double, which enables the NumericInput control to accept null value as well.
 
 <snippet id='numericinput-features-value'/>
 
@@ -29,7 +29,7 @@ RadNumericInput provides **Minimum** and **Maximum** properties used to define t
 
 ## Setting the step for decrement/increment the value
 
-**Step** property defines the value step that will be applied to the input value upon each decrease/increase action. The default step is 1.
+The **Step** property defines the value step that will be applied to the input value upon each decrease/increase action. The default step is 1.
 
 <snippet id='numericinput-features-step'/>
 

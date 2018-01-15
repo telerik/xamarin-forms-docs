@@ -197,6 +197,19 @@ navigation:
         ## End Entry Sub-Folders
     ## End Entry
     
+    ## NumericInput
+    controls/numericinput:
+        title: "NumericInput"
+        ## Entry Sub-Folders
+    controls/numericinput/getting-started:
+        title: "Getting Started"
+        position: 1
+    controls/numericinput/features:
+        title: "Features"
+        position: 2
+        ## End NumericInput Sub-Folders
+    ## End NumericInput
+    
     ## Path
     controls/path:
         title: "Path"

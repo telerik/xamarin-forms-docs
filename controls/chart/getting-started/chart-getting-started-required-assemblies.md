@@ -7,12 +7,12 @@ slug: chart-getting-started-required-assemblies
 
 # Required Telerik Assemblies
 
-This article contains information about which assemblies are required by the controls in the **RadChart** control.
+This article contains a list of the assemblies required by the **RadChart** control.
 
 ## References after R2 2017
 
 > The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls. The default location is:  
-> `C:\Program Files (x86)\Telerik\UI for Xamarin RX XXX\Binaries`.
+> `C:\Program Files (x86)\Progress\Telerik UI for Xamarin RX XXX\Binaries`.
 
 > Please keep in mind that all binaries built for a specific platform are placed in a folder named after that platform.
 
@@ -221,7 +221,7 @@ Telerik.XamarinForms.Common.WinPhone
 </tbody>
 <table>
 
->To manually register the renderer users should follow these steps [Register Chart Renderer]({% slug chart-getting-started-register-renderer %})
+>Prior R2 2017 you would still need to manually register the Chart renderer following these steps [Register Chart Renderer]({% slug chart-getting-started-register-renderer %})
 
 ## See Also
 

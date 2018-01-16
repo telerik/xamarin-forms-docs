@@ -17,12 +17,12 @@ You could easily create circular Buttons with RadButton by adjusting its Width, 
 Here is a quick example:
 
 	<telerikInput:RadButton WidthRequest="40" 
-							HeightRequest="40"                                
-							Text="up" 
-							FontSize="Micro" 
-							TextColor="White" 
-							BackgroundColor="DarkBlue" 
-							BorderRadius="20"  />
+				HeightRequest="40"                                
+				Text="up" 
+				FontSize="Micro" 
+				TextColor="White" 
+				BackgroundColor="DarkBlue" 
+				BorderRadius="20"  />
 
 And the end result:
 

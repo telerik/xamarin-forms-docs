@@ -11,7 +11,7 @@ When you install the **Telerik UI for Xamarin** suite through the msi installati
 
 ## Showing the Telerik Toolbox
 
-In order to show the Toolbox and start using the controls available, you should navigate to "Telerik" -> "Telerik UI for Xamarin" -> "Open Telerik UI for Xamarin Toolbox" tab within Visual Studio. You can also find this option when typing "Telerik UI for Xamarin Toolbox" in the Quick Launch search field(top right corner in Visual Studio).
+In order to show the Toolbox and start using the controls, you should navigate to "Telerik" -> "Telerik UI for Xamarin" -> "Open Telerik UI for Xamarin Toolbox" tab within Visual Studio. You can also find this option when typing "Telerik UI for Xamarin Toolbox" in the Quick Launch search field(top right corner in Visual Studio).
 **Figure 1** shows where you can find the option in Visual Studio:
 
 #### Figure 1: Showing the Telerik UI for Xamarin Toolbox 

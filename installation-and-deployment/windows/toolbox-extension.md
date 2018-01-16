@@ -20,11 +20,11 @@ In order to show the Toolbox and start using the controls available, you should 
 
 Once you have clicked the option you should be prompted to the window which contains the different controls from the suite.**Figure 2** shows the appearance of the toolbox if everything is correctly set.
 
->important If no usable controls are present in the toolbox - make sure all the required references are added in your application and try rebuilding your project. 
+>important If no usable controls are present in the toolbox - make sure all the required references are added and try rebuilding your project. 
 
 ## Adding Controls to Your Project
 
-Embedding the controls from the suite is made as easy as possible and all you need to do is simply drag one of the controls within your XAML file. This will add the control definition and will add the needed namespace declarations. **Figure 2** shows how the action is performed.
+Embedding the controls from the suite is made as easy as possible and all you need to do is simply drag one of the controls within your XAML file. This will add the control definition and will also map the needed namespace declarations. **Figure 2** shows how the action is performed.
 
 #### Figure 2: Adding Telerik controls to your application
 ![](images/xamarin_toolbox.gif)

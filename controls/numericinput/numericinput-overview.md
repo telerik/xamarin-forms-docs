@@ -15,12 +15,13 @@ slug: numericinput-overview
 > - **iOS**
 > - **Universal Windows Platform**
 
-Image
+#### Figure 1: RadNumericInput Overview
+![NumericInput Overview](images/numericinput_overview.png "NumericInput Overview")
 
 ## Key features
 
  * **Minimum/Maximum values**: RadNumericInput allows you to restrict the input value through Min/Max properties, check [here]({% slug numericinput-key-features %}#restricting-the-input) for more details.
- * **Increment Step**: You could define the value step that will be applied to the input value upon each decrease/increase. Read more about this [here]({% slug numericinput-key-features %}#setting-the-step-for-decrementincrement-the-value).
+ * **Increment Step**: You could define the step that will be applied to the input value upon each decrease/increase. Read more about this [here]({% slug numericinput-key-features %}#setting-the-step-for-decrementincrement-the-value).
  * **Customizable text of the buttons**: You could specify the text of the increase/decrease buttons, so that it’s applicable to your scenario, read [here]({% slug numericinput-key-features %}#setting-buttons-text) for more details.
  * **Commands**: You could use the NumericInput commands to define custom functionality upon decrease/increase action. Check the [Commands]({%slug numericinput-commands %}) topic for more details.
 

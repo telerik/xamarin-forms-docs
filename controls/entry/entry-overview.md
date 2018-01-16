@@ -15,7 +15,8 @@ slug: entry-overview
 > - **iOS**
 > - **Universal Windows Platform**
 
-Image
+#### Figure 1: RadEntry Overview
+![Entry Overview](images/entry_overview.png "Entry Overview")
 
 ## Key features
 

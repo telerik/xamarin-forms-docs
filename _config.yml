@@ -250,6 +250,9 @@ navigation:
     controls/button/features:
         title: "Features"
         position: 2
+    controls/button/howto:
+        title: "How To"
+        position: 3
         ## End Button Sub-Folders
     ## End Button
     ## Calendar

@@ -27,7 +27,7 @@ You should override the required methods as shown in the C# snippet above.
 
 <snippet id='datagrid-customfiltering-customcommand-cs'/>
 
-**Figure 2 **shows the appearance of the control once the custom filtering control is set.
+**Figure 2** shows the appearance of the control once the custom filtering control is set.
 
 #### Figure 2: Appearance of the Filtering UI after applying the custom control
 ![Custom Filtering](../images/datagrid_customfiltering.png)

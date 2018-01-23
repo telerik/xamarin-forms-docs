@@ -43,15 +43,15 @@ Our suite offers the following controls for cross-platform development with Xama
 
 ### Telerik UI for Xamarin.Android
 
-For information about the Xamarin.Android wrappers API and features, refer to the documentation set of [UI for Android](http://docs.telerik.com/devtools/android/).
+For information about the Xamarin.Android wrappers API and features, refer to the documentation set of [UI for Android](https://docs.telerik.com/devtools/xamarin/nativecontrols/android/introduction).
 
 ### Telerik UI for Xamarin.iOS
 
-For information about the Xamarin.iOS bindings API and features, please check our documentation of [UI for iOS](http://docs.telerik.com/devtools/ios/).
+For information about the Xamarin.iOS bindings API and features, please check our documentation of [UI for iOS](https://docs.telerik.com/devtools/xamarin/nativecontrols/ios/index).
 
 ### Telerik UI for UWP
 
-For information about the control set, API and features, refer to the documentation set of [UI for UWP](http://docs.telerik.com/windows-universal/).
+For information about the control set, API and features, refer to the documentation set of [UI for UWP](https://docs.telerik.com/devtools/universal-windows-platform//).
 
 ## Supported mobile versions
 

@@ -18,7 +18,7 @@ There are a couple of approaches you can take in order to resolve the issue:
 
 The following snippet shows how to add the XamlCompilation attribute in the page code-behind:
 	
-<snippet id='common-type-not-found-csharp'"/>
+<snippet id='common-type-not-found-csharp'/>
 
 ### Add x:Name for the control
 

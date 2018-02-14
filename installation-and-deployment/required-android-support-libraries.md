@@ -26,6 +26,6 @@ Here are listed the common requirements for all Android projects that use our su
 
 ## See Also
 
-- [System Requirements]({%slug download-product-files %})
+- [System Requirements]({%slug system-requirements%})
 - [Getting started on Windows]({%slug getting-started-windows%})
 - [Getting started on Mac]({%slug getting-started-mac%})

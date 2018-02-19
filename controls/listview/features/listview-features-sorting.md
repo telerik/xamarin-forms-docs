@@ -1,7 +1,7 @@
 ---
 title: Sorting
 page_title: Sorting
-position: 
+position: 2
 slug: listview-features-sorting
 description: Describing RadListView sorting feature
 tags: sort, radlistview, sorting, sortdescriptor

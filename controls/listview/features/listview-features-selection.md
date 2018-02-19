@@ -1,7 +1,7 @@
 ---
 title: Selection
 page_title: Selection
-position: 
+position: 0
 slug: listview-features-selection
 ---
 

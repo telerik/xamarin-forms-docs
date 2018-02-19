@@ -1,7 +1,7 @@
 ---
 title: Grouping
 page_title: Grouping
-position: 
+position: 1
 slug: listview-features-grouping
 description: Describing RadListView grouping feature
 tags: group, radlistview, groupdescriptor

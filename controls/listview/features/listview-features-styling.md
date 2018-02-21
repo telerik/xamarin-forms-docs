@@ -7,23 +7,24 @@ description: Describing the styling options of the RadListView
 tags: style, selected, hovered, pressed, item, highlighted
 ---
 
-The RadListView component provides styling mechanism for customizing the look of its items. This mechanism consists of the following properties:
+# Styling
 
-1. **ItemStyle**
-2. **SelectedItemStyle**
-3. **PressedItemStyle**
+The RadListView component provides styling mechanism for customizing the look of its items. This mechanism consists of the following properties of type "ListViewItemStyle":
 
-All the properties can be **get** or **set** and their type is **ListViewItemStyle**.
+* **ItemStyle**
+* **SelectedItemStyle**
+* **PressedItemStyle**
+* **ReorderItemStyle**
 
-# ListViewItemStyle
+## ListViewItemStyle
 
 The properties of this object are respectively applied to the native components. The supported ones are the following:
 
-1. **BackgroundColor** (*Color*): gets or sets the background of the item(s).
-2. **BorderColor** (*Color*): gets or sets the color of the border.
-3. **BorderWidth** (*double*): gets or sets the width of the borer.
-4. **BorderLocation** (*Location*): gets or sets an enumeration describing where the border should be visible.
-
+* **BackgroundColor** (*Color*): sets the background of the item(s).
+* **BorderColor** (*Color*): sets the color of the border.
+* **BorderWidth** (*double*): defines the width of the borer.
+* **BorderLocation** (*Location*): describes an enumeration describing where the border should be visible.
+* **TextCellTextColor** (*Color*): defines the text color of the ListView TextCell.
 
 
 ### Location
@@ -39,22 +40,54 @@ This enumeration contains the following members:
 
 ### Example
 
-	<telerikDataControls:RadListView ItemsSource="{Binding SourceList}">
-	    <telerikDataControls:RadListView.ItemStyle>
-	      <telerikListView:ListViewItemStyle BackgroundColor="Transparent" BorderLocation="None"/>
-	    </telerikDataControls:RadListView.ItemStyle>
+	<telerikDataControls:RadListView x:Name="listView" ItemsSource="{Binding Source}" IsItemsReorderEnabled="True">
+		<telerikDataControls:RadListView.ItemTemplate>
+			<DataTemplate>
+				<telerikListView:ListViewTextCell Text="{Binding Name}" />
+			</DataTemplate>
+		</telerikDataControls:RadListView.ItemTemplate>
+		<telerikDataControls:RadListView.ItemStyle>
+			<telerikListView:ListViewItemStyle BackgroundColor="#1263E5"
+											TextCellTextColor="#AAC7F6"
+											BorderColor="#0A3A82"                                                
+											BorderWidth="2"
+											BorderLocation="All" />
+		</telerikDataControls:RadListView.ItemStyle>
+		<telerikDataControls:RadListView.SelectedItemStyle>
+			<telerikListView:ListViewItemStyle BackgroundColor="#83A9E2"
+											TextCellTextColor="#AAC7F6"
+											BorderColor="#0A3A82"
+											BorderWidth="2" 
+											BorderLocation="Bottom"/>
+		</telerikDataControls:RadListView.SelectedItemStyle>
+		<telerikDataControls:RadListView.PressedItemStyle>
+			<telerikListView:ListViewItemStyle BackgroundColor="#C1C1C1" 
+											TextCellTextColor="#AAC7F6"
+											BorderColor="#0B3D89" 
+											BorderWidth="2" 
+											BorderLocation="Bottom"/>
+		</telerikDataControls:RadListView.PressedItemStyle>
+		<telerikDataControls:RadListView.ReorderItemStyle>
+			<telerikListView:ListViewItemStyle BackgroundColor="#0B3D89"
+											TextCellTextColor="#AAC7F6"
+											BorderColor="Black"
+											BorderWidth="2"
+											BorderLocation="All" />
+		</telerikDataControls:RadListView.ReorderItemStyle>
+	</telerikDataControls:RadListView>
 
-	    <telerikDataControls:RadListView.SelectedItemStyle>
-	      <telerikListView:ListViewItemStyle BackgroundColor="#E5EDF3" BorderWidth="3" BorderLocation="Bottom"/>
-	    </telerikDataControls:RadListView.SelectedItemStyle>
+And here is the end result:
 
-	    <telerikDataControls:RadListView.PressedItemStyle>
-	      <telerikListView:ListViewItemStyle BackgroundColor="#C1C1C1" BorderColor="#FF692F" BorderWidth="3" BorderLocation="Bottom"/>
-	    </telerikDataControls:RadListView.PressedItemStyle>
+#### Figure 1: ListView with ItemStyle and SelectedItemStyle
+![](images/listview_features_itemstyle.png)
 
-	    <telerikDataControls:RadListView.ItemTemplate>
-	      <DataTemplate>
-	        <telerikListView:ListViewTextCell Text="{Binding Title}" />
-	      </DataTemplate>
-	    </telerikDataControls:RadListView.ItemTemplate>
-	  </telerikDataControls:RadListView>
+#### Figure 2: ListView with ReorderItemStyle
+![](images/listview_features_reorderItemstyle.png)
+
+>note You can find a working demo labeled **ItemStyles** in the ListView/Styling folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}). 
+
+##See Also
+
+[Selection]({%slug listview-features-selection%})
+
+[Reordering]({%slug listview-features-reorder-items%})

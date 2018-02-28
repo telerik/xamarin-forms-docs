@@ -560,30 +560,3 @@ $(function(){
         dojoApi.openSnippet(this);
     });
 });
-
-/* START Feedback Form implementation */
-$(function(){	
-	var cookieName = window.location.origin + window.location.pathname;
-	var cookie = getCookieByName(cookieName);
-	if (cookie)
-	{			
-		$("#additional-feedback-button").css("display", "block");
-	}
-
-	$("#yesButton").click(function () {
-		$("#additional-feedback-button").css("display", "block");
-	});	
-	$("#form-close-button").click(function () {		
-		$("#additional-feedback-button").css("display", "block");
-	});
-	$("#form-submit-button").click(function () {		
-		$("#feedback-submitted-container").css("visibility", "visible");
-		$("#additional-feedback-button").css("display", "block");
-	});
-});
-
-function getCookieByName(name) {
-	var match = document.cookie.match(new RegExp(name + '=([^;]+)'));
-	if (match) return match[1];
-}
-/* END Feedback Form implementation */

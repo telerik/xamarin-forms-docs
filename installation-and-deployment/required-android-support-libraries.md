@@ -11,7 +11,7 @@ The controls in the suite require specific Xamarin Android Support Libraries to 
 
 Here are listed the common requirements for all Android projects that use our suite:
 
-- The required version of **Xamarin.Forms** package is **2.4.0**.
+- The minimum required version of **Xamarin.Forms** package is **2.4.0**.
 - The minimum required version of all Xamarin Android Support Libraries is **23.3.0**.
 - Here are listed all packages that come with the latest version of Xamarin.Forms, which also have to be updated to version **23.3.0**:
   - Xamarin.Android.Support.v4

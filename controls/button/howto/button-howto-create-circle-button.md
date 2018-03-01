@@ -16,15 +16,9 @@ You could easily create circular Buttons with RadButton by adjusting its Width, 
 
 Here is a quick example:
 
-	<telerikInput:RadButton WidthRequest="40" 
-				HeightRequest="40"                                
-				Text="up" 
-				FontSize="Micro" 
-				TextColor="White" 
-				BackgroundColor="DarkBlue" 
-				BorderRadius="20"  />
+<snippet id='button-circular-xaml'/>
 
-And the end result:
+Appearance of different circular buttons:
 
 ![Button Key Features Example](../images/button-howto-circlebutton.png)
 

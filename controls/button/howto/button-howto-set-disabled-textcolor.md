@@ -1,11 +1,11 @@
 ---
-title: Set TextColor for Disabled Button
-page_title:Set TextColor for Disabled Button
-position: 0
+title: Set TextColor of Disabled RadButton
+page_title: Set TextColor of Disabled RadButton
+position: 1
 slug: button-howto-textcolor-disabled-button
 ---
 
-# Set TextColor for Disabled Button
+# Set TextColor for Disabled RadButton
 
 &nbsp;
 
@@ -38,7 +38,6 @@ And how it is declared within your page:
 **Figure 1** shows the appearance of the disabled RadButton once the custom renderers have been added to your application.
 
 #### Figure 1: Text Color of disabled RadButton
-
 
 ## See Also
 

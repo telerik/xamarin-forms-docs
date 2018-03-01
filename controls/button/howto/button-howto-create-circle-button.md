@@ -24,4 +24,4 @@ Appearance of different circular buttons:
 
 ## See Also
 
-- [Button Getting Started]({% slug button-getting-started%})
+- [Button Getting Started]({%slug button-getting-started%})

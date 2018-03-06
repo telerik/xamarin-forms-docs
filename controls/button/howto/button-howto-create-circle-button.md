@@ -9,7 +9,7 @@ slug: button-howto-create-circle-button
 
 &nbsp;
 
-You could easily create circular Buttons with RadButton by adjusting its Width, Height and BorderRadius properties following the next instructions:
+You could easily create circular buttons with RadButton by adjusting its Width, Height and BorderRadius properties following the next instructions:
 
 * Width should be equal to Height;
 * BorderRadius should be set to half Width/Height value;

@@ -31,7 +31,7 @@ The CartesianChartGrid represents a decoration over the plot area of RadCartesia
 	    </telerikChart:RadCartesianChart.BindingContext>
 	
 	    <telerikChart:RadCartesianChart.Grid>
-	      <telerikChart:CartesianChartGrid x:Name="grid"  MajorLinesVisibility="Y" StripLinesVisibility="Y"  />
+	      <telerikChart:CartesianChartGrid x:Name="grid"  MajorLinesVisibility="XY" StripLinesVisibility="Y"  />
 	    </telerikChart:RadCartesianChart.Grid>
 	    <telerikChart:RadCartesianChart.HorizontalAxis>
 	      <telerikChart:CategoricalAxis/>

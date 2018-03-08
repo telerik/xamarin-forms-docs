@@ -9,7 +9,7 @@ position: 3
 
 &nbsp
 
->important taken from Google's docs - exactly as it is.
+>important this paragraph is taken from Google's docs - exactly as it is.
 
 Cloud SQL is a fully-managed database service that makes it easy to set up, maintain, manage, and administer your relational PostgreSQL BETA and MySQL databases in the cloud. Cloud SQL offers high performance, scalability, and convenience. Hosted on Google Cloud Platform, Cloud SQL provides a database infrastructure for applications running anywhere.
 

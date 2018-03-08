@@ -24,7 +24,15 @@ navigation:
     styling-and-appearance:
         title: "Styling and Appearance"
         position: 7
+    cloud-integration:
+        title: "Cloud Integration"
+        position: 8
 ## End Root Level
+## Cloud Integration Sub-Folders
+    cloud-integration/google-cloud:
+        title: "Google Cloud"
+        position: 1
+## Cloud Integration Sub-Folders
 ## Styling Sub-Folders
     styling-and-appearance/xamarin-forms-theming:
         title: "Xamarin Forms Theming"

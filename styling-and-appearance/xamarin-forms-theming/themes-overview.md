@@ -7,7 +7,7 @@ position: 1
 
 # What is a Telerik Theme
 
-A **Telerik Theme** is a set of resources which are designed to provide your application with a consistent look and feel across all platforms. [Setting a theme]({%slug common-setting-a-theme%}) for your application is an easy and straightforward process and requires little additional efforts from your side. Furthermore, you are free to [customize the theme's resources]({%slug common-modifying-default-theme%}) so that a more distinct appearance is achieved.
+A **Telerik Theme** is a set of resources which are designed to provide your application with a consistent look and feel across all platforms. [Setting a theme]({%slug common-setting-a-theme%}) for your application is an easy and straightforward process. Furthermore, you are free to [customize the theme's resources]({%slug common-modifying-default-theme%}) so that a more distinct appearance is achieved.
 
 
 ## Blue Theme

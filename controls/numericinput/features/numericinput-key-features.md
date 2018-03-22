@@ -45,6 +45,14 @@ RadNumericInput supports read-only mode in which the end user cannot type into t
 
 <snippet id='numericinput-features-readonly'/>
 
+## Formatting the value
+
+**RadNumericInput** provides you the option to define the format of its numeric value through the **StringFormat** property. You can set it to the desired format which will be applied when the control loses focus.
+
+<snippet id='numericinput-features-strformat'/>
+
+>tip You can find detailed information about the supported numeric formats here: [Standard Numeric Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings).
+
 ## See Also
 
 - [NumericInput Getting Started]({% slug numericinput-getting-started%})

@@ -51,10 +51,10 @@ Once such command is created it can be used in XAML like this:
         <local:CustomUserCommand/>
       </primitives:RadSideDrawer.Commands>
       <primitives:RadSideDrawer.MainContent>
-        ...
+         <Label Text="Main content" />
       </primitives:RadSideDrawer.MainContent>
       <primitives:RadSideDrawer.DrawerContent>
-		...
+	 <Label Text="Drawer content" />
       </primitives:RadSideDrawer.DrawerContent>
     </primitives:RadSideDrawer>
 

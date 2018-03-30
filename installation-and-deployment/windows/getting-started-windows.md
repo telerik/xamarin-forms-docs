@@ -77,9 +77,9 @@ The hard way is to add all required assemblies manually. We have added a special
 - [ListView Required Assemblies]({%slug listview-getting-started-required-assemblies%})
 - [SideDrawer Required Assemblies]({%slug sidedrawer-getting-started-required-assemblies%})
 
-## 4. Register Renderers
+## 4. Register Renderers (R1 2017 or older only)
 
-The final step is to register the control renderers. These articles will show you how:
+If you're using **R1 2017 or older**, you need to register the renderers in the target platform projects (see [Important Changes]({% slug important-changes %}) for more information). These articles will show you how:
 
 - [Calendar Register Renderer]({%slug calendar-getting-started-register-renderer%})
 - [Chart Register Renderer]({%slug chart-getting-started-register-renderer%})

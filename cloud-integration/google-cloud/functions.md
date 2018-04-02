@@ -42,7 +42,7 @@ Let's say we want to invoke the function on a button click within our applicatio
             var httpClient = new HttpClient();
 
             var parameters = new Dictionary<string, string>();
-            parameters["message"] = "Test message";
+            parameters["message"] = text;
 
             var response = await httpClient.PostAsync(URI, new FormUrlEncodedContent(parameters));
             var contents = await response.Content.ReadAsStringAsync();
@@ -56,7 +56,7 @@ For the sample purposes, the method that calls the function is used within the c
 	private async void RadButtonClicked(object sender, EventArgs e)
         {
             var vm = new ViewModel();
-            string message = await vm.GetResponseString("just test");
+            string message = await vm.GetResponseString("Test message");
             this.label.Text = message;
         }
 

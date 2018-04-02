@@ -7,7 +7,7 @@ slug: maskedinput-features-mask-tokens
 
 # Mask Tokens
 
-When the **MaskType** of the **RadMaskedInput** control is set to Text, you can utilize the available Mask Tokens to restrict the user input. Below you can find a list of the available tokens and their purpose:
+When the **MaskType** of the **RadMaskedInput** control is set to **Text**, you can utilize the available Mask Tokens to restrict the user input. Below you can find a list of the available tokens and their purpose:
 
 Token | Corresponding Regex | Usage
 ---|---|---

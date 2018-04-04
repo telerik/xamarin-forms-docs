@@ -37,7 +37,7 @@ You can determine the filtering behavior of RadAutoComplete through the **Comple
 
 ## Watermark
 
-RadAutoComplete exposes **Watermark** property used to give guidance to the end user on what should be entered in the text input. The watermark text is displayed when the control is empty.
+RadAutoComplete exposes **Watermark** property which is used to give guidance to the end user on what should be entered in the text input. The watermark text is displayed when the control is empty.
 
 <snippet id='autocomplete-features-watermark'/>
 
@@ -47,11 +47,11 @@ RadAutoComplete exposes **Watermark** property used to give guidance to the end 
 
 ## Clear Button Visibility
 
-Clear button, which appears at the right side of the input field when the AutoComplete is in focus, gives the end-user the option to quickly clear the entered values. You could control the visibility of the button through the **IsClearButtonVisible** property.
+The Clear button, which appears at the right side of the input field when the AutoComplete is in focus, gives the end-user the option to quickly clear the entered values. You could control the visibility of the button through the **IsClearButtonVisible** property.
 
 ## NoResults Message
 
-NoResults message appears in the popup used for the list of suggestions whenever the control cannot find any matching items.  You could easily customize it through the **NoResultsMessage** property.
+The NoResults message appears in the popup used for the list of suggestions whenever the control cannot find any matching items.  You could easily customize it through the **NoResultsMessage** property.
 
 <snippet id='autocomplete-features-noresultsmessage'/>
 
@@ -61,13 +61,13 @@ NoResults message appears in the popup used for the list of suggestions whenever
 
 ## Search Threshold
 
-By default the search is triggered as soon as the user types into the input field. Using **SearchThreshold** you could configure AutoComplete to trigger the search after a certain number of letters is entered. 
+By default the search is triggered as soon as the user types into the input field. By using **SearchThreshold** you can configure AutoComplete to trigger the search after a certain number of letters is entered. 
 
 <snippet id='autocomplete-features-searchthreshold'/>
 
 ## Show/hide the SuggestionView
 
-With the **ShowSuggestionView** boolean property you could determine the visibility of the popup containing the search results of the AutoComplete.
+With the **ShowSuggestionView** boolean property you can determine the visibility of the popup containing the search results of the AutoComplete.
 
 <snippet id='autocomplete-features-suggestionview'/>
 

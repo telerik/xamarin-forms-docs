@@ -1,6 +1,6 @@
 ---
 title: Getting Started on Windows
-page_title: Getting Started with Telerik UI for Xamarin.Forms on Windows
+page_title: Getting Started with Telerik UI for Xamarin on Windows
 slug: getting-started-windows
 position: 2
 ---
@@ -32,10 +32,8 @@ If your scenario requires using the other approach, please proceed following the
 
 Create new solution **Xamarin.Forms Portable** / **Shared**
 
-* **Visual Studio**: located at *Templates* > *Visual C#* > *Mobile Apps* section:  
+**Visual Studio**: located at *Templates* > *Visual C#* > *Mobile Apps* section:  
 ![Create new Xamarin.Forms solution](../images/visual-studio-new-solution.png "Image")
-* **Xamarin Studio**: located at *C#* > *Mobile Apps* section:  
-![Create new Xamarin.Forms solution](../images/xamarin-studio-new-solution.png "Image")  
 
 Typically, the solution will contain the following projects:
 
@@ -43,7 +41,7 @@ Typically, the solution will contain the following projects:
 * **Android**: Available on all operation systems.
 * **WinPhone**, **Windows 8.1**or **UWP**: Available only for projects created with Visual Studio.
 * **iOS**:
- * Available for OS X.
+ * Available for MacOS.
  * If you wish to use Visual Studio as a development environment you will also need a mac machine. You can find more information how to setup your environment here: [Introduction to Xamarin.iOS for Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/)
 
 ## 2. Getting the latest platform SDK versions
@@ -71,28 +69,8 @@ You can use our [**Telerik NuGet package server**]({%slug telerik-nuget-server%}
 
 The hard way is to add all required assemblies manually. We have added a special article in each control section that contains information about all required assemblies. The article is called **"Required Assemblies"** and is located in the **Getting Started** section for each control.
 
-- [Calendar Required Assemblies]({%slug calendar-getting-started-required-assemblies%})
-- [Chart Required Assemblies]({%slug chart-getting-started-required-assemblies%})
-- [DataForm Required Assemblies]({%slug dataform-getting-started-required-assemblies%})
-- [ListView Required Assemblies]({%slug listview-getting-started-required-assemblies%})
-- [SideDrawer Required Assemblies]({%slug sidedrawer-getting-started-required-assemblies%})
-
-## 4. Register Renderers
-
-The final step is to register the control renderers. These articles will show you how:
-
-- [Calendar Register Renderer]({%slug calendar-getting-started-register-renderer%})
-- [Chart Register Renderer]({%slug chart-getting-started-register-renderer%})
-- [DataForm Register Renderer]({%slug dataform-getting-started-register-renderer%})
-- [ListView Register Renderer]({%slug listview-getting-started-register-renderer%})
-- [SideDrawer Register Renderer]({%slug sidedrawer-getting-started--register-renderer%})
-
 ## See Also
 
+- [System Requirements]({% slug system-requirements %})
 - [Project Wizard]({%slug project-wizard%})
 - [Telerik NuGet packages server]({%slug telerik-nuget-server%})
-- [Calendar Getting Started]({%slug calendar-getting-started%})
-- [Chart Getting Started]({%slug chart-getting-started%})
-- [DataForm Getting Started]({%slug dataform-getting-started%})
-- [ListView Getting Started]({%slug listview-getting-started%})
-- [SideDrawer Getting Started]({%slug sidedrawer-getting-started%})

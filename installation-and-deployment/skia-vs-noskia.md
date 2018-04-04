@@ -23,7 +23,7 @@ The following controls rely on the **SkiaSharp** library to render some elements
 * **RadBusyIndicator**
 * **RadGauge**
 
-With this in mind, if you intend on using these, you need to add reference to the relevant version of **SkiaSharp**, **SkiaSharp.Views** and **SkiaSharp.Views.Forms** NuGet packages. In case you would like to not take advantage of these elements, we advise on using the Lite assemblies so that no direct references to SkiaSharp are required.
+If you intend on using these, you need to add reference to the relevant version of **SkiaSharp**, **SkiaSharp.Views** and **SkiaSharp.Views.Forms** NuGet packages. In case you would like to not take advantage of these elements, we advise on using the Lite assemblies so that no direct references to SkiaSharp are required.
 
 ## See Also
 

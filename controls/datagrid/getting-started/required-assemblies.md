@@ -9,7 +9,7 @@ slug: datagrid-required-assemblies
 
 This article contains a list with the assemblies required by the **RadDataGrid** component.
 
->important The control relies on SkiaSharp rendering library for the visualization of certain elements within its structure. Reference to the relevant version of the library should be added in order to use the control. For more information - [Lite vs Standard Assemblies]({%slug telerik-light-assemblies%})
+>important The control relies on the **SkiaSharp** rendering library for the visualization of certain elements within its structure. Reference to the relevant version of the library should be added in order to use the control. For more information - [Lite vs Standard Assemblies]({%slug telerik-light-assemblies%})
 
 >note Please keep in mind that all binaries built for a specific platform are placed in a folder named after that platform.
 

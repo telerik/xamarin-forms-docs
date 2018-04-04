@@ -28,21 +28,33 @@ In order to use the classes needed for manipulating the database, you need to in
 #### Figure 2: Google.Cloud.Datastore.V1 NuGet Package
 ![](../images/datastore_nuget_package.png)
 
-Once you have the library installed, modifying the database is very straightforward.
+Once you have the library installed, modifying the database is very straightforward. Here is how you set up a connection to your NoSql database:
 
-As a first step, we are going to query the database so that we obtain a list of the desired items. For the purpose of this example, we will get all the book objects whose category is "Science Fiction".
+		DatastoreDb db;
+        public MainPage()
+        {
+            InitializeComponent();
 
-	Query query = new Query("Book")
+            string projectId = "my-project-1519048207138";
+            db = DatastoreDb.Create(projectId);
+        }
+
+As a first step, we are going to query the database so that we obtain a list of the desired items. For the purpose of this example, we will get all the book objects whose category is "Science Fiction" through the following method.
+
+	internal Query GetEntities()
 	{
-    	Filter = Filter.Equal("Category", "Science Fiction")),
-    	Order = { { "Size", PropertyOrder.Types.Direction.Descending } }
-	};
+		Query query = new Query("Book")
+		{
+	    	Filter = Filter.Equal("Category", "Science Fiction"))
+		};
+		return query;
+	}
 
 We are going to use the following class which represents the Book entity from the database:
 
 	public class Book
     {
-        public string Key { get; set; }
+        public long Key { get; set; }
         public string Name { get; set; }
         public string Author { get; set; }
         public string Category { get; set; }
@@ -54,15 +66,11 @@ We are going to use the following class which represents the Book entity from th
 
 The **RadListView** or **RadDataGrid** are generally a great choice to represent a list of similar objects. For the purpose of this example we are going to use the **RadListView**. Here comes in use the query, example of which was previously shown:
 
-	internal List<Book> GetBooks()
+		internal List<Book> GetBooks()
         {
             List<Book> books = new List<Book>();
-            Query query = new Query("Book")
-            {
-                Filter = Filter.Equal("Category", "Science Fiction"),
-                Order = { { "Size", PropertyOrder.Types.Direction.Descending } }
-            };
-            DatastoreQueryResults tasks = db.RunQuery(query);
+           
+            DatastoreQueryResults tasks = db.RunQuery(GetEntities());
 
             foreach (var entity in tasks.Entities)
             {
@@ -78,13 +86,13 @@ The **RadListView** or **RadDataGrid** are generally a great choice to represent
 
 Setting this list as the ItemsSource of the RadListView results in the following appearance:
 
+-> Picture of RadListView or RadDataGrid that has this ItemsSource
 
+### Inserting an entity to the NoSQL database
 
-### Inserting an object to the NoSQL database
+In order to insert a new object to the database, you should use the DatastoreTransaction's **BeginTransaction** method. Let's fill in the book's properties in our Xamarin.Forms application through the **RadDataForm** which is a perfect choice for modifying the properties of a single item. Here is how the **RadDataForm** is defined:
 
-In order to insert a new object to the database, you should use the DatastoreTransaction's **BeginTransaction** method. Let's create a book in our Xamarin.Forms application through the **RadDataForm** which is a perfect choice for modifying the properties of a single item. Here is how the **RadDataForm** is defined:
-
-[RADDATAFORM DEFINITION]
+[RADDATAFORM DEFINITION] -> You can choose what control to use...
 
 Once we have filled the necessary fields, you can use the following approach to send the new object to the cloud:
 
@@ -92,10 +100,13 @@ Once we have filled the necessary fields, you can use the following approach to 
 
 	internal void InsertBook()
         {
+			Book newBook = this.form.CurrentItem as Book;
+
             // The kind for the new entity
             string kind = "Book";
             // The name/ID for the new entity
             string name = "samplebook1";
+
             KeyFactory keyFactory = db.CreateKeyFactory(kind);
             // The Cloud Datastore key for the new entity
             Key key = keyFactory.CreateKey(name);
@@ -103,10 +114,11 @@ Once we have filled the necessary fields, you can use the following approach to 
             var task = new Entity
             {
                 Key = key,
-                ["author"] = "Maria J. Clinton",
-                ["category"] = "comedy",
-                ["date issued"] = new DateTime(1990, 1, 1),
-                ["size"] = 322
+                ["Author"] = newBook.Author,
+                ["Category"] = newBook.Category,
+                ["Date issued"] = newBook.DateIssued.ToUniversalTime(),
+                ["Size"] = newBook.Size,
+				["Name"] = newBook.Name
             };
             using (DatastoreTransaction transaction = db.BeginTransaction())
             {
@@ -116,6 +128,16 @@ Once we have filled the necessary fields, you can use the following approach to 
             }
         }
 
+### Deleting an Entity from the NoSQL database
+
+Once again, deleting an entity from the database is very straightforward. You can directly work with the **DatastoreDb** instance and call its **Delete** method by passing a certain **Entity** object which should be removed.
+
+	 DatastoreQueryResults tasks = db.RunQuery(GetEntities());
+	 Entity itemToDelete = tasks.Entities.FirstOrDefault();
+	 if (itemToDelete  != null)
+	 {
+	 	 db.Delete(itemToDelete);
+	 }
 
 ## See Also
 

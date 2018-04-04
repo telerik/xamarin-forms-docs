@@ -7,7 +7,7 @@ position: 2
 
 ## Cloud Functions
 
-By utilizing Google Cloud Functions, you can focus on building up your application and the logic it required without the need to take care of your own infrastructure. Through this service you can design and create functions which are straight-forward and simple.They can be related to your other cloud services/infrastructure and the events associated with them.  
+By utilizing Google Cloud Functions, you can focus on building up your application and the logic it requires without the need to take care of your own infrastructure. Through this service you can design and create functions which are straight-forward and simple.They can be related to your other cloud services/infrastructure and the events associated with them.  
 
 As stated in the Google's [official documentation](https://cloud.google.com/functions/docs/writing/http): "HTTP Functions are used when you want to directly invoke your function via HTTP(S). To allow for specific HTTP semantics, the signature of an HTTP function takes HTTP-specific arguments: request and response."
 

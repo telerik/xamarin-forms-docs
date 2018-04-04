@@ -7,23 +7,19 @@ position: 3
 
 # Google Cloud SQL for MySQL 
 
-&nbsp
-
 >important this paragraph is taken from Google's docs - exactly as it is.
 
-Cloud SQL is a fully-managed database service that makes it easy to set up, maintain, manage, and administer your relational PostgreSQL BETA and MySQL databases in the cloud. Cloud SQL offers high performance, scalability, and convenience. Hosted on Google Cloud Platform, Cloud SQL provides a database infrastructure for applications running anywhere.
-
---
+Google promotes its SQL solution as a fully-managed database service which is quick to set up, easy to maintain and manage. Some of the key features of the solution are the high performance, scalability, and convenience. It is hosted on Google Cloud Platform and can be accessed by applications and services running anywhere.
 
 Using database on the cloud provides you with lots of advantages such as better focus on your application, no need of installations and backups, high performance and scalability.
 
-Google Cloud SQL supports PostgreSQL(in Beta at the time of writing this article) and MySQL databases. For the purpose of this section we are going to show you a simple example on how to visualize data from MySQL database within a RadDataGrid Control.
+Google Cloud SQL supports **PostgreSQL**(in Beta at the time of writing this article) and **MySQL** databases. For the purpose of this section we are going to show you a simple example on how to visualize data from **MySQL** database within a **RadDataGrid** Control.
 
 ## Prerequisites
 
 **1.** In order to create a database, you need to first enable the **Cloud SQL Administration API** and set up the billing for your account through the GCP console.
 
-**2.** As e next step, you should create a MySQL instance which can hold different MySQL databases.
+**2.** As a next step, you should create a MySQL instance which can hold different MySQL databases.
 
 **3.** Finally, you can create the database instance as shown in the official [Quickstart for Cloud SQL for MySQL](https://cloud.google.com/sql/docs/mysql/quickstart). We are going to use this exact database in this example as well. Make sure that you have added several entities so that you are not working with an empty database.
 
@@ -61,7 +57,7 @@ The IP address of your SQL instance can be found in the Overview tab of the inst
             connection = new MySqlConnection(connectionString);
         }
 
-As a Next step, you need to open the connection as in the method below:
+As a next step, you need to open the connection as in the method below:
 
         private bool OpenConnection()
         {

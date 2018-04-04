@@ -22,7 +22,12 @@ In order to develop applications with **Telerik UI for Xamarin** you need to hav
 	#### Figure 1: VS 2017 with Mobile development with .NET workload enabled
 	![](images/vs2017_xamarin_workload.png)
 		
-	>For more detailed instructions go to [Installing Xamarin in Visual Studio on Windows](https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/installation/windows) topic in Xamarin documentation.
+	> Before proceeding, please make sure the following Individual components are included:
+	>	* Xamarin
+	>	* Text Template Transformation
+	>	* .NET Portable Library targeting pack
+
+	>tip For more detailed instructions go to [Installing Xamarin in Visual Studio on Windows](https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/installation/windows) topic in Xamarin documentation.
  
 	* То add Xamarin to Visual Studio 2015 you would need to enable **Cross-Platform Mobile Development > C#/.NET (Xamarin)** feature in VS 2015 installer.
 	

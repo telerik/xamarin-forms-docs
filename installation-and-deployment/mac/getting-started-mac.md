@@ -1,25 +1,31 @@
 ---
-title: Getting Started on MAC
+title: Getting Started on Mac
 page_title: Getting Started with Telerik UI for Xamarin.Forms on Mac
 slug: getting-started-mac
 position: 1
 ---
 # Getting Started on Mac
 
-This article should help developers to get started with **Telerik UI for Xamarin** suite and **Xamarin Studio** on **Mac OS**.
+This article should help developers to get started with **Telerik UI for Xamarin** suite and **Visual Studio for Mac** on **Mac OS**.
 
->Please, make sure you have already read the [System Requirements]({% slug system-requirements %}) article before you proceed.
+>Please, make sure you have already read the [System Requirements]({% slug system-requirements %}#macos) article before you proceed.
  
 ## 1. Start with Xamarin.Forms app
 
 Depending on your scenario, you either have an existing app where you will add our components, or you have to create a new blank app.
-
  
 > If you already have an app, please proceed to the [next step]({%slug getting-started-mac%}#2-getting-the-latest-platform-sdk-versions).
 
 ### Create new app from scratch
 
-Open Xamarin Studion and create new solution **Xamarin.Forms Forms App**:
+If you start your app from scratch, you have these options:
+
+- Use our [**Project Wizard**]({%slug project-wizard-xamarin-studio%}) to create a project that has everything setup for you. You can start using our components right away without manually adding required assemblies and modifying solution files. If you choose this option, you can skip the next steps in this article and jump directly to the Getting Started section of any control.
+- Create a blank Xamarin.Forms app and manually setup all requirements. If your scenario requires using this approach, please proceed following the steps in this article.
+
+#### How to create blank Xamarin.Forms app
+
+Open Visual Studio for Mac and create new solution **Xamarin.Forms -> Blank Forms App**:
 
 ![Create new Xamerin.Forms app](images/mac-xs-create-new-app-1.png)
 
@@ -31,11 +37,11 @@ Follow the steps in the wizard until your app is created. It should contain the 
 
 Make sure that your Xamarin.Forms packages are up to date.
 
-You can either use the [Xamarin Studio UI]({%slug getting-started-mac%}#update-packages-using-xamarin-studio-ui) to update all packages to the required versions, or you can do it [manually]({%slug getting-started-mac%}#update-packages-using-packagesconfig-files) by editing the *packages.config* file in each project.
+You can either use the [Visual Studio UI]({%slug getting-started-mac%}#update-packages-using-visual-studio-ui) to update all packages to the required versions, or you can do it [manually]({%slug getting-started-mac%}#update-packages-using-packagesconfig-files) by editing the *packages.config* file in each project.
 
-### Update packages using Xamarin Studio UI
+### Update packages using Visual Studio UI
 
->You have to make sure that you have the right version of Xamarin.Forms and all related packages.
+>You have to make sure that you have the right version of Xamarin and all related packages.
 
 To update specific package to the latest version, right-click on it and select "update":
  
@@ -81,38 +87,18 @@ After updating all the *packages.config* files users are now ready to restore th
 
 ## 3. Add reference to Telerik Components
 
-You have two options.
+You have the following options:
 
 ### Telerik NuGet package server
 
-You can use our [**Telerik NuGet package server**]({%slug telerik-nuget-server%}) to include our suite in your solution and/or update to the latest available version.
+You can use our [**Telerik NuGet package server**]({%slug telerik-nuget-server%}#visual-studio-for-mac) to include our suite in your solution and/or update to the latest available version.
 
 ### Manually add required assemblies
 
 The hard way is to add all required assemblies manually. We have added a special article in each control section that contains information about all required assemblies. The article is called **"Required Assemblies"** and is located in the **Getting Started** section for each control.
 
-- [Calendar Required Assemblies]({%slug calendar-getting-started-required-assemblies%})
-- [Chart Required Assemblies]({%slug chart-getting-started-required-assemblies%})
-- [DataForm Required Assemblies]({%slug dataform-getting-started-required-assemblies%})
-- [ListView Required Assemblies]({%slug listview-getting-started-required-assemblies%})
-- [SideDrawer Required Assemblies]({%slug sidedrawer-getting-started-required-assemblies%})
-
-## 4. Register Renderers
-
-The final step is to register the control renderers. These articles will show you how:
-
-- [Calendar Register Renderer]({%slug calendar-getting-started-register-renderer%})
-- [Chart Register Renderer]({%slug chart-getting-started-register-renderer%})
-- [DataForm Register Renderer]({%slug dataform-getting-started-register-renderer%})
-- [ListView Register Renderer]({%slug listview-getting-started-register-renderer%})
-- [SideDrawer Register Renderer]({%slug sidedrawer-getting-started--register-renderer%})
-
 ## See Also
 
+- [System Requirements]({% slug system-requirements %})
 - [Telerik NuGet packages server]({%slug telerik-nuget-server%})
-- [Calendar Getting Started]({%slug calendar-getting-started%})
-- [Chart Getting Started]({%slug chart-getting-started%})
-- [DataForm Getting Started]({%slug dataform-getting-started%})
-- [ListView Getting Started]({%slug listview-getting-started%})
-- [SideDrawer Getting Started]({%slug sidedrawer-getting-started%})
-
+- [Project Wizard for Visual Studio for Mac]({%slug project-wizard-xamarin-studio%})

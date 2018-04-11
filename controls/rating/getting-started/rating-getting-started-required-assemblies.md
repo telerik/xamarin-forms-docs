@@ -9,6 +9,8 @@ slug: rating-getting-started-required-assemblies
 
 This article contains information about which assemblies are required by the **RadRating** control.
 
+>important The control relies on the **SkiaSharp** rendering library for the visualization of certain elements within its structure. Reference to the relevant version of the library should be added in order to use the control. For more information - [Lite vs Standard Assemblies]({%slug telerik-light-assemblies%})
+
 > The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls. The default location is:  
 > `C:\Program Files (x86)\Progress\Telerik UI for Xamarin RX XXX\Binaries`.
 

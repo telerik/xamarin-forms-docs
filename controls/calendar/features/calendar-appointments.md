@@ -9,7 +9,7 @@ slug: calendar-appointments
 
 ## Creating an Appointment ##
 
-RadCalendar can display appointments by setting its **AppointmentsSource** property. It accepts a collection of objects, which should implement the **Telerik.XamarinForms.IAppointment** interface. This interface defines 6 members:
+RadCalendar can display appointments by setting its **AppointmentsSource** property. It accepts a collection of objects, which should implement the **Telerik.XamarinForms.Input.IAppointment** interface. This interface defines 6 members:
 
 - **StartDate** *(DateTime)*
 - **EndDate** *(DateTime)*

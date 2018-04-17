@@ -2,7 +2,7 @@
 title: Getting Started
 page_title: RadTabView Getting Started | Telerik UI for Xamarin.Android Documentation
 description: This article shows how to create a basic tab view setup.
-slug: tabview-getting-started
+slug: tabview-gettingstarted
 tags: radtabview, init, tabs
 position: 2
 publish: true

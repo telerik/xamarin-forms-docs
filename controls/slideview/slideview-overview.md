@@ -14,21 +14,18 @@ slug: slideview-overview
 > - **iOS**
 > - **Universal Windows Platform**
 
+#### Figure 1: RadSlideView Overview
+
 ![RadSlideView example](images/slideview-overview.png)  
 
-### Key features
+## Key features
 
-- **Easily customizeable items**: The control provides several properties which you can use to customize the background and text color of its segments.
+* **Customizable indicators and slide buttons**: RadSlideView provides you with the ability to customize the appearance of the indicators and the slide buttons. For more details check [Customize the Control]({% slug sideview-customize-the-control %}) topic.
+* **Item Template**: You can define an ItemTemplate to present the data in the views in a way that’s most suitable for your scenario. For more details read the [Item Template]({% slug slideview-features-itemtemplate %}) topic.
+* **Infinity scrolling**: The control allows you to start repeating the views when you reach the last item in the collection. This is controlled through the [IsInfiniteScrollingEnabled]({% slug sideview-customize-the-control %}#enabling-infinity-scrolling) property.
+* **Built-in animation**: RadSlideView has a built-in sliding animation which can be enabled or disabled through the [IsAnimated]({% slug sideview-customize-the-control %}#disabling-the-animation) property.
+* **Commands**: RadSlideView allows you to attach commands that will be executed when the slide actions occur. For more details on this go to the [Commands]({% slug sideview-commands-support %}) topic.
 
-- **Customizable item indicators and slide buttons**: You can customize the color and size of the indicators and the slide buttons.
+## See Also
 
-- **Infinity scrolling**: The control allows you to start repeating the views when you reach the last item in the collection.
-
-- **Built-in animation**: RadSlideView has a built-in animation which can be enabled or disabled.
-
-- **Commands support**: You can customize the navigation behavior of the control via commands.
-
-### See Also
-
-- [Project Wizard]({% slug project-wizard %})
 - [Getting Started]({% slug slideview-getting-started %})

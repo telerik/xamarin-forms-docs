@@ -29,9 +29,15 @@ navigation:
         position: 8
 ## End Root Level
 ## Cloud Integration Sub-Folders
-    cloud-integration/google-cloud:
-        title: "Google Cloud"
+    cloud-integration/azure:
+        title: "Azure"
         position: 1
+    cloud-integration/azure/connect-to-data-in-the-cloud:
+        title: "Connect to Data in the Cloud"
+        position: 4				
+    cloud-integration/azure/cognitive-services:
+        title: "Cognitive Services"
+        position: 5
 ## Cloud Integration Sub-Folders
 ## Styling Sub-Folders
     styling-and-appearance/xamarin-forms-theming:

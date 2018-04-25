@@ -1,7 +1,7 @@
 ---
 title: Styling
 page_title: Styling
-position: 6
+position: 7
 slug: listview-features-styling
 description: Describing the styling options of the RadListView
 tags: style, selected, hovered, pressed, item, highlighted

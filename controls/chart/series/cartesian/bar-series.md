@@ -12,7 +12,7 @@ position: 0
 
 The **BarSeries** inherits from **CategoricalSeries** and requires one **CategoricalAxis** and one **NumericalAxis**. 
 
->tip You could check the common CategoricalSeries features that are also applicable to **BarSeries** at the following link: [Series Features]({%slug chart-series-overview %}##features).
+>tip You could check the common CategoricalSeries features that are also applicable to **BarSeries** at the following link: [Series Features]({%slug chart-series-overview %}).
 
 ## Example ##
 

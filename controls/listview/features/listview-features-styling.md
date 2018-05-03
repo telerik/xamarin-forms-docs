@@ -86,6 +86,110 @@ And here is the end result:
 
 >note You can find a working demo labeled **ItemStyles** in the ListView/Styling folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}). 
 
+## Troubleshooting
+
+### ListViewTemplateCell and SelectedItemStyle
+
+When using a `ListViewTemplateCell` a SelectedItemStyle's **TextCellTextColor** value will not be used for custom views in the `DataTemplate`. You can still achieve a simiar result by using a model property and ValueConverter, the example below uses such an approach.
+
+#### Example
+
+Add an `IsSelected` boolean property with NotifyPropertyChanged implemented to the business object.
+
+```
+public class SourceItem : INotifyPropertyChanged
+{
+    public string Name { get; set; }
+    
+    private bool isSelected;
+    public bool IsSelected
+    {
+        get => isSelected;
+        set
+	{ 
+	    isSelected = value; 
+	    OnPropertyChanged(); 
+	}
+    }
+    
+    public event PropertyChangedEventHandler PropertyChanged;
+    protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
+}
+```
+
+Create an `IValueConverter` implementation that returns a different color based on the value of **IsSelected**.
+
+```
+class SelectedToColorConverter : IValueConverter
+{
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        if ((bool)value == true)
+        {
+            return Color.Green;
+        }
+
+        return Color.Gray;
+    }
+ 
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        throw new NotImplementedException();
+    }
+}
+```
+
+In XAML below, the following is implemented:
+
+1. Added an instance of the `SelectedToColorConverter` to the RadListView control's **Resources**
+2. The `Label` **TextColor** property is bound to the **IsSelected** property, with a converter defined using the *SelectedToColorConverterKey*.
+3. An event hander is defined for **SelectionChanged**
+
+```
+<telerikDataControls:RadListView SelectionChanged="RadListView_OnSelectionChanged">
+    <telerikDataControls:RadListView.Resources>
+        <ResourceDictionary>
+            <portable:SelectedToColorConverter x:Key="SelectedToColorConverterKey"/>
+        </ResourceDictionary>
+    </telerikDataControls:RadListView.Resources>
+    <telerikDataControls:RadListView.ItemTemplate>
+        <DataTemplate>
+            <telerikListView:ListViewTemplateCell>
+                <telerikListView:ListViewTemplateCell.View>
+                    <Grid Padding="3">
+                        <Label Margin="10"
+                               Text="{Binding Name}"
+                               TextColor="{Binding IsSelected, Converter={StaticResource SelectedToColorConverterKey}}"/>
+                    </Grid>
+                </telerikListView:ListViewTemplateCell.View>
+            </telerikListView:ListViewTemplateCell>
+        </DataTemplate>
+    </telerikDataControls:RadListView.ItemTemplate>
+</telerikDataControls:RadListView>
+
+```
+
+Finally, in the `SelectionChanged` event handler, the  `IsSelected` value is updated
+
+```
+private void RadListView_OnSelectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+{
+    if (e.NewItems != null && e.NewItems.Count > 0)
+    {
+        (e.NewItems[0] as SourceItem).IsSelected = true;
+    }
+ 
+    if (e.OldItems !=null && e.OldItems.Count > 0)
+    {
+        (e.OldItems[0] as SourceItem).IsSelected = false;
+    }
+}
+```
+
+
 ##See Also
 
 [Selection]({%slug listview-features-selection%})

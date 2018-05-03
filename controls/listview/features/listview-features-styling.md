@@ -39,42 +39,43 @@ This enumeration contains the following members:
 - **All** (default value) - the border should be visualized all around the item.
 
 ### Example
-
-	<telerikDataControls:RadListView x:Name="listView" ItemsSource="{Binding Source}" IsItemsReorderEnabled="True">
-		<telerikDataControls:RadListView.ItemTemplate>
-			<DataTemplate>
-				<telerikListView:ListViewTextCell Text="{Binding Name}" />
-			</DataTemplate>
-		</telerikDataControls:RadListView.ItemTemplate>
-		<telerikDataControls:RadListView.ItemStyle>
-			<telerikListView:ListViewItemStyle BackgroundColor="#1263E5"
-											TextCellTextColor="#AAC7F6"
-											BorderColor="#0A3A82"                                                
-											BorderWidth="2"
-											BorderLocation="All" />
-		</telerikDataControls:RadListView.ItemStyle>
-		<telerikDataControls:RadListView.SelectedItemStyle>
-			<telerikListView:ListViewItemStyle BackgroundColor="#83A9E2"
-											TextCellTextColor="#AAC7F6"
-											BorderColor="#0A3A82"
-											BorderWidth="2" 
-											BorderLocation="Bottom"/>
-		</telerikDataControls:RadListView.SelectedItemStyle>
-		<telerikDataControls:RadListView.PressedItemStyle>
-			<telerikListView:ListViewItemStyle BackgroundColor="#C1C1C1" 
-											TextCellTextColor="#AAC7F6"
-											BorderColor="#0B3D89" 
-											BorderWidth="2" 
-											BorderLocation="Bottom"/>
-		</telerikDataControls:RadListView.PressedItemStyle>
-		<telerikDataControls:RadListView.ReorderItemStyle>
-			<telerikListView:ListViewItemStyle BackgroundColor="#0B3D89"
-											TextCellTextColor="#AAC7F6"
-											BorderColor="Black"
-											BorderWidth="2"
-											BorderLocation="All" />
-		</telerikDataControls:RadListView.ReorderItemStyle>
-	</telerikDataControls:RadListView>
+```xml
+<telerikDataControls:RadListView x:Name="listView" ItemsSource="{Binding Source}" IsItemsReorderEnabled="True">
+    <telerikDataControls:RadListView.ItemTemplate>
+        <DataTemplate>
+            <telerikListView:ListViewTextCell Text="{Binding Name}" />
+        </DataTemplate>
+    </telerikDataControls:RadListView.ItemTemplate>
+    <telerikDataControls:RadListView.ItemStyle>
+        <telerikListView:ListViewItemStyle BackgroundColor="#1263E5"
+                                           TextCellTextColor="#AAC7F6"
+                                           BorderColor="#0A3A82"
+                                           BorderWidth="2"
+                                           BorderLocation="All" />
+    </telerikDataControls:RadListView.ItemStyle>
+    <telerikDataControls:RadListView.SelectedItemStyle>
+        <telerikListView:ListViewItemStyle BackgroundColor="#83A9E2"
+                                           TextCellTextColor="#AAC7F6"
+                                           BorderColor="#0A3A82"
+                                           BorderWidth="2" 
+                                           BorderLocation="Bottom"/>
+    </telerikDataControls:RadListView.SelectedItemStyle>
+    <telerikDataControls:RadListView.PressedItemStyle>
+        <telerikListView:ListViewItemStyle BackgroundColor="#C1C1C1" 
+                                           TextCellTextColor="#AAC7F6"
+                                           BorderColor="#0B3D89" 
+                                           BorderWidth="2" 
+                                           BorderLocation="Bottom"/>
+    </telerikDataControls:RadListView.PressedItemStyle>
+    <telerikDataControls:RadListView.ReorderItemStyle>
+        <telerikListView:ListViewItemStyle BackgroundColor="#0B3D89"
+                                           TextCellTextColor="#AAC7F6"
+                                           BorderColor="Black"
+                                           BorderWidth="2"
+                                           BorderLocation="All" />
+    </telerikDataControls:RadListView.ReorderItemStyle>
+</telerikDataControls:RadListView>
+```
 
 And here is the end result:
 
@@ -96,7 +97,7 @@ When using a `ListViewTemplateCell` a SelectedItemStyle's **TextCellTextColor** 
 
 Add an `IsSelected` boolean property with NotifyPropertyChanged implemented to the business object.
 
-```
+```C#
 public class SourceItem : INotifyPropertyChanged
 {
     public string Name { get; set; }
@@ -122,7 +123,7 @@ public class SourceItem : INotifyPropertyChanged
 
 Create an `IValueConverter` implementation that returns a different color based on the value of **IsSelected**.
 
-```
+```C#
 class SelectedToColorConverter : IValueConverter
 {
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -148,7 +149,7 @@ In XAML below, the following is implemented:
 2. The `Label` **TextColor** property is bound to the **IsSelected** property, with a converter defined using the *SelectedToColorConverterKey*.
 3. An event hander is defined for **SelectionChanged**
 
-```
+```XML
 <telerikDataControls:RadListView SelectionChanged="RadListView_OnSelectionChanged">
     <telerikDataControls:RadListView.Resources>
         <ResourceDictionary>
@@ -174,7 +175,7 @@ In XAML below, the following is implemented:
 
 Finally, in the `SelectionChanged` event handler, the  `IsSelected` value is updated
 
-```
+```C#
 private void RadListView_OnSelectionChanged(object sender, NotifyCollectionChangedEventArgs e)
 {
     if (e.NewItems != null && e.NewItems.Count > 0)

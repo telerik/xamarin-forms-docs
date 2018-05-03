@@ -57,8 +57,8 @@ The default behaviour of the RadLegendView is to show the legend items verticall
 
 The posible values for the orientation are:
 
-* LienarLayout.HORIZONTAL
-* LienarLayout.VERTICAL
+* LinearLayout.HORIZONTAL
+* LinearLayout.VERTICAL
 
 ### Scrolling
 
@@ -66,8 +66,8 @@ By default the scroll of the legend items is **disabled**. In order to enable th
 
 
 ```C#
-   legendView.CanScrollHorizontally = true;
-   legendView.CanScrollVertically = true;
+legendView.CanScrollHorizontally = true;
+legendView.CanScrollVertically = true;
 ```
 
 Finally, the legend for the pie chart is a little bit different. The pie series does not have a legend title because each point
@@ -75,8 +75,25 @@ in the series means something different, the title is taken from the data points
 
 
 ```C#
-    PieSeries series = new PieSeries();
-    // This assumes that the data models have a property with
-    // the signature public string Name { get; }.
-    series.NameBinding = new PropertyNameDataPointBinding("Name");
+PieSeries series = new PieSeries();
+
+// This assumes that the data models have a property with the signature public string Name { get; }.
+series.NameBinding = new PropertyNameDataPointBinding("Name");
 ``` 
+
+### Selection
+
+**RadLegendView** supports selection by setting the **AllowSelection** property to true. 
+
+```C#
+legendView.AllowSelection = true;
+```
+
+The **LegendItemSelected** event can be used to determine the selected `LegendItem`.
+
+```C#
+private void LegendViewOnLegendItemSelected(object sender, LegendSelectionEventArgs e)
+{
+    var title = (e.P0 as LegendItem)?.Title;
+}
+```

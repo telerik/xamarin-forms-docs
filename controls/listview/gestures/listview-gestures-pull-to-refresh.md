@@ -42,9 +42,9 @@ This is how the refresh indicator looks like:
 
 ## Troubleshooting
 
-The RadListView should not be used in a View that restricts the Height to the minimum amount of vertical space. An example is `StackLayout` or a Grid `<RowDefinition Height="Auto" />`. This will restrict the RadListView from expanding when items are populated and  prevents Pull To Refresh from working correctly.
+RadListView should not be used in a View that restricts the Height to the minimum amount of vertical space. An example is `StackLayout` or a Grid with `<RowDefinition Height="Auto" />`. This will restrict the RadListView from expanding when items are populated and  prevents Pull To Refresh from working correctly.
 
-The recommended use is to place the RadListView in a container that expands to fill available space. For example, the RadListView in the example below is in the star-sized Grid RowDefinition.
+The recommended use is to place the RadListView control in a container that expands to fill available space. For example, the RadListView in the example below is in the star-sized Grid RowDefinition.
 
 ```
 <Grid>
@@ -59,7 +59,6 @@ The recommended use is to place the RadListView in a container that expands to f
     <Label Text="I'm in auto-sized row" Grid.Row="1" />
 </Grid>
 ```
-
 
 ## See Also
 

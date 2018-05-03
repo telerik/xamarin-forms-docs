@@ -10,6 +10,8 @@ position: 2
 
 # Text Analysis
 
+&nbsp;
+
 This article will guide you through the process of integrating Azure's [Text Analytics API](https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/) with the controls from the **Telerik UI for Xamarin** suite. More specifically, we are going to use the **RadButton**, **RadEntry** and **RadHorizontalLinearGauge** controls in a page which can be used to determine whether the text which is entered is in English or not as well as analyze its sentiment. The more positive the input message is - the closer the result will be to 100 on the Gauge scale. 
 
 ## Create a Text Analytics API Account
@@ -147,3 +149,8 @@ Running the application and typing something positive in English should give you
 ![](images/text_analyze_api_uwp.png)
 
 ## See Also
+
+* [Text Translation]({%slug cloud-integration-text-translation-azure%})
+* [Blob Storage]({%slug cloud-integration-azure-blob-storage%})
+* [SQL Database]({%slug cloud-integration-azure-sql-database%}) 
+* [Cosmos DB]({%slug cloud-integration-cosmosdb%})

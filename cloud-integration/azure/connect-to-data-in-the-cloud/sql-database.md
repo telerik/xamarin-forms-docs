@@ -10,6 +10,8 @@ position: 0
 
 # RadListView with Azure SQL Database 
 
+&nbsp;
+
 This article demonstrates how to integrate an Azure's [SQL Database](https://azure.microsoft.com/en-us/services/sql-database/) and display the data using the [RadListView]({%slug listview-getting-started%}). 
 
 ## Set up the Database
@@ -213,3 +215,9 @@ Here is the appearance of the RadListView control when run as UWP application:
 ![](images/uwp_listview_itemsfromdb.png)
 
 ## See Also
+
+* [Cosmos DB]({%slug cloud-integration-cosmosdb%})
+* [Text Analysis]({slug cloud-integration-cognitive-services-text-analysis%})
+* [Blob Storage]({%slug cloud-integration-azure-blob-storage%})
+
+

@@ -34,7 +34,7 @@ navigation:
         position: 1
     cloud-integration/azure/connect-to-data-in-the-cloud:
         title: "Connect to Data in the Cloud"
-        position: 4				
+        position: 3				
     cloud-integration/azure/cognitive-services:
         title: "Cognitive Services"
         position: 5

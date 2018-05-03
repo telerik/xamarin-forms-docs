@@ -10,6 +10,8 @@ position: 0
 
 # Text Translation 
 
+&nbsp;
+
 This article will guide you through the process of integrating Azure's [Translator Text API](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/) with the controls from the **Telerik UI for Xamarin** suite.
 
 ## Create a Bing Speech API Account
@@ -138,4 +140,10 @@ Now that you have everything set correctly, try typing something in English and 
 
 ![translated text](images/translated_text.png)
 
+
 ## See Also
+
+* [Text Analysis]({slug cloud-integration-cognitive-services-text-analysis%})
+* [Blob Storage]({%slug cloud-integration-azure-blob-storage%})
+* [SQL Database]({%slug cloud-integration-azure-sql-database%}) 
+* [Cosmos DB]({%slug cloud-integration-cosmosdb%})

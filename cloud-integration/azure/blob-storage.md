@@ -5,12 +5,14 @@ description: Blob Storage
 slug: cloud-integration-azure-blob-storage
 tags: cloud,integration,azureprovider
 published: True
-position: 3
+position: 4
 ---
 
 # Blob Storage
 
-Azure Blob storage is a service for storing large amounts of unstructured object data, such as text or binary data, that can be accessed from anywhere in the world via HTTP or HTTPS. You can use Blob storage to expose data publicly to the world, or to store application data privately. This article will demonstrate how one can use this service from a Xamarin application and manage the uploaded files.
+&nbsp;
+
+**Azure Blob storage** is a service for storing large amounts of unstructured object data, such as text or binary data, that can be accessed from anywhere in the world via HTTP or HTTPS. You can use Blob storage to expose data publicly to the world, or to store application data privately. This article will demonstrate how one can use this service from a Xamarin application and manage the uploaded files.
 
 ## Set up Storage Account
 
@@ -153,3 +155,6 @@ Here is the resulting view in Android:
 
 
 ## See Also
+
+* [SQL Database]({%slug cloud-integration-azure-sql-database%}) 
+* [Cosmos DB]({%slug cloud-integration-cosmosdb%})

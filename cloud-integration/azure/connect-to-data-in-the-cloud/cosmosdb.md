@@ -10,6 +10,8 @@ position: 1
 
 # Integration between Cosmos DB and RadListView
 
+&nbsp;
+
 **Azure Cosmos DB** is a globally distributed, multi-model database service which enables you to develop document, key-value, wide-column, and graph databases by using popular APIs and programming models. This article will show you how to integrate the RadGridView control to work with your remote database.
 
 ## Set Up the Database
@@ -172,3 +174,7 @@ You can investigate the other methods in the **TodotItemManager** and consider t
 
 
 ## See Also
+
+* [Blob Storage]({%slug cloud-integration-azure-blob-storage%})
+* [SQL Database]({%slug cloud-integration-azure-sql-database%}) 
+* [Text Analysis]({slug cloud-integration-cognitive-services-text-analysis%})

@@ -10,6 +10,8 @@ position: 1
 
 # Image Analysis
 
+&nbsp;
+
 This article will guide you through the process of integrating Azure's [Computer Vision API](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/) with the controls from the UI for WPF suite. More specifically, you will use the [RadFileDialogs]({%slug radfiledialogs-overview%}), [RadGauge]({%slug radgauge-overview%}) and [RadGlyph]({%slug common-styling-appearance-radglyph%}) to create a simple user control which will determine whether an uploaded photo is a portrait or not.
 
 ## Create a Computer Vision API Account

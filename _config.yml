@@ -231,6 +231,21 @@ navigation:
         position: 2
         ## End AutoComplete Sub-Folders
     ## End AutoComplete
+    ## Barcode
+    controls/barcode:
+        title: "Barcode"
+        ## Barcode Sub-Folders
+    controls/barcode/getting-started:
+        title: "Getting Started"
+        position: 1
+    controls/barcode/features:
+        title: "Features"
+        position: 2
+    controls/barcode/supported-types:
+        title: "Supported Types"
+        position: 3
+        ## End Barcode Sub-Folders
+    ## End Barcode
     ## BusyIndicator
     controls/busyindicator:
         title: "BusyIndicator"
@@ -318,6 +333,20 @@ navigation:
         position: 9
         ## End Chart Sub-Folders
     ## End Chart
+    ## Chat
+    controls/chat:
+        title: "Chat"
+        ## Chat Sub-Folders
+    controls/chat/getting-started:
+        title: "Getting Started"
+        position: 2
+    controls/chat/chat-items:
+        title: "Chat Items"
+        position: 3
+    controls/chat/chat-picker:
+        title: "ChatPicker"
+        position: 4
+    ## End Chat
     ## DataForm
     controls/dataform:
         title: "DataForm"

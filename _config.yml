@@ -474,6 +474,16 @@ navigation:
         title: "Features"
         position: 4
     ## End SlideView
+    ## TreeView
+    controls/treeview:
+        title: "TreeView"
+    controls/treeview/getting-started:
+        title: "Getting Started"
+        position: 3
+    controls/treeview/features:
+        title: "Features"
+        position: 4
+    ## End TreeView
 ## End Controls Sub-Folders
 
 ## The application virtual path

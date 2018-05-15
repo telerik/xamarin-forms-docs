@@ -18,9 +18,6 @@ RadChatPicker control provides **TimePickerContext** that can be used to display
 
 Here is a quick example on how to user TimePicker in RadChat:
 
-
-#### C#
-
 	TimePickerContext context = new TimePickerContext
 	{
 		StartTime = TimeSpan.FromHours(1),

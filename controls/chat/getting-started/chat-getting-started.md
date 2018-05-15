@@ -7,7 +7,7 @@ slug: chat-getting-started
 
 # Getting Started
    
-This example will guide you through the steps needed to add a basic **RadChat** control in your application. For the purpose of the example a simple echo bot will be defined.
+This example will guide you through the steps needed to add a basic **RadChat** control in your application. For the purpose of the example a simple echo bot will be defined, which simply repeats the sent message.
 
 >Before you proceed, please, take a look at these articles and follow the instructions to setup your app:
 
@@ -18,33 +18,29 @@ This example will guide you through the steps needed to add a basic **RadChat** 
 
 If your app is setup, you are ready to add a RadChat control to your page.
 
-#### XAML
-	<telerikConversationalUI:RadChat x:Name="chat" />
+<snippet id='chat-gettingstarted'/>
+
 
 In addition to this you need to add the following namespace:
 
-#### XAML
-	xmlns:telerikConversationalUI="clr-namespace:Telerik.XamarinForms.ConversationalUI;assembly=Telerik.XamarinForms.ConversationalUI"
-	
+<snippet id='xmlns-telerikchat'/>
+
 So, for a simple demonstration purpose a sample echo bot will be defined.
 
-#### C#
+<snippet id='chat-gettingstarted-botservice' />
 
-	class BotServiceRepeat
-	{
-		private Action<string> onReceiveMessage;
+Then, initialize the RepeatBotService and subscribe to the CollectionChanged event of the Items collection of the Chat instance:
 
-		internal void AttachOnReceiveMessage(Action<string> onMessageReceived)
-		{
-			this.onReceiveMessage = onMessageReceived;
-		}
+<snippet id='chat-getting-started-initiliaze' />
+	
+Finally, add the needed event handlers:
 
-		internal void SendToBot(string text)
-		{
-			Task.Delay(500).ContinueWith(t => this.onReceiveMessage?.Invoke(text));
-		}
-	}
+<snippet id='chat-getting-started-events' />
+	
+#### Figure 1: RadChat Getting Started
 
+![Chat Getting Started](images/chat_getting_started.png)
+	
 >important **SDK Browser** and **QSF** applications contain different examples that show RadChat's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
 
 ## See Also

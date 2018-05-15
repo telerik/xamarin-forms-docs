@@ -25,25 +25,15 @@ Through the **Symbology** property you could set the symbology that will be used
 * QRCode  
 * PDF417   
 
->For more details on the available symbologies go to [Supported Types: Overview]({%slug barcode-supported-types-overview %}) topic.
+>For more details on the available symbologies go to [Supported Types]({%slug barcode-supported-types-overview %}) topic.
 
 Here is a quick example of RadBarcode with the Code39 symbology applied:
 
-#### XAML
-	<barcode:RadBarcode WidthRequest="200"  HeightRequest="100" 
-                    HorizontalOptions="Center" VerticalOptions="Center"
-                    Value="58000106">
-		<barcode:RadBarcode.Symbology>
-			<symbology:Code39 SizingMode="Stretch" ShowText="True" HorizontalTextAlignment="Center" CodeTextSpacing="10"/>
-		</barcode:RadBarcode.Symbology>
-	</barcode:RadBarcode>
+<snippet id='barcode-features-symbology'/>
 
-You need to add the following namespaces:
+You need to add the following namespace:
 
-#### XAML 
-
-	xmlns:barcode="clr-namespace:Telerik.XamarinForms.Barcode;assembly=Telerik.XamarinForms.Barcode"
-	xmlns:symbology="clr-namespace:Telerik.XamarinForms.Barcode.Symbology;assembly=Telerik.XamarinForms.Barcode"
+<snippet id='xmlns-telerikbarcode'/>
 
 #### Figure 1:  RadBarcode with 1D Code39 symbology
 
@@ -59,15 +49,7 @@ RadBarcode provides three sizing modes that will help you fine-tune the renderin
 
 The next example shows the same Barcode with Manual SizingMode:
 
-#### XAML
-
-	<barcode:RadBarcode WidthRequest="200"  HeightRequest="100" 
-                    HorizontalOptions="Center" VerticalOptions="Center"
-                    Value="58000106">
-		<barcode:RadBarcode.Symbology>
-			<symbology:Code39 SizingMode="Manual" Module="2" ShowText="True" HorizontalTextAlignment="Center" CodeTextSpacing="10"/>
-		</barcode:RadBarcode.Symbology>
-	</barcode:RadBarcode>
+<snippet id='barcode-features-sizingmode'/>
 
 And here is the result:
 
@@ -85,16 +67,7 @@ By default, RadBarcode control automatically adds a checksum at the end of the b
 
 You could easily change the visual appearance of your Barcodes in order to match your application theme through **ForegroundColor** and **BackgroundColor** properties.
 
-#### XAML
-
-	<barcode:RadBarcode WidthRequest="200"  HeightRequest="100" 
-                    HorizontalOptions="Center" VerticalOptions="Center" 
-					ForegroundColor="DarkBlue" BackgroundColor="Beige"
-                    Value="58000106">
-        <barcode:RadBarcode.Symbology>
-            <symbology:Code39 SizingMode="Stretch" />
-        </barcode:RadBarcode.Symbology>
-    </barcode:RadBarcode>
+<snippet id='barcode-features-colors'/>
 	
 #### Figure 3: Barcode with customized colors
 
@@ -102,4 +75,4 @@ You could easily change the visual appearance of your Barcodes in order to match
 
 ## See Also
 
-- [NumericInput Getting Started]({% slug numericinput-getting-started%})
+- [Supported Types]({%slug barcode-supported-types-overview %})

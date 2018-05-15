@@ -18,7 +18,6 @@ RadChatPicker control provides **ItemPickerContext** that can be used to display
 
 Here is a quick example on how to user ItemPicker:
 
-#### C#
 	ItemPickerContext context = new ItemPickerContext {
 		ItemsSource = new List<string>() { "2 days", "5 days", "7 days", "Another period" }};
 	PickerItem pickerItem = new PickerItem { Context = context, HeaderText = "Select an item" };

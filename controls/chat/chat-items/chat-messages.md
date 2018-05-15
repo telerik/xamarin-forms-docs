@@ -25,7 +25,6 @@ The **TextMessage** is intended to be used for sending a simple string type mess
 
 You could create a sample TextMessage message like this:
 
-#### C#
 	var me = new Author() { Name = "human", Avatar = "SampleAvatar.png" };
     chat1.Items.Add(new TextMessage { Author = me, Text = "Hi." });
     chat1.Items.Add(new TextMessage { Author = me, Text = "This is a message." });

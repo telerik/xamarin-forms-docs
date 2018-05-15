@@ -2,7 +2,7 @@
 title: Overview
 page_title: Overview
 position: 0
-slug: rating-overview
+slug: treeview-overview
 ---
 
 # Overview

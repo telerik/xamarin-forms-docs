@@ -18,9 +18,6 @@ RadChatPicker control provides **DatePickerContext** that can be used to display
 
 Here is a quick example on how to user DatePicker:
 
-
-#### C#
-
 	DatePickerContext context = new DatePickerContext { MinDate = new DateTime(2018, 1, 1), MaxDate = new DateTime(2018, 2, 2) };
     PickerItem pickerItem = new PickerItem { Context = context };
     chat1.Items.Add(new TextMessage { Text = "Select a date" });

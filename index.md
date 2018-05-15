@@ -20,10 +20,12 @@ To read more about the benefits of using UI for Xamarin, please visit the [produ
 Our suite offers the following controls for cross-platform development with Xamarin forms:
 
 - [AutoComplete]({% slug autocomplete-overview %})
+- [Barcode]({%slug barcode-overview %})
 - [BusyIndicator]({% slug busyindicator-overview %})
 - [Button] ({% slug button-overview %})
 - [Calendar]({% slug calendar-overview %})
 - [Chart]({% slug chart-overview %})
+- [Conversational UI]({% slug chat-overview %})
 - [DataForm]({% slug dataform-overview %})
 - [DataGrid]({%slug datagrid-overview%})
 - [Entry] ({%slug entry-overview %})
@@ -38,6 +40,7 @@ Our suite offers the following controls for cross-platform development with Xama
 - [SlideView]({% slug slideview-overview %})
 - [SpreadStreamProcessing]({% slug radspreadstreamprocessing-overview %})
 - [TabView]({% slug tabview-overview%})
+- [TreeView]({% slug treeview-overview %})
 - [ZipLibrary]({% slug radziplibrary-overview %})
 
 

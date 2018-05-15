@@ -22,13 +22,11 @@ Each of these pickers is part of the **RadChatPicker** control and is defined th
 
 * [As an overlay across the messages view](#as-an-overlay-across-the-messages-view) - implemented through the RadChat’s Picker property.
 * [Inline as part of the conversation](#inline-as-part-of-the-conversation) – through a PickerItem added to the Chat’s Items collection.
-* [As a separate ChatPicker control] - shown outside the RadChat control.
+* As a separate ChatPicker control - shown outside the RadChat control.
 
 ### As an overlay across the messages view
 
 If you choose this approach you would need to create a RadChatPicker instance and set it to the Picker property of the Chat:
-
-#### XAML
 
 	<telerikConversationalUI:RadChat x:Name="chat1">
         <telerikConversationalUI:RadChat.Picker>
@@ -40,8 +38,6 @@ If you choose this approach you would need to create a RadChatPicker instance an
     </telerikConversationalUI:RadChat>
 
 Then, when you need to display any of the available pickers, you will have to set the Context property of the ChatPicker. Check the example below with DatePickerContext:
-
-#### C#
 
 	DatePickerContext context = new DatePickerContext { MinDate = new DateTime(2018, 1, 1), MaxDate = new DateTime(2018, 2, 2) };
 	context.PropertyChanged += (s, e) =>
@@ -69,8 +65,6 @@ In the example above, RadChatPicker is used for immediate selection by setting i
 ### Inline as part of the conversation
 
 In this case you would need to create an item of type **PickerItem** that actually derives from the **ChatItem**, set its **Context** and add it to the Items collection of the Chat. Here is a quick example:
-
-#### C#
 
 	DatePickerContext context = new DatePickerContext { MinDate = new DateTime(2018, 1, 1), MaxDate = new DateTime(2018, 2, 2) };
     PickerItem pickerItem = new PickerItem { Context = context };

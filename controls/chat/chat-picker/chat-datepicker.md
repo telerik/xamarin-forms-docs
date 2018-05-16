@@ -40,4 +40,7 @@ Here is a quick example on how to user DatePicker:
 
 ## See Also
 
-- [Getting Started]({% slug autocomplete-getting-started %})
+- [ChatPicker]({% slug chat-picker-overview %})
+- [TimePicker]({% slug chat-timepicker %})
+- [ItemPicker]({% slug chat-itempicker %})
+- [CardPicker]({% slug chat-cardpicker %})

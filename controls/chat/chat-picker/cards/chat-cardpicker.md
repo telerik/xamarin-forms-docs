@@ -91,4 +91,5 @@ The next snippet uses the Cards defined in the previous example and add Actions 
 
 ## See Also
 
-- [Getting Started]({% slug autocomplete-getting-started %})
+- [ChatPicker]({% slug chat-picker-overview %})
+- [ImageCard]({% slug chat-imagecard %})

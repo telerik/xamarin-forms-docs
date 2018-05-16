@@ -29,4 +29,5 @@ You could find detailed instructions on how to use the Chat component in a MVVM 
 	
 ## See Also
 
-- [Getting Started]({% slug autocomplete-getting-started %})
+- [MVVM Support]({% slug chat-mvvm-support %})
+- [ItemTemplateSelector] ({% slug chat-itemtemplateselector %})

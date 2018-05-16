@@ -44,3 +44,5 @@ Finally, add the needed event handlers:
 >important **SDK Browser** and **QSF** applications contain different examples that show RadChat's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
 
 ## See Also
+
+- [Key Features]({% slug chat-key-features %})

@@ -18,4 +18,6 @@ This section covers the specific details of the different chat items RadChat pro
 
 ## See Also
 
-- [Getting Started]({% slug autocomplete-getting-started %})
+- [Key Features]({% slug chat-key-features %})
+- [MVVM Support]({% slug chat-mvvm-support %})
+- [ItemTemplateSelector] ({% slug chat-itemtemplateselector %})

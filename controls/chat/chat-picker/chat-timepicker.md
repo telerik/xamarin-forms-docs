@@ -24,16 +24,16 @@ Here is a quick example on how to user TimePicker in RadChat:
 		EndTime = TimeSpan.FromHours(5),
 	};
 	PickerItem pickerItem = new PickerItem { Context = context };
-	chat1.Items.Add(new TextMessage { Text = "Select a time" });
-	chat1.Items.Add(pickerItem);
+	chat.Items.Add(new TextMessage { Text = "Select a time" });
+	chat.Items.Add(pickerItem);
 	context.PropertyChanged += (s, e) =>
 	{
 		if (e.PropertyName == "SelectedValue")
 		{
 			if (context.SelectedValue != null)
 			{
-				chat1.Items.Remove(pickerItem);
-				chat1.Items.Add(new TextMessage { Author = chat1.Author, Text = "" + context.SelectedValue });
+				chat.Items.Remove(pickerItem);
+				chat.Items.Add(new TextMessage { Author = chat.Author, Text = "" + context.SelectedValue });
 			}
 		}
 	};
@@ -44,4 +44,7 @@ Here is a quick example on how to user TimePicker in RadChat:
 
 ## See Also
 
-- [Getting Started]({% slug autocomplete-getting-started %})
+- [ChatPicker]({% slug chat-picker-overview %})
+- [TimePicker]({% slug chat-timepicker %})
+- [ItemPicker]({% slug chat-itempicker %})
+- [CardPicker]({% slug chat-cardpicker %})

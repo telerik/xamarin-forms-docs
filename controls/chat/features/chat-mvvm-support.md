@@ -33,4 +33,6 @@ And finally, all that is left is to add the RadChat control to your page with pr
 	
 ## See Also
 
-- [Getting Started]({% slug autocomplete-getting-started %})
+- [Key Features]({% slug chat-key-features %})
+- [Commands]({% slug chat-commands %})
+- [ItemTemplateSelector] ({% slug chat-itemtemplateselector %})

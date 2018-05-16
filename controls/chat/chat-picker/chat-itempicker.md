@@ -22,15 +22,15 @@ Here is a quick example on how to user ItemPicker:
 		ItemsSource = new List<string>() { "2 days", "5 days", "7 days", "Another period" }};
 	PickerItem pickerItem = new PickerItem { Context = context, HeaderText = "Select an item" };
 
-	chat1.Items.Add(pickerItem);
+	chat.Items.Add(pickerItem);
 	context.PropertyChanged += (s, e) =>
 	{
 		if (e.PropertyName == "SelectedItem")
 		{
 			if (context.SelectedItem != null)
 			{
-				chat1.Items.Remove(pickerItem);
-				chat1.Items.Add(new TextMessage { Author = chat1.Author, Text = "" + context.SelectedItem});
+				chat.Items.Remove(pickerItem);
+				chat.Items.Add(new TextMessage { Author = chat.Author, Text = "" + context.SelectedItem});
 			}
 		}
 	};
@@ -41,4 +41,7 @@ Here is a quick example on how to user ItemPicker:
 
 ## See Also
 
-- [Getting Started]({% slug autocomplete-getting-started %})
+- [ChatPicker]({% slug chat-picker-overview %})
+- [DatePicker]({% slug chat-datepicker %})
+- [TimePicker]({% slug chat-timepicker %})
+- [CardPicker]({% slug chat-cardpicker %})

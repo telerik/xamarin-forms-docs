@@ -28,7 +28,7 @@ Each of these pickers is part of the **RadChatPicker** control and is defined th
 
 If you choose this approach you would need to create a RadChatPicker instance and set it to the Picker property of the Chat:
 
-	<telerikConversationalUI:RadChat x:Name="chat1">
+	<telerikConversationalUI:RadChat x:Name="chat">
         <telerikConversationalUI:RadChat.Picker>
             <telerikConversationalUI:RadChatPicker x:Name="picker" 
 					IsOkButtonVisible="False"
@@ -46,13 +46,13 @@ Then, when you need to display any of the available pickers, you will have to se
 		{
 			if (context.SelectedDate != null)
 			{
-				chat1.Items.Add(new TextMessage { Author = this.chat1.Author, Text = "" + context.SelectedDate });
-				(chat1.Picker as RadChatPicker).Context = null;
+				chat.Items.Add(new TextMessage { Author = this.chat.Author, Text = "" + context.SelectedDate });
+				(chat.Picker as RadChatPicker).Context = null;
 			}
 		}
 	};
-	(chat1.Picker as RadChatPicker).Context = context;
-
+	(chat.Picker as RadChatPicker).Context = context;
+			
 When the user chooses a date, the Context is reset to null and a new TextMessage with the SelectedDate is added to the conversation.
 
 #### Figure 1: RadChat with DatePicker as an overlay
@@ -67,17 +67,17 @@ In the example above, RadChatPicker is used for immediate selection by setting i
 In this case you would need to create an item of type **PickerItem** that actually derives from the **ChatItem**, set its **Context** and add it to the Items collection of the Chat. Here is a quick example:
 
 	DatePickerContext context = new DatePickerContext { MinDate = new DateTime(2018, 1, 1), MaxDate = new DateTime(2018, 2, 2) };
-    PickerItem pickerItem = new PickerItem { Context = context };
-    chat1.Items.Add(new TextMessage { Text = "Select a date" });
-    chat1.Items.Add(pickerItem);
-    context.PropertyChanged += (s, e) =>
+	PickerItem pickerItem = new PickerItem { Context = context };
+	chat.Items.Add(new TextMessage { Text = "Select a date", Author = chat.Author });
+	chat.Items.Add(pickerItem);
+	context.PropertyChanged += (s, e) =>
 	{
 		if (e.PropertyName == "SelectedDate")
 		{
 			if (context.SelectedDate != null)
 			{
-				chat1.Items.Remove(pickerItem);
-				chat1.Items.Add(new TextMessage { Author = chat1.Author, Text = "" + context.SelectedDate });
+				chat.Items.Remove(pickerItem);
+				chat.Items.Add(new TextMessage { Author = chat.Author, Text = "" + context.SelectedDate });
 			}
 		}
 	};
@@ -90,4 +90,7 @@ Again, when the user makes a selection, you will have to add a new TextMessage w
 	
 ## See Also
 
-- [Getting Started]({% slug autocomplete-getting-started %})
+- [DatePicker]({% slug chat-datepicker %})
+- [TimePicker]({% slug chat-timepicker %})
+- [ItemPicker]({% slug chat-itempicker %})
+- [CardPicker]({% slug chat-cardpicker %})

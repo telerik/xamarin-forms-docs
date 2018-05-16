@@ -41,4 +41,6 @@ Finally, set it to the Chat's ItemTemplateSelector property:
 	
 ## See Also
 
-- [Getting Started]({% slug autocomplete-getting-started %})
+- [Key Features]({% slug chat-key-features %})
+- [MVVM Support]({% slug chat-mvvm-support %})
+- [Commands] ({% slug chat-commands %})

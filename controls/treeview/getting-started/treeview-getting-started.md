@@ -13,7 +13,7 @@ This example will guide you through the steps needed to add a basic **RadTreeVie
 
 >- [Setup on Windows]({%slug getting-started-windows%})
 >- [Setup on Mac]({%slug getting-started-mac%})
->- [Required Telerik Assemblies]({%slug treeview-required-assemblies%})
+>- [Required Telerik Assemblies]({%slug treeview-required-assemblies %})
 
 ## Example
 

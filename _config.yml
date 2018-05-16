@@ -512,7 +512,7 @@ navigation:
     ## End SlideView
     ## TreeView
     controls/treeview:
-        title: "TreeView"
+        title: "TreeView(Beta)"
     controls/treeview/getting-started:
         title: "Getting Started"
         position: 3

@@ -21,16 +21,46 @@ Once your application is created, you are ready to add a **RadTreeView** control
 
 The simplest and fastest way to include the control is by simply defining it like this in XAML:
 
-<snippet id='rating-gettingstarted-xaml'/>
-
+	<dataControls:RadTreeView x:Name="tv" ItemsSource="{Binding SourceCollection}"/>
 
 You have to add the following namespaces:
 
-<snippet id='xmlns-telerikrating'/>
-<snippet id='ns-telerikrating'/>
+	xmlns:dataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
 
+As you can notice, the **ItemsSource** property of the control needs to be set. The collection we have is representing a hierarchical view and this is the reason for using the RadTreeView control for this setup. Here is how a single item from the collection is created:
 
-As you can notice, the **ItemsSource** property of the control needs to be set. The collection we have is representing a hierarchical view and this is the reason for using the RadTreeView control for this setup. An important step for the control to load its items correctly is to set its **HierarchyAdapter** property:
+            this.SourceCollection.Add(new Item()
+            {
+                Name = "Item 1",
+                Children = new List<Item>()
+                    {
+                        new Item()
+                        {
+                            Name = "Item 11",
+                            Children = new ObservableCollection<Item>()
+                            {
+                                new Item()
+                                {
+                                    Name = "Item 111",
+                                },
+                                new Item()
+                                {
+                                    Name = "Item 112"
+                                },
+                                new Item()
+                                {
+                                    Name = "Item 113"
+                                }
+                            }
+                        },
+                        new Item()
+                        {
+                            Name = "Item 12"
+                        }
+                    }
+            });
+
+An important step for the control to load its items correctly is to set its **HierarchyAdapter** property:
   
 	this.tv.HierarchyAdapter = new TreeViewDemoAdapter();
 
@@ -94,11 +124,14 @@ Where the Item class is defined as:
 
 Here is the appearance of the **RadTreeView** control once the upper steps have been accomplished:
 
->pic of RadTreeView
+![getting started treeview](../images/mock-gettingstarted.png)
+
+>important You can check a runnable demo in the **Features** section of the **RadTreeView** component in the **SDK Samples Browser application**(can be found in the Examples folder of your local *Telerik UI for Xamarin* installation)
+
 
 ## See Also
 
 * [Commands]({%slug treeview-commands%})
 * [Expand/Collapse]({%slug treeview-expand-collapse-api%})
-* [CheckBoxes]({%slug treeview-checkboxes%})
+* [CheckBoxes]({%slug treeview-checkboxes-support%})
 * [Theming]({%slug treeview-theming%})

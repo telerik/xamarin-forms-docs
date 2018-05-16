@@ -9,7 +9,7 @@ slug: chat-items-overview
 
 RadChat works with a collection of ChatItem objects. The control provides different chat items that you could use, such as the basic TextMessage as well as various pickers (itempicker, datapicker, timepicker) and predefined cards (defined through a cardpicker).
 
-> Additionally, you could create your own chat items with custom item templates and add them to the Items collection of the control. For more details go to [MVVM Support]() and [ItemTemplateSelector]() topics.
+> Additionally, you could create your own chat items with custom item templates and add them to the Items collection of the control. For more details go to [MVVM Support]({% slug chat-mvvm-support %}) and [ItemTemplateSelector]({% slug chat-itemtemplateselector %}) topics.
 
 This section covers the specific details of the different chat items RadChat provides:
 

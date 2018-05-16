@@ -31,7 +31,7 @@ Here is a quick example on how to create a sequence of ImageCards and show it th
 	
 #### Figure 1: RadChat with ImageCard
 
-![CardPicker](images/chat_cardpicker.png)
+![CardPicker](images/chat_imagecard.png)
 	
 ## See Also
 

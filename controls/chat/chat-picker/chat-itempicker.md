@@ -35,7 +35,7 @@ Here is a quick example on how to user ItemPicker:
 		}
 	};
 	
-And here is the result:
+#### Figure 1: Chat with ItemPicker
 
 ![Chat Message](images/chat_itempicker_1.png)
 

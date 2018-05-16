@@ -29,7 +29,7 @@ Here is the result:
 
 #### Figure 1: Barcode Getting Started
 
-![Getting Started Example](images/barcode-getting-started.png)
+![Getting Started Example](images/barcode_getting_started.png)
 
 >important **SDK Browser** and **QSF** applications contain different examples that show RadAutoComplete's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
 

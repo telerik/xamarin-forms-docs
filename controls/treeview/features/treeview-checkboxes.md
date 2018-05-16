@@ -15,7 +15,7 @@ You can control the state propagation by setting the CheckBoxMode property of th
 
 * **None**: The CheckBox would not be present.
 * **Individual**: The CheckBox state will affect only the individual item.
-* **Propagate**: The CheckBox state of the children items will affect the parent item. In case all items within a parent nodes are checked - it will be with checked state as well. If all items are not checked, the parent item will not be checked. If only some of the children items are checked, the parent item will be shown with an additional state. 
+* **Propagate**: The CheckBox state of the children items will affect the parent item. In case all items within a parent nodes are checked - it will be with checked state as well. If all items are not checked, the parent item will not be checked. If only some of the children items are checked, the parent item will be shown with an indeterminate state. 
 
 Here is an example of how you can set the property:
 

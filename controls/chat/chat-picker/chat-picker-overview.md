@@ -39,7 +39,8 @@ If you choose this approach you would need to create a RadChatPicker instance an
 
 Then, when you need to display any of the available pickers, you will have to set the Context property of the ChatPicker. Check the example below with DatePickerContext:
 
-	DatePickerContext context = new DatePickerContext { MinDate = new DateTime(2018, 1, 1), MaxDate = new DateTime(2018, 2, 2) };
+	DatePickerContext context = new DatePickerContext { MinDate = new DateTime(2018, 1, 1), 
+														MaxDate = new DateTime(2018, 2, 2) };
 	context.PropertyChanged += (s, e) =>
 	{
 		if (e.PropertyName == "SelectedDate")

@@ -19,7 +19,7 @@ This example will guide you through the steps needed to add a basic **RadBarcode
 
 If your app is setup, you are ready to add a **RadBarcode** control to your page. In the sample the QRCode symbology is used, for more details on the available Barcode symbologies go to [Supported Types]({%slug barcode-supported-types-overview %}) topic.
 
-<snippet id='barcode-getting-started'/>
+<snippet id='barcode-gettingstarted' />
 
 In addition to this you need to add the following namespace:
 

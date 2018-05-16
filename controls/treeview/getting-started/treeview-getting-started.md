@@ -124,7 +124,7 @@ Where the Item class is defined as:
 
 Here is the appearance of the **RadTreeView** control once the upper steps have been accomplished:
 
-![getting started treeview](../images/mock-gettingstarted.png)
+![getting started treeview](../images/getting_started_treeview.png)
 
 >important You can check a runnable demo in the **Features** section of the **RadTreeView** component in the **SDK Samples Browser application**(can be found in the Examples folder of your local *Telerik UI for Xamarin* installation)
 

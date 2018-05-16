@@ -34,7 +34,7 @@ Here is a quick example on how to user DatePicker:
 		}
 	};
 	
-And here is the result:
+#### Figure 1: Chat with DatePicker
 
 ![Chat Message](images/chat_picker_2.png)
 

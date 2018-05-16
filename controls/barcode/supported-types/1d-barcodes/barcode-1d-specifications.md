@@ -39,4 +39,5 @@ The following table describes the specific characteristics of the bar codes per 
 
 ## See Also
 
-- [NumericInput Getting Started]({% slug numericinput-getting-started%})
+- [Key Features]({% slug barcode-key-features%})
+- [Supported Barcodes]({% slug barcode-supported-types-overview%})

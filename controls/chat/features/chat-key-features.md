@@ -26,8 +26,6 @@ RadChat exposes the following properties you could use to setup the component:
 The Chat control supports data binding through the **ItemsSource** property that can be bound to a collection of any data objects which then have to be converted into chat items.
 
 You could find detailed instructions on how to use the Chat component in a MVVM setup in the [MVVM Support]({%slug chat-mvvm-support %}) and [Commands]({%slug chat-commands%}) topics.
-
-### Integration with conversational UI APIs
 	
 ## See Also
 

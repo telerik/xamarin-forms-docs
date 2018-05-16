@@ -20,9 +20,6 @@ In both cases, the command is raised before the Chat auto-creates a ChatItem and
 
 RadChatPicker control exposes OkCommand and CancelCommand fired when the corresponding "Ok" and "Cancel" buttons are clicked.
 
-#### Figure 1: RadChat in MVVM setup
-
-![MVVM Support](images/chat_mvvm_support.png)
 	
 ## See Also
 

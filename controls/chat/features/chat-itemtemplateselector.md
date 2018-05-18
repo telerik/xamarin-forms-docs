@@ -23,9 +23,11 @@ Add a few sample Items to the Chat's ItemsSource:
 
 > You would need to supply an ItemsConverter as you're using custom items as demonstrated inside MVVM Support topic.
 
+<snippet id='chat-features-itemtemplate-itemconverter' />
+
 Create a CustomChatItemTemplateSelector class that derives from the ChatItemTemplateSelector:
 
-<snippet id='chat-features-itemtemplate-itemconverter' />
+<snippet id='chat-features-itemtemplate-templateselector' />
 	
 Create the needed XAML resources:
 

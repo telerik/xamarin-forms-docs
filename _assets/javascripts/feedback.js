@@ -16,7 +16,8 @@ $(document).ready(function () {
         outdatedSample: false,
         inaccurateOutdatedCodeSamplesText: "",
         otherFeedback: false,
-        textFeedback: ""
+        textFeedback: "",
+		acceptFeedbackContact: false
     };
 
     $("#feedback-checkbox-area").click(function (e) {
@@ -224,11 +225,12 @@ $(document).ready(function () {
             emptyFormValidator.validate() &&
             emailValidator.validate()) {
             win.close();
-            setCookieByName("submittingFeedback")
+            setCookieByName("submittingFeedback");
             formModel.yesNoFeedback = getCookieByName("yesNoFeedback") || "Not submitted";
             formModel.uuid = getCookieByName("uuid");
             formModel.path = currentPath;
             formModel.sheetId = $("#hidden-sheet-id").val();
+			formModel.email = formModel.acceptFeedbackContact ? formModel.email : '';
 			$.ajax({
                 url: "https://baas.kinvey.com/rpc/kid_Hk57KwIFf/custom/saveFeedback",
                 method: "POST",

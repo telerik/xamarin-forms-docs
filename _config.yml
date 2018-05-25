@@ -8,25 +8,25 @@ navigation:
 ## Root Level
     licensing:
         title: "Licensing"
-        position: 3
+        position: 4
     installation-and-deployment:
         title: "Installation and Deployment"
-        position: 4
+        position: 5
     controls:
         title: "<b>Xamarin Forms Controls</b>"
-        position: 5
+        position: 6
     nativecontrols:
         title: "Native Controls Wrappers"
-        position: 6
+        position: 7
     troubleshooting:
         title: "Troubleshooting"
-        position: 8
+        position: 11
     styling-and-appearance:
         title: "Styling and Appearance"
-        position: 7
+        position: 9
     cloud-integration:
         title: "Cloud Integration"
-        position: 8
+        position: 10
 ## End Root Level
 ## Cloud Integration Sub-Folders
     cloud-integration/azure:

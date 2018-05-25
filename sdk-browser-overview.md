@@ -2,7 +2,7 @@
 title: Developer Focused Examples
 page_title: Telerik UI for Xamarin Documentation | Developer Focused Examples
 slug: developer-focused-examples
-position: 6
+position: 8
 ---
 
 # Developer Focused Examples

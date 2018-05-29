@@ -51,10 +51,10 @@ Here, `MonthResult` is a custom type that we have defined as follows. Additional
 ```C#
 	public class MonthResult : Java.Lang.Object {
 
-		public String Month { get; set; }
+		public string Month { get; set; }
 		public double Result { get; set; }
 
-		public MonthResult(String month, double result) {
+		public MonthResult(string month, double result) {
 			this.Month = month;
 			this.Result = result;
 		}

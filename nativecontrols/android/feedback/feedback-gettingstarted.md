@@ -5,7 +5,7 @@ description: An getting started page of RadFeedback for Android. This article pr
 slug: feedback-gettingstarted
 position: 1
 tags: radfeedback, feedback, getting started
-publish: true
+publish: false
 ---  
 
 ## RadFeedback: Getting started

@@ -70,7 +70,7 @@ By handling GroupHeaderTap command you could control the collapse/expand behavio
 
 >tip Please check [Commands]({%slug listview-features-commands %}) topic for information on how to use RadListView commands.
 
-First,let’s define the GroupHeaderTapCommand class that derives from ListViewCommand:
+First, let’s define the GroupHeaderTapCommand class that derives from ListViewCommand:
 
 #### C# 
 

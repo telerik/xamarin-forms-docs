@@ -11,7 +11,7 @@ position: 3
 
 ### How personal data is used by Telerik Products
 
-Telerik UI for {{ site.framework_name }} uses your account details, email address and a product usage data to better understand customer experience allowing us to focus development efforts on the products and features that matter most to our customers. Additionally, this information may be used by Marketing and / or Sales to ensure you receive relevant content updates, product news and materials to ensure your success with our products. Please see our [Privacy Policy](https://www.progress.com/legal/privacy-center) for more details. 
+Telerik UI for Xamarin uses your account details, email address and a product usage data to better understand customer experience allowing us to focus development efforts on the products and features that matter most to our customers. Additionally, this information may be used by Marketing and / or Sales to ensure you receive relevant content updates, product news and materials to ensure your success with our products. Please see our [Privacy Policy](https://www.progress.com/legal/privacy-center) for more details. 
 
 This information is for our own purposes and do not sell or otherwise provide this information to any third-parties for a commercial purpose.
 

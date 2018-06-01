@@ -80,10 +80,7 @@ navigation:
         position: 5
     nativecontrols/android/datasource:
         title: DataSource
-        position: 6
-    nativecontrols/android/feedback:
-        title: Feedback
-        position: 7
+        position: 6    
     nativecontrols/android/agauges:
         title: Gauges
         position: 8
@@ -129,10 +126,7 @@ navigation:
 ## IOS Controls
     nativecontrols/ios/alert:
         title: Alert
-        position: 1
-    nativecontrols/ios/appfeedback:
-        title: AppFeedback
-        position: 2
+        position: 1   
     nativecontrols/ios/autocompletetextview:
         title: AutoCompleteTextView
         position: 3
@@ -533,7 +527,7 @@ cdnVersion: "2016.2.607"
 mvcCoreVersion: "2016.2.616"
 
 ## The product name
-productName: "Telerik UI for Xamarin Forms"
+productName: "Telerik UI for Xamarin"
 
 ## Assign layout and category per different paths
 defaults:

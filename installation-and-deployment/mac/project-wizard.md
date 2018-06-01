@@ -2,7 +2,7 @@
 title: Project Wizard for Visual Studio for Mac
 page_title: Project Wizard for Visual Studio for Mac
 slug: project-wizard-xamarin-studio
-position: 
+position: 1
 ---
 
 # Project Wizard for Visual Studio for Mac

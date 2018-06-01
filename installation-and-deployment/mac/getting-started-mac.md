@@ -2,7 +2,7 @@
 title: Getting Started on Mac
 page_title: Getting Started with Telerik UI for Xamarin.Forms on Mac
 slug: getting-started-mac
-position: 1
+position: 0
 ---
 # Getting Started on Mac
 

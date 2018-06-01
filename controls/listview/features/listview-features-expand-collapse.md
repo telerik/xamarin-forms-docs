@@ -31,7 +31,7 @@ In order to expand all groups, use the **ExpandAll** method and respectively use
 
 	//expand all
 	var dataView = this.listView.GetDataView();
-	dataView. ExpandAll();
+	dataView.ExpandAll();
 
 	//collapse all
 	var dataView = this.listView.GetDataView();

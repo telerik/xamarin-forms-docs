@@ -7,7 +7,9 @@ position: 2
 
 # TelerikXamarinForms Toolbox
 
-When you download the latest version of **Telerik UI for Xamarin** from your account you need to open the Visual Studio Extension Manager and install the latest Telerik UI for Xamarin ProjectTemplate.mpack file to it. This will add the Telerik XamarinForms Toolbox which can be used to ease the process of adding Telerik controls to your Xamarin.Forms application. 
+This article introduces **TelerikXamarinForms Toolbox** for Visual Studio for Mac which will ease the process of adding Telerik controls to your Xamarin.Forms application on Mac. 
+
+In order to use the TelerikXamarinForms Toolbox, first you have to install the Project Wizard for Visual Studio for Mac. In short you will need to download the ProjectTemplate.mpack file from the Telerik UI for Xamarin download page inside your [Telerik account](https://www.telerik.com/account/) and install it through the Visual Studio Extension Manager.
 
 >For more details on adding the Telerik UI for Xamarin ProjectTemplate.mpack file check the article about [Project Wizard for Visual Studio for Mac]({%slug project-wizard-xamarin-studio%}). 
 

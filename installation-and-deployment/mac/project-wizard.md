@@ -11,7 +11,9 @@ This article introduces the **Telerik UI for Xamarin.Forms Project Wizard for Vi
 
 ## Installation
 
-First, you have to install the project wizard add-in package. Open the Visual Studio **Extension Manager** and select the *Install form file...* option. __Figure 1__ shows how to access the Extension Manager.
+First, you have to download the **ProjectTemplateXamarin.mpack** file from the Telerik UI for Xamarin product download page inside your [Telerik account](https://www.telerik.com/account/). Go to [Download Product Files]({%slug download-product-files %}) for exact steps on how to navigate to the download page.
+
+Then, you have to install the project wizard add-in package. Open the Visual Studio **Extension Manager** and select the *Install form file...* option. __Figure 1__ shows how to access the Extension Manager.
 
 #### __Figure 1: Accessing Visual Studio Extensions__
 
@@ -23,7 +25,7 @@ Once you have accessed the **Extension Manager**, the following dialog will appe
 
 ![Visual Studio Extensions](images/project-wizard/ExtensionManager.png)
 
-Navigate to the **ProjectTemplateXamarin.mpack** file. It is located in the *Extensions* folder inside the installation folder of the suite. 
+Navigate to the **ProjectTemplateXamarin.mpack** file. 
 
 #### __Figure 3: The ProjectTemplate location__
 
@@ -31,7 +33,7 @@ Navigate to the **ProjectTemplateXamarin.mpack** file. It is located in the *Ext
 
 If the add-in is successfully added to Visual Studio, you should see it in the **IDE** extensions section.
 
-**Restart Xamarin Studio** to complete the installation.
+**Restart Visual Studio for Mac** to complete the installation.
 
 ## New Telerik Forms App
 

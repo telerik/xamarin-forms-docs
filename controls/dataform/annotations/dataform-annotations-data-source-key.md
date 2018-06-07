@@ -37,6 +37,6 @@ And here is the data form setup, you have to specify the property data source pr
 - [DisplayOptions Attribute]({%slug dataform-annotations-display-options%})
 - [DisplayValueFormat Attribute]({%slug dataform-annotations-display-value-format%})
 - [Ignore Attribute]({%slug dataform-annotations-ignore%})
-- [NativeConvertionContext Attribute]({%slug dataform-annotations-native-convertion-context%})
+- [NativeConversionContext Attribute]({%slug dataform-annotations-native-convertion-context%})
 - [ReadOnly Attribute]({%slug dataform-annotations-read-only%})
 - [Validation Attribute]({%slug dataform-annotations-validation%})

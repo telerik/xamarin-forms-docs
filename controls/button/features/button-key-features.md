@@ -27,7 +27,7 @@ The **BorderThickness** property is of type Xamarin.Forms.Thickness and is used 
 
 The snippet below demonstrates how BorderThickness could be defined.
 
-<snippet id='button-features-contentalignment'/>
+<snippet id='button-features-borderthickness'/>
 
 ## Background Image
 

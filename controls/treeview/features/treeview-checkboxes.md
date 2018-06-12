@@ -7,7 +7,7 @@ slug: treeview-checkboxes-support
 
 # CheckBox elements #
 
-The RadTreeView supports showing **CheckBox** elements and checking specific items from its **ItemsSource**. The checked items are added to the **CheckedItemsCollection** property of the control. You can also control the Visibility of the **CheckBox** elements as well as their state propagation.
+The RadTreeView supports showing **CheckBox** elements and checking specific items from its **ItemsSource**. The checked items are added to the **CheckedItems** property of the control. You can also control the Visibility of the **CheckBox** elements as well as their state propagation.
  
 ## CheckBox State Propagation
 
@@ -28,7 +28,7 @@ Here is a picture that show the different states of the CheckBox:
 
 ![checkbox states](../images/checkboxes_treeview.png)
   
-## CheckedItemsCollection
+## CheckedItems collection
 
 The control exposes a collection of all the checked items. You can subscribe to its CollectionChanged event and keep track of the checked items:
 

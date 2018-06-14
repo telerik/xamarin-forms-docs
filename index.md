@@ -25,6 +25,7 @@ Our suite offers the following controls for cross-platform development with Xama
 - [Button] ({% slug button-overview %})
 - [Calendar]({% slug calendar-overview %})
 - [Chart]({% slug chart-overview %})
+- [CheckBox]({% slug checkbox-overview %})
 - [Conversational UI]({% slug chat-overview %})
 - [DataForm]({% slug dataform-overview %})
 - [DataGrid]({%slug datagrid-overview%})

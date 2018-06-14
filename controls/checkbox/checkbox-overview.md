@@ -9,13 +9,6 @@ slug: checkbox-overview
 
 **Telerik RadCheckBox for Xamarin** is a checkbox control which enables users to make a choice between two mutually exclusive options. The user’s selection is indicated by a check mark, and when a user clicks the checkbox its appearance and state change.  
 
-
-> **RadCheckBox** is available for the following platforms:
-> 
-> - **Android**
-> - **iOS**
-> - **Universal Windows Platform**
-
 #### Figure 1: RadCheckBox Overview
 ![CheckBox Overview](images/checkbox-overview.png "CheckBox Overview")
 

@@ -9,6 +9,8 @@ slug: chart-behaviors-tooltip
 
 **ChartTooltipBehavior** is responsible for rendering concise information about a data point in a small popup which is displayed close to its relevant data point.
 
+>important With R2 2018 SP release Behaviors property of RadChart was replaced with **ChartBehaviors**. Behaviors property is marked as obsolete, so please use **ChartBehaviors** instead.
+
 ## Features ##
 
 - **TriggerMode**: Determines the gestures on which the ChartToolTipBehavior should show a tool tip. The available values are:
@@ -21,9 +23,9 @@ slug: chart-behaviors-tooltip
 	  <telerikChart:RadCartesianChart.BindingContext>
 	    <viewMoedls:CategoricalViewModel/>
 	  </telerikChart:RadCartesianChart.BindingContext>
-	  <telerikChart:RadCartesianChart.Behaviors>
+	  <telerikChart:RadCartesianChart.ChartBehaviors>
 	    <telerikChart:ChartTooltipBehavior TriggerMode="Tap"/>
-	  </telerikChart:RadCartesianChart.Behaviors>
+	  </telerikChart:RadCartesianChart.ChartBehaviors>
 	  <telerikChart:RadCartesianChart.HorizontalAxis>
 	    <telerikChart:CategoricalAxis/>
 	  </telerikChart:RadCartesianChart.HorizontalAxis>

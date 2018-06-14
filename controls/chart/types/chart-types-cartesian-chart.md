@@ -19,7 +19,7 @@ The RadCartesianChart control has the following properties:
 * **PaletteName** (PaletteNames): Gets or sets the name of the predefined Palette that will be applied to the chart.
 * **SelectionPalette** (ChartPalette): Gets or sets the **ChartPalette** instance that defines the appearance of the chart for selected series and/or data points.
 * **SelectionPaletteName** (PaletteNames): Gets or sets the name of the predefined SelectionPalette that will be applied to the chart.
-* **Behaviors** (ObservableCollection<ChartBehavior>): Gets a collection of all enabled behaviors.
+* **ChartBehaviors** (ObservableCollection<ChartBehavior>): Gets a collection of all enabled behaviors.
 * **Grid** (CartesianChartGrid): Gets or sets the CartesianChartGrid instance used to decorate the chart plot area with grid and strip lines.
 * **Annotations** (ObservableCollection<CartesianChartAnnotation>): Gets a collection of all annotations presented by the chart instance.
 * **MaxZoom** (Size): Gets or sets the maximum allowed zoom.

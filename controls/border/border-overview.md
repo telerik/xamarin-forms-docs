@@ -9,12 +9,6 @@ slug: border-overview
 
 With the new **Telerik RadBorder for Xamarin** component you will have full control over the look & feel of the border that wraps around your Xamarin views. You could surround any view such as Label, Image, and other, and specify different border thickness and corner radius on each side.
 
-> **RadBorder** is available for the following platforms:
-> 
-> - **Android**
-> - **iOS**
-> - **Universal Windows Platform**
-
 #### Figure 1: RadBorder Overview
 ![Border Overview](images/border-overview.png "RadBorder Overview")
 

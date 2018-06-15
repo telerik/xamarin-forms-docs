@@ -23,7 +23,6 @@ This article contains a list with the assemblies required by the **RadDataGrid**
 > The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls. The default location is:  
 > `C:\Program Files (x86)\Progress\UI for Xamarin RX XXX\Binaries`.
 
-
 ## See Also
 
 - [Required Android Support Libraries]({%slug required-android-support-libraries%})

@@ -9,12 +9,6 @@ slug: chat-overview
 
 **Telerik RadChat for Xamarin** (available since R2 2018) is a UI component that enables easy implementation of conversational UI in Xamarin applications, whether by utilizing certain chatbot framework, by following a predefined logical tree, or just for integrating P2P chat capabilities. 
 
-> **RadChat** is available for the following platforms:
-> 
-> - **Android**
-> - **iOS**
-> - **Universal Windows Platform**
-
 #### Figure 1: RadChat Overview
 
 ![Chat Overview](images/chat_overview.png)

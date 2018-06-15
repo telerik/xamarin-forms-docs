@@ -9,12 +9,6 @@ slug: barcode-overview
 
 **Telerik RadBarcode for Xamarin** is a control used for creating and showing barcodes. You can generate and visualize barcodes in a machine-readable format via the RadBarcode control by providing numeric or character data.
 
-> **RadBarcode** is available for the following platforms:
-> 
-> - **Android**
-> - **iOS**
-> - **Universal Windows Platform**
-
 #### Figure 1: RadBarcode Overview
 
 ![RadBarcode Overview](images/barcode_overview.png)

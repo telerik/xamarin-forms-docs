@@ -26,4 +26,4 @@ This article contains a list with the assemblies required by the **RadSlideView*
 ### See Also
 
 - [Required Android Support Libraries]({%slug required-android-support-libraries%})
-- [SlideView Getting Started]({%slug slideview-getting-started%})
+- [Getting Started]({%slug slideview-getting-started%})

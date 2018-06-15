@@ -21,4 +21,4 @@ slug: path-overview
 
 ## See Also
 
-* [RadPath Getting Started]({%slug path-getting-started %})
+* [Getting Started]({%slug path-getting-started %})

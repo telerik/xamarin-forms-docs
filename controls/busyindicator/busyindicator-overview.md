@@ -9,12 +9,6 @@ slug: busyindicator-overview
 
 **RadBusyIndicator for Xamarin** allows you to display a notification whenever a longer-running process is being handled by the application. This makes the UI more informative and the user experience smoother.
 
-> **RadBusyIndicator** is available for the following platforms:
-> 
-> - **Android**
-> - **iOS**
-> - **Universal Windows Platform**
-
 #### Figure 1: RadBusyIndicator Overview
 
 ![BusyIndicator example](images/busyindicator-overview.png) 

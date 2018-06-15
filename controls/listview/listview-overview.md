@@ -9,14 +9,6 @@ slug: listview-overview
 
 **RadListView** is a virtualizing list component that provides the most popular features associated with scenarios where a list of items is used. All these features are embedded in one control with the idea to save developer's time and provide better experience. 
 
-> **RadListView** is available for the following platforms:
-> 
-> - **Android**
-> - **iOS**
-> - **Windows 8.1**
-> - **Windows Phone 8.1**
-> - **Universal Windows Platform**
-
 #### Figure 1: RadListView Overview
 
 ![ListView Overview](images/listview.png)

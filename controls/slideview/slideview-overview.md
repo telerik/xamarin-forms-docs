@@ -9,11 +9,6 @@ slug: slideview-overview
 
 **RadSlideView** is a flexible navigation control that allows you to slide between different views, thus providing an interactive navigation.
 
-> **RadSlideView** is available for the following platforms:
-> - **Android**
-> - **iOS**
-> - **Universal Windows Platform**
-
 #### Figure 1: RadSlideView Overview
 
 ![RadSlideView example](images/slideview-overview.png)  

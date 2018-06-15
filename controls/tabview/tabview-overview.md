@@ -11,12 +11,6 @@ position: 0
 
 **RadTabView** is a flexible navigation control that allows you to build tabbed interfaces. Each tabview item has an associated content displayed on selection.
 
-> **RadTabView** is available for the following platforms:
-> 
-> - **Android**
-> - **iOS**
-> - **Universal Windows Platform**
-
 ![TabView example](images/tabview-overview.png) 
 
 ## Key features

@@ -9,14 +9,6 @@ slug: sidedrawer-overview
 
 **RadSideDrawer for Xamarin** is designed to enable users to visualize a hidden view in their applications. That view can host navigation UI, common settings or any other UI of your choice. It can be visualized using a flick gesture and can be shown from all four sides of the screen.
 
-> **RadSideDrawer** is available for the following platforms:
-> 
-> - **Android**
-> - **iOS**
-> - **Windows 8.1**
-> - **Windows Phone 8.1**
-> - **Universal Windows Platform**
-
 #### Figure 1: RadSideDrawer Overview
 
 ![SideDrawer example](images/sidedrawer-overview.png) 

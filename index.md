@@ -10,7 +10,7 @@ position: 1
 
 Telerik UI for Xamarin is a collection of Xamarin.Forms controls and Xamarin bindings built on top of the native Telerik UI for iOS and UI for Android suites. The Xamarin.Forms controls also utilize controls and features from the Telerik UI for UWP, providing common API that allows the developer to use the native Telerik components on all three mobile platforms (iOS / Android / Windows) using a single shared code base. In addition you get access to the full set of controls in UI for Xamarin.IOS, Xamarin.Android and UI for UWP.
  
-To read more about the benefits of using UI for Xamarin, please visit the [product overview page](http://www.telerik.com/xamarin-ui).
+To read more about the benefits of using Telerik UI for Xamarin, please visit the [product overview page](http://www.telerik.com/xamarin-ui).
 
 ![Telerik UI for Xamarin](front-image.jpg)
 
@@ -60,13 +60,13 @@ For information about the control set, API and features, refer to the documentat
 
 ## Supported mobile versions
 
-You can use UI for Xamarin.Forms for application development for the following mobile operating systems:
+You can use Telerik UI for Xamarin for application development for the following mobile operating systems:
 
 |Platform 						|Supported version |
 |:---								|:---			|
-|Android		|4.0.3 (API 15) or higher|
+|Android		| 4.0.3 (API 15) or higher |
 |iOS				|7.0 or higher|
-|Windows							|Windows Phone 8 Silverlight, Windows 8.1 / Windows Phone 8.1, Windows 10 Mobile / Windows 10  |
+|Windows							| Windows 10  |
 
 ### Next Steps
 

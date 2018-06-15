@@ -20,6 +20,7 @@ This example will guide you through the steps needed to add a basic **RadCheckBo
 If your app is correctly set, you are ready to add a **RadCheckBox** control to the page:
 
 <snippet id='checkbox-getting-started-xaml'/>
+<snippet id='checkbox-getting-started-csharp'/>
 
 In addition to this, you need to add the following namespace:
 

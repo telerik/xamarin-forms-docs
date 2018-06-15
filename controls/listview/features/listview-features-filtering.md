@@ -40,14 +40,15 @@ tags: filter, radlistview, filterdescriptor
 
 Add the following code to the Page class:
 
+
 	public Page()
 	{
 	    InitializeComponent();
 	    this.BindingContext = new ViewModel();
-		listView.FilterDescriptors.Add(new DelegateFilterDescriptor { Filter = this.Filter });
+		listView.FilterDescriptors.Add(new Telerik.XamarinForms.DataControls.ListView.DelegateFilterDescriptor { Filter = this.AgeFilter });
 	}
 	
-	private bool Filter(object arg)
+	private bool AgeFilter(object arg)
 	{
 	    var age = ((Item)arg).Age;
 	    return age >= 25 && age <= 35;

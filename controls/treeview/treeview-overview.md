@@ -9,12 +9,6 @@ slug: treeview-overview
 
  **RadTreeView** facilitates display, management, and navigation of hierarchical data structures. The product offers many advanced features like commands mechanism, data binding, checkbox support. RadTreeView allows you to achieve complex behavior and nicely blends into the interface of your application.
 
-> **RadTreeView** is available for the following platforms:
-
-> - **Android**
-> - **iOS**
-> - **Universal Windows Platform**
-
 #### Figure 1: Overview
 
 ![RadTreeView-Overview](images/overview_treeview.png)

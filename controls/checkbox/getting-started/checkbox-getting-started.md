@@ -2,7 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 position: 0
-slug: button-getting-started
+slug: checkbox-getting-started
 ---
 
 # Getting Started

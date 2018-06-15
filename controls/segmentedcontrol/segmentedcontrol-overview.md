@@ -9,11 +9,6 @@ slug: segmentedcontrol-overview
 
 **RadSegmentedControl for Xamarin** allows you to display a list of horizontally aligned, mutually exclusive options, which can be selected by the user. Each option is a button that can display a text or an image.
 
-> **RadSegmentedControl** is available for the following platforms:
-> - **Android**
-> - **iOS**
-> - **Universal Windows Platform**
-
 #### Figure 1: RadSegmentedControl Overview
 
 ![RadSegmentedControl example](images/segmentcontrol-overview-0.png) 

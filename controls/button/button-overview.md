@@ -9,13 +9,6 @@ slug: button-overview
 
 **Telerik Button for Xamarin** is a button control, which enhances the functionality of the standard Xamarin Forms Button, by providing means for customizing its look &amp; feel. UI customization is possible through the provided themes or you can add borders,  transparency, text alignment, and backgrounds and images. 
 
-
-> **RadButton** is available for the following platforms:
-> 
-> - **Android**
-> - **iOS**
-> - **Universal Windows Platform**
-
 #### Figure 1: RadButton Overview
 ![Button Overview](images/button-overview.png "Button Overview")
 

@@ -9,12 +9,6 @@ slug: entry-overview
 
 **RadEntry** is a text input control, which accepts string input from the users and provides consistent look and feel with the rest of the Telerik UI for Xamarin components through innovative theming mechanism.
 
-> **RadEntry** is available for the following platforms:
-> 
-> - **Android**
-> - **iOS**
-> - **Universal Windows Platform**
-
 #### Figure 1: RadEntry Overview
 ![Entry Overview](images/entry_overview.png "Entry Overview")
 

@@ -22,13 +22,9 @@ This article contains information about which assemblies are required by the **R
 | Android  | Telerik.Xamarin.Android.Common.dll <br /> Telerik.Xamarin.Android.Data.dll <br/> Telerik.Xamarin.Android.Input.dll <br/> Telerik.Xamarin.Android.List.dll <br /> Telerik.Xamarin.Android.Primitives.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> Telerik.XamarinForms.SkiaSharp.dll |
 | iOS      | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> Telerik.XamarinForms.SkiaSharp.dll |
 | UWP      | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.Input.dll <br/> Telerik.XamarinForms.SkiaSharp.dll |
-| Windows 8.1 | **RadRating** is not available |
-| Windows Phone 8.1 | **RadRating** is not available |
-| Windows Phone 8.0 | **RadRating** is not available |
 
 >important The Rating control is rendered via the SkiaSharp graphics library so you need to install also [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms/) in all projects of the xamarin solution (portable, android, ios, etc). 
 
 ### See Also
  
-- [Required Android Support Libraries]({%slug required-android-support-libraries%})
-- [Rating Getting Started]({%slug rating-getting-started%})
+- [Getting Started]({%slug rating-getting-started%})

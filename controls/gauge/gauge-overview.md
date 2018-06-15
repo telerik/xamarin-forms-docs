@@ -9,12 +9,6 @@ slug: gauge-overview
 
 The **RadGauge** controls serve as instruments that indicate and give a visual display of amount, level, or contents of something. These values are presented via indicators (needles, arrows, and others). To give context to the indicated value (or values) the gauge uses an axis and gauge ranges. The axis states a minimum and maximum which determine the allowed values. The gauge ranges denote certain parts of the axis range and are usually displayed with different colors to provide additional information. For example, in an axis range [0, 200] a Red gauge range [180, 200] can be added to articulate that values within this range are too high. 
 
-> The gauge controls are available for the following platforms:
-> 
-> - **Android**
-> - **iOS**
-> - **Universal Windows Platform**
-
 #### Figure 1: RadGauge Overview
 
 ![Gauge example](images/gauge-overview.png) 

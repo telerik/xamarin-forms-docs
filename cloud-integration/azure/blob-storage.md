@@ -71,7 +71,7 @@ We are going to reuse the **BlobStorageService** class from the previously refer
 	public class BlobStorageService
     {
 
-        readonly static CloudStorageAccount _cloudStorageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=telerikcloud;AccountKey=HBZSJxUwRkX5eGq2au8w3G1SJiIBCZeCyOG6YQ6PfrolBid9K+sqHhE8hYF7MVI+x2/uEl88abpGZMWsYkqFzg==;EndpointSuffix=core.windows.net");
+        readonly static CloudStorageAccount _cloudStorageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=telerikcloud;AccountKey="your account key";EndpointSuffix=core.windows.net");
         readonly static CloudBlobClient _blobClient = _cloudStorageAccount.CreateCloudBlobClient();
 
         public static async Task<List<T>> GetBlobs<T>(string containerName, string prefix = "", int? maxresultsPerQuery = null, BlobListingDetails blobListingDetails = BlobListingDetails.None) where T : ICloudBlob

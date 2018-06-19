@@ -92,7 +92,7 @@ Before proceeding with the example you will have to create a new bucket using th
 
 ## Step 4: Define the ViewModel
 
-The next step is to create the ViewModel. It will need an [IAmazonS3](https://docs.aws.amazon.com/sdkfornet/latest/apidocs/items/TS3IS3NET45.html) client object which will be used for managing the data. We also need to implement all of the commands that the RadButtons are bound to.
+The next step is to create the ViewModel. It will need an [IAmazonS3](https://docs.aws.amazon.com/sdkfornet/latest/apidocs/items/TS3IS3NET45.html) client object which will be used for managing the data. 
 
 #### __[C#] Example 2: Defining the ViewModel__
 

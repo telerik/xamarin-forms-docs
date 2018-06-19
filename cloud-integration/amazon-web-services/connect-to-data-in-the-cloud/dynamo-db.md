@@ -18,7 +18,7 @@ This article will show you how to access data stored in a **DynamoDB** table by 
 
 Create a new Xamarin.Forms application and add the required assemblies in order to use the controls from the **Telerik UI for Xamarin** suite. For the purpose of the example, we are going to use the [RadListView]({%slug listview-getting-started%}) control to show the different items available within our **DynamoDb** instance. 
 
-Here is how the XAML layout is defined in our sample application
+Here is how the XAML layout is defined in our sample application:
 
 #### __[XAML] Example 1: XAML layout__
 
@@ -61,7 +61,7 @@ In **Visual Studio** open the **NuGet Package Manager** and install the **Dynamo
 
 Another option is to to type the following command in the **NuGet Package Manager Console**: *PM> Install-Package AWSSDK.DynamoDBv2*
 
->note If you do not have a AWS account in Visual Studio please check the [Getting Started]({%slug cloud-integration/aws/getting-started%}) article.
+>note If you do not have an AWS account in Visual Studio please check the [Getting Started]({%slug cloud-integration/aws/getting-started%}) article.
 
 ## Step 3: Create the ViewModel
 
@@ -172,7 +172,7 @@ First of all, create the **Customers** collection which will hold the entries fr
         }
 		. . .
 
-Now that the table is ready you can add some data by adding the following method to the **ViewModel**.
+Now that the table is ready you can add some data by implementing the following method inside the **ViewModel**.
 
 #### **[C#] Example 4: Add items to the table**
 

@@ -250,7 +250,7 @@ We are going to set the following logic in the event handler of the **RadButton*
 
                 await this.s3transferUtility.UploadAsync(request).ContinueWith(((x) =>
                 {
-                    Debug.WriteLine("Hello");
+                    Debug.WriteLine("Image Uploaded");
                 }));
             }
             catch (Exception)

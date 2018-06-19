@@ -19,6 +19,10 @@
     <Language>en-US</Language>
     <DocumentationSources>
       <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.Documents.SpreadsheetStreaming.dll" />
+	  <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.Barcode.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.Barcode.xml" />
+	  <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.ConversationalUI.dll" />
+      <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.ConversationalUI.xml" />
       <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.Chart.dll" />
       <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.Chart.xml" />
       <DocumentationSource sourceFile="$(BinariesFolder)\Portable\Telerik.XamarinForms.Common.dll" />

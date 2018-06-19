@@ -265,7 +265,7 @@ We are going to set the following logic in the event handler of the **RadButton*
             });
         }
 
-Clicking on the button will allow you to choose another picture from the device's storage which is  set as the picture of the user and uploaded to the bucket you have previously created. 
+Clicking on the button will allow you to choose another picture from the device's storage which is set as the picture of the user and uploaded to the bucket you have previously created. 
 
 # See Also
 

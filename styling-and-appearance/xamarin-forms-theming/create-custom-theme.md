@@ -233,11 +233,11 @@ Once you have created the custom **ResourceDictionary**, you can replace the def
         <ResourceDictionary MergedWith="dataGrid:TelerikThemeStyles"/>
     </telerikCommon:RadResourceDictionary.MergedDictionaries>
 
+>important In case you need to modify the default resources of the TelerikTheme for the **RadDataForm** control, please refer to the following article - [DataForm: Modifying TelerikTheme resources]({%slug dataform-howto-modify-theme-resources%})
 
 **Figure 1** shows the appearance of the **RadListView** once the changes are applied:
 
 ![custom theme](../images/custom-theme.png)
-
 
 ## See Also
 

@@ -23,4 +23,4 @@ Here is an example that demonstrates how you can create BarSeries that are using
 ##### PaletteMode for DataPoint #####
 ![DataPoint PaletteMode](images/chart-series-features-palette-mode-datapoint.png)
 
->important **SDK Browser** application contains an example that shows Palette Mode feature in RadChart cotrol. You can find the application in the **Examples** folder of your local **Telerik UI for Xamarin** installation.
+>important **SDK Browser** application contains an example that shows Palette Mode feature in RadChart control. You can find the application in the **Examples** folder of your local **Telerik UI for Xamarin** installation.

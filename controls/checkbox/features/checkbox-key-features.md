@@ -9,11 +9,11 @@ slug: checkbox-key-features
 
 The purpose of this help article is to show you the key features of the **RadCheckBox** control. 
 
-## Color Changing Oprions
+## Color Changing Options
 
-RadCheckBox exposes a few useful **Color** properties for customizing its visual appearance. You could set the color of the check mark as well as the control itself in each of the available states.
+RadCheckBox exposes a few useful Color properties for customizing its visual appearance. You could set the color of the check mark as well as the control itself in each of the available states.
 
- * **CheckdColor**: Defines the Color applied to the control when it is checked.
+ * **CheckedColor**: Defines the Color applied to the control when it is checked.
  
 <snippet id='checkbox-color-changing-checkedcolor-xaml'/>
 
@@ -37,9 +37,9 @@ Here is the end result with all color changing options:
 
 ## Stroke Width Customization
 
-The RadCheckBox control exposes **StrokeWidth** property that specifies the width of the lines with which the Checkbox element is drawn. It affects the outline of the control as well as the check mark.
+The RadCheckBox control exposes a **StrokeWidth** property that specifies the width of the lines with which the Checkbox element is drawn. It affects the outline of the control as well as the check mark.
 
-Here is a sample example how you can apply the stroke width property:
+Here is an example how you can apply a stroke width value:
 
 <snippet id='checkbox-key-features-strokewidth-xaml'/>
 
@@ -52,19 +52,19 @@ RadCheckBox provides three states – **Checked**, **Unchecked** and **Indetermi
 
 The default value of **IsChecked** is false.
 
-Here is a sample example how you can set the **Indeterminate** state:
+Here is an example how you can set the **Indeterminate** state:
 
 <snippet id='checkbox-key-features-ischeckednull-xaml'/>
 
 ## CheckBox Size
 
-The size of the checkbox is controlled through the Length property. The next snippet shows how you can apply it.
+The size of the checkbox is controlled through the **Length** property, this snippet shows how you can apply it.
 
 <snippet id='checkbox-key-features-length-xaml'/>
 
 ## Commands
 
-RadCheckBox exposes a Commands collection that allows you to register custom commands with each control’s instance trough the **RadCheckBox.Commands** property:
+RadCheckBox exposes a Commands collection that allows you to register custom commands with each control’s instance through the **Commands** property:
 
 * **Commands**: Gets the collection with all the custom commands registered with the CommandService.
 

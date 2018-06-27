@@ -13,7 +13,7 @@ The **RadListView** component exposes selection feature. It allows users to sele
 	- Tap
 	- Hold
 - **SelectionMode** (*SelectionMode*): Gets or sets the mode of the selection.
-	- None - This mode doesn't allow users to select an item.
+	- None - This mode doesn't allow users to select an item. To enable it the **SelectionMode** property should be set to **None**.
 	- Single - This is the default selection mode. It allows users to select only one item.
 	- Multiple - This mode allows users to select more than one item. To enable it the **SelectionMode** property should be set to **SelectionMode.Multiple**.
 	

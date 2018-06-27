@@ -28,11 +28,11 @@ Here is the definition of the ListView control:
 
 <snippet id='listview-features-selection-xaml'>
 
-and let's create a simple data for the ListView component and a method called InitializePickers in which we can add the modes and gestures we want to use:
+Lets create a simple data for the ListView component and a method called InitializePickers in which we can add the modes and gestures we want to use:
 <snippet id='listview-features-selection-csharp'>
 
 
-After this let's create **OnSelectionGestureChanged** and **OnSelectionModeChanged** methods that will be invoked when the selection changes:
+After this lets create **OnSelectionGestureChanged** and **OnSelectionModeChanged** methods that will be invoked when the selection changes:
 
 <snippet id='listview-features-onselectionchanged-csharp'>
 

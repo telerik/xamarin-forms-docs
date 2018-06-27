@@ -53,4 +53,7 @@ Here is how the **RadListView** control will look like when the multiple selecti
 
 >important **SDK Browser** application contains an example that shows Selection feature in RadListView cotrol. You can find the application in the **Examples** folder of your local **Telerik UI for Xamarin** installation.
 
-
+## See Also
+- [Items Grouping]({%slug listview-features-grouping%})
+- [Items Sorting]({%slug listview-features-sorting%})
+- [Items Styling]({%slug listview-features-styling%})

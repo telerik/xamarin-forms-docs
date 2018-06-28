@@ -33,7 +33,7 @@ We can set a different style on item using the ListViewStyleSelector class. The 
 
 You can create a class deriving from the **ListViewStyleSelector** class and you can override its **OnSelectStyle** method. A sample implementation is shown below: 
 
-<snippet id='listivew-features-onselectstyle'>
+<snippet id='listview-features-onselectstyle'>
 
 ## Conditional Styling
 

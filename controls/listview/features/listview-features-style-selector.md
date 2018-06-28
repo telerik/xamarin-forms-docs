@@ -21,8 +21,8 @@ Lets add the RadlistView component and create a simple data.
 
 Here is an example how to setup the ListView control:
 
-<snippet id='listview-gettingstarted-listview-xaml'>
-<snippet id='listview-gettingstarted-listview-csharp'>
+<snippet id='listview-gettingstarted-listview-xaml'/>
+<snippet id='listview-gettingstarted-listview-csharp'/>
 
 and lets create a simple data for the ListView component:
 
@@ -33,7 +33,7 @@ We can set a different style on item using the ListViewStyleSelector class. The 
 
 You can create a class deriving from the **ListViewStyleSelector** class and you can override its **OnSelectStyle** method. A sample implementation is shown below: 
 
-<snippet id='listview-features-onselectstyle'>
+<snippet id='listview-features-onselectstyle'/>
 
 ## Conditional Styling
 

@@ -26,17 +26,17 @@ The **RadListView** component exposes selection feature. It allows users to sele
 
 Here is the definition of the ListView control:
 
-<snippet id='listview-features-selection-xaml'>
+<snippet id='listview-features-selection-xaml'/>
 
 and lets create a simple data for the ListView component and a method called InitializePickers in which we can add the modes and gestures we want to use:
-<snippet id='listview-features-selection-csharp'>
+<snippet id='listview-features-selection-csharp'/>
 
 
 We can control the behavior of the RadListView's selection when changing the selection of the Pickers. The methods that are related with the Picker functionality are **OnSelectionGestureChanged** and **OnSelectionModeChanged**. We use them to change the SelectionGesture/SelectionMode of the RadListView.
 
 Here is an example how those methods can be implemented:
 
-<snippet id='listview-features-onselectionchanged-csharp'>
+<snippet id='listview-features-onselectionchanged-csharp'/>
 
 ## Single Selection
 

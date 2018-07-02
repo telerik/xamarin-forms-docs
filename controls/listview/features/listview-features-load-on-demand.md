@@ -7,14 +7,17 @@ slug: listview-features-load-on-demand
 
 # Load On Demand
 
-Loading a large data set on a mobile device has its chalenges. On of the most popular aproach is using incremental data loading as the items needs to be visualized. **RadListView** is capable of doing this using its load on demand capabilitites enabled by its **IsLoadOnDemandEnabled** property. It offers two loading modes through its **LoadOnDemandMode** property:
+Loading a large data set on a mobile device has its chalenges. On of the most popular aproach is using incremental data loading as the items needs to be visualized. **RadListView** is capable of doing this using its load on demand capabilitites. The following properties are related to the **LoadOnDemand** event:
+* **IsLoadOnDemandEnabled**(*bool*) 
+* **IsLoadOnDemandActive** (*bool*) can be used once *IsLoadOnDemandEnabled* property is set to *true*. When the data is loading the *IsLoadOnDemandActive = "true"*, otherwhise *IsLoadOnDemandActive = false*.
+
+**IsLoadOnDemandEnabled** offers two loading modes through its **LoadOnDemandMode** property:
  1. **Automatic** - the data is requested automatically when you scroll near the end of the listview.
  2. **Manual** - a button is rendered at the end of the listview. The data is requested explicitely by pressing the button.
 
 In order to load the data Listview requires either to:
  1. Subscribe to **LoadOnDemand** event and add the loaded data to the source.
  2. Create **ListViewLoadOnDemandCollection** instance as source and pass it to listview ItemsSource property.
-
 
 ## Automatic mode
 We will load the data automatically using event. In this case Here is how the setup will look like:

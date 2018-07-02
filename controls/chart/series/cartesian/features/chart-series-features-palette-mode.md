@@ -15,8 +15,8 @@ The **FillColor** property is used to define the fill of the series.
 
 # Example #
 Here is an example that demonstrates how you can create BarSeries that are using PaletteMode property for Series and DataPoint:
-<snippet id='chart-customization-palettemode-xaml'>
-<snippet id='chart-customization-palettemode-csharp'>
+<snippet id='chart-customization-palettemode-xaml'/>
+<snippet id='chart-customization-palettemode-csharp'/>
 
 ##### PaletteMode for Series #####
 ![Series PaletteMode](images/chart-series-features-palette-mode-series.png)

@@ -1,7 +1,7 @@
 ---
 title: Styling
 page_title: Styling
-position: 10
+position: 9
 slug: listview-features-styling
 description: Describing the styling options of the RadListView
 tags: style, selected, hovered, pressed, item, highlighted
@@ -40,41 +40,8 @@ This enumeration contains the following members:
 
 ### Example
 
-	<telerikDataControls:RadListView x:Name="listView" ItemsSource="{Binding Source}" IsItemsReorderEnabled="True">
-		<telerikDataControls:RadListView.ItemTemplate>
-			<DataTemplate>
-				<telerikListView:ListViewTextCell Text="{Binding Name}" />
-			</DataTemplate>
-		</telerikDataControls:RadListView.ItemTemplate>
-		<telerikDataControls:RadListView.ItemStyle>
-			<telerikListView:ListViewItemStyle BackgroundColor="#1263E5"
-											TextCellTextColor="#AAC7F6"
-											BorderColor="#0A3A82"                                                
-											BorderWidth="2"
-											BorderLocation="All" />
-		</telerikDataControls:RadListView.ItemStyle>
-		<telerikDataControls:RadListView.SelectedItemStyle>
-			<telerikListView:ListViewItemStyle BackgroundColor="#83A9E2"
-											TextCellTextColor="#AAC7F6"
-											BorderColor="#0A3A82"
-											BorderWidth="2" 
-											BorderLocation="Bottom"/>
-		</telerikDataControls:RadListView.SelectedItemStyle>
-		<telerikDataControls:RadListView.PressedItemStyle>
-			<telerikListView:ListViewItemStyle BackgroundColor="#C1C1C1" 
-											TextCellTextColor="#AAC7F6"
-											BorderColor="#0B3D89" 
-											BorderWidth="2" 
-											BorderLocation="Bottom"/>
-		</telerikDataControls:RadListView.PressedItemStyle>
-		<telerikDataControls:RadListView.ReorderItemStyle>
-			<telerikListView:ListViewItemStyle BackgroundColor="#0B3D89"
-											TextCellTextColor="#AAC7F6"
-											BorderColor="Black"
-											BorderWidth="2"
-											BorderLocation="All" />
-		</telerikDataControls:RadListView.ReorderItemStyle>
-	</telerikDataControls:RadListView>
+<snippet id='listview-styling-listview-xaml'/>
+<snippet id='listview-styling-listview-csharp'/>
 
 And here is the end result:
 
@@ -86,8 +53,21 @@ And here is the end result:
 
 >note You can find a working demo labeled **ItemStyles** in the ListView/Styling folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}). 
 
+## ListViewItemStyle with Bindable Properties
+
+The  **ItemStyle**, **SelectedItemStyle** and **PressedItemStyle** properties of type **ListViewitemStyle** can be used as a bindable properties.
+
+There are examples in the ListView/Styling folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}), how you can use those properties as a bindable.  
+
+### Figure 3: ListView with Bindable ItemStyle
+
+![](images/listvirew-features-bindable-itemstyle.png)
+
+### Figure 4: ListView with Bindable SelectedItemStyle
+
+![](images/listvirew-features-bindable-selecteditemstyle.png)
+
 ##See Also
 
-[Selection]({%slug listview-features-selection%})
-
-[Reordering]({%slug listview-features-reorder-items%})
+- [Selection]({%slug listview-features-selection%})
+- [Reordering]({%slug listview-features-reorder-items%})

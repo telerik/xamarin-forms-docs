@@ -9,7 +9,7 @@ slug: chart-series-palette-mode
 The **PaletteMode** property of the RadCartesianChart allows useres to change the color of the series using **SeriesPaletteMode** enumeration. You can set the changes of the color on:
 
 - **Series**: The palette is applied to data point depending on the index of the owning ChartSeries instance. 
-- **DataPoin**: You can apply the palette to the data points depending on the index od each data point. 
+- **DataPoint**: You can apply the palette to the data points depending on the index od each data point. 
 
 The **FillColor** property is used to define the fill of the series.
 

@@ -57,6 +57,8 @@ Here is an example of how to create a RadCartesianChart with ScatterLineSeries i
 	series.SetBinding(ScatterLineSeries.ItemsSourceProperty, new Binding("ScatterData"));   
 	series.XValueBinding = new PropertyNameDataPointBinding("XValue");
 	series.YValueBinding = new PropertyNameDataPointBinding("YValue");
+	chart.Series.Add(series);
+	
 Here is the sample data:
 	
 	public class NumericalData

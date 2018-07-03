@@ -73,7 +73,7 @@ Here are listed the supported view modes for each platform:
 		<td>Day</td>
 		<td>&#x2714;</td>
 		<td>&#x2714;</td>
-		<td>-</td>
+		<td>&#x2714;</td>
 	</tr>
 	<tr>
 		<td>Year</td>

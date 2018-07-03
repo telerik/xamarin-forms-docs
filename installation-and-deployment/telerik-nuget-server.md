@@ -9,6 +9,10 @@ position: 8
 
 The following steps demonstrate how users can take advantage of **Telerik NuGet server** in order to include our suite in their solution and/or update to the latest available version.
 
+>important The credentials needed to access Telerik Nuget server are the same you use to log into your [Telerik account](https://www.telerik.com/account).
+
+>You will find Nuget packages containing the standard and the lite assemblies - the latter have *Lite* in their names. Please take a look at the [Lite Assemblies]({%slug telerik-light-assemblies%}) topic for more details on the difference between them.
+
 ## Visual Studio
 
 The first step is to add the Telerik server to the NuGet package sources. This can be done in the Package Manager Settings from the Tools menu.

@@ -271,14 +271,6 @@ navigation:
     ## Border
     controls/border:
         title: "Border"
-        ## Border Sub-Folders
-    controls/border/getting-started:
-        title: "Getting Started"
-        position: 1
-    controls/border/features:
-        title: "Features"
-        position: 2    
-        ## End Border Sub-Folders
     ## End Border
     ## BusyIndicator
     controls/busyindicator:
@@ -438,9 +430,6 @@ navigation:
     controls/listview:
         title: "ListView"
         ## ListView Sub-Folders
-    controls/listview/getting-started:
-        title: "Getting Started"
-        position: 1
     controls/listview/gestures:
         title: "Gestures"
         position: 4

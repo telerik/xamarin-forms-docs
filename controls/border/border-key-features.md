@@ -1,7 +1,7 @@
 ---
 title: Key Features
 page_title: Key Features
-position: 0
+position: 2
 slug: border-key-features
 ---
 
@@ -37,7 +37,7 @@ Additionally, the wrapped content will be clipped according to each side’s spe
 
 Here is the end result:
 
-![Border Key Features Example](../images/border-key-features.png)
+![Border Key Features Example](images/border-key-features.png)
 
 ## See Also
 

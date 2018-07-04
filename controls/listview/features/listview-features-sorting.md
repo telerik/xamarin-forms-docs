@@ -25,92 +25,34 @@ This descriptor enables you to sort by a custom key (e.g. some complex expressio
 - **SortOrder**: Gets or sets the sort order to Ascending or Descending.
 - **KeyLookup**: Gets or sets the IKeyLookup instance used to retrieve the sort key for each data item.
 
-## See Also
-
-[Grouping]({%slug listview-features-grouping%})
-
-[Filtering]({%slug listview-features-filtering%})
-
 ## Example
 
-### Adding sort descriptors in code:
+Here is an example that will guide you how to use SortDescriptor in ListView.
 
-#### XAML
+Definee the ListView in XAML:
 
-	<telerikDataControls:RadListView x:Name="listView" ItemsSource="{Binding Items}">
-	  <telerikDataControls:RadListView.ItemTemplate>
-	    <DataTemplate>
-	      <telerikListView:ListViewTemplateCell>
-	        <telerikListView:ListViewTemplateCell.View>
-	          <StackLayout Orientation="Horizontal">
-	            <Label Text="Name:"/>
-	            <Label Text="{Binding Name}"/>
-	            <Label Text=", Age:"/>
-	            <Label Text="{Binding Age}"/>
-	          </StackLayout>
-	        </telerikListView:ListViewTemplateCell.View>
-	      </telerikListView:ListViewTemplateCell>
-	    </DataTemplate>
-	  </telerikDataControls:RadListView.ItemTemplate>
-	</telerikDataControls:RadListView>
+<snippet id='listview-features-sorting-xaml'/>
 
-#### C# 
+Add the following code to the Sorting class:
 
-Add the following code to the Page class:
+<snippet id='listview-features-sorting-agesort'/>
 
-    public Page()
-    {
-        InitializeComponent();
-        this.BindingContext = new ViewModel();
-		listView.SortDescriptors.Add(new PropertySortDescriptor { PropertyName = "Age", SortOrder = SortOrder.Ascending });
-    }
+Use the following snippet for the ViewModel class: 
 
-Here is the ViewModel class:    
+<snippet id='listview-features-sorting-viewmodel'/>
 
-    public class ViewModel
-    {
-        private static Random rand = new Random();
+Create a class Person and add the code below:
 
-        public ViewModel()
-        {
-            this.Items = GetData(100);
-        }
+<snippet id='listview-features-sorting-data-class'/>
 
-        public ObservableCollection<Item> Items { get; set; }
+Here is the result once the data is sorted.
 
-        private static ObservableCollection<Item> GetData(int count)
-        {
-            var items = new ObservableCollection<Item>();
+![Sorting](images/listview-features-sorting.png "Sorting")
 
-            for (var i = 0; i < count; i++)
-            {
-                items.Add(new Item { Name = string.Format("Customer {0}", i), Age = rand.Next(20, 41) });
-            }
-
-            return items;
-        }
-    }
-
-And the data class:
-
-	public class Item
-	{
-		public string Name { get; set; }
-		public int Age { get; set; }
-	}
-
-### Adding sort descriptors in XAML:
-
-#### XAML
-
-    <telerikDataControls:RadListView>
-      <telerikDataControls:RadListView.SortDescriptors>
-        <telerikListView:PropertySortDescriptor PropertyName="Age" SortOrder="Ascending"/>
-      </telerikDataControls:RadListView.SortDescriptors>
-    </telerikDataControls:RadListView>
+>important A sample example how to create ListView with SortDescriptor can be found in the ListView/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 
-[Grouping]({%slug listview-features-grouping%})
-
-[Filtering]({%slug listview-features-filtering%})
+- [Grouping]({%slug listview-features-grouping%})
+- [Filtering]({%slug listview-features-filtering%})
+- [Selection]({%slug listview-features-selection%})

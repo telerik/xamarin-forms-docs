@@ -15,21 +15,21 @@ tags: sort, radlistview, sorting, sortdescriptor
 
 You can sort the data by a property value from the class that defines your business items. This descriptor exposes the following properties:
 
-- **PropertyName**: Gets or sets the string name of the property that is used to retrieve the key to sort by.
-- **SortOrder**: Gets or sets the sort order to Ascending or Descending.
+- **PropertyName**: Defines the string name of the property that is used to retrieve the key to sort by.
+- **SortOrder**: Specifies sort order to Ascending or Descending.
 
 ## DelegateSortDescriptor 
 
 This descriptor enables you to sort by a custom key (e.g. some complex expression combining two or more properties) instead of being limited by the value of a single property. This descriptor exposes the following properties:
 
-- **SortOrder**: Gets or sets the sort order to Ascending or Descending.
-- **KeyLookup**: Gets or sets the IKeyLookup instance used to retrieve the sort key for each data item.
+- **SortOrder**: Sets the sort order to Ascending or Descending.
+- **KeyLookup**: Defines the IKeyLookup instance used to retrieve the sort key for each data item.
 
 ## Example
 
 Here is an example that will guide you how to use SortDescriptor in ListView.
 
-Definee the ListView in XAML:
+First, define the ListView in XAML:
 
 <snippet id='listview-features-sorting-xaml'/>
 

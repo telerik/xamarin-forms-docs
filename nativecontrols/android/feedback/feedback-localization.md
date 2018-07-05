@@ -5,7 +5,7 @@ description: This article explains how to localize strings used throughout the A
 slug: feedback-localization
 tags: radfeedback, feedback, localization
 position: 2
-publish: true
+publish: false
 ---
 
 # RadFeedback: Localization

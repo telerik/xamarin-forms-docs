@@ -31,6 +31,13 @@ The slide buttons can be customized via the following properties:
 
 - **SlideButtonsSize**: This property sets the buttons size.
 
+### Customizing the content alignment
+
+You can set the alignment of the content of the SlideView item via the following properties:
+
+- **HorizontalContentOptions**: This property sets the horizonal alignment
+
+- **VerticalContentOptions**: This property sets the vertical alignment. 
 
 ### Disabling the animation
 

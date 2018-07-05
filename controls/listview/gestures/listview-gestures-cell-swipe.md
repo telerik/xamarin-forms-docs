@@ -32,7 +32,7 @@ The following RadListView methods are related to the sell swiping feature:
 
 ## Events
 
-The following RadListView events are related to the sell swiping feature:
+The following RadListView events are related to the cell swiping feature:
 
 - **ItemSwipeStarting**: Occurs when the user has initiated swipe gesture. The event arguments are of type **ItemSwipeStartingEventArgs**, that provides the following properties:
  - **Item** (object): The item that will be swiped.

@@ -13,6 +13,27 @@ Some of the controls included in the **UI for Xamarin** suite(Gauges, Rating, Bu
  
 >important If you need to include controls that rely on the **SkiaSharp** library and you are using the lite assemblies, an **InvalidReferenceException** with the following message will be thrown: *Missing assembly reference. Please use the non-Light version of the assemblies/nuget packages.* If you come across this exception, please make sure that you have added references to the correct binary files.
 
+## List of controls that utilize the SkiaSharp rendering library
+
+The following controls rely on the **SkiaSharp** library to render some elements within their structure:
+
+* **RadDataGrid**
+* **RadPath**
+* **RadRating**
+* **RadBusyIndicator**
+* **RadGauge**
+
+If you intend on using these, you need to add reference to the relevant version of **SkiaSharp**, **SkiaSharp.Views** and **SkiaSharp.Views.Forms** NuGet packages. In case you would like to not take advantage of these elements, we advise on using the Lite assemblies so that no direct references to SkiaSharp are required.
+
+## SkiaSharp NuGet Packages
+The SkiaSharp packages that need to be installed are as follows:
+
++ SkiaSharp (install to all projects)
++ SkiaSharp.Views (install to all projects, except class library)
++ SkiaSharp.Views.Forms (install to all projects)
+
+Note: Make sure that you're using **v1.59.3** as we do not yet support v1.6
+
 ## See Also
 
 * [Skia Graphics Library](https://skia.org/)

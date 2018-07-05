@@ -44,6 +44,7 @@ Below you could find a list of the available files:
 ### Other Setup Files
 
 * Telerik_UI_for_Xamarin_[version]_[license]_Hotfix.zip - the Hotfix archive is a bare-bones upgrade option for the Telerik Xamarin controls - it contains only those files that you need to replace in your project to upgrade to a newer version. 
+* Telerik_UI_for_Xamarin_[version]_[license]_ProjectTemplate.mpack -  a Visual Studio for Mac add-in which provides a project template, pre-setup with all requirements to run Telerik UI for Xamarin components.
 
 And we provide the following NuGet packages you can use according to the concrete requirements:
 

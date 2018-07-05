@@ -23,6 +23,12 @@ Using this approach, you can quickly achieve similar look and feel on all availa
 * Apps where code sharing is more important than custom UI and platform-specific features
 * You feel comfortable creating your UI through XAML
 
+> **Telerik UI for Xamarin** components are available for the following platforms:
+>
+> - Android
+> - iOS
+> - Universal Windows Platform
+
 If you choose this approach, you should refer to the available custom controls from the **Xamarin Forms Controls** section.
 
 #### Develop Through Xamarin Native (Xamarin.iOS & Xamarin.Android)
@@ -64,13 +70,15 @@ To get started with a control we recommend to **read its Getting Started article
 
 ## Developer Focused Examples
 
+There are several applications that are shipped with the installation of the **Telerik UI for Xamarin** suite. You can check them in order to review different scenarios in which the controls can be used and to familiarize yourself with the controls' main features. 
+
 #### SDK Samples Application
 
 The developer focused examples is an infrastrucutre with many demos showing our controls. Read more about this in the [corresponding help article]({%slug developer-focused-examples%}). You can find the demos in the [telerik/xamarin-forms-sdk](https://github.com/telerik/xamarin-forms-sdk) GitHub repository.
 
 #### QSF Application
 
-The **QSF application** is another useful resource that shows the **Telerik UI for Xamarin ** controls in different **Xamarin.Forms** projects and scenarios. The application can be found in the QSF folder of your local installation. You can review the source code of each example and familiarize with the configuration possibilities that each it provides.
+The **QSF application** is another useful resource that shows the **Telerik UI for Xamarin** controls in different Xamarin.Forms projects and scenarios. The application can be found in the QSF folder of your local installation. You can review the source code of each example and familiarize with the configuration possibilities that each it provides.
 
 #### Native Examples
 
@@ -81,4 +89,4 @@ Solutions that show how to use the controls when developing through **Xamarin.An
 - [System Requirements]({%slug system-requirements %})
 - [Getting started on Windows]({%slug getting-started-windows%})
 - [Getting started on Mac]({%slug getting-started-mac%})
-- [UI for Xamarin Support and Learning Resources](http://www.telerik.com/support/xamarin-ui)
+- [Telerik UI for Xamarin Support and Learning Resources](http://www.telerik.com/support/xamarin-ui)

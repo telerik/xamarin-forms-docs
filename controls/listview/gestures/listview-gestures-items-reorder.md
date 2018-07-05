@@ -31,6 +31,7 @@ Here is the result:
 
 ![](images/listview-gestures-reorder.png)
 
+>You could also take advantage of the [Reorder Events]({% slug listview-features-events %}#groupreorder-events) for additional control over the reorder functionality of RadListView.
 
 ## See Also
 

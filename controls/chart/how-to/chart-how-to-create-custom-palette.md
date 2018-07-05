@@ -80,3 +80,5 @@ And the data class:
 Here is the result:
 
 ![Custom Palette](images/chart-how-to-create-custom-palette.png)
+
+>tip When you have set a custom **ChartPalette** to the RadChart instance, the labels in Android are rendered in the same color as the **StrokeColor** of the first **PaletteEntry** from the custom palette.

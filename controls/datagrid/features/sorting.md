@@ -7,12 +7,15 @@ slug: datagrid-sorting-overview
 
 # Sorting #
 
-The **RadDataGrid** provides you with a built-in sorting functionality, which allows the user to easily sort the data.
+**RadDataGrid** provides you with a built-in sorting functionality, which allows the user to easily sort the data. **Figure 1** shows how the control looks when sorting is applied:
 
-**RadDataGrid** provides two ways of sorting:
+#### Figure 1: Sorted RadDataGrid
+![](../images/datagrid_sorting.png)
 
-* by Property - using a PropertySortDescriptor
-* by custom Key - using a DelegateSortDescriptor
+**RadDataGrid** provides two ways of programmatic sorting:
+
+* by Property - using a **PropertySortDescriptor**
+* by custom key - using a **DelegateSortDescriptor**
 
 ## PropertySortDescriptor
 

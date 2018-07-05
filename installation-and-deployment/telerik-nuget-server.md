@@ -9,6 +9,10 @@ position: 8
 
 The following steps demonstrate how users can take advantage of **Telerik NuGet server** in order to include our suite in their solution and/or update to the latest available version.
 
+>important The credentials needed to access Telerik Nuget server are the same you use to log into your [Telerik account](https://www.telerik.com/account).
+
+>You will find Nuget packages containing the standard and the lite assemblies - the latter have *Lite* in their names. Please take a look at the [Lite Assemblies]({%slug telerik-light-assemblies%}) topic for more details on the difference between them.
+
 ## Visual Studio
 
 The first step is to add the Telerik server to the NuGet package sources. This can be done in the Package Manager Settings from the Tools menu.
@@ -39,7 +43,7 @@ Users have to find the **Telerik.UI.for.Xamarin** package and install it to thei
 
 Now the user's solution has all required Telerik assemblies.
 
-## Xamarin Studio
+## Visual Studio for Mac
 
 Users first have to add the Telerik NuGet server in their packages sources list. This can be done by clicking on the settings icon of any “*Packages*” folder (any project will do the job) and choosing “*Add Packages…*”.
 
@@ -65,3 +69,8 @@ After the Telerik NuGet server is added users will be able to see the packages t
 Once the server is added users will be able to add to their projects any of the **Telerik NuGet** packages available for their license. One click on the settings icon of the “*Packages*” folder of any project will open the **Add Packages** dialog where the available Telerik packs will be listed.
 
 ![Telerik NuGet packages](images/getting-started-add-packages-dialog.png "Telerik NuGet packages")
+
+## See Also
+- [System Requirements]({%slug system-requirements%})
+- [Getting Started on Windows]({%slug getting-started-windows%})
+- [Getting Started on Mac]({%slug getting-started-mac%})

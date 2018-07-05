@@ -18,7 +18,7 @@ This example will guide you through the steps needed to add a basic **RadSideDra
 
 If your app is setup, you are ready to add a **RadSideDrawer** control.
 
-You can proceed with defining the component:
+You can proceed with defining the component. The DrawerContent represents the hidden view (in it you could place navigational UI, any common setting, etc), while the MainContent hosts the main View of your app.
 
 <snippet id='sidedrawer-gettingstarted-xaml'/>
 <snippet id='sidedrawer-gettingstarted-csharp'/>
@@ -28,11 +28,15 @@ You also have to add the following namespace:
 <snippet id='xmlns-telerikprimitives'/>
 <snippet id='ns-telerikprimitives'/>
 
+
+
 Finally, set the drawer as content of your page.
 
 Here is the result:
  
 ![SideDrawer example](../images/sidedrawer-gettingstarted.png)
+
+>important **SDK Browser** and **QSF** applications contain different examples that show RadSideDrawer's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
 
 ## See Also
 

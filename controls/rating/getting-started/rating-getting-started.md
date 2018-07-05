@@ -33,3 +33,6 @@ You have to add the following namespaces:
 
 <snippet id='xmlns-telerikrating'/>
 <snippet id='ns-telerikrating'/>
+
+
+>important **SDK Browser** and **QSF** applications contain different examples that show RadRating's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.

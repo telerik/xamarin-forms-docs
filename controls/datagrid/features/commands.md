@@ -18,7 +18,6 @@ RadDataGrid exposes a **Commands** collection that allows you to register custom
 There are two types of commands:
 
 * **DataGridCommand**: All the default commands within RadDataGrid derive from the base DataGridCommand. Think of this command as a UI-related command as it operates over the RadDataGrid instance that owns the command.
-* **DataGridUserCommand**: This specific command type provides the abstraction of the UI-related commands (that all the built-in commands are) over a stateless and UI-agnostic generic command implementation. The command exposes the following properties:
 
  * **Id**: Gets or sets the CommandId member this command is associated with.
  * **Command**: Gets or sets the generic ICommand implementation that may come from the ViewModel.
@@ -26,7 +25,7 @@ There are two types of commands:
 
 ## DataGridCommandId Enumeration
 
-All the predefined commands within a RadDataGrid instance are identified by a member of the **DataGridCommandId** enumeration. This is actually the key that relates a command instance to a particular action/routine within the owning grid. In order to register a custom command within a RadDataGrid instance you may either inherit the **DataGridCommand** class and override its **CanExecute** and **Execute** methods or instantiate a **DataGridUserCommand** instance and set its **Command** property. In both cases you need to set the Id property of the new command so that it can be properly associated with the desired action/event. Following are the members of the DataGridCommandId enumerations:
+All the predefined commands within a RadDataGrid instance are identified by a member of the **DataGridCommandId** enumeration. This is actually the key that relates a command instance to a particular action/routine within the owning grid. In order to register a custom command within a RadDataGrid instance you may either inherit the **DataGridCommand** class and override its **CanExecute** and **Execute** methods. You need to set the Id property of the new command so that it can be properly associated with the desired action/event. Following are the members of the **DataGridCommandId** enumerations:
 
 * Unknown
 * ColumnHeaderTap

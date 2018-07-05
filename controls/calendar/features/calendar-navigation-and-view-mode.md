@@ -17,7 +17,9 @@ slug: calendar-features-navigation-and-view-mode
 
 ### Events:
 
- - **DisplayDateChanged** (ValueChangedEventArgs&lt;object&gt;): Occurs when the selected date is changed. 
+* **DisplayDateChanged** (ValueChangedEventArgs&lt;object&gt;): Occurs when the selected date is changed. The __DisplayDateChanged__ event handler receives two parameters: 
+	* The sender argument which is of type object, but can be cast to the __RadCalendar__ type.
+	* A __ValueChangedEventArgs&lt;object&gt;__ object which provides both old and new values of the __DisplayDate__ property. The values are of type object, but can be cast to the DateTime type.
 
 ### Example
 
@@ -71,7 +73,7 @@ Here are listed the supported view modes for each platform:
 		<td>Day</td>
 		<td>&#x2714;</td>
 		<td>&#x2714;</td>
-		<td>-</td>
+		<td>&#x2714;</td>
 	</tr>
 	<tr>
 		<td>Year</td>

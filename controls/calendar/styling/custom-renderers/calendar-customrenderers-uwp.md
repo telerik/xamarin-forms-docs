@@ -2,7 +2,7 @@
 title: Calendar UWP Custom Renderers
 page_title: Calendar UWP Custom Renderer
 position: 0
-slug: calendar-custom-renderers-android
+slug: calendar-custom-renderers-uwp
 ---
 
 # Custom Calendar Renderer

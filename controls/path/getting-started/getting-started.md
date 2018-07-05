@@ -59,4 +59,6 @@ Both RadPath objects appearance can be reviewed in **Figure 1**.
 **Figure 1:**
 ![RadPath Figures](../images/custom_default_paths.png)
 
+>important **SDK Browser** and **QSF** applications contain different examples that show RadPath's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
+
 ## See Also

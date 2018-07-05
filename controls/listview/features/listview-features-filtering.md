@@ -13,83 +13,34 @@ tags: filter, radlistview, filterdescriptor
 
 ## DelegateFilterDescriptor 
 
-- **Filter**: Gets or sets the function used to check whether a data item passes the filter or not.
+- **Filter**: Defines the function used to check whether a data item passes the filter or not.
 
 ## Example
 
-#### XAML
+First, define the ListView in XAML:
 
-	<telerikDataControls:RadListView x:Name="listView" ItemsSource="{Binding Items}">
-	  <telerikDataControls:RadListView.ItemTemplate>
-	    <DataTemplate>
-	      <telerikListView:ListViewTemplateCell>
-	        <telerikListView:ListViewTemplateCell.View>
-	          <StackLayout Orientation="Horizontal">
-	            <Label Text="Name:"/>
-	            <Label Text="{Binding Name}"/>
-	            <Label Text=", Age:"/>
-	            <Label Text="{Binding Age}"/>
-	          </StackLayout>
-	        </telerikListView:ListViewTemplateCell.View>
-	      </telerikListView:ListViewTemplateCell>
-	    </DataTemplate>
-	  </telerikDataControls:RadListView.ItemTemplate>
-	</telerikDataControls:RadListView>
+<snippet id='listview-features-filtering-xaml'/>
 
-#### C# 
+Add the following code to the Filtering class:
 
-Add the following code to the Page class:
-
-
-	public Page()
-	{
-	    InitializeComponent();
-	    this.BindingContext = new ViewModel();
-		listView.FilterDescriptors.Add(new Telerik.XamarinForms.DataControls.ListView.DelegateFilterDescriptor { Filter = this.AgeFilter });
-	}
-	
-	private bool AgeFilter(object arg)
-	{
-	    var age = ((Item)arg).Age;
-	    return age >= 25 && age <= 35;
-	}
+<snippet id='listview-features-filtering-agefilter'/>
 
 Here is the ViewModel class:
 
-    public class ViewModel
-    {
-        private static Random rand = new Random();
-
-        public ViewModel()
-        {
-            this.Items = GetData(100);
-        }
-
-        public ObservableCollection<Item> Items { get; set; }
-
-        private static ObservableCollection<Item> GetData(int count)
-        {
-            var items = new ObservableCollection<Item>();
-
-            for (var i = 0; i < count; i++)
-            {
-                items.Add(new Item { Name = string.Format("Customer {0}", i), Age = rand.Next(20, 41) });
-            }
-
-            return items;
-        }
-    }
-
+<snippet id='listview-features-filtering-viewmodel'/>
+    
 And here is the data class:
 
-	public class Item
-	{
-		public string Name { get; set; }
-		public int Age { get; set; }
-	}
+<snippet id='listview-features-filtering-data-class'/>	
 
+Here is the result after the data is filtered:
+
+![Filtering](images/listview-features-filtering.png "Filtering")
+
+>important A sample example how to create ListView with FilterDescriptor can be found in the ListView/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+ 
 ## See Also
 
-[Grouping]({%slug listview-features-grouping%})
-
-[Sorting]({%slug listview-features-sorting%})
+- [Grouping]({%slug listview-features-grouping%})
+- [Sorting]({%slug listview-features-sorting%})
+- [Selection]({%slug listview-features-selection%})

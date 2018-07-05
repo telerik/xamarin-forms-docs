@@ -13,11 +13,11 @@ tags: filter, radlistview, filterdescriptor
 
 ## DelegateFilterDescriptor 
 
-- **Filter**: Gets or sets the function used to check whether a data item passes the filter or not.
+- **Filter**: Defines the function used to check whether a data item passes the filter or not.
 
 ## Example
 
-Define the ListView in XAML:
+First, define the ListView in XAML:
 
 <snippet id='listview-features-filtering-xaml'/>
 

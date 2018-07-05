@@ -55,19 +55,23 @@ And here is the end result:
 
 ## ListViewItemStyle with Bindable Properties
 
-The  **ItemStyle**, **SelectedItemStyle** and **PressedItemStyle** properties of type **ListViewitemStyle** can be used as a bindable properties.
+The  **ItemStyle**, **SelectedItemStyle**, **PressedItemStyle** and **ReorderdItemStyle** properties of type **ListViewitemStyle** can be used as a bindable properties. 
 
-There are examples in the ListView/Styling folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}), how you can use those properties as a bindable.  
+### Example
 
-### Figure 3: ListView with Bindable ItemStyle
+Add the following snippet to the RadListView.ItemTemplate property:
+
+<snippet id='listview-features-styling-bindable-itemstyle-xaml'/>
+
+Here is how the ItemStyle bindable property looks:
+#### Figure 3: ListView with Bindable ItemStyle
 
 ![](images/listvirew-features-bindable-itemstyle.png)
 
-### Figure 4: ListView with Bindable SelectedItemStyle
-
-![](images/listvirew-features-bindable-selecteditemstyle.png)
+>important There are examples in the ListView/Styling folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}), how you can use those properties as a bindable. 
 
 ##See Also
 
 - [Selection]({%slug listview-features-selection%})
 - [Reordering]({%slug listview-features-reorder-items%})
+- [StyleSelector]({%slug listview-features-style-selector%})

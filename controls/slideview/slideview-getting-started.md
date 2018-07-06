@@ -79,6 +79,7 @@ Check the [ItemTemplate]({% slug slideview-features-itemtemplate %}) article to 
 >important **SDK Browser** and **QSF** applications contain different examples that show RadSlideViews's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
 
 ## See Also
+
 - [Customize the control]({% slug sideview-customize-the-control %})
 - [ItemTemplate]({% slug slideview-features-itemtemplate %})
 - [Commands]({% slug slideview-commands-support %})

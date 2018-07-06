@@ -57,8 +57,13 @@ Currently the SortDescriptor of the RadListView supports binding. What's new is 
 
 In order to control the descriptors collections through MVVM: 
 
-1. Add a specific using in your ViewModel class
-2. Use **OneWayToSource** binding
+1. Create a property of type ObservableCollection<SortDescriptorBase> in your ViewModel which will contain the needed sort descriptors:
+
+<snippet id='listview-features-bindable-sortdescriptor-viewmodel' />
+
+2. Use **OneWayToSource** binding mode to bind that property to the SortDescriptors property of RadListView:
+
+<snippet id='listview-features-bindable-sortdescriptor-xaml' />
 
 Here is the result:
 

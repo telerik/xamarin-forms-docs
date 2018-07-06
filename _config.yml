@@ -515,13 +515,7 @@ navigation:
     ## End MaskedInput
     ## SlideView
     controls/slideview:
-        title: "SlideView"
-    controls/slideview/getting-started:
-        title: "Getting Started"
-        position: 3
-    controls/slideview/features:
-        title: "Features"
-        position: 4
+        title: "SlideView"    
     ## End SlideView
     ## TreeView
     controls/treeview:

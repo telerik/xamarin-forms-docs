@@ -63,8 +63,28 @@ And you could create and apply a delegate for grouping the items (for example by
 #### Figure 2: ListView grouped through DelegateGroupDescriptor
 ![ListView Grouping](images/listview_grouping_delegatedescriptor.png)
 
+## Bindable GroupDescriptor
+
+The GroupDescriptor collection now can be controlled by users using MVVM.
+
+In order to control the GroupDescriptor collection through MVVM: 
+
+1. Create a property of type ObservableCollection<GroupDescriptorBase> in your ViewModel which will contain the needed group descriptors:
+ 
+ <snippet id='listview-features-bindable-groupdescriptor-viewmodel' />
+ 
+2. Use **OneWayToSource** binding mode to bind that property to the GroupDescriptors property of RadListView:
+
+<snippet id='listview-features-bindable-groupdescriptor-xaml' />
+
+Here is how the GroupDescriptor collection looks like through MVVM:
+
+![GroupDescriptorsMVVM](images/listview-features-bindable-group.png)
+
+>important You can find a working demo labeled **Bindable Group Descriptors** in the ListView/Bindable Collections folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}). 
+
 ## See Also
 
-[Filtering]({%slug listview-features-filtering%})
-
-[Sorting]({%slug listview-features-sorting%})
+- [Filtering]({%slug listview-features-filtering%})
+- [Sorting]({%slug listview-features-sorting%})
+- [Selection]({%slug listview-features-selection%})

@@ -36,6 +36,6 @@ Here is the result:
 
 ### See Also
 
-- [Project Wizard]({% slug project-wizard %})
-- [Getting Started]({% slug slideview-getting-started %})
+- [Customize the Control]({% slug project-wizard %})
+- [ItemTemplateSelector]({% slug slideview-itemtemplateselector %})
 

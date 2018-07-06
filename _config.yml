@@ -438,7 +438,10 @@ navigation:
         position: 3
     controls/listview/cells:
         title: Cells
-        position: 2
+        position: 2            
+    controls/listview/howto:
+        title: "How To"
+        position: 10
         ## End ListView Sub-Folders
     ## End ListView
     ## SideDrawer

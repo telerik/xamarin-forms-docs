@@ -4,98 +4,68 @@ slug: chart-series-bar-series
 position: 0
 ---
 
-# BarSeries #
+# BarSeries
 
-## Overview ##
+## Overview
 
 **RadCartesianChart** visualizes each data point from the **BarSeries** as a rectangle. These rectangles (or bars) can be displayed either horizontally, or vertically, depending on whether the **CategoricalAxis** is the vertical axis or the horizontal. When the horizontal axis is categorical, the rectangles are displayed vertically. This means that they have equal width while their height represents the numerical value of each of the data points. On the other hand, when the vertical axis is categorical, the rectangles have equal height, while their width represents the value of the data point. 
 
 The **BarSeries** inherits from **CategoricalSeries** and requires one **CategoricalAxis** and one **NumericalAxis**. 
 
->tip You could check the common CategoricalSeries features that are also applicable to **BarSeries** at the following link: [Series Features]({%slug chart-series-overview %}).
+>tip You could check the common CategoricalSeries features that are also applicable to **BarSeries** at the following link: [Series Features]({%slug chart-series-overview%}).
 
-## Example ##
+## Example
 
-Here is an example of how to create a basic RadCartesianChart with BarSeries in xaml:
+Here is an example of how to create a basic RadCartesianChart with BarSeries in XAML and C#:
 
-	<telerikChart:RadCartesianChart>
-	  <telerikChart:RadCartesianChart.BindingContext>
-	    <viewMoedls:CategoricalViewModel/>
-	  </telerikChart:RadCartesianChart.BindingContext>
-	  <telerikChart:RadCartesianChart.HorizontalAxis>
-	    <telerikChart:CategoricalAxis/>
-	  </telerikChart:RadCartesianChart.HorizontalAxis>
-	  <telerikChart:RadCartesianChart.VerticalAxis>
-	    <telerikChart:NumericalAxis/>
-	  </telerikChart:RadCartesianChart.VerticalAxis>
-	  <telerikChart:RadCartesianChart.Series>
-	    <telerikChart:BarSeries ItemsSource="{Binding CategoricalData}">
-	      <telerikChart:BarSeries.ValueBinding>
-	        <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
-	      </telerikChart:BarSeries.ValueBinding>
-	      <telerikChart:BarSeries.CategoryBinding>
-	        <telerikChart:PropertyNameDataPointBinding PropertyName="Category"/>
-	      </telerikChart:BarSeries.CategoryBinding>
-	    </telerikChart:BarSeries>
-	  </telerikChart:RadCartesianChart.Series>
-	</telerikChart:RadCartesianChart>
+<snippet id='chart-getting-started-xaml-chart'/>
+<snippet id='chart-getting-started-csharp-chart'/> 
 
-Where
+Add the following namespaces:
 
-	xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
-Here is an example of how to create a RadCartesianChart with BarSeries in code:
+<snippet id='xmlns-telerikchart'/>
+<snippet id='ns-telerikchart'/>
 
-	var chart = new RadCartesianChart
-	{
-	    HorizontalAxis = new CategoricalAxis(),
-	    VerticalAxis = new NumericalAxis(),
-	    BindingContext = new CategoricalViewModel()
-	};
-	
-	var series = new BarSeries();
-	series.SetBinding(BarSeries.ItemsSourceProperty, new Binding("CategoricalData"));   
-	series.ValueBinding = new PropertyNameDataPointBinding("Value");
-	series.CategoryBinding = new PropertyNameDataPointBinding("Category");
-	
-	chart.Series.Add(series);
-Here is the sample data:
+Lets create a simple data that will be used as binding context:
 
-	public class CategoricalData
-	{
-	    public object Category { get; set; }
-	    public double Value { get; set; }
-	}
+<snippet id='chart-getting-started-viewmodel'/>
 
-	public class CategoricalViewModel
-	{
-	    private static Random random = new Random();
-	    private static string[] categories = new string[] { "Greenings", "Perfecto", "NearBy", "Family", "Fresh" };
-	
-	    public CategoricalViewModel()
-	    {
-	        this.CategoricalData = GetCategoricalData();
-	    }
-	
-	    public ObservableCollection<CategoricalData> CategoricalData { get; set; }
-	
-	    public static ObservableCollection<CategoricalData> GetCategoricalData()
-	    {
-	        var data = new ObservableCollection<CategoricalData>();
-	        for (int i = 0; i < categories.Length; i++)
-	        {
-	            data.Add(new CategoricalData() { Value = random.Next(50, 100), Category = categories[i] });
-	        }
-	
-	        return data;
-	    }
-	}
+And define the business model:
 
+<snippet id='categorical-data-model'/>
 
 And here is the result:
 
 ![Basic BarSeries](images/cartesian-bar-series-basic-example.png)
 
+## BarSeries Palette Mode
+
+The **Palette Mode** property of the BarSeries allows users to change the color of the series using **SeriesPaletteMode** enumeration. The changes of the color can be set on: 
+
+- **Series**: The palette is applied to data point depending on the index of the owning ChartSeries instance. 
+- **DataPoin**: You can apply the palette to the data points depending on the index od each data point. 
+
+The fill of the BarSeries can be defined using the **FillColor** property.
+
+### PaletteMode Example
+
+Here is an example that demonstrates how you can set the PaletteMode property on Series and DataPoint:
+
+<snippet id='chart-customization-palettemode-xaml'>
+<snippet id='chart-customization-palettemode-csharp'>
+
+#### PaletteMode for Series
+
+![Series PaletteMode](images/chart-series-features-palette-mode-series.png)
+
+#### PaletteMode for DataPoint
+
+![DataPoint PaletteMode](images/chart-series-features-palette-mode-datapoint.png)
+
+>important **SDK Browser** application contains an example that shows Palette Mode feature for BarSeries in RadChart cotrol. You can find the application in the **Examples** folder of your local **Telerik UI for Xamarin** installation.
+
 ## See Also
+
 - [Categorical Series Overview]({%slug chart-series-overview %})
 - [Categorical Series Orientation]({%slug chart-series-orientation %})
 - [Cartegorical Series Combine Mode]({%slug chart-series-combine-mode %})

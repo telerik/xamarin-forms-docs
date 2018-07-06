@@ -51,6 +51,26 @@ Here is the result once the data is sorted.
 
 >important A sample example how to create ListView with SortDescriptor can be found in the ListView/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
+## Bindable SortDescriptor
+
+Currently the SortDescriptor of the RadListView supports binding. What's new is that now the users can control it using MVVM.
+
+In order to control the descriptors collections through MVVM: 
+
+1. Create a property of type ObservableCollection<SortDescriptorBase> in your ViewModel which will contain the needed sort descriptors:
+
+<snippet id='listview-features-bindable-sortdescriptor-viewmodel' />
+
+2. Use **OneWayToSource** binding mode to bind that property to the SortDescriptors property of RadListView:
+
+<snippet id='listview-features-bindable-sortdescriptor-xaml' />
+
+Here is the result:
+
+![SortDescriptorMVVM](images/listview-features-bindable-sort.png)
+
+>important An example how to create a ListView with SortDescriptor collection that can be controlled through MVVM can be found in the ListView/Bindable Collections folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
 ## See Also
 
 - [Grouping]({%slug listview-features-grouping%})

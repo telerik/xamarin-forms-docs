@@ -55,11 +55,11 @@ And here is the end result:
 
 ## ListViewItemStyle with Bindable Properties
 
-The  **ItemStyle**, **SelectedItemStyle**, **PressedItemStyle** and **ReorderdItemStyle** properties of type **ListViewitemStyle** can be used as a bindable properties. 
+Additionally, the styling properties of **ListViewItemStyle**  could be used as bindable properties in order to allow you even more flexibility in customizing the visual appearance of RadListiView.
 
 ### Example
 
-Add the following snippet to the RadListView.ItemTemplate property:
+Here is a quick example on how you could bind ListViewItemStyle's properties to corresponding properties of type Color/Location inside the ViewModel:
 
 <snippet id='listview-features-styling-bindable-itemstyle-xaml'/>
 

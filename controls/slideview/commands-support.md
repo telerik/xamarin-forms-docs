@@ -28,7 +28,7 @@ First, create a class that inherits from SlideViewCommand and set its Id propert
 
 Then add this Command to the Commands collection of the RadSlideView instance:	
 
-<snippet id=' slideview-commands-add' />
+<snippet id='slideview-commands-add' />
 
 ### See Also
 

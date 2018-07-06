@@ -13,9 +13,11 @@ This article will show you how you can utilize this property to achieve divergen
 
 ## TemplateSelector Implementation
 
-Let's assume you have a RadSlideView bound to a collection of multiple Product objects and the appearance of each item depends on a specific property of the business object. Below is the Product class definition and a sample ViewModel class:
+Let's assume you have a RadSlideView bound to a collection of multiple Product objects and the appearance of each item depends on a specific property of the business object.
 
 <snippet id='slideview-itemtemplateselector-businessobject' />
+
+Add the following ViewModel class:
 
 <snippet id='slideview-itemtemplateselector-viewmodel' />
 

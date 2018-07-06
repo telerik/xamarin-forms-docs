@@ -45,8 +45,9 @@ The RadListView control supports binding. What's new is that now the users can c
 
 In order to control the FilterDescriptor collection through MVVM: 
 
-1. Add a specific using in your ViewModel class
-2. Use **OneWayToSource** binding
+1. Create a property of type ObservableCollection<FilterDescriptorBase> in your ViewModel which will contain the needed filters;
+    
+2. Use **OneWayToSource** binding mode to bind that property to the FilterDescriptors property of RadListView;
 
 Here is how this looks like:
 

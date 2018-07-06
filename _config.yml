@@ -362,7 +362,6 @@ navigation:
     ## CheckBox
     controls/checkbox:
         title: "CheckBox"
-        ## End CheckBox Sub-Folders
     ## End CheckBox
     ## Chat
     controls/chat:

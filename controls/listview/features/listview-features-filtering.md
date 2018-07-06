@@ -38,7 +38,27 @@ Here is the result after the data is filtered:
 ![Filtering](images/listview-features-filtering.png "Filtering")
 
 >important A sample example how to create ListView with FilterDescriptor can be found in the ListView/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
- 
+
+## Bindable FilterDescriptor
+
+The RadListView control supports binding. What's new is that now the users can control the FilerDescriptor collection through MVVM.
+
+In order to control the FilterDescriptor collection through MVVM: 
+
+1. Create a property of type ObservableCollection<FilterDescriptorBase> in your ViewModel which will contain the needed filters:
+    
+<snippet id='listview-features-bindable-filterdescriptor-viewmodel' /> 
+    
+2. Use **OneWayToSource** binding mode to bind that property to the FilterDescriptors property of RadListView:
+
+<snippet id='listview-features-bindable-filterdescriptor-xaml' />
+
+Here is how this looks like:
+
+![FilterDescriptorsMVVM](images/listview-features-bindable-filter.png)
+
+>important [SDK Samples Browser application]({%slug developer-focused-examples%}) contais an example that shows FilterDescriptor collection in ListView controlled through MVVM. 
+
 ## See Also
 
 - [Grouping]({%slug listview-features-grouping%})

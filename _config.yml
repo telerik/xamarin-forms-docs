@@ -362,13 +362,6 @@ navigation:
     ## CheckBox
     controls/checkbox:
         title: "CheckBox"
-        ## CheckBox Sub-Folders
-    controls/checkbox/getting-started:
-        title: "Getting Started"
-        position: 1
-    controls/checkbox/features:
-        title: "Features"
-        position: 2    
         ## End CheckBox Sub-Folders
     ## End CheckBox
     ## Chat

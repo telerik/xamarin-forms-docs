@@ -1,7 +1,7 @@
 ---
 title: Key Features
 page_title: Key Features
-position: 0
+position: 2
 slug: checkbox-key-features
 ---
 
@@ -33,7 +33,7 @@ RadCheckBox exposes a few useful Color properties for customizing its visual app
 <snippet id='checkbox-color-changing-uncheckedcolor-xaml'/>
 
 Here is the end result with all color changing options:
-![CheckBox Color Changing Options Example](../images/checkbox-colors.png)
+![CheckBox Color Changing Options Example](images/checkbox-colors.png)
 
 ## Stroke Width Customization
 
@@ -79,7 +79,7 @@ There are two types of commands:
 	* **SuppressDefaultCommand**: Gets or sets a value indicating whether the default(built-in) UI command associated with the specified **Id** will be executed.
 
 Here is the end result with stroke width, size and state customization:
-![CheckBox Key Feature Example](../images/checkbox-features.png)
+![CheckBox Key Feature Example](images/checkbox-features.png)
 
 ## See Also
 

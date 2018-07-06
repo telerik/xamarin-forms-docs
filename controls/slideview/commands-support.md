@@ -16,7 +16,7 @@ All the predefined commands within a RadSlideView instance are identified by a m
 * SlidingToIndex
 * SlidedToIndex
 
-For each of the available commands there is a context object of type [CommandId]CommandContext ( namely SlideViewSlidingToIndexCommandContext and SlideViewSlidedToIndexCommandContext) which is passed as a parameter in its Execute method. The context object provides information identical to the corresponding event's args.
+For each of the available commands there is a context object of type [CommandId]CommandContext (namely SlideViewSlidingToIndexCommandContext and SlideViewSlidedToIndexCommandContext) which is passed as a parameter in its Execute method. The context object provides information identical to the corresponding event's args.
 
 ### Example
 

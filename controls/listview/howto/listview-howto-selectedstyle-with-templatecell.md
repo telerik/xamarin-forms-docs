@@ -88,7 +88,6 @@ In XAML below, the following is implemented:
         </DataTemplate>
     </telerikDataControls:RadListView.ItemTemplate>
 </telerikDataControls:RadListView>
-
 ```
 
 Finally, in the SelectionChanged event handler, the IsSelected value is updated:

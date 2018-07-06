@@ -15,9 +15,11 @@ Additionally, you can select different visualization for each item via the **Ite
 
 The following example shows how to populate the ItemsSource with business items and customize their appearance.
 
-First, create a sample MyItem class and a ViewModel containing a collection of MyItem objects:
+First, create a sample MyItem class: 
 
 <snippet id='slideview-itemtemplate-businessobject' />
+
+Add a ViewModel containing a collection of MyItem objects:
 
 <snippet id='slideview-itemtemplate-viewmodel' />
 

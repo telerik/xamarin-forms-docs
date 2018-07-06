@@ -43,7 +43,7 @@ And here is the result:
 The **Palette Mode** property of the BarSeries allows users to change the color of the series using **SeriesPaletteMode** enumeration. The changes of the color can be set on: 
 
 - **Series**: The palette is applied to data point depending on the index of the owning ChartSeries instance. 
-- **DataPoin**: You can apply the palette to the data points depending on the index od each data point. 
+- **DataPoint**: You can apply the palette to the data points depending on the index od each data point. 
 
 The fill of the BarSeries can be defined using the **FillColor** property.
 

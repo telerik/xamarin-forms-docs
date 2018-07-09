@@ -23,7 +23,7 @@ use the following code to create a simple data for the ListView component:
 
 <snippet id='listview-features-programmatic-scrolling'/>
 
-Create a method called **ScrollToItem** and inside this method use __ScrollItemIntoView__, in order to navigate to a concrete item:
+Create a method called **ScrollToItem** and inside this method use __ScrollItemIntoView__ to navigate to a concrete item:
 
 <snippet id='listview-features-programmatic-scrolling-scroll-to-item-method'/>
 	

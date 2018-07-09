@@ -71,6 +71,8 @@ The **GaugeBarIndicator** presents a value range set by the **From** and **To** 
 
 <snippet id='gauge-range-bar-indicator'/>
 
+>important You could find examples with Gauge Indicators inside the Gauge Features as well as Customizations folders of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
 ## See Also
 
 - [Project Wizard]({% slug project-wizard %})

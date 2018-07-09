@@ -50,10 +50,23 @@ Here are listed all supported series grouped by the chart types that can use the
 
 #### Labels customization
 
+RadChart provides the option to display data point labels in the plot area through the **ShowLabels** property of the ChartSeries.
+
+You could customize the series labels text using the properties below:
+
 * **ShowLabels** (bool): Defines whether the series will display labels for each plotted data point.
 * **LabelBinding** (PropertyNameDataPointBinding): Allows the user to bind the series labels to a property of the data point item.
 * **LabelFormat** (string): Sets label format string, e.g. "{0} items".
 * **LabelFormatter** (ILabelFormatter): Allows custom series label formatting. 
+
+Here is a quick example how you could apply **LabelFormat** to a LineSeries:
+
+<snippet id='chart-customization-formatserieslabels-xaml' />
+
+And the result is:
+
+
+>tip You can find detailed information about the supported numeric formats here: [Standard Numeric Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings).
 
 ### Categorical Series Features ###
 

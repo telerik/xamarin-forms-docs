@@ -1,7 +1,7 @@
 ---
 title: Filtering
 page_title: Filtering
-position: 3
+position: 6
 slug: listview-features-filtering
 description: Describing RadListView filtering feature
 tags: filter, radlistview, filterdescriptor

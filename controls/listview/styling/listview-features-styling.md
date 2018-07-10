@@ -1,13 +1,13 @@
 ---
-title: Styling
-page_title: Styling
+title: Item Styles
+page_title: Item Styles
 position: 9
 slug: listview-features-styling
 description: Describing the styling options of the RadListView
 tags: style, selected, hovered, pressed, item, highlighted
 ---
 
-# Styling
+# Item Styles
 
 The RadListView component provides styling mechanism for customizing the look of its items. This mechanism consists of the following properties of type "ListViewItemStyle":
 
@@ -46,10 +46,10 @@ This enumeration contains the following members:
 And here is the end result:
 
 #### Figure 1: ListView with ItemStyle and SelectedItemStyle
-![](images/listview_features_itemstyle.png)
+![](../images/listview_features_itemstyle.png)
 
 #### Figure 2: ListView with ReorderItemStyle
-![](images/listview_features_reorderItemstyle.png)
+![](../images/listview_features_reorderItemstyle.png)
 
 >note You can find a working demo labeled **ItemStyles** in the ListView/Styling folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}). 
 
@@ -66,7 +66,7 @@ Here is a quick example on how you could bind ListViewItemStyle's properties to 
 Here is how the ItemStyle bindable property looks:
 #### Figure 3: ListView with Bindable ItemStyle
 
-![](images/listvirew-features-bindable-itemstyle.png)
+![](../images/listvirew-features-bindable-itemstyle.png)
 
 >important There are examples in the ListView/Styling folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}), how you can use those properties as a bindable. 
 

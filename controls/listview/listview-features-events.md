@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events
-position: 6
+position: 11
 slug: listview-features-events
 description: Describing the events of the RadListView
 tags: events

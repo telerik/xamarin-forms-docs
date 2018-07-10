@@ -1,7 +1,7 @@
 ---
 title: Expand and Collapse Groups
 page_title: Expand and Collapse Groups
-position: 5
+position: 2
 slug: listview-features-expand-collapse
 description: Describing RadListView grouping feature
 tags: group, radlistview, expand, collapse, collapsible

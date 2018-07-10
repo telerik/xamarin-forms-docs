@@ -1,11 +1,11 @@
 ---
-title: Style Selector
-page_title: Style Selector
+title: ItemStyle Selector
+page_title: ItemStyle Selector
 position: 10
 slug: listview-features-style-selector
 ---
 
-# Style Selector
+# ItemStyle Selector
 
 The **RadListView** component exposes conditional styling feature. It allows users to apply a different **Style** to each item depending on a specific condition. 
 
@@ -37,7 +37,7 @@ All that is left is to set this custom style selector to the **ItemStyleSelector
 
 This is how the **RadListView** control will look like when conditional styling is used.
 
-![StyleSelector](images/listview-features-style-selector.png "Style Selector")
+![StyleSelector](../images/listview-features-style-selector.png "Style Selector")
 
 >important **SDK Browser** application contains an example that shows StyleSelector feature in RadListView cotrol. You can find the application in the **Examples** folder of your local **Telerik UI for Xamarin** installation.
 

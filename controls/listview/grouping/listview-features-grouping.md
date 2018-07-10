@@ -1,7 +1,7 @@
 ---
-title: Grouping
+title: Overview
 page_title: Grouping
-position: 1
+position: 0
 slug: listview-features-grouping
 description: Describing RadListView grouping feature
 tags: group, radlistview, groupdescriptor
@@ -41,7 +41,7 @@ All that is left is to set the ViewModel as BindingContext of the control:
 <snippet id='listview-grouping-propertygroupdescriptor-settingviewmodel' />
 
 #### Figure 1: ListView grouped through PropertyGroupDescriptor
-![ListView Grouping](images/listview_grouping_propertydescriptor.png)
+![ListView Grouping](../images/listview_grouping_propertydescriptor.png)
 
 ## DelegateGroupDescriptor 
 
@@ -61,7 +61,7 @@ And you could create and apply a delegate for grouping the items (for example by
 <snippet id='listview-grouping-delegategroupdescriptor-settingdelegate' />
 
 #### Figure 2: ListView grouped through DelegateGroupDescriptor
-![ListView Grouping](images/listview_grouping_delegatedescriptor.png)
+![ListView Grouping](../images/listview_grouping_delegatedescriptor.png)
 
 ## Bindable GroupDescriptor
 
@@ -79,7 +79,7 @@ In order to control the GroupDescriptor collection through MVVM:
 
 Here is how the GroupDescriptor collection looks like through MVVM:
 
-![GroupDescriptorsMVVM](images/listview-features-bindable-group.png)
+![GroupDescriptorsMVVM](../images/listview-features-bindable-group.png)
 
 >important You can find a working demo labeled **Bindable Group Descriptors** in the ListView/Bindable Collections folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}). 
 

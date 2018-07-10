@@ -422,18 +422,24 @@ navigation:
     controls/listview:
         title: "ListView"
         ## ListView Sub-Folders
+    controls/listview/grouping:
+        title: "Grouping"
+        position: 4
     controls/listview/gestures:
         title: "Gestures"
-        position: 4
+        position: 10
     controls/listview/features:
         title: "Features"
         position: 3
     controls/listview/cells:
         title: Cells
-        position: 2            
+        position: 2   
+    controls/listview/styling:
+            title: "Theming and Styles"
+            position: 13          
     controls/listview/howto:
         title: "How To"
-        position: 10
+        position: 15
         ## End ListView Sub-Folders
     ## End ListView
     ## SideDrawer

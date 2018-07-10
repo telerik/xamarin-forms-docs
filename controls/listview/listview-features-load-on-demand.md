@@ -1,7 +1,7 @@
 ---
 title: Load on Demand
 page_title: Load on Demand
-position: 4
+position: 7
 slug: listview-features-load-on-demand
 ---
 

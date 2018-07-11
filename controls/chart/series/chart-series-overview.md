@@ -65,6 +65,7 @@ Here is a quick example how you could apply **LabelFormat** to a LineSeries:
 
 And the result is:
 
+![Series Labels](images/chart-series-labels.png)
 
 >tip You can find detailed information about the supported numeric formats here: [Standard Numeric Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings).
 

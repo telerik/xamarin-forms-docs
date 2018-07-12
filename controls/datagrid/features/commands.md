@@ -15,11 +15,9 @@ RadDataGrid exposes a **Commands** collection that allows you to register custom
  
 ## Command Types
 
-There are two types of commands:
-
 * **DataGridCommand**: All the default commands within RadDataGrid derive from the base DataGridCommand. Think of this command as a UI-related command as it operates over the RadDataGrid instance that owns the command.
 
- * **Id**: Gets or sets the CommandId member this command is associated with.
+ * **Id**: The key that relates a command instance to a particular action/routine. This value is used to associate a command with a known event within a RadDataGrid instance.
  * **Command**: Gets or sets the generic ICommand implementation that may come from the ViewModel.
  * **EnableDefaultCommand**: Gets or sets a value indicating whether the default (built-in) UI command associated with the specified Id will be executed. Default value is True.      
 
@@ -27,19 +25,48 @@ There are two types of commands:
 
 All the predefined commands within a RadDataGrid instance are identified by a member of the **DataGridCommandId** enumeration. This is actually the key that relates a command instance to a particular action/routine within the owning grid. In order to register a custom command within a RadDataGrid instance you may either inherit the **DataGridCommand** class and override its **CanExecute** and **Execute** methods. You need to set the Id property of the new command so that it can be properly associated with the desired action/event. Following are the members of the **DataGridCommandId** enumerations:
 
-* Unknown
-* ColumnHeaderTap
-* GroupHeaderTap
-* GroupHeaderButtonTap
-* CellTap
-* CellDoubleTap
-* GenerateColumn
-* DataBindingComplete
-* BeginEdit
-* CancelEdit
-* CommitEdit
-* ValidateCell
-* LoadMoreData
+The table below shows all commands in the RadDataGrid control and for each of the available commands there is a object which is passed as a *parameter* in its Execute method. 
+
+| Commands | Object type |
+| -------- | ---------- |
+| Unknown | DataGridColumn |
+| ColumnHeaderTap  | DataGridTextColumn |
+| GroupHeaderTap      | GroupHeaderContext |
+| GroupHeaderButtonTap      | GroupHeaderContext |
+| CellTap | DataGridCellInfo |
+| CellDoubleTap | DataGridCellInfo |
+| GenerateColumn | GenerateColumnContext |
+| DataBindingComplete | DataBindingCompleteEventArgs |
+| BeginEdit | EditContext |
+| CancelEdit | EditContext |
+| CommitEdit | EditContext |
+| ValidateCell | ValidateCellContext |
+| LoadMoreData | CommandsViewModel |
+
+## Example
+
+Here is the definition of the DataGrid control:
+
+<snippet id='datagrid-commands-celltap-xaml'/>
+
+And we are going to use the following business object:
+
+<snippet id='datagrid-commands-celltap-businessobject'/>
+
+Here is the simple data used as binding context:
+
+<snippet id='datagrid-commands-celltap-data'/>
+
+Lets handle the CellTap action as a Command. First, create a class that inherits from the DataGridCommand and set its Id property accordingly.
+You would also need to override CanExecute and Execute methods as demostrated in the example below:
+
+<snippet id='datagrid-commands-celltap'/>
+
+Then add this Command to the Commands collection of the RadDataGrid instance:
+
+<snippet id='datagrid-commands-cetttap-add'/>
+
+>important [SDK Samples Browser application]({%slug developer-focused-examples%}) contais an example that shows how to use the CellTap Command.
 
 ## See Also
 

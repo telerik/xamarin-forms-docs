@@ -25,7 +25,7 @@ RadDataGrid exposes a **Commands** collection that allows you to register custom
 
 All the predefined commands within a RadDataGrid instance are identified by a member of the **DataGridCommandId** enumeration. This is actually the key that relates a command instance to a particular action/routine within the owning grid. In order to register a custom command within a RadDataGrid instance you may either inherit the **DataGridCommand** class and override its **CanExecute** and **Execute** methods. You need to set the Id property of the new command so that it can be properly associated with the desired action/event. Following are the members of the **DataGridCommandId** enumerations:
 
-The table below shows all commands in the RadDataGrid control and for each of the available commands there is a object which is passed as a *parameter* in its Execute method. 
+The table below shows all commands in the RadDataGrid control and for each of the available commands there is an object which is passed as a *parameter* in its Execute method. 
 
 | Commands | Object type |
 | -------- | ---------- |

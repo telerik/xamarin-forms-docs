@@ -49,7 +49,7 @@ Here is the definition of the DataGrid control:
 
 <snippet id='datagrid-commands-celltap-xaml'/>
 
-And we are going to use the following business object:
+In the example the following business object is used:
 
 <snippet id='datagrid-commands-celltap-businessobject'/>
 
@@ -57,7 +57,7 @@ Here is the simple data used as binding context:
 
 <snippet id='datagrid-commands-celltap-data'/>
 
-Lets handle the CellTap action as a Command. First, create a class that inherits from the DataGridCommand and set its Id property accordingly.
+Let;s handle the CellTap action as a Command. First, create a class that inherits from the DataGridCommand and set its Id property accordingly.
 You would also need to override CanExecute and Execute methods as demostrated in the example below:
 
 <snippet id='datagrid-commands-celltap'/>

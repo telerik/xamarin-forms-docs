@@ -66,7 +66,7 @@ Then add this Command to the Commands collection of the RadDataGrid instance:
 
 <snippet id='datagrid-commands-cetttap-add'/>
 
->important [SDK Samples Browser application]({%slug developer-focused-examples%}) contais an example that shows how to use the CellTap Command.
+>important [SDK Samples Browser application]({%slug developer-focused-examples%}) contains an example that shows how to use the CellTap Command.
 
 ## See Also
 

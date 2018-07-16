@@ -1,7 +1,7 @@
 ---
-title: Create Circle Button
-page_title: Create Circle Button
-position: 0
+title: Create Toggle-like Button
+page_title: Create Toggle-like Button
+position: 1
 slug: button-howto-create-togglelike-button
 ---
 

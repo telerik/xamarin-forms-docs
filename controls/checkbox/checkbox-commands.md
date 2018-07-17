@@ -27,7 +27,7 @@ Here is an example how to create a **CheckBoxUserCommand**.
 
 Add the RadCheckBox control and bound the MyIsCheckedChangedCommand through the CheckBoxUserCommand predefined command. Use the Id property to map the command to the corresponding action with the control. In the following example we set the Id property to the *IsCheckedChanged* CommandId Enumaration.
 
-<snippet id='checkbox-key-features-ischeckednull-xaml'/>
+<snippet id='checkbox-commands-xaml'/>
 
 and define the checkBox command like this:
 

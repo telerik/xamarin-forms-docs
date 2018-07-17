@@ -63,22 +63,6 @@ The size of the checkbox is controlled through the **Length** property, this sni
 
 <snippet id='checkbox-key-features-length-xaml'/>
 
-## Commands
-
-RadCheckBox exposes a Commands collection that allows you to register custom commands with each control’s instance through the **Commands** property:
-
-* **Commands**: Gets the collection with all the custom commands registered with the CommandService.
-
-### Command Type
-
-There are two types of commands:
-
-* **CheckBoxCommand**: All the default commands within RadCheckBox derive from the base RadCheckBoxCommand. Think of this command as a UI-related command as it operates over the RadCheckBox instance that owns the command.
-* **CheckBoxUserCommand**: This type of command should be used when you would like to modify the behavior of the control on any of the available actions. It exposes the following properties:
-	* **Id**: The key that relates a command instance to a particular action/routine.
-	* **Command**: Gets or sets the generic **ICommand** implementation.
-	* **SuppressDefaultCommand**: Gets or sets a value indicating whether the default(built-in) UI command associated with the specified **Id** will be executed.
-
 Here is the end result with stroke width, size and state customization:
 
 ![CheckBox Key Feature Example](images/checkbox-features.png)

@@ -399,7 +399,7 @@ namespace YourApplication.iOS.Effects
 
 ### Conclusion
 
-The approach is now complete and you're now ready to build and deploy.
+The approach is now complete and you're now ready to build and deploy. You can find a runnable version of this demo [here on GitHub](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/RangeSelectionTest).
 
 
 

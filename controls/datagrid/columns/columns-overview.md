@@ -45,60 +45,12 @@ All types of columns inherit from the **DataGridColumn** class which provides th
 * **CanUserEdit** (bool): Gets or sets a value indicating whether the user can edit the values in this column.
 * **IsVisible** (bool): Gets a value indicating if a specific column should be visualized.
 
-## Example - Adding columns to the RadDataGrid
+## Example
 
-```xml
-<telerikGrid:RadDataGrid x:Name="grid" 
-			 ItemsSource="{Binding Clubs}" 
-			 AutoGenerateColumns="False" 
-			 UserEditMode="Cell">
-	<telerikGrid:RadDataGrid.Columns>
-		<telerikGrid:DataGridTextColumn PropertyName="Name" 
-						HeaderText="Name">
-			<telerikGrid:DataGridTextColumn.CellContentStyle>
-				<telerikGrid:DataGridTextCellStyle TextColor="Green" 
-								   FontSize="15" 
-								   SelectedTextColor="Orange"  />
-			</telerikGrid:DataGridTextColumn.CellContentStyle>
-		</telerikGrid:DataGridTextColumn>
+Here is an example contains all type of columns which the RadDataGrid control provides.
 
-		<telerikGrid:DataGridNumericalColumn PropertyName="StadiumCapacity" 
-						     HeaderText="Stadium Capacity"/>
-
-		<telerikGrid:DataGridBooleanColumn PropertyName="IsChampion" 
-						   HeaderText="Champion?"/>
-
-		<telerikGrid:DataGridDateColumn PropertyName="Established" 
-						HeaderText="Date Established"/>
-
-		<telerikGrid:DataGridPickerColumn PropertyName="Country"
-						  HeaderText="Country"
-						  ItemsSourcePath="Countries"/>
-
-		<telerikGrid:DataGridTemplateColumn HeaderText="Template Column">
-			<telerikGrid:DataGridTemplateColumn.CellContentTemplate>
-				<DataTemplate>
-					<StackLayout>
-						<Grid BackgroundColor="Orange"
-						      Margin="0, 10, 0, 0">
-							<Label Text="{Binding Country}" 
-							       Margin="0, 5, 0, 5"
-							       HorizontalOptions="Center"
-							       VerticalTextAlignment="Center"/>
-						</Grid>
-						<Label Text="Some Custom Text" 
-						       TextColor="DarkGreen"
-						       FontSize="10"/>
-					</StackLayout>
-				</DataTemplate>
-			</telerikGrid:DataGridTemplateColumn.CellContentTemplate>
-		</telerikGrid:DataGridTemplateColumn>
-
-		<telerikGrid:DataGridTimeColumn PropertyName="Established" 
-						HeaderText="Time Column"/>
-	</telerikGrid:RadDataGrid.Columns>
-</telerikGrid:RadDataGrid>
-```
+Use the following snippet to declare a RadDataGrid in XAML: 
+<snippet id='datagrid-columns-xaml'/>
 
 Where the **telerikGrid** namespace is the following:
 
@@ -108,104 +60,16 @@ xmlns:telerikGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.
 
 The **ViewModel** class is declared as following:
 
-```C#
-public class ViewModel
-{
-	private ObservableCollection<Club> clubs;
-
-	public ObservableCollection<Club> Clubs => clubs ?? (clubs = CreateClubs());
-
-	private ObservableCollection<Club> CreateClubs()
-	{
-		return new ObservableCollection<Club>
-		{
-			new Club("Liverpool", new DateTime(1892, 1, 1), 45362, "England"),
-			new Club("Manchester Utd.", new DateTime(1878, 1, 1), 76212, "England") { IsChampion = true },
-			new Club("Chelsea", new DateTime(1905, 1, 1), 42055, "England"),
-			new Club("Barcelona", new DateTime(1899, 1, 1), 99354, "Spain")
-		};
-	}
-}
-```
+<snippet id='datagrid-columns-viewmodel'/>
 	
 And the **Club** custom object:
 
-```C#
-public class Club : INotifyPropertyChanged
-{
-	private string name;
-	private DateTime established;
-	private int stadiumCapacity;
-	private bool isChampion;
-	private string country;
+<snippet id='datagrid-columns-data'/>
 
-	public Club(string name, DateTime established, int stadiumCapacity, string country)
-	{
-		Name = name;
-		Established = established;
-		StadiumCapacity = stadiumCapacity;
-		Country = country;
-	}
+>important An example with DataGrid columns can be found in the DataGrid/Columns folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
-	public string Name
-	{
-		get => name;
-		set
-		{
-			if (value == name) return;
-			name = value;
-			OnPropertyChanged();
-		}
-	}
-	public DateTime Established
-	{
-		get => established;
-		set
-		{
-			if (value == established) return;
-			established = value;
-			OnPropertyChanged();
-		}
-	}
+## See Also
 
-	public int StadiumCapacity
-	{
-		get => stadiumCapacity;
-		set
-		{
-			if (value == stadiumCapacity) return;
-			stadiumCapacity = value;
-			OnPropertyChanged();
-		}
-	}
-	
-	public string Country
-	{
-		get => country;
-		set
-		{
-			country = value;
-			OnPropertyChanged();
-		}
-	}
-
-	public bool IsChampion
-	{
-		get => isChampion;
-		set
-		{
-			isChampion = value;
-			OnPropertyChanged();
-		}
-	}
-	
-	public List<string> Countries => new List<string> { "England", "Spain", "France", "Bulgaria" };
-	
-	public event PropertyChangedEventHandler PropertyChanged;
-
-	protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-	{
-		PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-	}
-}
-```
+-[Picker Column]({%%slug datagrid-columns-picker-column})
+-[Template Column]({%%slug datagrid-columns-template-column})
+-[Text Column]({%%slug datagrid-columns-text-column})

@@ -404,9 +404,9 @@ The approach is now complete and you're now ready to build and deploy. You can f
 
 
 ## See Also
-- [UI for Xamarin (Xamarin.Forms) - RadCalendar Overview](https://docs.telerik.com/devtools/xamarin/controls/calendar/calendar-overview)
+- [UI for Xamarin (Xamarin.Forms) - RadCalendar Overview]({%slug calendar-overview %})
 - [UI for UWP - RadCalendar](https://docs.telerik.com/devtools/universal-windows-platform/controls/radcalendar/overview)
-- [UI for Xamarin.Android - RadCalendarView: Overview](https://docs.telerik.com/devtools/xamarin/nativecontrols/android/calendar/calendar-overview)
+- [UI for Xamarin.Android - RadCalendarView: Overview]({%slug android-calendar-overview %})
 - [UI for Xamarin.iOS - TKCalendar: Overview](https://docs.telerik.com/devtools/xamarin/nativecontrols/ios/calendar/overview)
 - [Xamarin Effects - Introduction](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/effects/introduction)
 - [Xamarin Effects - Creating an Effect](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/effects/creating)

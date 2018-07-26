@@ -13,7 +13,7 @@ slug: autocomplete-events
 	* The sender argument which is of type object, but can be cast to the __RadAutoComplete__ type.
 	* An __SuggestionItemSelectedEventArgs__ object which has a reference to the selected item through its **DataItem** property.
 
-* __FilteredItemsChanged__ - occurs when the end user is holding on a specific item. The __FilteredItemsChanged__ event handler receives two parameters:
+* __FilteredItemsChanged__ - occurs when the FilteredItems collection is updated. The __FilteredItemsChanged__ event handler receives two parameters:
 	* The sender argument which is of type object, but can be cast to the __RadAutoComplete__ type.
 	* An __FilteredItemsChangedEventArgs__ object which has a reference to filtered items collection its **FilteredItems** property.
 
@@ -64,8 +64,6 @@ public partial class MainPage : ContentPage
     }
 }
 ```
-
-
 
 # See Also
 

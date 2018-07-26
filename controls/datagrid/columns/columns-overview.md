@@ -47,7 +47,7 @@ All types of columns inherit from the **DataGridColumn** class which provides th
 
 ## Example
 
-Here is an example contains all type of columns which the RadDataGrid control provides.
+Here is an example containing all types of columns RadDataGrid control provides.
 
 Use the following snippet to declare a RadDataGrid in XAML: 
 <snippet id='datagrid-columns-xaml'/>

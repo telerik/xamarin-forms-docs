@@ -38,6 +38,54 @@ Proceed with defining the component:
 
 >important **SDK Browser** and **QSF** applications contain different examples that show RadBusyIndicator's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
 
+
+## Troubleshooting
+
+The View elements inside the **RadBusyIndicator.Content** are removed from the visual tree when `IsBusy=True`. This can cause issues on some platforms when the content contains a data bound control.
+
+To address these use cases, you can take the following approach:
+
+1. Re-position the RadBusyIndicator on top of the content
+2. Set the `BackgroundColor` with a semi-transparent color
+3. Bind the `IsBusy` and `IsVisible` to the same property
+
+
+#### Example:
+
+Let's use a data bound RadListView as an example
+
+**Before**
+
+```XML
+<primitives:RadBusyIndicator BackgroundColor="#AAFFFFFF"
+                             IsBusy="{Binding IsBusy}">
+    <primitives:RadBusyIndicator.Content>
+        <Grid>
+            <!-- RadListView is within the RadBusyIndicator.Content -->
+            <dataControls:RadListView ItemsSource="{Binding MyItems}" />
+        </Grid>
+    </primitives:RadBusyIndicator.Content>
+</primitives:RadBusyIndicator>
+
+```
+
+**After (*recommended*)**
+
+```XML
+<Grid>
+    <!-- RadListView is the lowest visual element in the Grid's children -->
+    <dataControls:RadListView ItemsSource="{Binding MyItems}" />
+
+    <!-- The RadBusyIndicator is on top of the RadListView -->
+    <primitives:RadBusyIndicator BackgroundColor="#AAFFFFFF"
+                                 IsBusy="{Binding IsBusy}"
+                                 IsVisible="{Binding IsBusy}"/>
+</Grid>
+```
+
+#### Result   
+![BusyIndicator example](../images/busyindicator-troubleshooting-0.png)
+
 ### See Also
 
 - [Project Wizard]({% slug project-wizard %})

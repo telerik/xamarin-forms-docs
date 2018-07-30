@@ -39,10 +39,10 @@ To use **TextFilterDescriptor** you need to add its instance to the **RadDataGri
 
 <snippet id='datagrid-textfilterdescriptor-xaml'/>
 ```XAML
-	  <common:TextFilterDescriptor PropertyName="Country"
-                                             Operator="StartsWith"
-                                             IsCaseSensitive="False" 
-                                             Value="En"/>
+<common:TextFilterDescriptor PropertyName="Country"
+                             Operator="StartsWith"
+                             IsCaseSensitive="False" 
+                             Value="En"/>
 ```
 ### Numerical Filter Descriptor
 
@@ -54,9 +54,9 @@ Represents a Descriptor which filters by property of numerical data type. It exp
 
 <snippet id='datagrid-numericalfilterdecsriptor-xaml'/>
 ```XAML
-	 <common:NumericalFilterDescriptor PropertyName="StadiumCapacity"
-                                                  Operator="IsLessThan"
-                                                  Value="80000"/>
+<common:NumericalFilterDescriptor PropertyName="StadiumCapacity"
+                                  Operator="IsLessThan"
+                                  Value="80000"/>
 ```
 ### DateTime Filter Descriptor
 
@@ -68,9 +68,9 @@ The DateTimeFilterDescriptor is a Descriptor which filters by property of System
 
 <snippet id='datagrid-datetimefilterdescriptor-xaml'/>
 ```XAML	
-	 <common:DateTimeFilterDescriptor PropertyName="Established"
-                                                 Operator="IsLessThan"
-                                                 Value="1900/01/01"/>
+<common:DateTimeFilterDescriptor PropertyName="Established"
+                                 Operator="IsLessThan"
+                                 Value="1900/01/01"/>
 ```
 ### Boolean Filter Descriptor
 
@@ -81,8 +81,8 @@ The BooleanFilterDescriptor is a Descriptor which filters by property of System.
 
 <snippet id='datagrid-booleanfilterdescriptor-xaml'/>
 ```XAML
-	 <common:BooleanFilterDescriptor PropertyName="IsChampion"
-                                                Value="true"/>
+<common:BooleanFilterDescriptor PropertyName="IsChampion"
+                                Value="true"/>
 ```
 ### Composite Filter Descriptor
 
@@ -90,16 +90,16 @@ The CompositeFilterDescriptor represents a special FilterDescriptorBase that sto
 
 <snippet id='datagrid-compositefilterdescriptor-xaml'/>
 ```XAML
-	 <common:CompositeFilterDescriptor Operator="And">
-                        <common:CompositeFilterDescriptor.Descriptors>
-                            <common:NumericalFilterDescriptor PropertyName="StadiumCapacity"
-                                       Operator="IsGreaterThan"
-                                       Value="55000"/>
-                            <common:NumericalFilterDescriptor PropertyName="StadiumCapacity"
-                                       Operator="IsLessThan"
-                                       Value="85000"/>
-                        </common:CompositeFilterDescriptor.Descriptors>
-     </common:CompositeFilterDescriptor>
+<common:CompositeFilterDescriptor Operator="And">
+	<common:CompositeFilterDescriptor.Descriptors>
+		<common:NumericalFilterDescriptor PropertyName="StadiumCapacity"
+                                          Operator="IsGreaterThan"
+                                          Value="55000"/>
+			<common:NumericalFilterDescriptor PropertyName="StadiumCapacity"
+                                              Operator="IsLessThan"
+                                              Value="85000"/>
+	</common:CompositeFilterDescriptor.Descriptors>
+</common:CompositeFilterDescriptor>
 ```
 
 ### Delegate Filter Descriptor
@@ -116,27 +116,27 @@ The **CustomFilter** implementation:
 
 <snippet id='datagrid-delegatefilterdescriptor-csharp'/>
 ```C#
-	class CustomFilter : IFilter
-    {
-        public bool PassesFilter(object item)
+class CustomFilter : IFilter
+{
+	public bool PassesFilter(object item)
+ 	{
+		if ((item as Club).StadiumCapacity > 60000 && (item as Club).StadiumCapacity <85000)
         {
-            if ((item as Club).StadiumCapacity > 60000 && (item as Club).StadiumCapacity <85000)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+			return true;
         }
-    }
+        else
+        {
+			return false;
+        }
+	}
+}
 ```
 
 Adding the **DelegateFilterDescriptor** to the **RadDataGrid**:
 
 <snippet id='datagrid-delegatefilterdescriptor-added'/>
 ```C#
-	 grid.FilterDescriptors.Add(new DelegateFilterDescriptor() { Filter = new CustomFilter()});
+grid.FilterDescriptors.Add(new DelegateFilterDescriptor() { Filter = new CustomFilter()});
 ```
 
 ## Filtering UI

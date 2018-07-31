@@ -7,14 +7,14 @@ slug: datagrid-sorting-overview
 
 # Sorting
 
-**RadDataGrid** has a built-in Sorting and also provides programmatic approach for sorting which allows the user to easily sort the data.
+**RadDataGrid** has a built-in Sorting and also provides programmatic approach for sorting which allows the user to easily order the view of the data the control represents.
 
 ## Programmatic Sorting
 
 **RadDataGrid** provides two ways of programmatic sorting:
 
 * by Property - using a [**PropertySortDescriptor**](#property-sort-descriptor)
-* by custom key - using a [**DelegateSortDescriptor**](#delegate-sort-descriptor)
+* by a Custom Key - using a [**DelegateSortDescriptor**](#delegate-sort-descriptor)
 
 ### Property Sort Descriptor
 
@@ -67,7 +67,7 @@ Here is how the RadDataGrid looks when sorting is applied:
 
 **RadDataGrid** allows sorting through the UI by click/tap on the Column Header using the following property:
 
-* **UserSortMode** : Defines how User Input (column header tap/click) affects the current Sort state of the grid. The available options are: *Auto/Multiple/None/Single*. The default value if the UserSortMode is *Auto*.
+* **UserSortMode** : Defines how user input (column header tap/click) affects the current sort state of the grid. The available options are: *Auto/Multiple/None/Single*. The default value of the UserSortMode is *Auto*.
 
 The following property is used to enable/disable the sorting of a specific column:
 

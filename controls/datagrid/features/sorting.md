@@ -7,7 +7,7 @@ slug: datagrid-sorting-overview
 
 # Sorting
 
-**RadDataGrid** has a built-in Sorting and also provides programmatic approach for sorting which allows the user to easily order the view of the data the control represents.
+**RadDataGrid** provides you with a built-in sorting functionality, which allows the user to easily order the view of the data the control represents. Sorting the control is possible both through the UI and programmatically.
 
 ## Programmatic Sorting
 

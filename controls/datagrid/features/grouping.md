@@ -5,40 +5,41 @@ position: 1
 slug: datagrid-grouping-overview
 ---
 
-# Grouping #
+# Grouping
 
-**RadDataGrid** supports grouping operations either through the UI or programmatically. When grouping through code, you can achieve the functionality by utilizing the control's **GroupDescriptors** collection. 
+**RadDataGrid** supports grouping operations either through the UI - [Grouping UI](#grouping-ui) or [programmatically](#programmatic-grouping). 
 
-#### Figure 1: Grouped RadDataGrid
-![](../images/datagrid_grouping.png)
+## Programmatic Grouping
 
-You can choose one of the following approaches to achieve the grouping:
+Programmatic grouping can be done by adding descriptoprs to the **GroupDescriptors** collection. There are two types of descriptors:
 
-* Add a **PropertyGroupDescriptor**: using a property from the model as a group key.
-* Add a **DelegateGroupDescriptor**: create a custom group key which you can use.
+* [**PropertyGroupDescriptor**](#property-group-descriptor): using a property from the model as a group key.
+* [**DelegateGroupDescriptor**](#delegate-group-descriptor): create a custom group key which you can use.
 
-> All GroupDescriptors are located in the Telerik.XamarinForms.Common.Data namespace:
-> **xmlns:common="clr-namespace:Telerik.XamarinForms.Common.Data;assembly=Telerik.XamarinForms.Common"**
+All GroupDescriptors are located in the Telerik.XamarinForms.Common.Data namespace:
 
-## PropertyGroupDescriptor ##
+```XAML
+xmlns:common="clr-namespace:Telerik.XamarinForms.Common.Data;assembly=Telerik.XamarinForms.Common"
+```
+
+### Property Group Descriptor
 
 The PropertyGroupDescriptor is used to group the data in a DataGrid by property from the class that defines your objects.
 
 To use the PropertyGroupDescriptor you have to set its property PropertyName.
 
-* **PropertyName (string):** Gets or sets the name of the property that is used to retrieve the key to group by.
+* **PropertyName** (string): Gets or sets the name of the property that is used to retrieve the key to group by.
 
 >note You can easily sort the groups in ascending or descending order using the **SortOrder** property.
 
-#### PropertyGroupDescriptor Example
-
 <snippet id='datagrid-propertygroupdescriptor-xaml'/>
+```XAML
+<grid:RadDataGrid.GroupDescriptors>
+	<common:PropertyGroupDescriptor PropertyName="Country"/>
+</grid:RadDataGrid.GroupDescriptors>
+```
 
-	 		<grid:RadDataGrid.GroupDescriptors>
-                <common:PropertyGroupDescriptor PropertyName="Country"/>
-            </grid:RadDataGrid.GroupDescriptors>
-
-## DelegateGroupDescriptor ##
+### Delegate Group Descriptor
 
 The difference between the **DelegateGroupDescriptor** and the **PropertyGroupDescriptor** is that DelegateGroupDescriptor groups data by a custom Key while the PropertyGroupDescriptor groups by a defined Key which is a property from our model.
 
@@ -50,27 +51,45 @@ You have to set the following property of the DelegateGroupDescriptor:
 
 You have to create a class that implements the **IKeyLookup** interface which will return the Key you want to group by. Then you need to add the **DelegateGroupDescriptor** to the RadDataGrid.GroupDescriptors collection and set its **KeyLookUp** property.
 
-#### DelegateGroupDescriptor Example
 
 The Custom **IKeyLookup** implementation
 
 <snippet id='datagrid-delegategroupdescriptor-csharp'/>
-
-	class CustomIKeyLookup : IKeyLookup
+```C#
+class CustomIKeyLookup : IKeyLookup
+{
+	public object GetKey(object instance)
     {
-        public object GetKey(object instance)
-        {
-            return (instance as Club).Country[0];
-        }
+		return (instance as Club).Country[0];
     }
+}
+```
 
 Adding it to the **GroupDescriptors** collection of the **RadDataGrid**:
 
 <snippet id='datagrid-delegategroupdescriptor-csharp'/>
+```C#
+this.grid.GroupDescriptors.Add(new DelegateGroupDescriptor() { KeyLookup = new CustomIKeyLookup() });
+```
 
-	this.grid.GroupDescriptors.Add(new DelegateGroupDescriptor() { KeyLookup = new CustomIKeyLookup() });
+Here is how the RadDataGrid looks when it is grouped:
+
+![](../images/datagrid_grouping.png)
+
+## Grouping UI
+
+The Grouping UI  is enabled by design and it allows user to group the data by column value. The Grouping UI exposes the following property:
+
+* **UserGroupMode**: Defines whether the Grouping UI is enabled/disabled. The available options are *Auto/Enabled/Disabled*. The default value of the UserGroupMode is *Auto*.
+
+The following property is used to enable/disable the grouping of a specific column:
+
+* **CanUserGroup** (bool): Defines a value indicationg whether the user can filter the column by ysing the Grouping UI.
+
+>important A sample Grouping example can be found in the DataGrid/Grouping folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 
-* [DataGrid Filtering]({%slug datagrid-filtering-overview%})
-* [DataGrid Sorting](%slug datagrid-sorting-overview%)
+- [Filtering]({%slug datagrid-filtering-overview%})
+- [Sorting](%slug datagrid-sorting-overview%)
+- [Selection]({%slug datagrid-selection-overview%})

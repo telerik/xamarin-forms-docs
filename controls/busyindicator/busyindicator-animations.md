@@ -1,7 +1,7 @@
 ---
 title: Animations
 page_title: RadBusyIndicator | Animations
-position: 0
+position: 2
 slug: busyindicator-features-animations
 ---
 
@@ -11,7 +11,7 @@ slug: busyindicator-features-animations
 
 The property is an enum called AnimationType and it accepts values named **Animation1** to **Animation10**. Animation1, Animation2, Animation3, etc. to Animation10. **Animation1** is the default one. 
 
-![BusyIndicator animations list](../images/busyindicator-features-animations-0.png) 
+![BusyIndicator animations list](images/busyindicator-features-animations-0.png) 
 
 > The animation will be displayed only when the **IsBusy** property is set to **True**.
 	

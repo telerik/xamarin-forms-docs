@@ -184,9 +184,6 @@ navigation:
     ## DataGrid
     controls/datagrid:
         title: "DataGrid"
-    controls/datagrid/getting-started: 
-        title: "Getting Started"
-        position: 1
     controls/datagrid/columns: 
         title: "Columns"
         position: 2

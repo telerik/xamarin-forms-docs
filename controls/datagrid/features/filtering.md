@@ -5,21 +5,28 @@ position: 2
 slug: datagrid-filtering-overview
 ---
 
-# Filtering #
+# Filtering
 
-**RadDataGrid** supports both programmatic filtering and such applied through the UI. Programmatic filtering is achieved by adding different filter descriptors in the **FilterDescriptor** collection of the control. The following descriptor types are supported:
+**RadDataGrid** supports both [programmatic filtering](#programmatic-filtering) and such applied through the UI - [Filtering UI](#filtering-ui). 
 
-* **TextFilterDescriptor**
-* **NumericalFilterDescriptor**
-* **DelegateFilterDescriptor:**
-* **DateTimeFilterDescriptor**
-* **BooleanFilterDescriptor**
-* **CompositeFilterDescriptor**
+## Programmatic Filtering 
 
-> All FilterDescriptors are located in the Telerik.XamarinForms.Common.Data namespace:
-> **xmlns:common="clr-namespace:Telerik.XamarinForms.Common.Data;assembly=Telerik.XamarinForms.Common"**
+Programmatic filtering is achieved by adding different filter descriptors in the **FilterDescriptor** collection of the control. The following descriptor types are supported:
 
-## TextFilterDescriptor
+* [**TextFilterDescriptor**](#text-filter-descriptor)
+* [**NumericalFilterDescriptor**](#numerical-filter-descriptor)
+* [**DateTimeFilterDescriptor**](#datetime-filter-descriptor)
+* [**BooleanFilterDescriptor**](#boolean-filter-descriptor)
+* [**CompositeFilterDescriptor**](#composite-filter-descriptor)
+* [**DelegateFilterDescriptor**](#delegate-filter-descriptor)
+
+All FilterDescriptors are located in the Telerik.XamarinForms.Common.Data namespace:
+
+```XAML
+xmlns:common="clr-namespace:Telerik.XamarinForms.Common.Data;assembly=Telerik.XamarinForms.Common"
+```
+
+### Text Filter Descriptor
 
 Properties:
 
@@ -30,15 +37,14 @@ Properties:
 
 To use **TextFilterDescriptor** you need to add its instance to the **RadDataGrid.FilterDescriptors** collection and to set its **PropertyName** property to associate it with the property from your custom objects. Then through the **Operator** and **Value** properties you need to set the filter condition and the value to compare. You can also take advantage of the **IsCaseSensitive** property to determine if the text comparisons will be case-sensitive or not.
 
-#### TextFilterDescriptor Example
 <snippet id='datagrid-textfilterdescriptor-xaml'/>
-
-	  <common:TextFilterDescriptor PropertyName="Country"
-                                             Operator="StartsWith"
-                                             IsCaseSensitive="False" 
-                                             Value="En"/>
-
-## NumericalFilterDescriptor
+```XAML
+<common:TextFilterDescriptor PropertyName="Country"
+                             Operator="StartsWith"
+                             IsCaseSensitive="False" 
+                             Value="En"/>
+```
+### Numerical Filter Descriptor
 
 Represents a Descriptor which filters by property of numerical data type. It exposes the following properties.
 
@@ -46,14 +52,13 @@ Represents a Descriptor which filters by property of numerical data type. It exp
 * **Value**: Gets or sets the value used in the comparisons. This is the right operand of the comparison.
 * **Operator**: Gets or sets the NumericalOperator value that defines the boolean logc behind the left and right operand comparison.
 
-#### NumericalFilterDescriptor Example
 <snippet id='datagrid-numericalfilterdecsriptor-xaml'/>
-
-	 <common:NumericalFilterDescriptor PropertyName="StadiumCapacity"
-                                                  Operator="IsLessThan"
-                                                  Value="80000"/>
-
-## DateTimeFilterDescriptor
+```XAML
+<common:NumericalFilterDescriptor PropertyName="StadiumCapacity"
+                                  Operator="IsLessThan"
+                                  Value="80000"/>
+```
+### DateTime Filter Descriptor
 
 The DateTimeFilterDescriptor is a Descriptor which filters by property of System.DateTime data type. It exposes the following properties:
 
@@ -61,47 +66,43 @@ The DateTimeFilterDescriptor is a Descriptor which filters by property of System
 * **Value**: Gets or sets the value used in the comparisons. This is the right operand of the comparison.
 * **Operator**: Gets or sets the NumericalOperator value that defines the boolean logic behind the left and right operand comparison.
 
-#### DateTimeFilterDescriptor Example
 <snippet id='datagrid-datetimefilterdescriptor-xaml'/>
-	
-	 <common:DateTimeFilterDescriptor PropertyName="Established"
-                                                 Operator="IsLessThan"
-                                                 Value="1900/01/01"/>
-
-## BooleanFilterDescriptor
+```XAML	
+<common:DateTimeFilterDescriptor PropertyName="Established"
+                                 Operator="IsLessThan"
+                                 Value="1900/01/01"/>
+```
+### Boolean Filter Descriptor
 
 The BooleanFilterDescriptor is a Descriptor which filters by property of System.Boolean data type. It exposes the following properties:
 
 * **PropertyName**: Gets or sets the name of the property that is used to retrieve the value to filter by.
 * **Value**: Gets or sets the value used in the comparisons. This is the right operand of the comparison.
- 
-#### BooleanFilterDescriptor Example
 
 <snippet id='datagrid-booleanfilterdescriptor-xaml'/>
-
-	 <common:BooleanFilterDescriptor PropertyName="IsChampion"
-                                                Value="true"/>
-
-## CompositeFilterDescriptor
+```XAML
+<common:BooleanFilterDescriptor PropertyName="IsChampion"
+                                Value="true"/>
+```
+### Composite Filter Descriptor
 
 The CompositeFilterDescriptor represents a special FilterDescriptorBase that stores an arbitrary number of other Descriptors instances. The logical AND or OR operator is applied upon all composed filters to determine the result of the PassesFilter routine.
 
-#### CompositeFilterDescriptor Example
-
 <snippet id='datagrid-compositefilterdescriptor-xaml'/>
+```XAML
+<common:CompositeFilterDescriptor Operator="And">
+	<common:CompositeFilterDescriptor.Descriptors>
+		<common:NumericalFilterDescriptor PropertyName="StadiumCapacity"
+                                          Operator="IsGreaterThan"
+                                          Value="55000"/>
+			<common:NumericalFilterDescriptor PropertyName="StadiumCapacity"
+                                              Operator="IsLessThan"
+                                              Value="85000"/>
+	</common:CompositeFilterDescriptor.Descriptors>
+</common:CompositeFilterDescriptor>
+```
 
-	 <common:CompositeFilterDescriptor Operator="And">
-                        <common:CompositeFilterDescriptor.Descriptors>
-                            <common:NumericalFilterDescriptor PropertyName="StadiumCapacity"
-                                       Operator="IsGreaterThan"
-                                       Value="55000"/>
-                            <common:NumericalFilterDescriptor PropertyName="StadiumCapacity"
-                                       Operator="IsLessThan"
-                                       Value="85000"/>
-                        </common:CompositeFilterDescriptor.Descriptors>
-     </common:CompositeFilterDescriptor>
-
-## DelegateFilterDescriptor
+### Delegate Filter Descriptor
 
 The DelegateFilterDescriptor exposes the following property:
 
@@ -111,35 +112,47 @@ To use a **DelegateFilterDescriptor** you need to create a class that implements
 
 Then you need to add a DelegateFilterDescriptor to the RadDataGrid.FilterDescriptors collection and set its Filter property.
 
-#### DelegateFilterDescriptor Example
-
 The **CustomFilter** implementation:
 
 <snippet id='datagrid-delegatefilterdescriptor-csharp'/>
-
-	class CustomFilter : IFilter
-    {
-        public bool PassesFilter(object item)
+```C#
+class CustomFilter : IFilter
+{
+	public bool PassesFilter(object item)
+ 	{
+		if ((item as Club).StadiumCapacity > 60000 && (item as Club).StadiumCapacity <85000)
         {
-            if ((item as Club).StadiumCapacity > 60000 && (item as Club).StadiumCapacity <85000)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+			return true;
         }
-    }
+        else
+        {
+			return false;
+        }
+	}
+}
+```
 
 Adding the **DelegateFilterDescriptor** to the **RadDataGrid**:
 
 <snippet id='datagrid-delegatefilterdescriptor-added'/>
+```C#
+grid.FilterDescriptors.Add(new DelegateFilterDescriptor() { Filter = new CustomFilter()});
+```
 
-	 grid.FilterDescriptors.Add(new DelegateFilterDescriptor() { Filter = new CustomFilter()});
+## Filtering UI
+
+The filtering component(Filtering UI) appears when clicking the options icon on each column's header and it allows the user to easily filter data by column values. The Filtering UI exposes the following property:
+
+* **UserFilterMode**: Defines whether the Filtering UI is enabled/disabled. The available options are *Auto/Enabled/Disabled*. The default value of the UserFilterMode is *Auto*.
+
+The following property is used to enable/disable the filtering of a specific column:
+
+* **CanUserFilter** (bool): Defines a value indicating whether the user can filter the column by using the Filtering UI. 
+
+The appearance of the Filtering UI can be customized by inheriting the **DataGridFilterControlBase** class. For more details on this check [How to customize Filtering UI]({%slug %}) article.
 
 ## See Also
 
-* [DataGrid Grouping]({%slug datagrid-grouping-overview%})
-* [DataGrid Sorting](%slug datagrid-sorting-overview%)
-
+- [Grouping]({%slug datagrid-grouping-overview%})
+- [Sorting](%slug datagrid-sorting-overview%)
+- [Selection]({%slug datagrid-selection-overview%})

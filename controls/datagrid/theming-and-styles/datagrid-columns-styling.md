@@ -25,8 +25,8 @@ To style the RadDataGridColumnHeader use the following properties:
 
 * **TextColor** and **BackgroundColor**: Define the colors of the text part/background respectively.
 * **BorderColor** and **BorderThickness**: Define the style of the border around the column header.
-* **Font Options** (TextFontAttributes, TextFontFamily, TextFontSize)*: Define the font options to the text part of the ColumnHeader.
-* **Text Alignment** (TextMargin, HorizontalTextAlignment, VerticalTextAlignment):  Define the positioning for the text part of the ColumnHeader.
+* **Font Options** (TextFontAttributes, TextFontFamily, TextFontSize): Define the font options to the text part of the ColumnHeader.
+* **Text Alignment** (TextMargin, HorizontalTextAlignment, VerticalTextAlignment): Define the positioning for the text part of the ColumnHeader.
 
 ### FilterIndicator Styling
 
@@ -50,7 +50,7 @@ The **Indicator** is shown once the RadDataGridColumnHeader is sorted (tapped/cl
 * **SortIndicatorAscendingText**: Defines the text of the sort indicator when the sorting is ascending.
 * **SortIndicatorDescendingText**: Defines the text of the sort indicator when the sorting is descending.
 
->note By default, the indicator is using a symbol font family. To use a text instead of symbol set a font family to the **IndicatorFontFamily** property and set a text to the **IndicatorText** property. For more details on the sorting feature check [here]({%slug datagrid-sorting-overview%}).
+>note By default, the indicator is represented by a string symbol that could be changed using **IndicatorText** and **IndicatorFontFamily** properties. For more details on the sorting feature check [here]({%slug datagrid-sorting-overview%}).
 
 ### OptionsButton Styling
 
@@ -61,7 +61,9 @@ The **OptionsButton** of the RadDataGridColumnHeader refers to the FilteringUI o
 * **OptionsButtonText**: Defines the text of the ColumnHeaders options button. 
 * **OptionsButtonTextColor**: Defines the text color of the ColumnHeaders options button. 
 
->note In order to make the ColumnHeader OptionsButton hidden, set the **OptionsButtonTextColor** to transparent.  Also, please note that by default the options button is using symbol font family. To show text instead of symbol, set a font family to the **OptionsButtonFontFamily** property and set a text to the **OptionsButtonText** property.
+>tip In order to make the ColumnHeader OptionsButton hidden, set the **OptionsButtonTextColor** to transparent. 
+
+>note By default the options button is represented by a string symbol that could be changed through **OptionsButtonText** and **OptionsButtonFontFamily** properties.
 
 An example how to set the HeaderStyle property is shown below:
 

@@ -196,9 +196,12 @@ navigation:
     controls/datagrid/features: 
         title: "Features"
         position: 3
+    controls/datagrid/theming-and-styles: 
+        title: "Theming and Styles"
+        position: 4
     controls/datagrid/howto: 
         title: "How To"
-        position: 4
+        position: 5
     ## End DataGrid
     
     ## Entry

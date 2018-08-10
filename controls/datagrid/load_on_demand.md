@@ -1,7 +1,7 @@
 ---
 title: Load On Demand
 page_title: Load on Demand
-position: 6
+position: 8
 slug: datagrid-features-loadondemand
 ---
 
@@ -70,7 +70,7 @@ And how you set it to the LoadOnDemandAutoTemplate property of the RadDataGrid:
 <snippet id='datagrid-setting-loadondemandautotemplate-xaml'/>
 
 #### Figure 1: The appearance of the row after setting the LoadOnDemandAutoTemplate
-![](../images/datagrid-autotemplate.png)
+![](images/datagrid-autotemplate.png)
 
 ### LoadOnDemandRowStyle 
 This property can be used to style the appearance of the row that contains the "Load More" button when the **LoadOnDemandMode** is **Manual**.
@@ -82,7 +82,7 @@ And you should set it to the LoadOnDemandRowStyle property of the RadDataGrid:
 <snippet id='datagrid-setting-loadondemandrowstyle-xaml'/>
 
 #### Figure 2: The appearance of the row after setting the LoadOnDemandRowStyle
-![](../images/datagrid-rowstyle.png)
+![](images/datagrid-rowstyle.png)
 
 ### LoadOnDemandRowTemplate 
 
@@ -95,7 +95,7 @@ And how you set the property:
 <snippet id='datagrid-setting-loadondemandrowtemplate-xaml'/>
 
 #### Figure 3: The appearance of the row after setting the LoadOnDemandRowTemplate
-![](../images/datagrid-rowtemplate.png)
+![](images/datagrid-rowtemplate.png)
 
 
 ## See Also

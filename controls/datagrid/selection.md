@@ -1,7 +1,7 @@
 ---
 title: Selection
 page_title: Selection
-position: 4
+position: 3
 slug: datagrid-selection-overview
 ---
 

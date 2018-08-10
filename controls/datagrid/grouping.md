@@ -1,7 +1,7 @@
 ---
 title: Grouping
 page_title: Grouping Overview
-position: 1
+position: 4
 slug: datagrid-grouping-overview
 ---
 
@@ -74,7 +74,7 @@ this.grid.GroupDescriptors.Add(new DelegateGroupDescriptor() { KeyLookup = new C
 
 Here is how the RadDataGrid looks when it is grouped:
 
-![](../images/datagrid_grouping.png)
+![](images/datagrid_grouping.png)
 
 ## Grouping UI
 

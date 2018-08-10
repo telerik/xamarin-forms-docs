@@ -189,16 +189,13 @@ navigation:
         position: 2
     controls/datagrid/columns/column-types: 
         title: "Column Types"
-        position: 1
-    controls/datagrid/features: 
-        title: "Features"
-        position: 3
+        position: 1    
     controls/datagrid/theming-and-styles: 
         title: "Theming and Styles"
-        position: 4
+        position: 12
     controls/datagrid/howto: 
         title: "How To"
-        position: 5
+        position: 13
     ## End DataGrid
     
     ## Entry

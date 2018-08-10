@@ -74,7 +74,7 @@ Once you have activated the Text Analytics service, you can proceed with creatin
 
 You can now add the **Microsoft.Azure.CognitiveServices.Language.TextAnalytics** NuGet package which provides access to the Microsoft Cognitive Services Language APIs.
 
-![Add the Microsoft.Azure.CognitiveServices.Language NuGet Package](images/text-analytics-nuget.png)
+![Add the Microsoft.Azure.CognitiveServices.Language NuGet Package](images/text-analytics-nuget-01.png)
 
 >note At the time of writing this article, the package is in preview, be sure to check "Include prerelease" to get a search result.
 

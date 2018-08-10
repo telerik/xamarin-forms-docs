@@ -11,15 +11,33 @@ slug: sideview-customize-the-control
 
 ### Customizing the indicators
 
-The indicators are the little ellipses displayed under the selected view. The control allows you to easily change their color and size. You can do that via the following properties:
+The indicators are the little ellipses displayed under the selected view used for switching between the views. RadSlideView provides various options for customzing the look of the indicators via the following properties:
 
 - **ShowIndicators**: This property sets the visibility of the indicators. You can hide them by setting it to False.
+
+- **IndicatorText**: Indicators are represents by a string symbol that could be changed through IndicatorText property;
+
+- **IndicatorFontSize**: Defines the indicator text font size of all indicators except the selected one;
+
+- **SelectedIndicatorFontSize**: Sets the indicator text font size of the selected indicator;
+
+- **IndicatorFontFamily**: Specified the indicator text FontFamily of the indicators except the selected one;
+
+- **SelectedIndicatorFontFamily**: Sets the indicator text FontFamily of the selected indicator;
 
 - **IndicatorColor**: This property sets the color of the indicators except the selected one.
 
 - **SelectedIndicatorColor**: This property sets the color of the selected indicator.
 
 - **IndicatorsSpacing**: This property sets the spacing between the indicators.
+
+Here is a quick example on how to customize the indicators:
+
+<snippet id='slideview-custom-indicators-xaml' />
+
+And the result:
+
+![SlideView Indicators](images/slideview-custom-indicators.png)
 
 ### Customizing the slide buttons
 

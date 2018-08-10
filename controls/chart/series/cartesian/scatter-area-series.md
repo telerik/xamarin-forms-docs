@@ -24,7 +24,7 @@ Here is an example of how to create a basic RadCartesianChart with ScatterAreaSe
 
 	<telerikChart:RadCartesianChart>
 	  <telerikChart:RadCartesianChart.BindingContext>
-	    <viewMoedls:ScatterViewModel/>
+	    <viewModels:ScatterViewModel/>
 	  </telerikChart:RadCartesianChart.BindingContext>
 	  <telerikChart:RadCartesianChart.HorizontalAxis>
 	    <telerikChart:NumericalAxis/>

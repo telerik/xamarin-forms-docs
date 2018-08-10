@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events
-position: 1
+position: 6
 slug: slideview-events
 ---
 

@@ -21,6 +21,8 @@ module Jekyll
                 end
 
                 url = page.url.sub('/', '')
+				
+				next if url.include? "knowledge-base/"
 
                 segments = url.split('/')
 

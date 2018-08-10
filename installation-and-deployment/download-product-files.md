@@ -39,7 +39,8 @@ Below you could find a list of the available files:
 ### Installation
 
 * Telerik_UI_for_Xamarin_[version]_[license].zip  - contains binaries, VSExtensions and examples used for manual installation.
-* Telerik_UI_for_Xamarin_[version]_[license].msi - runnable msi file used for automatic installation.
+* Telerik_UI_for_Xamarin_[version]_[license].msi - runnable msi file used for automatic installation (for use on PC).
+* Telerik_UI_for_Xamarin_[version]_[license].pkg - runnable pkg file used for automatic installation (for use on Mac).
 
 ### Other Setup Files
 

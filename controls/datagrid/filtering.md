@@ -1,7 +1,7 @@
 ---
 title: Filtering
 page_title: Filtering
-position: 2
+position: 5
 slug: datagrid-filtering-overview
 ---
 

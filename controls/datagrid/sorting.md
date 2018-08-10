@@ -1,7 +1,7 @@
 ---
 title: Sorting
 page_title: Sorting Overview
-position: 3
+position: 6
 slug: datagrid-sorting-overview
 ---
 
@@ -61,7 +61,7 @@ this.grid.SortDescriptors.Add(new DelegateSortDescriptor() { KeyLookup = new Cus
 
 Here is how the RadDataGrid looks when sorting is applied:
 
-![](../images/datagrid_sorting.png)
+![](images/datagrid_sorting.png)
 
 ## Sorting through the UI
 

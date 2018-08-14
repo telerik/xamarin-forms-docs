@@ -1,7 +1,7 @@
 ---
 title: Navigation and View Mode
 page_title: Navigation and View Mode
-position: 1
+position: 3
 slug: calendar-features-navigation-and-view-mode
 ---
 

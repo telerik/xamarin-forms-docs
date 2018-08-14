@@ -300,12 +300,6 @@ navigation:
     controls/calendar:
         title: "Calendar"
         ## Calendar Sub-Folders
-    controls/calendar/getting-started:
-        title: "Getting Started"
-        position: 2
-    controls/calendar/features:
-        title: "Features"
-        position: 5
     controls/calendar/styling:
         title: "Styling"
         position: 6

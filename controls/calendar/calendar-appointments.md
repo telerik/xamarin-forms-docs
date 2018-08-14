@@ -1,7 +1,7 @@
 ---
 title: Appointments
 page_title: Appointments
-position: 3
+position: 5
 slug: calendar-appointments
 ---
 

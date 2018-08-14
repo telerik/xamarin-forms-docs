@@ -56,7 +56,7 @@ You could customize the series labels text using the properties below:
 
 * **ShowLabels** (bool): Defines whether the series will display labels for each plotted data point.
 * **LabelBinding** (PropertyNameDataPointBinding): Allows the user to bind the series labels to a property of the data point item.
-* **LabelFormat** (string): Sets label format string, e.g. "{0} items".
+* **LabelFormat** (string): Sets label format string such as `"N"`, `"P2"`.
 * **LabelFormatter** (ILabelFormatter): Allows custom series label formatting. 
 
 Here is a quick example how you could apply **LabelFormat** to a LineSeries:

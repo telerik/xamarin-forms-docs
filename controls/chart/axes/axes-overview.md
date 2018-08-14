@@ -30,9 +30,9 @@ You can customize the labels orientation and style with the following properties
 - **LabelFontSize**: Specifies the font size of the labels.
 - **LabelTextColor**: Specifies the color of the labels.
 
-#### Example
- 
-	<telerikChart:CategoricalAxis LabelFitMode="Rotate" LabelFontSize="25" LabelTextColor="#FFCC88CC"/>
+```XAML 
+<telerikChart:CategoricalAxis LabelFitMode="Rotate" LabelFontSize="25" LabelTextColor="#FFCC88CC"/>
+```
 	
 ### Labels format
 
@@ -44,11 +44,31 @@ You can customize the labels text with the following properties:
   - CategoricalAxis: `"{0} items"`, `"{0:N}"`
 - **LabelFormatter**: Specifies a custom formatter that implements the **ILabelFormatter** interface to apply a custom rule for setting each label text.
 
-#### LabelFormatter Example
+#### Label Formats Example
+
+Here is a quick snippet how you can set **LabelFormat** to a NumericalAxis:
+
+```XAML
+<telerikChart:NumericalAxis LabelFormat="C"
+							MajorStep="0.5"
+							Minimum="-1"
+							Maximum="1" />
+```
 
 The **LabelFormatterBase<T>** class is a base implementation of the **ILabelFormatter** interface that could be used in the most common scenarios. Below is an example of a label formatter for DateTimeContinuousAxis.
 
 <snippet id='chart-customization-format-axis-labels-label-formatter'/>
+
+And you could apply it like this:
+
+```XAML
+<telerikChart:DateTimeContinuousAxis LabelFitMode="Rotate"
+                                    MajorStepUnit="Day">
+    <telerikChart:DateTimeContinuousAxis.LabelFormatter>
+        <local:DateLabelFormatter />
+    </telerikChart:DateTimeContinuousAxis.LabelFormatter>
+</telerikChart:DateTimeContinuousAxis>
+```
 
 ### Styling the axis line and ticks
 

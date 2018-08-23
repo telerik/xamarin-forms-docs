@@ -1,34 +1,64 @@
 ---
 title: Getting Started
 page_title: Getting Started
-position: 0
+position: 1
 slug: treeview-getting-started
 ---
 
 # Getting Started
 
-This example will guide you through the steps needed to add a basic **RadTreeView** control in your application.
+This article will guide you through the steps needed to add a basic **RadTreeView** control in your application.
 
->Before you proceed, please, it might be useful to take a look at these articles and follow the instructions to set up your app:
+* [Setting up the app](#1-setting-up-the-app)
+* [Adding the required Telerik references](#2-adding-the-required-telerik-references)
+* [Adding RadDataGrid control](#3-adding-radtreeview-control)
 
->- [Setup on Windows]({%slug getting-started-windows%})
->- [Setup on Mac]({%slug getting-started-mac%})
->- [Required Telerik Assemblies]({%slug treeview-required-assemblies %})
+## 1. Setting up the app
 
-## Example
+Take a look at these articles and follow the instructions to setup your app:
 
-Once your application is created, you are ready to add a **RadTreeView** control.
+- [Setup app with Telerik UI for Xamarin on Windows]({%slug getting-started-windows%})
+- [Setup app with Telerik UI for Xamarin on Mac]({%slug getting-started-mac%})
 
-The simplest and fastest way to include the control is by simply defining it like this in XAML:
+## 2. Adding the required Telerik references
 
-	<dataControls:RadTreeView x:Name="tv" ItemsSource="{Binding SourceCollection}"/>
+You have two options:
 
-You have to add the following namespaces:
+* Add the Telerik UI for Xamarin Nuget packages following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
 
-	xmlns:dataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+* Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadTreeView** component:
+
+| Platform | Assemblies |
+| -------- | ---------- |
+| Portable/Standard | Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.DataControls.dll <br/> Telerik.XamarinForms.Primitives.dll|
+| Android  | Telerik.Xamarin.Android.Common.dll <br/> Telerik.Xamarin.Android.Data.dll <br/> Telerik.Xamarin.Android.Input.dll <br/> Telerik.Xamarin.Android.List.dll <br/> Telerik.Xamarin.Android.Primitives.dll <br/> Telerik.XamarinForms.Primitives.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.DataControls.dll |
+| iOS      | Telerik.Xamarin.iOS.dll  <br/> Telerik.XamarinForms.Primitives.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.DataControls.dll |
+| UWP      | Telerik.Core.dll <br/> Telerik.Data.dll <br/> Telerik.UI.Xaml.Controls.Data.UWP.dll <br/> Telerik.UI.Xaml.Input.UWP.dll <br/> Telerik.UI.Xaml.Primitives.UWP.dll <br/> Telerik.XamarinForms.Common.dll <br/> Telerik.XamarinForms.DataControls.dll <br/> Telerik.XamarinForms.Primitives.dll|
+
+## 3. Adding RadTreeView control
+
+You could use one of the following approaches:
+
+#### Drag the control from the Toolbox. 
+
+Take a look at the following topics on how to use the toolbox:
+
+* [Telerik UI for Xamarin Toolbox on Windows]({%slug telerik-xamarin-toolbox%})
+* [Telerik UI for Xamarin Toolbox on Mac]({%slug telerik-xamarin-toolbox-mac%})	
+
+#### Create the control definition in XAML:
+
+<dataControls:RadTreeView x:Name="tv" ItemsSource="{Binding SourceCollection}"/>
+
+In addition to this, you need to add the following namespace:
+
+```XAML
+xmlns:dataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+```
 
 As you can notice, the **ItemsSource** property of the control needs to be set. The collection we have is representing a hierarchical view and this is the reason for using the RadTreeView control for this setup. Here is how a single item from the collection is created:
 
+```C#
             this.SourceCollection.Add(new Item()
             {
                 Name = "Item 1",
@@ -59,13 +89,14 @@ As you can notice, the **ItemsSource** property of the control needs to be set. 
                         }
                     }
             });
+```
 
 An important step for the control to load its items correctly is to set its **HierarchyAdapter** property:
-  
-	this.tv.HierarchyAdapter = new TreeViewDemoAdapter();
-
+```C# 
+this.tv.HierarchyAdapter = new TreeViewDemoAdapter();
+```
 The custom hierarchy adapter should implement the **Telerik.XamarinForms.Common.IHierarchyAdapter** interface. Here is how the **TreeViewDemoAdapter** class is defined:
-
+```C#
 	public class TreeViewDemoAdapter : IHierarchyAdapter
     {
         public object GetItemAt(object item, int index)
@@ -78,9 +109,9 @@ The custom hierarchy adapter should implement the **Telerik.XamarinForms.Common.
             return (item as Item).Children ?? Enumerable.Empty<object>();
         }
     } 
-
+```
 Where the Item class is defined as:
-
+```C#
     public class Item : INotifyPropertyChanged
     {
         string name;
@@ -121,17 +152,17 @@ Where the Item class is defined as:
             return this.Name;
         }
     }
-
+```
 Here is the appearance of the **RadTreeView** control once the upper steps have been accomplished:
 
-![getting started treeview](../images/getting_started_treeview.png)
+![getting started treeview](images/getting_started_treeview.png)
 
 >important You can check a runnable demo in the **Features** section of the **RadTreeView** component in the **SDK Samples Browser application**(can be found in the Examples folder of your local *Telerik UI for Xamarin* installation)
 
 
 ## See Also
 
-* [Commands]({%slug treeview-commands%})
-* [Expand/Collapse]({%slug treeview-expand-collapse-api%})
-* [CheckBoxes]({%slug treeview-checkboxes-support%})
-* [Theming]({%slug treeview-theming%})
+- [Commands]({%slug treeview-commands%})
+- [Expand/Collapse]({%slug treeview-expand-collapse-api%})
+- [CheckBoxes]({%slug treeview-checkboxes-support%})
+- [Theming]({%slug treeview-theming%})

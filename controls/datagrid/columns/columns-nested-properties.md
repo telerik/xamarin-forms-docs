@@ -50,6 +50,6 @@ Here is how tha DataGrid looks:
 
 ## See Also
 
--[Picker Column]({%slug datagrid-columns-picker-column %})
--[Template Column]({%slug datagrid-columns-template-column %})
--[Text Column]({%slug datagrid-columns-text-column %})
+- [Picker Column]({%slug datagrid-columns-picker-column %})
+- [Template Column]({%slug datagrid-columns-template-column %})
+- [Text Column]({%slug datagrid-columns-text-column %})

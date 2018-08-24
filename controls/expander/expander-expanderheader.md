@@ -17,7 +17,7 @@ The indicator is the little triangle that is rotated according to whether the Ex
 * **IndicatorFontFamily**: Specifies the indicator text FontFamily;
 * **IndicatorFontSize**: Defines the indicator text font size;
 * **IndicatorColor**: This property sets the color of the indicator;
-* **IndicatorLocation**: This property is of type *ExpanderIndicatorLocation* and is used to place the indicator to the left or to the right inside the Header;
+* **IndicatorLocation**: This property is of type *ExpandCollapseIndicatorLocation* and is used to place the indicator to the left or to the right inside the Header;
 * **IndicatorAnimationDuration**: Specifies the duration of the rotation animation of the indicator;
 * **IndicatorAnimationEasing**: Specifies the easing of the rotation animation of the indicator;
 * **IndicatorMargin**: This property is of type *Thickness* and sets the margin applied to the indicator;

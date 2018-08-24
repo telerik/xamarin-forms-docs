@@ -17,7 +17,7 @@ You could use **IsExpanded** Boolean property to switch the current state of the
 
 ## Expander Header
 
-You could either apply **HeaderText** property or use the **ExpanderHeader** content control which provides a set of useful properties for customizing the way the header looks. For more details refer to ExpanderHeader control topic.
+You could either apply **HeaderText** property or use the **ExpanderHeader** content control which provides a set of useful properties for customizing the way the header looks. For more details refer to [ExpanderHeader control]({% slug expander-expanderheader%}) topic.
 
 Additionally, you could place the Header at the top or at the bottom of the expandable container through **HeaderLocation** property of type *ExpanderHeaderLocation*. The next snippet shows how the HeaderLocation could be set to “Bottom”:
 
@@ -25,7 +25,7 @@ Additionally, you could place the Header at the top or at the bottom of the expa
 
 And here is how it looks:
 
-![RadExpander HeaderLocation](images/expander_expanderheader.png)
+![RadExpander HeaderLocation](images/expander_features_headerlocation.png)
 
 ## Animation while expanding/collapsing
 

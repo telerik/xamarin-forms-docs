@@ -51,6 +51,7 @@ Take a look at the following topics on how to use the toolbox:
 The snippet below shows a simple RadExpander definition:
 
 <snippet id='expander-getting-started-xaml' />
+<snippet id='expander-gettingstarted-csharp' />
 
 In addition to this, you need to add the following namespace:
 

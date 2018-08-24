@@ -20,27 +20,27 @@ The text message is built according to the count of authors like this:
 
 When the Authors (or ItemsSource) collection is cleared, the TypingIndicator is hidden.
 
+In addition, by setting **Text** property the text message could be replaced with any other of your choice.
+
 #### Adding a TypingIndicator
 
 In order to add a typing indicator just set TypingIndicator property of RadChat control:
 
 <snippet id='chat-typingindicator-xaml' />
 	
-#### Figure 1: RadChat in MVVM setup
-
-![MVVM Support](images/chat_mvvm_support.png)
-
 There are two ways to display the typing indicator:
 
-* Using Authors collection:
+#### Using Authors collection:
 
-You could use directly Authors collection which is of type ObservableCollection<Author> to show the participants who are currently typing. Here is a quick example:
+You could use directly **Authors** collection which is of type *ObservableCollection<Author>* to show the participants who are currently typing. Here is a quick example:
 
 <snippet id='chat-typingindicator-authors-code' />
 
 And the result is:
 
-* Using ItemsSource collection:
+![TypingIndicator Authors](images/chat_typingindicator_authors.png)
+
+#### Using ItemsSource collection:
 
 If you’d prefer the MVVM pattern, you could use **ItemsSource** property of the TypingIndicator  - ItemsSource property could be bound/set to a collection of any data items that should be then converted into Author items. 
 
@@ -62,6 +62,7 @@ And finally, all that is left is to add the RadChat control to your page with pr
 
 And here is result:
 
+![TypingIndicator Authors](images/chat_typingindicator_itemssource.png)
 	
 ## See Also
 

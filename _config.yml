@@ -313,12 +313,12 @@ navigation:
         ## Calendar Sub-Folders
     controls/calendar/styling:
         title: "Styling"
-        position: 6
+        position: 8
     controls/calendar/styling/custom-renderers:
         title: "Custom Renderers"
     controls/calendar/how-to:
         title: "How To"
-        position: 7
+        position: 9
         ## End Calendar Sub-Folders
     ## End Calendar
     ## Chart

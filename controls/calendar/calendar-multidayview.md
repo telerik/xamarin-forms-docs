@@ -1,11 +1,11 @@
 ---
-title: Scheduling
-page_title: Scheduling
+title: MultiDay View
+page_title: MultiDay View
 position: 6
-slug: calendar-scheduling
+slug: calendar-multidayview
 ---
 
-# Scheduling #
+# MultiDay View #
 
 With R3 2018 release RadCalendar comes with new MultiDay view mode which enables you to create a detailed view of the schedule for a specific day (or days). In addition, you will have full control over the way the MultiDay view is visualized through various configuration options such as day start and end times, timeline settings, current time indicator, and more.
 
@@ -29,6 +29,10 @@ All of the above are applied using the **MultiDayViewSettings** property of RadC
 The next image shows MultiDay view with the MultiDayViewSettings applied:
 
 ![Calendar Scheduling Key Features](images/calendar_scheduling_keysettings.png)
+
+## Work Week Support
+
+By setting **IsWeekendVisible** property through MultiDayViewSettings of RadCalendar, you can exclude the weekend from the timeline and display only the work week. In addition, you could configure DayStartTime and DayEndTime time, so that the MultiDay view to include only the working hours.
 
 ## Styling
 

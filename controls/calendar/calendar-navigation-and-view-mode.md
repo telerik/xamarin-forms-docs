@@ -111,6 +111,7 @@ Here are listed the supported view modes for each platform:
 ### Events:
 
 - **ViewChanged** (ValueChangedEventArgs&lt;CalendarViewMode&gt;): Occurs when the calendar view mode is changed. 
+- **TimeSlotTapped** (TimeSlotTapEventArgs): Occurs when the end-user taps on a time slot. The TimeSlotTapEventArgs provides StartTime and EndTime properties of type *DateTime* which define the time slot.
 
 ### Methods:
 

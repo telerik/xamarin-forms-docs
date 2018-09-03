@@ -48,7 +48,9 @@ Take a look at the following topics on how to use the toolbox:
 
 #### Create the control definition in XAML:
 
+```XAML
 <dataControls:RadTreeView x:Name="tv" ItemsSource="{Binding SourceCollection}"/>
+```
 
 In addition to this, you need to add the following namespace:
 
@@ -91,24 +93,21 @@ As you can notice, the **ItemsSource** property of the control needs to be set. 
             });
 ```
 
-An important step for the control to load its items correctly is to set its **HierarchyAdapter** property:
-```C# 
-this.tv.HierarchyAdapter = new TreeViewDemoAdapter();
-```
-The custom hierarchy adapter should implement the **Telerik.XamarinForms.Common.IHierarchyAdapter** interface. Here is how the **TreeViewDemoAdapter** class is defined:
-```C#
-	public class TreeViewDemoAdapter : IHierarchyAdapter
-    {
-        public object GetItemAt(object item, int index)
-        {
-            return (item as Item).Children[index];
-        }
+An important step for the control to load its items correctly is to apply **TreeViewDescriptor(s)**. The TreeViewDescriptor basically defines the data items' hierarchy as well as how each item is visualized through the properties listed below:
 
-        public IEnumerable<object> GetItems(object item)
-        {
-            return (item as Item).Children ?? Enumerable.Empty<object>();
-        }
-    } 
+* TargetType - the type of the data item the descriptor refers to;
+* DisplayMemberPath - the name of the property that is displayed for this data item;
+* ItemsSourcePath - the path to the list containing the sub items;
+* ItemTemplate - you could customize the visual appearance of each item type through the ItemTemplate property of the descriptor;
+
+Here is an example how the TreeViewDescriptor is applied:
+
+```C# 
+<dataControls:RadTreeView x:Name="tv" ItemsSource="{Binding SourceCollection}">
+	<dataControls:TreeViewDescriptor DisplayMemberPath="Name"
+									 ItemsSourcePath="Children"
+									 TargetType="{x:Type local:Item}"/>
+</dataControls:RadTreeView>
 ```
 Where the Item class is defined as:
 ```C#

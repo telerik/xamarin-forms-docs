@@ -1,7 +1,7 @@
 ---
 title: Theming
 page_title: Theming
-position: 4
+position: 8
 slug: treeview-theming
 ---
 

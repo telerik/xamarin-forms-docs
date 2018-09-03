@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: Commands
-position: 2
+position: 7
 slug: treeview-commands
 ---
 
@@ -33,6 +33,7 @@ All the predefined commands within a RadTreeView instance are identified by a me
 * **ItemHold**
 * **ItemCollapse**
 * **ItemExpand**
+* **LoadOnDemand**
 * **Unknown**
 
 ## Custom TreeViewUserCommand Example

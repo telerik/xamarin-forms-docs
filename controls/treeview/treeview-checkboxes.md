@@ -26,7 +26,7 @@ Here is an example of how you can set the property:
 
 Here is a picture that show the different states of the CheckBox:
 
-![checkbox states](../images/checkboxes_treeview.png)
+![checkbox states](images/checkboxes_treeview.png)
   
 ## CheckedItems collection
 
@@ -54,7 +54,7 @@ The control exposes a collection of all the checked items. You can subscribe to 
 
 The CheckBox visibility can be controlled through the **CheckBoxMode** property. Setting it to "None" would remove the appearance of these elements. Here is the appearance of the **control** when the **CheckBoxMode** is set to **None**:
 
-![hidden checkboxes](../images/nocheckboxes_treeview.png)
+![hidden checkboxes](images/nocheckboxes_treeview.png)
 
 >important You can check a runnable demo in the **Features** section of the **RadTreeView** component in the **SDK Samples Browser application**(can be found in the Examples folder of your local *Telerik UI for Xamarin* installation)
 

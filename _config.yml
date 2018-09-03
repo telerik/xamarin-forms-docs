@@ -309,7 +309,7 @@ navigation:
     ## End Button
     ## Calendar
     controls/calendar:
-        title: "Calendar"
+        title: "Calendar/Scheduler"
         ## Calendar Sub-Folders
     controls/calendar/styling:
         title: "Styling"

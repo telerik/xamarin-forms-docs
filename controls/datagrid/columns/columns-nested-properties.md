@@ -12,7 +12,7 @@ With R3 2018 RadDataGrid provides support for nested properties - this allows bi
 In addition, the DataGrid control provides the following property:  
 * **ListenForNestedPropertyChange** *(bool)*: Allows the DataGrid to listen for changes of the nested properties' values. By default it is *false*. 
 
->tip In case you don't need live updates of the nested properties, you could disable this feature due to optimization purposes.
+>tip ListenForNestedPropertyChange is false due to optimization purposes, you could enable it in case you'd need to update the nested properties' values.
 
 ## Example
 

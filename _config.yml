@@ -211,6 +211,11 @@ navigation:
         ## End Entry Sub-Folders
     ## End Entry
     
+     ## Expander
+    controls/expander:
+        title: "Expander"
+    ## End Expander
+    
     ## NumericInput
     controls/numericinput:
         title: "NumericInput"
@@ -230,6 +235,12 @@ navigation:
     controls/path/getting-started:
         title: "Getting Started"
     ## End Path
+    
+    ## Accordion
+    controls/accordion:
+        title: "Accordion"
+    ##End Accordion
+    
     ## AutoComplete
     controls/autocomplete:
         title: "AutoComplete"
@@ -298,16 +309,16 @@ navigation:
     ## End Button
     ## Calendar
     controls/calendar:
-        title: "Calendar"
+        title: "Calendar &amp; Scheduling"
         ## Calendar Sub-Folders
     controls/calendar/styling:
         title: "Styling"
-        position: 6
+        position: 8
     controls/calendar/styling/custom-renderers:
         title: "Custom Renderers"
     controls/calendar/how-to:
         title: "How To"
-        position: 7
+        position: 9
         ## End Calendar Sub-Folders
     ## End Calendar
     ## Chart
@@ -357,10 +368,7 @@ navigation:
     ## Chat
     controls/chat:
         title: "Conversational UI"
-        ## Chat Sub-Folders
-    controls/chat/getting-started:
-        title: "Getting Started"
-        position: 2
+        ## Chat Sub-Folders  
     controls/chat/chat-items:
         title: "Chat Items"
         position: 3
@@ -371,10 +379,7 @@ navigation:
     controls/chat/chat-picker/cards:
         title: "CardPicker"
         position: 5
-                ## End ChatPicker Sub-Folders
-    controls/chat/features:
-        title: "Features"
-        position: 6
+                ## End ChatPicker Sub-Folders  
     ## End Chat
     ## DataForm
     controls/dataform:
@@ -481,11 +486,15 @@ navigation:
         position: 2
         ## End TabView Sub-Folders
     ## End TabView
-    ## TreeView
+   ## TreeView
     controls/treeview:
         title: "TreeView"
-        ## TreeView Sub-Folders 
-        ## End TreeView Sub-Folders
+    controls/treeview/getting-started:
+        title: "Getting Started"
+        position: 3
+    controls/treeview/features:
+        title: "Features"
+        position: 4
     ## End TreeView
     ## ZipLibrary
     controls/ziplibrary:
@@ -509,16 +518,6 @@ navigation:
     controls/slideview:
         title: "SlideView"    
     ## End SlideView
-    ## TreeView
-    controls/treeview:
-        title: "TreeView(Beta)"
-    controls/treeview/getting-started:
-        title: "Getting Started"
-        position: 3
-    controls/treeview/features:
-        title: "Features"
-        position: 4
-    ## End TreeView
 ## End Controls Sub-Folders
 
 ## The application virtual path

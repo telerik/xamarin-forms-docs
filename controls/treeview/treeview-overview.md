@@ -25,6 +25,8 @@ slug: treeview-overview
 
 * **Data Binding**: Simply setting the collection of custom business objects as an ItemsSource in combination with a "HierarchyAdapter" class is enough to visualize the hierarchically-structured source. 
 
+* **Load on Demand**: Load On Demand feature allows you to delay the population of RadTreeView and load subitems only when they’re requested, thus improving the overall performance of your app.
+
 * **UI Virtualization**: The user interface uses virtualization for displaying the required elements, meaning  that they are created only when needed and only for the currently visible cells.
 
 * **Theming Support:** **RadTreeView** comes with built-in theming support that allows you to easily build slick interfaces with the look-and-feel of a predefined theme

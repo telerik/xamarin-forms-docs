@@ -1,7 +1,7 @@
 ---
 title: Expand/Collapse Items
 page_title: Expand/Collapse Items
-position: 1
+position: 2
 slug: treeview-expand-collapse-api
 ---
 

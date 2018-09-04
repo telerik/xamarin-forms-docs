@@ -1,7 +1,7 @@
 ---
 title: ItemTemplateSelector
 page_title: RadChat ItemTemplateSelector
-position: 3
+position: 7
 slug: chat-itemtemplateselector
 ---
 

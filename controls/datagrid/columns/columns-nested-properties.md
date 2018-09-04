@@ -10,7 +10,7 @@ slug: datagrid-nested-properties
 With R3 2018 RadDataGrid provides support for nested properties - this allows binding of complex objects to the grid columns.
 
 In addition, the DataGrid control provides the following property:  
-* **EnableLiveUpdates** *(bool)*: Allows the DataGrid to listen for changes of the nested properties' values. By default it is *true*. 
+* **ListenForNestedPropertyChange** *(bool)*: Allows the DataGrid to listen for changes of the nested properties' values. By default it is *false*. 
 
 >tip In case you don't need live updates of the nested properties, you could disable this feature due to optimization purposes.
 

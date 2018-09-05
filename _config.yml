@@ -253,6 +253,12 @@ navigation:
         position: 2
         ## End AutoComplete Sub-Folders
     ## End AutoComplete
+    
+    ## AutoCompleteView
+    controls/autocompleteview:
+        title: "AutoCompleteView(beta)"
+    ## End AutoCompleteView
+    
     ## Barcode
     controls/barcode:
         title: "Barcode"

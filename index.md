@@ -21,6 +21,7 @@ Our suite offers the following controls for cross-platform development with Xama
 
 - [Accordion] ({% slug accordion-overview %})
 - [AutoComplete]({% slug autocomplete-overview %})
+- [AutoCompleteView]({% slug autocompleteview-overview %})
 - [Barcode]({%slug barcode-overview %})
 - [Border]({%slug border-overview %})
 - [BusyIndicator]({% slug busyindicator-overview %})

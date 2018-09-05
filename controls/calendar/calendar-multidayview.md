@@ -18,9 +18,9 @@ This section lists the key properties of the MultiDay ViewMode so you could conf
 * **VisibleDays**: Defines the number of days visualized on the view area. The default is 7 days. 
 * **DayStartTime**: Defines the time used to indicate the start of the timeline. The default value of the DayStartTime is 00:00:00 or 12:00 AM. 
 * **DayEndTime**: Sets the time used to indicate the end of the timeline.
-* **WeekendsDisplayMode**: It is of type *Telerik.XamarinForms.Common.DisplayMode* and will allow you to exclude the weekends from the timeline, so that only the work week is displayed.
+* **IsWeekendVisible**: Boolean property that will allow to exclude the weekends from the timeline, so that only the work week is displayed.
 * **TimelineInterval**: This property is of type *TimeSpan* and defines the time intervals inside the timeline.
-* **CurrentTimeIndicatorDisplayMode**: It is of type *Telerik.XamarinForms.Common.DisplayMode* and provides the option to visually mark the current time. In addition, you could customize the way the current time indicator looks through a few styling properties, for more details go to Styling section.
+* **IsCurrentTimeIndicatorVisible**: Boolean property that enables the option to visually mark the current time. In addition, you could customize the way the current time indicator looks through a few styling properties, for more details go to Styling section.
 
 All of the above are applied using the **MultiDayViewSettings** property of RadCalendar. Here is a quick example on how they could be set:
 
@@ -32,7 +32,7 @@ The next image shows MultiDay view with the MultiDayViewSettings applied:
 
 ## Work Week Support
 
-By setting **IsWeekendVisible** property through MultiDayViewSettings of RadCalendar, you can exclude the weekend from the timeline and display only the work week. In addition, you could configure DayStartTime and DayEndTime time, so that the MultiDay view to include only the working hours.
+By setting **IsWeekendVisible** property through MultiDayViewSettings of RadCalendar, you can exclude the weekends from the timeline and display only the work week. In addition, you can configure DayStartTime and DayEndTime properties, so that only the working hours are present in MultiDay view mode.
 
 ## Styling
 

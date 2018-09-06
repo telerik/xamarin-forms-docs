@@ -7,15 +7,14 @@ slug: autocompleteview-methods
 
 # Methods
 
-**RadAutoCompleteView** component exposes the ability to show/hide all suggestions immediately when recieving focus.
+**RadAutoCompleteView** exposes the ability to explicitly show/hide the popup containing the filtered items through the following methods:
 
-The following methods could be used:
-
-* **ShowSuggesstions** - Show all suggestions immediately when the RadAutoCompleteView is focused. 
-
-* **HideSuggestions** - Hide all suggestions when the RadAutoCompleteView control is focused.
+* **ShowSuggesstions**
+* **HideSuggestions**
 
 ## Example
+
+The example below uses **ShowSuggesstions** method to display the filtered items as soon as the AutoCompleteView receives the focus. 
 
 Use the following code to attach the focused event to the control:
 

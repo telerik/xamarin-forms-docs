@@ -32,7 +32,7 @@ The SkiaSharp packages that need to be installed are as follows:
 + SkiaSharp.Views (install to all projects, except class library)
 + SkiaSharp.Views.Forms (install to all projects)
 
-Note: Make sure that you're using **v1.59.3** as we do not yet support v1.6
+Note: Minimum package version required is v1.59.
 
 ## See Also
 

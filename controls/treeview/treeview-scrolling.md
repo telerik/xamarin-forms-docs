@@ -9,7 +9,7 @@ slug: treeview-scrolling
 
 RadTreeView exposes the following method for programmatic scrolling to a specific data item: 
 
-* **bool ScrollItemIntoView(object item)**: Attempts to bring the specified data item into the view. Returns false in case the item is not available (cannot be found in the ItemsSource or its parent is not expanded).
+* **bool ScrollItemIntoView(object item)**: Attempts to bring the specified data item into the view. Returns false in case the item is not available (cannot be found in the ItemsSource or any of its parents is not expanded).
  
 ## Example
 

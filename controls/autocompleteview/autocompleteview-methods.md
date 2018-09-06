@@ -7,7 +7,7 @@ slug: autocompleteview-methods
 
 # Methods
 
-**RadAutoCompleteView** component exposes the ability to show/hide all suggestions immediately then recieves focus.
+**RadAutoCompleteView** component exposes the ability to show/hide all suggestions immediately when recieving focus.
 
 The following methods could be used:
 

@@ -9,7 +9,7 @@ slug: autocompleteview-suggestion-item-template
 
 ## SuggestionItemTemplate
 
-Whenever the default templates does not fit a particular scenario customers can use the **SuggestionItemTemplate** property to define a custom template.
+Whenever the default template does not fit a particular scenario you can use the **SuggestionItemTemplate** property to define a custom template.
 
 * **SuggestionItemTemplate** (DataTemplate): Defines the template that will be used to create each of the suggestions.
 * **SuggestionItemTextColor**: Defines the Text Color of the suggested item of the component.

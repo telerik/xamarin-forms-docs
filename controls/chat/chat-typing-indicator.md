@@ -32,7 +32,7 @@ There are two ways to display the typing indicator:
 
 #### Using Authors collection:
 
-You could use directly **Authors** collection which is of type *ObservableCollection<Author>* to show the participants who are currently typing. Here is a quick example:
+You can use directly **Authors** collection which is of type *ObservableCollection<Author>* to show the participants who are currently typing. Here is a quick example:
 
 <snippet id='chat-typingindicator-authors-code' />
 
@@ -42,7 +42,7 @@ And the result is:
 
 #### Using ItemsSource collection:
 
-If you’d prefer the MVVM pattern, you could use **ItemsSource** property of the TypingIndicator  - ItemsSource property could be bound/set to a collection of any data items that should be then converted into Author items. 
+If you prefer the MVVM pattern, you can use **ItemsSource** property of the TypingIndicator  - ItemsSource property could be bound/set to a collection of any data items that should be then converted into Author items. 
 
 First, create a sample Participant class which will hold the details for the participants in the conversation:
 

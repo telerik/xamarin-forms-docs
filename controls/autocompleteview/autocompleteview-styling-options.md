@@ -13,7 +13,7 @@ RadAutoCompleteView control provides the following Style properties for customiz
 * **TextColor**: Defines the textcolor of the component.
 * **SuggestionItemTextColor**: Defines the highlightcolor of the selection items.
 
-## Example
+Here is an example how to use the SuggestionItemTextColor property:
 
 First, create the needed business objects, for example type Client with the following properties:
 
@@ -31,7 +31,7 @@ Finally, use the following snippet to declare a RadAutoCompleteView in XAML with
 
 <snippet id='autocompleteview-features-highlight-text'/>
 
-# Highlight Customization
+## Highlight Customization
 
 The highlight customization can be achieved when a custom template is used. The AutoCompleteView **SuggestionItemLabel** exposes the following properties for highlight customization:
 
@@ -39,7 +39,7 @@ The highlight customization can be achieved when a custom template is used. The 
 * **HighlightText**
 * **UnformattedText**
 
-## Example
+### Example
 
 First, create the needed business objects, for example type Client with the following properties:
 

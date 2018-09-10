@@ -24,6 +24,7 @@ slug: autocompleteview-overview
 * **Remote Search**: Allows you to easily take the user input, trigger custom searching algorithm and assign the results to the ItemSource of the AutoCompleteView. Read more about this [here]({% slug autocompleteview-remote-search%}).
 * **Show/Hide Suggestions**: AutoCompleteView provides the ability to show/hide all suggestions immediately when you focused on the input field. Read more about AutoCompleteView methods [here]({% slug autocompleteview-methods%}).
 * **Highlight Customization**: The ability to highlight the text inside the custom template. Check [here]({% slug autocompleteview-styling-options%}#highlight-customization) for more info.
+* **Nested Properties Support**: This allows binding of a complex object to the RadAutoCompleteView TextSearchPath property. 
 
 ## See Also
 

@@ -37,6 +37,8 @@ The available item templates are listed below:
 * [Stocks View](#stocks-view)
 * [Activity View](#activity-view)
 * [Search View](#search-view)
+* [Login Screen](#login-screen)
+* [Feedback Screen](#feedback-screen)
 
 ### Stocks View
 
@@ -83,6 +85,22 @@ The **SearchViewTwoLinesItems** template once again shows a different approach o
 
 #### Figure 9: Search View Twolines Items 
 ![search view singleline](images/item-templates/search-view-twoline.png) 
+
+### Login Screen
+
+The **Login Screen** template provides different options for entering user credentials, such as with fingerprint, with pin or social login. The template uses RadEntry, RadButton, RadBorder, and RadCheckbox from Progress Telerik UI for Xamarin.
+
+The image below shows LoginComplete template:
+
+#### Figure 10: Login Complete Screen
+![login complete](images/item-templates/item-template-login.png) 
+
+### Feedback Screen
+
+The **Feedback Screen** template implements a feedback scenario using RadBorder, RadButton, and RadListView from Progress Telerik UI for Xamarin.
+
+#### Figure 11: Feedback Screen
+![feedback screen](images/item-templates/item-template-feedback.png) 
 
 
 ## See Also

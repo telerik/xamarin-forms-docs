@@ -68,5 +68,5 @@ By default the search is triggered as soon as the user types into the input fiel
 ## See Also
 
 - [Styling Options]({%slug autocompleteview-styling-options%})
-- [Data Binding]({% slug autocomplete-data-binding%})
+- [Data Binding]({% slug autocompleteview-data-binding%})
 - [Events]({% slug autocompleteview-events%})

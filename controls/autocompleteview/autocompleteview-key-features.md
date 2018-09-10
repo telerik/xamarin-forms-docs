@@ -13,9 +13,13 @@ The purpose of this help article is to show you the key features of the **RadAut
 
 With AutoCompleteView you could enable users to search for and select several items. These items appear as tokens that can easily be deselected using their close button. 
 
-**DisplayMode** *(SuggestionsDisplayMode)* property determines whether a single or multiple selection is enabled.  The default DisplayMode is “Plain”, for multiple selection you would need to set it to “Tokens”.
+**DisplayMode** *(SuggestionsDisplayMode)* property determines whether a single or multiple selection is enabled. The default DisplayMode is “Plain”, for multiple selection you would need to set it to “Tokens”.
 
 <snippet id='autocompleteview-features-tokenssupport'/>
+
+Here is the result when the DisplayMode is set to Tokens:
+
+![AutoCompleteView Tokens](images/autocompleteview-features-tokens.png "AutoCompleteView Tokens")
 
 ## Filtering Options
 
@@ -64,6 +68,8 @@ By default the search is triggered as soon as the user types into the input fiel
 ## FilteredItems collection
 
 **FilteredItems** bindable property allows you to access the collection containing the search results of the AutoCompleteView. The property can be used in scenarios where the search results are visualized at a different place or inside another container.
+
+>important A sample Key Features example can be found in the AutoCompleteView/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 

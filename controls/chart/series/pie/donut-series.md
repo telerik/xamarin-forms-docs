@@ -1,6 +1,7 @@
 ---
 title: DonutSeries
 slug: chart-series-donut-series
+position: 1
 ---
 
 # DonutSeries #
@@ -33,3 +34,9 @@ And the business object exposes the following properties:
 Here is the result:
 
 ![Basic PieSeries](images/donut-series-basic-example.png)
+
+## See Also
+
+- [Pie Series Overview]({%slug chart-series-pie-series %})
+- [Categorical Series Overview]({%slug chart-series-overview %})
+

@@ -1,6 +1,7 @@
 ---
 title: PieSeries
 slug: chart-series-pie-series
+position: 0
 ---
 
 # PieSeries #
@@ -47,8 +48,15 @@ slug: chart-series-pie-series
 	</telerikChart:RadPieChart>
 Where
 
-	xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
+<snippet id='xmlns-telerikchart'/>
 
 Here is the result:
 
 ![Basic PieSeries](images/pie-series-basic-example.png)
+
+
+## See Also
+
+- [Donut Series Overview]({%slug chart-series-donut-series %})
+- [Categorical Series Overview]({%slug chart-series-overview %})
+

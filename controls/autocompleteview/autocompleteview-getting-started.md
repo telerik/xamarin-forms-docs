@@ -74,6 +74,6 @@ This is the result:
 
 ## See Also
 
-- [Key Features]({% slug autocompleteview-key-features %})
-- [Tokens Support]({% slug autocompleteview-tokens-support %})
-- [Data Binding]({% slug autocomplete-data-binding %})
+- [Key Features]({% slug autocompleteview-key-features%})
+- [Tokens Support]({% slug autocompleteview-tokens-support%})
+- [Data Binding]({% slug autocompleteview-data-binding%})

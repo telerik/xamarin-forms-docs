@@ -35,11 +35,11 @@ Where the **telerikInput** namespace is the following:
 
 <snippet id='xmlns-telerikinput'/>
 
->important A sample Tokens example can be found in the AutoCompleteView/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
-
 Here is the result when ShowMoreTemplate is used:
 
 ![AutoCompleteView Tokens Support](images/autocompleteview-features-tokens-support.png "AutoCompleteView Tokens Support")
+
+>important A sample Tokens example can be found in the AutoCompleteView/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 

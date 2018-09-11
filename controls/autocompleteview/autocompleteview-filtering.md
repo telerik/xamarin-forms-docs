@@ -45,11 +45,11 @@ Where the **telerikInput** namespace is the following:
 
 <snippet id='xmlns-telerikinput'/>
 
->important A sample Custom Filtering example can be found in the AutoCompleteView/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
-
 Here is the result:
 
 ![AutoCompleteView Filtering](images/autocompleteview-filtering.png "AutoCompleteView Filtering")
+
+>important A sample Custom Filtering example can be found in the AutoCompleteView/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 

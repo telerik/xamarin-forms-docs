@@ -16,6 +16,18 @@ slug: autocompleteview-methods
 
 The example below uses **ShowSuggesstions** method to display the filtered items as soon as the AutoCompleteView receives the focus. 
 
+First, create the needed business objects, for example type Client with the following properties:
+
+<snippet id='autocompleteview-features-businessobject'/>
+
+Then create a ViewModel with a collection of Client objects:
+
+<snippet id='autocompleteview-features-viewmodel'/>
+
+Declare the RadAutoCompleteView in XAML:
+
+<snippet id='autocompleteview-features-data-binding'/>
+
 Use the following code to attach the focused event to the control:
 
 <snippet id='autocompleteview-focused'/>

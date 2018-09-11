@@ -27,6 +27,6 @@ slug: autocompleteview-events
 
 # See Also
 
-- [Key Features]({% slug autocompleteview-key-features %})
-- [Tokens Support]({% slug autocompleteview-tokens-support %})
+- [Key Features]({% slug autocompleteview-key-features%})
+- [Tokens Support]({% slug autocompleteview-tokens-support%})
 - [Styling Options]({%slug autocompleteview-styling-options%})

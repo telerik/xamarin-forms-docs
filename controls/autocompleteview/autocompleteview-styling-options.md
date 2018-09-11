@@ -78,6 +78,6 @@ Here is the result:
 
 ## See Also
 
-- [SuggestionItemTemplate]({% slug autocompleteview-suggestion-item-template %})
-- [Data Binding]({% slug autocompleteview-data-binding %})
+- [SuggestionItemTemplate]({% slug autocompleteview-suggestion-item-template%})
+- [Data Binding]({% slug autocompleteview-data-binding%})
 - [Events]({% slug autocompleteview-events%})

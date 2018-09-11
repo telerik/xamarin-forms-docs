@@ -34,6 +34,7 @@ Finally, use the following snippet to declare a RadAutoCompleteView in XAML with
 ## Highlight Customization
 
 In case a custom template is used, the user can achieve text highlighting inside the RadAutoCompleteView.SuggestionItemTemplate using **SuggestionItemLabel** and the following namespace:
+
 ```XAML
 xmlns:autoCompleteView="clr-namespace:Telerik.XamarinForms.Input.AutoCompleteView;assembly=Telerik.XamarinForms.Input"
 ```

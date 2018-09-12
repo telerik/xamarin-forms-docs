@@ -55,4 +55,4 @@ Here is the result:
 
 - [Remote Search]({% slug autocompleteview-remote-search%})
 - [Events]({% slug autocompleteview-events%})
-- [Methods](% slug autocompleteview-methods%)
+- [Methods]({% slug autocompleteview-methods%})

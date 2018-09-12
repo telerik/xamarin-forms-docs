@@ -59,6 +59,5 @@ And here is the result:
 
 ## See Also
 
-- [Categorical Series Overview]({%slug chart-series-overview %})
-- [Categorical Series Orientation]({%slug chart-series-orientation %})
-- [Cartegorical Series Combine Mode]({%slug chart-series-combine-mode %})
+- [Ohlc Series Overview]({%slug chart-series-ohlc-series%})
+- [Candlestick Series Overview]({%slug chart-series-candlestick-series%})

@@ -33,6 +33,5 @@ And here is the result:
 
 ## See Also
 
-- [Categorical Series Overview]({%slug chart-series-overview %})
-- [Categorical Series Orientation]({%slug chart-series-orientation %})
-- [Categorical Series Combine Mode]({%slug chart-series-combine-mode %})
+- [Candlestick Series Overview]({%slug chart-series-candlestick-series%})
+- [Financial Indicators]({%slug chart-series-financial-indicators%})

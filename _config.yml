@@ -358,6 +358,9 @@ navigation:
     controls/chart/series/pie:
         title: "PieSeries"
         position: 2
+    controls/chart/series/financial:
+        title: "Financial Series"
+        position: 3
             ## End Chart Series Sub-Folders
     controls/chart/types:
         title: "Chart Types"

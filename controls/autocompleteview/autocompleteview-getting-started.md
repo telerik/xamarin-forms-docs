@@ -12,7 +12,7 @@ This article will guide you through the steps needed to add a basic **RadAutoCom
 * [Setting up the app](#1-setting-up-the-app)
 * [Adding the required Telerik references](#2-adding-the-required-telerik-references)
 * [Adding RadAutoCompleteView control](#3-adding-radautocompleteview-control)
-* [Populating RadAutoCompleteView with data](#4-populating-radlistview-with-data)
+* [Populating RadAutoCompleteView with data](#4-populating-radautocompleteview-with-data)
 
 ## 1. Setting up the app
 

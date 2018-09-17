@@ -14,6 +14,7 @@ RadChat works with a collection of ChatItem objects. The control provides differ
 This section covers the specific details of the different chat items RadChat provides:
 
 * [Message]({%slug chat-messages %}) - the basic message unit in RadChat;
+* [Time Break]({%slug chat-timebreak %}) - used to encapsulate messages in a conversation by a certain condition such as read/unread, time intervals or any other you would choose.
 * [PickerItem]({%slug chat-picker-overview %}) - special ChatItem type which contains RadChatPicker control used for providing a selection to the end user.
 
 ## See Also

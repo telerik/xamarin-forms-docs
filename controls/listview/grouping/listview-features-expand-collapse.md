@@ -68,7 +68,7 @@ Additionally, *IDataViewCollection* provides **ExpandItem**/**CollapseItem** met
 
 By handling GroupHeaderTap command you could control the collapse/expand behavior of a certain group. The next example shows how to prevent the first-level groups from hiding their items.
 
->tip Please check [Commands]({%slug listview-features-commands %}) topic for information on how to use RadListView commands.
+>tip Please check [Commands]({%slug listview-features-commands%}) topic for information on how to use RadListView commands.
 
 First, let’s define the GroupHeaderTapCommand class that derives from ListViewCommand:
 

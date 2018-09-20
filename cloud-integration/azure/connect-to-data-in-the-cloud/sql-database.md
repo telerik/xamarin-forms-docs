@@ -217,7 +217,7 @@ Here is the appearance of the RadListView control when run as UWP application:
 ## See Also
 
 * [Cosmos DB]({%slug cloud-integration-cosmosdb%})
-* [Text Analysis]({slug cloud-integration-cognitive-services-text-analysis%})
+* [Text Analysis]({%slug cloud-integration-cognitive-services-text-analysis%})
 * [Blob Storage]({%slug cloud-integration-azure-blob-storage%})
 
 

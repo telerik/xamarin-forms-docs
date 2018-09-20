@@ -27,7 +27,7 @@ With AutoComplete you could enable users to search for and select several items.
 
 You can determine the filtering behavior of RadAutoComplete through the **CompletionMode** property. The available completion modes are "StartsWith" (default)  and  "Contains".
 
->tip In data-binding scenarios you will also need to set **TextSearchPath** property, which defines the name of the property the search function will be executed against. For more details check the [Data Binding]({% slug autocomplete-data-binding %}) topic.
+>tip In data-binding scenarios you will also need to set **TextSearchPath** property, which defines the name of the property the search function will be executed against. For more details check the [Data Binding]({%slug autocomplete-data-binding%}) topic.
 
 <snippet id='autocomplete-features-filter'/>
 

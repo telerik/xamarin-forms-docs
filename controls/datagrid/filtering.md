@@ -154,5 +154,5 @@ The appearance of the Filtering UI can be customized by inheriting the **DataGri
 ## See Also
 
 - [Grouping]({%slug datagrid-grouping-overview%})
-- [Sorting](%slug datagrid-sorting-overview%)
+- [Sorting]({%slug datagrid-sorting-overview%})
 - [Selection]({%slug datagrid-selection-overview%})

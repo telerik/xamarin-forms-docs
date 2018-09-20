@@ -91,5 +91,5 @@ The following property is used to enable/disable the grouping of a specific colu
 ## See Also
 
 - [Filtering]({%slug datagrid-filtering-overview%})
-- [Sorting](%slug datagrid-sorting-overview%)
+- [Sorting]({%slug datagrid-sorting-overview%})
 - [Selection]({%slug datagrid-selection-overview%})

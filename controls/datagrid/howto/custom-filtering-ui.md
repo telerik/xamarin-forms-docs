@@ -37,4 +37,4 @@ You should override the required methods as shown in the C# snippet above.
 ## See Also
 
 * [DataGrid Filtering]({%slug datagrid-filtering-overview%})
-* [DataGrid Grouping](%slug datagrid-grouping-overview%)
+* [DataGrid Grouping]({%slug datagrid-grouping-overview%})

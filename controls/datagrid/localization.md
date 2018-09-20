@@ -51,4 +51,4 @@ The resource file ends with "de.resx" and is automatically used when the languag
 
 * [DataGrid Sorting]({%slug datagrid-sorting-overview%})
 * [DataGrid Filtering]({%slug datagrid-filtering-overview%})
-* [DataGrid Grouping](%slug datagrid-grouping-overview%)
+* [DataGrid Grouping]({%slug datagrid-grouping-overview%})

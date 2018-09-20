@@ -94,4 +94,4 @@ Here is the result:
 
 - [Filtering]({%slug datagrid-filtering-overview%})
 - [Grouping]({%slug datagrid-grouping-overview%})
-- [Sorting]({}%slug datagrid-sorting-overview%)
+- [Sorting]({%slug datagrid-sorting-overview%})

@@ -1,9 +1,9 @@
 ---
-title: BusyIndicator Troubleshooting
-description: BusyIndicator Troubleshooting
-type: how-to
-page_title: BusyIndicator Troubleshooting
-slug: busyindicator-troubleshooting
+title: BusyIndicator with data bound controls
+description: ListView in BusyIndicator throws exception on busy disabled
+type: troubleshooting
+page_title: Data bound controls inside busy indicator raises exception on busy state switch
+slug: busyindicator-with-databound-controls
 position: 2
 tags: busyindicator, exception, troubleshooting, databinding, data binding, listview
 ticketid: 
@@ -21,7 +21,7 @@ res_type: kb
 
 ## Problem
 
-An exception or undesired behavior occurs when  `BusyIndicator.Content` contains data bound controls and `IsBusy` value is toggled.
+An exception or undesired behavior occurs when `BusyIndicator.Content` contains data bound controls and `IsBusy` value is toggled.
 
 ## Description
 

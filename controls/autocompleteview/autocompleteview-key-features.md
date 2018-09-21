@@ -25,7 +25,7 @@ Here is the result when the DisplayMode is set to Tokens:
 
 You can determine the filtering behavior of RadAutoCompleteView through the **CompletionMode** property. The available completion modes are "StartsWith" (default)  and  "Contains".
 
->tip In data-binding scenarios you will also need to set **TextSearchPath** property, which defines the name of the property the search function will be executed against. For more details check the [Data Binding]({% slug autocompleteview-data-binding %}) topic.
+>tip In data-binding scenarios you will also need to set **TextSearchPath** property, which defines the name of the property the search function will be executed against. For more details check the [Data Binding]({%slug autocompleteview-data-binding%}) topic.
 
 <snippet id='autocompleteview-features-filter'/>
 
@@ -74,5 +74,5 @@ By default the search is triggered as soon as the user types into the input fiel
 ## See Also
 
 - [Styling Options]({%slug autocompleteview-styling-options%})
-- [Data Binding]({% slug autocompleteview-data-binding%})
-- [Events]({% slug autocompleteview-events%})
+- [Data Binding]({%slug autocompleteview-data-binding%})
+- [Events]({%slug autocompleteview-events%})

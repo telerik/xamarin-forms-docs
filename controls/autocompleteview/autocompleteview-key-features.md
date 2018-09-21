@@ -53,7 +53,7 @@ The NoResults message appears in the popup used for the list of suggestions when
 
 ## Search Threshold
 
-By default the search is triggered as soon as the user types into the input field. By using **SearchThreshold** you can configure AutoComplete to trigger the search after a certain number of letters is entered. 
+By default the search is triggered as soon as the user types into the input field. By using **SearchThreshold** you can configure AutoCompleteView to trigger the search after a certain number of letters is entered. 
 
 <snippet id='autocompleteview-features-searchthreshold'/>
 

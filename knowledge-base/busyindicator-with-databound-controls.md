@@ -1,8 +1,8 @@
 ---
 title: BusyIndicator with data bound controls
-description: ListView in BusyIndicator throws exception on busy disabled
+description: Data bound ListView in BusyIndicator Content throws exception on busy disabled
 type: troubleshooting
-page_title: Data bound controls inside busy indicator raises exception on busy state switch
+page_title: Data bound controls inside busy indicator raise exception when busy state is changed
 slug: busyindicator-with-databound-controls
 position: 2
 tags: busyindicator, exception, troubleshooting, databinding, data binding, listview

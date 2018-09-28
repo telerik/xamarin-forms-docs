@@ -1,7 +1,7 @@
 ---
-title: Commands
-page_title: Commands
-position: 9
+title: Overview
+page_title: Overview
+position: 0
 slug: datagrid-commands-overview
 ---
 

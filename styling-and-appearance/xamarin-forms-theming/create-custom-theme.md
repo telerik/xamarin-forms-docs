@@ -13,9 +13,10 @@ This article provides more information on the default resources structure and ho
 
 The default resources are located in the **Telerik.XamarinForms.Common** assembly and you need to merge them in your application's resources in order to apply the theme. Below is the definition of the resources and respectively the default colors that are used for the different controls:
 
-	<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Telerik.XamarinForms.Common.BlueResources">
+```xml
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Telerik.XamarinForms.Common.BlueResources">
 
     <!-- Chart -->
     <Color x:Key="ChartAxisColor">#919191</Color>
@@ -98,14 +99,29 @@ The default resources are located in the **Telerik.XamarinForms.Common** assembl
     <Color x:Key="SlideViewSelectedIndicator">#3148CA</Color>
     <Color x:Key="SlideViewPreviousItemButton">#3148CA</Color>
 
-	</ResourceDictionary>
+</ResourceDictionary>
+```
 
 ## Customizing the Colors
 
 You can replace the values of the colors with custom ones. This way you can modify the overall appearance which is applied for the different instances of the controls. In order to do so, you can directly modify some of the default resources. The following example shows how to change the appearance of all **RadListView** instances that use the theme:
 
-	<telerikCommon:RadResourceDictionary>
-            <telerikCommon:RadResourceDictionary.MergedDictionaries>
+```xml
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             xmlns:telerikDataGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
+             xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
+             xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+             xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+             xmlns:telerikConversationalUi="clr-namespace:Telerik.XamarinForms.ConversationalUI;assembly=Telerik.XamarinForms.ConversationalUI"
+             xmlns:portable="clr-namespace:DuaneThemeDemo.Portable;assembly=MyApplication.Portable"
+             xmlns:telerikCommon="clr-namespace:Telerik.XamarinForms.Common;assembly=Telerik.XamarinForms.Common"
+             x:Class="MyApplication.Portable.App">
+	
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary MergedWith="telerikCommon:BlueResources">
                     <!-- ListView -->
                     <Color x:Key="ListViewItemBorderColor">Orange</Color>
@@ -114,21 +130,26 @@ You can replace the values of the colors with custom ones. This way you can modi
                     <Color x:Key="ListViewForegroundColor">Orange</Color>
                     <Color x:Key="ListViewSelectionBackgroundColor">Black</Color>
                 </ResourceDictionary>
-                
-                <ResourceDictionary MergedWith="telerikInput:TelerikThemeStyles"/>
-                <ResourceDictionary MergedWith="primitives:TelerikThemeStyles"/>
-                <ResourceDictionary MergedWith="chart:TelerikThemeStyles"/>
-                <ResourceDictionary MergedWith="telerikDataControls:TelerikThemeStyles" />
-                <ResourceDictionary MergedWith="dataGrid:TelerikThemeStyles"/>
-            </telerikCommon:RadResourceDictionary.MergedDictionaries>
-        </telerikCommon:RadResourceDictionary>
 
+                <!-- Telerik ResourceDictionaries for each namespace that contains controls and styles -->
+                <ResourceDictionary MergedWith="telerikInput:TelerikThemeStyles" />
+                <ResourceDictionary MergedWith="telerikPrimitives:TelerikThemeStyles" />
+                <ResourceDictionary MergedWith="telerikChart:TelerikThemeStyles" />
+                <ResourceDictionary MergedWith="telerikDataControls:TelerikThemeStyles" />
+                <ResourceDictionary MergedWith="telerikDataGrid:TelerikThemeStyles" />
+                <ResourceDictionary MergedWith="telerikConversationalUi:TelerikThemeStyles" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
+```
 
 Another possibility is to crate your own **ResourceDictionary** and merge it instead of the default **telerikCommon:BlueResources** one:
 
-	<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Examples.Custom">
+```xml
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MyApplication.MyTheme">
     
     <!-- Chart -->
     <Color x:Key="ChartAxisColor">#919191</Color>
@@ -210,28 +231,53 @@ Another possibility is to crate your own **ResourceDictionary** and merge it ins
     <Color x:Key="SlideViewIndicator">#D9D9D9</Color>
     <Color x:Key="SlideViewSelectedIndicator">#3148CA</Color>
     <Color x:Key="SlideViewPreviousItemButton">#3148CA</Color>
-	</ResourceDictionary>
+</ResourceDictionary>
+```
 
 And the code behind of the **ResourceDictionary**:
 
-	public partial class Custom : ResourceDictionary
-	{
-		public Custom ()
-		{
-			InitializeComponent ();
-		}
-	}
+```csharp
+public partial class MyTheme : ResourceDictionary
+{
+    public Custom ()
+    {
+        InitializeComponent ();
+    }
+}
+```
 
 Once you have created the custom **ResourceDictionary**, you can replace the default one with the newly created one:
 
-	<telerikCommon:RadResourceDictionary.MergedDictionaries>
-        <ResourceDictionary MergedWith="local:Custom"></ResourceDictionary>
-        <ResourceDictionary MergedWith="telerikInput:TelerikThemeStyles"/>
-        <ResourceDictionary MergedWith="primitives:TelerikThemeStyles"/>
-        <ResourceDictionary MergedWith="chart:TelerikThemeStyles"/>
-        <ResourceDictionary MergedWith="telerikDataControls:TelerikThemeStyles" />
-        <ResourceDictionary MergedWith="dataGrid:TelerikThemeStyles"/>
-    </telerikCommon:RadResourceDictionary.MergedDictionaries>
+```xml
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             xmlns:telerikDataGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
+             xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
+             xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+             xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+             xmlns:telerikConversationalUi="clr-namespace:Telerik.XamarinForms.ConversationalUI;assembly=Telerik.XamarinForms.ConversationalUI"
+             xmlns:portable="clr-namespace:DuaneThemeDemo.Portable;assembly=MyApplication.Portable"
+             x:Class="MyApplication.Portable.App">
+	
+	<Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Your custom ResourceDictionary -->
+                <ResourceDictionary MergedWith="portable:MyTheme"/>
+
+                <!-- Telerik ResourceDictionaries for each namespace that contains controls and styles -->
+                <ResourceDictionary MergedWith="telerikInput:TelerikThemeStyles" />
+                <ResourceDictionary MergedWith="telerikPrimitives:TelerikThemeStyles" />
+                <ResourceDictionary MergedWith="telerikChart:TelerikThemeStyles" />
+                <ResourceDictionary MergedWith="telerikDataControls:TelerikThemeStyles" />
+                <ResourceDictionary MergedWith="telerikDataGrid:TelerikThemeStyles" />
+                <ResourceDictionary MergedWith="telerikConversationalUi:TelerikThemeStyles" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+	</Application.Resources>
+</Application>
+``
 
 >important In case you need to modify the default resources of the TelerikTheme for the **RadDataForm** control, please refer to the following article - [DataForm: Modifying TelerikTheme resources]({%slug dataform-howto-modify-theme-resources%})
 

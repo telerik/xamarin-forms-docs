@@ -23,7 +23,7 @@ The execution parameter of the **Editing Commands** is of type *EditContext* tha
 
 Here is an example how the RadDataGrid Editing Commands work:
 
-First, create the needed business objects, for example type Country with the following properties:
+First, create the needed business objects, for example type Data with the following properties:
 
 <snippet id='datagrid-commands-editing-businessobject'/>
 

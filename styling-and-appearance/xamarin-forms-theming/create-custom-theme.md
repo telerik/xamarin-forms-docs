@@ -175,21 +175,21 @@ You can replace the values of the colors with custom ones. This way you can modi
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary MergedWith="telerikCommon:BlueResources">
-                    <!-- ListView -->
-                    <Color x:Key="ListViewItemBorderColor">Orange</Color>
-                    <Color x:Key="ListViewSelectionColor">Orange</Color>
-                    <Color x:Key="ListViewBackgroundColor">Black</Color>
-                    <Color x:Key="ListViewForegroundColor">Orange</Color>
-                    <Color x:Key="ListViewSelectionBackgroundColor">Black</Color>
+                    <ResourceDictionary.MergedDictionaries>
+                        <ResourceDictionary>
+                            <!-- Override default colors here. -->
+                            <Color x:Key="TelerikCalendarBasicFontColor">Orange</Color>
+                            <Color x:Key="TelerikBusyIndicatorContent">Yellow</Color>
+                        </ResourceDictionary>
+                    </ResourceDictionary.MergedDictionaries>
                 </ResourceDictionary>
-
-                <!-- Telerik ResourceDictionaries for each namespace that contains controls and styles -->
-                <ResourceDictionary MergedWith="telerikInput:TelerikThemeStyles" />
-                <ResourceDictionary MergedWith="telerikPrimitives:TelerikThemeStyles" />
-                <ResourceDictionary MergedWith="telerikChart:TelerikThemeStyles" />
-                <ResourceDictionary MergedWith="telerikDataControls:TelerikThemeStyles" />
-                <ResourceDictionary MergedWith="telerikDataGrid:TelerikThemeStyles" />
-                <ResourceDictionary MergedWith="telerikConversationalUi:TelerikThemeStyles" />
+                <!-- Telerik themes go here. -->
+                <ResourceDictionary MergedWith="input:TelerikThemeStyles" />
+                <ResourceDictionary MergedWith="primitives:TelerikThemeStyles" />
+                <ResourceDictionary MergedWith="chart:TelerikThemeStyles" />
+                <ResourceDictionary MergedWith="dataControls:TelerikThemeStyles" />
+                <ResourceDictionary MergedWith="dataGrid:TelerikThemeStyles" />
+                <ResourceDictionary MergedWith="conversationalUi:TelerikThemeStyles" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
@@ -315,16 +315,16 @@ Once you have created the custom **ResourceDictionary**, you can replace the def
 	<Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <!-- Your custom ResourceDictionary -->
+                <!-- Your custom ResourceDictionary, with all the custom styles and colors -->
                 <ResourceDictionary MergedWith="portable:MyTheme"/>
 
-                <!-- Telerik ResourceDictionaries for each namespace that contains controls and styles -->
-                <ResourceDictionary MergedWith="telerikInput:TelerikThemeStyles" />
-                <ResourceDictionary MergedWith="telerikPrimitives:TelerikThemeStyles" />
-                <ResourceDictionary MergedWith="telerikChart:TelerikThemeStyles" />
-                <ResourceDictionary MergedWith="telerikDataControls:TelerikThemeStyles" />
-                <ResourceDictionary MergedWith="telerikDataGrid:TelerikThemeStyles" />
-                <ResourceDictionary MergedWith="telerikConversationalUi:TelerikThemeStyles" />
+                <!-- Telerik themes go here. -->
+                <ResourceDictionary MergedWith="input:TelerikThemeStyles" />
+                <ResourceDictionary MergedWith="primitives:TelerikThemeStyles" />
+                <ResourceDictionary MergedWith="chart:TelerikThemeStyles" />
+                <ResourceDictionary MergedWith="dataControls:TelerikThemeStyles" />
+                <ResourceDictionary MergedWith="dataGrid:TelerikThemeStyles" />
+                <ResourceDictionary MergedWith="conversationalUi:TelerikThemeStyles" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
 	</Application.Resources>

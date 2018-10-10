@@ -57,7 +57,7 @@ Here is how this looks like:
 
 ![FilterDescriptorsMVVM](images/listview-features-bindable-filter.png)
 
->important [SDK Samples Browser application]({%slug developer-focused-examples%}) contais an example that shows FilterDescriptor collection in ListView controlled through MVVM. 
+>important [SDK Samples Browser application]({%slug developer-focused-examples%}) contains an example that shows FilterDescriptor collection in ListView controlled through MVVM. 
 
 ## See Also
 

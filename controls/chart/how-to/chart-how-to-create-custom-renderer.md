@@ -8,7 +8,7 @@ Sometimes, you might find that certain feature is available in the native contro
 
 ## Example ##
 
-Let us consider the following example: we need to apply animation to **LineSeries** in **iOS**. Create a class which inherits from **Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartRenderer** and override the **UpdataNativeWidget** and **CreateChartDelegate** methods:
+Let us consider the following example: we need to apply animation to **LineSeries** in **iOS**. Create a class which inherits from **Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartRenderer** and override the **UpdateNativeWidget** and **CreateChartDelegate** methods:
 
 	public class LineWithAnimationRenderer : CartesianChartRenderer
 	{

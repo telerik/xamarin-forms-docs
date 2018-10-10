@@ -32,25 +32,23 @@ Here is a picture that show the different states of the CheckBox:
 
 ## Programmatic Check and Uncheck
 
-The RadTreeView exposes two methods to progrogrammatically check or uncheck an item. 
+The RadTreeView exposes two methods to programmatically check or uncheck an item. 
 
 * **CheckItem(object item)**: Adds an item to CheckedItems collection
 * **UncheckItem(object item)**: Removes an item from the CheckedItems collection
 
 
 ```csharp
-private void CheckOrUncheckItem()
+private void CheckFirstItem()
 {
     var firstItem = ViewModel.SmallSource.FirstOrDefault();
+    tv.CheckItem(firstItem);
+}
 
-    if ((tv.CheckedItems as TreeViewItemsCollection).Contains(firstItem))
-    {
-        tv.UncheckItem(firstItem);
-    }
-    else
-    {
-        tv.CheckItem(firstItem);
-    }
+private void UncheckFirstItem()
+{
+    var firstItem = ViewModel.SmallSource.FirstOrDefault();
+    tv.UncheckItem(firstItem);
 }
 ```
   

@@ -19,36 +19,64 @@ You can control the state propagation by setting the CheckBoxMode property of th
 
 Here is an example of how you can set the property:
 
-	        <dataControls:RadTreeView ItemsSource="{Binding SmallSource}"
-                                      CheckBoxMode="Propagate"
-                                      x:Name="tv">
-            </dataControls:RadTreeView>
+```xml
+<dataControls:RadTreeView ItemsSource="{Binding SmallSource}"
+		          CheckBoxMode="Propagate"
+		          x:Name="tv">
+</dataControls:RadTreeView>
+```
 
 Here is a picture that show the different states of the CheckBox:
 
 ![checkbox states](images/checkboxes_treeview.png)
+
+## Programmatic Check and Uncheck
+
+The RadTreeView exposes two methods to programmatically check or uncheck an item. 
+
+* **CheckItem(object item)**: Adds an item to CheckedItems collection
+* **UncheckItem(object item)**: Removes an item from the CheckedItems collection
+
+
+```csharp
+private void CheckFirstItem()
+{
+    var firstItem = ViewModel.SmallSource.FirstOrDefault();
+    tv.CheckItem(firstItem);
+}
+
+private void UncheckFirstItem()
+{
+    var firstItem = ViewModel.SmallSource.FirstOrDefault();
+    tv.UncheckItem(firstItem);
+}
+```
   
 ## CheckedItems collection
 
 The control exposes a collection of all the checked items. You can subscribe to its CollectionChanged event and keep track of the checked items:
 
-        public TreeViewCheckboxes ()
-		{
-            this.SmallSource = new ObservableCollection<Item>();
-            this.InitSources();
-            this.BindingContext = this;
-            InitializeComponent ();
-            this.tv.HierarchyAdapter = new TreeViewDemoAdapter();
-			//subscribe to the CollectionChanged event of the collection
-            tv.CheckedItems.CollectionChanged += CheckedItems_CollectionChanged;
-        }
+```csharp
+public TreeViewCheckboxes ()
+{
+    this.SmallSource = new ObservableCollection<Item>();
+    this.InitSources();
+    this.BindingContext = this;
+    InitializeComponent ();
+    this.tv.HierarchyAdapter = new TreeViewDemoAdapter();
+    
+    //subscribe to the CollectionChanged event of the collection
+    tv.CheckedItems.CollectionChanged += CheckedItems_CollectionChanged;
+}
 
-        private void CheckedItems_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
-        {
-            var ci = this.tv.CheckedItems as TreeViewItemsCollection;
-			//show the number of checked items in a Label
-            this.CheckedItemsCount.Text = ci.Count.ToString();
-        }
+private void CheckedItems_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+{
+    var ci = this.tv.CheckedItems as TreeViewItemsCollection;
+
+    //show the number of checked items in a Label
+    this.CheckedItemsCount.Text = ci.Count.ToString();
+}
+```
 
 ## CheckBoxes Visibility
 

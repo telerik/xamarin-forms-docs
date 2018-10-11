@@ -1,11 +1,11 @@
 ---
-title: Validation
-page_title: Validation
+title: Validation Command
+page_title: Validation Command
 position: 3
 slug: datagrid-commands-validation
 ---
 
-# Validation
+# Validation Command
 
 The RadDataGrid control provides a validation command that has an entry point for validating cells content. The execution parameter is of type *ValidateCellContext* that exposes the following properties:
 

@@ -23,7 +23,7 @@ Here is an example how to set the AnimationSettings property:
 
 <snippet id='gauge-animations'/>
 
->important [SDK Samples Browser application]({%slug developer-focused-examples%}) contais Animations example that shows how the AnimationSettings propery works. The example can be found in the Features section of the Gauge control.
+>important [SDK Samples Browser application]({%slug developer-focused-examples%}) contains Animations example that shows how the AnimationSettings property works. The example can be found in the Features section of the Gauge control.
 
 ## See Also
 

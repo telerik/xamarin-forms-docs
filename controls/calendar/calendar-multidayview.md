@@ -7,7 +7,7 @@ slug: calendar-multidayview
 
 # MultiDay View #
 
-With R3 2018 release RadCalendar comes with new MultiDay view mode which enables you to create a detailed view of the schedule for a specific day (or days). In addition, you will have full control over the way the MultiDay view is visualized through various configuration options such as day start and end times, timeline settings, current time indicator, and more.
+The RadCalendar comes with new MultiDay view mode (introduced in R3 2018 Release) which enables you to create a detailed view of the schedule for a specific day (or days). In addition, you will have full control over the way the MultiDay view is visualized through various configuration options such as day start and end times, timeline settings, current time indicator, and more.
 
 The main purpose of the MultiDay view is to display appointments to the end-users in a convenient way. For more details on the Appointments feature of RadCalendar refer to [Appointments]({%slug calendar-appointments%}) topic.
 
@@ -36,7 +36,7 @@ By setting **IsWeekendVisible** property through MultiDayViewSettings of RadCale
 
 ## Styling
 
-This section presents the various properties you can use for customizing the visual appearance of different parts of the MultiDay view. All of them are applied through **MultiDayViewStyle** propery of RadCalendar. 
+This section presents the various properties you can use for customizing the visual appearance of different parts of the MultiDay view. All of them are applied through **MultiDayViewStyle** property of RadCalendar. 
  
 #### CurrentTimeIndicator
 

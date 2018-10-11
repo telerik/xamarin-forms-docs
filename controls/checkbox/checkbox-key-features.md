@@ -24,7 +24,7 @@ RadCheckBox exposes a few useful Color properties for customizing its visual app
  * **IndeterminateColor**: Defines the Color applied to the control when it is in Indeterminate state.
  * **IndeterminateSymbolColor**: Defines the Color applied to the Indeterminate symbol of the control.
 
->Here is an example how to apply indeterminate color and indeterminate symbol color:
+Here is an example how to apply indeterminate color and indeterminate symbol color:
 
 <snippet id='checkbox-color-changing-inderetminatecolorsymbolcolor-xaml'/>
 

@@ -1,7 +1,7 @@
 ---
 title: Globalization
 page_title: Globalization
-position: 1
+position: 3
 slug: numericinput-globalization
 ---
 
@@ -40,4 +40,5 @@ Depending on the UICulture of the current thread, the result is the following:
 
 ## See Also
 
-- [Key Features]({% slug numericinput-key-features%})
+- [Key Features]({%slug numericinput-key-features%})
+- [Commands]({%slug numericinput-commands%})

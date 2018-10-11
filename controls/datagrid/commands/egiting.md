@@ -1,11 +1,11 @@
 ---
-title: Editing
-page_title: Editing
+title: Editing Command
+page_title: Editing Command
 position: 2
 slug: datagrid-commands-editing
 ---
 
-# Editing
+# Editing Command
 
 The RadDataGrid control provides the following commands for editing the data inside the column:
 

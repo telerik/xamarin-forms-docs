@@ -1,11 +1,11 @@
 ---
-title: Cell Tap
-page_title: Cell Tap
+title: CellTap Command
+page_title: CellTap Command
 position: 1
 slug: datagrid-commands-cell-tap
 ---
 
-# Cell Tap
+# CellTap Command
 
 The DataGrid CellTap Command handles the Tap gesture over a grid cell, that is, the intersection of a data row and a column.
 

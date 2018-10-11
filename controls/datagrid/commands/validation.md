@@ -43,6 +43,6 @@ Define the RadDataGrid in XAML:
 
 ## See Also
 
-- [Cell Tap Command]({%slug datagrid-cell-tap%})
-- [Editing]({%slug datagrid-commands-editing%})
+- [CellTap Command]({%slug datagrid-cell-tap%})
+- [Editing Command]({%slug datagrid-commands-editing%})
 - [Columns Styling]({%slug datagrid-columns-styling%})

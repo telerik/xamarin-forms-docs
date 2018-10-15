@@ -19,7 +19,7 @@ The execution parameter of the **Editing Commands** is of type *EditContext* tha
 * **TriggerAction**: Gets the SourceTriggerAction value that triggered the operation.
 * **Parameter**: Gets an optional parameter holding additional information associated with the operation.
 
-## BeginEdit and Commitedit Commands Example
+## BeginEdit and CommitEdit Commands Example
 
 Here is an example how the RadDataGrid Editing Commands work:
 

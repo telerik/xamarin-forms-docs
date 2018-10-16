@@ -204,14 +204,6 @@ navigation:
     ## Entry
     controls/entry:
         title: "Entry"
-        ## Entry Sub-Folders
-    controls/entry/getting-started:
-        title: "Getting Started"
-        position: 1
-    controls/entry/features:
-        title: "Features"
-        position: 2
-        ## End Entry Sub-Folders
     ## End Entry
     
      ## Expander

@@ -1,7 +1,7 @@
 ---
 title: Key Features
 page_title: Key Features
-position: 0
+position: 2
 slug: entry-key-features
 ---
 
@@ -37,9 +37,21 @@ And then apply that Style to the Entry instance:
 
 <snippet id='entry-features-borderstyle'/>
 
+## Text Selection
+
+The **CursorPosition** property can be used to set or return the position at which the next character will be inserted into the Entry control. In addition, **the SelectionLength** property can be used to set/return the length of text selection within the Entry. 
+
+The next snippet shows how both could be applied in order to preselect part of the Text of the Entry when the control receives the focus:
+
+<snippet id='entry-features-textselection' />
+
+And the Clicked event handler:
+
+<snippet id='entry-features-textselection-code' />
+
 Here is the end result:
 
-![Entry Key Features Example](../images/entry_key_features.png)
+![Entry Key Features Example](images/entry_key_features.png)
 
 ## See Also
 

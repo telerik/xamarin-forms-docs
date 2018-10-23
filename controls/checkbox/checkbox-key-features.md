@@ -43,10 +43,7 @@ Here is the end result with available states defined:
 
 ![CheckBox Key Feature Example](images/checkbox-features.png)
 
-## Styling
-
- See [CheckBox Styling]({% slug checkbox-styling%}) for options for visual appearance.
-
 ## See Also
 
 - [CheckBox Getting Started]({% slug checkbox-getting-started%})
+- [CheckBox Styling]({% slug checkbox-styling%}) 

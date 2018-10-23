@@ -157,9 +157,15 @@ public partial class MainPage : ContentPage
     {
         // Add the item to the data source
         CampusLocationsDataService.Instance.AddCampusLocation("Paris");
-
-        // Reload the DataForm
-        dataForm.Reload();
+	
+	// 1. Clear the source
+	dataForm.Source = null;
+	
+	// 2. Reload the DataForm
+	dataForm.Reload();
+	
+	// 3. Set the Source
+	dataForm.Source = this.CurrentStudent;
     }
 }
 ```
@@ -177,13 +183,15 @@ CampusLocationsDataService.Instance.AddCampusLocation("Paris");
 ```
 
 
-Finally, the RadDataForm's **Reload** method is called:
+Finally, the RadDataForm's properties are refreshed by using the following sequence:
 
 ```csharp
-dataForm.Reload()
+dataForm.Source = null;
+dataForm.Reload();
+dataForm.Source = this.CurrentStudent;
 ```
 
-This forces the DataForm to recreate the editors, which causes the **PropertyDataProvider** calling the `GetCampusLocations` method again and the PickerEditor will now have the lastet items:
+This forces the DataForm to recreate the editors, which causes the **PropertyDataProvider** calling the `GetCampusLocations` method again and the PickerEditor will now have the latest items:
 
 - "Boston"
 - "NYC"

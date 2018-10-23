@@ -9,40 +9,7 @@ slug: checkbox-key-features
 
 The purpose of this help article is to show you the key features of the **RadCheckBox** control. 
 
-## Color Changing Options
 
-RadCheckBox exposes a few useful Color properties for customizing its visual appearance. You could set the color of the check mark as well as the control itself in each of the available states.
-
- * **CheckedColor**: Defines the Color applied to the control when it is checked.
- 
-<snippet id='checkbox-color-changing-checkedcolor-xaml'/>
-
- * **CheckedSymbolColor**: Defines the Color applied to the check symbol of the control when it is in Checked state.
- 
-<snippet id='checkbox-color-changing-checkedsymbolcolor-xaml'/>
-
- * **IndeterminateColor**: Defines the Color applied to the control when it is in Indeterminate state.
- * **IndeterminateSymbolColor**: Defines the Color applied to the Indeterminate symbol of the control.
-
-Here is an example how to apply indeterminate color and indeterminate symbol color:
-
-<snippet id='checkbox-color-changing-inderetminatecolorsymbolcolor-xaml'/>
-
- * **UncheckedColor**: Defines the Color applied to the control when it is unchecked.
-
-<snippet id='checkbox-color-changing-uncheckedcolor-xaml'/>
-
-Here is the end result with all color changing options:
-
-![CheckBox Color Changing Options Example](images/checkbox-colors.png)
-
-## Stroke Width Customization
-
-The RadCheckBox control exposes a **StrokeWidth** property that specifies the width of the lines with which the Checkbox element is drawn. It affects the outline of the control as well as the check mark.
-
-Here is an example how you can apply a stroke width value:
-
-<snippet id='checkbox-key-features-strokewidth-xaml'/>
 
 ## CheckBox States
 
@@ -82,6 +49,10 @@ There are two types of commands:
 Here is the end result with stroke width, size and state customization:
 
 ![CheckBox Key Feature Example](images/checkbox-features.png)
+
+## Styling
+
+ See [CheckBox Styling]({% slug checkbox-styling%}) for options for visual appearance.
 
 ## See Also
 

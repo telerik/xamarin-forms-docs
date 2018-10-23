@@ -39,7 +39,7 @@ There are two types of commands:
 	* **Command**: Gets or sets the generic **ICommand** implementation.
 	* **SuppressDefaultCommand**: Gets or sets a value indicating whether the default(built-in) UI command associated with the specified **Id** will be executed.
 
-Here is the end result with stroke width, size and state customization:
+Here is the end result with available states defined:
 
 ![CheckBox Key Feature Example](images/checkbox-features.png)
 

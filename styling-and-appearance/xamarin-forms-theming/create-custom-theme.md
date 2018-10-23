@@ -199,8 +199,8 @@ You can replace the values of the colors with custom ones. This way you can modi
 
 Another possibility is to create your own **ResourceDictionary** and merge it instead of the default **telerikCommon:BlueResources** one.
 
-1. Add a new XAML ContentPage file to your application and delete all the ContentPage.Content code
-2. Change the ContentPage type to ResourceDictionary type
+1. Add a new XAML ContentPage file to your application and *delete* all the boilerplate **ContentPage.Content** code
+2. Change the `ContentPage` type to `ResourceDictionary` type
 
 ```xml
 <!-- Change -->
@@ -211,14 +211,15 @@ Another possibility is to create your own **ResourceDictionary** and merge it in
 <ResourceDictionary ...>
 </ResourceDictionary>
 ```
-3. Change the base type in the code behind from ContentPage to **ResourceDictionary**:
+3. Change the base type in the code behind from `ContentPage` to `ResourceDictionary`:
 
 ```csharp
+// Set base type to ResourceDictionary
 public partial class MyTheme : ResourceDictionary
 {
-    public Custom ()
+    public MyTheme()
     {
-        InitializeComponent ();
+        InitializeComponent();
     }
 }
 ```
@@ -366,10 +367,10 @@ public partial class MyTheme : ResourceDictionary
 </ResourceDictionary>
 ```
 
-5. Customize those color values with the ones you prefer
-6. In App.xaml replace BlueResources item with your newly created one.
+5. Customize those color values with the ones you prefer for your theme.
+6. Open **App.xaml** and replace BlueResources with your newly created one.
 
-See the comment in the following example. Notice `portable:MyTheme` has replaced `telerikCommon:BlueResources` in the MergedDictionaries list.
+See the comment in the following example. Notice that `portable:MyTheme` has replaced `telerikCommon:BlueResources` in the MergedDictionaries list.
 
 ```xml
 <Application xmlns="http://xamarin.com/schemas/2014/forms"

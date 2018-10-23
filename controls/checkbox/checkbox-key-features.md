@@ -30,6 +30,14 @@ The size of the checkbox is controlled through the **Length** property, this sni
 
 <snippet id='checkbox-key-features-length-xaml'/>
 
+### Stroke Width
+
+The RadCheckBox control exposes a **StrokeWidth** property that specifies the width of the lines with which the Checkbox element is drawn. It affects the outline of the control as well as the check mark.
+
+Here is an example how you can apply a stroke width value:
+
+<snippet id='checkbox-key-features-strokewidth-xaml'/>
+
 ## Commands
 
 RadCheckBox exposes a Commands collection that allows you to register custom commands with each control’s instance through the **Commands** property:

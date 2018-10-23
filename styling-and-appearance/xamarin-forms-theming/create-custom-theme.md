@@ -369,7 +369,7 @@ public partial class MyTheme : ResourceDictionary
 5. Customize those color values with the ones you prefer
 6. In App.xaml replace BlueResources item with your newly created one.
 
-See the comment in the following example. Notice MyTheme has replace BlueResources in the MergedDictionaries list.
+See the comment in the following example. Notice `portable:MyTheme` has replaced `telerikCommon:BlueResources` in the MergedDictionaries list.
 
 ```xml
 <Application xmlns="http://xamarin.com/schemas/2014/forms"

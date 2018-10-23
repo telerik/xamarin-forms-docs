@@ -9,8 +9,6 @@ slug: checkbox-key-features
 
 The purpose of this help article is to show you the key features of the **RadCheckBox** control. 
 
-
-
 ## CheckBox States
 
 RadCheckBox provides three states – **Checked**, **Unchecked** and **Indeterminate**. The state is controlled through the **IsChecked** property which is of type bool?. The state could be set either through the UI or programmatically as explained below:
@@ -24,19 +22,6 @@ Here is an example how you can set the **Indeterminate** state:
 
 <snippet id='checkbox-key-features-ischeckednull-xaml'/>
 
-## CheckBox Size
-
-The size of the checkbox is controlled through the **Length** property, this snippet shows how you can apply it.
-
-<snippet id='checkbox-key-features-length-xaml'/>
-
-### Stroke Width
-
-The RadCheckBox control exposes a **StrokeWidth** property that specifies the width of the lines with which the Checkbox element is drawn. It affects the outline of the control as well as the check mark.
-
-Here is an example how you can apply a stroke width value:
-
-<snippet id='checkbox-key-features-strokewidth-xaml'/>
 
 ## Commands
 

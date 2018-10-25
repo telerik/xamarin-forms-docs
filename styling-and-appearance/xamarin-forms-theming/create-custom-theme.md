@@ -329,7 +329,7 @@ Once you have created the custom **ResourceDictionary**, you can replace the def
         </ResourceDictionary>
 	</Application.Resources>
 </Application>
-``
+```
 
 >important In case you need to modify the default resources of the TelerikTheme for the **RadDataForm** control, please refer to the following article - [DataForm: Modifying TelerikTheme resources]({%slug dataform-howto-modify-theme-resources%})
 

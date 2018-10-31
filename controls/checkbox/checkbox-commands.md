@@ -29,12 +29,15 @@ Add the RadCheckBox control and bound the IsCheckedChangedCommand through the Ch
 
 <snippet id='checkbox-commands-xaml'/>
 
-and define the checkBox command like this:
+use the following namespace:
 
-###
+```XAML
 	xmlns:checkBoxComamnds="clr-namespace:Telerik.XamarinForms.Primitives.CheckBox.Commands;assembly=Telerik.XamarinForms.Primitives"
+```
 
-And lets directly handle the the needed command in the class and create methods for CanExecute and Execute the IsCheckedChangedCommand: Here is a quick example: 
+And lets directly handle the needed command in the class and create methods for CanExecute and Execute the IsCheckedChangedCommand.
+
+Here is a quick example: 
 
 <snippet id='checkbox-commands-csharp'/>
 

@@ -44,6 +44,7 @@ Find the template and click OK. This will invoke the Project Wizard. Make your c
 After rebuilding the solution all packages and binaries will be updated and users will be ready to choose a startup project and deploy it to the targeted platform.
 
 ## See Also
-- [System Requirements]({%slug system-requirements%})
-- [Getting Started on Mac]({%slug getting-started-mac%})
+- [Visual Studio Item Templates]({%slug installation-visual-studio-item-templates%})
+- [Telerik NuGet Server]({%slug telerik-nuget-server%})
 - [Required Android Support Libraries]({%slug required-android-support-libraries%})
+

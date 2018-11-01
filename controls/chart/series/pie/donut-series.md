@@ -33,7 +33,7 @@ And the business object exposes the following properties:
 
 Here is the result:
 
-![Basic PieSeries](images/donut-series-basic-example.png)
+![Basic Donut Series](images/donut-series-basic-example.png)
 
 ## See Also
 

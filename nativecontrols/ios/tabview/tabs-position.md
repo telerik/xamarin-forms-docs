@@ -3,6 +3,7 @@ title: Tabs Position
 page_title: TKTabview Tabs Position
 position: 4
 slug: tabview-tabs-position
+published: False
 ---
 
 TKTabView's layouts can position its tabs on the four edges of the view's bounds: top, left, right and bottom. To set the tabs position simply set the

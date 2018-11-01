@@ -26,7 +26,7 @@ Our suite offers the following controls for cross-platform development with Xama
 - [Border]({%slug border-overview %})
 - [BusyIndicator]({% slug busyindicator-overview %})
 - [Button] ({% slug button-overview %})
-- [Calendar]({% slug calendar-overview %})
+- [Calendar &amp; Scheduling]({% slug calendar-overview %})
 - [Chart]({% slug chart-overview %})
 - [CheckBox]({% slug checkbox-overview %})
 - [Conversational UI]({% slug chat-overview %})

@@ -160,9 +160,6 @@ navigation:
     nativecontrols/ios/spreadstreamprocessing:
         title: SpreadStreamProcessing
         position: 11
-    nativecontrols/ios/tabview:
-        title: TabView
-        position: 12
     nativecontrols/ios/ziplibrary:
         title: ZipLibrary
         position: 13

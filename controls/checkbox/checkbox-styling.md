@@ -1,35 +1,13 @@
-﻿---
+---
 title: Styling
 page_title: Styling
-position: 3
+position: 4
 slug: checkbox-styling
 ---
 
 # Styling
 
 The purpose of this help article is to show you the styling options of the **RadCheckBox** control. 
-
-## CheckBox Length
-
-The width and height of the checkbox is controlled through the **Length** property and maintains a 1:1 aspect ratio. 
-
-Here is an example of setting the `Length` value:
-
-<snippet id='checkbox-key-features-length-xaml'/>
-
-## Stroke Thickness
-
-The RadCheckBox control exposes a **StrokeWidth** property that specifies the width of the lines with which the Checkbox element is drawn. It affects the border of the control as well as the check mark.
-
-Here is an example how you can apply a `StrokeWidth` value:
-
-<snippet id='checkbox-key-features-strokewidth-xaml'/>
-
-### Example
-
-Here is the result at runtime showing the above StrokeWidth and Length examples:
-
-![CheckBox Key Feature Example](images/checkbox-features.png)
 
 ## Colors
 

@@ -22,24 +22,25 @@ Here is an example how you can set the **Indeterminate** state:
 
 <snippet id='checkbox-key-features-ischeckednull-xaml'/>
 
+## CheckBox Length
 
-## Commands
+The width and height of the checkbox is controlled through the **Length** property and maintains a 1:1 aspect ratio. 
 
-RadCheckBox exposes a Commands collection that allows you to register custom commands with each control’s instance through the **Commands** property:
+Here is an example of setting the `Length` value:
 
-* **Commands**: Gets the collection with all the custom commands registered with the CommandService.
+<snippet id='checkbox-key-features-length-xaml'/>
 
-### Command Type
+## Stroke Thickness
 
-There are two types of commands:
+The RadCheckBox control exposes a **StrokeWidth** property that specifies the width of the lines with which the Checkbox element is drawn. It affects the border of the control as well as the check mark.
 
-* **CheckBoxCommand**: All the default commands within RadCheckBox derive from the base RadCheckBoxCommand. Think of this command as a UI-related command as it operates over the RadCheckBox instance that owns the command.
-* **CheckBoxUserCommand**: This type of command should be used when you would like to modify the behavior of the control on any of the available actions. It exposes the following properties:
-	* **Id**: The key that relates a command instance to a particular action/routine.
-	* **Command**: Gets or sets the generic **ICommand** implementation.
-	* **SuppressDefaultCommand**: Gets or sets a value indicating whether the default(built-in) UI command associated with the specified **Id** will be executed.
+Here is an example how you can apply a `StrokeWidth` value:
 
-Here is the end result with available states defined:
+<snippet id='checkbox-key-features-strokewidth-xaml'/>
+
+### Example
+
+Here is the result at runtime showing the above Indeterminate state as well as StrokeWidth and Length examples:
 
 ![CheckBox Key Feature Example](images/checkbox-features.png)
 

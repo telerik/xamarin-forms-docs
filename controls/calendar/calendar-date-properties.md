@@ -7,7 +7,7 @@ slug: calendar-date-properties
 
 # Date Properties
 
-This article lists the basic properties you could use to configure **RadCalendar** control.
+This article lists the date properties you could use to configure **RadCalendar** control.
 
 ## Setting the current Display Date
 

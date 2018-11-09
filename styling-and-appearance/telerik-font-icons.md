@@ -14,7 +14,7 @@ This article will guide you through the steps needed to change the default icons
 * Available Telerik Icons
 
 
-## Include the required Telerik Font Icons file
+## Include the required Telerik Font file
 
 The Telerik Font Icons are located in the telerikfontexamples.ttl file. There are two options you could use to get the **.ttl** file.
 

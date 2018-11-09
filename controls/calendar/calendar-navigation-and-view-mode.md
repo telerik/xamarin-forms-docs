@@ -1,151 +1,81 @@
 ---
-title: Navigation and View Mode
-page_title: Navigation and View Mode
+title: View Modes
+page_title: View Modes
 position: 3
 slug: calendar-features-navigation-and-view-mode
 ---
 
-# Navigation and View Mode
+# View Modes
 
-## Navigation
+**RadCalendar** is a control that displays a calendar representation from which the user can select a date. There are various View modes that specify what is visible in the Calendar views: **a day**, **few days**, **a month**, **a year**. 
 
-### Properties:
+The table below lists the supported view modes for each platform:
 
- - **DisplayDate** (DateTime): A date in the current view. 
- - **MinDate** (DateTime): Gets or sets the min date that could be displayed or selected. 
- - **MaxDate** (DateTime): Gets or sets the max date that can be displayed or selected. 
+| View Mode 		| iOS		| Android 	| UWP		|
+| ----------------- | ---------	| ---------	| --------- |
+| Month 			| &#x2714;	| &#x2714;	| &#x2714;	|
+| Day 				| &#x2714;	| &#x2714;	| &#x2714;	|
+| MultiDay 			| &#x2714;	| &#x2714;	| &#x2714;	|
+| Year				| &#x2714;	| &#x2714;	| - 		|
+| Week				| &#x2714;	| &#x2714;	| -			|
+| MonthNames		| &#x2714;	| -			| &#x2714;	|
+| YearNumbers		| &#x2714;	| -			| &#x2714;	|
+| Flow				| &#x2714;	| -			| - 		|
 
-### Events:
+You could check how the most used view modes look on different platforms below:
 
-* **DisplayDateChanged** (ValueChangedEventArgs&lt;object&gt;): Occurs when the selected date is changed. The __DisplayDateChanged__ event handler receives two parameters: 
-	* The sender argument which is of type object, but can be cast to the __RadCalendar__ type.
-	* A __ValueChangedEventArgs&lt;object&gt;__ object which provides both old and new values of the __DisplayDate__ property. The values are of type object, but can be cast to the DateTime type.
+#### Day ViewMode
 
-### Example
+![Calendar DayView](images/calendar_viewmodes_dayview.png)
 
-First you have to create a RadCalendar control:
+#### Month ViewMode
 
-	<telerikInput:RadCalendar x:Name="calendar"/>
+![Calendar MonthView](images/calendar_viewmodes_monthview.png)
 
-Where:
+#### Year ViewMode (available on Android and iOS only)
 
-	xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+![Calendar YearView](images/calendar_viewmodes_yearview.png)
 
-Or in code:
-            
-	var calendar = new RadCalendar();
+>tip You can refer to the [MultiDay View]({%slug calendar-multidayview%}) topic for detailed information on the recently added MultiDay view mode of RadCalendar.
 
-Then you can set the properties:
- 
-	calendar.MinDate = DateTime.Today.AddMonths(-1);
-	calendar.MaxDate = DateTime.Today.AddMonths(5);
-	calendar.DisplayDate = DateTime.Today.AddMonths(2);     
+## Setting the ViewMode
 
-Or subscribe to the **DisplayDateChanged** event:
+**ViewMode** property is of type *CalendarViewMode* and is used to get the current ViewMode of RadCalendar control. In order to set a different View, you'd need to use any of the methods listed below: 
 
-	calendar.DisplayDateChanged += (s,e) =>
-	{
-	    // do something  
-	};
 
-## ViewMode
-
-### Properties:
-
- - **ViewMode** (CalendarViewMode): Gets the current view mode of the calendar (use the **TrySetViewMode** method to set the current view).  
-Here are listed the supported view modes for each platform:
-
-<table>
-<tbody>
-	<tr>
-		<th>View Mode</th>
-		<th>iOS</th>
-		<th>Android</th>
-		<th>UWP</th>
-	</tr>
-	<tr>
-		<td>Month</td>
-		<td>&#x2714;</td>
-		<td>&#x2714;</td>
-		<td>&#x2714;</td>
-	</tr>
-	<tr>
-		<td>Day</td>
-		<td>&#x2714;</td>
-		<td>&#x2714;</td>
-		<td>&#x2714;</td>
-	</tr>
-	<tr>
-		<td>MultiDay</td>
-		<td>&#x2714;</td>
-		<td>&#x2714;</td>
-		<td>&#x2714;</td>
-	</tr>
-	<tr>
-		<td>Year</td>
-		<td>&#x2714;</td>
-		<td>&#x2714;</td>
-		<td>-</td>
-	</tr>
-	<tr>
-		<td>Week</td>
-		<td>&#x2714;</td>
-		<td>&#x2714;</td>
-		<td>-</td>
-	</tr>
-	<tr>
-		<td>MonthNames</td>
-		<td>&#x2714;</td>
-		<td>-</td>
-		<td>&#x2714;</td>
-	</tr>
-	<tr>
-		<td>YearNumbers</td>
-		<td>&#x2714;</td>
-		<td>-</td>
-		<td>&#x2714;</td>
-	</tr>
-	<tr>
-		<td>Flow</td>
-		<td>&#x2714;</td>
-		<td>-</td>
-		<td>-</td>
-	</tr>
-</tbody>
-</table>
-
-### Events:
-
-- **ViewChanged** (ValueChangedEventArgs&lt;CalendarViewMode&gt;): Occurs when the calendar view mode is changed. 
-- **TimeSlotTapped** (TimeSlotTapEventArgs): Occurs when the end-user taps on a time slot. The TimeSlotTapEventArgs provides StartTime and EndTime properties of type *DateTime* which define the time slot.
-
-### Methods:
-
+ - bool **TrySetViewMode**(CalendarViewMode *view*, bool *isAnimated* = true): Tries to set the view mode of the calendar to the specified value. If the view mode is supported, the method returns `true`, otherwise returns `false`.
+ - bool **TryNavigateToUpperView** (bool *isAnimated* = true): Navigates to upper view if possible. Returns `true` if navigation has been successful, `false` otherwise. 
+	- **iOS**: `Month` > `MonthNames` > `YearNumbers`
+	- **Android**: `Month` > `Year`
+	- **UWP**: `Month` > `MonthNames` > `YearNumbers`
+ - bool **TryNavigateToLowerView** (bool isAnimated = true): Navigates to lower view if possible. Returns `true` if navigation has been successful, `false` otherwise. 
+	- **iOS**: `YearNumbers` > `MonthNames` > `Month`
+	- **Android**: `Year` > `Month`
+	- **UWP**: `YearNumbers` > `MonthNames` > `Month`
+  
 > **Important**: All calendar navigation methods should be called after the native element has been loaded. Here are the events that you can use:
 > 
 > - **NativeControlLoaded** (EventArgs): Occurs when the renderer has finished preparing the native control.
 > - **NativeControlUnloaded** (EventArgs): Occurs when the native control is in invalid state.
 
- - bool **TrySetViewMode**(CalendarViewMode *view*, bool *isAnimated* = true): Tries to set the view mode of the calendar to the specified value. If the view mode is supported, the method returns `true`, otherwise returns `false`.
- - bool **TryNavigateToUpperView** (bool *isAnimated* = true): Navigates to upper view if possible. Returns `true` if navigation has been successful, `false` otherwise. 
-   - **iOS**: `Month` > `MonthNames` > `YearNumbers`
-  - **Android**: `Month` > `Year`
-  - **UWP**: `Month` > `MonthNames` > `YearNumbers`
- - bool **TryNavigateToLowerView** (bool isAnimated = true): Navigates to lower view if possible. Returns `true` if navigation has been successful, `false` otherwise. 
-  - **iOS**: `YearNumbers` > `MonthNames` > `Month`
-  - **Android**: `Year` > `Month`
-  - **UWP**: `YearNumbers` > `MonthNames` > `Month`
-
 ### Example
 
 You need to attach to the **NativeControlLoaded** event:
 
-	var calendar = new RadCalendar();
-	calendar.NativeControlLoaded += CalendarLoaded;
+```xml
+<telerikInput:RadCalendar x:Name="calendar" NativeControlLoaded="CalendarLoaded" />
+```
+When the control is loaded, you can change the view mode. 
+
+```C#	
+private void CalendarLoaded(object sender, EventArgs args)
+{
+	(sender as RadCalendar).TrySetViewMode(CalendarViewMode.Day);
+}
+```
 	
-When the control is loaded, you can change the view mode.  
-	
-	private void CalendarLoaded(object sender, EventArgs args)
-	{
-	    (sender as RadCalendar).TrySetViewMode(CalendarViewMode.Year);
-	}
+## See Also
+
+* [Date Properties]({%slug calendar-date-properties%})
+* [MultiDay View]({%slug calendar-multidayview%})
+* [Events]({%slug calendar-events%})

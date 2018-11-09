@@ -2,7 +2,7 @@
 title: Events
 page_title: RadCalendarView Events  | Telerik UI for Xamarin.Android Documentation
 description: A page which explains how to integrate events in RadCalendarView for Android.
-slug: calendar-events
+slug: calendar-android-events
 tags: radcalendarview, calendar, events
 position: 4
 publish: true

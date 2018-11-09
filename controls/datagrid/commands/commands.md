@@ -45,6 +45,6 @@ The table below shows all commands in the RadDataGrid control and for each of th
 
 ## See Also
 
-- [CellTap Command]({%slug datagrid-cell-tap%})
-- [Editing Command]({%slug datagrid-editing%})
-- [Validation Command]({%slug datagrid-validation%})
+- [CellTap Command]({%slug datagrid-commands-cell-tap%})
+- [Editing Command]({%slug datagrid-commands-editing%})
+- [Validation Command]({%slug datagrid-commands-validation%})

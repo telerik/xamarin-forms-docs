@@ -72,6 +72,5 @@ The iOS Wrappers are built on top of the truly native controls from the **UI for
 * [Gauges]({%slug ios-gauges-overview%})
 * [ListView]({%slug ios-listview-overview%})
 * [SideDrawer]({%slug ios-sidedrawer-overview%})
-* [TabView]({%slug ios-tabview-overview%})
 
 >important Though the **UI for iOS** and **UI for Android** suites have been discontinued as available products we are using them as basis for the **Xamarin.Android** and **Xamarin.iOS** controls. With this in mind, we are still dedicated to improving their quality and features so they fit nicely and provide smooth development experience in the Xamarin world.

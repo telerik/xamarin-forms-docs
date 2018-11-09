@@ -18,7 +18,7 @@ This article will guide you through the steps needed to change the default icons
 
 The Telerik Font Icons are located in the telerikfontexamples.ttl file. There are two options you could use to get the **.ttf** file.
 
-* Download the **telerikfontexamples.ttl** file from [here](https://github.com/telerik/telerik-xamarin-forms-samples/blob/master/_Samples%20Application/QSF.Android/Assets/Fonts/telerikfontexamples.ttf).
+* Download the **telerikfontexamples.ttf** file from [here](https://github.com/telerik/telerik-xamarin-forms-samples/blob/master/_Samples%20Application/QSF.Android/Assets/Fonts/telerikfontexamples.ttf).
 
 * From the installation folder of the controls: The default location of the **telerikfontexamples.ttf** file is *C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2018\QSF\QSF.Android\Assets\Fonts*
 

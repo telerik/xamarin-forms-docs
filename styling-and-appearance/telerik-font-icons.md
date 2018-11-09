@@ -26,7 +26,7 @@ In order to change the default icon you should include Telerik Font **.ttf** fil
 
 * Android project: Create **Fonts** folder inside the Android **Assets** and add the **.ttf** file there. 
 
-* iOS project: Create **Fonts** folder inside the Android **Resources** and add the **.ttf** file there.
+* iOS project: Create **Fonts** folder inside the iOS **Resources** and add the **.ttf** file there.
 Also you need to modify the info.plist file inside the iOS project with adding the following code:
 
 ```xml

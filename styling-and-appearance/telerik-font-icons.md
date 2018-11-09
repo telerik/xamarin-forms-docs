@@ -16,17 +16,17 @@ This article will guide you through the steps needed to change the default icons
 
 ## Include the required Telerik Font file
 
-The Telerik Font Icons are located in the telerikfontexamples.ttl file. There are two options you could use to get the **.ttl** file.
+The Telerik Font Icons are located in the telerikfontexamples.ttl file. There are two options you could use to get the **.ttf** file.
 
 * Download the **telerikfontexamples.ttl** file from [here](https://github.com/telerik/telerik-xamarin-forms-samples/blob/master/_Samples%20Application/QSF.Android/Assets/Fonts/telerikfontexamples.ttf).
 
-* From the installation folder of the controls: The default location of the **telerikfontexamples.ttl** file is *C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2018\QSF\QSF.Android\Assets\Fonts*
+* From the installation folder of the controls: The default location of the **telerikfontexamples.ttf** file is *C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2018\QSF\QSF.Android\Assets\Fonts*
 
-In order to change the default icon you should include Telerik Font **.ttl** file into your project to the following locations:
+In order to change the default icon you should include Telerik Font **.ttf** file into your project to the following locations:
 
-* Android project: Create **Fonts** folder inside the Android **Assets** and add the **.ttl** file there. 
+* Android project: Create **Fonts** folder inside the Android **Assets** and add the **.ttf** file there. 
 
-* iOS project: Create **Fonts** folder inside the Android **Resources** and add the **.ttl** file there.
+* iOS project: Create **Fonts** folder inside the Android **Resources** and add the **.ttf** file there.
 Also you need to modify the info.plist file inside the iOS project with adding the following code:
 
 ```xml
@@ -35,7 +35,7 @@ Also you need to modify the info.plist file inside the iOS project with adding t
     <string>Fonts/telerikfontexamples.ttf</string>
 ```
 
-* UWP project: Create **Fonts** folder inside the UWP **Assets** and add the **.ttl** file there.
+* UWP project: Create **Fonts** folder inside the UWP **Assets** and add the **.ttf** file there.
 
 
 ## Add the font path
@@ -77,7 +77,7 @@ The gear icon's code is: **0xe80f** and the final code result that should be set
 You have to 
 * replace the **0x** with **&#x** 
 * capitalize all the letters
-* put a semicolumn at the end of the string
+* put a semicolon at the end of the string
 
 ```XAML
 <telerikGrid:DataGridTextColumn.HeaderStyle>

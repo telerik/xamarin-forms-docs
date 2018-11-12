@@ -16,7 +16,8 @@ This article describes the properties and the events that are specific for the *
 - **DrawerTransitionDuration** (double): Gets or sets the duration of the chosen transition.
 - **DrawerTransitionType** (SideDrawerTransitionType): Gets or sets the transition of the component. This property can be set to one of the following values: {Fade, Push, Reveal, ReverseSlideOut, ScaleUp, SlideAling, SlideInOnTop, Custom}.
 - **DrawerTransitionFadeOpacity** (double): Gets or sets the opacity of the fade layer of the component. This controls the fade layer opacity on Android or the dim opacity on iOS.
-- **Commands**: A collection with elements of type **ICommand** containing all user defined commands.
+- **Commands** (ObservableCollection): A collection with elements of type **ICommand** containing all user defined commands.
+- **AreGesturesEnabled**(bool): Gets or sets ability for gestures to open and close the drawer
 
 # Events
 

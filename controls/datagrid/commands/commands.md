@@ -1,7 +1,7 @@
 ---
-title: Commands
-page_title: Commands
-position: 9
+title: Overview
+page_title: Overview
+position: 0
 slug: datagrid-commands-overview
 ---
 
@@ -43,32 +43,8 @@ The table below shows all commands in the RadDataGrid control and for each of th
 | ValidateCell | ValidateCellContext |
 | LoadMoreData | CommandsViewModel |
 
-## Example
-
-Here is the definition of the DataGrid control:
-
-<snippet id='datagrid-commands-celltap-xaml'/>
-
-In the example the following business object is used:
-
-<snippet id='datagrid-commands-celltap-businessobject'/>
-
-Here is the simple data used as binding context:
-
-<snippet id='datagrid-commands-celltap-data'/>
-
-Let;s handle the CellTap action as a Command. First, create a class that inherits from the DataGridCommand and set its Id property accordingly.
-You would also need to override CanExecute and Execute methods as demostrated in the example below:
-
-<snippet id='datagrid-commands-celltap'/>
-
-Then add this Command to the Commands collection of the RadDataGrid instance:
-
-<snippet id='datagrid-commands-cetttap-add'/>
-
->important [SDK Samples Browser application]({%slug developer-focused-examples%}) contains an example that shows how to use the CellTap Command.
-
 ## See Also
 
-* [DataGrid Selection]({%slug datagrid-selection-overview%})
-* [DataGrid Sorting]({%slug datagrid-sorting-overview%})
+- [CellTap Command]({%slug datagrid-commands-cell-tap%})
+- [Editing Command]({%slug datagrid-commands-editing%})
+- [Validation Command]({%slug datagrid-commands-validation%})

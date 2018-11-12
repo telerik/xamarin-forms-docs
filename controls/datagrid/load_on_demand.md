@@ -101,5 +101,5 @@ And how you set the property:
 ## See Also
 
 * [DataGrid Filtering]({%slug datagrid-filtering-overview%})
-* [DataGrid Grouping](%slug datagrid-grouping-overview%)
-* [DataGrid Sorting](%slug datagrid-sorting-overview%)
+* [DataGrid Grouping]({%slug datagrid-grouping-overview%})
+* [DataGrid Sorting]({%slug datagrid-sorting-overview%})

@@ -9,7 +9,7 @@ tags: style, selected,
 
 # ListViewTemplateCell and SelectedItemStyle
 
-When using a ListViewTemplateCell, a SelectedItemStyle's **TextCellTextColor** value will not be used for custom views in the DataTemplate. You can still achieve a simiar result by using a model property and ValueConverter, the example below uses such an approach.
+When using a ListViewTemplateCell, a SelectedItemStyle's **TextCellTextColor** value will not be used for custom views in the DataTemplate. You can still achieve a similar result by using a model property and ValueConverter, the example below uses such an approach.
 
 ### Example
 

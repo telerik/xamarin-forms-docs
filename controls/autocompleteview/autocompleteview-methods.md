@@ -7,14 +7,14 @@ slug: autocompleteview-methods
 
 # Methods
 
-**RadAutoCompleteView** exposes the ability to explicitly show/hide the popup containing the filtered items through the following methods:
+**RadAutoCompleteView** exposes the ability to explicitly show/hide the popup containing all items through the following methods:
 
-* **ShowSuggesstions**
-* **HideSuggestions**
+* **ShowSuggesstions**: Shows all items when the control recieves focus.
+* **HideSuggestions**: Hide all items when the focus of the control is lost.
 
 ## Example
 
-The example below uses **ShowSuggesstions** method to display the filtered items as soon as the AutoCompleteView receives the focus. 
+The example below uses **ShowSuggesstions** method to display all items as soon as the AutoCompleteView receives the focus. 
 
 First, create the needed business objects, for example type Client with the following properties:
 

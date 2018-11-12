@@ -28,7 +28,7 @@ All the predefined commands within a RadListView instance are identified by a me
 * LoadOnDemand
 * ItemHold
 * GroupHeaderTap
-* ReorderStarting,
+* ReorderStarting
 * ReorderEnded
 
 >tip These actions correspond to the exposed by RadListView events, for more details go to [Events]({%slug listview-features-events%}) topic.

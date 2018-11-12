@@ -143,7 +143,7 @@ Now that you have everything set correctly, try typing something in English and 
 
 ## See Also
 
-* [Text Analysis]({slug cloud-integration-cognitive-services-text-analysis%})
+* [Text Analysis]({%slug cloud-integration-cognitive-services-text-analysis%})
 * [Blob Storage]({%slug cloud-integration-azure-blob-storage%})
 * [SQL Database]({%slug cloud-integration-azure-sql-database%}) 
 * [Cosmos DB]({%slug cloud-integration-cosmosdb%})

@@ -149,10 +149,10 @@ The following property is used to enable/disable the filtering of a specific col
 
 * **CanUserFilter** (bool): Defines a value indicating whether the user can filter the column by using the Filtering UI. 
 
-The appearance of the Filtering UI can be customized by inheriting the **DataGridFilterControlBase** class. For more details on this check [How to customize Filtering UI]({%slug %}) article.
+The appearance of the Filtering UI can be customized by inheriting the **DataGridFilterControlBase** class. For more details on this check [How to customize Filtering UI]({%slug datagrid-howto-customize-filtering-ui%}) article.
 
 ## See Also
 
 - [Grouping]({%slug datagrid-grouping-overview%})
-- [Sorting](%slug datagrid-sorting-overview%)
+- [Sorting]({%slug datagrid-sorting-overview%})
 - [Selection]({%slug datagrid-selection-overview%})

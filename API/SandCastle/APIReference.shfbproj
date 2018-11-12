@@ -75,7 +75,11 @@
           <ignoreIfUnresolved>
             <assemblyIdentity name="BusinessObjects.Licensing.KeycodeDecoder" />
             <assemblyIdentity name="FormsViewGroup" />
+			<assemblyIdentity name="System.Linq.Expressions" />
             <assemblyIdentity name="Mono.Android" />
+			<assemblyIdentity name="Xamarin.Android.Support.Compat"/>
+			<assemblyIdentity name="Java.Interop" />
+			<assemblyIdentity name="Xamarin.Android.Support.Core.UI" />
             <assemblyIdentity name="SkiaSharp" />
             <assemblyIdentity name="SkiaSharp.Forms" />
             <assemblyIdentity name="SkiaSharp.Views" />

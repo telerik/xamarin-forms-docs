@@ -61,7 +61,7 @@ In **Visual Studio** open the **NuGet Package Manager** and install the **Dynamo
 
 Another option is to to type the following command in the **NuGet Package Manager Console**: *PM> Install-Package AWSSDK.DynamoDBv2*
 
->note If you do not have an AWS account in Visual Studio please check the [Getting Started]({%slug cloud-integration/aws/getting-started%}) article.
+>note If you do not have an AWS account in Visual Studio please check the [Getting Started]({%slug cloud-services/aws/getting-started%}) article.
 
 ## Step 3: Create the ViewModel
 

@@ -19,7 +19,7 @@ Eventually, you should set it as the **DataGridLocalizationManager.Manager**:
 
 <snippet id='datagrid-setting-the-custom-manager-csharp'/>
 
->important You should set the custom manager before the InitializeComponent() method is invkoed otherwise the default values will be applied to the RadDataGrid
+>important You should set the custom manager before the InitializeComponent() method is invoked otherwise the default values will be applied to the RadDataGrid
 
 **Figure 1** shows the appearance of the filtering component within the RadDataGrid after the custom localization manager is applied.
 
@@ -44,11 +44,11 @@ The resource file ends with "de.resx" and is automatically used when the languag
 #### Figure 3: Custom Resource File for German language
 ![custom resource manager](images/datagrid_resourcemanager.png)
 
->note You can check a working example in the **DataGrid/Localization/CustomResourceManager** folder within the **SDK Samples Browser**.
+>important You can check a working example in the **DataGrid/Localization/CustomResourceManager** folder within the **SDK Samples Browser**.
 
 
 ## See Also
 
 * [DataGrid Sorting]({%slug datagrid-sorting-overview%})
 * [DataGrid Filtering]({%slug datagrid-filtering-overview%})
-* [DataGrid Grouping](%slug datagrid-grouping-overview%)
+* [DataGrid Grouping]({%slug datagrid-grouping-overview%})

@@ -26,7 +26,7 @@ To display something in the tab you can define [TabViewItem]({%slug tabview-feat
 <snippet id='tabview-getting-started-xaml'/>
 <snippet id='tabview-getting-started-csharp'/>
 
-To define the header of a TabViewItem you can use its **HeaderText** property as in the example. If you need to show a more complext layout you can use the **Header** property.
+To define the header of a TabViewItem you can use its **HeaderText** property as in the example. If you need to show a more complex layout you can use the **Header** property.
 
 #### __Figure 1: TabView example__  
 ![BusyIndicator example](../images/tabview-gettingstarted-0.png)

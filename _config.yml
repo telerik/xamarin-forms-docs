@@ -160,9 +160,6 @@ navigation:
     nativecontrols/ios/spreadstreamprocessing:
         title: SpreadStreamProcessing
         position: 11
-    nativecontrols/ios/tabview:
-        title: TabView
-        position: 12
     nativecontrols/ios/ziplibrary:
         title: ZipLibrary
         position: 13
@@ -190,25 +187,20 @@ navigation:
     controls/datagrid/columns/column-types: 
         title: "Column Types"
         position: 1    
+    controls/datagrid/commands:
+        title: "Commands"
+        position: 9
     controls/datagrid/theming-and-styles: 
         title: "Theming and Styles"
-        position: 12
+        position: 10
     controls/datagrid/howto: 
         title: "How To"
-        position: 13
+        position: 11
     ## End DataGrid
     
     ## Entry
     controls/entry:
         title: "Entry"
-        ## Entry Sub-Folders
-    controls/entry/getting-started:
-        title: "Getting Started"
-        position: 1
-    controls/entry/features:
-        title: "Features"
-        position: 2
-        ## End Entry Sub-Folders
     ## End Entry
     
      ## Expander
@@ -219,14 +211,6 @@ navigation:
     ## NumericInput
     controls/numericinput:
         title: "NumericInput"
-        ## Entry Sub-Folders
-    controls/numericinput/getting-started:
-        title: "Getting Started"
-        position: 1
-    controls/numericinput/features:
-        title: "Features"
-        position: 2
-        ## End NumericInput Sub-Folders
     ## End NumericInput
     
     ## Path

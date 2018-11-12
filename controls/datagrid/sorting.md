@@ -25,9 +25,16 @@ You can sort the data in a DataGrid by pointing a property from the class that d
 
 <snippet id='datagrid-propertysortdescriptor-xaml'/>
 ```XAML
-<grid:RadDataGrid.SortDescriptors>
-	<common:PropertySortDescriptor PropertyName="Name"/>
-</grid:RadDataGrid.SortDescriptors>
+<telerikGrid:RadDataGrid.SortDescriptors>
+	<telerikCommon:PropertySortDescriptor PropertyName="Name"/>
+</telerikGrid:RadDataGrid.SortDescriptors>
+```
+
+where the used namespaces are defined like this:
+
+```XAML
+xmlns:telerikGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
+xmlns:telerikCommon="clr-namespace:Telerik.XamarinForms.Common.Data;assembly=Telerik.XamarinForms.Common"
 ```
 
 ### Delegate Sort Descriptor
@@ -78,5 +85,5 @@ The following property is used to enable/disable the sorting of a specific colum
 ## See Also
 
 - [Filtering]({%slug datagrid-filtering-overview%})
-- [Grouping](%slug datagrid-grouping-overview%)
+- [Grouping]({%slug datagrid-grouping-overview%})
 - [Selection]({%slug datagrid-selection-overview%})

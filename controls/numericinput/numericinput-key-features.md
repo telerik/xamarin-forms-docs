@@ -1,7 +1,7 @@
 ---
 title: Key Features
 page_title: Key Features
-position: 0
+position: 2
 slug: numericinput-key-features
 ---
 
@@ -55,4 +55,5 @@ RadNumericInput supports read-only mode in which the end user cannot type into t
 
 ## See Also
 
-- [NumericInput Getting Started]({% slug numericinput-getting-started%})
+- [Globalization]({%slug numericinput-globalization%})
+- [Commands]({%slug numericinput-commands%})

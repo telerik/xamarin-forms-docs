@@ -62,7 +62,7 @@ In addition to this, you need to add the following namespace:
 ## 4. Populating RadAutoCompleteView with data
 
 Lets provide an items source for the suggestion list:
-<snippet id='aautocompleteview-getting-started-items-source'/>
+<snippet id='autocompleteview-getting-started-items-source'/>
 
 Finally, set the AutoCompleteView as content of your page.
 

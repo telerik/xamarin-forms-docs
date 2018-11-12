@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: Commands
-position: 2
+position: 4
 slug: numericinput-commands
 ---
 
@@ -27,4 +27,5 @@ Where:
 
 ## See Also
 
-- [NumericInput Getting Started]({% slug numericinput-getting-started%})
+- [Key Features]({%slug numericinput-key-features%})
+- [Globalization]({%slug numericinput-globalization%})

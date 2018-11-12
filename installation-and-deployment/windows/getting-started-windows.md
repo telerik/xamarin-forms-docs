@@ -30,34 +30,27 @@ If your scenario requires using the other approach, please proceed following the
 
 #### How to create blank Xamarin.Forms app
 
-Create new solution **Xamarin.Forms Portable** / **Shared**
+Create new solution **Mobile App (Xamarin.Forms)**:
 
-**Visual Studio**: located at *Templates* > *Visual C#* > *Mobile Apps* section:  
+**Visual Studio**: located at *Visual C#* > *Cross-Platform* section:  
 ![Create new Xamarin.Forms solution](../images/visual-studio-new-solution.png "Image")
 
-Typically, the solution will contain the following projects:
+In the next screen you could choose the platforms your app will target as well as the code sharing strategy:
 
-* **Portable/Shared**: Cross platform application library that contains the shared code and UI.
+![Create new Xamarin.Forms solution second screen](../images/visual-studio-new-solution_screen2.png "Image")
+
+Typically, the solution can contain the following projects:
+
+* **.NET Standard/Shared**: Cross platform application library that contains the shared code and UI.
 * **Android**: Available on all operation systems.
-* **WinPhone**, **Windows 8.1**or **UWP**: Available only for projects created with Visual Studio.
+* **UWP**: Available only for projects created with Visual Studio.
 * **iOS**:
  * Available for MacOS.
  * If you wish to use Visual Studio as a development environment you will also need a mac machine. You can find more information how to setup your environment here: [Introduction to Xamarin.iOS for Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/)
-
-## 2. Getting the latest platform SDK versions
-
-Make sure that your Xamarin.Forms packages are up to date.
-
+  
 >The **Android project** requires multiple packages with specific versions. The **Xamarin.Forms** package will install most of the required packages as its dependencies. You can then go to [Required Android Support Libraries]({% slug required-android-support-libraries %}) article and check if you have all required files and versions.
 
-This is how you can update the NuGet packages:
-
-1. Right-click the newly created solution and choose: Visual Studio > "Manage NuGet packages for Solution".
-2. From Updates >> nuget.org install the latest version of the **Xamarin.Forms** package.
-
-![Update packages](../images/calendar-getting-started-update-packages.png)
-
-## 3. Add reference to Telerik Components
+## 2. Add reference to Telerik Components
 
 You have two options.
 

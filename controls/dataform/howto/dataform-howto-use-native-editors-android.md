@@ -12,7 +12,7 @@ First you have to specify that a custom editor will be used for this property.
 
 	dataForm.RegisterEditor("Animal", EditorType.Custom);
 
-Then you have to inherit from the default **DataFormRenderer** and override the some of its methods.
+Then you have to inherit from the default **DataFormRenderer** and override some of its methods.
 
 	public class CustomRendererDroid : DataFormRenderer
 	{

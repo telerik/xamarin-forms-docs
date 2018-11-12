@@ -88,7 +88,7 @@ The **SearchViewTwoLinesItems** template once again shows a different approach o
 
 ### Login Screen
 
-The **Login Screen** template provides different options for entering user credentials, such as with fingerprint, with pin or social login. The template uses RadEntry, RadButton, RadBorder, and RadCheckbox from Progress Telerik UI for Xamarin.
+The **Login Screen** templates provide various options for entering user credentials, such as with fingerprint, with pin or integrating a social login. There are 5 different scenarios available, so you could choose the one that best suits your requirements. The templates use [RadEntry]({%slug entry-overview%}), [RadButton]({%slug button-overview%}), [RadBorder]({%slug border-overview%}), and [RadCheckBox]({%slug checkbox-overview%}) components from Progress Telerik UI for Xamarin.
 
 The image below shows LoginComplete template:
 
@@ -97,7 +97,7 @@ The image below shows LoginComplete template:
 
 ### Feedback Screen
 
-The **Feedback Screen** template implements a feedback scenario using RadBorder, RadButton, and RadListView from Progress Telerik UI for Xamarin.
+The **Feedback Screen** template implements a feedback scenario for receiving comments, notes or recommendations (and attachments) from the end users regarding the app. The template uses [RadBorder]({%slug border-overview%}), [RadButton]({%slug button-overview%}) and [RadListView]({%slug listview-overview%}) from Progress Telerik UI for Xamarin.
 
 #### Figure 11: Feedback Screen
 ![feedback screen](images/item-templates/item-template-feedback.png) 

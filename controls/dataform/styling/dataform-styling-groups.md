@@ -36,4 +36,6 @@ Here is the source item class:
 
 <snippet id='dataform-styling-groups-dataitem'/>
 
+And this is how the DataForm Group Styling looks:
+
 ![](images/dataform-styling-groups.png)

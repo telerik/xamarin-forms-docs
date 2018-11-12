@@ -26,16 +26,20 @@ You could load the data automatically using event. In this case here is how the 
 ###Define the listview in xaml
 
 Let's have the following ListView definition:
+
 <snippet id='listview-loadondemand-loadondemandeventauto-declaration'/>
 
 You would also need to define the listview namespace:
- <snippet id='xmlns-telerikdatacontrols'/>
+
+<snippet id='xmlns-telerikdatacontrols'/>
 
 ###Add the code to load the data in the LoadOnDemand event
 First, set listview itemsSource in page constructor:
+
 <snippet id='listview-loadondemand-loadondemandeventauto-bind'/>
 
 Then add the following event handler:
+
 <snippet id='listview-loadondemand-loadondemandeventauto-event'/>
 
 ## Manual loading mode
@@ -44,17 +48,21 @@ Alternatively you can request items only explicitely when pressing the load more
 ###Define the listview in xaml with manual loading mode
 
 Use the following ListView definition:
+
 <snippet id='listview-loadondemand-loadondemandeventmanual-declaration'/>
 
-You would also need to define the listview namespace
- <snippet id='xmlns-telerikdatacontrols'/>
+You would also need to define the listview namespace:
+
+<snippet id='xmlns-telerikdatacontrols'/>
 
 ###Add the code to load the data in the LoadOnDemand event
 
 First, we set listview itemsSource in page constructor:
+
 <snippet id='listview-loadondemand-loadondemandeventmanual-bind'/>
 
 Then, add use the following event handler:
+
 <snippet id='listview-loadondemand-loadondemandeventmanual-event'/>
 
 Figure 1: Manual Loading on demand
@@ -65,18 +73,22 @@ Figure 1: Manual Loading on demand
 In many sceanarios you would like to control the loading of the data directly from the viewmodel. For these cases you can take advantage of our **ListViewLoadOnDemandCollection** that takes case of reqesting new items internally. It can work both in **Manual** and **Automatic** mode. Let's see the setup for Automatic loading mode using the collection.
 
 ###Define the listview in xaml
-Define the listview in xaml and bind its ItemsSource to the data in the viewmodel.
+Define the listview in xaml and bind its ItemsSource to the data in the viewmodel:
+
 <snippet id='listview-loadondemand-loadondemandcollection-declaration'/>
 
-You would also need to define the listview namespace
+You would also need to define the listview namespace:
+
  <snippet id='xmlns-telerikdatacontrols'/>
 
 ###Define the Viewmodel
 Use the following snippet to define the ViewModel:
+
 <snippet id='listview-loadondemand-loadondemandcollection-viewmodel'/>
 
 ###Bind the BindingContext 
 Finally, set the ViewModel as BindingContext in the page constructor:
+
 <snippet id='listview-loadondemand-loadondemandcollection-binding'/>
 
 ## Advanced options
@@ -87,11 +99,13 @@ This feature works in conjunction with [LoadOnDemandMode.Automatic mode of the l
 ###Change the appearance of Manual load button
 This feature works in conjunction with [LoadOnDemandMode.Manual mode of the listview]({%slug listview-features-load-on-demand%}#manual-loading-mode)
 You can control load more button content through the **LoadOnDemandItemTemplate** property.
+
 <snippet id='listview-loadondemand-loadondemandcustomizations-lodbutton'/>
 
 ###Change the appearance of Manual loading indicator
 This feature works in conjunction with [LoadOnDemandMode.Manual mode of the listview]({%slug listview-features-load-on-demand%}#manual-loading-mode)
-You can control the loadinf indicator content through the **LoadingOnDemandItemTemplate** property.
+You can control the loading indicator content through the **LoadingOnDemandItemTemplate** property.
+
 <snippet id='listview-loadondemand-loadondemandcustomizations-loadingindicator'/>
 
 ## See Also

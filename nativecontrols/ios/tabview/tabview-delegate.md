@@ -3,6 +3,7 @@ title: Delegate
 page_title: TKTabview Delegate
 position: 5
 slug: tabview-delegate
+published: False
 ---
 
 # Delegate

@@ -51,7 +51,7 @@ And here is the end result:
 #### Figure 2: ListView with ReorderItemStyle
 ![](../images/listview_features_reorderItemstyle.png)
 
->note You can find a working demo labeled **ItemStyles** in the ListView/Styling folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}). 
+>important You can find a working demo labeled **ItemStyles** in the ListView/Styling folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}). 
 
 ## ListViewItemStyle with Bindable Properties
 

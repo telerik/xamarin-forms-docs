@@ -1,7 +1,7 @@
 ---
 title: Filtering
 page_title: Filtering
-position: 8
+position: 9
 slug: autocompleteview-filtering
 ---
 

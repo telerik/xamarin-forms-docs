@@ -1,7 +1,7 @@
 ---
 title: SuggestionItem Template
 page_title: SuggestionItem Template
-position: 5
+position: 6
 slug: autocompleteview-suggestion-item-template
 ---
 

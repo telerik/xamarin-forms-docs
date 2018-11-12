@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events
-position: 6
+position: 7
 slug: autocompleteview-events
 ---
 

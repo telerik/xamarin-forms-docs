@@ -7,13 +7,13 @@ slug: autocompleteview-suggest-mode
 
 # Suggest Mode
 
-The **RadAutoCompleteView** exposes three different modes for providing suggestions:
+**RadAutoCompleteView** exposes three different modes for providing suggestions:
 
 * Suggest
 * Append
 * SuggestAppend
 
-In order to use those modes you should use the **SuggestMode** property of the control. The default SuggestMode is "Suggest". 
+In order to choose any of those modes you should set the **SuggestMode** property of the control. The default SuggestMode is "Suggest". 
 
 ## Example
 

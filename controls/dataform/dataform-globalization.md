@@ -17,7 +17,7 @@ By adding separate resource files for the different cultures you would like to s
 
 ### 1. Add resource files for the different cultures and fill in the values for the respective languages:
 
-In case you would like the RadDataForm control to support two languages - English and Spanish - you should add a couple of resource files, for example - *DataFormResources.resx* and *DataFormResources.es.resx*. The former will contain the values in English and the latter the values in German. Here is an example:
+In case you would like the RadDataForm control to support two languages - English and Spanish - you should add a couple of resource files, for example - *DataFormResources.resx* and *DataFormResources.es.resx*. The former will contain the values in English and the latter the values in Spanish. Here is an example:
 
 ![Resources added](images/dataformresources.png)
 

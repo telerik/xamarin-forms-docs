@@ -11,6 +11,8 @@ slug: chart-behaviors-selection
 
 **ChartSelectionBehavior** is responsible for selecting, deselecting and reporting the selection of either data points or series. In other words, the selection behavior can target data points, series or both if required.
 
+>important With R2 2018 SP release Behaviors property of RadChart was replaced with **ChartBehaviors**. Behaviors property is marked as obsolete, so please use **ChartBehaviors** instead.
+
 ## Features
 
 ### Properties

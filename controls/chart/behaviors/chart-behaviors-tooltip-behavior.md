@@ -11,6 +11,8 @@ slug: chart-behaviors-tooltip
 
 **ChartTooltipBehavior** is responsible for rendering concise information about a data point in a small popup which is displayed close to its relevant data point.
 
+>important With R2 2018 SP release Behaviors property of RadChart was replaced with **ChartBehaviors**. Behaviors property is marked as obsolete, so please use **ChartBehaviors** instead.
+
 ## Features
 
 - **TriggerMode**: Determines the gestures on which the ChartToolTipBehavior should show a tool tip. The available values are:

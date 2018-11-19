@@ -1,7 +1,7 @@
 ---
 title: Data Binding
 page_title: Data Binding
-position: 4
+position: 5
 slug: autocompleteview-data-binding
 ---
 

@@ -25,6 +25,8 @@ With **ChartPanAndZoomBehavior**, RadChart handles the gestures drag, pinch open
 	- Both
 - **HandleDoubleTap**: Determines whether a double-tap gesture will be handled by the behavior to reset the values of the Zoom and ScrollOffset (Pan) properties of the chart.
 
+>important With R2 2018 SP release Behaviors property of RadChart was replaced with **ChartBehaviors**. Behaviors property is marked as obsolete, so please use **ChartBehaviors** instead.
+
 ## Example
 
 Here is an example how the Chart PanAndZoom Behavior works:

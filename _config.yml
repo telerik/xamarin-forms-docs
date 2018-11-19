@@ -315,9 +315,6 @@ navigation:
     controls/chart:
         title: "Chart"
         ## Chart Sub-Folders
-    controls/chart/getting-started:
-        title: "Getting Started"
-        position: 2
     controls/chart/axes:
         title: "Axes"
         position: 4

@@ -1,17 +1,17 @@
 ---
-title: ChartPanAndZoomBehavior
+title: Pan And Zoom Behavior
+page_title: Pan And Zoom Behavior
+position: 4
 slug: chart-behaviors-pan-and-zoom
 ---
 
-# ChartPanAndZoomBehavior #
+# ChartPanAndZoomBehavior
 
-## Overview ##
+## Overview
 
 With **ChartPanAndZoomBehavior**, RadChart handles the gestures drag, pinch open and pinch close which respectively cause panning, zooming in and zooming out of the associated chart plot area.
 
->important With R2 2018 SP release Behaviors property of RadChart was replaced with **ChartBehaviors**. Behaviors property is marked as obsolete, so please use **ChartBehaviors** instead.
-
-## Features ##
+## Features
 
 - **ZoomMode**: Gets or sets value that specifies how the chart will respond to a zoom gesture. The available values are:
 	- None
@@ -25,31 +25,38 @@ With **ChartPanAndZoomBehavior**, RadChart handles the gestures drag, pinch open
 	- Both
 - **HandleDoubleTap**: Determines whether a double-tap gesture will be handled by the behavior to reset the values of the Zoom and ScrollOffset (Pan) properties of the chart.
 
-## Example ##
+## Example
 
-    <telerikChart:RadCartesianChart>
-	  <telerikChart:RadCartesianChart.BindingContext>
-	    <viewMoedls:CategoricalViewModel/>
-	  </telerikChart:RadCartesianChart.BindingContext>
-	
-	  <telerikChart:RadCartesianChart.ChartBehaviors>
-	  <telerikChart:ChartPanAndZoomBehavior ZoomMode="Horizontal" PanMode="Horizontal" HandleDoubleTap="True"  />
-	  </telerikChart:RadCartesianChart.ChartBehaviors>
-	  <telerikChart:RadCartesianChart.HorizontalAxis>
-	    <telerikChart:CategoricalAxis/>
-	  </telerikChart:RadCartesianChart.HorizontalAxis>
-	  <telerikChart:RadCartesianChart.VerticalAxis>
-	    <telerikChart:NumericalAxis/>
-	  </telerikChart:RadCartesianChart.VerticalAxis>
-	  <telerikChart:RadCartesianChart.Series>
-	    <telerikChart:LineSeries ItemsSource="{Binding CategoricalData}">
-	      <telerikChart:LineSeries.ValueBinding>
-	        <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
-	      </telerikChart:LineSeries.ValueBinding>
-	      <telerikChart:LineSeries.CategoryBinding>
-	        <telerikChart:PropertyNameDataPointBinding PropertyName="Category"/>
-	      </telerikChart:LineSeries.CategoryBinding>
-	    </telerikChart:LineSeries>
-	  </telerikChart:RadCartesianChart.Series>
-    </telerikChart:RadCartesianChart>
+Here is an example how the Chart PanAndZoom Behavior works:
+
+First, create the needed business objects, for example:
+
+<snippet id='temporal-data-model'/>
+
+Then create a ViewModel:
+
+<snippet id='chart-pan-and-zoom-behavior-view-model'/>
+
+Finally, use the following snippet to declare a RadCartesianChart in XAML and in C#:
+
+<snippet id='chart-interactivity-panzoom-xaml'/>
+<snippet id='chart-interactivity-panzoom-csharp'/>
+
+Where the **telerikChart** namespace is the following:
+
+<snippet id='xmlns-telerikchart'/>
+<snippet id='ns-telerikchart'/>
+
+Here is the result:
+
+![Chart Pan And Zoom Behavior](images/chart-behaviors-panandzoom.png "Chart Pan And Zoom Behavior")
+
+>important A sample Pan And Zoom example can be found in the Chart/Interactivity folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
+# See Also
+
+- [Chart Selection Behavior]({%slug chart-behaviors-selection%})
+- [Chart Track Ball Behavior]({%slug chart-behaviors-trackball%})
+- [Chart Tool Tip Behavior]({%slug chart-behaviors-tooltip%})
+
 	

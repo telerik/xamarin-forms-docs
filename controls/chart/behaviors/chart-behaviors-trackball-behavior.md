@@ -1,47 +1,52 @@
 ---
-title: ChartTrackBallBehavior
+title: Track Ball Behavior
+page_title: Track Ball Behavior
+position: 2
 slug: chart-behaviors-trackball
 ---
 
-# ChartTrackBallBehavior #
+# ChartTrackBallBehavior
 
-## Overview ##
+## Overview
+
 **ChartTrackBallBehavior** is responsible for rendering concise information about several data points in a small popup which displays over its relevant data points. A horizontal or vertical line is also drawn through the data points for maximum clarity.
 
->important With R2 2018 SP release Behaviors property of RadChart was replaced with **ChartBehaviors**. Behaviors property is marked as obsolete, so please use **ChartBehaviors** instead.
+## Features 
 
-## Features ##
+- **ShowTrackInfo**(bool):  Determines whether the visual information for all the closest data points will be displayed.
+- **ShowIntersectionPoints**(bool): Defines a value indicating whether a visual information for all the closest data points will be displayed.
 
-- **ShowTrackInfo**:  Determines whether the visual information for all the closest data points will be displayed.
+## Example
 
-## Example ##
+Here is an example how the Chart TrackBall Behavior works:
 
-    <telerikChart:RadCartesianChart>
-	  <telerikChart:RadCartesianChart.BindingContext>
-	    <viewMoedls:CategoricalViewModel/>
-	  </telerikChart:RadCartesianChart.BindingContext>
-	
-	  <telerikChart:RadCartesianChart.ChartBehaviors>
-	    <telerikChart:ChartTrackBallBehavior ShowTrackInfo="True"  />
-	  </telerikChart:RadCartesianChart.ChartBehaviors>
-	  <telerikChart:RadCartesianChart.HorizontalAxis>
-	    <telerikChart:CategoricalAxis/>
-	  </telerikChart:RadCartesianChart.HorizontalAxis>
-	  <telerikChart:RadCartesianChart.VerticalAxis>
-	    <telerikChart:NumericalAxis/>
-	  </telerikChart:RadCartesianChart.VerticalAxis>
-	  <telerikChart:RadCartesianChart.Series>
-	    <telerikChart:LineSeries ItemsSource="{Binding CategoricalData}">
-	      <telerikChart:LineSeries.ValueBinding>
-	        <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
-	      </telerikChart:LineSeries.ValueBinding>
-	      <telerikChart:LineSeries.CategoryBinding>
-	        <telerikChart:PropertyNameDataPointBinding PropertyName="Category"/>
-	      </telerikChart:LineSeries.CategoryBinding>
-	    </telerikChart:LineSeries>
-	  </telerikChart:RadCartesianChart.Series>
-    </telerikChart:RadCartesianChart>
+First, create the needed business objects, for example:
+
+<snippet id='categorical-data-model'/>
+
+Then create a ViewModel:
+
+<snippet id='chart-track-ball-behavior-view-model'/>
+
+Finally, use the following snippet to declare a RadCartesianChart in XAML and in C#:
+
+<snippet id='chart-interactivity-trackballseries-xaml'/>
+<snippet id='chart-interactivity-trackballseries-csharp'/>
+
+Where the **telerikChart** namespace is the following:
+
+<snippet id='xmlns-telerikchart'/>
+<snippet id='ns-telerikchart'/>
 
 Here is how the trackball looks:
 
-![Tooltip Behavior](images/chart-behaviors-trackball-behavior.png)
+![Chart Track Ball Behavior](images/chart-behaviors-trackball.png)
+
+>important A sample TrackBall example can be found in the Chart/Interactivity folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
+# See Also
+
+- [Chart Selection Behavior]({%slug chart-behaviors-selection%})
+- [Chart Tool Tip Behavior]({%slug chart-behaviors-tooltip%})
+- [Chart Pan And Zoom Behavior]({%slug chart-behaviors-pan-and-zoom%})
+

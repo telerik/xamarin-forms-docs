@@ -1,19 +1,19 @@
 ---
-title: ChartSelectionBehavior
+title: Selection Behavior
+page_title: Selection Behavior
+position: 1
 slug: chart-behaviors-selection
 ---
 
-# ChartSelectionBehavior #
+# ChartSelectionBehavior
 
-## Overview ##
+## Overview
 
 **ChartSelectionBehavior** is responsible for selecting, deselecting and reporting the selection of either data points or series. In other words, the selection behavior can target data points, series or both if required.
 
->important With R2 2018 SP release Behaviors property of RadChart was replaced with **ChartBehaviors**. Behaviors property is marked as obsolete, so please use **ChartBehaviors** instead.
+## Features
 
-## Features ##
-
-### Properties ###
+### Properties
 
 - **DataPointSelectionMode**: Gets or sets the ChartSelectionMode that controls the selection behavior of the data points within the chart series. The available values are:
 	-  None
@@ -26,51 +26,44 @@ slug: chart-behaviors-selection
 - **SelectedPoints**: Retrieves all the points from all series within the chart plot area that are currently selected.
 - **SelectedSeries**: Retrieves all the series instances within the plot area that are currently selected.
 
-### Methods ###
+### Methods
 
 - **ClearSelecton()** method : Removes the current selection within the chart.
 
-### Events ###
+### Events
 
 - **SelectionChanged** event: Occurs when a selection has been made.
 
-## Example ##
+## Example
 
-Here's an example that shows how to add ChartSelectionBehavior to a RadChart, set its selection mode and handle its SelectionChanged event where you can get the selected points/series:
+Here is an example how the Chart Selection Behavior works:
 
+First, create the needed business objects, for example:
 
-    <telerikChart:RadCartesianChart SelectionPaletteName="LightSelected">
-	  <telerikChart:RadCartesianChart.BindingContext>
-	    <viewMoedls:CategoricalViewModel/>
-	  </telerikChart:RadCartesianChart.BindingContext>
-	  <telerikChart:RadCartesianChart.ChartBehaviors>
-	    <telerikChart:ChartSelectionBehavior DataPointSelectionMode="Single" SeriesSelectionMode="None" SelectionChanged="SelectionChangedHandler" />
-	  </telerikChart:RadCartesianChart.ChartBehaviors>
-	  <telerikChart:RadCartesianChart.HorizontalAxis>
-	    <telerikChart:CategoricalAxis/>
-	  </telerikChart:RadCartesianChart.HorizontalAxis>
-	  <telerikChart:RadCartesianChart.VerticalAxis>
-	    <telerikChart:NumericalAxis/>
-	  </telerikChart:RadCartesianChart.VerticalAxis>
-	  <telerikChart:RadCartesianChart.Series>
-	    <telerikChart:BarSeries ItemsSource="{Binding CategoricalData}">
-	      <telerikChart:BarSeries.ValueBinding>
-	        <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
-	      </telerikChart:BarSeries.ValueBinding>
-	      <telerikChart:BarSeries.CategoryBinding>
-	        <telerikChart:PropertyNameDataPointBinding PropertyName="Category"/>
-	      </telerikChart:BarSeries.CategoryBinding>
-	    </telerikChart:BarSeries>
-	  </telerikChart:RadCartesianChart.Series>
-    </telerikChart:RadCartesianChart>
+<snippet id='categorical-data-model'/>
 
-Here's the event handler in the code behind:
+Then create a ViewModel:
 
-    private void SelectionChangedHandler(object sender, EventArgs e)
-    {
-        var selectedPoint = (sender as ChartSelectionBehavior).SelectedPoints.FirstOrDefault();
-    }
+<snippet id='chart-selection-behavior-view-model'/>
 
-Here is how a selected bar series data point looks like:
+Finally, use the following snippet to declare a RadCartesianChart in XAML and in C#:
 
-![Selection Behavior](images/chart-behaviors-selection-behavior.png)
+<snippet id='chart-interactivity-selectionseries-xaml'/>
+<snippet id='chart-interactivity-selectionseries-csharp'/>
+
+Where the **telerikChart** namespace is the following:
+
+<snippet id='xmlns-telerikchart'/>
+<snippet id='ns-telerikchart'/>
+
+Here is how the trackball looks:
+
+![Selection Behavior](images/chart-behaviors-selection.png)
+
+>important A sample Selection example can be found in the Chart/Interactivity folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
+# See Also
+
+- [Chart Track Ball Behavior]({%slug chart-behaviors-trackball%})
+- [Chart Tool Tip Behavior]({%slug chart-behaviors-tooltip%})
+- [Chart Pan And Zoom Behavior]({%slug chart-behaviors-pan-and-zoom%})

@@ -13,7 +13,7 @@ In the same way as the built-in mechanism for localizing .NET applications uses 
 
 > You can find information on how to add different resource files to your project on the following link - [String and Image Localization - Adding Resources](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/text?tabs=windows#adding-resources)
 
-By adding separate resource files for the different cultures you would like to support and providing the respective key/value pairs you can easily set up the RadDataForm control so that these values are applied when the culture of the device is changed. Here are all the steps you need to take:
+By adding separate resource files for different cultures you can easily set up the RadDataForm control so that the correct values are applied when the culture of the device is changed. Here are all the steps you need to take:
 
 ### 1. Add resource files for the different cultures and fill in the values for the respective languages:
 

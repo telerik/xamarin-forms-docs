@@ -554,7 +554,7 @@ edit_repo_url: https://github.com/telerik/xamarin-forms-docs/edit/master
 download: https://www.telerik.com/download/xamarin-ui
 nav:
   "Demos": https://www.telerik.com/support/demos#mobile
-  "What's New": https://www.telerik.com/support/whats-new/xamarin-ui
+  "Whats New": https://www.telerik.com/support/whats-new/xamarin-ui
   "About": https://www.telerik.com/xamarin-ui
   "Pricing": https://www.telerik.com/purchase/xamarin-ui
 

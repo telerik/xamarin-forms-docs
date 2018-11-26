@@ -20,21 +20,28 @@ Here are listed all supported series grouped by the chart types that can use the
 ### CartesianChart ###
 
 - **CategoricalSeries**
-    - [BarSeries]({% slug chart-series-bar-series %})
-    - [LineSeries]({% slug chart-series-line-series %})
-    - [SplineSeries]({% slug chart-series-spline-series %})
-    - [AreaSeries]({% slug chart-series-area-series %})
-    - [SplineAreaSeries]({% slug chart-series-spline-area-series %})
+    - [Bar Series]({% slug chart-series-bar-series %})
+    - [Line Series]({% slug chart-series-line-series %})
+    - [Spline Series]({% slug chart-series-spline-series %})
+    - [Area Series]({% slug chart-series-area-series %})
+    - [SplineArea Series]({% slug chart-series-spline-area-series %})
 - **ScatterSeries**
-    - [ScatterPointSeries]({% slug chart-series-scatter-point-series %})
-    - [ScatterLineSeries]({% slug chart-series-scatter-line-series %})
-    - [ScatterSplineSeries]({% slug chart-series-scatter-spline-series %})
-    - [ScatterAreaSeries]({% slug chart-series-scatter-area-series %})
-    - [ScatterSplineAreaSeries]({% slug chart-series-scatter-spline-area-series %})
+    - [ScatterPoint Series]({% slug chart-series-scatter-point-series %})
+    - [ScatterLine Series]({% slug chart-series-scatter-line-series %})
+    - [ScatterSpline Series]({% slug chart-series-scatter-spline-series %})
+    - [ScatterArea Series]({% slug chart-series-scatter-area-series %})
+    - [ScatterSplineArea Series]({% slug chart-series-scatter-spline-area-series %})
 
 ### PieChart ###
 
-- [PieSeries]({% slug chart-series-pie-series %}) 
+- [Pie Series]({% slug chart-series-pie-series %}) 
+- [Donut Series]({% slug chart-series-donut-series %})
+
+### Financial Chart ###
+
+- [Ohlc Series]({% slug chart-series-ohlc-series %}) 
+- [Candlestick Series]({% slug chart-series-candlestick-series %})
+- [Financial Series]({% slug chart-series-financial-indicators %}) 
 
 ## Features ##
 
@@ -84,3 +91,9 @@ The categorical series could be combined. Several combining strategies are suppo
 #### Data Binding ####
 
 Scatter series provide **XValueBinding** and **YValueBinding** properties for data binding to a view model. These properties are of **PropertyNameDataPointBinding** and specify the name  of the property from the data model used by the chart to plot the corresponding visual points.
+
+## See Also ##
+
+- [Annotations]({%slug chart-annotations%})
+- [Chart Legend]({%slug chart-features-legend%})
+- [Null Values]({%slug chart-nullvalues%})

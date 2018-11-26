@@ -1,10 +1,11 @@
 ---
-title: BarSeries
-slug: chart-series-bar-series
+title: Bar Series
+page_title: Bar Series
 position: 0
+slug: chart-series-bar-series
 ---
 
-# BarSeries
+# Bar Series
 
 ## Overview
 
@@ -16,27 +17,31 @@ The **BarSeries** inherits from **CategoricalSeries** and requires one **Categor
 
 ## Example
 
-Here is an example of how to create a basic RadCartesianChart with BarSeries in XAML and C#:
+Here is an example how to create RadCartesianChart with Bar Series:
 
-<snippet id='chart-getting-started-xaml-chart'/>
-<snippet id='chart-getting-started-csharp-chart'/> 
+First, create the needed business objects, for example:
 
-Add the following namespaces:
+<snippet id='categorical-data-model'/>
+
+Then create a ViewModel:
+
+<snippet id='chart-series-view-model-2'/>
+
+Finally, use the following snippet to declare a RadCartesianChart with Bar Series in XAML and in C#:
+
+<snippet id='chart-series-barvertical-xaml'/>
+<snippet id='chart-series-barvertical-csharp'/>
+
+Where the **telerikChart** namespace is the following:
 
 <snippet id='xmlns-telerikchart'/>
 <snippet id='ns-telerikchart'/>
 
-Lets create a simple data that will be used as binding context:
-
-<snippet id='chart-getting-started-viewmodel'/>
-
-And define the business model:
-
-<snippet id='categorical-data-model'/>
-
-And here is the result:
+Here is how it looks:
 
 ![Basic BarSeries](images/cartesian-bar-series-basic-example.png)
+
+>important A sample Bar Series example can be found in the Chart/Series folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## BarSeries Palette Mode
 

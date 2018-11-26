@@ -1,9 +1,12 @@
 ---
-title: CartegoricalSeries Combine Mode
-page_title: CartegoricalSeries Combine Mode
+title: CartesianChart Combine Mode
+page_title: CartesianChart Combine Mode
 slug: chart-series-combine-mode
+position: 0
 ---
-# CartegoricalSeries CombineMode #
+
+# CombineMode
+
 When the series in a RadCartesianChart are more than one, a few different drawing strategies can be used. The possible strategies are:
 
 - **None**: The series are not combined - each series is plotted independently.
@@ -11,33 +14,52 @@ When the series in a RadCartesianChart are more than one, a few different drawin
 - **Stack**: Series form stacks.
 - **Stack100**: Series form stacks that occupy 100% of the plot area and the characterictic size of each series is proportional to its relative value.
 
-The default combine mode is **None**. You can get or set the current combine mode with the series CombineModeproperty.
-# Example #
-Here is an example that demonstrates how you can create BarSeries that are combined in stacks:
+The default combine mode is **None**. You can define the current combine mode with the series **CombineMode** property.
 
-	var chart = new RadCartesianChart
-	{
-	    HorizontalAxis = new CategoricalAxis(),
-	    VerticalAxis = new   NumericalAxis(),
-	};
-	
-	for (var i = 0; i < 6; i++)
-	{
-	    var series = new BarSeries();
-	    series.ItemsSource = CategoricalViewModel.GetCategoricalData();
-	    series.ValueBinding = new PropertyNameDataPointBinding("Value");
-	    series.CategoryBinding = new PropertyNameDataPointBinding("Category");
-	    series.CombineMode = ChartSeriesCombineMode.Stack;
-	
-	    chart.Series.Add(series);
-	}
-Here is the result:  
+## Stack Bar Series Example
 
-![Stack CombineMode](images/chart-series-features-combine-mode-stack.png)
+Here is an example how to create Stack CartesianChart with Bar Series :
 
+First, create the needed business objects, for example:
 
-Here is the same example with the other combine modes:
-##### Stack100 #####
-![Stack CombineMode](images/chart-series-features-combine-mode-stack100.png)
-##### Cluster #####
-![Cluster CombineMode](images/chart-series-features-combine-mode-cluster.png)
+<snippet id='categorical-data-model'/>
+
+Then create a ViewModel:
+
+<snippet id='chart-series-view-model-3'/>
+
+Finally, use the following snippet to declare a CombineMode property to the Bar Series in XAML and in C#:
+
+<snippet id='chart-series-stackbarvertical-xaml'/>
+<snippet id='chart-series-stackbarvertical-csharp'/>
+
+Where the **telerikChart** namespace is the following:
+
+<snippet id='xmlns-telerikchart'/>
+<snippet id='ns-telerikchart'/>
+
+Here is how Stack Bar Series looks:
+
+![Stack CombineMode](images/chart-series-features-combine-mode-stack-bar-series.png)
+
+>important A sample StackBarSeries example can be found in the Chart/Series folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
+## Stack Area Series Example
+
+Here is how Stack Area Series looks:
+
+![Stack CombineMode](images/chart-series-features-combine-mode-stack-area-series.png)
+
+>important A sample StackAreaSeries example can be found in the Chart/Series folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
+## Stack Spline Area Series Example
+
+Here is how Stack Spline Area Series looks:
+
+![Stack CombineMode](images/chart-series-features-combine-mode-stack-spline-area-series.png)
+
+>important A sample StackSplineSeries example can be found in the Chart/Series folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
+## See Also
+
+- [CartesianChart Orientation]({%slug chart-series-orientation %})

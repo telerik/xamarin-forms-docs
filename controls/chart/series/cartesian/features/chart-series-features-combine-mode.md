@@ -1,11 +1,11 @@
 ---
-title: CartesianChart Combine Mode
-page_title: CartesianChart Combine Mode
+title: CategoricalSeries Combine Mode
+page_title: CategoricalSeries Combine Mode
 slug: chart-series-combine-mode
 position: 0
 ---
 
-# CombineMode
+# Combine Mode
 
 When the series in a RadCartesianChart are more than one, a few different drawing strategies can be used. The possible strategies are:
 
@@ -15,6 +15,8 @@ When the series in a RadCartesianChart are more than one, a few different drawin
 - **Stack100**: Series form stacks that occupy 100% of the plot area and the characterictic size of each series is proportional to its relative value.
 
 The default combine mode is **None**. You can define the current combine mode with the series **CombineMode** property.
+
+>note CombineMode could be applied only to Categorical Series, such as Bar, Line and Area.
 
 ## Stack Bar Series Example
 

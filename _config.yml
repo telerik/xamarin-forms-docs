@@ -345,7 +345,7 @@ navigation:
             ## End Chart Series Sub-Folders
     controls/chart/how-to:
         title: "How To"
-        position: 10
+        position: 11
         ## End Chart Sub-Folders
     ## End Chart
     ## CheckBox

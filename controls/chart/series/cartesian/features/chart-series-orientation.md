@@ -1,13 +1,15 @@
 ---
-title: CartesianChart Orientation
-page_title: CartesianChart Orientation
+title: CategoricalSeries Orientation
+page_title: CategoricalSeries Orientation
 slug: chart-series-orientation
 position: 0
 ---
 
-# CartegoricalSeries Orientation
+# Orientation
 
 The orientation of the series depends on which chart axis is horizontal and which one is vertical. 
+
+>note Orientation property could be applied only to CategoricalSeries, such as Bar, Line and Area.
 
 ## Horizontal BarSeries Example
 

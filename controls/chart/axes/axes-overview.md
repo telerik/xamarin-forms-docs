@@ -4,7 +4,7 @@ position: 1
 slug: axes-overview
 ---
 
-# Overview #
+# Overview
 
 **RadCartesianChart** plots data points in a coordinate system defined by its two axes. Instead of having one axis type that does hundreds of things, we have a hierarchy of axes where each concrete axis type expose particular functionality.
 
@@ -12,15 +12,15 @@ slug: axes-overview
 
 The predefined axis types are:
 
-- [**NumericalAxis**]({% slug axes-numerical-axis  %})
-- [**CategoricalAxis**]({% slug axes-categorical-axis %})
-- [**DateTimeAxisContinuous**]({% slug axes-date-time-continuous-axis %})
+- [**NumericalAxis**]({%slug axes-numerical-axis%})
+- [**CategoricalAxis**]({%slug axes-categorical-axis%})
+- [**DateTimeAxisContinuous**]({%slug axes-date-time-continuous-axis%})
 
 ## Common Axis Features
 
 The common axis functionality is encapsulated by the abstract Axis class and is responsible for displaying ticks that simply mark values on the axis at fixed positions. The axis also displays labels that are used to provide a visualization of the values at some or all of the ticks. The default visualization of the labels is text and the default visuals created internally are text blocks. Here is a list with all the properties exposed by the base axis type.
 
-### Labels style and position
+### Label Style and Position
 
 You can customize the labels orientation and style with the following properties:
 
@@ -30,21 +30,25 @@ You can customize the labels orientation and style with the following properties
 - **LabelFontSize**: Specifies the font size of the labels.
 - **LabelTextColor**: Specifies the color of the labels.
 
+#### Example
+
 ```XAML 
-<telerikChart:CategoricalAxis LabelFitMode="Rotate" LabelFontSize="25" LabelTextColor="#FFCC88CC"/>
+<telerikChart:CategoricalAxis LabelFitMode="Rotate" 
+							  LabelFontSize="25" 
+							  LabelTextColor="#FFCC88CC"/>
 ```
 	
-### Labels format
+### Label Format
 
 You can customize the labels text with the following properties:
 
 - **LabelFormat**: Provides a format string that will be used when converting the label value to string. Each axis type requires different format:
-  - NumericalAxis: any numeric format like `"N"`, `"P2"`
-  - DateTimeContinuousAxis: any date format like `"dd-MM-yy"`, `"HH:mm"`
-  - CategoricalAxis: `"{0} items"`, `"{0:N}"`
+  - **NumericalAxis**: any numeric format like `"N"`, `"P2"`
+  - **DateTimeContinuousAxis**: any date format like `"dd-MM-yy"`, `"HH:mm"`
+  - **CategoricalAxis**: `"{0} items"`, `"{0:N}"`
 - **LabelFormatter**: Specifies a custom formatter that implements the **ILabelFormatter** interface to apply a custom rule for setting each label text.
 
-#### Label Formats Example
+#### Example
 
 Here is a quick snippet how you can set **LabelFormat** to a NumericalAxis:
 
@@ -55,7 +59,11 @@ Here is a quick snippet how you can set **LabelFormat** to a NumericalAxis:
 							Maximum="1" />
 ```
 
+### Label Formatter
+
 The **LabelFormatterBase<T>** class is a base implementation of the **ILabelFormatter** interface that could be used in the most common scenarios. Below is an example of a label formatter for DateTimeContinuousAxis.
+
+#### Example
 
 <snippet id='chart-customization-format-axis-labels-label-formatter'/>
 
@@ -63,14 +71,14 @@ And you could apply it like this:
 
 ```XAML
 <telerikChart:DateTimeContinuousAxis LabelFitMode="Rotate"
-                                    MajorStepUnit="Day">
+                                     MajorStepUnit="Day">
     <telerikChart:DateTimeContinuousAxis.LabelFormatter>
         <local:DateLabelFormatter />
     </telerikChart:DateTimeContinuousAxis.LabelFormatter>
 </telerikChart:DateTimeContinuousAxis>
 ```
 
-### Styling the axis line and ticks
+### Styling the Axis Line and Ticks
 
 You can customize the appearance of the axis line and ticks with the following properties:
 
@@ -81,7 +89,11 @@ You can customize the appearance of the axis line and ticks with the following p
 
 #### Example
 
-	<telerikChart:NumericalAxis MajorTickBackgroundColor="#FFCC88CC" MajorTickThickness="5" LineColor="#FFCC88CC"/>
+```XAML
+	<telerikChart:NumericalAxis MajorTickBackgroundColor="#FFCC88CC" 
+								MajorTickThickness="5" 
+								LineColor="#FFCC88CC"/>
+```
 
 ### Location
 
@@ -92,4 +104,12 @@ You can specify the location of the axis:
 
 #### Example
 
+```XAML
 	<telerikChart:CategoricalAxis VerticalLocation="Top"/>
+```
+
+## See Also
+
+- [Categorical Axis]({%slug axes-categorical-axis%})
+- [Numerical Axis]({%slug axes-numerical-axis%})
+- [DateTimeContinuous Axis]({%slug axes-date-time-continuous-axis%})

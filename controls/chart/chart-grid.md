@@ -1,16 +1,17 @@
 ---
-title: CartesianChartGrid
+title: CartesianChart Grid
+page_title: CartesianChart Grid
 slug: cartesian-chart-grid
-position: 2
+position: 8
 ---
 
-# CartesianChartGrid #
+# CartesianChartGrid
 
-## Overview ##
+## Overview
 
 The CartesianChartGrid represents a decoration over the plot area of RadCartesianChart. It adds major lines connected to each Major tick of each axis. You can set a new grid through the RadCartesianChart.Grid property.
 
-## Features ##
+## Features
 
 - **MajorLinesVisibility** : Gets or sets the visibility of major grid lines. In other means : a line that extends the major ticks throughout the plot area.
 - **MajorLineThickness**: Gets or sets the thickness of the Major Grid Lines.
@@ -23,43 +24,31 @@ The CartesianChartGrid represents a decoration over the plot area of RadCartesia
 - **XStripeColor**: Gets or sets the color of the area between two major ticks of the Horizontal Axis. This color alternates with the XStripeAlternativeColor starting from the first area.
 - **XStripeAlternativeColor**: Gets or sets the color of the area between two major ticks of the Horizontal Axis. This color alternates with the XStripeAlternativeColor starting from the second area.
 
-## Example ##
+## Example
 
-    <telerikChart:RadCartesianChart>
-	    <telerikChart:RadCartesianChart.BindingContext>
-	      <viewMoedls:CategoricalViewModel/>
-	    </telerikChart:RadCartesianChart.BindingContext>
-	
-	    <telerikChart:RadCartesianChart.Grid>
-	      <telerikChart:CartesianChartGrid x:Name="grid"  MajorLinesVisibility="XY" StripLinesVisibility="Y"  />
-	    </telerikChart:RadCartesianChart.Grid>
-	    <telerikChart:RadCartesianChart.HorizontalAxis>
-	      <telerikChart:CategoricalAxis/>
-	    </telerikChart:RadCartesianChart.HorizontalAxis>
-	    <telerikChart:RadCartesianChart.VerticalAxis>
-	      <telerikChart:NumericalAxis/>
-	    </telerikChart:RadCartesianChart.VerticalAxis>
-	    <telerikChart:RadCartesianChart.Series>
-	      <telerikChart:LineSeries ItemsSource="{Binding CategoricalData}">
-	        <telerikChart:LineSeries.ValueBinding>
-	          <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
-	        </telerikChart:LineSeries.ValueBinding>
-	        <telerikChart:LineSeries.CategoryBinding>
-	          <telerikChart:PropertyNameDataPointBinding PropertyName="Category"/>
-	        </telerikChart:LineSeries.CategoryBinding>
-	      </telerikChart:LineSeries>
-	    </telerikChart:RadCartesianChart.Series>
-    </telerikChart:RadCartesianChart>
+Here is an example how the CartesianChartGrid works:
 
-In the code behind:
+First, create the needed business objects:
 
-	this.grid.YStripeColor = Color.FromRgba(109, 96, 216, 80);
-	this.grid.YStripeAlternativeColor = Color.FromRgba(77, 213, 165, 80);
-	this.grid.MajorLineThickness = 5;
-	this.grid.MajorLineColor = Color.FromRgba(255, 219, 92, 120);
-	this.grid.MajorXLineDashArray = new double[] { 2, 3 };
+<snippet id='categorical-data-model'/>
 
+Then create a ViewModel:
 
-Here is the result:
+<snippet id='chart-customization-grid-lines-view-model'/>
 
-![Chart Grid](../images/chart-grid-example.png)
+Finally, use the following snippet to declare the RadChart in XAML or in C#:
+
+<snippet id='chart-customization-gridlines-xaml'/>
+<snippet id='chart-customization-gridlines-csharp'/>
+
+Here is how the CartesianGridLineAnnotation looks:
+
+![Chart Grid](images/chart-grid-example.png)
+
+>important A sample Glid Lines example can be found in the Chart/Customization folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
+## See Also
+
+- [Chart Annotations]({%slug chart-annotations%})
+- [Chart Legend]({%slug chart-features-legend%})
+- [Chart Null Values]({%slug chart-nullvalues%})

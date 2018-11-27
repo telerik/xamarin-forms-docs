@@ -315,14 +315,14 @@ navigation:
     controls/chart:
         title: "Chart"
         ## Chart Sub-Folders
+    controls/chart/types:
+        title: "Chart Types"
+        position: 3
     controls/chart/axes:
         title: "Axes"
         position: 4
     controls/chart/behaviors:
         title: "Behaviors"
-        position: 6
-    controls/chart/features:
-        title: "Features"
         position: 6
     controls/chart/series:
         title: "Series"
@@ -343,12 +343,9 @@ navigation:
         title: "Financial Series"
         position: 3
             ## End Chart Series Sub-Folders
-    controls/chart/types:
-        title: "Chart Types"
-        position: 3
     controls/chart/how-to:
         title: "How To"
-        position: 9
+        position: 10
         ## End Chart Sub-Folders
     ## End Chart
     ## CheckBox

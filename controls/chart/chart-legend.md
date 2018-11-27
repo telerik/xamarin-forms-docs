@@ -1,7 +1,7 @@
 ---
 title: Chart Legend
 slug: chart-features-legend
-position: 3
+position: 9
 ---
 
 # Chart Legend #
@@ -14,7 +14,7 @@ Chart Legend definition:
 <snippet id='chart-features-piechart-legend-definition-cs'/>
 
 #### **Figure 1: RadLegend in combination with PieChart**
-![Pie Chart legend](../images/piechart-legend.png)
+![Pie Chart legend](images/piechart-legend.png)
 
 As shown in **Figure 1**, each item within the **RadLegend** represents particular series. The most important property which you need to set is the **LegendProvider**. It should point to the chart object whose series will be included in the legend. 
 
@@ -33,7 +33,7 @@ The control can be used in combination with **RadCartesianChart** as well.
 <snippet id='chart-features-cartesianchart-legend-definition-cs'/>
 
 #### **Figure 2: RadLegend in combination with CartesianChart**
-![Cartesian Chart legend](../images/cartesianchart-legend.png)
+![Cartesian Chart legend](images/cartesianchart-legend.png)
 
 ## LegendTitleBinding
 
@@ -44,5 +44,5 @@ The **LegendTitleBinding** is a property which can be set specifically for the *
 
 ## See Also
 
-* [CartesianChartGrid]({%slug cartesian-chart-grid%})
-* [Annotations]({%slug chart-annotations%})
+- [CartesianChartGrid]({%slug cartesian-chart-grid%})
+- [Annotations]({%slug chart-annotations%})

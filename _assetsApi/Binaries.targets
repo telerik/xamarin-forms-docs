@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"  ToolsVersion="4.0">
+  <ItemGroup>
+    <Binaries Include="$(LatestBinariesPath)\Portable\Telerik.Documents.SpreadsheetStreaming.dll;
+                       $(LatestBinariesPath)\Portable\Telerik.XamarinForms.Barcode.dll;
+                       $(LatestBinariesPath)\Portable\Telerik.XamarinForms.Barcode.xml;
+                       $(LatestBinariesPath)\Portable\Telerik.XamarinForms.ConversationalUI.dll;
+                       $(LatestBinariesPath)\Portable\Telerik.XamarinForms.ConversationalUI.xml;
+                       $(LatestBinariesPath)\Portable\Telerik.XamarinForms.Chart.dll;
+                       $(LatestBinariesPath)\Portable\Telerik.XamarinForms.Chart.xml;
+                       $(LatestBinariesPath)\Portable\Telerik.XamarinForms.Common.dll;
+                       $(LatestBinariesPath)\Portable\Telerik.XamarinForms.Common.xml;
+                       $(LatestBinariesPath)\Portable\Telerik.XamarinForms.DataControls.dll;
+                       $(LatestBinariesPath)\Portable\Telerik.XamarinForms.DataControls.xml;
+                       $(LatestBinariesPath)\Portable\Telerik.XamarinForms.DataGrid.dll;
+                       $(LatestBinariesPath)\Portable\Telerik.XamarinForms.DataGrid.xml;
+                       $(LatestBinariesPath)\Portable\Telerik.XamarinForms.DataVisualization.dll;
+                       $(LatestBinariesPath)\Portable\Telerik.XamarinForms.DataVisualization.xml;
+                       $(LatestBinariesPath)\Portable\Telerik.XamarinForms.Input.dll;
+                       $(LatestBinariesPath)\Portable\Telerik.XamarinForms.Input.xml;
+                       $(LatestBinariesPath)\Portable\Telerik.XamarinForms.Primitives.dll;
+                       $(LatestBinariesPath)\Portable\Telerik.XamarinForms.Primitives.xml;
+                       $(LatestBinariesPath)\Portable\Telerik.XamarinForms.SkiaSharp.dll;
+                       $(LatestBinariesPath)\Portable\Telerik.XamarinForms.SkiaSharp.xml;
+                       $(LatestBinariesPath)\Android\Telerik.Xamarin.Android.Chart.dll;
+                       $(LatestBinariesPath)\Android\Telerik.Xamarin.Android.Common.dll;
+                       $(LatestBinariesPath)\Android\Telerik.Xamarin.Android.Data.dll;
+                       $(LatestBinariesPath)\Android\Telerik.Xamarin.Android.Feedback.dll;
+                       $(LatestBinariesPath)\Android\Telerik.Xamarin.Android.Gauges.dll;
+                       $(LatestBinariesPath)\Android\Telerik.Xamarin.Android.Input.dll;
+                       $(LatestBinariesPath)\Android\Telerik.Xamarin.Android.List.dll;
+                       $(LatestBinariesPath)\Android\Telerik.Xamarin.Android.Primitives.dll;
+                       $(LatestBinariesPath)\iOS\Telerik.Core.dll;
+                       $(LatestBinariesPath)\UWP\Telerik.Data.dll;
+                       $(LatestBinariesPath)\UWP\Telerik.UI.Xaml.Chart.UWP.dll;
+                       $(LatestBinariesPath)\UWP\Telerik.UI.Xaml.Controls.Data.UWP.dll;
+                       $(LatestBinariesPath)\UWP\Telerik.UI.Xaml.Input.UWP.dll;
+                       $(LatestBinariesPath)\UWP\Telerik.UI.Xaml.Primitives.UWP.dll" />
+  </ItemGroup>
+</Project>

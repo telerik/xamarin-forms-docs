@@ -1,104 +1,51 @@
 ---
-title: ScatterPointSeries
+title: ScatterPoint Series
+page_title: ScatterPoint Series
 slug: chart-series-scatter-point-series
 position: 0
 ---
 
-# ScatterPointSeries #
+# ScatterPoint Series
 
-## Overview ##
+## Overview
 
 The **ScatterPointSeries** are represented on the chart as not connected data points. Each scatter data point has to provide values for the X and Y coordinate on the **RadCartesianChart**. The **ScatterPointSeries** require both axes of the chart to be of type **NumericalAxis**.
 
-## Features ##
+## Features
 
-- **XValueBinding** : Gets or sets the binding that will be used to fill the XValue of ScatterDataPoint members of the DataPoints collection.
-- **YValueBinding** : Gets or sets the binding that will be used to fill the YValue of ScatterDataPoint members of the DataPoints collection.
+- **XValueBinding** : Defines the binding that will be used to fill the XValue of ScatterDataPoint members of the DataPoints collection.
+- **YValueBinding** : Defines the binding that will be used to fill the YValue of ScatterDataPoint members of the DataPoints collection.
 
-## Example ##
+## Example
 
-Here is an example of how to create a basic RadCartesianChart with ScatterPointSeries in xaml:
+Here is an example how to create RadCartesianChart with ScatterPoint Series:
 
-	<telerikChart:RadCartesianChart>
-	  <telerikChart:RadCartesianChart.BindingContext>
-	    <viewMoedls:ScatterViewModel/>
-	  </telerikChart:RadCartesianChart.BindingContext>
-	  <telerikChart:RadCartesianChart.HorizontalAxis>
-	    <telerikChart:NumericalAxis/>
-	  </telerikChart:RadCartesianChart.HorizontalAxis>
-	  <telerikChart:RadCartesianChart.VerticalAxis>
-	    <telerikChart:NumericalAxis/>
-	  </telerikChart:RadCartesianChart.VerticalAxis>
-	  <telerikChart:RadCartesianChart.Series>
-	    <telerikChart:ScatterPointSeries ItemsSource="{Binding ScatterData}">
-	      <telerikChart:ScatterPointSeries.XValueBinding>
-	        <telerikChart:PropertyNameDataPointBinding PropertyName="XValue"/>
-	      </telerikChart:ScatterPointSeries.XValueBinding>
-	      <telerikChart:ScatterPointSeries.YValueBinding>
-	        <telerikChart:PropertyNameDataPointBinding PropertyName="YValue"/>
-	      </telerikChart:ScatterPointSeries.YValueBinding>
-	    </telerikChart:ScatterPointSeries>
-	  </telerikChart:RadCartesianChart.Series>
-	</telerikChart:RadCartesianChart>
-Where:
+First, create the needed business objects, for example:
 
-	xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
-Here is an example of how to create a RadCartesianChart with ScatterPointSeries in code:
+<snippet id='numerical-data-model'/>
 
-	var chart = new RadCartesianChart
-	{
-	    HorizontalAxis = new NumericalAxis(),
-	    VerticalAxis = new NumericalAxis(),
-	    BindingContext = new ScatterViewModel()
-	};
-	
-	var series = new ScatterPointSeries();
-	series.SetBinding(ScatterPointSeries.ItemsSourceProperty, new Binding("ScatterData"));   
-	series.XValueBinding = new PropertyNameDataPointBinding("XValue");
-	series.YValueBinding = new PropertyNameDataPointBinding("YValue");
-	
-	chart.Series.Add(series);
+Then create a ViewModel:
 
-Here is the sample data:
-	
-	public class NumericalData
-	{
-	    public double XValue { get; set; }
-	    public double YValue { get; set; }
-	}
+<snippet id='chart-series-view-model-5'/>
 
-	public class ScatterViewModel
-	{
-	    private static Random random = new Random();
-	
-	    public ScatterViewModel()
-	    {
-	        this.ScatterData = GetScatterData(10, 0.1, 0.1, this.GenerateX, this.GenerateY);
-	    }
-	
-	    public ObservableCollection<NumericalData> ScatterData { get; set; }
-	
-	    public static ObservableCollection<NumericalData> GetScatterData(int dataCount, double xDispersion, double yDispersion, Func<int, double> xFunc, Func<int, double> yFunc)
-	    {
-	        var data = new ObservableCollection<NumericalData>();
-	        for (int i = 0; i < dataCount; i++)
-	        {
-	            data.Add(new NumericalData() { XValue = xFunc(i) + xDispersion * random.NextDouble(), YValue = yFunc(i) + yDispersion * random.NextDouble() });
-	        }
-	
-	        return data;
-	    }
-	
-	    private double GenerateX(int i)
-	    {
-	        return 1 + Math.Sin(i);
-	    }
-	
-	    private double GenerateY(int i)
-	    {
-	        return i;
-	    }
-	}
+Finally, use the following snippet to declare a RadCartesianChart with ScatterPoint Series in XAML and in C#:
+
+<snippet id='chart-series-scatterpoint-xaml'/>
+<snippet id='chart-series-scatterpoint-csharp'/>
+
+Where the **telerikChart** namespace is the following:
+
+<snippet id='xmlns-telerikchart'/>
+<snippet id='ns-telerikchart'/>
+
 And here is the result:
 
 ![Basic ScatterPointSeries](images/cartesian-scatter-point-series-basic-example.png)
+
+>important A sample ScatterPoint Series example can be found in the Chart/Series folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
+## See Also
+
+- [Line Series]({%slug chart-series-line-series%})
+- [ScatterLine Series]({%slug chart-series-scatter-line-series%})
+- [Spline Series]({%slug chart-series-spline-series%})

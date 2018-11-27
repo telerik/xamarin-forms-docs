@@ -1,103 +1,62 @@
 ---
-title: SplineAreaSeries
+title: SplineArea Series
+page_title: SplineArea Series
 slug: chart-series-spline-area-series
 position: 0
 ---
 
-# SplineAreaSeries #
+# SplineArea Series
 
-## Overview ##
+## Overview
 
 **RadCartesianChart** visualizes **SplineAreaSeries** as an area on the chart that is enclosed by the coordinate axes and straight line segments that connect the data points represented by these series. The **SplineAreaSeries** extend **CategoricalStrokedSeries**, so they are also **CategoricalSeries** and require one **CategoricalAxis** and one **NumricalAxis**.
 
-## Features ##
+## Features
 
 - **Stroke** (Color): changes the color used to draw lines.
 - **StrokeThickness** (double): changes the width of the lines.
 - **Fill** (Color): changes the color used to fill the area shapes.
 
-## Example ##
+## Example
 
-Here is an example of how to create a basic RadCartesianChart with SplineAreaSeries in xaml:
+Here is an example how to create RadCartesianChart with SplineArea Series:
 
-	<telerikChart:RadCartesianChart>
-	  <telerikChart:RadCartesianChart.BindingContext>
-	    <viewMoedls:CategoricalViewModel/>
-	  </telerikChart:RadCartesianChart.BindingContext>
-	  <telerikChart:RadCartesianChart.HorizontalAxis>
-	    <telerikChart:CategoricalAxis/>
-	  </telerikChart:RadCartesianChart.HorizontalAxis>
-	  <telerikChart:RadCartesianChart.VerticalAxis>
-	    <telerikChart:NumericalAxis/>
-	  </telerikChart:RadCartesianChart.VerticalAxis>
-	  <telerikChart:RadCartesianChart.Series>
-	    <telerikChart:SplineAreaSeries ItemsSource="{Binding CategoricalData}">
-	      <telerikChart:SplineAreaSeries.ValueBinding>
-	        <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
-	      </telerikChart:SplineAreaSeries.ValueBinding>
-	      <telerikChart:SplineAreaSeries.CategoryBinding>
-	        <telerikChart:PropertyNameDataPointBinding PropertyName="Category"/>
-	      </telerikChart:SplineAreaSeries.CategoryBinding>
-	    </telerikChart:SplineAreaSeries>
-	  </telerikChart:RadCartesianChart.Series>
-	</telerikChart:RadCartesianChart>
-Where:
+First, create the needed business objects, for example:
 
-	xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
-Here is an example of how to create a RadCartesianChart with SplineAreaSeries in code:
+<snippet id='categorical-data-model'/>
 
-	var chart = new RadCartesianChart
-	{
-	    HorizontalAxis = new CategoricalAxis(),
-	    VerticalAxis = new NumericalAxis(),
-	    BindingContext = new CategoricalViewModel()
-	};
-	
-	var series = new SplineAreaSeries();
-	series.SetBinding(SplineAreaSeries.ItemsSourceProperty, new Binding("CategoricalData"));   
-	series.ValueBinding = new PropertyNameDataPointBinding("Value");
-	series.CategoryBinding = new PropertyNameDataPointBinding("Category");
-	
-	chart.Series.Add(series);
+Then create a ViewModel:
 
-Here is the sample data:
+<snippet id='chart-series-view-model-1'/>
 
-	public class CategoricalData
-	{
-	    public object Category { get; set; }
-	    public double Value { get; set; }
-	}
+Finally, use the following snippet to declare a RadCartesianChart with SplineArea Series in XAML and in C#:
 
-	public class CategoricalViewModel
-    {
-        private static Random random = new Random();
-        private static string[] categories = new string[] { "Greenings", "Perfecto", "NearBy", "Family", "Fresh" };
+<snippet id='chart-series-splinearea-xaml'/>
+<snippet id='chart-series-scatterspline-csharp'/>
 
-        public CategoricalViewModel()
-        {
-            this.CategoricalData = GetCategoricalData();
-        }
+Where the **telerikChart** namespace is the following:
 
-        public ObservableCollection<CategoricalData> CategoricalData { get; set; }
-
-        public static ObservableCollection<CategoricalData> GetCategoricalData()
-        {
-            var data = new ObservableCollection<CategoricalData>();
-            for (int i = 0; i < categories.Length; i++)
-            {
-                data.Add(new CategoricalData() { Value = random.Next(50, 100), Category = categories[i] });
-            }
-
-            return data;
-        }
-    }
+<snippet id='xmlns-telerikchart'/>
+<snippet id='ns-telerikchart'/>
 
 And here is the result:
 
 ![Basic SplineAreaSeries](images/cartesian-spline-area-series-basic-example.png)
 
-Here we make some customization:
+### Customization Example
 
-	var series = new SplineAreaSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5, Fill = new Color(0.8, 0.8, 1) };
-
+```C#
+	var series = new SplineAreaSeries 
+	{ 
+		Stroke = new Color(0.6, 0.6, 0.9), 
+		StrokeThickness = 5, 
+		Fill = new Color(0.8, 0.8, 1) 
+	};
+```
 ![Customized SplineAreaSeries](images/cartesian-spline-area-series-customization-example.png)
+
+## See Also
+
+- [Line Series]({%slug chart-series-line-series%})
+- [ScatterLine Series]({%slug chart-series-scatter-line-series%})
+- [Spline Series]({%slug chart-series-spline-series%})

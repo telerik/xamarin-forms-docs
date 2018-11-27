@@ -551,6 +551,7 @@ gcs_engine: '001595215763381649090:hqd69dmjy2k'
 gcs_api_key: 'AIzaSyBNBA7GFG6zyMuswUt4MB_FSXKVgtTTe7k'
 
 tabbed_code_marker_length: 3
+tabbed_code_complex_separator: true
 
 edit_repo_url: https://github.com/telerik/xamarin-forms-docs/edit/master
 download: https://www.telerik.com/download/xamarin-ui

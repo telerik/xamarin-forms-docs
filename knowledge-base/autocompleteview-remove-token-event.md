@@ -1,5 +1,5 @@
 ---
-title: Event raised when selected tokens are removed through clear button
+title: Event raised when selected tokens are removed through clear button in AutoCompleteView
 description: Which event is fired when the user presses the X on the AutoCompleteView control
 type: how-to
 page_title: How to get item / token removed from AutoCompleteView by clicking cross

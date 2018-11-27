@@ -1,49 +1,54 @@
 ---
-title: ChartToolTipBehavior
+title: Tool Tip Behavior
+page_title: Selection Behavior
+position: 3
 slug: chart-behaviors-tooltip
 ---
 
-# ChartToolTipBehavior #
+# ChartToolTipBehavior
 
-## Overview ##
+## Overview
 
 **ChartTooltipBehavior** is responsible for rendering concise information about a data point in a small popup which is displayed close to its relevant data point.
 
 >important With R2 2018 SP release Behaviors property of RadChart was replaced with **ChartBehaviors**. Behaviors property is marked as obsolete, so please use **ChartBehaviors** instead.
 
-## Features ##
+## Features
 
 - **TriggerMode**: Determines the gestures on which the ChartToolTipBehavior should show a tool tip. The available values are:
 	- Tap
 	- Hold
 
-## Example ##
+## Example
 
-    <telerikChart:RadCartesianChart>
-	  <telerikChart:RadCartesianChart.BindingContext>
-	    <viewMoedls:CategoricalViewModel/>
-	  </telerikChart:RadCartesianChart.BindingContext>
-	  <telerikChart:RadCartesianChart.ChartBehaviors>
-	    <telerikChart:ChartTooltipBehavior TriggerMode="Tap"/>
-	  </telerikChart:RadCartesianChart.ChartBehaviors>
-	  <telerikChart:RadCartesianChart.HorizontalAxis>
-	    <telerikChart:CategoricalAxis/>
-	  </telerikChart:RadCartesianChart.HorizontalAxis>
-	  <telerikChart:RadCartesianChart.VerticalAxis>
-	    <telerikChart:NumericalAxis/>
-	  </telerikChart:RadCartesianChart.VerticalAxis>
-	  <telerikChart:RadCartesianChart.Series>
-	    <telerikChart:LineSeries ItemsSource="{Binding CategoricalData}">
-	      <telerikChart:LineSeries.ValueBinding>
-	        <telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
-	      </telerikChart:LineSeries.ValueBinding>
-	      <telerikChart:LineSeries.CategoryBinding>
-	        <telerikChart:PropertyNameDataPointBinding PropertyName="Category"/>
-	      </telerikChart:LineSeries.CategoryBinding>
-	    </telerikChart:LineSeries>
-	  </telerikChart:RadCartesianChart.Series>
-    </telerikChart:RadCartesianChart>
+Here is an example how the Chart ToolTip Behavior works:
+
+First, create the needed business objects, for example:
+
+<snippet id='categorical-data-model'/>
+
+Then create a ViewModel:
+
+<snippet id='chart-tool-tip-behavior-view-model'/>
+
+Finally, use the following snippet to declare a RadCartesianChart in XAML and in C#:
+
+<snippet id='chart-interactivity-tooltipseries-xaml'/>
+<snippet id='chart-interactivity-tooltipseries-csharp'/>
+
+Where the **telerikChart** namespace is the following:
+
+<snippet id='xmlns-telerikchart'/>
+<snippet id='ns-telerikchart'/>
 
 Here is how the tool-tip looks:
 
-![Tooltip Behavior](images/chart-behaviors-tooltip-behavior.png)
+![Chart Tooltip Behavior](images/chart-behaviors-tooltip.png)
+
+>important A sample ToolTip example can be found in the Chart/Interactivity folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
+# See Also
+
+- [Chart Selection Behavior]({%slug chart-behaviors-selection%})
+- [Chart Track Ball Behavior]({%slug chart-behaviors-trackball%})
+- [Chart Pan And Zoom Behavior]({%slug chart-behaviors-pan-and-zoom%})

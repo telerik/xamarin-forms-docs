@@ -1,61 +1,70 @@
 ---
-title: Categorical Series Orientation
-page_title: Categorical Series Orientation
+title: CategoricalSeries Orientation
+page_title: CategoricalSeries Orientation
 slug: chart-series-orientation
+position: 0
 ---
-# CartegoricalSeries Orientation #
 
-The orientation of the series depends on which chart axis is horizontal and which one is vertical. Here is an example where the CategoricalAxis is vertical and the BarSeries are displayed horizontally.
+# Orientation
 
+The orientation of the series depends on which chart axis is horizontal and which one is vertical. 
+
+>note Orientation property could be applied only to CategoricalSeries, such as Bar, Line and Area.
+
+## Horizontal BarSeries Example
+
+Here is an example how to create RadCartesianChart with vertical CategoricalAxis and Horizontal Bar Series:
+
+First, create the needed business objects, for example:
+
+<snippet id='categorical-data-model'/>
+
+Then create a ViewModel:
+
+<snippet id='chart-series-view-model-2'/>
+
+Finally, use the following snippet to declare a RadCartesianChart with Bar Series in XAML and in C#:
+
+<snippet id='chart-series-barhorizontal-xaml'/>
+<snippet id='chart-series-barhorizontal-csharp'/>
+
+Where the **telerikChart** namespace is the following:
+
+<snippet id='xmlns-telerikchart'/>
+<snippet id='ns-telerikchart'/>
+
+Here is the result:
 ![Horizontal BarSeries](images/chart-series-features-horizontal-series.png)
 
-	var chart = new RadCartesianChart
-	{
-	    HorizontalAxis = new NumericalAxis(),
-	    VerticalAxis = new CategoricalAxis(),
-	    BindingContext = new CategoricalViewModel()
-	};
-	
-	var series = new BarSeries();
-	series.SetBinding(BarSeries.ItemsSourceProperty, new Binding("CategoricalData"));   
-	series.ValueBinding = new PropertyNameDataPointBinding("Value");
-	series.CategoryBinding = new PropertyNameDataPointBinding("Category");
-	
-	chart.Series.Add(series);
+>important A sample Horizontal Bar Series example can be found in the Chart/Series folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
+## Horizontal Stack BarSeries Example
 
+Here is an example how to create RadCartesianChart with vertical CategoricalAxis and Stack Horizontal Bar Series:
 
-And here is the sample data:
+First, create the needed business objects, for example:
 
-	public class CategoricalData
-	{
-	    public object Category { get; set; }
-	
-	    public double Value { get; set; }
-	}
-	public class CategoricalViewModel
-	{
-	    private static Random random = new Random();
-	    private static string[] categories = new string[] { "Greenings", "Perfecto", "NearBy", "Family", "Fresh" };
-	
-	    public CategoricalViewModel()
-	    {
-	        this.CategoricalData = GetCategoricalData();
-	    }
-	
-	    public ObservableCollection<CategoricalData> CategoricalData { get; set; }
-	        
-	    public static ObservableCollection<CategoricalData> GetCategoricalData()
-	    {
-	        var data = new ObservableCollection<CategoricalData>();
-	        for (int i = 0; i < categories.Length; i++)
-	        {
-	            data.Add(new CategoricalData() { Value = random.Next(50, 100), Category = categories[i] });
-	        }
-	
-	        return data;
-	    }
-	}
+<snippet id='categorical-data-model'/>
 
+Then create a ViewModel:
 
+<snippet id='chart-series-view-model-3'/>
 
+Finally, use the following snippet to declare a RadCartesianChart with Bar Series in XAML and in C#:
+
+<snippet id='chart-series-stackbarhorizontal-xaml'/>
+<snippet id='chart-series-stackbarhorizontal-csharp'/>
+
+Where the **telerikChart** namespace is the following:
+
+<snippet id='xmlns-telerikchart'/>
+<snippet id='ns-telerikchart'/>
+
+Here is the result:
+![Horizontal BarSeries](images/chart-series-features-horizontal-stack-series.png)
+
+>important A sample Stack Horizontal Bar Series example can be found in the Chart/Series folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
+## See Also
+
+- [CartesianChart Combine Mode]({%slug chart-series-combine-mode %})

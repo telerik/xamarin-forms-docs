@@ -1,5 +1,6 @@
 ---
-title: ScatterSplineSeries
+title: ScatterSpline Series
+page_title: ScatterSpline Series
 slug: chart-series-scatter-spline-series
 position: 0
 ---
@@ -18,95 +19,43 @@ The **ScatterSplineSeries** are represented on the chart as data points connecte
 
 ## Example ##
 
-Here is an example of how to create a basic RadCartesianChart with ScatterSplineSeries in xaml:
+Here is an example how to create RadCartesianChart with ScatterSpline Series:
 
-	<telerikChart:RadCartesianChart>
-	  <telerikChart:RadCartesianChart.BindingContext>
-	    <viewMoedls:ScatterViewModel/>
-	  </telerikChart:RadCartesianChart.BindingContext>
-	  <telerikChart:RadCartesianChart.HorizontalAxis>
-	    <telerikChart:NumericalAxis/>
-	  </telerikChart:RadCartesianChart.HorizontalAxis>
-	  <telerikChart:RadCartesianChart.VerticalAxis>
-	    <telerikChart:NumericalAxis/>
-	  </telerikChart:RadCartesianChart.VerticalAxis>
-	  <telerikChart:RadCartesianChart.Series>
-	    <telerikChart:ScatterSplineSeries ItemsSource="{Binding ScatterData}">
-	      <telerikChart:ScatterSplineSeries.XValueBinding>
-	        <telerikChart:PropertyNameDataPointBinding PropertyName="XValue"/>
-	      </telerikChart:ScatterSplineSeries.XValueBinding>
-	      <telerikChart:ScatterSplineSeries.YValueBinding>
-	        <telerikChart:PropertyNameDataPointBinding PropertyName="YValue"/>
-	      </telerikChart:ScatterSplineSeries.YValueBinding>
-	    </telerikChart:ScatterSplineSeries>
-	  </telerikChart:RadCartesianChart.Series>
-	</telerikChart:RadCartesianChart>
+First, create the needed business objects, for example:
 
-Where:
+<snippet id='numerical-data-model'/>
 
-	xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
-Here is an example of how to create a RadCartesianChart with ScatterSplineSeries in code:
+Then create a ViewModel:
 
-	var chart = new RadCartesianChart
-	{
-	    HorizontalAxis = new NumericalAxis(),
-	    VerticalAxis = new NumericalAxis(),
-	    BindingContext = new ScatterViewModel()
-	};
-	
-	var series = new ScatterSplineSeries();
-	series.SetBinding(ScatterSplineSeries.ItemsSourceProperty, new Binding("ScatterData"));   
-	series.XValueBinding = new PropertyNameDataPointBinding("XValue");
-	series.YValueBinding = new PropertyNameDataPointBinding("YValue");
-	
-	chart.Series.Add(series);
+<snippet id='chart-series-view-model-5'/>
 
+Finally, use the following snippet to declare a RadCartesianChart with ScatterSpline Series in XAML and in C#:
 
-Here is the sample data:
-	
-	public class NumericalData
-	{
-	    public double XValue { get; set; }
-	    public double YValue { get; set; }
-	}
+<snippet id='chart-series-scatterspline-xaml'/>
+<snippet id='chart-series-scatterspline-csharp'/>
 
-	public class ScatterViewModel
-	{
-	    private static Random random = new Random();
-	
-	    public ScatterViewModel()
-	    {
-	        this.ScatterData = GetScatterData(10, 0.1, 0.1, this.GenerateX, this.GenerateY);
-	    }
-	
-	    public ObservableCollection<NumericalData> ScatterData { get; set; }
-	
-	    public static ObservableCollection<NumericalData> GetScatterData(int dataCount, double xDispersion, double yDispersion, Func<int, double> xFunc, Func<int, double> yFunc)
-	    {
-	        var data = new ObservableCollection<NumericalData>();
-	        for (int i = 0; i < dataCount; i++)
-	        {
-	            data.Add(new NumericalData() { XValue = xFunc(i) + xDispersion * random.NextDouble(), YValue = yFunc(i) + yDispersion * random.NextDouble() });
-	        }
-	
-	        return data;
-	    }
-	
-	    private double GenerateX(int i)
-	    {
-	        return 1 + Math.Sin(i);
-	    }
-	
-	    private double GenerateY(int i)
-	    {
-	        return i;
-	    }
-	}
+Where the **telerikChart** namespace is the following:
 
-Here is the result:
+<snippet id='xmlns-telerikchart'/>
+<snippet id='ns-telerikchart'/>
+
+And here is the result:
 	
 ![Basic ScatterSplineSeries](images/cartesian-scatter-spline-series-basic-example.png)
 
-Here we make some customization:
+>important A sample ScatterSpline Series example can be found in the Chart/Series folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
-	var series = new ScatterSplineSeries { Stroke = new Color(0.6, 0.6, 0.9), StrokeThickness = 5 };
+### Customization Example
+
+```C#
+	var series = new ScatterSplineSeries 
+	{ 
+		Stroke = new Color(0.6, 0.6, 0.9), 
+		StrokeThickness = 5 
+	};
+```
+## See Also
+
+- [Line Series]({%slug chart-series-line-series%})
+- [ScatterLine Series]({%slug chart-series-scatter-line-series%})
+- [Spline Series]({%slug chart-series-spline-series%})

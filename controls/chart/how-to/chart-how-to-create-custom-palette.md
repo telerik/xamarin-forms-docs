@@ -1,5 +1,7 @@
 ---
 title: Custom Chart Palette
+page_title: Custom Chart Palette
+position: 1
 slug: chart-how-to-create-custom-palette
 ---
 

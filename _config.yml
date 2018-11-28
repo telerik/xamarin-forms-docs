@@ -330,7 +330,7 @@ navigation:
             ## Chart Series Sub-Folders
     controls/chart/series/cartesian:
         title: "CartesianSeries"
-        position: 1
+        position: 2
                 ## Chart Series CartesianSeries Sub-Folders
     controls/chart/series/cartesian/features:
         title: "Features"
@@ -338,10 +338,10 @@ navigation:
                 ## End Chart Series CartesianSeries Sub-Folders
     controls/chart/series/pie:
         title: "PieSeries"
-        position: 2
+        position: 3
     controls/chart/series/financial:
         title: "Financial Series"
-        position: 3
+        position: 4
             ## End Chart Series Sub-Folders
     controls/chart/types:
         title: "Chart Types"

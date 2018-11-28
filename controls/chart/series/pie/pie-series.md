@@ -11,13 +11,23 @@ slug: chart-series-pie-series
 
 ## Features
 
-- **ValueBinding**: Gets or sets the binding to a property of the data model that will be used to fill the pie slices.
-- **RadiusFactor**: Gets or sets the radius factor used to calculate the radius of the visual series. This value is usually within the [0,1] range but it is possible to oversize the series by setting a value greater than 1.
-- **SelectedPointOffset**: Gets or sets the offset applied to the currently selected point.
+- **ValueBinding**: Defines the binding to a property of the data model that will be used to fill the pie slices.
+- **RadiusFactor**: Defines the radius factor used to calculate the radius of the visual series. This value is usually within the [0,1] range but it is possible to oversize the series by setting a value greater than 1.
+- **SelectedPointOffset**: Defines the offset applied to the currently selected point.
 
 ## Example
 
-Here is an example of how to create a RadPieChart with PieSeries and ChartBehaviors: 
+Here is an example how to create RadPieChart with Pie Series:
+
+First, create the needed business objects, for example:
+
+<snippet id='categorical-data-model'/>
+
+Then create a ViewModel:
+
+<snippet id='chart-piechart-view-model'/>
+
+Finally, use the following snippet to declare a RadPieChart with Pie Series in XAML and in C#:
 
 <snippet id='chart-piechart-xaml'/>
 <snippet id='chart-piechart-csharp'/>
@@ -30,6 +40,8 @@ In addition to this you need to add the following namespace:
 Here is the result:
 
 ![Basic PieSeries using the following properties](images/pie-series-basic-example.png)
+
+>important A sample Pie Series example can be found in the Chart/PieChart folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 

@@ -1,6 +1,6 @@
 ---
 title: Null Values
-position: 3
+position: 10
 slug: chart-nullvalues
 ---
 
@@ -21,10 +21,8 @@ Then, add RadCartesianChart with SplineAreaSeries, for example:
 
 The image below shows how the null data points are visualized as gaps.
 
-![RadCartesianChart NullValues](../images/chart-nullvalues.png)
+![RadCartesianChart NullValues](images/chart-nullvalues.png)
 
 ## See Also
 
 - [Series Overview]({% slug chart-series-overview %})
-
-

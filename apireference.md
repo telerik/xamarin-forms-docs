@@ -1,5 +1,5 @@
 ---
 title: API Reference
-permalink: apireference/
-position: 8
+permalink: api/
+position: 10
 ---

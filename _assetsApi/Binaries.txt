@@ -32,4 +32,4 @@ UWP\Telerik.Data.dll
 UWP\Telerik.UI.Xaml.Chart.UWP.dll
 UWP\Telerik.UI.Xaml.Controls.Data.UWP.dll
 UWP\Telerik.UI.Xaml.Input.UWP.dll
-UWP\Telerik.UI.Xaml.Primitives.UWP.dll" />
+UWP\Telerik.UI.Xaml.Primitives.UWP.dll

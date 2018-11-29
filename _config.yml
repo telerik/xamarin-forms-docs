@@ -568,8 +568,6 @@ footer:
 -
   title: "Support Resources"
   links:
-    "iOS Wrappers": https://docs.telerik.com/devtools/ios/
-    "Android Wrappers": https://docs.telerik.com/devtools/android/introduction
     "Xamarin.Forms SDK Examples": https://github.com/telerik/xamarin-forms-sdk
 -
   title: "Community"

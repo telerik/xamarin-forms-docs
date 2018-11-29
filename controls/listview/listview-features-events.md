@@ -11,7 +11,7 @@ tags: events
 
 The RadListView component exposes the following events:
 
-###Item events
+### Item events
 
 * __ItemTapped__ - occurs when an item is tapped. The __ItemTapped__ event handler receives two parameters:
 	* The sender argument which is of type object, but can be cast to the __RadListView__ type.
@@ -21,13 +21,13 @@ The RadListView component exposes the following events:
 	* The sender argument which is of type object, but can be cast to the __RadListView__ type.
 	* An __ItemHoldEventArgs__ object which has a reference to the held item through its **Item** property.
 
-###Selection events
+### Selection events
 
 * __SelectionChanged__ - occurs when the SelectionItems collection is updated. The __SelectionChanged__ event handler receives two parameters:
 	* The sender argument which is of type object, but can be cast to the __RadListView__ type.
 	* A __NotifyCollectionChangedEventArgs__ object which provides information on the collection changed event. For more details check [here](https://msdn.microsoft.com/en-us/library/system.collections.specialized.notifycollectionchangedeventargs(v=vs.110).aspx).
 
-###Group/Reorder events
+### Group/Reorder events
 
 * __GroupHeaderTapped__ - occurs when a group header of a grouped ListView is tapped. The __GroupHeaderTapped__ event handler receives two parameters:
 	* The sender argument which is of type object, but can be cast to the __RadListView__ type.
@@ -47,7 +47,7 @@ The RadListView component exposes the following events:
 
 >You could also check the events related to the cell swiping feature [here]({%slug listview-features-cell-swipe %}).	
 	
-##See Also
+## See Also
 
 [Selection]({%slug listview-features-selection%})
 

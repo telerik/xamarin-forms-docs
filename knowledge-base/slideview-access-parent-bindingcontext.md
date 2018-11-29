@@ -2,7 +2,7 @@
 title: RadSlideView Access Parent BindingContext in Slide
 description: How to get access the BindingContext of the parent within the SlideView's ContentViews
 type: how-to
-page_title: RadSlideView Access Parent BindingContext in Slide
+page_title: SlideView Access Parent BindingContext in Slide
 slug: radslideview-access-parent-bindingcontext
 position: 
 tags: RadSlideView, BindingContext
@@ -24,7 +24,7 @@ res_type: kb
 
 
 ## Description
-The **RadSlideView** uses `ContentView` for the slides, these ContentViews do not have scope to BindingContext of the visual parents (e.g. the SlideView or parent page). This has the consequence of not being to bind any ContentView content to a page view model.
+The **RadSlideView** uses `ContentView` for the slides, these ContentViews do not have scope to BindingContext of the visual parents (e.g. the SlideView or parent page). This has the consequence of not being able to bind any ContentView content to a page view model.
 
 ## Solution
 You can solve this by using a static helper class to share a BindingContext reference. The static class only needs one public static `object` property:
@@ -37,7 +37,6 @@ public static class BindingContextHelper
     public static object CurrentPageBindingContext { get; set; }
 }
 ```
-
 
 ### Example Use
 

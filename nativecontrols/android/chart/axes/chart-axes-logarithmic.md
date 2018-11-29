@@ -43,6 +43,7 @@ After you create the method for initialization of sample data, you can create a 
 	ViewGroup rootView = (ViewGroup)FindViewById(Resource.Id.container);
 	rootView.AddView(chartView);
 ```
+
 ## Customization
 
 You can easily modify the base of the logarithmic function used to calculate the value by using the **setLogarithmBase(double)**. You can get the current value with **getLogarithmBase()**. The default value is `10`, but in our example we have set it to `2`, because our values are relatively small. You can also specify the exponent step between the axis ticks with the method **setExponentStep(double)**. You can get the current value with **getExponentStep()**. The default value of the exponent step is `0` which means that the axis itself will calculate an exponent step that will visualize the points in the best possible way.

@@ -87,6 +87,7 @@ You have to
     <telerikGrid:DataGridColumnHeaderStyle OptionsButtonText="&#xE80F;"/>
 </telerikGrid:DataGridTextColumn.HeaderStyle>
 ```
+
 ## See Also
 
 * [How To Set a Theme]({%slug common-setting-a-theme%})

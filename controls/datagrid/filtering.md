@@ -44,6 +44,7 @@ To use **TextFilterDescriptor** you need to add its instance to the **RadDataGri
                              IsCaseSensitive="False" 
                              Value="En"/>
 ```
+
 ### Numerical Filter Descriptor
 
 Represents a Descriptor which filters by property of numerical data type. It exposes the following properties.
@@ -58,6 +59,7 @@ Represents a Descriptor which filters by property of numerical data type. It exp
                                   Operator="IsLessThan"
                                   Value="80000"/>
 ```
+
 ### DateTime Filter Descriptor
 
 The DateTimeFilterDescriptor is a Descriptor which filters by property of System.DateTime data type. It exposes the following properties:
@@ -72,6 +74,7 @@ The DateTimeFilterDescriptor is a Descriptor which filters by property of System
                                  Operator="IsLessThan"
                                  Value="1900/01/01"/>
 ```
+
 ### Boolean Filter Descriptor
 
 The BooleanFilterDescriptor is a Descriptor which filters by property of System.Boolean data type. It exposes the following properties:
@@ -84,6 +87,7 @@ The BooleanFilterDescriptor is a Descriptor which filters by property of System.
 <common:BooleanFilterDescriptor PropertyName="IsChampion"
                                 Value="true"/>
 ```
+
 ### Composite Filter Descriptor
 
 The CompositeFilterDescriptor represents a special FilterDescriptorBase that stores an arbitrary number of other Descriptors instances. The logical AND or OR operator is applied upon all composed filters to determine the result of the PassesFilter routine.

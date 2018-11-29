@@ -8,11 +8,11 @@ position: 3
 publish: true
 ---
 
-#Gauges: Scales
+# Gauges: Scales
 
 **GaugeScale** is a base class for the scales in **RadGaugeView**. The scale is a **ViewGroup** that has range and a set of indicators that are rendered according to the range of the scale they belog to. The scale manages the count and appearance of its ticks and labels. **GaugeRadialScale** also allows setting its start and sweep angles. It is possible to add more than one scale to a gauge as this example demonstrates.
 
-##Setup scales
+## Setup scales
 
 **GaugeScale** allows you to customize every aspect of its visual appearance. You can set the count of ticks and labels or choose to draw then inside or outside the scale. We are going to create an configure 2 scales that will be added to a radial gauge. First thing to do is to instantiate a scale and set its minimum and maximum values:
 

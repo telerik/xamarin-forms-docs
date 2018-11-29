@@ -70,7 +70,7 @@ Here is how the ItemStyle bindable property looks:
 
 >important There are examples in the ListView/Styling folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}), how you can use those properties as a bindable. 
 
-##See Also
+## See Also
 
 - [Selection]({%slug listview-features-selection%})
 - [Reordering]({%slug listview-features-reorder-items%})

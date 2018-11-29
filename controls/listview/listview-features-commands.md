@@ -60,7 +60,7 @@ where telerikListViewCommands is defined like this:
 ###
 	xmlns:telerikListViewCommands="clr-namespace:Telerik.XamarinForms.DataControls.ListView.Commands;assembly=Telerik.XamarinForms.DataControls"
 	
-##See Also
+## See Also
 
 [Events]({%slug listview-features-events%})
 

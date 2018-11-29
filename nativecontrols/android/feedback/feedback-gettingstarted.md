@@ -102,7 +102,7 @@ To add a comment one simply taps on the picture where they would like to put an 
 
 After the user is done adding comments, tapping on the 'Send' button at the top right corner of the screen will finish the procedure.
 
-#Reading feedback
+# Reading feedback
 The users of your application can read the feedback they have already submitted by choosing the 'Your feedback' option on the main menu:
 
 ![Could not load image.](images/feedback-main-menu.png "RadFeedback main menu")
@@ -129,7 +129,7 @@ Here's a screenshot of an opened feedback item:
 
 Your users can submit additional comments and read the response from the developer (you) on this activity. Comments are submitted by using the `EditText` instance at the bottom part of the activity.
 
-#Editing settings
+# Editing settings
 The initial menu provides the end users with an option to edit their preferences. Currently there is only one editable preference: the name which will appear when the end user submits comments. Although not obligatory, the name is a good way of providing a way for the developer to address the comments submitted by a user. To make sure the end user is informed about this option, an initial attempt for sending feedback without setting a name will be accompanied by a popup asking the end user to provide their name. The following screenshot demonstrates this experience:
 
 ![Could not load image.](images/feedback-edit-settings-1.png "Browse a feedback item")
@@ -142,7 +142,7 @@ The end user is provided with three options here:
 
 Editing the already provided name is done by choosing the 'Edit settings' option from the main menu.
 
-#Appending additional JSON content to the new feedback items
+# Appending additional JSON content to the new feedback items
 RadFeedback allows for appending custom JSON content to each item created on the server. This feature is exposed by the `setAdditionalContent(JSONObject o)` implemented on the **RadFeedback** instance. This method accepts a `JSONObject` instance containing a key-value pairs representing the custom data to be uploaded. These key-value pairs will be merged along the standard Feedback item values in a final `JSONObject` that will be sent as a payload of the HTTP Post request that creates the item on the server. To stop sending custom data with each item, simply call the `setAdditionalContent(JSONObject o)` by passing `null` as an argument.
 
 

@@ -8,11 +8,11 @@ position: 1
 publish: true
 ---
 
-#Gauges: Getting Started
+# Gauges: Getting Started
 
 This article demonstrates how to setup an instance of **RadGaugeView** from scratch.
 
-#Initialization
+# Initialization
 
 In order to use **RadGuageView** you need to add reference to the **Gauges** library which is part of Telerik UI for Xamarin.Android.
 
@@ -33,7 +33,7 @@ Then you can access the gauge in your activity and add scales and indicators to 
 RadRadialGaugeView gauge = (RadRadialGaugeView)rootView.FindViewById(Resource.Id.radial_gauge);
 ```
 
-##Adding scales
+## Adding scales
 
 After the gauge is loaded in the activity/fragment you are ready to add scales and indicators to it. The base class that represents a scale in **RadGaugeView** is **GaugeScale**. It has maximum and minimum values and a set of indicators that show values on the scale. You can also set the count of labels and ticks drawn on the scale. The code below demonstrates how to instanciate and configure a scale:
 

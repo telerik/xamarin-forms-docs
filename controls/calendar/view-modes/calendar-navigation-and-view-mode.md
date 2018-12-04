@@ -1,7 +1,7 @@
 ---
-title: View Modes
+title: Overview
 page_title: View Modes
-position: 3
+position: 0
 slug: calendar-features-navigation-and-view-mode
 ---
 
@@ -26,15 +26,15 @@ You could check how the most used view modes look on different platforms below:
 
 #### Day ViewMode
 
-![Calendar DayView](images/calendar_viewmodes_dayview.png)
+![Calendar DayView](../images/calendar_viewmodes_dayview.png)
 
 #### Month ViewMode
 
-![Calendar MonthView](images/calendar_viewmodes_monthview.png)
+![Calendar MonthView](../images/calendar_viewmodes_monthview.png)
 
 #### Year ViewMode (available on Android and iOS only)
 
-![Calendar YearView](images/calendar_viewmodes_yearview.png)
+![Calendar YearView](../images/calendar_viewmodes_yearview.png)
 
 >tip You can refer to the [MultiDay View]({%slug calendar-multidayview%}) topic for detailed information on the recently added MultiDay view mode of RadCalendar.
 
@@ -62,7 +62,7 @@ You could check how the most used view modes look on different platforms below:
 
 You need to attach to the **NativeControlLoaded** event:
 
-```xml
+```XAML
 <telerikInput:RadCalendar x:Name="calendar" NativeControlLoaded="CalendarLoaded" />
 ```
 When the control is loaded, you can change the view mode. 

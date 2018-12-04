@@ -306,6 +306,9 @@ navigation:
     controls/calendar:
         title: "Calendar &amp; Scheduling"
         ## Calendar Sub-Folders
+    controls/calendar/view-modes:
+        title: "View Modes"
+        position: 3
     controls/calendar/styling:
         title: "Styling"
         position: 8

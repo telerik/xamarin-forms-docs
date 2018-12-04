@@ -1,7 +1,7 @@
 ---
 title: MultiDay View
 page_title: MultiDay View
-position: 6
+position: 2
 slug: calendar-multidayview
 ---
 
@@ -28,7 +28,7 @@ All of the above are applied using the **MultiDayViewSettings** property of RadC
 
 The next image shows MultiDay view with the MultiDayViewSettings applied:
 
-![Calendar Scheduling Key Features](images/calendar_scheduling_keysettings.png)
+![Calendar Scheduling Key Features](../images/calendar_scheduling_keysettings.png)
 
 ## Work Week Support
 
@@ -46,7 +46,7 @@ You can customize the way the current time indicator looks through the styling p
 
 And here is the result:
 
-![Calendar CurrentTimeIndicator](images/calendar_scheduling_timeindicator.png)
+![Calendar CurrentTimeIndicator](../images/calendar_scheduling_timeindicator.png)
 
 #### AllDayArea
 
@@ -61,7 +61,7 @@ And here is a quick example on how they could be applied:
 
 <snippet id='calendar-scheduling-alldaystyling' />
 
-![Calendar AllDay Area](images/calendar_scheduling_alldayarea.png)
+![Calendar AllDay Area](../images/calendar_scheduling_alldayarea.png)
 
 #### Timeline Styling 
 
@@ -77,9 +77,9 @@ Check the example below demonstrating how the timeline styling properties are ap
 
 <snippet id='calendar-scheduling-timeline' />
 
-![Calendar Timeline](images/calendar_scheduling_timeline.png)
+![Calendar Timeline](../images/calendar_scheduling_timeline.png)
 
 ## See Also
 
-* [Navigation and View Mode]({%slug calendar-features-navigation-and-view-mode%})
+* [View Modes]({%slug calendar-features-navigation-and-view-mode%})
 * [Appointments]({%slug calendar-appointments%})

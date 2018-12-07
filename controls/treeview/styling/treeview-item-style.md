@@ -1,13 +1,13 @@
 ---
-title: Item Styles
-page_title: Item Styles
+title: Item Style
+page_title: Item Style
 position: 1
 slug: treeview-item-style
 description: Describing the styling options of the TreeView
 tags: style, item
 ---
 
-# Item Styles
+# Item Style
 
 RadTreeView component provides styling mechanism for customizing the look of its items. To utilize it you would need to set **ItemStyle** property of the control to TreeViewItemStyle object.
 
@@ -25,7 +25,7 @@ This enumeration contains the following members:
 
 - **None** - the border should not be visualized.
 - **Top** - the border should be visualized only at the top side.
-- **Bottom** -the border should be visualized only at the bottom side.
+- **Bottom** - the border should be visualized only at the bottom side.
 - **Left** - the border should be visualized only at the left side.
 - **Right** - the border should be visualized only at the right side.
 - **All** (default value) - the border should be visualized all around the item.

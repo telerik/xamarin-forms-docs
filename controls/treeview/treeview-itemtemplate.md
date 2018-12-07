@@ -14,6 +14,7 @@ The following example shows how to populate the ItemsSource with business items 
 First, create the needed business objects that will be the items of the TreeView. For the example there will be *Country* type with subitems of *City* type:
 
 * Country definition: 
+
 <snippet id='treeview-itemtemplate-country' />
 
 * City definition:

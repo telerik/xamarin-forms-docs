@@ -49,49 +49,22 @@ Take a look at the following topics on how to use the toolbox:
 #### Create the control definition in XAML:
 
 ```XAML
-<dataControls:RadTreeView x:Name="tv" ItemsSource="{Binding SourceCollection}"/>
+<telerikDataControls:RadTreeView x:Name="treeView" ItemsSource="{Binding Source}" />
 ```
 
 In addition to this, you need to add the following namespace:
 
-```XAML
-xmlns:dataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
-```
+<snippet id='xmlns-telerikdatacontrols' />
 
-As you can notice, the **ItemsSource** property of the control needs to be set. The collection we have is representing a hierarchical view and this is the reason for using the RadTreeView control for this setup. Here is how a single item from the collection is created:
+As you can notice, the **ItemsSource** property of the control needs to be set. The collection we have is representing a hierarchical view and this is the reason for using the RadTreeView control for this setup. 
 
-```C#
-            this.SourceCollection.Add(new Item()
-            {
-                Name = "Item 1",
-                Children = new List<Item>()
-                    {
-                        new Item()
-                        {
-                            Name = "Item 11",
-                            Children = new ObservableCollection<Item>()
-                            {
-                                new Item()
-                                {
-                                    Name = "Item 111",
-                                },
-                                new Item()
-                                {
-                                    Name = "Item 112"
-                                },
-                                new Item()
-                                {
-                                    Name = "Item 113"
-                                }
-                            }
-                        },
-                        new Item()
-                        {
-                            Name = "Item 12"
-                        }
-                    }
-            });
-```
+First, let's use a simple *Item* business object which holds its sub items inside *Children* collection:
+
+<snippet id='treeview-getting-started-item' />
+
+Then, create a ViewModel containing a collection of Items objects that will be used as ItemsSource of the TreeView:
+
+<snippet id='treeview-getting-started-viewmodel' />
 
 An important step for the control to load its items correctly is to apply **TreeViewDescriptor(s)**. The TreeViewDescriptor basically defines the data items' hierarchy as well as how each item is visualized through the properties listed below:
 
@@ -102,62 +75,17 @@ An important step for the control to load its items correctly is to apply **Tree
 
 Here is an example how the TreeViewDescriptor is applied:
 
-```C# 
-<dataControls:RadTreeView x:Name="tv" ItemsSource="{Binding SourceCollection}">
-	<dataControls:TreeViewDescriptor DisplayMemberPath="Name"
-									 ItemsSourcePath="Children"
-									 TargetType="{x:Type local:Item}"/>
-</dataControls:RadTreeView>
-```
-Where the Item class is defined as:
-```C#
-    public class Item : INotifyPropertyChanged
-    {
-        string name;
-        public string Name
-        {
-            get
-            {
-                return this.name;
-            }
-            set
-            {
-                if (this.name != value)
-                {
-                    this.name = value;
-                    this.OnPropertyChanged();
-                }
-            }
-        }
+<snippet id='treeview-getting-started-xaml' />
 
-        public IList<Item> Children { get; set; }
+Lastly, set the *ViewModel* class as BindingContext:
 
-        public event PropertyChangedEventHandler PropertyChanged;
+<snippet id='treeview-getting-started-setviewmodel' />
 
-        public Item()
-        {
-            this.Children = new ObservableCollection<Item>();
-        }
-
-        public void OnPropertyChanged([CallerMemberName] string propertyName = "")
-        {
-            var eh = this.PropertyChanged;
-            if (eh != null)
-                eh.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        public override string ToString()
-        {
-            return this.Name;
-        }
-    }
-```
 Here is the appearance of the **RadTreeView** control once the upper steps have been accomplished:
 
 ![getting started treeview](images/getting_started_treeview.png)
 
->important You can check a runnable demo in the **Features** section of the **RadTreeView** component in the **SDK Samples Browser application**(can be found in the Examples folder of your local *Telerik UI for Xamarin* installation)
-
+>important You can check a runnable demo in the **Getting Started** section of the **RadTreeView** component in the **SDK Samples Browser application**(can be found in the Examples folder of your local *Telerik UI for Xamarin* installation)
 
 ## See Also
 

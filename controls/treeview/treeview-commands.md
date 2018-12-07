@@ -38,51 +38,13 @@ All the predefined commands within a RadTreeView instance are identified by a me
 
 ## Custom TreeViewUserCommand Example
 
-As a first step, you can create a couple command properties which will invoke custom methods on **ItemTap** and **ItemHold**. Here is how this is done in the code behind of the page where the TreeView control is defined:
+As a first step, you can create a command property which will invoke custom method on **ItemTap**. Here is how this is done inside the ViewModel of the TreeView:
 
-        public ICommand MyTapCommand { get; set; }
-        public ICommand MyHoldCommand { get; set; }
-        public TreeViewCommands ()
-		{
-			//sets the collection used as an ItemsSource
-            this.SmallSource = new ObservableCollection<Item>(); 
+<snippet id='treeview-commands-viewmodel' />
 
-			//Adds items to the source collection
-            this.InitSources();
-            this.BindingContext = this;
+Once you have created the custom command, you need to add it to the Commands collection of the **RadTreeView** element:
 
-            this.MyTapCommand = new Command((p) => OnItemTap(p));
-            this.MyHoldCommand = new Command((p) => OnItemHold(p));
-
-            InitializeComponent ();
-
-            this.tv.HierarchyAdapter = new TreeViewDemoAdapter();
-        }
-
-        private void OnItemHold(object p)
-        {
-            var context = (TreeViewItemCommandContext)p;
-            this.tv.Expand(context.Item);
-        }
-
-        private void OnItemTap(object p)
-        {
-            var context = (TreeViewItemCommandContext)p;
-            this.tv.Collapse(context.Item);
-        }
-
-
-Once you have created the custom commands, you need to add them to the Commands collection of the **RadTreeView** element:
-
-     <dataControls:RadTreeView Grid.Row="1"
-                           ItemsSource="{Binding SmallSource}"
-                           BackgroundColor="LightBlue"
-                           x:Name="tv">
-         <dataControls:RadTreeView.Commands>
-             <treeView:TreeViewUserCommand Id="ItemTap" SuppressDefaultCommand="True" Command="{Binding MyTapCommand}"/>
-             <treeView:TreeViewUserCommand Id="ItemHold" SuppressDefaultCommand="True" Command="{Binding MyHoldCommand}"/>
-         </dataControls:RadTreeView.Commands>
-     </dataControls:RadTreeView>
+<snippet id='treeview-commands-xaml' />
 
 >important You can check a runnable demo in the **Features** section of the **RadTreeView** component in the **SDK Samples Browser application**(can be found in the Examples folder of your local *Telerik UI for Xamarin* installation)
 

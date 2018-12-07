@@ -484,12 +484,9 @@ navigation:
    ## TreeView
     controls/treeview:
         title: "TreeView"
-    controls/treeview/getting-started:
-        title: "Getting Started"
-        position: 3
-    controls/treeview/features:
-        title: "Features"
-        position: 4
+    controls/treeview/styling:
+        title: "Theming and Styles"
+        position: 10
     ## End TreeView
     ## ZipLibrary
     controls/ziplibrary:

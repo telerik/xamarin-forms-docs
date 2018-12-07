@@ -17,19 +17,22 @@ RadListView exposes a **Commands** collection that allows you to register user c
 
 ## CommandId Enumeration
 
-All the predefined commands within a RadListView instance are identified by a member of the CommandId enumeration. This is actually the key that relates a command instance to a particular action/routine within the owning listview. In order to register a custom command within a RadListView instance you may either inherit from ListViewCommand class and override its CanExecute and Execute methods or use the ListViewUserCommand class and bind its Command property to a Command in your ViewModel. In both cases you need to set the Id property of the new command so that it can be properly associated with the desired action/event. Following are the members of the CommandId enumerations:
+All the predefined commands within a RadListView instance are identified by a member of the CommandId enumeration. This is actually the key that relates a command instance to a particular action/routine within the owning listview. 
+In order to register a custom command within a RadListView instance you may either inherit from ListViewCommand class and override its CanExecute and Execute methods or use the ListViewUserCommand class and bind its Command property to a Command in your ViewModel. In both cases you need to set the Id property of the new command so that it can be properly associated with the desired action/event. 
 
-* ItemTap
-* ItemSwiping
-* ItemSwipeCompleted
-* ItemSwipeStarting
-* PullToRefreshRequested
-* SelectionChanged
-* LoadOnDemand
-* ItemHold
-* GroupHeaderTap
-* ReorderStarting
-* ReorderEnded
+Following are the members of the **CommandId** enumerations:
+
+* **ItemTap**
+* **ItemSwiping**
+* **ItemSwipeCompleted**
+* **ItemSwipeStarting**
+* **PullToRefreshRequested**
+* **SelectionChanged**
+* **LoadOnDemand**
+* **ItemHold**
+* **GroupHeaderTap**
+* **ReorderStarting**
+* **ReorderEnded**
 
 >tip These actions correspond to the exposed by RadListView events, for more details go to [Events]({%slug listview-features-events%}) topic.
 
@@ -37,7 +40,7 @@ For each of the available commands there is a *context* object of type [CommandI
 
 ## Inheriting from ListViewCommand
 
-Let's, for example, handle ItemTap action as a Command. First, create a class that inherits from ListViewCommand and set its Id property accordingly. You would also need to override CanExecute and Execute methods as demonstrated in the example below:
+Let's, for example, handle **ItemTap** action as a Command. First, create a class that inherits from ListViewCommand and set its Id property accordingly. You would also need to override **CanExecute** and **Execute** methods as demonstrated in the example below:
 
 <snippet id='listview-features-commands-listviewcommand'/>
 
@@ -57,15 +60,14 @@ Then ItemTapCommand should be bound through the ListViewUserCommand predefined c
 
 where telerikListViewCommands is defined like this:
 
-###
-	xmlns:telerikListViewCommands="clr-namespace:Telerik.XamarinForms.DataControls.ListView.Commands;assembly=Telerik.XamarinForms.DataControls"
-	
+```XAML
+xmlns:telerikListViewCommands="clr-namespace:Telerik.XamarinForms.DataControls.ListView.Commands;assembly=Telerik.XamarinForms.DataControls"
+```
+
 ## See Also
 
-[Events]({%slug listview-features-events%})
-
-[Selection]({%slug listview-features-selection%})
-
-[Reordering]({%slug listview-features-reorder-items%})
+- [Events]({%slug listview-features-events%})
+- [Selection]({%slug listview-features-selection%})
+- [Reordering]({%slug listview-features-reorder-items%})
 
 

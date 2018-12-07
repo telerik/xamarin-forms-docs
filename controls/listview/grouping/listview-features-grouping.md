@@ -32,7 +32,16 @@ Next snippet demonstrates how you could group the Cities by "Country" property t
 
 <snippet id='listview-grouping-propertygroupdescriptor' />
 
-In addition, you could create custom ListView ItemTemplate as well as GroupHeaderTemplate in order to achieve the desired look, the next snippet shows the previously referenced DataTemplates:
+### GroupHeaderTemplate
+
+In addition, you could create custom **GroupHeaderTemplate** as well as **ListViewItemTemplate** in order to achieve the desired look when grouping the ListView. The BindingContext of the GroupHeader is a complex object and it includes the following properties:
+
+- **IsExpanded**: Defines a value indicating whether the group is currently expanded (has its child items visible).
+- **Items**: Gets the child items of the group.
+- **Key**: Gets the specific for the group key.
+- **Level**: Gets the zero-based level (or the depth) of the group.
+
+The snippet below shows how the **GroupHeaderTemplate** is defined:
 
 <snippet id='listview-grouping-templates' />
 

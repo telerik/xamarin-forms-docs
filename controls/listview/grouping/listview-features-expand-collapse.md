@@ -19,23 +19,23 @@ This help topic will provide an overview of the methods and commands used to con
 
 To manipulate the collapsible ListView groups, first you will need to call its **GetDataView** method. In short, GetDataView method provides a view of the ItemsSource after all the Sort, Group and Filter operations are applied.  The return type is *IDataViewCollection* which exposes the expand and collapse methods described in the following sections.
 
-#### C# 
-
-    var dataView = this.listView.GetDataView();
+```C#
+var dataView = this.listView.GetDataView();
+```
 
 ## Expand and collapse all groups 
 
 In order to expand all groups, use the **ExpandAll** method and respectively use the **CollapseAll** method - to collapse all groups.
 
-#### C# 
+```C#
+//expand all
+var dataView = this.listView.GetDataView();
+dataView.ExpandAll();
 
-	//expand all
-	var dataView = this.listView.GetDataView();
-	dataView.ExpandAll();
-
-	//collapse all
-	var dataView = this.listView.GetDataView();
-	dataView.CollapseAll();
+//collapse all
+var dataView = this.listView.GetDataView();
+dataView.CollapseAll();
+```
 
 ## Expand and collapse a certain group
 
@@ -43,24 +43,23 @@ You could retrieve the first-level groups through the **GetGroups** method of th
 
 Here is quick snippet on how these methods are used:
 
-#### C# 
+```C# 
+var dataView = this.listView.GetDataView();
+var rootGroups = dataView.GetGroups();
 
-	var dataView = this.listView.GetDataView();
-	var rootGroups = dataView.GetGroups();
-
-	var isFirstExpanded = dataView.GetIsExpanded(rootGroups.First());
-	//expand a certain group
-	dataView.ExpandGroup(rootGroups.First());
-	//collapse a certain group
-	dataView.CollapseGroup(rootGroups.First());
-
+var isFirstExpanded = dataView.GetIsExpanded(rootGroups.First());
+//expand a certain group
+dataView.ExpandGroup(rootGroups.First());
+//collapse a certain group
+dataView.CollapseGroup(rootGroups.First());
+```
 Additionally, *IDataViewCollection* provides **ExpandItem**/**CollapseItem** methods that take a ListView item as a parameter and expand/collapse the immediate group containing this item.	
 
-#### C# 
-
-	var lastItem = (listView.ItemsSource as IEnumerable<City>).Last();
-	var dataView = this.listView.GetDataView();
-	dataView.CollapseItem(lastItem);
+```C#
+var lastItem = (listView.ItemsSource as IEnumerable<City>).Last();
+var dataView = this.listView.GetDataView();
+dataView.CollapseItem(lastItem);
+```
 
 ## Handle GroupHeaderTap command
 
@@ -72,8 +71,7 @@ By handling GroupHeaderTap command you could control the collapse/expand behavio
 
 First, let’s define the GroupHeaderTapCommand class that derives from ListViewCommand:
 
-#### C# 
-
+```C# 
 	public class GroupHeaderTapCommand : ListViewCommand
 	{
 		public GroupHeaderTapCommand()
@@ -91,15 +89,15 @@ First, let’s define the GroupHeaderTapCommand class that derives from ListView
 				context.IsExpanded = !context.IsExpanded;
 		}
 	}
+```
 
 And add the GroupHeaderTapCommand to the Commands collection of the ListView instance:
 
-#### C# 
-
-	listView.Commands.Add(new GroupHeaderTapCommand());
+```C#
+listView.Commands.Add(new GroupHeaderTapCommand());
+```
 	
 ## See Also
 
-[Grouping]({%slug listview-features-grouping%})
-
-[Commands]({%slug listview-features-commands %})
+- [Grouping]({%slug listview-features-grouping%})
+- [Commands]({%slug listview-features-commands %})

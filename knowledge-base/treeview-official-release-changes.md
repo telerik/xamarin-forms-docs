@@ -1,6 +1,6 @@
 ---
-title: TreeView official release changes
-description: How to upgrade TreeView from Beta to Official
+title: How to upgrade TreeView from Beta to Official
+description: TreeView official release introduces API changes
 type: how-to
 page_title: TreeView official release changes
 slug: treeview-official-release-changes

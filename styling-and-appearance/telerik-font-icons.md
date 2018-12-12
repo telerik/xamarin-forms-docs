@@ -71,7 +71,7 @@ The icon's code is:
 
 ![Telerik Font Icons Code](images/telerik-font-icons-codes.png)
 
-##Example
+## Example
 
 If you want to change the default icon of the RadDataGrid OptionsButton with one of the following icons above, set the icon code to the OptionsButtonText property:
 
@@ -87,6 +87,7 @@ You have to
     <telerikGrid:DataGridColumnHeaderStyle OptionsButtonText="&#xE80F;"/>
 </telerikGrid:DataGridTextColumn.HeaderStyle>
 ```
+
 ## See Also
 
 * [How To Set a Theme]({%slug common-setting-a-theme%})

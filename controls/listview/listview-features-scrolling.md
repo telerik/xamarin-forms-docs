@@ -32,7 +32,7 @@ And the end result:
 #### Figure 1: Scrolling item into View
 ![](images/listview-features-scrolling.png)
 	
-##See Also
+## See Also
 
 - [Selection]({%slug listview-features-selection%})
 - [Grouping]({%slug listview-features-grouping%})

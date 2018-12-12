@@ -195,6 +195,7 @@ You can replace the values of the colors with custom ones. This way you can modi
     </Application.Resources>
 </Application>
 ```
+
 ## Separate ResourceDictionary file
 
 Another possibility is to create your own **ResourceDictionary** and merge it instead of the default **telerikCommon:BlueResources** one.

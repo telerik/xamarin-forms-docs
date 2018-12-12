@@ -8,7 +8,7 @@ position: 2
 publish: true
 ---
 
-#Gauges: Indicators
+# Gauges: Indicators
 
 Indicators in **RadGaugeView** are visual elements that point to value or visualize a range of values on a scale. They should be added to a scale and their values are aligned to the scale the indicators belong to.
 
@@ -16,7 +16,7 @@ Indicators in **RadGaugeView** are visual elements that point to value or visual
 
 ![TelerikUI-Gauges-Indicators-Example-2](images/gauges-indicators2.png "An example of radial gauge with bar indicators and a needle.")
 
-##Bar indicators
+## Bar indicators
 
 Bar indicators are used to visualize a range of values on a scale. Customization of the bars is trivial. Changing their range, color, position and width is achieved by just setting a property. Bar indicators in **RadGaugeView** have a default animation that animates their maximum value. Below is an example how to create a bar indicator and add it to **GaugeScale**.
 
@@ -62,7 +62,7 @@ Note that the indicator's width and location are normalized values. They are cal
 
 ![TelerikUI-Gauges-Indicators-Bar](images/gauge-indicators-bars.png "An example of radial gauge with customized radial bar indicators.")
 
-##Needle indicator
+## Needle indicator
 
 The needle indicator is used to point to a specific value. You can easily customize its length, top and bottom width. It is also possible to change the radius of the needle's circle or to offset the needle by just setting the corresponding properties. The length of the needle is again value between 0 and 1. The supports animations when its value is changed.
 

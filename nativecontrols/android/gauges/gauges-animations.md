@@ -8,9 +8,9 @@ position: 4
 publish: true
 ---
 
-#Gauges: Animations
+# Gauges: Animations
 
-##Built in animations
+## Built in animations
 
 **RadGaugeView** has built in animations that allows animating its indicators. Turning the animations on is as easy as setting 2 properties. You shoud use <code>setAnimated()</code> setter of an indicator to allow the animations and then use <code>setAnimationDuration</code> which, as its name says, is used to set the duration of the animation.
 

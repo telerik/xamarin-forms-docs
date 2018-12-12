@@ -61,6 +61,7 @@ The example above uses the following components:
                      BorderColor="Transparent"/>
 </Grid>
 ```
+
 #### View Model
 
 ```C#

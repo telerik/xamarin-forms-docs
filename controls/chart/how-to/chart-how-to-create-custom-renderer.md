@@ -1,15 +1,15 @@
 ---
-title: How To Create Custom Renderer
+title: How To Create Line Series With Animation
+page_title: How To Create Line Series With Animation
+position: 3
 slug: chart-how-to-create-custom-renderer
 ---
 
-# Custom Chart Renderer #
-Sometimes, you might find that certain feature is available in the native control on a given platform, but is not exposed in Xamarin Forms. This is when you would need to create a **custom renderer**. This will allow you to access the native control and configure it as per your needs.
-
-## Example ##
+# Example
 
 Let us consider the following example: we need to apply animation to **LineSeries** in **iOS**. Create a class which inherits from **Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartRenderer** and override the **UpdateNativeWidget** and **CreateChartDelegate** methods:
 
+```C#
 	public class LineWithAnimationRenderer : CartesianChartRenderer
 	{
 		public LineWithAnimationRenderer()
@@ -27,9 +27,10 @@ Let us consider the following example: we need to apply animation to **LineSerie
             return new ChartWithAnimationDelegate(chart);
         }
 	}
-
+```
 **UpdateNativeWidget** method takes care of allowing animations for the chart. **CreateChartDelegate** supplies an instance of a class that inherits from **TKChartDelegate**, configured with animations as per the [iOS chart help](https://docs.telerik.com/devtools/xamarin/nativecontrols/ios/chart/animations/custom). **ChartWithAnimationDelegate** inherits from Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartDelegate, which in turn inherits from **TKChartdelegate**. This way you only need to extend it with the desired features:
 
+```C#
 	public class ChartWithAnimationDelegate : CartesianChartDelegate
 	{
 		public ChartWithAnimationDelegate()
@@ -75,7 +76,16 @@ Let us consider the following example: we need to apply animation to **LineSerie
 		}
 	}
 	chart.Palette = CustomPalettes.CustomDark;
+```
 
 Now you only need to register your custom renderer using the ExportRenderer assembly level attribute:
-	 
+
+```C#	 
 	[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(LineWithAnimationRenderer))]
+```
+
+## See Also
+
+- [Categorical Series Combine Mode]({%slug chart-series-combine-mode%})
+- [Chart Legend]({%slug chart-features-legend%})
+- [How To Create Custom Renderer]({%slug chart-how-to-create-custom-renderer%})

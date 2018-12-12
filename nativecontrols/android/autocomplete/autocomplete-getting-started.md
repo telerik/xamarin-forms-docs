@@ -35,7 +35,7 @@ Then you should access the autocomplete object in your activity/fragment and pop
 this.autocomplete = (RadAutoCompleteTextView)rootView.FindViewById(Resource.Id.autocmp);
 ```
 
-##Populate with data
+## Populate with data
 In order to populate the autocomplete you need to create an `AutoCompleteAdapter` object and pass it the array of suggestions which should be `TokenModel` objects. The `TokenModel` is a unified object used by the autocomplete to represent data objects as suggestions or tokens.
 
 We will use the following list of string for the purposes of the examples.

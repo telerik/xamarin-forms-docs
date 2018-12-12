@@ -5,6 +5,72 @@ slug: common-themes-overview
 position: 1
 ---
 
+<style>
+.theme-palette-color {
+	width:20px;
+	height:20px;
+	margin: auto;
+	border: 1px solid black;
+}
+
+.blue-basicfontcolor{
+	background-color: #4A4949;
+}
+
+.blue-alternativefontcolor{
+	background-color: #919191;
+}
+
+.blue-accentcolor1{
+	background-color: #3148CA;
+}
+
+.blue-backgroundcolor1{
+	background-color: #3D5AFE;
+}
+
+.blue-accentcolor2{
+	background-color: #30BCFF;
+}
+
+.blue-backgroundcolor2{
+	background-color: #000000;
+}
+
+.blue-colorofgrid{
+	background-color: #D9D9D9;
+}
+
+.blue-colorofmenubar{
+	background-color: #F8F8F8;
+}
+
+.blue-complcolor1{
+	background-color: #FF5225;
+}
+
+.blue-complcolor2{
+	background-color: #FFC325;
+}
+
+.blue-complcolor3{
+	background-color: #2EC262;
+}
+
+.blue-complcolor4{
+	background-color: #FE3D5A;
+}
+
+.blue-complcolor5{
+	background-color: #803DFE;
+}
+
+.blue-complcolor6{
+	background-color: #3DBAFE;
+}
+
+</style>
+
 # What is a Telerik Theme
 
 A **Telerik Theme** is a set of resources which are designed to provide your application with a consistent look and feel across all platforms. [Setting a theme]({%slug common-setting-a-theme%}) for your application is an easy and straightforward process. Furthermore, you are free to [customize the theme's resources]({%slug common-modifying-default-theme%}) so that a more distinct appearance is achieved.

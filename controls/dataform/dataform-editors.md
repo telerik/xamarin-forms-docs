@@ -18,101 +18,28 @@ The RadDataForm provides the following methods to replace the default editors:
 
 The values from the **EditorType** enumeration are interpreted differently by each platform and when an editor type is missing, the closest type is used. The following table shows the type mapping:  
 
-<table>
-	<tr>
-		<th>EditorType</th>
-		<th>Android<br/>native editor</th>
-		<th>iOS<br/>native editor</th>
-		<th>WinRT/UWP<br/>native editor</th>
-		<th>value type</th>
-	</tr>
-	<tr>
-		<td>SliderEditor</td>
-		<td>AndroidDataFormSeekBarEditor</td>
-		<td>TKDataFormSliderEditor</td>
-		<td>SliderCustomEditor</td>
-		<td>float</td>
-	</tr>
-	<tr>
-		<td>PickerEditor</td>
-		<td>DataFormSpinnerEditor</td>
-		<td>TKDataFormPickerViewEditor</td>
-		<td>ListEditor</td>
-		<td>**requires PropertyDataSourceProvider</td>
-	</tr>
-	<tr>
-		<td>TextEditor</td>
-		<td>DataFormTextEditor</td>
-		<td>TKDataFormTextFieldEditor</td>
-		<td>StringEditor</td>
-		<td>string</td>
-	</tr>
-	<tr>
-		<td>SegmentedEditor</td>
-		<td>DataFormSegmentedEditor</td>
-		<td>TKDataFormSegmentedEditor</td>
-		<td>SegmentedCustomEditor</td>
-		<td>**requires PropertyDataSourceProvider</td>
-	</tr>
-	<tr>
-		<td>NumberPickerEditor</td>
-		<td>DataFormNumberPickerEditor</td>
-		<td>TKDataFormStepperEditor</td>
-		<td>NumericEditor</td>
-		<td>double</td>
-	</tr>
-    <tr>
-		<td>IntegerEditor</td>
-		<td>DataFormIntegerEditor</td>
-		<td>TKDataFormNumberEditor</td>
-		<td>*StringEditor</td>
-		<td>int</td>
-	</tr>
-    <tr>
-		<td>DecimalEditor</td>
-		<td>DataFormDecimalEditor</td>
-		<td>TKDataFormDecimalEditor</td>
-		<td>*StringEditor</td>
-		<td>double</td>
-	</tr>
-	<tr>
-		<td>CheckBoxEditor</td>
-		<td>DataFormCheckBoxEditor</td>
-		<td>*TKDataFormSwitchEditor</td>
-		<td>BooleanEditor</td>
-		<td>bool</td>
-	</tr>
-	<tr>
-		<td>ToggleButtonEditor</td>
-		<td>DataFormToggleButtonEditor</td>
-		<td>TKDataFormSwitchEditor instead</td>
-		<td>*BooleanEditor</td>
-		<td>bool</td>
-	</tr>
-    <tr>
-		<td>DateEditor</td>
-		<td>DataFormDateEditor</td>
-		<td>TKDataFormDatePickerEditor</td>
-		<td>DateEditor</td>
-		<td>DateTime</td>
-	</tr>
-    <tr>
-		<td>TimeEditor</td>
-		<td>DataFormTimeEditor</td>
-		<td>TKDataFormTimePickerEditor</td>
-		<td>TimeEditor</td>
-		<td>DateTime</td>
-	</tr>
-	<tr>
-		<td>Custom</td>
-		<td colspan="4">Specifies that custom editor control will be provided.</td>
-	</tr>
-</table>
+| Editor Type  		 | Native Editors | Value Type |
+|--------------------|----------------|------------|
+| SliderEditor 		 | Android: DataFormSeekBarEditor<br />iOS: TKDataFormSliderEditor<br /> UWP: SliderCustomEditor | float |
+| PickerEditor 		 | Android: DataFormSpinnerEditor<br />iOS: TKDataFormPickerViewEditor<br />UWP: ListEditor | **requires PropertyDataSourceProvider |
+| TextEditor		 | Android: DataFormTextEditor<br />iOS: TKDataFormTextFieldEditor<br />UWP: StringEditor | string |
+| SegmentedEditor 	 | Android: DataFormSegmentedEditor<br />iOS: TKDataFormSegmentedEditor<br />UWP: SegmentedCustomEditor | **requires PropertyDataSourceProvider |
+| NumberPickerEditor | Android: DataFormNumberPickerEditor<br />iOS: TKDataFormStepperEditor<br />UWP: NumericEditor | double |
+| IntegerEditor		 | Android: DataFormIntegerEditor<br />iOS: TKDataFormNumberEditor<br />UWP: *StringEditor | int |
+| DecimalEditor		 | Android: DataFormDecimalEditor<br />iOS: TKDataFormDecimalEditor<br />UWP: *StringEditor | double |
+| CheckBoxEditor	 | Android: DataFormCheckBoxEditor<br />iOS: *TKDataFormSwitchEditor<br />UWP: BooleanEditor | double |
+| ToggleButtonEditor | Android: DataFormToggleButtonEditor<br />iOS: *TKDataFormSwitchEditor<br />UWP: *BooleanEditor | bool |
+| DateEditor		 | Android: DataFormDateEditor<br />iOS: TKDataFormDatePickerEditor<br />UWP: DateEditor | DateTime |
+| TimeEditor		 | Android: DataFormTimeEditor<br />iOS: TKDataFormTimePickerEditor<br />UWP: TimeEditor | DateTime |
 
 \* Some editors are not supported in all native platforms. In these cases we use the closest substitute.  
 \** **[PropertyDataSourceProvider]({%slug dataform-annotations-data-source-key%})**
 
 > Sometimes your property type will not be the same as the type supported by the editor, e.g. when you wish to edit integers with a NumberPicker editor. In this case you will have to use a **[converter]({%slug dataform-annotations-converter%})**.
+
+The image below shows how different editors are visualized on Android, iOS and UWP platforms.
+
+![DataForm Editors](images/dataform_editors_1.png)
 
 ## Custom Editors
 

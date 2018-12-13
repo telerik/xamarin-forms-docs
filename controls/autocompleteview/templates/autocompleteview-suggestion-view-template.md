@@ -1,0 +1,41 @@
+---
+title: SuggestionView Template
+page_title: SuggestionView Template
+position: 4
+slug: autocompleteview-suggestion-view-template
+---
+
+# Suggestion View Customization
+
+## SuggestionView Template
+
+RadAutoCompleteView provides an option to change the default template that vizualize the filtered items and implement a custom template using **SuggestionViewTemplate** property.
+
+* **SuggestionViewTemplate** (DataTemplate): Defines the template used to vizualize the filtered items
+
+## Example
+
+Here is an example how to use the RadAutoCompleteView SuggestionViewTemplate:
+
+First, create the needed business objects, for example type Person with the following properties:
+
+<snippet id='autocompleteview-templates-suggestionview-businessobject'/>
+
+Then create a ViewModel with a collection of Person objects:
+
+<snippet id='autocompleteview-templates-suggestionview-viewmodel'/>
+
+Finally, let's use the following snippet to declare a RadAutoCompleteView and its SuggestionViewTemplate with RadDataGrid in XAML:
+
+<snippet id='autocompleteview-templates-suggestion-view-template-xaml'/>
+
+Here is the result:
+
+![AutoCompleteView SuggestionViewTemplate Example](images/autocompleteview-suggestionview-template.png "AutoCompleteView SuggestionItemTemplate Example")
+
+>important A sample SuggestionView Template example can be found in the AutoCompleteView/Templates folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
+## See Also
+
+- [Tokens Support]({% slug autocompleteview-tokens-support%})
+- [Data Binding]({% slug autocompleteview-data-binding %})

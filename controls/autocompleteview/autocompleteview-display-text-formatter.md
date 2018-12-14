@@ -29,10 +29,6 @@ After that create a class for example MyBusinessObjectFormatter that inherist fr
 
 <snippet id='autocompleteview-features-text-formatter-plain-class'/>
 
-and add this class as a Resource of the page:
-
-<snippet id='autocompleteview-features-textformatter-plain-resources'/>
-
 Finally, use the following snippet to declare a RadAutoCompleteView in XAML:
 
 <snippet id='autocompleteview-features-textformatter-plain'/>
@@ -57,10 +53,6 @@ After that create a class for example MyObjectFormatter that inherist from IDisp
 
 <snippet id='autocompleteview-features-text-formatter-tokens-class'/>
 
-and add this class as a Resource of the page:
-
-<snippet id='autocompleteview-features-textformatter-tokens-resources'/>
-
 Finally, use the following snippet to declare a RadAutoCompleteView in XAML:
 
 <snippet id='autocompleteview-features-textformatter-tokens'/>
@@ -71,7 +63,7 @@ Where the **telerikInput** namespace is the following:
 
 Here is how the DisplayText Formatter looks when DisplayMode is Plain and Token:
 
-![AutoCompleteView DisplayText Formatter](images/autocompleteview-features-display-text-formatter-token.png "AutoCompleteView DisplayText Formatter")
+![AutoCompleteView DisplayText Formatter](images/autocompleteview-features-display-text-formatter.png "AutoCompleteView DisplayText Formatter")
 
 >important A sample DisplayText Formatter example can be found in the AutoCompleteView/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

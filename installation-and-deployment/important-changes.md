@@ -7,6 +7,11 @@ position: 7
 
 # Important Changes
 
+## R3 2018
+
+With **R3 2018** release we removed the WindowsPhone and WinRT assemblies as they're not relevant at this point. Here is the current structure of Binaries folder:
+![](images/binaries-current-structure.png)
+
 ## R2 2017
 
 ### Binaries folder changes

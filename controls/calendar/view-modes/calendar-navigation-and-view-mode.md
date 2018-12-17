@@ -40,8 +40,15 @@ You could check how the most used view modes look on different platforms below:
 
 ## Setting the ViewMode
 
-**ViewMode** property is of type *CalendarViewMode* and is used to get the current ViewMode of RadCalendar control. In order to set a different View, you'd need to use any of the methods listed below: 
+**ViewMode** property is of type *CalendarViewMode* and is used to define the current view of RadCalendar control. Starting with R1 2019 release of Telerik UI for Xamarin, you could directly set/bind **ViewMode** property in order to apply a different View:
 
+```XAML
+<telerikInput:RadCalendar x:Name="calendar" ViewMode="Month" />
+```
+
+>important Keep in mind that setting **ViewMode** property to a value that is not supported on the current platform would throw a NotSupportedException.
+
+You can also use any of the methods listed below for switching the Calendar ViewMode:
 
  - bool **TrySetViewMode**(CalendarViewMode *view*, bool *isAnimated* = true): Tries to set the view mode of the calendar to the specified value. If the view mode is supported, the method returns `true`, otherwise returns `false`.
  - bool **TryNavigateToUpperView** (bool *isAnimated* = true): Navigates to upper view if possible. Returns `true` if navigation has been successful, `false` otherwise. 
@@ -53,14 +60,14 @@ You could check how the most used view modes look on different platforms below:
 	- **Android**: `Year` > `Month`
 	- **UWP**: `YearNumbers` > `MonthNames` > `Month`
   
-> **Important**: All calendar navigation methods should be called after the native element has been loaded. Here are the events that you can use:
+>All calendar navigation methods should be called after the native Calendar element has been loaded. Here are the events that you can use:
 > 
 > - **NativeControlLoaded** (EventArgs): Occurs when the renderer has finished preparing the native control.
 > - **NativeControlUnloaded** (EventArgs): Occurs when the native control is in invalid state.
 
-### Example
+Following is a quick example on how these could be used.
 
-You need to attach to the **NativeControlLoaded** event:
+First, you need to attach to the **NativeControlLoaded** event:
 
 ```XAML
 <telerikInput:RadCalendar x:Name="calendar" NativeControlLoaded="CalendarLoaded" />

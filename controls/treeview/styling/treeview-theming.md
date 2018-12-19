@@ -13,11 +13,11 @@ As a first step, make sure that you have familiarized yourself with the [Themes 
 
 Once you have completed the above steps, all you need to do is set the **StyleClass** property of the RadTreeView so that the TelerikTheme is applied:
 
-	<dataControls:RadTreeView ItemsSource="{Binding SmallSource}"
-                              CheckBoxMode="Propagate"
-                              StyleClass="TelerikTheme"
-                              x:Name="tv">
-    </dataControls:RadTreeView>
+<snippet id='treeview-styling-theming-xaml' />
+
+You could check how RadTreeView looks below:
+
+![TreeView Theming](../images/treeview_theming.png)
 
 You can always modify the default theme resources in order to style the control so that it perfectly fits the tone of your application. For more information, check the [Create a Custom Theme]({%slug common-modifying-default-theme%}) topic.
 

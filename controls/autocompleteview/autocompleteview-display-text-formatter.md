@@ -11,6 +11,11 @@ With AutoCompleteView provides an option for formatting the visualized text. The
 
 * **DisplayTextFormatter**(IDisplayTextFormatter): Defines the formatter of the selected item.
 
+There are two options to define the formatter of the selected item:
+
+* Set DisplayTextFortammer ptoperty and define the name of the property from the business object which will be displaied after formatting.
+* Create a custom class that inherits from IDisplayTextFormatter and implement a custom logic how the selected item could be formatted.
+
 ## Example
 
 ### DisplayText Formatter with DisplayMode Plain
@@ -48,10 +53,6 @@ First, create the needed business objects, for example type Client with the foll
 Then create a ViewModel with a collection of Client objects:
 
 <snippet id='autocompleteview-features-viewmodel'/>
-
-After that create a class for example MyObjectFormatter that inherist from IDisplayTextFormatter:
-
-<snippet id='autocompleteview-features-text-formatter-tokens-class'/>
 
 Finally, use the following snippet to declare a RadAutoCompleteView in XAML:
 

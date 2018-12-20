@@ -9,11 +9,11 @@ slug: autocompleteview-custom-templates
 
 ## Custom Templates
 
-If the default templates of the control do not suit your needs, you can easily define a custom template. The available templates for customization are:
+If the default templates of the control do not suit your needs, you can easily define a custom template. The available templates for customizing are:
 
 * **NoResults Template**(DataTemplate): Defines the template visualised when there are no suggestions found.
 * **ShowMore Template**(DataTemplate) for Tokens Support: Defines the template used to create show more view when *DisplayMore="Tokens"*.
-* **Loading Template**(DataTemplate) for Remote Search functionality: Defines the loading message in *RemoteSearch state*.
+* **Loading Template**(DataTemplate) for [Remote Search]({%slug autocompleteview-remote-search%}) functionality: Defines the loading message in *RemoteSearch state*.
 * **Tokens Template**(DataTemplate) for Tokens Support: Defines the template used to vizualize the tokens.
 * **SuggestionItem Template**(DataTemplate): Defines the template that will be used to create each of the suggestions.
 * **SuggestionView Template**(DataTemplate): Defines the template used to visualize the filtered items.

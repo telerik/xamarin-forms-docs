@@ -7,20 +7,20 @@ slug: autocompleteview-display-text-formatter
 
 # DisplayText Formatter
 
-With AutoCompleteView provides an option for formatting the visualized text. The format of the text could be formatted when AutoCompleteView DisplayMode is Plain or Token:
+RadAutoCompleteView control provides the option to format the visualized text in the input, so you could modify the displayed details of the selected item. The format of the text could be defined when AutoCompleteView DisplayMode is Plain or Tokens:
 
 * **DisplayTextFormatter**(IDisplayTextFormatter): Defines the formatter of the selected item.
 
 There are two options to define the formatter of the selected item:
 
-* Set DisplayTextFortammer ptoperty and define the name of the property from the business object which will be displaied after formatting.
+* Set DisplayTextFortammer property and define the name of the property from the business object which will be displaied after formatting.
 * Create a custom class that inherits from IDisplayTextFormatter and implement a custom logic how the selected item could be formatted.
 
 ## Example
 
 ### DisplayText Formatter with DisplayMode Plain
 
-Here is an example how the RadAutoCompleteView DisplayText Formatter works on Plain text:
+Here is an example how the RadAutoCompleteView DisplayText Formatter works on Plain DisplayMode:
 
 First, create the needed business objects, for example type Client with the following properties:
 
@@ -62,7 +62,7 @@ Where the **telerikInput** namespace is the following:
 
 <snippet id='xmlns-telerikinput'/>
 
-Here is how the DisplayText Formatter looks when DisplayMode is Plain and Token:
+Here is how the DisplayText Formatter looks in both cases:
 
 ![AutoCompleteView DisplayText Formatter](images/autocompleteview-features-display-text-formatter.png "AutoCompleteView DisplayText Formatter")
 

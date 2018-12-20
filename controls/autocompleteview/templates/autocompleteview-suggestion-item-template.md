@@ -1,13 +1,13 @@
 ---
 title: SuggestionItem Template
 page_title: SuggestionItem Template
-position: 6
+position: 3
 slug: autocompleteview-suggestion-item-template
 ---
 
 # Suggestion Items Customization
 
-## SuggestionItemTemplate
+## SuggestionItem Template
 
 Whenever the default template does not fit a particular scenario you can use the **SuggestionItemTemplate** property to define a custom template.
 
@@ -38,7 +38,7 @@ Here is the result:
 
 ![AutoCompleteView SuggestionItemTemplate Example](images/autocompleteview-suggestionitem-template.png "AutoCompleteView SuggestionItemTemplate Example")
 
->important A sample Custom SuggestionItemTemplate example can be found in the AutoCompleteView/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+>important A sample SuggestionItemTemplate example can be found in the AutoCompleteView/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 

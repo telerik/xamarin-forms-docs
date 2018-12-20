@@ -9,7 +9,7 @@ slug: autocompleteview-suggestion-view-template
 
 ## SuggestionView Template
 
-RadAutoCompleteView provides an option to change the default template that vizualize the filtered items and implement a custom template using **SuggestionViewTemplate** property.
+RadAutoCompleteView provides the option to change the default template that vizualize the filtered items and implement a custom template using **SuggestionViewTemplate** property.
 
 * **SuggestionViewTemplate** (DataTemplate): Defines the template used to vizualize the filtered items
 
@@ -21,7 +21,7 @@ First, create the needed business objects, for example type Person with the foll
 
 <snippet id='autocompleteview-templates-suggestionview-businessobject'/>
 
-Then create a ViewModel with a collection of Person objects:
+Then create a ViewModel with a collection of *Person* objects:
 
 <snippet id='autocompleteview-templates-suggestionview-viewmodel'/>
 

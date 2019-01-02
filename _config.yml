@@ -232,7 +232,7 @@ navigation:
     
     ## AutoComplete
     controls/autocomplete:
-        title: "AutoComplete"
+        title: "AutoComplete(obsolete)"
         ## AutoComplete Sub-Folders
     controls/autocomplete/getting-started:
         title: "Getting Started"
@@ -245,7 +245,7 @@ navigation:
     
     ## AutoCompleteView
     controls/autocompleteview:
-        title: "AutoCompleteView(beta)"
+        title: "AutoCompleteView"
     ## End AutoCompleteView
     
     ## Barcode

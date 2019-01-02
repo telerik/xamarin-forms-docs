@@ -5,7 +5,7 @@ type: how-to
 page_title: How to add item to the AutoCompleteView collection
 slug: autocompleteview-add-items-to-the-source
 position: 
-tags: 
+tags: AutoCompleteView, Tokens, Xamarin, Telerik UI for Xamarin
 ticketid: 1364788
 res_type: kb
 ---

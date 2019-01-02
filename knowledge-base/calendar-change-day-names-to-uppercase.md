@@ -5,7 +5,7 @@ type: how-to
 page_title: How to change the Calendar Day Names to be with capital letters
 slug: calendar-change-day-names-to-uppercase
 position: 
-tags: 
+tags: Calendar, Xamarin, DayNames, Title, Telerik UI for Xamarin
 ticketid: 1338021
 res_type: kb
 ---

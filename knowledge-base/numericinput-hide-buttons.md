@@ -126,7 +126,6 @@ Inside the template's root `Grid`, there are two `NumericInputButton` controls. 
 > Any `ControlTemplate` element that is prefixed with "PART_" is almost always a required part. Removing such a part will result in the control not working. For example the `NumericInputEntry` control is named **PART_Entry** and *cannot* be removed.
 
 #### Customing the ControlTemplate
-
 Here is the customized `ControlTemplate` without the buttons, named with a unique **x:Key** of **CustomRadNumericInputControlTemplate**.
 
 ```xml
@@ -177,7 +176,6 @@ Here is the customized `ControlTemplate` without the buttons, named with a uniqu
 > Notice that the resources that were specifically for buttons have been removed as well. Items like the ColumnDefinitions, button styles and column spacing are no longer needed so we can simplify the template.
 
 ### Implementation
-
 Make sure that page has **xmlns:telerikInput** defined:
 
 ```xml
@@ -191,6 +189,5 @@ Finally, use the custom `ControlTemplate` as a **StaticResource** on any instanc
 ```
 
 ## See Also
-
 * [RadNumericInput Getting Started](https://docs.telerik.com/devtools/xamarin/controls/numericinput/numericinput-getting-started)
 * [RadNumericInput Key Features](https://docs.telerik.com/devtools/xamarin/controls/numericinput/numericinput-key-features)

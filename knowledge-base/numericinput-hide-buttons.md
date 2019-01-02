@@ -29,12 +29,18 @@ res_type: kb
 	</tr>
 </table>
 
-
 ## Description
 This article shows you how to hide the increase and decrease buttons of the Telerik UI for Xamarin `RadNumericInput` control.
 
 ## Solution
 In order to hide the buttons, you'll need to define a custom `ControlTemplate` that does not have any buttons. Let's start with the original template.
+
+Note: The XAML defined below relies on the following xmlns to be defined:
+
+```xml
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+xmlns:numericInput="clr-namespace:Telerik.XamarinForms.Input.NumericInput;assembly=Telerik.XamarinForms.Input"
+```
 
 #### The original ControlTemplate
 Here is the entire original `ControlTemplate` for the `RadNumericInput` and its resource dependencies:
@@ -125,66 +131,64 @@ Here is the customized `ControlTemplate` without the buttons, named with a uniqu
 
 ```xml
 <!-- Removed unused resources that were for columns and button sizing -->
-<OnPlatform x:TypeArguments="x:Double" x:Key="Height" Default="32">
-	<On Platform="Android" Value="45" />
-	<On Platform="iOS" Value="36" />
-	<On Platform="UWP" Value="32" />
+<OnPlatform x:Key="Height" x:TypeArguments="x:Double" Default="32">
+    <On Platform="Android"  Value="45" />
+    <On Platform="iOS" Value="36" />
+    <On Platform="UWP" Value="32" />
 </OnPlatform>
-<OnPlatform x:TypeArguments="x:Double" x:Key="MinimumHeight" Default="33">
-	<On Platform="Android" Value="28" />
-	<On Platform="iOS" Value="28" />
-	<On Platform="UWP" Value="33" />
+<OnPlatform x:Key="MinimumHeight" x:TypeArguments="x:Double" Default="33">
+    <On Platform="Android"  Value="28" />
+    <On Platform="iOS" Value="28" />
+    <On Platform="UWP" Value="33" />
 </OnPlatform>
 
 <!-- Removed buttons and unused style, columns and spacing -->
 <ControlTemplate x:Key="CustomRadNumericInputControlTemplate">
-	<Grid HeightRequest="{StaticResource Height}" MinimumHeightRequest="{StaticResource MinimumHeight}">
-		<Grid.Resources>
-			<ResourceDictionary>
-				<Style TargetType="numericInput:NumericInputEntry" Class="DefaultNumericInputEntryStyle">
-					<Setter Property="HorizontalTextAlignment" Value="Center" />
-					<Setter Property="VerticalTextAlignment" Value="Center" />
-					<Setter Property="Padding" Value="0,0,0,0" />
-					<Setter Property="Keyboard" Value="Numeric" />
-					<Setter Property="BorderStyle">
-						<Setter.Value>
-							<input:BorderStyle>
-								<input:BorderStyle.BorderThickness>
-									<OnPlatform x:TypeArguments="Thickness" Default="2">
-										<On Platform="Android" Value="0,0,0,2" />
-										<On Platform="iOS" Value="2" />
-										<On Platform="UWP" Value="2" />
-									</OnPlatform>
-								</input:BorderStyle.BorderThickness>
-							</input:BorderStyle>
-						</Setter.Value>
-					</Setter>
-				</Style>
-			</ResourceDictionary>
-		</Grid.Resources>
+    <Grid HeightRequest="{StaticResource Height}" MinimumHeightRequest="{StaticResource MinimumHeight}">
+        <Grid.Resources>
+            <ResourceDictionary>
+                <Style TargetType="numericInput:NumericInputEntry" Class="DefaultNumericInputEntryStyle">
+                    <Setter Property="HorizontalTextAlignment" Value="Center" />
+                    <Setter Property="VerticalTextAlignment" Value="Center" />
+                    <Setter Property="Padding" Value="0,0,0,0" />
+                    <Setter Property="Keyboard" Value="Numeric" />
+                    <Setter Property="BorderStyle">
+                        <Setter.Value>
+                            <telerikInput:BorderStyle>
+                                <telerikInput:BorderStyle.BorderThickness>
+                                    <OnPlatform x:TypeArguments="Thickness" Default="2">
+                                        <On Platform="Android" Value="0,0,0,2" />
+                                        <On Platform="iOS" Value="2" />
+                                        <On Platform="UWP" Value="2" />
+                                    </OnPlatform>
+                                </telerikInput:BorderStyle.BorderThickness>
+                            </telerikInput:BorderStyle>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ResourceDictionary>
+        </Grid.Resources>
 
-		<numericInput:NumericInputEntry x:Name="PART_Entry" StyleClass="DefaultNumericInputEntryStyle" Text="{TemplateBinding Value, Mode=OneWay}" InputTransparent="{TemplateBinding IsReadOnly}" AutomationId="NumericEntry" />
-	</Grid>
+        <numericInput:NumericInputEntry x:Name="PART_Entry" StyleClass="DefaultNumericInputEntryStyle" Text="{TemplateBinding Value, Mode=OneWay}" InputTransparent="{TemplateBinding IsReadOnly}" AutomationId="NumericEntry" />
+    </Grid>
 </ControlTemplate>
 ```
-
 
 > Notice that the resources that were specifically for buttons have been removed as well. Items like the ColumnDefinitions, button styles and column spacing are no longer needed so we can simplify the template.
 
 ### Implementation
-
 
 Make sure that page has **xmlns:telerikInput** defined:
 
 ```xml
 xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
 ```
+
 Finally, use the custom `ControlTemplate` as a **StaticResource** on any instance of `RadNumericInput`.
 
 ```xml
 <telerikInput:RadNumericInput ControlTemplate="{StaticResource CustomRadNumericInputControlTemplate}" />
 ```
-
 
 ## See Also
 

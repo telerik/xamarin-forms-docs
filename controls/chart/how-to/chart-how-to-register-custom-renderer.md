@@ -13,21 +13,25 @@ This article will guide you how to register custom renderer for RadChart control
 
 You will need to create a class for each platform and register your custom renderer using the ExportRenderer assembly level attribute.
 
->important BradientBars example demonstrates how to create custom renderer for each platform and it can be found in the Chart/Customization folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+>important GradientBars example demonstrates how to create custom renderer for each platform and it can be found in the Chart/Customization folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## Android Project
 
-Register custom renderer for CartesianChart
+Register custom renderer for CartesianChart.
 
 ```C#
 [assembly: ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadCartesianChart), typeof(Telerik.XamarinForms.ChartRenderer.Android.CartesianChartRenderer))]
 ```
+
 
 Register custom renderer for PieChart
 
 ```C#
 [assembly: ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.Android.PieChartRenderer))]
 ```
+
+>note See the native [Android RadChartView documentation](https://docs.telerik.com/devtools/xamarin/nativecontrols/android/chart/chart-overview) for more information.
+
 
 ## iOS Project
 
@@ -43,6 +47,8 @@ Register custom renderer for PieChart
 [assembly: ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.iOS.PieChartRenderer))]
 ```
 
+>note See the native [iOS TKChart documentation](https://docs.telerik.com/devtools/xamarin/nativecontrols/ios/chart/overview) for more information.
+
 ## UWP Projects
 
 Register custom renderer for CartesianChart
@@ -56,6 +62,8 @@ Register custom renderer for PieChart
 ```C#
 [assembly: Xamarin.Forms.Platform.UWP.ExportRenderer(typeof(Telerik.XamarinForms.Chart.RadPieChart), typeof(Telerik.XamarinForms.ChartRenderer.UWP.PieChartRenderer))]
 ```
+
+>note See the native [UWP RadChart documentation](https://docs.telerik.com/devtools/universal-windows-platform/controls/radchart/overview) for more information. 
 
 ## See Also
 

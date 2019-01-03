@@ -1,7 +1,7 @@
 ---
 title: Styling Options
 page_title: Styling Options
-position: 11
+position: 12
 slug: autocompleteview-styling-options
 ---
 

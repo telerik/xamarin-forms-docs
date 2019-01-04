@@ -230,6 +230,11 @@ navigation:
         title: "Getting Started"
     ## End Path
     
+    ## PdfViewer
+    controls/pdfviewer:
+        title: "PdfViewer"
+    ## End PdfViewer
+    
     ## Popup
     controls/popup:
         title: "Popup"

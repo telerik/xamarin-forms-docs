@@ -40,6 +40,7 @@ Our suite offers the following controls for cross-platform development with Xama
 - [MaskedInput]({% slug maskedinput-overview %})
 - [NumericInput]({%slug numericinput-overview %})
 - [Path]({% slug path-overview %})
+- [Popup]({% slug popup-overview %})
 - [Rating]({% slug rating-overview%})
 - [SegmentedControl]({% slug segmentedcontrol-overview%})
 - [SideDrawer]({% slug sidedrawer-overview %})

@@ -38,7 +38,7 @@ Here is how the ListView Header looks:
 
 ![RadListView Footer Template](images/listview-features-header-template.png "[RadListView Footer Template")
 
-and how the ListView Footer looks:
+and the ListView Footer:
 
 ![RadListView Footer Template](images/listview-features-footer-template.png "[RadListView Footer Template")
 

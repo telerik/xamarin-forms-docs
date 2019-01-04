@@ -20,23 +20,25 @@ First, create a ViewModel:
 
 <snippet id='listview-features-header-and-footer-viewmodel'/>
 
+Add the following sample DataTemplates to the resources of the page that will be used as:
+
+**HeaderTemplate**:
+
+<snippet id='listview-features-header-template-xaml'/>
+
+**FooterTemplate**:
+
+<snippet id='listview-features-footer-template-xaml'/>
+
 Use the following snippet to declare the RadListView in XAML:
 
 <snippet id='listview-features-header-and-footer-xaml'/>
 
-Set the HeaderTemplate as a static resource of type *HeaderTemplate*:
-
-<snippet id='listview-features-header-template-xaml'/>
-
-Set the FooterTemplate as a static resource of type *FooterTemplate*:
-
-<snippet id='listview-features-footer-template-xaml'/>
-
-ListView Header:
+Here is how the ListView Header looks:
 
 ![RadListView Footer Template](images/listview-features-header-template.png "[RadListView Footer Template")
 
-ListView Footer:
+and how the ListView Footer looks:
 
 ![RadListView Footer Template](images/listview-features-footer-template.png "[RadListView Footer Template")
 

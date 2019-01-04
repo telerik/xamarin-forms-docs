@@ -230,6 +230,11 @@ navigation:
         title: "Getting Started"
     ## End Path
     
+    ## Popup
+    controls/popup:
+        title: "Popup"
+    ## End Popup
+    
     ## Accordion
     controls/accordion:
         title: "Accordion"

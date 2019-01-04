@@ -1,7 +1,7 @@
 ---
 title: Programmatic Scrolling
 page_title: Programmatic Scrolling
-position: 8
+position: 9
 slug: listview-features-scrolling
 description: Describing how to scroll RadListView to a certain item
 tags: programmatic, scrolling

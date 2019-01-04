@@ -421,16 +421,13 @@ navigation:
         position: 4
     controls/listview/gestures:
         title: "Gestures"
-        position: 10
-    controls/listview/features:
-        title: "Features"
-        position: 3
+        position: 11
     controls/listview/cells:
         title: Cells
         position: 2   
     controls/listview/styling:
-            title: "Theming and Styles"
-            position: 13          
+        title: "Theming and Styles"
+        position: 14         
     controls/listview/howto:
         title: "How To"
         position: 15

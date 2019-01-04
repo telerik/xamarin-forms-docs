@@ -1,7 +1,7 @@
 ---
 title: Layouts
 page_title: Layouts
-position: 9
+position: 10
 slug: listview-features-layouts
 ---
 

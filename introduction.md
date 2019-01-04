@@ -32,6 +32,7 @@ Our suite offers the following controls for cross-platform development with Xama
 - [Conversational UI]({% slug chat-overview %})
 - [DataForm]({% slug dataform-overview %})
 - [DataGrid]({%slug datagrid-overview%})
+- [DockLayout]({%slug docklayout-overview%})
 - [Entry] ({%slug entry-overview %})
 - [Expander] ({%slug expander-overview %})
 - [Gauge]({% slug gauge-overview %})

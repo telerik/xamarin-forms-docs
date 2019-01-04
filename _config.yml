@@ -203,6 +203,11 @@ navigation:
         position: 11
     ## End DataGrid
     
+     ## DockLayout
+    controls/docklayout:
+        title: "DockLayout"
+    ## End Entry
+    
     ## Entry
     controls/entry:
         title: "Entry"

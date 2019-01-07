@@ -15,12 +15,11 @@ RadPdfViewer for Xamarin is a control that enables you to easily load and displa
 
 ## Key Features
 
-* RadPdfViewer provides an option for **zoom in and zoom out** the content of the document. For more details on this check [here]({%slug %}).
-* **Single page and Continuous scrolling** support – allows you to scroll the document in the viewer. Read [here]({%slug %}) for more details.
-* **Commands Support** - RadPdfViewer allows you to extend the default commands, such as ZoomIn, ZoomOut, NavigateTo (NextPage, PreviousPage, Page), FitToWidth and ToggleLayoutMode. For detailed information on the matter check [Commands]({%slug %}) article. 
-* **RadPdf Toolbar** *(Build-In Commands Operations)* - is a pre-defined UI that automatically wired with all of the commands provided by the control through Build-in functionality. Check [here]({%slug %}) for more info.
-* **Font Support** Build -in support for True Type, Type1 and CID fonts.
-* **Visualize pdf documents** that inclide: Images, Shapes (geometrics), Different colors(solid, linear and radial gradients), Ordered and bullet list, etc. 
+* **Visualize pdf documents**: RadPdfViewer could display pdf documents that include images, shapes (geometrics), different colors(solid, linear and radial gradients), ordered and bullet lists, and more. 
+* **Zooming Functionality**: RadPdfViewer provides an option for **zoom in and zoom out** the content of the document. For more details on this check [here]({%slug %}).
+* **Single page and Continuous Scrolling Support**: Allows you to scroll the document in the viewer. Read [here]({%slug %}) for more details.
+* **Commands Support**: RadPdfViewer allows you to extend the default commands, such as ZoomIn, ZoomOut, NavigateTo (NextPage, PreviousPage, Page), FitToWidth and ToggleLayoutMode. For detailed information on the matter check [Commands]({%slug %}) article. 
+* **RadPdf Toolbar** *(Build-In Commands Operations)*: You could take advantage of a pre-defined UI automatically wired with all of the commands provided by the control through built-in functionality. Check [here]({%slug %}) for more info.
 
 ## See Also
 

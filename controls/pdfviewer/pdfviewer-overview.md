@@ -2,7 +2,7 @@
 title: Overview
 page_title: Overview
 position: 0
-slug: prfviewer-overview
+slug: pdfviewer-overview
 ---
 
 # Overview

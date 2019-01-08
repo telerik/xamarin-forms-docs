@@ -23,6 +23,6 @@ RadPdfViewer for Xamarin is a control that enables you to easily load and displa
 
 ## See Also
 
-- [Getting Started]({%slug pdfviewer-gettins-started%})
+- [Getting Started]({%slug pdfviewer-getting-started%})
 - [Key Features]({%slug pdfviewer-key-features%})
 - [Commands]({%slug pdfviewer-commands%})

@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events
-position: 7
+position: 10
 slug: calendar-events
 ---
 

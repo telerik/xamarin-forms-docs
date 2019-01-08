@@ -327,14 +327,17 @@ navigation:
     controls/calendar/view-modes:
         title: "View Modes"
         position: 3
+    controls/calendar/recurrence:
+        title: "Recurrence"
+        position: 6
     controls/calendar/styling:
         title: "Styling"
-        position: 8
+        position: 11
     controls/calendar/styling/custom-renderers:
         title: "Custom Renderers"
     controls/calendar/how-to:
         title: "How To"
-        position: 9
+        position: 12
         ## End Calendar Sub-Folders
     ## End Calendar
     ## Chart

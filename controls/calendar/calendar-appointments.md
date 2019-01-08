@@ -9,7 +9,7 @@ slug: calendar-appointments
 
 ## Creating an Appointment ##
 
-RadCalendar can display appointments by setting its **AppointmentsSource** property. It accepts a collection of objects, which should implement the **Telerik.XamarinForms.Input.IAppointment** interface. This interface defines 6 members:
+RadCalendar can display appointments by setting its **AppointmentsSource** property. It accepts a collection of objects which should implement **Telerik.XamarinForms.Input.IAppointment** interface. This interface defines the following members members:
 
 - **StartDate** *(DateTime)*
 - **EndDate** *(DateTime)*
@@ -17,16 +17,13 @@ RadCalendar can display appointments by setting its **AppointmentsSource** prope
 - **Detail** *(string)*
 - **Color** *(Color)*
 - **IsAllDay** *(bool)*
+- **RecurrenceRule** *(RecurrenceRule)*
 
->caution In **R2 2017** we have introduced a breaking change in the **IAppointment** interface by adding the **Detail** property. 
+>note In R1 2019 we have added RecurrenceRule property to the IAppointment interface in order to support recurrent appointments. For more details on this check [RecurrenceRule]({% slug %}) topic.
 
-### Appointments Example ###
+With R1 2019 release of Telerik UI for Xamarin we have introduced **Appointment** class, which implements the *IAppointment* interface, so you could directly use it to create appointments.
 
 <snippet id='calendar-gettingstarted-appointmentssource-csharp'/>
-
-where **Appointment** class implements **IAppointment** interface:
-
-<snippet id='calendar-getting-started-appointment-class'/>
 
 #### **Figure 1: Appearance of the RadCalendar control in month view mode**
 ![Appointments monthview](images/monthviews.png)
@@ -50,6 +47,6 @@ Eventually, you can utilize the event:
 
 ## See Also
 
-* [Navigation and View Mode]({%slug calendar-features-navigation-and-view-mode%})
+* [View Modes]({%slug calendar-features-navigation-and-view-mode%})
 * [Calendar Selection]({%slug calendar-selection%})
 

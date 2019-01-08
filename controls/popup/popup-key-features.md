@@ -34,8 +34,6 @@ Below is an example on how you could create a modal popup.
 
 RadPopup provides a few useful properties which will help you position it per your preferences.   
 
-**PlacementTarget** property defines an element relative to which the popup is positioned when it is open. In addition, **Placement** property specifies the way the popup aligns to its placement target. Placement property is of type *PlacementMode* and could be set to any of Top, Right, Left, Bottom or Center options.
-
 * **PlacementTarget**: Defines an element relative to which the popup is positioned when it is open;
 * **Placement**: Specifies the way the popup aligns to its placement target. Placement property is of type *PlacementMode* and can be set to any of the Top, Right, Left, Bottom or Center options;
 * **HorizontalOffset / VerticalOffset**: Specifies the horizontal/vertical distance between the placement target and the alignment point.  

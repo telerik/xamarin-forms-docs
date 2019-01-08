@@ -16,13 +16,13 @@ RadPdfViewer for Xamarin is a control that enables you to easily load and displa
 ## Key Features
 
 * **Visualize pdf documents**: RadPdfViewer could display pdf documents that include images, shapes (geometrics), different colors(solid, linear and radial gradients), ordered and bullet lists, and more. 
-* **Zooming Functionality**: RadPdfViewer provides an option for **zoom in and zoom out** the content of the document. For more details on this check [here]({%slug %}).
-* **Single page and Continuous Scrolling Support**: Allows you to scroll the document in the viewer. Read [here]({%slug %}) for more details.
-* **Commands Support**: RadPdfViewer allows you to extend the default commands, such as ZoomIn, ZoomOut, NavigateTo (NextPage, PreviousPage, Page), FitToWidth and ToggleLayoutMode. For detailed information on the matter check [Commands]({%slug %}) article. 
-* **RadPdf Toolbar** *(Build-In Commands Operations)*: You could take advantage of a pre-defined UI automatically wired with all of the commands provided by the control through built-in functionality. Check [here]({%slug %}) for more info.
+* **Zooming Functionality**: RadPdfViewer provides an option for **zoom in and zoom out** the content of the document. For more details on this check [here]({%slug pdfviewer-key-features%}).
+* **Single page and Continuous Scrolling Support**: Allows you to scroll the document in the viewer. Read [here]({%slug pdfviewer-key-features%}) for more details.
+* **Commands Support**: RadPdfViewer allows you to extend the default commands, such as ZoomIn, ZoomOut, NavigateTo (NextPage, PreviousPage, Page), FitToWidth and ToggleLayoutMode. For detailed information on the matter check [Commands]({%slug pdfviewer-commands%}) article. 
+* **RadPdf Toolbar** *(Build-In Commands Operations)*: You could take advantage of a pre-defined UI automatically wired with all of the commands provided by the control through built-in functionality. Check [here]({%slug pdfviewer-toolbar%}) for more info.
 
 ## See Also
 
-- [Getting Started]({%slug %})
-- [Key Features]({%slug %})
-- [Commands]({%slug %})
+- [Getting Started]({%slug pdfviewer-gettins-started%})
+- [Key Features]({%slug pdfviewer-key-features%})
+- [Commands]({%slug pdfviewer-commands%})

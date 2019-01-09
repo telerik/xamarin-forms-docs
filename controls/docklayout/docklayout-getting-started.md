@@ -54,7 +54,8 @@ The snippet below shows a simple RadDockLayout definition:
 
 In addition to this, you need to add the following namespace:
 
-	xmlns:telerikCommon="clr-namespace:Telerik.XamarinForms.Common;assembly=Telerik.XamarinForms.Common"
+<snippet id='xmlns-telericommon' />
+<snippet id='ns-telerikcommon' />
 
 This is the result:
 

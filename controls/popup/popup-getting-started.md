@@ -50,7 +50,11 @@ Take a look at the following topics on how to use the toolbox:
 
 The snippet below shows a simple RadPopup definition:
 
-<snippet id='docklayout-getting-started-xaml' />
+<snippet id='popup-getting-started-xaml' />
+
+and here is the referenced event handlers:
+
+<snippet id='popup-gettingstarted-events' />
 
 In addition to this, you need to add the following namespace:
 

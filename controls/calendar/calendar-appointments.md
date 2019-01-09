@@ -9,7 +9,7 @@ slug: calendar-appointments
 
 ## Creating an Appointment ##
 
-RadCalendar can display appointments by setting its **AppointmentsSource** property. It accepts a collection of objects which should implement **Telerik.XamarinForms.Input.IAppointment** interface. This interface defines the following members members:
+RadCalendar can display appointments by setting its **AppointmentsSource** property. It accepts a collection of objects which should implement *Telerik.XamarinForms.Input.IAppointment* interface. This interface defines the following members:
 
 - **StartDate** *(DateTime)*
 - **EndDate** *(DateTime)*
@@ -19,7 +19,7 @@ RadCalendar can display appointments by setting its **AppointmentsSource** prope
 - **IsAllDay** *(bool)*
 - **RecurrenceRule** *(RecurrenceRule)*
 
->note In R1 2019 we have added RecurrenceRule property to the IAppointment interface in order to support recurrent appointments. For more details on this check [RecurrenceRule]({% slug %}) topic.
+>note In R1 2019 we have added RecurrenceRule property to the *IAppointment* interface in order to support recurrent appointments. For more details on this check [RecurrenceRule]({% slug %}) topic.
 
 With R1 2019 release of Telerik UI for Xamarin we have introduced **Appointment** class, which implements the *IAppointment* interface, so you could directly use it to create appointments.
 
@@ -33,7 +33,7 @@ With R1 2019 release of Telerik UI for Xamarin we have introduced **Appointment*
 
 ## Events ##
  
-**AppointmentTapped**(AppointmentTappedEventArgs): Occurs when you tap over a specific appointment when in DayView mode. It can be used to get all the information regarding the appointment.
+**AppointmentTapped**(AppointmentTappedEventArgs): Occurs when you tap over a specific appointment when in DayView or MultiDayView mode. It can be used to get all the information regarding the appointment.
 
 ### AppointmentTapped Example ###
 

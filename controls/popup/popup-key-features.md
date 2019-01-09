@@ -11,7 +11,7 @@ The purpose of this help article is to show you the key features of the **RadPop
 
 ## Open / Close the popup
 
-In order to show the RadPopup control you would need to set **IsOpen** property to *True*. By default the popup stays open until the **IsOpen** property is set to *False* or the user taps outside if this is not a modal popup.
+In order to show the RadPopup control you would need to set **IsOpen** property to *True*. By default the popup stays open until the **IsOpen** property is set to *False* or the user taps outside in case of not a modal popup.
 
 ## Setting Content
 
@@ -45,7 +45,7 @@ Below is an example on how you could apply OutsideBackgroundColor to a modal pop
 
 <snippet id='popup-features-modal' />
 
-And the needed events handlers for used to show/hide the popup:
+And the needed events handlers used to show/hide the popup:
 
 <snippet id='popup-features-modal-events' />
 

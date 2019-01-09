@@ -52,7 +52,7 @@ The snippet below shows a simple RadPopup definition:
 
 <snippet id='popup-getting-started-xaml' />
 
-and here is the referenced event handlers:
+and here are the referenced event handlers:
 
 <snippet id='popup-gettingstarted-events' />
 

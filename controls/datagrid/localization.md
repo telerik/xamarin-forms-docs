@@ -7,19 +7,19 @@ slug: datagrid-features-localization
 
 # Localization #
 
-**RadDataGrid** supports localization (the translation of application resources into localized versions for the specific cultures or into customized resources). In order to apply the localization you need to update the DataGridLocalizationManager.Manager by either creating a custom **DataGridLocalizationManager** or set its **ResourceManager** property.
+**RadDataGrid** supports localization (the translation of application resources into localized versions for the specific cultures or into customized resources). In order to apply the localization you need to update the TelerikLocalizationManager.Manager by either creating a custom localization manager or set its **ResourceManager** property.
 
-## Custom DataGridLocalizationManager
+## Custom TelerikLocalizationManager
 
-You should create a custom class that inherits from **DataGridLocalizationManager** and override the **GetString()** method:
+You should create a custom class that inherits from **TelerikLocalizationManager** and override the **GetString()** method:
 
 <snippet id='datagrid-custom-localizationmanager-csharp'/>
 
-Eventually, you should set it as the **DataGridLocalizationManager.Manager**:
+Eventually, you should set it as the **TelerikLocalizationManager.Manager**:
 
 <snippet id='datagrid-setting-the-custom-manager-csharp'/>
 
->important You should set the custom manager before the InitializeComponent() method is invoked otherwise the default values will be applied to the RadDataGrid
+>important You should set the custom manager before the InitializeComponent() method is invoked otherwise the default values will be applied to the RadDataGrid.
 
 **Figure 1** shows the appearance of the filtering component within the RadDataGrid after the custom localization manager is applied.
 

@@ -61,7 +61,7 @@ xmlns:telerikPdfViewer="clr-namespace:Telerik.XamarinForms.PdfViewer;assembly=Te
 
 >important To visualize the pdf document you will need to set the *Source* property of the control.
 
-* **Source** (DocumentSource): Defines the source of the document. The DocumentSource representing the document source. The pdf document could be loaded from files and Uri.
+* **Source** (DocumentSource): Defines the source of the document. The DocumentSource represents the document source. The pdf document could be loaded from files and Uri.
 
 <snippet id='pdfviewer-getting-started' />
 

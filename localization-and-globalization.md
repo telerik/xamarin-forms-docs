@@ -21,7 +21,6 @@ Globalization refers to developing an application in such a way that it works wi
 * Chart
 * DataForm
 * DataGrid
-* MaskedInput
 * NumericInput
 
 ## Localization

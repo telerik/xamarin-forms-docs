@@ -51,6 +51,7 @@ Take a look at the following topics on how to use the toolbox:
 The snippet below shows a simple RadPopup definition:
 
 <snippet id='popup-getting-started-xaml' />
+<snippet id='popup-getting-started-csharp' />
 
 and here are the referenced event handlers:
 

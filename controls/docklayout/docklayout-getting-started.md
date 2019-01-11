@@ -51,6 +51,7 @@ Take a look at the following topics on how to use the toolbox:
 The snippet below shows a simple RadDockLayout definition:
 
 <snippet id='docklayout-getting-started-xaml' />
+<snippet id='docklayout-getting-started-csharp' />
 
 In addition to this, you need to add the following namespace:
 

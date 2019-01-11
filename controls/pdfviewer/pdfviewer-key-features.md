@@ -11,7 +11,7 @@ The purpose of this help article is to show you the key features of the **RadPdf
 
 ## Pdf Documment Visualization
 
-RadPdfViewer control enabling you visualize Pdf documents through the following property:
+RadPdfViewer control enables you to visualize Pdf documents through the following property:
 
 * **Source**(DocumentSource): Defines the source of the document. 
 
@@ -25,7 +25,7 @@ The Pdf Document could be loaded from:
 
 <snippet id='pdfviewer-key-features-source-uri' />
 
-* **byte Array**
+* **Byte Array**
 
 <snippet id='pdfviewer-key-features-source-byte' />
 
@@ -35,10 +35,10 @@ The Pdf Document could be loaded from:
 
 ## Zoom Level Support
 
-RadPdfViewer exposese properties for min and max zoom 
+RadPdfViewer exposes properties for applying min and max zoom values.
 
-* **MaxZoomLevel**(double): Defines the maximum magnification factor to the document at which content content could be maximized. The default value is 3.0
-* **MinZoomLevel**(double): Defines the minimum magnification factor to the document at which content could be minimized. The default value is 0.3
+* **MaxZoomLevel**(double): Defines the maximum magnification factor at which content could be maximized. The default value is 3.0
+* **MinZoomLevel**(double): Defines the minimum magnification factor at which content could be minimized. The default value is 0.3
 
 >note In order to check how these properties works you should set the ZoomIn and ZoomOut Commmands of the control. For more details please check the [Commands]({%slug pdfviewer-commands%}) article.
 
@@ -63,29 +63,29 @@ The available options are:
 
 ## BusyIndicator Template
 
-If the default busy template does not suit your need, you could easily define a custom template through the following property:
+If the default busy template does not suit your needs, you could easily define a custom template through the following property:
 
-* **BusyIndicatorTemplate**(DataTemplate): defines the template visualized when the PDF Document is loading.
+* **BusyIndicatorTemplate**(DataTemplate): Specifies the template visualized while the Pdf Document is loading.
 
-Here is an example how the custom LoadingTemplate could be defined:
+Here is an example how the custom BusyIndicatorTemplate could be defined:
 
 <snippet id='pdfviewer-loading-template-xaml' />
 
->important A sample Loading Template example can be found in the PdfViewer/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+>important A sample BusyIndicatorTemplate example can be found in the PdfViewer/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## Example
 
 Here is an example how the above RadPdfViewer features could be applied:
 
-For the example we will visualize a pdf document from file. Add a pdf document to the project and set its build action to be EmbeddedResource.
+For the example we will visualize a pdf document from file. Add a pdf document to the project and set its build action to be **EmbeddedResource**.
 
 Then add the following code to load the pdf document from Stream:
 
 <snippet id='pdfviewer-key-features-stream'/>
 
-Finally, use the following snippet to declare a RadPdfViewer is XAML:
+Finally, use the following snippet to declare a RadPdfViewer in XAML:
 
-<snippet id='pdfviewer-key-features-xaml'/>
+<snippet id='pdfviewer-busy-indicator-template-xaml'/>
 
 Where the **telerikPdfViewer** namespace is the following:
 

@@ -13,7 +13,25 @@ The purpose of this help article is to show you the key features of the **RadPdf
 
 RadPdfViewer control enabling you visualize Pdf documents through the following property:
 
-* **Source**(DocumentSource): Defines the source of the document. The Pdf Document could be loaded from files and Uri.
+* **Source**(DocumentSource): Defines the source of the document. 
+
+The Pdf Document could be loaded from:
+
+* **FixedDocument** 
+
+<snippet id='pdfviewer-key-features-source-fixed-method' />
+
+* **Uri**
+
+<snippet id='pdfviewer-key-features-source-uri' />
+
+* **byte Array**
+
+<snippet id='pdfviewer-key-features-source-byte' />
+
+* **Stream**
+
+<snippet id='pdfviewer-key-features-stream' />
 
 ## Zoom Level Support
 
@@ -43,9 +61,9 @@ The available options are:
 
 * **VisiblePagesStartIndex**(int): Defines the index at which the document will be displayed. The default value is 0.
 
-## Loading Template
+## BusyIndicator Template
 
-If the default loading template does not suit your need, you could easily define a custom template through the following property:
+If the default busy template does not suit your need, you could easily define a custom template through the following property:
 
 * **BusyIndicatorTemplate**(DataTemplate): defines the template visualized when the PDF Document is loading.
 
@@ -61,9 +79,9 @@ Here is an example how the above RadPdfViewer features could be applied:
 
 For the example we will visualize a pdf document from file. Add a pdf document to the project and set its build action to be EmbeddedResource.
 
-Then add the following code to load the pdf document:
+Then add the following code to load the pdf document from Stream:
 
-<snippet id='pdfviewer-key-features'/>
+<snippet id='pdfviewer-key-features-stream'/>
 
 Finally, use the following snippet to declare a RadPdfViewer is XAML:
 
@@ -74,10 +92,6 @@ Where the **telerikPdfViewer** namespace is the following:
 ```XAML
 xmlns:telerikPdfViewer="clr-namespace:Telerik.XamarinForms.PdfViewer;assembly=Telerik.XamarinForms.PdfViewer"
 ```
-
- Here is the final result:
- 
- ![PdfViewer Key Features Example](images/pdfviewer-key-features.png "PdfViewer Key Features Example")
  
 >important A sample Key Features example can be found in the PdfViewer/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

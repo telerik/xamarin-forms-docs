@@ -232,7 +232,7 @@ navigation:
     
     ## PdfViewer
     controls/pdfviewer:
-        title: "PdfViewer"
+        title: "PdfViewer(beta)"
     ## End PdfViewer
     
     ## Popup

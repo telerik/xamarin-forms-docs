@@ -69,7 +69,7 @@ If the default busy template does not suit your needs, you could easily define a
 
 Here is an example how the custom BusyIndicatorTemplate could be defined:
 
-<snippet id='pdfviewer-loading-template-xaml' />
+<snippet id='pdfviewer-busy-indicator-template-xaml' />
 
 >important A sample BusyIndicatorTemplate example can be found in the PdfViewer/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
@@ -85,7 +85,7 @@ Then add the following code to load the pdf document from Stream:
 
 Finally, use the following snippet to declare a RadPdfViewer in XAML:
 
-<snippet id='pdfviewer-busy-indicator-template-xaml'/>
+<snippet id='pdfviewer-key-features-xaml'/>
 
 Where the **telerikPdfViewer** namespace is the following:
 

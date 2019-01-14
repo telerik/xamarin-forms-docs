@@ -42,7 +42,7 @@ and the ListView Footer:
 
 ![RadListView Footer Template](images/listview-features-footer-template.png "[RadListView Footer Template")
 
->important A sample Header and Footer example can be found in the ListView/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+>important A sample Header and Footer example can be found in our [SDK Samples Browser application]({%slug developer-focused-examples%}) and [QSF App]({%slug developer-focused-examples%}).
 
 ## See Also
 

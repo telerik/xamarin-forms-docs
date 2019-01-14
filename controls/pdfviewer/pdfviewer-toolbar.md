@@ -35,9 +35,9 @@ Then add the following code to visualize the pdf document:
 
 <snippet id='pdfviewer-toolbar'/>
 
-This is the results:
+This is the result:
 
-![PdfViewer Toolbar](images/apdfviewer-toolbar.png "PdfViewer Toolbar")
+![PdfViewer Toolbar](images/pdfviewer-toolbar.png "PdfViewer Toolbar")
 
 ## See Also
 

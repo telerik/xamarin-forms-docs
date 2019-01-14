@@ -33,6 +33,8 @@ Add the events as shown below:
 
 Here is the result:
 
+![Popup Content Template](images/popup_features_contenttemplate.png)
+
 ## Modal popup
 
 You could define whether the popup will be modal or not through the **IsModal** Boolean property. When **IsModal** is *True*, the UI behind the popup gets inactive and cannot be used until the popup is closed.
@@ -49,6 +51,10 @@ And the needed events handlers used to show/hide the popup:
 
 <snippet id='popup-features-modal-events' />
 
+Check the Popup with applied overlay color on different platforms below:
+
+![Popup Modal](images/popup_features_modal.png)
+
 ## Placement Configuration
 
 RadPopup provides a few useful properties which will help you position it per your preferences.   
@@ -60,6 +66,10 @@ RadPopup provides a few useful properties which will help you position it per yo
 <snippet id='popup-features-placement' />
 
 Note that in the example RadPopup is defined inline through *RadPopup.Popup* attached property applied to the Button control, so the Button is considered as PlacementTarget of RadPopup.
+
+Here is the result:
+
+![Popup Placement](images/popup_features_placement.png)
 
 ## Animation Settings
 

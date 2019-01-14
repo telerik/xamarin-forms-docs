@@ -64,7 +64,7 @@ In addition to this, you need to add the following namespace:
 
 This is the result:
 
-![RadPopup](images/docklayout_getting_started.png)
+![RadPopup](images/popup_getting_started.png)
 
 >important **SDK Browser** and **QSF** applications contain different examples that show RadPopup's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
 

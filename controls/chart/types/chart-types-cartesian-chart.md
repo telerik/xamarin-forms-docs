@@ -139,6 +139,7 @@ Finally use the following snippet to declare a RadPieChart with Pie Series in XA
 <snippet id='chart-series-barvertical-csharp'/>
 
 Here is the final result:
+
 ![Cartesian Chart](images/cartesian-bar-series-basic-example.png)
 
 >important [SDK Browser application]({%slug developer-focused-examples%}) contains various examples with RadCartesianChart control.

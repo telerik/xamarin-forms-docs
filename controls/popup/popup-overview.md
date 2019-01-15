@@ -19,7 +19,7 @@ With **Telerik Popup for Xamarin** you could easily add modal popups to your app
 
 * **Modal popups**: You could define whether the popup will be modal or not; in the first case the UI behind the popup gets inactive and cannot be used until the popup is closed. For more details go [here]({% slug popup-key-features%}#modal-popup).
 * **Placement configuration**: You could place the popup control at any position through various settings such as placement mode, placement target and horizontal/vertical offset. For more information on this check [here]({% slug popup-key-features%}#placement-configuration).
-* **Animation settings**: RadPopup provides slick customizable animation played while the control is displayed/hidden, for additional info go [here]({% slug popup-key-features%}#animation-settings).
+* **Animation settings**: RadPopup provides sleek customizable animation played while the control is displayed/hidden, for additional info go [here]({% slug popup-key-features%}#animation-settings).
 
 ## See Also
 

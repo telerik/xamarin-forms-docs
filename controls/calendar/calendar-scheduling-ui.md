@@ -17,6 +17,8 @@ In order to enable the feature, set **SchedulingUiEnabled** Boolean property of 
 
 >note Please note that scheduling screens can be shown only in DayView and MultiDayView modes. You could refer to the [View Modes]({%slug calendar-features-navigation-and-view-mode%}) topic for more information on the available in RadCalendar views. 
 
+>note If you use a custom appointment (that derives from *Appointment* class), make sure to add an empty constructor - this is needed in order to properly create appointments through Scheduling UI.
+
 * When the end user taps on an appointment, the following screen appears, giving the option to edit or delete the appointment:
 
 ![Scheduling UI](images/calendar_schedulingui_0.png)

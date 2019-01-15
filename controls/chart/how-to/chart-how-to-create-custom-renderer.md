@@ -28,6 +28,7 @@ Let us consider the following example: we need to apply animation to **LineSerie
         }
 	}
 ```
+
 **UpdateNativeWidget** method takes care of allowing animations for the chart. **CreateChartDelegate** supplies an instance of a class that inherits from **TKChartDelegate**, configured with animations as per the [iOS chart help](https://docs.telerik.com/devtools/xamarin/nativecontrols/ios/chart/animations/custom). **ChartWithAnimationDelegate** inherits from Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartDelegate, which in turn inherits from **TKChartdelegate**. This way you only need to extend it with the desired features:
 
 ```C#

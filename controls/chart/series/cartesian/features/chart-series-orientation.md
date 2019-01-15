@@ -34,6 +34,7 @@ Where the **telerikChart** namespace is the following:
 <snippet id='ns-telerikchart'/>
 
 Here is the result:
+
 ![Horizontal BarSeries](images/chart-series-features-horizontal-series.png)
 
 >important A sample Horizontal Bar Series example can be found in the Chart/Series folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
@@ -61,6 +62,7 @@ Where the **telerikChart** namespace is the following:
 <snippet id='ns-telerikchart'/>
 
 Here is the result:
+
 ![Horizontal BarSeries](images/chart-series-features-horizontal-stack-series.png)
 
 >important A sample Stack Horizontal Bar Series example can be found in the Chart/Series folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).

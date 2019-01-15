@@ -1,13 +1,13 @@
 ---
-title: Custom Templates
-page_title: Custom Templates
+title: Overview
+page_title: Overview
 position: 1
 slug: autocompleteview-custom-templates
 ---
 
 # RadAutoCompleteView Custom Templates
 
-## Custom Templates
+## Overview
 
 If the default templates of the control do not suit your needs, you can easily define a custom template. The available templates for customizing are:
 

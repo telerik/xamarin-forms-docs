@@ -9,7 +9,7 @@ slug: calendar-appointments
 
 ## Creating an Appointment ##
 
-RadCalendar can display appointments by setting its **AppointmentsSource** property. It accepts a collection of objects, which should implement the **Telerik.XamarinForms.Input.IAppointment** interface. This interface defines 6 members:
+RadCalendar can display appointments by setting its **AppointmentsSource** property. It accepts a collection of objects which should implement *Telerik.XamarinForms.Input.IAppointment* interface. This interface defines the following members:
 
 - **StartDate** *(DateTime)*
 - **EndDate** *(DateTime)*
@@ -18,15 +18,9 @@ RadCalendar can display appointments by setting its **AppointmentsSource** prope
 - **Color** *(Color)*
 - **IsAllDay** *(bool)*
 
->caution In **R2 2017** we have introduced a breaking change in the **IAppointment** interface by adding the **Detail** property. 
-
-### Appointments Example ###
+>important With R1 2019 release of Telerik UI for Xamarin we have introduced **Telerik.XamarinForms.Input.Appointment** class which implements the *IAppointment* interface as well as adds **RecurrenceRule** property to support [recurrence feature]({%slug calendar-recurrence-overview%}). We'd recommend you use directly the **Appointment** class when working with appointments.
 
 <snippet id='calendar-gettingstarted-appointmentssource-csharp'/>
-
-where **Appointment** class implements **IAppointment** interface:
-
-<snippet id='calendar-getting-started-appointment-class'/>
 
 #### **Figure 1: Appearance of the RadCalendar control in month view mode**
 ![Appointments monthview](images/monthviews.png)
@@ -36,7 +30,7 @@ where **Appointment** class implements **IAppointment** interface:
 
 ## Events ##
  
-**AppointmentTapped**(AppointmentTappedEventArgs): Occurs when you tap over a specific appointment when in DayView mode. It can be used to get all the information regarding the appointment.
+**AppointmentTapped**(AppointmentTappedEventArgs): Occurs when you tap over a specific appointment when in DayView or MultiDayView mode. It can be used to get all the information regarding the appointment.
 
 ### AppointmentTapped Example ###
 
@@ -50,6 +44,6 @@ Eventually, you can utilize the event:
 
 ## See Also
 
-* [Navigation and View Mode]({%slug calendar-features-navigation-and-view-mode%})
+* [View Modes]({%slug calendar-features-navigation-and-view-mode%})
 * [Calendar Selection]({%slug calendar-selection%})
 

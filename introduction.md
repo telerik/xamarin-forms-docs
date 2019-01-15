@@ -20,7 +20,7 @@ To read more about the benefits of using Telerik UI for Xamarin, please visit th
 Our suite offers the following controls for cross-platform development with Xamarin forms:
 
 - [Accordion] ({% slug accordion-overview %})
-- [AutoComplete]({% slug autocomplete-overview %})
+- [AutoComplete]({% slug autocomplete-overview %}) (obsolete)
 - [AutoCompleteView]({% slug autocompleteview-overview %})
 - [Barcode]({%slug barcode-overview %})
 - [Border]({%slug border-overview %})
@@ -32,6 +32,7 @@ Our suite offers the following controls for cross-platform development with Xama
 - [Conversational UI]({% slug chat-overview %})
 - [DataForm]({% slug dataform-overview %})
 - [DataGrid]({%slug datagrid-overview%})
+- [DockLayout]({%slug docklayout-overview%})
 - [Entry] ({%slug entry-overview %})
 - [Expander] ({%slug expander-overview %})
 - [Gauge]({% slug gauge-overview %})
@@ -39,6 +40,8 @@ Our suite offers the following controls for cross-platform development with Xama
 - [MaskedInput]({% slug maskedinput-overview %})
 - [NumericInput]({%slug numericinput-overview %})
 - [Path]({% slug path-overview %})
+- [PdfViewer]({% slug pdfviewer-overview %}) (beta)
+- [Popup]({% slug popup-overview %})
 - [Rating]({% slug rating-overview%})
 - [SegmentedControl]({% slug segmentedcontrol-overview%})
 - [SideDrawer]({% slug sidedrawer-overview %})

@@ -17,6 +17,8 @@ You can control the state propagation by setting the CheckBoxMode property of th
 * **Individual**: The CheckBox state will affect only the individual item.
 * **Propagate**: The CheckBox state of the children items will affect the parent item. In case all items within a parent nodes are checked - it will be with checked state as well. If all items are not checked, the parent item will not be checked. If only some of the children items are checked, the parent item will be shown with an indeterminate state. 
 
+>note When adding items to the items source of the TreeView, the checked state will propagate according to the parent item.
+
 Here is an example of how you can set the property:
 
 <snippet id='treeview-checkboxes-xaml' />
@@ -36,7 +38,7 @@ The RadTreeView exposes two methods to programmatically check or uncheck an item
   
 ## CheckedItems collection
 
-The control exposes a collection of all the checked items. You can subscribe to its CollectionChanged event and keep track of the checked items:
+The control exposes a collection of all the checked items. **CheckedItems** is a read-only collection of type *Telerik.XamarinForms.DataControls.TreeView.CheckedItemsCollection*, so you can add/remove items to it only through the TreeView CheckItem and UncheckItem methods. To keep track of the checked items subscribe to its CollectionChanged event:
 
 <snippet id='treeview-checkeditems-collection' />
 
@@ -51,7 +53,6 @@ The CheckBox visibility can be controlled through the **CheckBoxMode** property.
 ![hidden checkboxes](images/nocheckboxes_treeview.png)
 
 >important You can check a runnable demo in the **Features** section of the **RadTreeView** component in the **SDK Samples Browser application**(can be found in the Examples folder of your local *Telerik UI for Xamarin* installation)
-
 
 ## See Also
 

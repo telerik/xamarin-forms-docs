@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: Commands
-position: 12
+position: 13
 slug: listview-features-commands
 description: Describing the commands of the RadListView
 tags: commands

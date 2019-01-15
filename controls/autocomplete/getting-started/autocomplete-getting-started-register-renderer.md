@@ -6,6 +6,8 @@ slug: autocomplete-getting-started-register-renderer
 publish: false
 ---
 
+>caution RadAutoComplete control has been replaced with RadAutoCompleteView and will be removed from the suite soon. You can read about the differences between both components and how to migrate to the new RadAutoCompleteView in the kb article here: [Replace AutoComplete with AutoCompleteView]({%slug replace-autocomplete-with-autocompleteview%})
+
 # Register the AutoComplete renderer
 
 >important With R2 2017 release of Telerik UI for Xamarin you do not need to manually define control renderers. The following instructions are valid for versions prior R2 2017. 

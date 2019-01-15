@@ -10,7 +10,7 @@ navigation:
 ## Root Level
     "knowledge-base":
         title: "Knowledge Base"
-        position: 10
+        position: 13
     licensing:
         title: "Licensing"
         position: 4
@@ -25,13 +25,13 @@ navigation:
         position: 7
     troubleshooting:
         title: "Troubleshooting"
-        position: 11
+        position: 12
     styling-and-appearance:
         title: "Styling and Appearance"
-        position: 9
+        position: 10
     cloud-integration:
         title: "Cloud Integration"
-        position: 10
+        position: 11
 ## End Root Level
 ## Cloud Integration Sub-Folders
     cloud-integration/azure:
@@ -203,6 +203,11 @@ navigation:
         position: 11
     ## End DataGrid
     
+     ## DockLayout
+    controls/docklayout:
+        title: "DockLayout"
+    ## End Entry
+    
     ## Entry
     controls/entry:
         title: "Entry"
@@ -225,6 +230,16 @@ navigation:
         title: "Getting Started"
     ## End Path
     
+    ## PdfViewer
+    controls/pdfviewer:
+        title: "PdfViewer(beta)"
+    ## End PdfViewer
+    
+    ## Popup
+    controls/popup:
+        title: "Popup"
+    ## End Popup
+    
     ## Accordion
     controls/accordion:
         title: "Accordion"
@@ -232,7 +247,7 @@ navigation:
     
     ## AutoComplete
     controls/autocomplete:
-        title: "AutoComplete"
+        title: "AutoComplete(obsolete)"
         ## AutoComplete Sub-Folders
     controls/autocomplete/getting-started:
         title: "Getting Started"
@@ -245,7 +260,7 @@ navigation:
     
     ## AutoCompleteView
     controls/autocompleteview:
-        title: "AutoCompleteView(beta)"
+        title: "AutoCompleteView"
     controls/autocompleteview/templates: 
         title: "Custom Templates"
         position: 11
@@ -312,14 +327,17 @@ navigation:
     controls/calendar/view-modes:
         title: "View Modes"
         position: 3
+    controls/calendar/recurrence:
+        title: "Recurrence"
+        position: 6
     controls/calendar/styling:
         title: "Styling"
-        position: 8
+        position: 11
     controls/calendar/styling/custom-renderers:
         title: "Custom Renderers"
     controls/calendar/how-to:
         title: "How To"
-        position: 9
+        position: 12
         ## End Calendar Sub-Folders
     ## End Calendar
     ## Chart
@@ -421,16 +439,13 @@ navigation:
         position: 4
     controls/listview/gestures:
         title: "Gestures"
-        position: 10
-    controls/listview/features:
-        title: "Features"
-        position: 3
+        position: 11
     controls/listview/cells:
         title: Cells
         position: 2   
     controls/listview/styling:
-            title: "Theming and Styles"
-            position: 13          
+        title: "Theming and Styles"
+        position: 14         
     controls/listview/howto:
         title: "How To"
         position: 15
@@ -517,9 +532,6 @@ navigation:
 
 ## The application virtual path
 baseurl: "/devtools/xamarin"
-
-## The Kendo UI version used
-cdnVersion: "2016.2.607"
 
 ## The MVC Core version used
 mvcCoreVersion: "2016.2.616"

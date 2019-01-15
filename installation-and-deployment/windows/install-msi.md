@@ -29,6 +29,9 @@ If you open the installation folder you will probably note the following sub dir
 * QSF
 * VSExtensions
 
+**Binaries** folder contains all the Telerik UI for Xamarin assemblies grouped in folders according to the target project they should be added to. Check the exact structure in the image below:
+![](../images/binaries-current-structure.png)
+
 ### Next Steps
 - [Using project wizard for Visual Studio]({% slug project-wizard %})
 - [Getting started on Windows]({%slug getting-started-windows%})

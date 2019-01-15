@@ -1,8 +1,8 @@
 ---
 title: Vertical axis label position on iOS same as on Android
-description: How to position the vertical axes labels on iOS same as on Android
+description: How to position the vertical axes labels on iOS on the left
 type: how-to
-page_title: Char Vertical Axes Labels on iOS
+page_title: Chart Vertical Axes Labels on iOS
 slug: chart-vertical-axes-labels-iOS
 position: 
 tags: chart, verticalaxes, lables, ios, position like android
@@ -25,7 +25,7 @@ res_type: kb
 
 ## Description
 
-The differences between the vertical axes label position is because the native Android and iOS charts are two different controls and do not have 100 % appearance-matching across all the platforms. In order to make any further customization on the RadChart control, the custom renderer should be used. This article will show you how to position the VericalAxes Labels on iOS to be same as on Android. 
+The differences between the vertical axis labels position is because the native Android and iOS charts are two different controls and do not have 100 % appearance-matching across all the platforms. In order to make any further customization on the RadChart control, the custom renderer should be used. This article will show you how to position the VericalAxes Labels on iOS on the left to make it look as on Android.
 
 ## Solution
 

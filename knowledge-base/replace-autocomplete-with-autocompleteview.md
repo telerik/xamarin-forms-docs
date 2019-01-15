@@ -1,8 +1,8 @@
 ---
-title: How to migrate from AutoComplete to AutoCompleteView
+title: How to replace AutoComplete with AutoCompleteView
 description: use the AutoCompleteView control instead of AutoComplete control
 type: how-to
-page_title: How to replace AutoComplete with AutoCompleteView
+page_title: migrate from AutoComplete to AutoCompleteView
 slug: replace-autocomplete-with-autocompleteview
 position: 
 tags: autocompleteview, autocomplete, Xamarin, Telerik UI for Xamarin, migration
@@ -28,9 +28,9 @@ res_type: kb
 
 ## Description
 
-This help article shows how to migrate from AutoComplete control to AutoCompleteView control
+This help article shows how to migrate from AutoComplete control to AutoCompleteView control. Both components share similar API regarding the features available in the AutoComplete control, so the migration should be straight-forward. 
 
-The Table below shows the differences between the features in the RadAutoCompleteView control vs. RadAutoComplete control:
+The table below shows the differences between the features in the RadAutoCompleteView control vs. RadAutoComplete control:
 
 | Features | AutoCompleteView | AutoComplete|
 | -------- | ---------------- | ----------- |

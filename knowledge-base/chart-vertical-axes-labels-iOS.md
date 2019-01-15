@@ -25,7 +25,7 @@ res_type: kb
 
 ## Description
 
-The differences between the vertical axes label position is because the native Android and iOS charts are two different controls and do not have 100 % appearance-matching across all the latforms. In order to make any further customizations on the RadChart control, the custom renderer should be used. This article will show you how to position the VericalAxes Labels on iOS to be same as on Android. 
+The differences between the vertical axes label position is because the native Android and iOS charts are two different controls and do not have 100 % appearance-matching across all the platforms. In order to make any further customizations on the RadChart control, the custom renderer should be used. This article will show you how to position the VericalAxes Labels on iOS to be same as on Android. 
 
 ## Solution
 

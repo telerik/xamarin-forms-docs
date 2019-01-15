@@ -5,6 +5,8 @@ position: 1
 slug: autocomplete-data-binding
 ---
 
+>caution RadAutoComplete control has been replaced by RadAutoCompleteView and will be removed from the suite soon. You can read about the differences between both components and how to migrate to the new RadAutoCompleteView in the kb article here: [Replace AutoComplete with AutoCompleteView]({%slug replace-autocomplete-with-autocompleteview%})
+
 # Data Binding
 
 For all cases where the business items are not simple strings data-binding is necessary in order to correctly visualize information. The **RadAutoComplete** component supports data binding in the form of path properties.

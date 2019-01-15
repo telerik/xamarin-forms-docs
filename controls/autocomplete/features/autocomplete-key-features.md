@@ -5,6 +5,8 @@ position: 0
 slug: autocomplete-key-features
 ---
 
+>caution RadAutoComplete control has been replaced by RadAutoCompleteView and will be removed from the suite soon. You can read about the differences between both components and how to migrate to the new RadAutoCompleteView in the kb article here: [Replace AutoComplete with AutoCompleteView]({%slug replace-autocomplete-with-autocompleteview%})
+
 # Key Features
 
 The purpose of this help article is to show you the key features of the **RadAutoComplete** control.

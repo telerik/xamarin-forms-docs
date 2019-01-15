@@ -5,6 +5,8 @@ position: 0
 slug: autocomplete-getting-started
 ---
 
+>caution RadAutoComplete control has been replaced by RadAutoCompleteView and will be removed from the suite soon. You can read about the differences between both components and how to migrate to the new RadAutoCompleteView in the kb article here: [Replace AutoComplete with AutoCompleteView]({%slug replace-autocomplete-with-autocompleteview%})
+
 # Getting Started
    
 This example will guide you through the steps needed to add a basic **RadAutoComplete** control in your application.

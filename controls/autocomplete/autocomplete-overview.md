@@ -6,6 +6,8 @@ position: 0
 slug: autocomplete-overview
 ---
 
+>caution RadAutoComplete control has been replaced by RadAutoCompleteView and will be removed from the suite soon. You can read about the differences between both components and how to migrate to the new RadAutoCompleteView in the kb article here: [Replace AutoComplete with AutoCompleteView]({%slug replace-autocomplete-with-autocompleteview%})
+
 # Overview #
 
 **RadAutoComplete for Xamarin** can automatically complete user input string by comparing the text being entered to all strings in the associated data source. The control provides means for easy customization and data management.

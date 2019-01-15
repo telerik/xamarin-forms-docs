@@ -12,12 +12,12 @@ In order to develop applications with **Telerik UI for Xamarin** you need to hav
 ## Windows
 
 - Windows 8.1 or higher. You would need [Windows 10](https://www.microsoft.com/en-us/windows/get-windows-10) in order to develop for UWP.
-- [Visual Studio 2015](https://www.visualstudio.com/downloads/) or [Visual Studio 2017](https://www.visualstudio.com/downloads/) with Xamarin installed.
+- [Visual Studio 2015](https://visualstudio.microsoft.com/vs/older-downloads/), [Visual Studio 2017](https://www.visualstudio.com/downloads/) or [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/) with Xamarin installed.
 
-	* To install Xamarin for Visual Studio 2017 you would need to enable **Mobile development with .NET** workload. 
+	* To install Xamarin for Visual Studio 2017/ Visual Studio 2019, you would need to enable **Mobile development with .NET** workload. 
 		
-		* If you run a fresh installation of VS 2017, you will be prompted to select workloads during the installation process.
-		* if you already have VS 2017 installed, you could modify the active workloads by re-running the Visual Studio installer and selecting "Modify" option.
+		* If you run a fresh installation of Visual Studio, you will be prompted to select workloads during the installation process.
+		* if you already have Visual Studio installed, you could modify the active workloads by re-running the Visual Studio installer and selecting "Modify" option.
 	
 	#### Figure 1: VS 2017 with Mobile development with .NET workload enabled
 	![](images/vs2017_xamarin_workload.png)

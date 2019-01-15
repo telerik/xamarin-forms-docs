@@ -18,7 +18,7 @@ RadCalendar can display appointments by setting its **AppointmentsSource** prope
 - **Color** *(Color)*
 - **IsAllDay** *(bool)*
 
->important With R1 2019 release of Telerik UI for Xamarin we have introduced **Telerik.XamarinForms.Input.Appointment** class which implements the *IAppointment* interface as well as adds **RecurrenceRule** property to support [recurrence feature]({% slug calendar-recurrence-overview %}). We'd recommend you use directly the **Appointment** class when working with appointments.
+>important With R1 2019 release of Telerik UI for Xamarin we have introduced **Telerik.XamarinForms.Input.Appointment** class which implements the *IAppointment* interface as well as adds **RecurrenceRule** property to support [recurrence feature]({%slug calendar-recurrence-overview%}). We'd recommend you use directly the **Appointment** class when working with appointments.
 
 <snippet id='calendar-gettingstarted-appointmentssource-csharp'/>
 

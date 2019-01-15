@@ -39,6 +39,7 @@ Here is an example how this could be achieved:
 <telerikDataGrid:DataGridTextColumn PropertyName="Country">
      <telerikDataGrid:DataGridTextColumn.HeaderStyle>
          <telerikDataGrid:DataGridColumnHeaderStyle OptionsButtonTextColor="Transparent"
+		                                            OptionsButtonFontSize="0"
                                                     BorderColor="#D9D9D9"
                                                     BorderThickness="1"/>
      </telerikDataGrid:DataGridTextColumn.HeaderStyle>

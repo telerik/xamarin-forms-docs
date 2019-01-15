@@ -20,10 +20,6 @@ res_type: kb
 		<td>AutoCompleteView for Xamarin</td>
 	</tr>
 	<tr>
-	    <td>Product</td>
-		<td>AutoComplete for Xamarin</td>
-	</tr>
-	<tr>
 		<td>Xamarin.Forms</td>
 		<td>3.4</td>
 	</tr>
@@ -80,6 +76,7 @@ The Table below shows the differences between the features in the RadAutoComplet
 
 
 - AutoCompleteView
+
 ```XAML
 <telerikInput:RadAutoCompleteView x:Name="autoCompleteView" 
                                   Watermark="Search here..." />
@@ -99,7 +96,7 @@ xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.Xa
 
 ### SuggestionItemTemplate differences:
 
-1. AutoCompleteView uses the Xamarin.Forms ListView for visualize the Suggestions. When the custom SuggestionItem Template is used you will need to add the **ViewCell** inside the **DataTemplate**. For example:
+AutoCompleteView uses the Xamarin.Forms ListView for visualize the Suggestions. When the custom SuggestionItem Template is used you will need to add the **ViewCell** inside the **DataTemplate**. For example:
 
 ```XAML
 <telerikInput:RadAutoCompleteView.SuggestionItemTemplate>

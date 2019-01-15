@@ -1,8 +1,8 @@
 ---
-title: How to migrate from AutoComplete to AutoCompleteView
+title: How to replace AutoComplete with AutoCompleteView
 description: use the AutoCompleteView control instead of AutoComplete control
 type: how-to
-page_title: How to replace AutoComplete with AutoCompleteView
+page_title: migrate from AutoComplete to AutoCompleteView
 slug: replace-autocomplete-with-autocompleteview
 position: 
 tags: autocompleteview, autocomplete, Xamarin, Telerik UI for Xamarin, migration
@@ -20,10 +20,6 @@ res_type: kb
 		<td>AutoCompleteView for Xamarin</td>
 	</tr>
 	<tr>
-	    <td>Product</td>
-		<td>AutoComplete for Xamarin</td>
-	</tr>
-	<tr>
 		<td>Xamarin.Forms</td>
 		<td>3.4</td>
 	</tr>
@@ -32,9 +28,9 @@ res_type: kb
 
 ## Description
 
-This help article shows how to migrate from AutoComplete control to AutoCompleteView control
+This help article shows how to migrate from AutoComplete control to AutoCompleteView control. Both components share similar API regarding the features available in the AutoComplete control, so the migration should be straight-forward. 
 
-The Table below shows the differences between the features in the RadAutoCompleteView control vs. RadAutoComplete control:
+The table below shows the differences between the features in the RadAutoCompleteView control vs. RadAutoComplete control:
 
 | Features | AutoCompleteView | AutoComplete|
 | -------- | ---------------- | ----------- |
@@ -80,6 +76,7 @@ The Table below shows the differences between the features in the RadAutoComplet
 
 
 - AutoCompleteView
+
 ```XAML
 <telerikInput:RadAutoCompleteView x:Name="autoCompleteView" 
                                   Watermark="Search here..." />
@@ -99,7 +96,7 @@ xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.Xa
 
 ### SuggestionItemTemplate differences:
 
-1. AutoCompleteView uses the Xamarin.Forms ListView for visualize the Suggestions. When the custom SuggestionItem Template is used you will need to add the **ViewCell** inside the **DataTemplate**. For example:
+AutoCompleteView uses the Xamarin.Forms ListView for visualize the Suggestions. When the custom SuggestionItem Template is used you will need to add the **ViewCell** inside the **DataTemplate**. For example:
 
 ```XAML
 <telerikInput:RadAutoCompleteView.SuggestionItemTemplate>

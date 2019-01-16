@@ -57,7 +57,7 @@ Here is how the PdfViewer looks when LayoutMode is set to ContinuousScroll:
 
 ![PdfViewer ContinuousScroll](images/pdfviewer-continuous-scroll.png "PdfViewer ContinuousScroll")
 
-And when LayoutMode is set to SinglePage:
+And when the LayoutMode property is set to SinglePage:
 
 ![PdfViewer SinglePage](images/pdfviewer-single-page.png "PdfViewer SinglePage")
 

@@ -53,6 +53,14 @@ The available options are:
 
 >note By default the PdfViewer LayoutMode property is set to **ContinuousScroll**.
 
+Here is how the PdfViewer looks when LayoutMode is set to ContinuousScroll:
+
+![PdfViewer ContinuousScroll](images/pdfviewer-continuous-scroll.png "PdfViewer ContinuousScroll")
+
+And when the LayoutMode property is set to SinglePage:
+
+![PdfViewer SinglePage](images/pdfviewer-single-page.png "PdfViewer SinglePage")
+
 ## Page Spacing
 
 * **PageSpacing**(double): Defines the space between the pages of the Pdf Document. The default value is 20.0
@@ -70,6 +78,10 @@ If the default busy template does not suit your needs, you could easily define a
 Here is an example how the custom BusyIndicatorTemplate could be defined:
 
 <snippet id='pdfviewer-busy-indicator-template-xaml' />
+
+Here is how the BusyIndicator Template looks:
+
+![PdfViewer BusyIndicator Template](images/pdfviewer-busyindicator-template.png "PdfViewer BusyIndicator Template")
 
 >important A sample BusyIndicatorTemplate example can be found in the PdfViewer/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

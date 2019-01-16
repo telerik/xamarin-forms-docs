@@ -90,6 +90,7 @@ The table below shows the differences between the features in the RadAutoComplet
 ```
 
 * **Same namespace**  
+
 ```XAML
 xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
 ```

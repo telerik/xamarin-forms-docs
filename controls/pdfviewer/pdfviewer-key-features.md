@@ -53,6 +53,8 @@ The available options are:
 
 >note By default the PdfViewer LayoutMode property is set to **ContinuousScroll**.
 
+>tip The RadPdfViewer LayoutMode could be triggered through the **ToggleLayoutModeCommand** and the **ToggleLayoutModeToolbarItem**.
+
 Here is how the PdfViewer looks when LayoutMode is set to ContinuousScroll:
 
 ![PdfViewer ContinuousScroll](images/pdfviewer-continuous-scroll.png "PdfViewer ContinuousScroll")

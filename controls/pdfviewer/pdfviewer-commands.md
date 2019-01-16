@@ -15,7 +15,7 @@ RadPdfViewer provides the following commands of type *ICommand*:
 * **NavigateToNextPageCommand**
 * **NavigateToPreviousPageCommand**
 * **NavigateToPageCommand**
-* **ToggleLayoutModeCommand**
+* **ToggleLayoutModeCommand**: Triggers the RadPdfViewer LayoutModes (*ContinuousScroll* and *SinglePage*)
 
 >note The RadPdfViewer Toolbar exposes the above commands built-in. For more information please check the [PdfViewer Toolbar]({%slug pdfviewer-toolbar%}) article.
 

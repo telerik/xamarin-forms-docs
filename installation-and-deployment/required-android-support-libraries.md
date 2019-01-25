@@ -22,7 +22,7 @@ Here are listed the common requirements for all Android projects that use our su
   - Xamarin.Android.Support.Vector.Drawable
   - Xamarin.Android.Support.Animated.Vector.Drawable
   - Xamarin.Android.Support.v7.RecyclerView (required by Telerik.Xamarin.Android.List.dll)
-  - Xamarin.Android.Support.v8.RenderScript (required by Telerik.Xamarin.Android.Primitives.dll)
+  - Xamarin.Android.Support.v8.RenderScript (required by Telerik.Xamarin.Android.Primitives.dll. **only with R3 2018.3 or earlier**)
 - The target Android version of the Android project should be **Android 8.1** (API level 27) or greater. This could be modified from the project settings.
 - The corresponding to the target Android version **Android SDK** has to be installed in order to use the required support libraries (install from the Android SDK Manager).
 

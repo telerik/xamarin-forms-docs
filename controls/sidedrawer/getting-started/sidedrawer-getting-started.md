@@ -32,7 +32,7 @@ You also have to add the following namespace:
 
 Finally, set the drawer as content of your page.
 
-Here is the result:
+Here is the result when you set `IsOpen="True"`:
  
 ![SideDrawer example](../images/sidedrawer-gettingstarted.png)
 

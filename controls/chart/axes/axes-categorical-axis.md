@@ -31,14 +31,14 @@ First, create the needed business objects:
 
 Then create a ViewModel:
 
-<snippet id='chart-series-view-model-2'/>
+<snippet id='chart-series-categorical-data-view-model'/>
 
 Finally, use the following snippet to declare the RadChart in XAML or in C#:
 
 ```XAML
     <telerikChart:RadCartesianChart>
 	  <telerikChart:RadCartesianChart.BindingContext>
-	    <local:ViewModel2/>
+	    <local:CategoricalDataViewModel/>
 	  </telerikChart:RadCartesianChart.BindingContext>
 	  <telerikChart:RadCartesianChart.HorizontalAxis>
 	    <telerikChart:CategoricalAxis PlotMode="OnTicks" 

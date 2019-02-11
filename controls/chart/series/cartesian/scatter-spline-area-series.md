@@ -29,7 +29,7 @@ First, create the needed business objects, for example:
 
 Then create a ViewModel:
 
-<snippet id='chart-series-view-model-4'/>
+<snippet id='chart-series-numerica-view-model'/>
 
 Finally, use the following snippet to declare a RadCartesianChart with ScatterSplineArea Series in XAML and in C#:
 

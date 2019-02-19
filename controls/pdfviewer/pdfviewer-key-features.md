@@ -52,7 +52,7 @@ this.pdfViewer.Source = new UriDocumentSource(uri);
 
 You can visualize the pdf document from a file located on a device.
 
-In order to make sure that the file exist on the device you could use the following code:
+In order to make sure that the file exists on the device you could use the following code:
 
 ```C#
 System.IO.File.OpenRead(path)
@@ -60,7 +60,7 @@ System.IO.File.OpenRead(path)
 
 where the path is a sting that contains the path to the file location.
 
-Also make sure that you have grant to the app all the permissions needed before the resources are used.
+>important Please make sure that you have granted the app all the permissions needed before the resources are used. Otherwise, an error will be raised.
 
 * **Byte Array**
 

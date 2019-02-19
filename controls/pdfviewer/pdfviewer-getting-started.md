@@ -63,6 +63,8 @@ xmlns:telerikPdfViewer="clr-namespace:Telerik.XamarinForms.PdfViewer;assembly=Te
 
 * **Source** (DocumentSource): Defines the source of the document.
 
+>note The following pdf is visualized as an EmbeddedResource.
+
 <snippet id='pdfviewer-getting-started' />
 
 This is the result:

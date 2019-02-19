@@ -21,13 +21,56 @@ The Pdf Document could be loaded from:
 
 <snippet id='pdfviewer-key-features-source-fixed-method' />
 
+or 
+```C#
+private void ImportFixedDocument()
+{
+    Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.PdfFormatProvider provider = new Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.PdfFormatProvider();
+    Assembly assembly = typeof(KeyFeatures).Assembly;
+    string fileName = assembly.GetManifestResourceNames().FirstOrDefault(n => n.Contains("pdfviewer-overview.pdf"));
+    using (Stream stream = assembly.GetManifestResourceStream(fileName))
+    {
+        RadFixedDocument document = provider.Import(stream);
+        this.pdfViewer.Source = new FixedDocumentSource(document);
+    }
+}
+```
+
 * **Uri**
 
 <snippet id='pdfviewer-key-features-source-uri' />
 
+or 
+```C#
+Uri uri = this.GetUri();
+this.pdfViewer.Source = new UriDocumentSource(uri);
+```
+
+* **File**
+
+>important From R1 2019 SP the RadPdfViewer supports FileDocumentSouce. 
+
+You can visualize the pdf document from a file located on a device.
+
+In order to make sure that the file exist on the device you could use the following code:
+
+```C#
+System.IO.File.OpenRead(path)
+```
+
+where the path is a sting that contains the path to the file location.
+
+Also make sure that you have grant to the app all the permissions needed before the resources are used.
+
 * **Byte Array**
 
 <snippet id='pdfviewer-key-features-source-byte' />
+
+or
+```C#
+byte[] bytes = this.GetBytes();
+this.pdfViewer.Source = new ByteArrayDocumentSource(bytes, true);          
+```
 
 * **Stream**
 
@@ -91,7 +134,7 @@ Here is how the BusyIndicator Template looks:
 
 Here is an example how the above RadPdfViewer features could be applied:
 
-For the example we will visualize a pdf document from file. Add a pdf document to the project and set its build action to be **EmbeddedResource**.
+For the example we will visualize a pdf document from file embedded in the application with a **BuildAction:EmbeddedResource**.
 
 Then add the following code to load the pdf document from Stream:
 

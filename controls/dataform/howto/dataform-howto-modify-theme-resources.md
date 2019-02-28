@@ -93,4 +93,3 @@ Here is the appearance of the CheckBoxEditor once this style is added:
 - [Autocomplete editor in Android]({%slug dataform-howto-use-native-editors-android%})
 - [Email and Password Editors in iOS]({%slug dataform-howto-use-native-editors-ios%})
 - [Editors]({%slug dataform-editors%})
-- [Members]({%slug dataform-members%})

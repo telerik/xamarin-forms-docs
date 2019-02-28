@@ -60,4 +60,3 @@ Finally, replace the default **DataFormRenderer** with the new one in **AppDeleg
 ## See Also
 - [Autocomplete editor in Android]({%slug dataform-howto-use-native-editors-android%})
 - [Editors]({%slug dataform-editors%})
-- [Members]({%slug dataform-members%})

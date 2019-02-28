@@ -10,16 +10,15 @@ publish: true
 
 # Tabs Position
 
-RadTabView can position its tabs on its four edges: top, left, right and bottom. To set the tabs position simply set the
+RadTabView can position its tabs on its four edges: Top, Left, Right and Bottom. To set the tabs position simply set the
 <code>TabsPosition</code> property:
 
-```Java
-this.tabView.setTabsPosition(TabsPosition.TOP);
+```C#
+tabView.TabsPosition = TabsPosition.Top;
 ```
 
-Furthermore if the <code>TabWidth</code> property is set, and the total width of the available tabs is less than the available screen area, developers can set <code>TabAlignment</code>. The alignment
-can be left, right, top, bottom, center and stretch. For example:
+Furthermore if the <code>TabWidth</code> property is set, and the total width of the available tabs is less than the available screen area, developers can set <code>TabAlignment</code>. The alignment can be Left, Right, Top, Bottom, Center and Stretch. For example:
 
-```Java
-this.tabView.getTabStrip().setTabsAlignment(TabsAlignment.CENTER);
+```C#
+tabView.TabStrip.TabsAlignment = TabsAlignment.Center;
 ```

@@ -22,6 +22,8 @@ The **Telerik UI for Xamarin.Android** Xamarin distribution comes as a set of **
 
 ## Referencing the libraries from your project
 
+>tip Check [Download Product Files]({%slug download-product-files%}) topic for detailed instructions on how to navigate to Telerik UI for Xamarin download page. Download "Telerik_UI_for_Xamarin_[version]_[license].zip" file which contains the needed assemblies for Xamarin.Android development inside Binaries/Android folder.
+
 1. Click on **New Solution** in the home screen in **Xamarin**.
 ![TelerikUI-Installation-Xamarin-New-Project](images-download-deployment/installation-xamarin-screen-1.png "Create new solution")
 

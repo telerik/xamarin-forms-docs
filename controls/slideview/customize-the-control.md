@@ -57,6 +57,9 @@ You can set the alignment of the content of the SlideView item via the following
 
 - **VerticalContentOptions**: This property sets the vertical alignment. 
 
+>important HorizontalContentOptions and VerticalContentOptions are respected only when there isn't ContentView or Template defined. In other cases, you would need to handle the content alignment inside the View/Template respectively.
+
+
 ### Disabling the animation
 
 The control supports a built-in sliding animation which is enabled by default. To disable it you can set the control's **IsAnimated** property to False.

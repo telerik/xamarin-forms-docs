@@ -76,11 +76,11 @@ Once the server is added users will be able to add to their projects any of the 
 
 If you're receiving this error when connecting to Telerik Nuget Server, you could try to update your NuGet credentials through the Windows Credential Manager. Please follow the steps below:
 
-1 - Close all open Visual Studio instances (this is so that all NuGet package manager tasks are stopped);
-2 - Open the "Credential Manager" app on your PC;
-3 - Scroll through all the entries until you find any that are for nuget.telerik.com;
-4 - Once you find that entry, expand it and select "edit";
-5 - Make sure the username and password are the same ones you use for your Telerik account (use the Email in the place of username) and click "Save".
+1. Close all open Visual Studio instances (this is so that all NuGet package manager tasks are stopped);
+1. Open the "Credential Manager" app on your PC;
+1. Scroll through all the entries until you find any that are for nuget.telerik.com;
+1. Once you find that entry, expand it and select "edit";
+1. Make sure the username and password are the same ones you use for your Telerik account (use the Email in the place of username) and click "Save".
 
 Now you can reopen Visual Studio and access the Telerik NuGet server. 
 

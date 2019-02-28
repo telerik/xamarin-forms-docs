@@ -10,10 +10,10 @@ position: 3
 When applying the **TelerikTheme** to the Telerik controls within your application and respectively the **RadDataForm** element, you have the option to [Modify the default theme]({%slug common-modifying-default-theme%}) by overriding the values of the resources used within it. You can modify RadDataForm's resources so that different colors than the default ones are applied. For example:
 
 	<!-- DataForm -->
-	<Color x:Key="DataFormEditorAccentColor">Orange</Color>
-    <Color x:Key="DataFormBackgroundColor">White</Color>
-    <Color x:Key="DataFormHeaderFontColor">Orange</Color>
-    <Color x:Key="DataFormEditorBorderColor">Orange</Color>
+	<Color x:Key="TelerikDataFormEditorAccentColor">Orange</Color>
+	<Color x:Key="TelerikDataFormBackgroundColor">White</Color>
+	<Color x:Key="TelerikDataFormHeaderFontColor">Orange</Color>
+	<Color x:Key="TelerikDataFormEditorBorderColor">Orange</Color>
 
 If you run your application in Android at this stage you will notice that not all elements are modified as expected:
 

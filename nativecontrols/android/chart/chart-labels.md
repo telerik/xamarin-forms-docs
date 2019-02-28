@@ -32,16 +32,19 @@ All axes have their default labels. They are visible by default. In order to hid
 
 ## Customization
 
-All axes and series have methods which provide various customization options for the labels:
+All axes and series have properties which provide various customization options for the labels:
 
-* **setLabelColor(int)**: used to change the color of the label, has a counterpart &mdash; **getLabelColor()**
-* **setLabelSize(float)**: used to change the size of the label, has a counterpart &mdash; **getLabelSize()**
-* **setLabelMargin(float)**: used to change the margins of the label, has a counterpart &mdash; **getLabelMargin()**
-* **setLabelFont(Typeface)**: used to change the font of the label, has a counterpart &mdash; **getLabelFont()**
-* **setLabelFormat(string)**: used to change the format string of the label, has a counterpart &mdash; **getLabelFormat()**
+* **LabelTextColor**(*Android.Graphics.Color*): specifies the color of the label text;
+* **LabelFillColor**(*Android.Graphics.Color*): sets the background color of the labels;
+* **LabelStrokeColor**(*Android.Graphics.Color*): sets the border color of the labels;
+* **LabelSize**(*float*): sets the size of the labels;
+* **LabelMargin**(*float*): specifies the margins of the labels;
+* **LabelFont**(*Android.Graphics.Typeface*): determines the font of the labels;
+* **LabelFormat**: specifies the format string of the labels.
 
 Additionally, you can provide a custom label render in order to completely change the way the labels are rendered. 
-In order to set the renderer you need to use the **setLabelRenderer(ChartLabelRenderer)** method. 
+In order to set the renderer you need to use the **LabelRenderer** of type *BaseLabelRenderer* property.
+ 
 Here's an excerpt from a custom label renderer:
 
 

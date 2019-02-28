@@ -44,6 +44,27 @@ Next image displays how RadAccordion will look with thus defined items:
 
 ![RadAccordionItem](images/accordion_accordionitem.png)
 
+The following snippet shows how to set Font Options to the AccordionItemHeader Text:
+
+```XAML
+<telerikPrimitives:AccordionItem BorderColor="LightBlue"
+                                 BorderThickness="2">
+    <telerikPrimitives:AccordionItem.Header>
+        <telerikPrimitives:AccordionItemHeader>
+            <Label Text="Profile"
+                   Margin="0,8"
+                   FontSize="25"
+                   FontAttributes="Bold"/>
+        </telerikPrimitives:AccordionItemHeader>
+    </telerikPrimitives:AccordionItem.Header>
+    <telerikPrimitives:AccordionItem.Content>
+        <Label Text="John Smith" Margin="8" />
+    </telerikPrimitives:AccordionItem.Content>
+</telerikPrimitives:AccordionItem>
+```
+
+>important A sample Accordion Item example can be found in the Accordion/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
 ## See Also
 
 - [Key Features]({% slug accordion-key-features%})

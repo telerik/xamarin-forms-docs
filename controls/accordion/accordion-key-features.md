@@ -23,7 +23,15 @@ You could also customize the duration and easing (acceleration over time) throug
 
 ## Spacing between items
 
-Through **Spacing** property you could specify the distance between the Accordion items.
+Through **Spacing**(double) property you could specify the distance between the Accordion items.
+
+## Example
+
+The snippet below shows how to set the AnimationDuration, AnimationEasing and Spacing properties:
+
+<snippet id='accordion-key-features-xaml'/>
+
+>important A sample Key Features example can be found in the Accordion/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 

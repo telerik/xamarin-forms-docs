@@ -60,7 +60,11 @@ Check the Popup with applied overlay color on different platforms below:
 RadPopup provides a few useful properties which will help you position it per your preferences.   
 
 * **PlacementTarget**: Defines an element relative to which the popup is positioned when it is open;
-* **Placement**: Specifies the way the popup aligns to its placement target. Placement property is of type *PlacementMode* and can be set to any of the Top, Right, Left, Bottom or Center options;
+* **Placement**: Specifies the way the popup aligns to its placement target. Placement property is of type *PlacementMode* and can be set to any of the Top, Right, Left, Bottom, Center or Relative options where:
+	* Top, Right, Left, Bottom: aligns the popup control to the corresponding corner of the placement target;
+	* Center: aligns the popup at the middle of the PlacementTarget;
+	* Relative: a position that aligns the top left corner of the popup with the top left corner of the placement target.
+	
 * **HorizontalOffset / VerticalOffset**: Specifies the horizontal/vertical distance between the placement target and the alignment point.  
 
 <snippet id='popup-features-placement' />
@@ -71,6 +75,8 @@ Here is the result:
 
 ![Popup Placement](images/popup_features_placement.png)
 
+>tip If you need to center the popup when it is declared in XAML, attach it to the Page element and set its Placement property to "Center".
+
 ## Animation Settings
 
 RadPopup provides two built-in animations played when the popup is shown/hidden. You could apply the animation through **AnimationType** property which exposes the following options:
@@ -79,7 +85,9 @@ RadPopup provides two built-in animations played when the popup is shown/hidden.
 * Fade
 * Zoom
 
-You could also customize the duration and easing (acceleration over time) through **AnimationDuration**(in ms) and **AnimationEasing** (of type *Xamarin.Forms.Easing*) properties.
+The default AnimationType is _Fade_.
+
+You could also customize the duration and easing (acceleration over time) through **AnimationDuration** (in ms) and **AnimationEasing** (of type *Xamarin.Forms.Easing*) properties. The default duration is 300ms and the default easing is _Easing.Linear_.
 
 ## See Also
 

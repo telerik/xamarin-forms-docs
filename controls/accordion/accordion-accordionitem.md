@@ -11,7 +11,7 @@ slug: accordion-accordionitem
 
 #### AccordionItem Header
 
-You could either apply HeaderText property or use the AccordionItemHeader content control which provides a set of useful properties for customizing the look & feel of the Header.  For more details refer to [AccordionItemHeader](#accordionitemheader) section.
+You could either apply **HeaderText** property or use the **AccordionItemHeader** content control which provides a set of useful properties for customizing the look & feel of the Header.  For more details refer to [AccordionItemHeader](#accordionitemheader) section.
 
 #### IsExpanded
 	
@@ -44,26 +44,7 @@ Next image displays how RadAccordion will look with thus defined items:
 
 ![RadAccordionItem](images/accordion_accordionitem.png)
 
-The following snippet shows how to set Font Options to the AccordionItemHeader Text:
-
-```XAML
-<telerikPrimitives:AccordionItem BorderColor="LightBlue"
-                                 BorderThickness="2">
-    <telerikPrimitives:AccordionItem.Header>
-        <telerikPrimitives:AccordionItemHeader>
-            <Label Text="Profile"
-                   Margin="0,8"
-                   FontSize="25"
-                   FontAttributes="Bold"/>
-        </telerikPrimitives:AccordionItemHeader>
-    </telerikPrimitives:AccordionItem.Header>
-    <telerikPrimitives:AccordionItem.Content>
-        <Label Text="John Smith" Margin="8" />
-    </telerikPrimitives:AccordionItem.Content>
-</telerikPrimitives:AccordionItem>
-```
-
->important A sample Accordion Item example can be found in the Accordion/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+>important A sample AccordionItem example can be found in the Accordion/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 

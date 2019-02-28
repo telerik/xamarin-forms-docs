@@ -19,11 +19,22 @@ There is always only one expanded item at a time indicated by **IsExpanded** pro
 
 To enable or disable the animation you need to use the IsAnimationEnabled property of RadAccordion. By default, the Animation is enabled.
 
-You could also customize the duration and easing (acceleration over time) through **AnimationDuration** (in ms) and **AnimationEasing** (of type *Xamarin.Forms.Easing*) properties.
+You could also customize the duration and easing through **AnimationDuration** and **AnimationEasing** properties.
+
+* **AnimationDuration** (*int*): Defines the duration of the animation while expanding/collapsing the AccordionItem. The default value is 500.
+* **AnimationEasing** (*Xamarin.Forms.Easing*): Specifies animation acceleration over time. The default value is Easing.Linear.
 
 ## Spacing between items
 
-Through **Spacing** property you could specify the distance between the Accordion items.
+Through **Spacing**(double) property you could specify the distance between the Accordion items. The default value is 0.
+
+## Example
+
+The snippet below shows how to set the AnimationDuration, AnimationEasing and Spacing properties:
+
+<snippet id='accordion-key-features-xaml'/>
+
+>important A sample Key Features example can be found in the Accordion/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 

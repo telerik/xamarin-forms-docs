@@ -401,9 +401,6 @@ navigation:
     controls/dataform:
         title: "DataForm"
         ## DataForm Sub-Folders
-    controls/dataform/getting-started:
-        title: "Getting Started"
-        position: 1
     controls/dataform/annotations:
         title: "Data Annotations"
         position: 4

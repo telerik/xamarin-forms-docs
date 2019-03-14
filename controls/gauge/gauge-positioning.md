@@ -1,7 +1,7 @@
 ---
 title: Positioning
 page_title: Positioning
-position: 0
+position: 5
 slug: gauge-positioning
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Indicators
 page_title: Indicators
-position: 0
+position: 5
 slug: gauge-indicators
 ---
 

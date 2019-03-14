@@ -1,7 +1,7 @@
 ---
 title: Ranges
 page_title: Ranges
-position: 0
+position: 6
 slug: gauge-ranges
 ---
 

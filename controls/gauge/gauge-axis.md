@@ -1,7 +1,7 @@
 ---
 title: Axis
 page_title: Axis
-position: 0
+position: 4
 slug: gauge-axis
 ---
 
@@ -9,18 +9,15 @@ slug: gauge-axis
 
 The axis is a gauge element that is used to control everything related to the display of the axis. This includes ticks, labels, appearance and axis range. 
 
-## Namespaces
+## Examples
 
-You may need the following namespaces for the examples below:
-
-<snippet id='xmlns-telerikgauges'/>
-<snippet id='ns-telerikgauges'/>
-
-## Axis Range
+### Axis Range
 
 Presently, the axis does not have an auto-range mechanism so it is mandatory that you set **Minimum**, **Maximum** and **Step**.
 
 <snippet id='gauge-axis-range'/>
+
+![Gauge Axis Range](images/gauge-axis-range.png)
 
 ## Appearance
 
@@ -28,7 +25,7 @@ You can control the stroke of the axis line and ticks via the **Stroke** propert
 
 <snippet id='gauge-axis-appearance'/>
 
-![Gauge example](../images/gauge-axis-appearance.png)
+![Gauge Appearance](images/gauge-axis-appearance.png)
 
 ## Font Style
 
@@ -36,11 +33,15 @@ You can control the appearance of the labels via the **FontSize**, **FontFamily*
 
 <snippet id='gauge-axis-font-style'/>
 
+![Gauge Font Style](images/gauge-axis-fontstyle.png)
+
 ## FontFamily
 
 Note that the **FontFamily** property is of type string and you need to pass the name of the font family. Remember that the different platforms work with different fonts so you may need to use the **OnPlatform** method.
 
 <snippet id='gauge-axis-font-family'/>
+
+![Gauge Font Familly](images/gauge-axis-fontfamily.png)
 
 ## Label Format
 
@@ -48,7 +49,7 @@ You can control the numeric format of the content of the labels. The default lab
 
 <snippet id='gauge-axis-label-format'/>
 
-![Gauge example](../images/gauge-axis-label-format.png)
+![Gauge example](images/gauge-axis-label-format.png)
 
 ## Label And Tick Position
 
@@ -56,13 +57,17 @@ In the radial gauge, the gauge elements can be positioned on the inside or on th
 
 <snippet id='gauge-axis-label-and-tick-position'/>
 
-![Gauge example](../images/gauge-axis-label-and-tick-position.png)
+![Gauge example](images/gauge-axis-label-and-tick-position.png)
 
 ## Offset And Length
 
 The distance between the concrete element and the axis line is defined by an offset property (**Offset**, **TickOffset**, **LabelOffset**). You can also specify the length of the ticks.
 
 <snippet id='gauge-axis-offset-and-length'/>
+
+![Gauge Offset and Length](images/gauge-axis-offset-and-length.png)
+
+>important A sample Gauge Axis Customization example can be found in the Gauge/Customizations folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 

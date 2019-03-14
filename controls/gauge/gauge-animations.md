@@ -1,7 +1,7 @@
 ---
 title: Animations
 page_title: Animations
-position: 0
+position: 3
 slug: gauge-animations
 ---
 
@@ -22,6 +22,10 @@ The **AnimationSettings** class contains the following properties:
 Here is an example how to set the AnimationSettings property:
 
 <snippet id='gauge-animations'/>
+
+Here is a gif animation that shows all animations provided in the Gauge control:
+
+
 
 >important [SDK Samples Browser application]({%slug developer-focused-examples%}) contains Animations example that shows how the AnimationSettings property works. The example can be found in the Features section of the Gauge control.
 

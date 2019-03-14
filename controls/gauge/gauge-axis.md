@@ -71,6 +71,6 @@ The distance between the concrete element and the axis line is defined by an off
 
 ## See Also
 
-- [Project Wizard]({% slug project-wizard %})
-- [Getting Started on Windows]({% slug getting-started-windows %})
-- [Getting Started on Mac]({% slug getting-started-mac %})
+- [Indicators]({%slug gauge-indicators%})
+- [Positioning]({%slug gauge-positioning%})
+- [Ranges]({%slug gauge-ranges%})

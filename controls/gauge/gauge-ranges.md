@@ -11,19 +11,29 @@ The gauge ranges are elements that are usually used to give context to the indic
 
 To include ranges in your gauge you need to set the **Ranges** property. You need to pass an object of type **GaugeRangesDefinition** which has a **Ranges** collection. In this collection you can add **GaugeRange** items when you need a solid color, or you can add **GaugeGradientRange** items when you need gradient colors.
 
-
 <snippet id='gauge-ranges'/>
+
+![Gauge Ranges](images/gauge-ranges-overview.png)
 
 ## Gradient Ranges
 
-As demonstrated earlier, you can use the **GaugeGradientRange** to include ranges with gradient color. To do this you can add gradient stops to the **GradientStops** collection of the gradient range. Each gradient stop has a color and an offset value that determine the final appearance of the item. The offset can either be treated as a relative value (between 0 and 1) or an absolute value (between the axis' minimum and axis' maximum). This is defined by the **IsOffsetRelative** property of the gradient range. 
+As demonstrated above, you can use the **GaugeGradientRange** to include ranges with gradient color. To do this you can add gradient stops to the **GradientStops** collection of the gradient range. Each gradient stop has a color and an offset value that determine the final appearance of the item. The offset can either be treated as a relative value (between 0 and 1) or an absolute value (between the axis' minimum and axis' maximum). This is defined by the **IsOffsetRelative** property of the gradient range. 
+
+Here is an example when offset is relative
 
 <snippet id='gauge-ranges-relative-offset'/>
 
+![Gauge Relative Offset](images/gauge-ranges-relative.png)
+
+and when the offset is absolute
+
 <snippet id='gauge-ranges-absolute-offset'/>
+
+![Gauge Absolute Offset](images/gauge-ranges-absolute.png)
+
+>important A sample Ranges example can be found in the Gauge/Featuers folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 
-- [Project Wizard]({% slug project-wizard %})
-- [Getting Started on Windows]({% slug getting-started-windows %})
-- [Getting Started on Mac]({% slug getting-started-mac %})
+- [Indicators]({%slug gauge-indicators%})
+- [Positioning]({%slug gauge-positioning%})

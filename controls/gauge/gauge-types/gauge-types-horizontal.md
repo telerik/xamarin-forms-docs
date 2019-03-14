@@ -23,6 +23,7 @@ Here is the result:
 >important A sample Horizontal Gauge example can be found in the Gauge/GaugeTypes folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
+
 - [Radial Gauge]({%slug gauge-types-radial%})
 - [Vertical Gauge]({%slug gauge-types-vertical%})
 - [Axis]({%slug gauge-axis%})

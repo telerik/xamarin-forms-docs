@@ -9,14 +9,18 @@ slug: gauge-types-radial
 
 The **RadRadialGauge** control allows you to display the scale's range in a radial form.
 
-![Radial gauge example](../images/gauge-types-radial-gauge-0.png) 
-
 ## Setting up the gauge
 
 The following example shows a **RadRadialGauge**'s basic set up.
 
 <snippet id='gauge-types-radialgauge-xaml'/>
 <snippet id='gauge-types-radialgauge-code'/>
+
+This is the result:
+
+![Radial gauge example](../images/gauge-types-radial-gauge-0.png)
+
+>important A sample Radial Gauge example can be found in the Gauge/GaugeTypes folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## Setting rotation and radius
 

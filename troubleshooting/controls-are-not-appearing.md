@@ -1,6 +1,6 @@
-﻿---
+---
 title: Controls Are Not Appearing
-page_title: Controls Are Not Appearing"
+page_title: "Controls Are Not Appearing"
 slug: controls-are-not-appearing
 position: 5
 ---

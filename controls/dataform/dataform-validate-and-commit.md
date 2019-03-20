@@ -110,5 +110,5 @@ The image below displays RadDataForm with submitted "Name" property.
 
 ## See Also
 
-- [ditors]({% slug dataform-editors %})
+- [Editors]({% slug dataform-editors %})
 - [DataForm Annotations]({% slug dataform-annotations-display-options %})

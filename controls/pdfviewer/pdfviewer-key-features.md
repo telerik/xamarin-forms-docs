@@ -48,7 +48,7 @@ this.pdfViewer.Source = new UriDocumentSource(uri);
 
 * **File**
 
->important From R1 2019 SP the RadPdfViewer supports FileDocumentSouce. 
+>important From R1 2019 SP the RadPdfViewer supports FileDocumentSource. 
 
 You can visualize the pdf document from a file located on a device.
 

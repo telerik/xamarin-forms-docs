@@ -43,16 +43,29 @@ The image below shows how different editors are visualized on Android, iOS and U
 
 ## Custom Editors
 
+If any of the described above editors provided in RadDataForm for Xamarin is not suitable to achieve a certain requirement, a custom native editor could be created for each platform. 
+
+>tip Through custom renderers you can use any of the available editors for the native DataForm controls on Android, iOS and UWP that are not exposed to Xamarin.Forms. You could find more information on them at the links below:
+>	[DataForm for Xamarin.Android Editors]({%slug data-form-editors})
+>	[DataForm for Xamarin.iOS Editors]({%slug data-form-editors})
+>	[DataForm for UWP Editors]({%slug data-form-editors})
+
+First, you need to specify the property for which a custom editor will be used through RegisterEditor method of the DataForm:
+
+```C#
+dataForm.RegisterEditor("Gender", EditorType.Custom);
+```
+
 When a Custom editor type is registered, specific renderer methods will be called on each platform. You will have to inherit from the renderers and override specific methods to setup a custom editor.
+	
+```C#	
+[assembly: ExportRenderer(typeof(RadDataForm), typeof(CustomRenderer))]
 
-	dataForm.RegisterEditor("Gender", EditorType.Custom);
-
-	[assembly: ExportRenderer(typeof(RadDataForm), typeof(CustomRenderer))]
-
-	CustomRenderer : DataFormRenderer
-	{
-	    ...
-	}
+CustomRenderer : DataFormRenderer
+{
+	...
+}
+```
 
 > The DataFormRenderer works differently on each platform - see the specific methods available for override below.
 
@@ -67,6 +80,8 @@ Android DataFormRenderer available methods for override:
 
 > On Android if a property is read-only, a viewer is used.
 
+>tip You can find an example demonstrating a custom editor on Android here: [Autocomplete editor in Android]({% slug dataform-howto-use-native-editors-android %})
+
 ### iOS
 
 iOS DataFormRenderer available methods for override:
@@ -76,6 +91,8 @@ iOS DataFormRenderer available methods for override:
 - **UpdateEditor**
 
 > On iOS if a property is read-only, the editor is disabled.
+
+>tip You can find an example demonstrating a custom editor on iOS here: [Email and Password editors on iOS]({% slug dataform-howto-use-native-editors-ios %})
 
 ### UWP
 

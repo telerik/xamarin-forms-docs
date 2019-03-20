@@ -46,9 +46,8 @@ The image below shows how different editors are visualized on Android, iOS and U
 If any of the described above editors provided in RadDataForm for Xamarin is not suitable to achieve a certain requirement, a custom native editor could be created for each platform. 
 
 >tip Through custom renderers you can use any of the available editors for the native DataForm controls on Android, iOS and UWP that are not exposed to Xamarin.Forms. You could find more information on them at the links below:
->	[DataForm for Xamarin.Android Editors]({%slug data-form-editors})
->	[DataForm for Xamarin.iOS Editors]({%slug data-form-editors})
->	[DataForm for UWP Editors]({%slug data-form-editors})
+>	- [DataForm for Xamarin.Android Editors]({%slug data-form-editors%})
+>	- [DataForm for Xamarin.iOS Editors]({%slug data-form-ios-editors%})
 
 First, you need to specify the property for which a custom editor will be used through RegisterEditor method of the DataForm:
 
@@ -80,7 +79,7 @@ Android DataFormRenderer available methods for override:
 
 > On Android if a property is read-only, a viewer is used.
 
->tip You can find an example demonstrating a custom editor on Android here: [Autocomplete editor in Android]({% slug dataform-howto-use-native-editors-android %})
+>tip You can find an example demonstrating a custom editor on Android here: [Autocomplete editor in Android]({%slug dataform-howto-use-native-editors-android%}).
 
 ### iOS
 
@@ -92,7 +91,7 @@ iOS DataFormRenderer available methods for override:
 
 > On iOS if a property is read-only, the editor is disabled.
 
->tip You can find an example demonstrating a custom editor on iOS here: [Email and Password editors on iOS]({% slug dataform-howto-use-native-editors-ios %})
+>tip You can find an example demonstrating a custom editor on iOS here: [Email and Password editors on iOS]({%slug dataform-howto-use-native-editors-ios%}).
 
 ### UWP
 

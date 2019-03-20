@@ -2,6 +2,7 @@
 title: Editors
 page_title: TKDataForm Editors
 position: 6
+slug: data-form-ios-editors
 ---
 
 

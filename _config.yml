@@ -416,15 +416,9 @@ navigation:
     controls/gauge:
         title: "Gauge"
         ## Gauge Sub-Folders
-    controls/gauge/getting-started:
-        title: "Getting Started"
-        position: 1
     controls/gauge/gauge-types:
         title: "Gauge Types"
-        position: 2
-    controls/gauge/features:
-        title: "Features"
-        position: 3
+        position: 1
         ## End Gauge Sub-Folders
     ## End Gauge
     ## ListView

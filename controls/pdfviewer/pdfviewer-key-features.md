@@ -9,7 +9,7 @@ slug: pdfviewer-key-features
 
 The purpose of this help article is to show you the key features of the **RadPdfViewer** control.
 
-## Pdf Documment Visualization
+## Pdf Document Visualization
 
 RadPdfViewer control enables you to visualize Pdf documents through the following property:
 

@@ -74,7 +74,7 @@ First, create the needed business object, for example:
 
 Then create a ViewModel:
 
-<snippet id='chart-series-view-model-1'/>
+<snippet id='chart-piechart-view-model'/>
 
 Finally use the following snippet to declare a RadPieChart with Pie Series in XAML and in C#:
 

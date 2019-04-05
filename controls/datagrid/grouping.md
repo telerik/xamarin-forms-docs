@@ -92,9 +92,9 @@ The following property is used to enable/disable the grouping of a specific colu
 
 **RadDataGrid** supports groups expand and collapse operations either through the UI by tapping on the group headers or programmatically. By default, all the groups are expanded.
 
-This help topic will provide an overview of the methods and commands used to control the expand/collapse state of the ListView groups.
+This help topic will provide an overview of the methods and commands used to control the expand/collapse state of the DataGrid groups.
 
-### Get the grouped ListView items
+### Get the grouped DataGrid items
 
 To manipulate the collapsible DataGrid groups, first you will need to call its **GetDataView** method. In short, GetDataView method provides a view of the ItemsSource after all the Sort, Group and Filter operations are applied.  The return type is *IDataViewCollection* which exposes the expand and collapse methods described in the following sections.
 

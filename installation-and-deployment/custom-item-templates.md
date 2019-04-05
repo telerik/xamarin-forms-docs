@@ -7,6 +7,8 @@ position: 6
 
 # Visual Studio Item Templates
 
+>important Currently Item Templates are available only for Visual Studio on Windows.
+
 There are several **predefined item templates for Visual Studio** included in the **UI for Xamarin** suite which come by default with the installation of the product. You can directly include them in your **Xamarin Forms** project and use them as footprints for similar scenarios in your application. This article provides more information on the different templates included and the controls which they utilize.
 
 > The Item Templates are installed through a Visual Studio extension file(vsix) which can be found in the **VSExtensions** folder of your local installation. 

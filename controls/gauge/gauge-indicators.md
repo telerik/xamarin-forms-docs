@@ -86,7 +86,13 @@ The **GaugeBarIndicator** presents a value range set by the **From** and **To** 
 
 ## Text Indicator
 
+The **GaugeTextIndicator** gives you the possibility to present a text on a specific value. 
 
+<snippet id='gauge-text-indicator'/>
+
+![Gauge example](images/gauge-indicators-text-indicator.png)
+
+>important You could find example with Gauge Text Indicators inside the Gauge/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 

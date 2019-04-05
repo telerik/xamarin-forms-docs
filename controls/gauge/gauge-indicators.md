@@ -86,7 +86,7 @@ The **GaugeBarIndicator** presents a value range set by the **From** and **To** 
 
 ## Text Indicator
 
-The **GaugeTextIndicator** gives you the possibilitu to present a text on a specific value. 
+The **GaugeTextIndicator** gives you the possibility to present a text on a specific value. 
 
 <snippet id='gauge-text-indicator'/>
 

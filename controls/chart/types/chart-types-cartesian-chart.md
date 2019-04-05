@@ -96,6 +96,7 @@ chart.VerticalAxis = new NumericalAxis();
 		</telerikChart:BarSeries>
 	</telerikChart:RadCartesianChart.Series>
 </telerikChart:RadCartesianChart>
+```
 ```C#	
 var series = new BarSeries();
 series.SetBinding(BarSeries.ItemsSourceProperty, new Binding("CategoricalData"));

@@ -132,6 +132,7 @@ dataView.ExpandGroup(rootGroups.First());
 //collapse a certain group
 dataView.CollapseGroup(rootGroups.First());
 ```
+
 Additionally, *IDataViewCollection* provides **ExpandItem**/**CollapseItem** methods that takes a data item as a parameter and expand/collapse the immediate group containing this item.	
 
 ```C#

@@ -37,7 +37,7 @@ Here is the result:
 
 ## Modal popup
 
-You could define whether the popup will be modal or not through the **IsModal** Boolean property. When **IsModal** is *True*, the UI behind the popup gets inactive and cannot be used until the popup is closed.
+You could define whether the popup will be modal or not through the **IsModal** Boolean property. In both cases, the UI behind the popup gets inactive and cannot be used until the popup is closed. For non-modal popups, however, you could easily focus on the content behind, by just clicking outside the popup.
 
 ## Applying overlay color 
 

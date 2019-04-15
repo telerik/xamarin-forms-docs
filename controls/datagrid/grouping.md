@@ -56,7 +56,7 @@ The Custom **IKeyLookup** implementation
 
 <snippet id='datagrid-delegategroupdescriptor-csharp'/>
 ```C#
-class CustomIKeyLookup : IKeyLookup
+class CustomIKeyLookup : Telerik.XamarinForms.Common.Data.IKeyLookup
 {
 	public object GetKey(object instance)
     {

@@ -17,12 +17,15 @@ navigation:
     installation-and-deployment:
         title: "Installation and Deployment"
         position: 5
+    upgrade:
+        title: "Upgrade"
+        position: 6
     controls:
         title: "<b>Xamarin Forms Controls</b>"
-        position: 6
+        position: 7
     nativecontrols:
         title: "Native Controls Wrappers"
-        position: 7
+        position: 8
     troubleshooting:
         title: "Troubleshooting"
         position: 12

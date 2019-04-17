@@ -7,7 +7,7 @@ position: 1
 
 # Upgrading on Mac
 
-The purpose of this topic is to explain you how to upgrade Telerik UI for Xamarin from Trial to Developer License or to a newer version on Mac. 
+The purpose of this topic is to explain you how to upgrade Telerik UI for Xamarin to a newer version on Mac. 
 
 There are two options for referencing Telerik components and the upgrade method depends on which one you chose. Both are listed below:
 
@@ -18,13 +18,13 @@ There are two options for referencing Telerik components and the upgrade method 
 
 >tip As a prerequisite, you would need to have Telerik NuGet packages server configured in Visual Studio for Mac as described in the following topic: [Telerik NuGet server]({%slug telerik-nuget-server%}#visual-studio-for-mac). 
 
-1.	With the solution open in Visual Studio for Mac, for example go to the Android project and expand __Packages__ folder.
+1.  With the solution open in Visual Studio for Mac, for example go to the Android project and expand __Packages__ folder.
 2.  Find Telerik.UI.for.Xamarin package, right-click on it and select Update.
 
 	![Update nuget package](images/nuget_upgrade_mac.png)
 	
 	This will update the Telerik UI for Xamarin package to the latest available version.
-3.	Do the same for all other projects in the solution that have references to Telerik UI for Xamarin.
+3.  Do the same for all other projects in the solution that have references to Telerik UI for Xamarin.
 
 ## Upgrade manually added assemblies
 

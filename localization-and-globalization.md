@@ -40,7 +40,7 @@ The localization mechanism in Telerik Xamarin controls is implemented through **
 
 In both cases you would need to provide a translation of all the resource keys used inside the supported controls.
 
->important You can download the complete list with the resource keys used in all the supported components from the [SDKBrowser Examples repository on GitHub](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser). 
+>important You can download the complete list with the resource keys used in all the supported components from the [SDKBrowser Examples repository on GitHub](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/LocalizationResources). 
 
 ### Localization using Custom Localization Manager
 

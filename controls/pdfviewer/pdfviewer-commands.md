@@ -11,13 +11,20 @@ RadPdfViewer provides the following commands of type *ICommand*:
 
 * **ZoomInCommand**
 * **ZoomOutCommand**
-* **FitToWidthCommand**
 * **NavigateToNextPageCommand**
 * **NavigateToPreviousPageCommand**
 * **NavigateToPageCommand**
 * **ToggleLayoutModeCommand**: Triggers the RadPdfViewer LayoutModes (*ContinuousScroll* and *SinglePage*)
+* **FitToWidthCommand**: There are two options when executing FitToWidth command:
+	* **FitDocumentToWidthCommand**(the default one): Refers to the whole document; it would lookup the widest of all pages and set a zoom level, so that this page is fit to width. 
+	
+		>tip If the document has pages with different width, as a side effect, when you are currently viewing a page that is not the widest, this page will not occupy the whole horizontal space.
+		
+	* **FitPageToWidthCommand**: It would execute fit to width on the current page disregarding the width of other pages from the document.
 
->note The RadPdfViewer Toolbar exposes the above commands built-in. For more information please check the [PdfViewer Toolbar]({%slug pdfviewer-toolbar%}) article.
+* **DoubleTappedCommand**: This command is different from the above listed as it is triggered from within the PdfViewer on double-tap action. On the first double-tap the document is zoomed 2.5 times at the tapped location, another double-tap triggers FitToWidth command.
+
+>note The RadPdfViewer Toolbar exposes some of the commands built-in. For more information please check the [PdfViewer Toolbar]({%slug pdfviewer-toolbar%}) article.
 
 ## Example
 

@@ -13,11 +13,13 @@ The purpose of this help article is to show you the key features of the **RadPdf
 
 RadPdfViewer control enables you to visualize Pdf documents through the following property:
 
-* **Source**(DocumentSource): Defines the source of the document. 
+* **Source** (of type *Telerik.XamarinForms.PdfViewer.DocumentSource*): Defines the source of the document. 
 
 The Pdf Document could be loaded from:
 
-* **FixedDocument** 
+* **RadFixedDocument** - it is used to load the pdf document from a stream. 
+
+>tip Using this approach you have more control over the loading process, for example, you could modify the document after it is imported and before it is assigned as a Source to the PdfViewer control.
 
 <snippet id='pdfviewer-key-features-source-fixed-method' />
 
@@ -48,17 +50,19 @@ this.pdfViewer.Source = new UriDocumentSource(uri);
 
 * **File**
 
->important From R1 2019 SP the RadPdfViewer supports FileDocumentSource. 
+You can visualize the pdf document from a file located on a device (available since R1 2019 SP). You just need to pass the file path to the *Source* property of the PdfViewer control:
 
-You can visualize the pdf document from a file located on a device.
+```C#
+this.pdfViewer.Source = filePath;
+```
+
+where the filePath variable is a sting that contains the path to the file location.
 
 In order to make sure that the file exists on the device you could use the following code:
 
 ```C#
-System.IO.File.OpenRead(path)
+System.IO.File.OpenRead(filePath);
 ```
-
-where the path is a sting that contains the path to the file location.
 
 >important Please make sure that you have granted the app all the permissions needed before the resources are used. Otherwise, an error will be raised.
 

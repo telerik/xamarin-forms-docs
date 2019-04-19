@@ -64,11 +64,26 @@ In the Add Package Source dialog users should fill in the information of the Tel
 
 After the Telerik NuGet server is added users will be able to see the packages they are allowed to download in the Add Packages dialog. This will allow them to check the **Telerik UI for Xamarin** pack and add it into their projects.
 
-### Add Telerik UI for Xamarin pack ##
+#### Add Telerik UI for Xamarin pack
 
 Once the server is added users will be able to add to their projects any of the **Telerik NuGet** packages available for their license. One click on the settings icon of the “*Packages*” folder of any project will open the **Add Packages** dialog where the available Telerik packs will be listed.
 
 ![Telerik NuGet packages](images/getting-started-add-packages-dialog.png "Telerik NuGet packages")
+
+## Troubleshooting
+
+#### '401 Logon failed' error
+
+If you're receiving this error when connecting to Telerik Nuget Server, you could try to update your NuGet credentials through the Windows Credential Manager. Please follow the steps below:
+
+1. Close all open Visual Studio instances (this is so that all NuGet package manager tasks are stopped);
+1. Open the "Credential Manager" app on your PC;
+1. Scroll through all the entries until you find any that are for nuget.telerik.com;
+1. Once you find that entry, expand it and select "edit";
+1. Make sure the username and password are the same ones you use for your Telerik account (use the Email in the place of username) and click "Save".
+
+Now you can reopen Visual Studio and access the Telerik NuGet server. 
+
 
 ## See Also
 - [System Requirements]({%slug system-requirements%})

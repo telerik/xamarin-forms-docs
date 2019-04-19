@@ -9,25 +9,72 @@ slug: pdfviewer-key-features
 
 The purpose of this help article is to show you the key features of the **RadPdfViewer** control.
 
-## Pdf Documment Visualization
+## Pdf Document Visualization
 
 RadPdfViewer control enables you to visualize Pdf documents through the following property:
 
-* **Source**(DocumentSource): Defines the source of the document. 
+* **Source** (of type *Telerik.XamarinForms.PdfViewer.DocumentSource*): Defines the source of the document. 
 
 The Pdf Document could be loaded from:
 
-* **FixedDocument** 
+* **RadFixedDocument** - it is used to load the pdf document from a stream. 
+
+>tip Using this approach you have more control over the loading process, for example, you could modify the document after it is imported and before it is assigned as a Source to the PdfViewer control.
 
 <snippet id='pdfviewer-key-features-source-fixed-method' />
+
+or 
+```C#
+private void ImportFixedDocument()
+{
+    Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.PdfFormatProvider provider = new Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.PdfFormatProvider();
+    Assembly assembly = typeof(KeyFeatures).Assembly;
+    string fileName = assembly.GetManifestResourceNames().FirstOrDefault(n => n.Contains("pdfviewer-overview.pdf"));
+    using (Stream stream = assembly.GetManifestResourceStream(fileName))
+    {
+        RadFixedDocument document = provider.Import(stream);
+        this.pdfViewer.Source = new FixedDocumentSource(document);
+    }
+}
+```
 
 * **Uri**
 
 <snippet id='pdfviewer-key-features-source-uri' />
 
+or 
+```C#
+Uri uri = this.GetUri();
+this.pdfViewer.Source = new UriDocumentSource(uri);
+```
+
+* **File**
+
+You can visualize the pdf document from a file located on a device (available since R1 2019 SP). You just need to pass the file path to the *Source* property of the PdfViewer control:
+
+```C#
+this.pdfViewer.Source = filePath;
+```
+
+where the filePath variable is a sting that contains the path to the file location.
+
+In order to make sure that the file exists on the device you could use the following code:
+
+```C#
+System.IO.File.OpenRead(filePath);
+```
+
+>important Please make sure that you have granted the app all the permissions needed before the resources are used. Otherwise, an error will be raised.
+
 * **Byte Array**
 
 <snippet id='pdfviewer-key-features-source-byte' />
+
+or
+```C#
+byte[] bytes = this.GetBytes();
+this.pdfViewer.Source = new ByteArrayDocumentSource(bytes, true);          
+```
 
 * **Stream**
 
@@ -53,6 +100,16 @@ The available options are:
 
 >note By default the PdfViewer LayoutMode property is set to **ContinuousScroll**.
 
+>tip The RadPdfViewer LayoutMode could be triggered through the **ToggleLayoutModeCommand** and the **ToggleLayoutModeToolbarItem**.
+
+Here is how the PdfViewer looks when LayoutMode is set to ContinuousScroll:
+
+![PdfViewer ContinuousScroll](images/pdfviewer-continuous-scroll.png "PdfViewer ContinuousScroll")
+
+And when the LayoutMode property is set to SinglePage:
+
+![PdfViewer SinglePage](images/pdfviewer-single-page.png "PdfViewer SinglePage")
+
 ## Page Spacing
 
 * **PageSpacing**(double): Defines the space between the pages of the Pdf Document. The default value is 20.0
@@ -71,13 +128,17 @@ Here is an example how the custom BusyIndicatorTemplate could be defined:
 
 <snippet id='pdfviewer-busy-indicator-template-xaml' />
 
+Here is how the BusyIndicator Template looks:
+
+![PdfViewer BusyIndicator Template](images/pdfviewer-busyindicator-template.png "PdfViewer BusyIndicator Template")
+
 >important A sample BusyIndicatorTemplate example can be found in the PdfViewer/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## Example
 
 Here is an example how the above RadPdfViewer features could be applied:
 
-For the example we will visualize a pdf document from file. Add a pdf document to the project and set its build action to be **EmbeddedResource**.
+For the example we will visualize a pdf document from file embedded in the application with a **BuildAction:EmbeddedResource**.
 
 Then add the following code to load the pdf document from Stream:
 

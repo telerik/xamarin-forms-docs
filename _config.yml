@@ -17,12 +17,15 @@ navigation:
     installation-and-deployment:
         title: "Installation and Deployment"
         position: 5
+    upgrade:
+        title: "Upgrade"
+        position: 6
     controls:
         title: "<b>Xamarin Forms Controls</b>"
-        position: 6
+        position: 7
     nativecontrols:
         title: "Native Controls Wrappers"
-        position: 7
+        position: 8
     troubleshooting:
         title: "Troubleshooting"
         position: 12
@@ -401,9 +404,6 @@ navigation:
     controls/dataform:
         title: "DataForm"
         ## DataForm Sub-Folders
-    controls/dataform/getting-started:
-        title: "Getting Started"
-        position: 1
     controls/dataform/annotations:
         title: "Data Annotations"
         position: 4
@@ -419,15 +419,9 @@ navigation:
     controls/gauge:
         title: "Gauge"
         ## Gauge Sub-Folders
-    controls/gauge/getting-started:
-        title: "Getting Started"
-        position: 1
     controls/gauge/gauge-types:
         title: "Gauge Types"
         position: 2
-    controls/gauge/features:
-        title: "Features"
-        position: 3
         ## End Gauge Sub-Folders
     ## End Gauge
     ## ListView

@@ -25,7 +25,7 @@ First, create the needed business objects, for example:
 
 Then create a ViewModel:
 
-<snippet id='chart-series-view-model-2'/>
+<snippet id='chart-series-categorical-data-view-model'/>
 
 Finally, use the following snippet to declare a RadCartesianChart with Bar Series in XAML and in C#:
 

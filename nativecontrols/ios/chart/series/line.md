@@ -6,7 +6,7 @@ position: 4
 
 # Chart Series: Line
 
-<code>TKChartLineSeries</code> plot their data points on Cartesian Area. Points are connected with straight lines. Here is how to set up two line series:
+<code>TKChartLineSeries</code> plot their data points on Cartesian Area. Points are connected with straight lines. Here is how to set up a few line series:
 
 <snippet id='chart-line'/>
 <snippet id='chart-line-swift'/>
@@ -67,3 +67,11 @@ chart.AddSeries (seriesForProfit);
 
 <img src="../../images/chart-series-line003.png"/>
 
+## Set null values visualization
+
+In order to determines whether gaps should be displayed when there are nil values use DisplayNilValuesAsGaps property:
+
+```C#
+var seriesForProfit = new TKChartLineSeries (profitData.ToArray());
+seriesForProfit.DisplayNilValuesAsGaps = true;
+```

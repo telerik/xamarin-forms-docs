@@ -56,7 +56,7 @@ The Custom **IKeyLookup** implementation
 
 <snippet id='datagrid-delegategroupdescriptor-csharp'/>
 ```C#
-class CustomIKeyLookup : IKeyLookup
+class CustomIKeyLookup : Telerik.XamarinForms.Common.Data.IKeyLookup
 {
 	public object GetKey(object instance)
     {
@@ -87,6 +87,59 @@ The following property is used to enable/disable the grouping of a specific colu
 * **CanUserGroup** (bool): Defines a value indicationg whether the user can filter the column by ysing the Grouping UI.
 
 >important A sample Grouping example can be found in the DataGrid/Grouping folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
+## Expand and Collapse Groups
+
+**RadDataGrid** supports groups expand and collapse operations either through the UI by tapping on the group headers or programmatically. By default, all the groups are expanded.
+
+This help topic will provide an overview of the methods and commands used to control the expand/collapse state of the DataGrid groups.
+
+### Get the grouped DataGrid items
+
+To manipulate the collapsible DataGrid groups, first you will need to call its **GetDataView** method. In short, GetDataView method provides a view of the ItemsSource after all the Sort, Group and Filter operations are applied.  The return type is *IDataViewCollection* which exposes the expand and collapse methods described in the following sections.
+
+```C#
+var dataView = this.dataGrid.GetDataView();
+```
+
+### Expand and collapse all groups 
+
+In order to expand all groups, use the **ExpandAll** method and respectively use the **CollapseAll** method - to collapse all groups.
+
+```C#
+//expand all
+var dataView = this.dataGrid.GetDataView();
+dataView.ExpandAll();
+
+//collapse all
+var dataView = this.dataGrid.GetDataView();
+dataView.CollapseAll();
+```
+
+### Expand and collapse a certain group
+
+You could retrieve the first-level groups through the **GetGroups** method of the *IDataViewCollection* object and use **ExpandGroup**/**CollapseGroup** to make a certain group to expand or collapse respectively. You could check whether a group is expanded trough the **GetIsExpanded** method.
+
+Here is quick snippet on how these methods are used:
+
+```C# 
+var dataView = this.dataGrid.GetDataView();
+var rootGroups = dataView.GetGroups();
+
+var isFirstExpanded = dataView.GetIsExpanded(rootGroups.First());
+//expand a certain group
+dataView.ExpandGroup(rootGroups.First());
+//collapse a certain group
+dataView.CollapseGroup(rootGroups.First());
+```
+
+Additionally, *IDataViewCollection* provides **ExpandItem**/**CollapseItem** methods that takes a data item as a parameter and expand/collapse the immediate group containing this item.	
+
+```C#
+var lastItem = (dataGrid.ItemsSource as IEnumerable<City>).Last();
+var dataView = this.dataGrid.GetDataView();
+dataView.CollapseItem(lastItem);
+```
 
 ## See Also
 

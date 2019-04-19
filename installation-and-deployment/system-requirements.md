@@ -12,12 +12,12 @@ In order to develop applications with **Telerik UI for Xamarin** you need to hav
 ## Windows
 
 - Windows 8.1 or higher. You would need [Windows 10](https://www.microsoft.com/en-us/windows/get-windows-10) in order to develop for UWP.
-- [Visual Studio 2015](https://visualstudio.microsoft.com/vs/older-downloads/), [Visual Studio 2017](https://www.visualstudio.com/downloads/) or [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/) with Xamarin installed.
+- Visual Studio 2017 or Visual Studio 2019 with Xamarin installed. Go to [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/) page to see the available download options.
 
-	* To install Xamarin for Visual Studio 2017/ Visual Studio 2019, you would need to enable **Mobile development with .NET** workload. 
+	To install Xamarin for Visual Studio 2017/ Visual Studio 2019, you would need to enable **Mobile development with .NET** workload. 
 		
-		* If you run a fresh installation of Visual Studio, you will be prompted to select workloads during the installation process.
-		* if you already have Visual Studio installed, you could modify the active workloads by re-running the Visual Studio installer and selecting "Modify" option.
+	* If you run a fresh installation of Visual Studio, you will be prompted to select workloads during the installation process.
+	* if you already have Visual Studio installed, you could modify the active workloads by re-running the Visual Studio installer and selecting "Modify" option.
 	
 	#### Figure 1: VS 2017 with Mobile development with .NET workload enabled
 	![](images/vs2017_xamarin_workload.png)
@@ -29,16 +29,6 @@ In order to develop applications with **Telerik UI for Xamarin** you need to hav
 
 	>tip For more detailed instructions go to [Installing Xamarin in Visual Studio on Windows](https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/installation/windows) topic in Xamarin documentation.
  
-	* То add Xamarin to Visual Studio 2015 you would need to enable **Cross-Platform Mobile Development > C#/.NET (Xamarin)** feature in VS 2015 installer.
-	
-		* If you run a new installation of VS 2015, select "Custom" type within the installer in order to be able to select additional features.
-		* If you already have VS 2015 installed, go to Control Panel -> Programs and Features, choose the Visual Studio 2015 item, and click "Change". When the installer opens, select "Modify";
-	
-	#### Figure 2: VS 2015 with C#/.NET (Xamarin) feature enabled	
-	![](images/vs2015_xamarin_install.png)
-	
-	> For detailed information on how to setup your VS 2015 development environment check [this MSDN article](https://msdn.microsoft.com/en-us/library/mt613162.aspx).
-	
 - For building iOS apps - [configured iOS build host](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/).
 
 
@@ -57,6 +47,12 @@ You will be able to develop **Android** and **iOS** apps. The **iOS** apps will 
 	>tip For more information go to [Setup and Install Visual Studio for Mac](https://docs.microsoft.com/en-us/visualstudio/mac/installation) topic.
 
 -  [XCode 8.3 or higher](https://developer.apple.com/xcode/).
+
+## Xamarin.Forms reference
+
+The minimum required version of **Xamarin.Forms** package is **3.4**.
+
+>The **Android project** requires multiple packages with specific versions. The **Xamarin.Forms** package will install most of the required packages as its dependencies. You can then go to [Required Android Support Libraries]({% slug required-android-support-libraries %}) article and check if you have all required files and versions.
 
 ## Next Steps
 

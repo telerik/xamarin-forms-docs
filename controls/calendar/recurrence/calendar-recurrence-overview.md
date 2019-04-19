@@ -7,7 +7,7 @@ slug: calendar-recurrence-overview
 
 # Overview
 
-**RadCalendar** provides the functionality to configure repeating appointments. The user has the ability to apply recurring scheduling patterns such as daily, weekly, monthly or set a range of recurrence from date to date. The flexible rule mechanism covers all possible recurrence scenarios. Furthermore, you also have the option to handle the exceptions from this rule.        
+**RadCalendar** provides the functionality to configure repeating appointments. The user has the ability to apply recurring scheduling patterns such as daily, weekly, monthly or set a range of recurrence from date to date. The flexible rule mechanism covers the most common recurrence scenarios. Furthermore, you also have the option to handle the exceptions from this rule.        
 
 The purpose of this overview is to give you a straight-forward way how to create and apply a recurrence pattern, rule and exception. If you want to dive deeper into the recurrence feature of the RadCalendar, check out the following topics:
 

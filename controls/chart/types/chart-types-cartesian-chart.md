@@ -96,6 +96,7 @@ chart.VerticalAxis = new NumericalAxis();
 		</telerikChart:BarSeries>
 	</telerikChart:RadCartesianChart.Series>
 </telerikChart:RadCartesianChart>
+```
 ```C#	
 var series = new BarSeries();
 series.SetBinding(BarSeries.ItemsSourceProperty, new Binding("CategoricalData"));
@@ -131,7 +132,7 @@ First, create the needed business object, for example:
 
 Then create a ViewModel:
 
-<snippet id='chart-series-view-model-2'/>
+<snippet id='chart-series-categorical-data-view-model'/>
 
 Finally use the following snippet to declare a RadPieChart with Pie Series in XAML and in C#:
 

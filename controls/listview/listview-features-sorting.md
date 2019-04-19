@@ -23,7 +23,7 @@ You can sort the data by a property value from the class that defines your busin
 This descriptor enables you to sort by a custom key (e.g. some complex expression combining two or more properties) instead of being limited by the value of a single property. This descriptor exposes the following properties:
 
 - **SortOrder**: Sets the sort order to Ascending or Descending.
-- **KeyLookup**: Defines the IKeyLookup instance used to retrieve the sort key for each data item.
+- **Comparer**: Defines the Compare method used by the internal [IComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icomparer).
 
 ## Example
 

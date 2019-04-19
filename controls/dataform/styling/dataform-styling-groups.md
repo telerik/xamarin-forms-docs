@@ -8,17 +8,17 @@ position: 1
 # Groups Styling
 
 
-The RadDataForm group headers appearance can be customized with the **GroupHeaderStyle** property of type DataFormGroupHeaderStyle.
+The RadDataForm group headers appearance can be customized with the **GroupHeaderStyle** property of type *DataFormGroupHeaderStyle*.
 
 The **DataFormGroupHeaderStyle** class exposes the following properties:  
 
-- **Background** (Color): Gets or sets the background of the group header.
-- **BackgroundImageSource** (ImageSource): Gets or sets a background image for the group header.
-- **Foreground** (Color): Gets or sets the group header text color.
-- **Height** (double): Gets or sets the group header height.
-- **IsCollapsible** (bool): Gets or sets a value that indicates whether the group will be collapsible.
-- **Padding** (Thickness): Gets or sets the group header content padding.
-- **TextAlignment** (TextAlignment): Gets or sets the group header text alignment.
+- **Background**: Specifies the background of the group headers.
+- **BackgroundImageSource** (ImageSource): Sets a background image for the group header.
+- **Foreground**: Determines the group header text color.
+- **Height**: Specifies the group header height.
+- **IsCollapsible**: Indicates whether the group will be collapsible.
+- **Padding**: Sets the group header content padding.
+- **TextAlignment**: Specifies the group header text alignment.
 
 ## Example
 
@@ -39,3 +39,10 @@ Here is the source item class:
 And this is how the DataForm Group Styling looks:
 
 ![](images/dataform-styling-groups.png)
+
+>important Sample examples demonstrating groups styling of DataForm control can be found inside the RadDataForm -> Styling section within the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
+## See Also
+
+- [Editors]({% slug dataform-editors %})
+- [Group Layouts]({% slug dataform-group-layouts %})

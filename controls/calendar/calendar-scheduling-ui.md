@@ -7,7 +7,7 @@ slug: calendar-scheduling-ui
 
 # Scheduling UI #
 
-With R1 2019 release of Telerik UI for Xamarin RadCalendar introduces built-in UI for creation and modification of appointments, so you could provide users with the ability to directly schedule their meetings. 
+With R1 2019 release (version 2019.1.116.1) of Telerik UI for Xamarin RadCalendar introduces built-in UI for creation and modification of appointments, so you could provide users with the ability to directly schedule their meetings. 
 
 This article gives an overview of the available scheduling screens in RadCalendar used for managing meetings.
 

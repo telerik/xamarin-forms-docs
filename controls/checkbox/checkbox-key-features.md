@@ -11,7 +11,7 @@ The purpose of this help article is to show you the key features of the **RadChe
 
 ## CheckBox States
 
-RadCheckBox provides three states – **Checked**, **Unchecked** and **Indeterminate**. The state is controlled through the **IsChecked** property which is of type bool?. The state could be set either through the UI or programmatically as explained below:
+RadCheckBox provides three states – **Checked**, **Unchecked** and **Indeterminate**. The state is controlled through the **IsChecked** property which is of type bool?. **Checked** and **Unchecked** could be set either through the UI or programmatically, while **Indeterminate** could be applied only through code.
 
 * **Checked**/**Unchecked** state - when **IsChecked** is true/false respectively;
 * **Indeterminate** state - when **IsChecked** is null;

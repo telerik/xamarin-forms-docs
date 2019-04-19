@@ -16,7 +16,7 @@ The **CategoricalAxis** inherits from the base **Axis** class. You can see the i
 
 - **Minimum**: Defines the start value of the timeline. Specify DateTime.Minimum to clear the value and force the axis to determine it automatically, depending on the smallest DateTime value present.
 - **Maximum**: Defines the end value of the timeline. Specify DateTime.Maximum to clear the value and force the axis to determine it automatically, depending on the biggest DateTime value present.
-- **PlotMode**: Defines the strategy used to position data points along the axis time slots. Three different options are available: { BetweenTicks, OnTicks }.
+- **PlotMode**: Defines the strategy used to position data points along the axis time slots. Two different options are available: { BetweenTicks, OnTicks }.
 - **MajorStep**: Defines the user-defined step between two adjacent time slots. Specify double.PositiveInfinity to clear the value and make the axis calculate an automatic step, depending on the smallest difference between any two dates.
 - **MajorStepUnit**: Defines what DateTime component the MajorStep property refers to { Year, Quarter, Month, Week, Day, Hour, Minute, Second, Millisecond }.
 - **GapLength**: Defines the distance (in logical units [0,1]) between two adjacent time slots. The default value is 0.3. As an example, if you have two BarSeries combined in Cluster mode, you can remove the space between the bars by setting the GapLength property to 0.

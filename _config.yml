@@ -424,6 +424,10 @@ navigation:
         position: 2
         ## End Gauge Sub-Folders
     ## End Gauge
+    ## ImageEditor
+    controls/imageeditor:
+        title: "ImageEditor"
+    ## End ImageEditor
     ## ListView
     controls/listview:
         title: "ListView"
@@ -445,6 +449,10 @@ navigation:
         position: 15
         ## End ListView Sub-Folders
     ## End ListView
+    ## Map
+    controls/map:
+        title: "Map"
+    ## End Map
     ## SideDrawer
     controls/sidedrawer:
         title: "SideDrawer"

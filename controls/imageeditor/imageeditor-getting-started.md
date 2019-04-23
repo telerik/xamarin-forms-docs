@@ -50,13 +50,7 @@ Take a look at the following topics on how to use the toolbox:
 
 The snippet below shows a simple RadImageEditor definition:
 
-<snippet id='imageeditor-getting-started-xaml' />
-<snippet id='imageeditor-getting-started-csharp' />
-
 In addition to this, you need to add the following namespace:
-
-<snippet id='xmlns-telerikimageeditor'/>
-<snippet id='ns-telerikimageeditor'/>
 
 Finally, set the ImageEditor as content of your page.
 

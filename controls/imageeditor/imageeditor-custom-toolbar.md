@@ -34,4 +34,4 @@ This is the result:
 
 ## See Also
 
-- [Methods]({%slug imageeditor-methods%})
+

@@ -36,7 +36,7 @@ Our suite offers the following controls for cross-platform development with Xama
 - [Entry]({%slug entry-overview %})
 - [Expander]({%slug expander-overview %})
 - [Gauge]({% slug gauge-overview %})
-- [ImageEditor]({% slug imageeditor-overview %})(beta)
+- [ImageEditor]({% slug imageeditor-overview %})
 - [ListView]({% slug listview-overview %})
 - [Map]({% slug map-overview %})
 - [MaskedInput]({% slug maskedinput-overview %})

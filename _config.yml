@@ -426,7 +426,7 @@ navigation:
     ## End Gauge
     ## ImageEditor
     controls/imageeditor:
-        title: "ImageEditor(beta)"
+        title: "ImageEditor"
     ## End ImageEditor
     ## ListView
     controls/listview:

@@ -32,11 +32,11 @@ slug: imageeditor-overview
 * **Support for undo/redo**: RadImageEditor has a history stack with the changes applied to the image. This means that you can reverse and re-apply actions. Read more about this in the History article.
 * **Support for Interactive Pan and Zoom**: RadImageEditor provides pan and zoom functionality that will help you interact with the image and display it in a convenient way.
 * **RadImageEditorToolbar** *(Built-in Toolbar Items)*: You could take advantage of a pre-defined UI automatically wired with all toolbar items provided by the control through built-in functionality.
-* **Custom Toolbar**: The RadImageEditor Toolbar can be fully customized. You could populate the toolbar with the ToolbarItems needed for editing the image. 
+* **Custom Toolbar**: The RadImageEditor Toolbar can be fully customized. You could populate the toolbar with the ToolbarItems needed for editing the image.
 * **Custom Commands**: The control provides and API for adding custom commands to the Toolbar. Check here for more details.
 
 ## See Also
 
 - [Getting Started]({%slug imageeditor-getting-started%})
-- [RadImageEditorToolbar]({%slug imageeditor-toolbar%})
+- [RadImageEditor Toolbar]({%slug imageeditor-toolbar%})
 - [Custom Toolbar]({%slug imageeditor-custom-toolbar%})

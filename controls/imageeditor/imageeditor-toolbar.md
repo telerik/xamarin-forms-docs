@@ -34,4 +34,3 @@ This is the result:
 ## See Also
 
 - [Custom Toolbar]({%slug imageeditor-custom-toolbar%})
-- [Methods]({%slug imageeditor-methods%})

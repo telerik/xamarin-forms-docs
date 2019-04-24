@@ -20,6 +20,10 @@ You could configure which gesture manipulations the user can do with the map thr
 * Zoom;
 * PanAndZoom (default value).
 
+Here is a quick snippet how **InteractionMode** could be applied:
+
+<snippet id='map-interaction-mode-xaml' />
+
 ## Zoom Level Support
 
 RadMap exposes properties for applying min and max zoom values.
@@ -29,15 +33,36 @@ RadMap exposes properties for applying min and max zoom values.
 
 You can check the current magnification through the readonly **ZoomLevel** property.
 
+<snippet id='map-zoom-level-xaml' />
+
+In addition, you can use the method below to set the provided zoom value as the current zoom level of the map:
+
+* void ZoomToLevel(double zoomLevel);
+
 ## Layers
 
+RadMap can display rich spatial data from ESRI shapefiles. Each shapefile should be loaded and configured through a ShapefileLayer instance added to the *Layers* collection of the control. By adding more ShapefileLayers you can visualize different types of elements on the same map.  For detailed information on the matter go to [Layers Overview]() topic.
 
+## Setting the View
+
+If you would like to show a specific area from the map, you can use **SetView** method as described below:
+
+* SetView(LocationRect locationRect) – Sets the provided location as the current view of the map. 
+
+LocationRect class is a special type from the *Telerik.XamarinForms.ShapefileReader* namespace, which describes a rectangle region through the locations of the northwest and southeast points.  
+
+>tip For more details on how points are positioned in the geographic coordinate system, check Layers Overview topic. 
+
+Here is an example how you could utilize SetView method (in the example the used latitude and longitude values are chosen to form a region around Italy):
+
+<snippet id='map-setview-code' />
+
+[screenshot]
 
 ## Hardware Acceleration
 
-The snippet below shows how to set the AnimationDuration, AnimationEasing and Spacing properties:
-
-<snippet id='accordion-key-features-xaml'/>
+RadMap is rendered via the SkiaSharp library and uses by default the hardware-accelerated [SKGLView](https://docs.microsoft.com/en-us/dotnet/api/skiasharp.views.forms.skglview?view=skiasharp-views-forms) class for its drawing. 
+You could easily replace it with the [SKCanvasView](https://docs.microsoft.com/en-us/dotnet/api/skiasharp.views.forms.skcanvasview?view=skiasharp-views-forms) by setting **EnableHardwareAcceleration** to False.
 
 >important A sample Key Features example can be found in the Accordion/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

@@ -2,7 +2,7 @@
 title: Effects
 page_title: Effects
 position: 7
-slug: Effects
+slug: imageeditor-effects
 ---
 
 # Effects

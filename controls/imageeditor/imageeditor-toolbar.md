@@ -37,5 +37,5 @@ This is the result:
 ## See Also
 
 - [Custom Toolbar]({%slug imageeditor-custom-toolbar%})
-- [Editing]({%slug imageeditor-editing%})
+- [Effects]({%slug imageeditor-effects%})
 - [Image Transformations]({%slug imageeditor-image-transformations%})

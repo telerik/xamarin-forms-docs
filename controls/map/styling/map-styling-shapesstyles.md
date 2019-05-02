@@ -53,4 +53,4 @@ Check the result in the screenshot below:
 ## See Also
 
 - [ShapefileLayer]({% slug map-layers-shapefilelayer%})
-- [Labels Styling]({% map-styling-labelstyles %})
+- [Labels Styling]({% slug map-styling-labelstyles %})

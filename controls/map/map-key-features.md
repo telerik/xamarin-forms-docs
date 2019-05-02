@@ -57,7 +57,7 @@ Here is an example how you could utilize SetView method (in the example the used
 
 <snippet id='map-setview-code' />
 
-[screenshot]
+![Map SetView](images/map_getbestview.png)
 
 ## Hardware Acceleration
 
@@ -68,4 +68,6 @@ You could easily replace it with the [SKCanvasView](https://docs.microsoft.com/e
 
 ## See Also
 
-- [AccordionItem Control]({% slug accordion-accordionitem%})
+- [Layers]({% slug map-layers-overview%})
+- [Selection]({% slug map-selection%})
+- [Styling]({% slug map-styling-shapesstyles %})

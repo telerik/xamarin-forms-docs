@@ -452,6 +452,14 @@ navigation:
     ## Map
     controls/map:
         title: "Map"
+    ## Map Sub-Folders
+    controls/map/layers:
+        title: "Layers"
+        position: 3
+    controls/map/styling:
+        title: "Styling"
+        position: 9
+    ## End ListView Sub-Folders
     ## End Map
     ## SideDrawer
     controls/sidedrawer:

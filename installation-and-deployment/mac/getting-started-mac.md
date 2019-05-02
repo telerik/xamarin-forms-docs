@@ -56,7 +56,7 @@ You have to search for the package and select the correct version:
 ![](images/getting-started-mac-add-packages-2.png)
 
 
->important The minimum required version of **Xamarin.Forms** package is **3.4**.
+>important The minimum required version of **Xamarin.Forms** package is **3.6.0.264807**.
 
 >The **Android project** requires multiple packages with specific versions. The **Xamarin.Forms** package will install most of the required packages as its dependencies. You can then go to [Required Android Support Libraries]({% slug required-android-support-libraries %}) article and check if you have all required files and versions.
 

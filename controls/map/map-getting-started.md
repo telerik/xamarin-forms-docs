@@ -50,8 +50,8 @@ Take a look at the following topics on how to use the toolbox:
 
 The snippet below shows a simple RadMap definition:
 
-<snippet id='accordion-getting-started-xaml' />
-<snippet id='accordion-gettingstarted-csharp' />
+<snippet id='map-getting-started-xaml' />
+<snippet id='map-gettingstarted-csharp' />
 
 In addition to this, you need to add the following namespace:
 
@@ -60,7 +60,7 @@ In addition to this, you need to add the following namespace:
 
 This is the result:
 
-![RadMap](images/accordion_getting_started.png)
+![RadMap](images/map_getting_started.png)
 
 >important **SDK Browser** and **QSF** applications contain different examples that show RadMap's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
 

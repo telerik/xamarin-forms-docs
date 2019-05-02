@@ -7,23 +7,39 @@ slug: calendar-selection
 
 # Selection
 
-The RadCalendar supports single selection functionality. The selected date can be changed programmatically or when the user taps on a calendar cell.
+Starting with R2 2019 RadCalendar provides three different types of selection: Single, Multiple and Range. The selected dates can be changed programmatically or when the user taps on a calendar cell.
 
-## Properties
- 
-- **SelectedDate** (DateTime?): Gets or sets the currently selected date.
+>important Multiple and Range selection modes are supported only on Android and iOS.
+
+The following members of RadCalendar control are related to the selection feature:
+
+* **SelectionMode**: Enum property of type *Telerik.XamarinForms.Input.Calendar.CalendarSelectionMode* which indicates what will be the selection. It could receive the following values:
+
+	* **None**: Selection is disabled;
+	* **Single**: Each time a date cell is tapped it becomes selected and if another date cell has already been selected it is unselected;
+	* **Multiple**: Each date cell that is tapped changes its selected state, this means that when a date cell is tapped for first time it gets added to the current selection and when it is tapped again it is removed from the selection.
+	* **Range**: Allows the users to pick a range of consecutive dates, for example to book a hotel for this period. Here's how the control reacts to the user's gestures while in this mode - the first date cell that is tapped gets selected and is considered start of the range. When another cell is tapped, it is considered end of the range and all dates between the start and the end of the range become selected.
+
+* **SelectedDate** (of type *DateTime?*): Defines the currently selected date. When multiple selection is enabled, this value is set to the first selected date. 
+* **SelectedDates** (of type *ObservableCollection&lt;DateTime&gt;*): Reads the collection with the currently selected dates. When the selection is single, only one date could be selected – thus the collection will have count = 1. 
 
 ## Events
 
-- **SelectionChanged** (ValueChangedEventArgs<object>): Occurs when the selected date is changed programmatically or due to user interaction.
+* **SelectionChanged** (ValueChangedEventArgs&lt;object&gt;): Occurs when the selection is changed programmatically or due to user interaction. The SelectionChanged event handler receives two parameters:
 
-## Example
+	* The sender argument which is of type object, but can be cast to the *RadCalendar* type.
+    * A ValueChangedEventArgs&lt;object&gt; object which provides the added and removed dates from the calendar selection through AddedItems and RemovedItems collections.
 
-In the following code snippet the selection is set to a specific cell using the code:
+The snippet belows shows how you could apply **SelectionMode** property to RadCalendar:
 
-	RadCalendar calendar = new RadCalendar();
-	calendar.SelectedDate = new DateTime(2016, 12, 14);
+<snippet id='calendar-selection-xaml' />
 
 The result can be seen on the picture bellow:
 
-![Selection](images/calendar-selection.png "Selection example")
+![Selection Modes](images/calendar-selection.png "Selection example")
+
+## See Also
+
+* [Date Properties]({%slug calendar-date-properties%})
+* [View Modes]({%slug calendar-features-navigation-and-view-mode%})
+* [Events]({%slug calendar-events%})

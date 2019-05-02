@@ -1,0 +1,32 @@
+---
+title: Labels Styling
+page_title: Labels Styling
+position: 0
+slug: map-styling-labelstyles
+---
+
+# Label Styling
+
+The **ShapefileLayer** has a **ShapeLabelStyle** property that is of *MapShapeLabelStyle* type and defines the style of the labels.
+
+MapShapeLabelStyle provides the following properties you could use to customize the way labels on the map will look:
+
+* TextColor
+* FontSize
+* FontFamily
+* FontAttributes
+
+The snippet below shows how ShapeLabelStyle property can be applied:
+
+<snippet id='map-styling-shapelabelstyle' />
+
+Here is the result:
+
+![Map Labels Styling](../images/map_styling_labelsstyle.png)
+
+>important A sample Key Features example can be found in the Accordion/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
+## See Also
+
+- [ShapefileLayer]({% slug map-layers-shapefilelayer%})
+- [Styling]({% slug map-styling-shapesstyles %})

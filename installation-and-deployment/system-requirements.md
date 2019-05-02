@@ -50,7 +50,7 @@ You will be able to develop **Android** and **iOS** apps. The **iOS** apps will 
 
 ## Xamarin.Forms reference
 
-The minimum required version of **Xamarin.Forms** package is **3.4**.
+The minimum required version of **Xamarin.Forms** package is **3.6.0.264807**.
 
 >The **Android project** requires multiple packages with specific versions. The **Xamarin.Forms** package will install most of the required packages as its dependencies. You can then go to [Required Android Support Libraries]({% slug required-android-support-libraries %}) article and check if you have all required files and versions.
 

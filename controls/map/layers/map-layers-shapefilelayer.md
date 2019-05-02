@@ -23,17 +23,19 @@ The above used **MapSource** class provides a few useful static methods that wil
 * FromStream(Stream stream): returns a MapSource from a passed stream.
 * FromFile(string file):  Returns MapSource from a passed string the represents a specific file path.
 
+In addition, **MapShapeReader** provides a read-only **Shapes** property that can be used to get a list of all the shapes that are read from the Source. 
+
 ## Get Best View
 
-ShapefileLayer provides a way to visualize the shapes in such a way that the best view of the layer is achieved through **GetBestView**.
+ShapefileLayer provides a way to visualize the shapes in such a way that the best view of the layer is achieved. The approach is implemented through the **GetBestView** method:
 
 *  LocationRect GetBestView() -  Gets location rectangle which represents best view for the layer.
 
-First, LocationRect class is a special type from the *Telerik.XamarinForms.ShapefileReader* namespace, which describes a rectangle region through the locations of the northwest and southeast points.  
+First, LocationRect class is a special type from the *Telerik.XamarinForms.ShapefileReader* namespace which describes a rectangle region through the locations of the northwest to the southeast points.  
 
 >tip For more details on how points are positioned in the geographic coordinate system, check Layers Overview topic. 
 
-So, through GetBestView method the map will calculate that region that encompasses all the shapes as well as proper zoom level, so that the best view is achieved. After that, you could pass the result directly to the **SetView** method of the Map instance like this:
+So, through GetBestView method the map will calculate that region that encompasses all the shapes as well as apply proper zoom level, so that the best view is achieved. After that, you could pass the result directly to the **SetView** method of the Map instance like this:
 
 <snippet id='map-setbestview-code' />
 
@@ -45,7 +47,7 @@ Check below a quick example:
 
 <snippet id='map-labels-xaml' />
 
-[screenshot]
+![Map ShapeLayer Labels](../images/map_shapelayer_labels.png)
 
 ## Selection
 
@@ -56,11 +58,11 @@ RadMap supports single and multiple selection of shapes to help you draw attenti
 * Single;
 * Multiple.
 
-Read the Selection topic for more details regarding this feature.
+Read the [Selection]({% slug map-selection%}) topic for more details regarding this feature.
 
 ## Styling
 
 ## See Also
 
-- [Selection]({% slug accordion-accordionitem%})
-- [Styling]({% slug accordion-accordionitem%})
+- [Selection]({% slug map-selection%})
+- [Styling]({% slug map-styling-shapesstyles %})

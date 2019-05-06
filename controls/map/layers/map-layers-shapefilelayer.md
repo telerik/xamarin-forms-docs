@@ -33,7 +33,7 @@ ShapefileLayer provides a way to visualize the shapes in such a way that the bes
 
 First, LocationRect class is a special type from the *Telerik.XamarinForms.ShapefileReader* namespace which describes a rectangle region through the locations of the northwest to the southeast points.  
 
->tip For more details on how points are positioned in the geographic coordinate system, check Layers Overview topic. 
+>tip For more details on how points are positioned in the geographic coordinate system, check [Layers Overview]({% slug map-layers-overview %}) topic. 
 
 So, through GetBestView method the map will calculate that region that encompasses all the shapes as well as apply proper zoom level, so that the best view is achieved. After that, you could pass the result directly to the **SetView** method of the Map instance like this:
 
@@ -61,6 +61,8 @@ RadMap supports single and multiple selection of shapes to help you draw attenti
 Read the [Selection]({% slug map-selection%}) topic for more details regarding this feature.
 
 ## Styling
+
+RadMap provides the option to apply various Fill and Stroke colors to the shapes to make the map consistent with the design of the app. For more details check [Styling]({% slug map-styling-shapesstyles %}) article. 
 
 ## See Also
 

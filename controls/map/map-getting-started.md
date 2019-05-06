@@ -30,10 +30,12 @@ You have two options:
 
 | Platform | Assemblies |
 | -------- | ---------- |
-| Portable | Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
-| Android  | Telerik.Xamarin.Android.Common.dll<br/>Telerik.Xamarin.Android.Primitives.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
-| iOS      | Telerik.Xamarin.iOS.dll <br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
-| UWP      | Telerik.Core.dll<br/>Telerik.UI.Xaml.Primitives.UWP.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
+| Portable | Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Map.dll |
+| Android  | Telerik.Xamarin.Android.Common.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Map.dll |
+| iOS      | Telerik.Xamarin.iOS.dll <br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Map.dll |
+| UWP      | Telerik.Core.dll<br/>Telerik.UI.Xaml.Primitives.UWP.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Map.dll |
+
+>important RadMap is rendered via the **SkiaSharp** graphics library so you need to install also [SkiaSharp](https://www.nuget.org/packages/SkiaSharp/) and [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms) in all projects of the Xamarin solution (portable, android, ios, etc). 
 
 ## 3. Adding RadMap control
 
@@ -55,8 +57,8 @@ The snippet below shows a simple RadMap definition:
 
 In addition to this, you need to add the following namespace:
 
-<snippet id='xmlns-telerikprimitives' />
-<snippet id='ns-telerikprimitives' />
+<snippet id='xmlns-telerikmap' />
+<snippet id='ns-telerikmap' />
 
 This is the result:
 

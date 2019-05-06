@@ -25,17 +25,23 @@ The next snippet shows how **SelectionMode** is applied:
 
 <snippet id='map-selection-mode-xaml' />
 
-[screenshot]
+Check below how RadMap with a few selected shapes will look like:
+
+![Map Multiple Selection](images/map_multiple_selection.png)
 
 The snippet below demonstrates how you could select a certain shape programmatically. In the example the used ESRI file contains the world map, so the shape that is selected is a country. The example uses the **Shapes** property of the Map to traverse through all the available shapes.
 
-Let's select/unselect "Australia", for example, on clicking buttons:
+Let's select/unselect "France", for example, on clicking buttons:
 
 <snippet id='map-selectshapes-xaml' />
 
 And here are the event handlers:
 
 <snippet id='map-selection-runtime-code' />
+
+Here is the result:
+
+![Map Programmatic Selection](images/map_programmatic_selection.png)
 
 >important A sample Programmatic Selection example can be found in the Map/Selection folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

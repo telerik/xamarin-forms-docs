@@ -24,7 +24,7 @@ Here is the result:
 
 ![Map Labels Styling](../images/map_styling_labelsstyle.png)
 
->important A sample Key Features example can be found in the Accordion/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+>important A sample Labels Styling example can be found in the Map/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 

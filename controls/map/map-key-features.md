@@ -41,7 +41,7 @@ In addition, you can use the method below to set the provided zoom value as the 
 
 ## Layers
 
-RadMap can display rich spatial data from ESRI shapefiles. Each shapefile should be loaded and configured through a ShapefileLayer instance added to the *Layers* collection of the control. By adding more ShapefileLayers you can visualize different types of elements on the same map.  For detailed information on the matter go to [Layers Overview]() topic.
+RadMap can display rich spatial data from ESRI shapefiles. Each shapefile should be loaded and configured through a ShapefileLayer instance added to the *Layers* collection of the control. By adding more ShapefileLayers you can visualize different types of elements on the same map.  For detailed information on the matter go to [Layers Overview]({% slug map-layers-overview %}) topic.
 
 ## Setting the View
 

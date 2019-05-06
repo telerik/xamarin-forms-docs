@@ -48,7 +48,7 @@ Check the result in the screenshot below:
 
 ![Map ShapeStyleSelector](../images/map_styling_shapestyleselector.png)
 
->important A sample Key Features example can be found in the Accordion/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+>important Sample Shapes Styling examples can be found in the Map/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 

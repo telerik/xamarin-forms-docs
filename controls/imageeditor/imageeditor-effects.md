@@ -1,7 +1,7 @@
 ---
 title: Effects
 page_title: Effects
-position: 7
+position: 6
 slug: imageeditor-effects
 ---
 
@@ -39,6 +39,8 @@ You could apply the following properties to each Effect
 * **TemplateToolbarItem**: Allows displaying an arbitrary content in the toolbar via a DataTemplate. The BindingContext of the created content is set to the currently active tool in the image editor. This allows direct data binding of the components from the template to the properties of the tool. The TemplateToolbarItem exposes the following property:
 	* **Template**(*DataTemplate*): Specifies the DataTemplate of the content to be displayed.
 
+![ImageEditor Effects Toolbar](images/imageeditor-effects-autogenerateitems.png "ImageEditor Effects Toolbar")
+
 ## Example
 
 Example when AutoGenerateItems="True"
@@ -69,13 +71,11 @@ Example when AutoGenerateItems="False"
 </telerikImageEditor:RadImageEditorToolbar>
 ```
 
-![ImageEditor Effects Toolbar](images/imageeditor-effects-autogenerateitems.png "ImageEditor Effects Toolbar")
-
 Visual Structure of the EffectsToolbarItem when AutoGenerateItems = "False" 
 
 ![ImageEditor Effects Toolbar AutoGenerate False](images/imageeditor-effects-autogenerateitems-false.png "ImageEditor Effects Toolbar")
 
 ## See Also
 
--[Image Transformations]({%slug imageeditor-image-transformations%})
--[History]({%slug imageeditor-history%})
+- [Image Transformations]({%slug imageeditor-image-transformations%})
+- [History]({%slug imageeditor-history%})

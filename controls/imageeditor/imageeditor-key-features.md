@@ -5,9 +5,9 @@ position: 2
 slug: imageeditor-key-features
 ---
 
-# Key Features Toolbar
+# Key Features
 
-The purpose of this help article is to show you the key features of the RadPdfViewer control.
+The purpose of this help article is to show you the key features of the RadImageEditor control.
 
 ## Image Source
 

@@ -1,7 +1,7 @@
 ---
 title: History
 page_title: History
-position: 8
+position: 7
 slug: imageeditor-history
 ---
 
@@ -34,5 +34,5 @@ You could apply the following properties for the toolbar items above:
 
 ## See Also
 
--[Image Transformations]({%slug imageeditor-image-transformations%})
--[Effects]({%slug imageeditor-effects%})
+- [Image Transformations]({%slug imageeditor-image-transformations%})
+- [Effects]({%slug imageeditor-effects%})

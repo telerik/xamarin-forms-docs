@@ -24,6 +24,10 @@ Here is a quick snippet how **InteractionMode** could be applied:
 
 <snippet id='map-interaction-mode-xaml' />
 
+where the Source of the MapShapeReader should be defined as well:
+
+<snippet id='map-interactionmode-settintsource' />
+
 ## Zoom Level Support
 
 RadMap exposes properties for applying min and max zoom values.
@@ -34,6 +38,8 @@ RadMap exposes properties for applying min and max zoom values.
 You can check the current magnification through the readonly **ZoomLevel** property.
 
 <snippet id='map-zoom-level-xaml' />
+
+
 
 In addition, you can use the method below to set the provided zoom value as the current zoom level of the map:
 
@@ -51,7 +57,7 @@ If you would like to show a specific area from the map, you can use **SetView** 
 
 LocationRect class is a special type from the *Telerik.XamarinForms.ShapefileReader* namespace, which describes a rectangle region through the locations of the northwest and southeast points.  
 
->tip For more details on how points are positioned in the geographic coordinate system, check Layers Overview topic. 
+>tip For more details on how points are positioned in the geographic coordinate system, check [Layers Overview]({% slug map-layers-overview %}) topic. 
 
 Here is an example how you could utilize SetView method (in the example the used latitude and longitude values are chosen to form a region around Italy):
 

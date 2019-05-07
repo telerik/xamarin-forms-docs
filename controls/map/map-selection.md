@@ -21,9 +21,11 @@ The following members of the [ShapefileLayer]({% slug map-layers-shapefilelayer%
 
 The next snippet shows how **SelectionMode** is applied:
 
->note The snippets below emphasize on concrete features and do not include the complete setup of the Map component. For the full implementation with setting the Map ShapefileLayer check [Getting Started]({% slug accordion-accordionitem%}#3-adding-radmap-control) topic.
-
 <snippet id='map-selection-mode-xaml' />
+
+where the **Source** and the **DataSource** of the MapShapeReader should be defined to a .shp and .dbf files, respectively:
+
+<snippet id='map-selection-settintsource' />
 
 Check below how RadMap with a few selected shapes will look like:
 

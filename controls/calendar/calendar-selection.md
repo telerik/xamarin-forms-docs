@@ -22,6 +22,7 @@ The following members of RadCalendar control are related to the selection featur
 
 * **SelectedDate** (of type *DateTime?*): Defines the currently selected date. When multiple selection is enabled, this value is set to the first selected date. 
 * **SelectedDates** (of type *ObservableCollection&lt;DateTime&gt;*): Reads the collection with the currently selected dates. When the selection is single, only one date could be selected – thus the collection will have count = 1. 
+* **SelectedRange** (of type *Telerik.XamarinForms.Input.Calendar.DateTimeRange*): Used only with **Range** selection to give information on the selected range through its **FromDate** and **ToDate** DateTime properties.
 
 ## Events
 

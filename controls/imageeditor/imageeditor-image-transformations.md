@@ -1,7 +1,7 @@
 ---
 title: Image Transformations
 page_title: Image Transformations
-position: 6
+position: 5
 slug: imageeditor-image-transformations
 ---
 
@@ -26,6 +26,8 @@ You could apply the following properties for each Transform Toolbar Item
 * **CancelToolbarItem**: Cancels the changes from the currently active tool and deactivates it.
 * **TemplateToolbarItem**: Allows displaying an arbitrary content in the toolbar via a DataTemplate. The BindingContext of the created content is set to the currently active tool in the image editor. This allows direct data binding of the components from the template to the properties of the tool. The TemplateToolbarItem exposes the following property:
 	* **Template**(*DataTemplate*): Specifies the DataTemplate of the content to be displayed.
+
+![ImageEditor Transforms Toolbar](images/imageeditor-transforms-autogenerateitems.png "ImageEditor Transforms Toolbar")
 
 ## Example
 
@@ -57,14 +59,12 @@ Example when AutoGenerateItems="False".
 </telerikImageEditor:RadImageEditorToolbar>
 ```
 
-![ImageEditor Transforms Toolbar](images/imageeditor-transforms-autogenerateitems.png "ImageEditor Transforms Toolbar")
-
 Visual Structure of the EffectsToolbarItem when AutoGenerateItems = "False" 
 
 ![ImageEditor Transforms Toolbar AutoGenerate False](images/imageeditor-transforms-autogenerateitems-false.png "ImageEditor Transforms Toolbar")
 
 ## See Also
 
--[Effects]({%slug imageeditor-effects%})
--[History]({%slug imageeditor-history%})
+- [Effects]({%slug imageeditor-effects%})
+- [History]({%slug imageeditor-history%})
 

@@ -62,7 +62,7 @@ This is the result:
 
 ## See Also
 
--[Image Transformations]({%slug imageeditor-image-transformations%})
--[Effects]({%slug imageeditor-effects%})
--[History]({%slug imageeditor-history%})
+- [Image Transformations]({%slug imageeditor-image-transformations%})
+- [Effects]({%slug imageeditor-effects%})
+- [History]({%slug imageeditor-history%})
 

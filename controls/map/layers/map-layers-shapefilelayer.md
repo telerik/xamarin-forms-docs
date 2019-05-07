@@ -47,6 +47,10 @@ Check below a quick example:
 
 <snippet id='map-labels-xaml' />
 
+where the **Source** and the **DataSource** of the MapShapeReader should be defined to a .shp and .dbf files, respectively:
+
+<snippet id='map-labels-settintsource' />
+
 ![Map ShapeLayer Labels](../images/map_shapelayer_labels.png)
 
 ## Selection

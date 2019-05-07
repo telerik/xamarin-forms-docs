@@ -56,7 +56,7 @@ where GetUri() method returns a valid and accessible URL.
 this.pdfViewer.Source = filePath;
 ```
 
-where the filePath variable is a sting that contains the path to the file location.
+where the filePath variable is a string that contains the path to the file location.
 
 In order to make sure that the file exists on the device you could use the following code:
 

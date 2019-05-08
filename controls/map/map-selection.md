@@ -23,7 +23,7 @@ The next snippet shows how **SelectionMode** is applied:
 
 <snippet id='map-selection-mode-xaml' />
 
-where the **Source** and the **DataSource** of the MapShapeReader should be defined to a .shp and .dbf files, respectively:
+where the **Source** and the **DataSource** of the MapShapeReader should be set to a .shp and .dbf files, respectively:
 
 <snippet id='map-selection-settintsource' />
 

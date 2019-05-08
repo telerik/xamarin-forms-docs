@@ -26,9 +26,9 @@ Here is the result:
 
 ![Map Shapes Styling](../images/map_styling_shapestyle.png)
 
-where the **Source** and the **DataSource** of the MapShapeReader should be defined to a .shp and .dbf files, respectively:
+where the **Source** and the **DataSource** of the MapShapeReader should be set to a .shp and .dbf files, respectively:
 
-<snippet id='map-shapesstyle-settintsource' />
+<snippet id='map-labels-settintsource' />
 
 ## Shapes StyleSelector
 

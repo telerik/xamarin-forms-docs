@@ -233,7 +233,12 @@ navigation:
         title: "Getting Started"
     ## End Path
     
-    ## PdfViewer
+    ## PdfProcessing
+    controls/pdfprocessing:
+        title: "PdfProcessing"
+    ## End PdfProcessing
+    
+     ## PdfViewer
     controls/pdfviewer:
         title: "PdfViewer"
     ## End PdfViewer

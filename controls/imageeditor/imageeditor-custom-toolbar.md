@@ -65,4 +65,5 @@ This is the result:
 - [Image Transformations]({%slug imageeditor-image-transformations%})
 - [Effects]({%slug imageeditor-effects%})
 - [History]({%slug imageeditor-history%})
+- [ToolbarItems Styling]({%slug imageeditor-toolbar-items-styling%})
 

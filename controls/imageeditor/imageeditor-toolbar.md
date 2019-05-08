@@ -13,7 +13,8 @@ Tha RadImageEditorToolbar provides tha following properties:
 
 * **AutoGenerateItems**(*bool*): Specifies whether to auto-populate the toolbar with default items. The default value is true.
 * **ImageEditor**(from type *RadImageEditor*): Specifies the image editor this toolbar is attached to. All toolbar items execute their actions against the specified image editor.
-* **OverflowButtonText**(*string*): Specifies the text of the overflow button. 
+* **OverflowButtonText**(*String*): Specifies the text of the overflow button. 
+* **OverflowButtonTextColor**(*Color*): Specifies the text color of the overflow button, which is displayed when there are more buttons than currently visible.
 * **OverflowButtonFontFamily**(*String*): Specifies the font family of the overflow button, which is displayed when there are more buttons than currently visible.
 * **OverflowButtonTemplate**(*DataTemplate*): Specifies the template of the overflow button, which is displayed when there are more buttons than currently visible.
 
@@ -39,3 +40,4 @@ This is the result:
 - [Custom Toolbar]({%slug imageeditor-custom-toolbar%})
 - [Effects]({%slug imageeditor-effects%})
 - [Image Transformations]({%slug imageeditor-image-transformations%})
+- [Toolbar Styling]({%slug imageeditor-toolbar-styling%})

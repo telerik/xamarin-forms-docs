@@ -1,30 +1,58 @@
 ---
 title: ImageEditor ToolbarItems Styling
 page_title: ImageEditor ToolbarItems Styling
-position: 3
+position: 1
 slug: imageeditor-toolbar-items-styling
 ---
 
 # ImageEditor ToolbarItems Styling
 
-The RadImageEditor control comes with various editing capabilities and they could be used as items included in the **RadImageEditorToolbar**.
+The RadImageEditor Toolbar Items could be styled when the Custom Toolbar is created. For more details how to apply custom Toolbar please check the [RadImageEditor Custom Toolbar]({%slug imageeditor-custom-toolbar%}) article.
 
-Tha RadImageEditorToolbar provides tha following properties:
+The following properties could be used for styling each item from the RadImageEditorToolbar:
 
-* **AutoGenerateItems**(*bool*): Specifies whether to auto-populate the toolbar with default items. The default value is true.
-* **ImageEditor**(from type *RadImageEditor*): Specifies the image editor this toolbar is attached to. All toolbar items execute their actions against the specified image editor.
-* **OverflowButtonText**(*string*): Specifies the text of the overflow button. 
-* **OverflowButtonFontFamily**(*String*): Specifies the font family of the overflow button, which is displayed when there are more buttons than currently visible.
-* **OverflowButtonTemplate**(*DataTemplate*): Specifies the template of the overflow button, which is displayed when there are more buttons than currently visible.
-
+* **Text**(*String*): Specifies the text for the concrete toolbar item.
+* **TextColor**(*Color*): Defines the text color for the concrete toolbar item.
+* **SelectedColor**(*Color*): Defines the tex color when the toolbar item is selected.
+* **Font Options** (FontSize, FontFamily, FontAttributes): Defines the font options that are applied to the concrete ImageEditorToolbar Item.
 
 ## Example
 
-Here is an example how to use the default RadImageEditor Toolbar and its properties:
+Here is an example how to style the Custom RadImageEditorToolbar.
 
-Use the following snippet to define the RadImageEditor and RadImageEditor Toolbar:
+The snippet below shows how style the Custom ImageEditorToolbar:
 
-<snippet id='imageeditor-getting-started-xaml'/>
+```XAML
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <telerikImageEditor:RadImageEditor x:Name="imageEditor">
+        <telerikImageEditor:RadImageEditor.Source>
+            <OnPlatform x:TypeArguments="ImageSource" Default="cat4.jpeg">
+                <On Platform="UWP">Assets\cat4.jpeg</On>
+            </OnPlatform>
+        </telerikImageEditor:RadImageEditor.Source>
+    </telerikImageEditor:RadImageEditor>
+    <telerikImageEditor:RadImageEditorToolbar Grid.Row="1" ImageEditor="{x:Reference imageEditor}" AutoGenerateItems="False">
+        <telerikImageEditor:EffectsToolbarItem AutoGenerateItems="False" Text="Effects" TextColor="Black" SelectedColor="White">
+            <telerikImageEditor:ContrastToolbarItem AutoGenerateItems="False" TextColor="Blue">
+                <telerikImageEditor:CancelToolbarItem HorizontalOptions="Start" TextColor="Blue" />
+                <telerikImageEditor:TemplateToolbarItem TextColor="Blue">
+                    <telerikImageEditor:TemplateToolbarItem.Template>
+                        <DataTemplate>
+                            <Slider Maximum="2" Minimum="0" Value="{Binding Value}" />
+                        </DataTemplate>
+                    </telerikImageEditor:TemplateToolbarItem.Template>
+                </telerikImageEditor:TemplateToolbarItem>
+                <telerikImageEditor:ApplyToolbarItem HorizontalOptions="End" TextColor="Blue"/>
+            </telerikImageEditor:ContrastToolbarItem>
+            <telerikImageEditor:BrightnessToolbarItem Text="Brightness" TextColor="LightSeaGreen" SelectedColor="Black"/>
+        </telerikImageEditor:EffectsToolbarItem>
+    </telerikImageEditor:RadImageEditorToolbar>
+</Grid>
+```
 
 In addition to this, you need to add the following namespace:
 
@@ -32,7 +60,7 @@ In addition to this, you need to add the following namespace:
 
 This is the result:
 
-![ImageEditor Toolbar](images/imageeditor-toolbar.png "ImageEditor Toolbar")
+![ImageEditor Toolbar](../images/imageeditor-toolbar-items-styling.png "ImageEditor Toolbar")
 
 ## See Also
 

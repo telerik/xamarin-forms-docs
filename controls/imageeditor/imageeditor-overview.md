@@ -22,18 +22,18 @@ slug: imageeditor-overview
 	* **Image Transformations**
 		* **Crop**
 		* **Resize**
-		* **Rotate**, etc. For more details go to Image Transformation article.
+		* **Rotate**, etc. For more details go to [Image Transformation]({%slug imageeditor-image-transformations%}) article.
 	
 	* **Effects**
 		* **Hue**
 		* **Saturation**
 		* **Brightness**
-		* **Contrast** and many more. For more details check the Effects article.
-* **Support for undo/redo**: RadImageEditor has a history stack with the changes applied to the image. This means that you can reverse and re-apply actions. Read more about this in the History article.
+		* **Contrast** and many more. For more details check the [Effects]({%slug imageeditor-effects%}) article.
+* **Support for undo/redo**: RadImageEditor has a history stack with the changes applied to the image. This means that you can reverse and re-apply actions. Read more about this in the [History]({%slug imageeditor-history%}) article.
 * **Support for Interactive Pan and Zoom**: RadImageEditor provides pan and zoom functionality that will help you interact with the image and display it in a convenient way.
-* **RadImageEditorToolbar** *(Built-in Toolbar Items)*: You could take advantage of a pre-defined UI automatically wired with all toolbar items provided by the control through built-in functionality.
-* **Custom Toolbar**: The RadImageEditor Toolbar can be fully customized. You could populate the toolbar with the ToolbarItems needed for editing the image.
-* **Custom Commands**: The control provides and API for adding custom commands to the Toolbar. Check here for more details.
+* **RadImageEditorToolbar** *(Built-in Toolbar Items)*: You could take advantage of a pre-defined UI automatically wired with all toolbar items provided by the control through built-in functionality. For more details check the [ImageEditorToolbar]({%slug imageeditor-toolbar%}) article.
+* **Custom Toolbar**: The RadImageEditor Toolbar can be fully customized. You could populate the toolbar with the ToolbarItems needed for editing the image. Read more about this [here]({%slug imageeditor-custom-toolbar%}).
+* **Custom Commands**: The control provides and API for adding custom commands to the Toolbar. Check [here]({%slug imageeditor-commands%}) for more details.
 
 ## See Also
 

@@ -427,6 +427,11 @@ navigation:
     ## ImageEditor
     controls/imageeditor:
         title: "ImageEditor"
+        ## ImageEditor Sub-Folders
+    controls/imageeditor/styling:
+        title: "Styling"
+        position: 8
+        ## End ImageEditor Sub-Folders
     ## End ImageEditor
     ## ListView
     controls/listview:
@@ -452,14 +457,14 @@ navigation:
     ## Map
     controls/map:
         title: "Map"
-    ## Map Sub-Folders
+        ## Map Sub-Folders
     controls/map/layers:
         title: "Layers"
         position: 3
     controls/map/styling:
         title: "Styling"
         position: 9
-    ## End ListView Sub-Folders
+        ## End Map Sub-Folders
     ## End Map
     ## SideDrawer
     controls/sidedrawer:

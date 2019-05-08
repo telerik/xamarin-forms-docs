@@ -20,9 +20,9 @@ The snippet below shows how ShapeLabelStyle property can be applied:
 
 <snippet id='map-styling-shapelabelstyle' />
 
-where the **Source** and the **DataSource** of the MapShapeReader should be defined to a .shp and .dbf files, respectively:
+where the **Source** and the **DataSource** of the MapShapeReader should be set to a .shp and .dbf files, respectively:
 
-<snippet id='map-labelstyle-settintsource' />
+<snippet id='map-labels-settintsource' />
 
 Here is the result:
 

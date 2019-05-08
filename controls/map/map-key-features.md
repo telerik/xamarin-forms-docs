@@ -39,8 +39,6 @@ You can check the current magnification through the readonly **ZoomLevel** prope
 
 <snippet id='map-zoom-level-xaml' />
 
-
-
 In addition, you can use the method below to set the provided zoom value as the current zoom level of the map:
 
 * void ZoomToLevel(double zoomLevel);

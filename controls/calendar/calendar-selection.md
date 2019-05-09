@@ -24,13 +24,6 @@ The following members of RadCalendar control are related to the selection featur
 * **SelectedDates** (of type *ObservableCollection&lt;DateTime&gt;*): Reads the collection with the currently selected dates. When the selection is single, only one date could be selected – thus the collection will have count = 1. 
 * **SelectedRange** (of type *Telerik.XamarinForms.Input.Calendar.DateTimeRange*): Used only with **Range** selection to give information on the selected range through its **FromDate** and **ToDate** DateTime properties.
 
-## Events
-
-* **SelectionChanged** (ValueChangedEventArgs&lt;object&gt;): Occurs when the selection is changed programmatically or due to user interaction. The SelectionChanged event handler receives two parameters:
-
-	* The sender argument which is of type object, but can be cast to the *RadCalendar* type.
-    * A ValueChangedEventArgs&lt;object&gt; object which provides the added and removed dates from the calendar selection through AddedItems and RemovedItems collections.
-
 The snippet belows shows how you could apply **SelectionMode** property to RadCalendar:
 
 <snippet id='calendar-selection-xaml' />

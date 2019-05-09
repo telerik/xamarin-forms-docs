@@ -14,8 +14,6 @@ This article introduces the **Telerik UI for Xamarin.Forms Project Wizard**. The
 
 It allows customers to select which platform(s) their application targets and the wizard will automatically reference all required Telerik binaries and packages.
 
->With the official **Q2 2016** release the Project Wizard is included in the automatic installation of the Telerik UI for Xamarin.Forms suite of controls. With the minor release **R1 2017.1.10301** the Project Wizard is integrated with **Visual Studio 2017**.
-
 ## Installing the Project Wizard
 
 In order to have access to the **Project Wizard to Visual Studio**, you need to install the Visual Studio extension that is shipped with the default installation of the **Telerik UI for Xamarin** suite. It can be found in the **VSExtensions** folder as shown below:

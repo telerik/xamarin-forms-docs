@@ -435,7 +435,7 @@ navigation:
         ## ImageEditor Sub-Folders
     controls/imageeditor/styling:
         title: "Styling"
-        position: 8
+        position: 9
         ## End ImageEditor Sub-Folders
     ## End ImageEditor
     ## ListView

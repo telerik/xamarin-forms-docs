@@ -21,9 +21,8 @@ slug: map-overview
 * **Pan and Zooming**: RadMap provides pan and zoom functionality that will help you interact with the view and inspect your data. You could choose between only pan, only zoom or both through *InteractionMode* property. For more details go [here]({% slug map-key-features %}).
 * **Shape Labels**: You can show a label for each shape in the RadMap control through the *LabelAttributeName* property of the ShapefileLayer instance.
 * **Selection**: The control supports single and multiple selection of shapes to help you draw attention on specific areas. Read the [Selection]({% slug map-selection %}) topic for more details regarding this feature.
-* **Commands**: RadMap allows you to replace the default behavior of ZoomIn and ZoomOut commands with a custom implementation. For detailed information on the matter check Commands article. 
+* **Commands**: RadMap allows you to replace the default behavior of ZoomIn and ZoomOut commands with a custom implementation. For detailed information on the matter check [Commands]({% slug map-commands %}) article. 
 * **Shapes Styling**: You could apply various Fill and Stroke colors to the shapes to make the map consistent with the design of your app. For more details check [Styling]({% slug map-styling-shapesstyles %}) article. 
-
 
 ## See Also
 

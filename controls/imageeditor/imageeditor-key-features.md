@@ -41,28 +41,6 @@ In addition to this, you need to add the following namespace:
 
 <snippet id='xmlns-telerikimageeditor'/>
 
-## BusyIndicator Template
-
-A default busy template is shown when the image is loading. You could easily define a custom busy template through the following property:
-
-* **BusyIndicatorTemplate**(*DataTemplate*): Specifies a DataTemplate to be used when displaying a busy indicator during long running asynchronous operations, e.g. when loading an image. When no template is specified, a default busy indicator is shown.
-
-### Example
-
-Here is an example how to use the RadImageEditor BusyIndicatorTemplate:
-
-<snippet id='imageeditor-busy-template'/>
-
-In addition to this, you need to add the following namespace:
-
-<snippet id='xmlns-telerikimageeditor'/>
-
-This is the result:
-
-![ImageEditor BusyTemplate](images/imageeditor-busy-template.png "ImageEditor BusyTemplate")
-
->important **SDK Browser application** contains a sample BusyTemplate example. You can find it in the **ImageEditor/Features** folder.
-
 ## See Also
 
 - [ImageEditor Toolbar]({%slug imageeditor-toolbar%})

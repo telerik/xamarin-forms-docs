@@ -30,10 +30,12 @@ You have two options:
 
 | Platform | Assemblies |
 | -------- | ---------- |
-| Portable | Telerik.XamarinForms.DataControls.dl<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
+| Portable | Telerik.XamarinForms.ImageEditor.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
 | Android  | Telerik.Xamarin.Android.Common.dll<br/>Telerik.Xamarin.Android.Primitives.dll<br/>Telerik.XamarinForms.ImageEditor.dll<br/> Telerik.XamarinForms.Primitives.dll<br/> Telerik.XamarinForms.Common.dll |
 | iOS      | Telerik.Xamarin.iOS.dll <br/>Telerik.XamarinForms.ImageEditor.dll<br/>Telerik.XamarinForms.Primitives.dll<br/>Telerik.XamarinForms.Common.dll |
-| UWP      | Telerik.UI.Xaml.Primitives.UWP.dll<br/>Telerik.XamarinForms.ImageEditor.dll<br/>Telerik.XamarinForms.Primitives.dll |
+| UWP      | Telerik.Core.dll<br/>Telerik.UI.Xaml.Primitives.UWP.dll<br/>Telerik.XamarinForms.ImageEditor.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
+
+>important RadImageEditor is rendered via the **SkiaSharp** graphics library so you need to install also [SkiaSharp](https://www.nuget.org/packages/SkiaSharp/) and [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms) in all projects of the Xamarin solution (portable, android, ios, etc).
 
 ## 3. Adding RadImageEditor control
 
@@ -48,7 +50,7 @@ Take a look at the following topics on how to use the toolbox:
 	
 #### Create the control definition in XAML or C#.
 
-The snippet below shows a simple RadImageEditor definition:
+The snippet below shows a sample RadImageEditor definition:
 
 <snippet id='imageeditor-getting-started-xaml'/>
 <snippet id='imageeditor-getting-started-csharp'/>

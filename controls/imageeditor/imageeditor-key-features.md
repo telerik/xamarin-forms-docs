@@ -13,11 +13,13 @@ The purpose of this help article is to show you the key features of the RadImage
 
 RadImageEditor control enables you to visualize images through the following property
 
-* **Source**(of type *Xamarin.Forms.ImageSource*): Specifies the source of the image.
+* **Source**(of type *Xamarin.Forms.ImageSource*): Specifies the source of the image. For more details about the Source property check the [Images in Xamarin.Forms](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/images?tabs=windows) article.
 
 The images could be loaded from:
+
 * **File**
 * **Uri**
+* **Resource**
 * **Stream**
 
 ## Zoom Level Support
@@ -29,7 +31,7 @@ The RadImageEditor exposes properties for applying min and max zoom values:
 * **MinZoomLevel**(*double*): Specifies the minimum zoom level of the image. The default value is 0.1. Setting the ZoomLevel property is coerced between MinZoomLevel and MaxZoomLevel.
 * **MaxZoomLevel**(*double*): Specifies the maximum zoom level of the image. The default value is 10. Setting the ZoomLevel property is coerced between MinZoomLevel and MaxZoomLevel.
 
->important **SDK Browser application** contains a sample ZoomLevel example. You can find it in the **ImageEditor/Features** folder.
+>important [SDK Browser application](https://testdocs.telerik.com/devtools/xamarin/sdk-browser-overview#sdk-browser-application) contains a sample ZoomLevel example. You can find it in the **ImageEditor/Features** folder.
 
 ### Example
 

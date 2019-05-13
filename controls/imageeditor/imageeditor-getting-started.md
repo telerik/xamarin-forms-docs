@@ -60,6 +60,8 @@ In addition to this, you need to add the following namespace:
 <snippet id='xmlns-telerikimageeditor'/>
 <snippet id='ns-telerikimageeditor'/>
 
+In the example the .jpeg file is loaded from the application project. You could load images from File, Uri, Stream, Resources, for more details check the [Key Features]({%slug imageeditor-key-features%}) article.
+
 This is the result:
 
 ![ImageEditor Getting Started Example](images/imageeditor-getting-started.png "ImageEditor Getting Started Example")

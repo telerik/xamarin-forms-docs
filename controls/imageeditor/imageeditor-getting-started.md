@@ -30,7 +30,7 @@ You have two options:
 
 | Platform | Assemblies |
 | -------- | ---------- |
-| Portable | Telerik.XamarinForms.ImageEditor.dl<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
+| Portable | Telerik.XamarinForms.ImageEditor.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
 | Android  | Telerik.Xamarin.Android.Common.dll<br/>Telerik.Xamarin.Android.Primitives.dll<br/>Telerik.XamarinForms.ImageEditor.dll<br/> Telerik.XamarinForms.Primitives.dll<br/> Telerik.XamarinForms.Common.dll |
 | iOS      | Telerik.Xamarin.iOS.dll <br/>Telerik.XamarinForms.ImageEditor.dll<br/>Telerik.XamarinForms.Primitives.dll<br/>Telerik.XamarinForms.Common.dll |
 | UWP      | Telerik.Core.dll<br/>Telerik.UI.Xaml.Primitives.UWP.dll<br/>Telerik.XamarinForms.ImageEditor.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |

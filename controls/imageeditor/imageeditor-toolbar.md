@@ -7,17 +7,18 @@ slug: imageeditor-toolbar
 
 # ImageEditor Toolbar
 
-The RadImageEditor control comes with various editing capabilities and they could be used as items included in the **RadImageEditorToolbar**.
+The RadImageEditor control comes with various editing capabilities and with the help of the **ImageEditorToolbar** you can provide to the users easy and quick way to edit their images. The default toolbar include items for all the available image editing options, alternatively you could customize the shown editing options according to your needs.
 
-Tha RadImageEditorToolbar provides tha following properties:
+By default the RadImageEditorToolbar Items are auto-populated. You could change this by setting the RadImageEditorToolbar boolean **AutoGenerateItems** to *False*. In this case you will need to manually define the available editing options, for more details check [Custom Toolbar]({%slug imageeditor-custom-toolbar%}) article.
 
-* **AutoGenerateItems**(*bool*): Specifies whether to auto-populate the toolbar with default items. The default value is true.
-* **ImageEditor**(from type *RadImageEditor*): Specifies the image editor this toolbar is attached to. All toolbar items execute their actions against the specified image editor.
+In order to attach the ImageEditor control to the RadImageEditorToolbar control you need to set the **ImageEditor**(from type *RadImageEditor*) property. All toolbar items execute their actions against the specified image editor.
+
+When the ImageEditorToolbarItems can not be fitted in the device screen, OverflowButton is shown in the toolbar. You could customize it through the following properties:
+
 * **OverflowButtonText**(*String*): Specifies the text of the overflow button. 
 * **OverflowButtonTextColor**(*Color*): Specifies the text color of the overflow button, which is displayed when there are more buttons than currently visible.
 * **OverflowButtonFontFamily**(*String*): Specifies the font family of the overflow button, which is displayed when there are more buttons than currently visible.
 * **OverflowButtonTemplate**(*DataTemplate*): Specifies the template of the overflow button, which is displayed when there are more buttons than currently visible.
-
 
 ## Example
 

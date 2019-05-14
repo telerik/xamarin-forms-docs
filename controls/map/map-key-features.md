@@ -11,7 +11,7 @@ The purpose of this help article is to show you the key features of the **RadMap
 
 ## Interaction Modes
 
-RadMap provides pan and zoom functionality that will help you interact with the view and inspect your data. The Map control handles the gestures drag, pinch open and pinch close which respectively cause panning, zooming in and zooming out of the associated plot area.
+RadMap provides pan and zoom functionality that will help you interact with the view and inspect your data. The Map control handles the gestures drag, pinch-open and pinch-close which respectively cause panning, zooming-in and zooming-out of the associated plot area.
 
 You could configure which gesture manipulations the user can do with the map through the enum **InteractionMode** property. InteractionMode can receive the following values:
 

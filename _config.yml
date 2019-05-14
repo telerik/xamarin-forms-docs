@@ -233,9 +233,14 @@ navigation:
         title: "Getting Started"
     ## End Path
     
-    ## PdfViewer
+    ## PdfProcessing
+    controls/pdfprocessing:
+        title: "PdfProcessing"
+    ## End PdfProcessing
+    
+     ## PdfViewer
     controls/pdfviewer:
-        title: "PdfViewer(beta)"
+        title: "PdfViewer"
     ## End PdfViewer
     
     ## Popup
@@ -424,6 +429,15 @@ navigation:
         position: 2
         ## End Gauge Sub-Folders
     ## End Gauge
+    ## ImageEditor
+    controls/imageeditor:
+        title: "ImageEditor"
+        ## ImageEditor Sub-Folders
+    controls/imageeditor/styling:
+        title: "Styling"
+        position: 9
+        ## End ImageEditor Sub-Folders
+    ## End ImageEditor
     ## ListView
     controls/listview:
         title: "ListView"
@@ -445,6 +459,18 @@ navigation:
         position: 15
         ## End ListView Sub-Folders
     ## End ListView
+    ## Map
+    controls/map:
+        title: "Map"
+        ## Map Sub-Folders
+    controls/map/layers:
+        title: "Layers"
+        position: 3
+    controls/map/styling:
+        title: "Styling"
+        position: 9
+        ## End Map Sub-Folders
+    ## End Map
     ## SideDrawer
     controls/sidedrawer:
         title: "SideDrawer"

@@ -23,7 +23,7 @@ Here is an example how to setup the ListView control:
 
 and lets create a simple data for the ListView component:
 
-<snippet id='listview-gettingstarted-source'/>
+<snippet id='listview-styleselector-source'/>
 
 We can set a different style for a specific item using the **ListViewStyleSelector** class. We can use the **OnSelectStyle** method to change the styles of the items in the RadListView control. A sample implementation of a custom class that derives from **ListViewStyleSelector** and overrides its **OnSelectStyle** method is shown below: 
 

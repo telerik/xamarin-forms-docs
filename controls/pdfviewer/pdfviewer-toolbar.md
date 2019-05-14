@@ -1,7 +1,7 @@
 ---
 title: PdfViewer Toolbar
 page_title: PdfViewer Toolbar
-position: 4
+position: 3
 slug: pdfviewer-toolbar
 ---
 

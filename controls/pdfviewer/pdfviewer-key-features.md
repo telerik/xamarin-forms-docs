@@ -11,15 +11,15 @@ The purpose of this help article is to show you the key features of the **RadPdf
 
 ## Pdf Document Visualization
 
-RadPdfViewer control enables you to visualize Pdf documents through the following property:
-
-* **Source** (of type *Telerik.XamarinForms.PdfViewer.DocumentSource*): Defines the source of the document. 
+RadPdfViewer control enables you to visualize Pdf documents through the **Source** property of type *Telerik.XamarinForms.PdfViewer.DocumentSource*. 
 
 The Pdf Document could be loaded from:
 
-* **RadFixedDocument** - it is used to load the pdf document from a stream. 
+* **RadFixedDocument** - it is used to load the pdf document from a stream.
 
->tip Using this approach you have more control over the loading process, for example, you could modify the document after it is imported and before it is assigned as a Source to the PdfViewer control.
+>tip Using this approach you have more control over the loading process, for example, you could modify the document after it is imported and before it is assigned as a Source to the PdfViewer control. For more details check [RadFixedDocument](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/model/radfixeddocument) topic from RadPdfProcessing documentation. 
+
+You could use it in two ways:
 
 <snippet id='pdfviewer-key-features-source-fixed-method' />
 
@@ -48,15 +48,15 @@ Uri uri = this.GetUri();
 this.pdfViewer.Source = new UriDocumentSource(uri);
 ```
 
-* **File**
+where GetUri() method returns a valid and accessible URL.
 
-You can visualize the pdf document from a file located on a device (available since R1 2019 SP). You just need to pass the file path to the *Source* property of the PdfViewer control:
+* **File** - you can visualize the pdf document from a file located on a device (available since R1 2019 SP). You just need to pass the file path to the *Source* property of the PdfViewer control:
 
 ```C#
 this.pdfViewer.Source = filePath;
 ```
 
-where the filePath variable is a sting that contains the path to the file location.
+where the filePath variable is a string that contains the path to the file location.
 
 In order to make sure that the file exists on the device you could use the following code:
 
@@ -78,7 +78,29 @@ this.pdfViewer.Source = new ByteArrayDocumentSource(bytes, true);
 
 * **Stream**
 
+There are two ways:
+
 <snippet id='pdfviewer-key-features-stream' />
+
+or
+```C#
+Assembly assembly = typeof(KeyFeatures).Assembly;
+string fileName = assembly.GetManifestResourceNames().FirstOrDefault(n => n.Contains("pdfviewer-overview.pdf"));
+Stream stream = assembly.GetManifestResourceStream(fileName);
+var streamDocumentSource = new StreamDocumentSource();
+streamDocumentSource.Import(stream);
+this.pdfViewer.Source = streamDocumentSource;
+```
+
+>note If you choose the second approach with StreamDocumentSource, please keep in mind the stream must stay open while the PdfViewer is in use, because the pdf import is [ReadOnDemand](#readondemand-loading). This means that you'd need to manually close the stream when no longer using the PdfViewer.
+
+## ReadOnDemand Loading
+
+RadPdfViewer control provides ReadOnDemand loading of the Pdf document, which means that each page of the document is loaded dynamically when necessary (when needed to be shown in the PdfViewer) and it is unloaded once it becomes invisible. The stream that holds the document stays opened while the document is used in PdfViewer.
+
+## Document Reference
+
+Through the **Document** property of RadPdfViewer you can get a reference to the **RadFixedDocument** imported by the DocumentSource. For more details check [RadFixedDocument](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/model/radfixeddocument) topic from RadPdfProcessing documentation. 
 
 ## Zoom Level Support
 

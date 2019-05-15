@@ -16,7 +16,7 @@ slug: imageeditor-overview
 
 ## Key features
 
-* **Importing and Exporting images**: RadImageEditor allows you to import and export different image formats such as **JPEG, PNG, GIF, BMP**.
+* **Importing and Exporting images**: RadImageEditor allows you to import different image formats such as **JPEG, PNG, GIF, BMP** and export images in **JPEG, PNG** format.
 * **Various image source options**: The control could load images from a Stream, File (as embedded resource, or image located on the device) and URI.
 * **Rich image editing features set**: The control comes with a various editing capabilities: 
 	* **Image Transformations**

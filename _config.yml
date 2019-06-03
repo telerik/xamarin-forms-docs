@@ -467,15 +467,7 @@ navigation:
     ## End Map
     ## SideDrawer
     controls/sidedrawer:
-        title: "SideDrawer"
-        ## SideDrawer Sub-Folders
-    controls/sidedrawer/getting-started:
-        title: "Getting Started"
-        position: 1    
-    controls/sidedrawer/features:
-        title: "Features"
-        position: 5
-        ## End SideDrawer Sub-Folders
+        title: "SideDrawer"      
     ## End SideDrawer
     ## Rating
     controls/rating:

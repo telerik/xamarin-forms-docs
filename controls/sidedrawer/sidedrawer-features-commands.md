@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: Commands
-position: 1
+position: 4
 slug: sidedrawer-features-commands
 ---
 

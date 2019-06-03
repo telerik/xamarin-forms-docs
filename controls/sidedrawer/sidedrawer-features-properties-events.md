@@ -1,7 +1,7 @@
 ---
 title: Properties and Events
 page_title: Properties and Events
-position: 3
+position: 2
 slug: sidedrawer-features-properties-events
 ---
 # Introduction

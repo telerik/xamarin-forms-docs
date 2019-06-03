@@ -277,13 +277,7 @@ navigation:
     ## Barcode
     controls/barcode:
         title: "Barcode"
-        ## Barcode Sub-Folders
-    controls/barcode/getting-started:
-        title: "Getting Started"
-        position: 1
-    controls/barcode/features:
-        title: "Features"
-        position: 2
+        ## Barcode Sub-Folders  
     controls/barcode/supported-types:
         title: "Supported Types"
         position: 3

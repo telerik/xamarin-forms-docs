@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: Commands
-position: 2
+position: 5
 slug: maskedinput-features-commands
 ---
 

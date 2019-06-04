@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events
-position: 2
+position: 6
 slug: maskedinput-features-events
 ---
 

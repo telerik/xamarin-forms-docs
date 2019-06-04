@@ -1,7 +1,7 @@
 ---
 title: Disable a Segment
 page_title: Disable a Segment
-position: 1
+position: 3
 slug: segmentedcontrol-features-disable-segment
 ---
 

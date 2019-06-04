@@ -1,7 +1,7 @@
 ---
 title: Customize Segment Colors
 page_title: Customize Segment Colors
-position: 2
+position: 4
 slug: segmentedcontrol-features-customizesegmentcolors
 ---
 

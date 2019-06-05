@@ -523,12 +523,6 @@ navigation:
     ## MaskedInput
     controls/maskedinput:
         title: "MaskedInput"
-    controls/maskedinput/getting-started:
-        title: "Getting Started"
-        position: 1
-    controls/maskedinput/features:
-        title: "Features"
-        position: 2
     ## End MaskedInput
     ## SlideView
     controls/slideview:

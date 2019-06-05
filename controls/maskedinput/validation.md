@@ -1,7 +1,7 @@
 ---
 title: Validation UI
 page_title: Validation UI
-position: 3
+position: 4
 slug: maskedinput-features-validation
 ---
 
@@ -31,7 +31,7 @@ The way the mask is set, it is mandatory to fill in a digit in the last position
 
 #### **Figure 1: Invalid input error message**
 
-![invalid-input-error](../images/validation-invalid-input.png)
+![invalid-input-error](images/validation-invalid-input.png)
 
 ## RejectedSymbolErrorText
 
@@ -39,7 +39,7 @@ The string set to the **RejectedSymbolErrorText** will be observed in case the i
 
 
 #### **Figure 2: Rejected symbol error message**
-![rejected-symbol-error](../images/validation-rejected-symbol.png)
+![rejected-symbol-error](images/validation-rejected-symbol.png)
 
 ## See Also
 

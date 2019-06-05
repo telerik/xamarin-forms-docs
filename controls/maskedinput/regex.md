@@ -1,7 +1,7 @@
 ---
 title: RegEx Validation
 page_title: Mask Extensions
-position: 1
+position: 3
 slug: maskedinput-features-mask-extensions
 ---
 

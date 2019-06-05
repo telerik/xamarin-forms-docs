@@ -1,7 +1,7 @@
 ---
 title: Tokens Validation
 page_title: Mask Tokens
-position: 0
+position: 2
 slug: maskedinput-features-mask-tokens
 ---
 

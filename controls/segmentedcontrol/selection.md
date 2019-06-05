@@ -4,7 +4,7 @@ page_title: Selection
 description: Selection
 slug: segmentedcontrol-features-selection
 tags: selection
-position: 0
+position: 2
 ---
 
 # Selection

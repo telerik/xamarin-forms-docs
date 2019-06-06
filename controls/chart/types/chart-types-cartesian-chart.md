@@ -6,7 +6,7 @@ slug: chart-types-cartesian-chart
 
 # RadCartesianChart
 
-This chart visualizes its data points using the Cartesian coordinate system. The X and Y axes define how the coordinates of each point in the plot area are calculated and the series type define the way these data points will be visualized.  
+This chart visualizes its data points using the Cartesian coordinate system. The X and Y axes define how the coordinates of each point in the plot area are calculated and the series type defines the way these data points will be visualized.  
 
 ## Properties
 

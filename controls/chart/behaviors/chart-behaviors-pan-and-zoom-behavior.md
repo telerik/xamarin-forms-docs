@@ -29,7 +29,7 @@ With **ChartPanAndZoomBehavior**, RadChart handles the gestures drag, pinch open
 
 ## Example
 
-Here is an example how the Chart PanAndZoom Behavior works:
+Here is an example of how the Chart PanAndZoom Behavior works:
 
 First, create the needed business objects, for example:
 

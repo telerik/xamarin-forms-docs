@@ -83,4 +83,4 @@ Chart can display different labels for the series and axes that are displayed. T
 
 ## Platform-Specific Features ##
 
-You can [customize the control]({% slug chart-how-to-create-custom-renderer %}) for a specific platform by creating an custom renderer.
+You can [customize the control]({% slug chart-how-to-create-custom-renderer %}) for a specific platform by creating a custom renderer.

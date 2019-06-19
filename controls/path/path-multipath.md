@@ -19,8 +19,5 @@ The image below shows the result:
 
 ## See Also
 
-
-
-
-
-
+- [PathGeometry]({% slug path-structure %})
+- [Styling]({% slug path-styling %})

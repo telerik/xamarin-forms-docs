@@ -29,7 +29,7 @@ And the result is shown below:
 
 ## See Also
 
-
+- [PathGeometry]({% slug path-structure %})
 
 
 

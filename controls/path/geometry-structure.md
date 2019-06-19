@@ -30,7 +30,7 @@ The scheme below shows how **StartAngle** and **SweepAngle** are applied to the 
 
 Here is a sample implementation of an **RadArcSegment** object:
 
-<snippet id='path-geometry-assigning-custom-geometry'/>
+<snippet id='path-geometry-simplearc-xaml' />
 
 ### RadLineSegment
 
@@ -40,7 +40,7 @@ The thickness and the color of the line are determined by the **StrokeThickness*
 
 Check below a simple example of how to create a line PathFigure:
 
-<snippet id='path-geometry-line-segment'/>
+<snippet id='path-geometry-simpleline-xaml'/>
 
 ## Example 
 
@@ -48,11 +48,11 @@ The following example shows how to create a more complex **RadPathGeometry** obj
 
 First you should define the **RadPath** figure:
 
-<snippet id='path-geometry-linepath-xaml'/>
+<snippet id='path-geometry-customline-xaml'/>
 
 And then you set its **Geometry** to have the following structure:
 
-<snippet id='path-geometry-set-line-geometry'/>
+<snippet id='path-geometry-customline-segment'/>
 
 Check the screenshot below which shows the result after creating the three Paths:
 

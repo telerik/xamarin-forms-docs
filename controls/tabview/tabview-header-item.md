@@ -2,14 +2,15 @@
 title: TabViewHeaderItem
 page_title: TabViewHeaderItem
 description: TabViewHeaderItem
-slug: tabview-features-tabviewheader
-tags: tabviewheaderitem,header,
-position: 1
+slug: tabview-header-item
+tags: tabviewheaderitem, header,
+position: 4
 ---
 
 # TabViewHeaderItem
 
-The tab strip area of RadTabView contains a special toolbar panel that hosts all **TabViewHeaderItem** elements. The **RadTabView** control exposes a **Header** property which you can use to modify the header's appearance. Each individual **TabViewItem** has a **Header** property as well so you can set a specific **TabViewHeaderItem** for each tab.
+The tab strip area of RadTabView contains a special toolbar panel that hosts all **TabViewHeaderItem** elements. 
+The **RadTabView** control exposes a **Header** property which you can use to modify the header's appearance. Each individual **TabViewItem** has a **Header** property as well so you can set a specific **TabViewHeaderItem** for each tab.
 
 ## Setting the Header's Position
 
@@ -22,10 +23,14 @@ You can customize the appearance of each **TabViewHeaderItem** by replacing its 
 >tip You can alter the control template of the **TabViewHeaderItem** in order to control the color of the selected item. 
 
 ### Example 
+
 <snippet id='tabview-features-tabviewheader-custom-template-xaml'/>
 
-#### **Figure 1: TabViewHeaderItem with custom Control Template**
-![TabViewHeaderItem Template](../images/tabview-customtemplateheaders-gray.png)
+Here is the result how the TabViewHeaderItem with custom Control Template looks:
+
+![TabViewHeaderItem Template](images/tabview-custom-header-item.png)
+
+>important A sample HeaderItem Custom Template example can be found in the TabView/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## Customizing the Overflow Button
 
@@ -43,10 +48,12 @@ This example demonstrates how to replace the default header of the RadTabView co
 
 Additionally, you can work with the already assigned header instead of replacing it with a new one. For example - `tabView.Header.BackgroundColor = Color.Green`. 
 
-#### __Figure 2: Custom TabViewHeader example__  
-![Custom TabViewHeader](../images/overflowbuttons-updated.png)
+Here is how the overflow button looks after customization:  
+
+![Custom Overflow Button](images/tabview-overflow-buttons.png)
+
+>important A sample Overflow Button Customization example can be found in the TabView/Features folder - Tab View Header of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ### See Also
 
-- [Getting Started]({%slug tabview-getting-started%})
-- [TabViewItem]({%slug tabview-features-tabviewitem%})
+- [TabViewItem]({%slug tabview-item%})

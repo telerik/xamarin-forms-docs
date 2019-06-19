@@ -12,10 +12,12 @@ position: 2
 **RadTabView** control exposes the following properties:
 
 * **Items**(*ObservableItemCollection<TabViewItem>*)
-* **IsContentPreserved**: Specifies whether the state of the content will be preserved when the selection is changed.
 * **Header** (*TabViewHeader*): Modify the header appearance.
 * The TabView Header position could be easily changed to top/bottom through the **HeaderPosition**(*TabViewHeaderPosition*) property. The default header position is top. 
 * **SelectedItem**(*object*)
+* **IsContentPreserved**: This property could be used to preserve the tabs content when switching them. In this way the visual state of the components inside each tab wouldn't be reset. When IsContentPreserved is set to True, the tabview does not unload/reload the tabs' content. By default the property is False.
+
+>tip **IsContentPreserved** property is part of the TabView features set from R2 2019 Service Pack.
 
 ## TabView Selection
 

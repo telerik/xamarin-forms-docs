@@ -228,9 +228,7 @@ navigation:
     
     ## Path
     controls/path:
-        title: "Path"
-    controls/path/getting-started:
-        title: "Getting Started"
+        title: "Path"   
     ## End Path
     
     ## PdfProcessing

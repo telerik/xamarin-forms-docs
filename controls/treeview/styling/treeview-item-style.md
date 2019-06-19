@@ -17,7 +17,6 @@ TreeViewItemStyle exposes the following styling options:
 * **BorderColor** (*Color*): sets the color of the border.
 * **BorderWidth** (*double*): defines the width of the borer.
 * **BorderLocation** (*Location*): describes an enumeration describing where the border should be visible.
-* **TextCellTextColor** (*Color*): defines the text color of the ListView TextCell.
 
 ### Location
 

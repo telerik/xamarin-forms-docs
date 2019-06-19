@@ -16,10 +16,10 @@ This article will guide you through the steps needed to add a basic **RadChart**
 
 ## 1. Setting up the app ##
 
-Take a look at these articles and follow the instructions to setup your app:
+Take a look at these articles and follow the instructions to set up your app:
 
-- [Setup app with Telerik UI for Xamarin on Windows]({%slug getting-started-windows%})
-- [Setup app with Telerik UI for Xamarin on Mac]({%slug getting-started-mac%})
+- [Set up app with Telerik UI for Xamarin on Windows]({%slug getting-started-windows%})
+- [Set up app with Telerik UI for Xamarin on Mac]({%slug getting-started-mac%})
 
 ## 2. Adding the required Telerik references ##
 

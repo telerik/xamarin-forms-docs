@@ -26,7 +26,7 @@ You have two options:
 
 * Add the Telerik UI for Xamarin Nuget packages following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
 
-* Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadAccordion** component:
+* Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadBarcode** component:
 
 | Platform | Assemblies |
 | -------- | ---------- |

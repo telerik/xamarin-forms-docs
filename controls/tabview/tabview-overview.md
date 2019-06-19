@@ -9,7 +9,7 @@ position: 0
 
 # Overview
 
-**RadTabView** is a flexible navigation control that allows you to build tabbed interfaces. Each tabview item has an associated content displayed on selection.
+**Telerik TabView for Xamarin** is a flexible navigation control that allows you to build tabbed interfaces. Each tabview item has an associated content displayed on selection.
 
 ![TabView example](images/tabview-overview.png) 
 
@@ -23,3 +23,6 @@ position: 0
 ## See Also
 
 - [Getting Started]({%slug tabview-getting-started%})
+- [Key Features]({%slug tabview-key-features%})
+- [TabViewItem]({%slug tabview-item%})
+- [TabViewHeaderItem]({%slug tabview-header-item%})

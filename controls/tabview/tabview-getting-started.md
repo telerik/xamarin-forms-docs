@@ -58,7 +58,7 @@ In addition to this, you need to add the following namespace:
 <snippet id='xmlns-telerikprimitives'/>
 <snippet id='ns-telerikprimitives'/>
 
-To display something in the tab you can define [TabViewItem]({%slug tabview-features-tabviewitem%}) elements in its **Items** collection.
+To display something in the tab you can define [TabViewItem]({%slug tabview-item%}) elements in its **Items** collection.
 
 To define the header of a TabViewItem you can use its **HeaderText** property as in the example. If you need to show a more complex layout you can use the **Header** property.
 

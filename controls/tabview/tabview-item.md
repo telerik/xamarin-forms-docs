@@ -47,4 +47,4 @@ Here is the result:
 
 ## See Also
 
-- [TabViewHeaderItem]({%slug tabview-headet-item-%})
+- [TabViewHeaderItem]({%slug tabview-header-item%})

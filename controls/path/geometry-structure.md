@@ -60,6 +60,8 @@ Check the screenshot below which shows the result after creating the three Paths
 
 ## See Also
 
+- [MultiPath]({% slug path-multipath %})
+- [Styling]({% slug path-styling %})
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Templated Rating
 page_title: Templated Rating
-position: 3
+position: 4
 slug: templated-rating
 ---
 
@@ -20,4 +20,4 @@ Here is how the rating component can be setup:
 
 <snippet id='rating-templates'/>
 
-![](../images/rating-templates.png)
+![](images/rating-templates.png)

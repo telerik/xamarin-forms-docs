@@ -1,7 +1,7 @@
 ---
 title: Rating Base
 page_title: Rating Base
-position: 1
+position: 2
 slug: rating-base
 ---
 

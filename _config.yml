@@ -35,6 +35,9 @@ navigation:
     cloud-integration:
         title: "Cloud Integration"
         position: 11
+    "api-reference":
+        title: "Api Reference"
+        position: 23
 ## End Root Level
 ## Cloud Integration Sub-Folders
     cloud-integration/azure:
@@ -469,15 +472,7 @@ navigation:
     ## End SideDrawer
     ## Rating
     controls/rating:
-        title: "Rating"
-        ## SideDrawer Sub-Folders
-    controls/rating/getting-started:
-        title: "Getting Started"
-        position: 1
-    controls/rating/features:
-        title: "Features"
-        position: 2
-        ## End SideDrawer Sub-Folders
+        title: "Rating"    
     ## End Rating
     ## SegmentedControl
     controls/segmentedcontrol:
@@ -522,6 +517,8 @@ navigation:
 
 ## The application virtual path
 baseurl: "/devtools/xamarin"
+
+api_reference_url: "api/"
 
 ## The MVC Core version used
 mvcCoreVersion: "2016.2.616"
@@ -588,6 +585,8 @@ footer_social:
     linkedin: https://www.linkedin.com/showcase/telerik/ 
     twitter: https://twitter.com/Telerik/ 
 
+has_kb_portal: true
+    
 # Assets pipeline configuration
 assets:
     cachebust: soft

@@ -588,6 +588,8 @@ footer_social:
     linkedin: https://www.linkedin.com/showcase/telerik/ 
     twitter: https://twitter.com/Telerik/ 
 
+has_kb_portal: true
+    
 # Assets pipeline configuration
 assets:
     cachebust: soft

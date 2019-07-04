@@ -10,7 +10,7 @@ navigation:
 ## Root Level
     "knowledge-base":
         title: "Knowledge Base"
-        position: 13
+        position: 10
     licensing:
         title: "Licensing"
         position: 4
@@ -34,10 +34,7 @@ navigation:
         position: 10
     cloud-integration:
         title: "Cloud Integration"
-        position: 11
-    "api-reference":
-        title: "Api Reference"
-        position: 23
+        position: 11  
 ## End Root Level
 ## Cloud Integration Sub-Folders
     cloud-integration/azure:

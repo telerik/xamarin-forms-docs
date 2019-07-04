@@ -515,8 +515,6 @@ navigation:
 ## The application virtual path
 baseurl: "/devtools/xamarin"
 
-api_reference_url: "api/"
-
 ## The MVC Core version used
 mvcCoreVersion: "2016.2.616"
 

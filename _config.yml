@@ -523,6 +523,8 @@ productName: "Telerik UI for Xamarin"
 product: "Telerik UI for Xamarin"
 platform: xamarin
 
+api_reference_url: "api/"
+
 ## Assign layout and category per different paths
 defaults:
 -

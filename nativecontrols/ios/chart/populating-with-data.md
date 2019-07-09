@@ -15,8 +15,6 @@ Following this approach, we supply <code>TKChart</code> with data using a delega
 
 Here is a sample subclass of <code>TKChartViewController</code> which will provide TKChart with data points for one <code>TKChartLineSeries</code>:
 
-<snippet id='chart-populating-delegate'/>
-<snippet id='chart-populating-delegate-swift'/>
 ```C#
 public class ChartDocsPopulatingWithData : UIViewController
 {

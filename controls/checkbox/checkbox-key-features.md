@@ -19,7 +19,7 @@ RadCheckBox provides three states – **Checked**, **Unchecked** and **Indetermi
 
 The default value of **IsChecked** is false.
 
-Here is an example how you can set the **Indeterminate** state throught the UI when **IsThreeState** is *true*:
+Here is an example how you can set the **Indeterminate** state through the UI when **IsThreeState** is *true*:
 
 <snippet id='checkbox-key-features-ischeckednull-xaml'/>
 

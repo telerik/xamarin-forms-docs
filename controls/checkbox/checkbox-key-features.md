@@ -15,7 +15,7 @@ RadCheckBox provides three states – **Checked**, **Unchecked** and **Indetermi
 
 * **Checked**/**Unchecked** state - when **IsChecked** is true/false respectively;
 * **Indeterminate** state - when **IsChecked** is null;
-* **IsThreeState** (*bool*) - Defines whether the Indeterminate state could be set throught the UI. When set **IsThreeState** to *true* it allowes you to set the **Indeterminate** state through the UI. The default value is false.
+* **IsThreeState** (*bool*) - Defines whether the Indeterminate state could be set throught the UI. When **IsThreeState** is *true* it allows you to set the **Indeterminate** state through the UI. The default value is false.
 
 The default value of **IsChecked** is false.
 

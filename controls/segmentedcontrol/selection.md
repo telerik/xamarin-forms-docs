@@ -48,7 +48,7 @@ Lastly, define the ViewModel as BindingContext of the control:
 
 The screenshot below shows the result on different platforms:
 
-![SegmentedControl selection example](../images/segmentcontrol-features-selection-0.png) 
+![SegmentedControl selection example](images/segmentcontrol-features-selection-0.png) 
 
 ### See Also
 - [Getting Started]({%slug segmentedcontrol-getting-started%})

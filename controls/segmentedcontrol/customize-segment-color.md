@@ -28,8 +28,9 @@ This example shows setting the different segment colors.
 <snippet id='segmentcontrol-features-customizecolors-xaml'/>
 <snippet id='segmentcontrol-features-customizecolors-csharp'/>
 
-#### __Figure 1: Customized segment colors__  
-![SegmentedControl colors customization](../images/segmentcontrol-features-customizecolors-0.png) 
+#### Figure 1: Customized segment colors
+ 
+![SegmentedControl colors customization](images/segmentcontrol-features-customizecolors-0.png) 
 
 ### See Also
 

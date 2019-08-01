@@ -50,7 +50,7 @@ Additionally, you can work with the already assigned header instead of replacing
 
 Here is how the overflow button looks after customization:  
 
-![Custom Overflow Button](images/tabview-overflow-buttons.png)
+![Custom Overflow Button](images/tabview-overflow-button.png)
 
 >important A sample Overflow Button Customization example can be found in the TabView/Features folder - Tab View Header of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

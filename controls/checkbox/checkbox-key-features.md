@@ -11,16 +11,21 @@ The purpose of this help article is to show you the key features of the **RadChe
 
 ## CheckBox States
 
-RadCheckBox provides three states – **Checked**, **Unchecked** and **Indeterminate**. The state is controlled through the **IsChecked** property which is of type bool?. **Checked** and **Unchecked** could be set either through the UI or programmatically, while **Indeterminate** could be applied only through code.
+RadCheckBox provides three states – **Checked**, **Unchecked** and **Indeterminate**. The state is controlled through the **IsChecked** property which is of type bool?. All the states could be set either through the UI or programmatically ( **Indeterminate** could be applied through UI only for three-state checkboxes).
 
 * **Checked**/**Unchecked** state - when **IsChecked** is true/false respectively;
 * **Indeterminate** state - when **IsChecked** is null;
+* **IsThreeState** (*bool*) - Defines whether the Indeterminate state could be applied through the UI. When **IsThreeState** is *true* it allows the end user to go to **Indeterminate** state along with the **Checked** and **Unchecked** states. The default value is false.
 
 The default value of **IsChecked** is false.
 
-Here is an example how you can set the **Indeterminate** state:
+Here is an example how you can set the **Indeterminate** state through the UI when **IsThreeState** is *true*:
 
 <snippet id='checkbox-key-features-ischeckednull-xaml'/>
+
+and the ViewModel:
+
+<snippet id='checkbox-key-features-viewmodel'/>
 
 ## CheckBox Length
 

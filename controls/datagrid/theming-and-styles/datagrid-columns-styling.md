@@ -71,7 +71,7 @@ An example how to set the HeaderStyle property is shown below:
 
 ## CellContentStyle
 
-**CellContentStyle** property defines the appearance of each cell associated with the column. The target type of the Style object depends on the type of the column. For example, for **DataGridTextColumn** it will be **TextBlock** type.  You could go to Column Types section (link to Text Column) to check the TargetType of each column type. The following properties can be used to define the style of the text cell elements:
+**CellContentStyle** property defines the appearance of each cell associated with the column. The target type of the Style object depends on the type of the column. For example, for **DataGridTextColumn** it will be **TextBlock** type.  You could go to Column Types section ([Text Column]({%slug datagrid-columns-text-column%}), for example) to check the TargetType of each column type. The following properties can be used to define the style of the text cell elements:
 
 * **Font Options** (FontAttributes, FontFamily, FontSize):  Define the font of the cell text.
 * **TextColor**/**SelectedTextColor**: Defines the color of the cells text, you could set different value for the selected cell.
@@ -83,7 +83,7 @@ Here is an example how to set the CellContentStyle property:
 
 ## CellDecorationStyle
 
-To style the border of each cell associated with the column the **CellDecorationStyle** property is used. The TargetType property of the Style object is Rectangle. The following properties are used to define the Rectangle Style: BackgroundColor, BorderColor, BorderTickness).
+To style the border of each cell associated with the column the **CellDecorationStyle** property is used. CellDecorationStyle is of type **DataGridBorderStyle** which provides the following properties: BackgroundColor, BorderColor, BorderTickness.
 
 Here is an example how to set those properties on a column:
 

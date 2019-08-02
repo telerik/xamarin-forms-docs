@@ -73,8 +73,6 @@ Another way to configure <code>TKChart</code> data source is to set up data poin
 
 Here is a <code>TKChartColumnSeries</code> with an attached collection of data points:
 
-<snippet id='chart-populating-datapoints'/>
-<snippet id='chart-populating-datapoints-swift'/>
 ```C#
 var chart = new TKChart (CGRect.Inflate (this.View.Bounds, -10, -10));
 this.View.AddSubview (chart);
@@ -98,8 +96,6 @@ In order to support full binding mechanism and minimize the amount of code used 
 
 Binding to an array of custom object is quite easy with TKChart. Once your array is created, you just need to set the necessary members to the desired field. In the code snippet below we create one application specific custom object and bind its data to three line series:
 
-<snippet id='chart-binding-props'/>
-<snippet id='chart-binding-props-swift'/>
 ```C#
 var chart = new TKChart (CGRect.Inflate (this.View.Bounds, -10, -10));
 this.View.AddSubview (chart);
@@ -126,4 +122,4 @@ chart.EndUpdates();
 
 <img src="../images/chart-populating-with-data003.png" />
 
-@warning TKChart by default creates and sets up axes automatically to support this flexible and codeless binding behavior using the data types in the provided data source. You can always change or replace the axis type for TKChartSeries or change it auto-calculated default range.
+> TKChart by default creates and sets up axes automatically to support this flexible and codeless binding behavior using the data types in the provided data source. You can always change or replace the axis type for TKChartSeries or change it auto-calculated default range.

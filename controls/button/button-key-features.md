@@ -41,8 +41,9 @@ The next snippet shows how you can apply the background image.
 
 Here is the end result:
 
-![Button Key Features Example](../images/button-key-features.png)
+![Button Key Features Example](images/button-key-features.png)
 
 ## See Also
 
-- [Button Getting Started]({% slug button-getting-started%})
+- [Circular Button]({%slug button-howto-create-circle-button%})
+- [Button with disabled text color]({%slug button-howto-textcolor-disabled-button%})

@@ -30,9 +30,11 @@ res_type: kb
 </table>
 
 ## Description
+
 This article shows you how to hide the increase and decrease buttons of the Telerik UI for Xamarin `RadNumericInput` control.
 
 ## Solution
+
 In order to hide the buttons, you'll need to define a custom `ControlTemplate` that does not have any buttons. Let's start with the original template.
 
 Note: The XAML defined below relies on the following xmlns to be defined:
@@ -43,6 +45,7 @@ xmlns:numericInput="clr-namespace:Telerik.XamarinForms.Input.NumericInput;assemb
 ```
 
 #### The original ControlTemplate
+
 Here is the entire original `ControlTemplate` for the `RadNumericInput` and its resource dependencies:
 
 ```xml
@@ -126,6 +129,7 @@ Inside the template's root `Grid`, there are two `NumericInputButton` controls. 
 > Any `ControlTemplate` element that is prefixed with "PART_" is almost always a required part. Removing such a part will result in the control not working. For example the `NumericInputEntry` control is named **PART_Entry** and *cannot* be removed.
 
 #### Customing the ControlTemplate
+
 Here is the customized `ControlTemplate` without the buttons, named with a unique **x:Key** of **CustomRadNumericInputControlTemplate**.
 
 ```xml
@@ -176,6 +180,7 @@ Here is the customized `ControlTemplate` without the buttons, named with a uniqu
 > Notice that the resources that were specifically for buttons have been removed as well. Items like the ColumnDefinitions, button styles and column spacing are no longer needed so we can simplify the template.
 
 ### Implementation
+
 Make sure that page has **xmlns:telerikInput** defined:
 
 ```xml

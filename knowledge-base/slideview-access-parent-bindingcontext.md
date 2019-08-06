@@ -24,9 +24,11 @@ res_type: kb
 
 
 ## Description
+
 The **RadSlideView** uses `ContentView` for the slides, these ContentViews do not have scope to BindingContext of the visual parents (e.g. the SlideView or parent page). This has the consequence of not being able to bind any ContentView content to a page view model.
 
 ## Solution
+
 You can solve this by using a static helper class to share a BindingContext reference. The static class only needs one public static `object` property:
 
 ### Example Helper Class
@@ -43,6 +45,7 @@ public static class BindingContextHelper
 When the RadSlideView parent's BindingContext is set, you can set the helper class's property. In this example, we'll use a ContentPage.
 
 Model
+
 ```csharp
 public class MyItem
 {
@@ -51,6 +54,7 @@ public class MyItem
 ```
 
 ViewModel
+
 ```csharp
 public class ViewModel
 {
@@ -71,6 +75,7 @@ public class ViewModel
 ```
 
 View
+
 ```xml
 <telerikPrimitives:RadSlideView ItemsSource="{Binding MyItems}">
   <telerikPrimitives:RadSlideView.ItemTemplate>
@@ -102,4 +107,3 @@ public partial class MainPage : ContentPage
     }
 }
 ```
-

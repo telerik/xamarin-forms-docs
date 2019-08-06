@@ -24,9 +24,11 @@ res_type: kb
 
 
 ## Description
+
 Is it possible to set rounded corners on the outer buttons on Android and UWP like seen on iOS?
 
 ## Solution
+
 RadSegmentedControl does not provide such an option itself, however, you could achieve it using our [RadBorder control](https://docs.telerik.com/devtools/xamarin/controls/border/border-overview). All you need to do is to wrap SegmentedControl inside Border and set a few color properties. 
 
 Here is a quick example:

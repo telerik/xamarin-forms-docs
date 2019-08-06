@@ -74,7 +74,6 @@ The table below shows the differences between the features in the RadAutoComplet
 
 ### Control declaration:
 
-
 - AutoCompleteView
 
 ```XAML

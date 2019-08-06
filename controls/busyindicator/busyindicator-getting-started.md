@@ -58,11 +58,8 @@ Proceed with defining the component:
 <snippet id='busyindicator-getting-started-xaml'/>
 <snippet id='busyindicator-getting-started-csharp'/>
 
-#### __Figure 1: RadBusyIndicator when IsBusy is True__  
-![BusyIndicator example](images/busyindicator-gettingstarted-0.png)
-
-#### __Figure 2: RadBusyIndicator when IsBusy is False__  
-![BusyIndicator example](images/busyindicator-gettingstarted-1.png)
+#### Figure 1: RadBusyIndicator when IsBusy is True 
+![BusyIndicator example](images/busyindicator-getting-started.png)
 
 >important **SDK Browser** and **QSF** applications contain different examples that show RadBusyIndicator's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
 

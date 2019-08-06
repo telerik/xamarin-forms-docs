@@ -309,12 +309,6 @@ navigation:
     controls/button:
         title: "Button"
         ## Button Sub-Folders
-    controls/button/getting-started:
-        title: "Getting Started"
-        position: 1
-    controls/button/features:
-        title: "Features"
-        position: 2
     controls/button/howto:
         title: "How To"
         position: 3

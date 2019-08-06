@@ -1,7 +1,7 @@
 ---
 title: Key Features
 page_title: Key Features
-position: 0
+position: 2
 slug: button-key-features
 ---
 

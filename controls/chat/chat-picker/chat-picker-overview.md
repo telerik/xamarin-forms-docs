@@ -48,7 +48,7 @@ Then, when you need to display any of the available pickers, you will have to se
 			
 When the user chooses a date, the Context is reset to null and a new TextMessage with the SelectedDate can be added to the conversation.
 
-#### Figure 2: RadChat with DatePicker as an overlay
+#### Figure 2: RadChat with DatePicker between the entry and the conversation
 
 ![](images/chat_picker_1.png)
 

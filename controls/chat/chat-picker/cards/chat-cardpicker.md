@@ -20,7 +20,7 @@ Depending on the information that is presented, the **CardContext** can be one o
 
 Here is a quick example with BasicCardContext:
 
-<snippet id='chat-chatpicker-cardpicker-1' />
+<snippet id='chat-chatpicker-cardpicker-pickeritem' />
 
 And the used GetCards() method:
 
@@ -46,13 +46,13 @@ Each card allows you to add a certain action that can be handled through a comma
 
 **CardActionContext** provides the following properties:
 
-* Text -represents the action inside the Card layout;
+* Text - represents the action inside the Card layout;
 * Command - the command that is raised when the user selects that action;
 * Data - can be used to preserve additional details if needed;
 
 The next snippet uses the Cards defined in the previous example and add Actions to them.
 
-<snippet id='chat-chatpicker-cardpicker-2' />
+<snippet id='chat-chatpicker-cardpicker-getcards' />
 
 #### Figure 2: RadChat with BasicCard with Actions
 

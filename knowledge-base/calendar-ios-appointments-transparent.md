@@ -26,10 +26,12 @@ res_type: kb
 
 
 ## Description
+
 With the default style the background of the appointments on iOS is semi-transparent in DayView mode. This makes it not possible to define white background to appointments. 
 You could check how appointments look by default on Android and iOS here: [Calendar &amp; Scheduling Appointments]({%slug calendar-appointments %}).
 
 ## Solution
+
 To remove the semi-transparency, you would need a custom renderer on iOS and in it change the DataSource of the DayView. In the custom DataSource override UpdateCell method and inside it you will find Transparency property of the cell style:
 
 ```C#
@@ -63,4 +65,3 @@ namespace XamarinApp2.iOS
     }
 }
 ```
-

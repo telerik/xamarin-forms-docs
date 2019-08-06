@@ -26,9 +26,11 @@ res_type: kb
 
 
 ## Description
+
 Telerik UI for Xamarin Nuget package is hosted on a private server, it is not published in the official NuGet storage. So, when you're building a Xamarin.Forms application with our Xamarin nuget package in AppCenter, you would need to provide the credentials to the Telerik Nuget Server (they are the same as in your Telerik account) inside a Nuget.config file.
 
 ## Solution
+
 You could check how to setup the Nuget.config file in the MSDN topic below:
 https://docs.microsoft.com/en-us/nuget/reference/nuget-config-file#package-source-sections
 

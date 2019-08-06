@@ -23,6 +23,7 @@ res_type: kb
 </table>
 
 ## Description
+
 How can I enable Range Selection mode for RadCalendar in Xamarin.Forms?
 
 ## Solution
@@ -134,6 +135,7 @@ namespace YourApplication.Portable.Effects
     }
 }
 ```
+
 >note If you prefer, the value used for "YourCompany" in `base("YourCompany.RangeSelectionEffect")` can be changed, just make sure to change it in each of the PlatformEffect classes, too. This attribute is the **ResolutionGroupName** and sets a company wide namespace for effects, preventing collisions with other effects with the same name. Note that this attribute can only be applied once per project.
 
 #### View
@@ -168,7 +170,6 @@ Now, add the Effect to the RadCalendar's instance and give it an x:Name so . Thi
 
 The view's code-behind contains a Button click handler to update the Effect's StartDate and EndDate. 
 
-
 ```C#
 using System;
 using Xamarin.Forms;
@@ -197,6 +198,7 @@ namespace YourApplication.Portable
     }
 }
 ```
+
 >note The example uses RadCalendar's `DisplayDate` value to calculate `StartDate` and `EndDate`, this is just for demonstration purposes and can be a DateTime value of your choice.
 
 ### Part 2 - Platform Effects
@@ -220,7 +222,6 @@ The same pattern is used for all the platforms, the main difference are the prop
 #### UWP Platform Effect
 
 If you have a UWP project, add a new folder named "Effects" to the project root and then add the following class to the folder.
-
 
 ```C#
 using System.Linq;
@@ -274,11 +275,9 @@ namespace RangeSelectionTest.UWP.Effects
 
 ```
 
-
 #### Android Platform Effect
 
 If you have an Android project, If you have a UWP project, add a new folder named "Effects" to the project root and then add the following class to the folder.
-
 
 ```C#
 using System;
@@ -332,6 +331,7 @@ namespace RangeSelectionTest.Android.Effects
     }
 }
 ```
+
 >note The .NET `DateTime` values passed via the event args are converted to TimeInMilliseconds via a Java `Calendar` and applied to a `DateRange` instance.
 
 #### iOS Platform Effect
@@ -395,13 +395,12 @@ namespace YourApplication.iOS.Effects
     }
 }
 ```
+
 >note The .NET `DateTime` values passed via the event args need to be converted to an iOS `NSDate` which get used for a `TKDateRange`
 
 ### Conclusion
 
 The approach is now complete and you're now ready to build and deploy. You can find a runnable version of this demo [here on GitHub](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/RangeSelectionTest).
-
-
 
 ## See Also
 - [UI for Xamarin (Xamarin.Forms) - RadCalendar Overview]({%slug calendar-overview %})

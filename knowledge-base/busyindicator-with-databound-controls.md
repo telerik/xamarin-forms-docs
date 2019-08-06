@@ -52,10 +52,9 @@ A scenario this problem will occur is when the BusyIndicator Content contains a 
         </Grid>
     </primitives:RadBusyIndicator.Content>
 </primitives:RadBusyIndicator>
-
 ```
 
-**After (*recommended*)**
+**After** (*recommended*)
 
 ```XML
 <Grid>
@@ -69,8 +68,9 @@ A scenario this problem will occur is when the BusyIndicator Content contains a 
 </Grid>
 ```
 
-#### Result   
-![BusyIndicator example](../images/busyindicator-troubleshooting-0.png)
+#### Result
+
+![BusyIndicator example](images/busyindicator-troubleshooting-0.png)
 
 ### See Also
 

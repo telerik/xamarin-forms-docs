@@ -23,19 +23,24 @@ res_type: kb
 
 
 ## Description
+
 This article shows which event you could handle when the end user removes any of the selected in RadAutoCompleteView tokens by tapping on the clear button. 
 
 ## Solution
+
 You would need to subscribe to the CollectionChanged event of the Tokens collection of the AutoCompleteView control. Here is a quick snippet which demonstrates the approach:
 
-	autoCompleteView.Tokens.CollectionChanged += TokensCollectionChanged;
+```C#
+autoCompleteView.Tokens.CollectionChanged += TokensCollectionChanged;
+```
 
 and the TokensCollectionChanged event handler:
 
-	private void TokensCollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
-	{
-		var removedTokens = e.OldItems;        
-	}
+```C#
+private void TokensCollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+{
+	var removedTokens = e.OldItems;        
+}
+```
 
 Through the *NotifyCollectionChangedEventArgs* you could find the added/removed items from the collection.
-

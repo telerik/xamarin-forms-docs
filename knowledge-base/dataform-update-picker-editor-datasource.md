@@ -68,6 +68,7 @@ This loading only happens once, when the DataForm loads and it is not  possible 
 To be able to dynamically update PickerEditor's items, you can redesign where the data comes.  Instead of returning an explicitly defined list the PropertyDataProvider, you can move the responsibility of the data source to a separate class or service and return items from the service. 
 
 ### Example
+
 In this example, we'll use a `CampusLocationsDataService` class to provide the data. It has two public methods:
 
 - **GetCampusLocations** - Returns the current locations list
@@ -116,7 +117,6 @@ public class MyDataFormDataProvider : PropertyDataSourceProvider
     }
 }
 ```
-
 
 Finally, in the View, to demonstrate updating the data source, we'll use a Button clicked event handler to add an item to the data service and then reload the DataForm.
 
@@ -170,7 +170,6 @@ public partial class MainPage : ContentPage
 }
 ```
 
-
 If you run the application, the initial **PickerEditor** will show three items:
 - "Boston"
 - "NYC"
@@ -181,7 +180,6 @@ After you click the button, the location "Paris" is added to the data source:
 ```csharp
 CampusLocationsDataService.Instance.AddCampusLocation("Paris");
 ```
-
 
 Finally, the RadDataForm's properties are refreshed by using the following sequence:
 
@@ -197,9 +195,6 @@ This forces the DataForm to recreate the editors, which causes the **PropertyDat
 - "NYC"
 - "Dallas"
 - **"Paris"**
-
- 
-
 
 ## See Also
 also goes here

@@ -15,34 +15,17 @@ RadChat allows you to attach commands that will be executed when certain actions
 
 You could take advantage of the SendMessageCommand that is triggered by two actions  when the send-message button is clicked. The command is raised before the Chat auto-creates a ChatItem and adds it to the Items. 
 
-Here is quick example on how to define to defind a command in the ViewModel and bind the SendMessageCommand to it:
+Here is a quick example on how to define a command in the ViewModel and bind the SendMessageCommand to it:
 
-	public ViewModel()
-	{         
-		this.Items = new ObservableCollection<ChatItem>();
-		this.NewMessageCommand = new Command(NewMessageCommandExecute);
-	}
-	
-	public ICommand NewMessageCommand { get; set; }
-	public IList<ChatItem> Items { get; set; }
-	
+<snippet id='chat-commands-viewmodel' />
+
 And the command Execute method:
 
-	private void NewMessageCommandExecute(object obj)
-	{
-		var newMessage = (string)obj;
-		//any additional logic you need to implement
-	}
-	
+<snippet id='chat-commands-executemethod' />
+
 Following the definition of RadChat components:
-	
-	<telerikConversationalUI:RadChat x:Name="chat"                                 
-                            ItemsSource="{Binding Items}"                            
-                            SendMessageCommand="{Binding NewMessageCommand}">  
-		<telerikConversationalUI:RadChat.BindingContext>
-			<local:ViewModel />
-		</telerikConversationalUI:RadChat.BindingContext>
-	</telerikConversationalUI:RadChat>
+
+<snippet id='chat-commands-xaml' />
 
 ## ChatPicker Commands
 

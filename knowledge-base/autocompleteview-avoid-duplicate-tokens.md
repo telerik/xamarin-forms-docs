@@ -24,9 +24,11 @@ res_type: kb
 
 
 ## Description
+
 What is the best way to avoid adding duplicate tokens to Tokens collection RadAutoCompleteView?
 
 ## Solution
+
 You could use SuggestionItemSelected event to remove the item - this event is fired before the item is actually added to the Tokens collection, so, if you call directly in its handler the Remove method of the Tokens collection, it will remove the second time the item is added.  Here is a sample snippet:
 
 ```XAML

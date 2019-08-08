@@ -34,6 +34,17 @@ The snippet below shows how to set the AnimationDuration, AnimationEasing and Sp
 
 <snippet id='accordion-key-features-xaml'/>
 
+In addition to this, you need to add the following namespace:
+
+```XAML
+xmlns:telerikBusyIndicator="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
+```C#
+using Telerik.XamarinForms.Primitives;
+using Telerik.XamarinForms.Input;
+```
+
 >important A sample Key Features example can be found in the Accordion/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also

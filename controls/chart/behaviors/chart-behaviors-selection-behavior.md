@@ -38,7 +38,7 @@ slug: chart-behaviors-selection
 
 ## Example
 
-Here is an example how the Chart Selection Behavior works:
+Here is an example of how the Chart Selection Behavior works:
 
 First, create the needed business objects, for example:
 

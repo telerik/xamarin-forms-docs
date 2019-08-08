@@ -20,7 +20,7 @@ slug: chart-behaviors-trackball
 
 ## Example
 
-Here is an example how the Chart TrackBall Behavior works:
+Here is an example of how the Chart TrackBall Behavior works:
 
 First, create the needed business objects, for example:
 

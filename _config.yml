@@ -10,7 +10,7 @@ navigation:
 ## Root Level
     "knowledge-base":
         title: "Knowledge Base"
-        position: 13
+        position: 10
     licensing:
         title: "Licensing"
         position: 4
@@ -34,7 +34,7 @@ navigation:
         position: 10
     cloud-integration:
         title: "Cloud Integration"
-        position: 11
+        position: 11  
 ## End Root Level
 ## Cloud Integration Sub-Folders
     cloud-integration/azure:
@@ -228,9 +228,7 @@ navigation:
     
     ## Path
     controls/path:
-        title: "Path"
-    controls/path/getting-started:
-        title: "Getting Started"
+        title: "Path"   
     ## End Path
     
     ## PdfProcessing
@@ -277,13 +275,7 @@ navigation:
     ## Barcode
     controls/barcode:
         title: "Barcode"
-        ## Barcode Sub-Folders
-    controls/barcode/getting-started:
-        title: "Getting Started"
-        position: 1
-    controls/barcode/features:
-        title: "Features"
-        position: 2
+        ## Barcode Sub-Folders  
     controls/barcode/supported-types:
         title: "Supported Types"
         position: 3
@@ -317,12 +309,6 @@ navigation:
     controls/button:
         title: "Button"
         ## Button Sub-Folders
-    controls/button/getting-started:
-        title: "Getting Started"
-        position: 1
-    controls/button/features:
-        title: "Features"
-        position: 2
     controls/button/howto:
         title: "How To"
         position: 3
@@ -473,27 +459,11 @@ navigation:
     ## End Map
     ## SideDrawer
     controls/sidedrawer:
-        title: "SideDrawer"
-        ## SideDrawer Sub-Folders
-    controls/sidedrawer/getting-started:
-        title: "Getting Started"
-        position: 1    
-    controls/sidedrawer/features:
-        title: "Features"
-        position: 5
-        ## End SideDrawer Sub-Folders
+        title: "SideDrawer"      
     ## End SideDrawer
     ## Rating
     controls/rating:
-        title: "Rating"
-        ## SideDrawer Sub-Folders
-    controls/rating/getting-started:
-        title: "Getting Started"
-        position: 1
-    controls/rating/features:
-        title: "Features"
-        position: 2
-        ## End SideDrawer Sub-Folders
+        title: "Rating"    
     ## End Rating
     ## SegmentedControl
     controls/segmentedcontrol:
@@ -510,14 +480,6 @@ navigation:
     ## TabView
     controls/tabview:
         title: "TabView"
-        ## TabView Sub-Folders
-    controls/tabview/getting-started:
-        title: "Getting Started"
-        position: 1
-    controls/tabview/features:
-        title: "Features"
-        position: 2
-        ## End TabView Sub-Folders
     ## End TabView
    ## TreeView
     controls/treeview:
@@ -537,12 +499,6 @@ navigation:
     ## MaskedInput
     controls/maskedinput:
         title: "MaskedInput"
-    controls/maskedinput/getting-started:
-        title: "Getting Started"
-        position: 1
-    controls/maskedinput/features:
-        title: "Features"
-        position: 2
     ## End MaskedInput
     ## SlideView
     controls/slideview:
@@ -560,6 +516,8 @@ mvcCoreVersion: "2016.2.616"
 productName: "Telerik UI for Xamarin"
 product: "Telerik UI for Xamarin"
 platform: xamarin
+
+api_reference_url: "api/"
 
 ## Assign layout and category per different paths
 defaults:
@@ -618,6 +576,8 @@ footer_social:
     linkedin: https://www.linkedin.com/showcase/telerik/ 
     twitter: https://twitter.com/Telerik/ 
 
+has_kb_portal: true
+    
 # Assets pipeline configuration
 assets:
     cachebust: soft

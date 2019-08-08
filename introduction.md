@@ -42,6 +42,7 @@ Our suite offers the following controls for cross-platform development with Xama
 - [MaskedInput]({% slug maskedinput-overview %})
 - [NumericInput]({%slug numericinput-overview %})
 - [Path]({% slug path-overview %})
+- [PdfProcessing]({% slug radpdfprocessing-overview %}) 
 - [PdfViewer]({% slug pdfviewer-overview %})
 - [Popup]({% slug popup-overview %})
 - [Rating]({% slug rating-overview%})

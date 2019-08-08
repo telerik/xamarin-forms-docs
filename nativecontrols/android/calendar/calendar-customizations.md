@@ -147,9 +147,10 @@ all Sundays in Red:
 
 
 ```C#
-    Calendar calendar = Calendar.GetInstance(Java.Util.TimeZone.Default);
-    calendarView.DateToColor = new DateToColorExample ();
-    // ...
+Calendar calendar = Calendar.GetInstance(Java.Util.TimeZone.Default);
+calendarView.DateToColor = new DateToColorExample ();
+// ...
+
 class DateToColorExample : Java.Lang.Object, IFunction
 {
     private Java.Util.Calendar calendar = Java.Util.Calendar.Instance;
@@ -164,54 +165,57 @@ class DateToColorExample : Java.Lang.Object, IFunction
     }
 }
 ```
-<snippet id='calendar-customizations-date-to-color-class'/>
 
-When the returned value is `null` the default value is used:
+When the returned value is *null* the default value is used:
 
-![TelerikUI-Calendar-Special-Dates-2](images/calendar-customizations-4.png "This is how you can change the color of some of the dates in RadCalendarView.")
+![Telerik Calendar Special Dates](images/calendar-customizations-4.png)
 
 ## Editing the visible elements
 
 ### Title and DayNames
 
-The Week and the Month views of **RadCalendarView** contain three visual elements: title, a row with the names of the days and the actual dates from the month. The Year view contains two elements: title and months. You can disable
-the title that is presented in all of the modes by using the **setShowTitle(boolean)** method and check the current state by using **getShowTitle()**. Similarly you can remove the row with the names of the days which is present
-in both week and month views by using **setShowDayNames(boolean)**. You can get a value which represents whether the day names are shown by calling the method **getShowDayNames()**.
+The Week and the Month views of **RadCalendarView** contain three visual elements: title, a row with the names of the days and the actual dates from the month. The Year view contains two elements: title and months. You can disable the title that is presented in all of the modes by using the **setShowTitle(boolean)** method and check the current state by using **getShowTitle()**. 
+
+Similarly you can remove the row with the names of the days which is present in both week and month views by using **setShowDayNames(boolean)**. You can get a value which represents whether the day names are shown by calling the method **getShowDayNames()**.
+
 You can also use XML attributes for setting whether the title and the day names are visible. Their names are **showTitle** and **showDayNames**.
 
 ### Grid Lines
 
-Another visual element of **RadCalendarView** is the layer which is responsible for drawing grid lines. You can easily remove the grid lines by using the method **setShowGridLines(boolean)** and get the current state with
-**getShowGridLines()**. The XML attribute which can be used to control whether the grid lines are visible is **showGridLines**. The default **GridLinesLayer** provides method for changing the color that is used for the grid lines, as well as their width. These methods are **setColor(int)** and **setStrokeWidth(float)**.
+Another visual element of **RadCalendarView** is the layer which is responsible for drawing grid lines. You can easily remove the grid lines by using the method **setShowGridLines(boolean)** and get the current state with **getShowGridLines()**. 
+
+The XML attribute which can be used to control whether the grid lines are visible is **showGridLines**. The default **GridLinesLayer** provides method for changing the color that is used for the grid lines, as well as their width. These methods are **setColor(int)** and **setStrokeWidth(float)**.
+
 These methods are implemented in the layer, whose instance you can take with calendar's **getGridLinesLayer()**. This means that this way you can change the lines to `Green`, for example:
 
-
 ```C#
-	calendarView.GridLinesLayer.Color = Color.Green;
+calendarView.GridLinesLayer.Color = Color.Green;
 ```
 
-If you are not happy with the default implementation of this layer, you can create your own layer which extends **GridLinesLayer** and overrides its methods. After you create your implementation, you can set an instance of your layer to the
-calendar by using its **setGridLinesLayer(GridLineLayer)** method.
+If you are not happy with the default implementation of this layer, you can create your own layer which extends **GridLinesLayer** and override its methods. After you create your implementation, you can set an instance of your layer to the calendar by using its **setGridLinesLayer(GridLineLayer)** method.
 
 ### Cell Decorations
 
 When a cell in **RadCalendarView** is selected it can get additional decoration. This decoration is provided by the **CellDecorationLayer**. The default implementation provides a border around the cells that are selected.
-You can easily remove this decoration by using calendar's **setShowCellDecorations(boolean)** or check the current state through **getShowCellDecorations()**.
-The XML attribute which can be used to control whether the grid lines are visible is **showCellDecorations**. You can also easily change the color or the width of the decorations
-with **CellDecorationLayer**'s **setColor(int)** and **setStrokeWidth(float)**. Here's how you can change the decorations around the selected cells to `Green`, for example:
 
+You can easily remove this decoration by using calendar's **setShowCellDecorations(boolean)** or check the current state through **getShowCellDecorations()**.
+
+The XML attribute which can be used to control whether the grid lines are visible is **showCellDecorations**. You can also easily change the color or the width of the decorations with **CellDecorationLayer**'s **setColor(int)** and **setStrokeWidth(float)**.
+
+Here's how you can change the decorations around the selected cells to `Green`, for example:
 
 ```C#
-	calendarView.CellDecorationsLayer.Color = Color.Green;
+calendarView.CellDecorationsLayer.Color = Color.Green;
 ```
 
 You can see a custom implementation of the decoration layer in our <a href="https://github.com/telerik/Android-samples/" target="_blank">examples solution</a>, which provides this type of decorations:
 
 ![TelerikUI-Calendar-Custom-Decorations](images/calendar-customizations-5.png "This is how you can modify the decorations in RadCalendarView.")
 
-It is achieved by creating a new decorations layer which extends **CellDecorationLayer** and overrides its methods: **addDecorationForCell(int,int,int,int)**, **removeDecorationForCell(int,int,int,int)** and **render(Canvas)**. An instance
-of the new implementation is applied to the calendar by using its **setDecorationLayer(CellDecorationLayer)** method.
+It is achieved by creating a new decorations layer which extends **CellDecorationLayer** and overrides its methods: **addDecorationForCell(int,int,int,int)**, **removeDecorationForCell(int,int,int,int)** and **render(Canvas)**. An instance of the new implementation is applied to the calendar by using its **setDecorationLayer(CellDecorationLayer)** method.
 
 ## Further customizations
-For more sophisticated customizations and scenarios it is recommended to use the calendar adapter, which can be obtained by calling **getAdapter()** method if the calendar. It provides various customization features, that can be applied and preserved
-over the recreation of the calendar. Customizations applied by using the adapter will be stored in the current calendar style and will not be lost after calendar recreation, for example when switching between display modes.
+
+For more sophisticated customizations and scenarios it is recommended to use the calendar adapter, which can be obtained by calling **getAdapter()** method if the calendar. It provides various customization features, that can be applied and preserved over the recreation of the calendar. 
+
+Customizations applied by using the adapter will be stored in the current calendar style and will not be lost after calendar recreation, for example when switching between display modes.

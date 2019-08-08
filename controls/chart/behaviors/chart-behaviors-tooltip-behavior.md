@@ -21,7 +21,7 @@ slug: chart-behaviors-tooltip
 
 ## Example
 
-Here is an example how the Chart ToolTip Behavior works:
+Here is an example of how the Chart ToolTip Behavior works:
 
 First, create the needed business objects, for example:
 

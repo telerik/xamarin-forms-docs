@@ -15,7 +15,7 @@ This article lists the date properties you could use to configure **RadCalendar*
 
 ## Constraining visible Dates
 
-You could restrict the visible/selectable dates in RadCalendar by utilizing **MinDate** and **MaxDate** properties. By applying MinDate and MaxDate you can prevent navigating the calendar view to a date outside of the defined by them date range.
+You could restrict the visible/selectable dates in RadCalendar by utilizing **MinDate** and **MaxDate** properties. By applying MinDate and MaxDate you can prevent navigating the calendar view to a date outside of the defined date range.
 
 >note If dates outside of the MinDate-MaxDate range are in the currently visible view, they will look disabled.
 

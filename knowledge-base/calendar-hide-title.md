@@ -23,6 +23,7 @@ res_type: kb
 
 
 ## Description
+
 RadCalendar for Xamarin.Forms does not provide direct API for removing the Title (e.g: November 2018) of the current view, still you could implement it natively for Android and iOS through custom renderers. The code below shows sample implementations for hiding the Calendar Title:
 
 ## Solution

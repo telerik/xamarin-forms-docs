@@ -14,6 +14,9 @@ You could easily create circular buttons with RadButton by adjusting its Width, 
 * Width should be equal to Height;
 * BorderRadius should be set to half Width/Height value;
 
+
+> In some cases, you may need to set a BorderWidth value in order for BorderRadius to take effect.
+
 Here is a quick example:
 
 <snippet id='button-circular-xaml'/>

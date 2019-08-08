@@ -36,6 +36,7 @@ You'd also need to modify the info.plist file inside the iOS project with adding
 <key>UIAppFonts</key>
   <array>
     <string>Fonts/telerikfontexamples.ttf</string>
+  </array>
 ```
 
 * UWP project: Create **Fonts** folder inside the UWP **Assets** and add the **.ttf** file there.

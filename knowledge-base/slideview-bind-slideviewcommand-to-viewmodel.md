@@ -24,6 +24,7 @@ res_type: kb
 
 
 ## Description
+
 The `SlideViewCommand` doesn't have a public **Command** property that can be used to bind to a view model command. This tutorial demonstrates how to add a **BindableProperty** to a class that extends `SlideViewCommand` to support this scenario. 
 
 ## Solution
@@ -33,6 +34,7 @@ Before getting started below, be sure to review the [RadSlideView Commands](http
 Once you've read that, come back here and continue on.
 
 ### Custom Command Class
+
 As seen in the Commands article, the logic for the command is places inside the Execute method. There's nothing to make a connection to a view model. We can expand on that example by adding a Command BindableProperty. This will let you bind to a Command defined in a view model.
 
 Take the following steps.
@@ -75,7 +77,6 @@ public class BindableSlideViewCommand : SlideViewCommand
     }
 }
 ```
-
 
 ### View Model Command and Parameters
 
@@ -143,7 +144,6 @@ Here is the custom command being used for both the *Sliding* and *Slided* comman
         </telerikPrimitives:RadSlideView.Commands>
     </telerikPrimitives:RadSlideView>
 </ContentPage>
-
 ```
 
 >Notice that the binding is using a Reference source. This is important to keep in mind because the `RadSlideView` doesn't pass down the BindingContext to its properties.

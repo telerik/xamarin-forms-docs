@@ -30,16 +30,17 @@ Here is an example how the CommandToolbarItem could be used
 On the Tapped event we are going to save the image on the device:
 
 ```C#
-private void OnSaveTapped(object sender, EventArgs e)
+private async void OnSaveTapped(object sender, EventArgs e)
 {
     var folderPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
     var filePath = Path.Combine(folderPath, "image.jpg");
 
     using (var fileStream = File.Create(filePath))
     {
-        this.imageEditor.SaveAsync(fileStream, ImageFormat.Jpeg, 0.9);
+        await this.imageEditor.SaveAsync(fileStream, ImageFormat.Jpeg, 0.9);
     }
-    Application.Current.MainPage.DisplayAlert("", "The Image is saved", "OK");
+    
+    Application.Current.MainPage.DisplayAlert("Success!", "The Image is saved", "OK");
 }
 ```
 

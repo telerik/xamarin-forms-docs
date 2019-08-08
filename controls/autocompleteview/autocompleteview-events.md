@@ -23,7 +23,7 @@ slug: autocompleteview-events
 	* The sender argument which is of type object, but can be cast to the **RadAutoCompleteView** type.
 	* A **FilteredItemsChangedEventArgs** object which has a reference to filtered items collection its **FilteredItems** property.
 
-
+* **Completed**: Occurs when the user finalizes the text in an entry with the return key.
 
 # See Also
 

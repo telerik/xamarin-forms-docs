@@ -45,5 +45,3 @@ Here is an example how this could be achieved:
      </telerikDataGrid:DataGridTextColumn.HeaderStyle>
 </telerikDataGrid:DataGridTextColumn>
 ```
-
-

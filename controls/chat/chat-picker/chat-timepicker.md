@@ -18,25 +18,7 @@ RadChatPicker control provides **TimePickerContext** that can be used to display
 
 Here is a quick example on how to user TimePicker in RadChat:
 
-	TimePickerContext context = new TimePickerContext
-	{
-		StartTime = TimeSpan.FromHours(1),
-		EndTime = TimeSpan.FromHours(5),
-	};
-	PickerItem pickerItem = new PickerItem { Context = context };
-	chat.Items.Add(new TextMessage { Text = "Select a time" });
-	chat.Items.Add(pickerItem);
-	context.PropertyChanged += (s, e) =>
-	{
-		if (e.PropertyName == "SelectedValue")
-		{
-			if (context.SelectedValue != null)
-			{
-				chat.Items.Remove(pickerItem);
-				chat.Items.Add(new TextMessage { Author = chat.Author, Text = "" + context.SelectedValue });
-			}
-		}
-	};
+<snippet id='chat-chatpicker-timepicker' />
 	
 #### Figure 1: Chat with TimePicker
 

@@ -19,7 +19,7 @@ IsExpanded is a Boolean property to indicate the currently expanded state of the
 	
 #### Border Styles
 
-You could utilize BorderColor and BorderThickness properties of RadAccordionItem to change the way the Border around the control looks.
+You could utilize **BorderColor**, **BorderThickness** and **CornerRadius** properties of RadAccordionItem to change the way the Border around the control looks.
 
 ## AccordionItemHeader
 
@@ -34,7 +34,7 @@ The indicator is the little triangle that is rotated according to whether the Ac
 * **IndicatorAnimationEasing**: Specifies the easing of the rotation animation of the indicator;
 * **IndicatorMargin**: This property is of type *Thickness* and sets the margin applied to the indicator;
 
-You could apply **BorderColor** and **BorderThickness** properties of AccordionItemHeader to make it consistent with the design of your app. 
+You could apply **BorderColor**, **BorderThickness** and **CornerRadius** properties of AccordionItemHeader to make it consistent with the design of your app. 
 
 The following snippet shows the AccordionItemHeader could be customized:
 

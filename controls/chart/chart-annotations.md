@@ -9,7 +9,7 @@ slug: chart-annotations
 
 ## Overview
 
-**Annotations** are visual elements used to highlight certain areas on the plot. They can be used as comments or as markers for specific values on the plot. You can practically use any visual element as template for the annotation.
+**Annotations** are visual elements used to highlight certain areas on the plot. They can be used as comments or as markers for specific values on the plot. You can practically use any visual element as a template for the annotation.
 
 RadChart provides support for the following types of annotations:
 
@@ -29,7 +29,7 @@ The **CartesianGridLineAnnotation** represents a vertical or horizontal line tha
 
 ### Example
 
-Here is an example how the CartesianGridLineAnnotation works:
+Here is an example of how the CartesianGridLineAnnotation works:
 
 First, create the needed business objects:
 
@@ -63,7 +63,7 @@ The **CartesianPlotBandAnnotation** represents a vertical or horizontal area tha
 
 ### Example
 
-Here is an example how the CartesianPlotBandAnnotation works:
+Here is an example of how the CartesianPlotBandAnnotation works:
 
 First, create the needed business objects:
 

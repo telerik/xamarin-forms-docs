@@ -20,21 +20,21 @@ Depending on the information that is presented, the **CardContext** can be one o
 
 Here is a quick example with BasicCardContext:
 
-	PickerItem pickerItem = new PickerItem();
-	var context = new CardPickerContext { Cards = this.GetCards(pickerItem) };
-	pickerItem.Context = context;
-	chat1.Items.Add(new TextMessage { Text = "Select a destination" });
-	chat1.Items.Add(pickerItem);
+<snippet id='chat-chatpicker-cardpicker-pickeritem' />
 
-	private IEnumerable<CardContext> GetCards(ChatItem chatItem)
+And the used GetCards() method:
+
+```C#
+private IEnumerable<CardContext> GetCards(ChatItem chatItem)
+{
+	List<CardContext> cards = new List<CardContext>()
 	{
-		List<CardContext> cards = new List<CardContext>()
-		{
-			new BasicCardContext() {Title="Rome", Subtitle="Italy", Description="Italy’s capital is one of the world’s most romantic and inspiring cities"},
-			new BasicCardContext() {Title="Barcelona", Subtitle="Spain", Description="Barcelona is an enchanting seaside city with remarkable architecture"}
-		};
-		return cards;
-	}
+		new BasicCardContext() {Title="Rome", Subtitle="Italy", Description="Italy’s capital is one of the world’s most romantic and inspiring cities"},
+		new BasicCardContext() {Title="Barcelona", Subtitle="Spain", Description="Barcelona is an enchanting seaside city with remarkable architecture"}
+	};
+	return cards;
+}
+```
 	
 #### Figure 1: RadChat with BasicCard
 
@@ -46,44 +46,13 @@ Each card allows you to add a certain action that can be handled through a comma
 
 **CardActionContext** provides the following properties:
 
-* Text -represents the action inside the Card layout;
+* Text - represents the action inside the Card layout;
 * Command - the command that is raised when the user selects that action;
 * Data - can be used to preserve additional details if needed;
 
 The next snippet uses the Cards defined in the previous example and add Actions to them.
 
-	private IEnumerable<CardContext> GetCards(ChatItem chatItem)
-	{
-		List<CardContext> cards = new List<CardContext>()
-		{
-			new BasicCardContext() {
-				Title ="Rome",
-				Subtitle ="Italy",
-				Description ="Italy’s capital is one of the world’s most romantic and inspiring cities",
-				Actions = GetCardActions(chatItem, "Rome")},
-			new BasicCardContext() {
-				Title ="Barcelona",
-				Subtitle ="Spain",
-				Description ="Barcelona is an enchanting seaside city with remarkable architecture",
-				Actions = GetCardActions(chatItem, "Barcelona")}
-		};
-		return cards;
-	}
-
-	private ICollection<CardActionContext> GetCardActions(ChatItem chatItem, string Title)
-	{            
-		var selectAction = new CardActionContext
-		{
-			Text = "Select",
-			Command = new Command(() =>
-			{
-				var index = chat1.Items.IndexOf(chatItem);
-				chat1.Items.RemoveAt(index);
-				chat1.Items.Add(new TextMessage { Author = this.chat1.Author, Text = "You selected " + Title });
-			}),
-		};
-		return new List<CardActionContext>() { selectAction };
-	}
+<snippet id='chat-chatpicker-cardpicker-getcards' />
 
 #### Figure 2: RadChat with BasicCard with Actions
 

@@ -94,15 +94,15 @@ Here is the entire original `ControlTemplate` for the `RadNumericInput` and its 
 					<Setter Property="Keyboard" Value="Numeric" />
 					<Setter Property="BorderStyle">
 						<Setter.Value>
-							<input:BorderStyle>
-								<input:BorderStyle.BorderThickness>
+							<telerikInput:BorderStyle>
+								<telerikInput:BorderStyle.BorderThickness>
 									<OnPlatform x:TypeArguments="Thickness" Default="2">
 										<On Platform="Android" Value="0,0,0,2" />
 										<On Platform="iOS" Value="2" />
 										<On Platform="UWP" Value="2" />
 									</OnPlatform>
-								</input:BorderStyle.BorderThickness>
-							</input:BorderStyle>
+								</telerikInput:BorderStyle.BorderThickness>
+							</telerikInput:BorderStyle>
 						</Setter.Value>
 					</Setter>
 				</Style>

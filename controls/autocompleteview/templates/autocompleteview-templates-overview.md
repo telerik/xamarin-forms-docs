@@ -25,11 +25,11 @@ If the default templates of the control do not suit your needs, you can easily d
 Here is an example how the NoResults Template could be defined:
 
 ```XAML
-<telerik:RadAutoCompleteView.NoResultsTemplate>
+<telerikInput:RadAutoCompleteView.NoResultsTemplate>
     <DataTemplate>
         <Label Text="No match was found for the specific search. Please try again."/>
     </DataTemplate>
-</telerik:RadAutoCompleteView.NoResultsTemplate>
+</telerikInput:RadAutoCompleteView.NoResultsTemplate>
 ```
 
 ### ShowMore Template
@@ -37,11 +37,11 @@ Here is an example how the NoResults Template could be defined:
 XAML definition of ShoWMore Template:
 
 ```XAML
-<telerik:RadAutoCompleteView.ShowMoreTemplate>
+<telerikInput:RadAutoCompleteView.ShowMoreTemplate>
     <DataTemplate>
         <Label Text="{Binding Path=., StringFormat='+{0} more'}" VerticalTextAlignment="Center" />
     </DataTemplate>
-</telerik:RadAutoCompleteView.ShowMoreTemplate>
+</telerikInput:RadAutoCompleteView.ShowMoreTemplate>
 ```
 
 >important A sample NoResult and ShowMore Template example can be found in the AutoCompleteView/Features/Tokens folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).

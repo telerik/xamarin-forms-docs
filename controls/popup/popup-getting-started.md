@@ -61,6 +61,7 @@ In addition to this, you need to add the following namespace:
 
 <snippet id='xmlns-telerikprimitives' />
 <snippet id='ns-telerikprimitives' />
+<snippet id='xmlns-telerikinput' />
 
 This is the result:
 

@@ -37,6 +37,12 @@ All that is left, is to set the BindingContext to the ViewModel:
 
 <snippet id='treeview-itemtemplate-setviewmodel' />
 
+Where the **telerikTreeView** namespace is the following:
+
+```XAML
+xmlns:telerikTreeView="clr-namespace:Telerik.XamarinForms.DataControls.TreeView;assembly=Telerik.XamarinForms.DataControls"
+```
+
 Here is how the TreeView looks with custom ItemTemplate:
 
 ![TreeView ItemTemplate](images/treeview_itemtemplate.png)

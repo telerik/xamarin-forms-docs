@@ -30,6 +30,10 @@ The properties below are related to the look &amp;feel of the positive and negat
 <snippet id='dataform-styling-editors-xaml'/>
 <snippet id='dataform-styling-editors'/>
 
+and add the following namespace:
+
+<snippet id='xmlns-telerikdataform'/>
+
 Result:
 
 ![result](images/dataform-styling-editors.png)

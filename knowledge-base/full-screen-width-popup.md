@@ -5,7 +5,7 @@ type: how-to
 page_title: RadPopup with 100% width
 slug: popup-full-width-screen
 position: 
-tags: popup, fullscreen, xamarin, telerik ui for xamarin
+tags: popup, fullscreen, xamarin, telerik ui for xamarin, XamarinForms, device
 ticketid: 1411102
 res_type: kb
 ---

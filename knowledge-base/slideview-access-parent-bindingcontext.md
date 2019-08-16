@@ -5,7 +5,7 @@ type: how-to
 page_title: SlideView Access Parent BindingContext in Slide
 slug: radslideview-access-parent-bindingcontext
 position: 
-tags: RadSlideView, BindingContext
+tags: RadSlideView, BindingContext, Slide, Parent, ContentView, Xamarin, XamarinForms
 ticketid: 1362624
 res_type: kb
 ---

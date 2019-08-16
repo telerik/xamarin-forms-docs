@@ -5,7 +5,7 @@ type: how-to
 page_title: How to build Xamarin.Forms project with Telerik Xamarin nuget package in AppCenter
 slug: common-nuget-config
 position: 
-tags: 
+tags:configure, nuget, telerik, server, app, how-to, credentials, set, AppCenter, Xamarin, XamarinForms   
 ticketid: 1096817
 res_type: kb
 ---

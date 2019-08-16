@@ -5,7 +5,7 @@ type: how-to
 page_title: Scroll Calendar inside a ScrollView
 slug: calendar-scroll-into-a-scrollview
 position: 
-tags: calendar, android, scroll, horizontal, scrollview, left, right, xamarin
+tags: calendar, android, scroll, horizontal, scrollview, left, right, xamarin, XamarinForms
 ticketid: 1418628
 res_type: kb
 ---

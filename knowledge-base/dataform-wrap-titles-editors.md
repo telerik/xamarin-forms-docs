@@ -4,7 +4,7 @@ description: DataForm Text/Label/Header section on iOS does not wrap like Androi
 type: how-to
 page_title: How to have the titles above the input fields on iOS so it looks the same as on Android in DataForm
 slug: dataform-wrap-titles-editors
-tags: 
+tags:Position, DataForm, editor, new lines, iOS, Text/Label/Header, section, wrap, Android 
 ticketid: 1154373, 1117268, 1113888
 res_type: kb
 ---

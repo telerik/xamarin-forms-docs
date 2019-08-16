@@ -4,7 +4,7 @@ description: Which event is fired when the user presses the X on the AutoComplet
 type: how-to
 page_title: How to get item / token removed from AutoCompleteView by clicking cross
 slug: autocompleteview-remove-token-event
-tags: autocompleteview, autocomplete, tokens, clear, event
+tags: autocompleteview, autocomplete, tokens, clear, event, Xamarin, XamarinForms
 ticketid: 1362486, 1176309
 res_type: kb
 ---

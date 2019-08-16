@@ -5,7 +5,7 @@ type: how-to
 page_title: How to add image and text to the RadButton
 slug: button-image-and-text
 position: 
-tags: button, xamarin, image, text, align
+tags: button, xamarin, image, text, align, XamarinForms
 ticketid: 1424187
 res_type: kb
 ---

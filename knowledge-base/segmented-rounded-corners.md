@@ -5,7 +5,7 @@ type: how-to
 page_title: Set corner radius on outer buttons of RadSegmented on Android and UWP
 slug: segmented-rounded-corners
 position: 
-tags: segmented, rounded, corner, radius
+tags: segmented, rounded, corner, radius, buttons, Android, UWP, iOS, Xamarin, XamarinForms
 ticketid: 1362457
 res_type: kb
 ---

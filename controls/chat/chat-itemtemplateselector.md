@@ -33,9 +33,13 @@ Create the needed XAML resources:
 
 <snippet id='chat-features-itemtemplate-resources' />
 
-Finally, set it to the Chat's ItemTemplateSelector property:
+Set it to the Chat's ItemTemplateSelector property:
 
 <snippet id='chat-features-itemtemplate-xaml' />
+
+and add the **telerikPrimitives** namespace:
+
+<snippet id='xmlns-telerikprimitives' />
 
 #### Figure 1: RadChat with ItemTemplateSelector
 

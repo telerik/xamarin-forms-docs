@@ -73,6 +73,10 @@ The next example shows a RadPath with an Arc definition:
 <snippet id='path-gettingstarted-custompath-xaml'/>
 <snippet id='path-gettingstarted-custompath-code' />
 
+and add the following namespace:
+
+<snippet id='xmlns-telericommon' />
+
 Both RadPath objects appearance can be reviewed in the image below:
 
 ![RadPath Figures](images/custom_default_paths.png)

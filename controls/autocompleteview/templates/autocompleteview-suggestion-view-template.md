@@ -29,6 +29,13 @@ Finally, let's use the following snippet to declare a RadAutoCompleteView and it
 
 <snippet id='autocompleteview-templates-suggestion-view-template-xaml'/>
 
+Where you will need to add the following namespaces:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+xmlns:telerikDataGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
+```
+
 Here is the result:
 
 ![AutoCompleteView SuggestionViewTemplate Example](images/autocompleteview-suggestionview-template.png "AutoCompleteView SuggestionItemTemplate Example")

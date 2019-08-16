@@ -170,7 +170,7 @@ Finally, use the following snippet to declare a RadPdfViewer in XAML:
 
 <snippet id='pdfviewer-key-features-xaml'/>
 
-and add the following namespaces:
+and add the following namespace:
 
 <snippet id='xmlns-telerikprimitives'/>
 

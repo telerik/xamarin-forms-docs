@@ -34,7 +34,7 @@ This issue is related to the following issues in SkiaSharp library:
 
 In order to workaround this you can use one of the following approaches:
 
-1. You can use a Template column. For example, using a CellContentTemplate with a Label inside it.
+1. DataGrid Template column. For example, using a CellContentTemplate with a Label inside it.
 
 ```XAML
 <telerikDataGrid:DataGridTemplateColumn HeaderText="Name" >

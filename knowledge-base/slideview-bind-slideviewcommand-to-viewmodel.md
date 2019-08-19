@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Bind ViewModel to SlideViewCommand
 slug: slideview-bind-slideviewcommand-to-viewmodel
 position: 
-tags: Xamarin, SlideView, Commanding, Commands, MVVM, Xamarin Forms, SlideViewCommand
+tags: Xamarin, SlideView, Commanding, Commands, MVVM, Xamarin Forms, SlideViewCommand, extend, binding
 ticketid: 1384640
 res_type: kb
 ---

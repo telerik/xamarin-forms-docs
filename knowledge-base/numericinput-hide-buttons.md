@@ -4,7 +4,7 @@ description: This article shows you how to hide the increase and decrease button
 type: how-to
 page_title: How to hide RadNumericInput Buttons
 slug: numericinput-hide-buttons
-tags: NumericInput, Xamarin, Telerik UI For Xamarin
+tags: NumericInput, Xamarin, Telerik UI For Xamarin, button, hide, increase, decrease, control, XamarinForms
 ticketid: 1381429
 res_type: kb
 ---

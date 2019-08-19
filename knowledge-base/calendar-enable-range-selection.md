@@ -5,7 +5,7 @@ type: how-to
 page_title: How To Enable Calendar Range Selection
 slug: calendar-enable-range-selection
 position: 
-tags: toggle, button
+tags: toggle, button, range, enable, calendar, selection, xamarin, XamarinForms
 ticketid:
 res_type: kb
 ---

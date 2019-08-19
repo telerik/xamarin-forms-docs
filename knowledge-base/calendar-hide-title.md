@@ -4,7 +4,7 @@ description: How to remove the view title from Calendar control
 type: how-to
 page_title: Remove the day and month title from Calendar view
 slug: calendar-hide-title
-tags: calendar, title, renderer
+tags: calendar, title, renderer, remove, control, Xamarin, XamarinForms
 ticketid: 1362025
 res_type: kb
 ---

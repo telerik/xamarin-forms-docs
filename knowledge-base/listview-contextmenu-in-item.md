@@ -5,7 +5,7 @@ type: how-to
 page_title: How to add context menu to the RadListView Item
 slug: listview-contextmenu-in-item
 position: 
-tags: listview, contextmenu, xamarin
+tags: listview, contextmenu, xamarin, XamarinForms, RadListView, add
 ticketid: 1424187
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: Dynamically Update DataForm Editor Data Sources
 slug: Dynamically-Update-DataForm-Editor-Data-Sources
 position: 
-tags: DataForm, Editors, PropertyDataProvider, PickerEditor, AutoCompleteEditor, XamarinForms, XAML, Xamarin
+tags: DataForm, Editors, PropertyDataProvider, PickerEditor, AutoCompleteEditor, XamarinForms, XAML, Xamarin, Dynamically, runtime, how-to, remove
 ticketid: 1344967
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: Disable the default transparency of appointments on iOS
 slug: calendar-ios-appointments-transparent
 position: 
-tags: 
+tags:remove, semi-transparency, background, appointments, ios-appointments-transparent, Xamarin, XamarinForms, rendered 
 ticketid: 1407076
 res_type: kb
 ---

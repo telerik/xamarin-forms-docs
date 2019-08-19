@@ -5,7 +5,7 @@ type: how-to
 page_title: migrate from AutoComplete to AutoCompleteView
 slug: replace-autocomplete-with-autocompleteview
 position: 
-tags: autocompleteview, autocomplete, Xamarin, Telerik UI for Xamarin, migration, how-to, XamarinForms
+tags: autocompleteview, autocomplete, Xamarin, migration, XamarinForms
 res_type: kb
 ---
 

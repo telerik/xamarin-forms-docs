@@ -58,7 +58,7 @@ Where the **telerikChart** namespace is the following:
 <snippet id='xmlns-telerikchart'/>
 <snippet id='ns-telerikchart'/>
 
-Here is how the trackball looks:
+Here is how the selection looks:
 
 ![Selection Behavior](images/chart-behaviors-selection.png)
 

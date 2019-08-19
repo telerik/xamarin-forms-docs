@@ -5,7 +5,7 @@ type: how-to
 page_title: TreeView official release changes
 slug: treeview-official-release-changes
 position: 
-tags: treeview, changes, upgrade, how-to, Beta, official, release, API, Xamarin, XamarinForms 
+tags: treeview, changes, upgrade, IHierarchyAdapter, interface, adapter, how-to, Beta, official, release, API, Xamarin, XamarinForms
 ticketid: 
 res_type: kb
 ---

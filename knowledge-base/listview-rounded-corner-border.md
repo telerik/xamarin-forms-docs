@@ -5,7 +5,7 @@ type: how-to
 page_title: How to create rounded corner border when ListView Item is selected
 slug: 
 position: 
-tags: ListView, Xamarin, SelectedItems, Telerik UI for Xamarin
+tags: ListView, Xamarin, SelectedItems, Telerik, XamarinForms, rounded, corner, border, how-to
 ticketid: 1365010
 res_type: kb
 ---

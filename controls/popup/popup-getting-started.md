@@ -59,8 +59,14 @@ and here are the referenced event handlers:
 
 In addition to this, you need to add the following namespace:
 
-<snippet id='xmlns-telerikprimitives' />
-<snippet id='ns-telerikprimitives' />
+```XAML
+xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
+```C#
+using Telerik.XamarinForms.Primitives;
+using Telerik.XamarinForms.Input;
+```
 
 This is the result:
 

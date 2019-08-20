@@ -4,7 +4,7 @@ description: How to set PickerEditor to a property of custom type
 type: how-to
 page_title: Is it possible to edit a property of not primitive type in RadDataForm
 slug: dataform-complextype-in-editors 
-tags: dataform, complex, type, editor, picker editor
+tags: dataform, complex, type, editor, picker editor, DataForm, PickerEditor, property, custom type, Xamarin, XamarinForms
 ticketid: 1113888
 res_type: kb
 ---

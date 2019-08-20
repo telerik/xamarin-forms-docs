@@ -5,7 +5,7 @@ type: how-to
 page_title: Chart Vertical Axes Labels on iOS
 slug: chart-vertical-axes-labels-iOS
 position: 
-tags: chart, verticalaxes, lables, ios, position like android
+tags: chart, verticalaxes, lables, ios, position, android, left, Xamarin, XamarinForms
 ticketid: 1382991
 res_type: kb
 ---

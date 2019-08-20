@@ -33,6 +33,18 @@ Here is the ImageSourceConverter class which basically maps the icon's path acco
 
 <snippet id='treeview-itemtemplate-converter' />
 
+In the ItemTemplate there is a reference to the *levelToMarginConverter* StaticResource - this is an inner TreeView converter used to calculate the item's offset according to its Level. 
+
+Both converters should be defined as Resources like this:
+
+<snippet id='treeview-itemtemplate-converters' />
+
+Where the **telerikTreeView** namespace is the following:
+
+```XAML
+xmlns:telerikTreeView="clr-namespace:Telerik.XamarinForms.DataControls.TreeView;assembly=Telerik.XamarinForms.DataControls"
+```
+
 All that is left, is to set the BindingContext to the ViewModel:
 
 <snippet id='treeview-itemtemplate-setviewmodel' />

@@ -5,7 +5,7 @@ type: how-to
 page_title: ToggleButton with a style
 slug: button-create-togglelike-button
 position: 
-tags: toggle, button
+tags: toggle, button, Xamarin, XamarinForms
 ticketid: 1175853
 res_type: kb
 ---

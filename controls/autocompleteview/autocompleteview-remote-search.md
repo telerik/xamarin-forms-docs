@@ -29,9 +29,12 @@ Use the following snippet to declare a RadAutoCompleteView in XAML:
 
 <snippet id='autocompleteview-features-remote-search'/>
 
-Where the **telerikInput** namespace is the following:
+Where you will need to add the following namespaces:
 
-<snippet id='xmlns-telerikinput'/>
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+```
 
 Create a custom searching algorithm and assign the result to the control's ItemsSource inside the TextChanged event handler: 
 

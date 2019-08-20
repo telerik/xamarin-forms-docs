@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: Data bound controls inside busy indicator raise exception when busy state is changed
 slug: busyindicator-with-databound-controls
 position: 2
-tags: busyindicator, exception, troubleshooting, databinding, data binding, listview
+tags: busyindicator, exception, troubleshooting, databinding, data binding, listview, Xamarin, XamarinForms
 ticketid: 
 res_type: kb
 ---

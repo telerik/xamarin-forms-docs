@@ -1,17 +1,17 @@
 ---
-title: Editing Command
-page_title: Editing Command
+title: Editing Commands
+page_title: Editing Commands
 position: 2
 slug: datagrid-commands-editing
 ---
 
-# Editing Command
+# Editing Commands
 
 The RadDataGrid control provides the following commands for editing the data inside the column:
 
-* **BeginEdit**: Provides an entry point just befor the editing begins. 
+* **BeginEdit**: Provides an entry point just before the editing begins. 
 * **CancelEdit**: Provides an entry point just before the editing is canceled.
-* **CommitEdit**: Provides an entry point just before the editing is commited.
+* **CommitEdit**: Provides an entry point just before the editing is committed.
 
 The execution parameter of the **Editing Commands** is of type *EditContext* that exposes the following properties:
 

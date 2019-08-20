@@ -14,6 +14,10 @@ Here is a quick example demonstrating how BusyContent and BusyContentTemplate pr
 
 <snippet id='busyindicator-custombusycontent-xaml' />
 
+Also you will need to add the **telerikPrimitives** namespace:
+
+<snippet id='xmlns-telerikprimitives' />
+
 You could check the result in the image below:
 
 #### __Figure 1: RadBusyIndicator with BusyContentTemplate__  

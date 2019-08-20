@@ -4,6 +4,7 @@ description: How to hide the three dots from DataGird ColumnHeader for disabling
 type: how-to
 page_title: Hide the OptionsButton(three dots) from the DataGrid ColumnHeader
 slug: hide-three-dots-from-datagrid
+tags: hide, dots, DataGird, ColumnHeader, disabling, filter, functions, Xamarin, XamarinForms
 ticketid: 1159812, 1160949, 1177014
 res_type: kb
 ---

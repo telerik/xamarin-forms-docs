@@ -4,7 +4,7 @@ description: How to allow the users to select multiple items from predefined lis
 type: how-to
 page_title: Is there a built in control for autocomplete editor which allows multiple selection?
 slug: dataform-autocompleteeditor-tokens
-tags: dataform, autocomplete, tokens
+tags: dataform, autocomplete, tokens, editor, Android, iOS, predefined, RadDataForm, Xamarin, XamarinForms
 ticketid: 1179381
 res_type: kb
 ---

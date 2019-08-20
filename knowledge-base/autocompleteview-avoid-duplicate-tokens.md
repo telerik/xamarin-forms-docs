@@ -5,7 +5,7 @@ type: how-to
 page_title: How not to select duplicate items in AutoCompleteView
 slug: autocompleteview-avoid-duplicate-tokens
 position:
-tags: autocompleteview, tokens, duplicates
+tags: autocompleteview, tokens, duplicates, Xamarin, XamarinForms
 ticketid: 1403830
 res_type: kb
 ---

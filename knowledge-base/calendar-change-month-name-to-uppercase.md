@@ -5,7 +5,7 @@ type: how-to
 page_title: How to change the Calendar Month names to be with capital letters
 slug: calendar-change-month-name-to-uppercase
 position: 
-tags: Calendar, MonthName, Xamarin, Telerik UI for Xamarin
+tags: Calendar, MonthName, Xamarin, Telerik UI for Xamarin, Uppercase, XamarinForms
 ticketid: 1381232
 res_type: kb
 ---

@@ -15,23 +15,20 @@ You can add columns in your RadDataGrid by working with the Columns collection o
 
 The **RadDataGrid** control provides the following type of columns:
 
-* **Template Column**: Represents a column that uses a DataTemplate to describe the content of each associated grid cell.
-* **Boolean Column**: A special DataGridTypedColumn implementation that presents boolean data.
-* **Date Column:** An extended DataGridTextColumn that presents data of type DateTime. 
-* **Numerical Column**: Represents an extended DataGridTextColumn that presents numerical data(int and double types). 
 * **Text Column**: Represents a column that converts the content of each associated cell to a System.String object.
+* **Numerical Column**: Represents an extended DataGridTextColumn that presents numerical data(int and double types).
+* **Boolean Column**: A special DataGridTypedColumn implementation that presents boolean data. 
+* **Date Column:** An extended DataGridTextColumn that presents data of type DateTime. 
 * **Time Column**: Represents an extended DataGridTextColumn that presents the **TimeOfDay** of a **DateTime** type. 
-* **Picker Column**: Represents an extended DataGridTextColumn that uses a Picker editor to select value from a collection. 
+* **Picker Column**: Represents an extended DataGridTextColumn that uses a Picker editor to select value from a collection.
+* **Template Column**: Represents a column that uses a DataTemplate to describe the content of each associated grid cell.
 
-
->note When RadDataGrid.AutoGenerateColumns="True" the RadDataGrid generates typed columns depending on the underlying data type.
+>important When RadDataGrid.AutoGenerateColumns="True" the RadDataGrid generates typed columns depending on the underlying data type.
 
 ## Properties
 
 All types of columns inherit from the **DataGridColumn** class which provides the following properties:
 
-* **CellDecorationStyle** (DataGridBorderStyle): Gets or sets the Style object that defines the background of each cell associated with this column. The TargetType property of the Style object is Rectangle.
-* **CellDecorationStyleSelector** (DataGridStyleSelector): Gets or sets the StyleSelector instance that allows for dynamic decoration on a per cell basis.
 * **HeaderText** (string): Gets or sets the content to be displayed in the Header UI that represents the column.
 * **HeaderStyle** (DataGridColumnHeaderStyle): Gets or sets the Style instance that defines the appearance of the DataGridColumnHeader control.
 * **HeaderContentTemplate** (DataTemplate): Gets or sets the DataTemplate instance that defines the appearance of the header.
@@ -47,6 +44,10 @@ All types of columns inherit from the **DataGridColumn** class which provides th
 * **CanUserFilter** (bool): Gets or sets a value indicating whether the user can filter this column by using the built-in Filtering UI.
 * **CanUserSort** (bool): Gets or sets a value indicating whether the user can sort the data by the values in this column.
 * **IsVisible** (bool): Gets a value indicating if a specific column should be visualized.
+* **CellDecorationStyle** (DataGridBorderStyle): Defines the Style object that defines the background of each cell associated with this column.
+* **CellDecorationStyleSelector** (DataGridStyleSelector): Defines the StyleSelector instance that allows for dynamic decoration on a per cell basis.
+
+>tip More information about **CellDecorationStyle** and  **CellDecorationStyleSelector** can be found in [Columns Styling]({%slug datagrid-columns-styling%}) topic.
 
 >note In order to enable the user edit mode of the RadDataGrid cell, set the *RadDataGrid.UserEditMode="Cell"*.
 

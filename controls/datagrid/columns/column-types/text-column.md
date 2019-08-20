@@ -1,11 +1,11 @@
 ---
 title: Text Column
 page_title: Text Column
-position: 1
+position: 0
 slug: datagrid-columns-text-column
 ---
 
-# DataGridTextColumn  #
+# DataGrid TextColumn
 
 A DataGridTextColumn converts the content of each associated cell to a System.String object.
 
@@ -15,18 +15,36 @@ A DataGridTextColumn converts the content of each associated cell to a System.St
 
 Here are the specific properties for TextColumns:
 
-* **PropertyName**: Gets or sets the name of the property of the object type that represents each row within the grid.
-* **CellContentStyle**: Gets or sets the Style object that defines the appearance of each cell associated with this column. The TargetType of the Style should be TextBlock type.
-* **CellContentStyleSelector**: Gets or sets the StyleSelector instance that allows for dynamic appearance on a per cell basis.
-* **CellContentFormat**: Gets or sets the custom format for each cell value. The String.Format routine is used and the format passed should be in the form required by this method.
+* **PropertyName**: Specifies the name of the property of the object type that represents each row within the grid.
+* **HeaderText**: Defines the content to be displayed in the Header UI that represents the column.
+* **CellContentFormat**: Defines the custom format for each cell value. The String.Format routine is used and the format passed should be in the form required by this method.
+* **CellContentStyle**: Defines the Style object that defines the appearance of each cell associated with this column.
+* **CellContentStyleSelector**: Defines the StyleSelector instance that allows for dynamic appearance on a per cell basis.
+
+>tip More information about **CellDecorationStyle** and  **CellDecorationStyleSelector** can be found in [Columns Styling]({%slug datagrid-columns-styling%}) topic.
+
+>important **CellContentFormat** uses the format string provided by the framework. For more details check the [String.Format](https://docs.microsoft.com/en-us/dotnet/api/system.string.format?view=netframework-4.8) article.
 
 ## Example
 
- 			<telerikGrid:DataGridTextColumn PropertyName="Name"
-                                                HeaderText="Name">
-                    <telerikGrid:DataGridTextColumn.CellContentStyle>
-                        <telerikGrid:DataGridTextCellStyle TextColor="Green" 
-                                                           FontSize="15" 
-                                                           SelectedTextColor="Orange"  />
-                    </telerikGrid:DataGridTextColumn.CellContentStyle>
-             </telerikGrid:DataGridTextColumn>
+Here is an example how the Text Column properties can be used: 
+
+```XAML
+<telerikGrid:DataGridTextColumn PropertyName="Name"
+                                HeaderText="Name"
+								CellContentFormat="FC {0}">
+	<telerikGrid:DataGridTextColumn.CellContentStyle>
+    	<telerikGrid:DataGridTextCellStyle TextColor="Green" 
+                                           FontSize="15" 
+                                           SelectedTextColor="Orange"  />
+ 	</telerikGrid:DataGridTextColumn.CellContentStyle>
+ </telerikGrid:DataGridTextColumn>
+```
+
+![Text Column](images/textcolumn-overview.png)
+
+## See Also
+
+- [Columns Styling]({%slug datagrid-columns-styling%})
+- [Numerical Column]({%slug datagrid-columns-numerical-column%})
+- [Boolean Column]({%slug datagrid-columns-boolean-column%})

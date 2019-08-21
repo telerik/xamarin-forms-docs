@@ -52,6 +52,7 @@ Our suite offers the following controls for cross-platform development with Xama
 - [SpreadStreamProcessing]({% slug radspreadstreamprocessing-overview %})
 - [TabView]({% slug tabview-overview%})
 - [TreeView]({% slug treeview-overview %})
+- [WordsProcessing]({% slug radwordsprocessing-overview %})
 - [ZipLibrary]({% slug radziplibrary-overview %})
 
 

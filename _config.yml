@@ -504,6 +504,10 @@ navigation:
     controls/slideview:
         title: "SlideView"    
     ## End SlideView
+    ## WordsProcessing 
+     controls/wordsprocessing:
+         title: "WordsProcessing"    
+## End WordsProcessing
 ## End Controls Sub-Folders
 
 ## The application virtual path

@@ -528,6 +528,176 @@ defaults:
         layout: "documentation"
         category: "default"
         product: "xamarin-ui"
+-
+    scope:
+        path: "controls/datagrid"
+    values:
+        title_prefix: "Xamarin DataGrid Control"
+-
+    scope:
+        path: "controls/docklayout"
+    values:
+        title_prefix: "Xamarin DockLayout Control"
+-
+    scope:
+        path: "controls/entry"
+    values:
+        title_prefix: "Xamarin Entry Control"
+-
+    scope:
+        path: "controls/expander"
+    values:
+        title_prefix: "Xamarin Expander Control"
+-
+    scope:
+        path: "controls/numericinput"
+    values:
+        title_prefix: "Xamarin NumericInput Control"
+-
+    scope:
+        path: "controls/path"
+    values:
+        title_prefix: "Xamarin Path Control"
+-
+    scope:
+        path: "controls/pdfprocessing"
+    values:
+        title_prefix: "Xamarin PdfProcessing"
+-
+    scope:
+        path: "controls/pdfviewer"
+    values:
+        title_prefix: "Xamarin PdfViewer Control"
+-
+    scope:
+        path: "controls/popup"
+    values:
+        title_prefix: "Xamarin Popup Control"
+-
+    scope:
+        path: "controls/accordion"
+    values:
+        title_prefix: "Xamarin Accordion Control"
+-
+    scope:
+        path: "controls/autocomplete"
+    values:
+        title_prefix: "Xamarin AutoComplete Control"
+-
+    scope:
+        path: "controls/autocompleteview"
+    values:
+        title_prefix: "Xamarin AutoCompleteView Control"
+-
+    scope:
+        path: "controls/barcode"
+    values:
+        title_prefix: "Xamarin Barcode Control"
+-
+    scope:
+        path: "controls/border"
+    values:
+        title_prefix: "Xamarin Border Control"
+-
+    scope:
+        path: "controls/busyindicator"
+    values:
+        title_prefix: "Xamarin BusyIndicator Control"
+-
+    scope:
+        path: "controls/button"
+    values:
+        title_prefix: "Xamarin Button Control"
+-
+    scope:
+        path: "controls/calendar"
+    values:
+        title_prefix: "Xamarin Calendar &amp; Scheduling Control"
+-
+    scope:
+        path: "controls/chart"
+    values:
+        title_prefix: "Xamarin Chart Control"
+-
+    scope:
+        path: "controls/checkbox"
+    values:
+        title_prefix: "Xamarin CheckBox Control"
+-
+    scope:
+        path: "controls/chat"
+    values:
+        title_prefix: "Xamarin Conversational UI"
+-
+    scope:
+        path: "controls/dataform"
+    values:
+        title_prefix: "Xamarin DataForm Control"
+-
+    scope:
+        path: "controls/gauge"
+    values:
+        title_prefix: "Xamarin Gauge Control"
+-
+    scope:
+        path: "controls/imageeditor"
+    values:
+        title_prefix: "Xamarin ImageEditor Control"
+-
+    scope:
+        path: "controls/listview"
+    values:
+        title_prefix: "Xamarin ListView Control"
+-
+    scope:
+        path: "controls/map"
+    values:
+        title_prefix: "Xamarin Map Control"
+-
+    scope:
+        path: "controls/sidedrawer"
+    values:
+        title_prefix: "Xamarin SideDrawer Control"
+-
+    scope:
+        path: "controls/rating"
+    values:
+        title_prefix: "Xamarin Rating Control"
+-
+    scope:
+        path: "controls/segmentedcontrol"
+    values:
+        title_prefix: "Xamarin SegmentedControl"
+-
+    scope:
+        path: "controls/tabview"
+    values:
+        title_prefix: "Xamarin TabView Control"
+-
+    scope:
+        path: "controls/treeview"
+    values:
+        title_prefix: "Xamarin TreeView Control"
+-
+    scope:
+        path: "controls/ziplibrary"
+    values:
+        title_prefix: "Xamarin ZipLibrary"
+-
+    scope:
+        path: "controls/spreadstreamprocessing"
+    values:
+        title_prefix: "Xamarin SpreadStreamProcessing"
+-
+    scope:
+        path: "controls/maskedinput"
+    values:
+        title_prefix: "Xamarin MaskedInput Control"
+-
+    scope:
+        path: "controls/slideview"
+    values:
+        title_prefix: "Xamarin SlideView Control"
 
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"

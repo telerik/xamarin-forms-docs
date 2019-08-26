@@ -627,7 +627,7 @@ defaults:
     scope:
         path: "controls/chat"
     values:
-        title_prefix: "Xamarin Conversational UI Control"
+        title_prefix: "Xamarin Conversational UI"
 -
     scope:
         path: "controls/dataform"

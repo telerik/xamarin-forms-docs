@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: Commands
-position: 5
+position: 8
 slug: pdfviewer-commands
 ---
 

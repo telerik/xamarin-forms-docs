@@ -32,6 +32,7 @@ Localization refers to the translation of application resources into localized v
 * ConversationalUI
 * DataForm
 * DataGrid
+* ImageEditor
 
 The localization mechanism in Telerik Xamarin controls is implemented through **TelerikLocalizationManager** class and more specifically the **TelerikLocalizationManager.Manager** static property. To enable localization to any of the listed above components you should choose between the approaches below:
 

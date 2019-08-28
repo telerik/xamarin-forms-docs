@@ -7,7 +7,7 @@ slug: imageeditor-crop
 
 # Crop
 
-The RadImageEditor Crop ToolbarItem is extended with properties which helps you to specify the geometry of the crop slection and the desired aspect ratio. The available options by default are:
+The RadImageEditor Crop ToolbarItem is extended with properties which helps you to specify the geometry of the crop selection and the desired aspect ratio. The available options by default are:
 
 * **Free**, **Original**, **Square**, **Circle**, **3:2**, **4:3**, **16:9**
 

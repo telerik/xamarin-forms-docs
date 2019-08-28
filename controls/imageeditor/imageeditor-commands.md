@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: Commands
-position: 8
+position: 10
 slug: imageeditor-commands
 ---
 
@@ -13,7 +13,6 @@ slug: imageeditor-commands
 
 	* **Command**(*ICommand*): Specifies the command to execute.
 	* **CommandParameter**(*object*): Specifies a parameter to be passed to the command upon execution.
-
 
 >tip You could use the CommandToolbarItem when the ImageEditorToolbar AutoGenerateItems property is set to "False".
 
@@ -43,8 +42,6 @@ private async void OnSaveTapped(object sender, EventArgs e)
     Application.Current.MainPage.DisplayAlert("Success!", "The Image is saved", "OK");
 }
 ```
-
->important **SDK Browser application** contains a sample Commands example. You can find it in the **ImageEditor/Features** folder.
 
 ## See Also
 

@@ -68,7 +68,7 @@ You could easily customize the crop definitions when setting **AutoGenerateItems
 	* **RadCubicSegment**
 	* **RadQuadraticSegment**
 
-More information about the RadPathGeomerty can be found in the [RadPathGeometry]({%slug %}) article.
+More information about the RadPathGeomerty can be found in the [RadPathGeometry]({%slug path-structure%}) article.
 
 >note If no geometry is specified explicitly, the crop tool uses the default **RadRectangleGeometry**. When a custom geometry is specified, the crop operation is performed with that geometry.
 

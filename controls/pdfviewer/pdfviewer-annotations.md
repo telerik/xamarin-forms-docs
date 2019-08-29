@@ -9,6 +9,8 @@ slug: pdfviewer-annotations
 
 RadPdfViewer supports Link annotations, which means that if you open a PDF file that includes hyperlinks to absolute URIs, you can tap any of them and have a browser open, navigated to the respective address. In addition, if there are links pointing to bookmarks in the same document, the view port will be scrolled to the destination specified in the link.
 
+![PdfViewer Link Annotation](images/pdfviewer-link-annotations.png)
+
 RadPdfViewer provides the following **LinkAnnotationTapped** event which allows implementing custom logic related to links in the pdf document:
 
 * **LinkAnnotationTapped**: Occurs when you click on an annotation such as a hyperlink. It comes handy when you want to detect or even cancel the opening of a web page. The LinkAnnotationTapped event handler receives two parameters:
@@ -31,7 +33,7 @@ And here is the LinkAnnotationTapped event handler:
 
 Here is the result on different platforms after tapping on a hyperlink:
 
-![PdfViewer Link Annotation](images/pdfviewer-link-annotations.png)
+![PdfViewer Link Annotation Event](images/pdfviewer-link-annotationsevent.png)
 
 >important A sample Link Annotations example can be found in the PdfViewer/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

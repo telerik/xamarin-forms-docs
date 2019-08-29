@@ -24,7 +24,7 @@ The images could be loaded from:
 
 ## Save Images
 
-RadImageEditor control provides different implementation of the SaveAsync method for saving currently edited image. 
+RadImageEditor control gives you the option to save the currently edited image using the **SaveAsync** method. The SaveAsync method has the following overloads:
 
 * **SaveAsync(Stream outputStream, ImageFormat imageFormat, double imageQuality)**: Saves the currently edited image to the specified stream, encoding it with the given format and quality.
 * **SaveAsync(Stream outputStream, ImageFormat imageFormat, double imageQuality, Size maximumSize)**: Saves the currently edited image to the specified stream, encoding it with the given format, quality and size.

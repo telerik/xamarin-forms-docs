@@ -7,7 +7,7 @@ slug: pdfviewer-text-selection
 
 # Text Selection
 
-With R3 2019 release of Telerik UI for Xamarin RadPdfViewer supports text selection functionality - the end user can initiate a selection action through the hold gesture over the text. The selected text is marked with a different background color and two handles are available to the user to make it easier to modify the current selection. In addition, as soon as the selection is made, PdfViewer displays a SelectionMenu with a default Copy command to allow the user to retrieve the selected text.
+With R3 2019 release of Telerik UI for Xamarin RadPdfViewer supports text selection functionality - the end user can initiate a selection action through the hold gesture over the text. The selected text is marked with a different background color and two drag handles are available to the user to make it easier to modify the current selection. In addition, as soon as the selection is made, PdfViewer displays a customizable SelectionMenu with a default Copy command to allow the user to retrieve the selected text.
 
 ![PdfViewer Text Selection](images/pdfviewer-defaultselection.png)
 
@@ -42,7 +42,7 @@ There is a reference to a CustomSelectionMenuTemplate StaticResource, so add it 
 
 >note The CustomSelectionMenuTemplate defined above is similar to the original SelectionMenu template, the only difference is the RadBorder CornerRadius as well as the Fill and TextColor of the SelectionMenu.
 
-Then, create a ViewModel class and define the GetSelectedTextCommand there:
+Then, create a ViewModel class and define the GetSelectedTextCommand there. Check how the selected text is retrieve through the **SelectionCommandContext**:
 
 <snippet id='pdfviewer-textselection-viewmodel' />
 
@@ -53,6 +53,10 @@ All that is left is to set the ViewModel as the BindingContext:
 Here is how the text selection looks after the applied modifications:
 
 ![PdfViewer Custom Text Selection](images/pdfviewer-customselection.png)
+
+The screenshots below show the result after selecting the "Get Text" item:
+
+![PdfViewer custom SelectionMenu](images/pdfviewer-customselection-tapmenu.png)
 
 >important A sample Text Selection example can be found in the PdfViewer/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

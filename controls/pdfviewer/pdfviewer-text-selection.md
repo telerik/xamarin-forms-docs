@@ -9,6 +9,8 @@ slug: pdfviewer-text-selection
 
 With R3 2019 release of Telerik UI for Xamarin RadPdfViewer supports text selection functionality - the end user can initiate a selection action through the hold gesture over the text. The selected text is marked with a different background color and two drag handles are available to the user to make it easier to modify the current selection. In addition, as soon as the selection is made, PdfViewer displays a customizable SelectionMenu with a default Copy command to allow the user to retrieve the selected text.
 
+>note On UWP the text selection is initialized through mouse click and drag actions - continuous drag extends the current selection. SelectionMenu can be displayed on UWP through right-click over the selected text.
+
 ![PdfViewer Text Selection](images/pdfviewer-defaultselection.png)
 
 This topic will go through the text selection feature in details as well as the customization options it provides.
@@ -27,6 +29,8 @@ Through the **MenuItems** collection you could modify the listed in the selectio
 
 * **Text**: Sets the text shown in the SelectionMenu;
 * **Command**: Defines the Command that is executed when tapping on that menu item. The parameter that you will receive in the Execute method will be of type *SelectionCommandContext* and through it you can retrieve the selected text.
+
+>note On UWP you cannot customize the look of the SelectionMenu as it is the default UWP context menu. Still, you can modify the menu items inside it. 
 	
 ## Example
 

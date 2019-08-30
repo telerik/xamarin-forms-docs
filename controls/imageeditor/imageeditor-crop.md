@@ -74,7 +74,7 @@ More information about the RadPathGeomerty can be found in the [RadPathGeometry]
 
 ## Example
 
-The snippet below shows a sample RadImageEditor and RadImageEditorToolbar definitions, where the CropToolbar is defines as follow:
+The snippet below shows a sample RadImageEditor and RadImageEditorToolbar definitions, where the CropToolbar is define as follow:
 
 <snippet id='imageeditor-custom-crop-toolbar'/>
 
@@ -86,6 +86,8 @@ xmlns:telerikCommon="clr-namespace:Telerik.XamarinForms.Common;assembly=Telerik.
 ```
 
 ![ImageEditor Custom Crop Toolbar](images/imageeditor-custom-crop-toolbaritem.png "ImageEditor Custom Crop Toolbar")
+
+>important [SDK Browser application](https://docs.telerik.com/devtools/xamarin/sdk-browser-overview#sdk-browser-application) contains a sample Custom Crop Toolbar example. You can find it in the **ImageEditor/Features** folder.
 
 ## See Also
 

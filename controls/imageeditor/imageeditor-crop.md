@@ -41,21 +41,21 @@ You could easily customize the crop definitions when setting **AutoGenerateItems
 
 ### Crop Tool
 
-1. AspectRatio (AspectRatio): Represents the aspect ratio expressed as the ratio between the width and height of an image. The specific values are: 
+1. AspectRatio (*AspectRatio*): Represents the aspect ratio expressed as the ratio between the width and height of an image. The specific values are: 
 
 * **Free**: Special value, indicating the aspect ratio should not be constrained.
 * **Original**: Special value, indicating the aspect ratio should match the original image.
 * **Square**: Special value, indicating the width and height of the image should be equal.
 
->important When set custom values for the **AspectRatio** the separator must be ":", for example: "7:2", "6:2":
+>important When set custom values for the **AspectRatio** the separator must be ":", for example: "7:2", "6:2".
 
 ```XAML
 <telerikImageEditor:CropDefinition AspectRatio="7:2" Text="7:2"/>
 ```
 
->note If no aspect ration is specified explicitly, the crop tool uses the default **Free**. When a custom aspect ratio is specified, the crop operation is performed with that ratio.
+>note If no aspect ratio is specified explicitly, the crop tool uses the default **Free**. When a custom aspect ratio is specified, the crop operation is performed with that ratio.
 
-2. Geometry (RadGeometry): Specifies the geometry of the crop selection. The available geometries are:
+2. Geometry (*RadGeometry*): Specifies the geometry of the crop selection. The available geometries are:
 
 * **RadRectangleGeometry**: Represents a rectangle geometry.
 * **RadLineGeometry**: Represents a line geometry.

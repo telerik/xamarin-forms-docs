@@ -51,15 +51,15 @@ Here is how the RadImageEditor and RadImageEditorToolbar are defined:
 
 <snippet id='imageeditor-save-image'/>
 
-* **Save with original size** event is implemented as follow:
+* **Save with original size**:
 
 <snippet id='imageeditor-saveimage-original'/>
 
-* **Save with specific size**
+* **Save with specific size**:
 
 <snippet id='imageeditor-saveimage-specific-size'/>
 
-* **Save with downscaled**
+* **Save with downscaled**:
 
 <snippet id='imageeditor-saveimage-downscaled'/>
 

@@ -38,12 +38,12 @@ Saves the currently edited image to the specified stream, encoding it with the g
 where:
 
 * **outputStream** (*Stream*): Specifies the output stream to save the image to.
-* **imageFormat** (*ImageFormat*): Specifies the image format to encode the image to. The available options from ImageForat enumeration are **Jpeg** and **Png**.
+* **imageFormat** (*ImageFormat*): Specifies the image format to encode the image to. The available options from ImageFormat enumeration are **Jpeg** and **Png**.
 * **imageQuality** (*double*): Specifies the output stream to save the image to. The range is between 1 and 0, where the value of 1 specifies the maximum possible quality, resulting in minimum compression and the value of 0 specifies the minimum possible quality, resulting in maximum compression.
 * **maximumSize** (*Size*): Specifies the output stream to save the image to. If the original image size is larger than the maximumSize, the SaveAsync will save the image in the submitted maximumSize but the aspect ratio will be kept.
 * **scaleFactor** (*double*): Specifies a scale factor, which can be used to reduce the size of the final image. For example when setting values below 1 downscale the image before saving, which reducing the final image size and values above 1 upscale the image before saving, which increasing the final image size.
 
->note The saved image contains all currently applied changes in the editor.
+>note The saved image contains all currently applied changes in the ImageEditor.
 
 ### Example
 
@@ -59,7 +59,7 @@ Here is how the RadImageEditor and RadImageEditorToolbar are defined:
 
 <snippet id='imageeditor-saveimage-specific-size'/>
 
-* **Save with downscaled**:
+* **Save with downscaled size**:
 
 <snippet id='imageeditor-saveimage-downscaled'/>
 

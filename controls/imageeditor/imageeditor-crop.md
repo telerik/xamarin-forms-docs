@@ -41,11 +41,11 @@ You could easily customize the crop definitions when setting **AutoGenerateItems
 
 ### Crop Tool
 
-1. AspectRatio (*AspectRatio*): Represents the aspect ratio expressed as the ratio between the width and height of an image. The specific values are: 
+* **AspectRatio** (*Telerik.XamarinForms.ImageEditor.AspectRatio*): Represents the aspect ratio expressed as the ratio between the width and height of an image. The specific values are: 
 
-* **Free**: Special value, indicating the aspect ratio should not be constrained.
-* **Original**: Special value, indicating the aspect ratio should match the original image.
-* **Square**: Special value, indicating the width and height of the image should be equal.
+	* **Free**: Special value, indicating the aspect ratio should not be constrained.
+	* **Original**: Special value, indicating the aspect ratio should match the original image.
+	* **Square**: Special value, indicating the width and height of the image should be equal.
 
 >important When set custom values for the **AspectRatio** the separator must be ":", for example: "7:2", "6:2".
 
@@ -55,18 +55,18 @@ You could easily customize the crop definitions when setting **AutoGenerateItems
 
 >note If no aspect ratio is specified explicitly, the crop tool uses the default **Free**. When a custom aspect ratio is specified, the crop operation is performed with that ratio.
 
-2. Geometry (*RadGeometry*): Specifies the geometry of the crop selection. The available geometries are:
+* **Geometry** (*RadGeometry*): Specifies the geometry of the crop selection. The available geometries are:
 
-* **RadRectangleGeometry**: Represents a rectangle geometry.
-* **RadLineGeometry**: Represents a line geometry.
-* **RadEllipseGeometry**: Represents an ellipse geometry.
-* **RadPathGeometry**: Represents a complex path geometry composed of one or more path figures. In order to create a specific geomerty, you need to set a RadPathGeometry object to CropDefinition Geometry property. The RadPathGeometry object exposes a Figures property which is a collection of RadPathFigures. Each of the RadPathFigure objects is composed of one or several segments:
-	* **RadArcSegment**
-	* **RadArcToSegment**
-	* **RadLineSegment**
-	* **RadConicSegment**
-	* **RadCubicSegment**
-	* **RadQuadraticSegment**
+	* **RadRectangleGeometry**: Represents a rectangle geometry.
+	* **RadLineGeometry**: Represents a line geometry.
+	* **RadEllipseGeometry**: Represents an ellipse geometry.
+	* **RadPathGeometry**: Represents a complex path geometry composed of one or more path figures. In order to create a specific geometry, you need to set a RadPathGeometry object to CropDefinition Geometry property. The RadPathGeometry object exposes a Figures property which is a collection of RadPathFigures. Each of the RadPathFigure objects is composed of one or several segments:
+		* **RadArcSegment**
+		* **RadArcToSegment**
+		* **RadLineSegment**
+		* **RadConicSegment**
+		* **RadCubicSegment**
+		* **RadQuadraticSegment**
 
 More information about the RadPathGeomerty can be found in the [RadPathGeometry]({%slug path-structure%}) article.
 
@@ -74,11 +74,11 @@ More information about the RadPathGeomerty can be found in the [RadPathGeometry]
 
 ## Example
 
-The snippet below shows a sample RadImageEditor and RadImageEditorToolbar definitions, where the CropToolbar is define as follow:
+The snippet below shows a sample RadImageEditor and RadImageEditorToolbar definitions, where the CropToolbar is defined as follow:
 
 <snippet id='imageeditor-custom-crop-toolbar'/>
 
-In addition to this, you need to add the following namespaces:
+In addition, you need to add the following namespaces:
 
 ```XAML
 xmlns:telerikImageEditor="clr-namespace:Telerik.XamarinForms.ImageEditor;assembly=Telerik.XamarinForms.ImageEditor"

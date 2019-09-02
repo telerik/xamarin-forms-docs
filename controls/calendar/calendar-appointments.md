@@ -32,7 +32,7 @@ RadCalendar can display appointments by setting its **AppointmentsSource** prope
 
 ## Appointment Template
 
-With R3 2019 Release of Telerik UI for Xamarin RadCalendar control provides the option to apply a **ContemtTemplate** to the **Appointments** for **DayView** and **MultiDayView**. You could easily set a Template or TemplateSelector to the appontments through the **AppointmentContentTemplate** property of the DayViewSettings or MultiDaySettings.
+With R3 2019 Release of Telerik UI for Xamarin RadCalendar control provides the option to apply a **ContentTemplate** to the **Appointments** for **DayView** and **MultiDayView**. You could easily set a Template or TemplateSelector to the appontments through the **AppointmentContentTemplate** property of the DayViewSettings or MultiDaySettings.
 
 * **AppointmentContentTemplate** (*DataTemplate*): Defies the DataTemplate of the Appointment based on the data object.
 
@@ -64,7 +64,7 @@ Here is the result:
 
 ![Appointment Content Template](images/appointment-content-template.png)
 
->important [SDK Browser application](https://docs.telerik.com/devtools/xamarin/sdk-browser-overview#sdk-browser-application) contains a sample ZoomLevel example. You can find it in the **Calendar &amp; Scheduling /Features** folder.
+>important [SDK Browser application](https://docs.telerik.com/devtools/xamarin/sdk-browser-overview#sdk-browser-application) contains a sample Appointments Template example. You can find it in the **Calendar &amp; Scheduling /Features** folder.
 
 ## Events
  

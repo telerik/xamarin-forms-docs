@@ -18,7 +18,7 @@ Every SpecialSlot has the following properties:
 * **RecurrencePattern**: Defines whether the slot will be displayed for repeating days;
 * **IsReadOnly**: When set to **True** the slot is disabled (restricted), meaning the end user wouldn't be able to create or modify appointments at that slot.
 
-Below you can find a quick example how create special and restricted slots.
+Below you can find a quick example how to create special and restricted slots.
 
 First, create a ViewModel class with a collection of **SpecialSlot** objects. In the example two repeating special slots are added for rest hours during weekdays. In addition, the first slot which represents a lunch break, is set as restricted time.
 

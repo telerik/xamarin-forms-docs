@@ -40,7 +40,7 @@ With R3 2019 Release of Telerik UI for Xamarin RadCalendar control provides the 
 
 ![Appointment Template Overview](images/appointment-template-overview.png)
 
-### AppointmentContentTemplate Example
+### Appointment Template Example
 
 The following example shows how to set AppointmentContentTemplate in DayView Mode using DataTemplateSelector.
 

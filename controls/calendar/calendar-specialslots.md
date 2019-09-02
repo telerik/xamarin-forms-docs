@@ -32,7 +32,7 @@ Last step is to set the BindingContext to the ViewModel class:
 
 <snippet id='calendar-specialslots-setvm' />
 
-Here is the result after executing the example above on different emulators:
+Here is the result after executing the example above on different platforms:
 
 ![Calendar Special Slots](images/calendar_special_slots.png)
 
@@ -62,11 +62,11 @@ Check the result in the image below:
 
 By default the special slots are marked with a different background. In addition you could show a content of your choice inside special slots through the **SpecialSlotContentTemplate** property of the DayViewSettings / MultiDaySettings.
 
-For the example create a custom slot that inherits from **SpecialSlot** class:
+For the example, create a custom slot that inherits from **SpecialSlot** class:
 
 <snippet id='calendar-specialslots-customslot' />
 
-In the ViewModel class add a collection of BreakSlot objects that will be then assigned as a SpecialSlotsSource:
+In the ViewModel class, add a collection of BreakSlot objects that will be then assigned as a SpecialSlotsSource:
 
 <snippet id='calendar-customslots-vm' />
 

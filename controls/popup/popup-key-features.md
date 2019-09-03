@@ -41,7 +41,9 @@ You could define whether the popup will be modal or not through the **IsModal** 
 
 ## Applying overlay color 
 
-**OutsideBackgroundColor** property lets you customize the color outside the popup. In most cases this is used for modal popups to indicate the user cannot interact with the UI behind. The default value is *Color.Transparent*. 
+**OutsideBackgroundColor** property lets you customize the color outside the popup. In most cases this is used for modal popups to indicate the user cannot interact with the UI behind. The default value is *Color.Transparent*.
+
+>note The transparency of the overlay could be applied through the alpha channel of the chosen color. If you're using a hexadecimal code, its format should be #AARRGGBB, where the first pair of letters, the AA, represents the alpha channel. 
 
 Below is an example on how you could apply OutsideBackgroundColor to a modal popup.
 

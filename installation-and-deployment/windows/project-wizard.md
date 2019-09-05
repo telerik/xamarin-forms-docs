@@ -2,7 +2,7 @@
 title: Project Wizard for Visual Studio
 page_title: Telerik UI for Xamarin Project Wizard
 slug: project-wizard
-position: 3
+position: 5
 previous_url: devtools/xamarin/installation-and-deployment/project-wizard
 ---
 
@@ -16,14 +16,9 @@ It allows customers to select which platform(s) their application targets and th
 
 ## Installing the Project Wizard
 
-In order to have access to the **Project Wizard to Visual Studio**, you need to install the Visual Studio extension that is shipped with the default installation of the **Telerik UI for Xamarin** suite. It can be found in the **VSExtensions** folder as shown below:
+In order to have access to the **Project Wizard to Visual Studio**, you need to install the Visual Studio Extensions that is shipped with the default installation of the **Telerik UI for Xamarin** suite. It can also be downloaded and installed as separate product from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) for Visual Studio 2017/2019.
 
-![Xamarin VSPackage](images/extensions.png)
-Running the vsix file will install the template and it will be present in the "Extensions and Update" section in Visual Studio:
- 
-![Visual Studio New Project create](images/extensions_installed.png)
-
->important If you install the Telerik UI for Xamarin suite through the MSI automatic installation, you will be prompted to install the extensions automatically so there will be no need of manually running the .vsix file
+>For detailed information on installing the Project Wizard, go to [Installing VSExtensions]({%slug vs-extensions%}) topic.
 
 ## New Project
 

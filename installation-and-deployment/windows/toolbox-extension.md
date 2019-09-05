@@ -2,7 +2,7 @@
 title: Telerik UI for Xamarin Toolbox
 page_title: Telerik UI for Xamarin Toolbox
 slug: telerik-xamarin-toolbox
-position: 5
+position: 6
 ---
 
 # Telerik UI for Xamarin Toolbox
@@ -33,8 +33,3 @@ Embedding the controls from the suite is made as easy as possible and all you ne
 
 - [Project Wizard]({%slug project-wizard%})
 - [Telerik NuGet packages server]({%slug telerik-nuget-server%})
-- [Calendar Getting Started]({%slug calendar-getting-started%})
-- [Chart Getting Started]({%slug chart-getting-started%})
-- [DataForm Getting Started]({%slug dataform-getting-started%})
-- [ListView Getting Started]({%slug listview-getting-started%})
-- [SideDrawer Getting Started]({%slug sidedrawer-getting-started%})

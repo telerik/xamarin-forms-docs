@@ -38,7 +38,7 @@ In order to upgrade your controls to a newer version of the suite, you need to p
 1. Download the installation method you prefer:
 
 	* [MSI file for automatic installation]({%slug install-msi%}).
-	* [ZIP file for manual (advanced) installation]({%slug manual-installation-support%}).
+	* ZIP file for manual (advanced) installation - you can download the zip containing the dlls from the [Telerik UI for Xamarin product download page]({%slug download-product-files%}).
 
 2. If you have installed the trial version of Telerik UI for Xamarin and try to install the developer version of the same release, you will receive the following message: 
 

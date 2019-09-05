@@ -2,7 +2,7 @@
 title: Getting Started on Windows
 page_title: Getting Started with Telerik UI for Xamarin on Windows
 slug: getting-started-windows
-position: 2
+position: 0
 ---
 
 # Getting Started on Windows

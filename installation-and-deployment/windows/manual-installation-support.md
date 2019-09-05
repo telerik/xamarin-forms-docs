@@ -3,7 +3,9 @@ title: Manual Installation for Visual Studio
 page_title: Manual Installation for Visual Studio
 slug: manual-installation-support
 position: 4
+published: False
 previous_url: devtools/xamarin/installation-and-deployment/manual-installation
+
 ---
 
 ## How to manually install Telerik UI for Xamarin

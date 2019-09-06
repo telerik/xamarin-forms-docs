@@ -18,7 +18,7 @@ This article describes how to set a width to the DataGrid column using the SizeM
 
 ## Example
 
-For the purpose of this example, we are going to use the following simple business objects:
+For the purpose of this example, we are going to use the following business object:
 
 ```C#
  public class Data

@@ -1,11 +1,11 @@
 ---
-title: SkiaSharp versions with Telerik UI for Xamarin controls
-description: SkiaSharp versions with Telerik UI for Xamarin controls
+title: SkiaSharp and Xamarin.Forms versions with Telerik UI for Xamarin controls
+description: SkiaSharp and Xamarin.Forms versions with Telerik UI for Xamarin controls
 type: how-to
-page_title: SkiaSharp versions with Telerik UI for Xamarin controls
+page_title: SkiaSharp and Xamarin.Forms versions with Telerik UI for Xamarin controls
 slug: skiasharp-versions-with-telerik-xamarin-controls
 position: 
-tags: telerik, xamarin, skiasharp, versions, support, pcl, netstandard, project
+tags: telerik, xamarin, skiasharp, versions, support, pcl, netstandard, project, xamarinforms
 ticketid: 
 res_type: kb
 ---

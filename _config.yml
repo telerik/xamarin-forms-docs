@@ -536,172 +536,172 @@ defaults:
     scope:
         path: "controls/datagrid"
     values:
-        title_prefix: "Xamarin DataGrid Control"
+        title_prefix: "Xamarin DataGrid Documentation"
 -
     scope:
         path: "controls/docklayout"
     values:
-        title_prefix: "Xamarin DockLayout Control"
+        title_prefix: "Xamarin DockLayout Documentation"
 -
     scope:
         path: "controls/entry"
     values:
-        title_prefix: "Xamarin Entry Control"
+        title_prefix: "Xamarin Entry Documentation"
 -
     scope:
         path: "controls/expander"
     values:
-        title_prefix: "Xamarin Expander Control"
+        title_prefix: "Xamarin Expander Documentation"
 -
     scope:
         path: "controls/numericinput"
     values:
-        title_prefix: "Xamarin NumericInput Control"
+        title_prefix: "Xamarin NumericInput Documentation"
 -
     scope:
         path: "controls/path"
     values:
-        title_prefix: "Xamarin Path Control"
+        title_prefix: "Xamarin Path Documentation"
 -
     scope:
         path: "controls/pdfprocessing"
     values:
-        title_prefix: "Xamarin PdfProcessing"
+        title_prefix: "Xamarin PdfProcessing Documentation"
 -
     scope:
         path: "controls/pdfviewer"
     values:
-        title_prefix: "Xamarin PdfViewer Control"
+        title_prefix: "Xamarin PdfViewer Documentation"
 -
     scope:
         path: "controls/popup"
     values:
-        title_prefix: "Xamarin Popup Control"
+        title_prefix: "Xamarin Popup Documentation"
 -
     scope:
         path: "controls/accordion"
     values:
-        title_prefix: "Xamarin Accordion Control"
+        title_prefix: "Xamarin Accordion Documentation"
 -
     scope:
         path: "controls/autocomplete"
     values:
-        title_prefix: "Xamarin AutoComplete Control"
+        title_prefix: "Xamarin AutoComplete Documentation"
 -
     scope:
         path: "controls/autocompleteview"
     values:
-        title_prefix: "Xamarin AutoCompleteView Control"
+        title_prefix: "Xamarin AutoCompleteView Documentation"
 -
     scope:
         path: "controls/barcode"
     values:
-        title_prefix: "Xamarin Barcode Control"
+        title_prefix: "Xamarin Barcode Documentation"
 -
     scope:
         path: "controls/border"
     values:
-        title_prefix: "Xamarin Border Control"
+        title_prefix: "Xamarin Border Documentation"
 -
     scope:
         path: "controls/busyindicator"
     values:
-        title_prefix: "Xamarin BusyIndicator Control"
+        title_prefix: "Xamarin BusyIndicator Documentation"
 -
     scope:
         path: "controls/button"
     values:
-        title_prefix: "Xamarin Button Control"
+        title_prefix: "Xamarin Button Documentation"
 -
     scope:
         path: "controls/calendar"
     values:
-        title_prefix: "Xamarin Calendar &amp; Scheduling Control"
+        title_prefix: "Xamarin Calendar &amp; Scheduling Documentation"
 -
     scope:
         path: "controls/chart"
     values:
-        title_prefix: "Xamarin Chart Control"
+        title_prefix: "Xamarin Chart Documentation"
 -
     scope:
         path: "controls/checkbox"
     values:
-        title_prefix: "Xamarin CheckBox Control"
+        title_prefix: "Xamarin CheckBox Documentation"
 -
     scope:
         path: "controls/chat"
     values:
-        title_prefix: "Xamarin Conversational UI"
+        title_prefix: "Xamarin Conversational UI Documentation"
 -
     scope:
         path: "controls/dataform"
     values:
-        title_prefix: "Xamarin DataForm Control"
+        title_prefix: "Xamarin DataForm Documentation"
 -
     scope:
         path: "controls/gauge"
     values:
-        title_prefix: "Xamarin Gauge Control"
+        title_prefix: "Xamarin Gauge Documentation"
 -
     scope:
         path: "controls/imageeditor"
     values:
-        title_prefix: "Xamarin ImageEditor Control"
+        title_prefix: "Xamarin ImageEditor Documentation"
 -
     scope:
         path: "controls/listview"
     values:
-        title_prefix: "Xamarin ListView Control"
+        title_prefix: "Xamarin ListView Documentation"
 -
     scope:
         path: "controls/map"
     values:
-        title_prefix: "Xamarin Map Control"
+        title_prefix: "Xamarin Map Documentation"
 -
     scope:
         path: "controls/sidedrawer"
     values:
-        title_prefix: "Xamarin SideDrawer Control"
+        title_prefix: "Xamarin SideDrawer Documentation"
 -
     scope:
         path: "controls/rating"
     values:
-        title_prefix: "Xamarin Rating Control"
+        title_prefix: "Xamarin Rating Documentation"
 -
     scope:
         path: "controls/segmentedcontrol"
     values:
-        title_prefix: "Xamarin SegmentedControl"
+        title_prefix: "Xamarin SegmentedControl Documentation"
 -
     scope:
         path: "controls/tabview"
     values:
-        title_prefix: "Xamarin TabView Control"
+        title_prefix: "Xamarin TabView Documentation"
 -
     scope:
         path: "controls/treeview"
     values:
-        title_prefix: "Xamarin TreeView Control"
+        title_prefix: "Xamarin TreeView Documentation"
 -
     scope:
         path: "controls/ziplibrary"
     values:
-        title_prefix: "Xamarin ZipLibrary"
+        title_prefix: "Xamarin ZipLibrary Documentation"
 -
     scope:
         path: "controls/spreadstreamprocessing"
     values:
-        title_prefix: "Xamarin SpreadStreamProcessing"
+        title_prefix: "Xamarin SpreadStreamProcessing Documentation"
 -
     scope:
         path: "controls/maskedinput"
     values:
-        title_prefix: "Xamarin MaskedInput Control"
+        title_prefix: "Xamarin MaskedInput Documentation"
 -
     scope:
         path: "controls/slideview"
     values:
-        title_prefix: "Xamarin SlideView Control"
+        title_prefix: "Xamarin SlideView Documentation"
         
     scope:
         path: "controls/wordsprocessing"

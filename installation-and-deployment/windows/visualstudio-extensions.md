@@ -78,6 +78,7 @@ Telerik Visual Studio Extensions are disabled or not installed correctly.
 1. Go to menu **Extensions -> Manage Extensions** (for Visual Studio 2017 - **Tools -> Extensions and Updates...**)
 1. Open the **Installed** tab on the left
 1. Search for **Telerik Xamarin VSExtensions** and make sure it's **Enabled**
+
 ![vsextensions-disabled](images/VSExtensions_disabled.png)
 
 *Suggested solution 2 (Extension is not installed):*
@@ -89,10 +90,10 @@ Telerik Visual Studio Extensions are disabled or not installed correctly.
 1. Download and install the extensions
 
 >important If the article does not help in solving your problem, please follow these steps to generate a Visual Studio [ActivityLog](https://docs.microsoft.com/en-us/visualstudio/ide/reference/log-devenv-exe?view=vs-2019) file before contacting our support:
->1. Open [Developer Command prompt](https://docs.microsoft.com/en-us/dotnet/framework/tools/developer-command-prompt-for-vs) for Visual Studio 20xx under **Administrative rights**.
->1. Execute the command - **devenv /log %userprofile%\desktop\ActivityLog.xml**. This will start Visual Studio and create logs on your Desktop.
->1. Reproduce the problem.
->1. Attach the **Activitylog** files when you contact our support.
+>* Open [Developer Command prompt](https://docs.microsoft.com/en-us/dotnet/framework/tools/developer-command-prompt-for-vs) for Visual Studio 20xx under **Administrative rights**.
+>* Execute the command - **devenv /log %userprofile%\desktop\ActivityLog.xml**. This will start Visual Studio and create logs on your Desktop.
+>* Reproduce the problem.
+>* Attach the **Activitylog** files when you contact our support.
 
 ## See Also
 - [Project Wizard]({%slug project-wizard%})

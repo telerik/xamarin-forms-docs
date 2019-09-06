@@ -1,7 +1,7 @@
 ---
 title: Source Exception Handling
 page_title: Source Exception Handling
-position: 4
+position: 7
 slug: pdfviewer-sourceexception
 ---
 

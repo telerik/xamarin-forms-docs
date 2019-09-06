@@ -504,6 +504,10 @@ navigation:
     controls/slideview:
         title: "SlideView"    
     ## End SlideView
+    ## WordsProcessing
+    controls/wordsprocessing:
+        title: "WordsProcessing"    
+    ## End WordsProcessing
 ## End Controls Sub-Folders
 
 ## The application virtual path
@@ -698,6 +702,11 @@ defaults:
         path: "controls/slideview"
     values:
         title_prefix: "Xamarin SlideView Documentation"
+        
+    scope:
+        path: "controls/wordsprocessing"
+    values:
+        title_prefix: "Xamarin WordsProcessing"
 
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"

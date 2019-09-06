@@ -1,7 +1,7 @@
 ---
 title: History
 page_title: History
-position: 7
+position: 9
 slug: imageeditor-history
 ---
 

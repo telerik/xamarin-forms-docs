@@ -56,5 +56,5 @@ Here is the result when you set `IsOpen="True"`:
 
 ## See Also
 
-- [Properties and Events]({% slug sidedrawer-features-properties-events %})
-- [Transitions]({% slug sidedrawer-features-transitions %})
+- [Properties and Events]({%slug sidedrawer-features-properties%})
+- [Transitions]({%slug sidedrawer-features-transitions%})

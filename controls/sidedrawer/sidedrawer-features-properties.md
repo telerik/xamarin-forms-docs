@@ -27,7 +27,7 @@ RadSideDrawer control exposes the following properties:
 
 >important A sample Location example can be found in the SideDrawer/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
-# See Also
+## See Also
 
 [Events]({%slug sidedrawer-features-events%})
 [Commands]({%slug sidedrawer-features-commands%})

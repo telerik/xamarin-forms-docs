@@ -86,3 +86,5 @@ Once users have this class created, they need to register the renderer:
 
 ## See Also
 
+- [Properties]({%slug sidedrawer-features-properties%})
+- [Commands]({%slug sidedrawer-features-commands%})

@@ -296,6 +296,9 @@ navigation:
     ## BusyIndicator
     controls/busyindicator:
         title: "BusyIndicator"
+    controls/busyindicator/howto:
+        title: "How To"
+        position: 8
         ## BusyIndicator Sub-Folders
     controls/busyindicator/getting-started:
         title: "Getting Started"

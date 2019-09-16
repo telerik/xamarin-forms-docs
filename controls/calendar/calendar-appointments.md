@@ -32,9 +32,9 @@ RadCalendar can display appointments by setting its **AppointmentsSource** prope
 
 ## Appointment Template
 
-With R3 2019 Release of Telerik UI for Xamarin RadCalendar control provides the option to apply a **ContentTemplate** to the **Appointments** for **DayView** and **MultiDayView**. You could easily set a Template or TemplateSelector to the appontments through the **AppointmentContentTemplate** property of the DayViewSettings or MultiDaySettings.
+With R3 2019 Release of Telerik UI for Xamarin RadCalendar control provides the option to apply a **ContentTemplate** to the **Appointments** for **DayView** and **MultiDayView**. You could easily set a Template or TemplateSelector to the appointments through the **AppointmentContentTemplate** property of the DayViewSettings or MultiDaySettings.
 
-* **AppointmentContentTemplate** (*DataTemplate*): Defies the DataTemplate of the Appointment based on the data object.
+* **AppointmentContentTemplate** (*DataTemplate*): Defines the DataTemplate of the Appointment based on the data object.
 
 #### Appointment Template in DayView and MultiDayView
 

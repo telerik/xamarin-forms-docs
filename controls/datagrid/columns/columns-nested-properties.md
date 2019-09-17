@@ -1,7 +1,7 @@
 ---
 title: Nested Properties
 page_title: Nested Properties Support
-position: 1
+position: 3
 slug: datagrid-nested-properties
 ---
 

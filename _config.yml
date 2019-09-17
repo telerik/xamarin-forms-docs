@@ -296,6 +296,9 @@ navigation:
     ## BusyIndicator
     controls/busyindicator:
         title: "BusyIndicator"
+    controls/busyindicator/howto:
+        title: "How To"
+        position: 8
         ## BusyIndicator Sub-Folders
     controls/busyindicator/getting-started:
         title: "Getting Started"
@@ -421,7 +424,7 @@ navigation:
         ## ImageEditor Sub-Folders
     controls/imageeditor/styling:
         title: "Styling"
-        position: 9
+        position: 11
         ## End ImageEditor Sub-Folders
     ## End ImageEditor
     ## ListView

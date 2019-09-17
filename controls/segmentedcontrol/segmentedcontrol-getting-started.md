@@ -37,6 +37,8 @@ If your app is setup, you are ready to add a **RadSegmentedControl** control.
 
 RadSegmentedControl allows you to work with two types of data - string and image. You can use the **ItemsSource** property of RadSegmentedControl to provide **IEnumerable** collection of strings or image sources. The control will display a segment for each item in the items source. 
 
+### Populate with string data
+
 Here is an example how to set the control's ItemsSource property and populate it with some data.
 
 <snippet id='segmentcontrol-gettingstarted-xaml'/>
@@ -46,6 +48,11 @@ You also have to add the following namespace:
 
 <snippet id='xmlns-telerikinput'/>
 <snippet id='ns-telerikinput'/>
+
+### Populate with image sources
+
+<snippet id='segmentcontrol-gettingstarted-images-xaml' />
+<snippet id='segmentcontrol-gettingstarted-images-csharp' />
 
 This is the result:
 

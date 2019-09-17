@@ -35,8 +35,6 @@ The image below shows the result:
 
 ![BusyIndicator with ListView](../images/busyindicator-withlistview.png)
 
->important А the Calendar &amp; Scheduling/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
-
 >important [SDK Browser application](https://docs.telerik.com/devtools/xamarin/sdk-browser-overview#sdk-browser-application) contains a sample ListView Integration example. You can find it in the **BusyIndicator/HowTo** folder.
 
 

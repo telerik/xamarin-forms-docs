@@ -15,27 +15,27 @@ This quick start tutorial demonstrates how to create a simple iOS application wi
 
 Since iOS 10, Apple requires explicit description when NSCalendar is being used, more precisely when one is trying to access the phone's calendar events. This description is prompted to the user, only when there is an attempt for accessing events, and requires user's confirmation.
 
-If you are using TelerikUI but never accessing device's calendar your users won't get prompted with this message.
+If you are using Telerik UI for Xamarin.iOS but never accessing device's calendar your users won't get prompted with this message.
 
 In order to submit your application to the AppStore make sure to include a <code>NSCalendarsUsageDescription</code> variable to your info.plist and provide some description, for example "This application need to acces your calendar events."
 
 Now that our project is created and the TelerikUI.framework is added, we can start referencing and using the TelerikUI types:
 
-Open your <code>ViewController.m</code> file and add a reference to Telerik UI header file:
+Open your <code>UIViewController</code> file and add a reference to Telerik UI header file:
 
-    #import <TelerikUI/TelerikUI.h>
+```C#
+using TelerikUI;
+```
 
 Note that starting with Xcode 6 Apple doesn't generate the precompiled headers file automatically. That is why you should add import the UIKit framework before importing TelerikUI:
 
-    #import <UIKit/UIKit.h>
-    
-If you are writing Swift, add the same line in your bridging header.
-
-Type the following code in <code>viewDidLoad</code> method:
+```C#
+using UIKit;
+```
+   
+Type the following code in <code>ViewDidLoad</code> method:
 
 <snippet id='getting-started-calendar'/>
-
-<snippet id='getting-started-calendar-swift'/>
 
 ```C#
 TKCalendar calendarView = new TKCalendar (this.View.Bounds);
@@ -43,13 +43,11 @@ calendarView.AutoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutores
 this.View.AddSubview (calendarView);
 ```
 
-This code creates a new instance of <code>TKCalendar</code> and adds it as a subview of the ViewController's main view. The <code>autoresizingMask</code> property is set in order to allow correct resizing of the calendar when the device is rotated in landscape mode.
+This code creates a new instance of <code>TKCalendar</code> and adds it as a subview of the ViewController's main view. The <code>AutoresizingMask</code> property is set in order to allow correct resizing of the calendar when the device is rotated in landscape mode.
 
 The next step is to create some random data that will be consumed by the calendar. You can use the following code:
 
 <snippet id='getting-started-event'/>
-
-<snippet id='getting-started-event-swift'/>
 
 ```C#
 events = new List<TKCalendarEvent> ();
@@ -112,8 +110,6 @@ Here, the predicate is used to filter the events array by date. Do not forget to
 
 <snippet id='getting-started-assigndatasource'/>
 
-<snippet id='getting-started-assigndatasource-swift'/>
-
 ```C#
 calendarView.DataSource = new CalendarDataSource (this);
 ```
@@ -135,7 +131,6 @@ By default, <code>TKCalendar</code> displays the current date, use the <code>nav
 
 <snippet id='getting-started-navigatetodate'/>
 
-<snippet id='getting-started-navigatetodate-swift'/>
 
 ```C#
 NSDateComponents newComponents = new NSDateComponents();
@@ -275,12 +270,10 @@ You can easily change the way data is presented in chart by changing the view mo
 
 <snippet id='getting-started-viewmodeyear'/>
 
-<snippet id='getting-started-viewmodeyear-swift'/>
-
 ```C#
 this.CalendarView.ViewMode = TKCalendarViewMode.Year;
 ```
 
-All view modes are desctibed in the following article:
+All view modes are described in the following article:
 [View modes](view-modes)
 

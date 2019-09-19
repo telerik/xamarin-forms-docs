@@ -13,17 +13,21 @@ This quick start tutorial demonstrates how to create a simple iOS application wi
 
 Now that our project is created and the TelerikUI.framework is added, we can start referencing and using the TelerikUI types:
 
-Open your <code>ViewController.m</code> file and add a reference to Telerik UI header file:
+Open your <code>UIViewController</code> file and add a reference to Telerik UI header file:
 
-    #import <TelerikUI/TelerikUI.h>
+```C#
+using TelerikUI;
+```
 
 Note that starting with Xcode 6 Apple doesn't generate the precompiled headers file automatically. That is why you should add import the UIKit framework before importing TelerikUI:
 
-    #import <UIKit/UIKit.h>
+```C#
+using UIKit;
+```
 
 If you are writing Swift, add the same line in your bridging header.
 
-In the <code>viewDidLoad</code> method create a new instance of <code>TKAlert</code> and set its title and message properties:
+In the <code>ViewDidLoad</code> method create a new instance of <code>TKAlert</code> and set its title and message properties:
 
 <snippet id='getting-started-alert'/>
 

@@ -10,11 +10,9 @@ View transitions allow for switching to the next/previous month with different a
 
 <img src="../images/calendar-view-transitions001.png"/>
 
-The available animations are: *card, flip, flow, fold, rotate, and scroll*. The default transition is *scroll*. You should access the <code>transitionMode</code> property of the presenter class in order to customize the transition effect:
+The available animations are: *card, flip, flow, fold, rotate, and scroll*. The default transition is *scroll*. You should access the <code>TransitionMode</code> property of the presenter class in order to customize the transition effect:
 
 <snippet id='transitions-monthpresenter'/>
-
-<snippet id='transitions-monthpresenter-swift'/>
 
 ```C#
 TKCalendarMonthPresenter presenter = (TKCalendarMonthPresenter)this.CalendarView.Presenter;
@@ -23,23 +21,19 @@ presenter.TransitionMode = TKCalendarTransitionMode.Flip;
 
 The following options can be applied on transitions:
 
-The <code>transitionIsVertical</code> changes the horizontal/vertical orientation of the transition, this changes also the activation gesture:
+The <code>TransitionIsVertical</code> changes the horizontal/vertical orientation of the transition, this changes also the activation gesture:
 
 <snippet id='transitions-transitionvertical'/>
-
-<snippet id='transitions-transitionvertical-swift'/>
 
 ```C#
 presenter.TransitionIsVertical = true;
 ```
 
-The <code>transitionIsReverse</code> changes the forward/backward direction of the transition, thus changing its effect.
+The <code>TransitionIsReverse</code> changes the forward/backward direction of the transition, thus changing its effect.
 
 Finally the transition duration can be customized by setting the <code>transitionDuration</code> property:
 
 <snippet id='transitions-transitionduration'/>
-
-<snippet id='transitions-transitionduration-swift'/>
 
 ```C#
 presenter.TransitionDuration = 2;

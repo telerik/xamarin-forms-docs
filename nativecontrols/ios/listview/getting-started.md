@@ -12,17 +12,19 @@ This quick start tutorial demonstrates how to create a simple iOS application wi
 
 Now that our project is created and the TelerikUI.framework is added, we can start referencing and using the TelerikUI types:
 
-Open your <code>ViewController.m</code> file and add a reference to Telerik UI header file:
+Open your <code>UIViewController</code> file and add a reference to Telerik UI header file:
 
-    #import <TelerikUI/TelerikUI.h>
+```C#
+using TelerikUI;
+```
 
 Note that starting with Xcode 6 Apple doesn't generate the precompiled headers file automatically. That is why you should add import the UIKit framework before importing TelerikUI:
 
-    #import <UIKit/UIKit.h>
-
-If you are writing Swift, add the same line in your bridging header.
-
-In the <code>viewDidLoad</code> method of your view controller prepare a small array of sample data to be presented in <code>TKListView</code>. 
+```C#
+using UIKit;
+```
+   
+In the <code>ViewDidLoad</code> method of your view controller prepare a small array of sample data to be presented in <code>TKListView</code>. 
 
 <snippet id='listview-feed'/>
 <snippet id='listview-feed-swift'/>

@@ -15,7 +15,7 @@ Now that our project is created and the TelerikUI.framework is added, we can sta
 
 Add the using statement to the view controller:
 
-```c#
+```C#
 using TelerikUI;
 ```
 

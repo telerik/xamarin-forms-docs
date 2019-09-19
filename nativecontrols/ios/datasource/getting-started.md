@@ -15,19 +15,18 @@ This quick start tutorial demonstrates how to create a simple iOS application wi
 
 Now that our project is created and the TelerikUI.framework is added, we can start referencing and using the TelerikUI types:
 
-Open your **ViewController.m** file and add a reference to the chart header file:
+Open your **UIViewController** file and add a reference to the chart header file:
 
-    #import <TelerikUI/TelerikUI.h>
+```C#
+using TelerikUI;
+```
+
 
 Note that starting with Xcode 6 Apple doesn't generate the precompiled headers file automatically. That is why you should add import the UIKit framework before importing TelerikUI:
 
-    #import <UIKit/UIKit.h>
-
-If you are writing Swift, add the same line in your bridging header.
-
-If you are using Xamarin, add a reference to TelerikUI.dll in your project and use the <code>using</code> directive:
-
-    using TelerikUI;
+```C#
+using UIKit;
+```
     
 The simplest way to use <code>TKDataSource</code> is to initialize it with an array. The following code creates a new instance of <code>TKDataSource</code> and loads it with a numeric array:
 

@@ -3,7 +3,7 @@ title: Sorting remote data for DataGrid when using Load On Demand.
 description: How to applying DataGrid's SortDescriptors on the remote data source while using load on demand so that it only loads the next set of sorted items.
 type: how-to
 page_title: Sorting remote data for DataGrid when using Load On Demand.
-slug: sorting-remote-data-datagrid-when-using-lod
+slug: datagrid-sorting-remote-data-when-using-lod
 position: 
 tags: datagrid, filtering, sorting, filter, sort, data, datasource, Xamarin, XamarinForms, Android, UWP
 ticketid: 

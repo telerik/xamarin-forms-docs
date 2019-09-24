@@ -133,11 +133,13 @@ private void DataGrid_OnLoadOnDemand(object sender, LoadOnDemandEventArgs e)
 }
 ```
 
-The last thing to consider in this scenario is when the user adds/removes a FilterDescriptor. If they were getting  sorted data, then the sort was removed, you can just keep adding unsorted data because there will eventually be a conflict from loading the same item.
+##### Consideration
 
-To handle this, you can subscribe to the SortDescriptors.CollectionChanged event handler. In there, Clear all the existing items and then continue on with whatever approach the user has set.
+The last thing to consider in this scenario is "what the user adds/removes a FilterDescriptor"? If the DataGrid is loading pre-sorted data, then the sort was removed, you cannot incrementally add unsorted data on top. You will eventually get a conflict when the same item is added again.
 
-Here's what that looks like for the example. Take notice that in order to keep user experience good, we fetch the same number of items from the database the `currentCount`. This way the user isn't starting all over when they sort.
+To handle this, you can subscribe to the SortDescriptors.CollectionChanged event handler. In there, Clear all the existing items first. Next, check if you need filtering or not as was done in the Load On Demand event handler. Then finally load the same number of items that was already in the DataGrid.
+
+Here's what that looks like for the example.
 
 ```csharp
 private void SortDescriptors_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)

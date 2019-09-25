@@ -213,5 +213,114 @@ private void SortDescriptors_CollectionChanged(object sender, System.Collections
     }
 }
 ```
+## MVVM
+
+You can extrapolate the logic into a separate helper method and use Queryable to combine all the logic for eevery descriptor before invoking the query. The example you see below can be used in both the Load
+
+```csharp
+private void DataGrid_OnLoadOnDemand(object sender, LoadOnDemandEventArgs e)
+{
+    if (currentCount == allProducts.Count) return null;
+
+    var result = FetchData(allProducts, DataGrid.SortDescriptors, currentCount, batchCount);
+
+    currentCount += batchCount;
+
+    foreach (var product in result)
+    {
+        DataGridItems.Add(product);
+    }
+}
+
+private void MySortDescriptorsCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+{
+    DataGridItems?.Clear();
+
+    var result = FetchData(allProducts, DataGrid.SortDescriptors, currentCount);
+
+    foreach (var product in result)
+    {
+        DataGridItems?.Add(product);
+    }
+}
+
+// Reusable method that leverages Queryable to combine multiple expressions before invoking the query.
+private static IEnumerable<Product> FetchData(ObservableCollection<Product> products, SortDescriptorCollection descriptors, int currentItemCount, int? batchItemCount = null)
+{
+    IQueryable<Product> query = products.AsQueryable();
+
+    if (descriptors == null || descriptors.Count == 0)
+    {
+        query.Take(currentItemCount);
+    }
+    else
+    {
+        foreach (var descriptor in descriptors)
+        {
+            if (descriptor is PropertySortDescriptor propertyDescriptor)
+            {
+                if (propertyDescriptor.PropertyName == "ProductName")
+                {
+                    if (propertyDescriptor.SortOrder == SortOrder.Ascending)
+                    {
+                        query.OrderBy(p => p.ProductName, (IComparer<string>)propertyDescriptor.Comparer);
+                    }
+                    else
+                    {
+                        query.OrderByDescending(p => p.ProductName, (IComparer<string>)propertyDescriptor.Comparer);
+                    }
+                }
+
+                if (propertyDescriptor.PropertyName == "CategoryId")
+                {
+                    if (propertyDescriptor.SortOrder == SortOrder.Ascending)
+                    {
+                        query.OrderBy(p => p.CategoryId, (IComparer<int?>)propertyDescriptor.Comparer);
+                    }
+                    else
+                    {
+                        query.OrderByDescending(p => p.CategoryId, (IComparer<int?>)propertyDescriptor.Comparer);
+                    }
+                }
+
+                // Alternate LINQ option
+                // If you use System.Linq.Dynamic, you can pass a SQL-like expression in a string for the KeySelector
+                // (propertyDescriptor.SortOrder == SortOrder.Ascending)
+                //
+                //  query.OrderBy(propertyDescriptor.PropertyName);
+                //
+                //se
+                //
+                //  query.OrderByDescending(propertyDescriptor.PropertyName);
+                //
+            }
+            else if (descriptor is DelegateSortDescriptor delegateDescriptor)
+            {
+                if (delegateDescriptor.SortOrder == SortOrder.Ascending)
+                {
+                    query.OrderBy(p => delegateDescriptor.KeyLookup.GetKey(p), (IComparer<object>) delegateDescriptor.Comparer);
+                }
+                else
+                {
+                    query.OrderByDescending(p => delegateDescriptor.KeyLookup.GetKey(p), (IComparer<object>) delegateDescriptor.Comparer);
+                }
+            }
+        }
+    }
+
+    if (batchItemCount == null)
+    {
+        query.Take(currentItemCount);
+    }
+    else
+    {
+        query.Skip(currentItemCount).Take((int)batchItemCount);
+    }
+
+    var result = query.ToList();
+
+    return result;
+}
+```
 
 > This approach can also be used for **FilterDescriptors**. Use the same concept with the `DataGrid.FilterDescriptors` collection and write the custom logic accordingly.

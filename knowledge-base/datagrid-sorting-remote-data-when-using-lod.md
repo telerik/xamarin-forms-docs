@@ -100,19 +100,16 @@ private void DataGrid_OnLoadOnDemand(object sender, LoadOnDemandEventArgs e)
                     .Take(lodBatchCount);
             }
         }
-
-
     }
     else
     {
-        // NORMAL
-        // There was no filtering applied, go about things like you normally would
+        // NORMAL - No filtering applied
         nextProducts = ProductsDataBase
             .Skip(currentCount)
             .Take(lodBatchCount);
     }
 
-    // Invoke the statement by calling toList (this is not needed, but recommended while building a multi-stage query from multiple descriptors)
+    // Get the items
     var result = nextProducts?.ToList();
 
     // Now add the fetched items to the DataGrid
@@ -133,11 +130,15 @@ private void DataGrid_OnLoadOnDemand(object sender, LoadOnDemandEventArgs e)
 }
 ```
 
-##### Consideration
+#### SortDescriptor Changes
 
-The last thing to consider in this scenario is "what the user adds/removes a FilterDescriptor"? If the DataGrid is loading pre-sorted data, then the sort was removed, you cannot incrementally add unsorted data on top. You will eventually get a conflict when the same item is added again.
+The last thing to consider in this scenario is "what happens when the user adds/removes a FilterDescriptor"? If the DataGrid is loading pre-sorted data, then the sort was removed, you cannot incrementally add unsorted data on top. You will eventually get a conflict when the same item is added again.
 
-To handle this, you can subscribe to the SortDescriptors.CollectionChanged event handler. In there, Clear all the existing items first. Next, check if you need filtering or not as was done in the Load On Demand event handler. Then finally load the same number of items that was already in the DataGrid.
+To handle this, you can subscribe to the **SortDescriptors.CollectionChanged** event handler. In there, take the following steps:
+
+1. Clear all the existing items from the DataGrid's ItemsSource first (you dont want to mix unsorted with sorted data). 
+2. Check if you need filtering or not as was done in the Load On Demand event handler.
+3. Finally, load the same number of items that was already in the DataGrid.
 
 Here's what that looks like for the example.
 
@@ -213,9 +214,11 @@ private void SortDescriptors_CollectionChanged(object sender, System.Collections
     }
 }
 ```
-## MVVM
+### Combining Approaches
 
-You can extrapolate the logic into a separate helper method and use Queryable to combine all the logic for eevery descriptor before invoking the query. The example you see below can be used in both the Load
+You may have noticed that the logic in both event handlers is similar. the only difference is whether you're clearing everything and reloading, or getting a batch of items. Therefore, you can extrapolate the logic into a separate helper method and use Queryable to combine all the logic for eevery descriptor before invoking the query. 
+
+The example you see below uses a single method to get the items from the data source. It also uses IQueryable to combine expressions so that you can be a little more dynamic.
 
 ```csharp
 private void DataGrid_OnLoadOnDemand(object sender, LoadOnDemandEventArgs e)
@@ -259,6 +262,7 @@ private static IEnumerable<Product> FetchData(ObservableCollection<Product> prod
         {
             if (descriptor is PropertySortDescriptor propertyDescriptor)
             {
+	        // check the property name and construct the LINQ query accordingly
                 if (propertyDescriptor.PropertyName == "ProductName")
                 {
                     if (propertyDescriptor.SortOrder == SortOrder.Ascending)
@@ -271,20 +275,7 @@ private static IEnumerable<Product> FetchData(ObservableCollection<Product> prod
                     }
                 }
 
-                if (propertyDescriptor.PropertyName == "CategoryId")
-                {
-                    if (propertyDescriptor.SortOrder == SortOrder.Ascending)
-                    {
-                        query.OrderBy(p => p.CategoryId, (IComparer<int?>)propertyDescriptor.Comparer);
-                    }
-                    else
-                    {
-                        query.OrderByDescending(p => p.CategoryId, (IComparer<int?>)propertyDescriptor.Comparer);
-                    }
-                }
-
-                // Alternate LINQ option
-                // If you use System.Linq.Dynamic, you can pass a SQL-like expression in a string for the KeySelector
+                // Alternate - If you use System.Linq.Dynamic, you can pass a SQL-like expression in a string for the KeySelector
                 // (propertyDescriptor.SortOrder == SortOrder.Ascending)
                 //
                 //  query.OrderBy(propertyDescriptor.PropertyName);
@@ -317,6 +308,7 @@ private static IEnumerable<Product> FetchData(ObservableCollection<Product> prod
         query.Skip(currentItemCount).Take((int)batchItemCount);
     }
 
+    // Invoke the query
     var result = query.ToList();
 
     return result;

@@ -41,7 +41,7 @@ The table below shows all commands in the RadDataGrid control and for each of th
 | CancelEdit | EditContext |
 | CommitEdit | EditContext |
 | ValidateCell | ValidateCellContext |
-| LoadMoreData | CommandsViewModel |
+| LoadMoreData | LoadOnDemandContext |
 
 ## See Also
 

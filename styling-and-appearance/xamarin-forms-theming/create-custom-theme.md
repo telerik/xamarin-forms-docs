@@ -83,10 +83,8 @@ The default resources are located in the **Telerik.XamarinForms.Common** assembl
     <Color x:Key="TelerikDataGridAccentColor">#3148CA</Color>
 
     <!-- Entry -->
-    <OnPlatform x:TypeArguments="Color"
-                x:Key="TelerikEntryTextColor">
-        <On Platform="iOS"
-            Value="#020202" />
+    <OnPlatform x:TypeArguments="Color" x:Key="TelerikEntryTextColor">
+        <On Platform="iOS" Value="#020202" />
     </OnPlatform>
     <Color x:Key="TelerikEntryBorderColor">#3148CA</Color>
 
@@ -116,11 +114,15 @@ The default resources are located in the **Telerik.XamarinForms.Common** assembl
     <Color x:Key="TelerikNumericInputButtonTextColor">#3148CA</Color>
     <Color x:Key="TelerikNumericInputButtonBackgroundColor">Transparent</Color>
     <Color x:Key="TelerikNumericInputEntryBorderColor">#3148CA</Color>
-    <OnPlatform x:TypeArguments="Color"
-                x:Key="TelerikNumericInputEntryTextColor">
-        <On Platform="iOS"
-            Value="#020202" />
+    <OnPlatform x:TypeArguments="Color" x:Key="TelerikNumericInputEntryTextColor">
+        <On Platform="iOS" Value="#020202" />
     </OnPlatform>
+
+    <!-- PdfViewer -->
+    <Color x:Key="TelerikPdfViewerToolbarItemTextColor">#3148CA</Color>
+
+    <!-- ImageEditor -->
+    <Color x:Key="TelerikImageEditorToolbarItemTextColor">#3148CA</Color>
 
     <!-- Rating -->
     <Color x:Key="TelerikRatingControlAccentColor">#3148CA</Color>

@@ -21,6 +21,10 @@ The function returns true when the item is added into RadAutoCompleteView Filter
 
 >The RadAutoCompleteView **TextSearchPath** property is required in custom filtering scenarios.
 
+## FilteredItems collection
+
+**FilteredItems** bindable property allows you to access the collection containing the search results of the AutoCompleteView. The property can be used in scenarios where the search results are visualized at a different place or inside another container.
+
 ## Example
 
 Here is an example how the RadAutoCompleteView Custom Filtering works when searching in two properties:

@@ -17,7 +17,20 @@ The Tokens Support feature exposes the following properties:
 
 ## Tokens Collection
 
-The RadAutoCompleteView control provides a readonly collection for the tokens - Tokens collection of type *ObservableCollection<object>*. When items are selected from the SuggestionView and DisplayMode is Tokens, these items are added to the Tokens collection. 
+The RadAutoCompleteView control provides a readonly collection for the tokens - Tokens collection of type *ObservableCollection<object>*. When items are selected from the SuggestionView and DisplayMode is Tokens, these items are added to the Tokens collection. In order to track changes in the Tokens collection when items are added or removed you have to subscribe for the Tokens.CollectionChanged. 
+For example:
+
+```C#
+this.autoCompleteView.Tokens.CollectionChanged
+```
+
+```C#
+private void Tokens_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+{
+   
+}
+  
+```
 
 ## Example
 

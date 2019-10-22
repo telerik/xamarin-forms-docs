@@ -1,5 +1,6 @@
 ---
 title: Customization
+slug: chart-point-labels
 position: .2
 ---
 
@@ -12,7 +13,6 @@ position: .2
 Here is an example how to customize point labels changing <code>TKChartPointLabelStyle</code> settings.
 
 <snippet id='chart-pointlabels'/>
-<snippet id='chart-pointlabels-swift'/>
 ```C#
 TKChartLineSeries lineSeries = new TKChartLineSeries (dataPoints.ToArray ());
 lineSeries.Selection = TKChartSeriesSelection.DataPoint;

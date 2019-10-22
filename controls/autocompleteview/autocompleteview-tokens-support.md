@@ -5,15 +5,19 @@ position: 4
 slug: autocompleteview-tokens-support
 ---
 
-# Tokens Support
+# Tokens Support - Multiple Selection
 
-With AutoCompleteView you could enable users to search for and select several items. These items appear as tokens that can easily be deselected using their close button.
+With AutoCompleteView you could enable users to search for and select several items (multiple selection). These items appear as tokens that can easily be deselected using their close button.
 
 The Tokens Support feature exposes the following properties:
 
 * **DisplayMode** *(SuggestionsDisplayMode)* property determines whether a single or multiple selection is enabled. The default DisplayMode is “Plain”, for multiple selection you would need to set it to “Tokens”.
 * **ShowMoreItems** *(bool)*: Defines the visibility of the view that is used to represents more items. When ShowMoreItems is set to true and ShowMoreTemplate is set, the RadAutoCompleteView will hide tokens that are not on the first line and will show the hidden count. Dy default ShowMoreItems is true. If you want to hide the hidden count you should set the ShowMoreItems to false.
 * **ShowMoreTemplate** *(DataTemplate)*: Defines the template used to create show more view.
+
+## Tokens Collection
+
+The RadAutoCompleteView control provides a readonly collection for the tokens - Tokens collection of type *ObservableCollection<object>*. When items are selected from the SuggestionView and DisplayMode is Tokens, these items are added to the Tokens collection. 
 
 ## Example
 

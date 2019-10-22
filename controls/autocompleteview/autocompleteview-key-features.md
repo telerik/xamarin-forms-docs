@@ -36,6 +36,14 @@ You could also use the **WatermarkTextColor** property to define the Watermark t
 
 <snippet id='autocompleteview-features-watermark'/>
 
+## Keyboard
+
+The **Keyboard** property of type *Xamarin.Forms.Keyboard* allows you to define the type of the keyboard that will be visualized by the device. 
+
+```XAML
+<telerikInput:RadAutoCompleteView Keyboard="Numeric" />
+```
+
 ## Clear Button Visibility
 
 The Clear button, which appears at the right side of the input field when the AutoCompleteView is on focus, gives the end-user the option to quickly clear the entered values. You could control the visibility of the button through the **IsClearButtonVisible** property.

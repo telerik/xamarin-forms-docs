@@ -36,6 +36,10 @@ slug: chart-behaviors-selection
 
 - **SelectionChanged** event: Occurs when a selection has been made.
 
+### Commands
+
+ChartSelectionBehavior exposes support for **Commands**. 
+
 ## Example
 
 Here is an example of how the Chart Selection Behavior works:

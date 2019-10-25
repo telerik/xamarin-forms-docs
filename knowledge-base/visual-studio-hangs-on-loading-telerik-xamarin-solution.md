@@ -5,7 +5,7 @@ type: Troubleshooting
 page_title: Resolve issue with VS 2019 hangs on loading when Xamarin project is open
 slug: visual-studio-hangs-on-loading-telerik-xamarin-solution
 position: 
-tags: Xamarin, Telerik UI for Xamarin, extentions, solution, visual studio 2019, hangs, loading
+tags: Xamarin, Telerik UI for Xamarin, extensions, solution, visual studio 2019, hangs, loading
 ticketid: 1435667
 res_type: kb
 ---

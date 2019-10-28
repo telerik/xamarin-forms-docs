@@ -35,8 +35,8 @@ In order to solve this issue you should disable the Telerik Xamarin VS Extention
 
 1. Open **Manage Extentions** dialog box 
 
-![Template Column with Button](images/manage-extentions.png)
+	![Template Column with Button](images/manage-extentions.png)
 
 2. Select **Installed** and then in the search field search for *Telerik Xamarin* and click *Disable*
 
-![Disable Telerik Xamarin Extensions](images/telerik-extensions.png)
+	![Disable Telerik Xamarin Extensions](images/telerik-extensions.png)

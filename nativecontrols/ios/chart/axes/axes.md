@@ -1,6 +1,7 @@
 ---
 title: Axes
 page_title: Axes Overview
+slug: chart-ios-axes-overview
 position: 1
 ---
 

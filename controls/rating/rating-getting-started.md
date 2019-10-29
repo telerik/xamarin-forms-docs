@@ -51,7 +51,7 @@ In addition to this you need to add the following namespace:
 <snippet id='xmlns-telerikinput'/>
 <snippet id='ns-telerikinput'/>
 
-By default the control is defined in a way that five stars will be visualized and non of them will be selected. The screenshot below shows the control with selection applied:
+By default the control is defined in a way that five stars will be visualized and none of them will be selected. The screenshot below shows the control with selection applied:
 
 ![](images/rating_getting_started.png)
 

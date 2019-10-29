@@ -37,7 +37,7 @@ RadRating supports read-only mode in which the end user cannot change its Value 
 RadRating provides the following event:
 
 * **ValueChanged**: Occurs whenever Value property is changed. The ValueChanged event handler receives two parameters:
-	* The sender argument which is of type *object*, but can b cast to *RadShapeRating* or *RadTemplatedRating* type;
+	* The sender argument which is of type *object*, but can be cast to *RadShapeRating* or *RadTemplatedRating* type;
 	* А **ValueChangedEventArgs** object which exposes both old and new values of the **Value** property.
  
 ## See Also

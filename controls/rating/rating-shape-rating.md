@@ -11,7 +11,7 @@ slug: shape-rating
 
 ## Shape Types
 
-RadShapeRating exposes **ItemShape** property of type *RadPathGeometry* which is used define the shape of the rating items.
+RadShapeRating exposes **ItemShape** property of type *RadPathGeometry* which is used to define the shape of the rating items.
 
 For easy and fast setup RadRating includes several simple shapes that can be used for rating items out of the box. This is accomplished through the static **Geometries** class which resides in the **Telerik.XamarinForms.Primitives.SkiaSharp.Rating** namespace. This class exposes static properties that return predefined shapes. 
 

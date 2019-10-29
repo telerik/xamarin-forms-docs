@@ -7,11 +7,13 @@ slug: shape-rating
 
 # Shape Rating
 
-The **RadShapeRating** component is designed to be used in the simplest scenarios where an ordinary rating component is required. This control allows easy customization of the colors and shape of the default rating item.
+**RadShapeRating** component is designed to be used in the simplest scenarios where an ordinary rating component is required. This control allows easy customization of the colors and shape of the default rating item.
 
 ## Shape Types
 
-For easy and fast setup RadRating includes several simple shapes that can be used for rating items out of the box. This is accomplished through the static **Geometries** class which resides in the **Telerik.XamarinForms.Primitives.SkiaSharp.Rating** namespace. This class exposes static properties that return predefined shapes. All properties are of type **RadPathGeometry** and can be set as **ItemShape** of the RadShapeRating component.
+RadShapeRating exposes **ItemShape** property of type *RadPathGeometry* which is used define the shape of the rating items.
+
+For easy and fast setup RadRating includes several simple shapes that can be used for rating items out of the box. This is accomplished through the static **Geometries** class which resides in the **Telerik.XamarinForms.Primitives.SkiaSharp.Rating** namespace. This class exposes static properties that return predefined shapes. 
 
 >tip For more details on RadPath and RadPathGeometry check the documentation here: [RadPath Overview]({%slug path-overview%}).
 
@@ -40,6 +42,16 @@ Here is how each of the geometries can be used:
 <snippet id='rating-geometries-heart'/>
 
 ![](images/rating-heart.png)
+
+- Custom RadPathGeometry Shape:
+
+<snippet id='rating-geometries-customgeometry' />
+
+where *telerikCommon* namespace is defined like this:
+
+<snippet id='xmlns-telericommon' />
+
+![](images/rating-triangle.png)
 
 ## Shapes Styling
 

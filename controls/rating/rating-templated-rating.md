@@ -7,7 +7,7 @@ slug: templated-rating
 
 # Templated Rating
 
-**RadTemplatedRating** component is designed to be used in the cases where it is easier to provide a template (e.g. just an image) for the rating items instead of creating custom **RadPathGeometry**. On top of the API of the [RadRatingBase]({% slug rating-base %}) this component adds the following members:
+**RadTemplatedRating** component is designed to be used in the cases where it is easier to provide a template (e.g. just an image) for the rating items instead of creating custom **RadPathGeometry**. On top of the [common Rating API]({% slug rating-base %}) this component adds the following members:
 
 * **ItemTemplate** (*DataTemplate*): Defines the template used in the rating item.
 * **SelectedItemTemplate** (*DataTemplate*): Specifies the template used in the selected rating item.

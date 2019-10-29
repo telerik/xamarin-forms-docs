@@ -1,18 +1,46 @@
 ---
-title: Rating Base
-page_title: Rating Base
+title: Key Features
+page_title: Key Features
 position: 2
 slug: rating-base
 ---
 
-# Overview
+# Key Features
 
-**RadRatingBase** is an abstract class that provides the basic features of the rating component. It exposes the following members:
+RadRating is presented by two components named [RadShapeRating]({% slug shape-rating %}) and [RadTemplatedRating]({% slug templated-rating %}) in order to provide various visualizations of the rating functionality. 
 
- - (bool) **IsReadOnly** - Gets or sets a value indicating if the component responses to UI interaction. End users will not be able to chanve the value if true.
- - (int) **ItemsCount** - Gets or sets the number of the items that are visualized.
- - (double) **ItemsSpacing** - Gets or sets the distance between the separate items.
- - (double) **Value** - Gets or sets the number of the selected rating items.
- - (event) **ValueChanged** - Invoked whenever Value property is changed.
+This topic gives and overview of the key features of the Rating component that are common for both **RadShapeRating** and **RadTemplatedRating**.
 
-The rest of the features are provided by the other two classes [RadShapeRating]({% slug shape-rating %}) and [RadTemplatedRating]({% slug templated-rating %}).
+>tip RadShapeRating and RadTemplatedRating inherit from the **RatingBase** abstract class that provides their common features.
+
+## Rating Value
+
+RadRating exposes a **Value** property that is used to set and read the number of the selected rating items.
+
+<snippet id='rating-features-value' />
+ 
+## Read-only Mode
+
+RadRating supports read-only mode in which the end user cannot change its Value (the number of the selected items). You could enable the read-only mode through **IsReadOnly** property:
+
+<snippet id='rating-features-readonly' />
+ 
+## Configuration Settings
+
+* **ItemsCount**: Defines the number of the items that are visualized in the rating control. The default value is 5 items;
+* **ItemsSpacing**: Specifies the distance between the separate items in pixels. Default value is 10px;
+
+<snippet id='rating-features-configuration' />
+ 
+## Events
+
+RadRating provides the following event:
+
+* **ValueChanged**: Occurs whenever Value property is changed. The ValueChanged event handler receives two parameters:
+	* The sender argument which is of type *object*, but can b cast to *RadShapeRating* or *RadTemplatedRating* type;
+	* А **ValueChangedEventArgs** object which exposes both old and new values of the **Value** property.
+ 
+## See Also
+
+- [RadShapeRating]({% slug shape-rating %})
+- [RadTemplatedRating]({% slug templated-rating %})

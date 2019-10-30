@@ -7,7 +7,7 @@ slug: numericinput-control-template
 
 # Control Template
 
-RaNumericInput's visual appearance is defined through a Control Template. In order to customize the way the NumericInput looks, you would need to take the default ControlTemplate and modify it. 
+RadNumericInput's visual appearance is defined through a Control Template. In order to customize the way the NumericInput looks, you would need to take the default ControlTemplate and modify it. 
 
 This topic gives an overview of the **ControlTemplate** of the NumericInput control, so you can copy it to your app and make changes. The template consists of decrease and increase buttons, the entry control for entering values as well as the accompanying styles.  
 

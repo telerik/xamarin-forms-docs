@@ -29,7 +29,7 @@ res_type: kb
 
 This help article will show you how to customize the text inside the Chart Tooltip
 
->important This requirement could be achieved through a custom renderer for each platform. More details about how to create and register custom renderer can be found in our help article [here]({%slug %})
+>important This requirement could be achieved through a custom renderer for each platform. More details about how to create and register custom renderer can be found in our help article [here]({%slug chart-how-to-register-custom-renderer%})
 
 ## Solution
 

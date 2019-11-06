@@ -2,7 +2,7 @@
 title: Understanding UI for Xamarin and Linker Behavior
 description: How to prevent Telerik assemblies from being stripped out by linker causing compile-time or runtime-exceptions.
 type: how-to
-page_title: How to avoid exception from setting Linker Behavior to Link All
+page_title: How to Avoid Exception From Setting Linker Behavior to Link All
 slug: common-understanding-ui-for-xamarin-and-linker-behavior
 position: 
 tags: Xamarin, Telerik UI for Xamarin
@@ -30,7 +30,7 @@ You can take one of two options to resolve this:
 
 ### Option 1 - Change Linker Behavior
 
-This is our recommended approach. Simple change the linker behavior to strip out SDK assemblies only
+This is our recommended approach. Change the linker behavior to strip out SDK assemblies only:
 
 * On Android, change the linker to **SDK Assemblies Only**
 * On iOS, change the setting to **Link Framework SDKs Only**
@@ -75,7 +75,7 @@ On Android, it would look like this:
 
 ## Resources
 
-For more settings and to gain an better understanding of what the  linker does, visit the following documentation article:
+For more settings and to gain an better understanding of what the linker does, visit the following documentation articles:
 
 * [Linking on Android](https://docs.microsoft.com/en-us/xamarin/android/deploy-test/linker)
   * [Skipping assemblies for Android](https://docs.microsoft.com/en-us/xamarin/android/deploy-test/linker#linkskip)

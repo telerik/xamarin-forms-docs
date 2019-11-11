@@ -13,6 +13,8 @@ Portable\Telerik.XamarinForms.DataGrid.dll
 Portable\Telerik.XamarinForms.DataGrid.xml
 Portable\Telerik.XamarinForms.DataVisualization.dll
 Portable\Telerik.XamarinForms.DataVisualization.xml
+Portable\Telerik.XamarinForms.ImageEditor.dll
+Portable\Telerik.XamarinForms.ImageEditor.xml
 Portable\Telerik.XamarinForms.Input.dll
 Portable\Telerik.XamarinForms.Input.xml
 Portable\Telerik.XamarinForms.Primitives.dll

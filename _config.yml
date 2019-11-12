@@ -763,26 +763,26 @@ footer_social:
     twitter: https://twitter.com/Telerik/ 
 
 has_kb_portal: true
-    
-intro-columns:
+
+intro_columns:
 -
   categories:
   -
-    title: "Data Controls"
+    title: "Data Controls"  
     items:
-        "DataGrid": "datagrid-overview"
-        "ListView": "listview-overview"
-        "DataForm": "dataform-overview"
+      "DataGrid": "datagrid-overview"
+      "ListView": "listview-overview"
+      "DataForm": "dataform-overview"   
   -
     title: "Pdf Viewer"
     items:
-        "PdfViewer": "pdfviewer-overview"
+      "PdfViewer": "radcalendar-overview"
   -
-    title: "Calendar &amp; Scheduling"
+    title: "Calendar & Scheduling"
     items:
         "Calendar": "calendar-overview"
   -   
-    title: "Navigation &amp; Layout"
+    title: "Navigation & Layout"
     items:
         "TreeView": "treeview-overview"
         "SideDrawer": "sidedrawer-overview"

@@ -14,7 +14,7 @@ Telerik UI for Xamarin is a collection of Xamarin.Forms Controls and Xamarin.And
  
 To read more about the benefits of using Telerik UI for Xamarin, please visit the [product overview page](http://www.telerik.com/xamarin-ui).
 
-![Telerik UI for Xamarin](front-image.jpg)
+![Telerik UI for Xamarin](front-image.png)
 
 
 ### Telerik UI for Xamarin.Forms

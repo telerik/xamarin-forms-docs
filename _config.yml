@@ -776,7 +776,7 @@ intro_columns:
   -
     title: "Pdf Viewer"
     items:
-      "PdfViewer": "radcalendar-overview"
+      "PdfViewer": "pdfviewer-overview"
   -
     title: "Calendar & Scheduling"
     items:

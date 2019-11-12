@@ -1,5 +1,6 @@
 # The public documentation URL, used for sitemap.xml
 url: "https://docs.telerik.com/devtools/xamarin"
+site_name: Xamarin
 
 # Exclude files which should not be in the output 
 exclude: [README.md,Gemfile,Gemfile.lock]

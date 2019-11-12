@@ -710,7 +710,7 @@ defaults:
         path: "controls/wordsprocessing"
     values:
         title_prefix: "Xamarin WordsProcessing"
-
+        
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
 
@@ -760,6 +760,34 @@ footer_social:
 
 has_kb_portal: true
     
+intro-columns:
+-
+        categories:
+        -
+            title: "Data Controls"
+            items:
+                "DataGrid": "datagrid-overview"
+                "ListView": "listview-overview"
+                "DataForm": "dataform-overview"
+        -
+            title: "Pdf Viewer"
+            items:
+                "PdfViewer": "pdfviewer-overview"
+        -
+            title: "Calendar &amp; Scheduling"
+            items:
+                "Calendar": "calendar-overview"
+        -   
+            title: "Navigation &amp; Layout"
+            items:
+                "TreeView": "treeview-overview"
+                "SideDrawer": "sidedrawer-overview"
+                "TabView": "tabview-overview"
+                "Accordion": "accordion-overview"
+                "Expander": "expander-overview"
+                "DockLayout": "docklayout-overview"
+            
+
 # Assets pipeline configuration
 assets:
     cachebust: soft

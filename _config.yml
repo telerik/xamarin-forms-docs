@@ -781,7 +781,9 @@ intro_columns:
     title: "Calendar & Scheduling"
     items:
         "Calendar": "calendar-overview"
-  -   
+-
+  categories:
+  -
     title: "Navigation & Layout"
     items:
         "TreeView": "treeview-overview"
@@ -790,7 +792,28 @@ intro_columns:
         "Accordion": "accordion-overview"
         "Expander": "expander-overview"
         "DockLayout": "docklayout-overview"
-            
+  -
+    title: "Interactivity & UX"
+    items:
+        "BusyIndicator": "busyindicator-overview"
+        "Popup": "popup-overview"
+        "SlideView": "slideview-overview"
+        "Border": "border-overview"
+        "Path": "path-overview"
+-
+  categories:
+  -
+    title: "Data Visualization"
+    items:
+        "Charts": "chart-overview"
+        "Map": "map-overview"
+        "Rating": "rating-overview"
+        "Barcode": "barcode-overview"
+        "Image Editor": "imageeditor-overview"
+        "Entry": "entry-overview"
+        "AutoCompleteView": "autocompleteview-overview"
+        "NumericInput": "numericinput-overview"
+        "MaskedInput": "maskedinput-overview"
 
 # Assets pipeline configuration
 assets:

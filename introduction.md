@@ -4,18 +4,17 @@ page_title: Telerik UI for Xamarin Documentation
 position: 1
 ---
 
-# Introduction
+## Introduction
 
 Thank you for choosing Telerik &reg; UI for Xamarin.
 
 Telerik UI for Xamarin offers a variety of the most essential controls and Visual Studio item templates for building professional-looking modern mobile applications for Android, iOS and UWP from a single code base. 
 
-Telerik UI for Xamarin is a collection of Xamarin.Forms Controls and Xamarin.Android and Xamarin.iOS wrappers built on top of the native Telerik Android and iOS components. The Xamarin.Forms controls also utilize controls and features from the Telerik UI for UWP suite, providing common API that allows the developer to use the Telerik components on all three platforms (Android / iOS / Windows). In addition you get access to the full set of controls in Telerik UI for Xamarin.IOS and Telerik UI for Xamarin.Android.
+In addition to the numerous Xamarin.Forms controls, the suite includes Xamarin.Android and Xamarin.iOS wrappers built on top of truly native iOS and Android components. The Telerik UI for UWP suite is used as basis for the UWP implementation of the controls.
  
 To read more about the benefits of using Telerik UI for Xamarin, please visit the [product overview page](http://www.telerik.com/xamarin-ui).
 
 ![Telerik UI for Xamarin](front-image.png)
-
 
 ### Telerik UI for Xamarin.Forms
 
@@ -31,11 +30,11 @@ If you're building a Xamarin.Android or Xamarin.iOS application, you can take ad
 
 For information about the control set, API and features, refer to the documentation of [Telerik UI for UWP](https://docs.telerik.com/devtools/universal-windows-platform/).
 
-### Licensing
+## Licensing
 
 License agreement and detailed information about different licenses and which one you should purchase is explained in the [Licensing](https://www.telerik.com/purchase/license-agreement/ui-for-xamarin) section.				
 
-### Supported mobile versions
+## Supported mobile versions
 
 You can use Telerik UI for Xamarin for application development for the following mobile operating systems:
 
@@ -45,7 +44,7 @@ You can use Telerik UI for Xamarin for application development for the following
 |iOS				|7.0 or higher|
 |Windows							| Windows 10  |
 
-### Installation and Deployment
+## Installation and Deployment
 
 To learn how to install and work with Telerik UI for Xamarin suite, visit the following resources:
 
@@ -53,7 +52,7 @@ To learn how to install and work with Telerik UI for Xamarin suite, visit the fo
 * [Getting Started on Windows]({%slug getting-started-windows %})
 * [Getting Started on Mac]({%slug getting-started-mac %})
 
-### Related Links
+## Related Links
 
 * Telerik UI for Xamarin product page - [http://www.telerik.com/xamarin-ui](http://www.telerik.com/xamarin-ui)
 

@@ -792,14 +792,6 @@ intro_columns:
         "Accordion": "accordion-overview"
         "Expander": "expander-overview"
         "DockLayout": "docklayout-overview"
-  -
-    title: "Interactivity & UX"
-    items:
-        "BusyIndicator": "busyindicator-overview"
-        "Popup": "popup-overview"
-        "SlideView": "slideview-overview"
-        "Border": "border-overview"
-        "Path": "path-overview"
 -
   categories:
   -
@@ -824,13 +816,23 @@ intro_columns:
         "Button": "button-overview"
         "CheckBox": "checkbox-overview"
   -
+    title: "Interactivity & UX"
+    items:
+        "BusyIndicator": "busyindicator-overview"
+        "Popup": "popup-overview"
+        "SlideView": "slideview-overview"
+        "Border": "border-overview"
+        "Path": "path-overview"
+-
+  categories:
+  -
     title: "Document Processing Libraries"
     items:
         "PdfProcessing": "radpdfprocessing-overview"
         "WordsProcessing": "radwordsprocessing-overview"
         "SpreadStreamProcessing": "radspreadstreamprocessing-overview"
         "ZipLibrary": "radziplibrary-overview"
--
+  -
     title: "Chatbots"
     items:
         "Conversational UI": "chat-overview"

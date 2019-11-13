@@ -807,6 +807,7 @@ intro_columns:
     items:
         "Charts": "chart-overview"
         "Map": "map-overview"
+        "Gauge": "gauge-overview"
         "Rating": "rating-overview"
         "Barcode": "barcode-overview"
         "Image Editor": "imageeditor-overview"
@@ -814,7 +815,26 @@ intro_columns:
         "AutoCompleteView": "autocompleteview-overview"
         "NumericInput": "numericinput-overview"
         "MaskedInput": "maskedinput-overview"
-
+-
+  categories:
+  -
+    title: "Buttons"
+    items:
+        "Segmented Control": "segmentedcontrol-overview"
+        "Button": "button-overview"
+        "CheckBox": "checkbox-overview"
+  -
+    title: "Document Processing Libraries"
+    items:
+        "PdfProcessing": "radpdfprocessing-overview"
+        "WordsProcessing": "radwordsprocessing-overview"
+        "SpreadStreamProcessing": "radspreadstreamprocessing-overview"
+        "ZipLibrary": "radziplibrary-overview"
+-
+    title: "Chatbots"
+    items:
+        "Conversational UI": "chat-overview"
+        
 # Assets pipeline configuration
 assets:
     cachebust: soft

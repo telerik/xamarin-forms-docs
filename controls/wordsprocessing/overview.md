@@ -41,7 +41,7 @@ The model of **RadWordsProcessing** includes:
 	* The API allows you create custom styles and use them throughout the document.
 	* [List styles](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/concepts/lists).
 
-## Features:
+## Features
 
 * [**Mail Merge**](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/editing/mail-merge): Provides ability to produce personalized documents from a template holding fixed content merged with variable data from a data source (database or any other collection of data items).
 
@@ -55,7 +55,7 @@ The model of **RadWordsProcessing** includes:
 
 * [**RadFlowDocumentEditor**](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/editing/radflowdocumenteditor): It is intended to simplify the process of creating and modifying a document and achieve the same results as you would using the style properties and child collections of the document elements with less amount of code.
 
-* Formatting:
+* Formatting
 
 	In addition to the styles, RadWordsProcessing provides support for different types of formatting so you can format any of the document elements:
 	* **Character formatting**: Font size, font color, font name, bold, italic, underline, etc.
@@ -63,7 +63,7 @@ The model of **RadWordsProcessing** includes:
 	* **Table formatting**: Enables you to change the alignment, borders, shading, spacing and padding, and more.
 	* **Modifying the section properties** to adjust the page size, orientation, margins, headers, and footers, etc.
 
-## Supported formats:
+## Supported formats
 
 The library comes with support for the following document formats:
 
@@ -78,3 +78,24 @@ The library comes with support for the following document formats:
 * [**Plain text**](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/formats-and-conversion/plain-text/txt-txtformatprovider)
 
 You can import and export documents of these formats as well as convert the format of the document.
+
+## Required references
+
+You have two options to add the required Telerik references to your Xamarin.Forms app in order to use **RadWordsProcessing**:
+
+* Add the Telerik UI for Xamarin Nuget packages following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+
+* Add the references to Telerik assemblies manually, check the list below with the required assemblies for RadSpreadStreamProcessing:
+
+	- **Telerik.Documents.Core.dll**
+	- **Telerik.Documents.Flow.dll**
+	- **Telerik.Zip.dll**
+	
+	If you need to export documents to PDF format, you will need to refer the following assemblies:
+
+	- **Telerik.Documents.Flow.FormatProviders.Pdf.dll**
+	- **Telerik.Windows.Documents.Fixed.dll**
+
+	>important Please keep in mind these assemblies are located in the Portable folder, still, you need to add a reference to them in the Xamarin.Forms project as well as in each of the platform projects (Android | iOS | UWP).
+
+

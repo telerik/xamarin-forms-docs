@@ -32,7 +32,6 @@ Android\Telerik.Xamarin.Android.Gauges.dll
 Android\Telerik.Xamarin.Android.Input.dll
 Android\Telerik.Xamarin.Android.List.dll
 Android\Telerik.Xamarin.Android.Primitives.dll
-iOS\Telerik.Xamarin.iOS.dll
 UWP\Telerik.Data.dll
 UWP\Telerik.UI.Xaml.Chart.UWP.dll
 UWP\Telerik.UI.Xaml.Controls.Data.UWP.dll

@@ -29,5 +29,15 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
             
 * **Support for [encryption](https://docs.telerik.com/devtools/document-processing/libraries/radziplibrary/features/protect-ziparchive)**: You can protect your ZIP file with password for more security.
             
+## Required references
 
+You have two options to add the required Telerik references to your Xamarin.Forms app in order to use **RadZipLibrary**:
+
+* Add the Telerik UI for Xamarin Nuget packages following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+
+* Add the references to Telerik assemblies manually, check below the required assembly for RadZipLibrary:
+	
+	- **Telerik.Zip.dll**
+	
+	>important Please keep in mind this assembly is located in the Portable folder, still, you need to add a reference to them in the Xamarin.Forms project as well as in each of the platform projects (Android | iOS | UWP).
             

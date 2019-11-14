@@ -52,4 +52,17 @@ The document model of the library provides support for:
 
 * [**Import of PDF and export to PDF and plain text**](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/formats-and-conversion/plain-text/textformatprovider)
 
+## Required references
+
+You have two options to add the required Telerik references to your Xamarin.Forms app in order to use **RadPdfProcessing**:
+
+* Add the Telerik UI for Xamarin Nuget packages following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+
+* Add the references to Telerik assemblies manually, check the list below with the required assemblies for RadPdfProcessing:
+
+	- **Telerik.Documents.Core.dll**
+	- **Telerik.Documents.Fixed.dll**
+	- **Telerik.Zip.dll**
+	
+	>important Please keep in mind these assemblies are located in the Portable folder, still, you need to add a reference to them in the Xamarin.Forms project as well as in each of the platform projects (Android | iOS | UWP).
 

@@ -10,7 +10,7 @@ position: 0
 
 # Overview
 
-This article briefly explains the specifics of **RadSpreadStreamProcessing** - what is spread streaming, how it works compared to the RadSpreadProcessing library and when to use it.
+This article briefly explains the specifics of **RadSpreadStreamProcessing** - what is spread streaming, how it works and when to use it.
 
 >**RadSpreadStreamProcessing** is part of the **Telerik Document Processing** libraries. The full documentation for this component is available at [https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamsprocessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview).
 
@@ -50,20 +50,19 @@ Some of the features you can take advantage of are:
 	* [Freezing panes](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/features/worksheet-view-exporter#freeze-panes): Keep part of the worksheet always visible while scrolling.
 	* [Changing the first visible cell](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/features/worksheet-view-exporter#change-the-first-visible-cell): when you would like to show a particular part of the sheet to the user on opening the document in a viewer.
 
-## RadSpreadStreamProcessing vs. RadSpreadProcessing
-
-There are two main differences between the libraries.
-* __RadSpreadStreamProcessing__ can be used only to create documents and append data to existing ones. On the other hand you can use the __RadSpreadProcessing__ also for reading and modifying the content of documents.
-* __RadSpreadStreamProcessing__ writes directly into a stream, unlike [RadSpreadProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) which creates models for the elements in the document. This is why the memory used with the spread streaming library is significantly lower than when using __RadSpreadProcessing__.
-
 ## When to Use RadSpreadStreamProcessing
 
 You can use RadSpreadStreamProcessing to create and export large amount of data with a low memory footprint and great performance. 
 
-# Required references
+## Required references
 
-In order to use the __RadSpreadStreamProcessing__ you have to add references to the following assemblies:
+You have two options to add the required Telerik references to your Xamarin.Forms app in order to use **RadSpreadStreamProcessing**:
 
-- **Telerik.Zip.dll**
-- **Telerik.Documents.SpreadsheetStreaming.dll**
+* Add the Telerik UI for Xamarin Nuget packages following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
 
+* Add the references to Telerik assemblies manually, check the list below with the required assemblies for RadSpreadStreamProcessing:
+
+	- **Telerik.Zip.dll**
+	- **Telerik.Documents.SpreadsheetStreaming.dll**
+
+	>important Please keep in mind these assemblies are located in the Portable folder, still, you need to add a reference to them in the Xamarin.Forms project as well as in each of the platform projects (Android | iOS | UWP).

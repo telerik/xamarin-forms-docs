@@ -35,8 +35,16 @@ You could check how appointments look by default on Android and iOS here: [Calen
 To remove the semi-transparency, you would need a custom renderer on iOS and in it change the DataSource of the DayView. In the custom DataSource override UpdateCell method and inside it you will find Transparency property of the cell style:
 
 ```C#
+using Telerik.XamarinForms.Input;
+using Telerik.XamarinForms.InputRenderer.iOS;
+using TelerikUI;
+using XamarinApp1.iOS;
+using UIKit;
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.iOS;
+
 [assembly: ExportRenderer(typeof(RadCalendar), typeof(CustomCalendarRenderer))]
-namespace XamarinApp2.iOS
+namespace XamarinApp1.iOS
 {
     class CustomCalendarRenderer : CalendarRenderer
     {
@@ -65,3 +73,7 @@ namespace XamarinApp2.iOS
     }
 }
 ```
+
+Here is the result:
+
+![](images/calendar-ios-transparent-appts.png)

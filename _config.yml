@@ -12,6 +12,9 @@ navigation:
     "knowledge-base":
         title: "Knowledge Base"
         position: 10
+    getting-started:
+        title: "Getting Started"
+        position: 1
     licensing:
         title: "Licensing"
         position: 4
@@ -37,6 +40,14 @@ navigation:
         title: "Cloud Integration"
         position: 11  
 ## End Root Level
+## Getting Started Sub-Folders
+    getting-started/windows:
+        title: "Windows"
+        position: 0
+    getting-started/mac:
+        title: "Mac"
+        position: 1
+## End Getting Started Sub-Folders
 ## Cloud Integration Sub-Folders
     cloud-integration/azure:
         title: "Azure"

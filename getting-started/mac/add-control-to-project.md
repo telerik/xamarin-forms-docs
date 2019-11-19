@@ -82,4 +82,4 @@ Now that you have your first Telerik UI for Xamarin control running, you may wan
 
 - [System Requirements]({%slug system-requirements %})
 - [Telerik NuGet Server]({%slug telerik-nuget-server%})
-- [Getting started on Mac]({%slug mac-getting-started-mac%})
+- [Getting started on Mac]({%slug getting-started-mac%})

@@ -29,5 +29,6 @@ Solutions that show how to use the controls when developing through **Xamarin.An
 
 ## See Also
 
-- [Getting Started]({%slug common-getting-started%})
+- [Getting Started on Windows]({%slug win-getting-started%})
+- [Getting Started on Mac]({%slug mac-getting-started%})
 - [System Requirements]({%slug system-requirements%})

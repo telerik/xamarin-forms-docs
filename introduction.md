@@ -1,7 +1,7 @@
 ---
 title: Introduction
 page_title: Telerik UI for Xamarin Documentation
-position: 1
+position: 0
 ---
 
 ## Introduction

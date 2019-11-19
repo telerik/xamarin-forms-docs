@@ -80,4 +80,4 @@ Now that you have installed and created your first project it is time to add a T
 - [System Requirements]({%slug system-requirements %})
 - [Telerik NuGet Server]({%slug telerik-nuget-server%})
 - [Required Android Support Libraries]({%slug required-android-support-libraries%})
-- [Getting started on Mac]({%slug mac-getting-started-mac%})
+- [Getting started on Mac]({%slug getting-started-mac%})

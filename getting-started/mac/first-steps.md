@@ -86,4 +86,4 @@ Now that you have downloaded and installed Telerik UI for Xamarin, and created y
 - [System Requirements]({%slug system-requirements %})
 - [Telerik NuGet Server]({%slug telerik-nuget-server%})
 - [Required Android Support Libraries]({%slug required-android-support-libraries%})
-- [Getting started on Mac]({%slug mac-getting-started-mac%})
+- [Getting started on Windows]({%slug win-getting-started%})

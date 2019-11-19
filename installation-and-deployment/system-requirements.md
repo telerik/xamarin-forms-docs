@@ -54,6 +54,16 @@ The minimum required version of **Xamarin.Forms** package is **4.1.0.581479**.
 
 >The **Android project** requires multiple packages with specific versions. The **Xamarin.Forms** package will install most of the required packages as its dependencies. You can then go to [Required Android Support Libraries]({% slug required-android-support-libraries %}) article and check if you have all required files and versions.
 
+## Supported mobile versions
+
+You can use Telerik UI for Xamarin for application development for the following mobile operating systems:
+
+|Platform 		| Supported version 			|
+|:---			| :---							|
+|Android		| 5.0 (API Level 21) or higher	|
+|iOS			| 7.0 or higher					|
+|Windows		| Windows 10  					|
+
 ## Next Steps
 
 - [Getting started on Windows]({%slug getting-started-windows%})

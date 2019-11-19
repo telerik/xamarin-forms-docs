@@ -31,7 +31,7 @@ This article shows how to resolve the issue with the Visual Studio 2019 hangs on
 
 >important Note that our team is working on this and fix will be provided as soon as possible.
 
-In order to solve this issue you should disable the Telerik Xamarin VS Extentions from the Visual Studio 2019
+In order to solve this issue you should disable the Telerik Xamarin VS Extensions from the Visual Studio 2019
 
 1. Open **Manage Extentions** dialog box 
 
@@ -40,3 +40,5 @@ In order to solve this issue you should disable the Telerik Xamarin VS Extention
 2. Select **Installed** and then in the search field search for *Telerik Xamarin* and click *Disable*
 
 	![Disable Telerik Xamarin Extensions](images/telerik-extensions.png)
+
+>note The other option if you still want to use the Telerik VS Extensions is first to open Visual Studio and then to load the solution containing Telerik controls.

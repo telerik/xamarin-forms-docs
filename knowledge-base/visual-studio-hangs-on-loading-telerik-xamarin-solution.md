@@ -27,6 +27,8 @@ res_type: kb
 
 This article shows how to resolve the issue with the Visual Studio 2019 hangs on loading Xamarin projects when Tekerik Xamarin VS extensions are installed. 
 
+>important The issue is resolved with the latest version of the UI for Xamarin VSExtensions (v2019.3.1118).
+
 ## Solution
 
 >important Note that our team is working on this and fix will be provided as soon as possible.

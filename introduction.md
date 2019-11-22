@@ -58,8 +58,9 @@ div#xamarin_trial .xamarin_download_btn {
 </script>
 
 <div id="xamarin_trial">
-<a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-xamarin" class="xamarin_download_btn js-btnWin">Download Free Trial</a>
-<a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-xamarin?file=pkg" class="xamarin_download_btn js-btnOSX">Download Free Trial</a>
+<br />
+<a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-xamarin" class="xamarin_download_btn js-btnWin" style="display: none">Download Free Trial</a>
+<a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-xamarin?file=pkg" class="xamarin_download_btn js-btnOSX" style="display: none">Download Free Trial</a>
 </div>
 
 ![Telerik UI for Xamarin](front-image.png)
@@ -79,8 +80,8 @@ If you're building a Xamarin.Android or Xamarin.iOS application, you can take ad
 To learn how to install and work with Telerik UI for Xamarin suite, visit the following resources:
 
 * [System Requirements]({%slug system-requirements %})
-* [Getting Started on Windows]({%slug getting-started-windows %})
-* [Getting Started on Mac]({%slug getting-started-mac %})
+* [Getting Started on Windows]({%slug win-getting-started %})
+* [Getting Started on Mac]({%slug mac-getting-started %})
 
 ## Related Links
 

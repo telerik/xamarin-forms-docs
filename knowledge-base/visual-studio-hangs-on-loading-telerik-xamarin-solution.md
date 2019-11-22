@@ -31,8 +31,6 @@ This article shows how to resolve the issue with the Visual Studio 2019 hangs on
 
 ## Solution
 
->important Note that our team is working on this and fix will be provided as soon as possible.
-
 In order to solve this issue you should disable the Telerik Xamarin VS Extensions from the Visual Studio 2019
 
 1. Open **Manage Extentions** dialog box 

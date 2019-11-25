@@ -14,6 +14,8 @@ When you have an active trial or developer license, you can download the followi
 * NuGet packages
 * Old versions
 
+>tip You can enable a free trial license from the [Telerik UI for Xamarin product page](https://www.telerik.com/xamarin-ui). 
+
 In order to download these you need to take the following steps:
 
 **1. Log into your [Telerik account](https://www.telerik.com/account/).**

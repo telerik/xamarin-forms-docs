@@ -36,10 +36,10 @@ In order to develop applications with **Telerik UI for Xamarin** you need to hav
 
 You will be able to develop **Android** and **iOS** apps. The **iOS** apps will require iOS 8 and higher. Windows apps are not supported on macOS.
 
--  [macOS Sierra 10.12 or higher](http://www.apple.com/osx/).
+-  [macOS High Sierra 10.13 or higher](http://www.apple.com/osx/).
 -  [Visual Studio for Mac](https://www.visualstudio.com/downloads/) with Xamarin installed.
 
-	VS for Mac installer inspects your system and verifies which components are installed and which need to be updated. In order to make sure Xamarin is installed, you would need to run the VS for Mac installer and check whether **Android** and **iOS** options are enabled.
+	Visual Studio for Mac installer inspects your system and verifies which components are installed and which need to be updated. In order to make sure Xamarin is installed, you would need to run the VS for Mac installer and check whether **Android** and **iOS** options are enabled.
 	
 	#### Figure 3: VS for Mac with Android and iOS platforms enabled
 	![](images/vsmac_xamarin.png)
@@ -66,5 +66,5 @@ You can use Telerik UI for Xamarin for application development for the following
 
 ## Next Steps
 
-- [Getting started on Windows]({%slug getting-started-windows%})
-- [Getting started on Mac]({%slug getting-started-mac%})
+- [Using Telerik UI for Xamarin on Windows]({%slug getting-started-windows%})
+- [Using Telerik UI for Xamarin on Mac]({%slug getting-started-mac%})

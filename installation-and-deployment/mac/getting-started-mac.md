@@ -14,8 +14,6 @@ This article aims to help you setup your application to use **Telerik UI for Xam
 ## 1. Start with Xamarin.Forms app
 
 Depending on your scenario, you either have an existing app where you will add our components, or you have to create a new blank app.
- 
-> If you already have an app, please proceed to the [next step]({%slug getting-started-mac%}#2-getting-the-latest-platform-sdk-versions).
 
 ### Add Telerik components to an already existing app
 
@@ -83,11 +81,11 @@ You can use our [**Telerik NuGet package server**]({%slug telerik-nuget-server%}
 
 If you prefer to manually reference the required Telerik UI for Xamarin assemblies into your solution, you can get them in the following ways:
 
-* Download the .pkg file, then install it on the Mac machine. After successfull instalation you will get the following screen:
+* [Download the .pkg file]({%slug download-product-files%}), then install it on the Mac machine. After successfull instalation you will get the following screen:
 
 	![Instal Telerik Xamarin Pkg](images/install-telerik-xamarin-pkg.png)
 	
-	When the installation is completed the assemblies can be found in the Bianries folder.   
+	When the installation is completed the assemblies can be found in the Binaries folder.   
 	
 	![Installation Package](images/installation-telerik-xamarin-package.png)
 	

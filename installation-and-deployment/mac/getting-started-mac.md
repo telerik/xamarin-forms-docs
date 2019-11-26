@@ -19,7 +19,7 @@ Depending on your scenario, you either have an existing app where you will add o
 
 ### Add Telerik components to an already existing app
 
-You can manually reference the Telerik UI for Xamarin assemblies in each of the projects (Xamarin.Forms, Android, iOS) or use the Telerik Nuget packages. For detailed instructions, go to [Step 2: Add references to Telerik Components](#2-add-references-to-telerik-components).
+You can manually reference the Telerik UI for Xamarin assemblies in each of the projects (Xamarin.Forms, Android, iOS) or use the Telerik Nuget packages. For detailed instructions, go to [Step 3: Add references to Telerik Components](#3-add-references-to-telerik-components).
 
 ### Create a new app with Telerik UI for Xamarin
 

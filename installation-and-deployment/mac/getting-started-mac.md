@@ -7,7 +7,7 @@ position: 0
 
 # Using Telerik UI for Xamarin on Mac
 
-This article aims to help you setup your application to use **Telerik UI for Xamarin** suite on **Mac OS**.
+This article aims to help you set up your application to use **Telerik UI for Xamarin** suite on **Mac OS**.
 
 >Please, make sure you have already read the [System Requirements]({% slug system-requirements %}#macos) article before you proceed.
  

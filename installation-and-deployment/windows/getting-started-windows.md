@@ -7,7 +7,7 @@ position: 0
 
 # Using Telerik UI for Xamarin on Windows
 
-This article aims to help you setup your application to use **Telerik UI for Xamarin** suite on **Windows OS**.
+This article aims to help you set up your application to use **Telerik UI for Xamarin** suite on **Windows OS**.
 
 >Please, make sure you have already read the [System Requirements]({% slug system-requirements %}) article before you proceed.
 
@@ -46,7 +46,7 @@ If you just start your app, you have two options:
 		* **UWP**: Available only for projects created with Visual Studio.
 		* **iOS**:
 		 * Available for MacOS.
-		 * If you wish to use Visual Studio as a development environment you will also need a mac machine. You can find more information how to setup your environment here: [Introduction to Xamarin.iOS for Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/)
+		 * If you wish to use Visual Studio as a development environment you will also need a mac machine. You can find more information how to set up your environment here: [Introduction to Xamarin.iOS for Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/)
 
 >important The minimum required version of **Xamarin.Forms** package is **4.1.0.581479**.
   

@@ -9,7 +9,7 @@ slug: maskedinput-features-validation
 
 The **RadMaskedInput** has a built-in validation mechanism, and you can utilize the following properties to modify the appearance when an input-related error is observed:
 
-* **InvalidInputErrorText**(*string*): Defines the text that is shown as error message on invalid input.
+* **InvalidInputErrorText**(*string*): Defines the text that is shown as an error message on invalid input.
 * **RejectedSymbolErrorText**(*string*):  Defines the error text when a symbol was rejected.  
 * **ErrorColor**(*Color*): Defines the color of the error text.
 * **ErrorFontSize**(*double*): Specifies the font size of the error text.

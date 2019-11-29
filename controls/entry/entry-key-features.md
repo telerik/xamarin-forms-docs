@@ -49,7 +49,7 @@ The **Keyboard** property of type *Xamarin.Forms.Keyboard* allows you to define 
 
 The following properties are related to the Entry text selection: 
 
-* **CursorPosition**(*int*) Specifies the starting position of the text selected in the entry
+* **CursorPosition**(*int*) Specifies the starting position of the text selected in the entry.
 * **SelectionLength**(*int*) Specifies the number of characters in the current selection in the entry control.
 
 The next snippet shows how both could be applied in order to preselect part of the Text of the Entry when the control receives the focus:

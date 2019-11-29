@@ -11,7 +11,7 @@ This article will guide you through the steps needed to add a basic **RadEntry**
 
 * [Setting up the app](#1-setting-up-the-app)
 * [Adding the required Telerik references](#2-adding-the-required-telerik-references)
-* [Adding RadAutoCompleteView control](#3-adding-radentry-control)
+* [Adding RadEntry control](#3-adding-radentry-control)
 
 ## 1. Setting up the app
 

@@ -9,7 +9,7 @@ slug: entry-theming-style
 
 ## BorderStyle
 
-The **BorderStyle**(*of type Telerik.XamarinForms.Input.BorderStyle*) property  allows you to customize the border around the Entry through the following properties: 
+The **BorderStyle**(*of type Telerik.XamarinForms.Input.BorderStyle*) property allows you to customize the border around the Entry through the following properties: 
 
 * **BorderColor**(*Color*), 
 * **BorderThickness**(*Thickness*) 

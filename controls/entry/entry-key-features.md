@@ -9,9 +9,19 @@ slug: entry-key-features
 
 The purpose of this help article is to show you the key features of the **RadEntry** control. 
 
-## Watermark
+## Text
 
-RadEntry exposes **WatermarkText** property used to give guidance to the end user on what should be entered in the text input. The watermark text is displayed when the control is empty.  Additionally, you could set **WatermarkTextColor** to customize the look of the watermark text. 
+The following properties are related to the Entry Text appearance and alignment:
+
+* **Text**(*string*): Defines the Text;
+* **TextColor**(*Color*): Defines the color of the visible text of the RadEntry control.
+* **VerticalTextAlignment**(*of type Xamarin.Forms.Textalignment*): Specifies the vertical alignment of the RadEntry.Text;
+* **HorizontalTextAlignment**(*of type Xamarin.Forms.Textalignment*): Specifies the horizontal alignment of the RadEntry.Text;
+* **Padding**(*Thickness*): Defines the Padding of the text;
+
+## Watermark 
+
+RadEntry exposes **WatermarkText**(*string*) property used to give guidance to the end user on what should be entered in the text input. The watermark text is displayed when the control is empty.  Additionally, you could set **WatermarkTextColor**(*Color*) to customize the look of the watermark text. 
 
 <snippet id='entry-features-customwatermark'/>
 
@@ -21,25 +31,26 @@ Where:
 
 ## Password
 
-RadEntry provides **IsPassword** Boolean property, which when set to True, replaces the input with password hint character.
+RadEntry provides **IsPassword**(*bool*) property, which when set to True, replaces the input with password hint character.
 
 <snippet id='entry-features-password'/>
 
-## BorderStyle
+## Keyboard
 
-The **BorderStyle** property allows you to customize the border around the Entry through the following properties: BorderColor, BorderThickness and CornerRadius. The default value is defined by the OS.
+The **Keyboard** property of type *Xamarin.Forms.Keyboard* allows you to define the type of the keyboard that will be visualized by the device.
 
-You could define the **BorderStyle** in the Resources of your page as shown in the example below:
-
-<snippet id='entry-features-borderstyledefinition'/>
-
-And then apply that Style to the Entry instance:
-
-<snippet id='entry-features-borderstyle'/>
+```XAML
+<telerikInput:RadEntry x:Name="entry" 
+                       Keyboard="Numeric"
+                       WatermarkText="Watermark Text" />
+```
 
 ## Text Selection
 
-The **CursorPosition** property can be used to set or return the position at which the next character will be inserted into the Entry control. In addition, **the SelectionLength** property can be used to set/return the length of text selection within the Entry. 
+The following properties are related to the Entry text selection: 
+
+* **CursorPosition**(*int*) Specifies the starting position of the text selected in the entry
+* **SelectionLength**(*int*) Specifies the number of characters in the current selection in the entry control.
 
 The next snippet shows how both could be applied in order to preselect part of the Text of the Entry when the control receives the focus:
 
@@ -53,6 +64,20 @@ Here is the end result:
 
 ![Entry Key Features Example](images/entry_key_features.png)
 
+## Font Options:
+
+RadEntry control has the following properties for defining the Font Options:
+
+* **FontAttributes**
+* **FontFamily**
+* **FontSize**
+
+<snippet id='entry-font-options-xaml' />
+
+>important You can find a working demo labeled **Key Features** in the Entry/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
 ## See Also
 
-- [Entry Getting Started]({% slug entry-getting-started%})
+- [Events]({% slug entry-events%})
+- [Theming and Style]({% slug entry-theming-style%})
+- [Getting Started]({% slug entry-getting-started%})

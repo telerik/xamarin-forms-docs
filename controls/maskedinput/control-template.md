@@ -7,7 +7,7 @@ slug: maskedinput-control-template
 
 # Control Template
 
-RadMaskedInput's visual appearance is defined through a Control Template. In order to customize the way the MaskedInput looks, you would need to take the default ControlTemplate and modify it. 
+**RadMaskedInput's** visual appearance is defined through a Control Template. In order to customize the way the MaskedInput looks, you would need to take the default *ControlTemplate* and modify it. 
 
 This topic gives an overview of the **ControlTemplate** of the MaskedInput control, so you can copy it to your app and make changes.
 

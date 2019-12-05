@@ -1,7 +1,7 @@
 ---
 title: ItemTemplateSelector
 page_title: ItemTemplateSelector
-position: 4
+position: 5
 slug: slideview-itemtemplateselector
 ---
 

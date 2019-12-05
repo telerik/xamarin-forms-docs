@@ -1,7 +1,7 @@
 ---
 title: ItemTemplate
 page_title: ItemTemplate
-position: 3
+position: 4
 slug: slideview-features-itemtemplate
 ---
 

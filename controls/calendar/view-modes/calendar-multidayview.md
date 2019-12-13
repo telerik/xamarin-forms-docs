@@ -7,20 +7,20 @@ slug: calendar-multidayview
 
 # MultiDay View #
 
-The RadCalendar comes with new MultiDay view mode (introduced in R3 2018 Release) which enables you to create a detailed view of the schedule for a specific day (or days). In addition, you will have full control over the way the MultiDay view is visualized through various configuration options such as day start and end times, timeline settings, current time indicator, and more.
+RadCalendar comes with MultiDay view mode which enables you to create a detailed view of the schedule for a specific day (or days). In addition, you will have full control over the way the MultiDay view is visualized through various configuration options such as day start and end times, timeline settings, current time indicator, and more.
 
 The main purpose of the MultiDay view is to display appointments to the end-users in a convenient way. For more details on the Appointments feature of RadCalendar refer to [Appointments]({%slug calendar-appointments%}) topic.
 
-## Key Features
+## Timeline Settings
 
 This section lists the key properties of the MultiDay ViewMode so you could configure it to best suit your needs.
 
 * **VisibleDays**: Defines the number of days visualized on the view area. The default is 7 days. 
-* **DayStartTime**: Defines the time used to indicate the start of the timeline. The default value of the DayStartTime is 00:00:00 or 12:00 AM. 
+* **DayStartTime**: Defines the time used to indicate the start of the Calendar timeline. The default value of the DayStartTime is 00:00:00 or 12:00 AM. 
 * **DayEndTime**: Sets the time used to indicate the end of the timeline.
 * **IsWeekendVisible**: Boolean property that will allow to exclude the weekends from the timeline, so that only the work week is displayed.
 * **TimelineInterval**: This property is of type *TimeSpan* and defines the time intervals inside the timeline.
-* **IsCurrentTimeIndicatorVisible**: Boolean property that enables the option to visually mark the current time. In addition, you could customize the way the current time indicator looks through a few styling properties, for more details go to Styling section.
+* **IsCurrentTimeIndicatorVisible**: Boolean property that enables the option to visually mark the current time. In addition, you could customize the way the current time indicator looks through a few styling properties, for more details go to [Styling](#styling) section.
 
 All of the above are applied using the **MultiDayViewSettings** property of RadCalendar. Here is a quick example on how they could be set:
 
@@ -29,6 +29,8 @@ All of the above are applied using the **MultiDayViewSettings** property of RadC
 The next image shows MultiDay view with the MultiDayViewSettings applied:
 
 ![Calendar Scheduling Key Features](../images/calendar_scheduling_keysettings.png)
+
+Through the MultiDayViewSettings you can also configure [Special and restricted slots]({%slug calendar-specialslots%}) and [Non-working hours]({%slug calendar-nonworking-hours%}) features of RadCalendar.
 
 ## Work Week Support
 
@@ -50,14 +52,16 @@ And here is the result:
 
 #### AllDayArea
 
-MultiDayView provides AllDay area used to display appointments for the whole day. Following are the properties related to AllDay area:
+MultiDayView provides all-day area at the top of the timeline to display appointments that continue a whole day(s). Following are the styling properties related to AllDay area:
 
 * **AllDayAreaBackgroundColor**: Specifies the background of AllDay area;
 * **AllDayAppointmentBackgroundColor**: Specifies the background of the all-day appointments shown inside AllDay area;
 * **AllDayLabelTextColor and AllDayLabelFontSize**: Refer to the Text shown inside time ruler next to the AllDay area;
 * **AllDayAppointmentTextColor and AllDayAppointmentFontSize**: Refer to the all-day appointments displayed inside AllDay area;
 
-And here is a quick example on how they could be applied:
+>tip In order to create all-day appointments you just need to set **IsAllDay** bool property of the Appointment class. For more details on the Appointments feature of RadCalendar refer to [Appointments]({%slug calendar-appointments%}) topic.
+
+And here is a quick example on how AllDay-related properties could be applied:
 
 <snippet id='calendar-scheduling-alldaystyling' />
 
@@ -83,3 +87,5 @@ Check the example below demonstrating how the timeline styling properties are ap
 
 * [View Modes]({%slug calendar-features-navigation-and-view-mode%})
 * [Appointments]({%slug calendar-appointments%})
+* [Special and restricted slots]({%slug calendar-specialslots%})
+* [Non-working hours]({%slug calendar-nonworking-hours%})

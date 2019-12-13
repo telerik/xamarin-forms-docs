@@ -39,7 +39,7 @@ Check the result in the image below:
 ![Calendar Non-Working Hours](images/calendar_nonworking-hours.png)
 
 
->important A Non-Working Hours example can be found in the Calendar &amp; Scheduling/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+>important A Non-Working Hours example can be found in the Calendar &amp; Scheduling/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
 
 ## See Also
 

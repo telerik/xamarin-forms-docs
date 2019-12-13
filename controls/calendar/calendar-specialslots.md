@@ -82,7 +82,7 @@ Below you can check the result on different platforms:
 
 ![Calendar Custom Slots](images/calendar_custom_slots.png)
 
->important All the Special Slots examples can be found in the Calendar &amp; Scheduling/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+>important All the Special Slots examples can be found in the Calendar &amp; Scheduling/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
 
 ## See Also
 

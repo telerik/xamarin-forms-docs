@@ -5,7 +5,7 @@ description: This article shows how to modify the layout of the tabs in the tab 
 slug: tabview-layouts
 tags: radtabview, layout, tabs
 position: 3
-publish: true
+publish: false
 ---
 
 # Layouts
@@ -29,13 +29,4 @@ when the user taps outside the popup. To use TabStripOverflowLayout simply creat
 
 ```Java
 this.tabView.getTabStrip().setTabStripLayout(new TabStripOverflowLayout());
-```
-
-## Max visible tabs
-
-All layouts have a **maxVisibleTabs** property. It determines how many tabs will be shown on screen. If there are more tabs they will be
-shown in a scroll view for TabStripScrollLayout or in a popup for TabStripOverflowLayout;
-
-```Java
-tabView.getTabStrip().getLayout().setMaxVisibleTabs(5);
 ```

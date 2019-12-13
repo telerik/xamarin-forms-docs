@@ -22,3 +22,12 @@ Furthermore if the <code>TabWidth</code> property is set, and the total width of
 ```C#
 tabView.TabStrip.TabsAlignment = TabsAlignment.Center;
 ```
+
+
+## Max visible tabs
+
+The used inside the TabView TabStrip provides a **MaxVisibleTabs** property. It determines how many tabs will be shown on screen. If there are more tabs they will be shown in a scrollview;
+
+```C#
+tabView.TabStrip.Layout.MaxVisibleTabs = 5;
+```

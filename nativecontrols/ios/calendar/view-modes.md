@@ -19,11 +19,9 @@ TKCalendar is able to present its contents in different ways. Those include:
 
 This article describes those view modes in detail.
 
-The <code>presenter</code> property of <code>TKCalendar</code> allows customizing settings specific for the current view mode. Every view mode has its dedicated presenter class:
+The <code>Presenter</code> property of <code>TKCalendar</code> allows customizing settings specific for the current view mode. Every view mode has its dedicated presenter class:
 
 <snippet id='view-modes-presenter'/>
-
-<snippet id='view-modes-presenter-swift'/>
 
 ```C#
 TKCalendarYearPresenter presenter = (TKCalendarYearPresenter)this.CalendarView.Presenter;
@@ -33,8 +31,6 @@ presenter.Columns = 3;
 You can determine whether a view change occurred by implementing <code>TKCalendarDelegate</code> protocol:
 
 <snippet id='view-modes-changeviewmode'/>
-
-<snippet id='view-modes-changeviewmode-swift'/>
 
 ```C#
 public override void DidChangedViewModeFrom(TKCalendar calendar, TKCalendarViewMode previousViewMode, TKCalendarViewMode viewMode)
@@ -54,25 +50,21 @@ Use the <code>TKCalendarViewModeMonth</code> to enable the single month view:
 
 <snippet id='view-modes-month'/>
 
-<snippet id='view-modes-month-swift'/>
-
 ```C#
 this.CalendarView.ViewMode = TKCalendarViewMode.Month;
 ```
 
 In this mode <code>TKCalendar</code> renders a single month and allows switching to a different month with a swipe gesture. This transition can be customized with different transition effects. More about this is available in this help article: [Transition effects](view-transitions)
 
-In addition to selecting a different month with swipe, users can change the view mode to month names when the <code>allowPinchZoom</code> property is set to <code>YES</code>:
+In addition to selecting a different month with swipe, users can change the view mode to month names when the <code>AllowPinchZoom</code> property is set to <code>true</code>:
 
 <snippet id='view-modes-pinchzoom'/>
-
-<snippet id='view-modes-pinchzoom-swift'/>
 
 ```C#
 this.CalendarView.AllowPinchZoom = false;
 ```
 
-Dates can be selected according to the <code>selectionMode</code> property. Details about selection are available in the dedicated help article about selection: [Selection](selection)
+Dates can be selected according to the <code>SelectionMode</code> property. Details about selection are available in the dedicated help article about selection: [Selection](selection)
 
 Dates in this view mode are represented by the <code>TKCalendarCell</code> class which inherits from <code>UIView</code>. The visual appearance can be customized by creating custom cells and handling the <code>calendar:viewForCellOfKind:</code> method of <code>TKCalendarDelegate</code> protocol. This technique is described in [Calendar customizations](customizations) article.
 
@@ -80,19 +72,16 @@ The presenter class responsible for month view is the <code>TKCalendarMonthPrese
 
 <snippet id='view-modes-monthpresenter'/>
 
-<snippet id='view-modes-monthpresenter-swift'/>
-
 <snippet id='view-modes-monthpresenter-cs'/>
 
 ## Single week view mode ##
 
 <img src="../images/calendar-view-modes001.png"/>
 
-Set the <code>viewMode</code> property to <code>TKCalendarViewModeWeek</code> to enable this view:
+Set the <code>ViewMode</code> property to <code>TKCalendarViewModeWeek</code> to enable this view:
 
 <snippet id='view-modes-week'/>
 
-<snippet id='view-modes-week-swift'/>
 
 ```C#
 this.CalendarView.ViewMode = TKCalendarViewMode.Week;
@@ -107,8 +96,6 @@ This view mode is similar to the previous one, but it displays only one week. Th
 Set the <code>viewMode</code> property to <code>TKCalendarViewModeYear</code> to enable this view:
 
 <snippet id='getting-started-viewmodeyear'/>
-
-<snippet id='getting-started-viewmodeyear-swift'/>
 
 ```C#
 this.CalendarView.ViewMode = TKCalendarViewMode.Year;
@@ -140,7 +127,7 @@ The presenter class for this view mode is <code>TKCalendarMonthNamesPresenter</c
 
 <img src="../images/calendar-view-modes004.png"/>
 
-Set the <code>viewMode</code> property to <code>TKCalendarViewModeYearNumbers</code> to enable this view.
+Set the <code>ViewMode</code> property to <code>TKCalendarViewModeYearNumbers</code> to enable this view.
 
 <snippet id='view-modes-yearnumber'/>
 
@@ -193,5 +180,5 @@ controller.ContentView.NavigateToDate (NSDate.Now, false);
 this.NavigationController.PushViewController (controller, true);
 ```
 
-The <code>contentView</code> property of <code>TKCalendarYearViewController</code> contains the presented <code>TKCalendar</code> object instance. Use its properties and methods to customize the calendar. 
+The <code>ContentView</code> property of <code>TKCalendarYearViewController</code> contains the presented <code>TKCalendar</code> object instance. Use its properties and methods to customize the calendar. 
 

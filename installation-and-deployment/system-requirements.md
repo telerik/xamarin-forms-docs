@@ -11,16 +11,16 @@ In order to develop applications with **Telerik UI for Xamarin** you need to hav
 
 ## Windows
 
-- Windows 8.1 or higher. You would need [Windows 10](https://www.microsoft.com/en-us/windows/get-windows-10) in order to develop for UWP.
-- Visual Studio 2017 or Visual Studio 2019 with Xamarin installed. Go to [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/) page to see the available download options.
+- [Windows 10](https://www.microsoft.com/en-us/windows/get-windows-10) is required to develop for Xamarin.Forms.
+- Visual Studio 2019 or Visual Studio 2017 with Xamarin installed. Go to [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/) page to see the available download options.
 
-	To install Xamarin for Visual Studio 2017/ Visual Studio 2019, you would need to enable **Mobile development with .NET** workload. 
+	To install Xamarin for Visual Studio 2019/ Visual Studio 2017, you would need to enable **Mobile development with .NET** workload. 
 		
 	* If you run a fresh installation of Visual Studio, you will be prompted to select workloads during the installation process.
 	* if you already have Visual Studio installed, you could modify the active workloads by re-running the Visual Studio installer and selecting "Modify" option.
 	
-	#### Figure 1: VS 2017 with Mobile development with .NET workload enabled
-	![](images/vs2017_xamarin_workload.png)
+	#### Figure 1: VS 2019 with Mobile development with .NET workload enabled
+	![VS 2019 Mobile Workload](images/vs2019_xamarin_workload.png)
 		
 	> Before proceeding, please make sure the following Individual components are included:
 	>	* Xamarin
@@ -36,10 +36,10 @@ In order to develop applications with **Telerik UI for Xamarin** you need to hav
 
 You will be able to develop **Android** and **iOS** apps. The **iOS** apps will require iOS 8 and higher. Windows apps are not supported on macOS.
 
--  [macOS Sierra 10.12 or higher](http://www.apple.com/osx/).
+-  [macOS High Sierra 10.13 or higher](http://www.apple.com/osx/).
 -  [Visual Studio for Mac](https://www.visualstudio.com/downloads/) with Xamarin installed.
 
-	VS for Mac installer inspects your system and verifies which components are installed and which need to be updated. In order to make sure Xamarin is installed, you would need to run the VS for Mac installer and check whether **Android** and **iOS** options are enabled.
+	Visual Studio for Mac installer inspects your system and verifies which components are installed and which need to be updated. In order to make sure Xamarin is installed, you would need to run the VS for Mac installer and check whether **Android** and **iOS** options are enabled.
 	
 	#### Figure 3: VS for Mac with Android and iOS platforms enabled
 	![](images/vsmac_xamarin.png)
@@ -54,7 +54,17 @@ The minimum required version of **Xamarin.Forms** package is **4.1.0.581479**.
 
 >The **Android project** requires multiple packages with specific versions. The **Xamarin.Forms** package will install most of the required packages as its dependencies. You can then go to [Required Android Support Libraries]({% slug required-android-support-libraries %}) article and check if you have all required files and versions.
 
+## Supported mobile versions
+
+You can use Telerik UI for Xamarin for application development for the following mobile operating systems:
+
+|Platform 		| Supported version 			|
+|:---			| :---							|
+|Android		| 5.0 (API Level 21) or higher	|
+|iOS			| 7.0 or higher					|
+|Windows		| Windows 10  					|
+
 ## Next Steps
 
-- [Getting started on Windows]({%slug getting-started-windows%})
-- [Getting started on Mac]({%slug getting-started-mac%})
+- [Using Telerik UI for Xamarin on Windows]({%slug getting-started-windows%})
+- [Using Telerik UI for Xamarin on Mac]({%slug getting-started-mac%})

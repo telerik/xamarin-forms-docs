@@ -9,7 +9,7 @@ slug: calendar-specialslots
 
 With R3 2019 release of Telerik UI for Xamarin RadCalendar provides the option to define a collection of special and restricted time slots in order to make them noticeable across the timeline of the Day and MultiDay views. 
 
-You just need to prepare a collection of **SpecialSlot** objects and assign it to **SpecialSlotsSource** collection of the DayViewSettings / MultiDaySettings for Day/MultiDay view, respectively.
+You just need to prepare a collection of **SpecialSlot** objects and assign it to **SpecialSlotsSource** collection of the DayViewSettings / MultiDayViewSettings for Day/MultiDay view, respectively.
 
 Every SpecialSlot has the following properties:
 
@@ -24,7 +24,7 @@ First, create a ViewModel class with a collection of **SpecialSlot** objects. In
 
 <snippet id='calendar-specialslots-viewmodel' />
 
-Then, add RadCalendar definition with **MultiDay** ViewMode and **MultiDaySettings** applied:
+Then, add RadCalendar definition with **MultiDay** ViewMode and **MultiDayViewSettings** applied:
 
 <snippet id='calendar-specialslots-xaml' />
 
@@ -38,7 +38,7 @@ Here is the result after executing the example above on different platforms:
 
 ## Setting a separate Style for different slots
 
-Through the **SpecialSlotStyleSelector** property of the DayViewSettings (or MultiDaySettings) you can apply different background color to slots depending on certain condition. The SpecialSlotStyleSelector provides SelectStyle method with the **SpecialSlot** as a parameter. The method should return an object of type *CalendarSpecialSlotStyle* which exposes a **BackgroundColor** property.
+Through the **SpecialSlotStyleSelector** property of the DayViewSettings (or MultiDayViewSettings) you can apply different background color to slots depending on certain condition. The SpecialSlotStyleSelector provides SelectStyle method with the **SpecialSlot** as a parameter. The method should return an object of type *CalendarSpecialSlotStyle* which exposes a **BackgroundColor** property.
 
 The sample below extends the previous example by applying separate styles to both types of special slots through a SpecialSlotStyleSelector.
 
@@ -50,7 +50,7 @@ Add the created RestHoursStyleSelector as a Resource and define both Styles:
 
 <snippet id='calendar-specialslotsselector-resources' />
 
-All that is left, is to set the SpecialStyleSelector property of the MultiDaySettings:
+All that is left, is to set the SpecialStyleSelector property of the MultiDayViewSettings:
 
 <snippet id='calendar-specialslotsselector-xaml' />
 
@@ -82,7 +82,7 @@ Below you can check the result on different platforms:
 
 ![Calendar Custom Slots](images/calendar_custom_slots.png)
 
->important All the Special Slots examples can be found in the Calendar &amp; Scheduling/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+>important All the Special Slots examples can be found in the Calendar &amp; Scheduling/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
 
 ## See Also
 

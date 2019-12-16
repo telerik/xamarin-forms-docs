@@ -13,8 +13,6 @@ The <code>calendar</code> property of <code>TKCalendar</code> specifies the <cod
 
 <snippet id='localization-firstweekday'/>
 
-<snippet id='localization-firstweekday-swift'/>
-
 ```C#
 NSCalendar calendar = new NSCalendar (NSCalendarType.Gregorian);
 calendar.FirstWeekDay = 2;
@@ -26,17 +24,13 @@ Or, you can change the calendar with one specific for your users:
 
 <snippet id='localization-chinesecalendar'/>
 
-<snippet id='localization-chinesecalendar-swift'/>
-
 ```C#
 this.CalendarView.Calendar = new NSCalendar (NSCalendarType.Chinese);
 ```
 
-Month names and week day names are provided by the <code>locale</code> property. Use the following code to customize the current locale:
+Month names and week day names are provided by the <code>Locale</code> property. Use the following code to customize the current locale:
 
 <snippet id='localization-localeproperty'/>
-
-<snippet id='localization-localeproperty-swift'/>
 
 ```C#
 this.CalendarView.Locale = new NSLocale ("ru_RU");
@@ -46,10 +40,8 @@ After modifying the locale you should call the <code>update:</code> method for t
 
 <snippet id='localization-update'/>
 
-<snippet id='localization-update-swift'/>
-
 ```C#
-((TKCalendarMonthPresenter)this.CalendarView.Presenter).Update (false);
+((TKCalendarMonthPresenter)this.CalendarView.Presenter).Update(false);
 ```
 
 <img src="../images/calendar-localization003.png"/>

@@ -15,26 +15,19 @@ This quick start tutorial demonstrates how to create a simple iOS application wi
 
 Now that our project is created and the TelerikUI.framework is added, we can start referencing and using the TelerikUI types:
 
-Open your **ViewController.m** file and add a reference to the TelerikUI header file:
+Open your **UIViewController** file and add a reference to the TelerikUI namespace:
 
-    #import <TelerikUI/TelerikUI.h>
+```C#
+using TelerikUI;
+```
 
 Note that starting with Xcode 6 Apple doesn't generate the precompiled headers file automatically. That is why you should add import the UIKit framework before importing TelerikUI:
 
-    #import <UIKit/UIKit.h>
+```C#
+using UIKit;
+```
 
-If you are writing Swift, add the same line in your bridging header.
-
-If you are using Xamarin, add a reference to TelerikUI.dll in your project and use the <code>using</code> directive:
-
-    using TelerikUI;
-    
-Open the **AppDelegate.h** file and add references to the ViewController and TKSideDrawerController header files:
-
-	#import "ViewController.h"
-	#import <TelerikUI/TKSideDrawerController.h>
-
-Type the following code in your <code>AppDelegate</code> implementation class, replacing the didFinishLaunchingWithOptions method (FinishedLaunching for C#):
+Type the following code in your <code>AppDelegate</code> implementation class inside the <code>FinishedLaunching</code> method:
 
 <snippet id='sidedrawer-appdelegate'/>
 <snippet id='sidedrawer-appdelegate-swift'/>

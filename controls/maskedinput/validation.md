@@ -1,7 +1,7 @@
 ---
 title: Validation UI
 page_title: Validation UI
-position: 4
+position: 5
 slug: maskedinput-features-validation
 ---
 
@@ -9,11 +9,10 @@ slug: maskedinput-features-validation
 
 The **RadMaskedInput** has a built-in validation mechanism, and you can utilize the following properties to modify the appearance when an input-related error is observed:
 
-* **InvalidInputErrorText**: Gets or sets the text that is shown as error message on invalid input.
-* **RejectedSymbolErrorText**:  Gets or sets the error text when a symbol was rejected.  
-* **ErrorColor**: Gets or sets the color of the error text.
-* **ErrorFontSize**: Gets or sets the font size of the error text.
-
+* **InvalidInputErrorText**(*string*): Defines the text that is shown as an error message on invalid input.
+* **RejectedSymbolErrorText**(*string*):  Defines the error text when a symbol was rejected.  
+* **ErrorColor**(*Color*): Defines the color of the error text.
+* **ErrorFontSize**(*double*): Specifies the font size of the error text.
 
 >note The **ErrorColor** and **ErrorFontSize** will affect the error message from both the **InvalidInputErrorText** and the **RejectedSymbolErrorText** properties.
 
@@ -37,9 +36,11 @@ The way the mask is set, it is mandatory to fill in a digit in the last position
 
 The string set to the **RejectedSymbolErrorText** will be observed in case the input typed into the RadMaskedInput is rejected. In the case of the previously declared mask, this will happen if you try to type in a letter in the last symbol. The effect is observed in **Figure 2**.
 
-
 #### **Figure 2: Rejected symbol error message**
+
 ![rejected-symbol-error](images/validation-rejected-symbol.png)
+
+>note You can find a working demo labeled **Validation** in the MaskedInput/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}). 
 
 ## See Also
 

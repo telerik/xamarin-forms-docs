@@ -1,7 +1,7 @@
 ---
 title: Customize the Control
 page_title: Customize the Control
-position: 2
+position: 3
 slug: sideview-customize-the-control
 ---
 

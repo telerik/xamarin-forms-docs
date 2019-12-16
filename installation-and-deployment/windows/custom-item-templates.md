@@ -107,5 +107,6 @@ The **Feedback Screen** template implements a feedback scenario for receiving co
 
 ## See Also
 
-* [System Requirements]({%slug system-requirements%})
-* [Getting Started]({%slug common-getting-started%})
+- [System Requirements]({%slug system-requirements%})
+- [Getting Started on Windows]({%slug win-getting-started%})
+- [Getting Started on Mac]({%slug mac-getting-started%})

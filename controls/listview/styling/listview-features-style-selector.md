@@ -1,7 +1,7 @@
 ---
 title: ItemStyle Selector
 page_title: ItemStyle Selector
-position: 10
+position: 1
 slug: listview-features-style-selector
 ---
 

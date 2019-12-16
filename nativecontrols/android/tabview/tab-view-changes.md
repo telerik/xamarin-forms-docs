@@ -14,31 +14,30 @@ RadTabView Beta will notify its **TabViewChangeListener** objects before and aft
 
 Here is an example implementation of the selection notifications:
 
-```Java
-@Override
-public boolean onSelectingTab(Tab tabToSelect) {
-    // Cancel selection of the middle tab.
-    return tabToSelect == this.tabView.getTabs().get(1);
+```C#
+public bool OnSelectingTab(Tab tabToSelect)
+{
+	return false;
 }
 
-@Override
-public void onTabSelected(Tab selectedTab, Tab deselectedTab) {
-    if(deselectedTab != null) {
-        Log.d("TabView deselected: ", deselectedTab.getTitle());
-    }
-    Log.d("TabView selected: ", selectedTab.getTitle());
+public void OnTabSelected(Tab selectedTab, Tab deselectedTab)
+{
+	if (deselectedTab != null)
+	{
+		Log.Debug("TabView deselected: ", deselectedTab.Title);
+	}
+	Log.Debug("TabView selected: ", selectedTab.Title);
 }
 ```
 
 Content view callback example:
 
-```Java
-@Override
-public View getContentViewForTab(Tab tab) {
-    TextView contentView = new TextView(this.getContext());
-    contentView.setText(tab.getTitle() + " content view");
-    contentView.setGravity(Gravity.CENTER);
-
-    return contentView;
+```C#
+public Java.Lang.Object GetContentViewForTab(Tab tab)
+{
+	TextView contentView = new TextView(this.Context);
+	contentView.Text = "Content view for " + tab.Title;
+	contentView.Gravity = GravityFlags.Center;
+	return contentView;
 }
 ```

@@ -43,69 +43,69 @@ this.grid.ItemsSource = new List<Data>
 
 1. First scenario when SizeMode="Fixed":
 
-```XAML
-<telerikGrid:RadDataGrid x:Name="grid" AutoGenerateColumns="False" BackgroundColor="Red">
-    <telerikGrid:RadDataGrid.Columns>
-        <telerikGrid:DataGridTextColumn PropertyName="Country" HeaderText="Country" Width="100" SizeMode="Fixed"/>
-        <telerikGrid:DataGridTextColumn PropertyName="Capital" HeaderText="Capital" Width="200" SizeMode="Fixed"/>
-    </telerikGrid:RadDataGrid.Columns>
-</telerikGrid:RadDataGrid>
-```
+	```XAML
+	<telerikGrid:RadDataGrid x:Name="grid" AutoGenerateColumns="False" BackgroundColor="Red">
+		<telerikGrid:RadDataGrid.Columns>
+			<telerikGrid:DataGridTextColumn PropertyName="Country" HeaderText="Country" Width="100" SizeMode="Fixed"/>
+			<telerikGrid:DataGridTextColumn PropertyName="Capital" HeaderText="Capital" Width="200" SizeMode="Fixed"/>
+		</telerikGrid:RadDataGrid.Columns>
+	</telerikGrid:RadDataGrid>
+	```
 
-Where the **telerikGrid** namespace is the following:
+	Where the **telerikGrid** namespace is the following:
 
-```xml
-xmlns:telerikGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
-```
->important The **Width** property of columns will apply only when **SizeMode="Fixed"**.
+	```xml
+	xmlns:telerikGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
+	```
+	>important The **Width** property of columns will apply only when **SizeMode="Fixed"**.
 
-The first and second columns have set widths of 100 and 200, respectively:
+	The first and second columns have set widths of 100 and 200, respectively:
 
-![DataGrid SizeMode Property](../images/datagrid-columns-width-fixed.png)
+	![DataGrid SizeMode Property](../images/datagrid-columns-width-fixed.png)
 
 1. Second scenario when SizeMode="Stretch":
 
-```XAML
-<telerikGrid:RadDataGrid x:Name="grid" AutoGenerateColumns="False" BackgroundColor="Red">
-    <telerikGrid:RadDataGrid.Columns>
-        <telerikGrid:DataGridTextColumn PropertyName="Country" HeaderText="Country" Width="100" SizeMode="Stretch"/>
-        <telerikGrid:DataGridTextColumn PropertyName="Capital" HeaderText="Capital" Width="200" SizeMode="Stretch"/>
-    </telerikGrid:RadDataGrid.Columns>
-</telerikGrid:RadDataGrid>
-```
+	```XAML
+	<telerikGrid:RadDataGrid x:Name="grid" AutoGenerateColumns="False" BackgroundColor="Red">
+		<telerikGrid:RadDataGrid.Columns>
+			<telerikGrid:DataGridTextColumn PropertyName="Country" HeaderText="Country" Width="100" SizeMode="Stretch"/>
+			<telerikGrid:DataGridTextColumn PropertyName="Capital" HeaderText="Capital" Width="200" SizeMode="Stretch"/>
+		</telerikGrid:RadDataGrid.Columns>
+	</telerikGrid:RadDataGrid>
+	```
 
-Where the **telerikGrid** namespace is the following:
+	Where the **telerikGrid** namespace is the following:
 
-```xml
-xmlns:telerikGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
-```
+	```xml
+	xmlns:telerikGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
+	```
 
-The columns take all the available space proportionally. The Width property is ignored.
+	The columns take all the available space proportionally. The Width property is ignored.
 
-![DataGrid SizeMode Property](../images/datagrid-columns-width-stretch.png)
+	![DataGrid SizeMode Property](../images/datagrid-columns-width-stretch.png)
 
 1. Third scenario when SizeMode="Auto":
 
-```XAML
-<telerikGrid:RadDataGrid x:Name="grid" AutoGenerateColumns="False" BackgroundColor="Red">
-    <telerikGrid:RadDataGrid.Columns>
-        <telerikGrid:DataGridTextColumn PropertyName="Country" HeaderText="Country" Width="100" SizeMode="Auto"/>
-        <telerikGrid:DataGridTextColumn PropertyName="Capital" HeaderText="Capital" Width="200" SizeMode="Auto"/>
-    </telerikGrid:RadDataGrid.Columns>
-</telerikGrid:RadDataGrid>
-```
+	```XAML
+	<telerikGrid:RadDataGrid x:Name="grid" AutoGenerateColumns="False" BackgroundColor="Red">
+		<telerikGrid:RadDataGrid.Columns>
+			<telerikGrid:DataGridTextColumn PropertyName="Country" HeaderText="Country" Width="100" SizeMode="Auto"/>
+			<telerikGrid:DataGridTextColumn PropertyName="Capital" HeaderText="Capital" Width="200" SizeMode="Auto"/>
+		</telerikGrid:RadDataGrid.Columns>
+	</telerikGrid:RadDataGrid>
+	```
 
-Where the **telerikGrid** namespace is the following:
+	Where the **telerikGrid** namespace is the following:
 
-```xml
-xmlns:telerikGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
-```
+	```xml
+	xmlns:telerikGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
+	```
 
-The columns take only as much space as they need. The Width property is ignored.
+	The columns take only as much space as they need. The Width property is ignored.
 
-![DataGrid SizeMode Property](../images/datagrid-columns-width-auto.png)
+	![DataGrid SizeMode Property](../images/datagrid-columns-width-auto.png)
 
-1. Lets use three columns to fully clarify the SizeMode behavior:
+Lastly, lets use three columns to fully clarify the SizeMode behavior:
 
 ```XAML
 <telerikGrid:RadDataGrid x:Name="grid" AutoGenerateColumns="False">

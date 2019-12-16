@@ -17,7 +17,7 @@ There is always only one expanded item at a time indicated by **IsExpanded** pro
 
 ## Animation while expanding/collapsing
 
-To enable or disable the animation you need to use the IsAnimationEnabled property of RadAccordion. By default, the Animation is enabled.
+To enable or disable the animation you need to use the **IsAnimationEnabled** property of RadAccordion. By default, the Animation is enabled.
 
 You could also customize the duration and easing through **AnimationDuration** and **AnimationEasing** properties.
 

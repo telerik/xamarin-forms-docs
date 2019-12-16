@@ -42,11 +42,9 @@ presenter.Style.MonthNameTextEffect = TKCalendarTextEffect.Lowercase;
 presenter.Update (false);
 ```
 
-There are cases when specific cells must have custom design based on the cell state (e.g. today, weekend, selected). This can be dobe by adopging the <code>TKCalendarDelegate</code> protocol and implementing its <code>calendar:upateVisualsForCell:</code> method:
+There are cases when specific cells must have custom design based on the cell state (e.g. today, weekend, selected). This can be dobe by adopging the <code>TKCalendarDelegate</code> protocol and implementing its <code>UpateVisualsForCell</code> method:
 
 <snippet id='customization-updatevisualcell'/>
-
-<snippet id='customization-updatevisualcell-swift'/>
 
 ```C#
 public override void UpdateVisualsForCell (TKCalendar calendar, TKCalendarCell cell)
@@ -63,11 +61,9 @@ public override void UpdateVisualsForCell (TKCalendar calendar, TKCalendarCell c
 }
 ```
 
-The cell can be replaced with a custom one for more complex scenarios. This can be done by implementing the <code>calendar:viewForCellOfKind:</code> method of <code>TKCalendarDelegate</code> protocol:
+The cell can be replaced with a custom one for more complex scenarios. This can be done by implementing the <code>ViewForCellOfKind</code> method of <code>TKCalendarDelegate</code> protocol:
 
 <snippet id='customization-viewforcell'/>
-
-<snippet id='customization-viewforcell-swift'/>
 
 ```C#
 public override TKCalendarCell ViewForCellOfKind (TKCalendar calendar, TKCalendarCellType cellType)
@@ -83,8 +79,6 @@ public override TKCalendarCell ViewForCellOfKind (TKCalendar calendar, TKCalenda
 The following is the implementation of the <code>CustomCell</code> class:
 
 <snippet id='customization-customcell'/>
-
-<snippet id='customization-customcell-swift'/>
 
 ```C#
 public class DocsCustomCell : TKCalendarDayCell

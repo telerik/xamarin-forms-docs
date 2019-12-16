@@ -13,8 +13,14 @@ Portable\Telerik.XamarinForms.DataGrid.dll
 Portable\Telerik.XamarinForms.DataGrid.xml
 Portable\Telerik.XamarinForms.DataVisualization.dll
 Portable\Telerik.XamarinForms.DataVisualization.xml
+Portable\Telerik.XamarinForms.ImageEditor.dll
+Portable\Telerik.XamarinForms.ImageEditor.xml
 Portable\Telerik.XamarinForms.Input.dll
 Portable\Telerik.XamarinForms.Input.xml
+Portable\Telerik.XamarinForms.Map.dll
+Portable\Telerik.XamarinForms.Map.xml
+Portable\Telerik.XamarinForms.PdfViewer.dll
+Portable\Telerik.XamarinForms.PdfViewer.xml
 Portable\Telerik.XamarinForms.Primitives.dll
 Portable\Telerik.XamarinForms.Primitives.xml
 Portable\Telerik.XamarinForms.SkiaSharp.dll
@@ -22,12 +28,10 @@ Portable\Telerik.XamarinForms.SkiaSharp.xml
 Android\Telerik.Xamarin.Android.Chart.dll
 Android\Telerik.Xamarin.Android.Common.dll
 Android\Telerik.Xamarin.Android.Data.dll
-Android\Telerik.Xamarin.Android.Feedback.dll
 Android\Telerik.Xamarin.Android.Gauges.dll
 Android\Telerik.Xamarin.Android.Input.dll
 Android\Telerik.Xamarin.Android.List.dll
 Android\Telerik.Xamarin.Android.Primitives.dll
-iOS\Telerik.Core.dll
 UWP\Telerik.Data.dll
 UWP\Telerik.UI.Xaml.Chart.UWP.dll
 UWP\Telerik.UI.Xaml.Controls.Data.UWP.dll

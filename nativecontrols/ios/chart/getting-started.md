@@ -14,21 +14,19 @@ This quick start tutorial demonstrates how to create a simple iOS application wi
 
 Now that our project is created and the TelerikUI.framework is added, we can start referencing and using the TelerikUI types:
 
-Open your **ViewController.m** file and add a reference to the chart header file:
+Open your **UIViewController** file and add a reference to the chart header file:
 
-    #import <TelerikUI/TelerikUI.h>
+```C#
+using TelerikUI;
+```
 
 Note that starting with Xcode 6 Apple doesn't generate the precompiled headers file automatically. That is why you should add import the UIKit framework before importing TelerikUI:
 
-    #import <UIKit/UIKit.h>
+```C#
+using UIKit;
+```
 
-If you are writing Swift, add the same line in your bridging header.
-
-If you are using Xamarin, add a reference to TelerikUI.dll in your project and use the using directive:
-
-    using TelerikUI;
-
-Type the following code in <code>viewDidLoad</code> method:
+Type the following code in <code>ViewDidLoad</code> method:
 
 <snippet id='chart-getting-started'/>
 <snippet id='chart-getting-started-swift'/>

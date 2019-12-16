@@ -21,4 +21,6 @@ slug: entry-overview
 
 ## See Also
 
-- [Getting Started]({% slug entry-getting-started %})
+- [Getting Started]({% slug entry-getting-started%})
+- [Key Features]({% slug entry-key-features%})
+- [Events]({% slug entry-events%})

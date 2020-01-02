@@ -511,7 +511,11 @@ navigation:
     ## ZipLibrary
     controls/ziplibrary:
         title: "ZipLibrary"
-    ## End ZipLibrary
+    ## End ZipLibrary    
+    ##SpreadProcessing
+    controls/spreadprocessing:
+        title: "SpreadProcessing"
+    ##End SpreadProcessing
     ## SpreadStreamProcessing
     controls/spreadstreamprocessing:
         title: "SpreadStreamProcessing"
@@ -712,6 +716,11 @@ defaults:
         path: "controls/spreadstreamprocessing"
     values:
         title_prefix: "Xamarin SpreadStreamProcessing Documentation"
+-        
+    scope:
+        path: "controls/spreadprocessing"
+    values:
+        title_prefix: "Xamarin SpreadProcessing Documentation"        
 -
     scope:
         path: "controls/maskedinput"
@@ -846,6 +855,7 @@ intro_columns:
     items:
         "PdfProcessing": "radpdfprocessing-overview"
         "WordsProcessing": "radwordsprocessing-overview"
+        "SpreadProcessing": "radspreadprocessing-overview"
         "SpreadStreamProcessing": "radspreadstreamprocessing-overview"
         "ZipLibrary": "radziplibrary-overview"
   -

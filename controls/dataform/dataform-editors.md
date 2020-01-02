@@ -41,6 +41,14 @@ The image below shows how different editors are visualized on Android, iOS and U
 
 ![DataForm Editors](images/dataform_editors_1.png)
 
+## Events
+
+RadDataForm provides the following event related to editors' values: 
+
+* **EditorValueChanged**: Occurs when a value of a DataForm editor is updated. The **EditorValueChanged** event handler receives two parameters:
+	* The sender argument which is of type object, but can be cast to the **RadDataForm** type.
+	* An **EditorValueChangedEventArgs** object which has a reference to the PropertyName (of the DataForm Source property that has been edited) as well as the new value.
+
 ## Custom Editors
 
 If any of the described above editors provided in RadDataForm for Xamarin is not suitable to achieve a certain requirement, a custom native editor could be created for each platform. 

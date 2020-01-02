@@ -218,10 +218,15 @@ navigation:
         position: 11
     ## End DataGrid
     
-     ## DockLayout
+    ## DateTimePicker
+    controls/datetimepicker:
+        title: "DateTime Picker"
+    ## End DateTimePicker
+    
+    ## DockLayout
     controls/docklayout:
         title: "DockLayout"
-    ## End Entry
+    ## End DockLayout
     
     ## Entry
     controls/entry:

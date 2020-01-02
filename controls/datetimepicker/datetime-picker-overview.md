@@ -21,7 +21,7 @@ slug: datetime-picker-overview
 
 * **Custom Templates**: Date and Time Picker provides templates for its header and footer. Also we have exposed templates for the picker placeholder and display text. For additional info go to [Custom Templates]({%slug datetime-picker-templates%})article.
 
-* **Flexible Styling API**: Take advantage of the styling capabilities of the RadDateTimePicker control. You can easily style its Spinners, the Popup and its header and footer, the text displayed aftef date/time is picked and many [more]({%slug %}).
+* **Flexible Styling API**: Take advantage of the styling capabilities of the RadDateTimePicker control. You can easily style its Spinners, the Popup and its header and footer, the text displayed aftef date/time is picked and many [more].
 
 * **Commands Support**: DateTime Picker exposes a commands that allows you to clear the selected date/time - Clear Command and Toggle Command which allows you to open and close the dialog. More information about Commands support check our help article [here]({%slug datetime-picker-commands%}).
 

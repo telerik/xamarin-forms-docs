@@ -2,16 +2,16 @@
 title: Getting Started
 page_title: Getting Started
 position: 1
-slug: accordion-getting-started
+slug: datetime-picker-getting-started
 ---
 
 # Getting Started
 
-This article will guide you through the steps needed to add a basic **RadAccordion** control in your application.
+This article will guide you through the steps needed to add a basic **RadDateTimePicker** control in your application.
 
 * [Setting up the app](#1-setting-up-the-app)
 * [Adding the required Telerik references](#2-adding-the-required-telerik-references)
-* [Adding RadAccordion control](#3-adding-radaccordion-control)
+* [Adding RadDateTimePicker control](#3-adding-raddatetimepicker-control)
 
 ## 1. Setting up the app
 
@@ -35,7 +35,7 @@ You have two options:
 | iOS      | Telerik.Xamarin.iOS.dll <br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
 | UWP      | Telerik.Core.dll<br/>Telerik.UI.Xaml.Primitives.UWP.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
 
-## 3. Adding RadAccordion control
+## 3. Adding RadDateTimePicker control
 
 You could use one of the following approaches:
 
@@ -48,7 +48,7 @@ Take a look at the following topics on how to use the toolbox:
 	
 #### Create the control definition in XAML or C#.
 
-The snippet below shows a simple RadAccordion definition:
+The snippet below shows a simple RadDateTimePicker definition:
 
 <snippet id='accordion-getting-started-xaml' />
 <snippet id='accordion-gettingstarted-csharp' />
@@ -66,11 +66,12 @@ using Telerik.XamarinForms.Input;
 
 This is the result:
 
-![RadAccordion](images/accordion_getting_started.png)
+![RadAccordion](images/datetimepicker_getting_started.png)
 
->important **SDK Browser** and **QSF** applications contain different examples that show RadAccordion's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
+>important **SDK Browser** and **QSF** applications contain different examples that show RadDateTimePicker's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
 
 ## See Also
 
-- [Key Features]({%slug accordion-key-features%})
-- [Accordion Item Control]({%slug accordion-accordionitem%})
+- [Key Features]({%slug datetime-picker-key-features%})
+- [Custom Templates]({%slug datetime-picker-templates%})
+- [Theming and Style]({%slug datetime-picker-theming-style%})

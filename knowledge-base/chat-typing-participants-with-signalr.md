@@ -1,25 +1,27 @@
-﻿---
+---
 title: RadChat How To Use SignalR and TypingIndicator
 description: This example walks you through customizing the RadChat control with a custom ControlTemplate which is capable of invoking SignalR messages to show all chat room participant who is currently typing
 type: how-to
 page_title: Sharing currently typing chat room authors in SignalR
-slug: button-create-togglelike-button
+slug: chat-signalR-and-typing-indicator
 position: 
-tags: toggle, button, Xamarin, XamarinForms
+tags: chat, signalr, Xamarin, XamarinForms
 ticketid: 1447468
 res_type: kb
 ---
 
 ## Environment
 <table>
-	<tr>
-		<td>Product Version</td>
-		<td>2019.3.1126</td>
-	</tr>
-	<tr>
-		<td>Product</td>
-		<td>RadChat for Xamarin</td>
-	</tr>
+	<tbody>
+		<tr>
+			<td>Product Version</td>
+			<td>2019.3.1126</td>
+		</tr>
+		<tr>
+			<td>Product</td>
+			<td>RadChat for Xamarin</td>
+		</tr>
+	</tbody>
 </table>
 
 
@@ -228,9 +230,26 @@ Assign **CustomChatControlTemplate** to the `RadChat` instance.
 Finally, define the **RadEntry_OnTextChanged** event handler in the code-behind
 
 ```csharp
-
+private void RadEntry_OnTextChanged(object sender, TextChangedEventArgs e)
+{
+	if (!string.IsNullOrEmpty(e.NewTextValue))
+	{
+		// If the text is not empty add user to TypingIndicator's Authors collection
+		if (!MyTypingIndicator.Authors.Contains(me))
+		{
+			MyTypingIndicator.Authors.Add(me);
+		}
+	}
+	else
+	{
+		// If text is empty, remove user from TypingIndicator's Authors collection
+		if (MyTypingIndicator.Authors.Contains(me))
+		{
+			MyTypingIndicator.Authors.Remove(me);
+		}
+	}
+}
 ```
-
 
 
 ## Advanced Alternative - Custom Entry with Timer

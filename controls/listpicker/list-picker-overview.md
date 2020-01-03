@@ -21,7 +21,7 @@ slug: list-picker-overview
 
 * **Customizable Items**:  Take advantage of the styling capabilities of RadList Picker by using its Style properties such as ItemStyle, SelectedItemStyle, etc.You can easily style its Spinners, the Popup and its header and footer. For more details check Styling article.
 
-* **Commands Support**: RadPickerBase class exposes commands that allows you to clear the selected item - Clear Command and Toggle Command which allows you to open and close the dialog. More information about Commands support check our help article [here]({%slug list-picker-commands%}).
+* **Commands Support**: RadPickerBase class exposes commands that allows you to clear the selected item - Clear Command and Toggle Command which allows you to open and close the dialog. More information about Commands support check our help article here.
 
 >tip Check out RadList Picker [Getting Started]({%slug list-picker-getting-started%}) help article that shows how to use it in a basic scenario.
 

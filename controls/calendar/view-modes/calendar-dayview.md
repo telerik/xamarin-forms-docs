@@ -63,6 +63,7 @@ And here is the result:
 
 * [View Modes]({%slug calendar-features-navigation-and-view-mode%})
 * [MultiDay ViewMode]({%slug calendar-multidayview%})
+* [Agenda View]({%slug calendar-agendaview%})
 * [Appointments]({%slug calendar-appointments%})
 * [Special and restricted slots]({%slug calendar-specialslots%})
 * [Non-working hours]({%slug calendar-nonworking-hours%})

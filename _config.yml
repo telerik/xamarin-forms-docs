@@ -444,6 +444,10 @@ navigation:
         position: 11
         ## End ImageEditor Sub-Folders
     ## End ImageEditor
+    ## ListPicker
+    controls/listpicker:
+        title: "List Picker"
+    ## End ListPicker
     ## ListView
     controls/listview:
         title: "ListView"

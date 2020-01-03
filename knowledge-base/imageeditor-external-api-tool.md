@@ -1,4 +1,4 @@
-﻿---
+---
 title: ImageEditor External API Custom Tool 
 description: How to use an external API with the ImageEditor
 type: how-to

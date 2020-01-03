@@ -16,6 +16,7 @@ The table below lists the supported view modes for each platform:
 | Month 			| &#x2714;	| &#x2714;	| &#x2714;	|
 | Day 				| &#x2714;	| &#x2714;	| &#x2714;	|
 | MultiDay 			| &#x2714;	| &#x2714;	| &#x2714;	|
+| Agenda			| &#x2714;	| &#x2714;	| - 		|
 | Year				| &#x2714;	| &#x2714;	| - 		|
 | Week				| &#x2714;	| &#x2714;	| -			|
 | MonthNames		| &#x2714;	| -			| &#x2714;	|
@@ -84,5 +85,7 @@ private void CalendarLoaded(object sender, EventArgs args)
 ## See Also
 
 * [Date Properties]({%slug calendar-date-properties%})
+* [Day View]({%slug calendar-dayview%})
 * [MultiDay View]({%slug calendar-multidayview%})
+* [Agenda View]({%slug calendar-agendaview%})
 * [Events]({%slug calendar-events%})

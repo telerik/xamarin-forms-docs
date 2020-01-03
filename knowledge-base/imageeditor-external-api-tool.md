@@ -45,7 +45,7 @@ However, if you would like to follow along precisely with this tutorial, you wil
 
 ### Configuring the ImageEditor and Toolbar
 
-The first step is to define a RadImageEditor in the first row of a Grid. Then add a RadImageEditorToolbar with  `AutoGenerateItems="False"` (because we'll be defining our own commands) in the second row. *Note: The initial cat4.jpeg image source is hard coded to keep the example simple.*
+The first step is to define a RadImageEditor in the first row of a Grid. Then add a RadImageEditorToolbar, with  `AutoGenerateItems="False"` (because we'll be defining our own commands), in the second row. *Note: The initial cat4.jpeg image source is hard coded to keep the example simple.*
 
 ```xml
 <Grid BackgroundColor="LightGray">
@@ -113,7 +113,7 @@ private async void RemoveBackground_Clicked(object sender, EventArgs e)
 }
 ```
 
-The **SaveToPicturesFolder** task is strightforward thanks to .NET Standard 2.0. It uses `System.IO.File` to save a file to the user's pictures folder for that device.
+The **SaveToPicturesFolder** task is straightforward thanks to .NET Standard 2.0. It uses `System.IO.File` to save a file to the user's pictures folder for that device.
 
 
 ```csharp
@@ -281,12 +281,12 @@ Here is the result at while the remote operation is busy:
 
 ![Busy at Runtime](images/imageeditor-api-busy.png)
 
-## Resources
+## See Also
 
 For more information, visit the following locations:
 
 * [ImageEditor Overview](https://docs.telerik.com/devtools/xamarin/controls/imageeditor/imageeditor-overview)
-* [ImageEditor Toobar](https://docs.telerik.com/devtools/xamarin/controls/imageeditor/imageeditor-toolbar)
-* [ImageEditor Custom Toobar](https://docs.telerik.com/devtools/xamarin/controls/imageeditor/imageeditor-custom-toolbar)
+* [ImageEditor Toolbar](https://docs.telerik.com/devtools/xamarin/controls/imageeditor/imageeditor-toolbar)
+* [ImageEditor Custom Toolbar](https://docs.telerik.com/devtools/xamarin/controls/imageeditor/imageeditor-custom-toolbar)
 * [ImageEditor Commands](https://docs.telerik.com/devtools/xamarin/controls/imageeditor/imageeditor-commands)
 

@@ -2,19 +2,19 @@
 title: Methods
 page_title: Methods
 position: 5
-slug: datetime-picker-methods
+slug: list-picker-methods
 ---
 
 # Methods
 
-**DateTime Picker** for Xamarin allows you to clear the selected date/time through its **ClearSelection** method
+**List Picker** for Xamarin allows you to clear the selected date/time through its **ClearSelection** method
 
 ## Example
 
 ```XAML
 <StackLayout>
     <Button Text="Clear Selection" Clicked="OnClearSelectionClicked"/>
-    <telerikInput:RadDateTimePicker x:Name="dateTimePicker"/>
+    <telerikInput:RadDateTimePicker x:Name="listPicker"/>
 </StackLayout>
 ```
 
@@ -23,7 +23,7 @@ and we can clear the selection inside the button click event:
 ```C#
 private void OnClearSelectionClicked(object sender, EventArgs e)
 {
-    this.dateTimePicker.ClearSelection();
+    this.listPicker.ClearSelection();
 }
 ```
 

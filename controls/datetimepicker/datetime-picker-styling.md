@@ -2,10 +2,10 @@
 title: Theming and Style
 page_title: Theming and Style
 position: 7
-slug: datetime-picker-theming-style
+slug: datetime-picker-styling
 ---
 
-# Theming and Style
+# Styling
 
 
 
@@ -13,4 +13,6 @@ slug: datetime-picker-theming-style
 
 ## See Also
 
-- [Key Features]({% slug accordion-key-features%})
+- [Key Features]({% slug datetime-picker-key-features%})
+- [Custom Templates]({% slug datetime-picker-templates%})
+- [Commands]({% slug datetime-picker-commands%})

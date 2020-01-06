@@ -26,14 +26,14 @@ You have two options:
 
 * Add the Telerik UI for Xamarin Nuget packages following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
 
-* Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadAccordion** component:
+* Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadDateTimePicker** component:
 
 | Platform | Assemblies |
 | -------- | ---------- |
-| Portable | Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
-| Android  | Telerik.Xamarin.Android.Common.dll<br/>Telerik.Xamarin.Android.Primitives.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
-| iOS      | Telerik.Xamarin.iOS.dll <br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
-| UWP      | Telerik.Core.dll<br/>Telerik.UI.Xaml.Primitives.UWP.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
+| Portable | Telerik.XamarinForms.Input<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
+| Android  | Telerik.Xamarin.Android.Common.dll<br/>Telerik.Xamarin.Android.Primitives.dll<br/>Telerik.XamarinForms.Input<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
+| iOS      | Telerik.Xamarin.iOS.dll <br/>Telerik.XamarinForms.Input<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
+| UWP      | Telerik.Core.dll<br/>Telerik.UI.Xaml.Primitives.UWP.dll<br/>Telerik.XamarinForms.Input<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
 
 ## 3. Adding RadDateTimePicker control
 
@@ -50,28 +50,27 @@ Take a look at the following topics on how to use the toolbox:
 
 The snippet below shows a simple RadDateTimePicker definition:
 
-<snippet id='accordion-getting-started-xaml' />
-<snippet id='accordion-gettingstarted-csharp' />
+<snippet id='datetimepicker-getting-started-xaml' />
+<snippet id='datetimepicker-getting-started-csharp' />
 
 In addition to this, you need to add the following namespace:
 
 ```XAML
-xmlns:telerikBusyIndicator="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
 xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
 ```
 ```C#
-using Telerik.XamarinForms.Primitives;
 using Telerik.XamarinForms.Input;
 ```
 
 This is the result:
 
-![RadAccordion](images/datetimepicker_getting_started.png)
+![RadDateTimePicker](images/datetimepicker_getting_started.png)
 
 >important **SDK Browser** and **QSF** applications contain different examples that show RadDateTimePicker's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
 
 ## See Also
 
+- [Suppoted Standard Date and Time Format Strings]({%slug datetime-picker-format-string%})
 - [Key Features]({%slug datetime-picker-key-features%})
 - [Custom Templates]({%slug datetime-picker-templates%})
-- [Theming and Style]({%slug datetime-picker-theming-style%})
+- [Styling]({%slug datetime-picker-styling%})

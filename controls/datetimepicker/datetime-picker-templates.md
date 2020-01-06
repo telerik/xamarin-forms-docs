@@ -49,6 +49,9 @@ In addition to this, you need to add the following namespace:
 
 ```XAML
 xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
+
+>important A sample Custom Templates example can be found in the DateTimePicker/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 

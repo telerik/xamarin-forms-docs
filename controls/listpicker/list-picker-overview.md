@@ -9,7 +9,7 @@ slug: list-picker-overview
 
 **Telerik List Picker for Xamarin** allows you to select an item from a list of items. This list is visualized inside a popup. List Picker provides the ability to loop its items infinitly while scrolling. Also you can fully customize the dialog appearance, style the list items and define templates for the items and for the selected one.  
 
-
+![List Picker Overview](images/list_picker_overview.png)
 
 ## Key features
 

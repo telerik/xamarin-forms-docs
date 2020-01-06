@@ -13,7 +13,7 @@ slug: datetime-picker-overview
 
 ## Key features
 
-* **Pre-defined string format**: Date and Time Picker for Xamarin allows you to set a standatd date and time format string through the SpinnerFormatString property. You can create a date picker, time picker or combination of both. For more information in this go to [Key Features]({%slug datetime-picker-key-features%}) topic in our documentation.
+* **Pre-defined string format**: Date and Time Picker for Xamarin allows you to set a standatd date and time format string through the SpinnerFormatString property. You can create a date picker, time picker or combination of both. For more information in this go to [DateTime Format String]({%slug datetime-picker-format-string%}) topic in our documentation.
 
 * **Date Range**: RadDateTime Picker allows you to define a particular start and end date and choose a date in between. To learn more about this, visit [Key Features Date Range]({%slug datetime-picker-key-features%}) section.
 
@@ -21,9 +21,9 @@ slug: datetime-picker-overview
 
 * **Custom Templates**: Date and Time Picker provides templates for its header and footer. Also we have exposed templates for the picker placeholder and display text. For additional info go to [Custom Templates]({%slug datetime-picker-templates%})article.
 
-* **Flexible Styling API**: Take advantage of the styling capabilities of the RadDateTimePicker control. You can easily style its Spinners, the Popup and its header and footer, the text displayed aftef date/time is picked and many [more].
+* **Flexible Styling API**: Take advantage of the styling capabilities of the RadDateTimePicker control. You can easily style its Spinners, the Popup and its header and footer, the text displayed aftef date/time is picked and many [more]({%slug datetime-picker-styling%}).
 
-* **Commands Support**: DateTime Picker exposes a commands that allows you to clear the selected date/time - Clear Command and Toggle Command which allows you to open and close the dialog. More information about Commands support check our help article [here]({%slug datetime-picker-commands%}).
+* **Commands Support**: DateTime Picker exposes a commands which allows you to clear the selected date/time - Clear Command and Toggle Command which allows you to open and close the dialog. More information about Commands support check our help article [here]({%slug datetime-picker-commands%}).
 
 >tip Check out RadDateTime Picker [Getting Started]({%slug datetime-picker-getting-started%}) help article that shows how to use it in a basic scenario.
 

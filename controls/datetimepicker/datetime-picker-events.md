@@ -7,6 +7,10 @@ slug: datetime-picker-events
 
 # Events
 
+**RadDateTime Picker** exposes a **SelectionChanged** event which is fired when the user change the selected date/time
+
+## Example
+
 
 
 ## See Also

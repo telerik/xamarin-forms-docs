@@ -26,6 +26,12 @@ and the ViewModel:
 
 <snippet id='listpicker-features-viewmodel' />
 
+also you will need to add the following namespace:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
+
 >important A sample Templates example can be found in the ListPicker/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also

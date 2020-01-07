@@ -15,5 +15,6 @@ slug: list-picker-events
 
 ## See Also
 
-- [Key Features]({%slug accordion-key-features %})
-- [AccordionItem Control]({% slug accordion-accordionitem %})
+- [Commands]({%slug list-picker-commands%})
+- [Methods]({%slug list-picker-methods%})
+- [Templates]({% slug list-picker-templates%})

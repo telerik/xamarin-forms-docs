@@ -29,5 +29,5 @@ private void OnClearSelectionClicked(object sender, EventArgs e)
 
 ## See Also
 
-- [Key Features]({%slug datetime-picker-key-features%})
-- [Commands ]({% slug datetime-picker-commands%})
+- [Events]({%slug list-picker-events%})
+- [Commands]({%slug list-picker-commands%})

@@ -821,6 +821,25 @@ intro_columns:
         "Accordion": "accordion-overview"
         "Expander": "expander-overview"
         "DockLayout": "docklayout-overview"
+  -
+    title: "Buttons"
+    items:
+        "Segmented Control": "segmentedcontrol-overview"
+        "Button": "button-overview"
+        "CheckBox": "checkbox-overview"
+-
+  categories:
+  -   
+    title: "Editors"
+    items: 
+        "Entry": "entry-overview"
+        "AutoCompleteView": "autocompleteview-overview"
+        "NumericInput": "numericinput-overview"
+        "MaskedInput": "maskedinput-overview"
+        "Image Editor": "imageeditor-overview"
+        "DateTimePicker": "datetime-picker-overview"
+        "ListPicker": "list-picker-overview"
+        "TemplatedPicker": "list-picker-overview"
 -
   categories:
   -
@@ -830,21 +849,8 @@ intro_columns:
         "Map": "map-overview"
         "Gauge": "gauge-overview"
         "Rating": "rating-overview"
-        "Barcode": "barcode-overview"
-        "Image Editor": "imageeditor-overview"
-        "Entry": "entry-overview"
-        "AutoCompleteView": "autocompleteview-overview"
-        "NumericInput": "numericinput-overview"
-        "MaskedInput": "maskedinput-overview"
--
-  categories:
-  -
-    title: "Buttons"
-    items:
-        "Segmented Control": "segmentedcontrol-overview"
-        "Button": "button-overview"
-        "CheckBox": "checkbox-overview"
-  -
+        "Barcode": "barcode-overview"    
+  - 
     title: "Interactivity & UX"
     items:
         "BusyIndicator": "busyindicator-overview"

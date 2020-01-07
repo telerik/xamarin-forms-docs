@@ -19,9 +19,7 @@ The available Standard Date and Time format strings that can be set to the Spinn
 | "g" |
 | "d" |
 | "dd" |
-| "h" |
 | "hh" |
-| "H" |
 | "HH" |
 | "m" |
 | "mm" |

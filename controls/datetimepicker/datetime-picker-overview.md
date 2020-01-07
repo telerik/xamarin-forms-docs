@@ -17,7 +17,7 @@ slug: datetime-picker-overview
 
 * **Date Range**: RadDateTime Picker allows you to define a particular start and end date and choose a date in between. To learn more about this, visit [Key Features Date Range]({%slug datetime-picker-key-features%}) section.
 
-* **Vizualized Text Formatting**: You can choose what text to display when a date/time was picked through the DateTime Picker DisplayTextFormatter property. For more info on this check the [Key Features - Display String]({%slug datetime-picker-key-features%}) section.
+* **Vizualized Text Formatting**: You can choose what text to display when a date/time was picked through the DateTime Picker DisplayStringFormat property. For more info on this check the [Key Features - Display String]({%slug datetime-picker-key-features%}) section.
 
 * **Custom Templates**: Date and Time Picker provides templates for its header and footer. Also we have exposed templates for the picker placeholder and display text. For additional info go to [Custom Templates]({%slug datetime-picker-templates%})article.
 

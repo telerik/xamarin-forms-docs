@@ -1,11 +1,12 @@
 ---
 title: Styling
 page_title: Styling
-position: 4
+position: 7
 slug: list-picker-styling
 ---
 
 # Styling
+
 
 
 ## See Also

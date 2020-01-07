@@ -7,7 +7,26 @@ slug: list-picker-templates
 
 # Templates
 
+List Picker for Xamarin provides the following templates:
 
+* **ItemTemplate**(*DataTemplate*): Defines the template used for displaying the list of items.
+* **SelectedItemTemplate**(*DataTemplate*): Specifies the template used for visualizing the selected item from the list.
+
+## Example
+
+Here is a sample List Picker definition with Item and SelectedItem Templates:
+
+<snippet id='listpicker-features-templates' />
+
+and a sample business model:
+
+<snippet id='listpicker-features-businessmodel' />
+
+and the ViewModel:
+
+<snippet id='listpicker-features-viewmodel' />
+
+>important A sample Templates example can be found in the ListPicker/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 

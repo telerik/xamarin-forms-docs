@@ -12,6 +12,14 @@ List Picker for Xamarin provides the following templates:
 * **ItemTemplate**(*DataTemplate*): Defines the template used for displaying the list of items.
 * **SelectedItemTemplate**(*DataTemplate*): Specifies the template used for visualizing the selected item from the list.
 
+In addition the List Picker for Xamarin provides the following properties:
+
+* **ItemsSource**(*IList*): Specifies the collection used to generate the content of the list picker.
+* **ItemLength**(*double*): Defines the length of the items inside the list.
+* **ItemSpacing**(*double*): Defines the spacing between the items inside the list.
+* **SelectedItem**(*object*): Specifies the selected item of the list picker
+* **DisplayMemberPath**(*string*): Defines the path pf the property which is to be displayed as DisplayString. 
+
 ## Example
 
 Here is a sample List Picker definition with Item and SelectedItem Templates:

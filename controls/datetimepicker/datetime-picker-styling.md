@@ -20,17 +20,17 @@ Date and Time Picker control for Xamrin provides the following Style properties 
 
 Using the SelectorSettings property of the RadPickerBase class, you could style the dialog(popup) through the following properties:
 
-* **PopupViewStyle**(of type *Style* with target type is **telerikInput:PickerPopupHeaderView**):
-* **HeaderStyle**(**):
-* **HeaderLabelStyle**(**):
-* **FooterStyle**(**):
-* **AcceptButtonStyle**(**):
-* **CancelButtonStyle**(**):
+* **PopupViewStyle**(of type *Style* with target type is **telerikInput:PickerPopupContentView**):
+* **HeaderStyle**(of type *Style* with target type is **telerikInput:PickerPopupHeaderView**):
+* **HeaderLabelStyle**(of type *Style* with target type is **Label**):
+* **FooterStyle**(of type *Style* with target type is **telerikInput:PickerPopupFooterView**):
+* **AcceptButtonStyle**(of type *Style* with target type is **Button**):
+* **CancelButtonStyle**(of type *Style* with target type is **Button**):
 
 The SelectorSetting also provides the following properties for popup customization:
 
-* **PopupOutsideBackgroundColor**(*Xamarin.Forms.Color*):
-* **Header**(**):
+* **PopupOutsideBackgroundColor**(*Xamarin.Forms.Color*): Defines the color outside of the popup.
+* **Header**(*object*):
 * **IsHeaderVisible**(*bool*): Defines the visibility of the header. The default value is true.
 * **IsFooterVisible**(*bool*): Defines the visibility of the header. The default value is true.
 * **AcceptButtonText**(*string*): Defines the text visualized for the accept button. By default the text is *OK*.

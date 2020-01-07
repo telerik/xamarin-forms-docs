@@ -7,11 +7,50 @@ slug: list-picker-events
 
 # Events
 
-**List Picker** for Xamarin exposes a **SelectionChanged** event which is fired when the user change the selected date/time
+**List Picker** for Xamarin exposes a **SelectionChanged** event which is raised when the user confirms the selected item.
 
 ## Example
 
+```XAML
+<telerikInput:RadListPicker Placeholder="Pick a name!" 
+	                        ItemsSource="{Binding Items}" 
+	                        SelectionChanged="RadListPicker_SelectionChanged"
+	                        DisplayMemberPath="FullName">
+    <telerikInput:RadListPicker.BindingContext>
+        <local:ViewModel/>
+    </telerikInput:RadListPicker.BindingContext>
+    <telerikInput:RadListPicker.ItemTemplate>
+        <DataTemplate>
+            <Label Text="{Binding Name}" 
+				   HorizontalTextAlignment="Center" 
+				   VerticalTextAlignment="Center"/>
+        </DataTemplate>
+    </telerikInput:RadListPicker.ItemTemplate>
+</telerikInput:RadListPicker>
+```
 
+```C#
+private void RadListPicker_SelectionChanged(object sender, System.EventArgs e)
+{
+
+}
+```
+
+a sample ViewModel:
+
+<snippet id='listpicker-getting-started-viewmodel' />
+
+and the Business model:
+
+<snippet id='listpicker-getting-started-business-model' />
+
+where the *sender* is the RadListPicker control.
+
+also you will need to add the following namespace:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
 
 ## See Also
 

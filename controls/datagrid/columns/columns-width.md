@@ -57,6 +57,7 @@ this.grid.ItemsSource = new List<Data>
 	```xml
 	xmlns:telerikGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
 	```
+	
 	>important The **Width** property of columns will apply only when **SizeMode="Fixed"**.
 
 	The first and second columns have set widths of 100 and 200, respectively:

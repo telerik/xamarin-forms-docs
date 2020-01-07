@@ -505,7 +505,11 @@ navigation:
     controls/tabview:
         title: "TabView"
     ## End TabView
-   ## TreeView
+    ## TemplatedPicker
+    controls/templatedpicker:
+        title: "Templated Picker"
+    ## End TemplatedPicker
+    ## TreeView
     controls/treeview:
         title: "TreeView"
     controls/treeview/styling:

@@ -1,11 +1,11 @@
 ---
-title: Dynamic PropertyDataSourceProvider
-page_title: Dynamic PropertyDataSourceProvider
+title: Dynamic PropertyDataSource
+page_title: Dynamic PropertyDataSource
 slug: dataform-propertydatasourceprovider
 position: 6
 ---
 
-# Dynamic PropertyDataSourceProvider
+# Dynamic PropertyDataSource
 
 Some DataForm Editors such as PickerEditor and SegmentedEditor allow the app user to choose a value from a predefined list of values. In this case RadDataForm provides a mechanism to set a data source to these editors through the **PropertyDataSourceProvider**. 
 

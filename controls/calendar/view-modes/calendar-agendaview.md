@@ -11,6 +11,10 @@ With R1 2020 RadCalendar comes with new Agenda view mode which shows a list of t
 
 In addition, you have full control over the way the Agenda view is visualized - you can set custom date and time formats as well as modify the style (text color, font, alignment) of each text label shown across the view separately.
 
+In order to enable AgendaView, just set **ViewMode** property of RadCalendar to "Agenda". The image below shows Calendar AgendaView with its default look:
+
+![Calendar AgendaView](../images/calendar_agendaview.png)
+
 ## Date and Time Format Settings
 
 You can find below a full list of the available date and time format settings for Agenda View:

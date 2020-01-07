@@ -13,6 +13,36 @@ If the default templates of the control do not suit your needs, you can easily d
 * **DisplayTemplate**(*ControlTemplate*): Defines the template visualized when the picked date/time is displayed.
 
 * **HeaderTemplate**(*ControlTemplate*): Defines what will be displayed inside the dialog(popup) header.
+
+<snippet id='datetimepicker-header-template' />
+
+>important Note that by default the visibility of the dialog header is false. In order to visualize the header you will need to set **IsHeaderVisible = "true"**. Also note that instead of template binding you can bind a property from the viewmodel, or use the Header property:
+
+<snippet id='datetimepicker-header-template' />
+
+```XAML
+<telerikInput:RadDateTimePicker StartDate="2019,12,11" 
+                            	EndDate="2020,02,14">
+    <telerikInput:RadDateTimePicker.SelectorSettings>
+        <telerikInput:PickerPopupSelectorSettings HeaderTemplate="{StaticResource headerTemplate}" 
+                                                  IsHeaderVisible="True"
+                                                  Header="This is the Header Template" />
+    </telerikInput:RadDateTimePicker.SelectorSettings>
+</telerikInput:RadDateTimePicker>
+```
+
+or
+
+```XAML
+<telerikInput:RadDateTimePicker StartDate="2019,12,11" 
+                            	EndDate="2020,02,14">
+    <telerikInput:RadDateTimePicker.SelectorSettings>
+        <telerikInput:PickerPopupSelectorSettings IsHeaderVisible="True"
+                                                  Header="{Binding Header}" />
+    </telerikInput:RadDateTimePicker.SelectorSettings>
+</telerikInput:RadDateTimePicker>
+```
+
 * **FooterTemplate**(*ControlTemplate*): Defines what will be displayed inside the dialog(popup) footer.
 
 ## Example

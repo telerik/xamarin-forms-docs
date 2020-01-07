@@ -46,6 +46,16 @@ The following RadListView events are related to the cell swiping feature:
  - **Item** (object): The item that has been swiped.
  - **Offset** (double): The swipe offset at which the item has been dropped.
 
+## Commands
+
+In addition to the swipe events, RadListView provides similar commands related to certain swipe actions, namely:
+
+* **ItemSwipeStarting**:
+* **ItemSwiping**
+* **ItemSwipeCompleted**
+
+For more detailed information on how you can utilize the ListView commands, go to [Commands]({% slug listview-features-commands %}) topic.
+  
 ## Examples
 
 With the RadListView swipe events, we can perform custom actions depending on the swipe direction, the swiped amount or the data item.
@@ -103,5 +113,6 @@ The BindingContext of the swipe content is the data item. This could be used to 
 
 - [ListView Cell Types]({% slug listview-cells %})
 - [ListView Layouts]({% slug listview-features-layouts %})
+- [Commands]({% slug listview-features-commands %})
 - [Pull to Refresh]({% slug listview-features-pull-to-refresh %})
 - [Reorder Items]({% slug listview-features-reorder-items %})

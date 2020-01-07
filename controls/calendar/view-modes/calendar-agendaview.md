@@ -49,7 +49,7 @@ RadCalendar provides means for customizing the look &amp; feel of each element o
 
 In order to modify the default styles, you would need to create a custom selector class based on the AgendaItemStyleSelector and override the following methods that handle the styling of different agenda view items:
 
-* **SelectMonthItemStyle**: Sets the style of the labels shown at the beginning of each month; Through the parameter of type *AgendaMonthItem* you can receive the exact month the Style refers to. 
+* **SelectMonthItemStyle**: Sets the style of the labels shown at the beginning of each month; Through the parameter of type *AgendaMonthItem* you can receive the exact month the style refers to. 
 * **SelectWeekItemStyle**: Specifies the style of the labels shown for each week; Through the parameter of type *AgendaWeekItem* you can get the start and end dates of the week the style refers to.
 * **SelectDayItemStyle**: Sets the style of the labels displayed for the days inside the agenda view; Through the parameter of type *AgendaDayItem* you can receive the date the style refers to.
 

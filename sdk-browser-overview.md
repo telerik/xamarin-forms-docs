@@ -1,11 +1,11 @@
 ---
-title: Demo Applications
+title: Xamarin Demo Applications
 page_title: Telerik UI for Xamarin Documentation | Demo Applications
 slug: developer-focused-examples
 position: 8
 ---
 
-# Demo Applications
+# Xamarin Demo Applications
 
 **Telerik UI for Xamarin** provides an easy-to-use infrastructure with many fully featured examples demonstrating our Xamarin controls. You can review the source code of each example and get familiar with the configuration possibilities that each provides.
 

@@ -11,9 +11,13 @@ With R1 2020 RadCalendar comes with new Agenda view mode which shows a list of t
 
 In addition, you have full control over the way the Agenda view is visualized - you can set custom date and time formats as well as modify the style (text color, font, alignment) of each text label shown across the view separately.
 
+>tip AgendaView provides convenient way to display appointments chronologically. For more details on the Appointments feature of RadCalendar refer to [Appointments]({%slug calendar-appointments%}) topic. 
+
 In order to enable AgendaView, just set **ViewMode** property of RadCalendar to "Agenda". The image below shows Calendar AgendaView with its default look:
 
 ![Calendar AgendaView](../images/calendar_agendaview.png)
+
+>important AgendaView is available only on Android and iOS.
 
 ## Date and Time Format Settings
 

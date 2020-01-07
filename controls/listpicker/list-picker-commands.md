@@ -30,5 +30,5 @@ xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.Xa
 
 ## See Also
 
-- [Key Features]({%slug list-picker-events%})
-- [Custom Templates]({%slug list-picker-templates%})
+- [Events]({%slug list-picker-events%})
+- [Templates]({%slug list-picker-templates%})

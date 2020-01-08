@@ -15,13 +15,13 @@ slug: list-picker-overview
 
 * **Looping**: List Picker for Xamarin provides the ability to loop its items infinetly while scrolling. For more information in this go to [Looping]({%slug list-picker-looping%}) article in our documentation.
 
-* **Templates**: RadList Picker allows you to define a template for the list items and the selected one through the ItemTemplate and SelectedItemTemplate properties. To learn more about this, visit [Templates]({%slug list-picker-templates%}) article.
+* **Templates**: RadList Picker allows you to define a template for the list items and the selected one through the **ItemTemplate** and **SelectedItemTemplate** properties. To learn more about this, visit [Templates]({%slug list-picker-templates%}) article.
 
-* **DisplayString Format**: You can choose what text to display when an item from the list was picked through the Picker DisplayStringFormat property. For more info on this check the Key Features - Display String section.
+* **DisplayString Format**: You can choose what text to display when an item from the list was picked through the Picker **DisplayStringFormat** property. For more info on this check the Key Features - Display String section.
 
-* **Flexible Styling API**:  Take advantage of the styling capabilities of RadList Picker by using its Style properties such as ItemStyle, SelectedItemStyle, etc. You can easily style its Spinners, the Popup and its header and footer. For more details check Styling article.
+* **Flexible Styling API**:  Take advantage of the styling capabilities of RadList Picker by using its Style properties such as **ItemStyle**, **SelectedItemStyle**, etc. You can easily style its Spinners, the Popup and its header and footer. For more details check the [Styling]({%slug list-picker-styling%}) article.
 
-* **Commands Support**: RadPickerBase class exposes commands that allow you to clear the selected item - Clear Command and Toggle Command which allows you to open and close the dialog. More information about Commands support check our help article here.
+* **Commands Support**: RadPickerBase class exposes commands that allow you to clear the selected item - Clear Command and Toggle Command which allows you to open and close the dialog. More information about Commands support check our help article [here]({%slug list-picker-commands%}).
 
 >tip Check out RadList Picker [Getting Started]({%slug list-picker-getting-started%}) help article that shows how to use it in a basic scenario.
 

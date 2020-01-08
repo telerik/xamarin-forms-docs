@@ -30,9 +30,7 @@ Using the SelectorSettings property of the RadPickerBase class, you could style 
 The SelectorSetting also provides the following properties for popup customization:
 
 * **PopupOutsideBackgroundColor**(*Xamarin.Forms.Color*): Defines the color outside of the popup.
-* **Header**(*object*):
-* **IsHeaderVisible**(*bool*): Defines the visibility of the header. The default value is false.
-* **IsFooterVisible**(*bool*): Defines the visibility of the header. The default value is true.
+* **HeaderLabelText**(*string*): Specifies the text visualized in the popup header.
 * **AcceptButtonText**(*string*): Defines the text visualized for the accept button. By default the text is *OK*.
 * **CancelButtonText**(*string*): Defines the text visualized for the cancel button. By default the text is *Cancel*. 
 

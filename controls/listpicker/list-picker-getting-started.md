@@ -5,7 +5,7 @@ position: 1
 slug: list-picker-getting-started
 ---
 
-# Getting Started
+# Getting Started with List Picker for Xamarin
 
 This article will guide you through the steps needed to add a basic **RadListPicker** control in your application.
 

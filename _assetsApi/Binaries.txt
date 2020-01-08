@@ -1,4 +1,5 @@
 Portable\Telerik.Documents.SpreadsheetStreaming.dll
+Portable\Telerik.Documents.Spreadsheet.dll
 Portable\Telerik.XamarinForms.Barcode.dll
 Portable\Telerik.XamarinForms.Barcode.xml
 Portable\Telerik.XamarinForms.ConversationalUI.dll

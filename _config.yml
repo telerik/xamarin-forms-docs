@@ -739,11 +739,26 @@ defaults:
         path: "controls/slideview"
     values:
         title_prefix: "Xamarin SlideView Documentation"
-        
+-        
     scope:
         path: "controls/wordsprocessing"
     values:
         title_prefix: "Xamarin WordsProcessing"
+-        
+    scope:
+        path: "controls/datetimepicker"
+    values:
+        title_prefix: "Xamarin DateTime Picker Documentation"
+-        
+    scope:
+        path: "controls/listpicker"
+    values:
+        title_prefix: "Xamarin List Picker Documentation"
+-        
+    scope:
+        path: "controls/templatedpicker"
+    values:
+        title_prefix: "Xamarin Templated Picker Documentation"
         
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
@@ -843,7 +858,7 @@ intro_columns:
         "Image Editor": "imageeditor-overview"
         "DateTimePicker": "datetime-picker-overview"
         "ListPicker": "list-picker-overview"
-        "TemplatedPicker": "list-picker-overview"
+        "TemplatedPicker": "templated-picker-overview"
 -
   categories:
   -

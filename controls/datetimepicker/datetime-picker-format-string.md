@@ -6,11 +6,11 @@ slug: datetime-picker-format-string
 ---
 
 
-# Pre-defined String Format
+# String Format
 
-Date and Time Picker for Xamarin allows you to set a standard date and time format string through the **SpinnerFormatString** property. You can create a date picker, time picker or combination of both.
+Date and Time Picker for Xamarin allows you to set a standard and custom date and time format string through the **SpinnerFormatString** property. You can create a date picker, time picker or combination of both.
 
-* **SpinnerFormatString**(*string*): Defines the string format which can be used for the date time picker.
+* **SpinnerFormatString**(*string*): Defines the string format.
 
 The available Standard Date and Time format strings that can be set to the SpinnerFormatString property are described in the table above:
 
@@ -48,6 +48,8 @@ The available Standard Date and Time format strings that can be set to the Spinn
 
 ## See Also
 
-- [Custom Templates]({%slug datetime-picker-templates%})
+- [Templates]({%slug datetime-picker-templates%})
 - [Styling]({%slug datetime-picker-styling%})
 - [Events]({%slug datetime-picker-events%})
+- [Methods]({%slug datetime-picker-methods%})
+- [Commands]({%slug datetime-picker-commands%})

@@ -31,4 +31,6 @@ xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.Xa
 ## See Also
 
 - [Key Features]({%slug datetime-picker-key-features%})
-- [Custom Templates]({%slug datetime-picker-templates%})
+- [Templates]({%slug datetime-picker-templates%})
+- [Events]({%slug datetime-picker-events%})
+- [Methods]({%slug datetime-picker-methods%})

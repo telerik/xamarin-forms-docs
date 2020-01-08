@@ -15,5 +15,7 @@ slug: datetime-picker-events
 
 ## See Also
 
-- [Key Features]({%slug accordion-key-features %})
-- [AccordionItem Control]({% slug accordion-accordionitem %})
+- [Key Features]({%slug datetime-picker-key-features%})
+- [Templates]({% slug datetime-picker-templates%})
+- [Methods]({% slug datetime-picker-methods%})
+- [Commands]({% slug datetime-picker-commands%})

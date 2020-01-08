@@ -1,11 +1,11 @@
 ---
-title: Custom Templates
-page_title: Custom Templates
+title: Templates
+page_title: Templates
 position: 3
 slug: datetime-picker-templates
 ---
 
-# Custom Templates
+# Templates
 
 If the default templates of the control do not suit your needs, you can easily define a custom template. The available templates for customizing are:
 

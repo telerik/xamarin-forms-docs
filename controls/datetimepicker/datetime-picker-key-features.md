@@ -7,7 +7,7 @@ slug: datetime-picker-key-features
 
 # Key Features
 
-The purpose of this help article is to show you the key features of the RadDateTimePicker control.
+The purpose of this help article is to show you the key features of the Date and Time Picker control for Xamarin.
 
 ## Date Range
 
@@ -19,7 +19,7 @@ RadDateTime Picker allows you to define a particular start and end date and choo
 
 * **SelectedDate**(*DateTime?*): Defines the date which will be selected when the picker dialog is open.
 
-## Visualized Text Formatting
+## DisplayString Format
 
 * **DisplayStringFormat**(*string*): Defines the format of the string that will be visualized when the picker dialog is closed. 
 
@@ -45,7 +45,7 @@ The snippet below shows a simple Date and Time Picker definition:
 
 ## See Also
 
-- [Custom Templates]({%slug datetime-picker-templates%})
+- [Templates]({%slug datetime-picker-templates%})
 - [Styling]({%slug datetime-picker-styling%})
 - [Events]({%slug datetime-picker-events%})
 - [Commands]({%slug datetime-picker-commands%})

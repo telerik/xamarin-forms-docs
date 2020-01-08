@@ -13,13 +13,13 @@ slug: datetime-picker-overview
 
 ## Key features
 
-* **Pre-defined string format**: Date and Time Picker for Xamarin allows you to set a standard date and time format string through the SpinnerFormatString property. You can create a date picker, time picker or combination of both. For more information in this go to [DateTime Format String]({%slug datetime-picker-format-string%}) topic in our documentation.
+* **String format**: Date and Time Picker for Xamarin allows you to use standard or custom date and time format strings through the SpinnerFormatString property. Depending on what format is set, the picker visualizes spinner controls with prepopulated values to be picked. This feature allows you to create a date picker, time picker or combination of both. For more information check the [DateTime Format String]({%slug datetime-picker-format-string%}) topic in our documentation.
+
+* **Templates**: Date and Time Picker provides templates for its header and footer. Also we have exposed templates for the picker placeholder and display text. For additional info go to [Custom Templates]({%slug datetime-picker-templates%})article.
+
+* **DisplayString Format**: You can choose what text to display when a date/time was picked through the DateTime Picker DisplayStringFormat property. For more info on this check the [Key Features - Display String]({%slug datetime-picker-key-features%}) section.
 
 * **Date Range**: RadDateTime Picker allows you to define a particular start and end date and choose a date in between. To learn more about this, visit [Key Features Date Range]({%slug datetime-picker-key-features%}) section.
-
-* **Visualized Text Formatting**: You can choose what text to display when a date/time was picked through the DateTime Picker DisplayStringFormat property. For more info on this check the [Key Features - Display String]({%slug datetime-picker-key-features%}) section.
-
-* **Custom Templates**: Date and Time Picker provides templates for its header and footer. Also we have exposed templates for the picker placeholder and display text. For additional info go to [Custom Templates]({%slug datetime-picker-templates%})article.
 
 * **Flexible Styling API**: Take advantage of the styling capabilities of the RadDateTimePicker control. You can easily style its Spinners, the Popup and its header and footer, the text displayed after date/time is picked and many [more]({%slug datetime-picker-styling%}).
 

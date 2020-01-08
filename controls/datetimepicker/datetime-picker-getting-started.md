@@ -5,7 +5,7 @@ position: 1
 slug: datetime-picker-getting-started
 ---
 
-# Getting Started
+# Getting Started with Date and Time Picker for Xamarin
 
 This article will guide you through the steps needed to add a basic **RadDateTimePicker** control in your application.
 
@@ -72,5 +72,5 @@ This is the result:
 
 - [Suppoted Standard Date and Time Format Strings]({%slug datetime-picker-format-string%})
 - [Key Features]({%slug datetime-picker-key-features%})
-- [Custom Templates]({%slug datetime-picker-templates%})
+- [Templates]({%slug datetime-picker-templates%})
 - [Styling]({%slug datetime-picker-styling%})

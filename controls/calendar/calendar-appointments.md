@@ -9,18 +9,27 @@ slug: calendar-appointments
 
 ## Creating an Appointment
 
-RadCalendar can display appointments by setting its **AppointmentsSource** property. It accepts a collection of objects which should implement *Telerik.XamarinForms.Input.IAppointment* interface. This interface defines the following members:
+RadCalendar can display appointments by setting its **AppointmentsSource** property. AppointmentsSource accepts a collection of *Telerik.XamarinForms.Input.Appointment* objects. Each Appointment defines the following members:
 
-- **StartDate** *(DateTime)*
-- **EndDate** *(DateTime)*
-- **Title** *(string)*
-- **Detail** *(string)*
-- **Color** *(Color)*
-- **IsAllDay** *(bool)*
+- **StartDate** (*DateTime*);
+- **EndDate** (*DateTime*);
+- **Title** (*string*): sets the subject of the appointment;
+- **Detail** *(string)*: adds additional information related to the appointment;
+- **Color** *(Color)*: : specifies the color marking the appointment when visualized in the timeline; 
+- **IsAllDay** (*bool*): indicates whether the appointment will take all day;
+- **RecurrenceRule** (*IRecurrenceRule*): defines basic properties of the recurrence rule of the appointment, for more details go to [Recurrence]({%slug calendar-recurrence-overview %}) topic.
 
->important With R1 2019 release of Telerik UI for Xamarin we have introduced **Telerik.XamarinForms.Input.Appointment** class which implements the *IAppointment* interface as well as adds **RecurrenceRule** property to support [recurrence feature]({%slug calendar-recurrence-overview%}). We'd recommend you use directly the **Appointment** class when working with appointments.
+The other alternative is to create custom appointment class that inherits from the *Telerik.XamarinForms.Input.IAppointment* interface. The interface, however, misses the RecurrenceRule property, so we'd recommend you use directly the **Appointment** class when working with appointments.
 
-<snippet id='calendar-gettingstarted-appointmentssource-csharp'/>
+Here is a quick example on how you can create Appointments collection and bind it to the AppointmentsSource property of RadCalendar.
+
+First, create a ViewModel class and add "Appointments" collection inside it:
+
+<snippet id='calendar-appointments-viewmodel'/>
+
+Then, add the RadCalendar definition to your page:
+
+<snippet id='calendar-appointments-example' />
 
 #### **Figure 1: Appearance of the RadCalendar control in month view mode**
 
@@ -83,5 +92,9 @@ Eventually, you can utilize the event:
 ## See Also
 
 * [View Modes]({%slug calendar-features-navigation-and-view-mode%})
+* [Day View]({%slug calendar-dayview%})
+* [MultiDay View]({%slug calendar-multidayview%})
+* [Agenda View]({%slug calendar-agendaview%})
+* [Recurrence]({%slug calendar-recurrence-overview %})
 * [Calendar Selection]({%slug calendar-selection%})
 

@@ -11,11 +11,11 @@ Here are described all visual elements used in the Date and Time Picker for Xama
 
 ## DateTime Picker Structure before and after a date/time is selected
 
-![DateTime Picker Visual Structure](images/datetime_picker_placeholder_display.png.png "Visual elements of RadChart control")
+![DateTime Picker Visual Structure](images/datetime_picker_placeholder_display.png "Visual elements of RadChart control")
 
 ## Picker Popup Visual Structure
 
-![DateTime Picker Popup Visual Structure](images/datetime_picker_structure.png.png "Visual elements of DateTime Picker Popup")
+![DateTime Picker Popup Visual Structure](images/datetime_picker_structure.png "Visual elements of DateTime Picker Popup")
 
 ## Legend ##
 

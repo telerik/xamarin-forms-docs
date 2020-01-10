@@ -54,7 +54,7 @@ xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.Xa
 ```
 ```C#
 using Telerik.XamarinForms.Input;
-
+```
 
 ## See Also
 

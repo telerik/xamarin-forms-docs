@@ -15,7 +15,7 @@ The snippet below shows a simple Date Picker definition:
 
 <snippet id='datetimepicker-keyfeatures-date' />
 
-## Time Picket
+## Time Picker
 
 The snippet below shows a simple Time Picker definition:
 

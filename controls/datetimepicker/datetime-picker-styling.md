@@ -38,6 +38,7 @@ The SelectorSetting also provides the following properties for popup customizati
 
 ## See Also
 
-- [Key Features]({% slug datetime-picker-key-features%})
-- [Custom Templates]({% slug datetime-picker-templates%})
-- [Commands]({% slug datetime-picker-commands%})
+- [Key Features]({%slug datetime-picker-key-features%})
+- [Custom Templates]({%slug datetime-picker-templates%})
+- [Commands]({%slug datetime-picker-commands%})
+- [Visual Structure]({%slug datetime-picker-visual-structure%})

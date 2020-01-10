@@ -81,3 +81,4 @@ This is the result:
 - [Looping]({%slug list-picker-looping%})
 - [Templates]({%slug list-picker-templates%})
 - [Styling]({%slug list-picker-styling%})
+- [Visual Structure]({%slug list-picker-visual-structure%})

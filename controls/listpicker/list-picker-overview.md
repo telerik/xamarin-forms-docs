@@ -27,6 +27,7 @@ slug: list-picker-overview
 
 ## See Also
 
+- [Visual Structure]({%slug list-picker-visual-structure%})
 - [Getting Started]({%slug list-picker-getting-started%})
 - [Looping]({%slug list-picker-looping%})
 - [Templates]({%slug list-picker-templates%})

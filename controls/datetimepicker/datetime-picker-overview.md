@@ -29,6 +29,7 @@ slug: datetime-picker-overview
 
 ## See Also
 
+- [Visual Structure]({%slug datetime-picker-visual-structure%})
 - [Getting Started]({%slug datetime-picker-getting-started%})
 - [Key Features]({%slug datetime-picker-key-features%})
 - [Templates]({%slug datetime-picker-templates%})

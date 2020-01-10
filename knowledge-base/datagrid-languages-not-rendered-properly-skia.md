@@ -23,12 +23,12 @@ res_type: kb
 
 DataGrid doesn't display some languages properly on Android and UWP. For example: 
 
-When you set the HeaderText, GroupHeaderText, CellText to the DataGrid column to Chinese, Korean, Thai the content is not properly displayed.
+When you set the HeaderText, GroupHeaderText, CellText to the DataGrid column to Chinese, Korean, Thai, Hebrew, and other, the content is not properly displayed.
 
 This issue is related to the following issues in SkiaSharp library:
 
-[](https://github.com/mono/SkiaSharp/issues/232)
-[](https://github.com/mono/SkiaSharp/issues/283)
+[https://github.com/mono/SkiaSharp/issues/232](https://github.com/mono/SkiaSharp/issues/232)
+[https://github.com/mono/SkiaSharp/issues/283](https://github.com/mono/SkiaSharp/issues/283)
 
 ## Solution
 

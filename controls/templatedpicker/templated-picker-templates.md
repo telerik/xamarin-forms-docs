@@ -56,6 +56,7 @@ xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.Xa
 ```
 ```C#
 using Telerik.XamarinForms.Input;
+```
 
 >important A sample Key Features example can be found in the TemplatedPicker/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

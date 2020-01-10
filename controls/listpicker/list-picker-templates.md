@@ -18,7 +18,7 @@ In addition the List Picker for Xamarin provides the following properties:
 * **ItemLength**(*double*): Defines the length of the items inside the list.
 * **ItemSpacing**(*double*): Defines the spacing between the items inside the list.
 * **SelectedItem**(*object*): Specifies the selected item of the list picker
-* **DisplayMemberPath**(*string*): Defines the path pf the property which is to be displayed as DisplayString. 
+* **DisplayMemberPath**(*string*): Defines the path of the property which is to be displayed as DisplayString. 
 
 ## Example
 

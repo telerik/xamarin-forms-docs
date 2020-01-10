@@ -26,3 +26,5 @@ slug: templated-picker-overview
 ## See Also
 
 - [Getting Started]({%slug templated-picker-getting-started%})
+- [Templates]({%slug templated-picker-templates%})
+- [Styling]({%slug templated-picker-styling%})

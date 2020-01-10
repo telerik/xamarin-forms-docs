@@ -5,7 +5,7 @@ position: 1
 slug: templated-picker-getting-started
 ---
 
-# Getting Started
+# Getting Started with Custom Picker for Xamarin
 
 This article will guide you through the steps needed to add a basic **RadTemplatedPicker** control in your application.
 
@@ -35,7 +35,7 @@ You have two options:
 | iOS      | Telerik.Xamarin.iOS.dll <br/>Telerik.XamarinForms.Input<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
 | UWP      | Telerik.Core.dll<br/>Telerik.UI.Xaml.Primitives.UWP.dll<br/>Telerik.XamarinForms.Input<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
 
-## 3. Adding RadListPicker control
+## 3. Adding RadTemplatedPicker control
 
 You could use one of the following approaches:
 
@@ -48,18 +48,22 @@ Take a look at the following topics on how to use the toolbox:
 	
 #### Create the control definition in XAML or C#.
 
-The snippet below shows a simple RadListPicker definition:
+The snippet below shows a simple RadTemplatedPicker definition:
 
-<snippet id='listpicker-getting-started-xaml' />
-<snippet id='listpicker-getting-started-csharp' />
+<snippet id='templatedpicker-getting-started-xaml' />
+<snippet id='templatedpicker-getting-started-csharp' />
+
+add the following Business model for the first spinner:
+
+<snippet id='templatedpicker-country-businessmodel' />
+
+add the following Business model for the second spinner:
+
+<snippet id='templatedpicker-city-businessmodel' />
 
 here is a sample definition of the ViewModel:
 
-<snippet id='listpicker-getting-started-viewmodel' />
-
-and the Business model:
-
-<snippet id='listpicker-getting-started-business-model' />
+<snippet id='templatedpicker-viewmodel' />
 
 In addition to this, you need to add the following namespace:
 
@@ -72,9 +76,9 @@ using Telerik.XamarinForms.Input;
 
 This is the result:
 
-![List Picker](images/listpicker_getting_started.png)
+![Templated Picker](images/listpicker_getting_started.png)
 
->important **SDK Browser** and **QSF** applications contain different examples that show RadDateTimePicker's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
+>important **SDK Browser** and **QSF** applications contain different examples that show RadTemplatedPicker's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
 
 ## See Also
 

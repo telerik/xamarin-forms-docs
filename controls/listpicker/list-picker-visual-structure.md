@@ -2,7 +2,7 @@
 title: Visual Structure
 page_title: List Picker Visual Structure
 position: 0
-slug: chart-visual-structure
+slug: list-picker-visual-structure
 ---
 
 # Visual Structure

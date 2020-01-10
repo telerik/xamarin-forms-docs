@@ -9,7 +9,7 @@ slug: chart-visual-structure
 
 Here are described all visual elements used in the Date and Time Picker for Xamarin.
 
-## Picker Structure before and after a date/time is selected
+## DateTime Picker Structure before and after a date/time is selected
 
 ![DateTime Picker Visual Structure](images/datetime_picker_placeholder_display.png.png "Visual elements of RadChart control")
 

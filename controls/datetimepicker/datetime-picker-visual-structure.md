@@ -2,7 +2,7 @@
 title: Visual Structure
 page_title: Date Time Picker Visual Structure
 position: 0
-slug: chart-visual-structure
+slug: datetime-picker-visual-structure
 ---
 
 # Visual Structure

@@ -29,3 +29,4 @@ The SelectorSetting also provides the following properties for popup customizati
 
 - [Getting Started]({%slug templated-picker-getting-started%})
 - [Templates]({%slug templated-picker-templates%})
+- [Visual Structure]({%slug templated-picker-visual-structure%})

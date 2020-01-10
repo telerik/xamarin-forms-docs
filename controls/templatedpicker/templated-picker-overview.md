@@ -25,6 +25,7 @@ slug: templated-picker-overview
 
 ## See Also
 
+- [Visual Structure]({%slug templated-picker-visual-structure%})
 - [Getting Started]({%slug templated-picker-getting-started%})
 - [Templates]({%slug templated-picker-templates%})
 - [Styling]({%slug templated-picker-styling%})

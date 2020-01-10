@@ -52,9 +52,6 @@ In addition to this, you need to add the following namespace:
 ```XAML
 xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
 ```
-```C#
-using Telerik.XamarinForms.Input;
-```
 
 ## See Also
 

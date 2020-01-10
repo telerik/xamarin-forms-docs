@@ -1,7 +1,7 @@
 ---
 title: Styling
 page_title: Styling
-position: 4
+position: 7
 slug: templated-picker-styling
 ---
 

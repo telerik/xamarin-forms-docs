@@ -15,17 +15,29 @@ The snippet below shows a simple Date Picker definition:
 
 <snippet id='datetimepicker-keyfeatures-date' />
 
+Here is how the Date Picker looks when Date Format String is applied:
+
+![Date Picker](images/datetimepicker_date_picker.png)
+
 ## Time Picker
 
 The snippet below shows a simple Time Picker definition:
 
 <snippet id='datetimepicker-keyfeatures-time' />
 
+Here is how the Time Picker looks when Time Format String is applied:
+
+![Date Picker](images/datetimepicker_time_picker.png)
+
 ## DateTime Picker
 
 The snippet below shows a simple Date and Time Picker definition:
 
 <snippet id='datetimepicker-keyfeatures-date-time' />
+
+Here is how the Date and Time Picker looks when Date and Time Format String is applied:
+
+![Date Picker](images/datetimepicker_datetime_picker.png)
 
 ## Date Range
 

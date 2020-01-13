@@ -14,7 +14,7 @@ Templated Picker for Xamarin provides the following template:
 In addition to this you can define the following templates provided from the RadPickerBase class:
 
 * **PlaceholderTemplate**(*ControlTemplate*): Defines the template visualized for the placeholder.  
-* **DisplayTemplate**(*ControlTemplate*): Defines the template visualized when the picked date/time is displayed.
+* **DisplayTemplate**(*ControlTemplate*): Defines the template visualized when an item from the selector was picked.
 
 And using RadPickerBase.SelectorSettings property(of type *Telerik.XamarinForms.Input.PickerPopupSelectorSettings*) you can define the following templates:
 
@@ -53,9 +53,6 @@ In addition to this, you need to add the following namespace:
 
 ```XAML
 xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
-```
-```C#
-using Telerik.XamarinForms.Input;
 ```
 
 >important A sample Key Features example can be found in the TemplatedPicker/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).

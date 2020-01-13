@@ -29,6 +29,10 @@ The SelectorSetting also provides the following properties for popup customizati
 * **AcceptButtonText**(*string*): Defines the text visualized for the accept button. By default the text is *OK*.
 * **CancelButtonText**(*string*): Defines the text visualized for the cancel button. By default the text is *Cancel*. 
 
+This is how the List Picker looks when the styling properties are applied:
+
+![List Picker Styling](images/listpicker_styling.png)
+
 >important A sample Styling example can be found in the ListPicker/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also

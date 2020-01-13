@@ -53,6 +53,10 @@ In addition to this, you need to add the following namespace:
 xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
 ```
 
+This is the result:
+
+![Templated Picker Selected Value](images/templatedpicker_key_features.png)
+
 ## See Also
 
 - [Templates]({%slug templated-picker-templates%})

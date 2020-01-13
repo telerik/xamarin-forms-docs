@@ -29,10 +29,12 @@ slug: list-picker-events
 </telerikInput:RadListPicker>
 ```
 
+and the **SelectionChanged** event, where *sender* is the RadListPicker control:
+
 ```C#
 private void RadListPicker_SelectionChanged(object sender, System.EventArgs e)
 {
-
+	// implement your logic here
 }
 ```
 

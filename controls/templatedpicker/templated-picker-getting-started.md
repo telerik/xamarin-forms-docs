@@ -53,18 +53,6 @@ The snippet below shows a simple RadTemplatedPicker definition:
 <snippet id='templatedpicker-getting-started-xaml' />
 <snippet id='templatedpicker-getting-started-csharp' />
 
-add the following Business model for the first spinner:
-
-<snippet id='templatedpicker-country-businessmodel' />
-
-add the following Business model for the second spinner:
-
-<snippet id='templatedpicker-city-businessmodel' />
-
-here is a sample definition of the ViewModel:
-
-<snippet id='templatedpicker-viewmodel' />
-
 In addition to this, you need to add the following namespace:
 
 ```XAML

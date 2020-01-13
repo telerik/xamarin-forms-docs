@@ -64,7 +64,7 @@ using Telerik.XamarinForms.Input;
 
 This is the result:
 
-![Templated Picker](images/listpicker_getting_started.png)
+![Templated Picker Getting Started](images/templatedpicker_getting_started.png)
 
 >important **SDK Browser** and **QSF** applications contain different examples that show RadTemplatedPicker's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
 

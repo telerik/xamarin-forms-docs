@@ -55,6 +55,10 @@ In addition to this, you need to add the following namespace:
 xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
 ```
 
+This is the templated picker visual structure:
+
+![Templated Picker](images/templated_picker_visual_structure.png)
+
 >important A sample Key Features example can be found in the TemplatedPicker/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also

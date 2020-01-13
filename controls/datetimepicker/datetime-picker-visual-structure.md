@@ -15,6 +15,8 @@ Here are described all visual elements used in the Date and Time Picker for Xama
 
 ## Picker Popup Visual Structure
 
+>important More information about Spinners refer to the [RadSpinner help article]({%slug templated-picker-spinner%}).
+
 ![DateTime Picker Popup Visual Structure](images/datetime_picker_structure.png "Visual elements of DateTime Picker Popup")
 
 ## Legend ##

@@ -36,6 +36,10 @@ slug: templated-picker-spinner
 
 * **SelectionChanged**
 
+## Example
+
+Sample examples where RadSpinner control is used can be found **SDK Browser Application** **TemplatedPicker/Features** - **Styling** and **KeyFeatures** examples.
+
 ## See Also
 
 - [Templates]({%slug templated-picker-templates%})

@@ -7,14 +7,14 @@ slug: templated-picker-commands
 
 # Commands
 
-List Picker exposes the following commands:
+Templated Picker exposes the following commands:
 
 * **ToggleCommand**(*ICommand*): Allows you to open and close the dialog
 * **ClearCommand**(*ICommand*): Allows you to clear the displayed date/time.
 
 ## Example
 
-Here is the List Picker definition:
+Here is the Templated Picker definition:
 
 ```XAML
 <StackLayout>

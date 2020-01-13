@@ -9,21 +9,21 @@ slug: templated-picker-visual-structure
 
 Here are described all visual elements used in the Templated Picker for Xamarin.
 
-## Templated Picker Structure before and after an item is selected
+## Templated Picker Structure before and after selection
 
-![List Picker Visual Structure](images/templatedpicker_structure_placeholder_display.png "Visual elements of Templated Picker control")
+![Templated Picker Visual Structure Display Text](images/templatedpicker_structure_placeholder_display.png "Visual elements of Templated Picker control")
 
 ## Templated Picker Popup Visual Structure
 
-![Chart Visual Structure](images/templated_picker_visual_structure.png "Visual elements of Templated Picker Popup")
+![Templated Picker Visual Structure](images/templated_picker_visual_structure.png "Visual elements of Templated Picker Popup")
 
 ## Legend
 
 - **Placeholder** 
 - **DisplayStringFormat** 
-- **Header**
+- **HeaderTemplate**
 - **SelectorTemplate**
-- **Footer**
+- **FooterTemplate**
 
 ## See Also
 

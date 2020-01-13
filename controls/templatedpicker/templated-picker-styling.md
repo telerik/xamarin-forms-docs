@@ -7,9 +7,8 @@ slug: templated-picker-styling
 
 # Styling
 
-* **PlaceholderLabelStyle**(of type *Style* with target type is **Label**):
-* **DisplayLabelStyle**(of type *Style* with target type is **Label**):
-* **SelectorSettings**(*Telerik.XamarinForms.Input.PickerPopupSelectorSettings*):
+* **PlaceholderLabelStyle**(of type *Style* with target type is **Label**): Defines the style applied to the placeholder label.
+* **DisplayLabelStyle**(of type *Style* with target type is **Label**): Defines the style applied to the label which is visualized when item from the selector is picked.
 
 ## PlaceholderLabel Style
 
@@ -21,12 +20,12 @@ slug: templated-picker-styling
 
 Using the SelectorSettings property of the RadPickerBase class, you could style the dialog(popup) through the following properties:
 
-* **PopupViewStyle**(of type *Style* with target type is **telerikInput:PickerPopupContentView**):
-* **HeaderStyle**(of type *Style* with target type is **telerikInput:PickerPopupHeaderView**):
-* **HeaderLabelStyle**(of type *Style* with target type is **Label**):
-* **FooterStyle**(of type *Style* with target type is **telerikInput:PickerPopupFooterView**):
-* **AcceptButtonStyle**(of type *Style* with target type is **Button**):
-* **CancelButtonStyle**(of type *Style* with target type is **Button**):
+* **PopupViewStyle**(of type *Style* with target type is **telerikInput:PickerPopupContentView**): Defines the popup view style.
+* **HeaderStyle**(of type *Style* with target type is **telerikInput:PickerPopupHeaderView**): Defines the popup header style.
+* **HeaderLabelStyle**(of type *Style* with target type is **Label**): Defines the popup header label style.
+* **FooterStyle**(of type *Style* with target type is **telerikInput:PickerPopupFooterView**): Defines the popup footer style.
+* **AcceptButtonStyle**(of type *Style* with target type is **Button**): Defines the Accept button style.
+* **CancelButtonStyle**(of type *Style* with target type is **Button**): Defines the Cancel button style.
 
 The SelectorSetting also provides the following properties for popup customization:
 

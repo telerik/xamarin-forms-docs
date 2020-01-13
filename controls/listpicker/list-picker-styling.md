@@ -9,18 +9,21 @@ slug: list-picker-styling
 
 List Picker for Xamarin provides the followind Style properties for customizing its look:
 
-* **SelectedItemStyle**(**):
-* **SelectionHighlightStyle**(**):
-* **SelectorSettings**(*Telerik.XamarinForms.Input.PickerPopupSelectorSettings*):
+* **ItemStyle**(of type *Style* with target type is **telerikDataControls:SpinnerItemView**): Defines the style applied to the list of items.
+* **SelectedItemStyle**(of type *Style* with target type is **telerikDataControls:SpinnerItemView**): Defines the style applied to the seledted item.
+* **SelectionHighlightStyle**(of type *Style* with target type is **telerikPrimitives:RadBorder**): Specifies the style applied to the border where the current selection is.  
+* **PlaceholderLabelStyle**(of type *Style* with target type is **Label**): Defines the style applied to the placeholder label.
+* **DisplayLabelStyle**(of type *Style* with target type is **Label**): Defines the style applied to the label which is visualized when item of the list is selected.
+* **SelectorSettings**(*Telerik.XamarinForms.Input.PickerPopupSelectorSettings*).
 
 Using the SelectorSettings property of the RadPickerBase class, you could style the dialog(popup) through the following properties:
 
-* **PopupViewStyle**(of type *Style* with target type is **telerikInput:PickerPopupContentView**):
-* **HeaderStyle**(of type *Style* with target type is **telerikInput:PickerPopupHeaderView**):
-* **HeaderLabelStyle**(of type *Style* with target type is **Label**):
-* **FooterStyle**(of type *Style* with target type is **telerikInput:PickerPopupFooterView**):
-* **AcceptButtonStyle**(of type *Style* with target type is **Button**):
-* **CancelButtonStyle**(of type *Style* with target type is **Button**):
+* **PopupViewStyle**(of type *Style* wich target type **telerikInput:PickerPopupContentView**): Defines the popup view style.
+* **HeaderStyle**(of type *Style* with target type **telerikInput:PickerPopupHeaderView**): Defines the popup header style.
+* **HeaderLabelStyle**(of type *Style* with target type **Label**): Defines the popup header label style.
+* **FooterStyle**(of type *Style* with target type **telerikInput:PickerPopupFooterView**): Defines the popup footer style.
+* **AcceptButtonStyle**(of type *Style* with target type **Button**): Defines the Accept button style.
+* **CancelButtonStyle**(of type *Style* with target type **Button**): Defines the Cancel button style.
 
 The SelectorSetting also provides the following properties for popup customization:
 
@@ -28,6 +31,71 @@ The SelectorSetting also provides the following properties for popup customizati
 * **HeaderLabelText**(*string*): Specifies the text visualized in the popup header.
 * **AcceptButtonText**(*string*): Defines the text visualized for the accept button. By default the text is *OK*.
 * **CancelButtonText**(*string*): Defines the text visualized for the cancel button. By default the text is *Cancel*. 
+
+## Example
+
+Here is a sample example that shows how the styling properties are applied.
+
+A sample **List Picker** definition:
+
+<snippet id='listpicker-features-styling' />
+
+and here are how the styles are defined in the page resources
+
+### ItemStyle
+
+<snippet id='listpicker-features-itemstyle' />
+
+### SelectedItemStyle
+
+<snippet id='listpicker-features-selecteditemstyle' />
+
+### PlaceholderLabelStyle
+
+<snippet id='listpicker-style-placeholder-label-style' />
+
+### DisplayLabelStyle
+
+<snippet id='listpicker-style-display-label-style' />
+
+### PopupViewStyle
+
+<snippet id='listpicker-style-popupview-style' />
+
+### HeaderStyle
+
+<snippet id='listpicker-style-header-style' />
+
+### HeaderLabelStyle
+
+<snippet id='listpicker-style-header-label-style' />
+
+### FooterStyle
+
+<snippet id='listpicker-style-footer-style' />
+
+### AcceptButtonStyle
+
+<snippet id='listpicker-style-accept-button-style' />
+
+### CancelButtonStyle
+
+<snippet id='listpicker-style-cancel-button-style' />
+
+A sample business model:
+
+<snippet id='listpicker-features-businessmodel' />
+
+and a ViewModel:
+
+<snippet id='listpicker-features-viewmodel' />
+
+also you will need to add the following namespaces:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+```
 
 This is how the List Picker looks when the styling properties are applied:
 

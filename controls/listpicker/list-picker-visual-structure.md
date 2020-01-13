@@ -15,7 +15,7 @@ Here are described all visual elements used in the List Picker for Xamarin.
 
 ## List Picker Popup Visual Structure
 
-![Chart Visual Structure](images/listpicker_structure.png "Visual elements of List Picker Popup")
+![List Picker Visual Structure Popup](images/listpicker_structure.png "Visual elements of List Picker Popup")
 
 
 ## Legend
@@ -23,6 +23,6 @@ Here are described all visual elements used in the List Picker for Xamarin.
 - **Placeholder** 
 - **DisplayStringFormat** 
 - **HeaderLabelText**
-- **Item**
-- **SelectedItem**
+- **ItemTemplate**
+- **SelectedItemTemplate**
 - **Footer**

@@ -7,7 +7,7 @@ slug: templated-picker-methods
 
 # Methods
 
-**List Picker** for Xamarin allows you to clear the selected date/time through its **ClearSelection** method
+**Templated Picker** for Xamarin allows you to clear the selected date/time through its **ClearSelection** method
 
 ## Example
 

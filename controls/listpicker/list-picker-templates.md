@@ -24,7 +24,7 @@ And using RadPickerBase.SelectorSettings property(of type *Telerik.XamarinForms.
 
 This is the Visual Srtucture of the List Picker Templates:
 
-![List Picker Templates](images/listpicker_visual_structure_templates.png)
+![List Picker Visual Structure](images/listpicker_visual_structure_templates.png)
 
 In addition the List Picker for Xamarin provides the following properties:
 

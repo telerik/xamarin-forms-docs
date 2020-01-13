@@ -220,7 +220,7 @@ navigation:
     
     ## DateTimePicker
     controls/datetimepicker:
-        title: "DateTime Picker"
+        title: "DateTime Picker (beta)"
     ## End DateTimePicker
     
     ## DockLayout
@@ -446,7 +446,7 @@ navigation:
     ## End ImageEditor
     ## ListPicker
     controls/listpicker:
-        title: "List Picker"
+        title: "List Picker (beta)"
     ## End ListPicker
     ## ListView
     controls/listview:
@@ -507,7 +507,7 @@ navigation:
     ## End TabView
     ## TemplatedPicker
     controls/templatedpicker:
-        title: "Templated Picker"
+        title: "Templated Picker (beta)"
     ## End TemplatedPicker
     ## TreeView
     controls/treeview:

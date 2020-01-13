@@ -21,10 +21,12 @@ slug: templated-picker-events
 </telerikInput:RadTemplatedPicker>
 ```
 
+and the **SelectionChanged** event, where the *sender* is the RadTemplatedPicker control
+
 ```C#
 private void RadTemplatedPicker_SelectionChanged(object sender, System.EventArgs e)
 {
-
+	// implement your logic here
 }
 ```
 

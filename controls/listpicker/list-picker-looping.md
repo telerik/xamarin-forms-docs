@@ -25,6 +25,10 @@ and a ViewModel:
 
 <snippet id='listpicker-features-viewmodel' />
 
+This is how the Looping functionality looks:
+
+![List Picker Looping](images/looping_gif.gif)
+
 >important A sample Looping example can be found in the ListPicker/Looping folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
 
 ## See Also

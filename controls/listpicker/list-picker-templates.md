@@ -42,23 +42,23 @@ Here is a sample List Picker definition:
 
 and the templates definition in the page resources:
 
-### ItemTemplate
+## Item Template
 
 <snippet id='listpicker-features-itemtemplate' />
 
-### SelectedItem Template defined in the page resource:
+## SelectedItem Template
 
 <snippet id='listpicker-features-selecteditemtemplate' />
 
-### Placeholder Template
+## Placeholder Template
 
 <snippet id='listpicker-features-placeholdertemplate' />
 
-### Header Template
+## Header Template
 
 <snippet id='listpicker-features-headertemplate' />
 
-### Footer Template
+## Footer Template
 
 <snippet id='listpicker-features-footertemplate' />
 

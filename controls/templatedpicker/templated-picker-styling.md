@@ -1,7 +1,7 @@
 ---
 title: Styling
 page_title: Styling
-position: 4
+position: 7
 slug: templated-picker-styling
 ---
 
@@ -44,27 +44,27 @@ A sample Templated Picker definition:
 
 and here are how the styles are defined in the page resources
 
-### PlaceholderLabelStyle
+## PlaceholderLabel Style
 
 <snippet id='templatedpicker-placeholderlabelstyle' />
 
-### DisplayLabelStyle
+## DisplayLabel Style
 
 <snippet id='templatedpicker-displaylabelstyle' />
 
-### HeaderLabelStyle
+## HeaderLabel Style
 
 <snippet id='templatedpicker-headelabelstyle' />
 
-### FooterStyle
+## Footer Style
 
 <snippet id='templatedpicker-commonbuttonstyle' />
 
-### AcceptButtonStyle
+## AcceptButton Style
 
 <snippet id='templatedpicker-acceptbuttonstyle' />
 
-### CancelButtonStyle
+## CancelButton Style
 
 <snippet id='templatedpicker-cancelbuttonstyle' />
 

@@ -42,43 +42,43 @@ A sample **List Picker** definition:
 
 and here are how the styles are defined in the page resources
 
-### ItemStyle
+### Item Style
 
 <snippet id='listpicker-features-itemstyle' />
 
-### SelectedItemStyle
+## SelectedItem Style
 
 <snippet id='listpicker-features-selecteditemstyle' />
 
-### PlaceholderLabelStyle
+### PlaceholderLabel Style
 
 <snippet id='listpicker-style-placeholder-label-style' />
 
-### DisplayLabelStyle
+## DisplayLabel Style
 
 <snippet id='listpicker-style-display-label-style' />
 
-### PopupViewStyle
+## PopupView Style
 
 <snippet id='listpicker-style-popupview-style' />
 
-### HeaderStyle
+## Header Style
 
 <snippet id='listpicker-style-header-style' />
 
-### HeaderLabelStyle
+## HeaderLabel Style
 
 <snippet id='listpicker-style-header-label-style' />
 
-### FooterStyle
+## FooterStyle
 
 <snippet id='listpicker-style-footer-style' />
 
-### AcceptButtonStyle
+## AcceptButton Style
 
 <snippet id='listpicker-style-accept-button-style' />
 
-### CancelButtonStyle
+## CancelButton Style
 
 <snippet id='listpicker-style-cancel-button-style' />
 

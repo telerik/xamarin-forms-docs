@@ -22,13 +22,13 @@ The snippet below shows a simple RadDateTimePicker definition:
 
 Now lets add the templates definition to the page resources:
 
-### PlaceholderTemplate
+## PlaceholderTemplate
 
 <snippet id='datetimepicker-placeholder-template' />
 
 ![RadDateTimePicker PlaceholderTemplate](images/datetimepicker_placeholder_template.png)
 
-### DisplayTemplate
+## DisplayTemplate
 
 <snippet id='datetimepicker-display-template' />
 

@@ -38,7 +38,7 @@ slug: templated-picker-spinner
 
 ## Example
 
-Sample examples where RadSpinner control is used can be found **SDK Browser Application** **TemplatedPicker/Features** - **Styling** and **KeyFeatures** examples.
+Sample examples where RadSpinner control is used can be found in our **SDK Browser Application** **TemplatedPicker/Features** - **Styling** and **KeyFeatures** examples.
 
 ## See Also
 

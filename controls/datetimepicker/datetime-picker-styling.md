@@ -44,47 +44,47 @@ A sample **List Picker** definition:
 
 and here are how the styles are defined in the page resources
 
-### SpinnerStyle
+## Spinner Style
 
 <snippet id='datetimepicker-style-spinner-style' />
 
-### SpinnerHeadersStyle
+## SpinnerHeaders Style
 
 <snippet id='datetimepicker-style-spinner-header-style' />
 
-### SelectionHighlightStyle
+## SelectionHighlight Style
 
 <snippet id='datetimepicker-style-selection-highlight-style' />
 
-### PlaceholderLabelStyle
+## PlaceholderLabel Style
 
 <snippet id='datetimepicker-style-placeholder-label-style' />
 
-### DisplayLabelStyle
+## DisplayLabel Style
 
 <snippet id='datetimepicker-style-display-label-style' />
 
-### PopupViewStyle
+## PopupView Style
 
 <snippet id='datetimepicker-style-popupview-style' />
 
-### HeaderStyle
+## Header Style
 
 <snippet id='datetimepicker-style-header-style' />
 
-### HeaderLabelStyle
+## HeaderLabel Style
 
 <snippet id='datetimepicker-style-header-label-style' />
 
-### FooterStyle
+## Footer Style
 
 <snippet id='datetimepicker-style-footer-style' />
 
-### AcceptButtonStyle
+## AcceptButton Style
 
 <snippet id='datetimepicker-style-accept-button-style' />
 
-### CancelButtonStyle
+## CancelButton Style
 
 <snippet id='datetimepicker-style-cancel-button-style' />
 

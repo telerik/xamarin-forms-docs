@@ -27,13 +27,13 @@ Here is a sample Templated Picker definition:
 
 <snippet id='templatedpicker-keyfeatures' />
 
-### SelectorTemplate
+## Selector Template
 
 Here is a sample definition of the SelectorTemplate:
 
 <snippet id='templatedpicker-keyfeatures-selectortemplate' />
 
-### HeaderTemplate:
+## Header Template:
 
 <snippet id='templatedpicker-keyfeatures-headertemplate' />
 

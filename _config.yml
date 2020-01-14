@@ -218,10 +218,15 @@ navigation:
         position: 11
     ## End DataGrid
     
-     ## DockLayout
+    ## DateTimePicker
+    controls/datetimepicker:
+        title: "DateTime Picker (beta)"
+    ## End DateTimePicker
+    
+    ## DockLayout
     controls/docklayout:
         title: "DockLayout"
-    ## End Entry
+    ## End DockLayout
     
     ## Entry
     controls/entry:
@@ -439,6 +444,10 @@ navigation:
         position: 11
         ## End ImageEditor Sub-Folders
     ## End ImageEditor
+    ## ListPicker
+    controls/listpicker:
+        title: "List Picker (beta)"
+    ## End ListPicker
     ## ListView
     controls/listview:
         title: "ListView"
@@ -496,7 +505,11 @@ navigation:
     controls/tabview:
         title: "TabView"
     ## End TabView
-   ## TreeView
+    ## TemplatedPicker
+    controls/templatedpicker:
+        title: "Templated Picker (beta)"
+    ## End TemplatedPicker
+    ## TreeView
     controls/treeview:
         title: "TreeView"
     controls/treeview/styling:
@@ -506,7 +519,11 @@ navigation:
     ## ZipLibrary
     controls/ziplibrary:
         title: "ZipLibrary"
-    ## End ZipLibrary
+    ## End ZipLibrary    
+    ##SpreadProcessing
+    controls/spreadprocessing:
+        title: "SpreadProcessing"
+    ##End SpreadProcessing
     ## SpreadStreamProcessing
     controls/spreadstreamprocessing:
         title: "SpreadStreamProcessing"
@@ -707,6 +724,11 @@ defaults:
         path: "controls/spreadstreamprocessing"
     values:
         title_prefix: "Xamarin SpreadStreamProcessing Documentation"
+-        
+    scope:
+        path: "controls/spreadprocessing"
+    values:
+        title_prefix: "Xamarin SpreadProcessing Documentation"        
 -
     scope:
         path: "controls/maskedinput"
@@ -717,11 +739,26 @@ defaults:
         path: "controls/slideview"
     values:
         title_prefix: "Xamarin SlideView Documentation"
-        
+-        
     scope:
         path: "controls/wordsprocessing"
     values:
         title_prefix: "Xamarin WordsProcessing"
+-        
+    scope:
+        path: "controls/datetimepicker"
+    values:
+        title_prefix: "Xamarin DateTime Picker Documentation"
+-        
+    scope:
+        path: "controls/listpicker"
+    values:
+        title_prefix: "Xamarin List Picker Documentation"
+-        
+    scope:
+        path: "controls/templatedpicker"
+    values:
+        title_prefix: "Xamarin Templated Picker Documentation"
         
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
@@ -803,6 +840,25 @@ intro_columns:
         "Accordion": "accordion-overview"
         "Expander": "expander-overview"
         "DockLayout": "docklayout-overview"
+  -
+    title: "Buttons"
+    items:
+        "Segmented Control": "segmentedcontrol-overview"
+        "Button": "button-overview"
+        "CheckBox": "checkbox-overview"
+-
+  categories:
+  -   
+    title: "Editors"
+    items: 
+        "Entry": "entry-overview"
+        "AutoCompleteView": "autocompleteview-overview"
+        "NumericInput": "numericinput-overview"
+        "MaskedInput": "maskedinput-overview"
+        "Image Editor": "imageeditor-overview"
+        "DateTimePicker": "datetime-picker-overview"
+        "ListPicker": "list-picker-overview"
+        "TemplatedPicker": "templated-picker-overview"
 -
   categories:
   -
@@ -812,21 +868,8 @@ intro_columns:
         "Map": "map-overview"
         "Gauge": "gauge-overview"
         "Rating": "rating-overview"
-        "Barcode": "barcode-overview"
-        "Image Editor": "imageeditor-overview"
-        "Entry": "entry-overview"
-        "AutoCompleteView": "autocompleteview-overview"
-        "NumericInput": "numericinput-overview"
-        "MaskedInput": "maskedinput-overview"
--
-  categories:
-  -
-    title: "Buttons"
-    items:
-        "Segmented Control": "segmentedcontrol-overview"
-        "Button": "button-overview"
-        "CheckBox": "checkbox-overview"
-  -
+        "Barcode": "barcode-overview"    
+  - 
     title: "Interactivity & UX"
     items:
         "BusyIndicator": "busyindicator-overview"
@@ -841,6 +884,7 @@ intro_columns:
     items:
         "PdfProcessing": "radpdfprocessing-overview"
         "WordsProcessing": "radwordsprocessing-overview"
+        "SpreadProcessing": "radspreadprocessing-overview"
         "SpreadStreamProcessing": "radspreadstreamprocessing-overview"
         "ZipLibrary": "radziplibrary-overview"
   -

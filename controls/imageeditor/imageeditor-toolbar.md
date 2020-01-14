@@ -15,6 +15,7 @@ In order to attach the ImageEditor control to the RadImageEditorToolbar control 
 
 When the ImageEditorToolbarItems can not be fitted in the device screen, OverflowButton is shown in the toolbar. You could customize it through the following properties:
 
+* **IsMultiLine**(*bool*): Defines a value indicating whether the display nested levels of toolbar items on multiple lines. When set to true, nested levels of toolbar items are displayed on separate lines in the toolbar. When set to false, nested levels of toolbar items are displayed on a single line in the toolbar, whith the option to navigate back and forward between the different levels. By default is false.
 * **OverflowButtonText**(*String*): Specifies the text of the overflow button. 
 * **OverflowButtonTextColor**(*Color*): Specifies the text color of the overflow button, which is displayed when there are more buttons than currently visible.
 * **OverflowButtonFontFamily**(*String*): Specifies the font family of the overflow button, which is displayed when there are more buttons than currently visible.
@@ -35,6 +36,10 @@ In addition to this, you need to add the following namespace:
 This is the result:
 
 ![ImageEditor Toolbar](images/imageeditor-toolbar.png "ImageEditor Toolbar")
+
+This is the result when **IsMultiLine = "True"**:
+
+![ImageEditor Toolbar MultiLine](images/imageeditor-toolbar-multiline.png "ImageEditor Toolbar MultiLine")
 
 ## See Also
 

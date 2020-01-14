@@ -94,7 +94,7 @@ You have two options to add the required Telerik references to your Xamarin.Form
 	If you need to export documents to PDF format, you will need to refer the following assemblies:
 
 	- **Telerik.Documents.Flow.FormatProviders.Pdf.dll**
-	- **Telerik.Windows.Documents.Fixed.dll**
+	- **Telerik.Documents.Fixed.dll**
 
 	>important Please keep in mind these assemblies are located in the Portable folder, still, you need to add a reference to them in the Xamarin.Forms project as well as in each of the platform projects (Android | iOS | UWP).
 

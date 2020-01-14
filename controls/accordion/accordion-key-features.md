@@ -13,7 +13,13 @@ The purpose of this help article is to show you the key features of the **RadAcc
 
 In the Accordion control each item provides a header that expands when clicked, showing more information. The control is designed in such a way that opening one AccordionItem automatically closes the previously displayed content. 
 
-There is always only one expanded item at a time indicated by **IsExpanded** property.
+There can be only one expanded item at a time indicated by **IsExpanded** property of the [AccordionItem]({%slug accordion-accordionitem%}) object.
+
+## Collapse All Items
+
+Through **CanCollapseAllItems** boolean property you can allow users to fully collapse the Accordion items. If **CanCollapseAllItems** is enabled, clicking on the header of an expanded Accordion item will collapse it.
+
+>note The option for collapsing all items is available with R1 2020 release of Telerik UI for Xamarin.
 
 ## Animation while expanding/collapsing
 
@@ -30,7 +36,7 @@ Through **Spacing**(double) property you could specify the distance between the 
 
 ## Example
 
-The snippet below shows how to set the AnimationDuration, AnimationEasing and Spacing properties:
+The snippet below shows how the **CanCollapseAllItems**, **AnimationDuration**, **AnimationEasing** and **Spacing** properties can be applied:
 
 <snippet id='accordion-key-features-xaml'/>
 
@@ -45,7 +51,15 @@ using Telerik.XamarinForms.Primitives;
 using Telerik.XamarinForms.Input;
 ```
 
->important A sample Key Features example can be found in the Accordion/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+The image below shows the result after running the snippet:
+
+![RadAccordion Key Features](images/accordion_keyfeatures_1.png)
+
+And the Accordion when all items are collapsed:
+
+![RadAccordion Key Features](images/accordion_keyfeatures_2.png)
+
+>important A sample Key Features example can be found in the Accordion/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
 
 ## See Also
 

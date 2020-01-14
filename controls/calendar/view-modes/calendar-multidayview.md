@@ -86,6 +86,7 @@ Check the example below demonstrating how the timeline styling properties are ap
 ## See Also
 
 * [View Modes]({%slug calendar-features-navigation-and-view-mode%})
+* [Agenda View]({%slug calendar-agendaview%})
 * [Appointments]({%slug calendar-appointments%})
 * [Special and restricted slots]({%slug calendar-specialslots%})
 * [Non-working hours]({%slug calendar-nonworking-hours%})

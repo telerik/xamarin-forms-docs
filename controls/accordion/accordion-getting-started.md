@@ -72,6 +72,5 @@ This is the result:
 
 ## See Also
 
-- [Cell Types]({% slug listview-cells %})
-- [Selection]({% slug listview-features-selection %})
-- [Grouping]({% slug listview-features-grouping %})
+- [Key Features]({%slug accordion-key-features%})
+- [Accordion Item Control]({%slug accordion-accordionitem%})

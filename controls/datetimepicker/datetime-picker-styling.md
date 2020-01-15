@@ -14,8 +14,8 @@ Date and Time Picker control for Xamrin provides the following Style properties 
 * **SelectionHighlightStyle**(of type *Style* with target type is **telerikPrimitives:RadBorder**): Specifies the style applied to the selection inside the popup. 
 * **PlaceholderLabelStyle**(of type *Style* with target type is **Label**): Defines the style applied to the placeholder label. 
 * **DisplayLabelStyle**(of type *Style* with target type is **Label**): Defines the style applied to the label which is visualized when date/time is selected.
-* **TabStripStyle**(*Style*):
-* **TabStripItemStyle**(*Style*):
+* **TabStripStyle**(of type *Style* with target type is **telerikPrimitives:TabViewHeader**)
+* **TabStripItemStyle**(of type *Style* with target type is **telerikInput:DateTimeSelectorTabStripItem**)
 * **SelectorSettings**(*Telerik.XamarinForms.Input.PickerPopupSelectorSettings*):
 
 Using the SelectorSettings property of the RadPickerBase class, you could style the dialog(popup) through the following properties:

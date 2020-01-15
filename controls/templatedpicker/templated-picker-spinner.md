@@ -18,9 +18,9 @@ slug: templated-picker-spinner
 * **ItemLength**(*double*): Defines the length of the items in the spinner.
 * **ItemSpacing**(*double*): Defines the spacing between the items.
 * **SelectedItem**(*object*): Defines the selected item.
-* **SelectedIndex**(*object*): Specifies the selected index of the Spinner control.
-* **DisplayStringFormat**(**): Defines the string format used to display the items of the spinner.
-* **DisplayMemberPath**(**): Specifies a path to the property used to display the items of the spinner
+* **SelectedIndex**(*int*): Specifies the selected index of the Spinner control.
+* **DisplayStringFormat**(*string*): Defines the string format used to display the items of the spinner.
+* **DisplayMemberPath**(*string*): Specifies a path to the property used to display the items of the spinner
 
 ## Templates
 
@@ -29,8 +29,8 @@ slug: templated-picker-spinner
 
 ## Styling
 
-* **ItemStyle**(*Style*): 
-* **SelectedItemStyle**(*Style*): 
+* **ItemStyle**(*Style*): Defines the style for the spinner items.
+* **SelectedItemStyle**(*Style*): Defines the style for the spinner selected item.
 
 ## Events
 

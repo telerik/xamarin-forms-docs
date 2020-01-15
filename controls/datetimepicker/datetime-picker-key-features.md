@@ -51,7 +51,9 @@ RadDateTime Picker allows you to define a particular start and end date and choo
 
 ## DisplayString Format
 
-* **DisplayStringFormat**(*string*): Defines the format of the string that will be visualized when the picker dialog is closed.
+* **DisplayStringFormat**(*string*): Defines the format of the string that will be visualized when the picker dialog is closed. 
+
+>note The format set for **DisplayStringFormat** should be a valid datetime format. 
 
 >important A sample Key Features example can be found in the DateTimePicker/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
 

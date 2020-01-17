@@ -2,7 +2,7 @@
 title: Trackball Behavior
 page_title: Trackball Behavior | Telerik UI for Xamarin.Android Documentation
 description: A help topic about ChartTrackballBehavior in RadChartView for Android.
-slug: chart-behaviors-trackball
+slug: chart-android-behaviors-trackball
 tags: radchartview, behaviors, trackball, tooltip
 publish: true
 position: 2

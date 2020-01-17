@@ -2,7 +2,7 @@
 title: Event Listeners
 page_title: RadAutoCompleteTextView Events | Telerik UI for Xamarin.Android Documentation
 description: This page is dedicated to the events provided by the RadAutoCompleteTextView.
-slug: autocomplete-events
+slug: autocomplete-events-listeners
 tags: radautocompletetextview, events
 position: 7
 publish: true

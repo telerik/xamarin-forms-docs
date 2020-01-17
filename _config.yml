@@ -856,9 +856,9 @@ intro_columns:
         "NumericInput": "numericinput-overview"
         "MaskedInput": "maskedinput-overview"
         "Image Editor": "imageeditor-overview"
-        "DateTimePicker": "datetime-picker-overview"
-        "ListPicker": "list-picker-overview"
-        "TemplatedPicker": "templated-picker-overview"
+        "DateTime Picker": "datetime-picker-overview"
+        "List Picker": "list-picker-overview"
+        "Templated Picker": "templated-picker-overview"
 -
   categories:
   -

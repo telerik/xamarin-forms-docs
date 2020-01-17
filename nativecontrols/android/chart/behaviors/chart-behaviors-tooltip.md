@@ -2,7 +2,7 @@
 title: Tooltip Behavior
 page_title: Tooltip Behavior | Telerik UI for Xamarin.Android Documentation
 description: A help topic about ChartTooltipBehavior in RadChartView for Android.
-slug: chart-behaviors-tooltip
+slug: chart-android-behaviors-tooltip
 tags: radchartview, behaviors, tooltip
 publish: true
 position: 3

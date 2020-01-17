@@ -2,7 +2,7 @@
 title: Annotations
 page_title: RadChartView Annotations | Telerik UI for Xamarin.Android Documentation
 description: An article about the annotations in RadChartView for Android. This article explains how to use the annotations feature in RadChartView and how to create custom annotations.
-slug: chart-annotations
+slug: chart-android-annotations
 tags: radchartview, annotations, chart
 url: /chart-annotations
 position: 9

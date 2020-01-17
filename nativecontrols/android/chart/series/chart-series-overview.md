@@ -2,7 +2,7 @@
 title: Overview
 page_title: Series | RadChartView | Telerik UI for Xamarin.Android Documentation
 description: A page desribing the types of series in RadChartView for Android. This article explains the most important things you need to know about the different series types.
-slug: chart-series-overview
+slug: chart-android-series-overview
 tags: radchartview, series, overview, chart
 publish: true
 position: 0

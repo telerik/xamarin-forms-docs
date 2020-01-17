@@ -2,7 +2,7 @@
 title: Overview
 page_title: Overview
 description: Overview
-slug: radspreadstreamprocessing-overview
+slug: radspreadstreamprocessing-ios-overview
 tags: overview
 published: True
 position: 0

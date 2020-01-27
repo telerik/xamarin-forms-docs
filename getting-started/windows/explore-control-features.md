@@ -28,122 +28,66 @@ Each control __documentation__ consists of different sections to help you get st
 
 In this example we are going to look [Selection] ({%slug listview-features-selection%}) as one of the key features in the ListView control.
 
-The **RadListView** component exposes selection feature that allows users to select one or many items out of the ItemsSource of the control. This feature provides both visual and programmatic feedback for the actions of the user. The following members are related to the selection: 
+**RadListView** component exposes selection feature. It allows users to select one or many items out of the ItemsSource of the control. This feature provides both visual and programmatic feedback for the actions of the user. 
 
-- **SelectionGesture** (*SelectionGesture*): Gets or sets the gesture triggering the selection.
-	- Tap
-	- Hold
-- **SelectionMode** (*SelectionMode*): Gets or sets the mode of the selection.
-	- None - This mode doesn't allow users to select an item. To enable it the **SelectionMode** property should be set to **None**.
+This article will show the basic properties RadListView provides for working with selection.
+
+### Selection Configuration
+
+RadListView provides three selection modes, which allow you to manipulate the type of selection. This is controlled by the **SelectionMode** property of type  which has the following entries:
+
+- **SelectionMode** (*Telerik.XamarinForms.DataControls.ListView.SelectionMode*): 
+	- None - This mode doesn't allow users to select an item. 
 	- Single - This is the default selection mode. It allows users to select only one item.
-	- Multiple - This mode allows users to select more than one item. To enable it the **SelectionMode** property should be set to **SelectionMode.Multiple**.
-	
-- **SelectedItems** (*ObservableCollection&lt;object&gt;*): Gets or sets the currently selected items.
-- **SelectedItem** (*object*): Gets the last selected item.
-- **SelectionChanged**: An event that is triggered whenever the SelectedItems collection is changed.
+	- Multiple - This mode allows users to select more than one item. 
 
-#### Example 1: Definition of the ListView control:
+Check below how you can set **SelectionMode** in XAML and code-behind:
 
 ```XAML
-<Grid>
-    <Grid.RowDefinitions>
-        <RowDefinition Height="Auto"/>
-        <RowDefinition/>
-    </Grid.RowDefinitions>
-
-    <StackLayout Padding="10">
-        <Label Text="Set selection mode:" FontSize="Medium"/>
-        <Picker x:Name="selectionModePicker" AutomationId="SelectionModePicker"/>
-        <Label Text="Set selection gesture:" FontSize="Medium"/>
-        <Picker x:Name="selectionGesturePicker" AutomationId="SelectionGesturePicker"/>
-    </StackLayout>
-
-    <telerikDataControls:RadListView  x:Name="listView" Grid.Row="1">
-        <telerikDataControls:RadListView.SelectedItemStyle>
-            <telerikListView:ListViewItemStyle BackgroundColor="#88888888"/>
-        </telerikDataControls:RadListView.SelectedItemStyle>
-    </telerikDataControls:RadListView>
-</Grid>
+<telerikDataControls:RadListView x:Name="listView"
+                                 SelectionMode="Multiple" />
 ```
-
-and lets create a simple data for the ListView component and a method called InitializePickers in which we can add the modes and gestures we want to use.
-
-#### Example 2: Create a simple data and add the modes and gestures we will use:
-
 ```C#
-public Selection()
-{
-    this.InitializeComponent();
-    listView.ItemsSource = new List<string> { "Tom", "Anna", "Peter", "Teodor", "Lorenzo", "Andrea", "Martin" };
-    this.InitializePickers();
-}
-
-private void InitializePickers()
-{
-    selectionModePicker.Items.Add("None");
-    selectionModePicker.Items.Add("Single");
-    selectionModePicker.Items.Add("Multiple");
-    selectionModePicker.SelectedIndexChanged += this.OnSelectionModeChanged;
-    selectionModePicker.SelectedIndex = 1;
-
-    selectionGesturePicker.Items.Add("Tap");
-    selectionGesturePicker.Items.Add("Hold");
-    selectionGesturePicker.SelectedIndexChanged += this.OnSelectionGestureChanged;
-    selectionGesturePicker.SelectedIndex = 0;
-}
+var listView = new RadListView();
+listView.SelectionMode = Telerik.XamarinForms.DataControls.ListView.SelectionMode.Multiple;
 ```
+			
+You can also configure how the selection to be triggered by the end users through the **SelectionGesture** property:
 
-We can control the behavior of the RadListView's selection when changing the selection of the Pickers. The methods that are related with the Picker functionality are **OnSelectionGestureChanged** and **OnSelectionModeChanged**. We use them to change the SelectionGesture/SelectionMode of the RadListView.
+- **SelectionGesture** (*Telerik.XamarinForms.DataControls.ListView.SelectionGesture*):
+	- Tap - Users need to tap on an item to select it. This is the default SelectionGesture value;
+	- Hold - Users need to tap & hold on an item to select it.
 
-#### Example 3: Implement the methods: 
-
+```XAML	
+<telerikDataControls:RadListView x:Name="listView"
+                                 SelectionGesture="Hold" />
+```
 ```C#
-private void OnSelectionGestureChanged(object sender, EventArgs e)
-{
-    switch ((sender as Picker).SelectedIndex)
-    {
-        case 0:
-            listView.SelectionGesture = SelectionGesture.Tap;
-            break;
-        case 1:
-            listView.SelectionGesture = SelectionGesture.Hold;
-            break;
-    }
-}
-
-private void OnSelectionModeChanged(object sender, EventArgs e)
-{
-    switch ((sender as Picker).SelectedIndex)
-    {
-        case 0:
-            listView.SelectionMode = SelectionMode.None;
-            break;
-        case 1:
-            listView.SelectionMode = SelectionMode.Single;
-            break;
-        case 2:
-            listView.SelectionMode = SelectionMode.Multiple;
-            break;
-    }
-}
+var listView = new RadListView();
+listView.SelectionGesture = Telerik.XamarinForms.DataControls.ListView.SelectionGesture.Hold;
 ```
 
-### Single Selection
+### Getting Selected Items
 
-This is how the **RadListView** control will look like when the single selection mode is set.
+RadListView exposes the following properties for getting the selected item or items in case of multiple selection:
+
+- **SelectedItems** (*ObservableCollection&lt;object&gt;*): Read-only collection used to get the currently selected items;
+- **SelectedItem** (*object*): Specifies the last selected item of the ListView.
+
+### Selection Events
+	
+- **SelectionChanged**: An event that is triggered whenever the SelectedItems collection is changed. The __SelectionChanged__ event handler receives two parameters:
+	* The sender argument which is of type object, but can be cast to the __RadListView__ type.
+	* A __NotifyCollectionChangedEventArgs__ object which provides information on the collection changed event. For more details check [NotifyCollectionChangedEventArgs Class](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs) topic.
+
+### Styling
+
+You can customize the way selected items look by applying **SelectedItemStyle** property to the RadListView instance. For detailed information on the approach go to [Items Styles]({%slug listview-features-styling%}) topic in ListView documentation.
+
+Here is how the **RadListView** control looks like on different platforms when multiple items are selected:
+
 #### __Figure 1: Result in Android, iOS and Windows__
-
-![SingleSelection](images/listview-features-selection-single.png "Single Selection")
-
-
-### Multiple Selection
-
-Here is how the **RadListView** control will look like when the multiple selection mode is set.
-#### __Figure 2: Result in Android, iOS and Windows__
-
 ![MultipleSelection](images/listview-features-selection-multiple.png "Multiple Selection")
-
->important **SDK Browser** application contains an example that shows Selection feature in RadListView cotrol. You can find the application in the **Examples** folder of your local **Telerik UI for Xamarin** installation.
 
 ## Next Steps
 

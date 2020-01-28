@@ -13,7 +13,7 @@ This article will show the basic properties RadListView provides for working wit
 
 ## Selection Configuration
 
-RadListView provides three selection modes, which allow you to manipulate the type of selection. This is controlled by the **SelectionMode** property of type  which has the following entries:
+RadListView provides three selection modes, which allow you to manipulate the type of selection. This is controlled by the **SelectionMode** property which has the following entries:
 
 - **SelectionMode** (*Telerik.XamarinForms.DataControls.ListView.SelectionMode*): 
 	- None - This mode doesn't allow users to select an item. 

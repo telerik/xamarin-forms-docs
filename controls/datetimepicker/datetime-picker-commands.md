@@ -22,7 +22,7 @@ RadDateTime Picker exposes the following commands:
 </StackLayout>
 ```
 
-also you will need to add the following namespace:
+also you need to add the following namespace:
 
 ```XAML
 xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"

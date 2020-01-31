@@ -18,6 +18,12 @@ slug: datetime-picker-methods
 </StackLayout>
 ```
 
+In addition to this, you need to add the following namespace:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
+
 and we can clear the selection inside the button click event:
 
 ```C#

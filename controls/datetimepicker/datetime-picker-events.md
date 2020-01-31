@@ -15,6 +15,12 @@ slug: datetime-picker-events
 <telerikInput:RadDateTimePicker SelectionChanged="RadDateTimePicker_SelectionChanged"/>
 ```
 
+In addition to this, you need to add the following namespace:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
+
 and the **SelectionChanged** event, where the *sender* is the RadDateTimePicker control
 
 ```C#

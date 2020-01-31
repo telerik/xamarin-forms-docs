@@ -9,16 +9,16 @@ slug: list-picker-styling
 
 List Picker for Xamarin provides the followind Style properties for customizing its look:
 
-* **ItemStyle**(of type *Style* with target type is **telerikDataControls:SpinnerItemView**): Defines the style applied to the list of items.
-* **SelectedItemStyle**(of type *Style* with target type is **telerikDataControls:SpinnerItemView**): Defines the style applied to the seledted item.
-* **SelectionHighlightStyle**(of type *Style* with target type is **telerikPrimitives:RadBorder**): Specifies the style applied to the border where the current selection is.  
-* **PlaceholderLabelStyle**(of type *Style* with target type is **Label**): Defines the style applied to the placeholder label.
-* **DisplayLabelStyle**(of type *Style* with target type is **Label**): Defines the style applied to the label which is visualized when item of the list is selected.
+* **ItemStyle**(of type *Style* with target type **telerikDataControls:SpinnerItemView**): Defines the style applied to the list of items.
+* **SelectedItemStyle**(of type *Style* with target type **telerikDataControls:SpinnerItemView**): Defines the style applied to the seledted item.
+* **SelectionHighlightStyle**(of type *Style* with target type **telerikPrimitives:RadBorder**): Specifies the style applied to the border where the current selection is.  
+* **PlaceholderLabelStyle**(of type *Style* with target type **Label**): Defines the style applied to the placeholder label.
+* **DisplayLabelStyle**(of type *Style* with target type **Label**): Defines the style applied to the label which is visualized when item of the list is selected.
 * **SelectorSettings**(*Telerik.XamarinForms.Input.PickerPopupSelectorSettings*).
 
 Using the SelectorSettings property of the RadPickerBase class, you could style the dialog(popup) through the following properties:
 
-* **PopupViewStyle**(of type *Style* wich target type **telerikInput:PickerPopupContentView**): Defines the popup view style.
+* **PopupViewStyle**(of type *Style* with target type **telerikInput:PickerPopupContentView**): Defines the popup view style.
 * **HeaderStyle**(of type *Style* with target type **telerikInput:PickerPopupHeaderView**): Defines the popup header style.
 * **HeaderLabelStyle**(of type *Style* with target type **Label**): Defines the popup header label style.
 * **FooterStyle**(of type *Style* with target type **telerikInput:PickerPopupFooterView**): Defines the popup footer style.

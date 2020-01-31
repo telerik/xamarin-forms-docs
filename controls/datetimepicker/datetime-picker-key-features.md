@@ -15,6 +15,12 @@ The snippet below shows a simple Date Picker definition:
 
 <snippet id='datetimepicker-keyfeatures-date' />
 
+In addition to this, you need to add the following namespace:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
+
 Here is how the Date Picker looks when Date Format String is applied:
 
 ![Date Picker](images/datetimepicker_date_picker.png)
@@ -25,6 +31,12 @@ The snippet below shows a simple Time Picker definition:
 
 <snippet id='datetimepicker-keyfeatures-time' />
 
+In addition to this, you need to add the following namespace:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
+
 Here is how the Time Picker looks when Time Format String is applied:
 
 ![Date Picker](images/datetimepicker_time_picker.png)
@@ -34,6 +46,12 @@ Here is how the Time Picker looks when Time Format String is applied:
 The snippet below shows a simple Date and Time Picker definition:
 
 <snippet id='datetimepicker-keyfeatures-date-time' />
+
+In addition to this, you need to add the following namespace:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
 
 Here is how the Date and Time Picker looks when Date and Time Format String is applied:
 

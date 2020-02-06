@@ -32,6 +32,26 @@ The SelectorSetting also provides the following properties for popup customizati
 * **AcceptButtonText**(*string*): Defines the text visualized for the accept button. By default the text is *OK*.
 * **CancelButtonText**(*string*): Defines the text visualized for the cancel button. By default the text is *Cancel*. 
 
+## Namespaces
+
+Using **ItemStyle**, **SelectedItemStyle** you need to add the following namespace:
+
+```XAML
+xmlns:dataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+``` 
+
+Using **PopupViewStyle**, **HeaderStyle**, **FooterStyle** add the followng namespace:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
+
+The **SelectionHighlightStyle** requires the following namespace:
+
+```XAML
+xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+```
+
 ## Example
 
 Here is a sample example that shows how the styling properties are applied.

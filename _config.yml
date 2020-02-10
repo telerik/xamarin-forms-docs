@@ -401,14 +401,14 @@ navigation:
         ## Chat Sub-Folders  
     controls/chat/chat-items:
         title: "Chat Items"
-        position: 3
+        position: 4
     controls/chat/chat-picker:
         title: "ChatPicker"
-        position: 4
+        position: 5
                 ## ChatPicker Sub-Folders
     controls/chat/chat-picker/cards:
         title: "CardPicker"
-        position: 5
+        position: 6
                 ## End ChatPicker Sub-Folders  
     ## End Chat
     ## DataForm

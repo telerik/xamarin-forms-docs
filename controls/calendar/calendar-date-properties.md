@@ -23,6 +23,8 @@ You could restrict the visible/selectable dates in RadCalendar by utilizing **Mi
 
 **SelectedDate** property holds the currently selected date, *null* means that no date is selected. For more details on the selection functionality, refer to [Selection]({%slug calendar-selection %}) topic.
 
+> **DisplayDate** defines the current visible range depending on the ViewMode. This means that if you change DisplayDate to a date outside the current view, the Calendar will be navigated accordingly. **SelectedDate**, on the other hand, provides visual selection of the date to draw attention to it or is used to raise an action when the date is tapped. Still, setting **SelectedDate** to a date outside of the current view, will not navigate the view to display it.
+
 ## Example
 
 Here is a quick example to demonstrate how Date properties of RadCalendar would work:

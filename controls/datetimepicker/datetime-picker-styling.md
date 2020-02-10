@@ -34,6 +34,26 @@ The SelectorSetting also provides the following properties for popup customizati
 * **AcceptButtonText**(*string*): Defines the text visualized for the accept button. By default the text is *OK*.
 * **CancelButtonText**(*string*): Defines the text visualized for the cancel button. By default the text is *Cancel*. 
 
+## Namespaces
+
+Using **TabStripItemStyle**, **PopupViewStyle**, **HeaderStyle**, **FooterStyle** you will need to add the following namespace:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
+
+Using **SelectionHighlightStyle**, **TabStripStyle** you need to add the following namespace:
+
+```XAML
+xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+```
+
+Using **SpinnerStyle** you need to add the following namespace:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
+
 ## Example
 
 Here is a sample example that shows how the styling properties are applied.

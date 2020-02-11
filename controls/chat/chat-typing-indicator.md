@@ -1,7 +1,7 @@
 ---
 title: Typing Indicator
 page_title: Typing Indicator
-position: 6
+position: 8
 slug: chat-typing-indicator
 ---
 

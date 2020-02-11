@@ -1,7 +1,7 @@
 ---
 title: MVVM Support
 page_title: RadChat MVVM Support
-position: 5
+position: 7
 slug: chat-mvvm-support
 ---
 

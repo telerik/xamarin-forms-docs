@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: RadChat Commands
-position: 10
+position: 12
 slug: chat-commands
 ---
 

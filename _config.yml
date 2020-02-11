@@ -346,12 +346,12 @@ navigation:
         position: 6
     controls/calendar/styling:
         title: "Styling"
-        position: 11
+        position: 14
     controls/calendar/styling/custom-renderers:
         title: "Custom Renderers"
     controls/calendar/how-to:
         title: "How To"
-        position: 12
+        position: 15
         ## End Calendar Sub-Folders
     ## End Calendar
     ## Chart
@@ -401,14 +401,14 @@ navigation:
         ## Chat Sub-Folders  
     controls/chat/chat-items:
         title: "Chat Items"
-        position: 4
+        position: 5
     controls/chat/chat-picker:
         title: "ChatPicker"
-        position: 5
+        position: 6
                 ## ChatPicker Sub-Folders
     controls/chat/chat-picker/cards:
         title: "CardPicker"
-        position: 6
+        position: 7
                 ## End ChatPicker Sub-Folders  
     ## End Chat
     ## DataForm

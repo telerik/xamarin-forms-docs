@@ -19,9 +19,9 @@ Here are described all visual elements used in the List Picker for Xamarin.
 
 ## Legend
 
-- **Placeholder** 
-- **DisplayStringFormat** 
-- **HeaderLabelText**
-- **ItemTemplate**
-- **SelectedItemTemplate**
-- **Footer**
+- **Placeholder** - the text visualized before picking an item from the list of items. Placeholder could be customized through the [PlaceholderTemplate]({%slug list-picker-templates%}#placeholder-template) property.
+- **DisplayStringFormat** - the text vislualized after an item from the list of items is picked.
+- **Header** - the text displayed in the popup header. It could se set a direct text through the [HeaderLabelText]({%slug list-picker-templates) property or fully customize the popup header using the [HeaderTemplate]({%slug list-picker-templates%}#header-template) property
+- **ItemTemplate**  - Defines the template used for displaying the list of items. For more information review [Templates]({%slug list-picker-templates%}) article. 
+- **SelectedItemTemplate** - Specifies the template used for visualizing the selected item from the list. For more information review [Templates]({%slug list-picker-templates%}) article. 
+- **Footer** - the footer of the popup. By default is contains OK and Cancel Buttons. It could be customized through the FooterTemplate property. For more information review [Templates]({%slug list-picker-templates%}) article. 

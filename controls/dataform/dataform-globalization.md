@@ -1,15 +1,15 @@
 ---
-title: Globalization
-page_title: DataForm Globalization
+title: Localization
+page_title: DataForm Localization
 position: 7
 slug: dataform-globalization
 ---
 
-# DataForm Globalization
+# DataForm Localization
 
-Globalizing an application is an important part of any development process as it ensures that your product can reach as many people as possible.The **RadDataForm** control provides a globalization mechanism which you can utilize to expand the reach of your audience and automatically visualize different strings for the headers, groups and placeholders depending on the culture of the device.
+Localizing an application is an important part of any development process as it ensures that your product can reach as many people as possible.The **RadDataForm** control provides a localization mechanism which you can utilize to expand the reach of your audience and automatically visualize different strings for the headers, groups and placeholders depending on the culture of the device.
 
-In the same way as the built-in mechanism for localizing .NET applications uses [RESX files](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/ekyft91f(v=vs.90)) and the classes in the **System.Resources** and **System.Globalization** namespaces, the RadDataForm control relies on similar setup to achieve the functionality. In order to globalize the visual elements used to represent the properties of RadDataForm's item, you need to set the **DataFormLocalizationManager.Manager** property to use a custom [ResourceManager](https://docs.microsoft.com/en-us/dotnet/api/system.resources.resourcemanager?view=netframework-4.7.2). This ResourceManager can be obtained through the default resx file which holds a list of key/value pairs. This article will show you how to set up the globalization.
+In the same way as the built-in mechanism for localizing .NET applications uses [RESX files](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/ekyft91f(v=vs.90)) and the classes in the **System.Resources** and **System.Globalization** namespaces, the RadDataForm control relies on similar setup to achieve the functionality. In order to localize the visual elements used to represent the properties of RadDataForm's item, you need to set the **DataFormLocalizationManager.Manager** property to use a custom [ResourceManager](https://docs.microsoft.com/en-us/dotnet/api/system.resources.resourcemanager?view=netframework-4.7.2). This ResourceManager can be obtained through the default resx file which holds a list of key/value pairs. This article will show you how to set up the localization.
 
 > You can find information on how to add different resource files to your project on the following link - [String and Image Localization - Adding Resources](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/text?tabs=windows#adding-resources)
 
@@ -29,7 +29,7 @@ In order make the connection between the properties of your business object and 
 
 > Note that the **HomeTown** property does not use the "key" properties, meaning that the values will stay the same for all cultures/languages.
 
-### 3. Set the ResourceManager to be used for the globalization:
+### 3. Set the ResourceManager to be used for the localization:
 All that is left is to set the control to use the **ResourceManager** of your default resource file:
 
 <snippet id='dataform-globalization-setting-resourcemanager'/>
@@ -40,10 +40,13 @@ Eventually, the **RadDataForm** control will automatically detect the language s
 
 ![Resources added](images/spanish_dataform.png)
 
->important You can find an example on how to globalize the RadDataForm control in the RadDataForm/Globalization section within the [SDK Samples Browser](https://github.com/telerik/xamarin-forms-sdk)(the application is also available in the Examples/Forms folder of your local Telerik UI for Xamarin installation folder).
+>important You can find an example on how to localize the RadDataForm control in the RadDataForm/Globalization section within the [SDK Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
+>
+>You can directly explore the code in the [SDKBrowser Examples repository on GitHub](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/DataFormControl/GlobalizationCategory/GlobalizationExample).
 
 ## See Also
 
+- [Localization and Globalization]({%slug common-localization-and-globalization %})
 - [DataForm Editors]({% slug dataform-editors %})
 - [Validate and Commit]({% slug dataform-validate-and-commit %})
 - [DataForm Annotations]({% slug dataform-annotations-display-options %})

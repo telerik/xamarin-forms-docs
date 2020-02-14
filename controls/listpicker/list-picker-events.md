@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events
-position: 4
+position: 5
 slug: list-picker-events
 ---
 

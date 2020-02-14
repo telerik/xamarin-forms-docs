@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization
-position: 8
+position: 9
 slug: imageeditor-localization
 ---
 
@@ -11,7 +11,7 @@ RadDateTime Picker for Xamarin provides language localization. In short, you can
 
 >important To learn in details about the localization process of Telerik UI for Xamarin components, please go through the common [Localization and Globalization]({%slug common-localization-and-globalization%}) topic.
 
-## Common Picker Localizations strings
+## Common Image Editor Localization strings
 
 | Localization Key | Default Value |
 | -----------------| ------------- |

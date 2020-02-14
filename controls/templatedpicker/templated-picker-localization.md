@@ -1,11 +1,11 @@
 ---
 title: Localization
 page_title: Localization
-position: 8
+position: 4
 slug: templated-picker-localization
 ---
 
-# Localization
+# Custom (Templated) Picker Localization
 
 RadDateTime Picker for Xamarin provides language localization. In short, you can translate the used across the Templated Picker texts to other languages, so that your app can be adapted to different regions.
 
@@ -21,7 +21,7 @@ RadDateTime Picker for Xamarin provides language localization. In short, you can
 
 Check in the image below how the common localization strings are presented in Templated Picker:
 
-![](images/dtpicker-localization.png)
+![](images/templated-picker-localization.png)
 
 ## See Also
 

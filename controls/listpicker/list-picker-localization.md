@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization
-position: 8
+position: 4
 slug: list-picker-localization
 ---
 

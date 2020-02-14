@@ -1,7 +1,7 @@
 ---
 title: Methods
 page_title: Methods
-position: 5
+position: 6
 slug: datetime-picker-methods
 ---
 

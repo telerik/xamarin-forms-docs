@@ -286,7 +286,7 @@ navigation:
         title: "AutoCompleteView"
     controls/autocompleteview/templates: 
         title: "Custom Templates"
-        position: 11
+        position: 12
     ## End AutoCompleteView
     
     ## Barcode

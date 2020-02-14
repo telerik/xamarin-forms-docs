@@ -10,7 +10,7 @@ slug: pdfviewer-toolbar
 RadPdfToolbar includes all commands that the RadPdfViewer provides. They could be used as a pre-defined UI toolbar items: The RadPdfToolbar contains the following Toolbar items:
 
 * **ZoomInToolbarItem**
-* **ZoomInToolbarItem**
+* **ZoomOutToolbarItem**
 * **NavigateToNextPageToolbarItem**
 * **NavigateToPreviousPageToolbarItem**
 * **NavigateToPageToolbarItem**

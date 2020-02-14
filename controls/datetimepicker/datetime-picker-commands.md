@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: Commands
-position: 6
+position: 7
 slug: datetime-picker-commands
 ---
 

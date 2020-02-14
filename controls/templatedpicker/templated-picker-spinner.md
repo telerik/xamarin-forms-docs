@@ -1,7 +1,7 @@
 ---
 title: Spinner
 page_title: Spinner
-position: 8
+position: 9
 slug: templated-picker-spinner
 ---
 

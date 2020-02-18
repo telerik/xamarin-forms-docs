@@ -1,13 +1,32 @@
 ---
-title: Programmatic Scrolling
-page_title: Programmatic Scrolling
+title: Scrolling
+page_title: Scrolling
 position: 9
 slug: listview-features-scrolling
 description: Describing how to scroll RadListView to a certain item
 tags: programmatic, scrolling
 ---
 
-# Programmatic Scrolling
+# Scrolling
+
+## Vertical ScrollBar
+
+With R1 2020 SP release RadListView provides the option to set the visibility of its vertical scrollbar according to your preferences:
+
+* **VerticalScrollBarVisibility**(*Xamarin.Forms.ScrollBarVisibility*): Specifies whether the vertical scrollbar will be visualized. By default it is set to ScrollBarVisibility.Default which means the scrollbar behavior depends on the target platform.
+
+Here is a quick snippet on how you can set it to ScrollBarVisibility.Always:
+
+```XAML
+<telerikDataControls:RadListView x:Name="listView" 
+                                 VerticalScrollBarVisibility="Always" />
+```
+```C#
+var listView = new RadListView();
+listView.VerticalScrollBarVisibility = ScrollBarVisibility.Always;
+```
+
+## Programmatic Scrolling
 
 RadListView exposes the following method for programmatic scrolling to a specific data item: 
 

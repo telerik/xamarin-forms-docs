@@ -67,6 +67,18 @@ RadDateTime Picker allows you to define a particular start and end date and choo
 
 * **SelectedDate**(*DateTime?*): Defines the date which will be selected when the picker dialog is open.
 
+## DefaultDisplayDate
+
+RadDateTime Picker DefaultDisplayDate(*DateTime*) defines the System.DateTime which will be used to pre-scroll each spinner when SelectedDate is set to null.
+
+### Example
+
+```XAML
+<telerikInput:RadDateTimePicker SelectedDate="{x:Null}"
+                                DefaultDisplayDate="2020,02,14"
+                                SpinnerFormatString="d"/>
+```
+
 ## DisplayString Format
 
 * **DisplayStringFormat**(*string*): Defines the format of the string that will be visualized when the picker dialog is closed. 

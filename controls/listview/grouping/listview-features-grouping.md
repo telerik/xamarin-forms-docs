@@ -72,6 +72,25 @@ And you could create and apply a delegate for grouping the items (for example by
 #### Figure 2: ListView grouped through DelegateGroupDescriptor
 ![ListView Grouping](../images/listview_grouping_delegatedescriptor.png)
 
+## Sticky Group Headers
+
+Starting with R1 2020 SP release RadListView provides the option to set its group headers as sticky. This means the GroupHeader will "freeze" while scrolling through the items until the whole group is scrolled away. As you scroll through the next group, the currently sticked group header will be pushed by the next group header. 
+
+To enable the sticky group headers behavior, just set **IsGroupHeaderSticky** property of the ListView to **True**. By default IsGroupHeaderSticky value is False.
+
+```XAML
+<telerikDataControls:RadListView x:Name="listView" 
+                                  IsGroupHeaderSticky="True"  />
+```
+```C#
+var listView = new RadListView();
+listView.IsGroupHeaderSticky = true;
+```
+
+Check below the sticky group headers in action:
+
+![ListView Sticky Group Headers](../images/listview_stickyheaders.gif)
+
 ## Bindable GroupDescriptor
 
 The GroupDescriptor collection now can be controlled by users using MVVM.

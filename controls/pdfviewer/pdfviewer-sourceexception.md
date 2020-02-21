@@ -1,6 +1,7 @@
 ---
 title: Source Exception Handling
 page_title: Source Exception Handling
+description: Check our &quot;Source Exception Handling&quot; documentation article for Telerik PdfViewer for Xamarin control.
 position: 7
 slug: pdfviewer-sourceexception
 ---

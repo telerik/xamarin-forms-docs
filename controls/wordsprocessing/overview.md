@@ -1,6 +1,7 @@
 ---
 title: Overview
 page_title: Overview
+description: Check our &quot;Overview&quot; documentation article for Telerik WordsProcessing for Xamarin.
 description: Overview
 slug: radwordsprocessing-overview
 tags: overview

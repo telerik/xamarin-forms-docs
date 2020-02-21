@@ -1,6 +1,7 @@
 ---
 title: Spinner
 page_title: Spinner
+description: Check our &quot;Spinner&quot; documentation article for Telerik TemplatedPicker for Xamarin control.
 position: 9
 slug: templated-picker-spinner
 ---

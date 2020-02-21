@@ -1,6 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
+description: Check our &quot;Getting Started&quot; documentation article for Telerik TreeView for Xamarin control.
 position: 1
 slug: treeview-getting-started
 ---

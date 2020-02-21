@@ -1,6 +1,7 @@
 ---
 title: Disable a Segment
 page_title: Disable a Segment
+description: Check our &quot;Disable a Segment&quot; documentation article for Telerik SegmentedControl for Xamarin control.
 position: 3
 slug: segmentedcontrol-features-disable-segment
 ---

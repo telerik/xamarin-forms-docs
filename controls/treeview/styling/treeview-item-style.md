@@ -1,6 +1,7 @@
 ---
 title: Item Style
 page_title: Item Style
+description: Check our &quot;Item Style&quot; documentation article for Telerik TreeView for Xamarin control.
 position: 1
 slug: treeview-item-style
 description: Describing the styling options of the TreeView

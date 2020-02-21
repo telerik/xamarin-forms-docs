@@ -1,6 +1,7 @@
 ---
 title: Expand/Collapse Items
 page_title: Expand/Collapse Items
+description: Check our &quot;Expand/Collapse Items&quot; documentation article for Telerik TreeView for Xamarin control.
 position: 2
 slug: treeview-expand-collapse-api
 ---

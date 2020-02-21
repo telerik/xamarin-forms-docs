@@ -1,6 +1,7 @@
 ---
 title: Key Features
 page_title: Key Features
+description: Check our &quot;Key Features&quot; documentation article for Telerik TabView for Xamarin control.
 description: Key Features
 slug: tabview-key-features
 tags: tabview, selection, headeritem, tabviewitem

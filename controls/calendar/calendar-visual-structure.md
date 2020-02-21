@@ -1,6 +1,7 @@
 ---
 title: Visual Structure
 page_title: RadCalendar Visual Structure
+description: Check our &quot;Visual Structure&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 2
 slug: calendar-visual-structure
 ---

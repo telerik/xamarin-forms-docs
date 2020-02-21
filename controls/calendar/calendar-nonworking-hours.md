@@ -1,6 +1,7 @@
 ---
 title: Non-Working Hours
 page_title: Non-Working Hours
+description: Check our &quot;Non-Working Hours&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 9
 slug: calendar-nonworking-hours
 ---

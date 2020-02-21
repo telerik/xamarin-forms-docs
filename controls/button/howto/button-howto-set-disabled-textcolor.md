@@ -1,6 +1,7 @@
 ---
 title: Set TextColor of Disabled RadButton
 page_title: Set TextColor of Disabled RadButton
+description: Check our &quot;Set TextColor of Disabled RadButton&quot; documentation article for Telerik Button for Xamarin control.
 position: 1
 slug: button-howto-textcolor-disabled-button
 ---

@@ -1,6 +1,7 @@
 ---
 title: Calendar Android Custom Renderers
 page_title: Calendar Android Custom Renderer
+description: Check our &quot;Calendar Android Custom Renderers&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 0
 slug: calendar-custom-renderers-android
 ---

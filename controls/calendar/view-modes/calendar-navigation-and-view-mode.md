@@ -1,6 +1,7 @@
 ---
 title: Overview
 page_title: View Modes
+description: Check our &quot;Overview&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 0
 slug: calendar-features-navigation-and-view-mode
 ---

@@ -1,6 +1,7 @@
 ---
 title: Overview
 page_title: Supported Types Overview
+description: Check our &quot;Overview&quot; documentation article for Telerik Barcode for Xamarin control.
 position: 0
 slug: barcode-supported-types-overview
 ---

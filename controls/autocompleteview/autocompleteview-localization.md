@@ -1,6 +1,7 @@
 ---
 title: Localization
 page_title: Localization
+description: Check our &quot;Localization&quot; documentation article for Telerik AutoCompleteView for Xamarin control.
 position: 11
 slug: autocompleteview-localization
 ---

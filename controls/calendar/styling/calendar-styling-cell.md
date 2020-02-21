@@ -1,6 +1,7 @@
 ---
 title: Cell Styling
 page_title: Cell Styling
+description: Check our &quot;Cell Styling&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 3
 slug: calendar-styling-cell
 ---

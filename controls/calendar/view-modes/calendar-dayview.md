@@ -1,6 +1,7 @@
 ---
 title: Day View
 page_title: Day View
+description: Check our &quot;Day View&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 1
 slug: calendar-dayview
 ---

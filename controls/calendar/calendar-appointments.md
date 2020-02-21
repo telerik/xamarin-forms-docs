@@ -1,6 +1,7 @@
 ---
 title: Appointments
 page_title: Appointments
+description: Check our &quot;Appointments&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 5
 slug: calendar-appointments
 ---

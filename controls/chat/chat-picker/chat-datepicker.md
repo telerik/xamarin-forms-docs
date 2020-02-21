@@ -1,6 +1,7 @@
 ---
 title: DatePicker
 page_title: Chat DatePicker
+description: Check our &quot;DatePicker&quot; documentation article for Telerik Chat for Xamarin control.
 position: 1
 slug: chat-datepicker
 ---

@@ -1,6 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
+description: Check our &quot;Getting Started&quot; documentation article for Telerik ListPicker for Xamarin control.
 position: 1
 slug: list-picker-getting-started
 ---

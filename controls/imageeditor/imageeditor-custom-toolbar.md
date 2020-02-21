@@ -1,6 +1,7 @@
 ---
 title: ImageEditor Custom Toolbar
 page_title: ImageEditor Custom Toolbar
+description: Check our &quot;ImageEditor Custom Toolbar&quot; documentation article for Telerik ImageEditor for Xamarin control.
 position: 4
 slug: imageeditor-custom-toolbar
 ---

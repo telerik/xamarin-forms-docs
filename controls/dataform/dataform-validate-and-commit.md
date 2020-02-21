@@ -1,6 +1,7 @@
 ---
 title: Validate and Commit
 page_title: Validate and Commit
+description: Check our &quot;Validate and Commit&quot; documentation article for Telerik DataForm for Xamarin control.
 slug: dataform-validate-and-commit
 position: 5
 ---

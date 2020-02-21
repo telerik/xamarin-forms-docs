@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Introduces the RadImageEditor for XamarinForms component
+description: Check our &quot;Overview&quot; documentation article for Telerik ImageEditor for Xamarin control.
 position: 0
 slug: imageeditor-overview
 ---

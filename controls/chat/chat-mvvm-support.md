@@ -1,6 +1,7 @@
 ---
 title: MVVM Support
 page_title: RadChat MVVM Support
+description: Check our &quot;MVVM Support&quot; documentation article for Telerik Chat for Xamarin control.
 position: 7
 slug: chat-mvvm-support
 ---

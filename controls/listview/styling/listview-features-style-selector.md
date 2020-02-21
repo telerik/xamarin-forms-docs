@@ -1,6 +1,7 @@
 ---
 title: ItemStyle Selector
 page_title: ItemStyle Selector
+description: Check our &quot;ItemStyle Selector&quot; documentation article for Telerik ListView for Xamarin control.
 position: 1
 slug: listview-features-style-selector
 ---

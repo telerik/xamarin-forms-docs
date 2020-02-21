@@ -1,6 +1,7 @@
 ---
 title: Overview
 page_title: RadDataGrid Overview
+description: Check our &quot;Overview&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 0
 slug: datagrid-overview
 ---

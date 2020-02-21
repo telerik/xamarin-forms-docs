@@ -1,6 +1,7 @@
 ---
 title: Multi-Level Grouping
 page_title: Grouping
+description: Check our &quot;Multi-Level Grouping&quot; documentation article for Telerik ListView for Xamarin control.
 position: 2
 slug: listview-grouping-multilevel
 description: Describing RadListView grouping feature

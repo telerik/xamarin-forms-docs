@@ -1,6 +1,7 @@
 ---
 title: Reorder Items
 page_title: Reorder Items
+description: Check our &quot;Reorder Items&quot; documentation article for Telerik ListView for Xamarin control.
 position: 
 slug: listview-features-reorder-items
 ---

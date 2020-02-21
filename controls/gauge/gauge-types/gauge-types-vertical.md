@@ -1,6 +1,7 @@
 ---
 title: Vertical Gauge
 page_title: Vertical Gauge
+description: Check our &quot;Vertical Gauge&quot; documentation article for Telerik Gauge for Xamarin control.
 position: 2
 slug: gauge-types-vertical
 ---

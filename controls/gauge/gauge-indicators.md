@@ -1,6 +1,7 @@
 ---
 title: Indicators
 page_title: Indicators
+description: Check our &quot;Indicators&quot; documentation article for Telerik Gauge for Xamarin control.
 position: 5
 slug: gauge-indicators
 ---

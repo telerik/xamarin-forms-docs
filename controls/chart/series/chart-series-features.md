@@ -1,6 +1,7 @@
 ---
 title: Series Features
 page_title: Series Features
+description: Check our &quot;Series Features&quot; documentation article for Telerik Chart for Xamarin control.
 slug: chart-series-features
 position: 1
 ---

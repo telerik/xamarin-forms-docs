@@ -1,6 +1,7 @@
 ---
 title: Events
 page_title: Events
+description: Check our &quot;Events&quot; documentation article for Telerik ListPicker for Xamarin control.
 position: 5
 slug: list-picker-events
 ---

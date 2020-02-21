@@ -1,6 +1,7 @@
 ---
 title: Annotations
 page_title: Annotations
+description: Check our &quot;Annotations&quot; documentation article for Telerik Chart for Xamarin control.
 position: 7
 slug: chart-annotations
 ---

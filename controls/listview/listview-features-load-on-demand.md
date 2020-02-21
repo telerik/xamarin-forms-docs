@@ -1,6 +1,7 @@
 ---
 title: Load on Demand
 page_title: Load on Demand
+description: Check our &quot;Load on Demand&quot; documentation article for Telerik ListView for Xamarin control.
 position: 8
 slug: listview-features-load-on-demand
 ---

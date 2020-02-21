@@ -1,6 +1,7 @@
 ---
 title: Filtering
 page_title: Filtering
+description: Check our &quot;Filtering&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 5
 slug: datagrid-filtering-overview
 ---

@@ -1,6 +1,7 @@
 ---
 title: Image Transformations
 page_title: Image Transformations
+description: Check our &quot;Image Transformations&quot; documentation article for Telerik ImageEditor for Xamarin control.
 position: 5
 slug: imageeditor-image-transformations
 ---

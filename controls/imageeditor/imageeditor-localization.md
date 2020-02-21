@@ -1,6 +1,7 @@
 ---
 title: Localization
 page_title: Localization
+description: Check our &quot;Localization&quot; documentation article for Telerik ImageEditor for Xamarin control.
 position: 9
 slug: imageeditor-localization
 ---

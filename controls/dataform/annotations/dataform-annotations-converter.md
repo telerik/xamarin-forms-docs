@@ -1,6 +1,7 @@
 ---
 title: Converter Attribute
 page_title: Converter Attribute
+description: Check our &quot;Converter Attribute&quot; documentation article for Telerik DataForm for Xamarin control.
 slug: dataform-annotations-converter
 ---
 

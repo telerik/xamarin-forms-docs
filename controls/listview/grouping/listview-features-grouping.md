@@ -1,6 +1,7 @@
 ---
 title: Overview
 page_title: Grouping
+description: Check our &quot;Overview&quot; documentation article for Telerik ListView for Xamarin control.
 position: 0
 slug: listview-features-grouping
 description: Describing RadListView grouping feature

@@ -1,6 +1,7 @@
 ---
 title: Nested Properties
 page_title: Nested Properties Support
+description: Check our &quot;Nested Properties&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 3
 slug: datagrid-nested-properties
 ---

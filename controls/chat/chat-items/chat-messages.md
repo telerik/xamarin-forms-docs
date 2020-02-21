@@ -1,6 +1,7 @@
 ---
 title: Messages
 page_title: Chat Messages
+description: Check our &quot;Messages&quot; documentation article for Telerik Chat for Xamarin control.
 position: 1
 slug: chat-messages
 ---

@@ -1,6 +1,7 @@
 ---
 title: Selection
 page_title: Selection
+description: Check our &quot;Selection&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 3
 slug: datagrid-selection-overview
 ---

@@ -1,6 +1,7 @@
 ---
 title: DisplayOptions Attribute
 page_title: DisplayOptions Attribute
+description: Check our &quot;DisplayOptions Attribute&quot; documentation article for Telerik DataForm for Xamarin control.
 slug: dataform-annotations-display-options
 ---
 

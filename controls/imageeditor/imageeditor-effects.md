@@ -1,6 +1,7 @@
 ---
 title: Effects
 page_title: Effects
+description: Check our &quot;Effects&quot; documentation article for Telerik ImageEditor for Xamarin control.
 position: 8
 slug: imageeditor-effects
 ---

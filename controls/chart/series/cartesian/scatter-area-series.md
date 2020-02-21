@@ -1,6 +1,7 @@
 ---
 title: ScatterArea Series
 page_title: ScatterArea Series
+description: Check our &quot;ScatterArea Series&quot; documentation article for Telerik Chart for Xamarin control.
 slug: chart-series-scatter-area-series
 position: 0
 ---

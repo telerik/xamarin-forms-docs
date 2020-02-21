@@ -1,6 +1,7 @@
 ---
 title: Localization
 page_title: Localization
+description: Check our &quot;Localization&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 7
 slug: datagrid-features-localization
 ---

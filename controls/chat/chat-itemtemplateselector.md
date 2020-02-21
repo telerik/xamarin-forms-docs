@@ -1,6 +1,7 @@
 ---
 title: ItemTemplateSelector
 page_title: RadChat ItemTemplateSelector
+description: Check our &quot;ItemTemplateSelector&quot; documentation article for Telerik Chat for Xamarin control.
 position: 9
 slug: chat-itemtemplateselector
 ---

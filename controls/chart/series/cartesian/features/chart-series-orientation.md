@@ -1,6 +1,7 @@
 ---
 title: CategoricalSeries Orientation
 page_title: CategoricalSeries Orientation
+description: Check our &quot;CategoricalSeries Orientation&quot; documentation article for Telerik Chart for Xamarin control.
 slug: chart-series-orientation
 position: 0
 ---

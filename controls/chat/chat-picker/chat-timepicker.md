@@ -1,6 +1,7 @@
 ---
 title: TimePicker
 page_title: Chat TimePicker
+description: Check our &quot;TimePicker&quot; documentation article for Telerik Chat for Xamarin control.
 position: 2
 slug: chat-timepicker
 ---

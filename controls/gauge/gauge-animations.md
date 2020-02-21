@@ -1,6 +1,7 @@
 ---
 title: Animations
 page_title: Animations
+description: Check our &quot;Animations&quot; documentation article for Telerik Gauge for Xamarin control.
 position: 3
 slug: gauge-animations
 ---

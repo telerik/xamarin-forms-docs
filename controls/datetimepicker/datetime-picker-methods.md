@@ -1,6 +1,7 @@
 ---
 title: Methods
 page_title: Methods
+description: Check our &quot;Methods&quot; documentation article for Telerik DateTimePicker for Xamarin control.
 position: 6
 slug: datetime-picker-methods
 ---

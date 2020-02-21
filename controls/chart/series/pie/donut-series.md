@@ -1,6 +1,7 @@
 ---
 title: DonutSeries
 slug: chart-series-donut-series
+description: Check our &quot;DonutSeries&quot; documentation article for Telerik Chart for Xamarin control.
 position: 1
 ---
 

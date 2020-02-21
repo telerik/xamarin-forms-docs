@@ -1,6 +1,7 @@
 ---
 title: Columns Width
 page_title: Columns Width
+description: Check our &quot;Columns Width&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 2
 slug: datagrid-columns-width
 ---

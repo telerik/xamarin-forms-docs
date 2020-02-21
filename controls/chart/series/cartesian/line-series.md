@@ -1,6 +1,7 @@
 ---
 title: Line Series
 page_title: Line Series
+description: Check our &quot;Line Series&quot; documentation article for Telerik Chart for Xamarin control.
 position: 0
 slug: chart-series-line-series
 ---

@@ -1,6 +1,7 @@
 ---
 title: Track Ball Behavior
 page_title: Track Ball Behavior
+description: Check our &quot;Track Ball Behavior&quot; documentation article for Telerik Chart for Xamarin control.
 position: 2
 slug: chart-behaviors-trackball
 ---

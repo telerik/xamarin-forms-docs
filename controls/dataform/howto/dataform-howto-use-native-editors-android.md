@@ -1,6 +1,7 @@
 ---
 title: Autocomplete editor in Android
 page_title: Autocomplete editor in Android
+description: Check our &quot;Autocomplete editor in Android&quot; documentation article for Telerik DataForm for Xamarin control.
 slug: dataform-howto-use-native-editors-android
 position: 0
 ---

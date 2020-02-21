@@ -1,6 +1,7 @@
 ---
 title: Events
 page_title: Events
+description: Check our &quot;Events&quot; documentation article for Telerik ListView for Xamarin control.
 position: 12
 slug: listview-features-events
 description: Describing the events of the RadListView

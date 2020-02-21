@@ -1,6 +1,7 @@
 ---
 title: DateTime Format Strings
 page_title: DateTime Format Strings
+description: Check our &quot;DateTime Format Strings&quot; documentation article for Telerik DateTimePicker for Xamarin control.
 position: 2
 slug: datetime-picker-format-string
 ---

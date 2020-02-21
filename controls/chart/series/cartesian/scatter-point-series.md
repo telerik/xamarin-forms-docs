@@ -1,6 +1,7 @@
 ---
 title: ScatterPoint Series
 page_title: ScatterPoint Series
+description: Check our &quot;ScatterPoint Series&quot; documentation article for Telerik Chart for Xamarin control.
 slug: chart-series-scatter-point-series
 position: 0
 ---

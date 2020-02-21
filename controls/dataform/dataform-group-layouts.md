@@ -1,6 +1,7 @@
 ---
 title: Layouts
 page_title: DataForm Group Layouts
+description: Check our &quot;Layouts&quot; documentation article for Telerik DataForm for Xamarin control.
 position: 6
 slug: dataform-group-layouts
 ---

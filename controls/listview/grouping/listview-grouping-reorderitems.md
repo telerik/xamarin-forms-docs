@@ -1,6 +1,7 @@
 ---
 title: Reorder Items in Grouped ListView
 page_title: Reorder Items in Grouped ListView
+description: Check our &quot;Reorder Items in Grouped ListView&quot; documentation article for Telerik ListView for Xamarin control.
 position: 4
 slug: listview-grouping-reorderitems
 description: Describing how to handle reordering in grouped ListView

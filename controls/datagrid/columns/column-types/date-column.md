@@ -1,6 +1,7 @@
 ---
 title: Date Column
 page_title: Date Column
+description: Check our &quot;Date Column&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 3
 slug: datagrid-columns-date-column
 ---

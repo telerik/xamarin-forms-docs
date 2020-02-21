@@ -1,6 +1,7 @@
 ---
 title: Crop
 page_title: Crop
+description: Check our &quot;Crop&quot; documentation article for Telerik ImageEditor for Xamarin control.
 position: 6
 slug: imageeditor-crop
 ---

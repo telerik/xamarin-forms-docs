@@ -1,6 +1,7 @@
 ---
 title: Financial Indicators
 slug: chart-series-financial-indicators
+description: Check our &quot;Financial Indicators&quot; documentation article for Telerik Chart for Xamarin control.
 position: 2
 ---
 

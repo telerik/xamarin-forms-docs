@@ -1,6 +1,7 @@
 ---
 title: Horizontal Gauge
 page_title: Horizontal Gauge
+description: Check our &quot;Horizontal Gauge&quot; documentation article for Telerik Gauge for Xamarin control.
 position: 1
 slug: gauge-types-horizontal
 ---

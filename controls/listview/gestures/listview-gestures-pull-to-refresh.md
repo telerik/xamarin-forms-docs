@@ -1,6 +1,7 @@
 ---
 title: Pull to Refresh
 page_title: Pull to Refresh
+description: Check our &quot;Pull to Refresh&quot; documentation article for Telerik ListView for Xamarin control.
 position: 
 slug: listview-features-pull-to-refresh
 ---

@@ -1,6 +1,7 @@
 ---
 title: Groups Styling
 page_title: Groups Styling
+description: Check our &quot;Groups Styling&quot; documentation article for Telerik DataForm for Xamarin control.
 slug: dataform-styling-groups
 position: 1
 ---

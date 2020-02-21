@@ -1,6 +1,7 @@
 ---
 title: Time Break
 page_title: Time Break
+description: Check our &quot;Time Break&quot; documentation article for Telerik Chat for Xamarin control.
 position: 2
 slug: chat-timebreak
 ---

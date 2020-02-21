@@ -1,6 +1,7 @@
 ---
 title: Load On Demand
 page_title: Load on Demand
+description: Check our &quot;Load On Demand&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 8
 slug: datagrid-features-loadondemand
 ---

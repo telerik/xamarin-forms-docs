@@ -1,6 +1,7 @@
 ---
 title: Scrolling
 page_title: Scrolling
+description: Check our &quot;Scrolling&quot; documentation article for Telerik ListView for Xamarin control.
 position: 9
 slug: listview-features-scrolling
 description: Describing how to scroll RadListView to a certain item

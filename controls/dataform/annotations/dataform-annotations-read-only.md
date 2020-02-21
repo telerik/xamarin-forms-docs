@@ -1,6 +1,7 @@
 ---
 title: ReadOnly Attribute
 page_title: ReadOnly Attribute
+description: Check our &quot;ReadOnly Attribute&quot; documentation article for Telerik DataForm for Xamarin control.
 slug: dataform-annotations-read-only
 ---
 

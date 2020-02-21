@@ -1,6 +1,7 @@
 ---
 title: Filtering
 page_title: Filtering
+description: Check our &quot;Filtering&quot; documentation article for Telerik ListView for Xamarin control.
 position: 6
 slug: listview-features-filtering
 description: Describing RadListView filtering feature

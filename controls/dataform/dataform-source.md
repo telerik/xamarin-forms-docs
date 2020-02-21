@@ -1,6 +1,7 @@
 ---
 title: Data Source
 page_title: Data Source
+description: Check our &quot;Data Source&quot; documentation article for Telerik DataForm for Xamarin control.
 position: 3
 slug: data-form-data-source
 ---

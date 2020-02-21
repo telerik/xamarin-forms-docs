@@ -1,6 +1,7 @@
 ---
 title: Editing Commands
 page_title: Editing Commands
+description: Check our &quot;Editing Commands&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 2
 slug: datagrid-commands-editing
 ---

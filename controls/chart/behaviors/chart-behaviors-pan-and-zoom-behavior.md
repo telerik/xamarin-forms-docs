@@ -1,6 +1,7 @@
 ---
 title: Pan And Zoom Behavior
 page_title: Pan And Zoom Behavior
+description: Check our &quot;Pan And Zoom Behavior&quot; documentation article for Telerik Chart for Xamarin control.
 position: 4
 slug: chart-behaviors-pan-and-zoom
 ---

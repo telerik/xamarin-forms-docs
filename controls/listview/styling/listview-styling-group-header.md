@@ -1,6 +1,7 @@
 ---
 title: GroupHeader Style
 page_title: GroupHeader Style
+description: Check our &quot;GroupHeader Style&quot; documentation article for Telerik ListView for Xamarin control.
 position: 2
 slug: listview-styling-group-header
 description: Describing the styling options of the RadListView

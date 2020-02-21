@@ -1,6 +1,7 @@
 ---
 title: Grouping
 page_title: Grouping Overview
+description: Check our &quot;Grouping&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 4
 slug: datagrid-grouping-overview
 ---

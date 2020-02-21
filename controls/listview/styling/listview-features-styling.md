@@ -1,6 +1,7 @@
 ---
 title: Item Styles
 page_title: Item Styles
+description: Check our &quot;Item Styles&quot; documentation article for Telerik ListView for Xamarin control.
 position: 0
 slug: listview-features-styling
 description: Describing the styling options of the RadListView

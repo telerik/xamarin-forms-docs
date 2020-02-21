@@ -1,6 +1,7 @@
 ---
 title: Area Series
 page_title: Area Series
+description: Check our &quot;Area Series&quot; documentation article for Telerik Chart for Xamarin control.
 slug: chart-series-area-series
 position: 0
 ---

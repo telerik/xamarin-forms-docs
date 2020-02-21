@@ -1,6 +1,7 @@
 ---
 title: Recurrence Pattern
 page_title: Recurrence Pattern
+description: Check our &quot;Recurrence Pattern&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 1
 slug: calendar-recurrence-recurrencepattern
 ---

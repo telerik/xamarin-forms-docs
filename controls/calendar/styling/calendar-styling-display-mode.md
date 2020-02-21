@@ -1,6 +1,7 @@
 ---
 title: Elements Display Mode
 page_title: Elements Display Mode
+description: Check our &quot;Elements Display Mode&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 1
 slug: calendar-styling-display-mode
 ---

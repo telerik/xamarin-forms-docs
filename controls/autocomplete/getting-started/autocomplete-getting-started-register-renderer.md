@@ -1,6 +1,7 @@
 ---
 title: Register AutoComplete Renderer
 page_title: Register AutoComplete Renderer
+description: Check our &quot;Register AutoComplete Renderer&quot; documentation article for Telerik AutoComplete for Xamarin control.
 position: 2
 slug: autocomplete-getting-started-register-renderer
 publish: false

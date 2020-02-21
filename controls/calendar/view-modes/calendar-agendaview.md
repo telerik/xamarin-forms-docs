@@ -1,6 +1,7 @@
 ---
 title: Agenda View
 page_title: Agenda View
+description: Check our &quot;Agenda View&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 3
 slug: calendar-agendaview
 ---

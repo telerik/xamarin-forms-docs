@@ -1,6 +1,7 @@
 ---
 title: Overview
 page_title: Overview
+description: Check our &quot;Overview&quot; documentation article for Telerik AutoCompleteView for Xamarin control.
 description: Introduces the RadAutoCompleteView for XamarinForms component
 position: 0
 slug: autocompleteview-overview

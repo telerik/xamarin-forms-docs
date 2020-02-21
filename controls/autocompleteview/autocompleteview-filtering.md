@@ -1,6 +1,7 @@
 ---
 title: Filtering
 page_title: Filtering
+description: Check our &quot;Filtering&quot; documentation article for Telerik AutoCompleteView for Xamarin control.
 position: 9
 slug: autocompleteview-filtering
 ---

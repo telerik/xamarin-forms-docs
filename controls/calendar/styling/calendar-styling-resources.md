@@ -1,6 +1,7 @@
 ---
 title: Calendar Styling Resources
 page_title: Calendar Styling Resources
+description: Check our &quot;Calendar Styling Resources&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 3
 slug: calendar-styling-resources
 published: False

@@ -1,6 +1,7 @@
 ---
 title: Key Features
 page_title: Key Features
+description: Check our &quot;Key Features&quot; documentation article for Telerik Rating for Xamarin control.
 position: 2
 slug: rating-base
 ---

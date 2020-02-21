@@ -1,6 +1,7 @@
 ---
 title: Visual Structure
 page_title: Templated Picker Visual Structure
+description: Check our &quot;Visual Structure&quot; documentation article for Telerik TemplatedPicker for Xamarin control.
 position: 0
 slug: templated-picker-visual-structure
 ---

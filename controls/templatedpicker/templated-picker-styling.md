@@ -1,6 +1,7 @@
 ---
 title: Styling
 page_title: Styling
+description: Check our &quot;Styling&quot; documentation article for Telerik TemplatedPicker for Xamarin control.
 position: 8
 slug: templated-picker-styling
 ---

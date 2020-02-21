@@ -1,6 +1,7 @@
 ---
 title: Text Selection
 page_title: Text Selection
+description: Check our &quot;Text Selection&quot; documentation article for Telerik PdfViewer for Xamarin control.
 position: 5
 slug: pdfviewer-text-selection
 ---

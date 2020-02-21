@@ -1,6 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
+description: Check our &quot;Getting Started&quot; documentation article for Telerik TabView for Xamarin control.
 position: 1
 slug: tabview-getting-started
 ---

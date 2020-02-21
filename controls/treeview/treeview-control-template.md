@@ -1,6 +1,7 @@
 ---
 title: Control Template
 page_title: Control Template
+description: Check our &quot;Control Template&quot; documentation article for Telerik TreeView for Xamarin control.
 position: 2
 slug: treeview-control-template
 ---

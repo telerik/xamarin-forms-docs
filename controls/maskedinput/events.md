@@ -1,6 +1,7 @@
 ---
 title: Events
 page_title: Events
+description: Check our &quot;Events&quot; documentation article for Telerik MaskedInput for Xamarin control.
 position: 7
 slug: maskedinput-features-events
 ---

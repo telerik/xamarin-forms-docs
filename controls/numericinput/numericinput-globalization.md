@@ -1,6 +1,7 @@
 ---
 title: Globalization
 page_title: Globalization
+description: Check our &quot;Globalization&quot; documentation article for Telerik NumericInput for Xamarin control.
 position: 3
 slug: numericinput-globalization
 ---

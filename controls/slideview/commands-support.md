@@ -1,6 +1,7 @@
 ---
 title: Commands
 page_title: Commands
+description: Check our &quot;Commands&quot; documentation article for Telerik SlideView for Xamarin control.
 position: 7
 slug: slideview-commands-support
 ---

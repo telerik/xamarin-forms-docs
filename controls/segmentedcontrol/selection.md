@@ -1,6 +1,7 @@
 ---
 title: Selection
 page_title: Selection
+description: Check our &quot;Selection&quot; documentation article for Telerik SegmentedControl for Xamarin control.
 description: Selection
 slug: segmentedcontrol-features-selection
 tags: selection

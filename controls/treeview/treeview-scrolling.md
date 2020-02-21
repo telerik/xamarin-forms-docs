@@ -1,6 +1,7 @@
 ---
 title: Programmatic Scrolling
 page_title: Programmatic Scrolling
+description: Check our &quot;Programmatic Scrolling&quot; documentation article for Telerik TreeView for Xamarin control.
 position: 6
 slug: treeview-scrolling
 ---

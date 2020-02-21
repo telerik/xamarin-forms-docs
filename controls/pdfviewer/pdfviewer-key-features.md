@@ -1,6 +1,7 @@
 ---
 title: Key Features
 page_title: Key Features
+description: Check our &quot;Key Features&quot; documentation article for Telerik PdfViewer for Xamarin control.
 position: 2
 slug: pdfviewer-key-features
 ---

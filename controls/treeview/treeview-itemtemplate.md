@@ -1,6 +1,7 @@
 ---
 title: Item Template
 page_title: Item Template
+description: Check our &quot;Item Template&quot; documentation article for Telerik TreeView for Xamarin control.
 position: 4
 slug: treeview-itemtemplate
 ---

@@ -1,6 +1,7 @@
 ---
 title: PdfViewer Toolbar
 page_title: PdfViewer Toolbar
+description: Check our &quot;PdfViewer Toolbar&quot; documentation article for Telerik PdfViewer for Xamarin control.
 position: 3
 slug: pdfviewer-toolbar
 ---

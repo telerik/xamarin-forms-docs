@@ -46,11 +46,15 @@ The RadListView control supports binding. What's new is that now the users can c
 
 In order to control the FilterDescriptor collection through MVVM: 
 
-1. Create a property of type ObservableCollection<FilterDescriptorBase> in your ViewModel which will contain the needed filters:
+1. Create a property of type ObservableCollection<FilterDescriptorBase> in your ViewModel which will contain the needed filters. Here is a sample ViewModel:
     
 <snippet id='listview-features-bindable-filterdescriptor-viewmodel' /> 
+
+2. A sample business model:
+
+<snippet id='listview-features-bindable-filterdescriptor-business-model' />
     
-2. Use **OneWayToSource** binding mode to bind that property to the FilterDescriptors property of RadListView:
+3. Use **OneWayToSource** binding mode to bind that property to the FilterDescriptors property of RadListView:
 
 <snippet id='listview-features-bindable-filterdescriptor-xaml' />
 
@@ -58,7 +62,7 @@ Here is how this looks like:
 
 ![FilterDescriptorsMVVM](images/listview-features-bindable-filter.png)
 
->important [SDK Samples Browser application]({%slug developer-focused-examples%}) contains an example that shows FilterDescriptor collection in ListView controlled through MVVM. 
+>important Bindable Filter Descriptor example can be checked in our [SDK Samples Browser application]({%slug developer-focused-examples%}) ListView/BindableCollections folder. 
 
 ## See Also
 

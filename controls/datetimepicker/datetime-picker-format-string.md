@@ -46,6 +46,18 @@ The available Standard Date and Time format strings that can be set to the Spinn
 
 >important You can set only short [Standard Date and Time Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings) to the DateTime Picker control.
 
+## Supported Separators
+
+When SpinnerFormatString is set and device culture is changed, the separators used for the format string won't be changed:
+
+| Supported Date and Time Separators Formats |
+| -------- |
+| "-" |
+| "." |
+| "'" |
+| " " |
+| ":" |
+
 ## Examples
 
 ### SpinnerFormatString="MMMM dd"

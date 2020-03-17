@@ -1,6 +1,7 @@
 ---
 title: Navigation
 page_title: Calendar Navigation
+slug: ios-calendar-navigation
 position: 6
 ---
 

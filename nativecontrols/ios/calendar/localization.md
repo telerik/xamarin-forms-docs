@@ -1,5 +1,6 @@
 ---
 title: Localization
+slig: ios-calendar-localization
 position: 7
 ---
 

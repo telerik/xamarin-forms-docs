@@ -1,6 +1,7 @@
 ---
 title: Selection
 page_title: Calendar Selection
+slug: ios-calendar-selection
 position: 6
 ---
 

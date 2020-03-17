@@ -1,6 +1,7 @@
 ---
 title: Transitions
 page_title: Calendar View Transitions
+slug: ios-calendar-view-transitions
 position: 5
 ---
 

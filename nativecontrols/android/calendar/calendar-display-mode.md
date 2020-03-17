@@ -10,7 +10,7 @@ publish: true
 
 # RadCalendarView: DisplayMode
 
-**RadCalendarView** provides three modes for displaying dates. They are `Month`, `Week`, `Year`, `Day` and `MultiDay` and are included in the `CalendarDisplayMode` enumeration.
+**RadCalendarView** provides three modes for displaying dates. They are `Month`, `Week`, `Year`, `Day`, `MultiDay`and `Agenda` and are included in the `CalendarDisplayMode` enumeration.
 These modes represent the period that is displayed at once by the control. 
 To change the current mode use the CalendarView **DisplayMode** property. If there is no DisplayMode set, the default value is **Month**
 

@@ -10,13 +10,19 @@ publish: true
 
 # RadCalendarView: DisplayMode
 
-**RadCalendarView** provides three modes for displaying dates. They are `Month`, `Week` and `Year` and are included in the `CalendarDisplayMode` enumeration.
-These modes represent the period that is displayed at once by the control. To see the current mode use the method **getDisplayMode()** and to change it, use **setDisplayMode(CalendarDisplayMode)**.
-You can also change the display mode through the XML attribute **displayMode**.
+**RadCalendarView** provides three modes for displaying dates. They are `Month`, `Week`, `Year`, `Day` and `MultiDay` and are included in the `CalendarDisplayMode` enumeration.
+These modes represent the period that is displayed at once by the control. 
+To change the current mode use the CalendarView **DisplayMode** property. If there is no DisplayMode set, the default value is **Month**
 
 ## Month
 
-This is the default display mode for **RadCalendarView** and means that the control displays a representation of one month. It looks like this:
+This is the default display mode for **RadCalendarView** and means that the control displays a representation of one month. 
+
+```C#
+RadCalendarView calendarView = new RadCalendarView();
+```
+
+This is the result:
 
 ![TelerikUI-Calendar-Display-Mode-Month](images/calendar-display-mode-1.png "This is the look of RadCalendarView when the display mode is Month.")
 
@@ -24,9 +30,9 @@ This is the default display mode for **RadCalendarView** and means that the cont
 
 This mode represents the dates from one week and they look as one of the rows that are displayed while the control is in Month display mode. Let's set the display mode of our **RadCalendarView** instance to `Week`:
 
-
 ```C#
-	calendarView.DisplayMode = CalendarDisplayMode.Week;
+RadCalendarView calendarView = new RadCalendarView();
+calendarView.DisplayMode = CalendarDisplayMode.Week;
 ```
 
 Here's the result:
@@ -37,7 +43,87 @@ Here's the result:
 
 This mode represents all dates from one year grouped in months in a way similar to a calendar that stands on the wall. Here's how it looks:
 
+```C#
+RadCalendarView calendarView = new RadCalendarView();
+calendarView.DisplayMode = CalendarDisplayMode.Year;
+```
+
+How the Year Mode looks:
+
 ![TelerikUI-Calendar-Display-Mode-Year](images/calendar-display-mode-3.png "This is the look of RadCalendarView when the display mode is Year.")
 
 Since the default look of the year view contains a lot of dates it may seem too overcrowded on smaller devices. This is why this view also has a compact mode, where the months are represented only by their names and the exact dates are not drawn.
-Whether the Year view is in compact mode can be changed through the XML attribute **isYearModeCompact** or through the **setYearModeCompact(boolean)** method. The current value can be accessed through the **getYearModeCompact()** method.
+Whether the Year view is in compact mode can be changed through the **YearCompactMode**(*bool*) property. 
+
+```C#
+RadCalendarView calendarView = new RadCalendarView();
+calendarView.DisplayMode = CalendarDisplayMode.Year;
+calendarView.YearModeCompact = true;
+```
+![TelerikUI-Calendar-Display-Mode-YearModeCompact](images/calendar-displaymodes-yearcompact.png "This is the look of RadCalendarView when the display mode is Year Mode Compact.")
+
+## Day
+
+Day ViewMode allows you to display the schedule for a specific day in RadCalendarView. 
+
+```C#
+RadCalendarView calendarView = new RadCalendarView();
+calendarView.DisplayMode = CalendarDisplayMode.Day;
+```
+
+Here is how the DisplayMode **Day** looks:
+
+![TelerikUI-Calendar-Display-Mode-Day](images/calendar-displaymodes-day.png "This is the look of RadCalendarView when the display mode is Multi Day.")
+
+Sample Day View example can be found in our [Xamarin.Android Samples]({%slug sdk-browser-overview%}#native-only-examples) inside the /Calendar/DayView folder.
+
+## MultiDay
+
+RadCalendarView comes with MultiDay view mode which enables you to create a detailed view of the schedule for a specific day (or days). 
+
+```C#
+RadCalendarView calendarView = new RadCalendarView();
+calendarView.DisplayMode = CalendarDisplayMode.MultiDay;
+```
+Here is how the **MultiDay** DisplayMode looks:
+
+![TelerikUI-Calendar-Display-Mode-MultiDay](images/calendar-displaymodes-multiday.png "This is the look of RadCalendarView when the display mode is Multi Day.")
+
+Sample MultiDay GettingStarted example can be found in our [Xamarin.Android Samples]({%slug sdk-browser-overview%}#native-only-examples) inside the /Calendar/MultiDayView folder.
+
+## Agenda
+
+Agenda display mode shows a list of the scheduled appointments grouped by date. With Agenda you can enable the app users to quickly check on everything coming up in their calendars.
+
+```C#
+RadCalendarView calendarView = new RadCalendarView();
+calendarView.DisplayMode = CalendarDisplayMode.Agenda;
+```
+
+Here is how the Agenda Display Mode looks:
+
+![TelerikUI-Calendar-Display-Mode-Agenda](images/calendar-displaymodes-agenda.png "This is the look of RadCalendarView when the display mode is agenda.")
+
+Sample DisplayMode example with Agenda can be found in our [Xamarin.Android Samples]({%slug sdk-browser-overview%}#native-only-examples) inside the /Calendar/DisplayMode folder.
+
+## Change Display Mode
+
+The CalendarView DisplayMode can be easily changed using the CalendarView.**ChangeDisplayMode** method.
+
+Example:
+
+```C#
+RadCalendarView calendarView = new RadCalendarView();
+
+If(calendarView.DisplayMode == CalendarView.Month)
+{
+	calendarView.ChangeDisplayMode(CalendarView.Agenda, false);
+}
+```
+
+A sample DisplayMode example can be found in our [Xamarin.Android Samples]({%slug sdk-browser-overview%}#native-only-examples) inside the /Calendar/DisplayMode folder.
+
+# See Also
+
+- [Events]({%slug calendar-android-events%})
+- [Selection]({%slug calendar-android-selection%})

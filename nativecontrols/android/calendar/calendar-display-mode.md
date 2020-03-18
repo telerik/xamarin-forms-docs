@@ -60,6 +60,7 @@ RadCalendarView calendarView = new RadCalendarView();
 calendarView.DisplayMode = CalendarDisplayMode.Year;
 calendarView.YearModeCompact = true;
 ```
+
 ![TelerikUI-Calendar-Display-Mode-YearModeCompact](images/calendar-displaymodes-yearcompact.png "This is the look of RadCalendarView when the display mode is Year Mode Compact.")
 
 ## Day
@@ -75,7 +76,7 @@ Here is how the DisplayMode **Day** looks:
 
 ![TelerikUI-Calendar-Display-Mode-Day](images/calendar-displaymodes-day.png "This is the look of RadCalendarView when the display mode is Multi Day.")
 
-Sample Day View example can be found in our [Xamarin.Android Samples]({%slug developer-focused-examples%}#native-only-examples) inside the /Calendar/DayView folder.
+>tip Sample Day View example can be found in our [Xamarin.Android Samples]({%slug developer-focused-examples%}#native-only-examples) inside the /Calendar/DayView folder.
 
 ## MultiDay
 
@@ -85,11 +86,12 @@ RadCalendarView comes with MultiDay view mode which enables you to create a deta
 RadCalendarView calendarView = new RadCalendarView();
 calendarView.DisplayMode = CalendarDisplayMode.MultiDay;
 ```
+
 Here is how the **MultiDay** DisplayMode looks:
 
 ![TelerikUI-Calendar-Display-Mode-MultiDay](images/calendar-displaymodes-multiday.png "This is the look of RadCalendarView when the display mode is Multi Day.")
 
-Sample MultiDay GettingStarted example can be found in our [Xamarin.Android Samples]({%slug developer-focused-examples%}#native-only-examples) inside the /Calendar/MultiDayView folder.
+>tip Sample MultiDay GettingStarted example can be found in our [Xamarin.Android Samples]({%slug developer-focused-examples%}#native-only-examples) inside the /Calendar/MultiDayView folder.
 
 ## Agenda
 
@@ -104,7 +106,7 @@ Here is how the Agenda Display Mode looks:
 
 ![TelerikUI-Calendar-Display-Mode-Agenda](images/calendar-displaymodes-agenda.png "This is the look of RadCalendarView when the display mode is agenda.")
 
-Sample DisplayMode example with Agenda can be found in our [Xamarin.Android Samples]({%slug developer-focused-examples%}#native-only-examples) inside the /Calendar/DisplayMode folder.
+>tip Sample DisplayMode example with Agenda can be found in our [Xamarin.Android Samples]({%slug developer-focused-examples%}#native-only-examples) inside the /Calendar/DisplayMode folder.
 
 ## Change Display Mode
 
@@ -121,7 +123,7 @@ If(calendarView.DisplayMode == CalendarView.Month)
 }
 ```
 
-A sample DisplayMode example can be found in our [Xamarin.Android Samples]({%slug developer-focused-examples%}#native-only-examples) inside the /Calendar/DisplayMode folder.
+>tip Sample DisplayMode example can be found in our [Xamarin.Android Samples]({%slug developer-focused-examples%}#native-only-examples) inside the /Calendar/DisplayMode folder.
 
 # See Also
 

@@ -171,7 +171,7 @@ The presenter class for this view mode is <code>TKCalendarFlowPresenter</code>.
 
 ## Examples
 
-Sample View Modes example with different TKClanedar ViewModes can be found in our native [Xamarin.iOS Examples/Calendar folder]({%slug developer-focused-examples%}#native-only-examples).
+>tip Sample View Modes example with different TKClanedar ViewModes can be found in our native [Xamarin.iOS Examples/Calendar folder]({%slug developer-focused-examples%}#native-only-examples).
 
 # See Also
 

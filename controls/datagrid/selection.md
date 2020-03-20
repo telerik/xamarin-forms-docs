@@ -74,6 +74,7 @@ Additional functionalities for programmatic selecting and deselecting items are 
 * **SelectAll**(): Selects all the items as defined when SelectionMode is "Multiple".
 * **DeselectAll**(): Clears the current selected items as defined by the SelectionUnit property.
 
+### Example
 In order to illustrate how these methods can be used, let's have the following example:
 
 First, add a sample business object:
@@ -88,7 +89,7 @@ Here is the RadDataGrid definition:
 
 ```XAML
 <telerikDataGrid:RadDataGrid x:Name="dataGrid"
-							 ItemsSource="{Binding GridSource}" />
+							 ItemsSource="{Binding People}" />
 ```
 
 Lastly, set the ViewModel class as a BindingContext:

@@ -1,9 +1,9 @@
 ---
-title: Wrap Label Text
+title: Wrap Label Text on iOS
 description: Enabing text wrapping inside a data point or axis tick label.
 type: how-to
-page_title: How to enable text wrapping in Label
-slug: chart-label-text-wrap
+page_title: How to enable text wrapping in Label on iOS
+slug: chart-label-text-wrap-ios
 position: 
 tags: chart, series, axes, labels, custom
 res_type: kb
@@ -25,7 +25,7 @@ res_type: kb
 
 ## Description
 
-How to wrap text inside an axis tick label or a series data point label.
+How to wrap text inside an axis tick label or a series data point label on iOS.
 
 ## Solution
 

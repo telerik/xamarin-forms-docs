@@ -55,6 +55,14 @@ Once you make a selection, you can get or modify a collection with the selected 
 
 >note You can listen to the CollectionChanged event of the SelectedItems directly.
 
+## Events
+
+- **SelectionChanged**: An event that is triggered whenever the SelectedItems collection is changed. SelectionChanged event handler receives two parameters:
+	* The sender argument which is of type object, but can be cast to the __RadDataGrid__ type.
+	* A __DataGridSelectionChangedEventArgs__ object which provides the following properties:
+		- RemovedItems - gets a list of the removed items from the SelectedItems collection;
+		- AddedItems - gets a list of the added items to the SelectedItems collection.
+
 ## Methods
 
 Additional functionalities for programmatic selecting and deselecting items are exposed by RadDataGrid as methods. They also depend on the applied **SelectionUnit**.

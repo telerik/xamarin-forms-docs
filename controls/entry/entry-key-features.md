@@ -77,6 +77,8 @@ RadEntry control has the following properties for defining the Font Options:
 
 >important You can find a working demo labeled **Key Features** in the Entry/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
+>tip For a full list of the provided properties of RadEntry, check its API reference here: [RadEntry Properties](https://docs.telerik.com/devtools/xamarin/api/Telerik.XamarinForms.Input.RadEntry.html#properties).
+
 ## See Also
 
 - [Events]({% slug entry-events%})

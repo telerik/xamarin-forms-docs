@@ -31,7 +31,7 @@ How to wrap text inside an axis tick label or a series data point label on iOS.
 
 You can use `Environment.NewLine` and break up the text to wrap it inside the label. This can be done witout needing a custom renderer by inheriting `LabelFormatterBase<T>` and splitting up the long text into new lines.  
 
-Before getting started with this tutorial, please visit the [RadChart LabelFormatter]({%slug axes-overview#label-formatter %}) documentation to understand how to use a LabelFormatter.
+Before getting started with this tutorial, please visit the [RadChart Axes Features LabelFormatter]({%slug axes-overview%}#common-axis-features) documentation to understand how to use a LabelFormatter.
 
 
 ### Custom LabelFormatter
@@ -197,5 +197,5 @@ You can also use this same technique on series data point labels by setting the 
 
 ## See Also
 
-* [Axes Overview - Label Formatter]({%slug axes-overview#label-formatter %})
-* [Series Features - Labels Customization]({%slug chart-series-features#labels-customization %})
+* [Axes Overview]({%slug axes-overview%})
+* [Series Features - Labels Customization]({%slug chart-series-features%}#labels-customization)

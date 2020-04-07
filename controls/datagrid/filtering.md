@@ -156,6 +156,11 @@ The following property is used to enable/disable the filtering of a specific col
 
 The appearance of the Filtering UI can be customized by inheriting the **DataGridFilterControlBase** class. For more details on this check [How to customize Filtering UI]({%slug datagrid-howto-customize-filtering-ui%}) article.
 
+
+## Filtering for Template Column
+
+Filtering for TemplateColumn is available since R2 2020 Official Release. More details how the filtering could be applied to the DataGrid TemplateColumn - check the [Filtering for TemplateColumn]({%slug datagrid-columns-template-column%}#filtering-for-templatecolumn) section from our documentation.
+
 ## See Also
 
 - [Grouping]({%slug datagrid-grouping-overview%})

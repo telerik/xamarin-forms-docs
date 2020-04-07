@@ -17,10 +17,12 @@ If you want to completely customize the content of the cells in a grid column yo
 * **GroupDescriptor** (*GroupDescriptorBase*)
 * **CellContentTemplate** (DataTemplate): Defines the DataTemplate instance that defines the appearance of each cell associated with this column.
 * **CellContentTemplateSelector** (DataTemplateSelector): Defines a DataTemplateSelector instance that may be used to retrieve dynamic data templates on a per cell basis.
+* **CellEditTemplate** (DataTemplate): Defines the editor assosiated with the concrete column. The CellEditTemplate is displayed when the cell is in edit mode.
+* **FilterControlTemplate**(DataTemplate): Specifies the user defined template used for Filtering UI. The template must contain an instance of the Telerik.XamarinForms.DataGrid.DataGridFilterControlBase class
 
 >important More information about Sorting and Grouping can be found in [DataGrid Soting]({%slug datagrid-sorting-overview%}) and [DataGrid Grouping]({%slug datagrid-grouping-overview%}) articles.
 
-## Example
+## Sorting and Grouping for Template Column
 
 The example below shows how Sorting and Grouping can be applied to the DataGrid Template Column. 
 
@@ -89,6 +91,38 @@ The DataGrid definition:
 ```
 
 ![Template Column](images/templatecolumn-overview.png)
+
+## Filtering for TemplateColumn
+
+From R2 2020 DataGrid allows you to apply a custom filtering to the TemplateColumn. In this way you can filter it's data. 
+
+You can apply the DataGrid FilterDescriptors to the TemplateColumn using the FilterControlTemplate property
+
+* **FilterControlTemplate**(DataTemplate): Specifies the user defined template used for Filtering UI. The template must contain an instance of the Telerik.XamarinForms.DataGrid.DataGridFilterControlBase class
+
+### Example
+
+#### 1. The first step is to create the custom Control which will inherit from the **DataGridFilterControlBase** class:
+
+<snippet id='datagrid-filtering-templatecolumn-filteringcontrol-xaml'/>
+
+<snippet id='datagrid-filtering-templatecolumn-filteringcontrol-cs'/>
+
+You should override the required methods as shown in the C# snippet above.
+
+#### 2. Use the FilterControlTemplate property to specify the already created component as a filtering control to the template column.
+
+<snippet id='datagrid-filtering-templatecolumn'/>
+
+The **ViewModel** used in the example is declared as following:
+
+<snippet id='datagrid-filtering-viewmodel'/>
+	
+And the **City** custom object:
+
+<snippet id='datagrid-filtering-column'/>
+
+>important You can review the FilterTemplateColumn example that shows how to achieve the functionality in the **Examples/DataGrid/Filtering** folder from the **SDK Samples Browser** application.
 
 ## See Also
 

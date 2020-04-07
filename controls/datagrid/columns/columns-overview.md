@@ -51,8 +51,7 @@ All types of columns inherit from the **DataGridColumn** class which provides th
 * **CellEditTemplate** (DataTemplate): Defines the editor assosiated with the concrete column. The CellEditTemplate is displayed when the cell is in edit mode.
 * **FilterControlTemplate**(DataTemplate): Specifies the user defined template used for Filtering UI. The template must contain an instance of the Telerik.XamarinForms.DataGrid.DataGridFilterControlBase class
 
->important **CellContentTemplate**, **CellEditTemplate** and **FilterControlTemplate** properties are part of the DataGrid features from R2 2020 Official Release. More details on this feature check the [Cell Templates]({%slug datagrid-cell-templates%})article.
-
+>important **CellContentTemplate** and **CellEditTemplate** properties are part of the DataGrid features from R2 2020 Official Release. More details on this feature check the [Cell Templates]({%slug datagrid-cell-templates%})article.
 
 >tip More information about **CellDecorationStyle** and  **CellDecorationStyleSelector** can be found in [Columns Styling]({%slug datagrid-columns-styling%}) topic.
 

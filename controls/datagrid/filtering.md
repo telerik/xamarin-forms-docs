@@ -157,9 +157,36 @@ The following property is used to enable/disable the filtering of a specific col
 The appearance of the Filtering UI can be customized by inheriting the **DataGridFilterControlBase** class. For more details on this check [How to customize Filtering UI]({%slug datagrid-howto-customize-filtering-ui%}) article.
 
 
-## Filtering for Template Column
+## FilterControlTemplate
 
-Filtering for TemplateColumn is available since R2 2020 Official Release. More details how the filtering could be applied to the DataGrid TemplateColumn - check the [Filtering for TemplateColumn]({%slug datagrid-columns-template-column%}#filtering-for-templatecolumn) section from our documentation.
+From R2 2020 DataGrid allows you to apply filtering to the datagrid column using the FilterControlTemplate property.
+
+* **FilterControlTemplate**(DataTemplate): Specifies the user defined template used for Filtering UI. The template must contain an instance of the Telerik.XamarinForms.DataGrid.DataGridFilterControlBase class
+
+### Example using the TempateColumn
+
+#### 1. The first step is to create the custom Control which will inherit from the **DataGridFilterControlBase** class:
+
+<snippet id='datagrid-filtering-templatecolumn-filteringcontrol-xaml'/>
+
+<snippet id='datagrid-filtering-templatecolumn-filteringcontrol-cs'/>
+
+You should override the required methods as shown in the C# snippet above.
+
+#### 2. Use the FilterControlTemplate property to specify the already created component as a filtering control to the template column.
+
+<snippet id='datagrid-filtering-templatecolumn'/>
+
+The **ViewModel** used in the example is declared as following:
+
+<snippet id='datagrid-filtering-viewmodel'/>
+	
+And the **City** custom object:
+
+<snippet id='datagrid-filtering-column'/>
+
+>important You can review the FilterTemplateColumn example that shows how to achieve the functionality in the **Examples/DataGrid/Filtering** folder from the **SDK Samples Browser** application.
+
 
 ## See Also
 

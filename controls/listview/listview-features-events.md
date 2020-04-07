@@ -1,6 +1,7 @@
 ---
 title: Events
 page_title: Events
+description: Check our &quot;Events&quot; documentation article for Telerik ListView for Xamarin control.
 position: 12
 slug: listview-features-events
 description: Describing the events of the RadListView
@@ -25,7 +26,7 @@ The RadListView component exposes the following events:
 
 * __SelectionChanged__ - occurs when the SelectionItems collection is updated. The __SelectionChanged__ event handler receives two parameters:
 	* The sender argument which is of type object, but can be cast to the __RadListView__ type.
-	* A __NotifyCollectionChangedEventArgs__ object which provides information on the collection changed event. For more details check [here](https://msdn.microsoft.com/en-us/library/system.collections.specialized.notifycollectionchangedeventargs(v=vs.110).aspx).
+	* A __NotifyCollectionChangedEventArgs__ object which provides information on the collection changed event. For more details check [NotifyCollectionChangedEventArgs Class](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs) topic.
 
 ### Group/Reorder events
 

@@ -1,7 +1,8 @@
 ---
 title: Events
 page_title: Events
-position: 4
+description: Check our &quot;Events&quot; documentation article for Telerik TemplatedPicker for Xamarin control.
+position: 5
 slug: templated-picker-events
 ---
 

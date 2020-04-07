@@ -1,6 +1,7 @@
 ---
 title: Localization
 page_title: Localization
+description: Check our &quot;Localization&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 7
 slug: datagrid-features-localization
 ---
@@ -44,11 +45,41 @@ The resource file ends with "de.resx" and is automatically used when the languag
 #### Figure 3: Custom Resource File for German language
 ![custom resource manager](images/datagrid_resourcemanager.png)
 
->important You can check a working example in the **DataGrid/Localization/CustomResourceManager** folder within the **SDK Samples Browser**.
+>important You can check working localization examples in the **DataGrid/Localization** folder within the [SDK Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
+>
+>You can directly explore the code in the [SDKBrowser Examples repository on GitHub](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/DataGridControl/LocalizationCategory).
 
+## Localization Keys
+
+| Localization Key | Default Value | Related to |
+| -----------------| ------------- |----------- |
+| And | And | Filtering UI |
+| Contains | Contains | Filter by option in Filtering UI |
+| DoesNotContain | Does not contain | Filter by option in Filtering UI |
+| DoesNotEqualTo | Is not equal to | Filter by option in Filtering UI |
+| EndsWith | Ends with | Filter by option in Filtering UI |
+| EqualsTo | Is equal to | Filter by option in Filtering UI |
+| FilterText | FILTER | Filtering UI |
+| FilterUISectionText	| Filter by: | Filtering UI |
+| FilterWatermarkText | Enter Filter Criteria | Filtering UI |
+| GroupText |	Group | Group option in Filtering UI |
+| GroupUISectionText | Group by: | More options in Filtering UI | 
+| IsGreaterThan | Is greater than | Filter by option in Filtering UI |
+| IsGreaterThanOrEqualTo | Is greater than or equal to | Filter by option in Filtering UI |
+| IsLessThan | Is less than | Filter by option in Filtering UI |
+| IsLessThanOrEqualTo | Is less than or equal to | Filter by option in Filtering UI |
+| LoadOnDemandButtonText | LOAD MORE | Load on Demand feature | 
+| MoreText | More | More button in Filtering UI |
+| OptionsSectionText | Options: | Filtering UI |
+| Or | Or | Filtering UI |
+| ReorderColumnsUISectionText | Visible Columns: | More options in Filtering UI
+| ResetText | RESET | Filtering UI |
+| StartsWith | Starts with | Filter by option in Filtering UI |
+| UngroupText | Ungroup | Reset grouping button in Filtering UI |
 
 ## See Also
 
-* [DataGrid Sorting]({%slug datagrid-sorting-overview%})
-* [DataGrid Filtering]({%slug datagrid-filtering-overview%})
-* [DataGrid Grouping]({%slug datagrid-grouping-overview%})
+* [Localization and Globalization]({%slug common-localization-and-globalization %})
+* [Filtering]({%slug datagrid-filtering-overview%})
+* [Grouping]({%slug datagrid-grouping-overview%})
+* [Customize the Filtering UI]({%slug datagrid-howto-customize-filtering-ui%})

@@ -1,7 +1,8 @@
 ---
 title: Events
 page_title: Events
-position: 4
+description: Check our &quot;Events&quot; documentation article for Telerik DateTimePicker for Xamarin control.
+position: 5
 slug: datetime-picker-events
 ---
 
@@ -13,6 +14,12 @@ slug: datetime-picker-events
 
 ```XAML
 <telerikInput:RadDateTimePicker SelectionChanged="RadDateTimePicker_SelectionChanged"/>
+```
+
+In addition to this, you need to add the following namespace:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
 ```
 
 and the **SelectionChanged** event, where the *sender* is the RadDateTimePicker control

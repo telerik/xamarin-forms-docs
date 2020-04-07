@@ -1,6 +1,7 @@
 ---
 title: Customizations
 page_title: Calendar Customizations
+slug: ios-calendar-customization
 position: 8
 ---
 

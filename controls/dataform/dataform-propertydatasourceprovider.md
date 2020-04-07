@@ -1,6 +1,7 @@
 ---
 title: Dynamic PropertyDataSource
 page_title: Dynamic PropertyDataSource
+description: Check our &quot;Dynamic PropertyDataSource&quot; documentation article for Telerik DataForm for Xamarin control.
 slug: dataform-propertydatasourceprovider
 position: 6
 ---

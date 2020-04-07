@@ -1,10 +1,10 @@
 ---
 title: DateTime Format Strings
 page_title: DateTime Format Strings
+description: Check our &quot;DateTime Format Strings&quot; documentation article for Telerik DateTimePicker for Xamarin control.
 position: 2
 slug: datetime-picker-format-string
 ---
-
 
 # String Format
 
@@ -14,7 +14,7 @@ Date and Time Picker for Xamarin allows you to use standard or custom date and t
 
 The available Standard Date and Time format strings that can be set to the SpinnerFormatString property are described in the table below:
 
-| Supported Standar Date and Time Format String |
+| Supported Standard Date and Time Format String |
 | -------- |
 | "g" |
 | "d" |
@@ -45,6 +45,50 @@ The available Standard Date and Time format strings that can be set to the Spinn
 | "mm:HH" |
 
 >important You can set only short [Standard Date and Time Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings) to the DateTime Picker control.
+
+## Supported Separators
+
+When SpinnerFormatString is set and device culture is changed, the separators used for the format string won't be changed:
+
+| Supported Date and Time Separators Formats |
+| -------- |
+| "-" |
+| "." |
+| "'" |
+| " " |
+| ":" |
+
+## Examples
+
+### SpinnerFormatString="MMMM dd"
+
+```XAML
+<telerikInput:RadDateTimePicker SpinnerFormatString="MMMM dd" />
+```
+
+And the result:
+
+![](images/datetimepicker-string-format-mmmm-dd.png)
+
+### SpinnerFormatString="dd"
+
+```XAML
+<telerikInput:RadDateTimePicker SpinnerFormatString="dd" />
+```
+
+And the result:
+
+![](images/datetimepicker-string-format-dd.png)
+
+### SpinnerFormatString="H:mm"
+
+```XAML
+<telerikInput:RadDateTimePicker SpinnerFormatString="H:mm" />
+```
+
+And the result:
+
+![](images/datetimepicker-string-format-H-mm.png)
 
 ## See Also
 

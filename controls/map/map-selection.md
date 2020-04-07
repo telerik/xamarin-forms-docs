@@ -1,6 +1,7 @@
 ---
 title: Selection
 page_title: Map Selection
+description: Check our &quot;Selection&quot; documentation article for Telerik Map for Xamarin control.
 position: 6
 slug: map-selection
 ---

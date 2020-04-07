@@ -1,6 +1,7 @@
 ---
 title: Custom Busy Content
 page_title: RadBusyIndicator | Custom Busy Content
+description: Check our &quot;Custom Busy Content&quot; documentation article for Telerik BusyIndicator for Xamarin control.
 position: 2
 slug: busyindicator-custom-busy-content
 ---

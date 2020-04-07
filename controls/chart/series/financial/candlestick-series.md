@@ -1,6 +1,7 @@
 ---
 title: Candlestick Series
 slug: chart-series-candlestick-series
+description: Check our &quot;Candlestick Series&quot; documentation article for Telerik Chart for Xamarin control.
 position: 1
 ---
 

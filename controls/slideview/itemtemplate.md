@@ -1,6 +1,7 @@
 ---
 title: ItemTemplate
 page_title: ItemTemplate
+description: Check our &quot;ItemTemplate&quot; documentation article for Telerik SlideView for Xamarin control.
 position: 4
 slug: slideview-features-itemtemplate
 ---

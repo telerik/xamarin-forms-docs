@@ -1,6 +1,7 @@
 ---
 title: Scheduling UI
 page_title: Scheduling UI
+description: Check our &quot;Scheduling UI&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 7
 slug: calendar-scheduling-ui
 ---
@@ -17,7 +18,7 @@ In order to enable the feature, set **SchedulingUiEnabled** Boolean property of 
 
 >note Please note that scheduling screens can be shown only in DayView and MultiDayView modes. You could refer to the [View Modes]({%slug calendar-features-navigation-and-view-mode%}) topic for more information on the available in RadCalendar views. 
 
->important If you have a collection of custom appointments as a source for RadCalendar - the custom appointment class should inherit from the **Telerik.XamarinForms.Input.Appointment** class. You should also make sure to add an empty constructor for the custom appointment. These requirements are needed in order to properly create appointments through Scheduling UI.
+>important If you have a collection of custom appointments as a source for RadCalendar - the custom appointment class should inherit from the **Telerik.XamarinForms.Input.Appointment** class. You should also make sure to add a default constructor for the custom appointment. These requirements are needed in order to properly create appointments through Scheduling UI.
 
 * When the end user taps on an appointment, the following screen appears, giving the option to edit or delete the appointment:
 

@@ -1,6 +1,7 @@
 ---
 title: ImageCard
 page_title: Chat ImageCardContext
+description: Check our &quot;ImageCard&quot; documentation article for Telerik Chat for Xamarin control.
 position: 1
 slug: chat-imagecard
 ---

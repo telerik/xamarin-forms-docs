@@ -1,6 +1,7 @@
 ---
 title: ItemPicker
 page_title: Chat ItemPicker
+description: Check our &quot;ItemPicker&quot; documentation article for Telerik Chat for Xamarin control.
 position: 3
 slug: chat-itempicker
 ---

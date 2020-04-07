@@ -1,6 +1,7 @@
 ---
 title: Appointments
 page_title: Appointments
+description: Check our &quot;Appointments&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 5
 slug: calendar-appointments
 ---
@@ -19,9 +20,9 @@ RadCalendar can display appointments by setting its **AppointmentsSource** prope
 - **IsAllDay** (*bool*): indicates whether the appointment will take all day;
 - **RecurrenceRule** (*IRecurrenceRule*): defines basic properties of the recurrence rule of the appointment, for more details go to [Recurrence]({%slug calendar-recurrence-overview %}) topic.
 
-The other alternative is to create custom appointment class that inherits from the *Telerik.XamarinForms.Input.IAppointment* interface. The interface, however, misses the RecurrenceRule property, so we'd recommend you use directly the **Appointment** class when working with appointments.
+The other alternative is to create custom appointment class that implements the *Telerik.XamarinForms.Input.IAppointment* interface. The interface, however, misses the RecurrenceRule property, so we'd recommend you use directly the **Appointment** class when working with appointments.
 
-Here is a quick example on how you can create Appointments collection and bind it to the AppointmentsSource property of RadCalendar.
+Here is a quick example on how you can create Appointments collection and bind it to the **AppointmentsSource** property of RadCalendar.
 
 First, create a ViewModel class and add "Appointments" collection inside it:
 

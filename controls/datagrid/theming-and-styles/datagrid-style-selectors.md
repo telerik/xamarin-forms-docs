@@ -1,6 +1,7 @@
 ---
 title: Style Selectors
 page_title: Style Selectors
+description: Check our &quot;Style Selectors&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 2
 slug: datagrid-style-selectors
 ---

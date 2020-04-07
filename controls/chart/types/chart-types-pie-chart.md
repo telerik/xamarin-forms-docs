@@ -1,6 +1,7 @@
 ---
 title: Pie Chart
 position: 2
+description: Check our &quot;Pie Chart&quot; documentation article for Telerik Chart for Xamarin control.
 slug: chart-types-pie-chart
 ---
 

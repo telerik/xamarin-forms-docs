@@ -1,6 +1,7 @@
 ---
 title: ExpanderHeader control
 page_title: ExpanderHeader control
+description: Check our &quot;ExpanderHeader control&quot; documentation article for Telerik Expander for Xamarin control.
 position: 3
 slug: expander-expanderheader
 ---

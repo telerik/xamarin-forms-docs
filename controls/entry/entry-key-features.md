@@ -1,6 +1,7 @@
 ---
 title: Key Features
 page_title: Key Features
+description: Check our &quot;Key Features&quot; documentation article for Telerik Entry for Xamarin control.
 position: 2
 slug: entry-key-features
 ---
@@ -75,6 +76,8 @@ RadEntry control has the following properties for defining the Font Options:
 <snippet id='entry-font-options-xaml' />
 
 >important You can find a working demo labeled **Key Features** in the Entry/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
+>tip For a full list of the provided properties of RadEntry, check its API reference here: [RadEntry Properties](https://docs.telerik.com/devtools/xamarin/api/Telerik.XamarinForms.Input.RadEntry.html#properties).
 
 ## See Also
 

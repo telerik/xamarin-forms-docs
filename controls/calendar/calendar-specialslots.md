@@ -1,6 +1,7 @@
 ---
 title: Special and Restricted Slots
 page_title: Special and Restricted Slots
+description: Check our &quot;Special and Restricted Slots&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 8
 slug: calendar-specialslots
 ---
@@ -16,7 +17,9 @@ Every SpecialSlot has the following properties:
 * **StartDate**;
 * **EndDate**;
 * **RecurrencePattern**: Defines whether the slot will be displayed for repeating days;
-* **IsReadOnly**: When set to **True** the slot is disabled (restricted), meaning the end user wouldn't be able to create or modify appointments at that slot.
+* **IsReadOnly**: When set to **True** the slot is disabled (restricted), meaning the end user wouldn't be able to create or modify appointments at that slot (tapping over a read-only slot will not show Create Appointment screen). 
+
+>note Appointments that cover restricted and non restricted slots at the same time can still be modified through the [Scheduling UIs]({%slug calendar-scheduling-ui%}).
 
 Below you can find a quick example how to create special and restricted slots.
 
@@ -89,3 +92,4 @@ Below you can check the result on different platforms:
 * [Date Properties]({%slug calendar-date-properties%})
 * [View Modes]({%slug calendar-features-navigation-and-view-mode%})
 * [Appointments]({%slug calendar-events%})
+* [Scheduling UI]({%slug calendar-scheduling-ui%})

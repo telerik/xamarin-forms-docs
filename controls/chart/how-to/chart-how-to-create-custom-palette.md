@@ -1,6 +1,7 @@
 ---
 title: Custom Chart Palette
 page_title: Custom Chart Palette
+description: Check our &quot;Custom Chart Palette&quot; documentation article for Telerik Chart for Xamarin control.
 position: 1
 slug: chart-how-to-create-custom-palette
 ---

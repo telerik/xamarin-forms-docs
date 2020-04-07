@@ -1,7 +1,8 @@
 ---
 title: Methods
 page_title: Methods
-position: 5
+description: Check our &quot;Methods&quot; documentation article for Telerik DateTimePicker for Xamarin control.
+position: 6
 slug: datetime-picker-methods
 ---
 
@@ -16,6 +17,12 @@ slug: datetime-picker-methods
     <Button Text="Clear Selection" Clicked="OnClearSelectionClicked"/>
     <telerikInput:RadDateTimePicker x:Name="dateTimePicker"/>
 </StackLayout>
+```
+
+In addition to this, you need to add the following namespace:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
 ```
 
 and we can clear the selection inside the button click event:

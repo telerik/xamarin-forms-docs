@@ -2,7 +2,7 @@
 title: Structure and mechanics
 page_title: RadCalendarView Visual Structure and Mechanics | Telerik UI for Xamarin.Android Documentation
 description: Visual structure mechanics guide for the RadCalendarView from the Telerik Android UI suite.
-slug: calendar-visual-structure
+slug: calendar-android-visual-structure
 tags: radcalendarview, visualstructure, calendar
 position: 1
 publish: true

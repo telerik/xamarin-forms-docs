@@ -1,6 +1,7 @@
 ---
 title: DisplayValueFormat Attribute
 page_title: DisplayValueFormat Attribute
+description: Check our &quot;DisplayValueFormat Attribute&quot; documentation article for Telerik DataForm for Xamarin control.
 slug: dataform-annotations-display-value-format
 ---
 

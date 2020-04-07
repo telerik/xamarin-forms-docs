@@ -1,6 +1,7 @@
 ---
 title: Key Features
 page_title: Key Features
+description: Check our &quot;Key Features&quot; documentation article for Telerik ImageEditor for Xamarin control.
 position: 2
 slug: imageeditor-key-features
 ---

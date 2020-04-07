@@ -1,6 +1,7 @@
 ---
 title: Header and Footer
 page_title: Header and Footer
+description: Check our &quot;Header and Footer&quot; documentation article for Telerik ListView for Xamarin control.
 position: 7
 slug: listview-features-header-footer
 ---

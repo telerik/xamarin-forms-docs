@@ -1,6 +1,7 @@
 ---
 title: Labels Styling
 page_title: Labels Styling
+description: Check our &quot;Labels Styling&quot; documentation article for Telerik Map for Xamarin control.
 position: 0
 slug: map-styling-labelstyles
 ---

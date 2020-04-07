@@ -1,6 +1,7 @@
 ---
 title: Ranges
 page_title: Ranges
+description: Check our &quot;Ranges&quot; documentation article for Telerik Gauge for Xamarin control.
 position: 6
 slug: gauge-ranges
 ---

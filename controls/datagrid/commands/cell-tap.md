@@ -1,6 +1,7 @@
 ---
 title: CellTap Command
 page_title: CellTap Command
+description: Check our &quot;CellTap Command&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 1
 slug: datagrid-commands-cell-tap
 ---

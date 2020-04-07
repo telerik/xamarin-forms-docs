@@ -1,6 +1,7 @@
 ---
 title: Tool Tip Behavior
 page_title: Selection Behavior
+description: Check our &quot;Tool Tip Behavior&quot; documentation article for Telerik Chart for Xamarin control.
 position: 3
 slug: chart-behaviors-tooltip
 ---

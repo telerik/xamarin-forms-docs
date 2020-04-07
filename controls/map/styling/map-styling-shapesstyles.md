@@ -1,6 +1,7 @@
 ---
 title: Shapes Styling
 page_title: Shapes Styling
+description: Check our &quot;Shapes Styling&quot; documentation article for Telerik Map for Xamarin control.
 position: 1
 slug: map-styling-shapesstyles
 ---

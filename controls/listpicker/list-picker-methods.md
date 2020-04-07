@@ -1,7 +1,8 @@
 ---
 title: Methods
 page_title: Methods
-position: 5
+description: Check our &quot;Methods&quot; documentation article for Telerik ListPicker for Xamarin control.
+position: 6
 slug: list-picker-methods
 ---
 

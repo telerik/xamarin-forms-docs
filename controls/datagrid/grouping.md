@@ -1,6 +1,7 @@
 ---
 title: Grouping
 page_title: Grouping Overview
+description: Check our &quot;Grouping&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 4
 slug: datagrid-grouping-overview
 ---
@@ -11,15 +12,18 @@ slug: datagrid-grouping-overview
 
 ## Programmatic Grouping
 
-Programmatic grouping can be done by adding descriptoprs to the **GroupDescriptors** collection. There are two types of descriptors:
+Programmatic grouping can be done by adding descriptors to the **GroupDescriptors** collection. There are two types of descriptors:
 
-* [**PropertyGroupDescriptor**](#property-group-descriptor): using a property from the model as a group key.
+* [**PropertyGroupDescriptor**](#property-group-descriptor): use a property from the model as a group key.
 * [**DelegateGroupDescriptor**](#delegate-group-descriptor): create a custom group key which you can use.
 
 All GroupDescriptors are located in the Telerik.XamarinForms.Common.Data namespace:
 
 ```XAML
-xmlns:common="clr-namespace:Telerik.XamarinForms.Common.Data;assembly=Telerik.XamarinForms.Common"
+ xmlns:telerikCommon="clr-namespace:Telerik.XamarinForms.Common.Data;assembly=Telerik.XamarinForms.Common"
+```
+```C#
+using Telerik.XamarinForms.Common.Data;
 ```
 
 ### Property Group Descriptor
@@ -32,12 +36,51 @@ To use the PropertyGroupDescriptor you have to set its property PropertyName.
 
 >note You can easily sort the groups in ascending or descending order using the **SortOrder** property.
 
-<snippet id='datagrid-propertygroupdescriptor-xaml'/>
+Let's, for example, have the following business object:
+
+<snippet id='datagrid-grouping-propertygroupdescriptor-object' />
+
+And a ViewModel class with a collection of **Person** objects:
+
+<snippet id='datagrid-grouping-propertygroupdescriptor-viewmodel' />
+
+Next snippet demonstrates how you could group the people by "Department" property through the PropertyGroupDescriptor:
+
 ```XAML
-<grid:RadDataGrid.GroupDescriptors>
-	<common:PropertyGroupDescriptor PropertyName="Country"/>
-</grid:RadDataGrid.GroupDescriptors>
+<telerikDataGrid:RadDataGrid x:Name="dataGrid"
+							 ItemsSource="{Binding People}">
+	<telerikDataGrid:RadDataGrid.GroupDescriptors>
+		<telerikCommon:PropertyGroupDescriptor PropertyName="Department" />
+	</telerikDataGrid:RadDataGrid.GroupDescriptors>
+</telerikDataGrid:RadDataGrid>
 ```
+
+All that is left is to set the ViewModel as BindingContext of the page:
+
+<snippet id='datagrid-grouping-propertygroupdescriptor-setvm'/>
+
+Here is how the RadDataGrid looks when it is grouped:
+
+![](images/datagrid_grouping.png)
+
+### GroupHeaderTemplate
+
+In addition, you can create custom GroupHeaderTemplate in order to achieve the desired look when grouping the DataGrid. The BindingContext of the GroupHeader is a **GroupHeaderContext** object and it includes the following properties:
+
+* Descriptor: Specifies the used descriptor for the grouping;
+* Group: Gets details on the group such as:
+	* Items: Gets the child items of the group.
+	* Key: Gets the specific for the group key.
+* IsExpanded: Defines a value indicating whether the group is currently expanded (has its child items visible).
+* Level: Gets the zero-based level (or the depth) of the group.
+
+The snippet below shows how the GroupHeaderTemplate is defined:
+
+<snippet id='datagrid-grouping-groupheadertemplate' />
+
+Check the result in the image below:
+
+![](images/datagrid_grouping_groupheader.png)
 
 ### Delegate Group Descriptor
 
@@ -51,30 +94,17 @@ You have to set the following property of the DelegateGroupDescriptor:
 
 You have to create a class that implements the **IKeyLookup** interface which will return the Key you want to group by. Then you need to add the **DelegateGroupDescriptor** to the RadDataGrid.GroupDescriptors collection and set its **KeyLookUp** property.
 
+Check below a sample **IKeyLookup** implementation:
 
-The Custom **IKeyLookup** implementation
-
-<snippet id='datagrid-delegategroupdescriptor-csharp'/>
-```C#
-class CustomIKeyLookup : Telerik.XamarinForms.Common.Data.IKeyLookup
-{
-	public object GetKey(object instance)
-    {
-		return (instance as Club).Country[0];
-    }
-}
-```
+<snippet id='datagrid-grouping-delegategroupdescriptor-lookup'/>
 
 Adding it to the **GroupDescriptors** collection of the **RadDataGrid**:
 
-<snippet id='datagrid-delegategroupdescriptor-csharp'/>
-```C#
-this.grid.GroupDescriptors.Add(new DelegateGroupDescriptor() { KeyLookup = new CustomIKeyLookup() });
-```
+<snippet id='datagrid-grouping-delegategroupdescriptor'/>
 
-Here is how the RadDataGrid looks when it is grouped:
+Here is how the RadDataGrid looks when it is grouped through a DelegateGroupDescriptor:
 
-![](images/datagrid_grouping.png)
+![](images/datagrid_grouping_delegategroup.png)
 
 ## Grouping UI
 

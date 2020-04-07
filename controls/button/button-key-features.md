@@ -1,6 +1,7 @@
 ---
 title: Key Features
 page_title: Key Features
+description: Check our &quot;Key Features&quot; documentation article for Telerik Button for Xamarin control.
 position: 2
 slug: button-key-features
 ---

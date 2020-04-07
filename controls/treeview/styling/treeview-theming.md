@@ -1,6 +1,7 @@
 ---
 title: Theming
 page_title: Theming
+description: Check our &quot;Theming&quot; documentation article for Telerik TreeView for Xamarin control.
 position: 0
 slug: treeview-theming
 ---

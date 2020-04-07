@@ -1,13 +1,14 @@
 ---
 title: Getting Started
 page_title: Getting Started
+description: Check our &quot;Getting Started&quot; documentation article for Telerik Popup for Xamarin control.
 position: 1
 slug: popup-getting-started
 ---
 
 # Getting Started
 
-This article will guide you through the steps needed to add a basic **RadPopup** control in your application.
+This article will guide you through the steps needed to add a basic **RadPopup** control in your application. 
 
 * [Setting up the app](#1-setting-up-the-app)
 * [Adding the required Telerik references](#2-adding-the-required-telerik-references)
@@ -48,16 +49,18 @@ Take a look at the following topics on how to use the toolbox:
 	
 #### Create the control definition in XAML or C#.
 
-The snippet below shows a simple RadPopup definition:
+The next example shows a sample RadPopup attached to a Button control. The purpose of the Popup in this scenario is to receive user input - it contains RadRating control for allowing the user to select a rating and a button for closing the popup.
+
+Check below the Popup definition in XAML and in code-behind:
 
 <snippet id='popup-getting-started-xaml' />
 <snippet id='popup-getting-started-csharp' />
 
-and here are the referenced event handlers:
+And here are the referenced event handlers:
 
 <snippet id='popup-gettingstarted-events' />
 
-In addition to this, you need to add the following namespace:
+In addition to this, you need to add the following namespaces (*telerikInput* namespace is needed for the Rating control used in the example, in general it's not required for RadPopup):
 
 ```XAML
 xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
@@ -72,8 +75,12 @@ This is the result:
 
 ![RadPopup](images/popup_getting_started.png)
 
->important **SDK Browser** and **QSF** applications contain different examples that show RadPopup's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
+>important The presented example is available in Popup -> Getting Started folder of the [SDK Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
+>
+>You can directly explore the code in the [SDKBrowser Examples repository on GitHub](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/PopupControl/GettingStartedCategory/GettingStartedExample).
 
 ## See Also
 
-- [Key Features]({% slug popup-key-features %})
+- [Modal Popup Support]({%slug popup-key-features%}#modal-popup)
+- [Placement Configuration]({%slug popup-key-features%}#placement-configuration)
+- [Animation Settings]({%slug popup-key-features%}#animation-settings)

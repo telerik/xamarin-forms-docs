@@ -1,6 +1,7 @@
 ---
 title: Bar Series
 page_title: Bar Series
+description: Check our &quot;Bar Series&quot; documentation article for Telerik Chart for Xamarin control.
 position: 0
 slug: chart-series-bar-series
 ---

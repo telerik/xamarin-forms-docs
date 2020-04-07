@@ -1,6 +1,7 @@
 ---
 title: Positioning
 page_title: Positioning
+description: Check our &quot;Positioning&quot; documentation article for Telerik Gauge for Xamarin control.
 position: 5
 slug: gauge-positioning
 ---

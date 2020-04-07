@@ -1,6 +1,7 @@
 ---
 title: ItemTemplateSelector
 page_title: ItemTemplateSelector
+description: Check our &quot;ItemTemplateSelector&quot; documentation article for Telerik SlideView for Xamarin control.
 position: 5
 slug: slideview-itemtemplateselector
 ---

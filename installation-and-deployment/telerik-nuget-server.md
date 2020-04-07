@@ -15,6 +15,8 @@ The following steps demonstrate how users can take advantage of **Telerik NuGet 
 
 ## Visual Studio
 
+<iframe width="800" height="400" src="https://www.youtube.com/embed/c3m_BLMXNDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 The first step is to add the Telerik server to the NuGet package sources. This can be done in the Package Manager Settings from the Tools menu.
 
 ![](images/nuget-server/nuget-vs-pm-settings.png)

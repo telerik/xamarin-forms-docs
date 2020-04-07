@@ -1,6 +1,7 @@
 ---
 title: Theming and Style
 page_title: Theming and Style
+description: Check our &quot;Theming and Style&quot; documentation article for Telerik MaskedInput for Xamarin control.
 position: 8
 slug: maskedinput-theming-style
 ---

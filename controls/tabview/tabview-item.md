@@ -1,6 +1,7 @@
 ---
 title: TabViewItem control
 page_title: TabViewItem control
+description: Check our &quot;TabViewItem control&quot; documentation article for Telerik TabView for Xamarin control.
 description: TabViewItem control
 slug: tabview-item
 tags: tabviewitem, header

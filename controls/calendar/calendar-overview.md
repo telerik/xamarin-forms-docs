@@ -1,6 +1,7 @@
 ---
 title: Overview
 page_title: Overview
+description: Check our &quot;Overview&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 0
 slug: calendar-overview
 ---
@@ -14,6 +15,8 @@ slug: calendar-overview
 ## Key features
 
 * **Different view modes support**: Telerik Xamarin Calendar features year, month, week, multiday and day views. Read the [View Modes]({% slug calendar-features-navigation-and-view-mode %}) topic for more information.
+
+* **Agenda View**: Through the Agenda ViewMode you can quickly and easily check the scheduled appointments grouped by date. Fore more details on how to set it up, go to [Agenda View]({%slug calendar-agendaview %}) topic.
 
 * **Date Selection**: RadCalendar provides three different types of selection: Single, Multiple and Range. The selected dates can be changed programmatically or when the user taps on a calendar date cell. Read the [Selection]({% slug calendar-selection %}) article for more details.
 

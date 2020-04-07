@@ -1,7 +1,8 @@
 ---
 title: Events
 page_title: Events
-position: 10
+description: Check our &quot;Events&quot; documentation article for Telerik Calendar for Xamarin control.
+position: 13
 slug: calendar-events
 ---
 

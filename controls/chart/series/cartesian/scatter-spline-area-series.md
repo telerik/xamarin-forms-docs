@@ -1,6 +1,7 @@
 ---
 title: ScatterSplineArea Series
 page_title: ScatterSplineArea Series
+description: Check our &quot;ScatterSplineArea Series&quot; documentation article for Telerik Chart for Xamarin control.
 slug: chart-series-scatter-spline-area-series
 position: 0
 ---

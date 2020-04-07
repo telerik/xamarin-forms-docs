@@ -1,6 +1,7 @@
 ---
 title: Selection Behavior
 page_title: Selection Behavior
+description: Check our &quot;Selection Behavior&quot; documentation article for Telerik Chart for Xamarin control.
 position: 1
 slug: chart-behaviors-selection
 ---

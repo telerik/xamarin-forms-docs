@@ -1,6 +1,7 @@
 ---
 title: DataGrid Styling
 page_title: DataGrid Styling
+description: Check our &quot;DataGrid Styling&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 0
 slug: datagrid-styling
 ---

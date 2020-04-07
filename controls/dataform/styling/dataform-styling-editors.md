@@ -1,6 +1,7 @@
 ---
 title: Editors Styling
 page_title: Editors Styling
+description: Check our &quot;Editors Styling&quot; documentation article for Telerik DataForm for Xamarin control.
 slug: dataform-styling-editors
 position: 0
 ---

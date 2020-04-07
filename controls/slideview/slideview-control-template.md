@@ -1,15 +1,16 @@
 ---
 title: Control Template
 page_title: Control Template
+description: Check our &quot;Control Template&quot; documentation article for Telerik SlideView for Xamarin control.
 position: 2
 slug: slideview-control-template
 ---
 
 # Control Template
 
-**RadSlideView's** visual appearance is defined through a Control Template. In order to customize the way the RadSlideView looks, you will need to take the default *ControlTemplate*
+**RadSlideView's** visual appearance is defined through a Control Template. In order to customize the way the RadSlideView looks, you will need to take the default *ControlTemplate* and modify it.
 
-This topic gives an overview of the **ControlTemplate** of the MaskedInput control, so you can copy it to your app and make changes.
+This topic gives an overview of the **ControlTemplate** of the SlideView control, so you can copy it to your app and make changes.
 
 ## The original ControlTemplate
 

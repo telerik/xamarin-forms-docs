@@ -1,6 +1,7 @@
 ---
 title: Members
 page_title: Members
+description: Check our &quot;Members&quot; documentation article for Telerik DataForm for Xamarin control.
 position: 2
 slug: dataform-members
 published: False

@@ -1,6 +1,7 @@
 ---
 title: Template Column
 page_title: Template Column
+description: Check our &quot;Template Column&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 6
 slug: datagrid-columns-template-column
 ---

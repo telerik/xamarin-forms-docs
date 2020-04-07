@@ -1,6 +1,7 @@
 ---
 title: Templated Rating
 page_title: Templated Rating
+description: Check our &quot;Templated Rating&quot; documentation article for Telerik Rating for Xamarin control.
 position: 4
 slug: templated-rating
 ---

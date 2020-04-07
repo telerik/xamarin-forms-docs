@@ -1,6 +1,7 @@
 ---
 title: Overview
 page_title: Overview
+description: Check our &quot;Overview&quot; documentation article for Telerik AutoCompleteView for Xamarin control.
 position: 1
 slug: autocompleteview-custom-templates
 ---

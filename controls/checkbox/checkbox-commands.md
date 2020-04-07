@@ -1,6 +1,7 @@
 ---
 title: Commands
 page_title: Commands
+description: Check our &quot;Commands&quot; documentation article for Telerik CheckBox for Xamarin control.
 position: 3
 slug: checkbox-commands
 ---

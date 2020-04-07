@@ -1,6 +1,7 @@
 ---
 title: Customize the Filtering UI
 page_title: Customize the Filtering UI
+description: Check our &quot;Customize the Filtering UI&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 1
 slug: datagrid-howto-customize-filtering-ui
 ---

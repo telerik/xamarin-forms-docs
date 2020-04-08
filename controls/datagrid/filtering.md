@@ -157,7 +157,7 @@ The following property is used to enable/disable the filtering of a specific col
 The appearance of the Filtering UI can be customized by inheriting the **DataGridFilterControlBase** class. For more details on this check [How to customize Filtering UI]({%slug datagrid-howto-customize-filtering-ui%}) article.
 
 
-## FilterControlTemplate
+## FilterControl Template
 
 From R2 2020 DataGrid allows you to apply filtering to the datagrid column using the FilterControlTemplate property.
 

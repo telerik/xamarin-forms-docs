@@ -22,6 +22,8 @@ If you want to completely customize the content of the cells in a grid column yo
 
 >important More information about Sorting and Grouping can be found in [DataGrid Soting]({%slug datagrid-sorting-overview%}) and [DataGrid Grouping]({%slug datagrid-grouping-overview%}) articles.
 
+>important **CellContentTemplate**, **CellEditTemplate** and **FilterControlTemplate** properties are part of the DataGrid features from R2 2020 Official Release. More details on celledit and cell content templates features check the [Cell Templates]({%slug datagrid-cell-templates%})article. More details on filtercontrol template please review the [FilterControl Template]({%slug datagrid-filtering-overview%}#filtercontrol-template) section.
+
 ## Sorting and Grouping for Template Column
 
 The example below shows how Sorting and Grouping can be applied to the DataGrid Template Column. 

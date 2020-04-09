@@ -47,15 +47,14 @@ Here's the result:
 
 ### Orientation
 
-The default behaviour of the RadLegendView is to show the legend items vertically. However you can change the orientation of the items to horizontal with:
+The default behavior of the RadLegendView is to show the legend items vertically. However you can change the orientation of the items to horizontal with:
 
 
 ```C#
-   legendView.LegendOrientation = LinearLayout.HORIZONTAL;
+legendView.LegendOrientation = LinearLayout.HORIZONTAL;
 ```
 
-
-The posible values for the orientation are:
+The possible values for the orientation are:
 
 * LinearLayout.HORIZONTAL
 * LinearLayout.VERTICAL
@@ -66,8 +65,8 @@ By default the scroll of the legend items is **disabled**. In order to enable th
 
 
 ```C#
-legendView.CanScrollHorizontally = true;
-legendView.CanScrollVertically = true;
+legendView.SetCanScrollHorizontally(true);
+legendView.SetCanScrollVertically(true);
 ```
 
 Finally, the legend for the pie chart is a little bit different. The pie series does not have a legend title because each point

@@ -38,7 +38,7 @@ You could also customize the duration and easing (acceleration over time) throug
 
 You could apply **BorderColor** and **BorderThickness** properties of RadExpander to make it consistent with the design of your app.
 
->note ExpanderHeader also provides Border styling properties, you could learn more about this [here]({%slug expander-expanderheader %}).
+>note ExpanderHeader also provides means for customizing its border, you can learn more about this in the [ExpanderHeader: Border Styling]({%slug expander-expanderheader%}#border-styling) article.
 
 Check the example below on how the border settings could be defined:
 

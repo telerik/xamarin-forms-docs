@@ -10,4 +10,4 @@ publish: false
 
 # RadFeedback: Overview
 
-**RadFeedback** for Android is a composite component that implements a simple yet powerful mechanism for gathering feedback from the users of your Android application. **RadFeedback** has three main functions: sending feedback, reading feedback and editing user settings. **RadFeedback** is integrated with the <a href="http://platform.telerik.com/" tagret="_blank">Telerik Platform<a/> which provides you with a powerful backend that allows you to easily manage the feedback your users have sent.
+**RadFeedback** for Android is a composite component that implements a simple yet powerful mechanism for gathering feedback from the users of your Android application. **RadFeedback** has three main functions: sending feedback, reading feedback and editing user settings. **RadFeedback** is integrated with the Тelerik Platform which provides you with a powerful backend that allows you to easily manage the feedback your users have sent.

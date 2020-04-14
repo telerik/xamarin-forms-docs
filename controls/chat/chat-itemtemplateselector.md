@@ -10,7 +10,23 @@ slug: chat-itemtemplateselector
 
 RadChat control exposes an ItemTemplateSelector property which you can use to apply different templates to each chat item depending on a specific condition.  
 
-Any change on the appearance of the chat items depends on the ChatItemTemplateSelector and the containing templates and referenced Styles. The default selector includes separate templates for the incoming and outgoing messages, as well as for the first, middle and last messages - this is needed in order to achieve the "balloon" look & feel of the messages.
+## Default ItemTemplateSelector
+
+Any change on the appearance of the chat items depends on the ChatItemTemplateSelector and the containing templates and referenced Styles. The default selector includes separate templates for the incoming and outgoing messages (so they're aligned on the left/right accordingly), as well as for single and the first, middle and last messages (in case there area a few messages in a row) - this is needed in order to achieve the "balloon" look & feel of the messages.
+
+Below you can find the default ItemTemplateSelector which you can use as a base for any further customizations to the way the messages look. 
+
+In short, the default templates contain RadBorder (used to achieve the rounded edges), image control (used for the avatar image) only for the single and first messages, and a Label for the text message itself. 
+
+The snippet below contains the default templates and the accompanying styles:
+
+<snippet id='chat-features-defaultitemtemplate-resources' />
+
+You can make any changes to the templates and then assign the template selector to the **ItemTemplateSelector** property of the Chat control:
+
+<snippet id='chat-features-defaultitemtemplate-xaml' />
+
+## Custom ItemTemplateSelector
 
 You can also create a custom ChatItemTemplateSelector to conditionally apply different messages styles depending on any of the used chat item properties.  
 

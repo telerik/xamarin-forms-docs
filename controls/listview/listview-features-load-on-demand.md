@@ -87,6 +87,8 @@ Use the following snippet to define the ViewModel:
 
 <snippet id='listview-loadondemand-loadondemandcollection-viewmodel'/>
 
+> **Important** If you deviate from the above example and instantiate the `Source` property outside of the construtor, you will need make sure that the view model implements INotifyPropertyChanged and the `Source` property setter invokes OnPropertyChanged. Otherwise, you will not see any changes in the UI.
+
 ### Bind the BindingContext 
 Finally, set the ViewModel as BindingContext in the page constructor:
 

@@ -218,9 +218,14 @@ navigation:
         position: 11
     ## End DataGrid
     
+    ## DatePicker
+    controls/datepicker:
+        title: "Date Picker"
+    ## End DatePicker
+    
     ## DateTimePicker
     controls/datetimepicker:
-        title: "DateTime Picker (beta)"
+        title: "DateTime Picker"
     ## End DateTimePicker
     
     ## DockLayout
@@ -446,7 +451,7 @@ navigation:
     ## End ImageEditor
     ## ListPicker
     controls/listpicker:
-        title: "List Picker (beta)"
+        title: "List Picker"
     ## End ListPicker
     ## ListView
     controls/listview:
@@ -507,8 +512,16 @@ navigation:
     ## End TabView
     ## TemplatedPicker
     controls/templatedpicker:
-        title: "Templated Picker (beta)"
+        title: "Templated Picker"
     ## End TemplatedPicker
+    ## TimePicker
+    controls/timepicker:
+        title: "Time Picker"
+    ## End TimePicker
+    ## TimeSpanPicker
+    controls/timespanpicker:
+        title: "TimeSpan Picker"
+    ## End TimeSpanPicker
     ## TreeView
     controls/treeview:
         title: "TreeView"

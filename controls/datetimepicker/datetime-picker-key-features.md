@@ -10,38 +10,6 @@ slug: datetime-picker-key-features
 
 The purpose of this help article is to show you the key features of the Date and Time Picker control for Xamarin. 
 
-## Date Picker
-
-The snippet below shows a simple Date Picker definition:
-
-<snippet id='datetimepicker-keyfeatures-date' />
-
-In addition to this, you need to add the following namespace:
-
-```XAML
-xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
-```
-
-Here is how the Date Picker looks when Date Format String is applied:
-
-![Date Picker](images/datetimepicker_date_picker.png)
-
-## Time Picker
-
-The snippet below shows a simple Time Picker definition:
-
-<snippet id='datetimepicker-keyfeatures-time' />
-
-In addition to this, you need to add the following namespace:
-
-```XAML
-xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
-```
-
-Here is how the Time Picker looks when Time Format String is applied:
-
-![Date Picker](images/datetimepicker_time_picker.png)
-
 ## DateTime Picker
 
 The snippet below shows a simple Date and Time Picker definition:
@@ -60,17 +28,19 @@ Here is how the Date and Time Picker looks when Date and Time Format String is a
 
 ## Date Range
 
-RadDateTime Picker allows you to define a particular start and end date and choose a date in between through the following properties:
+RadDateTime Picker allows you to define a minimum date and maximum date and choose a date in between through the following properties:
 
-* **StartDate**(*DateTime*): Defines the start date of the date time picker.
+* **MinimumDate**(*DateTime*): Defines a date which marks the deginning of the range of the available dates. The default value is `DateTime(2000,1,1, 0, 0, 0)`.
 
-* **EndDate**(*DateTime*): Defines the end date of the date time picker.
+* **MaximumDate**(*DateTime*): Defines a date which marks the end of the range of the available dates to choose from. The default value is `DateTime(2099, 12, 31, 23, 59, 59)`.
 
-* **SelectedDate**(*DateTime?*): Defines the date which will be selected when the picker dialog is open.
+## Current Selected Date
 
-## DefaultDisplayDate
+* **Date**(*DateTime?*): Defines the current date selection. The default value is null.
 
-RadDateTime Picker DefaultDisplayDate(*DateTime*) defines the System.DateTime which will be used to pre-scroll each spinner when SelectedDate is set to null.
+## DefaultHighlightedDate
+
+RadDateTime Picker DefaultHighlightedDate(*DateTime*) defines the System.DateTime which will be used to pre-scroll each spinner when **RadDateTimePicker.Date** property is set to null.
 
 ### Example
 
@@ -80,11 +50,51 @@ RadDateTime Picker DefaultDisplayDate(*DateTime*) defines the System.DateTime wh
                                 SpinnerFormatString="d"/>
 ```
 
+## Incremental Time Steps
+
+By default, the time component of the DateTime Picker increments or decrements each part of its time values by one step. You can change the default setup using the following properties:
+
+* **HourStep**(*int*): Controls the incremental step of the hour value. Default value is 1.
+* **MinuteStep**(*int*): Controls the incremental step of the minute value. Default value is 1.
+* **SecondStep**(*int*): Controls the incremental step of the second value. Default value is 1.
+
 ## DisplayString Format
 
 * **DisplayStringFormat**(*string*): Defines the format of the string that will be visualized when the picker dialog is closed. 
 
 >note The format set for **DisplayStringFormat** should be a valid datetime format. 
+
+## Date Picker Mode
+
+The snippet below shows a simple Date Picker definition:
+
+<snippet id='datetimepicker-keyfeatures-date' />
+
+In addition to this, you need to add the following namespace:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
+
+Here is how the Date Picker looks when Date Format String is applied:
+
+![Date Picker](images/datetimepicker_date_picker.png)
+
+## Time Picker Mode
+
+The snippet below shows a simple Time Picker definition:
+
+<snippet id='datetimepicker-keyfeatures-time' />
+
+In addition to this, you need to add the following namespace:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
+
+Here is how the Time Picker looks when Time Format String is applied:
+
+![Date Picker](images/datetimepicker_time_picker.png)
 
 >important A sample Key Features example can be found in the DateTimePicker/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
 

@@ -11,10 +11,10 @@ slug: datetime-picker-styling
 Date and Time Picker control for Xamrin provides the following Style properties for customizing its look:
 
 * **SpinnerStyle**(of type *Style* with target type **telerikDataControls:RadSpinner**): Defines the style applied to the spinner item and selected item.
-* **SpinnerHeadersStyle**(of type *Style* with target type **Label**): Specifies the style applied to the spinner header labels.
+* **SpinnerHeaderStyle**(of type *Style* with target type **Xamarin.Forms.Label**): Specifies the style applied to the spinner header labels.
 * **SelectionHighlightStyle**(of type *Style* with target type **telerikPrimitives:RadBorder**): Specifies the style applied to the selection inside the popup. 
-* **PlaceholderLabelStyle**(of type *Style* with target type **Label**): Defines the style applied to the placeholder label. 
-* **DisplayLabelStyle**(of type *Style* with target type **Label**): Defines the style applied to the label which is visualized when date/time is selected.
+* **PlaceholderLabelStyle**(of type *Style* with target type **Xamarin.Forms.Label**): Defines the style applied to the placeholder label. 
+* **DisplayLabelStyle**(of type *Style* with target type **Xamarin.Forms.Label**): Defines the style applied to the label which is visualized when date/time is selected.
 * **TabStripStyle**(of type *Style* with target type **telerikPrimitives:TabViewHeader**)
 * **TabStripItemStyle**(of type *Style* with target type **telerikInput:DateTimeSelectorTabStripItem**)
 * **SelectorSettings**(*Telerik.XamarinForms.Input.PickerPopupSelectorSettings*):
@@ -23,10 +23,10 @@ Using the SelectorSettings property of the RadPickerBase class, you could style 
 
 * **PopupViewStyle**(of type *Style* with target type **telerikInput:PickerPopupContentView**): Defines the popup view style.
 * **HeaderStyle**(of type *Style* with target type **telerikInput:PickerPopupHeaderView**): Defines the popup header style.
-* **HeaderLabelStyle**(of type *Style* with target type **Label**): Defines the popup header label style.
+* **HeaderLabelStyle**(of type *Style* with target type **Xamarin.Forms.Label**): Defines the popup header label style.
 * **FooterStyle**(of type *Style* with target type **telerikInput:PickerPopupFooterView**): Defines the popup footer style.
-* **AcceptButtonStyle**(of type *Style* with target type **Button**): Defines the Accept button style.
-* **CancelButtonStyle**(of type *Style* with target type **Button**): Defines the Cancel button style.
+* **AcceptButtonStyle**(of type *Style* with target type **Xamarin.Forms.Button**): Defines the Accept button style.
+* **CancelButtonStyle**(of type *Style* with target type **Xamarin.Forms.Button**): Defines the Cancel button style.
 
 The SelectorSetting also provides the following properties for popup customization:
 
@@ -63,7 +63,7 @@ xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.Xa
 
 Here is a sample example that shows how the styling properties are applied.
 
-A sample **List Picker** definition:
+A sample **DateTime Picker** definition:
 
 <snippet id='datetimepicker-style' />
 
@@ -73,7 +73,7 @@ and here are how the styles are defined in the page resources
 
 <snippet id='datetimepicker-style-spinner-style' />
 
-## SpinnerHeaders Style
+## SpinnerHeader Style
 
 <snippet id='datetimepicker-style-spinner-header-style' />
 

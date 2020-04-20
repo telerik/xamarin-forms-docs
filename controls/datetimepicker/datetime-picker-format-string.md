@@ -8,11 +8,11 @@ slug: datetime-picker-format-string
 
 # String Format
 
-Date and Time Picker for Xamarin allows you to use standard or custom date and time format strings through the SpinnerFormatString property. Depending on what format is set, the picker visualizes spinner controls with prepopulated values to be picked. This feature allows you to create a date picker, time picker or combination of both.
+Date and Time Picker for Xamarin allows you to use standard or custom date and time format strings through the SpinnerFormat property. Depending on what format is set, the picker visualizes spinner controls with prepopulated values to be picked. This feature allows you to create a date picker, time picker or combination of both.
 
-* **SpinnerFormatString**(*string*): Defines the string format.
+* **SpinnerFormat**(*string*): Defines the string format.
 
-The available Standard Date and Time format strings that can be set to the SpinnerFormatString property are described in the table below:
+The available Standard Date and Time format strings that can be set to the SpinnerFormat property are described in the table below:
 
 | Supported Standard Date and Time Format String |
 | -------- |
@@ -48,7 +48,7 @@ The available Standard Date and Time format strings that can be set to the Spinn
 
 ## Supported Separators
 
-When SpinnerFormatString is set and device culture is changed, the separators used for the format string won't be changed:
+When SpinnerFormat is set and device culture is changed, the separators used for the format string won't be changed:
 
 | Supported Date and Time Separators Formats |
 | -------- |
@@ -60,30 +60,30 @@ When SpinnerFormatString is set and device culture is changed, the separators us
 
 ## Examples
 
-### SpinnerFormatString="MMMM dd"
+### SpinnerFormat="MMMM dd"
 
 ```XAML
-<telerikInput:RadDateTimePicker SpinnerFormatString="MMMM dd" />
+<telerikInput:RadDateTimePicker SpinnerFormat="MMMM dd" />
 ```
 
 And the result:
 
 ![](images/datetimepicker-string-format-mmmm-dd.png)
 
-### SpinnerFormatString="dd"
+### SpinnerFormat="dd"
 
 ```XAML
-<telerikInput:RadDateTimePicker SpinnerFormatString="dd" />
+<telerikInput:RadDateTimePicker SpinnerFormat="dd" />
 ```
 
 And the result:
 
 ![](images/datetimepicker-string-format-dd.png)
 
-### SpinnerFormatString="H:mm"
+### SpinnerFormat="H:mm"
 
 ```XAML
-<telerikInput:RadDateTimePicker SpinnerFormatString="H:mm" />
+<telerikInput:RadDateTimePicker SpinnerFormat="H:mm" />
 ```
 
 And the result:

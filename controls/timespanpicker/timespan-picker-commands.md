@@ -1,14 +1,14 @@
 ---
 title: Commands
 page_title: Commands
-description: Check our &quot;Commands&quot; documentation article for Telerik DatePicker for Xamarin control.
+description: Check our &quot;Commands&quot; documentation article for Telerik TimeSpan Picker for Xamarin control.
 position: 7
-slug: date-picker-commands
+slug: timespan-picker-commands
 ---
 
 # Commands
 
-Date Picker for Xamarin exposes the following commands:
+Time Picker for Xamarin exposes the following commands:
 
 * **ToggleCommand**(*ICommand*): Allows you to open and close the dialog
 * **ClearCommand**(*ICommand*): Allows you to clear the displayed date.
@@ -22,9 +22,9 @@ The SelectorSettings property of the RadPickerBase class, allows you to add a cu
 
 ```XAML
 <StackLayout>
-	<Button Text="Toggle Command" Command="{Binding Source={x:Reference datePicker}, Path=ToggleCommand}"/>
-	<Button Text="Clear Command" Command="{Binding Source={x:Reference datePicker}, Path=ClearCommand}"/>
-	<telerikInput:RadDatePicker x:Name="datePicker" />
+	<Button Text="Toggle Command" Command="{Binding Source={x:Reference timeSpanPicker}, Path=ToggleCommand}"/>
+	<Button Text="Clear Command" Command="{Binding Source={x:Reference timeSpanPicker}, Path=ClearCommand}"/>
+	<telerikInput:RadTimePicker x:Name="timeSpanPicker" />
 </StackLayout>
 ```
 
@@ -32,15 +32,15 @@ The SelectorSettings property of the RadPickerBase class, allows you to add a cu
 
 ```XAML
 <StackLayout>
-    <telerikInput:RadDatePicker>
-        <telerikInput:RadDatePicker.SelectorSettings>
+    <telerikInput:RadTimeSpanPicker>
+        <telerikInput:RadTimeSpanPicker.SelectorSettings>
             <telerikInput:PickerPopupSelectorSettings AcceptCommand="{Binding Accept}" 
                                                       CancelCommand="{Binding Cancel}"/>
-        </telerikInput:RadDatePicker.SelectorSettings>
-            <telerikInput:RadDatePicker.BindingContext>
+        </telerikInput:RadTimeSpanPicker.SelectorSettings>
+            <telerikInput:RadTimeSpanPicker.BindingContext>
                 <local:ViewModel/>
-            </telerikInput:RadDatePicker.BindingContext>
-    </telerikInput:RadDatePicker>
+            </telerikInput:RadTimeSpanPicker.BindingContext>
+    </telerikInput:RadTimeSpanPicker>
 </StackLayout>
 ```
 
@@ -78,7 +78,7 @@ xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.Xa
 
 ## See Also
 
-- [Key Features]({%slug date-picker-key-features%})
-- [Templates]({%slug date-picker-templates%})
-- [Events]({%slug date-picker-events%})
-- [Methods]({%slug date-picker-methods%})
+- [Key Features]({%slug timespan-picker-key-features%})
+- [Templates]({%slug timespan-picker-templates%})
+- [Events]({%slug timespan-picker-events%})
+- [Methods]({%slug timespan-picker-methods%})

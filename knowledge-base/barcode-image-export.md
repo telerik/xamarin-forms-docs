@@ -1,9 +1,7 @@
 ---
-title: Drill down charts in xamarin.forms
-description: How to create drill down chart in xamarin.forms
-type: how-to
 title: Create an image from a barcode.
 description: How to use custom renderers and leverage native platform APIs to turn any Xamarin.Forms view into an image, including a qr code from RadBarcode.
+type: how-to
 page_title: Export RadBarcode as an Image
 slug: barcode-export-image
 position: 

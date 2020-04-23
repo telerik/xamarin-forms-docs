@@ -1,12 +1,12 @@
 ---
 title: Localization
 page_title: Localization
-description: Check our &quot;Localization&quot; documentation article for Telerik DatePicker for Xamarin control.
+description: Check our &quot;Localization&quot; documentation article for Telerik TimeSpanPicker for Xamarin control.
 position: 4
-slug: date-picker-localization
+slug: timespan-picker-localization
 ---
 
-# Date Picker Localization
+# TimeSpan Picker Localization
 
 RadDateTime Picker for Xamarin provides language localization. In short, you can translate the used across the Date and Time Picker texts to other languages, so that your app can be adapted to different regions.
 
@@ -14,30 +14,25 @@ RadDateTime Picker for Xamarin provides language localization. In short, you can
 
 The sections below list all the localization keys used in Date Picker for Xamarin control.
 
-## Date Picker Header Localization Key
+## TimeSpan Picker Header Localization string
 
 | Localization Key | Default Value |
 | -----------------| ------------- |
-| DatePicker_Popup_HeaderLabelText  | Select Date |
-
-Check in the image below how the localization strings are presented in Date Picker Spinners:
-
-![Localization Date Picker](images/datepicker-spinner-localization.png)
+| TimeSpanPicker_Popup_HeaderLabelText  | Select Duration |
 
 ## Common Picker Localizations strings
 
 | Localization Key | Default Value |
 | -----------------| ------------- |
 | Picker_PlaceholderLabelText  | Pick a value |
-| Picker_DaySpinnerHeaderLabelText  | Day |
-| Picker_MonthSpinnerHeaderLabelText  | Month |
-| Picker_YearSpinnerHeaderLabelText  | Year |
+| Picker_DaysSpinnerHeaderLabelText  | Days |
+| Picker_HourSpinnerHeaderLabelText  | Hours |
+| Picker_MinuteSpinnerHeaderLabelText | Minutes |
+| Picker_SecondSpinnerHeaderLabelText  | Seconds |
 | Picker_Popup_AcceptButtonText  | OK |
 | Picker_Popup_RejectButtonText  | Cancel |
 
-Check in the image below how the common localization strings are presented in Date Picker:
-
-![Localizatio Date Picker](images/datepicker-common-localization.png)
+![Localization TimeSpan Picker](images/timespanpicker-localization.png)
 
 ## See Also
 

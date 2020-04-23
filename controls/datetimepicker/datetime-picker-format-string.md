@@ -10,41 +10,54 @@ slug: datetime-picker-format-string
 
 Date and Time Picker for Xamarin allows you to use standard or custom date and time format strings through the SpinnerFormat property. Depending on what format is set, the picker visualizes spinner controls with prepopulated values to be picked. This feature allows you to create a date picker, time picker or combination of both.
 
-* **SpinnerFormat**(*string*): Defines the string format.
+* **SpinnerFormat**(*string*): Defines the string format for the spinners. The default format is **"g"**.
+
+## Standard Date and Time Format Strings
 
 The available Standard Date and Time format strings that can be set to the SpinnerFormat property are described in the table below:
 
-| Supported Standard Date and Time Format String |
+| Supported Standard Date Format String | Description |
+| -------- || -------- |
+| "d" | Short Date Format. Invariant culture format is MM/dd/yyyy |
+| "G" | Short Date "d" and Long Time "T" |
+| "g" | Short Date "d" and Short Time "t" |
+| "M" | Month Format Specifier |
+| "m" | Month Format specifier |
+| "Y" | Year Month Format Specifier |
+| "y" | Year Month Format Specifier |
+| "T" | Long Time Format Specifier |
+| "t" | Short Time Format Specifier |
+
+>important You can set only short [Standard Date and Time Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings) to the DateTime Picker control.
+
+## Custom Date and Time Format String
+
+The available Custom Date and Time format strings that can be set to the SpinnerFormat property are described in the table below:
+
+| Supported Custom Date Format Strings|
 | -------- |
-| "g" |
 | "d" |
 | "dd" |
-| "hh" |
-| "HH" |
-| "m" |
-| "mm" |
 | "M" |
 | "MM" |
 | "MMM" |
 | "MMMM" |
+| "y" |
+| "yy" |
+| "yyy" |
+| "yyyy" |
+| "H" |
+| "HH" |
+| "h" |
+| "hh" |
+| "m" |
+| "mm" |
 | "s" |
 | "ss" |
 | "t" |
 | "tt" |
-| "y" |
-| "yyy" |
-| "yyyy" |
-| "MM/dd/yyyy HH:mm" |
-| "MM/dd/yyyy hh:mm tt" |
-| "MM/dd/yyyy H:mm" |
-| "MM/dd/yyyy HH:mm:ss" |
-| "MMMM dd" |
-| "HH:mm" |
-| "hh:mm t" |
-| "yyyy/MMM/dd" |
-| "mm:HH" |
 
->important You can set only short [Standard Date and Time Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings) to the DateTime Picker control.
+>important You can set only short [Custom Date and Time Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings) to the DateTime Picker control.
 
 ## Supported Separators
 
@@ -57,6 +70,7 @@ When SpinnerFormat is set and device culture is changed, the separators used for
 | "'" |
 | " " |
 | ":" |
+| "/" |
 
 ## Examples
 

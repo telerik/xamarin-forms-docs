@@ -22,7 +22,10 @@ Globalization refers to developing an application in such a way that it works wi
 * DataForm
 * DataGrid
 * NumericInput
+* Date Picker
 * DateTime Picker
+* Time Picker
+* TimeSpan Picker
 
 ## Localization
 
@@ -34,9 +37,12 @@ Localization refers to the translation of application resources into localized v
 * DataForm
 * DataGrid
 * ImageEditor
+* Date Picker
 * DateTime Picker
 * List Picker
 * Templated Picker
+* Time Picker
+* TimeSpan Picker
 
 The localization mechanism in Telerik Xamarin controls is implemented through **TelerikLocalizationManager** class and more specifically the **TelerikLocalizationManager.Manager** static property. To enable localization to any of the listed above components you should choose between the approaches below:
 

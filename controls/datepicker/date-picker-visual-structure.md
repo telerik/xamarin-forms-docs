@@ -18,7 +18,7 @@ Here are described all visual elements used in the Date Picker for Xamarin.
 
 >important More information about Spinners refer to the [RadSpinner help article]({%slug templated-picker-spinner%}).
 
-![DateTime Picker Popup Visual Structure](images/date_picker_structure.png "Visual elements of Date Picker Popup")
+![Date Picker Popup Visual Structure](images/date_picker_structure.png "Visual elements of Date Picker Popup")
 
 ## Legend ##
 

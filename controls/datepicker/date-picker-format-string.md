@@ -12,12 +12,26 @@ Date Picker for Xamarin allows you to use standard or custom date format strings
 
 * **SpinnerFormat**(*string*): Defines the string format for the spinners. The default format is **"g"**.
 
-The available Standard Date format strings that can be set to the SpinnerFormat property are described in the table below:
+## Standard Date Format Strings
 
-| Supported Standard Date and Time Format String |
+The available Standard Date Format Strings which can be set to the SpinnerFormat property are described in the table below:
+
+| Supported Standard Date Format String | Description |
+| -------- || -------- |
+| "d" | Short Date Format. Invariant culture format is MM/dd/yyyy |
+| "G" | Short Date "d" and Long Time "T" |
+| "g" | Short Date "d" and Short Time "t" |
+| "M" | Month Format Specifier |
+| "m" | Month Format specifier |
+| "Y" | Year Month Format Specifier |
+| "y" | Year Month Format Specifier |
+
+## Custom Date Format Strings
+
+The available Custom Date Format Strings which can be set to the SpiinerFormat property are described in the table below:
+
+| Supported Custom Date Format Strings|
 | -------- |
-| "g" |
-| "G" |
 | "d" |
 | "dd" |
 | "M" |
@@ -27,19 +41,13 @@ The available Standard Date format strings that can be set to the SpinnerFormat 
 | "y" |
 | "yyy" |
 | "yyyy" |
-| "MM/dd/yyyy|
-| "M/d/y|
-| "MMMM, dd, yyyy" |
-| "MMMM dd" |
-| "yyyy/MMM/dd" |
 
->important You can set only short [Standard Date Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings) to the DateTime Picker control.
-
+>important You can set only short [Standard Date Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings) to the Date Picker control.
 ## Supported Separators
 
-When SpinnerFormatString is set and device culture is changed, the separators used for the format string won't be changed:
+When SpinnerFormatString is set and the device culture is changed, the separators used for the format string won't be changed:
 
-| Supported Date and Time Separators Formats |
+| Supported Format Separators |
 | -------- |
 | "-" |
 | "." |
@@ -47,8 +55,6 @@ When SpinnerFormatString is set and device culture is changed, the separators us
 | " " |
 | ":" |
 | "/" |
-| "[" |
-| "]" |
 
 ## Examples
 

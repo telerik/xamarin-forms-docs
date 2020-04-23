@@ -8,15 +8,12 @@ slug: date-picker-commands
 
 # Commands
 
-Date Picker for Xamarin exposes the following commands:
+## DatePicker Commands
 
-* **ToggleCommand**(*ICommand*): Allows you to open and close the dialog
+Date Picker for Xamarin exposes the following commands you can use to programmatically manipulate displaying the popup as well as clearing the selected time:
+
+* **ToggleCommand**(*ICommand*): Allows you to show/hide the popup used for selecting a date value.
 * **ClearCommand**(*ICommand*): Allows you to clear the displayed date.
-
-The SelectorSettings property of the RadPickerBase class, allows you to add a custom logic for the Accept and Cancel commands which are executed when Ok and Cancel button are pressed. 
-
-* **AcceptCommand**(*ICommand*): Defines the command which propagates the current selection of the picker and closes the popup 
-* **CancelCommand**(*ICommand*): Defines the command which rejects the current selection of the picker and closes the popup.
 
 ## Example for ToggleCommand and ClearCommand
 
@@ -27,6 +24,23 @@ The SelectorSettings property of the RadPickerBase class, allows you to add a cu
 	<telerikInput:RadDatePicker x:Name="datePicker" />
 </StackLayout>
 ```
+
+also you need to add the following namespace:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
+
+## PopupSelector Commands
+
+Through the popup users can pick a date. The date value should be confirmed or rejected through the OK and Cancel buttons placed on the popup.
+
+DatePicker allows you to add a custom logic for the Accept and Cancel commands which are executed when OK and Cancel buttons, respectively, are pressed.
+
+* **AcceptCommand**(*ICommand*): Defines the command which confirms the current selection of the picker and closes the popup.
+* **CancelCommand**(*ICommand*): Defines the command which rejects the current selection of the picker and closes the popup.
+
+The Accept and Cancel commands can be applied using the SelectorSettings property of RadDatePicker. Here is a quick example on how they could be set:
 
 ## Example for AcceptCommand and CancelCommand
 
@@ -80,5 +94,4 @@ xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.Xa
 
 - [Key Features]({%slug date-picker-key-features%})
 - [Templates]({%slug date-picker-templates%})
-- [Events]({%slug date-picker-events%})
-- [Methods]({%slug date-picker-methods%})
+- [Selection]({%slug date-picker-selection%})

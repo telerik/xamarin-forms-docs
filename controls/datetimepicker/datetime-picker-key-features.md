@@ -102,6 +102,4 @@ Here is how the Time Picker looks when Time Format String is applied:
 
 - [Templates]({%slug datetime-picker-templates%})
 - [Styling]({%slug datetime-picker-styling%})
-- [Events]({%slug datetime-picker-events%})
 - [Commands]({%slug datetime-picker-commands%})
-- [Methods]({%slug datetime-picker-methods%})

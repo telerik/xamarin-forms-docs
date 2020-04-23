@@ -8,15 +8,23 @@ slug: templated-picker-commands
 
 # Commands
 
-Templated Picker exposes the following commands:
+## TemplatedPicker Commands
 
-* **ToggleCommand**(*ICommand*): Allows you to open and close the dialog
-* **ClearCommand**(*ICommand*): Allows you to clear the displayed date/time.
+TemplatedPicker for Xamarin exposes the following commands you can use to programmatically manipulate displaying the popup as well as clearing the selected item:
 
-The SelectorSettings property of the RadPickerBase class, allows you to add a custom logic for the Accept and Cancel commands which are executed when Ok and Cancel button are pressed. 
+* **ToggleCommand**(*ICommand*): Allows you to show/hide the popup used for selecting an item from the custom picker.
+* **ClearCommand**(*ICommand*): Allows you to clear the displayed item.
 
-* **AcceptCommand**(*ICommand*): Defines the command which propagates the current selection of the picker. 
+## PopupSelector Commands
+
+Through the popup users can pick an item. The value should be confirmed or rejected through the OK and Cancel buttons placed on the popup.
+
+TemplatedPicker allows you to add a custom logic for the Accept and Cancel commands which are executed when OK and Cancel buttons, respectively, are pressed.
+
+* **AcceptCommand**(*ICommand*): Defines the command which confirms the current selection of the picker and closes the popup.
 * **CancelCommand**(*ICommand*): Defines the command which rejects the current selection of the picker and closes the popup.
+
+The Accept and Cancel commands can be applied using the SelectorSettings property of RadTemplatedPicker.
 
 ## Example
 

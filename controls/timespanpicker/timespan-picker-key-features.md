@@ -24,7 +24,7 @@ Date Picker allows you to define a date range and choose a date in between throu
 
 ## Current Selected Time
 
-* **Time**(*TimeSpan?*): Defines the current selection. The default value is null.
+* **Time**(*TimeSpan?*): Defines the current selection of time interval. The default value is null.
 
 ### Example 
 
@@ -63,6 +63,5 @@ RadTimeSpan Picker DefaultHighlightedTime(*TimeSpan*) defines the System.TimeSpa
 
 - [Templates]({%slug timespan-picker-templates%})
 - [Styling]({%slug timespan-picker-styling%})
-- [Events]({%slug timespan-picker-events%})
 - [Commands]({%slug timespan-picker-commands%})
-- [Methods]({%slug timespan-picker-methods%})
+- [Selection]({%slug timespan-picker-selection%})

@@ -22,6 +22,12 @@ Date Picker allows you to define a date range and choose a date in between throu
 
 <snippet id='datepicker-keyfeatures-minmaxdate' />
 
+and use the following namespace:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
+
 ## Current Selected Date
 
 * **Date**(*DateTime?*): Defines the current date selection. The default value is null.
@@ -29,6 +35,12 @@ Date Picker allows you to define a date range and choose a date in between throu
 ### Example 
 
 <snippet id='datepicker-keyfeatures-date-spinnerformat' />
+
+and add the following namespace:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
 
 ## DefaultHighlightedDate
 
@@ -40,6 +52,12 @@ RadDateTime Picker DefaultHighlightedDate(*DateTime*) defines the System.DateTim
 <telerikInput:RadDateTimePicker Date="{x:Null}"
                                 DefaultHighlightedDate="2020,05,15"
                                 SpinnerFormat="dd/MMM/yyyy"/>
+```
+
+and the namespace needed:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
 ```
 
 ## DisplayString Format
@@ -54,12 +72,17 @@ Here is a sample Date Picker definition:
 
 <snippet id='datepicker-keyfeatures-date-defaulthighlighted' />
 
+In addition to this, you need to add the following namespace:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
+
 >important A sample Key Features example can be found in the DatePicker/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
 
 ## See Also
 
 - [Templates]({%slug date-picker-templates%})
 - [Styling]({%slug date-picker-styling%})
-- [Events]({%slug date-picker-events%})
 - [Commands]({%slug date-picker-commands%})
-- [Methods]({%slug date-picker-methods%})
+- [Selection]({%slug date-picker-selection%})

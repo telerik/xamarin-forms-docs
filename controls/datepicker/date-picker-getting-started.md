@@ -74,4 +74,5 @@ This is the result:
 - [Suppoted Standard Date and Time Format Strings]({%slug date-picker-format-string%})
 - [Key Features]({%slug date-picker-key-features%})
 - [Templates]({%slug date-picker-templates%})
+- [Selection]({%slug date-picker-selection%})
 - [Styling]({%slug date-picker-styling%})

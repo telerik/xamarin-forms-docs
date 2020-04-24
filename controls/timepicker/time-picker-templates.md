@@ -23,7 +23,7 @@ Let's add the templates definition to the page resources:
 
 ## PlaceholderTemplate
 
-<snippet id='timepicker-placeholder-templat' />
+<snippet id='timepicker-placeholder-template' />
 
 ![RadTimePicker PlaceholderTemplate](images/timepicker_placeholder_template.png)
 

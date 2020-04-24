@@ -8,7 +8,7 @@ slug: date-picker-format-string
 
 # String Format
 
-Date Picker for Xamarin allows you to use standard or custom date format strings through the SpinnerFormat property. Depending on what format is set, the picker visualizes spinner controls with prepopulated values to be picked.
+Date Picker for Xamarin allows you to use standard or custom date format strings through the **SpinnerFormat** property. Depending on what format is set, the picker visualizes spinner controls with prepopulated values to be picked.
 
 * **SpinnerFormat**(*string*): Defines the string format for the spinners. The default format is **"g"**.
 
@@ -17,7 +17,7 @@ Date Picker for Xamarin allows you to use standard or custom date format strings
 The available Standard Date Format Strings which can be set to the SpinnerFormat property are described in the table below:
 
 | Supported Standard Date Format String | Description |
-| -------- || -------- |
+| -------- | -------- |
 | "d" | Short Date Format. Invariant culture format is MM/dd/yyyy |
 | "G" | Short Date "d" and Long Time "T" |
 | "g" | Short Date "d" and Short Time "t" |
@@ -28,7 +28,7 @@ The available Standard Date Format Strings which can be set to the SpinnerFormat
 
 ## Custom Date Format Strings
 
-The available Custom Date Format Strings which can be set to the SpiinerFormat property are described in the table below:
+The available Custom Date Format Strings which can be set to the SpinnerFormat property are described in the table below:
 
 | Supported Custom Date Format Strings|
 | -------- |
@@ -45,7 +45,7 @@ The available Custom Date Format Strings which can be set to the SpiinerFormat p
 >important You can set only short [Standard Date Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings) to the Date Picker control.
 ## Supported Separators
 
-When SpinnerFormatString is set and the device culture is changed, the separators used for the format string won't be changed:
+When SpinnerFormat is set and the device culture is changed, the separators used for the format string won't be changed:
 
 | Supported Format Separators |
 | -------- |

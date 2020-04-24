@@ -76,6 +76,7 @@ private void RadDatePicker_SelectionChanged(object sender, EventArgs e)
 	// implement your logic here
 }
 ```
+
 ## See Also
 
 - [Key Features]({%slug date-picker-key-features%})

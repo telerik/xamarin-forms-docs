@@ -34,7 +34,6 @@ Time Picker allows you to define a time range and choose a time in between throu
 
 By default the TimePicker increments each part of its time values by one step. You can change the default setup using the following properties:
 
-* **DayStep**(*int*): Controls the incremental step of the day value. Default value is 1.
 * **HourStep**(*int*): Controls the incremental step of the hour value. Default value is 1.
 * **MinuteStep**(*int*): Controls the incremental step of the minute value. Default value is 1. 
 * **SecondStep**(*int*): Controls the incremental step of the second value. Default value is 1.
@@ -60,12 +59,6 @@ RadTime Picker DefaultHighlightedTime(*TimeSpan*) defines the System.TimeSpan wh
 Here is a sample Time Picker definition:
 
 <snippet id='timepicker-keyfeatures-time-defaulthighlighted' />
-
-## DisplayString Format
-
-* **DisplayStringFormat**(*string*): Defines the format of the string that will be visualized when the picker dialog is closed. 
-
->note The format set for **DisplayStringFormat** should be a valid timespan format. 
 
 >important A sample Key Features example can be found in the TimePicker/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
 

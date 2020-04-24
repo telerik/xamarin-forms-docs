@@ -8,6 +8,8 @@ slug: list-picker-styling
 
 # Styling
 
+## ListPicler Styling
+
 List Picker for Xamarin provides the followind Style properties for customizing its look:
 
 * **ItemStyle**(of type *Style* with target type **telerikDataControls:SpinnerItemView**): Defines the style applied to the list of items.
@@ -15,9 +17,17 @@ List Picker for Xamarin provides the followind Style properties for customizing 
 * **SelectionHighlightStyle**(of type *Style* with target type **telerikPrimitives:RadBorder**): Specifies the style applied to the border where the current selection is.  
 * **PlaceholderLabelStyle**(of type *Style* with target type **Label**): Defines the style applied to the placeholder label.
 * **DisplayLabelStyle**(of type *Style* with target type **Label**): Defines the style applied to the label which is visualized when item of the list is selected.
-* **SelectorSettings**(*Telerik.XamarinForms.Input.PickerPopupSelectorSettings*).
 
-Using the SelectorSettings property of the RadPickerBase class, you could style the dialog(popup) through the following properties:
+PickerContentView class exposes the following properties for styling the DatePicker Border and Background Color:
+
+* **BackgroundColor**(*Xamarin.Forms.Color*): Defines the background color of the picker.
+* **BorderColor**(*Xamarin.Forms.Color*): Defines the border color of the picker.
+* **BorderThichness**(*Xamarin.Forms.Thickness*): Specifies the border thickness of the picker.
+* **CornerRadius**(*Xamarin.Forms.Thinckness*): Specifies the corner radius of the picker.
+
+## Popup Styling
+
+Using the **SelectorSettings** property (*of type Telerik.XamarinForms.Input.PickerPopupSelectorSettings*) of the DatePicker you can modify the appearance of the dialog (popup). PickerPopupSelectorSettings class exposes the following Style properties:
 
 * **PopupViewStyle**(of type *Style* with target type **telerikInput:PickerPopupContentView**): Defines the popup view style.
 * **HeaderStyle**(of type *Style* with target type **telerikInput:PickerPopupHeaderView**): Defines the popup header style.
@@ -29,10 +39,10 @@ Using the SelectorSettings property of the RadPickerBase class, you could style 
 The SelectorSetting also provides the following properties for popup customization:
 
 * **PopupOutsideBackgroundColor**(*Xamarin.Forms.Color*): Defines the color outside of the popup.
-* **IsPopupModal**(*bool*): Defines a boolean value indicating if the popup should be closed when tapped outside of the popup. 
-	When *IsPopupModal="True"*  the UI behind the popup gets inactive and cannot be used until the popup is closed. 
-	When *IsPopupModal="False"* the popup could be closed when clicking outside the popup. 
-	By default the value of the **IsPopupModal** is **false**.
+* **IsPopupModal**(*bool*): Defines a boolean value indicating if the popup should be closed when tapped outside of the popup. By default the value of the **IsPopupModal** is **false**.
+	* When *IsPopupModal="True"*  the UI behind the popup gets inactive and cannot be used until the popup is closed. 
+	* When *IsPopupModal="False"* the popup could be closed when clicking outside the popup. 
+	
 * **HeaderLabelText**(*string*): Specifies the text visualized in the popup header.
 * **AcceptButtonText**(*string*): Defines the text visualized for the accept button. By default the text is *OK*.
 * **CancelButtonText**(*string*): Defines the text visualized for the cancel button. By default the text is *Cancel*. 

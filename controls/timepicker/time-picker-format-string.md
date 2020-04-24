@@ -58,26 +58,6 @@ When SpinnerFormat is set and device culture is changed, the separators used for
 
 ## Examples
 
-### SpinnerFormat="MMMM dd"
-
-```XAML
-<telerikInput:RadTimePicker SpinnerFormat="MMMM dd" />
-```
-
-And the result:
-
-![](images/timepicker-string-format-mmmm-dd.png)
-
-### SpinnerFormat="dd"
-
-```XAML
-<telerikInput:RadTimePicker SpinnerFormat="dd" />
-```
-
-And the result:
-
-![](images/timepicker-string-format-dd.png)
-
 ### SpinnerFormat="H:mm"
 
 ```XAML

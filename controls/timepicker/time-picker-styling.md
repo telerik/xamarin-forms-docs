@@ -16,7 +16,7 @@ Time Picker control for Xamаrin provides the following Style properties for cus
 * **SpinnerHeaderStyle**(of type *Style* with target type **Xamarin.Forms.Label**): Specifies the style applied to the spinner header labels.
 * **SelectionHighlightStyle**(of type *Style* with target type **telerikPrimitives:RadBorder**): Specifies the style applied to the selection inside the popup. 
 * **PlaceholderLabelStyle**(of type *Style* with target type **Xamarin.Forms.Label**): Defines the style applied to the placeholder label. 
-* **DisplayLabelStyle**(of type *Style* with target type **Xamarin.Forms.Label**): Defines the style applied to the label which is visualized when date/time is selected.
+* **DisplayLabelStyle**(of type *Style* with target type **Xamarin.Forms.Label**): Defines the style applied to the label which is visualized when time is selected.
 
 In addition, RadTimePicker exposes properties for specifying its border style and background color, namely:
 
@@ -65,7 +65,7 @@ xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=
 Using **SpinnerStyle** you need to add the following namespace:
 
 ```XAML
-xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+xmlns:telerikDatacontrols="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
 ```
 
 ## Example
@@ -140,7 +140,7 @@ This is how the Time Picker control looks when the styles described above are ap
 
 ## See Also
 
-- [Key Features]({%slug datetime-picker-key-features%})
-- [Custom Templates]({%slug datetime-picker-templates%})
-- [Commands]({%slug datetime-picker-commands%})
-- [Visual Structure]({%slug datetime-picker-visual-structure%})
+- [Key Features]({%slug time-picker-key-features%})
+- [Custom Templates]({%slug time-picker-templates%})
+- [Commands]({%slug time-picker-commands%})
+- [Visual Structure]({%slug time-picker-visual-structure%})

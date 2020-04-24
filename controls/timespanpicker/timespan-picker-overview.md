@@ -1,81 +1,32 @@
 ---
-title: Selection
-page_title: Selection
-description: Check our &quot;Selection&quot; documentation article for Telerik TimeSpan Picker for Xamarin control.
-position: 5
+title: Overview
+page_title: Overview
+description: Check our &quot;Overview&quot; documentation article for Telerik TimeSpan Picker for Xamarin control.
+position: 0
 slug: timespan-picker-overview
 ---
 
-# Selection
+# Overview
 
-RadTimeSpanPicker control enables the app users to quickly and easily select a time interval. This topic will go through the provided by the DatePicker API related to time interval selection.
+**Telerik TimeSpan Picker for Xamarin** provides an easy way to select a time duration. TimeSpan control represents a time interval and allows you to set a time range between two times measured in numbers of days, hours, minutes and seconds. The Flexible Styling API gives you the opportunity to fully customize the dialog appearance such as its header and footer.
 
-## Important Properties
+![TimeSpan Picker Overview](images/timespan_picker_overview.png)
 
-* **Time**(*TimeSpan?*): Defines the current selection of time interval. The default value is null.
+## Key features
 
-### Example 
+* **String Format**: TimeSpan Picker for Xamarin allows you to use standard or custom timespan format string through the TimeSpanPicker.SpinnerFormat property. Depending on what format is set, the picker visualizes spinner controls with prepopulated values to be picked. For more information check the [TimeSpan Format String]({%slug timespan-picker-format-string%}) article in our documentation.
 
-<snippet id='timespanpicker-keyfeatures-time' />
+* **Templates**: TimeSpan Picker provides templates for its header and footer. Also we have exposed templates for the picker placeholder and display text. For additional info go to [Templates]({%slug timespan-picker-templates%}) article.
 
-and add the following namespace:
+* **DisplayString Format**: You can choose what text to be displayed when a time interval is selected using the TimeSpanPicker DisplayStringFormat property. For more info on this check the [Key Features - DisplayString Format]({%slug timespan-picker-key-features%}#displaystring-format) section.
 
-```XAML
-xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
-```
+* **Time Range**: RadTimeSpan Picker allows you to define a time range when setting minimum and maximum time values and choose a time in between. To learn more about this, visit [Key Features Time Range]({%slug timespan-picker-key-features%}#timespan-range) section.
 
-## Methods
+* **Flexible Styling API**: Take advantage of the styling capabilities of the RadTimeSpanPicker control. You can easily style its Spinners, the Popup and its header and footer, the text displayed after time is selected and many [more]({%slug timespan-picker-styling%}).
 
-**TimeSpan Picker** for Xamarin allows you to clear the selected date through its **ClearSelection** method
+* **Commands Support**: TimeSpan Picker exposes command that allows you to clear the selected time interval - **Clear Command** and **Toggle Command** that allows you to open and close the dialog. More information about Commands support check our help article [here]({%slug timespan-picker-commands%}).
 
-### Example
-
-```XAML
-<StackLayout>
-    <Button Text="Clear Selection" Clicked="OnClearSelectionClicked"/>
-    <telerikInput:RadTimeSpanPicker x:Name="timeSpanPicker"/>
-</StackLayout>
-```
-
-In addition to this, you need to add the following namespace:
-
-```XAML
-xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
-```
-
-Call ClearSelection inside the button click event - as a result Time property will be updated to null.
-
-```C#
-private void OnClearSelectionClicked(object sender, EventArgs e)
-{
-    this.timeSpanPicker.ClearSelection();
-}
-```
-
-## Events
-
-**TimeSpan Picker** exposes a **SelectionChanged** event which is raised when the user pick the selected date.
-
-### Example
-
-```XAML
-<telerikInput:RadTimeSpanPicker SelectionChanged="RadTimeSpanPicker_SelectionChanged"/>
-```
-
-In addition to this, you need to add the following namespace:
-
-```XAML
-xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
-```
-
-and the **SelectionChanged** event, where the *sender* is the RadTimeSpanPicker control
-
-```C#
-private void RadTimeSpanPicker_SelectionChanged(object sender, EventArgs e)
-{
-	// implement your logic here
-}
-```
+>tip Check out TimeSpan Picker for Xamarin [Getting Started]({%slug timespan-picker-getting-started%}) help article that shows how to use it in a basic scenario.
 
 ## See Also
 

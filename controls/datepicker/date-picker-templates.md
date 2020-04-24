@@ -15,25 +15,37 @@ If the default templates of the control do not suit your needs, you can easily d
 * **HeaderTemplate**(*ControlTemplate*): Defines what will be displayed inside the dialog(popup) header.
 * **FooterTemplate**(*ControlTemplate*): Defines what will be displayed inside the dialog(popup) footer.
 
-## PlaceholderTemplate Default Look
+## PlaceholderTemplate
 
 <snippet id='datepicker-placeholder-default-template' />
 
-## DisplayTemplate Default Look
+## DisplayTemplate
 
 <snippet id='datepicker-display-default-template' />
 
-## HeaderTemplate Default Look
+## HeaderTemplate
 
 <snippet id='datepicker-header-default-template' />
 
-## FooterTemplate Default Look
+## FooterTemplate
 
 <snippet id='datepicker-footer-default-template' />
 
 and the Date Picker definition:
 
-<snippet id='datepicker-placeholder-default-template' />
+```XAML
+<telerikInput:RadDatePicker MinimumDate="2020,01,1" 
+                            MaximumDate="2025,12,31"
+                            SpinnerFormat="MMM/dd/yyyy"
+                            PlaceholderTemplate="{StaticResource Picker_PlaceholderView_ControlTemplate}"
+                            DisplayTemplate="{StaticResource Picker_DisplayView_ControlTemplate}">
+    <telerikInput:RadDatePicker.SelectorSettings>
+        <telerikInput:PickerPopupSelectorSettings HeaderTemplate="{StaticResource PopupView_Header_ControlTemplate}"
+                                                  HeaderLabelText="Date Picker"
+                                                  FooterTemplate="{StaticResource PopupView_Footer_ControlTemplate}"/>
+    </telerikInput:RadDatePicker.SelectorSettings>
+</telerikInput:RadDatePicker>
+```
 
 >important A sample Default Templates example can be found in the DatePicker/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

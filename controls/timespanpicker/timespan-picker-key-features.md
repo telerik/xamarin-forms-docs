@@ -10,7 +10,7 @@ slug: timespan-picker-key-features
 
 The purpose of this help article is to show you the key features of the TimeSpan Picker control for Xamarin. 
 
-## Date Range
+## TimeSpan Range
 
 Date Picker allows you to define a date range and choose a date in between through the following properties:
 
@@ -22,7 +22,7 @@ Date Picker allows you to define a date range and choose a date in between throu
 
 <snippet id='timespanpicker-keyfeatures-minmaxtime' />
 
-## Current Selected Time
+## Current Selected Time Interval
 
 * **Time**(*TimeSpan?*): Defines the current selection of time interval. The default value is null.
 
@@ -43,7 +43,7 @@ By defaul the TimeSpan Picker increments each part of its time values by one ste
 
 <snippet id='timespanpicker-keyfeatures-time-steps' />
 
-## DefaultHighlightedTime
+## DefaultHighlightedTime Interval
 
 RadTimeSpan Picker DefaultHighlightedTime(*TimeSpan*) defines the System.TimeSpan which will be visualized when there is no selection.
 

@@ -108,6 +108,5 @@ And the result:
 
 - [Templates]({%slug datetime-picker-templates%})
 - [Styling]({%slug datetime-picker-styling%})
-- [Events]({%slug datetime-picker-events%})
-- [Methods]({%slug datetime-picker-methods%})
+- [Selection]({%slug datetime-picker-selection%})
 - [Commands]({%slug datetime-picker-commands%})

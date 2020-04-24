@@ -102,6 +102,5 @@ And the result:
 
 - [Templates]({%slug date-picker-templates%})
 - [Styling]({%slug date-picker-styling%})
-- [Events]({%slug date-picker-events%})
-- [Methods]({%slug date-picker-methods%})
+- [Selection]({%slug date-picker-selection%})
 - [Commands]({%slug date-picker-commands%})

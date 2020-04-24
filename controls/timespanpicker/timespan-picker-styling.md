@@ -3,7 +3,7 @@ title: Selection
 page_title: Selection
 description: Check our &quot;Selection&quot; documentation article for Telerik TimeSpan Picker for Xamarin control.
 position: 5
-slug: timespan-picker-selection
+slug: timespan-picker-styling
 ---
 
 # Selection

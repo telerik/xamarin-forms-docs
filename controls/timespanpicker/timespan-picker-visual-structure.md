@@ -1,84 +1,38 @@
 ---
-title: Selection
+title: Visual Structure
 page_title: Selection
-description: Check our &quot;Selection&quot; documentation article for Telerik TimeSpan Picker for Xamarin control.
-position: 5
+description: Check our &quot;Visual Structure&quot; documentation article for Telerik TimeSpan Picker for Xamarin control.
+position: 0
 slug: timespan-picker-visual-structure
 ---
 
-# Selection
+# Visual Structure
 
-RadTimeSpanPicker control enables the app users to quickly and easily select a time interval. This topic will go through the provided by the DatePicker API related to time interval selection.
+Here are described all visual elements used in the TimeSpan Picker for Xamarin.
 
-## Important Properties
+## TimeSpan Picker Structure before and after time interval selection.
 
-* **Time**(*TimeSpan?*): Defines the current selection of time interval. The default value is null.
+![TimeSpan Picker Visual Structure](images/date_picker_placeholder_display.png "Visual elements of Date Picker control")
 
-### Example 
+## Picker Popup Visual Structure
 
-<snippet id='timespanpicker-keyfeatures-time' />
+>important More information about Spinners refer to the [RadSpinner help article]({%slug templated-picker-spinner%}).
 
-and add the following namespace:
+![TimeSpan Picker Popup Visual Structure](images/date_picker_structure.png "Visual elements of Date Picker Popup")
 
-```XAML
-xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
-```
+## Legend ##
 
-## Methods
-
-**TimeSpan Picker** for Xamarin allows you to clear the selected date through its **ClearSelection** method
-
-### Example
-
-```XAML
-<StackLayout>
-    <Button Text="Clear Selection" Clicked="OnClearSelectionClicked"/>
-    <telerikInput:RadTimeSpanPicker x:Name="timeSpanPicker"/>
-</StackLayout>
-```
-
-In addition to this, you need to add the following namespace:
-
-```XAML
-xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
-```
-
-Call ClearSelection inside the button click event - as a result Time property will be updated to null.
-
-```C#
-private void OnClearSelectionClicked(object sender, EventArgs e)
-{
-    this.timeSpanPicker.ClearSelection();
-}
-```
-
-## Events
-
-**TimeSpan Picker** exposes a **SelectionChanged** event which is raised when the user pick the selected date.
-
-### Example
-
-```XAML
-<telerikInput:RadTimeSpanPicker SelectionChanged="RadTimeSpanPicker_SelectionChanged"/>
-```
-
-In addition to this, you need to add the following namespace:
-
-```XAML
-xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
-```
-
-and the **SelectionChanged** event, where the *sender* is the RadTimeSpanPicker control
-
-```C#
-private void RadTimeSpanPicker_SelectionChanged(object sender, EventArgs e)
-{
-	// implement your logic here
-}
-```
+- **Placeholder** - the text visualized before picking a date/time. Placeholder could be customized through the [PlaceholderTemplate]({%slug timespan-picker-templates%}#placeholdertemplate) property.
+- **DisplayStringFormat** - the text vislualized after a date/time is picked.
+- **Header** - the text displayed in the popup header. It could se set a direct text through the [HeaderLabelText]({%slug timespan-picker-styling%}) property or fully customize the popup header using the [HeaderTemplate]({%slug datetime-picker-templates%}#headertemplate) property.
+- **SelectedDate** - the date displayed when popup is open.
+- **SpinnerHeader** - the text visualized for spinner header depending on the values to be picked. For example if the *SpinnerFormatString* is *d* and *AreSpinnerHeadersVisible="True"* The text visualized for spinner header will be **Month** **Day** **Year**.
+- **Spinner** - displays items in a list.
+- **SelectionHighlight** - highlisht the current selected date/time when the popup is open.
+- **Footer** - the footer of the popup. By default is contains OK and Cancel Buttons. It could be customized through the [FooterTemplate]({%slug timespan-picker-templates%}#footertemplate) property.
 
 ## See Also
 
 - [Key Features]({%slug timespan-picker-key-features%})
-- [Templates]({% slug timespan-picker-templates%})
-- [Commands]({% slug timespan-picker-commands%})
+- [Templates]({%slug timespan-picker-templates%})
+- [Commands]({%slug timespan-picker-commands%})

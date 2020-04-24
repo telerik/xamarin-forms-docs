@@ -2,7 +2,7 @@
 title: Localization
 page_title: Localization
 description: Check our &quot;Localization&quot; documentation article for Telerik TimeSpanPicker for Xamarin control.
-position: 4
+position: 5
 slug: timespan-picker-localization
 ---
 

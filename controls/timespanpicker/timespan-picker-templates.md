@@ -1,41 +1,82 @@
 ---
-title: Selection
-page_title: Selection
-description: Check our &quot;Selection&quot; documentation article for Telerik TimeSpan Picker for Xamarin control.
-position: 5
+title: Templates
+page_title: Templates
+description: Check our &quot;Templates&quot; documentation article for Telerik TimeSpan Picker for Xamarin control.
+position: 4
 slug: timespan-picker-templates
 ---
 
-# Selection
+# Templates
+If the default templates of the control do not suit your needs, you can easily define a custom template. The available templates for customizing are:
 
-RadTimeSpanPicker control enables the app users to quickly and easily select a time interval. This topic will go through the provided by the DatePicker API related to time interval selection.
+* **PlaceholderTemplate**(*ControlTemplate*): Defines the template visualized for the placeholder.  
+* **DisplayTemplate**(*ControlTemplate*): Defines the template visualized when the picked date/time is displayed.
+* **HeaderTemplate**(*ControlTemplate*): Defines what will be displayed inside the dialog(popup) header.
+* **FooterTemplate**(*ControlTemplate*): Defines what will be displayed inside the dialog(popup) footer.
 
-## Important Properties
+## PlaceholderTemplate
 
-* **Time**(*TimeSpan?*): Defines the current selection of time interval. The default value is null.
+<snippet id='datepicker-placeholder-default-template' />
 
-### Example 
+## DisplayTemplate
 
-<snippet id='timespanpicker-keyfeatures-time' />
+<snippet id='datepicker-display-default-template' />
 
-and add the following namespace:
+## HeaderTemplate
+
+<snippet id='datepicker-header-default-template' />
+
+## FooterTemplate
+
+<snippet id='datepicker-footer-default-template' />
+
+and the TimeSpan Picker definition:
 
 ```XAML
-xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+<telerikInput:RadTimeSpanPicker MinimumDate="2020,01,1" 
+	                            MaximumDate="2025,12,31"
+	                            SpinnerFormat="MMM/dd/yyyy"
+	                            PlaceholderTemplate="{StaticResource Picker_PlaceholderView_ControlTemplate}"
+	                            DisplayTemplate="{StaticResource Picker_DisplayView_ControlTemplate}">
+    <telerikInput:RadDTimeSpanPicker.SelectorSettings>
+        <telerikInput:PickerPopupSelectorSettings HeaderTemplate="{StaticResource PopupView_Header_ControlTemplate}"
+                                                  HeaderLabelText="Date Picker"
+                                                  FooterTemplate="{StaticResource PopupView_Footer_ControlTemplate}"/>
+    </telerikInput:RadTimeSpanPicker.SelectorSettings>
+</telerikInput:RadDatePicker>
 ```
 
-## Methods
+## Example How to Customize the Default Look
 
-**TimeSpan Picker** for Xamarin allows you to clear the selected date through its **ClearSelection** method
+The snippet below shows a simple TimeSpan Picker definition:
 
-### Example
+<snippet id=' timespanpicker-custom-templates' />
 
-```XAML
-<StackLayout>
-    <Button Text="Clear Selection" Clicked="OnClearSelectionClicked"/>
-    <telerikInput:RadTimeSpanPicker x:Name="timeSpanPicker"/>
-</StackLayout>
-```
+Now lets add the templates definition to the page resources:
+
+### Custom PlaceholderTemplate
+
+<snippet id='timespanpicker-placeholder-template' />
+
+![TimeSpan Picker PlaceholderTemplate](images/datepicker_placeholder_template.png)
+
+### Custom DisplayTemplate
+
+<snippet id='timespanpicker-display-template' />
+
+![TimeSpan Picker DisplayTemplate](images/datepicker_display_template.png)
+
+### Custom HeaderTemplate
+
+<snippet id='timespanpicker-header-template' />
+
+### Custom FooterTemplate
+
+<snippet id='timespanpicker-footer-template' />
+
+Here is how the header and footer looks after customization:
+
+![TimaSpan Picker FooterTemplate](images/datepicker_header_footer_template.png)
 
 In addition to this, you need to add the following namespace:
 
@@ -43,39 +84,7 @@ In addition to this, you need to add the following namespace:
 xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
 ```
 
-Call ClearSelection inside the button click event - as a result Time property will be updated to null.
-
-```C#
-private void OnClearSelectionClicked(object sender, EventArgs e)
-{
-    this.timeSpanPicker.ClearSelection();
-}
-```
-
-## Events
-
-**TimeSpan Picker** exposes a **SelectionChanged** event which is raised when the user pick the selected date.
-
-### Example
-
-```XAML
-<telerikInput:RadTimeSpanPicker SelectionChanged="RadTimeSpanPicker_SelectionChanged"/>
-```
-
-In addition to this, you need to add the following namespace:
-
-```XAML
-xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
-```
-
-and the **SelectionChanged** event, where the *sender* is the RadTimeSpanPicker control
-
-```C#
-private void RadTimeSpanPicker_SelectionChanged(object sender, EventArgs e)
-{
-	// implement your logic here
-}
-```
+>important A sample Custom Templates example can be found in the TimeSpan/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 

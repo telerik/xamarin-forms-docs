@@ -10,7 +10,7 @@ slug: date-picker-styling
 
 ## DatePicker Styling
 
-Date Picker control for Xamrin provides the following Style properties for customizing its look:
+Date Picker control for Xamarin provides the following Style properties for customizing its look:
 
 * **SpinnerStyle**(of type *Style* with target type **telerikDataControls:RadSpinner**): Defines the style applied to the spinner item and selected item.
 * **SpinnerHeaderStyle**(of type *Style* with target type **Xamarin.Forms.Label**): Specifies the style applied to each spinner header label.

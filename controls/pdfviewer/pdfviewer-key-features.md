@@ -133,6 +133,29 @@ And when the LayoutMode property is set to SinglePage:
 
 ![PdfViewer SinglePage](images/pdfviewer-single-page.png "PdfViewer SinglePage")
 
+## Password-protected Pdf Document
+
+Starting with R2 2020 release RadPdfViewer provides **SourcePasswordNeeded** event which is useful in cases you need to display a password-protected pdf document.
+
+* **SourcePasswordNeeded**: Occurs when a user password is needed to load the document In PdfViewer. The SourcePasswordNeeded event handler receives two parameters:
+	* The sender argument which is of type *object*, but can be cast to the *RadPdfViewer* type.
+	* A __PasswordNeededEventArgs__ object which provides **Password** property used to supply the user password.
+
+Here is a quick example of **SourcePasswordNeeded** event usage:
+
+```XAML
+<telerikPdfViewer:RadPdfViewer x:Name="pdfViewer" 
+                                SourcePasswordNeeded="pdfViewer_SourcePasswordNeeded" />
+```
+And add the event handler:
+
+```C#
+private void pdfViewer_SourcePasswordNeeded(object sender, Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Import.PasswordNeededEventArgs e)
+{
+    e.Password = "my_user_password_here";
+}
+```
+
 ## Page Spacing
 
 * **PageSpacing**(double): Defines the space between the pages of the Pdf Document. The default value is 20.0

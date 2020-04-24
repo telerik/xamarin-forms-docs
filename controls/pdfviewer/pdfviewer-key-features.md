@@ -137,7 +137,7 @@ And when the LayoutMode property is set to SinglePage:
 
 Starting with R2 2020 release RadPdfViewer provides **SourcePasswordNeeded** event which is useful in cases you need to display a password-protected pdf document.
 
-* **SourcePasswordNeeded**: Occurs when a user password is needed to load the document In PdfViewer. The SourcePasswordNeeded event handler receives two parameters:
+* **SourcePasswordNeeded**: Occurs when a user password is needed to load the document in PdfViewer. The SourcePasswordNeeded event handler receives two parameters:
 	* The sender argument which is of type *object*, but can be cast to the *RadPdfViewer* type.
 	* A __PasswordNeededEventArgs__ object which provides **Password** property used to supply the user password.
 

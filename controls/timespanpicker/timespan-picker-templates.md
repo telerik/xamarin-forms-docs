@@ -2,7 +2,7 @@
 title: Templates
 page_title: Templates
 description: Check our &quot;Templates&quot; documentation article for Telerik TimeSpan Picker for Xamarin control.
-position: 5
+position: 4
 slug: timespan-picker-templates
 ---
 

@@ -2,7 +2,7 @@
 title: Key Features
 page_title: Key Features
 description: Check our &quot;Key Features&quot; documentation article for Telerik TimeSpan Picker for Xamarin control.
-position: 2
+position: 3
 slug: timespan-picker-key-features
 ---
 

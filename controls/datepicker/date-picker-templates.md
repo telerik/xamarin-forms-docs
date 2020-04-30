@@ -8,7 +8,7 @@ slug: date-picker-templates
 
 # Templates
 
-If the default templates of the control do not suit your needs, you can easily define a custom template. The available templates for customizing are:
+If the default templates of the control do not suit your needs, you can easily define custom ones. The available templates for customizing are:
 
 * **PlaceholderTemplate**(*ControlTemplate*): Defines the template visualized for the placeholder.  
 * **DisplayTemplate**(*ControlTemplate*): Defines the template visualized when the picked date/time is displayed.

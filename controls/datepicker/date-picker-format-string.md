@@ -6,7 +6,7 @@ position: 2
 slug: date-picker-format-string
 ---
 
-# String Format
+# Spinner Format
 
 Date Picker for Xamarin allows you to use standard or custom date format strings through the **SpinnerFormat** property. Depending on what format is set, the picker visualizes spinner controls with prepopulated values to be picked.
 
@@ -42,7 +42,8 @@ The available Custom Date Format Strings which can be set to the SpinnerFormat p
 | "yyy" |
 | "yyyy" |
 
->important You can set only short [Standard Date Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings) to the Date Picker control.
+>important We currently do not support any standard date formats which contain long date inside them. [Standard Date Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings) to the Date Picker control.
+
 ## Supported Separators
 
 When SpinnerFormat is set and the device culture is changed, the separators used for the format string won't be changed:

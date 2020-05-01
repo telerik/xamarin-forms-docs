@@ -52,7 +52,7 @@ You have two options:
 | Android  | Telerik.Xamarin.Android.Primitives.dll<br/>Telerik.XamarinForms.Primitives.dll<br /> Telerik.XamarinForms.SkiaSharp.dll |
 | iOS      | Telerik.Xamarin.iOS.dll <br/>Telerik.XamarinForms.Primitives.dll<br/>Telerik.XamarinForms.DkiaSharp.dll |
 
-After that we need to add the Telerik.XamarinForms.Blazor.Primitives in our _Imports.razor page:
+After that we need to add the Telerik.XamarinForms.Blazor.Primitives in our `_Imports.razor` page:
 
 ```C#
 @using Telerik.XamarinForms.Blazor.Primitives;

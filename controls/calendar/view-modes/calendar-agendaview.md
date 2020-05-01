@@ -31,7 +31,7 @@ You can find below a full list of the available date and time format settings fo
 * **AppointmentItemTimeFormat**: Defines the time format shown for the appointments;
 * **AppointmentItemStartDateFormat**: Sets the format of the start date of the multi-day appointments;
 * **AppointmentItemEndDateFormat**: Specifies the format of the end date of the multi-day appointments;
-* **StickyHeaderFormat** : Specifies the format of the label shown in the "frozen" header at the top of the view. For more details on this go to [Sticky Headers]() section.
+* **StickyHeaderFormat** : Specifies the format of the label shown in the "frozen" header at the top of the view. For more details on this go to [Sticky Headers](#sticky-headers) section.
 
 The next image shows more clearly which format property to which agenda item corresponds:
 

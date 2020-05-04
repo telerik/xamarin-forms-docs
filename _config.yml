@@ -30,6 +30,9 @@ navigation:
     nativecontrols:
         title: "Native Controls Wrappers"
         position: 8
+    blazormobilecontrols:
+        title: "Xamarin Mobile Blazor Bindings"
+        position: 9   
     troubleshooting:
         title: "Troubleshooting"
         position: 12

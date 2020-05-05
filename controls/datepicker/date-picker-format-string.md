@@ -87,7 +87,7 @@ And the result:
 
 And the result:
 
-![](images/datetimepicker-string-format-mmm-yyyy.png)
+![](images/datepicker-string-format-mmm-yyyy.png)
 
 ### SpinnerFormat="yyyy/dd/MMM"
 
@@ -97,7 +97,7 @@ And the result:
 
 And the result:
 
-![](images/datetimepicker-string-format-yyyy-dd-MMM.png)
+![](images/datepicker-string-format-yyyy-dd-MMM.png)
 
 ## See Also
 

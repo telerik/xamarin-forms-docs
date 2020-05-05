@@ -134,7 +134,7 @@ xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=
 
 This is how the Time Picker control looks when the styles described above are applied:
 
-![Date and Time Picker](images/datetimepicker_style.png)
+![Time Picker](images/timepicker_style.png)
 
 >important A sample Styling example can be found in the TimePicker/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

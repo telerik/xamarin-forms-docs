@@ -43,7 +43,7 @@ Let's add the templates definition to the page resources:
 
 ![RadTimePicker FooterTemplate](images/timepicker_header_footer_template.png)
 
-In addition to this, you need to add the following namespace:
+In addition, you need to add the following namespace:
 
 ```XAML
 xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"

@@ -65,7 +65,7 @@ using Telerik.XamarinForms.Input;
 
 This is the result:
 
-![RadTimePicker](images/picker_getting_started.png)
+![RadTimePicker](images/timepicker_getting_started.png)
 
 >important **SDK Browser** and **Telerik Xamarin Samples** applications contain different examples that show RadTimePicker's main features. For detailed information on this go to [Xamarin Demos Applications]({%slug developer-focused-examples%}) topic.
 

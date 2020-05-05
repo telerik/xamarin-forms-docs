@@ -24,7 +24,7 @@ slug: time-picker-overview
 
 * **Flexible Styling API**: Take advantage of the styling capabilities of the RadTimePicker control. You can easily style its Spinners, the Popup and its header and footer, the text displayed after time is selected and many [more]({%slug time-picker-styling%}).
 
-* **Commands Support**: Time Picker exposes command that allows you to clear the selected time - **Clear Command** and **Toggle Command** that allows you to open and close the dialog. More information about Commands support check our help article [here]({%slug time-picker-commands%}).
+* **Commands Support**: Time Picker exposes command that allows you to clear the selected time - **Clear Command** and **Toggle Command** that allows you to open and close the dialog. For more information on this check TimePicker's [Commands]({%slug time-picker-commands%}) topic.
 
 >tip Check out Time Picker for Xamarin [Getting Started]({%slug time-picker-getting-started%}) help article that shows how to use it in a basic scenario.
 

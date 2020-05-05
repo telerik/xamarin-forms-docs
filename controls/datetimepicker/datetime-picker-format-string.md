@@ -17,7 +17,7 @@ Date and Time Picker for Xamarin allows you to use standard or custom date and t
 The available Standard Date and Time format strings that can be set to the SpinnerFormat property are described in the table below:
 
 | Supported Standard Date Format String | Description |
-| -------- || -------- |
+| -------- | -------- |
 | "d" | Short Date Format. Invariant culture format is MM/dd/yyyy |
 | "G" | Short Date "d" and Long Time "T" |
 | "g" | Short Date "d" and Short Time "t" |

@@ -16,15 +16,15 @@ RadDateTime Picker for Xamarin provides language localization. In short, you can
 
 | Localization Key | Default Value |
 | -----------------| ------------- |
-| ListPicker_Popup_HeaderLabelText  | Select Item |
+| ListPicker_Popup_HeaderLabelText | Select Item |
+| ListPicker_PlaceholderLabelText | Select Item |
 
 ## Common Picker Localizations strings
 
 | Localization Key | Default Value |
-| -----------------| ------------- |
-| Picker_PlaceholderLabelText  | Pick a value |
-| Picker_Popup_AcceptButtonText  | OK |
-| Picker_Popup_RejectButtonText  | Cancel |
+| ---------------- | ------------- |
+| Picker_Popup_AcceptButtonText | OK |
+| Picker_Popup_CancelButtonText | Cancel |
 
 Check in the image below how the common localization strings are presented in List Picker:
 

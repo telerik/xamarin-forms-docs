@@ -59,13 +59,13 @@ Now lets add the templates definition to the page resources:
 
 <snippet id='timespanpicker-placeholder-template' />
 
-![TimeSpan Picker PlaceholderTemplate](images/datepicker_placeholder_template.png)
+![TimeSpan Picker PlaceholderTemplate](images/timespanpicker_placeholder_template.png)
 
 ### Custom DisplayTemplate
 
 <snippet id='timespanpicker-display-template' />
 
-![TimeSpan Picker DisplayTemplate](images/datepicker_display_template.png)
+![TimeSpan Picker DisplayTemplate](images/timespanpicker_display_template.png)
 
 ### Custom HeaderTemplate
 
@@ -77,7 +77,7 @@ Now lets add the templates definition to the page resources:
 
 Here is how the header and footer looks after customization:
 
-![TimaSpan Picker FooterTemplate](images/datepicker_header_footer_template.png)
+![TimaSpan Picker FooterTemplate](images/timespanpicker_header_footer_template.png)
 
 In addition to this, you need to add the following namespace:
 

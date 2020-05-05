@@ -1,6 +1,6 @@
 ---
-title: Selection
-page_title: Selection
+title: Styling
+page_title: Styling
 description: Check our &quot;Selection&quot; documentation article for Telerik TimeSpan Picker for Xamarin control.
 position: 8
 slug: timespan-picker-styling
@@ -134,7 +134,7 @@ xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=
 
 This is how the TimeSpan Picker control looks when the styles described above are applied:
 
-![TimeSpan Picker](images/datetimepicker_style.png)
+![TimeSpan Picker](images/timespan_picker_style.png)
 
 >important A sample Styling example can be found in the TimeSpanPicker/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

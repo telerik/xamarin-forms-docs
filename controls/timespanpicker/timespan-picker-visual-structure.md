@@ -12,13 +12,13 @@ Here are described all visual elements used in the TimeSpan Picker for Xamarin.
 
 ## TimeSpan Picker Structure before and after time interval selection.
 
-![TimeSpan Picker Visual Structure](images/date_picker_placeholder_display.png "Visual elements of Date Picker control")
+![TimeSpan Picker Visual Structure](images/timespan_picker_placeholder_display.png "Visual elements of Date Picker control")
 
 ## Picker Popup Visual Structure
 
 >important More information about Spinners refer to the [RadSpinner help article]({%slug templated-picker-spinner%}).
 
-![TimeSpan Picker Popup Visual Structure](images/date_picker_structure.png "Visual elements of Date Picker Popup")
+![TimeSpan Picker Popup Visual Structure](images/timespan_picker_structure.png "Visual elements of Date Picker Popup")
 
 ## Legend ##
 

@@ -47,6 +47,7 @@ The SelectorSetting also provides the following properties for popup customizati
 	* When *IsPopupModal="False"* the popup could be closed when clicking outside the popup. 
 	
 * **HeaderLabelText**(*string*): Specifies the text visualized in the popup header.
+* **IsHeaderVisible**(*bool*): Specifies whether the Popup header is currently visible. By default the valuse is *True*.
 * **AcceptButtonText**(*string*): Defines the text visualized for the accept button. By default the text is *OK*.
 * **CancelButtonText**(*string*): Defines the text visualized for the cancel button. By default the text is *Cancel*. 
 

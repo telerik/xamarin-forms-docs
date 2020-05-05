@@ -29,18 +29,17 @@ The available controls which can be used in Mobile Blazor Bindings projects are 
 
 Let’s review the steps needed to get started with the Telerik UI for Xamarin controls in a Mobile Blazor Bindings project.
 
-1.	Setting up the project.
+### 1. Setting up the project.
 
 * Create a project using the approach described at the following link: https://docs.microsoft.com/en-us/mobile-blazor-bindings/get-started. 
 
 Then we can start adding our Telerik Controls. 
-
 Let’s add the **RadBusyIndicator** to the project.
 
 
-2. Adding the required Telerik references
+### 2. Adding the required Telerik references
 
-You have two options:
+	You have two options:
 
 *	Add the Telerik UI for Xamarin Blazor Nuget package following the instructions from the [Telerik Nuget package server]({%slug telerik-nuget-server%}) topic.
 
@@ -60,9 +59,9 @@ After that we need to add the Telerik.XamarinForms.Blazor.Primitives in our `_Im
 
 >important RadBusyIndicator is rendered via the SkiaSharp graphics library so you need to install also **SkiaSharp.Views.Forms** in all projects of the xamarin solution (Portable, Android, iOS, etc).
 
-3. Adding RadBusyIndicator control
+### 3. Adding RadBusyIndicator control
 	
-	3.1 Add new Razor component (lets call it RadBusyIndicatorPage.razor) and create the control inside:
+3.1 Add new Razor component (lets call it RadBusyIndicatorPage.razor) and create the control inside:
 		
 ```XML
 <ContentView VerticalOptions="LayoutOptions.Center" >
@@ -70,8 +69,8 @@ After that we need to add the Telerik.XamarinForms.Blazor.Primitives in our `_Im
 </ContentView>
 ```
 	
-	3.2 Then use the RadBusyIndicatorPage component as MainPage for the application by modifying the App.cs:
-	
+3.2 Then use the RadBusyIndicatorPage component as MainPage for the application by modifying the App.cs:
+
 ```C#
 public class App : Application
 {
@@ -92,9 +91,9 @@ public class App : Application
 }
 ```
 
-4. Customizations
+### 4. Customizations
 
-	4.1. Lets add a button that changes the IsBusy property of the RadBusyIndicator:
+4.1. Lets add a button that changes the IsBusy property of the RadBusyIndicator:
 	
 ```XML
 <ContentView>
@@ -123,7 +122,7 @@ public class App : Application
 }
 ```
 
-	4.2 Customize RadBusyIndicator. Lets change its **AnimationContentColor** and **AnimationType**. Also let's add **Content** and **BusyContent**:
+4.2 Customize RadBusyIndicator. Lets change its **AnimationContentColor** and **AnimationType**. Also let's add **Content** and **BusyContent**:
 	
 ```XML
 <RadBusyIndicator IsBusy="@IsBusyIndicatorBusy"	
@@ -144,12 +143,12 @@ public class App : Application
 </RadBusyIndicator>
 ```
 
-5. Run the application and see the result:
+### 5. Run the application and see the result:
 
 On Android:
 
-![Xamarin Blazor Binding BusyIndicator Android](images/busyindicator-blazor-xamarin-android.png "Xamarin Blazor Binding BusyIndicator"):
+![Xamarin Blazor Binding BusyIndicator Android](images/busyindicator-blazor-xamarin-android.png "Xamarin Blazor Binding BusyIndicator")
 
 on iOS:
 
-![Xamarin Blazor Binding BusyIndicator iOS](images/busyindicator-blazor-xamarin-iOS.png "Xamarin Blazor Binding BusyIndicator"):
+![Xamarin Blazor Binding BusyIndicator iOS](images/busyindicator-blazor-xamarin-iOS.png "Xamarin Blazor Binding BusyIndicator")

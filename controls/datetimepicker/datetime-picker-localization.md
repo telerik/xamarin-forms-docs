@@ -21,10 +21,6 @@ The sections below list all the localization keys used in Date and Time Picker S
 | DateTimePicker_Popup_HeaderLabelText  | Select Date and Time |
 | DateTimePicker_PlaceholderLabelText  | Select Date and Time |
 
-Check in the image below how the localization strings are presented in Date and Time Picker Spinners:
-
-![](images/datetimepicker-localization.png)
-
 ## Common Picker Localizations strings
 
 | Localization Key | Default Value |
@@ -39,9 +35,9 @@ Check in the image below how the localization strings are presented in Date and 
 | Picker_Popup_AcceptButtonText  | OK |
 | Picker_Popup_CancelButtonText  | Cancel |
 
-Check in the image below how the common localization strings are presented in Date and Time Picker:
+Check in the image below how the localization strings are presented in Date and Time Picker:
 
-![](images/dtpicker-localization.png)
+![DateTime Picker Localization](images/datetimepicker-localization.png)
 
 ## See Also
 

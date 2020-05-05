@@ -867,14 +867,18 @@ intro_columns:
   -   
     title: "Editors"
     items: 
-        "Entry": "entry-overview"
         "AutoCompleteView": "autocompleteview-overview"
-        "NumericInput": "numericinput-overview"
-        "MaskedInput": "maskedinput-overview"
+        "Date Picker": "date-picker-overview"
+        "DateTime Picker": "datetime-picker-overview"        
+        "Entry": "entry-overview"
         "Image Editor": "imageeditor-overview"
-        "DateTime Picker": "datetime-picker-overview"
+        "List Picker": "list-picker-overview"
+        "MaskedInput": "maskedinput-overview"
+        "NumericInput": "numericinput-overview"        
         "List Picker": "list-picker-overview"
         "Templated Picker": "templated-picker-overview"
+        "Time Picker": "time-picker-overview"
+        "TimeSpan Picker": "timespan-picker-overview"
 -
   categories:
   -

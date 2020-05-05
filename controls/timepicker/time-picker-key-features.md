@@ -65,6 +65,7 @@ Here is a sample Time Picker definition:
 ## See Also
 
 - [Templates]({%slug time-picker-templates%})
+- [Time Format Strings]({%slug time-picker-format-string%})
 - [Styling]({%slug time-picker-styling%})
 - [Selection]({%slug time-picker-selection%})
 - [Commands]({%slug time-picker-commands%})

@@ -18,8 +18,8 @@ The sections below list all the localization keys used in Time Picker Spinners.
 
 | Localization Key | Default Value |
 | -----------------| ------------- |
-| DateTimePicker_Popup_HeaderLabelText  | Select Time |
-| DateTimePicker_PlaceholderLabelText  | Select Time |
+| TimePicker_Popup_HeaderLabelText  | Select Time |
+| TimePicker_PlaceholderLabelText  | Select Time |
 
 ## Common Picker Localizations strings
 

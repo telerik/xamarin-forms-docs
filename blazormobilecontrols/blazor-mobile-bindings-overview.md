@@ -39,7 +39,7 @@ Let’s add the **RadBusyIndicator** to the project.
 
 ### 2. Adding the required Telerik references
 
-	You have two options:
+You have two options:
 
 *	Add the Telerik UI for Xamarin Blazor Nuget package following the instructions from the [Telerik Nuget package server]({%slug telerik-nuget-server%}) topic.
 

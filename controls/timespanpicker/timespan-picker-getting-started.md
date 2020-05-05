@@ -65,7 +65,7 @@ using Telerik.XamarinForms.Input;
 
 This is the result:
 
-![RadDatePicker](images/datepicker_getting_started.png)
+![TimeSpan Picker for Xamarin](images/timespanpicker_getting_started.png)
 
 >important **SDK Browser** and **Telerik Xamarin Samples** applications contain different examples that show RadTimeSpanPicker's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
 

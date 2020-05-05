@@ -32,7 +32,7 @@ The sections below list all the localization keys used in TimeSpan Picker for Xa
 | Picker_Popup_AcceptButtonText  | OK |
 | Picker_Popup_CancelButtonText  | Cancel |
 
-Check in the image below how the common localization strings are presented in TimeSpan Picker:
+Check in the image below how the localization strings are presented in TimeSpan Picker:
 
 ![Localization TimeSpan Picker](images/timespanpicker-localization.png)
 

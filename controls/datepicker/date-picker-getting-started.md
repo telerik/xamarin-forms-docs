@@ -67,7 +67,7 @@ This is the result:
 
 ![RadDatePicker](images/datepicker_getting_started.png)
 
->important **SDK Browser** and **Telerik Xamarin Samples** applications contain different examples that show RadDatePicker's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
+>important **SDK Browser** and **Telerik Xamarin Samples** applications contain different examples that show RadTimePicker's main features. For detailed information on this go to [Xamarin Demos Applications]({%slug developer-focused-examples%}) topic.
 
 ## See Also
 

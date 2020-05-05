@@ -39,6 +39,28 @@ Check in the image below how the localization strings are presented in Date and 
 
 ![DateTime Picker Localization](images/datetimepicker-localization.png)
 
+## Example with CustomLocalizationManager
+
+The snippet below shows a simple RadDateTimePicker definition:
+
+<snippet id='datetime-picker-localization-xaml' />
+
+In addition to this, you need to add the following namespace:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
+
+Create a custom class that inherits from TelerikLocalizationManager and override the GetString() method:
+
+<snippet id='datetimepicker-localization-code-behind' />
+
+Set it as the TelerikLocalizationManager.Manager:
+
+<snippet id='datetimepicker-custom-localization-manager' />
+
+>important A sample Localization example can be found in the DateTimePicker/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
+
 ## See Also
 
 * [Localization and Globalization]({%slug common-localization-and-globalization %})

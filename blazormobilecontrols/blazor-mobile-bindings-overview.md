@@ -57,7 +57,7 @@ After that we need to add the Telerik.XamarinForms.Blazor.Primitives in our `_Im
 @using Telerik.XamarinForms.Blazor.Primitives;
 ```
 
->important RadBusyIndicator is rendered via the SkiaSharp graphics library so you need to install also **SkiaSharp.Views.Forms** in all projects of the xamarin solution (Portable, Android, iOS, etc).
+>important RadBusyIndicator is rendered via the SkiaSharp graphics library so you need to install also **SkiaSharp.Views.Forms** in all projects of the xamarin solution (.NET Standard, Android, iOS).
 
 ### 3. Adding RadBusyIndicator control
 	

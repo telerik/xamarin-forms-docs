@@ -16,6 +16,8 @@ Here are described all visual elements used in the TimeSpan Picker for Xamarin.
 
 ## Picker Popup Visual Structure
 
+>note Currently, the RadTimeSpan Picker does not provide spinners for Milliseconds.
+
 >important More information about Spinners refer to the [RadSpinner help article]({%slug templated-picker-spinner%}).
 
 ![TimeSpan Picker Popup Visual Structure](images/timespan_picker_structure.png "Visual elements of TimeSpan Picker Popup")

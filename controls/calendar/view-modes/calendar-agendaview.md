@@ -47,16 +47,15 @@ The next image shows Agenda view with the AgendaViewSettings applied:
 
 ## Sticky Headers
 
-Starting with R2 2020 AgendaView provides the option to set its month headers as sticky. This means the current month header will "freeze" while scrolling through the items until the whole month is scrolled away. As you scroll through the next month, the currently sticked month header will be pushed by the next month header.
+Starting with R2 2020 AgendaView provides sticky month headers. This means the current month header will "freeze" while scrolling through the items until the whole month is scrolled away. As you scroll through the next month, the currently sticked month header will be pushed by the next month header.
 
-To enable the sticky headers behavior, just set **IsHeaderSticky** property of the AgendaViewSettings to True. 
+Sticky headers behavior is enabled by default, you have the option to disable it by setting the **IsHeaderSticky** property of the AgendaViewSettings to *False*. 
 
 ```XAML
 <telerikInput:RadCalendar x:Name="calendar"
 						  ViewMode="Agenda">
 	<telerikInput:RadCalendar.AgendaViewSettings>
-		<telerikInput:AgendaViewSettings IsHeaderSticky="True"
-										 StickyHeaderFormat="MMMM, YYYY" />
+		<telerikInput:AgendaViewSettings IsHeaderSticky="False" />
 	</telerikInput:RadCalendar.AgendaViewSettings>
 </telerikInput:RadCalendar>
 ```

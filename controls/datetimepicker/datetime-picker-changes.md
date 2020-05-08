@@ -21,7 +21,21 @@ The following table contains the names of the properties which were changed in t
 | SelectedDate | Date |
 | DefaultDisplayDate | DefaultHighlightedDate |
 | SpinnerFormatString | SpinnerFormat |
-| SpinnerHeadersStyle | SpinnerHeaderStyle |
+
+The following table contains the names of the localzation keys which were changed in the official version of the control:
+
+| Beta | Official |
+| -------- | -------- |
+| Pickers_Placeholder | DateTimePicker_PlaceholderLabelText |
+| DateTimePicker_AmPmSpinnerHeaderString | Picker_AmPmSpinnerHeaderLabelText |
+| DateTimePicker_DaySpinnerHeaderString | Picker_DaySpinnerHeaderLabelText |
+| DateTimePicker_HourSpinnerHeaderString | Picker_HourSpinnerHeaderLabelText |
+| DateTimePicker_MinuteSpinnerHeaderString | Picker_MinuteSpinnerHeaderLabelText |
+| DateTimePicker_MonthSpinnerHeaderString | Picker_MonthSpinnerHeaderLabelText |
+| DateTimePicker_SecondSpinnerHeaderString | Picker_SecondSpinnerHeaderLabelText |
+| DateTimePicker_YearSpinnerHeaderString | Picker_YearSpinnerHeaderLabelText |
+| Pickers_Popup_AcceptButtonText | Picker_Popup_AcceptButtonText |
+| Pickers_Popup_RejectButtonText | Picker_Popup_CancelButtonText |
 
 To accomodate these changes in your application update the property names from the beta version to the official ones.
 

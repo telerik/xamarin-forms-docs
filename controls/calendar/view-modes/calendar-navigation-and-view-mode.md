@@ -20,8 +20,8 @@ The table below lists the supported view modes for each platform:
 | Agenda			| &#x2714;	| &#x2714;	| - 		|
 | Year				| &#x2714;	| &#x2714;	| - 		|
 | Week				| &#x2714;	| &#x2714;	| -			|
-| MonthNames		| &#x2714;	| -			| &#x2714;	|
-| YearNumbers		| &#x2714;	| -			| &#x2714;	|
+| MonthNames		| &#x2714;	| -			| -			|
+| YearNumbers		| &#x2714;	| -			| -			|
 | Flow				| &#x2714;	| -			| - 		|
 
 You could check how the most used view modes look on different platforms below:

@@ -49,7 +49,7 @@ You have two options:
 | -------- | ---------- |
 | Portable | Telerik.XamarinForms.Blazor.Primitives.dll<br/>Telerik.XamarinForms.Primitives.dll |
 | Android  | Telerik.Xamarin.Android.Primitives.dll<br/>Telerik.XamarinForms.Primitives.dll<br /> Telerik.XamarinForms.SkiaSharp.dll |
-| iOS      | Telerik.Xamarin.iOS.dll <br/>Telerik.XamarinForms.Primitives.dll<br/>Telerik.XamarinForms.DkiaSharp.dll |
+| iOS      | Telerik.Xamarin.iOS.dll <br/>Telerik.XamarinForms.Primitives.dll<br/>Telerik.XamarinForms.SkiaSharp.dll |
 
 After that we need to add the Telerik.XamarinForms.Blazor.Primitives in our `_Imports.razor` page:
 
@@ -149,6 +149,6 @@ On Android:
 
 ![Xamarin Blazor Binding BusyIndicator Android](images/busyindicator-blazor-xamarin-android.png "Xamarin Blazor Binding BusyIndicator")
 
-on iOS:
+On iOS:
 
 ![Xamarin Blazor Binding BusyIndicator iOS](images/busyindicator-blazor-xamarin-iOS.png "Xamarin Blazor Binding BusyIndicator")

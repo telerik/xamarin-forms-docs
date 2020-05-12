@@ -158,9 +158,10 @@ Then register the custom renderer:
 
 ## Custom Renderer for iOS
 
-Create a class which inherits from the **Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartRenderer** and override its **OnElementChanged** method. Inside it create a new instance of the TKChartDelegate class.
+Create a class which inherits from the **Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartRenderer** and override its **OnElementChanged** method. Inside it create a new instance of the *CartesianChartDelegate* class.
 
 ```C#
+
 class CustomChartRenderer : Telerik.XamarinForms.ChartRenderer.iOS.CartesianChartRenderer
 {
     public CustomChartRenderer()
@@ -175,17 +176,22 @@ class CustomChartRenderer : Telerik.XamarinForms.ChartRenderer.iOS.CartesianChar
         if (control != null)
         {
             this.Control.Trackball.SnapMode = TelerikUI.TKChartTrackballSnapMode.ClosestPoint;
-            this.Control.Delegate = new ChartDelegate();
+            this.Control.Delegate = new MyChartDelegate(this.Element);
         }
     }
 }
 ```
 
-Inside the ChartDelegate class override the **TrackballDidTrackSelection** method and implement a custom logic for customizing the tooltip text:
+Inside the MyChartDelegate class override the **TrackballDidTrackSelection** method and implement a custom logic for customizing the tooltip text:
 
 ```C#
-public class ChartDelegate : TelerikUI.TKChartDelegate 
+public class MyChartDelegate : CartesianChartDelegate
 {
+    public MyChartDelegate(RadCartesianChart chart) : base(chart)
+    {
+           
+    }
+
     public override void TrackballDidTrackSelection(TelerikUI.TKChart chart, TelerikUI.TKChartSelectionInfo[] selection)
     {
         StringBuilder str = new StringBuilder();
@@ -201,7 +207,6 @@ public class ChartDelegate : TelerikUI.TKChartDelegate
             {
                 first = !first;
             }
-            //str.Append(string.Format("Day {0} series {1} - {2}", point.DataXValue, info.Series.Index + 1, point.DataYValue));
             str.Append(string.Format("Value of {0} is $ {1}", point.DataXValue, point.DataYValue));
         }
         chart.Trackball.Tooltip.Text = str.ToString();

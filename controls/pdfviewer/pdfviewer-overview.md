@@ -17,14 +17,22 @@ slug: pdfviewer-overview
 ## Key Features
 
 * **Visualize pdf documents**: RadPdfViewer could display pdf documents that include images, shapes (geometrics), different colors(solid, linear and radial gradients), ordered and bullet lists, and more. 
-* **Various document source options**: You could load the pdf document from a stream, from a file added as embedded resource or a file located on the device, etc. For more details check [here]({%slug pdfviewer-key-features%}).
-* **Zooming Functionality**: RadPdfViewer provides an option for **zoom in and zoom out** the content of the document. For more details on this check [here]({%slug pdfviewer-key-features%}).
-* **Single page and Continuous Scrolling Support**: Allows you to scroll the document in the viewer. Read [here]({%slug pdfviewer-key-features%}) for more details.
+
+* **Various document source options**: You could load the pdf document from a stream, from a file added as embedded resource or a file located on the device, etc. For more details check [Key Features: Pdf Document Visualization]({%slug pdfviewer-key-features%}).
+
+* **Zooming Functionality**: RadPdfViewer provides an option for **zoom in and zoom out** the content of the document. For more details on this check [Zoom Level Support]({%slug pdfviewer-key-features%}#zoom-level-support) topic.
+
+* **Single page and Continuous Scrolling Support**: You can choose between two layout modes which allow the document to be scrolled in the viewer. Read [Viewing Modes]({%slug pdfviewer-key-features%}#viewing-modes) for more details.
+
 * **Commands Support**: RadPdfViewer allows you to extend the default commands, such as ZoomIn, ZoomOut, NavigateTo (NextPage, PreviousPage, Page), FitToWidth and ToggleLayoutMode. For detailed information on the matter check [Commands]({%slug pdfviewer-commands%}) article. 
-* **RadPdf Toolbar** *(Build-In Commands Operations)*: You could take advantage of a pre-defined UI automatically wired with all of the commands provided by the control through built-in functionality. Check [here]({%slug pdfviewer-toolbar%}) for more info.
+
+* **RadPdf Toolbar** *(Build-In Commands Operations)*: You could take advantage of a pre-defined UI automatically wired with all of the commands provided by the control through built-in functionality. Check [Pdf Toolbar]({%slug pdfviewer-toolbar%}) article for more info.
+
+>tip Check out RadPdfViewer [Getting Started]({%slug pdfviewer-getting-started%}) help article that shows how to use it in a basic scenario.
 
 ## See Also
 
 - [Getting Started]({%slug pdfviewer-getting-started%})
 - [Key Features]({%slug pdfviewer-key-features%})
 - [Commands]({%slug pdfviewer-commands%})
+- [Pdf Toolbar]({%slug pdfviewer-toolbar%})

@@ -31,6 +31,7 @@ You can find below a full list of the available date and time format settings fo
 * **AppointmentItemTimeFormat**: Defines the time format shown for the appointments;
 * **AppointmentItemStartDateFormat**: Sets the format of the start date of the multi-day appointments;
 * **AppointmentItemEndDateFormat**: Specifies the format of the end date of the multi-day appointments;
+* **StickyHeaderFormat**: Specifies the format of the label shown in the "frozen" header at the top of the view. For more details on this go to [Sticky Headers](#sticky-headers) section.
 
 The next image shows more clearly which format property to which agenda item corresponds:
 
@@ -43,6 +44,42 @@ All of the above are applied using the **AgendaViewSettings** property of RadCal
 The next image shows Agenda view with the AgendaViewSettings applied:
 
 ![Calendar AgendaView Settings](../images/calendar_agendaview_settings.png)
+
+## Sticky Headers
+
+Starting with R2 2020 AgendaView provides sticky month headers. This means the current month header will "freeze" while scrolling through the items until the whole month is scrolled away. As you scroll through the next month, the currently sticked month header will be pushed by the next month header.
+
+Sticky headers behavior is enabled by default, you have the option to disable it by setting the **IsHeaderSticky** property of the AgendaViewSettings to *False*. 
+
+```XAML
+<telerikInput:RadCalendar x:Name="calendar"
+						  ViewMode="Agenda">
+	<telerikInput:RadCalendar.AgendaViewSettings>
+		<telerikInput:AgendaViewSettings IsHeaderSticky="False" />
+	</telerikInput:RadCalendar.AgendaViewSettings>
+</telerikInput:RadCalendar>
+```
+
+In addition, AgendaView provides means for customizing the look &amp; feel of the sticky header through the **StickyHeaderStyle** property of the AgendaViewSettings. 
+
+StickyHeaderStyle is of type *AgendaStickyHeaderStyle* and exposes the following properties: 
+
+* DecorationColor, DecorationHeight - related to the decoration line which separates the sticky header from the rest of the view;
+* TextColor, Padding, FontSize, FontFamily, FontAttributes and HorizontalTextAlignment - standard styling settings related to the header label.
+
+Check below a quick example on how **StickyHeaderStyle** can be applied:
+
+Let's have the following sample Calendar definition:
+
+<snippet id='calendar-agendaview-setstickyheader-xaml' />
+
+Add the referenced Style in the Resources section of the page:
+
+<snippet id='calendar-agendaview-stickyheader-style' />
+
+And here is the result on Android and iOS:
+
+![AgendaView Sticky Headers](../images/calendar_agendaview_stickyheaders.png)
 
 ## Agenda Items Styling
 

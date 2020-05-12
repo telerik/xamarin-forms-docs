@@ -16,8 +16,7 @@ Its purpose is to specify a property of the source object to serve as the visual
 
 ## DisplayStringFormat
 
-You can choose what text to display when an item from the spinner was picked through the Picker DisplayStringFormat property. For more info on this check the Key Features - Display String section.
-
+You can choose what text to display when an item from the spinner was picked through the Picker DisplayStringFormat property.
 ## SelectedValue
 
 The SelectedValue property is used when you have linked your RadTemplatedPicker to a data source, and you want to return a value of type object other than the one which is displayed. 

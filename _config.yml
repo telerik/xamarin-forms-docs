@@ -30,6 +30,9 @@ navigation:
     nativecontrols:
         title: "Native Controls Wrappers"
         position: 8
+    blazormobilecontrols:
+        title: "Xamarin Mobile Blazor Bindings"
+        position: 9   
     troubleshooting:
         title: "Troubleshooting"
         position: 12
@@ -218,9 +221,14 @@ navigation:
         position: 11
     ## End DataGrid
     
+    ## DatePicker
+    controls/datepicker:
+        title: "Date Picker"
+    ## End DatePicker
+    
     ## DateTimePicker
     controls/datetimepicker:
-        title: "DateTime Picker (beta)"
+        title: "DateTime Picker"
     ## End DateTimePicker
     
     ## DockLayout
@@ -446,7 +454,7 @@ navigation:
     ## End ImageEditor
     ## ListPicker
     controls/listpicker:
-        title: "List Picker (beta)"
+        title: "List Picker"
     ## End ListPicker
     ## ListView
     controls/listview:
@@ -507,8 +515,16 @@ navigation:
     ## End TabView
     ## TemplatedPicker
     controls/templatedpicker:
-        title: "Templated Picker (beta)"
+        title: "Templated Picker"
     ## End TemplatedPicker
+    ## TimePicker
+    controls/timepicker:
+        title: "Time Picker"
+    ## End TimePicker
+    ## TimeSpanPicker
+    controls/timespanpicker:
+        title: "TimeSpan Picker"
+    ## End TimeSpanPicker
     ## TreeView
     controls/treeview:
         title: "TreeView"
@@ -851,14 +867,18 @@ intro_columns:
   -   
     title: "Editors"
     items: 
-        "Entry": "entry-overview"
         "AutoCompleteView": "autocompleteview-overview"
-        "NumericInput": "numericinput-overview"
-        "MaskedInput": "maskedinput-overview"
+        "Date Picker": "date-picker-overview"
+        "DateTime Picker": "datetime-picker-overview"        
+        "Entry": "entry-overview"
         "Image Editor": "imageeditor-overview"
-        "DateTime Picker": "datetime-picker-overview"
+        "List Picker": "list-picker-overview"
+        "MaskedInput": "maskedinput-overview"
+        "NumericInput": "numericinput-overview"        
         "List Picker": "list-picker-overview"
         "Templated Picker": "templated-picker-overview"
+        "Time Picker": "time-picker-overview"
+        "TimeSpan Picker": "timespan-picker-overview"
 -
   categories:
   -

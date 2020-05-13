@@ -22,7 +22,7 @@ PickerContentView class exposes the following properties for styling the DatePic
 
 * **BackgroundColor**(*Xamarin.Forms.Color*): Defines the background color of the picker.
 * **BorderColor**(*Xamarin.Forms.Color*): Defines the border color of the picker.
-* **BorderThichness**(*Xamarin.Forms.Thickness*): Specifies the border thickness of the picker.
+* **BorderThickness**(*Xamarin.Forms.Thickness*): Specifies the border thickness of the picker.
 * **CornerRadius**(*Xamarin.Forms.Thinckness*): Specifies the corner radius of the picker.
 
 ## Popup Styling
@@ -45,6 +45,7 @@ The SelectorSetting also provides the following properties for popup customizati
 	
 * **HeaderLabelText**(*string*): Specifies the text visualized in the popup header.
 * **IsHeaderVisible**(*bool*): Specifies whether the Popup header is currently visible. By default the valuse is *True*.
+* **IsFooterVisible**(*bool*): Specifies whether the Popup footer is currently visible. By default the valuse is *True*.
 * **AcceptButtonText**(*string*): Defines the text visualized for the accept button. By default the text is *OK*.
 * **CancelButtonText**(*string*): Defines the text visualized for the cancel button. By default the text is *Cancel*. 
 

@@ -8,7 +8,7 @@ slug: datetime-picker-changes
 
 # DateTime Picker from Beta to Official
 
-The following article describes the changes made in the DateTimePicker in its official version.
+With R2 2020 Official Release of Telerik UI for Xamarin, the RadDateTimePicker control is now official. The following article describes the changes made in the DateTimePicker in its official version.
 
 ## API changes
 
@@ -21,6 +21,24 @@ The following table contains the names of the properties which were changed in t
 | SelectedDate | Date |
 | DefaultDisplayDate | DefaultHighlightedDate |
 | SpinnerFormatString | SpinnerFormat |
+
+### DisplayStringFormat
+
+The DisplayStringFormat default value is the same as the SpinnerFormat value. Default value of the SpinnerFormat is "g". For more details please check the [SpinnerFormat article]({%slug datetime-picker-format-string%}).
+
+### Placeholder Label Text
+
+| Beta | Official |
+| -------- | -------- |
+| Pick a value | Select Date and Time |
+
+### Looping
+
+The looping is stopped if not all items are populated. 
+* year spinner - looping is enabled if items are above 5.
+* month and day spinners - looping is disabled if not all possible values are currently available (e.g. if months are less than 12; days are less than the allowed for the current month).
+
+### Localization keys
 
 The following table contains the names of the localzation keys which were changed in the official version of the control:
 
@@ -40,6 +58,17 @@ The following table contains the names of the localzation keys which were change
 To accomodate these changes in your application update the property names from the beta version to the official ones.
 
 ## Visual changes
+
+### Border below the DateTime Picker text
+
+* **BorderThickness**(*Xamarin.Forms.Thickness*): Specifies the border thickness of the picker. Default value is `new Thickness(0,0,0,1)`.
+
+### Header and Footer visibility
+
+With the official version of the control **IsHeaderVisible** and **IsFooterVisible** porperties have a public setter.
+
+By default the header of the DateTimePicker is not visible. In order to visualize the header you need to set `IsHeaderVisible` property to `True`. The default value of HeaderLabelText is **Select Date and Time**.
+By default the footer of the DateTimePicker is visible. In order to hide the footer you need to set `IsFooterVisible` to `False`.
 
 ### OK and Cancel Buttons TextColor
 

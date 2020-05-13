@@ -6,7 +6,7 @@ position: 2
 slug: datetime-picker-format-string
 ---
 
-# String Format
+# Spinner Format
 
 Date and Time Picker for Xamarin allows you to use standard or custom date and time format strings through the SpinnerFormat property. Depending on what format is set, the picker visualizes spinner controls with prepopulated values to be picked. This feature allows you to create a date picker, time picker or combination of both.
 

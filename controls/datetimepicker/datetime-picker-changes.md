@@ -65,8 +65,8 @@ To accomodate these changes in your application update the property names from t
 
 With the official version of the control **IsHeaderVisible** and **IsFooterVisible** porperties have a public setter.
 
-By default the header of the DateTimePicker is not visible. In order to visualize the header you need to set `IsHeaderVisible` property to `True`. The default value of HeaderLabelText is **Select Date and Time**.
-By default the footer of the DateTimePicker is visible. In order to hide the footer you need to set `IsFooterVisible` to `False`.
+By default the header of the DateTimePicker Popup is not visible. In order to visualize the header you need to set `IsHeaderVisible` property to `True`. The default value of HeaderLabelText is **Select Date and Time**.
+By default the footer of the DateTimePicker Popup is visible. In order to hide the footer you need to set `IsFooterVisible` to `False`.
 
 ### OK and Cancel Buttons TextColor
 

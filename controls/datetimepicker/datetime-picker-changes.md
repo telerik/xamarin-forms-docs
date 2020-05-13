@@ -24,7 +24,7 @@ The following table contains the names of the properties which were changed in t
 
 ### DisplayStringFormat
 
-The DisplayStringFormat default value is the same as the SpinnerFormat value. Default value of the SpinnerFormat is "g". For more details please check the [SpinnerFormat article]({%slug datetime-picker-format-string%}).
+When DisplayStringFormat is not set explicitly its default value is taken from SpinnerFormat. Default value of the SpinnerFormat is "g". For more details please check the [SpinnerFormat article]({%slug datetime-picker-format-string%}).
 
 ### Placeholder Label Text
 
@@ -34,9 +34,7 @@ The DisplayStringFormat default value is the same as the SpinnerFormat value. De
 
 ### Looping
 
-The looping is stopped if not all items are populated. 
-* year spinner - looping is enabled if items are above 5.
-* month and day spinners - looping is disabled if not all possible values are currently available (e.g. if months are less than 12; days are less than the allowed for the current month).
+Looping of items is stopped automatically when reaching the limits imposed by MinimumDate and MaximumDate.
 
 ### Localization keys
 

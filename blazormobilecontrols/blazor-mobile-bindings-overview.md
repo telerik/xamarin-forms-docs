@@ -31,13 +31,13 @@ Let’s review the steps needed to get started with the Telerik UI for Xamarin c
 
 ### 1. Setting up the project.
 
-* Create a project using the approach described at the following link: https://docs.microsoft.com/en-us/mobile-blazor-bindings/get-started. 
+Let's begin with a new Xamarin Mobile Blazor project. Visit the [Getting Started](https://docs.microsoft.com/en-us/mobile-blazor-bindings/get-started) article in the Microsoft documentation. Now, we can start adding our Telerik Controls.
 
-Then we can start adding our Telerik Controls. 
-Let’s add the **RadBusyIndicator** to the project.
-
+> For a faster quick-start, visit [Walkthrough: Creating your First App](https://docs.microsoft.com/en-us/mobile-blazor-bindings/walkthroughs/build-first-app).
 
 ### 2. Adding the required Telerik references
+
+Let’s add the **RadBusyIndicator** to the project. To do this, we'll need to add the Telerik references that the RadBusyIndicator requires.
 
 You have two options:
 

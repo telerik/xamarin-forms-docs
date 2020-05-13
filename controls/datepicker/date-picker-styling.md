@@ -22,7 +22,7 @@ PickerContentView class exposes the following properties for styling the DatePic
 
 * **BackgroundColor**(*Xamarin.Forms.Color*): Defines the background color of the picker.
 * **BorderColor**(*Xamarin.Forms.Color*): Defines the border color of the picker.
-* **BorderThickness**(*Xamarin.Forms.Thickness*): Specifies the border thickness of the picker.
+* **BorderThickness**(*Xamarin.Forms.Thickness*): Specifies the border thickness of the picker. Default value is `new Thickness(0,0,0,1)`.
 * **CornerRadius**(*Xamarin.Forms.Thinckness*): Specifies the corner radius of the picker.
 
 ## Popup Styling

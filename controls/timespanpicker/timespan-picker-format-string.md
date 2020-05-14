@@ -6,7 +6,7 @@ position: 2
 slug: timespan-picker-format-string
 ---
 
-# String Format
+# Spinner Format
 
 TimeSpan Picker for Xamarin allows you to use standard or custom timespan format strings through the SpinnerFormat property. Depending on what format is set, the picker visualizes spinner controls with prepopulated values to be picked.
 

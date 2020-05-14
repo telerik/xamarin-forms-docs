@@ -14,7 +14,7 @@ slug: time-picker-overview
 
 ## Key features
 
-* **String Format**: Time Picker for Xamarin allows you to use standard or custom time format string through the TimePicker.SpinnerFormat property. Depending on what format is set, the picker visualizes spinner controls with prepopulated values to be picked. For more information check the [Time Format String]({%slug time-picker-format-string%}) article in our documentation.
+* **Spinner Format**: Time Picker for Xamarin allows you to use standard or custom time format string through the TimePicker.SpinnerFormat property. Depending on what format is set, the picker visualizes spinner controls with prepopulated values to be picked. For more information check the [Time Format String]({%slug time-picker-format-string%}) article in our documentation.
 
 * **Templates**: Time Picker provides templates for its header and footer. Also we have exposed templates for the picker placeholder and display text. For additional info go to [Templates]({%slug time-picker-templates%}) article.
 

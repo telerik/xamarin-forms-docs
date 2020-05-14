@@ -14,7 +14,7 @@ slug: date-picker-overview
 
 ## Key features
 
-* **String Format**: Date Picker for Xamarin allows you to use standard or custom date format string through the DatePicker.SpinnerFormat property. Depending on what format is set, the picker visualizes spinner controls with prepopulated values to be picked. For more information check the [Date Format String]({%slug date-picker-format-string%}) article in our documentation.
+* **Spinner Format**: Date Picker for Xamarin allows you to use standard or custom date format string through the DatePicker.SpinnerFormat property. Depending on what format is set, the picker visualizes spinner controls with prepopulated values to be picked. For more information check the [Date Format String]({%slug date-picker-format-string%}) article in our documentation.
 
 * **Templates**: Date Picker provides templates for its header and footer. Also we have exposed templates for the picker placeholder and display text. For additional info go to [Templates]({%slug date-picker-templates%}) article.
 

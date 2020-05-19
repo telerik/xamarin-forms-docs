@@ -31,7 +31,7 @@ You can find below a full list of the available date and time format settings fo
 * **AppointmentItemTimeFormat**: Defines the time format shown for the appointments;
 * **AppointmentItemStartDateFormat**: Sets the format of the start date of the multi-day appointments;
 * **AppointmentItemEndDateFormat**: Specifies the format of the end date of the multi-day appointments;
-* **StickyHeaderFormat** : Specifies the format of the label shown in the "frozen" header at the top of the view. For more details on this go to [Sticky Headers](#sticky-headers) section.
+* **StickyHeaderFormat**: Specifies the format of the label shown in the "frozen" header at the top of the view. For more details on this go to [Sticky Headers](#sticky-headers) section.
 
 The next image shows more clearly which format property to which agenda item corresponds:
 
@@ -47,16 +47,15 @@ The next image shows Agenda view with the AgendaViewSettings applied:
 
 ## Sticky Headers
 
-Starting with R2 2020 AgendaView provides the option to set its month headers as sticky. This means the current month header will "freeze" while scrolling through the items until the whole month is scrolled away. As you scroll through the next month, the currently sticked month header will be pushed by the next month header.
+Starting with R2 2020 AgendaView provides sticky month headers. This means the current month header will "freeze" while scrolling through the items until the whole month is scrolled away. As you scroll through the next month, the currently sticked month header will be pushed by the next month header.
 
-To enable the sticky headers behavior, just set **IsHeaderSticky** property of the AgendaViewSettings to True. 
+Sticky headers behavior is enabled by default, you have the option to disable it by setting the **IsHeaderSticky** property of the AgendaViewSettings to *False*. 
 
 ```XAML
 <telerikInput:RadCalendar x:Name="calendar"
 						  ViewMode="Agenda">
 	<telerikInput:RadCalendar.AgendaViewSettings>
-		<telerikInput:AgendaViewSettings IsHeaderSticky="True"
-										 StickyHeaderFormat="MMMM, YYYY" />
+		<telerikInput:AgendaViewSettings IsHeaderSticky="False" />
 	</telerikInput:RadCalendar.AgendaViewSettings>
 </telerikInput:RadCalendar>
 ```
@@ -70,13 +69,17 @@ StickyHeaderStyle is of type *AgendaStickyHeaderStyle* and exposes the following
 
 Check below a quick example on how **StickyHeaderStyle** can be applied:
 
-Add a sample Calendar definition:
+Let's have the following sample Calendar definition:
 
 <snippet id='calendar-agendaview-setstickyheader-xaml' />
 
 Add the referenced Style in the Resources section of the page:
 
 <snippet id='calendar-agendaview-stickyheader-style' />
+
+And here is the result on Android and iOS:
+
+![AgendaView Sticky Headers](../images/calendar_agendaview_stickyheaders.png)
 
 ## Agenda Items Styling
 

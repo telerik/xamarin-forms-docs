@@ -18,27 +18,21 @@ The sections below list all the localization keys used in Time Picker Spinners.
 
 | Localization Key | Default Value |
 | -----------------| ------------- |
-| DateTimePicker_AmPmSpinnerHeaderString  | AM/PM |
-| DateTimePicker_DaySpinnerHeaderString  | Day |
-| DateTimePicker_HourSpinnerHeaderString  | Hours |
-| DateTimePicker_MinuteSpinnerHeaderString  | Minutes |
-| DateTimePicker_MonthSpinnerHeaderString  | Month |
-| DateTimePicker_SecondSpinnerHeaderString  | Seconds |
-| DateTimePicker_YearSpinnerHeaderString  | Year |
-
-Check in the image below how the localization strings are presented in Time Picker Spinners:
-
-![](images/datetimepicker-localization.png)
+| TimePicker_Popup_HeaderLabelText  | Select Time |
+| TimePicker_PlaceholderLabelText  | Select Time |
 
 ## Common Picker Localizations strings
 
 | Localization Key | Default Value |
 | -----------------| ------------- |
-| Pickers_Placeholder  | Pick a value |
-| Pickers_Popup_AcceptButtonText  | OK |
-| Pickers_Popup_RejectButtonText  | Cancel |
+| Picker_AmPmSpinnerHeaderLabelText  | AM/PM |
+| Picker_HourSpinnerHeaderLabelText  | Hours |
+| Picker_MinuteSpinnerHeaderLabelText | Minutes |
+| Picker_SecondSpinnerHeaderLabelText  | Seconds |
+| Picker_Popup_AcceptButtonText  | OK |
+| Picker_Popup_CancelButtonText  | Cancel |
 
-Check in the image below how the common localization strings are presented in Time Picker:
+Check in the image below how the localization strings are presented in Time Picker:
 
 ![](images/timepicker-localization.png)
 

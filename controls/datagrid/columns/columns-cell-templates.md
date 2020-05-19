@@ -10,10 +10,10 @@ slug: datagrid-cell-templates
 
 This article describes how to set the content and edit templates to the DataGrid column using the **CellContentTemplate** and **CellEditTemplate** properties.
 
-* **CellContentTemplate** (DataTemplate): Defines the appearance of each cell assosiated with the concrete column. CellContenTemplate gives you the opportunity to wrap the text inside each datagrid column. You can add a Label as a content of the Text, Template Column and wrap its text using the Label's **LineBreakMode** property.
-* **CellEditTemplate** (DataTemplate): Defines the editor assosiated with the concrete column. The CellEditTemplate is displayed when the cell is in edit mode.
+* **CellContentTemplate** (DataTemplate): Defines the appearance of each cell associated with the concrete column. CellContenTemplate gives you the opportunity to wrap the text inside each datagrid column. You can add a Label as a content of the Text, Template Column and wrap its text using the Label's **LineBreakMode** property.
+* **CellEditTemplate** (DataTemplate): Defines the editor associated with the concrete column. The CellEditTemplate is displayed when the cell is in edit mode.
 
->important **CellContentTemplate** and **CellEditTemplate** properties are part of the DataGrid features from R2 2020 Official Release. More details on this feature check the [Cell Templates]({%slug datagrid-cell-templates%})article.
+>important **CellContentTemplate** and **CellEditTemplate** properties are part of the DataGrid features from R2 2020 Official Release. More details on this feature check the [Cell Templates]({%slug datagrid-cell-templates%}) article.
 
 ## Cell Content Template Example
 
@@ -59,7 +59,7 @@ And the **Club** custom object:
 
 <snippet id='datagrid-columns-data'/>
 
->important An example with DataGrid CellEditTemplate can be found in the DataGrid/Columns folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+>important A sample example with DataGrid CellEditTemplate can be found in the DataGrid/Columns folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 

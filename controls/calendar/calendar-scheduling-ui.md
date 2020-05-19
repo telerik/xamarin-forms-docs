@@ -89,7 +89,7 @@ If you prefer the MVVM pattern, you can take advantage of the exposed commands w
 	
 #### Example
 
-Let's have the following Calendar instance with with both **ShowAddAppointmentViewCommand** and **ShowEditAppointmentViewCommand** added to Calendar's Commands collection:
+Let's have the following Calendar instance with both **ShowAddAppointmentViewCommand** and **ShowEditAppointmentViewCommand** added to Calendar's Commands collection:
 
 ```XAML
 <telerikInput:RadCalendar Grid.Row="1"
@@ -155,6 +155,7 @@ public class ViewModel
         this.EditAppointmentContext = new ShowEditAppointmentViewCommandContext();
         this.EditAppointmentContext.Appointment = this.Appointments.FirstOrDefault();
     }
+	
     public ObservableCollection<Appointment> Appointments { get; set; }
 
     public ShowAddAppointmentViewCommandContext AddNewAppointmentContext { get; set; }

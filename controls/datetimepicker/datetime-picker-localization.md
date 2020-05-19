@@ -18,6 +18,13 @@ The sections below list all the localization keys used in Date and Time Picker S
 
 | Localization Key | Default Value |
 | -----------------| ------------- |
+| DateTimePicker_Popup_HeaderLabelText  | Select Date and Time |
+| DateTimePicker_PlaceholderLabelText  | Select Date and Time |
+
+## Common Picker Localizations strings
+
+| Localization Key | Default Value |
+| -----------------| ------------- |
 | Picker_AmPmSpinnerHeaderLabelText  | AM/PM |
 | Picker_DaySpinnerHeaderLabelText  | Day |
 | Picker_HourSpinnerHeaderLabelText  | Hours |
@@ -25,22 +32,34 @@ The sections below list all the localization keys used in Date and Time Picker S
 | Picker_SecondSpinnerHeaderLabelText  | Seconds |
 | Picker_MonthSpinnerHeaderLabelText  | Month |
 | Picker_YearSpinnerHeaderLabelText  | Year |
-
-Check in the image below how the localization strings are presented in Date and Time Picker Spinners:
-
-![](images/datetimepicker-localization.png)
-
-## Common Picker Localizations strings
-
-| Localization Key | Default Value |
-| -----------------| ------------- |
-| Picker_PlaceholderLabelText  | Pick a value |
 | Picker_Popup_AcceptButtonText  | OK |
-| Picker_Popup_RejectButtonText  | Cancel |
+| Picker_Popup_CancelButtonText  | Cancel |
 
-Check in the image below how the common localization strings are presented in Date and Time Picker:
+Check in the image below how the localization strings are presented in Date and Time Picker:
 
-![](images/dtpicker-localization.png)
+![DateTime Picker Localization](images/datetimepicker-localization.png)
+
+## Example with CustomLocalizationManager
+
+The snippet below shows a simple RadDateTimePicker definition:
+
+<snippet id='datetime-picker-localization-xaml' />
+
+In addition to this, you need to add the following namespace:
+
+```XAML
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
+
+Create a custom class that inherits from TelerikLocalizationManager and override the GetString() method:
+
+<snippet id='datetimepicker-localization-code-behind' />
+
+Set it as the TelerikLocalizationManager.Manager:
+
+<snippet id='datetimepicker-custom-localization-manager' />
+
+>important A sample Localization example can be found in the DateTimePicker/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
 
 ## See Also
 

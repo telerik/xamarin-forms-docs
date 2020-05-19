@@ -42,7 +42,7 @@ Then, add the RadCalendar definition to your page:
 
 ## Add Appointment Button
 
-With R2 2020 Release of Telerik UI for Xamarin RadCalendar control provides you the option to add appointments using the calendar's **Add Appointment Button**. БBy default the add appointment button is not visible. In order to display it on the screen you need to use the following porperty:
+With R2 2020 Release of Telerik UI for Xamarin RadCalendar control provides you the option to add appointments using the calendar's **Add Appointment Button**. By default the add appointment button is not visible. In order to display it on the screen you need to use the following porperty:
 
 * **IsAddAppointmentVisible**(*bool*): Specifies whether the add appointment button will be visible. If you want to add appointments using the button you need to set the **IsAddAppointmentVisible** to **True**.
 
@@ -52,7 +52,7 @@ With R2 2020 Release of Telerik UI for Xamarin RadCalendar control provides you 
 
 <snippet id='calendar-appointment-button-click-event'/>
 
-### The image below shows where is the button position when IsAddAppointmentVisible="True":
+The image below shows where is the button position when IsAddAppointmentVisible="True":
 
 ![Appointment Button](images/add-appointment-button.png)
 

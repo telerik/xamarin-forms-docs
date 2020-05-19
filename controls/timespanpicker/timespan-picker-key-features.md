@@ -18,6 +18,8 @@ Date Picker allows you to define a date range and choose a date in between throu
 
 * **MaximumTime**(*TimeSpan*): Defines the upper limit of the available selection range. The default value is `TimeSpan(30, 23, 59, 59)`.
 
+>important If negaive value is set for MinimumTime, the TimeSpan Picker will coerce this value to minimum value - `TimeSpan(0, 0, 0, 0, 0)`.
+
 ### Example
 
 <snippet id='timespanpicker-keyfeatures-minmaxtime' />

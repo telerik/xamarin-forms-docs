@@ -83,8 +83,17 @@ If you're receiving this error when connecting to Telerik Nuget Server, you coul
 1. Scroll through all the entries until you find any that are for nuget.telerik.com;
 1. Once you find that entry, expand it and select "edit";
 1. Make sure the username and password are the same ones you use for your Telerik account (use the Email in the place of username) and click "Save".
+1. Make sure the URL does not have a trailing slash, it must be only `https://nuget.telerik.com/nuget`
 
 Now you can reopen Visual Studio and access the Telerik NuGet server. 
+
+#### Networking Problems
+
+Another common problem is that your machine (PC or DevOps agent) is behind a proxy. To check if you're experiencing a networking issue, open the following URL in your web browser:
+
+https://nuget.telerik.com/nuget/Search()?$filter=IsAbsoluteLatestVersion&searchTerm=%27Xamarin%27&includePrerelease=true&$skip=0&$top=100&semVerLevel=2.0.0. 
+
+After you enter your Telerik.com username and password, you should see an XML search result containing a list of all the Telerik.UI.for.Xamarin packages available with your license.
 
 
 ## See Also

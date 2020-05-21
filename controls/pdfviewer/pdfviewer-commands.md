@@ -25,7 +25,7 @@ RadPdfViewer provides the following commands of type *ICommand*:
 
 * **DoubleTappedCommand**: This command is different from the above listed as it is triggered from within the PdfViewer on double-tap action. On the first double-tap the document is zoomed 2.5 times at the tapped location, another double-tap triggers FitToWidth command.
 
->note The RadPdfViewer Toolbar exposes some of the commands built-in. For more information please check the [PdfViewer Toolbar]({%slug pdfviewer-toolbar%}) article.
+>note RadPdfViewer Toolbar exposes some of the commands built-in. For more information please check the [PdfViewer Toolbar]({%slug pdfviewer-toolbar%}) article.
 
 ## Example
 
@@ -47,6 +47,14 @@ Where the **telerikPdfViewer** namespace is the following:
 xmlns:telerikPdfViewer="clr-namespace:Telerik.XamarinForms.PdfViewer;assembly=Telerik.XamarinForms.PdfViewer"
 xmlns:telerikCommon="clr-namespace:Telerik.XamarinForms.Common;assembly=Telerik.XamarinForms.Common"
 ```
+
+By default FitToWidth command of the PdfViewer is assigned to "Fit Document to Width" option. You can easily switch to "Fit Page to Width" option by setting **FitToWidthCommand** property of RadPdfViewer to **FitPageToWidthCommand**, check the snippet below:
+	
+```C#	
+this.pdfViewer.FitToWidthCommand = new FitPageToWidthCommand();
+```
+
+In this way, calling the **FitToWidthCommand** on a button click action, as in the example above, will execute "Fit Page to Width" on the current page.
  
 >important A sample Commands example can be found in the PdfViewer/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

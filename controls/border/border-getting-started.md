@@ -7,15 +7,29 @@ slug: border-getting-started
 ---
 
 # Getting Started
-   
-This example will guide you through the steps needed to add a basic **RadBorder** control in your application.
 
->Before you proceed, please, take a look at these articles and follow the instructions to setup your app:
->
->- [Setup on Windows]({%slug getting-started-windows%})
->- [Setup on Mac]({%slug getting-started-mac%})
+This article will guide you through the steps needed to add a basic **RadBorder** control in your application.
 
-## Required Telerik Assemblies
+* [Setting up the app](#1-setting-up-the-app)
+* [Adding the required Telerik references](#2-adding-the-required-telerik-references)
+* [Adding RadBorder control](#3-adding-radborder-control)
+
+## 1. Setting up the app
+
+Take a look at these articles and follow the instructions to setup your app:
+
+- [Setup app with Telerik UI for Xamarin on Windows]({%slug getting-started-windows%})
+- [Setup app with Telerik UI for Xamarin on Mac]({%slug getting-started-mac%})
+
+## 2. Adding the required Telerik references
+
+You have two options:
+
+* Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+
+If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadBorder control you have to install the **Telerik.UI.for.Xamarin.Primitives** nuget package. This nuget will automatically refer the *Telerik.UI.for.Xamarin.Common* and *Telerik.UI.for.Xamarin.SkiaSharp* nuget packages.
+
+* Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadBorder** component:
 
 | Platform | Assemblies |
 | -------- | ---------- |
@@ -28,7 +42,7 @@ This example will guide you through the steps needed to add a basic **RadBorder*
 >
 > All binaries built for a specific platform are placed in a folder named after that platform.
 
-## Example
+## 3. Adding RadBorder control
 
 If your app is correctly set, you are ready to add a **RadBorder** control to the page. In the example RadBorder wraps around a Label: 
 

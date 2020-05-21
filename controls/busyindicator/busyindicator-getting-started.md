@@ -23,6 +23,8 @@ You have two options:
 
 * Add the Telerik UI for Xamarin Nuget packages following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
 
+If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadBusyIndicator control you have to install the **Telerik.UI.for.Xamarin.Primitives** nuget package. This nuget will automatically refer the *Telerik.UI.for.Xamarin.Common* and *Telerik.UI.for.Xamarin.SkiaSharp* nuget packages.
+
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadBusyIndicator** component:
 
 | Platform | Assemblies |

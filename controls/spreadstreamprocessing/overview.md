@@ -65,7 +65,9 @@ You can use RadSpreadStreamProcessing to create and export large amount of data 
 
 You have two options to add the required Telerik references to your Xamarin.Forms app in order to use **RadSpreadStreamProcessing**:
 
-* Add the Telerik UI for Xamarin Nuget packages following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+* Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+
+If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadSpreadStreamProcessing you have to install the *Telerik.Zip* and *Telerik.Documents.SpreadsheetStreaming* nuget packages.
 
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for RadSpreadStreamProcessing:
 

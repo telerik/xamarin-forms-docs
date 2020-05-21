@@ -25,7 +25,7 @@ Take a look at these articles and follow the instructions to setup your app:
 
 You have two options:
 
-* Add the Telerik UI for Xamarin Nuget packages following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+* Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic. Note that RadBarcode does not have a separate nuget package. 
 
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadBarcode** component:
 
@@ -38,7 +38,7 @@ You have two options:
 
 >important RadBarcode is rendered via the **SkiaSharp** graphics library so you need to install also [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms) in all projects of the Xamarin solution (.Net Standard/Shared, Android, iOS, etc). 
 
-## Example
+## 3. Adding RadBarcode control
 
 If your app is setup, you are ready to add a **RadBarcode** control to your page. In the sample the QRCode symbology is used, for more details on the available Barcode symbologies go to [Supported Types]({%slug barcode-supported-types-overview %}) topic.
 

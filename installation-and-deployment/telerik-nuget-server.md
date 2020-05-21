@@ -13,7 +13,7 @@ The following steps demonstrate how users can take advantage of **Telerik NuGet 
 
 >You will find Nuget packages containing the standard and the lite assemblies - the latter have *Lite* in their names. Please take a look at the [Lite Assemblies]({%slug telerik-light-assemblies%}) topic for more details on the difference between them.
 
-## Visual Studio
+## Visual Studio for Windows
 
 <iframe width="800" height="400" src="https://www.youtube.com/embed/c3m_BLMXNDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -32,6 +32,8 @@ In the Source field users should fill in the address of the Telerik server (URL:
 The Telerik server is now ready to use. Users can go to their solution and open the solution package manager.
 
 ![](images/nuget-server/nuget-vs-manage-packages.png)
+
+### Add Telerik UI for Xamarin pack
 
 Users have to find the **Telerik.UI.for.Xamarin** package and install it to their projects following these steps:
 
@@ -66,7 +68,7 @@ In the Add Package Source dialog users should fill in the information of the Tel
 
 After the Telerik NuGet server is added users will be able to see the packages they are allowed to download in the Add Packages dialog. This will allow them to check the **Telerik UI for Xamarin** pack and add it into their projects.
 
-#### Add Telerik UI for Xamarin pack
+### Add Telerik UI for Xamarin pack
 
 Once the server is added users will be able to add to their projects any of the **Telerik NuGet** packages available for their license. One click on the settings icon of the “*Packages*” folder of any project will open the **Add Packages** dialog where the available Telerik packs will be listed.
 

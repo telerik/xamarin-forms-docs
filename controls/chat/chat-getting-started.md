@@ -26,7 +26,7 @@ Take a look at these articles and follow the instructions to setup your app:
 
 You have two options:
 
-* Add the Telerik UI for Xamarin Nuget packages following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+* Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic. Note that RadChat control does not have a separate nuget package. 
 
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadChat** component:
 

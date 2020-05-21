@@ -12,7 +12,7 @@ This article will guide you through the steps needed to add a basic **RadBorder*
 
 * [Setting up the app](#1-setting-up-the-app)
 * [Adding the required Telerik references](#2-adding-the-required-telerik-references)
-* [Adding RadBorder control](#3-adding-radbarcode-control)
+* [Adding RadBorder control](#3-adding-radborder-control)
 
 ## 1. Setting up the app
 

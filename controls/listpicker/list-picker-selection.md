@@ -18,7 +18,7 @@ ListPicker for Xamarin enables the app users to quickly and easily select an ite
 
 **List Picker** for Xamarin allows you to clear the selected date/time through its **ClearSelection** method
 
-## Example
+### Example
 
 ```XAML
 <StackLayout>
@@ -68,7 +68,7 @@ xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.Xa
 
 **List Picker** for Xamarin exposes a **SelectionChanged** event which is raised when the user confirms the selected item.
 
-## Example
+### Example
 
 ```XAML
 <telerikInput:RadListPicker Placeholder="Pick a name!" 

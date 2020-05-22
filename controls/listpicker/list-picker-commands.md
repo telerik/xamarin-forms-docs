@@ -101,5 +101,5 @@ xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.Xa
 
 ## See Also
 
-- [Events]({%slug list-picker-events%})
+- [Selection]({%slug list-picker-selection%})
 - [Templates]({%slug list-picker-templates%})

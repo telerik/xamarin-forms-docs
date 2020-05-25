@@ -8,16 +8,54 @@ slug: sidedrawer-features-transitions
 
 # Transitions
 
-Transitions are the animation effects applied to the side drawer while it is being opened and closed. The **RadSideDrawer** component exposes several predefined transitions that can be used by customers. To do this users can set the **RadSideDrawer.DrawerTransitionType** property. It is enumeration which exposes the following members:
+Transitions are the animation effects applied to the side drawer while it is being opened and closed.
 
+## Built-in Transitions
+
+RadSideDrawer exposes several predefined transitions that can be used by customers. The desired transition can be set through **DrawerTransitionType** property of the SideDrawer. 
+
+DrawerTransitionType is enumeration which exposes the following members:
+
+* **Push** (the default one)
 * **Fade**
-* **Push**
 * **Reveal**
 * **ReverseSlideOut**
 * **ScaleUp**
 * **SlideAlong**
 * **SlideInOnTop**
 * **Custom**
+
+Here is a sample snippet on how you can set **DrawerTransitionType** property of RadSideDrawer:
+
+```XAML
+<telerikPrimitives:RadSideDrawer x:Name="sideDrawer" 
+                                 DrawerTransitionType="SlideInOnTop">
+    <telerikPrimitives:RadSideDrawer.MainContent>
+        <!--main content here -->
+    </telerikPrimitives:RadSideDrawer.MainContent>
+    <telerikPrimitives:RadSideDrawer.DrawerContent>
+        <!--drawer content here -->
+    </telerikPrimitives:RadSideDrawer.DrawerContent>
+</telerikPrimitives:RadSideDrawer>
+```
+
+>tip In addition to the transition type, you can also control the transition duration and opacity value through **DrawerTransitionDuration** and **DrawerTransitionFadeOpacity** properties, respectively. For more details on this go to [Properties]({%slug sidedrawer-features-properties%}) topic.
+
+### Examples
+
+Check below some of the predefined transitions of RadSideDrawer:
+
+* Default Push transition:
+
+	![SideDrawer Push transition](images/sidedrawer_push.gif)
+
+* SlideInOnTop transition - the drawer goes over the main content:
+
+	![SideDrawer SlideInOnTop transition](images/sidedrawer_slidein.gif)
+
+* ReverseSlideOut transition:
+
+	![SideDrawer ReverseSlideOut](images/sidedrawer_reverseslideout.gif)
 
 >important A sample Transitions examples can be found in the SideDrawer/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

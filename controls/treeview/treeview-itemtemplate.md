@@ -6,9 +6,11 @@ position: 4
 slug: treeview-itemtemplate
 ---
 
-# Item Template #
+# Custom Item Template #
 
 RadTreeView can be populated with various types of objects (string, any business objects, etc.). You can customize the visualization of the views in the ItemsSource of the control using the ItemTemplate property of the TreeViewDescriptors. The template could contain any view that you can use to display the data.
+
+>tip You can take the [default TreeView ItemTemplate]({%slug treeview-control-template%}) and use it as base for further customizations.
 
 The following example shows how to populate the ItemsSource with business items and customize their appearance.
 
@@ -26,7 +28,7 @@ Then, create a ViewModel where the items are defined:
 
 <snippet id='treeview-itemtemplate-viewmodel' />
 
-Add the TreeView definition to your page. Since there are two types of items (Country and City), two TreeViewDescriptors should be added.  For the *Country* item there is a separate ItemTemplate defined, so that the Country.Icon is visualized as well:
+Add the TreeView definition to your page. Since there are two types of items (Country and City), two TreeViewDescriptors should be added. For the *Country* item there is a separate ItemTemplate defined, so that the Country.Icon is visualized as well:
 
 <snippet id='treeview-itemtemplate-xaml' />
 
@@ -58,5 +60,6 @@ Here is how the TreeView looks with custom ItemTemplate:
 
 ## See Also
 
+* [Default ItemTemplate]({%slug treeview-control-template%})
 * [Expand/Collapse]({%slug treeview-expand-collapse-api%})
 * [Commands]({%slug treeview-commands%})

@@ -33,6 +33,6 @@ private void RadTemplatedPicker_SelectionChanged(object sender, System.EventArgs
 
 ## See Also
 
-- [Commands]({%slug list-picker-commands%})
-- [Methods]({%slug list-picker-methods%})
-- [Templates]({% slug list-picker-templates%})
+- [Commands]({%slug templated-picker-commands%})
+- [Methods]({%slug templated-picker-methods%})
+- [Templates]({% slug templated-picker-templates%})

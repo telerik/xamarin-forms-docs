@@ -31,10 +31,23 @@ Here is a sample snippet on how you can set **DrawerTransitionType** property of
 <telerikPrimitives:RadSideDrawer x:Name="sideDrawer" 
                                  DrawerTransitionType="SlideInOnTop">
     <telerikPrimitives:RadSideDrawer.MainContent>
-        <!--main content here -->
+		<StackLayout Orientation="Horizontal">
+			<Label Text="Transition Type:" />
+			<Label Text="SlideInOnTop" />
+		</StackLayout>
     </telerikPrimitives:RadSideDrawer.MainContent>
     <telerikPrimitives:RadSideDrawer.DrawerContent>
-        <!--drawer content here -->
+		Grid WidthRequest="220">
+			<ListView x:Name="drawerList">
+				<ListView.ItemsSource>
+					<x:Array Type="{x:Type x:String}">
+						<x:String>Inbox</x:String>
+						<x:String>Drafts</x:String>
+						<x:String>Sent Items</x:String>
+					</x:Array>
+				</ListView.ItemsSource>
+			</ListView>
+		</Grid>
     </telerikPrimitives:RadSideDrawer.DrawerContent>
 </telerikPrimitives:RadSideDrawer>
 ```

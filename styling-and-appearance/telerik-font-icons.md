@@ -22,7 +22,7 @@ The Telerik Font Icons are located in the telerikfontexamples.ttf file. There ar
 
 * Download the **telerikfontexamples.ttf** file from [here](https://github.com/telerik/telerik-xamarin-forms-samples/blob/master/_Samples%20Application/QSF.Android/Assets/Fonts/telerikfontexamples.ttf).
 
-* Get the font file from the installation folder of Telerik UI for Xamarin: The default location of the **telerikfontexamples.ttf** file is *C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2018\QSF\QSF.Android\Assets\Fonts*
+* Get the font file from the installation folder of Telerik UI for Xamarin: The default location of the **telerikfontexamples.ttf** file is *C:\Program Files (x86)\Progress\Telerik UI for Xamarin [version]\QSF\QSF.Android\Assets\Fonts*
 
 Include Telerik Font **.ttf** file into your application in the following locations:
 

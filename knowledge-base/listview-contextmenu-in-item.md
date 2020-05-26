@@ -35,10 +35,10 @@ This scenario could be achieved for example, with [RadButton]({%slug button-over
 
 ## Example
 
-Let's screate a business model for the items:
+Let's create a business model for the items:
 
 ```C#
-public class DataItem : BindableBase
+public class DataItem : Telerik.XamarinForms.Common.NotifyPropertyChangedBase
 {
     private string name;
     private bool isPopupOpen;
@@ -51,13 +51,13 @@ public class DataItem : BindableBase
     public string Name
     {
         get => name;
-        set => SetProperty(ref name, value);
+        set => UpdateValue(ref name, value);
     }
 
     public bool IsPopupOpen
     {
         get => isPopupOpen;
-        set => SetProperty(ref isPopupOpen, value);
+        set => UpdateValue(ref isPopupOpen, value);
     }
 }
 ```
@@ -65,22 +65,24 @@ public class DataItem : BindableBase
 Then, in the view model, let's create some sample names to populate the data source and a command that will toggle the IsPopupOpen property of that item:
 
 ```C#
-public class ViewModel : ViewModelBase
+public class ViewModel
 {
     public ViewModel()
     {
-        var names = SampleDataService.Current.GeneratePeopleNames();
-
-        foreach (var name in names)
+        this.People = new ObservableCollection<DataItem>()
         {
-            People.Add(new DataItem(name));
-        }
-
+            new DataItem("Freda Curtis"),
+            new DataItem("Jeffery Francis"),
+            new DataItem("Eva Lawson"),
+            new DataItem("Emmett Santos"),
+            new DataItem("Theresa Bryan"),
+            new DataItem("Jenny Fuller")
+        };
+            
         OpenContextMenuCommand = new Command<DataItem>(item => item.IsPopupOpen = !item.IsPopupOpen);
     }
 
-    public ObservableCollection<DataItem> People { get; set; } = new ObservableCollection<DataItem>();
-
+    public ObservableCollection<DataItem> People { get; set; }
     public Command<DataItem> OpenContextMenuCommand { get; }
 }
 ```

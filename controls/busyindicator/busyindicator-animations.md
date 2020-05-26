@@ -8,6 +8,8 @@ slug: busyindicator-features-animations
 
 # Animations
 
+## Built-in Animations
+
 **RadBusyIndicator** provides a set of built-in animations which you can use. They can be changed via the **AnimationType** property. 
 
 The property is an enum called AnimationType and it accepts values named **Animation1** to **Animation10**. Animation1, Animation2, Animation3, etc. to Animation10. **Animation1** is the default one. 
@@ -21,6 +23,14 @@ The property is an enum called AnimationType and it accepts values named **Anima
 You can set the size of the animation content, which is the animated element. This can be done via the **AnimationContentWidthRequest** and **AnimationContentHeightRequest** properties. By default the size of the default animation content is 25x25 pixels.
 
 You can also change the color of the animation with the **AnimationColor** property.
+
+The snippet below shows how you can configure the predefined animations of RadBusyIndicator:
+
+<snippet id="busyindicator-animations-settings" />
+
+Here is the result on different platforms:
+
+![BusyIndicator Settings](images/busyindicator-animations-settings.png)
 
 > **AnimationContentWidthRequest**, **AnimationContentHeightRequest** and **AnimationColor** won't be applied if you use custom animation.
 	

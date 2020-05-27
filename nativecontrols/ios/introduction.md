@@ -1,16 +1,20 @@
 ---
-title: Overview
-position: .1
-page_title: Telerik UI for Xamarin.iOS Documentation
+title: Introduction
+page_title: Introduction | Telerik UI for Xamarin.iOS Documentation
+description: Telerik UI for Xamarin.iOS features components that decrease development time and help teams build stunning iOS apps.
+slug: ios-introduction
+tags: introduction
+position: 0
+publish: true
 ---
 
 ## What is Telerik UI for Xamarin.iOS
 
-**Telerik UI for Xamarin.iOS** suite delivers functionalities, built with performance in mind, that allow you to build unique and visually stunning iOS applications. The methods and properties are self-explanatory, the architecture is easy to follow. Our controls give you great customization flexibility to accommodate as many app scenarios as possible. 
+**Telerik UI for Xamarin.iOS** suite delivers functionalities, built with performance in mind, that allow you to build unique and visually stunning iOS applications. Our controls give you great customization flexibility to accommodate as many app scenarios as possible. 
 
 ## Examples
 
-Here are some of the available **UI for Xamarin.iOS** components at a glance:
+Here are some of the available **Telerik UI for Xamarin.iOS** components at a glance:
 
 **TKAlert** is a highly customizable alert view component that offers different predefined animations, easy to use Block API, many customization options. 
 
@@ -32,11 +36,6 @@ Here are some of the available **UI for Xamarin.iOS** components at a glance:
 <li>Swipe or pan dismiss options</li>
 <li>Horizontal/vertical buttons layout</li>
 </ul>
-
-**AppFeedback** enables your end-users to provide feedback inside your app by simply shaking their device or navigating to the feedback option. Once invoked, the component will automatically take a screenshot and prompt users to point to their issue and provide a comment. The users can then track the feedback they've submitted, viewing its status or supplying additional comments. The component's seamless integration with AppFeedback (a part of the Telerik Platform) allows for organizing and reviewing all feedback items, assigning those to members in your Telerik Platform workspace and responding directly to users. The end result is actionable feedback, and easy interaction between your users and team members.
-
-<img src="images/appfeedback-details-comments-list-ios.png"/>
-
 
 **AutoCompleteTextView** can automatically complete user input string by comparing the text being entered to all strings in the associated data source. The control provides means for easy customization and data management. To make working with data easier for developers, <code>TKAutoCompleteTextView</code> works seamlessly with the Telerik DataSource control which serves as a mediator between the raw suggestions data and the UI component which serves as suggestion view. TKAutoCompleteTextView supports:
 
@@ -77,11 +76,11 @@ TKChart main features include:
 
 <img src="images/dataform-overview001.png" />
 
-**DataSource** is a non-visual component that consumes data from various sources. It supports data shaping operations like sorting, filterign and grouping. It adopts the most used data enabled UI controls in iOS: UITableView and UICollectionView to automate the presentation of its data. TKDataSource works perfecltly with TKListView, TKChart and TKCalendar too.
+**DataSource** is a non-visual component that consumes data from various sources. It supports data shaping operations like sorting, filtering and grouping. It adopts the most used data enabled UI controls in iOS: UITableView and UICollectionView to automate the presentation of its data. TKDataSource works perfectly with TKListView, TKChart and TKCalendar too.
 
 <img width="500" src="images/datasource-getting-started001.png"/>
 
-**Gauge** is a highly customizable component that allows you to show the current status of a value within a range of upper and lower bounds, illustrate progress towards a goal or a summary of a fluctuating metric. The main feaatures include:
+**Gauge** is a highly customizable component that allows you to show the current status of a value within a range of upper and lower bounds, illustrate progress towards a goal or a summary of a fluctuating metric. The main features include:
 
 - Various components types: indicators, segments, ranges, scales
 - Multiple scales with different ranges

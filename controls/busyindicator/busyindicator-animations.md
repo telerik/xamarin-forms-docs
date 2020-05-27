@@ -26,7 +26,7 @@ You can also change the color of the animation with the **AnimationColor** prope
 
 The snippet below shows how you can configure the predefined animations of RadBusyIndicator:
 
-<snippet id="busyindicator-animations-settings" />
+<snippet id='busyindicator-animations-settings' />
 
 Here is the result on different platforms:
 

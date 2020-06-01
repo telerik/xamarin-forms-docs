@@ -24,12 +24,13 @@ To install Telerik UI for Xamarin on your machine from the Windows Installer MSI
 If you open the installation folder you will probably note the following sub directories:
 
 * Binaries
-* Examples
-* LicenseAgreements
-* QSF
-* VSExtensions
+* Examples - here you can find the [SDK Browser application]({%slug developer-focused-examples%}#sdk-browser-application) as well as sample applications demonstrating our [controls for Xamarin.Android and Xamarin.iOS]({%slug native-controls-overview%}).
+* LicenseAgreements - provides the product EULA.
+* QSF - includes the full source of [Telerik UI for Xamarin Samples Application]({%slug developer-focused-examples%}#telerik-ui-for-xamarin-samples-application).
+* VSExtensions - includes our Visual Studio Extension package. For more details go to [Visual Studio Extensions]({%slug vs-extensions %}) topic.
 
 **Binaries** folder contains all the Telerik UI for Xamarin assemblies grouped in folders according to the target project they should be added to. Check the exact structure in the image below:
+
 ![](../images/binaries-current-structure.png)
 
 ### Next Steps

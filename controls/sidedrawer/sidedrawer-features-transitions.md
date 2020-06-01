@@ -37,7 +37,7 @@ Here is a sample snippet on how you can set **DrawerTransitionType** property of
 		</StackLayout>
     </telerikPrimitives:RadSideDrawer.MainContent>
     <telerikPrimitives:RadSideDrawer.DrawerContent>
-		Grid WidthRequest="220">
+		<Grid WidthRequest="220">
 			<ListView x:Name="drawerList">
 				<ListView.ItemsSource>
 					<x:Array Type="{x:Type x:String}">

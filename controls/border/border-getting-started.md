@@ -38,13 +38,20 @@ If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have 
 | iOS      | Telerik.Xamarin.iOS.dll <br/>Telerik.XamarinForms.Primitives.dll |
 | UWP      | Telerik.Core.dll <br/> Telerik.UI.Xaml.Primitives.UWP.dll <br/>Telerik.XamarinForms.Common.dll <br/>Telerik.XamarinForms.Primitives.dll |
 
-> The path of the assemblies is relative to the `Binaries` folder that is located in the installation folder of the controls. The default location is: `C:\Program Files (x86)\Progress\Telerik UI for Xamarin RX XXX\Binaries`.
->
-> All binaries built for a specific platform are placed in a folder named after that platform.
-
 ## 3. Adding RadBorder control
 
-If your app is correctly set, you are ready to add a **RadBorder** control to the page. In the example RadBorder wraps around a Label: 
+You could use one of the following approaches:
+
+#### Drag the control from the Toolbox. 
+
+Take a look at the following topics on how to use the toolbox:
+
+* [Telerik UI for Xamarin Toolbox on Windows]({%slug telerik-xamarin-toolbox%})
+* [Telerik UI for Xamarin Toolbox on Mac]({%slug telerik-xamarin-toolbox-mac%})
+	
+#### Create the control definition in XAML or C#.
+
+The snippet below shows a simple RadBorder definition. In the example RadBorder wraps around a Label: 
 
 <snippet id='border-getting-started-xaml'/>
 
@@ -57,7 +64,7 @@ Here is the result:
 
 ![Border Getting Started Example](images/border-getting-started.png)
 
->important **SDK Browser** and **QSF** applications contain different examples that show RadBorder's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
+>important **SDK Browser** and **Telerik Xamarin Samples** applications contain different examples that show RadBorder's main features. For detailed information on this go to [Xamarin Demos Applications]({%slug developer-focused-examples%}) topic.
 
 ## See Also
 

@@ -69,7 +69,7 @@ Here is the result:
 
 ![Button Getting Started Example](images/button-getting-started.png)
 
->important [SDK Browser](https://github.com/telerik/xamarin-forms-sdk) and [QSF](https://github.com/telerik/telerik-xamarin-forms-samples/tree/master/_Samples%20Application) applications contain different examples that show RadButton's main features.
+>important **SDK Browser** and **Telerik Xamarin Samples** applications contain different examples that show RadButton's main features. For detailed information on this go to [Xamarin Demos Applications]({%slug developer-focused-examples%}) topic.
 
 ## See Also
 

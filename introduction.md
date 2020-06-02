@@ -83,13 +83,30 @@ To learn how to install and work with Telerik UI for Xamarin suite, visit the fo
 * [Getting Started on Windows]({%slug win-getting-started %})
 * [Getting Started on Mac]({%slug mac-getting-started %})
 
+## Trial Version and Commercial License
+
+Telerik UI for Xamarin library is a commercial UI library. You are welcome to explore its full functionality and get technical support from the team when you register for a free 30-day trial. To use it commercially, you need to [purchase a license](https://www.telerik.com/purchase/xamarin-ui). Feel free to review the Telerik UI for Xamarin [License Agreement](https://www.telerik.com/purchase/license-agreement/ui-for-xamarin) to get acquainted with the full terms of use.
+
+## Support Options
+
+For any issues you might encounter while working with Telerik UI for Xamarin, use any of the available support channels:
+
+* UI for Xamarin license holders and active trialists can take advantage of the outstanding customer support delivered by the developers building the library. To submit a support ticket, use the [UI for Xamarin dedicated support](https://www.telerik.com/account/support-tickets?pid=1534) system.
+* [UI for Xamarin forums](https://www.telerik.com/forums/xamarin) are part of the free support you can get from the community and from the UI for Xamarin team on all kinds of general issues.
+* [UI for Xamarin feedback portal](https://feedback.telerik.com/xamarin) and [UI for Xamarin roadmap](https://www.telerik.com/support/whats-new/xamarin-ui/roadmap) provide information on the features in discussion and also the planned ones for release.
+* You may still need a tailor-made solution for your project. In such cases, go straight to [Progress Services](https://www.progress.com/services).
+
+## Learning Resources
+
+* [Virtual Classroom](https://progress.exceedlms.com/student/path/369637-telerik-xamarin)
+* [Knowledge Base](https://docs.telerik.com/devtools/xamarin/knowledge-base)
+* [Support Resources Hub Page](https://www.telerik.com/support/xamarin-ui)
+
 ## Related Links
 
-* Telerik UI for Xamarin product page - [http://www.telerik.com/xamarin-ui](http://www.telerik.com/xamarin-ui)
-
-* Latest news for Telerik UI for Xamarin - [https://www.telerik.com/support/whats-new/xamarin-ui](https://www.telerik.com/support/whats-new/xamarin-ui)
-
-* Telerik UI for Xamarin blogs – [https://www.telerik.com/blogs/tag/ui-for-xamarin](https://www.telerik.com/blogs/tag/ui-for-xamarin)
+* [UI for Xamarin product page](http://www.telerik.com/xamarin-ui)
+* [Latest news for Telerik UI for Xamarin](https://www.telerik.com/support/whats-new/xamarin-ui)
+* [UI for Xamarin blogs](https://www.telerik.com/blogs/tag/ui-for-xamarin)
 
 ## Help us Improve the Telerik UI for Xamarin Documentation
 

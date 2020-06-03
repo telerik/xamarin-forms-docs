@@ -71,7 +71,7 @@ RadPopup provides a few useful properties which will help you position it per yo
 * **HorizontalOffset / VerticalOffset**: Specifies the horizontal/vertical distance between the placement target and the alignment point.  
 
 <snippet id='popup-features-placement' />
-<sniipet id='popup-features-placement-code' />
+<snippet id='popup-features-placement-code' />
 
 Here is the Button Clicked event handler:
 

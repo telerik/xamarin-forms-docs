@@ -50,7 +50,6 @@ The Android Wrappers are built on top of the truly native controls from the **UI
 * [Chart]({%slug android-chart-overview%})
 * [DataForm]({%slug android-dataform-overview%})
 * [DataSource]({%slug android-datasource-overview%})
-* [Feedback]({%slug android-feedback-overview%})
 * [Gauges]({%slug android-gauges-overview%})
 * [ListView]({%slug android-listview-overview%})
 * [NumberPicker]({%slug android-numberpicker-overview%})
@@ -63,7 +62,6 @@ The Android Wrappers are built on top of the truly native controls from the **UI
 The iOS Wrappers are built on top of the truly native controls from the **UI for iOS** suite(discontinued as a separate product as of April 20th 2017). The following controls are available for Xamarin.iOS development:
 
 * [Alert]({%slug ios-alert-overview%})
-* [AppFeedback]({%slug ios-appfeedback-overview%})
 * [AutoCompleteTextView]({%slug ios-autocompletetextview-overview%})
 * [Calendar]({%slug ios-calendar-overview%})
 * [Chart]({%slug ios-chart-overview%})

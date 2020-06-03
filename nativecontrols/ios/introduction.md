@@ -65,7 +65,7 @@ div#xamarin_trial .xamarin_download_btn {
 
 ## Controls Overview
 
-Here are some of the available **Telerik UI for Xamarin.iOS** components at a glance:
+Our suite features the following controls for development with Xamarin.iOS:
 
 * [Alert]({%slug ios-alert-overview %}): Highly customizable alert view component that offers different predefined animations, easy to use Block API, many customization options. 
 
@@ -75,7 +75,7 @@ Here are some of the available **Telerik UI for Xamarin.iOS** components at a gl
 
 * [Chart]({%slug ios-chart-overview%}): A versatile charting component that offers full customization, great performance and intuitive object model. Its API allows creating complex charts with stunning animations and appearance.
 
-* [DataForm]({%slug ios-dataform-overview%}): A customizable component that allows you to easily create a form for collecting or editing business object data. It is ideal for settings or registration/login pages. TKDataForm supports different commit modes allowing you to commit property values one by one or commit the whole form at once. You could also determine at what moment the properties should be validated choosing between three validation modes. The control lets you use rich set of editors out of the box. The features at a glance are:
+* [DataForm]({%slug ios-dataform-overview%}): A customizable component that allows you to easily create a form for collecting or editing business object data. It is ideal for settings or registration/login pages. TKDataForm supports different commit modes allowing you to commit property values one by one or commit the whole form at once. You could also determine at what moment the properties should be validated choosing between three validation modes. The control lets you use rich set of editors out of the box. 
 
 * [DataSource]({%slug ios-datasource-overview%}): It is a non-visual component that consumes data from various sources. It supports data shaping operations like sorting, filtering and grouping. It adopts the most used data enabled UI controls in iOS: UITableView and UICollectionView to automate the presentation of its data. TKDataSource works perfectly with TKListView, TKChart and TKCalendar too.
 

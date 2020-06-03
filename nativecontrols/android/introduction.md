@@ -65,6 +65,8 @@ div#xamarin_trial .xamarin_download_btn {
 
 ## Controls Overview
 
+Our suite features the following controls for development with Xamarin.Android:
+
 * [AutoComplete]({%slug android-autocomplete-overview%}):  An input control that provides users with suggestions, based on the text or characters they’ve already typed into the search bar. Once the autocomplete shows a list of suggestions, the user can select one or more of them. The control provides means for easy customization and data management.
 
 * [CalendarView]({%slug android-calendar-overview%} "Read more about RadCalendarView for Android"): A calendar control which provides different date representations (in a week, month or year), different selection modes and events integration.

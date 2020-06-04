@@ -96,6 +96,13 @@ public class RadAutoCompleteEditorRenderer : DataFormRenderer
 	}
 }
 ```
+
+Do not forget to register the renderer by adding the following line before the namespace:
+
+```C#
+[assembly: ExportRenderer(typeof(RadDataForm), typeof(RadAutoCompleteEditorRenderer))]
+```
+
 In addition, the used type List<string> should be converted to a JavaList type through a Telerik.XamarinForms.Common.Android.TypeRegister inside the MainActivity.cs file of the Android project (call it before LoadApplication):
 
 ```C#
@@ -168,6 +175,14 @@ public class RadAutoCompleteEditorRenderer : DataFormRenderer
 }
 ```
 
+As on Android, the renderer has to be registered - just add the following line before the namespace:
+
+```C#
+[assembly: ExportRenderer(typeof(RadDataForm), typeof(RadAutoCompleteEditorRenderer))]
+```
+
+Here is the delegate class:
+
 ```C#
 public class CustomAutoCompleteListDelegate : TKAutoCompleteDelegate
 {
@@ -197,4 +212,6 @@ Here is the result after running the example:
 
 ![DataForm RadAutoCompleteEditor Tokens](images/dataform-autocompleteeditor-tokens.png)
 
->note You could find a runnable example in inside DataForm/HowTo/RadAutoComplete with Tokens Editor folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+>note You could find a runnable example inside DataForm/HowTo/RadAutoComplete with Tokens Editor folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
+>
+>Or you can directly browse the example source code on github - [SDKBrowser GitHub Repository](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/DataFormControl/HowToCategory/RadAutoCompleteEditorTokensExample)

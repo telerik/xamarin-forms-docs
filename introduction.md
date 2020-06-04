@@ -4,15 +4,15 @@ page_title: Telerik UI for Xamarin Documentation
 position: 0
 ---
 
-## Introduction
+## Welcome to Telerik UI for Xamarin
 
-Thank you for choosing Telerik &reg; UI for Xamarin.
+Thank you for choosing Telerik UI for Xamarin.
 
 Telerik UI for Xamarin features Xamarin.Forms controls and Visual Studio item templates for building professional-looking modern mobile applications for Android, iOS and UWP from a single code base. 
 
 In addition to the numerous Xamarin.Forms controls, the suite includes Xamarin.Android and Xamarin.iOS wrappers built on top of truly native iOS and Android components. The Telerik UI for UWP suite is used as basis for the UWP implementation of the controls.
  
-To read more about the benefits of using Telerik UI for Xamarin, please visit the [product overview page](http://www.telerik.com/xamarin-ui).
+To learn more please visit the [Telerik UI for Xamarin](http://www.telerik.com/xamarin-ui) product overview page.
 
 <style>
 /* Xamarin download trial button */

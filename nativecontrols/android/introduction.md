@@ -12,7 +12,7 @@ publish: true
 
 **Telerik UI for Xamarin** suite includes Xamarin.Android wrappers built on top of truly native Android components. Our Xamarin.Android controls deliver fast loading, excellent drawing capabilities, pixel-perfectness and sleek interactivity on any device and screen-size running Android. The product bridges missing controls and functionalities in the Android native offering including charts, calendar, list and more.
 
-To read more about the benefits of using Telerik UI for Xamarin, please visit the [product overview page](http://www.telerik.com/xamarin-ui).
+To learn more please visit the [ Telerik UI for Xamarin](http://www.telerik.com/xamarin-ui) product overview page.
 
 <style>
 /* Xamarin download trial button */

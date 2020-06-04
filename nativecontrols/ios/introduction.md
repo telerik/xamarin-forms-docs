@@ -12,7 +12,7 @@ publish: true
 
 **Telerik UI for Xamarin** suite includes Xamarin.iOS wrappers built on top of truly native iOS components, allowing you to build unique and visually stunning iOS applications. Our controls give you great customization flexibility to accommodate as many app scenarios as possible. 
 
-To read more about the benefits of using Telerik UI for Xamarin, please visit the [product overview page](http://www.telerik.com/xamarin-ui).
+To learn more please visit the [ Telerik UI for Xamarin](http://www.telerik.com/xamarin-ui) product overview page.
 
 <style>
 /* Xamarin download trial button */

@@ -1,5 +1,5 @@
 ---
-title: Suggest Mode
+title: Xamarin AutoCompleteView Documentation | Suggest Mode
 page_title: Suggest Mode
 description: Check our &quot;Suggest Mode&quot; documentation article for Telerik AutoCompleteView for Xamarin control.
 position: 3

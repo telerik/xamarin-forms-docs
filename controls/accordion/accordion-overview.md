@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Xamarin Accordion Documentation | Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik Accordion for Xamarin control.
 position: 0

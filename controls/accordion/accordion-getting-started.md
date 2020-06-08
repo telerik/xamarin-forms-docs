@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Xamarin Accordion Documentation | Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for Telerik Accordion for Xamarin control.
 position: 1

@@ -1,5 +1,5 @@
 ---
-title: Required Telerik Assemblies
+title: Xamarin AutoComplete Documentation | Required Telerik Assemblies
 page_title: Required Telerik Assemblies
 description: Check our &quot;Required Telerik Assemblies&quot; documentation article for Telerik AutoComplete for Xamarin control.
 position: 1

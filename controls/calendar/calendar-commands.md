@@ -1,6 +1,6 @@
 ---
 title: Commands
-page_title: Commands
+page_title: Xamarin Calendar Documentation | Commands
 description: Check our &quot;Commands&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 14
 slug: calendar-commands

@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization
+page_title: Xamarin Calendar Documentation | Localization
 description: Check our &quot;Localization&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 10
 slug: calendar-localization

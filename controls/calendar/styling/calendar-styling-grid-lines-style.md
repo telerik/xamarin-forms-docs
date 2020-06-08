@@ -1,6 +1,6 @@
 ---
 title: Grid Lines Style
-page_title: Grid Lines Style
+page_title: Xamarin Calendar Documentation | Grid Lines Style
 description: Check our &quot;Grid Lines Style&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 2
 slug: calendar-styling-grid-lines-style

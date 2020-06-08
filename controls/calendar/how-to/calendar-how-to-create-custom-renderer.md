@@ -1,6 +1,6 @@
 ---
 title: How To Create Custom Renderer
-page_title: How To Create Custom Renderer
+page_title: Xamarin Calendar Documentation | How To Create Custom Renderer
 description: Check our &quot;How To Create Custom Renderer&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 6
 slug: calendar-how-to-create-custom-renderer

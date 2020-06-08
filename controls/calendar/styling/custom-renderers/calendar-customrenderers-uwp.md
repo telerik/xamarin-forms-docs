@@ -1,6 +1,6 @@
 ---
 title: Calendar UWP Custom Renderers
-page_title: Calendar UWP Custom Renderer
+page_title: Xamarin Calendar Documentation | Calendar UWP Custom Renderer
 description: Check our &quot;Calendar UWP Custom Renderers&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 0
 slug: calendar-custom-renderers-uwp

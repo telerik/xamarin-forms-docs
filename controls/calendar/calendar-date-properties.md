@@ -1,6 +1,6 @@
 ---
 title: Date Properties
-page_title: Date Properties
+page_title: Xamarin Calendar Documentation | Date Properties
 description: Check our &quot;Date Properties&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 3
 slug: calendar-date-properties

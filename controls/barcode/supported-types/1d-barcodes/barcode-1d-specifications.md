@@ -1,6 +1,6 @@
 ---
 title: Specifications
-page_title: 1D Barcodes Specifications
+page_title: Xamarin Barcode Documentation | 1D Barcodes Specifications
 description: Check our &quot;Specifications&quot; documentation article for Telerik Barcode for Xamarin control.
 position: 0
 slug: barcode-1d-specifications

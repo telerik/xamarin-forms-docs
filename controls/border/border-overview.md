@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Xamarin Border Documentation | Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik Border for Xamarin control.
 position: 0
 slug: border-overview

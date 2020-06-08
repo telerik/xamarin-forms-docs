@@ -1,6 +1,6 @@
 ---
 title: Integrate with ListView
-page_title: RadBusyIndicator | ListView Integration
+page_title: Xamarin BusyIndicator Documentation | ListView Integration
 description: Check our &quot;Integrate with ListView&quot; documentation article for Telerik BusyIndicator for Xamarin control.
 position: 2
 slug: busyindicator-integrate-with-listview

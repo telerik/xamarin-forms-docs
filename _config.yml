@@ -581,37 +581,7 @@ defaults:
         category: "default"
         product: "xamarin-ui"
 -
-    scope:
-        path: "controls/popup"
-    values:
-        title_prefix: "Xamarin Popup Documentation"
--
-    scope:
-        path: "controls/barcode"
-    values:
-        title_prefix: "Xamarin Barcode Documentation"
--
-    scope:
-        path: "controls/border"
-    values:
-        title_prefix: "Xamarin Border Documentation"
--
-    scope:
-        path: "controls/busyindicator"
-    values:
-        title_prefix: "Xamarin BusyIndicator Documentation"
--
-    scope:
-        path: "controls/button"
-    values:
-        title_prefix: "Xamarin Button Documentation"
--
-    scope:
-        path: "controls/calendar"
-    values:
-        title_prefix: "Xamarin Calendar &amp; Scheduling Documentation"
--
-    scope:
+   scope:
         path: "controls/chart"
     values:
         title_prefix: "Xamarin Chart Documentation"

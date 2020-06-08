@@ -1,6 +1,6 @@
 ---
 title: Calendar iOS Custom Renderers
-page_title: Calendar iOS Custom Renderer
+page_title: Xamarin Calendar Documentation | Calendar iOS Custom Renderer
 description: Check our &quot;Calendar iOS Custom Renderers&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 0
 slug: calendar-custom-renderers-ios

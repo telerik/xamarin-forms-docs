@@ -1,6 +1,6 @@
 ---
 title: Scheduling UI
-page_title: Scheduling UI
+page_title: Xamarin Calendar Documentation | Scheduling UI
 description: Check our &quot;Scheduling UI&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 7
 slug: calendar-scheduling-ui

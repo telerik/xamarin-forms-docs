@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: PDF417 Overview
+page_title: Xamarin Barcode Documentation | PDF417 Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik Barcode for Xamarin control.
 position: 0
 slug: barcode-pdf417-overview

@@ -1,6 +1,6 @@
 ---
 title: Key Features
-page_title: Key Features
+page_title: Xamarin Border Documentation | Key Features
 description: Check our &quot;Key Features&quot; documentation article for Telerik Border for Xamarin control.
 position: 2
 slug: border-key-features

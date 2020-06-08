@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: RadPopup Overview
+page_title: Xamarin Popup Documentation | RadPopup Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik Popup for Xamarin control.
 position: 0
 slug: popup-overview

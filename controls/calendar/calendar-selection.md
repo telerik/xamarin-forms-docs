@@ -1,6 +1,6 @@
 ---
 title: Selection
-page_title: Selection
+page_title: Xamarin Calendar Documentation | Selection
 description: Check our &quot;Selection&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 4
 slug: calendar-selection

@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Xamarin Popup Documentation | Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for Telerik Popup for Xamarin control.
 position: 1
 slug: popup-getting-started

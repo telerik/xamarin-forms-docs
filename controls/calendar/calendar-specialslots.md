@@ -1,6 +1,6 @@
 ---
 title: Special and Restricted Slots
-page_title: Special and Restricted Slots
+page_title: Xamarin Calendar Documentation | Special and Restricted Slots
 description: Check our &quot;Special and Restricted Slots&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 8
 slug: calendar-specialslots

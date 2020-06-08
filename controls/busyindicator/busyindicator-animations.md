@@ -1,6 +1,6 @@
 ---
 title: Animations
-page_title: RadBusyIndicator | Animations
+page_title: Xamarin BusyIndicator Documentation | Animations
 description: Check our &quot;Animations&quot; documentation article for Telerik BusyIndicator for Xamarin control.
 position: 2
 slug: busyindicator-features-animations

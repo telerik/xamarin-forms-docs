@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Xamarin Expander Documentation | Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik Expander for Xamarin control.
 position: 0
 slug: expander-overview

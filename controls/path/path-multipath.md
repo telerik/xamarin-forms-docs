@@ -1,6 +1,6 @@
 ---
 title: MultiPath
-page_title: MultiPath
+page_title: Xamarin Path Documentation | MultiPath
 description: Check our &quot;MultiPath&quot; documentation article for Telerik Path for Xamarin control.
 position: 3
 slug: path-multipath

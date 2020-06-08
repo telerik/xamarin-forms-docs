@@ -1,6 +1,6 @@
 ---
 title: Link Annotations
-page_title: Link Annotations
+page_title: Xamarin PdfViewer Documentation | Link Annotations
 description: Check our &quot;Link Annotations&quot; documentation article for Telerik PdfViewer for Xamarin control.
 position: 4
 slug: pdfviewer-annotations

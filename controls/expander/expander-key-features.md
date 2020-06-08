@@ -1,6 +1,6 @@
 ---
 title: Key Features
-page_title: Key Features
+page_title: Xamarin Expander Documentation | Key Features
 description: Check our &quot;Key Features&quot; documentation article for Telerik Expander for Xamarin control.
 position: 2
 slug: expander-key-features

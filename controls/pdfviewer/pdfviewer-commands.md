@@ -1,6 +1,6 @@
 ---
 title: Commands
-page_title: Commands
+page_title: Xamarin PdfViewer Documentation | Commands
 description: Check our &quot;Commands&quot; documentation article for Telerik PdfViewer for Xamarin control.
 position: 8
 slug: pdfviewer-commands

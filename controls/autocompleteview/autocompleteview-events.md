@@ -1,5 +1,5 @@
 ---
-title: Events
+title: Xamarin AutoCompleteView Documentation | Events
 page_title: Events
 description: Check our &quot;Events&quot; documentation article for Telerik AutoCompleteView for Xamarin control.
 position: 7

@@ -1,5 +1,5 @@
 ---
-title: AccordionItem control
+title: Xamarin Accordion Documentation | AccordionItem control
 page_title: AccordionItem control
 description: Check our &quot;AccordionItem control&quot; documentation article for Telerik Accordion for Xamarin control.
 position: 3

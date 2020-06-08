@@ -1,5 +1,5 @@
 ---
-title: DisplayText Formatter
+title: Xamarin AutoCompleteView Documentation | DisplayText Formatter
 page_title: DisplayText Formatter
 description: Check our &quot;DisplayText Formatter&quot; documentation article for Telerik AutoCompleteView for Xamarin control.
 position: 6

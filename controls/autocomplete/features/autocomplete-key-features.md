@@ -1,5 +1,5 @@
 ---
-title: Key Features
+title: Xamarin AutoComplete Documentation | Key Features
 page_title: Key Features
 description: Check our &quot;Key Features&quot; documentation article for Telerik AutoComplete for Xamarin control.
 position: 0

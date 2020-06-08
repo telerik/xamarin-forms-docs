@@ -1,5 +1,5 @@
 ---
-title: Token Template
+title: Xamarin AutoCompleteView Documentation | Token Template
 page_title: Token Template
 description: Check our &quot;Token Template&quot; documentation article for Telerik AutoCompleteView for Xamarin control.
 position: 2

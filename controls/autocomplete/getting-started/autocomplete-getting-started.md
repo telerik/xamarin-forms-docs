@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Xamarin AutoComplete Documentation | Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for Telerik AutoComplete for Xamarin control.
 position: 0

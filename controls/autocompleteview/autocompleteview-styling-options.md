@@ -1,5 +1,5 @@
 ---
-title: Styling Options
+title: Xamarin AutoCompleteView Documentation | Styling Options
 page_title: Styling Options
 description: Check our &quot;Styling Options&quot; documentation article for Telerik AutoCompleteView for Xamarin control.
 position: 14

@@ -1,5 +1,5 @@
 ---
-title: SuggestionView Template
+title: Xamarin AutoCompleteView Documentation | SuggestionView Template
 page_title: SuggestionView Template
 description: Check our &quot;SuggestionView Template&quot; documentation article for Telerik AutoCompleteView for Xamarin control.
 position: 4

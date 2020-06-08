@@ -627,21 +627,6 @@ defaults:
         title_prefix: "Xamarin Popup Documentation"
 -
     scope:
-        path: "controls/accordion"
-    values:
-        title_prefix: "Xamarin Accordion Documentation"
--
-    scope:
-        path: "controls/autocomplete"
-    values:
-        title_prefix: "Xamarin AutoComplete Documentation"
--
-    scope:
-        path: "controls/autocompleteview"
-    values:
-        title_prefix: "Xamarin AutoCompleteView Documentation"
--
-    scope:
         path: "controls/barcode"
     values:
         title_prefix: "Xamarin Barcode Documentation"

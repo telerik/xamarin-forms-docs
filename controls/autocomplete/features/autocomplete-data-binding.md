@@ -1,6 +1,6 @@
 ---
-title: Xamarin AutoComplete Documentation | Data Binding
-page_title: Data Binding
+title: Data Binding
+page_title: Xamarin AutoComplete Documentation | Data Binding
 description: Check our &quot;Data Binding&quot; documentation article for Telerik AutoComplete for Xamarin control.
 position: 1
 slug: autocomplete-data-binding

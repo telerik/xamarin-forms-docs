@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: RadDockLayout Overview
+page_title: Xamarin DockLayout Documentation | RadDockLayout Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik DockLayout for Xamarin control.
 position: 0
 slug: docklayout-overview

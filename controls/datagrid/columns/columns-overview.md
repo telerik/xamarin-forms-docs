@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Columns Overview
+page_title: Xamarin DataGrid Documentation | Columns Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 0
 slug: datagrid-columns-overview

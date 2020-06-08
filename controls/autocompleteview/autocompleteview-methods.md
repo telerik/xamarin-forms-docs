@@ -1,6 +1,6 @@
 ---
-title: Xamarin AutoCompleteView Documentation | Methods
-page_title: Methods
+title: Methods
+page_title: Xamarin AutoCompleteView Documentation | Methods
 description: Check our &quot;Methods&quot; documentation article for Telerik AutoCompleteView for Xamarin control.
 position: 8
 slug: autocompleteview-methods

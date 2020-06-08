@@ -1,6 +1,6 @@
 ---
 title: Time Column
-page_title: Time Column
+page_title: Xamarin DataGrid Documentation | Time Column
 description: Check our &quot;Time Column&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 4
 slug: datagrid-columns-time-column

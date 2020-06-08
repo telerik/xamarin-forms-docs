@@ -1,6 +1,6 @@
 ---
 title: Text Column
-page_title: Text Column
+page_title: Xamarin DataGrid Documentation | Text Column
 description: Check our &quot;Text Column&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 0
 slug: datagrid-columns-text-column

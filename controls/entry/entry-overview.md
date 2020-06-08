@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Xamarin Entry Documentation | Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik Entry for Xamarin control.
 position: 0
 slug: entry-overview

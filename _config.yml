@@ -582,21 +582,6 @@ defaults:
         product: "xamarin-ui"
 -
     scope:
-        path: "controls/datagrid"
-    values:
-        title_prefix: "Xamarin DataGrid Documentation"
--
-    scope:
-        path: "controls/docklayout"
-    values:
-        title_prefix: "Xamarin DockLayout Documentation"
--
-    scope:
-        path: "controls/entry"
-    values:
-        title_prefix: "Xamarin Entry Documentation"
--
-    scope:
         path: "controls/expander"
     values:
         title_prefix: "Xamarin Expander Documentation"

@@ -1,6 +1,6 @@
 ---
 title: Columns Styling
-page_title: Columns Styling
+page_title: Xamarin DataGrid Documentation | Columns Styling
 description: Check our &quot;Columns Styling&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 1
 slug: datagrid-columns-styling

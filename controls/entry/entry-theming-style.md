@@ -1,6 +1,6 @@
 ---
 title: Theming and Style
-page_title: Theming and Style
+page_title: Xamarin Entry Documentation | Theming and Style
 description: Check our &quot;Theming and Style&quot; documentation article for Telerik Entry for Xamarin control.
 position: 5
 slug: entry-theming-style

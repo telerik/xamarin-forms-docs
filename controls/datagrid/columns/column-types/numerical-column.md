@@ -1,6 +1,6 @@
 ---
 title: Numerical Column
-page_title: Numerical Column
+page_title: Xamarin DataGrid Documentation | Numerical Column
 description: Check our &quot;Numerical Column&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 1
 slug: datagrid-columns-numerical-column

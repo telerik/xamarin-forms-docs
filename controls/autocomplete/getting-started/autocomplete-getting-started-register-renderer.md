@@ -1,6 +1,6 @@
 ---
-title: Xamarin AutoComplete Documentation | Register AutoComplete Renderer
-page_title: Register AutoComplete Renderer
+title: Register AutoComplete Renderer
+page_title: Xamarin AutoComplete Documentation | Register AutoComplete Renderer
 description: Check our &quot;Register AutoComplete Renderer&quot; documentation article for Telerik AutoComplete for Xamarin control.
 position: 2
 slug: autocomplete-getting-started-register-renderer

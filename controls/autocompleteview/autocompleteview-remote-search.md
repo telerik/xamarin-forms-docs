@@ -1,6 +1,6 @@
 ---
-title: Xamarin AutoCompleteView Documentation | Remote Search
-page_title: Remote Search
+title: Remote Search
+page_title: Xamarin AutoCompleteView Documentation | Remote Search
 description: Check our &quot;Remote Search&quot; documentation article for Telerik AutoCompleteView for Xamarin control.
 position: 10
 slug: autocompleteview-remote-search

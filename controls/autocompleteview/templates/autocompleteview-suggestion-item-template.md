@@ -1,6 +1,6 @@
 ---
-title: Xamarin AutoCompleteView Documentation | SuggestionItem Template
-page_title: SuggestionItem Template
+title: SuggestionItem Template
+page_title: Xamarin AutoCompleteView Documentation | SuggestionItem Template
 description: Check our &quot;SuggestionItem Template&quot; documentation article for Telerik AutoCompleteView for Xamarin control.
 position: 3
 slug: autocompleteview-suggestion-item-template

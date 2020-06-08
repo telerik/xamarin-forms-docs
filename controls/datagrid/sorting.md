@@ -1,6 +1,6 @@
 ---
 title: Sorting
-page_title: Sorting Overview
+page_title: Xamarin DataGrid Documentation | Sorting Overview
 description: Check our &quot;Sorting&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 6
 slug: datagrid-sorting-overview

@@ -1,6 +1,6 @@
 ---
 title: Styling
-page_title: Styling
+page_title: Xamarin Path Documentation | Styling
 description: Check our &quot;Styling&quot; documentation article for Telerik Path for Xamarin control.
 position: 8
 slug: path-styling

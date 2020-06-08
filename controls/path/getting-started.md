@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Xamarin Path Documentation | Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for Telerik Path for Xamarin control.
 position: 1
 slug: path-getting-started

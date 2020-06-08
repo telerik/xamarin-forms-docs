@@ -1,6 +1,6 @@
 ---
 title: Key Features
-page_title: Key Features
+page_title: Xamarin NumericInput Documentation | Key Features
 description: Check our &quot;Key Features&quot; documentation article for Telerik NumericInput for Xamarin control.
 position: 2
 slug: numericinput-key-features

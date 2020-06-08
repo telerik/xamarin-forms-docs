@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Xamarin PdfViewer Documentation | Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik PdfViewer for Xamarin control.
 position: 0
 slug: pdfviewer-overview

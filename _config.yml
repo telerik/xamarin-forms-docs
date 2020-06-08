@@ -582,31 +582,6 @@ defaults:
         product: "xamarin-ui"
 -
     scope:
-        path: "controls/expander"
-    values:
-        title_prefix: "Xamarin Expander Documentation"
--
-    scope:
-        path: "controls/numericinput"
-    values:
-        title_prefix: "Xamarin NumericInput Documentation"
--
-    scope:
-        path: "controls/path"
-    values:
-        title_prefix: "Xamarin Path Documentation"
--
-    scope:
-        path: "controls/pdfprocessing"
-    values:
-        title_prefix: "Xamarin PdfProcessing Documentation"
--
-    scope:
-        path: "controls/pdfviewer"
-    values:
-        title_prefix: "Xamarin PdfViewer Documentation"
--
-    scope:
         path: "controls/popup"
     values:
         title_prefix: "Xamarin Popup Documentation"

@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Xamarin NumericInput Documentation | Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for Telerik NumericInput for Xamarin control.
 position: 1
 slug: numericinput-getting-started

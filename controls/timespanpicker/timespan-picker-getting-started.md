@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Xamarin TimeSpan Picker Documentation | Getting Started
+page_title: Getting Started with Xamarin.Forms TimeSpan Picker Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik TimeSpan Picker for Xamarin control.
 position: 1
 slug: timespan-picker-getting-started

@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Xamarin ListView Documentation | Getting Started
+page_title: Getting Started with Xamarin.Forms ListView Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik ListView for Xamarin control.
 position: 1
 slug: listview-getting-started

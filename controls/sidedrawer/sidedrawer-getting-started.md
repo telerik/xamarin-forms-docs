@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Xamarin SideDrawer Documentation | Getting Started
+page_title: Getting Started with Xamarin.Forms SideDrawer Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik SideDrawer for Xamarin control.
 position: 1
 slug: sidedrawer-getting-started

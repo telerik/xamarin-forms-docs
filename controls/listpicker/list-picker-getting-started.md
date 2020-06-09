@@ -1,12 +1,12 @@
 ---
 title: Getting Started
-page_title: Xamarin List Picker Documentation | Getting Started
+page_title: Getting Started with Xamarin.Forms List Picker Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik ListPicker for Xamarin control.
 position: 1
 slug: list-picker-getting-started
 ---
 
-# Getting Started with List Picker for Xamarin
+# Getting Started with List Picker for Xamarin 
 
 This article will guide you through the steps needed to add a basic **RadListPicker** control in your application.
 

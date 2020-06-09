@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Xamarin SegmentedControl Documentation | Getting Started
+page_title: Getting Started with Xamarin.Forms SegmentedControl Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik SegmentedControl for Xamarin control.
 position: 1
 slug: segmentedcontrol-getting-started

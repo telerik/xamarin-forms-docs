@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Xamarin Templated Picker Documentation | Getting Started
+page_title: Getting Started with Xamarin.Forms Templated Picker Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik TemplatedPicker for Xamarin control.
 position: 1
 slug: templated-picker-getting-started

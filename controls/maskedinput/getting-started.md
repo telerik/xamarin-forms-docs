@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Xamarin MaskedInput Documentation | Getting Started
+page_title: Getting Started with Xamarin.Forms MaskedInput Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik MaskedInput for Xamarin control.
 position: 1
 slug: maskedinput-getting-started

@@ -1,6 +1,6 @@
 ---
 title: Shape Rating
-page_title: Shape Rating
+page_title: Xamarin Rating Documentation | Shape Rating
 description: Check our &quot;Shape Rating&quot; documentation article for Telerik Rating for Xamarin control.
 position: 3
 slug: shape-rating

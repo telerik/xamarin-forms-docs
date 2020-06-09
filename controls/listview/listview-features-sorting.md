@@ -1,6 +1,6 @@
 ---
 title: Sorting
-page_title: Sorting
+page_title: Xamarin ListView Documentation | Sorting
 description: Check our &quot;Sorting&quot; documentation article for Telerik ListView for Xamarin control.
 position: 5
 slug: listview-features-sorting

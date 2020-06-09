@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Xamarin Map Documentation | Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for Telerik Map for Xamarin control.
 position: 1
 slug: map-getting-started

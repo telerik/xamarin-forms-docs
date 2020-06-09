@@ -1,6 +1,6 @@
 ---
 title: Properties
-page_title: Properties
+page_title: Xamarin SideDrawer Documentation | Properties
 description: Check our &quot;Properties&quot; documentation article for Telerik SideDrawer for Xamarin control.
 position: 2
 slug: sidedrawer-features-properties

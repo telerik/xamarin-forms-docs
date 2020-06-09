@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Xamarin SideDrawer Documentation | Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik SideDrawer for Xamarin control.
 position: 0
 slug: sidedrawer-overview

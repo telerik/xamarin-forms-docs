@@ -1,6 +1,6 @@
 ---
 title: Expand and Collapse Groups
-page_title: Expand and Collapse Groups
+page_title: Xamarin ListView Documentation | Expand and Collapse Groups
 description: Check our &quot;Expand and Collapse Groups&quot; documentation article for Telerik ListView for Xamarin control.
 position: 2
 slug: listview-features-expand-collapse

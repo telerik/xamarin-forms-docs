@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Xamarin DataForm Documentation | Getting Started
+page_title: Getting Started with Xamarin.Forms DataForm Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik DataForm for Xamarin control.
 position: 1
 slug: dataform-getting-started

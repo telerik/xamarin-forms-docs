@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Xamarin Expander Documentation | Getting Started
+page_title: Getting Started with Xamarin.Forms Expander Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik Expander for Xamarin control.
 position: 1
 slug: expander-getting-started

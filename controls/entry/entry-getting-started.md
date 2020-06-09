@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Xamarin Entry Documentation | Getting Started
+page_title: Getting Started with Xamarin.Forms Entry Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik Entry for Xamarin control.
 position: 1
 slug: entry-getting-started

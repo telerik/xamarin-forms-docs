@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Xamarin DockLayout Documentation | Getting Started
+page_title: Getting Started with Xamarin.Forms DockLayout Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik DockLayout for Xamarin control.
 position: 1
 slug: docklayout-getting-started

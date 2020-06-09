@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Xamarin Accordion Documentation | Getting Started
-description: Check our &quot;Getting Started&quot; documentation article for Telerik Accordion for Xamarin control.
+page_title: Getting Started with Xamarin.Forms Accordion Control
+description: Check our detailed Xamarin.Forms documentation article for Getting Started. Find all you need to know about Xamarin Accordion control. 
 position: 1
 slug: accordion-getting-started
 ---

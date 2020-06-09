@@ -1,11 +1,12 @@
 ---
 title: TelerikXamarinForms Toolbox
-page_title: TelerikXamarinForms Toolbox
+page_title: Telerik Xamarin.Forms Toolbox Extension on Mac | Telerik UI for Xamarin
+description: Check our detailed documentation artile for the Toolbox Extension of Telerik UI for Xamarin on Mac. Find all you need to know in Xamarin.Forms instalation and deployment documentation.
 slug: telerik-xamarin-toolbox-mac
 position: 2
 ---
 
-# TelerikXamarinForms Toolbox
+# Telerik Xamarin.Forms Toolbox Extension for Mac
 
 This article introduces **TelerikXamarinForms Toolbox** for Visual Studio for Mac which will ease the process of adding Telerik controls to your Xamarin.Forms application on Mac. 
 

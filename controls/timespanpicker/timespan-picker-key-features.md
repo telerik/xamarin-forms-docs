@@ -1,6 +1,6 @@
 ---
 title: Key Features
-page_title: Key Features
+page_title: Xamarin TimeSpan Picker Documentation | Key Features
 description: Check our &quot;Key Features&quot; documentation article for Telerik TimeSpan Picker for Xamarin control.
 position: 3
 slug: timespan-picker-key-features

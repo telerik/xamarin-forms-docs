@@ -1,6 +1,6 @@
 ---
 title: Templates
-page_title: Templates
+page_title: Xamarin Date Picker Documentation | Templates
 description: Check our &quot;Templates&quot; documentation article for Telerik DatePicker for Xamarin control.
 position: 3
 slug: date-picker-templates

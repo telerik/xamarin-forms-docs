@@ -1,6 +1,6 @@
 ---
 title: Visual Structure
-page_title: Date Time Picker Visual Structure
+page_title: Xamarin DateTime Picker Documentation | Date Time Picker Visual Structure
 description: Check our &quot;Visual Structure&quot; documentation article for Telerik DateTimePicker for Xamarin control.
 position: 0
 slug: datetime-picker-visual-structure

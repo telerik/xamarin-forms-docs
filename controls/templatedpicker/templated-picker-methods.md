@@ -1,6 +1,6 @@
 ---
 title: Methods
-page_title: Methods
+page_title: Xamarin Templated Picker Documentation | Methods
 description: Check our &quot;Methods&quot; documentation article for Telerik TemplatedPicker for Xamarin control.
 position: 6
 slug: templated-picker-methods

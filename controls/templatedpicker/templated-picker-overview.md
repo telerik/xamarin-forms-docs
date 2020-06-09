@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Xamarin Templated Picker Documentation | Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik TemplatedPicker for Xamarin control.
 position: 0
 slug: templated-picker-overview

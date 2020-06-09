@@ -1,6 +1,6 @@
 ---
 title: Changes
-page_title: Changes
+page_title: Xamarin Templated Picker Documentation | Changes
 description: Describes what changes were made when the control was released with its official version
 position: 2
 slug: templated-picker-changes

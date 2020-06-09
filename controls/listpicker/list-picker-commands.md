@@ -1,6 +1,6 @@
 ---
 title: Commands
-page_title: Commands
+page_title: Xamarin List Picker Documentation | Commands
 description: Check our &quot;Commands&quot; documentation article for Telerik ListPicker for Xamarin control.
 position: 7
 slug: list-picker-commands

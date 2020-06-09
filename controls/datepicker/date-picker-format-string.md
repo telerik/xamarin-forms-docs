@@ -1,6 +1,6 @@
 ---
 title: Date Format Strings
-page_title: Date Format Strings
+page_title: Xamarin Date Picker Documentation | Date Format Strings
 description: Check our &quot;Date Format Strings&quot; documentation article for Telerik Date Picker for Xamarin control.
 position: 2
 slug: date-picker-format-string

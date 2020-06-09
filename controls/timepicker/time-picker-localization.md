@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization
+page_title: Xamarin Time Picker Documentation | Localization
 description: Check our &quot;Localization&quot; documentation article for Telerik TimePicker for Xamarin control.
 position: 4
 slug: time-picker-localization

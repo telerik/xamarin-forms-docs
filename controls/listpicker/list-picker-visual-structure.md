@@ -1,6 +1,6 @@
 ---
 title: Visual Structure
-page_title: List Picker Visual Structure
+page_title: Xamarin List Picker Documentation | List Picker Visual Structure
 description: Check our &quot;Visual Structure&quot; documentation article for Telerik ListPicker for Xamarin control.
 position: 0
 slug: list-picker-visual-structure

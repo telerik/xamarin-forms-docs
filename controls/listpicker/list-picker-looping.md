@@ -1,6 +1,6 @@
 ---
 title: Looping
-page_title: Looping
+page_title: Xamarin List Picker Documentation | Looping
 description: Check our &quot;Looping&quot; documentation article for Telerik ListPicker for Xamarin control.
 position: 2
 slug: list-picker-looping

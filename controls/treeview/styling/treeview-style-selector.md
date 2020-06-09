@@ -1,6 +1,6 @@
 ---
 title: ItemStyle Selector
-page_title: ItemStyle Selector
+page_title: Xamarin TreeView Documentation | ItemStyle Selector
 description: Check our &quot;ItemStyle Selector&quot; documentation article for Telerik TreeView for Xamarin control.
 position: 2
 slug: treeview-style-selector

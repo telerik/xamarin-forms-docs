@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Xamarin ZipLibrary Documentation | Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik ZipLibrary for Xamarin.
 description: Overview
 slug: radziplibrary-overview

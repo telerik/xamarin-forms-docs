@@ -1,6 +1,6 @@
 ---
 title: Default ItemTemplate
-page_title: Default ItemTemplate
+page_title: Xamarin TreeView Documentation | Default ItemTemplate
 description: Check our &quot;Default ItemTemplate&quot; documentation article for Telerik TreeView for Xamarin control.
 position: 5
 slug: treeview-control-template

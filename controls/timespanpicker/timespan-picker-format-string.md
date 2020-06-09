@@ -1,6 +1,6 @@
 ---
 title: TimeSpan Format Strings
-page_title: TimeSpan Format Strings
+page_title: Xamarin TimeSpan Picker Documentation | TimeSpan Format Strings
 description: Check our &quot;TimeSpan Format Strings&quot; documentation article for Telerik TimeSpan Picker for Xamarin control.
 position: 2
 slug: timespan-picker-format-string

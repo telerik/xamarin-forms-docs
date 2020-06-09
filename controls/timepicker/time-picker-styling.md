@@ -1,6 +1,6 @@
 ---
 title: Styling
-page_title: Styling
+page_title: Xamarin Time Picker Documentation | Styling
 description: Check our &quot;Styling&quot; documentation article for Telerik TimePicker for Xamarin control.
 position: 8
 slug: time-picker-styling

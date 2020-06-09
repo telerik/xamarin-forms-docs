@@ -1,6 +1,6 @@
 ---
 title: Styling
-page_title: Styling
+page_title: Xamarin TimeSpan Picker Documentation | Styling
 description: Check our &quot;Selection&quot; documentation article for Telerik TimeSpan Picker for Xamarin control.
 position: 8
 slug: timespan-picker-styling

@@ -1,6 +1,6 @@
 ---
 title: Key Features
-page_title: Key Features
+page_title: Xamarin Date Picker Documentation | Key Features
 description: Check our &quot;Key Features&quot; documentation article for Telerik DatePicker for Xamarin control.
 position: 2
 slug: date-picker-key-features

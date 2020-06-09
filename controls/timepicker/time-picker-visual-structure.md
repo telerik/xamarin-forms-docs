@@ -1,6 +1,6 @@
 ---
 title: Visual Structure
-page_title: Time Picker Visual Structure
+page_title: Xamarin Time Picker Documentation | Time Picker Visual Structure
 description: Check our &quot;Visual Structure&quot; documentation article for Telerik Time Picker for Xamarin control.
 position: 0
 slug: time-picker-visual-structure

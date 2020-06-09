@@ -1,6 +1,6 @@
 ---
 title: Styling
-page_title: Styling
+page_title: Xamarin DateTime Picker Documentation | Styling
 description: Check our &quot;Styling&quot; documentation article for Telerik DateTimePicker for Xamarin control.
 position: 8
 slug: datetime-picker-styling

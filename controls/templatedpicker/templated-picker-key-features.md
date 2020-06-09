@@ -1,6 +1,6 @@
 ---
 title: Key Features
-page_title: Key Features
+page_title: Xamarin Templated Picker Documentation | Key Features
 description: Check our &quot;Key Features&quot; documentation article for Telerik TemplatedPicker for Xamarin control.
 position: 2
 slug: templated-picker-key-features

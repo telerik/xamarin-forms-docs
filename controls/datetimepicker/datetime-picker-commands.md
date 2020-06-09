@@ -1,6 +1,6 @@
 ---
 title: Commands
-page_title: Commands
+page_title: Xamarin DateTime Picker Documentation | Commands
 description: Check our &quot;Commands&quot; documentation article for Telerik DateTimePicker for Xamarin control.
 position: 7
 slug: datetime-picker-commands

@@ -1,6 +1,6 @@
 ---
 title: Selection
-page_title: Selection
+page_title: Xamarin List Picker Documentation | Selection
 description: Check our &quot;Selection&quot; documentation article for Telerik ListPicker for Xamarin control.
 position: 6
 slug: list-picker-selection

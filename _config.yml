@@ -580,21 +580,6 @@ defaults:
         layout: "documentation"
         category: "default"
         product: "xamarin-ui"
-- 
-    scope:
-        path: "controls/datetimepicker"
-    values:
-        title_prefix: "Xamarin DateTime Picker Documentation"
--        
-    scope:
-        path: "controls/listpicker"
-    values:
-        title_prefix: "Xamarin List Picker Documentation"
--        
-    scope:
-        path: "controls/templatedpicker"
-    values:
-        title_prefix: "Xamarin Templated Picker Documentation"
         
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"

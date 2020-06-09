@@ -1,6 +1,6 @@
 ---
 title: Visual Structure
-page_title: Selection
+page_title: Xamarin TimeSpan Picker Documentation | Selection
 description: Check our &quot;Visual Structure&quot; documentation article for Telerik TimeSpan Picker for Xamarin control.
 position: 0
 slug: timespan-picker-visual-structure

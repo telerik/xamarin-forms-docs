@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Xamarin Date Picker Documentation | Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for Telerik DatePicker for Xamarin control.
 position: 1
 slug: date-picker-getting-started

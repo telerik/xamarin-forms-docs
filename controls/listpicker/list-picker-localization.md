@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization
+page_title: Xamarin List Picker Documentation | Localization
 description: Check our &quot;Localization&quot; documentation article for Telerik ListPicker for Xamarin control.
 position: 4
 slug: list-picker-localization

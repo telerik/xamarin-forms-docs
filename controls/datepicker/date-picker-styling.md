@@ -1,6 +1,6 @@
 ---
 title: Styling
-page_title: Styling
+page_title: Xamarin Date Picker Documentation | Styling
 description: Check our &quot;Styling&quot; documentation article for Telerik DatePicker for Xamarin control.
 position: 8
 slug: date-picker-styling

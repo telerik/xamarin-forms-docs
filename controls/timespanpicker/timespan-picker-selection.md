@@ -1,6 +1,6 @@
 ---
 title: Selection
-page_title: Selection
+page_title: Xamarin TimeSpan Picker Documentation | Selection
 description: Check our &quot;Selection&quot; documentation article for Telerik TimeSpan Picker for Xamarin control.
 position: 6
 slug: timespan-picker-selection

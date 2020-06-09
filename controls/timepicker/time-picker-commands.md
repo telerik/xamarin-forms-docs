@@ -1,6 +1,6 @@
 ---
 title: Commands
-page_title: Commands
+page_title: Xamarin Time Picker Documentation | Commands
 description: Check our &quot;Commands&quot; documentation article for Telerik TimePicker for Xamarin control.
 position: 7
 slug: time-picker-commands

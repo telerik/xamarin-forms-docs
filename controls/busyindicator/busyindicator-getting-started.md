@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Xamarin BusyIndicator Documentation | Getting Started
+page_title: Getting Started with Xamarin.Forms BusyIndicator Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik BusyIndicator for Xamarin control.
 position: 1
 slug: busyindicator-getting-started

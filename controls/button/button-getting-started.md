@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Xamarin Button Documentation | Getting Started
+page_title: Getting Started with Xamarin.Forms Button Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik Button for Xamarin control.
 position: 1
 slug: button-getting-started

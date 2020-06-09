@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Xamarin AutoCompleteView Documentation | Getting Started
+page_title: Getting Started with Xamarin.Forms AutoCompleteView Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik AutoCompleteView for Xamarin control.
 position: 1
 slug: autocompleteview-getting-started

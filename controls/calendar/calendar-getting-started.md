@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Xamarin Calendar Documentation | Getting Started
+page_title: Getting Started with Xamarin.Forms Calendar &amp; Scheduling Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 1
 slug: calendar-getting-started

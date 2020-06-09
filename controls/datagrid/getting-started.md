@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Xamarin DataGrid Documentation | RadDataGrid Getting Started
+page_title: Getting Started with Xamarin.Forms DataGrid Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 1
 slug: datagrid-getting-started

@@ -1,6 +1,6 @@
 ---
 title: Commands
-page_title: Map Commands
+page_title: Xamarin Map Documentation | Map Commands
 description: Check our &quot;Commands&quot; documentation article for Telerik Map for Xamarin control.
 position: 8
 slug: map-commands

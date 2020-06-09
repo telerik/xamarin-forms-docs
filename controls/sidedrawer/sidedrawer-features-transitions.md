@@ -1,6 +1,6 @@
 ---
 title: Transitions
-page_title: Transitions
+page_title: Xamarin SideDrawer Documentation | Transitions
 description: Check our &quot;Transitions&quot; documentation article for Telerik SideDrawer for Xamarin control.
 position: 3
 slug: sidedrawer-features-transitions

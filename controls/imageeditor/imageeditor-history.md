@@ -1,6 +1,6 @@
 ---
 title: History
-page_title: History
+page_title: Xamarin ImageEditor Documentation | History
 description: Check our &quot;History&quot; documentation article for Telerik ImageEditor for Xamarin control.
 position: 8
 slug: imageeditor-history

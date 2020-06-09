@@ -1,6 +1,6 @@
 ---
 title: ListViewTemplateCell and SelectedItemStyle
-page_title: ListViewTemplateCell and SelectedItemStyle
+page_title: Xamarin ListView Documentation | ListViewTemplateCell and SelectedItemStyle
 description: Check our &quot;ListViewTemplateCell and SelectedItemStyle&quot; documentation article for Telerik ListView for Xamarin control.
 position: 0
 slug: listview-howto-selectedstyle-with-templatecell

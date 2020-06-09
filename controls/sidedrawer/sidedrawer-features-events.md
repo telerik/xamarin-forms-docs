@@ -1,6 +1,6 @@
 ---
 title: Events
-page_title: Events
+page_title: Xamarin SideDrawer Documentation | Events
 description: Check our &quot;Events&quot; documentation article for Telerik SideDrawer for Xamarin control.
 position: 4
 slug: sidedrawer-features-events

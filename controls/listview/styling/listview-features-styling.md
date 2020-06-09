@@ -1,6 +1,6 @@
 ---
 title: Item Styles
-page_title: Item Styles
+page_title: Xamarin ListView Documentation | Item Styles
 description: Check our &quot;Item Styles&quot; documentation article for Telerik ListView for Xamarin control.
 position: 0
 slug: listview-features-styling

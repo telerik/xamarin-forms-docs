@@ -1,6 +1,6 @@
 ---
 title: Cell Types
-page_title: Cell Types
+page_title: Xamarin ListView Documentation | Cell Types
 description: Check our &quot;Cell Types&quot; documentation article for Telerik ListView for Xamarin control.
 position: 1
 slug: listview-cells

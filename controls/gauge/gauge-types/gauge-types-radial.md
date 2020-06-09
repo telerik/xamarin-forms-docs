@@ -1,6 +1,6 @@
 ---
 title: Radial Gauge
-page_title: Radial Gauge
+page_title: Xamarin Gauge Documentation | Radial Gauge
 description: Check our &quot;Radial Gauge&quot; documentation article for Telerik Gauge for Xamarin control.
 position: 0
 slug: gauge-types-radial

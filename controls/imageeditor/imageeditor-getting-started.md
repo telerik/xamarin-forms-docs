@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Xamarin ImageEditor Documentation | Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for Telerik ImageEditor for Xamarin control.
 position: 1
 slug: imageeditor-getting-started

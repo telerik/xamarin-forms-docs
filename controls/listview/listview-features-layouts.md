@@ -1,6 +1,6 @@
 ---
 title: Layouts
-page_title: Layouts
+page_title: Xamarin ListView Documentation | Layouts
 description: Check our &quot;Layouts&quot; documentation article for Telerik ListView for Xamarin control.
 position: 10
 slug: listview-features-layouts

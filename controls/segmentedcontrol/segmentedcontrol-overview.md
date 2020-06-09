@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Xamarin SegmentedControl Documentation | Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik SegmentedControl for Xamarin control.
 position: 0
 slug: segmentedcontrol-overview

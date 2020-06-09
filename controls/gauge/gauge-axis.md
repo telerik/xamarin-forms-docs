@@ -1,6 +1,6 @@
 ---
 title: Axis
-page_title: Axis
+page_title: Xamarin Gauge Documentation | Axis
 description: Check our &quot;Axis&quot; documentation article for Telerik Gauge for Xamarin control.
 position: 4
 slug: gauge-axis

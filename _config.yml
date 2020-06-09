@@ -580,42 +580,7 @@ defaults:
         layout: "documentation"
         category: "default"
         product: "xamarin-ui"
--
-    scope:
-        path: "controls/gauge"
-    values:
-        title_prefix: "Xamarin Gauge Documentation"
--
-    scope:
-        path: "controls/imageeditor"
-    values:
-        title_prefix: "Xamarin ImageEditor Documentation"
--
-    scope:
-        path: "controls/listview"
-    values:
-        title_prefix: "Xamarin ListView Documentation"
--
-    scope:
-        path: "controls/map"
-    values:
-        title_prefix: "Xamarin Map Documentation"
--
-    scope:
-        path: "controls/sidedrawer"
-    values:
-        title_prefix: "Xamarin SideDrawer Documentation"
--
-    scope:
-        path: "controls/rating"
-    values:
-        title_prefix: "Xamarin Rating Documentation"
--
-    scope:
-        path: "controls/segmentedcontrol"
-    values:
-        title_prefix: "Xamarin SegmentedControl Documentation"
--
+- 
     scope:
         path: "controls/tabview"
     values:

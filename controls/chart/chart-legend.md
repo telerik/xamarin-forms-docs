@@ -1,5 +1,6 @@
 ---
 title: Chart Legend
+page_title: Xamarin Chart Documentation | Chart Legend 
 slug: chart-features-legend
 description: Check our &quot;Chart Legend&quot; documentation article for Telerik Chart for Xamarin control.
 position: 9

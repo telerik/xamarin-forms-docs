@@ -1,5 +1,6 @@
 ---
 title: Cartesian Chart
+page_title: Xamarin Chart Documentation | Cartesian Chart
 position: 1
 description: Check our &quot;Cartesian Chart&quot; documentation article for Telerik Chart for Xamarin control.
 slug: chart-types-cartesian-chart

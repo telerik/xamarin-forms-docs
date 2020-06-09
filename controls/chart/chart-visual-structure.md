@@ -1,6 +1,6 @@
 ---
 title: Visual Structure
-page_title: RadChart Visual Structure
+page_title: Xamarin Chart Documentation | RadChart Visual Structure
 description: Check our &quot;Visual Structure&quot; documentation article for Telerik Chart for Xamarin control.
 position: 1
 slug: chart-visual-structure

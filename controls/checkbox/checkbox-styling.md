@@ -1,6 +1,6 @@
 ---
 title: Styling
-page_title: Styling
+page_title: Xamarin CheckBox Documentation | Styling
 description: Check our &quot;Styling&quot; documentation article for Telerik CheckBox for Xamarin control.
 position: 4
 slug: checkbox-styling

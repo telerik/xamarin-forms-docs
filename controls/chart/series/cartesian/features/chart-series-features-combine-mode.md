@@ -1,6 +1,6 @@
 ---
 title: CategoricalSeries Combine Mode
-page_title: CategoricalSeries Combine Mode
+page_title: Xamarin Chart Documentation | CategoricalSeries Combine Mode
 description: Check our &quot;CategoricalSeries Combine Mode&quot; documentation article for Telerik Chart for Xamarin control.
 slug: chart-series-combine-mode
 position: 0

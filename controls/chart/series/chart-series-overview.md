@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: RadChart Series Overview
+page_title: Xamarin Chart Documentation | RadChart Series Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik Chart for Xamarin control.
 slug: chart-series-overview
 position: 0

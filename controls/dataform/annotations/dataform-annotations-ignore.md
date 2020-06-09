@@ -1,6 +1,6 @@
 ---
 title: Ignore Attribute
-page_title: Ignore Attribute
+page_title: Xamarin DataForm Documentation | Ignore Attribute
 description: Check our &quot;Ignore Attribute&quot; documentation article for Telerik DataForm for Xamarin control.
 slug: dataform-annotations-ignore
 ---

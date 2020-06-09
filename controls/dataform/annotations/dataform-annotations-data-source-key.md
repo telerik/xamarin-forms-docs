@@ -1,6 +1,6 @@
 ---
 title: DataSourceKey Attribute
-page_title: DataSourceKey Attribute
+page_title: Xamarin DataForm Documentation | DataSourceKey Attribute
 description: Check our &quot;DataSourceKey Attribute&quot; documentation article for Telerik DataForm for Xamarin control.
 slug: dataform-annotations-data-source-key
 ---

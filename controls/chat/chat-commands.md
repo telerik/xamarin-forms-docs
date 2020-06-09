@@ -1,6 +1,6 @@
 ---
 title: Commands
-page_title: RadChat Commands
+page_title: Xamarin Conversational UI Documentation | RadChat Commands
 description: Check our &quot;Commands&quot; documentation article for Telerik Chat for Xamarin control.
 position: 12
 slug: chat-commands

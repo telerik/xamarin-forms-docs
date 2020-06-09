@@ -1,6 +1,6 @@
 ---
 title: Spline Series
-page_title: Spline Series
+page_title: Xamarin Chart Documentation | Spline Series
 description: Check our &quot;Spline Series&quot; documentation article for Telerik Chart for Xamarin control.
 slug: chart-series-spline-series
 position: 0

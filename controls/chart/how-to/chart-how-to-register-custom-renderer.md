@@ -1,6 +1,6 @@
 ---
 title: Register Chart Renderers
-page_title: Register Chart Renderers
+page_title: Xamarin Chart Documentation | Register Chart Renderers
 description: Check our &quot;Register Chart Renderers&quot; documentation article for Telerik Chart for Xamarin control.
 position: 2
 slug: chart-how-to-register-custom-renderer

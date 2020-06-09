@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: ChatPicker Overview
+page_title: Xamarin Conversational UI Documentation | ChatPicker Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik Chat for Xamarin control.
 position: 0
 slug: chat-picker-overview

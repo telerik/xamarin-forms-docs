@@ -581,26 +581,6 @@ defaults:
         category: "default"
         product: "xamarin-ui"
 -
-   scope:
-        path: "controls/chart"
-    values:
-        title_prefix: "Xamarin Chart Documentation"
--
-    scope:
-        path: "controls/checkbox"
-    values:
-        title_prefix: "Xamarin CheckBox Documentation"
--
-    scope:
-        path: "controls/chat"
-    values:
-        title_prefix: "Xamarin Conversational UI Documentation"
--
-    scope:
-        path: "controls/dataform"
-    values:
-        title_prefix: "Xamarin DataForm Documentation"
--
     scope:
         path: "controls/gauge"
     values:

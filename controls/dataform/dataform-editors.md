@@ -1,6 +1,6 @@
 ---
 title: Editors
-page_title: Editors
+page_title: Xamarin DataForm Documentation | Editors
 description: Check our &quot;Editors&quot; documentation article for Telerik DataForm for Xamarin control.
 slug: dataform-editors
 position: 3

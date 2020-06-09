@@ -1,5 +1,6 @@
 ---
 title: Numerical Axis
+page_title: Xamarin Chart Documentation | Numerical Axis
 slug: axes-numerical-axis
 description: Check our &quot;Numerical Axis&quot; documentation article for Telerik Chart for Xamarin control.
 ---

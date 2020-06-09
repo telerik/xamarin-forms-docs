@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: RadChat Localization
+page_title: Xamarin Conversational UI Documentation | RadChat Localization
 description: Check our &quot;Localizations&quot; documentation article for Telerik Chat for Xamarin control.
 position: 10
 slug: chat-localization

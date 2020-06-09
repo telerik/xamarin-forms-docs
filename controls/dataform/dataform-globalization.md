@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: DataForm Localization
+page_title: Xamarin DataForm Documentation | DataForm Localization
 description: Check our &quot;Localization&quot; documentation article for Telerik DataForm for Xamarin control.
 position: 7
 slug: dataform-globalization

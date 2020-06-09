@@ -1,6 +1,6 @@
 ---
 title: Modify RadDataForm's TelerikTheme Resources in Android
-page_title: RadDataForm - Modify TelerikTheme Resources
+page_title: Xamarin DataForm Documentation | Modify TelerikTheme Resources in Android
 description: Check our &quot;Modify RadDataForm's TelerikTheme Resources in Android&quot; documentation article for Telerik DataForm for Xamarin control.
 slug: dataform-howto-modify-theme-resources
 position: 3

@@ -1,6 +1,6 @@
 ---
 title: Validation Attribute
-page_title: Validation Attribute
+page_title: Xamarin DataForm Documentation | Validation Attribute
 description: Check our &quot;Validation Attribute&quot; documentation article for Telerik DataForm for Xamarin control.
 slug: dataform-annotations-validation
 ---

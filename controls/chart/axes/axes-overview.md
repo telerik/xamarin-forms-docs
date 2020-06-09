@@ -1,5 +1,6 @@
 ---
 title: Overview
+page_title: Xamarin Chart Documentation | Axes Overview
 position: 1
 description: Check our &quot;Overview&quot; documentation article for Telerik Chart for Xamarin control.
 slug: axes-overview

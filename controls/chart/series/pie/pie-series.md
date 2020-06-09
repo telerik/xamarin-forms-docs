@@ -1,5 +1,6 @@
 ---
-title: PieSeries
+title: Pie Series
+page_title: Xamarin Chart Documentation | Pie Series
 slug: chart-series-pie-series
 description: Check our &quot;PieSeries&quot; documentation article for Telerik Chart for Xamarin control.
 ---

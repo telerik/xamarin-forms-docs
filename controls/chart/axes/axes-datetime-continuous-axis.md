@@ -1,5 +1,6 @@
 ---
 title: DateTimeContinuous Axis
+page_title: Xamarin Chart Documentation | DateTimeContinuous Axis
 slug: axes-date-time-continuous-axis
 description: Check our &quot;DateTimeContinuous Axis&quot; documentation article for Telerik Chart for Xamarin control.
 ---

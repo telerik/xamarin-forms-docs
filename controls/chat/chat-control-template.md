@@ -1,6 +1,6 @@
 ---
 title: Control Template
-page_title: Control Template
+page_title: Xamarin Conversational UI Documentation | Control Template
 description: Check our &quot;Control Template&quot; documentation article for Telerik Chat for Xamarin control.
 position: 4
 slug: chat-control-template

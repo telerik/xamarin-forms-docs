@@ -1,5 +1,6 @@
 ---
 title: Ohlc Series
+page_title: Xamarin Chart Documentation | Ohlc Series
 slug: chart-series-ohlc-series
 description: Check our &quot;Ohlc Series&quot; documentation article for Telerik Chart for Xamarin control.
 position: 0

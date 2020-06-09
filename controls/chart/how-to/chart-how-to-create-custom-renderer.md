@@ -1,6 +1,6 @@
 ---
 title: How To Create Line Series With Animation
-page_title: How To Create Line Series With Animation
+page_title: Xamarin Chart Documentation | How To Create Line Series With Animation
 description: Check our &quot;How To Create Line Series With Animation&quot; documentation article for Telerik Chart for Xamarin control.
 position: 3
 slug: chart-how-to-create-custom-renderer

@@ -1,6 +1,6 @@
 ---
 title: ScatterLine Series
-page_title: ScatterLine Series
+page_title: Xamarin Chart Documentation | ScatterLine Series
 description: Check our &quot;ScatterLine Series&quot; documentation article for Telerik Chart for Xamarin control.
 slug: chart-series-scatter-line-series
 position: 0

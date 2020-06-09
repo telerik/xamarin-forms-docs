@@ -1,6 +1,6 @@
 ---
 title: Typing Indicator
-page_title: Typing Indicator
+page_title: Xamarin Conversational UI Documentation | Typing Indicator
 description: Check our &quot;Typing Indicator&quot; documentation article for Telerik Chat for Xamarin control.
 position: 8
 slug: chat-typing-indicator

@@ -1,6 +1,6 @@
 ---
 title: Customize the Control
-page_title: Customize the Control
+page_title: Xamarin SlideView Documentation | Customize the Control
 description: Check our &quot;Customize the Control&quot; documentation article for Telerik SlideView for Xamarin control.
 position: 3
 slug: sideview-customize-the-control

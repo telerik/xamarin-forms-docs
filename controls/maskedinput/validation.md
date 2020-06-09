@@ -1,6 +1,6 @@
 ---
 title: Validation UI
-page_title: Validation UI
+page_title: Xamarin MaskedInput Documentation | Validation UI
 description: Check our &quot;Validation UI&quot; documentation article for Telerik MaskedInput for Xamarin control.
 position: 5
 slug: maskedinput-features-validation

@@ -1,6 +1,6 @@
 ---
 title: Control Template
-page_title: Control Template
+page_title: Xamarin SlideView Documentation | Control Template
 description: Check our &quot;Control Template&quot; documentation article for Telerik SlideView for Xamarin control.
 position: 2
 slug: slideview-control-template

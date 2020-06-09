@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Xamarin TabView Documentation | Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik TabView for Xamarin control.
 description: Overview
 slug: tabview-overview

@@ -582,46 +582,6 @@ defaults:
         product: "xamarin-ui"
 - 
     scope:
-        path: "controls/tabview"
-    values:
-        title_prefix: "Xamarin TabView Documentation"
--
-    scope:
-        path: "controls/treeview"
-    values:
-        title_prefix: "Xamarin TreeView Documentation"
--
-    scope:
-        path: "controls/ziplibrary"
-    values:
-        title_prefix: "Xamarin ZipLibrary Documentation"
--
-    scope:
-        path: "controls/spreadstreamprocessing"
-    values:
-        title_prefix: "Xamarin SpreadStreamProcessing Documentation"
--        
-    scope:
-        path: "controls/spreadprocessing"
-    values:
-        title_prefix: "Xamarin SpreadProcessing Documentation"        
--
-    scope:
-        path: "controls/maskedinput"
-    values:
-        title_prefix: "Xamarin MaskedInput Documentation"
--
-    scope:
-        path: "controls/slideview"
-    values:
-        title_prefix: "Xamarin SlideView Documentation"
--        
-    scope:
-        path: "controls/wordsprocessing"
-    values:
-        title_prefix: "Xamarin WordsProcessing"
--        
-    scope:
         path: "controls/datetimepicker"
     values:
         title_prefix: "Xamarin DateTime Picker Documentation"

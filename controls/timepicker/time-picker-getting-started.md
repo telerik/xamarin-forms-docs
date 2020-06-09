@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Xamarin Time Picker Documentation | Getting Started
+page_title: Getting Started with Xamarin.Forms Time Picker Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik TimePicker for Xamarin control.
 position: 1
 slug: time-picker-getting-started

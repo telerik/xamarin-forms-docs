@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Xamarin SlideView Documentation | Getting Started
+page_title: Getting Started with Xamarin.Forms SlideView Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik SlideView for Xamarin control.
 position: 1
 slug: slideview-getting-started

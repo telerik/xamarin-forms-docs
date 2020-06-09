@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Xamarin Chart Documentation | Getting Started
+page_title: Getting Started with Xamarin.Forms Chart Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik Chart for Xamarin control.
 position: 2
 slug: chart-getting-started

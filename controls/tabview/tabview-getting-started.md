@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Xamarin TabView Documentation | Getting Started
+page_title: Getting Started with Xamarin.Forms TabView Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik TabView for Xamarin control.
 position: 1
 slug: tabview-getting-started

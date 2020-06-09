@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Xamarin PdfViewer Documentation | Getting Started
+page_title: Getting Started with Xamarin.Forms PdfViewer Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik PdfViewer for Xamarin control.
 position: 1
 slug: pdfviewer-getting-started

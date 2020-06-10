@@ -1,6 +1,7 @@
 ---
 title: Telerik UI for Xamarin Toolbox
 page_title: Telerik UI for Xamarin Toolbox
+description: Check our detailed documentation artile for the Toolbox Extension of Telerik UI for Xamarin on Windows. Find all you need to know in Xamarin.Forms instalation and deployment documentation.
 slug: telerik-xamarin-toolbox
 position: 6
 ---

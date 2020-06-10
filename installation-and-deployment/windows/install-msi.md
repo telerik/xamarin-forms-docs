@@ -1,7 +1,7 @@
 ---
-title: Installing UI for Xamarin from MSI File
-page-title: Installing UI for Xamarin from MSI File
-description: This article will guide you through the steps you have to follow in order to download and install the UI for Xamarin Forms.
+title: Installing Telerik UI for Xamarin from MSI File
+page-title: Installing Telerik UI for Xamarin from MSI File
+description: This article will guide you through the steps you have to follow in order to download and install the Telerik UI for Xamarin.
 position: 1 
 slug: install-msi
 ---

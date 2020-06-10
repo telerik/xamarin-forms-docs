@@ -1,6 +1,7 @@
 ---
 title: Upgrading on Mac
 page_title: Upgrading Telerik UI for Xamarin on Mac
+description: Learn how to upgrade Telerik UI for Xamarin to a newer version on Mac
 slug: upgrading-mac
 position: 1
 ---

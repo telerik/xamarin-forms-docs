@@ -1,6 +1,7 @@
 ---
 title: Themes Overview
 page_title: Themes Overview
+description: Telerik Theme is a set of resources which are designed to provide your application with a consistent look and feel across all platforms.
 slug: common-themes-overview
 position: 1
 ---

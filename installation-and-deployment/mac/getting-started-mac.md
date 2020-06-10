@@ -1,6 +1,7 @@
 ---
 title: Using Telerik UI for Xamarin on Mac
 page_title: Getting Started with Telerik UI for Xamarin.Forms on Mac
+description: Check our detailed documentation artile on how to get started with Telerik UI for Xamarin on Mac. Find all you need to know in Xamarin.Forms instalation and deployment documentation.
 slug: getting-started-mac
 position: 0
 ---

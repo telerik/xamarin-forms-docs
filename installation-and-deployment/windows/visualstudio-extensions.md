@@ -1,6 +1,7 @@
 ---
 title: Visual Studio Extensions
 page_title: Visual Studio Extensions
+description: Check our detailed documentation artile for the Visual Studio Extensions on Windows. Find all you need to know in Xamarin.Forms instalation and deployment documentation.
 slug: vs-extensions
 position: 4
 ---

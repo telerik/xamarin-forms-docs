@@ -1,7 +1,7 @@
 ---
 title: Introduction
-page_title: Introduction | Telerik UI for Xamarin.Android Documentation
-description: Telerik UI for Xamarin.Android features components that decrease development time and help teams build stunning Android apps.
+page_title: Xamarin.Android Documentation
+description: Learn how to decrease development time and build stunning Android apps with the native control  wrappers - part of Telerik UI for Xamarin.Android.
 slug: introduction
 tags: introduction
 position: 0

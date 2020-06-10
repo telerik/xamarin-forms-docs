@@ -1,11 +1,12 @@
 ---
 title: Xamarin Demo Applications
-page_title: Telerik UI for Xamarin Documentation | Demo Applications
+page_title: SDK Browser application - Xamarin App Demos | Telerik UI for Xamarin
+description: The SDKBrowser is a set of various examples that explain how to use the features of a control without the complexity that extra styling and polish can add to an application.
 slug: developer-focused-examples
 position: 8
 ---
 
-# Xamarin Demo Applications
+# Telerik UI for Xamarin Demo Applications
 
 **Telerik UI for Xamarin** provides an easy-to-use infrastructure with many fully featured examples demonstrating our Xamarin controls. You can review the source code of each example and get familiar with the configuration possibilities that each provides.
 

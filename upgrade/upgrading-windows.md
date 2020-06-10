@@ -1,6 +1,7 @@
 ---
 title: Upgrading on Windows
 page_title: Upgrading Telerik UI for Xamarin on Windows
+description: Learn how to upgrade Telerik UI for Xamarin to a newer version of Windows
 slug: upgrading-windows
 position: 0
 ---

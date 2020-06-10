@@ -1,6 +1,7 @@
 ---
 title: Telerik NuGet Server
 page_title: Telerik NuGet Server
+description: Check our detailed documentation atricle on how to use Telerik UI for Xamarin NuGet packages.
 slug: telerik-nuget-server
 position: 8
 ---

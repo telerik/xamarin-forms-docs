@@ -1,11 +1,12 @@
 ---
-title: Telerik Font Icons
-page_title: Telerik Font Icons
+title: Telerik UI for Xamarin Font Icons
+page_title: Xamarin.Forms Styling and Appearance - Font Icons
+description: Telerik font icons is a collection of small vector graphics used across the components from Telerik UI for Xamarin suite.
 slug: telerik-font-icons
 position: 2
 ---
 
-## Telerik Font Icons
+# Telerik UI for Xamarin Font Icons
 
 Telerik font icons is a collection of small vector graphics used across the components from Telerik UI for Xamarin suite. Examples of using font icons include the expand and collapse indicators of Accordion, Expander and TreeView controls, filter and sort indicators of DataGrid control, and other.
 

@@ -1,6 +1,7 @@
 ---
 title: Modifying the Default Theme
 page_title: Modifying the Default Theme
+description: Find out what is the default resources structure and how to modify them and create a custom theme for your Telerik UI for Xamarin application.
 slug: common-modifying-default-theme
 position: 3
 ---

@@ -1,6 +1,7 @@
 ---
 title: Setting a Theme 
 page_title: Setting a Theme
+description: All the required steps to take in order to apply the Telerik theming mechanism on a specific control.
 slug: common-setting-a-theme
 position: 2
 ---

@@ -75,6 +75,14 @@ The **GaugeBarIndicator** presents a single value set by the **Value** property.
 
 <snippet id='gauge-bar-indicator'/>
 
+In addition, the BarIndicator has the following properties:
+
+* **StartThickness**(*double*): Specifies the start tickness of the bar indicator.
+* **EndThickness**(*double*): Specifies the end thickness of the bar indicator
+* **StartCap**(*of type Telerik.XamarinForms.DataVisualization.Gauges.GaugeBarIndicatorCap enumeration*): Defines the start cap of the bar indicator.
+* **EndCap**(*of type Telerik.XamarinForms.DataVisualization.Gauges.GaugeBarIndicatorCap enumeration*): Defines the end cap of the bar indicator.
+	The available options from **GaugeBarIndicatorCap enumeration** are: **Flat**, **Oval**, **ConcaveOval**. The default value for start and end caps is *Flat*.
+
 ### Range Bar Indicator
 
 The **GaugeBarIndicator** presents a value range set by the **From** and **To** properties. 
@@ -82,6 +90,15 @@ The **GaugeBarIndicator** presents a value range set by the **From** and **To** 
 <snippet id='gauge-range-bar-indicator'/>
 
 ![Gauge example](images/gauge-bar-indicator-overview.png)
+
+In addition, the RangeBarIndicator has the following properties:
+
+* **FromThickness**(*double*): Specifies the start tickness of the range bar indicator.
+* **ToThickness**(*double*): Specifies the end thickness of the range bar indicator
+* **FromCap**(*of type Telerik.XamarinForms.DataVisualization.Gauges.GaugeBarIndicatorCap enumeration*): Defines the start cap of the bar indicator.
+* **ToCap**(*of type Telerik.XamarinForms.DataVisualization.Gauges.GaugeBarIndicatorCap enumeration*): Defines the end cap of the bar indicator.
+	The available options from **GaugeBarIndicatorCap enumeration** are: **Flat**, **Oval**, **ConcaveOval**. The default value is *Flat*.
+
 
 >important You could find example with Gauge Bar Indicators inside the Gauge/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

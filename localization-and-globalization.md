@@ -1,5 +1,5 @@
 ---
-title: Telerik UI for Xamarin Localization and Globalization
+title: Localization and Globalization
 page_title: Telerik UI for Xamarin Localization and Globalization
 description: Learn how you can utilize the localization and globalization features of the Telerik UI for Xamarin components. For more information, check our detailed Xamarin.Forms documentation.
 slug: common-localization-and-globalization

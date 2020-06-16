@@ -1,6 +1,7 @@
 ---
 title: Introduction
 page_title: Telerik UI for Xamarin Documentation
+description: Learn how to decrease development time and build stunning Xamarin apps with Telerik UI for Xamarin controls
 position: 0
 ---
 

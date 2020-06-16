@@ -1,5 +1,5 @@
 ---
-title: Telerik UI for Xamarin Font Icons
+title: Telerik Font Icons
 page_title: Xamarin.Forms Styling and Appearance - Font Icons
 description: Telerik font icons is a collection of small vector graphics used across the components from Telerik UI for Xamarin suite.
 slug: telerik-font-icons

@@ -50,6 +50,8 @@ Here is the result at runtime showing the above Indeterminate state as well as S
 
 ![CheckBox Key Feature Example](images/checkbox-features.png)
 
+> RadCheckBox follows the guidelines of the operating system, meaning that on iOS it is visualized as circle and on Android and UWP - as square.
+
 ## See Also
 
 - [CheckBox Getting Started]({% slug checkbox-getting-started%})

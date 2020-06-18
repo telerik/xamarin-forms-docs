@@ -42,6 +42,7 @@ Here is the result at runtime with all of the above examples:
 
 ![CheckBox Color Changing Options Example](images/checkbox-colors.png)
 
+> RadCheckBox follows the guidelines of the operating system, meaning that on iOS it is visualized as circle and on Android and UWP - as square.
 
 ## Theme
 

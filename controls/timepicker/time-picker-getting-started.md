@@ -12,7 +12,7 @@ This article will guide you through the steps needed to add a basic **RadTimePic
 
 * [Setting up the app](#1-setting-up-the-app)
 * [Adding the required Telerik references](#2-adding-the-required-telerik-references)
-* [Adding RadTimePicker control](3-adding-radtimepicker-control)
+* [Adding RadTimePicker control](#3-adding-radtimepicker-control)
 
 ## 1. Setting up the app
 

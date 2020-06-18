@@ -26,10 +26,10 @@ The following members of RadCalendar control are related to the selection featur
 * **SelectedRange** (of type *Telerik.XamarinForms.Input.Calendar.DateTimeRange*): Used only with **Range** selection to give information on the selected range through its **FromDate** and **ToDate** DateTime properties.
 
 The table below lists the supported selection modes for each view mode:
-|					|				Selection Mode 			   |
-| ----------------- | ---------------------------------------- |
+|					|				Selection Mode 			      |
+| ----------------- | ------------------------------------------- |
 | 	View Mode 		|	None	|	Singe	| Multiple | Range    |
-| ----------------- | ---------	| --------  | -------- | -------- |
+| ----------------- | ---------	| --------- | -------- | -------- |
 | Month 			| &#x2714;	| &#x2714;	| &#x2714; | &#x2714  |
 | Day 				| &#x2714;	| &#x2714;	| - 	   | -	   	  |
 | MultiDay 			| &#x2714;	| &#x2714;	| -  	   | -        |

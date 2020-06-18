@@ -26,19 +26,19 @@ The following members of RadCalendar control are related to the selection featur
 * **SelectedRange** (of type *Telerik.XamarinForms.Input.Calendar.DateTimeRange*): Used only with **Range** selection to give information on the selected range through its **FromDate** and **ToDate** DateTime properties.
 
 The table below lists the supported selection modes for each view mode:
-|					|				Selection Mode 			      |
-| ----------------- | ------------------------------------------- |
-| 	View Mode 		|	None	|	Singe	| Multiple | Range    |
-| ----------------- | ---------	| --------- | -------- | -------- |
-| Month 			| &#x2714;	| &#x2714;	| &#x2714; | &#x2714  |
-| Day 				| &#x2714;	| &#x2714;	| - 	   | -	   	  |
-| MultiDay 			| &#x2714;	| &#x2714;	| -  	   | -        |
-| Agenda			| -			| -			| - 	   | -		  |
-| Year				| -			| -			| - 	   | - 		  |
-| Week				| &#x2714;	| &#x2714;	| &#x2714; | &#x2714; |
-| MonthNames		| -			| -			| -		   | -		  |
-| YearNumbers		| -			| -			| -		   | -		  |
-| Flow				| -			| -			| - 	   | -		  |
+|					| Selection Mode |
+| ----------------- | -------------- |
+| 	View Mode 		|	None   | Singe | Multiple | Range |
+| ----------------- | -------- | ----- | -------- | ----- |
+| Month 			| &#x2714; | &#x2714;	| &#x2714; | &#x2714; |
+| Day 				| &#x2714; | &#x2714;	| - 	   | -	   	  |
+| MultiDay 			| &#x2714; | &#x2714;	| -  	   | -        |
+| Agenda			| -		   | -			| - 	   | -		  |
+| Year				| -		   | -			| - 	   | - 		  |
+| Week				| &#x2714; | &#x2714;	| &#x2714; | &#x2714; |
+| MonthNames		| -		   | -			| -		   | -		  |
+| YearNumbers		| -		   | -			| -		   | -		  |
+| Flow				| -		   | -			| - 	   | -		  |
 
 For more details about the supported view modes for each platform, please check the [Calendar and Scheduling View Modes article]({%slug calendar-features-navigation-and-view-mode%}).
 

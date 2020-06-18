@@ -26,7 +26,7 @@ When you have an active trial or developer license, you can download the followi
 
 >If you are not a customer, you can [download a free, fully functional trial](https://www.telerik.com/download-trial-file/v2-b/ui-for-xamarin?file=pkg) and the same options will apply to you as well.
 
->tip Make sure you have already read the [System Requirements]({% slug system-requirements %}) article before you proceed.
+>tip Make sure you have already read the [System Requirements]({%slug system-requirements%}#macos) article before you proceed.
 
 Follow the steps below in order to download the installation files:
 

@@ -30,7 +30,7 @@ The table below lists the supported selection modes for each view mode:
 | ----------------- | ------------------------------------------- |
 | 	View Mode 		|	None	|	Singe	| Multiple | Range    |
 | ----------------- | ---------	| --------- | -------- | -------- |
-| Month 			| &#x2714;	| &#x2714;	| &#x2714; | &#x2714  |
+| Month 			| &#x2714;	| &#x2714;	| &#x2714; | &#x2714; |
 | Day 				| &#x2714;	| &#x2714;	| - 	   | -	   	  |
 | MultiDay 			| &#x2714;	| &#x2714;	| -  	   | -        |
 | Agenda			| -			| -			| - 	   | -		  |

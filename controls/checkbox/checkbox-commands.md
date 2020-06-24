@@ -24,9 +24,9 @@ There are two types of commands:
 
 ## Example
 
-Here is an example how to create a **CheckBoxUserCommand**.
+Here is an example how to create a sample **CheckBoxUserCommand**.
 
-Add the RadCheckBox control and bound the IsCheckedChangedCommand through the CheckBoxUserCommand predefined command. Use the Id property to map the command to the corresponding action with the control. In the following example we set the Id property to the *IsCheckedChanged* CommandId Enumaration.
+Add the RadCheckBox control and bound the IsCheckedChangedCommand through the CheckBoxUserCommand predefined command. Use the Id property to map the command to the corresponding action with the control. In the following example we set the Id property to the *IsCheckedChanged* CommandId Enumeration.
 
 <snippet id='checkbox-commands-xaml'/>
 
@@ -36,9 +36,11 @@ use the following namespace:
 	xmlns:checkBoxComamnds="clr-namespace:Telerik.XamarinForms.Primitives.CheckBox.Commands;assembly=Telerik.XamarinForms.Primitives"
 ```
 
-And lets directly handle the needed command in the class and create methods for CanExecute and Execute the IsCheckedChangedCommand.
+And lets handle the needed command in a sample ViewModel class - define the IsCheckedChangedCommand and create methods for CanExecute and Execute:
 
-Here is a quick example: 
+<snippet id='checkbox-commands-viewmodel' />
+ 
+The last step is to set the ViewModel class as a BindingContext of the page:
 
 <snippet id='checkbox-commands-csharp'/>
 

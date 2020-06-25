@@ -62,7 +62,7 @@ namespace ListView.iOS
             {
                 control.Layout.CollectionView.Bounces = false;
 				
-				// in additiona you can disable the scrolling setting the scrollenabled to false. Check the commened code below:
+				// in additiona you can disable the scrolling setting the scrollenabled to false. Check the commented code below:
                 //control.Layout.CollectionView.ScrollEnabled = false;
             }
         }

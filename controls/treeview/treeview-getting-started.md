@@ -42,14 +42,14 @@ If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have 
 
 You could use one of the following approaches:
 
-#### Drag the control from the Toolbox. 
+### Drag the control from the Toolbox. 
 
 Take a look at the following topics on how to use the toolbox:
 
 * [Telerik UI for Xamarin Toolbox on Windows]({%slug telerik-xamarin-toolbox%})
 * [Telerik UI for Xamarin Toolbox on Mac]({%slug telerik-xamarin-toolbox-mac%})	
 
-#### Create the control definition in XAML:
+### Create the control definition in XAML:
 
 ```XAML
 <telerikDataControls:RadTreeView x:Name="treeView" ItemsSource="{Binding Source}" />
@@ -58,6 +58,11 @@ Take a look at the following topics on how to use the toolbox:
 In addition to this, you need to add the following namespace:
 
 <snippet id='xmlns-telerikdatacontrols' />
+
+> RadTreeView control provides UI virtualization, so it requires its visual parent to provide vertical or horizontal space for the control to fill into. The following scenarios will measure the control with infinity and the virtualization will not work:
+>	* positioning the TreeView control inside StackLayout which is wrapped in ScrollView.
+>	* positioning the TreeView inside ScrollView.
+>	* For additional information, please check the [Controls are not Apppearing]({%slug controls-are-not-appearing%}) article.
 
 As you can notice, the **ItemsSource** property of the control needs to be set. The collection we have is representing a hierarchical view and this is the reason for using the RadTreeView control for this setup. 
 

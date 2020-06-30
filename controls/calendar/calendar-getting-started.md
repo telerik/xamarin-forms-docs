@@ -61,6 +61,8 @@ In addition to this, you need to add the following namespace:
 <snippet id='xmlns-telerikinput'/>
 <snippet id='ns-telerikinput'/>
 
+> RadCalendar control requires its visual parent to provide vertical or horizontal space for the control to fill into. Please avoid placing the control inside ScrollView as the calendar control has its own scrolling.
+
 Here is the result:
 
 ![Basic RadCalendar Example](images/calendar-gettingstarted.png "Basic RadCalendar")

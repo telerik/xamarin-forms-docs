@@ -18,12 +18,13 @@ The available controls which can be used in Mobile Blazor Bindings projects are 
 
 | Controls |
 | -------- |
-| RadBorder |
-| RadButton |
-| RadBusyIndicator |
-| RadCheckBox |
-| RadListView |
-| RadSideDrawer |
+| Border |
+| Button |
+| BusyIndicator |
+| CheckBox |
+| Expander |
+| ListView |
+| SideDrawer |
 
 ## Getting Started with Telerik Xamarin Mobile Blazor Bindings
 

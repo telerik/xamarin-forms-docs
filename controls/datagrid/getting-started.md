@@ -67,7 +67,7 @@ In addition to this, you need to add the following namespace:
 > RadDataGrid control provides UI virtualization, so it requires its visual parent to provide vertical or horizontal space for the control to fill into. The following scenarios will measure the control with infinity and the virtualization will not work:
 >	* positioning the DataGrid control inside StackLayout which is wrapped in ScrollView.
 >	* positioning the DataGrid inside ScrollView.
->	* For additional information, please check the [Controls are not Apppearing]({%slug controls-are-not-appearing%}) article.
+> For additional information, please check the [Controls are not Apppearing]({%slug controls-are-not-appearing%}) article.
 
 Now that you have added the control to your view, you need to make sure that is properly loaded with the required data. 
 

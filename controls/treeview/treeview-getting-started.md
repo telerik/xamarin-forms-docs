@@ -62,7 +62,7 @@ In addition to this, you need to add the following namespace:
 > RadTreeView control provides UI virtualization, so it requires its visual parent to provide vertical or horizontal space for the control to fill into. The following scenarios will measure the control with infinity and the virtualization will not work:
 >	* positioning the TreeView control inside StackLayout which is wrapped in ScrollView.
 >	* positioning the TreeView inside ScrollView.
->	* For additional information, please check the [Controls are not Apppearing]({%slug controls-are-not-appearing%}) article.
+> For additional information, please check the [Controls are not Apppearing]({%slug controls-are-not-appearing%}) article.
 
 As you can notice, the **ItemsSource** property of the control needs to be set. The collection we have is representing a hierarchical view and this is the reason for using the RadTreeView control for this setup. 
 

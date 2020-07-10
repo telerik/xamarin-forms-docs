@@ -8,7 +8,7 @@ publish: true
 position: 2
 ---
 
-# RadChartView: DateTimeCategoricalAxis
+# DateTimeCategoricalAxis
 
 When **RadCartesianChartView** visualizes **CategoricalSeries**, it needs an axis that can represent the different categories. The **CategoricalAxis** extends the base **CartesianAxis** class and is used to displays a range of categories. Categories are built depending on the **Category** value of each **CategoricalDataPoint** present in the owning **CategoricalSeries** chart series. The axis is divided into discrete slots and each data point is visualized in the slot corresponding to its categorical value.
 
@@ -21,84 +21,83 @@ with additional field which will contain our `Calendar` component:
 
 
 ```C#
-	public class ExtendedMonthResult : MonthResult
-	{
-		public Java.Util.Calendar Date { get; set;}
+public class ExtendedMonthResult : MonthResult
+{
+	public Java.Util.Calendar Date { get; set;}
 
-		public ExtendedMonthResult (String month, double result, Java.Util.Calendar date)
-			:base(month, result)
-		{
-			this.Date = date;
-		}
+	public ExtendedMonthResult (String month, double result, Java.Util.Calendar date)
+		:base(month, result)
+	{
+		this.Date = date;
 	}
+}
 ```
 
 We will also need a list of items from the new type and initialize it with proper data:
 
 
 ```C#
-	private Java.Util.ArrayList extendedMonthResults;
-	
-	private void InitCalendarData() {
-		extendedMonthResults = new Java.Util.ArrayList();
+private Java.Util.ArrayList extendedMonthResults;
 
-		extendedMonthResults.Add(new ExtendedMonthResult(
-			"Jan", 5, new Java.Util.GregorianCalendar(2014, Java.Util.Calendar.January, 5)));
-			
-		extendedMonthResults.Add(new ExtendedMonthResult(
-			"Feb", 8, new Java.Util.GregorianCalendar(2014, Java.Util.Calendar.February, 8)));
-			
-		extendedMonthResults.Add(new ExtendedMonthResult(
-			"Mar", 3, new Java.Util.GregorianCalendar(2014, Java.Util.Calendar.March, 3)));
-			
-		extendedMonthResults.Add(new ExtendedMonthResult(
-			"Mar", 12, new Java.Util.GregorianCalendar(2014, Java.Util.Calendar.March, 22)));
+private void InitCalendarData() {
+	extendedMonthResults = new Java.Util.ArrayList();
+
+	extendedMonthResults.Add(new ExtendedMonthResult(
+		"Jan", 5, new Java.Util.GregorianCalendar(2014, Java.Util.Calendar.January, 5)));
+		
+	extendedMonthResults.Add(new ExtendedMonthResult(
+		"Feb", 8, new Java.Util.GregorianCalendar(2014, Java.Util.Calendar.February, 8)));
+		
+	extendedMonthResults.Add(new ExtendedMonthResult(
+		"Mar", 3, new Java.Util.GregorianCalendar(2014, Java.Util.Calendar.March, 3)));
+		
+	extendedMonthResults.Add(new ExtendedMonthResult(
+		"Mar", 12, new Java.Util.GregorianCalendar(2014, Java.Util.Calendar.March, 22)));
+}
+
+class ExtendedMonthResultDataBinding : DataPointBinding {
+
+	private string propertyName;
+
+	public ExtendedMonthResultDataBinding(string propertyName)
+	{
+		this.propertyName = propertyName;
 	}
-	
-	class ExtendedMonthResultDataBinding : DataPointBinding {
 
-		private string propertyName;
-
-		public ExtendedMonthResultDataBinding(string propertyName)
+	public override Java.Lang.Object GetValue (Java.Lang.Object p0)
+	{
+		if(propertyName == "Date")
 		{
-			this.propertyName = propertyName;
+			return ((ExtendedMonthResult)(p0)).Date;
 		}
-
-		public override Java.Lang.Object GetValue (Java.Lang.Object p0)
-		{
-			if(propertyName == "Date")
-			{
-				return ((ExtendedMonthResult)(p0)).Date;
-			}
-			return ((ExtendedMonthResult)(p0)).Result;
-		}
+		return ((ExtendedMonthResult)(p0)).Result;
 	}
+}
 ```
 
-Now we can go to the Activity where we want to add a **RadCartesianChartView** with **DateTimeCategoricalAxis** and add the following code:
-
+Now we can go to the Activity where we want to add a RadCartesianChartView with **DateTimeCategoricalAxis** and add the following code:
 
 ```C#
-	InitCalendarData();
+InitCalendarData();
 
-	RadCartesianChartView chartView = new RadCartesianChartView(this);
+RadCartesianChartView chartView = new RadCartesianChartView(this);
 
-	BarSeries barSeries = new BarSeries();
-	barSeries.CategoryBinding = new ExtendedMonthResultDataBinding ("Date");
-	barSeries.ValueBinding = new ExtendedMonthResultDataBinding ("Result");
-	barSeries.Data = (Java.Lang.IIterable)this.extendedMonthResults;
-	chartView.Series.Add(barSeries);
+BarSeries barSeries = new BarSeries();
+barSeries.CategoryBinding = new ExtendedMonthResultDataBinding ("Date");
+barSeries.ValueBinding = new ExtendedMonthResultDataBinding ("Result");
+barSeries.Data = (Java.Lang.IIterable)this.extendedMonthResults;
+chartView.Series.Add(barSeries);
 
-	DateTimeCategoricalAxis horizontalAxis = new DateTimeCategoricalAxis();
-	horizontalAxis.DateTimeComponent = DateTimeComponent.Month;
-	horizontalAxis.DateTimeFormat = new SimpleDateFormat("MMM-yyyy");
-	chartView.HorizontalAxis = horizontalAxis;
+DateTimeCategoricalAxis horizontalAxis = new DateTimeCategoricalAxis();
+horizontalAxis.DateTimeComponent = DateTimeComponent.Month;
+horizontalAxis.DateTimeFormat = new SimpleDateFormat("MMM-yyyy");
+chartView.HorizontalAxis = horizontalAxis;
 
-	LinearAxis verticalAxis = new LinearAxis();
-	chartView.VerticalAxis = verticalAxis;
+LinearAxis verticalAxis = new LinearAxis();
+chartView.VerticalAxis = verticalAxis;
 
-	ViewGroup rootView = (ViewGroup)FindViewById(Resource.Id.container);
-	rootView.AddView(chartView);
+ViewGroup rootView = (ViewGroup)FindViewById(Resource.Id.container);
+rootView.AddView(chartView);
 ```
 
 Here is the result:
@@ -111,8 +110,8 @@ The **DateTimeCategoricalAxis** extends **CategoricalAxis** so you can use the s
 
 ### Date Time Component
 
-Defines the component of each `Calendar` structure that participates in the grouping process. The possible values: YEAR, QUARTER, MONTH, WEEK, HOUR, MINUTE, SECOND, MILLISECOND, DATE, TIME\_OF\_DAY, DAY, DAY\_OF\_WEEK, DAY\_OF\_YEAR. To get the current value use **getDateTimeComponent()** and to change it, use **setDateTimeComponent(DateTimeComponent)**. You can see in the previous example we have added four items and they are in three groups, because the date time component is set to MONTH.
+**DateTimeComponent** property defines the component of each `Calendar` structure that participates in the grouping process. The possible values: Year, Quarter, Month, Week, Hour, Minute, Second, Millisecond, Date, TimeOfDay, Day, DayOfWeek, DayOfYear. You can see in the previous example we have added four items and they are in three groups, because the date time component is set to Month.
 
 ### Date Time Format
 
-Defines the format of the `Calendar` structure that will be used for the categories. The default value is "M/d/yy h:mm a". To get the current value use **getDateTimeFormat()** and to change it, use **setDateTimeFormat(DateFormat)**. You can see in the previous example how we used the date time format in order to display only month and year.
+**DateTimeFormat** property defines the format of the `Calendar` structure that will be used for the categories. The default value is "M/d/yy h:mm a". You can see in the previous example how we used the date time format in order to display only month and year.

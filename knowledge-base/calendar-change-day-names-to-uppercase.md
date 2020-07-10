@@ -14,7 +14,7 @@ res_type: kb
 <table>
 	<tr>
 		<td>Product Version</td>
-		<td>2018.3.1122.3</td>
+		<td>R1 2020 (2020.1.114)</td>
 	</tr>
 	<tr>
 		<td>Product</td>
@@ -29,24 +29,13 @@ In order to make any further customizations on RadCalendar control that is not p
 
 ## Solution
 
-First, add a simple RadCalendar definition to your page:
+First, add a simple RadCalendar definition to your page and set its ViewMode property:
 
 ```XAML
-<telerikInput:RadCalendar x:Name="calendar"/>
+<telerikInput:RadCalendar x:Name="calendar" ViewMode="Month" />
 ```
 
-and set its [ViewMode](https://docs.telerik.com/devtools/xamarin/controls/calendar/view-modes/calendar-navigation-and-view-mode#setting-the-viewmode) in code behind to Mont:
-
-```C#
-calendar.NativeControlLoaded += CalendarLoaded;
-```
-
-```C#
-private void CalendarLoaded(object sender, EventArgs args)
-{
-    (sender as RadCalendar).TrySetViewMode(CalendarViewMode.Month);
-}
-```
+For more details on provided view modes go to [Calendar: ViewModes Overview](https://docs.telerik.com/devtools/xamarin/controls/calendar/view-modes/calendar-navigation-and-view-mode#setting-the-viewmode) topic.
 
 That's all on the shared project.
 
@@ -67,21 +56,21 @@ class CustomCalendarRenderer : CalendarRenderer
 }
 ```
 
-Create another class that takes that inherits from Java.Lang.Object and IProcedure interface and inside the Apply method implement your custom logic for changing the Calendar DayName Text to be uppercase.
+Create another class that takes that inherits from *Java.Lang.Object* and *IProcedure* interface and inside the Apply method implement your custom logic for changing the Calendar DayName Text to be uppercase.
 
 ```C#
 public class CustomizationRule : Java.Lang.Object, IProcedure
 {
     public void Apply(Java.Lang.Object p0)
     {
-        if (!(p0 is CalendarCell))
+        if (!(p0 is Com.Telerik.Widget.Calendar.CalendarCell))
         {
             return;
         }
 
-        CalendarCell calendarCell = p0.JavaCast<CalendarCell>();
+        Com.Telerik.Widget.Calendar.CalendarCell calendarCell = p0.JavaCast<Com.Telerik.Widget.Calendar.CalendarCell>();
 
-        if (calendarCell.CellType == CalendarCellType.DayName)
+        if (calendarCell.CellType == Com.Telerik.Widget.Calendar.CalendarCellType.DayName)
         {
             String cellText = calendarCell.Text;
             if (cellText != null)

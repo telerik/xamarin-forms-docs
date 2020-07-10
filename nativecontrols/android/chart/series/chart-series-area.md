@@ -8,7 +8,7 @@ publish: true
 position: 3
 ---
 
-# RadChartView: AreaSeries
+# AreaSeries
 
 **RadCartesianChartView** visualizes **AreaSeries** as an area on the chart that is enclosed by the coordinate axes and straight line segments that connect the data points represented by these series. The **AreaSeries** extend **CategoricalStrokedSeries**, so they are also **CategoricalSeries** and require one **CategoricalAxis** and one **LinearAxis**.
 
@@ -18,29 +18,26 @@ You can read from the [Getting Started]({% slug chart-gettingstarted %} "Read ho
 
 After you create the method for initialization of sample data, you can create a **RadCartesianChartView** with **AreaSeries** by adding the following code to the **onCreate()** method of your Activity.
 
-
 ```C#
-	InitData();
+InitData();
 
-	RadCartesianChartView chartView = new RadCartesianChartView(this);
+RadCartesianChartView chartView = new RadCartesianChartView(this);
 
-	AreaSeries areaSeries = new AreaSeries();
-	areaSeries.CategoryBinding = new MonthResultDataBinding ("Month");
-	areaSeries.ValueBinding = new MonthResultDataBinding ("Result");
-	areaSeries.Data = (Java.Lang.IIterable)this.monthResults;
-	chartView.Series.Add(areaSeries);
+AreaSeries areaSeries = new AreaSeries();
+areaSeries.CategoryBinding = new MonthResultDataBinding ("Month");
+areaSeries.ValueBinding = new MonthResultDataBinding ("Result");
+areaSeries.Data = (Java.Lang.IIterable)this.monthResults;
+chartView.Series.Add(areaSeries);
 
-	CategoricalAxis horizontalAxis = new CategoricalAxis();
-	chartView.HorizontalAxis = horizontalAxis;
+CategoricalAxis horizontalAxis = new CategoricalAxis();
+chartView.HorizontalAxis = horizontalAxis;
 
-	LinearAxis verticalAxis = new LinearAxis();
-	chartView.VerticalAxis = verticalAxis;
+LinearAxis verticalAxis = new LinearAxis();
+chartView.VerticalAxis = verticalAxis;
 
-	ViewGroup rootView = (ViewGroup)FindViewById(Resource.Id.container);
-	rootView.AddView(chartView);
+ViewGroup rootView = (ViewGroup)FindViewById(Resource.Id.container);
+rootView.AddView(chartView);
 ```
-
-> This example assumes that your root container has id `container`
 
 Here's the result:
 
@@ -48,11 +45,11 @@ Here's the result:
 
 ## Customization
 
-**AreaSeries** extend **CategoricalStrokedSeries** which provide the following way to change their style:
+**AreaSeries** extend **CategoricalStrokedSeries** which provides the following way to change their style:
 
-* **setStrokeColor(int)**: changes the color used to draw lines. In order to get the current value, use **getStrokeColor()**.
-* **setStrokeThickness(float)**: changes the width of the lines. In order to get the current value, use **getStrokeThickness()**.
+* **StrokeColor**: changes the color used to draw lines.
+* **StrokeThickness**: changes the width of the lines.
 
-Additionally, **AreaSeries** can change the color of their fill with the method **setFillColor(int)**. **getFillColor()** returns the current value of the color used to fill the series.
+Additionally, **AreaSeries** can change the color of their fill with the **FillColor** property.
 
 You can also customize the appearance of **AreaSeries** by using [Palettes]({% slug chart-palettes %} "Read how to use Palettes in RadChartView").

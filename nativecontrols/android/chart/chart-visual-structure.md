@@ -10,7 +10,7 @@ publish: true
 
 # RadChartView: Visual Structure
 
-In this article, you will learn which are the visual elements and terms used in **RadChartView for Android**.
+In this article, you will learn which are the visual elements and terms used in **RadChartView for Xamarin.Android**.
 
 ## Visual Structure
 

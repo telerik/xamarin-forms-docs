@@ -1,14 +1,14 @@
 ---
 title: Overview
 page_title: Axes | RadChartView | Telerik UI for Xamarin.Android Documentation
-description: A page desribing the types of axes in RadChartView for Android. This article explains the most important things you need to know about the different axes types.
+description: A page describing the types of axes in RadChartView for Android. This article explains the most important things you need to know about the different axes types.
 slug: chart-axes-overview
 tags: radchartview, axes, overview, chart
 publish: true
 position: 0
 ---
 
-# RadChartView: Axes
+# Axes
 
 **RadCartesianChartView** plots data points in a coordinate system defined by its two axes. Usually, one data point has category and value, which define its Cartesian coordinates. This means that your chart will need one axis that can visualize the category and another which can visualize the value. **CartesianAxis** is the base class for all axes that **RadCartesianChartView** can plot.
 
@@ -29,26 +29,15 @@ The axes that can be used to visualize the value of a data point extend the **Nu
 
 ## Features
 
-Each axis several important properties that developers can use to customize their axis as required. These properties can be either visual or functional. Here is a list of all properties that can be set on an
-Axis object:
-<a href="http://docs.telerik.com/devtools/android/AndroidControlsDoc/com/telerik/widget/chart/visualization/common/Axis.html#setLabelFont(android.graphics.Typeface)" target="_blank">LabelFont</a>
-<a href="http://docs.telerik.com/devtools/android/AndroidControlsDoc/com/telerik/widget/chart/visualization/common/Axis.html#setLabelMargin(float)" target="_blank">LabelMargin</a>
-<a href="http://docs.telerik.com/devtools/android/AndroidControlsDoc/com/telerik/widget/chart/visualization/common/Axis.html#setLabelTextColor(int)" target="_blank">LabelTextColor</a>
-<a href="http://docs.telerik.com/devtools/android/AndroidControlsDoc/com/telerik/widget/chart/visualization/common/Axis.html#setLabelFontStyle(int)" target="_blank">LabelFontStyle</a>
-<a href="http://docs.telerik.com/devtools/android/AndroidControlsDoc/com/telerik/widget/chart/visualization/common/Axis.html#setLabelSize(float)" target="_blank">LabelSize</a>
-<a href="http://docs.telerik.com/devtools/android/AndroidControlsDoc/com/telerik/widget/chart/visualization/common/Axis.html#setLabelValueToStringConverter(com.telerik.android.common.Function)" target="_blank">LabelValueToStringConverter</a>
-<a href="http://docs.telerik.com/devtools/android/AndroidControlsDoc/com/telerik/widget/chart/visualization/common/Axis.html#setLabelRotationAngle(float)" target="_blank">LabelRotationAngle</a>
-<a href="http://docs.telerik.com/devtools/android/AndroidControlsDoc/com/telerik/widget/chart/visualization/common/Axis.html#setLastLabelVisibility(com.telerik.widget.chart.engine.axes.common.AxisLastLabelVisibility)" target="_blank">LastLabelVisibility</a>
-<a href="http://docs.telerik.com/devtools/android/AndroidControlsDoc/com/telerik/widget/chart/visualization/common/CartesianAxis.html#setLabelFormat(java.lang.String)" target="_blank">LabelFormat</a>
-<a href="http://docs.telerik.com/devtools/android/AndroidControlsDoc/com/telerik/widget/chart/visualization/common/Axis.html#setMajorTickOffset(int)" target="_blank">MajorTickOffset</a>
-<a href="http://docs.telerik.com/devtools/android/AndroidControlsDoc/com/telerik/widget/chart/visualization/common/Axis.html#setLabelOffset(int)" target="_blank">LabelOffset</a>
-<a href="http://docs.telerik.com/devtools/android/AndroidControlsDoc/com/telerik/widget/chart/visualization/common/Axis.html#setShowLabels(boolean)" target="_blank">ShowLabels</a>
-<a href="http://docs.telerik.com/devtools/android/AndroidControlsDoc/com/telerik/widget/chart/visualization/common/Axis.html#setLabelFitMode(com.telerik.widget.chart.engine.axes.common.AxisLabelFitMode)" target="_blank">LabelFitMode</a>
-<a href="http://docs.telerik.com/devtools/android/AndroidControlsDoc/com/telerik/widget/chart/visualization/common/Axis.html#setLabelLayoutMode(com.telerik.widget.chart.engine.axes.AxisLabelLayoutMode)" target="_blank">LabelLayoutMode</a>
-<a href="http://docs.telerik.com/devtools/android/AndroidControlsDoc/com/telerik/widget/chart/visualization/common/Axis.html#setTickThickness(float)" target="_blank">TickThickness</a>
-<a href="http://docs.telerik.com/devtools/android/AndroidControlsDoc/com/telerik/widget/chart/visualization/common/Axis.html#setTickColor(int)" target="_blank">TickColor</a>
-<a href="http://docs.telerik.com/devtools/android/AndroidControlsDoc/com/telerik/widget/chart/visualization/common/Axis.html#setLabelInterval(int)" target="_blank">LabelInterval</a>
-<a href="http://docs.telerik.com/devtools/android/AndroidControlsDoc/com/telerik/widget/chart/visualization/common/Axis.html#setLabelRenderer(com.telerik.widget.chart.visualization.common.renderers.ChartLabelRenderer)" target="_blank">LabelRenderer</a>
+Each axis provides several important properties you can use to customize the axis' appearance. Here is a list of all properties that can be set on an Axis object:
+
+* Related to axis ticks: MajorTickOffset (Sets the major value step between two ticks. By default the axis itself will calculate the
+     * major step, depending on the plotted data points), TickThickness, TickColor
+
+* Related to axis labels:
+
+ShowLabels, LabelFont, LabelMargin, LabelTextColor, LabelFontStyle, LabelSize, , LabelRotationAngle, LastLabelVisibility, LabelFormat, LabelOffset, , LabelFitMode, LabelLayoutMode, LabelInterval, LabelRenderer
+LabelValueToStringConverter
 
 Below is a description with examples of several properties which accept complex objects instead of simple values.
 
@@ -56,18 +45,18 @@ Below is a description with examples of several properties which accept complex 
 This is an interface that can be used to convert the actual label to value to an arbitrary string before rendering.
 
 ```C#
-	LinearAxis verticalAxis = new LinearAxis();
-    verticalAxis.LabelValueToStringConverter = new LabelValueConverter();
+LinearAxis verticalAxis = new LinearAxis();
+verticalAxis.LabelValueToStringConverter = new LabelValueConverter();
 
-    private class LabelValueConverter : Java.Lang.Object, IFunction
-    {
-        public Java.Lang.Object Apply(Java.Lang.Object argument)
-        {
-            double labelValue = (argument.JavaCast<MajorTickModel>()).Value();
-            String format = "Value is: {0}";
-            return String.Format(format, labelValue);
-        }
-    }
+private class LabelValueConverter : Java.Lang.Object, IFunction
+{
+	public Java.Lang.Object Apply(Java.Lang.Object argument)
+	{
+		double labelValue = (argument.JavaCast<MajorTickModel>()).Value();
+		String format = "Value is: {0}";
+		return String.Format(format, labelValue);
+	}
+}
 ```
 
 # LabelRenderer

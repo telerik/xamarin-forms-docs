@@ -8,7 +8,7 @@ publish: true
 position: 6
 ---
 
-# RadChartView: Multiple Axes
+# Multiple Axes
 
 **RadCartesianChartView** can visualize multiple axes simultaneously. You can add vertical and horizontal axes per chart basis and per series basis. This means that if you have two series in one chart instance, you can use different horizontal and vertical axes for each series. Depending on the requirements, the axes can be plot independently, or relatively to each other.
 
@@ -22,41 +22,41 @@ In order to achieve this, you need to create two series and set their own axes. 
 
 
 ```C#
-	InitData();
-	InitCalendarData();
+InitData();
+InitCalendarData();
 
-	RadCartesianChartView chartView = new RadCartesianChartView(this);
+RadCartesianChartView chartView = new RadCartesianChartView(this);
 
-	BarSeries barSeries = new BarSeries();
-	barSeries.CategoryBinding = new MonthResultDataBinding ("Month");
-	barSeries.ValueBinding = new MonthResultDataBinding ("Result");
-	barSeries.Data = (Java.Lang.IIterable)this.monthResults;
-	chartView.Series.Add(barSeries);
+BarSeries barSeries = new BarSeries();
+barSeries.CategoryBinding = new MonthResultDataBinding ("Month");
+barSeries.ValueBinding = new MonthResultDataBinding ("Result");
+barSeries.Data = (Java.Lang.IIterable)this.monthResults;
+chartView.Series.Add(barSeries);
 
-	LineSeries lineSeries = new LineSeries();
-	lineSeries.CategoryBinding = new ExtendedMonthResultDataBinding ("Date");
-	lineSeries.ValueBinding = new ExtendedMonthResultDataBinding ("Result");
-	lineSeries.Data = (Java.Lang.IIterable)this.extendedMonthResults;
-	chartView.Series.Add(lineSeries);
+LineSeries lineSeries = new LineSeries();
+lineSeries.CategoryBinding = new ExtendedMonthResultDataBinding ("Date");
+lineSeries.ValueBinding = new ExtendedMonthResultDataBinding ("Result");
+lineSeries.Data = (Java.Lang.IIterable)this.extendedMonthResults;
+chartView.Series.Add(lineSeries);
 
-	CategoricalAxis horizontalAxisBar = new CategoricalAxis();
-	horizontalAxisBar.VerticalLocation = AxisVerticalLocation.Bottom;
-	barSeries.HorizontalAxis = horizontalAxisBar;
+CategoricalAxis horizontalAxisBar = new CategoricalAxis();
+horizontalAxisBar.VerticalLocation = AxisVerticalLocation.Bottom;
+barSeries.HorizontalAxis = horizontalAxisBar;
 
-	LinearAxis verticalAxisBar = new LinearAxis();
-	verticalAxisBar.HorizontalLocation = AxisHorizontalLocation.Right;
-	barSeries.VerticalAxis = verticalAxisBar;
+LinearAxis verticalAxisBar = new LinearAxis();
+verticalAxisBar.HorizontalLocation = AxisHorizontalLocation.Right;
+barSeries.VerticalAxis = verticalAxisBar;
 
-	DateTimeCategoricalAxis horizontalAxisLine = new DateTimeCategoricalAxis();
-	horizontalAxisLine.DateTimeComponent = DateTimeComponent.Day;
-	horizontalAxisLine.DateTimeFormat = new SimpleDateFormat("dd-MM");
-	horizontalAxisLine.VerticalLocation = AxisVerticalLocation.Top;
-	lineSeries.HorizontalAxis = horizontalAxisLine;
+DateTimeCategoricalAxis horizontalAxisLine = new DateTimeCategoricalAxis();
+horizontalAxisLine.DateTimeComponent = DateTimeComponent.Day;
+horizontalAxisLine.DateTimeFormat = new SimpleDateFormat("dd-MM");
+horizontalAxisLine.VerticalLocation = AxisVerticalLocation.Top;
+lineSeries.HorizontalAxis = horizontalAxisLine;
 
-	LinearAxis verticalAxisLine = new LinearAxis();
-	verticalAxisLine.HorizontalLocation = AxisHorizontalLocation.Left;
-	lineSeries.VerticalAxis = verticalAxisLine;
+LinearAxis verticalAxisLine = new LinearAxis();
+verticalAxisLine.HorizontalLocation = AxisHorizontalLocation.Left;
+lineSeries.VerticalAxis = verticalAxisLine;
 
-	ViewGroup rootView = (ViewGroup)FindViewById(Resource.Id.container);
-	rootView.AddView(chartView);
+ViewGroup rootView = (ViewGroup)FindViewById(Resource.Id.container);
+rootView.AddView(chartView);
 ```

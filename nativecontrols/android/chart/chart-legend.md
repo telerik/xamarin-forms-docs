@@ -8,70 +8,44 @@ url: /chart-legend
 publish: true
 ---
 
-# RadChartView: Legend
+# Legend
 
 In this article, you will learn to use the built-in legend in **RadChartView for Android**.
 
-## Example
+## Overview
 
 You can start from the [BarSeries]({% slug chart-series-bar %} "Read how to create a chart with BarSeries") example and add a second instance of the **BarSeries** with stack combine mode. Then you need to set their legend title and create a new instance of **RadLegendView**. **RadLegendView** needs a legend provider which will provide the data. You can use **RadCartesianChartView** as a **LegendProvider**:
 
-
 ```C#
-	barSeries1.CombineMode = ChartSeriesCombineMode.Stack;
-	barSeries2.CombineMode = ChartSeriesCombineMode.Stack;
+barSeries1.CombineMode = ChartSeriesCombineMode.Stack;
+barSeries2.CombineMode = ChartSeriesCombineMode.Stack;
 
-	barSeries1.LegendTitle = "first";
-	barSeries2.LegendTitle = "second";
+barSeries1.LegendTitle = "first";
+barSeries2.LegendTitle = "second";
 
-	RadLegendView legendView = new RadLegendView (this);
-	legendView.LegendProvider = chartView;
+RadLegendView legendView = new RadLegendView (this);
+legendView.LegendProvider = chartView;
 
-	LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(460,100);
-	layoutParams.SetMargins(10,10,10,10);
-	legendView.LayoutParameters = layoutParams;
+LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(460,100);
+layoutParams.SetMargins(10,10,10,10);
+legendView.LayoutParameters = layoutParams;
 
-	LinearLayout linearLayout = new LinearLayout(this);
-	linearLayout.Orientation = Android.Widget.Orientation.Vertical;
+LinearLayout linearLayout = new LinearLayout(this);
+linearLayout.Orientation = Android.Widget.Orientation.Vertical;
 
-	linearLayout.AddView(legendView);
-	linearLayout.AddView(chartView);
+linearLayout.AddView(legendView);
+linearLayout.AddView(chartView);
 
-	ViewGroup rootView = (ViewGroup)FindViewById(Resource.Id.container);
-	rootView.AddView(linearLayout);
+ViewGroup rootView = (ViewGroup)FindViewById(Resource.Id.container);
+rootView.AddView(linearLayout);
 ```
 	
 Here's the result:
 
 ![TelerikUI-Chart-Legend](images/chart-legend-1.png "Demo of Cartesian chart with BarSeries with Legend.")
 
-### Orientation
 
-The default behavior of the RadLegendView is to show the legend items vertically. However you can change the orientation of the items to horizontal with:
-
-
-```C#
-legendView.LegendOrientation = LinearLayout.HORIZONTAL;
-```
-
-The possible values for the orientation are:
-
-* LinearLayout.HORIZONTAL
-* LinearLayout.VERTICAL
-
-### Scrolling
-
-By default the scroll of the legend items is **disabled**. In order to enable the horizontal and vertical scroll you can use:
-
-
-```C#
-legendView.SetCanScrollHorizontally(true);
-legendView.SetCanScrollVertically(true);
-```
-
-Finally, the legend for the pie chart is a little bit different. The pie series does not have a legend title because each point
-in the series means something different, the title is taken from the data points with a name binding. For example:
-
+The legend for the pie chart is a little bit different. The pie series does not have a legend title because each point in the series means something different, the title is taken from the data points with a name binding. For example:
 
 ```C#
 PieSeries series = new PieSeries();
@@ -80,7 +54,29 @@ PieSeries series = new PieSeries();
 series.NameBinding = new PropertyNameDataPointBinding("Name");
 ``` 
 
-### Selection
+## Orientation
+
+The default behavior of the RadLegendView is to show the legend items vertically. However you can change the orientation of the items to horizontal with LegendOrientation property:
+
+```C#
+legendView.LegendOrientation = OrientationHelper.Horizontal;
+```
+
+The possible values for the orientation are:
+
+* OrientationHelper.Horizontal
+* OrientationHelper.Vertical
+
+## Scrolling
+
+By default the scroll of the legend items is **disabled**. In order to enable the horizontal and vertical scroll you can use:
+
+```C#
+legendView.SetCanScrollHorizontally(true);
+legendView.SetCanScrollVertically(true);
+```
+
+## Selection
 
 **RadLegendView** supports selection by setting the **AllowSelection** property to true. 
 

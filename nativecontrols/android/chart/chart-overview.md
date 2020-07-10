@@ -8,9 +8,11 @@ position: 0
 publish: true
 ---
 
-# RadChartView: Overview
+# Overview
 
-**RadChartView** for Android is a charting component that has been designed for the mobile environment. It offers great performance in loading time, drawing capabilities and real-time updates. Its intuitive object model and public API allow you to easily setup complex chart objects and integrate them into your application. The control supports different chart types (and series) organized in hierarchies, depending on the coordinate system, used to plot the data points&mdash;for example Cartesian (**RadCartesianChartView**) and radial (**RadPieChartView**) coordinate systems.
+**RadChartView for Xamarin.Android** is a charting component that has been designed for the mobile environment. It offers great performance in loading time, drawing capabilities and real-time updates. Its intuitive object model and public API allow you to easily setup complex chart objects and integrate them into your application. 
+
+The control supports different chart types (and series) organized in hierarchies, depending on the coordinate system, used to plot the data points&mdash;for example Cartesian (**RadCartesianChartView**) and radial (**RadPieChartView**) coordinate systems.
 
 ![TelerikUI-Chart-Overview](images/chart-overview-1.png "Chart Demos.")
 
@@ -60,14 +62,17 @@ The Pie chart doesn't have any axes. You just need to define the series that wil
 Each chart can support different [behaviors]({% slug chart-behaviors-overview %} "Read more about behaviors in Chart"), which allow a certain interactivity. A behavior is generally an abstraction that handles user input in a **RadChartView** instance and optionally provides visual feedback upon some action. Currently **RadChartView** supports the following behavior:
 
 * [PanAndZoomBehavior]({% slug chart-behaviors-panzoom %} "Read more about PanAndZoomBehavior"): This behavior handles touch events to enable panning and zooming of the associated chart plot area.
+* [TrackballBehavior]({%slug chart-android-behaviors-trackball %}): This behavior is responsible for rendering concise information about several data points in a small popup which displays over its relevant data points. A vertical line is also drawn through the data points for maximum clarity.
+* [TooltipBehavior]({%slug chart-android-behaviors-tooltip %}): This behavior is used for rendering concise information about a data point in a small popup.
+* [ChartSelectionBehavior]({%slug chart-android-behaviors-selection %}): Handles selecting and deselecting of either data points or series.
 
 ## Grid
 
-**RadChartView** allows custom decoration over its plot area. You can adds lines and stripes which connect the tick of each axis. You can set a new grid with the method **setGrid(CartesianChartGrid)** in your chart instance. Read the [Grid Section]({% slug chart-grid %} "Read more about Grid in RadChartView") for more information.
+RadChartView allows custom decoration over its plot area. You can add lines and stripes which connect the ticks of each axis. You can create a new **CartesianChartGrid** and set it to the **Grid** property of your Chart instance. Read the [Grid Section]({% slug chart-grid %} "Read more about Grid in RadChartView") for more information.
 
 ## Palettes
 
-The [Chart Palettes]({% slug chart-palettes %} "Read more about Palttes in Chart") are a set of predefined values that you can use to set colors of a chart. **RadChartView** gives you options to define your own palettes and to use the ones we have prepared for you as well: "Light" and "Dark".
+The [Chart Palettes]({% slug chart-palettes %} "Read more about Palettes in Chart") are a set of predefined values that you can use to set colors of a chart. **RadChartView** gives you options to define your own palettes and to use the ones we have prepared for you as well: "Light" and "Dark".
 
 ## Annotations
 
@@ -84,3 +89,9 @@ Another feature of **RadChartView** is the ability to show [annotations]({% slug
 ## Legend
 
 **RadChartView** supports a [legend]({% slug chart-legend %} "Read more about Legend in Chart") that facilitates the reading and understanding of the displayed information. The legend can be used to easily associate the displayed visualizations with the actual data.
+
+## Xamarin.Android Examples
+
+Xamarin.Android examples that show how to use RadChartView for Xamarin.Android are included in the Telerik UI for Xamarin zip file provided for manual installation. 
+
+Telerik_UI_for_Xamarin_[version]_[license].zip, where [version] marks the release and [license] is replaced with Dev or Trial depending on the license, is available for download from the [Downloads section of your Telerik account](https://www.telerik.com/account/product-download?product=UIXAM). Unzip the archive and go to Examples/Android folder to access our Samples Xamarin.Android solution. 

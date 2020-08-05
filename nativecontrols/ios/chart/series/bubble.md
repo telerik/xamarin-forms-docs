@@ -4,15 +4,13 @@ page_title: Bubble Series
 position: 1
 ---
 
-# Chart Series: Bubble
+## Chart for Xamarin.iOS: Bubble Series
 
 
-<code>TKChartBubbleSeries</code> derives from <code>TKChartScatterSeries</code> and it represents a bubble chart. Bubble series visualizes <code>TKChartBubbleDataPoint</code> which has three parameters - <code>dataXValue</code>, <code>dataYValue</code> and <code>area</code>. The <code>scale</code> and <code>biggestBubbleDiameterForAutoscale</code> properties determine the diameter of a bubble on the chart.
+<code>TKChartBubbleSeries</code> derives from <code>TKChartScatterSeries</code> and it represents a bubble chart. Bubble series visualizes <code>TKChartBubbleDataPoint</code> which has three parameters - <code>DataXValue</code>, <code>DataYValue</code> and <code>Area</code>. The <code>Scale</code> and <code>BiggestBubbleDiameterForAutoscale</code> properties determine the diameter of a bubble on the chart.
 
 Here is an example of a bubble chart:
 
-<snippet id='chart-bubble'/>
-<snippet id='chart-bubble-swift'/>
 ```C#
 Random r = new Random ();
 for (int i = 0; i < 2; i++) {
@@ -24,4 +22,4 @@ for (int i = 0; i < 2; i++) {
     TKChartBubbleSeries series = new TKChartBubbleSeries (list.ToArray());
 ```
 
-<img src="../../images/chart-series-bubble001.png"/>
+![](../../images/chart-series-bubble001.png)

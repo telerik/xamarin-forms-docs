@@ -4,12 +4,12 @@ page_title: Candlestick Series
 position: 1
 ---
 
-# Chart Series: Candlestick
+## Chart for Xamarin.iOS: Candlestick Series
 
-**TKChart** supports **Candlestick** stock series. This series operates with a special kind of data in the form of four parameters defining the stock market - open, high, low, and close. The high and low values show the price range (the highest and lowest prices) over one unit of time. The open and close values indicate the opening and closing price of the stock for the corresponding period. Candlestick series have body, which has a different color depending on the value of open and close prices of the financial data point. The width of the candlestick body is determined by the period between 2 candlesticks and the range of the axis. You should use the <code>minorTickIntervalUnit</code> property of <code>TKChartDateTimeAxis</code> to change the period between 2 candlesticks. Here is how to set up Candlestick series:
+**TKChart** supports **Candlestick** stock series. This series operates with a special kind of data in the form of four parameters defining the stock market - open, high, low, and close. The high and low values show the price range (the highest and lowest prices) over one unit of time. The open and close values indicate the opening and closing price of the stock for the corresponding period. 
 
-<snippet id='chart-candlestick'/>
-<snippet id='chart-candlestick-swift'/>
+Candlestick series have body, which has a different color depending on the value of open and close prices of the financial data point. The width of the candlestick body is determined by the period between 2 candlesticks and the range of the axis. You should use the <code>MinorTickIntervalUnit</code> property of <code>TKChartDateTimeAxis</code> to change the period between 2 candlesticks. Here is how to set up Candlestick series:
+
 ```C#
 var openPrices = new [] { 100, 125, 69, 99, 140, 125 };
 var closePrices = new [] { 85, 65, 135, 120, 80, 136 };
@@ -33,14 +33,12 @@ xAxis.PlotMode = TKChartAxisPlotMode.BetweenTicks;
 xAxis.MajorTickInterval = 1.0;
 ```
 
-<img src="../../images/chart-series-candlestick001.png"/>
+![](../../images/chart-series-candlestick001.png)
 
 ## Configure visual appearance of candlestick series
 
-If you want to customize the appearance of cthe andlestick series, you should implement the**TKChartDelegate** protocol as shown below:
+If you want to customize the appearance of the candlestick series, you should implement the**TKChartDelegate** protocol as shown below:
 
-<snippet id='chart-candlestick-visual'/>
-<snippet id='chart-candlestick-visual-swift'/>
 ```C#
 public override TKChartPaletteItem PaletteItemForSeries (TKChart chart, TKChartSeries series, nint index)
 {
@@ -57,4 +55,4 @@ public override TKChartPaletteItem PaletteItemForSeries (TKChart chart, TKChartS
 }
 ```
 
-<img src="../../images/chart-series-candlestick002.png"/>
+![]../../images/chart-series-candlestick002.png)

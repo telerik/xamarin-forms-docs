@@ -3,23 +3,19 @@ title: Custom Animations
 position: 1
 ---
 
-# Chart Animations: Custom
+## Chart for Xamarin.iOS: Custom Animations
 
-<code>TKChart</code> uses the Core Animation infrastructure available on iOS that you use to animate the visual points in series. In order to enable the animations, you should set <code>allowAnimations</code> property to *YES*. In that case the default animations are performed for each series. If you handle the <code>TKChartDelegate</code> protocol and implement the <code>chart:animationForSeries:withState:inRect:</code> method, you can perform custom animations. With Core Animation, most of the work required to draw each frame of an animation is done for you. All you have to do is configure a few animation parameters (such as the start and end points).
+<code>TKChart</code> uses the Core Animation infrastructure available on iOS that you use to animate the visual points in series. In order to enable the animations, you should set <code>AllowAnimations</code> property to **true**. In that case the default animations are performed for each series. If you handle the <code>TKChartDelegate</code> protocol and implement the <code>AnimationForSeries</code> method, you can perform custom animations. With Core Animation, most of the work required to draw each frame of an animation is done for you. All you have to do is configure a few animation parameters (such as the start and end points).
 
 You can use most of the Core Animation framework to customize the visual points animation. You can read more about Core Animation at [Apple Developer website](https://developer.apple.com/library/mac/documentation/cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html).
 
 ## Configuration Prerequisites###
 
-You should handle the <code>TKChartDelegate</code>'s method <code>chart:animationForSeries:withState:inRect:</code> to create a custom animation. In addition, you should group the animation created for each point in CAAnimationGroup to apply animation sequentially. You can access old and new points collection by using the <code>TKChartSeriesRenderState</code> properties <code>oldPoints</code> and <code>points</code>. It allows generation for value key path property for point at a specified index by calling the <code>animationKeyPathForPointAtIndex</code> method.
+You should handle the <code>TKChartDelegate</code>'s method <code>AnimationForSeries</code> to create a custom animation. In addition, you should group the animation created for each point in CAAnimationGroup to apply animation sequentially. You can access old and new points collection by using the <code>TKChartSeriesRenderState</code> properties <code>OldPoints</code> and <code>Points</code>. It allows generation for value key path property for point at a specified index by calling the <code>animationKeyPathForPointAtIndex</code> method.
 
 ## Animating Line Series##
 
 The code below animates the line series points by moving them from bottom to top.
-
-<snippet id='chart-anim-line'/>
-
-<snippet id='chart-anim-line-swift'/>
 
 ```C#
 public override CAAnimation AnimationForSeries (TKChart chart, TKChartSeries series, TKChartSeriesRenderState state, CGRect rect)
@@ -82,10 +78,6 @@ public override CAAnimation AnimationForSeries (TKChart chart, TKChartSeries ser
 ## Animating Pie Series##
 
 The following lines of code animate the pie's segments by moving them to the pie center together with changing their opacity.
-
-<snippet id='chart-anim-pie'/>
-
-<snippet id='chart-anim-pie-swift'/>
 
 ```C#
 public override CAAnimation AnimationForSeries (TKChart chart, TKChartSeries series, TKChartSeriesRenderState state, CGRect rect)

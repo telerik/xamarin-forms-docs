@@ -3,13 +3,13 @@ title: Selection
 position: 11
 ---
 
-# Chart: Selection
+## Chart for Xamarin.iOS: Selection
 
 This help topic demonstrates how you can make your charts more interactive by enabling a selection behavior.
 
 ## Configure ##
 
-You can alter the selection mode by altering the chart <code>seriesSelectionMode</code> and <code>dataPointSelectionMode</code> properties with the following value:
+You can alter the selection mode by altering the chart <code>SeriesSelectionMode</code> and <code>DataPointSelectionMode</code> properties with the following value:
 
 - TKChartSelectionModeNone - No selection.
 - TKChartSelectionModeSingle - A single point/series can be selected.
@@ -26,10 +26,8 @@ In addition you can finely tune the selection by setting the <code>selection</co
 This way each series can have a separate selection mode. One series can select a single point, another series can select multiple points and a third series can
 be selected as a whole series if necessary. Please note that the series selection has higher priority than the chart selection.
 
-Use the <code>selectedSeries</code> and <code>selectedPoints</code> properties to get currently selected series or points respectively.
+Use the <code>SelectedSeries</code> and <code>SelectedPoints</code> properties to get currently selected series or points respectively.
 
-<snippet id='chart-get-selected-series'/>
-<snippet id='chart-get-selected-series-swift'/>
 ```C#
 foreach (TKChartSeries series in chart.SelectedSeries) {
     Console.WriteLine ("selected series at index {0}", series.Index);
@@ -40,12 +38,10 @@ foreach (TKChartSelectionInfo info in chart.SelectedPoints) {
 }
 ```
 
-The <code>isSelected</code> property of TKChartSeries indicates whether the series is selected.
+The <code>IsSelected</code> property of TKChartSeries indicates whether the series is selected.
 
 You can determine whether a selection is changed by adopting <code>TKChartDelegate</code> protocol and implementing one the following methods:
 
-<snippet id='chart-selection-delegate'/>
-<snippet id='chart-selection-delegate-swift'/>
 ```C#
 class ChartDelegate: TKChartDelegate
 {
@@ -71,10 +67,8 @@ class ChartDelegate: TKChartDelegate
 }
 ```
 
-In addition, you can change the selection programmatically by calling the <code>select</code> method in the following manner:
+In addition, you can change the selection programmatically by calling the <code>Select</code> method in the following manner:
 
-<snippet id='chart-progrm-selection'/>
-<snippet id='chart-progrm-selection-swift'/>
 ```C#
 public override void ViewDidAppear (bool animated)
 {
@@ -83,8 +77,8 @@ public override void ViewDidAppear (bool animated)
 }
 ```
 
-<img src="../images/chart-selection001.png"/>
+![](../images/chart-selection001.png)
 
-Note that you can clear the selection by passing *nil* value to the <code>series</code> argument.
+Note that you can clear the selection by passing *nil* value to the <code>Series</code> argument.
 
 

@@ -3,27 +3,27 @@ title: Structure
 position: .4
 ---
 
-# Chart: Structure
+## Chart for Xamarin.iOS: Structure
 
 <code>TKChart</code> consists of the following elements:
 
-<img src="../images/chart-overview006.png"/>
+![](../images/chart-overview006.png)
 
-- <code>plot area</code> - this is the area where chart data is drawn.
+- <code>Plot Area</code> - this is the area where chart data is drawn.
 
-- <code>series</code> - chart data is represented by series objects. Each series object defines the chart type and contains a set of points to be drawn. The chart can display different series object simultaneously.
+- <code>Series</code> - chart data is represented by series objects. Each series object defines the chart type and contains a set of points to be drawn. The chart can display different series object simultaneously.
 
-- <code>axes</code> - there are four axes areas that surround the plot area. The axes define the dimensions in which data is drawn inside the plot area. Each axis can be attached to a single or many series.
+- <code>Axes</code> - there are four axes areas that surround the plot area. The axes define the dimensions in which data is drawn inside the plot area. Each axis can be attached to a single or many series.
 
-- <code>title</code> - this is the chart title. Its style and position can be customized. The chart title is hidden by default.
+- <code>Title</code> - this is the chart title. Its style and position can be customized. The chart title is hidden by default.
 
-- <code>legend</code> - the chart legend displays additional information about series objects. Its style and position can be customized. The chart legend is hidden by default.
+- <code>Legend</code> - the chart legend displays additional information about series objects. Its style and position can be customized. The chart legend is hidden by default.
 
 In addition to these visual objects, TKChart uses the following protocols:
 
-- <code>dataSource</code> - The chart data source is used to supply the chart with data. Setting this property is optional, as you can assign data directly to the series object. In case you decide to use this property, you have to implement the TKChartDataSource* protocol.
+- <code>DataSource</code> - chart data source is used to supply the chart with data. Setting this property is optional, as you can assign data directly to the series object. In case you decide to use this property, you have to implement the *TKChartDataSource* protocol.
 
-- <code>delegate</code> - The chart delegate is an optional protocol that allows chart consumers to receive notifications from <code>TKChart</code>. It allows also customizing chart appearance and animations.
+- <code>Delegate</code> - The chart delegate is an optional protocol that allows chart consumers to receive notifications from <code>TKChart</code>. It allows also customizing chart appearance and animations.
 
 ## Axes ##
 
@@ -33,10 +33,8 @@ In addition to these visual objects, TKChart uses the following protocols:
 - Use <code>TKChartDateTimeAxis</code> to present date/time values.
 - Use <code>TKChartCategoryAxis</code> to present categoric values.
 
-In order to show multiple axes in <code>TKChart</code>, create several axes and customize their position. Then use the <code>xAxis</code> and <code>yAxis</code> properties of the series to assign them:
+In order to show multiple axes in <code>TKChart</code>, create several axes and customize their position. Then use the <code>XAxis</code> and <code>YAxis</code> properties of the series to assign them:
 
-<snippet id='chart-structure-axes'/>
-<snippet id='chart-structure-axes-swift'/>
 ```C#
 var xAxis = new TKChartNumericAxis ();
 xAxis.Position = TKChartAxisPosition.Bottom;
@@ -68,9 +66,9 @@ chart.AddSeries (series);
 
 The result from this setup is:
 
-<img src="../images/chart-overview007.png"/>
+![](../images/chart-overview007.png)
 
-Find further details about chart axes in [this article](axes/axes).
+Find further details on this in [Chart Axes](axes/axes) article.
 
 ## Series ##
 
@@ -89,10 +87,8 @@ Series define how data should be visually presented on the plot area. Each serie
 - [TKChartPieSeries](series/pie) is used to present data as pie.
 - [TKChartScatterSeries](series/scatter) is used to present data as separate points.
 
-When <code>TKChart</code> contains more than one series of type bar or column, it clusters the series in groups. You can choose also to show the same information as stacked bars/columns. This is done by setting the <code>stackInfo</code> property of the series:
+When <code>TKChart</code> contains more than one series of type bar or column, it clusters the series in groups. You can choose also to show the same information as stacked bars/columns. This is done by setting the <code>StackInfo</code> property of the series:
 
-<snippet id='chart-structure-series'/>
-<snippet id='chart-structure-series-swift'/>
 ```C#
 var values1 = new [] { 12, 10, 98, 64, 11, 27, 85, 72, 43, 39 };
 var values2 = new [] { 87, 22, 29, 87, 65, 99, 63, 12, 82, 87 };
@@ -118,19 +114,19 @@ chart.AddSeries(series2);
 
 The result from this setup is:
 
-<img src="../images/chart-overview008.png"/>
+![](../images/chart-overview008.png)
 
-Line and area series also allow stacking by using the <code>stackInfo</code> property.
+Line and area series also allow stacking by using the <code>StackInfo</code> property.
 
-Series appearance can be changed by using the <code>style</code> property.
+Series appearance can be changed by using the <code>Style</code> property.
 
 ## Interaction ##
 
 <code>TKChart</code> is an interactive component that supports gestures like touch, pan and rotate. The main actions that are supported are selection and pan/zoom interaction.
 
-The <code>allowPan</code> and <code>allowZoom</code> properties of TKChartAxis should be set to *YES* in order to allow pan/zoom functionality.
+The <code>AllowPan</code> and <code>AllowZoom</code> properties of TKChartAxis should be set to *true* in order to allow pan/zoom functionality.
 
-The <code>selectionMode</code> property of TKChartSeries should be set to <code>TKChartSelectionModeSeries</code> or <code>TKChartSelectionModeDataPoint</code> in order to allow selection for the specified series.
+The <code>SelectionMode</code> property of TKChartSeries should be set to <code>TKChartSelectionModeSeries</code> or <code>TKChartSelectionModeDataPoint</code> in order to allow selection for the specified series.
 
 Find further details about selection and pan/zoom functionality in the corresponding articles.
 
@@ -138,12 +134,10 @@ Find further details about selection and pan/zoom functionality in the correspon
 
 <code>TKChart</code> allows animating chart points by using the CoreAnimation framework. There are built-in animations specific for every series type and you can define your own animations by implementing methods in the chart delegate.
 
-You can customize the default animation by implementing the TKChartDelegate interface and overriding its <code>chart:animationForSeries:withState:inRect:</code> method:
+You can customize the default animation by implementing the TKChartDelegate interface and overriding its <code>AnimationForSeries</code> method:
 
-The <code>allowAnimations</code> property of TKChart should be set to *YES* in order to work with animations.
+The <code>АllowAnimations</code> property of TKChart should be set to *true* in order to work with animations.
 
-<snippet id='chart-structure-animation'/>
-<snippet id='chart-structure-animation-swift'/>
 ```C#
 public override CAAnimation AnimationForSeries (TKChart chart, TKChartSeries series, TKChartSeriesRenderState state, CGRect rect)
 {
@@ -171,5 +165,5 @@ public override CAAnimation AnimationForSeries (TKChart chart, TKChartSeries ser
 
 This method returns a single animation, therefore if you create multiple animations, you should group them inside CAAnimationGroup.
 
-Besides the CoreAnimation framework, </code>TKChart</code> allows animating its points by adding real world physics by using the new UIKitDynamics framework introduced in iOS 7. With this framework you can add different behaviors like gravity, elasticity and forces. Read further details about this advanced topic in [this article](animations/custom-uikit-dynamics).
+Besides the CoreAnimation framework, </code>TKChart</code> allows animating its points by adding real world physics by using the new UIKitDynamics framework introduced in iOS 7. With this framework you can add different behaviors like gravity, elasticity and forces. Read further details about this advanced topic in [UIKit Dynamics Animations](animations/custom-uikit-dynamics) article.
 

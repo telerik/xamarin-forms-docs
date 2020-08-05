@@ -2,27 +2,24 @@
 title: Axis Customization
 page_title: Axis Customization
 
-POSITION: 7
+position: 7
 ---
 
-# Chart Axis: Axis Customization
+## Chart for Xamarin.iOS: Axis Customization
 
-The <code>TKChartAxis</code> is responsible for <code>TKChart</code>'s axes. You can set custom ticks and color the axis partially by using its property <code>customLabels</code>.
+The <code>TKChartAxis</code> is responsible for <code>TKChart</code>'s axes. You can set custom ticks and color the axis partially by using its property <code>CustomLabels</code>.
 
-<snippet id='chart-custom-axis-labels'/>
-<snippet id='chart-custom-axis-labels-swift'/>
 ```C#
 this.chart.YAxis.CustomLabels = new NSDictionary(new NSNumber(100), UIColor.Blue, 
     new NSNumber(200), UIColor.Yellow, 
     new NSNumber(400), UIColor.Red);
 ```
 
-<img src="../../images/chart-custom-axis001.png"/>
+![](../../images/chart-custom-axis001.png)
 
-TKChartAxis can have a custom render that you would use for drawing an axis completery by your taste. For the porpouse a new custom Axis should be created that derives from TKChartAxisRender and it's method <code>renderForChart</code> should be overriten:
+TKChartAxis can have a custom render that you would use for drawing an axis completely by your taste. For the purpose a new custom Axis should be created that derives from TKChartAxisRender and its method <code>RenderForChart</code> should be overridden:
 
-<snippet id='chart-custom-axis-render'/>
-<snippet id='chart-custom-axis-render-swift'/>
+
 ```C#
 class MyAxis : TKChartNumericAxis
 {
@@ -37,10 +34,8 @@ class MyAxis : TKChartNumericAxis
 }
 ```
 
-Once this is done you are ready to start drawing in the -drawInContext method of your new axis render:
+Once this is done you are ready to start drawing in the DrawInContext method of your new axis render:
 
-<snippet id='chart-custom-axis-draw'/>
-<snippet id='chart-custom-axis-draw-swift'/>
 ```C#
 public class AxisRender: TKChartAxisRender
 {
@@ -99,4 +94,4 @@ public class AxisRender: TKChartAxisRender
 }
 ```
 
-<img src="../../images/chart-custom-axis002.png"/>
+![](../../images/chart-custom-axis002.png)

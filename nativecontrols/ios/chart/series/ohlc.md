@@ -4,12 +4,10 @@ page_title: OHLC Series
 position: 1
 ---
 
-# Chart Series: OHLC
+## Chart for Xamarin.iOS: OHLC Series
 
-**TKChart** supports **Ohlc** stock series. This series operates with a special kind of data in the form of four parameters defining the stock market - open, high, low, and close. The high and low values show the price range (the highest and lowest prices) over one unit of time. The open and close values indicate the opening and closing price of the stock for the corresponding period. The width of the ohlc bar is determined by the period between 2 bars and the range of the axis. You sould use the <code>minorTickIntervalUnit</code> property of <code>TKChartDateTimeAxis</code> to change the period between 2 ohlc bars. Here is how to set up OHLC series:
+**TKChart** supports **Ohlc** stock series. This series operates with a special kind of data in the form of four parameters defining the stock market - open, high, low, and close. The high and low values show the price range (the highest and lowest prices) over one unit of time. The open and close values indicate the opening and closing price of the stock for the corresponding period. The width of the ohlc bar is determined by the period between 2 bars and the range of the axis. You should use the <code>MinorTickIntervalUnit</code> property of <code>TKChartDateTimeAxis</code> to change the period between 2 ohlc bars. Here is how to set up OHLC series:
 
-<snippet id='chart-ohlc'/>
-<snippet id='chart-ohlc-swift'/>
 ```C#
 var openPrices = new [] { 100, 125, 69, 99, 140, 125 };
 var closePrices = new [] { 85, 65, 135, 120, 80, 136 };
@@ -33,14 +31,12 @@ xAxis.PlotMode = TKChartAxisPlotMode.BetweenTicks;
 xAxis.MajorTickInterval = 1;
 ```
 
-<img src="../../images/chart-series-ohlc001.png"/>
+![](../../images/chart-series-ohlc001.png)
 
 ## Configure visual appearance of ohlc series
 
 If you want to customize the appearance of ohlc series, you should implement the **TKChartDelegate** protocol as shown below::
 
-<snippet id='chart-ohlc-visual'/>
-<snippet id='chart-ohlc-visual-swift'/>
 ```C#
 public override TKChartPaletteItem PaletteItemForSeries (TKChart chart, TKChartSeries series, nint index)
 {
@@ -56,4 +52,4 @@ public override TKChartPaletteItem PaletteItemForSeries (TKChart chart, TKChartS
 }
 ```
 
-<img src="../../images/chart-series-ohlc002.png"/>
+![](../../images/chart-series-ohlc002.png)

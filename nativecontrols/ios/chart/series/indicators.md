@@ -4,16 +4,14 @@ page_title: Financial Indicators Series
 position: 1
 ---
 
-# Chart Series: Financial Indicators
+## Chart for Xamarin.iOS: Financial Indicators Series
 
-This article provides a brief description and a list of the impotant properties of each indicator supported by TKChart. The indicators are divided in two groups - Technical Overlays and Technical Indicators. To set up a financial indicator, you have to initialize it with <code>TKChartCandlestickSeries</code> or <code>TKChartOhlcSeries</code> containing financial data.
+This article provides a brief description and a list of the important properties of each indicator supported by TKChart. The indicators are divided in two groups - Technical Overlays and Technical Indicators. To set up a financial indicator, you have to initialize it with <code>TKChartCandlestickSeries</code> or <code>TKChartOhlcSeries</code> containing financial data.
 
 ## Technical Overlays##
 
 Here is an example how to create a **Bollinger Band** indicator:
 
-<snippet id='chart-indicators-bollinger'/>
-<snippet id='chart-indicators-bollinger-swift'/>
 ```C#
 var candlesticks = new TKChartCandlestickSeries (financialDataPoints.ToArray ());
 var bollingerBands = new TKChartBollingerBandIndicator (candlesticks);
@@ -21,16 +19,16 @@ financialChart.AddSeries (candlesticks);
 financialChart.AddSeries (bollingerBands);
 ```
 
-<img src="../../images/chart-series-indicators001.png" />
+![](../../images/chart-series-indicators001.png)
 
 And here are the rest of the available Technical Overlays
 
-- Simple Moving Average (SMA) - A simple moving average (SMA) is the unweighted mean of the previous n data. To use this indicator you should instantiate <code>TKChartSimpleMovingAverageIndicator</code> and change its <code>period</code> property if needed. 
+- Simple Moving Average (SMA) - A simple moving average (SMA) is the unweighted mean of the previous n data. To use this indicator you should instantiate <code>TKChartSimpleMovingAverageIndicator</code> and change its <code>Period</code> property if needed. 
 - Exponential Moving Average (EMA) - A type of moving average that is similar to a simple moving average, except that more weight is given to the latest data. Use <code>TKChartExponentialMovingAverageIndicator</code> class.
 - Weighted Moving Average -  Weighted averages assign a heavier weighting to more current data points. Use <code>TKChartWeightedMovingAverageIndicator</code> class.
 - Triangular Moving Average - The Triangular Moving Average is a double-smoothed Simple Moving Average that gives more weight to the middle section of the data interval. Use <code>TKChartTriangularMovingAverageIndicator</code> class.
 - Modified Moving Average - Modified moving averages are similar to simple moving averages. The first point of the modified moving average is calculated the same way the first point of the simple moving average is calculated. However, all subsequent points are calculated by first adding the new price and then subtracting the last average from the resulting sum. The difference is the new point, or modified moving average. Use <code>TKChartModifiedMovingAverageIndicator</code> class.
-- Adaptive Moving Average - uses three parameters to calculate its value: period, slowPeriod and fastPeriod. Use <code>TKChartAdaptiveMovingAverageIndicator</code> class.
+- Adaptive Moving Average - uses three parameters to calculate its value: Period, SlowPeriod and FastPeriod. Use <code>TKChartAdaptiveMovingAverageIndicator</code> class.
 - Bollinger Bands - volatility bands placed above and below a moving average. Use <code>TKChartBollingerBandIndicator</code> class.
 - Moving Average Envelopes - percentage-based envelopes set above and below a moving average. Use <code>TKChartMovingAverageEnvelopesIndicator</code> class.
 - Typical Price - the arithmetic average of the high, low, and closing prices for a given period. Use <code>TKChartTypicalPriceIndicator</code> class.
@@ -40,8 +38,6 @@ And here are the rest of the available Technical Overlays
 ## Technical Indicators##
 Here is an example how to set up **Moving Average Convergence Divergence** indicator:
 
-<snippet id='chart-indicators-technical'/>
-<snippet id='chart-indicators-technical-swift'/>
 ```C#
 var candlesticks = new TKChartCandlestickSeries (financialDataPoints.ToArray());
 var macdIndicator = new TKChartMACDIndicator (candlesticks);
@@ -51,7 +47,7 @@ macdIndicator.SignalPeriod = 9;
 financialChart.AddSeries (macdIndicator);
 ```
 
-<img src="../../images/chart-series-indicators002.png"/>
+![](../../images/chart-series-indicators002.png)
 
 And here are the rest of the available Technical Indicators
 

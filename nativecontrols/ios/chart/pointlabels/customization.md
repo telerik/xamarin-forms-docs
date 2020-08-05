@@ -4,15 +4,14 @@ slug: chart-point-labels
 position: .2
 ---
 
-# Point Labels: Customization
+## Chart for Xamarin.iOS: Point Labels Customization
 
 <code>TKChart</code> lets you customize point labels using <code>TKChartPointLabelStyle</code>'s properties. However, sometimes you may need to draw specific shapes for the labels. In such cases you should sublcass <code>TKChartPointLabel</code> to create your own label and implement <code>TKChartDelegate</code> to use it.
 
-## Customization using TKChartPointLabelStyle properies
+## Customization using TKChartPointLabelStyle properties
 
 Here is an example how to customize point labels changing <code>TKChartPointLabelStyle</code> settings.
 
-<snippet id='chart-pointlabels'/>
 ```C#
 TKChartLineSeries lineSeries = new TKChartLineSeries (dataPoints.ToArray ());
 lineSeries.Selection = TKChartSeriesSelection.DataPoint;
@@ -28,14 +27,12 @@ lineSeries.Style.PointLabelStyle.Fill = new TKSolidFill (new UIColor ((float)(10
 lineSeries.Style.PointLabelStyle.ClipMode = TKChartPointLabelClipMode.Hidden;
 ```
 
-<img src="../../images/chart-point-labels-customization001.png" />
+![](../../images/chart-point-labels-customization001.png)
 
 ## Custom point labels
 
 Subclassing <code>TKChartPointLabel</code> lets you perform custom drawing and calculate the size of the point label. Once you create your own label you should implement <code>TKChartDelegate</code> to use it.
 
-<snippet id='chart-custom-label'/>
-<snippet id='chart-custom-label-swift'/>
 ```C#
 public override TKChartPointLabel LabelForDataPoint (TKChart chart, TKChartData dataPoint, string propertyName, TKChartSeries series, nuint dataIndex)
 {
@@ -49,5 +46,5 @@ public override TKChartPointLabel LabelForDataPoint (TKChart chart, TKChartData 
 }
 ```
 
-<img src="../../images/chart-point-labels-customization002.png" />
+![](../../images/chart-point-labels-customization002.png)
 

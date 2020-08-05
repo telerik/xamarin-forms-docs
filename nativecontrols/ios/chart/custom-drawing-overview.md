@@ -3,7 +3,7 @@ title: Custom Drawing
 position: 14
 ---
 
-# Chart: Custom Drawing
+## Chart for Xamarin.iOS: Custom Drawing
 
 <code>TKChart</code> has a powerful drawing engine to help you customize your chart appearance. It allows you to:
 
@@ -19,32 +19,26 @@ There are several kinds of fills:
 
 <code>TKSolidFill</code> is the simplest of all fills. It paints chart items with a single color. Here is how you define it:
 
-<snippet id='chart-drawing-solid-fill'/>
-<snippet id='chart-drawing-solid-fill-swift'/>
 ```C#
 var fill = new TKSolidFill (UIColor.Red);
 ```
 
 After you set it to a palette (discussed later) you get result like this:
 
-<img src="../images/chart-custom-drawing001.png"/>
+![](../images/chart-custom-drawing001.png)
 
-You can also specify corner raduis:
+You can also specify corner radius:
 
-<snippet id='chart-drawing-solid-fill-radius'/>
-<snippet id='chart-drawing-solid-fill-radius-swift'/>
 ```C#
 var fill = new TKSolidFill (UIColor.Red, 5.0f);
 ```
 
 This results in columns looking like this:
 
-<img src="../images/chart-custom-drawing002.png"/>
+![](../images/chart-custom-drawing002.png)
 
 All fills and strokes allow you to specify not only corner radius, but also which corners to round. Semi-transparent red fill with only two corners rounded can be defined like this:
 
-<snippet id='chart-drawing-round-corners'/>
-<snippet id='chart-drawing-round-corners-swift'/>
 ```C#
 var fill = new TKSolidFill (new UIColor (1.0f, 0.0f, 0.0f, 0.5f), 8.0f);
 fill.Corners = UIRectCorner.TopLeft | UIRectCorner.BottomRight;
@@ -52,7 +46,7 @@ fill.Corners = UIRectCorner.TopLeft | UIRectCorner.BottomRight;
 
 There you get:
 
-<img src="../images/chart-custom-drawing003.png"/>
+![](../images/chart-custom-drawing003.png)
 
 ### Linear gradient fill###
 
@@ -60,8 +54,6 @@ There you get:
 
 Here is how you define linear gradient with 3 colors (green to red to blue) with transparency:
 
-<snippet id='chart-drawing-gradient'/>
-<snippet id='chart-drawing-gradient-swift'/>
 ```C#
 var fill = new TKLinearGradientFill (new UIColor[] {
     new UIColor (0.0f, 1.0f, 0.0f, 0.6f),
@@ -72,12 +64,10 @@ var fill = new TKLinearGradientFill (new UIColor[] {
     new CGPoint(1, 1));
 ```
 
-<img src="../images/chart-custom-drawing004.png"/>
+![](../images/chart-custom-drawing004.png)
 
-If we wish to distribute those colors unevenly and change gradient direction here is how to do it:
+If you wish to distribute those colors unevenly and change gradient direction here is how to do it:
 
-<snippet id='chart-drawing-gradient-direction'/>
-<snippet id='chart-drawing-gradient-direction-swift'/>
 ```C#
 var fill = new TKLinearGradientFill (new UIColor[] {
     new UIColor (0.0f, 1.0f, 0.0f, 0.6f),
@@ -91,14 +81,12 @@ var fill = new TKLinearGradientFill (new UIColor[] {
 
 Warning: All coordinates for locations, startPoint and endPoint parameters are relative to the size of drawing surface. The values of locations array must be monotonically increasing.
 
-<img src="../images/chart-custom-drawing005.png"/>
+![](../images/chart-custom-drawing005.png)
 
 ### Radial gradient fill###
 
-<code>TKRadialGradientFill</code> draws a fill with two colors using centers relative to the drawing size. Radius is set in different measures depending on radiusType parameter. It is hard to master and most of the time you can achieve the same functionality with linear gradient. Here is a possible usage:
+<code>TKRadialGradientFill</code> draws a fill with two colors using centers relative to the drawing size. Radius is set in different measures depending on TKGradientRadiusType parameter. It is hard to master and most of the time you can achieve the same functionality with linear gradient. Here is a possible usage:
 
-<snippet id='chart-drawing-gradient-radial'/>
-<snippet id='chart-drawing-gradient-radial-swift'/>
 ```C#
 var fill = new TKRadialGradientFill (new UIColor[] { 
     new UIColor (0.0f, 1.0f, 0.0f, 0.7f),
@@ -113,63 +101,53 @@ var fill = new TKRadialGradientFill (new UIColor[] {
 
 The resulting ghost column chart looks like this:
 
-<img src="../images/chart-custom-drawing006.png"/>
+![](../images/chart-custom-drawing006.png)
 
 ### Image fill###
 
-<code>TKImageFill</code> fills the drawing area with the content of an image. There is also a <code>resizingMode</code> which specify how to draw image. Here is an example usage of tiled image:
+<code>TKImageFill</code> fills the drawing area with the content of an image. There is also a <code>ResizingMode</code> which specify how to draw image. Here is an example usage of tiled image:
 
-<snippet id='chart-drawing-image-fill'/>
-<snippet id='chart-drawing-image-fill-swift'/>
 ```C#
 var fill = new TKImageFill (new UIImage ("pattern1.png"), 4.0f);
 fill.ResizingMode = TKImageFillResizingMode.Tile;
 ```
 
-<img src="../images/chart-custom-drawing007.png"/>
+![](../images/chart-custom-drawing007.png)
 
 this is the source (pattern) image to draw:
 
 <img src="../images/chart-custom-drawing008.png"/> <= original&nbsp;&nbsp;&nbsp;&nbsp;<img width=24 height=24 src="../images/chart-custom-drawing008.png"/>  <= 8 times magnified version
 
-
 Filling with images in stretch mode is even easier:
 
-<snippet id='chart-drawing-image-fill-stretch'/>
-<snippet id='chart-drawing-image-fill-stretch-swift'/>
 ```C#
 var fill = new TKImageFill (new UIImage ("building1.png"), 4.0f);
 ```
 
-<img src="../images/chart-custom-drawing009.png"/>
+![](../images/chart-custom-drawing009.png)
 
 Sometimes you like to specify your own stretchable image. Stretching this <img src="../images/chart-custom-drawing011.png"/> image with your own code, leads to the following result:
 
-<snippet id='chart-drawing-image-resize'/>
-<snippet id='chart-drawing-image-resize-swift'/>
 ```C#
 UIImage image = new UIImage ("pattern2.png");
 var fill = new TKImageFill (image.CreateResizableImage (new UIEdgeInsets (10, 10, 10, 10)));
 fill.ResizingMode = TKImageFillResizingMode.None;
 ```
 
-<img src="../images/chart-custom-drawing010.png"/>
+![](../images/chart-custom-drawing010.png)
+
 ## Adding stroke##
 
 <code>TKStroke</code> is a powerful tool which allows you to customize how you apply strokes to your charts.
 
 You can create a simple stroke like this:
 
-<snippet id='chart-drawing-stroke'/>
-<snippet id='chart-drawing-stroke-swift'/>
 ```C#
 var stroke = new TKStroke (UIColor.Blue);
 ```
 
 With rounded corners:
 
-<snippet id='chart-drawing-stroke-rounded-corners'/>
-<snippet id='chart-drawing-stroke-rounded-corners-swift'/>
 ```C#
 var stroke = new TKStroke (UIColor.Blue, 1.0f);
 stroke.CornerRadius = 5.0f;
@@ -177,8 +155,6 @@ stroke.CornerRadius = 5.0f;
 
 With dash pattern:
 
-<snippet id='chart-drawing-stroke-dashed'/>
-<snippet id='chart-drawing-stroke-dashed-swift'/>
 ```C#
 var stroke = new TKStroke (UIColor.Blue, 1.0f);
 stroke.CornerRadius = 5.0f;
@@ -225,10 +201,8 @@ or with line chart using strokes with width = 2
 
 ## Customizing TKChart##
 
-Customizing <code>TKChart</code> can be done using <code>TKChartPalette</code>. You can access the palette from <code>TKChartSeries</code> using series.style.palette variable. By default, palette is nil which means that <code>TKChart</code> will use its default theme. To specify your own, you need to create it:
+Customizing <code>TKChart</code> can be done using <code>TKChartPalette</code>. You can access the palette from <code>TKChartSeries</code> using series.Style.Palette variable. By default, palette is nil which means that <code>TKChart</code> will use its default theme. To specify your own, you need to create it:
 
-<snippet id='chart-drawing-pallete'/>
-<snippet id='chart-drawing-pallete-swift'/>
 ```C#
 TKChartSeries series = null;
 series.Style.Palette = new TKChartPalette();
@@ -236,16 +210,12 @@ series.Style.Palette = new TKChartPalette();
 
 </code>TKChartPalette</code> is a collection of <code>TKChartPaletteItem</code> instances. Every item contains information about drawing the item at its index. By default, a palette item index addresses the order in which you add series. For example, you may have a palette with red and blue fills and two <code>TKChartColumnSeries</code> using this palette. The first series you add will be red and the second blue. However, <code>TKChartPieSeries</code> by default uses another mode when every palette item is used to display a data point at its index. You can explicitly set how you distribute a palette items using:
 
-<snippet id='chart-drawing-pallete-mode-index'/>
-<snippet id='chart-drawing-pallete-mode-index-swift'/>
 ```C#
 series.Style.PaletteMode = TKChartSeriesStylePaletteMode.UseItemIndex;
 ```
 
 or
 
-<snippet id='chart-drawing-pallete-mode-series'/>
-<snippet id='chart-drawing-pallete-mode-series-swift'/>
 ```C#
 series.Style.PaletteMode = TKChartSeriesStylePaletteMode.UseSeriesIndex;
 ```
@@ -254,8 +224,6 @@ Whenever <code>TKChartPalette</code> runs out of colors (because there are more 
 
 To illustrate the difference between palette modes, consider the following setup:
 
-<snippet id='chart-drawing-cycling'/>
-<snippet id='chart-drawing-cycling-swift'/>
 ```C#
 List<TKChartDataPoint> gdpInPoundsPoints = null;
 
@@ -305,8 +273,6 @@ This is because you have added only one series. Adding a second series with the 
 
 <code>TKChartPaletteItem</code> is the building block of <code>TKChartPalette</code> and contains information about how to draw items. The simple way to use it is to specify a fill and/or stroke. Consider one of the following constructors:
 
-<snippet id='chart-drawing-pallete-items'/>
-<snippet id='chart-drawing-pallete-items-swift'/>
 ```C#
 var paletteItem1 = new TKChartPaletteItem (new TKSolidFill (UIColor.Red));
 var paletteItem2 = new TKChartPaletteItem(new TKStroke(UIColor.Blue));
@@ -319,8 +285,6 @@ When you initialize a palette item with stroke and fill the stroke is always dra
 
 There is also an alternative and a more flexible way to create a palette item by specifying an array of fills and strokes in the order you would like them to be drawn:
 
-<snippet id='chart-drawing-pallete-items-arrays'/>
-<snippet id='chart-drawing-pallete-items-arrays-swift'/>
 ```C#
 series.Style.Palette = new TKChartPalette ();
 var redFill = new TKSolidFill (UIColor.Red, 2.0f);
@@ -354,10 +318,10 @@ here you create a palette item with red fill and two borders. The sample also sh
 series.Style.PointShape = new TKPredefinedShape (TKShapeType.Rhombus, new CGSize (15, 15));
 ```
 
-series.style.pointShape also applies to line and area series in case you need to show shapes on data points.
+series.Style.PointShape also applies to line and area series in case you need to show shapes on data points.
 
 ### Customizing pie series###
 
-TKChartPieSeries always use <code>series.style.paletteMode = TKChartSeriesStylePaletteModeUseItemIndex;</code> If you have strokes with insets, only insets.top value will be used and will be applied relatively to the outer radius of the pie chart slices.
+TKChartPieSeries always use <code>series.Style.PaletteMode = TKChartSeriesStylePaletteModeUseItemIndex;</code>. If you have strokes with insets, only Insets.Top value will be used and will be applied relatively to the outer radius of the pie chart slices.
 
 @warning Customization is a very powerful feature of TKChart. However, we recommend using that feature at an acceptable rate. Using too many fills and strokes may affect performance. Combining all features like a dashed stroke with gradient plus several semi transparent fills will draw much slower than a simple solid color fill.

@@ -4,12 +4,12 @@ page_title: Scatter Series
 position: 6
 ---
 
-# Chart Series: Scatter
+## Chart for Xamarin.iOS: Scatter Series
 
-TKChartScatterSeries plots its data along two axes. Scatter series identify the position of each point using two dimentional values - XValue and YValue for the horizontal and vertical axes respectively, just like in the typical Cartesian coordinate system. Here is how to create a TKChartScatterSeries and populate them manually:
+<code>TKChartScatterSeries</code> plots its data along two axes. Scatter series identify the position of each point using two dimensional values - XValue and YValue for the horizontal and vertical axes respectively, just like in the typical Cartesian coordinate system. 
 
-<snippet id='chart-scatter'/>
-<snippet id='chart-scatter-swift'/>
+Here is how to create a TKChartScatterSeries and populate them manually:
+
 ```C#
 List<TKChartDataPoint> list = new List<TKChartDataPoint> ();
 for (int j = 0; j < 20; j++) {
@@ -43,8 +43,6 @@ chart.AddSeries (series);
 
 Here is how to configure the distance between finger touch and line to perform selection:
 
-<snippet id='chart-scatter-selection'/>
-<snippet id='chart-scatter-selection-swift'/>
 ```C#
 var series = new TKChartScatterSeries (scatterPoints.ToArray());
 series.Selection = TKChartSeriesSelection.DataPoint;

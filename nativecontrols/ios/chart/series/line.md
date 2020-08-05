@@ -4,12 +4,10 @@ page_title: Line Series
 position: 4
 ---
 
-# Chart Series: Line
+## Chart for Xamarin.iOS: Line Series
 
 <code>TKChartLineSeries</code> plot their data points on Cartesian Area. Points are connected with straight lines. Here is how to set up a few line series:
 
-<snippet id='chart-line'/>
-<snippet id='chart-line-swift'/>
 ```C#
 var expensesData = new List<TKChartDataPoint> ();
 var incomesData = new List<TKChartDataPoint> ();
@@ -40,22 +38,18 @@ chart.AddSeries(seriesForProfit);
 chart.Legend.Hidden = false;
 ```
 
-<img src="../../images/chart-series-line001.png"/>
+![](../../images/chart-series-line001.png)
 
 ## Configure input and selection of line series
 
-If you would like to configure the distance between finger touch and line to perform selection:
+If you would like to configure the distance between finger touch and line to perform selection, set <code>Selection</code> property:
 
-<snippet id='chart-selection'/>
-<snippet id='chart-selection-swift'/>
 ```C#
 series.Selection = TKChartSeriesSelection.Series;
 ```
 
 If you would like to change the series' stroke, you should use the following code snippet:
 
-<snippet id='chart-line-series-stroke'/>
-<snippet id='chart-line-series-stroke-swift'/>
 ```C#
 var seriesForProfit = new TKChartLineSeries (profitData.ToArray());
 seriesForProfit.Style.Palette = new TKChartPalette ();
@@ -65,11 +59,11 @@ seriesForProfit.Style.Palette.AddPaletteItem (paletteItem);
 chart.AddSeries (seriesForProfit);
 ```
 
-<img src="../../images/chart-series-line003.png"/>
+![](../../images/chart-series-line003.png)
 
 ## Set null values visualization
 
-In order to determines whether gaps should be displayed when there are nil values use DisplayNilValuesAsGaps property:
+In order to determines whether gaps should be displayed when there are nil values use <code>DisplayNilValuesAsGaps</code> property:
 
 ```C#
 var seriesForProfit = new TKChartLineSeries (profitData.ToArray());

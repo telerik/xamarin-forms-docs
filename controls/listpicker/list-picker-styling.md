@@ -8,7 +8,7 @@ slug: list-picker-styling
 
 # Styling
 
-## ListPicler Styling
+## ListPicker Styling
 
 List Picker for Xamarin provides the followind Style properties for customizing its look:
 

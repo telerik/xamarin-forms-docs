@@ -26,7 +26,6 @@ In order to develop applications with **Telerik UI for Xamarin** you need to hav
 	> Before proceeding, please make sure the following Individual components are included:
 	>	* Xamarin
 	>	* Text Template Transformation
-	>	* .NET Portable Library targeting pack
 
 	>tip For more detailed instructions go to [Installing Xamarin in Visual Studio on Windows](https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/installation/windows) topic in Xamarin documentation.
  

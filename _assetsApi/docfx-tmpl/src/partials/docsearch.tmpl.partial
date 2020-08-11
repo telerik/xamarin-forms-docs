@@ -29,8 +29,9 @@
          var gcsInstance = '001595215763381649090:hqd69dmjy2k';
          var gcsKey = 'AIzaSyBNBA7GFG6zyMuswUt4MB_FSXKVgtTTe7k';
          isKbPage =  false ;
-         siteHasKbPortal = '';
-         hasApiReference =  true ;
+         siteHasKbPortal = 'true';
+         hasApiReference =  true;
+         showSearchPopup = false;
       </script>
       <script type="text/javascript" src="/devtools/xamarin/assets/search-results.js"></script>
    </div>

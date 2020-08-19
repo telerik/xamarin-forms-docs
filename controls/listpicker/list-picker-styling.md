@@ -54,7 +54,7 @@ The SelectorSetting also provides the following properties for popup customizati
 Using **ItemStyle**, **SelectedItemStyle** you need to add the following namespace:
 
 ```XAML
-xmlns:dataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
 ``` 
 
 Using **PopupViewStyle**, **HeaderStyle**, **FooterStyle** add the followng namespace:

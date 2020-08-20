@@ -1,6 +1,6 @@
 ---
 title: Recurrence Rule
-page_title: Recurrence Rule
+page_title: Xamarin Calendar Documentation | Recurrence Rule
 description: Check our &quot;Recurrence Rule&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 2
 slug: calendar-recurrence-recurrencerule

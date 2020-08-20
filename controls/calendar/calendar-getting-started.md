@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started with Xamarin.Forms Calendar &amp; Scheduling Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 1
 slug: calendar-getting-started
@@ -25,7 +25,9 @@ Take a look at these articles and follow the instructions to setup your app:
 
 You have two options:
 
-* Add the Telerik UI for Xamarin Nuget packages following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+* Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+
+If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadCalendar control you have to install the **Telerik.UI.for.Xamarin.Input** nuget package. This nuget will automatically refer the Telerik.UI.for.Xamarin.Primitives, Telerik.UI.for.Xamarin.Common, and Telerik.UI.for.Xamarin.DataControls nuget packages.
 
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadCalendar** component:
 
@@ -58,6 +60,8 @@ In addition to this, you need to add the following namespace:
 
 <snippet id='xmlns-telerikinput'/>
 <snippet id='ns-telerikinput'/>
+
+> RadCalendar control requires its visual parent to provide vertical or horizontal space for the control to fill into. Please avoid placing the control inside ScrollView as the calendar control has its own scrolling.
 
 Here is the result:
 

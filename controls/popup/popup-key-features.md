@@ -1,6 +1,6 @@
 ---
 title: Key Features
-page_title: Key Features
+page_title: Xamarin Popup Documentation | Key Features
 description: Check our &quot;Key Features&quot; documentation article for Telerik Popup for Xamarin control.
 position: 2
 slug: popup-key-features
@@ -12,7 +12,7 @@ The purpose of this help article is to show you the key features of the **RadPop
 
 ## Open / Close the popup
 
-In order to show the RadPopup control you would need to set **IsOpen** property to *True*. By default the popup stays open until the **IsOpen** property is set to *False* or the user taps outside in case of not a modal popup.
+In order to show the RadPopup control you would need to set **IsOpen** property to *True*. By default the popup stays open until the **IsOpen** property is set to *False* or the user taps outside in case of a non-modal popup.
 
 ## Setting Content
 
@@ -38,7 +38,7 @@ Here is the result:
 
 ## Modal popup
 
-You could define whether the popup will be modal or not through the **IsModal** Boolean property. In both cases, the UI behind the popup gets inactive and cannot be used until the popup is closed. For non-modal popups, however, you could easily focus on the content behind, by just clicking outside the popup.
+You could define whether the popup will be modal or not through the **IsModal** Boolean property. In both cases, the UI behind the popup gets inactive and cannot be used until the popup is closed. For non-modal popups, however, you could easily focus on the content behind, by just clicking outside the popup, thus hiding it.
 
 ## Applying overlay color 
 
@@ -50,7 +50,7 @@ Below is an example on how you could apply OutsideBackgroundColor to a modal pop
 
 <snippet id='popup-features-modal' />
 
-And the needed events handlers used to show/hide the popup:
+And the needed event handlers used to show/hide the popup:
 
 <snippet id='popup-features-modal-events' />
 
@@ -71,8 +71,13 @@ RadPopup provides a few useful properties which will help you position it per yo
 * **HorizontalOffset / VerticalOffset**: Specifies the horizontal/vertical distance between the placement target and the alignment point.  
 
 <snippet id='popup-features-placement' />
+<snippet id='popup-features-placement-code' />
 
-Note that in the example RadPopup is defined inline through *RadPopup.Popup* attached property applied to the Button control, so the Button is considered as PlacementTarget of RadPopup.
+Here is the Button Clicked event handler:
+
+<snippet id='popup-features-placement-event' />
+
+> In the XAML example RadPopup is defined inline through *RadPopup.Popup* attached property applied to the Button control, so the Button is considered as **PlacementTarget** of the popup. If you create the Popup with code, **PlacementTarget** property should be explicitly set.
 
 Here is the result:
 

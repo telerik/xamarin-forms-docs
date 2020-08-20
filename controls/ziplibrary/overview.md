@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Xamarin ZipLibrary Documentation | Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik ZipLibrary for Xamarin.
 description: Overview
 slug: radziplibrary-overview
@@ -34,7 +34,9 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 You have two options to add the required Telerik references to your Xamarin.Forms app in order to use **RadZipLibrary**:
 
-* Add the Telerik UI for Xamarin Nuget packages following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+* Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+
+If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadZipLibrary you have to install the **Telerik.Zip** nuget package.
 
 * Add the references to Telerik assemblies manually, check below the required assembly for RadZipLibrary:
 	

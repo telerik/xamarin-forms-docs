@@ -3,7 +3,7 @@ title: Populating with Data
 position: 9
 ---
 
-# Chart: Populating with Data
+## Chart for Xamarin.iOS: Populating with Data
 
 In order for <code>TKChart</code> to represents data, we should supply this data to it. Following the Model-View-Controller design pattern, the data source mediates between the application's data model (that is, its model objects) and the chart view. The data source provides the chart-view object with the information it needs to construct visualization using different chart types.
 
@@ -11,7 +11,7 @@ In order for <code>TKChart</code> to represents data, we should supply this data
 
 ## Configure data source using the TKChartDataSource protocol
 
-Following this approach, we supply <code>TKChart</code> with data using a delegate. This works the same way as with <code>UITableView</code>. You should implement the <code>TKChartDataSource</code> protocol and specify the number of series, the number of points in each series, the series objects and the point objects. The <code>TKChartDataSource</code> has two required methods. The <code>numberOfSeriesForChart:</code> method tells the chart view how many series to display in the plot area, and the <code>seriesForChart:atIndex:</code> method provides the series to display. Optional methods allow the data source to configure data points for each series.
+Following this approach, we supply <code>TKChart</code> with data using a delegate. This works the same way as with <code>UITableView</code>. You should implement the <code>TKChartDataSource</code> protocol and specify the number of series, the number of points in each series, the series objects and the point objects. The <code>TKChartDataSource</code> has two required methods, namely NumberOfSeries and GetSeries.The <code>NumberOfSeries</code> method tells the chart view how many series to display in the plot area, and the <code>GetSeries</code> method provides the series to display. Optional methods allow the data source to configure data points for each series.
 
 Here is a sample subclass of <code>TKChartViewController</code> which will provide TKChart with data points for one <code>TKChartLineSeries</code>:
 
@@ -64,7 +64,7 @@ public class ChartDocsPopulatingWithData : UIViewController
     }
 ```
 
-<img src="../images/chart-populating-with-data001.png" />
+![](../images/chart-populating-with-data001.png)
 
 ## Configure data source using binding to DataPoints collection
 
@@ -88,7 +88,7 @@ for (int i = 0; i < categories.Length; ++i) {
 chart.AddSeries (new TKChartColumnSeries (dataPoints.ToArray ()));
 ```
 
-<img src="../images/chart-populating-with-data002.png" />
+![](../images/chart-populating-with-data002.png)
 
 ## Configure data source using binding to properties of model object
 
@@ -120,6 +120,6 @@ chart.AddSeries(new TKChartScatterSeries(dataPoints.ToArray(), "ObjectID", "Valu
 chart.EndUpdates();
 ```
 
-<img src="../images/chart-populating-with-data003.png" />
+![](../images/chart-populating-with-data003.png)
 
 > TKChart by default creates and sets up axes automatically to support this flexible and codeless binding behavior using the data types in the provided data source. You can always change or replace the axis type for TKChartSeries or change it auto-calculated default range.

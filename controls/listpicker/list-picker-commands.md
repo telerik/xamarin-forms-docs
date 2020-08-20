@@ -1,6 +1,6 @@
 ---
 title: Commands
-page_title: Commands
+page_title: Xamarin List Picker Documentation | Commands
 description: Check our &quot;Commands&quot; documentation article for Telerik ListPicker for Xamarin control.
 position: 7
 slug: list-picker-commands
@@ -101,5 +101,5 @@ xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.Xa
 
 ## See Also
 
-- [Events]({%slug list-picker-events%})
+- [Selection]({%slug list-picker-selection%})
 - [Templates]({%slug list-picker-templates%})

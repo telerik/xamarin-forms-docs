@@ -1,5 +1,6 @@
 ---
 title: Categorical Axis
+page_title: Xamarin Chart Documentation | Categorical Axis
 slug: axes-categorical-axis
 description: Check our &quot;Categorical Axis&quot; documentation article for Telerik Chart for Xamarin control.
 ---

@@ -1,6 +1,6 @@
 ---
 title: PathGeometry
-page_title: PathGeometry
+page_title: Xamarin Path Documentation | PathGeometry
 description: Check our &quot;PathGeometry&quot; documentation article for Telerik Path for Xamarin control.
 position: 2
 slug: path-structure

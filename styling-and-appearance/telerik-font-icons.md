@@ -1,11 +1,12 @@
 ---
 title: Telerik Font Icons
-page_title: Telerik Font Icons
+page_title: Xamarin.Forms Styling and Appearance - Font Icons
+description: Telerik font icons is a collection of small vector graphics used across the components from Telerik UI for Xamarin suite.
 slug: telerik-font-icons
 position: 2
 ---
 
-## Telerik Font Icons
+# Telerik UI for Xamarin Font Icons
 
 Telerik font icons is a collection of small vector graphics used across the components from Telerik UI for Xamarin suite. Examples of using font icons include the expand and collapse indicators of Accordion, Expander and TreeView controls, filter and sort indicators of DataGrid control, and other.
 
@@ -20,9 +21,9 @@ This article will give an overview on how you can utilize the Telerik font icons
 
 The Telerik Font Icons are located in the telerikfontexamples.ttf file. There are two options you could use to get the **.ttf** file.
 
-* Download the **telerikfontexamples.ttf** file from [here](https://github.com/telerik/telerik-xamarin-forms-samples/blob/master/_Samples%20Application/QSF.Android/Assets/Fonts/telerikfontexamples.ttf).
+* Download the **telerikfontexamples.ttf** file from [here](https://github.com/telerik/telerik-xamarin-forms-samples/blob/master/QSF/QSF.Android/Assets/Fonts/telerikfontexamples.ttf).
 
-* Get the font file from the installation folder of Telerik UI for Xamarin: The default location of the **telerikfontexamples.ttf** file is *C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2018\QSF\QSF.Android\Assets\Fonts*
+* Get the font file from the installation folder of Telerik UI for Xamarin: The default location of the **telerikfontexamples.ttf** file is *C:\Program Files (x86)\Progress\Telerik UI for Xamarin [version]\QSF\QSF.Android\Assets\Fonts*
 
 Include Telerik Font **.ttf** file into your application in the following locations:
 

@@ -1,6 +1,6 @@
 ---
 title: CheckBox Elements
-page_title: CheckBox Elements
+page_title: Xamarin TreeView Documentation | CheckBox Elements
 description: Check our &quot;CheckBox Elements&quot; documentation article for Telerik TreeView for Xamarin control.
 position: 3
 slug: treeview-checkboxes-support

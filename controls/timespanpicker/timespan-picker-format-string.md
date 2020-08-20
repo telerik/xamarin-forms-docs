@@ -1,12 +1,12 @@
 ---
 title: TimeSpan Format Strings
-page_title: TimeSpan Format Strings
+page_title: Xamarin TimeSpan Picker Documentation | TimeSpan Format Strings
 description: Check our &quot;TimeSpan Format Strings&quot; documentation article for Telerik TimeSpan Picker for Xamarin control.
 position: 2
 slug: timespan-picker-format-string
 ---
 
-# String Format
+# Spinner Format
 
 TimeSpan Picker for Xamarin allows you to use standard or custom timespan format strings through the SpinnerFormat property. Depending on what format is set, the picker visualizes spinner controls with prepopulated values to be picked.
 
@@ -17,9 +17,9 @@ TimeSpan Picker for Xamarin allows you to use standard or custom timespan format
 The available Standard TimeSpan Format Strings which can be set to the SpinnerFormat property are described in the table below:
 
 | Supported Standard TimeSpan Format String | Description |
-| -------- || -------- |
+| -------- | -------- |
 | "G" | General Long "G" format specifier |
-| "g" | Generat Short "g" format specifier |
+| "g" | General Short "g" format specifier |
 | "c" | Constant "c" format specifier |
 
 >important You can set only short [Standard TimeSpan Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-timespan-format-strings) to the TimeSpan Picker control.

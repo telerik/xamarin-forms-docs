@@ -1,6 +1,6 @@
 ---
 title: ImageEditor ToolbarItems Styling
-page_title: ImageEditor ToolbarItems Styling
+page_title: Xamarin ImageEditor Documentation | ImageEditor ToolbarItems Styling
 description: Check our &quot;ImageEditor ToolbarItems Styling&quot; documentation article for Telerik ImageEditor for Xamarin control.
 position: 1
 slug: imageeditor-toolbar-items-styling

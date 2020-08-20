@@ -1,6 +1,6 @@
 ---
 title: Picker Column
-page_title: Picker Column
+page_title: Xamarin DataGrid Documentation | Picker Column
 description: Check our &quot;Picker Column&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 5
 slug: datagrid-columns-picker-column

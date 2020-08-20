@@ -1,6 +1,6 @@
 ---
 title: Key Features
-page_title: Key Features
+page_title: Xamarin Accordion Documentation | Key Features
 description: Check our &quot;Key Features&quot; documentation article for Telerik Accordion for Xamarin control.
 position: 2
 slug: accordion-key-features

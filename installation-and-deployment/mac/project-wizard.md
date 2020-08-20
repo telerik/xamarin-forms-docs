@@ -1,6 +1,7 @@
 ---
 title: Project Wizard for Visual Studio for Mac
 page_title: Project Wizard for Visual Studio for Mac
+description: All you need to know about the project wizard for Visual Studio on Mac. Find all you need to know in Xamarin.Forms instalation and deployment documentation.
 slug: project-wizard-xamarin-studio
 position: 1
 ---

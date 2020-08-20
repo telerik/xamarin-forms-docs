@@ -1,34 +1,46 @@
 ---
 title: Telerik UI for Xamarin Toolbox
 page_title: Telerik UI for Xamarin Toolbox
+description: Check our detailed documentation artile for the Toolbox Extension of Telerik UI for Xamarin on Windows. Find all you need to know in Xamarin.Forms installation and deployment documentation.
 slug: telerik-xamarin-toolbox
 position: 6
 ---
 
 # Telerik UI for Xamarin Toolbox
 
-This article introduces Telerik UI for Xamarin Toolbox for Visual Studio which eases the process of adding Telerik controls to your Xamarin.Forms application. The Xamarin Toolbox is part of the **Visual Studio Extensions** for Telerik UI for Xamarin.
+This article introduces Telerik UI for Xamarin Toolbox for Visual Studio, which eases the process of adding Telerik controls to your Xamarin.Forms application. The Xamarin Toolbox is part of the **Visual Studio Extensions** for Telerik UI for Xamarin.
 
-Visual Studio Extensions for Telerik UI for Xamarin are distributed with the Telerik UI for Xamarin [MSI installation]({%slug install-msi%}). They also can be downloaded and installed as separate product from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) for Visual Studio 2017/2019.
+Telerik UI for Xamarin Visual Studio Extensions are distributed with the Telerik UI for Xamarin [MSI installation]({%slug install-msi%}). You can also download and install them as a separate product from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) for Visual Studio 2017/2019.
 
->For detailed instructions on how to install the Visual Studio Extensions, go to [Installing VSExtensions]({%slug vs-extensions%}) topic.
+>For detailed instructions on how to install the Visual Studio Extensions, see [Installing VSExtensions]({%slug vs-extensions%}).
 
 ## Showing the Telerik Toolbox
 
-In order to show the Toolbox and start using the controls, you should navigate to "Extensions" -> "Telerik" -> "Telerik UI for Xamarin" -> "Open Telerik UI for Xamarin Toolbox" tab within Visual Studio. You can also find this option when typing "Telerik UI for Xamarin Toolbox" in the Quick Launch search field (top right corner in Visual Studio).
+### Visual Studio 2019 
 
-**Figure 1** shows where you can find the option in Visual Studio:
+To show the Toolbox and start using the controls, navigate to the tab "Extensions" -> "Telerik" -> "Telerik UI for Xamarin" -> "Open Telerik UI for Xamarin Toolbox" within Visual Studio. You can also find this option when you type "Telerik UI for Xamarin Toolbox" in the Quick Launch search field (top right corner in Visual Studio).
 
-#### Figure 1: Showing the Telerik UI for Xamarin Toolbox 
+**Figure 1** shows where you can find the option in Visual Studio 2019:
+
+#### Figure 1: Showing the Telerik UI for Xamarin Toolbox in Visual Studio 2019
 ![](images/enabled_toolbox.png)
 
-Once you have clicked the option you should be prompted to the window which contains the different controls from the suite.**Figure 2** shows the appearance of the toolbox if everything is correctly set.
+### Visual Studio 2017
 
->important If no usable controls are present in the toolbox - make sure all the required references are added and try rebuilding your project. 
+To show the Toolbox and start using the controls, navigate to the tab "Telerik" -> "Telerik UI for Xamarin" -> "Open Telerik UI for Xamarin Toolbox" within Visual Studio. You can also find this option when you type "Telerik UI for Xamarin Toolbox" in the Quick Launch search field (top right corner in Visual Studio). 
+
+**Figure 2** shows where you can find the option in Visual Studio 2017: 
+
+#### Figure 2: Showing the Telerik UI for Xamarin Toolbox in Visual Studio 2017
+![](images/enable_toolbox_vs2017.png)
+
+When you open the Telerik UI for Xamarin Toolbox, you will see a window with the different controls from the suite. **Figure 3** shows the appearance of the toolbox in a correctly configured project.
+
+>important If no usable controls are present in the toolbox, make sure that you [added all the required references]({%slug getting-started-windows%}#2-add-references-to-telerik-components), and try to rebuild your project. 
 
 ## Adding Controls to Your Project
 
-Embedding the controls from the suite is made as easy as possible and all you need to do is simply drag one of the controls within your XAML file. This will add the control definition and will also map the needed namespace declarations. **Figure 2** shows how the action is performed.
+Embedding the controls from the suite is made as easy as possible. All you need to do is simply drag one of the controls within your XAML file. This adds the control definition and maps the needed namespace declarations. **Figure 3** shows how to perform this action.
 
 #### Figure 2: Adding Telerik controls to your application
 ![](images/xamarin_toolbox.gif)

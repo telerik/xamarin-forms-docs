@@ -1,6 +1,6 @@
 ---
 title: Cell Swipe
-page_title: Cell Swipe
+page_title: Xamarin ListView Documentation | Cell Swipe
 description: Check our &quot;Cell Swipe&quot; documentation article for Telerik ListView for Xamarin control.
 position: 
 slug: listview-features-cell-swipe

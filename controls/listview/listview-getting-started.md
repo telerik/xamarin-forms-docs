@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started with Xamarin.Forms ListView Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik ListView for Xamarin control.
 position: 1
 slug: listview-getting-started
@@ -26,7 +26,9 @@ Take a look at these articles and follow the instructions to setup your app:
 
 You have two options:
 
-* Add the Telerik UI for Xamarin Nuget packages following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+* Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+
+If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadListView control you have to install the **Telerik.UI.for.Xamarin.DataControls** nuget package. This nuget will automatically refer the Telerik.UI.for.Xamarin.Primitives and Telerik.UI.for.Xamarin.Common nuget packages.
 
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadListView** component:
 
@@ -63,6 +65,12 @@ In addition to this, you need to add the following namespace:
 
 <snippet id='xmlns-telerikdatacontrols' />
 <snippet id='ns-telerikdatacontrols' />
+
+> RadListView control provides UI virtualization, so it requires its visual parent to provide vertical or horizontal space for the control to fill into. The following scenarios will measure the control with infinity and the virtualization will not work:
+>	* positioning the ListView control inside StackLayout which is wrapped in ScrollView.
+>	* positioning the ListVew inside ScrollView.
+>
+> For additional information, please check the [Controls are not Apppearing]({%slug controls-are-not-appearing%}) article.
 
 ## 4. Populating RadListView with data
 

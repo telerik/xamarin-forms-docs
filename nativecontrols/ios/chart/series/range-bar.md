@@ -3,7 +3,7 @@ title: Range Bar
 page_title: Range Bar Series
 ---
 
-# Chart Series: Range Bar
+## Chart for Xamarin.iOS: RangeBar Series
 
 <code>TKChartRangeBarSeries</code> are used to visualize data points as horizontal bars where the width of each bar denotes the difference between data point's low and high value. The code snippet below demonstrates how to create range bar series.
 
@@ -11,8 +11,6 @@ page_title: Range Bar Series
 
 If you want to cluster multiple range bar series side by side, they should use a shared y-axis:
 
-<snippet id='chart-range-bar'/>
-<snippet id='chart-range-bar-swift'/>
 ```C#
 var lowValues = new NSNumber[] {
     new NSNumber (33), new NSNumber (29),
@@ -60,12 +58,10 @@ chart.AddSeries(series2);
 
 ## Configure visual appearance
 
-If you want to customize the appearance of a range bar series, you should change its <code>style</code> properties.
+If you want to customize the appearance of a range bar series, you should change its <code>Style</code> properties.
 
 You can change the fill and stroke in the following manner:
 
-<snippet id='chart-range-bar-visual'/>
-<snippet id='chart-range-bar-visual-swift'/>
 ```C#
 series.Style.Palette = new TKChartPalette();
 var paletteItem = new TKChartPaletteItem ();
@@ -79,18 +75,14 @@ chart.AddSeries(series);
 
 You can change the gap between the bars with the following code snippet:
 
-<snippet id='chart-range-bar-gap'/>
-<snippet id='chart-range-bar-gap-swift'/>
 ```C#
 series.GapLength = 0.5f;
 ```
 
 <img src="../../images/chart-series-rangebar004.png" />
 
-If you need to limit the height of the bars you can set the series <code>maxBarHeight</code> and <code>minBarHeight</code> properties. These properties allow you to have required minimum and possible maximum height for your series.
+If you need to limit the height of the bars you can set the series <code>MaxBarHeight</code> and <code>MinBarHeight</code> properties. These properties allow you to have required minimum and possible maximum height for your series.
 
-<snippet id='chart-range-bar-height'/>
-<snippet id='chart-range-bar-height-swift'/>
 ```C#
 series.MinBarHeight = 20;
 series.MaxBarHeight = 50;

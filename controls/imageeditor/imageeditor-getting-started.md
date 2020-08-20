@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started with Xamarin.Forms ImageEditor Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik ImageEditor for Xamarin control.
 position: 1
 slug: imageeditor-getting-started
@@ -25,7 +25,9 @@ Take a look at these articles and follow the instructions to setup your app:
 
 You have two options:
 
-* Add the Telerik UI for Xamarin Nuget packages following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+* Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+
+If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadImageEditor control you have to install the **Telerik.UI.for.Xamarin.ImageEditor** nuget package. This nuget will automatically refer the *Telerik.UI.for.Xamarin.Common*, *Telerik.UI.for.Xamarin.Primitives*, *Telerik.UI.for.Xamarin.DataControls*, *SkiaSharp* and *ShiaSharp.Views.Forms* nuget packages.
 
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadImageEditor** component:
 

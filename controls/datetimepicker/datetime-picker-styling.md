@@ -1,6 +1,6 @@
 ---
 title: Styling
-page_title: Styling
+page_title: Xamarin DateTime Picker Documentation | Styling
 description: Check our &quot;Styling&quot; documentation article for Telerik DateTimePicker for Xamarin control.
 position: 8
 slug: datetime-picker-styling
@@ -20,16 +20,16 @@ Date and Time Picker control for Xamarin provides the following Style properties
 * **TabStripStyle**(of type *Style* with target type **telerikPrimitives:TabViewHeader**)
 * **TabStripItemStyle**(of type *Style* with target type **telerikInput:DateTimeSelectorTabStripItem**)
 
-PickerContentView class exposes the following properties for styling the DatePicker Border and Background Color:
+PickerContentView class exposes the following properties for styling the DateTimePicker Border and Background Color:
 
 * **BackgroundColor**(*Xamarin.Forms.Color*): Defines the background color of the picker.
 * **BorderColor**(*Xamarin.Forms.Color*): Defines the border color of the picker.
-* **BorderThichness**(*Xamarin.Forms.Thickness*): Specifies the border thickness of the picker.
+* **BorderThickness**(*Xamarin.Forms.Thickness*): Specifies the border thickness of the picker. Default value is `new Thickness(0,0,0,1)`.
 * **CornerRadius**(*Xamarin.Forms.Thinckness*): Specifies the corner radius of the picker.
 
 ## Popup Styling
 
-Using the **SelectorSettings** property (*of type Telerik.XamarinForms.Input.PickerPopupSelectorSettings*) of the DatePicker you can modify the appearance of the dialog (popup). PickerPopupSelectorSettings class exposes the following Style properties:
+Using the **SelectorSettings** property (*of type Telerik.XamarinForms.Input.PickerPopupSelectorSettings*) of the DateTimePicker you can modify the appearance of the dialog (popup). PickerPopupSelectorSettings class exposes the following Style properties:
 
 * **PopupViewStyle**(of type *Style* with target type **telerikInput:PickerPopupContentView**): Defines the popup view style.
 * **HeaderStyle**(of type *Style* with target type **telerikInput:PickerPopupHeaderView**): Defines the popup header style.
@@ -46,6 +46,7 @@ The SelectorSetting also provides the following properties for popup customizati
 	* When *IsPopupModal="False"* the popup could be closed when clicking outside the popup.
 * **HeaderLabelText**(*string*): Specifies the text visualized in the popup header.
 * **IsHeaderVisible**(*bool*): Specifies whether the Popup header is currently visible. By default the valuse is *False*.
+* **IsFooterVisible**(*bool*): Specifies whether the Popup footer is currently visible. By default the valuse is *True*.
 * **AcceptButtonText**(*string*): Defines the text visualized for the accept button. By default the text is *OK*.
 * **CancelButtonText**(*string*): Defines the text visualized for the cancel button. By default the text is *Cancel*. 
 

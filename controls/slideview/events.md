@@ -1,6 +1,6 @@
 ---
 title: Events
-page_title: Events
+page_title: Xamarin SlideView Documentation | Events
 description: Check our &quot;Events&quot; documentation article for Telerik SlideView for Xamarin control.
 position: 6
 slug: slideview-events

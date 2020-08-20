@@ -1,6 +1,6 @@
 ---
 title: Looping
-page_title: Looping
+page_title: Xamarin List Picker Documentation | Looping
 description: Check our &quot;Looping&quot; documentation article for Telerik ListPicker for Xamarin control.
 position: 2
 slug: list-picker-looping
@@ -36,6 +36,5 @@ This is how the Looping functionality looks:
 
 - [Templates]({%slug list-picker-templates%})
 - [Styling]({%slug list-picker-styling%})
-- [Events]({%slug list-picker-events%})
-- [Methods]({%slug list-picker-methods%})
+- [Selection]({%slug list-picker-selection%})
 - [Commands]({%slug list-picker-commands%})

@@ -1,6 +1,7 @@
 ---
 title: Visual Studio Item Templates
-page_title: Visual Studio Item Templates
+page_title: Visual Studio Item Templates on Windows
+description: Check our detailed documentation article for Visual Studio Item Templates on Windows. Find all you need to know in Xamarin.Forms installation and deployment documentation.
 slug: installation-visual-studio-item-templates
 position: 6
 ---

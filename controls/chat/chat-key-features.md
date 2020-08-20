@@ -1,6 +1,6 @@
 ---
 title: Key Features
-page_title: RadChat Key Features
+page_title: Xamarin Conversational UI Documentation | RadChat Key Features
 description: Check our &quot;Key Features&quot; documentation article for Telerik Chat for Xamarin control.
 position: 2
 slug: chat-key-features

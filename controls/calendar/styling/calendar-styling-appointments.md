@@ -1,6 +1,6 @@
 ---
 title: Appointments Styling
-page_title: Appointments Styling
+page_title: Xamarin Calendar Documentation | Appointments Styling
 description: Check our &quot;Appointments Styling&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 4
 slug: calendar-styling-appointments

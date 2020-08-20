@@ -1,6 +1,7 @@
 ---
 title: Download Product Files
 page_title: Download Product Files for Telerik UI for Xamarin
+description: Check our detailed documentation artile on how to download product files for Telerik UI for Xamarin. Find all you need to know in Xamarin.Forms installation and deployment documentation. 
 slug: download-product-files
 position: 2
 ---

@@ -1,6 +1,6 @@
 ---
 title: Commands
-page_title: Commands
+page_title: Xamarin ListView Documentation | Commands
 description: Check our &quot;Commands&quot; documentation article for Telerik ListView for Xamarin control.
 position: 13
 slug: listview-features-commands

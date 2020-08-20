@@ -1,6 +1,6 @@
 ---
 title: Commands
-page_title: Commands
+page_title: Xamarin TimeSpan Picker Documentation | Commands
 description: Check our &quot;Commands&quot; documentation article for Telerik TimeSpan Picker for Xamarin control.
 position: 7
 slug: timespan-picker-commands

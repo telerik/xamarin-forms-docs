@@ -1,11 +1,12 @@
 ---
 title: Xamarin Demo Applications
-page_title: Telerik UI for Xamarin Documentation | Demo Applications
+page_title: SDK Browser application - Xamarin App Demos | Telerik UI for Xamarin
+description: The SDKBrowser is a set of various examples that explain how to use the features of a control without the complexity that extra styling and polish can add to an application.
 slug: developer-focused-examples
 position: 8
 ---
 
-# Xamarin Demo Applications
+# Telerik UI for Xamarin Demo Applications
 
 **Telerik UI for Xamarin** provides an easy-to-use infrastructure with many fully featured examples demonstrating our Xamarin controls. You can review the source code of each example and get familiar with the configuration possibilities that each provides.
 
@@ -18,7 +19,7 @@ The "Telerik UI for Xamarin Samples" is the application you can find in the app 
 The application can be accessed in the following ways:
 
 * It can be found on your computer in the **/[installation-path]/Telerik UI for Xamarin [version]/QSF/** folder;
-* You can explore the code directly in the [Samples Application repository on GitHub](https://github.com/telerik/telerik-xamarin-forms-samples/tree/master/_Samples%20Application);
+* You can explore the code directly in the [Samples Application repository on GitHub](https://github.com/telerik/telerik-xamarin-forms-samples/tree/master/QSF);
 * You can install it from the corresponding app store ([Google Play](https://play.google.com/store/apps/details?id=com.telerik.xamarin&hl=en), [Apple App Store](https://apps.apple.com/dm/app/telerik-ui-for-xamarin-examples/id1083924868) or [Windows Store](https://www.microsoft.com/en-us/p/telerik-ui-for-xamarin-demo/9pld1kn2tcxs)).
 
 The image below shows the Samples application main view with all the Telerik UI for Xamarin controls, there are **Latest** and **Featured** sections to give you quick overview of the features and components recently introduced.
@@ -52,7 +53,11 @@ Clicking on any control will navigate to a page containing categories with all t
 
 ## Native-only Examples
 
-Solutions that show how to use the controls when developing through **Xamarin.Android** or **Xamarion.iOS** are available in the  **/[installation-path]/Telerik UI for Xamarin [version]/Examples/** folder as well. Respectively, they are separated in different folders - iOS and Android. 
+Solutions that show how to use the controls when developing through **Xamarin.Android** or **Xamarin.iOS** are included in the Telerik UI for Xamarin zip file provided for manual installation. 
+
+Telerik_UI_for_Xamarin_[version]_[license].zip, where [version] marks the release and [license] is replaced with Dev or Trial depending on the license, is available for download from the [Downloads section of your Telerik account](https://www.telerik.com/account/product-download?product=UIXAM). Unzip the archive and go to Examples folder - Xamarin.Android and Xamarin.iOS solutions are available in separate folders - Android and iOS, respectively.
+
+In addition, the native-only examples are included as part of the [Telerik UI for Xamarin MSI installation]({%slug install-msi%}). You can find the solutions in the  "[installation-path]/Telerik UI for Xamarin [version]/Examples" folder. 
 
 Visit the [Native Controls Wrappers]({%slug native-controls-overview%}) section for more information on Telerik Xamarin.Android and Xamarin.iOS components.
 

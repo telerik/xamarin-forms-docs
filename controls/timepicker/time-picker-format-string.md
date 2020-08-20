@@ -1,12 +1,12 @@
 ---
 title: Time Format Strings
-page_title: Time Format Strings
+page_title: Xamarin Time Picker Documentation | Time Format Strings
 description: Check our &quot;Time Format Strings&quot; documentation article for Telerik TimePicker for Xamarin control.
 position: 2
 slug: time-picker-format-string
 ---
 
-# String Format
+# Spinner Format
 
 Time Picker for Xamarin allows you to use standard or custom time format strings through the SpinnerFormat property. Depending on what format is set, the picker visualizes spinner controls with prepopulated values to be picked.
 

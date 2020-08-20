@@ -1,6 +1,6 @@
 ---
 title: Key Features
-page_title: Key Features
+page_title: Xamarin AutoCompleteView Documentation | Key Features
 description: Check our &quot;Key Features&quot; documentation article for Telerik AutoCompleteView for Xamarin control.
 position: 2
 slug: autocompleteview-key-features

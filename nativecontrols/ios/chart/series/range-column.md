@@ -3,16 +3,14 @@ title: Range Column
 page_title: Range Column Series
 ---
 
-# Chart Series: Range Column
+## Chart for Xamarin.iOS: Range Column Series
 
-<code>TKChartRangeColumnSeries</code> are used to visualize data points as column blocks where the height of each column denotes the difference between data point's low and high value. The code snippet below demonstrates how to create range column series.
+<code>TKChartRangeColumnSeries</code> are used to visualize data points as column blocks where the height of each column denotes the difference between data point's low and high value. 
 
 ## Configure clustering of range column series
 
 If you want to cluster multiple range column series side by side, they should use a shared x-axis:
 
-<snippet id='chart-range-col-cluster'/>
-<snippet id='chart-range-col-cluster-swift'/>
 ```C#
 var lowValues = new NSNumber[] {
     new NSNumber (33), new NSNumber (29),
@@ -59,12 +57,10 @@ chart.AddSeries(series2);
 
 ## Configure visual appearance
 
-If you want to customize the appearance of a range column series, you should change its <code>style</code> properties.
+If you want to customize the appearance of a range column series, you should change its <code>Style</code> properties.
 
 You can change the fill and stroke in the following manner:
 
-<snippet id='chart-range-col-visual'/>
-<snippet id='chart-range-col-visual-swift'/>
 ```C#
 series.Style.Palette = new TKChartPalette();
 var paletteItem = new TKChartPaletteItem ();
@@ -77,15 +73,13 @@ series.Style.Palette.AddPaletteItem (paletteItem);
 
 You can change the gap between the columns with the following code snippet:
 
-<snippet id='chart-range-col-gap'/>
-<snippet id='chart-range-col-gap-swift'/>
 ```C#
 series.GapLength = 0.5f;
 ```
 
 <img src="../../images/chart-series-rangecolumn004.png" />
 
-If you need to limit the width of the columns you can set the series <code>maxColumnWidth</code> and <code>minColumnWidth</code> properties. These properties allow you to have required minimum and possible maximum width for your series.
+If you need to limit the width of the columns you can set the series <code>MaxColumnWidth</code> and <code>MinColumnWidth</code> properties. These properties allow you to have required minimum and possible maximum width for your series.
 
 <snippet id='chart-range-col-width'/>
 <snippet id='chart-range-col-width-swift'/>

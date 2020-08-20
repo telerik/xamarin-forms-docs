@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization
+page_title: Xamarin DateTime Picker Documentation | Localization
 description: Check our &quot;Localization&quot; documentation article for Telerik DateTimePicker for Xamarin control.
 position: 4
 slug: datetime-picker-localization

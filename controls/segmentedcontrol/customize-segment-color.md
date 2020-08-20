@@ -1,6 +1,6 @@
 ---
 title: Customize Segment Colors
-page_title: Customize Segment Colors
+page_title: Xamarin SegmentedControl Documentation | Customize Segment Colors
 description: Check our &quot;Customize Segment Colors&quot; documentation article for Telerik SegmentedControl for Xamarin control.
 position: 4
 slug: segmentedcontrol-features-customizesegmentcolors

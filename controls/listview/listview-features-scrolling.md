@@ -1,6 +1,6 @@
 ---
 title: Scrolling
-page_title: Scrolling
+page_title: Xamarin ListView Documentation | Scrolling
 description: Check our &quot;Scrolling&quot; documentation article for Telerik ListView for Xamarin control.
 position: 9
 slug: listview-features-scrolling

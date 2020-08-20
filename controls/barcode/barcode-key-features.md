@@ -1,6 +1,6 @@
 ---
 title: Key Features
-page_title: Key Features
+page_title: Xamarin Barcode Documentation | Key Features
 description: Check our &quot;Key Features&quot; documentation article for Telerik Barcode for Xamarin control.
 position: 2
 slug: barcode-key-features

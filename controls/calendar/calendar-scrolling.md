@@ -1,6 +1,6 @@
 ---
 title: Programmatic Scrolling
-page_title: Programmatic Scrolling
+page_title: Xamarin Calendar Documentation | Programmatic Scrolling
 description: Check our &quot;Programmatic Scrolling&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 9
 slug: calendar-scrolling

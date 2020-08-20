@@ -1,6 +1,6 @@
 ---
 title: Selection
-page_title: Selection
+page_title: Xamarin ListView Documentation | Selection
 description: Check our &quot;Selection&quot; documentation article for Telerik ListView for Xamarin control.
 position: 3
 slug: listview-features-selection

@@ -1,6 +1,6 @@
 ---
 title: Selection
-page_title: Selection
+page_title: Xamarin DateTime Picker Documentation | Selection
 description: Check our &quot;Selection&quot; documentation article for Telerik DateTimePicker for Xamarin control.
 position: 5
 slug: datetime-picker-selection

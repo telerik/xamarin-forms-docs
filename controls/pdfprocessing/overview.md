@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Xamarin PdfProcessing Documentation | Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik PdfProcessing for Xamarin.
 description: Overview
 slug: radpdfprocessing-overview
@@ -57,7 +57,9 @@ The document model of the library provides support for:
 
 You have two options to add the required Telerik references to your Xamarin.Forms app in order to use **RadPdfProcessing**:
 
-* Add the Telerik UI for Xamarin Nuget packages following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+* Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+
+If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadPdfProcessing you have to install the *Telerik.Documents.Core*, *Telerik.Documents.Fixed* and *Telerik.Zip* nuget packages.
 
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for RadPdfProcessing:
 

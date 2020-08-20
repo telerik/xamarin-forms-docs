@@ -1,6 +1,6 @@
 ---
 title: Customize the Control
-page_title: Customize the Control
+page_title: Xamarin SlideView Documentation | Customize the Control
 description: Check our &quot;Customize the Control&quot; documentation article for Telerik SlideView for Xamarin control.
 position: 3
 slug: sideview-customize-the-control
@@ -10,7 +10,7 @@ slug: sideview-customize-the-control
 
 **RadSlideView** has several properties which you can use to customize its appearance and behavior. This article lists them briefly.
 
-### Customizing the indicators
+## Customizing the indicators
 
 The indicators are the little ellipses displayed under the selected view used for switching between the views. RadSlideView provides various options for customzing the look of the indicators via the following properties:
 
@@ -40,7 +40,7 @@ And the result:
 
 ![SlideView Indicators](images/slideview-custom-indicators.png)
 
-### Customizing the slide buttons
+## Customizing the slide buttons
 
 The slide buttons can be customized via the following properties:
 
@@ -50,7 +50,7 @@ The slide buttons can be customized via the following properties:
 
 - **SlideButtonsSize**: This property sets the buttons size.
 
-### Customizing the content alignment
+## Customizing the content alignment
 
 You can set the alignment of the content of the SlideView item via the following properties:
 
@@ -60,20 +60,23 @@ You can set the alignment of the content of the SlideView item via the following
 
 >important HorizontalContentOptions and VerticalContentOptions are respected only when there isn't ContentView or Template defined. In other cases, you would need to handle the content alignment inside the View/Template respectively.
 
+## Add page spacing
 
-### Disabling the animation
+The control allows you to define a spacing between each slide using the **PageSpacingProperty**(*int*). 
+
+## Disabling the animation
 
 The control supports a built-in sliding animation which is enabled by default. To disable it you can set the control's **IsAnimated** property to False.
 
-### Disabling swiping
+## Disabling swiping
 
 You can disable the swiping and allow the end user to change the view only with the slide buttons. To do this set the **IsSwipingEnabled** property to False.
 
-### Enabling infinity scrolling
+## Enabling infinity scrolling
 
 By default when you reach to the last view, the 'next' slide button won't do anything. You can alter this and allow repeating of the views when you reach the last view, via the **IsInfiniteScrollingEnabled** property.
 
-### Setting orientation
+## Setting orientation
 
 You change the orientation of the slide animation via the **Orientation** property of RadSlideView.
 

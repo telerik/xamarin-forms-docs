@@ -4,11 +4,11 @@ slug: ios-chart-overview
 position: .1
 ---
 
-# Chart: Overview
+## Chart for Xamarin.iOS: Overview
 
-TKChart is a versatile charting component that offers full customization, great performance and intuitive object model. Its API allows creating complex charts with stunning animations and appearance.
+RadChart for Xamarin.iOS is a versatile charting component that offers full customization, great performance and intuitive object model. Its API allows creating complex charts with stunning animations and appearance.
 
-<img src="../images/chart-overview001.png"/>
+![](../images/chart-overview001.png)
 
 TKChart main features include:
 

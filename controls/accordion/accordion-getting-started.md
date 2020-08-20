@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started
-description: Check our &quot;Getting Started&quot; documentation article for Telerik Accordion for Xamarin control.
+page_title: Getting Started with Xamarin.Forms Accordion Control
+description: Check our detailed Xamarin.Forms documentation article for Getting Started. Find all you need to know about Xamarin Accordion control. 
 position: 1
 slug: accordion-getting-started
 ---
@@ -25,7 +25,9 @@ Take a look at these articles and follow the instructions to setup your app:
 
 You have two options:
 
-* Add the Telerik UI for Xamarin Nuget packages following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+* Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic. 
+
+If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadAccordion control you have to install the **Telerik.UI.for.Xamarin.Primitives** nuget package. This nuget will automatically refer the *Telerik.UI.for.Xamarin.Common* and *Telerik.UI.for.Xamarin.SkiaSharp* nuget packages.
 
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadAccordion** component:
 
@@ -57,7 +59,7 @@ The snippet below shows a simple RadAccordion definition:
 In addition to this, you need to add the following namespace:
 
 ```XAML
-xmlns:telerikBusyIndicator="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
 xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
 ```
 ```C#

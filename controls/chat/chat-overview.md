@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: RadChat Overview
+page_title: Xamarin Conversational UI Documentation | RadChat Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik Chat for Xamarin control.
 position: 0
 slug: chat-overview

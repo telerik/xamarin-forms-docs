@@ -4,12 +4,12 @@ page_title: Area Series
 position: 1
 ---
 
-# Chart Series: Area
+## Chart for Xamarin.iOS: Area Series
 
-As a derivative of <code>TKChartLineSeries</code> series, <code>TKChartAreaSeries</code> plots its data points in line. Once positioned on a plane the points are connected to form a line. Further, the area enclosed between this line and the axis is filled. Below is a sample snippet that demonstrates how to set up two Area series:
+As a derivative of <code>TKChartLineSeries</code> series, <code>TKChartAreaSeries</code> plots its data points in line. Once positioned on the plot area the points are connected to form a line. Further, the area enclosed between this line and the axis is filled. 
 
-<snippet id='chart-area'/>
-<snippet id='chart-area-swift'/>
+Below is a sample snippet that demonstrates how to set up two Area series:
+
 ```C#
 var pointsWithCategoriesAndValues = new List<TKChartDataPoint> ();
 var pointsWithCategoriesAndValues2 = new List<TKChartDataPoint> ();
@@ -30,7 +30,7 @@ chart.AddSeries (new TKChartAreaSeries (pointsWithCategoriesAndValues.ToArray ()
 chart.AddSeries (new TKChartAreaSeries (pointsWithCategoriesAndValues2.ToArray ()));
 ```
 
-<img src="../../images/chart-series-area001.png"/>
+![](../../images/chart-series-area001.png)
 
 ## Configure stacking of area series
 
@@ -38,8 +38,6 @@ The <code>TKChartAreaSeries</code> can be combined by using different stack mode
 
 The Stack plots the points on top of each other:
 
-<snippet id='chart-stack-area'/>
-<snippet id='chart-stack-area-swift'/>
 ```C#
 var stackInfo = new TKChartStackInfo (new NSNumber (1), TKChartStackMode.Stack);
 
@@ -55,22 +53,16 @@ chart.AddSeries (seriesForExpenses);
 chart.EndUpdates ();
 ```
 
-<img src="../../images/chart-series-area004.png"/>
+![](../../images/chart-series-area004.png)
 
 The Stack100 displays the value as percent:
 
-<snippet id='chart-stack-area-100'/>
-<snippet id='chart-stack-area-100-swift'/>
-<snippet id='chart-stack-area-100-cs'/>
-
-<img src="../../images/chart-series-area005.png"/>
+![](../../images/chart-series-area005.png)
 
 ## Configure visual appearance of area series
 
-If you want to change the series' fill and stroke, you should use the following code snippet:
+If you want to change the series' fill and stroke, you should modify the corresponding properties of the <code>TKChartPaletteItem</code>:
 
-<snippet id='chart-style-fill'/>
-<snippet id='chart-style-fill-swift'/>
 ```C#
 series.Style.Palette = new TKChartPalette ();
 TKChartPaletteItem palleteItem = new TKChartPaletteItem ();

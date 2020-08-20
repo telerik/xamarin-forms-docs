@@ -1,6 +1,6 @@
 ---
 title: Control Template
-page_title: Control Template
+page_title: Xamarin NumericInput Documentation | Control Template
 description: Check our &quot;Control Template&quot; documentation article for Telerik NumericInput for Xamarin control.
 position: 3
 slug: numericinput-control-template

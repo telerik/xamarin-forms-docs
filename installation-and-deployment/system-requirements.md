@@ -1,11 +1,12 @@
 ---
 title: System Requirements
 page_title: System Requirements for using Telerik UI for Xamarin.Forms
+description: Check our detailed documentation artile on the system requirements for using Telerik UI for Xamarin. Find all you need to know in Xamarin.Forms instalation and deployment documentation.
 slug: system-requirements
 position: 1
 ---
 
-# System Requirements
+# System Requirements for Telerik UI for Xamarin
 
 In order to develop applications with **Telerik UI for Xamarin** you need to have the following development tools installed:
 
@@ -25,7 +26,6 @@ In order to develop applications with **Telerik UI for Xamarin** you need to hav
 	> Before proceeding, please make sure the following Individual components are included:
 	>	* Xamarin
 	>	* Text Template Transformation
-	>	* .NET Portable Library targeting pack
 
 	>tip For more detailed instructions go to [Installing Xamarin in Visual Studio on Windows](https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/installation/windows) topic in Xamarin documentation.
  

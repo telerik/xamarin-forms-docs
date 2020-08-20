@@ -1,6 +1,6 @@
 ---
 title: Editing
-page_title: Editing
+page_title: Xamarin DataGrid Documentation | Editing
 description: Check our &quot;Editing&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 4
 slug: datagrid-editing

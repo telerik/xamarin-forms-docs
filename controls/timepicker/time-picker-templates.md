@@ -1,6 +1,6 @@
 ---
 title: Templates
-page_title: Templates
+page_title: Xamarin Time Picker Documentation | Templates
 description: Check our &quot;Templates&quot; documentation article for Telerik TimePicker for Xamarin control.
 position: 3
 slug: time-picker-templates

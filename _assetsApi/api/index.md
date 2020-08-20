@@ -1,3 +1,10 @@
+---
+title: Telerik UI for Xamarin API Reference
+page_title: Telerik UI for Xamarin API Reference
+description: Full list and descriptions of all public available classes, methods and properties of the Telerik UI for Xamarin product. Check our Xamarin.Forms API Reference documentation.
+position: 0
+---
+
 <style>
 article {
   background: transparent !important;
@@ -83,6 +90,7 @@ article:not(.api-reference)>p:first-child, article:not(.api-reference) h1+p {
 </style>
 
 # Telerik UI for Xamarin API Reference
+
 The API reference section of the documentation contains a list and descriptions of all public available classes, methods and properties of the Telerik UI for Xamarin product.
 
 > This documentation refers to the latest version of Telerik UI for Xamarin.

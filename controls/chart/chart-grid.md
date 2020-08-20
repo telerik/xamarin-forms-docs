@@ -1,6 +1,6 @@
 ---
 title: CartesianChart Grid
-page_title: CartesianChart Grid
+page_title: Xamarin Chart Documentation | CartesianChart Grid
 description: Check our &quot;CartesianChart Grid&quot; documentation article for Telerik Chart for Xamarin control.
 slug: cartesian-chart-grid
 position: 8

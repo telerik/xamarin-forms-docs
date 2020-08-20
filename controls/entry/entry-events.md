@@ -1,6 +1,6 @@
 ---
 title: Events
-page_title: Events
+page_title: Xamarin Entry Documentation | Events
 description: Check our &quot;Events&quot; documentation article for Telerik Entry for Xamarin control.
 position: 3
 slug: entry-events

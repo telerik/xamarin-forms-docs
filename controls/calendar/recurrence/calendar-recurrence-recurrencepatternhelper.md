@@ -1,6 +1,6 @@
 ---
 title: RecurrencePatternHelper
-page_title: RecurrencePatternHelper
+page_title: Xamarin Calendar Documentation | RecurrencePatternHelper
 description: Check our &quot;RecurrencePatternHelper&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 3
 slug: calendar-recurrence-recurrencepatternhelper

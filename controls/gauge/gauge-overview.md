@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Xamarin Gauge Documentation | Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik Gauge for Xamarin control.
 position: 0
 slug: gauge-overview

@@ -1,6 +1,6 @@
 ---
 title: MultiDay View
-page_title: MultiDay View
+page_title: Xamarin Calendar Documentation | MultiDay View
 description: Check our &quot;MultiDay View&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 2
 slug: calendar-multidayview

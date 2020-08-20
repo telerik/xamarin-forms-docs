@@ -1,6 +1,6 @@
 ---
 title: RegEx Validation
-page_title: Mask Extensions
+page_title: Xamarin MaskedInput Documentation | Mask Extensions
 description: Check our &quot;RegEx Validation&quot; documentation article for Telerik MaskedInput for Xamarin control.
 position: 4
 slug: maskedinput-features-mask-extensions

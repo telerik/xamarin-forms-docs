@@ -1,6 +1,6 @@
 ---
 title: Commands
-page_title: Commands
+page_title: Xamarin MaskedInput Documentation | Commands
 description: Check our &quot;Commands&quot; documentation article for Telerik MaskedInput for Xamarin control.
 position: 6
 slug: maskedinput-features-commands

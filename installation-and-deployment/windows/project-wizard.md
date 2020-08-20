@@ -1,6 +1,7 @@
 ---
 title: Project Wizard for Visual Studio
 page_title: Telerik UI for Xamarin Project Wizard
+description: All you need to know about the project wizard for Visual Studio on Windows. Find all you need to know in Xamarin.Forms instalation and deployment documentation.
 slug: project-wizard
 position: 5
 previous_url: devtools/xamarin/installation-and-deployment/project-wizard

@@ -1,6 +1,6 @@
 ---
 title: Selection
-page_title: Selection
+page_title: Xamarin Time Picker Documentation | Selection
 description: Check our &quot;Selection&quot; documentation article for Telerik TimePicker for Xamarin control.
 position: 5
 slug: time-picker-selection

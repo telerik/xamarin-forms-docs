@@ -8,7 +8,7 @@ publish: true
 position: 0
 ---
 
-# RadChartView: Series Overview
+# Series Overview
 
 The data visualization in **RadChartView** is done by a hierarchy of classes that inherit from the **ChartSeries** class. Each series has a collection of data items which provide the data. Concrete series types are available for specific charts. For example, there is a set of **CartesianSeries** applicable in the context of a **RadCartesianChartView**.
 
@@ -29,81 +29,76 @@ The **CategoricalSeries** is an abstract class which is extended by series which
 
 #### Bindings
 
-The **CategoricalSeries** class contains **setCategoryBinding(DataPointBinding)** and **setValueBinding(DataPointBinding)** methods which accept a `DataPointBinding` object as a parameter which defines the way the 
+The **CategoricalSeries** class contains **CategoryBinding** and **ValueBinding** properties of type `DataPointBinding` - these properties define the way the 
 necessary information will be extracted from each data item. For example if our data item type is defined as follows:
 
-
 ```C#
-	public class MonthResult : Java.Lang.Object {
+public class MonthResult : Java.Lang.Object {
 
-		public double Result { get; set; }
-		public String Month { get; set; }
+	public double Result { get; set; }
+	public String Month { get; set; }
 
-		public MonthResult(String month, double result) {
-			this.Month = month;
-			this.Result = result;
-		}
+	public MonthResult(String month, double result) {
+		this.Month = month;
+		this.Result = result;
 	}
+}
 ```
 
 If we want to use the result of the data item as a value for our data points that will be visualized by the chart, we can define the `DataPointBinding` object for the value like this:
 
-
 ```C#
-	class MonthResultDataBinding : DataPointBinding {
+class MonthResultDataBinding : DataPointBinding {
 
-		private string propertyName;
+	private string propertyName;
 
-		public MonthResultDataBinding(string propertyName)
-		{
-			this.propertyName = propertyName;
-		}
-
-		public override Java.Lang.Object GetValue (Java.Lang.Object p0)
-		{
-			if(propertyName == "Month")
-			{
-				return ((MonthResult)(p0)).Month;
-			}
-			return ((MonthResult)(p0)).Result;
-		}
+	public MonthResultDataBinding(string propertyName)
+	{
+		this.propertyName = propertyName;
 	}
+
+	public override Java.Lang.Object GetValue (Java.Lang.Object p0)
+	{
+		if(propertyName == "Month")
+		{
+			return ((MonthResult)(p0)).Month;
+		}
+		return ((MonthResult)(p0)).Result;
+	}
+}
 ```
 
 Similarly, if we want to use the month of the data item as a category for our data points that will be visualized by the chart, we can define the `DataPointBinding` object for the category like this:
 
-
 ```C#	
-	class MonthResultDataBinding : DataPointBinding {
+class MonthResultDataBinding : DataPointBinding {
 
-		private string propertyName;
+	private string propertyName;
 
-		public MonthResultDataBinding(string propertyName)
-		{
-			this.propertyName = propertyName;
-		}
-
-		public override Java.Lang.Object GetValue (Java.Lang.Object p0)
-		{
-			if(propertyName == "Month")
-			{
-				return ((MonthResult)(p0)).Month;
-			}
-			return ((MonthResult)(p0)).Result;
-		}
+	public MonthResultDataBinding(string propertyName)
+	{
+		this.propertyName = propertyName;
 	}
+
+	public override Java.Lang.Object GetValue (Java.Lang.Object p0)
+	{
+		if(propertyName == "Month")
+		{
+			return ((MonthResult)(p0)).Month;
+		}
+		return ((MonthResult)(p0)).Result;
+	}
+}
 ```
 
 Then, we can use these objects with series that extend **CategoricalSeries**, for example **LineSeries**:
 
 
 ```C#
-	LineSeries lineSeries = new LineSeries();
-	lineSeries.CategoryBinding = new MonthResultDataBinding ("Month");
-	lineSeries.ValueBinding = new MonthResultDataBinding ("Result");
+LineSeries lineSeries = new LineSeries();
+lineSeries.CategoryBinding = new MonthResultDataBinding ("Month");
+lineSeries.ValueBinding = new MonthResultDataBinding ("Result");
 ```
-
-If you need to retrieve the current `DataPointBinding` objects for the value and category bindings, you can use the **getValueBinding()** and **getCategoryBinding()** respectively.
 
 #### Combine Mode
 
@@ -114,12 +109,11 @@ When the series in a **RadCartesianChartView** are more than one, a few differen
 * **Stack**: Series form stacks.
 * **Stack100**: Series form stacks that occupy 100% of the plot area and the characteristic size of each series is proportional to its relative value.
 
-The default combine mode is `None`. You can get the current value through the **getCombineMode()** method and set a new value through **setCombineMode(ChartSeriesCombineMode value)**. For example if you have two **BarSeries**, you need to set the combine mode to both of them if you want to make them stacked:
-
+The default combine mode is `None`. You can modify the current value through the **CombineMode** property. For example if you have two **BarSeries**, you need to set the combine mode to both of them if you want to make them stacked:
 
 ```C#
-	barSeries1.CombineMode = ChartSeriesCombineMode.Stack;
-	barSeries2.CombineMode = ChartSeriesCombineMode.Stack;
+barSeries1.CombineMode = ChartSeriesCombineMode.Stack;
+barSeries2.CombineMode = ChartSeriesCombineMode.Stack;
 ```
 
 Here's how a chart with two **BarSeries** looks with the different combine modes:
@@ -130,7 +124,7 @@ Here's how a chart with two **BarSeries** looks with the different combine modes
 
 The **RangeSeriesBase** is an abstract class which is extended by series which can present categorical data with more than one value property. The data needs not only category, but also 2 value properties: low value and high value. The series visaulize the whole range between the low value and the high value.
 
-The binding mechanizm in **RangeSeriesBase** is the same as in **CategoricalSeries**. The methods that set the bindings are **setCategoryBinding(DataPointBinding)**, **setHighBinding(DataPointBinding)** and **setLowBinding(DataPointBinding)**. These series need two value bindings &mdash; low and high &mdash; in order to determine the start point and the end point of each data point.
+The binding mechanism in **RangeSeriesBase** is the same as in **CategoricalSeries**. The methods that set the bindings are **setCategoryBinding(DataPointBinding)**, **setHighBinding(DataPointBinding)** and **setLowBinding(DataPointBinding)**. These series need two value bindings &mdash; low and high &mdash; in order to determine the start point and the end point of each data point.
 
 ## **RadCartesianChartView** Series
 

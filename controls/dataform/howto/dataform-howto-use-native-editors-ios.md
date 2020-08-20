@@ -1,6 +1,6 @@
 ---
 title: Email and Password editors in iOS
-page_title: Email and Password editors in iOS
+page_title: Xamarin DataForm Documentation | Email and Password editors in iOS
 description: Check our &quot;Email and Password editors in iOS&quot; documentation article for Telerik DataForm for Xamarin control.
 slug: dataform-howto-use-native-editors-ios
 position: 1

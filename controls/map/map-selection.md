@@ -1,6 +1,6 @@
 ---
 title: Selection
-page_title: Map Selection
+page_title: Xamarin Map Documentation | Map Selection
 description: Check our &quot;Selection&quot; documentation article for Telerik Map for Xamarin control.
 position: 6
 slug: map-selection
@@ -19,6 +19,8 @@ The following members of the [ShapefileLayer]({% slug map-layers-shapefilelayer%
 
 * **SelectedShape** (of type *IShape*): Defines the currently selected shape instance. When multiple selection is enabled, this value is set to the first selected shape. 
 * **SelectedShapes** (of type *ObservableCollection&lt;IShape&gt;*): Reads the collection with the currently selected shapes. When the selection is single only one shape could be selected – thus the collection will have count = 1. 
+
+* **SelectedShapeStyle** (of type *MapShapeStyle*): Defines the way selected shape look through the provided StrokeWidth, StrokeColor and FillColor properties. For more details on the MapShapeStyle usage go to [Shapes Styling]({%slug map-styling-shapesstyles%}) topic.
 
 The next snippet shows how **SelectionMode** is applied:
 
@@ -51,4 +53,5 @@ Here is the result:
 ## See Also
 
 - [ShapefileLayer]({% slug map-layers-shapefilelayer%})
+- [Shapes Styling]({%slug map-styling-shapesstyles%})
 

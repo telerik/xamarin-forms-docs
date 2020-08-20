@@ -4,12 +4,10 @@ page_title: Column Series
 position: 3
 ---
 
-# Chart Series: Column
+## Chart for Xamarin.iOS: Column Series
 
 <code>TKChartColumnSeries</code> are used to visualize data points as column blocks where the height of each bar denotes the magnitude of its value. The following snippet demonstrates how to manually populate one Column series:
 
-<snippet id='chart-column'/>
-<snippet id='chart-column-swift'/>
 ```C#
 Random r = new Random ();
 List<TKChartDataPoint> list = new List<TKChartDataPoint> ();
@@ -27,14 +25,12 @@ series.MinColumnWidth = 20;
 chart.AddSeries(series);
 ```
 
-<img src="../../images/chart-series-column001.png"/>
+![](../../images/chart-series-column001.png)
 
 ## Configure clustering of column series
 
 If you want to cluster multiple column series side by side, they should use a shared x-axis:
 
-<snippet id='chart-column-cls'/>
-<snippet id='chart-column-cls-swift'/>
 ```C#
 Random r = new Random();
 for (int i = 0; i < 4; i++) {
@@ -51,16 +47,14 @@ for (int i = 0; i < 4; i++) {
 }
 ```
 
-<img src="../../images/chart-series-column002.png"/>
+![](../../images/chart-series-column002.png)
 
 ## Configure stacking of column series
 
-The <code>TKChartColumnSeries</code> can be combined by using different stack modes.
+The <code>TKChartColumnSeries</code> can be combined by using different stack modes, such as *Stack* and *Stack100*.
 
 The Stack plots the points on top of each other.
 
-<snippet id='chart-stack-area'/>
-<snippet id='chart-stack-area-swift'/>
 ```C#
 var stackInfo = new TKChartStackInfo (new NSNumber (1), TKChartStackMode.Stack);
 
@@ -76,24 +70,18 @@ chart.AddSeries (seriesForExpenses);
 chart.EndUpdates ();
 ```
 
-<img src="../../images/chart-series-column003.png"/>
+![](../../images/chart-series-column003.png)
 
 The Stack100 displays the value as percent.
 
-<snippet id='chart-stack-area-100'/>
-<snippet id='chart-stack-area-100-swift'/>
-<snippet id='chart-stack-area-100-cs'/>
-
-<img src="../../images/chart-series-column004.png"/>
+![](../../images/chart-series-column004.png)
 
 ## Configure visual appearance of column series
 
-If you want to customize the appearance of a column series, you should change its <code>style</code> properties.
+If you want to customize the appearance of a column series, you should change its <code>Style</code> properties.
 
 You can change the fill and stroke in the following manner:
 
-<snippet id='chart-column-visual'/>
-<snippet id='chart-column-visual-swift'/>
 ```C#
 series.Style.Palette = new TKChartPalette ();
 
@@ -104,24 +92,20 @@ series.Style.Palette.AddPaletteItem (paletteItem);
 chart.AddSeries (series);
 ```
 
-<img src="../../images/chart-series-column005.png"/>
+![](../../images/chart-series-column005.png)
 
-You can change the gap between columns with the <code>gapLength</code> property/
+You can change the gap between columns with the <code>GapLength</code> property.
 
-<snippet id='chart-gap'/>
-<snippet id='chart-gap-swift'/>
 ```C#
 series.GapLength = 0.6f;
 ```
 
-Note that the value should be between 0 and 1, where a value of 0 means that a bar would take the entire space between two ticks, while a value of 1 means the bar will have zero width as all the space should appear as a gap.
+>GapLength value should be between 0 and 1, where a value of 0 means that a bar would take the entire space between two ticks, while a value of 1 means the bar will have zero width as all the space should appear as a gap.
 
-<img src="../../images/chart-series-column006.png"/>
+![](../../images/chart-series-column006.png)
 
-If you need to limit the width of the columns you can set the series <code>maxColumnWidth</code> and <code>minColumnWidth</code> properties. These properties allow you to have required minimum and possible maximum width for your series.
+If you need to limit the width of the columns you can set the series <code>MaxColumnWidth</code> and <code>MinColumnWidth</code> properties. These properties allow you to have required minimum and possible maximum width for your series.
 
-<snippet id='chart-width-cl'/>
-<snippet id='chart-width-cl-swift'/>
 ```C#
 series.MaxColumnWidth = 50;
 series.MinColumnWidth = 20;

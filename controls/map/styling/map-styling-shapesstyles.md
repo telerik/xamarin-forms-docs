@@ -1,6 +1,6 @@
 ---
 title: Shapes Styling
-page_title: Shapes Styling
+page_title: Xamarin Map Documentation | Shapes Styling
 description: Check our &quot;Shapes Styling&quot; documentation article for Telerik Map for Xamarin control.
 position: 1
 slug: map-styling-shapesstyles
@@ -8,12 +8,11 @@ slug: map-styling-shapesstyles
 
 # Shapes Styling
 
-The **ShapefileLayer** exposes a **ShapeStyle** as well as a **ShapeStyleSelector** properties that will help achieve the desired look &amp; feel of the shapes on the map.
+The **ShapefileLayer** exposes **ShapeStyle**/**SelectedShapeStyle** as well as a **ShapeStyleSelector** properties that will help achieve the desired look &amp; feel of the shapes on the map.
 
-## Shapes Style
+## Shapes Styles
 
-**ShapeStyle** property is of type *MapShapeStyle* which provides the following styling options for the shapes:
-MapShapeLabelStyle provides the following properties you could use to customize the way labels on the map will look:
+**ShapeStyle** and **SelectedShapeStyle** properties are of type *MapShapeStyle* which provides the following styling options for the shapes:
 
 * StrokeWidth;
 * StrokeColor;

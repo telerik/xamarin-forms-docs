@@ -1,6 +1,7 @@
 ---
 title: Using Telerik UI for Xamarin on Windows
 page_title: Getting Started with Telerik UI for Xamarin on Windows
+description: Check our detailed documentation artile on how to get started with Telerik UI for Xamarin on Windows. Find all you need to know about Xamarin.Forms installation and deployment documentation.
 slug: getting-started-windows
 position: 0
 ---

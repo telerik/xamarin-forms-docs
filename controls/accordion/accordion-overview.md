@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Xamarin Accordion Documentation | Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik Accordion for Xamarin control.
 position: 0
 slug: accordion-overview

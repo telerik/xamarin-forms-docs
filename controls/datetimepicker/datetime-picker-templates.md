@@ -1,6 +1,6 @@
 ---
 title: Templates
-page_title: Templates
+page_title: Xamarin DateTime Picker Documentation | Templates
 description: Check our &quot;Templates&quot; documentation article for Telerik DateTimePicker for Xamarin control.
 position: 3
 slug: datetime-picker-templates

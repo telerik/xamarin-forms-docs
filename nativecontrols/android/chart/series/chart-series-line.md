@@ -8,7 +8,7 @@ publish: true
 position: 1
 ---
 
-# RadChartView: LineSeries
+# LineSeries
 
 **RadCartesianChartView** visualizes each data item from the **LineSeries** and connects them with straight line segments. The **LineSeries** extend **CategoricalStrokedSeries**, so they are also **CategoricalSeries** and require one **CategoricalAxis** and one **LinearAxis**.
 
@@ -18,26 +18,25 @@ You can read from the [Getting Started]({% slug chart-gettingstarted %} "Read ho
 
 After you create the method for initialization of sample data, you can create a **RadCartesianChartView** with **LineSeries** by adding the following code to the **onCreate()** method of your Activity.
 
-
 ```C#
-	InitData();
+InitData();
 
-	RadCartesianChartView chartView = new RadCartesianChartView(this);
+RadCartesianChartView chartView = new RadCartesianChartView(this);
 
-	LineSeries lineSeries = new LineSeries();
-	lineSeries.CategoryBinding = new MonthResultDataBinding ("Month");
-	lineSeries.ValueBinding = new MonthResultDataBinding ("Result");
-	lineSeries.Data = (Java.Lang.IIterable)this.monthResults;
-	chartView.Series.Add(lineSeries);
+LineSeries lineSeries = new LineSeries();
+lineSeries.CategoryBinding = new MonthResultDataBinding ("Month");
+lineSeries.ValueBinding = new MonthResultDataBinding ("Result");
+lineSeries.Data = (Java.Lang.IIterable)this.monthResults;
+chartView.Series.Add(lineSeries);
 
-	CategoricalAxis horizontalAxis = new CategoricalAxis();
-	chartView.HorizontalAxis = horizontalAxis;
+CategoricalAxis horizontalAxis = new CategoricalAxis();
+chartView.HorizontalAxis = horizontalAxis;
 
-	LinearAxis verticalAxis = new LinearAxis();
-	chartView.VerticalAxis = verticalAxis;
+LinearAxis verticalAxis = new LinearAxis();
+chartView.VerticalAxis = verticalAxis;
 
-	ViewGroup rootView = (ViewGroup)FindViewById(Resource.Id.container);
-	rootView.AddView(chartView);
+ViewGroup rootView = (ViewGroup)FindViewById(Resource.Id.container);
+rootView.AddView(chartView);
 ```
 
 > This example assumes that your root container has id `container`
@@ -50,7 +49,7 @@ Here's the result:
 
 **LineSeries** extend **CategoricalStrokedSeries** which provide the following way to change their style:
 
-* **setStrokeColor(int)**: changes the color used to draw lines. In order to get the current value, use **getStrokeColor()**.
-* **setStrokeThickness(float)**: changes the width of the lines. In order to get the current value, use **getStrokeThickness()**.
+* **StrokeColor**: changes the color used to draw lines.
+* **StrokeThickness**: changes the width of the lines.
 
 You can also customize the appearance of **LineSeries** by using [Palettes]({% slug chart-palettes %} "Read how to use Palettes in RadChartView").

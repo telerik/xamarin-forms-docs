@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Getting Started with Xamarin.Forms Time Picker Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik TimePicker for Xamarin control.
 position: 1
 slug: time-picker-getting-started
@@ -12,7 +12,7 @@ This article will guide you through the steps needed to add a basic **RadTimePic
 
 * [Setting up the app](#1-setting-up-the-app)
 * [Adding the required Telerik references](#2-adding-the-required-telerik-references)
-* [Adding RadTimePicker control](3-adding-radtimepicker-control)
+* [Adding RadTimePicker control](#3-adding-radtimepicker-control)
 
 ## 1. Setting up the app
 
@@ -25,7 +25,9 @@ Take a look at these articles and follow the instructions to setup your app:
 
 You have two options:
 
-* Add the Telerik UI for Xamarin Nuget packages following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+* Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+
+If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadTimePicker control you have to install the **Telerik.UI.for.Xamarin.Input** nuget package. This nuget will automatically refer the Telerik.UI.for.Xamarin.Primitives, Telerik.UI.for.Xamarin.Common, and Telerik.UI.for.Xamarin.DataControls nuget packages.
 
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadTimePicker** component:
 

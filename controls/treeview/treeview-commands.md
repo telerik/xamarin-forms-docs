@@ -1,6 +1,6 @@
 ---
 title: Commands
-page_title: Commands
+page_title: Xamarin TreeView Documentation | Commands
 description: Check our &quot;Commands&quot; documentation article for Telerik TreeView for Xamarin control.
 position: 8
 slug: treeview-commands

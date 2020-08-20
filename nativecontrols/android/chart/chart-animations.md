@@ -9,26 +9,23 @@ position: 10
 publish: true
 ---
 
-# RadChartView: Animations
+# Animations
 
-In this article, you will learn to use the animations feature in **RadChartView for Android**.
+In this article, you will learn to use the animations feature in **RadChartView for Xamarin.Android**.
 
 ## Overview
 
 The animations for **RadChartView** are enabled by a class called **ChartAnimationPanel**. The animation panel is a custom layout to which the chart must be added.
-Developers can either use addView() to add the chart (this means the panel can also be configured through XML) and also through the setChart() method. For example:
 
-``` Java
-ChartAnimationPanel animationPanel = new ChartAnimationPanel(context);
-animationPanel.setChart(chart);
-// or animationPanel.addView(chart);
-```
+You can either use АddView() to add the ChartView instance (this means the panel can also be configured through XML) or also through the Chart property. For example:
+
 ```C#
-animationPanel.Chart = chart;
-// or animationPanel.AddView(chart);
+ChartAnimationPanel animationPanel = new ChartAnimationPanel(this.Activity);
+animationPanel.Chart = chartView;
+// or animationPanel.AddView(chartView);
 ```
 
-Then when the chart is added, developers have to add animations for each series. The animations are added with the animationPanel.addAnimation() method:
+Then when the ChartView is added, you have to add animations for each series. The animations are added with the animationPanel.AaddAnimation() method:
 
 ```C#
 animationPanel.AddAnimation(new ChartFadeAnimation(series));
@@ -43,7 +40,6 @@ provides its associated series to its child animations as will be shown later.
 The currently supported animations are ChartFadeAnimation, ChartTranslateAnimation, ChartRotateAnimation, ChartScaleAnimation and ChartAnimationGroup.
 
 ## ChartFadeAnimation
-
 
 ```C#
 ChartFadeAnimation fade = new ChartFadeAnimation(series);
@@ -62,7 +58,6 @@ translateAnimation.StartY = -200;
 
 ## ChartRotateAnimation
 
-
 ```C#
 ChartRotateAnimation rotateAnimation = new ChartRotateAnimation(series);
 rotateAnimation.StartAngle = -90f;
@@ -72,11 +67,9 @@ rotateAnimation.PivotY = 500;
 
 ## ChartAnimationGroup
 
-ChartAnimationGroup does not animate the chart by itself since it is a container for multiple animations.
-The child animations can be started either in SEQUENTIAL or CONCURRENT mode. This is done with the setSequenceMode() method.
-If the sequence mode is SEQUENTIAL the duration of group itself will be divided by the number of children and each child animation
-will be as long as the result from that division.
+ChartAnimationGroup does not animate the chart by itself since it is a container for multiple animations. The child animations can be started either in SEQUENTIAL or CONCURRENT mode. This is done with the SequenceMode property.
 
+If the sequence mode is SEQUENTIAL the duration of group itself will be divided by the number of children and each child animation will be as long as the result from that division.
 
 ```C#
 ChartAnimationGroup group = new ChartAnimationGroup(series);
@@ -87,18 +80,19 @@ group.AddAnimation(new ChartScaleAnimation());
 
 ## Common API
 
-Finally every animation has a common API. Each animation implements the ChartAnimationInterface which looks like this:
+Finally every animation has a common API. Each animation implements the IChartAnimation interface which looks like this:
 
 ```C#
-public interface ChartAnimation
-{
-	ViewPropertyAnimatorCompat start(SeriesAnimationView viewToAnimate);
-    void setInitialValues(SeriesAnimationView view);
-    long Duration {get; set;}
-    Interpolator Interpolator {get; set;}
-    long InitialDelay {get; set;}
+public interface IChartAnimation
+{	
+    long Duration {get; set;}  //defines the duration of the animation
+	long InitialDelay {get; set;} //delays the start of the animation
+    IInterpolator Interpolator {get; set;}  //defines the rate of change of the animation 
     ChartSeries Series {get;}
-    void AddAnimationFinishedListener(ChartAnimationFinishedListener listener);
-    void RemoveAnimationFinishedListener(ChartAnimationFinishedListener listener);
+	
+    void AddAnimationFinishedListener(IChartAnimationFinishedListener listener);
+    void RemoveAnimationFinishedListener(IChartAnimationFinishedListener listener);
+	void SetInitialValues(SeriesAnimationView view);
+	ViewPropertyAnimatorCompat Start(SeriesAnimationView viewToAnimate);  
 }
 ```

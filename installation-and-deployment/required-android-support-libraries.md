@@ -1,6 +1,7 @@
 ---
 title: Required Android Support Libraries
 page_title: Required Android Support Libraries
+description: Check our detailed documentation artile for which are the required Android support libraries. Find all you need to know in Xamarin.Forms instalation and deployment documentation.
 slug: required-android-support-libraries
 position: 5
 ---

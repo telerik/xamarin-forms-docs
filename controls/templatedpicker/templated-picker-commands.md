@@ -1,6 +1,6 @@
 ---
 title: Commands
-page_title: Commands
+page_title: Xamarin Templated Picker Documentation | Commands
 description: Check our &quot;Commands&quot; documentation article for Telerik TemplatedPicker for Xamarin control.
 position: 7
 slug: templated-picker-commands

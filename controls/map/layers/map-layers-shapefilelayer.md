@@ -1,6 +1,6 @@
 ---
 title: Shapefile Layer
-page_title: Map ShapefileLayer
+page_title: Xamarin Map Documentation | Map ShapefileLayer
 description: Check our &quot;Shapefile Layer&quot; documentation article for Telerik Map for Xamarin control.
 position: 1
 slug: map-layers-shapefilelayer

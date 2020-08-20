@@ -1,6 +1,7 @@
 ---
 title: Telerik NuGet Server
 page_title: Telerik NuGet Server
+description: Check our detailed documentation atricle on how to use Telerik UI for Xamarin NuGet packages.
 slug: telerik-nuget-server
 position: 8
 ---
@@ -13,7 +14,7 @@ The following steps demonstrate how users can take advantage of **Telerik NuGet 
 
 >You will find Nuget packages containing the standard and the lite assemblies - the latter have *Lite* in their names. Please take a look at the [Lite Assemblies]({%slug telerik-light-assemblies%}) topic for more details on the difference between them.
 
-## Visual Studio
+## Visual Studio for Windows
 
 <iframe width="800" height="400" src="https://www.youtube.com/embed/c3m_BLMXNDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -32,6 +33,8 @@ In the Source field users should fill in the address of the Telerik server (URL:
 The Telerik server is now ready to use. Users can go to their solution and open the solution package manager.
 
 ![](images/nuget-server/nuget-vs-manage-packages.png)
+
+### Add Telerik UI for Xamarin pack
 
 Users have to find the **Telerik.UI.for.Xamarin** package and install it to their projects following these steps:
 
@@ -66,7 +69,7 @@ In the Add Package Source dialog users should fill in the information of the Tel
 
 After the Telerik NuGet server is added users will be able to see the packages they are allowed to download in the Add Packages dialog. This will allow them to check the **Telerik UI for Xamarin** pack and add it into their projects.
 
-#### Add Telerik UI for Xamarin pack
+### Add Telerik UI for Xamarin pack
 
 Once the server is added users will be able to add to their projects any of the **Telerik NuGet** packages available for their license. One click on the settings icon of the “*Packages*” folder of any project will open the **Add Packages** dialog where the available Telerik packs will be listed.
 
@@ -83,8 +86,17 @@ If you're receiving this error when connecting to Telerik Nuget Server, you coul
 1. Scroll through all the entries until you find any that are for nuget.telerik.com;
 1. Once you find that entry, expand it and select "edit";
 1. Make sure the username and password are the same ones you use for your Telerik account (use the Email in the place of username) and click "Save".
+1. Make sure the URL does not have a trailing slash, it must be only `https://nuget.telerik.com/nuget`
 
 Now you can reopen Visual Studio and access the Telerik NuGet server. 
+
+#### Networking Problems
+
+Another common problem is that your machine (PC or DevOps agent) is behind a proxy. To check if you're experiencing a networking issue, open the following URL in your web browser:
+
+https://nuget.telerik.com/nuget/Search()?$filter=IsAbsoluteLatestVersion&searchTerm=%27Xamarin%27&includePrerelease=true&$skip=0&$top=100&semVerLevel=2.0.0. 
+
+After you enter your Telerik.com username and password, you should see an XML search result containing a list of all the Telerik.UI.for.Xamarin packages available with your license.
 
 
 ## See Also

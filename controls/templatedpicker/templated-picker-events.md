@@ -1,6 +1,6 @@
 ---
 title: Events
-page_title: Events
+page_title: Xamarin Templated Picker Documentation | Events
 description: Check our &quot;Events&quot; documentation article for Telerik TemplatedPicker for Xamarin control.
 position: 5
 slug: templated-picker-events
@@ -33,6 +33,6 @@ private void RadTemplatedPicker_SelectionChanged(object sender, System.EventArgs
 
 ## See Also
 
-- [Commands]({%slug list-picker-commands%})
-- [Methods]({%slug list-picker-methods%})
-- [Templates]({% slug list-picker-templates%})
+- [Commands]({%slug templated-picker-commands%})
+- [Methods]({%slug templated-picker-methods%})
+- [Templates]({% slug templated-picker-templates%})

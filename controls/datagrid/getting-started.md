@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: RadDataGrid Getting Started
+page_title: Getting Started with Xamarin.Forms DataGrid Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 1
 slug: datagrid-getting-started
@@ -25,7 +25,9 @@ Take a look at these articles and follow the instructions to setup your app:
 
 You have two options:
 
-* Add the Telerik UI for Xamarin Nuget packages following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+* Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+
+If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadDataGrid control you have to install the **Telerik.UI.for.Xamarin.DataGrid** nuget package. This nuget will automatically refer the *Telerik.UI.for.Xamarin.Common*, *Telerik.UI.for.Xamarin.Primitives*, *Telerik.UI.for.Xamarin.Input*, *Telerik.UI.for.Xamarin.DataControls* and *Telerik.UI.for.Xamarin.SkiaSharp* nuget packages.
 
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadDataGrid** component:
 
@@ -61,6 +63,12 @@ In addition to this, you need to add the following namespace:
 ```XAML
 	xmlns:telerikDataGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
 ```	
+
+> RadDataGrid control provides UI virtualization, so it requires its visual parent to provide vertical or horizontal space for the control to fill into. The following scenarios will measure the control with infinity and the virtualization will not work:
+>	* positioning the DataGrid control inside StackLayout which is wrapped in ScrollView.
+>	* positioning the DataGrid inside ScrollView.
+>
+> For additional information, please check the [Controls are not Apppearing]({%slug controls-are-not-appearing%}) article.
 
 Now that you have added the control to your view, you need to make sure that is properly loaded with the required data. 
 

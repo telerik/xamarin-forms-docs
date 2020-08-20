@@ -1,6 +1,6 @@
 ---
 title: Commands
-page_title: Commands
+page_title: Xamarin ImageEditor Documentation | Commands
 description: Check our &quot;Commands&quot; documentation article for Telerik ImageEditor for Xamarin control.
 position: 10
 slug: imageeditor-commands

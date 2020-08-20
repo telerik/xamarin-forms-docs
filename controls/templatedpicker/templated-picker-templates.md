@@ -1,6 +1,6 @@
 ---
 title: Templates
-page_title: Templates
+page_title: Xamarin Templated Picker Documentation | Templates
 description: Check our &quot;Templates&quot; documentation article for Telerik TemplatedPicker for Xamarin control.
 position: 3
 slug: templated-picker-templates

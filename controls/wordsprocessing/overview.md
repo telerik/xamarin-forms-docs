@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Xamarin WordsProcessing Documentation | Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik WordsProcessing for Xamarin.
 description: Overview
 slug: radwordsprocessing-overview
@@ -84,9 +84,11 @@ You can import and export documents of these formats as well as convert the form
 
 You have two options to add the required Telerik references to your Xamarin.Forms app in order to use **RadWordsProcessing**:
 
-* Add the Telerik UI for Xamarin Nuget packages following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+* Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
 
-* Add the references to Telerik assemblies manually, check the list below with the required assemblies for RadSpreadStreamProcessing:
+If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadWordsProcessing you have to install the *Telerik.Zip*, *Telerik.Documents.Core*, *Telerik.Documents.Flow* nuget packages. If you need to export documents to PDF format, you will need to refer the *Telerik.Documents.Flow.FormatProviders.Pdf* and *Telerik.Documents.Fixed* nuget packages.
+
+* Add the references to Telerik assemblies manually, check the list below with the required assemblies for RadWordsProcessing:
 
 	- **Telerik.Documents.Core.dll**
 	- **Telerik.Documents.Flow.dll**

@@ -1,6 +1,6 @@
 ---
 title: Key Features
-page_title: Key Features
+page_title: Xamarin CheckBox Documentation | Key Features
 description: Check our &quot;Key Features&quot; documentation article for Telerik CheckBox for Xamarin control.
 position: 2
 slug: checkbox-key-features
@@ -49,6 +49,8 @@ Here is an example how you can apply a `StrokeWidth` value:
 Here is the result at runtime showing the above Indeterminate state as well as StrokeWidth and Length examples:
 
 ![CheckBox Key Feature Example](images/checkbox-features.png)
+
+> RadCheckBox follows the guidelines of the operating system, meaning that on iOS it is visualized as circle and on Android and UWP - as square.
 
 ## See Also
 

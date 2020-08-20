@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Xamarin TimeSpan Picker Documentation | Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik TimeSpan Picker for Xamarin control.
 position: 0
 slug: timespan-picker-overview
@@ -14,7 +14,7 @@ slug: timespan-picker-overview
 
 ## Key features
 
-* **String Format**: TimeSpan Picker for Xamarin allows you to use standard or custom timespan format string through the TimeSpanPicker.SpinnerFormat property. Depending on what format is set, the picker visualizes spinner controls with prepopulated values to be picked. For more information check the [TimeSpan Format String]({%slug timespan-picker-format-string%}) article in our documentation.
+* **Spinner Format**: TimeSpan Picker for Xamarin allows you to use standard or custom timespan format string through the TimeSpanPicker.SpinnerFormat property. Depending on what format is set, the picker visualizes spinner controls with prepopulated values to be picked. For more information check the [TimeSpan Format String]({%slug timespan-picker-format-string%}) article in our documentation.
 
 * **Templates**: TimeSpan Picker provides templates for its header and footer. Also we have exposed templates for the picker placeholder and display text. For additional info go to [Templates]({%slug timespan-picker-templates%}) article.
 

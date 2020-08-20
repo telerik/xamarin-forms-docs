@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Xamarin DateTime Picker Documentation | Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik DateTimePicker for Xamarin control.
 position: 0
 slug: datetime-picker-overview
@@ -14,7 +14,7 @@ slug: datetime-picker-overview
 
 ## Key features
 
-* **String format**: Date and Time Picker for Xamarin allows you to use standard or custom date and time format strings through the SpinnerFormatString property. Depending on what format is set, the picker visualizes spinner controls with prepopulated values to be picked. This feature allows you to create a date picker, time picker or combination of both. For more information check the [DateTime Format String]({%slug datetime-picker-format-string%}) topic in our documentation.
+* **Spinner Format**: Date and Time Picker for Xamarin allows you to use standard or custom date and time format strings through the SpinnerFormatString property. Depending on what format is set, the picker visualizes spinner controls with prepopulated values to be picked. This feature allows you to create a date picker, time picker or combination of both. For more information check the [DateTime Format String]({%slug datetime-picker-format-string%}) topic in our documentation.
 
 * **Templates**: Date and Time Picker provides templates for its header and footer. Also we have exposed templates for the picker placeholder and display text. For additional info go to [Templates]({%slug datetime-picker-templates%}) article.
 

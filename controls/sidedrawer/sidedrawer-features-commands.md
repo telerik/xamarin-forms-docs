@@ -1,6 +1,6 @@
 ---
 title: Commands
-page_title: Commands
+page_title: Xamarin SideDrawer Documentation | Commands
 description: Check our &quot;Commands&quot; documentation article for Telerik SideDrawer for Xamarin control.
 position: 5
 slug: sidedrawer-features-commands

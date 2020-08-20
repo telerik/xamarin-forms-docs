@@ -1,6 +1,6 @@
 ---
 title: Boolean Column
-page_title: Boolean Column
+page_title: Xamarin DataGrid Documentation | Boolean Column
 description: Check our &quot;Boolean Column&quot; documentation article for Telerik DataGrid for Xamarin control.
 position: 2
 slug: datagrid-columns-boolean-column

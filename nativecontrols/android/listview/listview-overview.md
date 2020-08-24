@@ -8,23 +8,23 @@ position: 0
 publish: true
 ---
 
-# RadListView: Overview
+## ListView for Xamarin.Android: Overview
 
-**RadListView** for Android is a virtualizing list component that provides the most popular features associated with scenarios where a list of items is used.
-All these features are embedded in one control with the idea to save developer time and provide better experience. The control's features 
-include item animations, different layouts and orientations, smart defaults for many gestures - select on long press, 
-execution of special action on swipe, reorder of items on long press and drag, refreshing the list on swipe or loading more items only when need. The control can also be used to easily visualize your items 
-in groups, sorted and filtered in accordance with your criteria. 
+**RadListView** for Android is a virtualizing list component that provides the most popular features associated with scenarios where a list of items is used. All these features are embedded in one control with the idea to save developer time and provide better experience. 
+
+The control's features include item animations, different layouts and orientations, smart defaults for many gestures - select on long press, execution of special action on swipe, reorder of items on long press and drag, refreshing the list on swipe or loading more items only when need. The control can also be used to easily visualize your items in groups, sorted and filtered in accordance with your criteria. 
 
 ![TelerikUI-ListView-Overview](images/listview-overview-1.png "ListView Overview.")
 
-On [this page]({% slug listview-gettingstarted %} "Read more about how to get started with RadListView") you can see how to get started using the control.
+On [Getting Started article]({% slug listview-gettingstarted %} "Read more about how to get started with RadListView") you can see how to get started using the control.
 
 ## Behaviors
 
-The list view control provides various behaviors. Each of them is configurable to perform a specific action when a user gesture occurs.
-You are free to add one or more behaviors to your list view instance according to your requirements and preferences. You can also extend an 
-existing behavior to tweak it in order to suit your needs or start from scratch and write a completely new behavior. This is the list of the currently available behaviors:
+RadListView control provides various behaviors. Each of them is configurable to perform a specific action when a user gesture occurs.
+
+You are free to add one or more behaviors to your list view instance according to your requirements and preferences. You can also extend an existing behavior to tweak it in order to suit your needs or start from scratch and write a completely new behavior. 
+
+This is the list of the currently available behaviors:
 
 * [Overview]({% slug listview-behaviors-overview %} "Read more about the list view behaviors"): This is the overview page for the list view behaviors which explains their common features.
 * [Selection]({% slug listview-behaviors-selection %} "Read more about the selection behavior"): The selection behavior provides single and multiple selection modes for your list and allows you to easily show your custom action bar while the selection is active.
@@ -37,27 +37,23 @@ existing behavior to tweak it in order to suit your needs or start from scratch 
 
 ## Layouts
 
-**RadListView** extends the native **RecyclerView** control so you can use the same layout modes for your list: Linear, Grid and Staggered Grid. We have also provided three additional layouts: 
-**Deck of Cards**, **Slide** and **Wrap**. More information is available [here]({% slug listview-layouts %} "Read more about the layouts").
+**RadListView** extends the native **RecyclerView** control, so you can use the same layout modes for your list: Linear, Grid and Staggered Grid. We have also provided three additional layouts: **Deck of Cards**, **Slide** and **Wrap**. More information is available in the [Layouts]({% slug listview-layouts %} "Read more about the layouts") topic.
 
 ![TelerikUI-ListView-Overview-4](images/listview-overview-4.png "ListView Layouts.")
 
 ## Group, Sort, Filter
 
-**RadListView** is integrated with **RadDataSource** which brings you the power to provide rules for filtering, sorting or grouping with a single
-line of code. You can combine an indefinite number of rules of all three types to receive the desired manipulation on the original list.
-[Here's]({% slug listview-data %} "Read more about group, sort and filter") more information about these operations and the type of the rules that are used to define each of them.
+**RadListView** is integrated with **RadDataSource** which brings you the power to provide rules for filtering, sorting or grouping with a single line of code. You can combine an indefinite number of rules of all three types to receive the desired manipulation on the original list.
+
+[Group, Sort and Filter]({% slug listview-data %} "Read more about group, sort and filter") topic provides more information about these operations and the type of the rules that are used to define each of them.
 
 ![TelerikUI-ListView-Overview-2](images/listview-overview-2.png "ListView Grouping.")
 
 ## Item Animations
 
-You can define your own item animations that will play when performing add/remove operations on the list or use the item animators that we have 
-provided. The types of animations that are currently available are **fade**, **slide** and **scale**. [Here's]({% slug listview-itemanimations %} "Read more about item animations") more information about the animators: how 
-to add them and how to set up their properties.
+You can define your own item animations that will play when performing add/remove operations on the list or use the item animators that we have provided. The types of animations that are currently available are **fade**, **slide** and **scale**. Go to [Item Animations]({% slug listview-itemanimations %} "Read more about item animations") topic to find out more information about the animations: how to add them and how to set up their properties.
 
 ## Other Features
 
-**RadListView** also supports the concept of header and footer &mdash; custom view which are visualized in the start and the end of the list. You can also add item click listeners to get notified when
-an item is tapped. Another feature is to scroll to certain position of the list or to its start or end. More information on these features is available on 
-[this article]({% slug listview-other %} "Read more about the other features in the list view").
+RadListView also supports the concept of header and footer &mdash; custom view which are visualized in the start and the end of the list. You can also add item click listeners to get notified when an item is tapped. Another feature is to scroll to certain position of the list or to its start or end. More information on these features is available on 
+[Other Features]({% slug listview-other %} "Read more about the other features in the list view") topic.

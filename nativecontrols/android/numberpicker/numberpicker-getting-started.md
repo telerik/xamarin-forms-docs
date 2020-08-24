@@ -8,9 +8,10 @@ position: 1
 publish: true
 ---
 
-# RadNumberPicker: Overview
+## NumberPicker for Xamarin.Android: Getting Started
 
-To use RadNumberPicker a dependency to the **Input** library must be added.
+To use RadNumberPicker a dependency to the **Telerik.Xamarin.Android.Input.dll** library must be added.
+
 Creating RadNumberPicker is like creating any other widget:
 
 ```C#
@@ -24,12 +25,10 @@ RadNumberPicker can be customized with the following properties:
 will not be able to reach the maximum or minimum value.
 * **Minimum** - Defines the max value of the number picker. The Value can never become more than max.
 * **Maximum** - Defines the min value of the number picker. The Value can never become less than min.
-* **FormatString** - The format string can be used to specify specific text for RadNumberPicker. The format string functionality is actually composed of three sub properties.
-These are SingleFormatString, PluralFormatString and ZeroFormatString. When RadNumberPicker's value is equal to 1 SingleFormatString will be used, ZeroFormatString for 0 and for
+* **FormatString** - The format string can be used to specify specific text for RadNumberPicker. The format string functionality is actually composed of three sub properties. These are SingleFormatString, PluralFormatString and ZeroFormatString. When RadNumberPicker's value is equal to 1 SingleFormatString will be used, ZeroFormatString for 0 and for
 the rest of the values PluralFormatString will be used.
 
-Finally RadNumberPicker has **addPropertyChangeListener()** and **removePropertyChangedListener()** methods that can be used to listen for changes in the number picker. For example to
-listen for value changes the following code is in order:
+Finally RadNumberPicker has **AddPropertyChangeListener()** and **RemovePropertyChangedListener()** methods that can be used to listen for changes in the number picker. For example to listen for value changes the following code is in order:
 
 ```C#
 picker.AddPropertyChangedListener(new MyPropertyChangedListener());
@@ -41,7 +40,6 @@ public class MyPropertyChangedListener : Java.Lang.Object, IPropertyChangedListe
 			double newValue = (Double)value;
 			// do something with the new value.
 		}
-
 	}
 }
 ```

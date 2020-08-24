@@ -8,29 +8,30 @@ position: 2
 publish: true
 ---
 
-# RadAutoCompleteTextView: Completion modes
+## AutoComplete for Xamarin.Android: Completion modes
 
 **RadAutoCompleteTextView** has two modes for filtering suggestions. 
 
-- Starts with
+- StartsWith
 - Contains
 
-The completion mode can be changed with the `setCompletionMode` method of the TKAutoCompleteTextView's adapter. The default value is `CompletionMode.STARTS_WITH`.
+The completion mode can be changed with the `CompletionMode` property of the AutoCompleteTextView's adapter (of type `AutoCompleteAdapter`). The default value is `CompletionMode.StartsWith`.
 
 
 ```C#
 this.adapter.CompletionMode = CompletionMode.StartsWith;
 ```
 
-## Starts_With Mode
+## StartsWith Mode
 
-In `CompletionMode.STARTS_WITH` mode the autocomplete shows only suggestions that start with the typed phrase.
+In `CompletionMode.StartsWith` mode the autocomplete shows only suggestions that start with the typed phrase.
 
 ![TelerikUI-AutoComplete-Completion-Modes](images/autocomplete-starts-with.png "Starts with mode")
 
 ## Contains Mode
-In `CompletionMode.CONTAINS` mode the autocomplete shows only suggestions that contain the typed phrase.
 
-`Contains Mode` is not intended to work with the `APPEND` and  `SUGGEST_APPEND` modes. Since both these modes append the rest of the suggestion to the typed text, the combination between these modes won't be helpfull, it will be rather confusing. 
+In `CompletionMode.Contains` mode the autocomplete shows only suggestions that contain the typed phrase.
+
+`Contains Mode` is not intended to work with the `APPEND` and  `SUGGEST_APPEND` modes. Since both these modes append the rest of the suggestion to the typed text, the combination between these modes won't be helpful, it will be rather confusing. 
 
 ![TelerikUI-AutoComplete-Completion-Modes](images/autocomplete-contains.png "Contains mode")

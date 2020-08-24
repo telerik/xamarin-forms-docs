@@ -8,7 +8,7 @@ position: 3
 publish: true
 ---
 
-# RadListView: Layouts
+## ListView for Xamarin.Android: Layouts
 
 As **RadListView** extends **RecyclerView**, it provides the same layout mechanism. Namely &mdash; you can use the **setLayoutManager(LayoutManager)** method to change the layout that is used.
 There are three implemented layouts and you can also create your own by extending **LayoutManager**.

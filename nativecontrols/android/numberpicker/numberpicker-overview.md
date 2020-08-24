@@ -8,8 +8,8 @@ position: 0
 publish: true
 ---
 
-# RadNumberPicker: Overview
+## NumberPicker for Xamarin.Android: Overview
 
-**RadNumberPicker** for Android is an editing component that allows users to select a number with incremental step adjustments.
+**RadNumberPicker** for Xamarin.Android is an editing component that allows users to select a number with incremental step adjustments.
 
 ![TelerikUI-NumberPicker-Overview](images/number-picker-overview.png "RadNumberPicker overview.")

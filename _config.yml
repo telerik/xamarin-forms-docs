@@ -403,6 +403,10 @@ navigation:
     controls/checkbox:
         title: "CheckBox"
     ## End CheckBox
+    ## ComboBox
+    controls/combobox:
+        title: "ComboBox"
+    ## End ComboBox
     ## Chat
     controls/chat:
         title: "Conversational UI"
@@ -673,6 +677,7 @@ intro_columns:
     title: "Editors"
     items: 
         "AutoCompleteView": "autocompleteview-overview"
+        "ComboBox": "combobox-overview"
         "Date Picker": "date-picker-overview"
         "DateTime Picker": "datetime-picker-overview"        
         "Entry": "entry-overview"

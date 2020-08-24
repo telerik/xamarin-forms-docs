@@ -8,7 +8,7 @@ position: 5
 publish: true
 ---
 
-# RadListView: Item Animations
+## ListView for Xamarin.Android: Item Animations
 
 As **RadListView** extends **RecyclerView** it provides the same item animation mechanism. Namely &mdash; you can use the **setItemAnimator(ItemAnimator)** method to change the animator that is used.
 The item animations are played each time an item is added to the list or when it is removed.

@@ -8,7 +8,7 @@ position: 6
 publish: true
 ---
 
-# RadListView: Other Features
+## ListView for Xamarin.Android: Other Features
 
 This article demonstrates some of the other features of **RadListView**: how to show empty content when the list is empty, 
 how to add header and footer, how to listen to item clicks and how to scroll to a specific position in the list.

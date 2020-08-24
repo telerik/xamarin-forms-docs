@@ -8,7 +8,7 @@ position: 1
 publish: true
 ---
 
-# RadTabView Beta Overview
+## TabView for Xamarin.Android: Overview
 
 **RadTabView** control allows developers to create user interfaces similar to the android tab view (view pager and app bar combo) but is a lot easier to use. On top of that, the tabs of RadTabView can be positioned on all four sides of the parent view (typically of the main view). 
 

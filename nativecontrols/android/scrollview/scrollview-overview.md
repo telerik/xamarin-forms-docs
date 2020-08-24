@@ -8,7 +8,7 @@ position: 0
 publish: true
 ---
 
-# RadScrollView: Overview
+## ScrollView for Xamarin.Android: Overview
 
 **RadScrollView** is widely based on the traditional Android **ScrollView** component and extends its functionality by introducing support for simultaneously scrolling horizontally and vertically. The component exposes API to control the scrolling behavior whereas three scrolling modes are available:
 

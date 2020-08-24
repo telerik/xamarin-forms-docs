@@ -8,7 +8,7 @@ position: 4
 publish: true
 ---
 
-# RadListView: Group, Sort, Filter
+## ListView for Xamarin.Android: Group, Sort, Filter
 
 **RadListView** has an integration with **RadDataSource** to provide its group, sort and filter features. In this article, you will learn to add descriptors to your adapter in order to reshape the way your original 
 list of items is presented.

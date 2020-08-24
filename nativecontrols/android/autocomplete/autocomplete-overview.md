@@ -8,7 +8,7 @@ position: 0
 publish: true
 ---
 
-# RadAutoCompleteTextView: Overview
+## AutoComplete for Xamarin.Android: Overview
 
 **RadAutoCompleteTextView** can automatically complete user input string by comparing the text being entered to all strings in the associated data source. The control provides means for easy customization and data management.
 

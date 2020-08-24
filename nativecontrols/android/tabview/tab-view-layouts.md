@@ -8,7 +8,7 @@ position: 3
 publish: false
 ---
 
-# Layouts
+## TabView for Xamarin.Android: Layouts
 
 RadTabView Beta provides two layouts out of the box. These are **TabStripOverflowLayout** and **TabStripScrollLayout**.
 The default layout is the scroll layout. The tab view layouts share a common base class called **TabStripLayoutBase** which in turn implements the **TabStripLayout** interface.

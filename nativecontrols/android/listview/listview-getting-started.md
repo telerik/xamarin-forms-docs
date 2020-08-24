@@ -8,10 +8,11 @@ position: 1
 publish: true
 ---
 
-# RadListView: Getting Started
+## ListView for Xamarin.Android: Getting Started
 
-In this article, you will learn how to get started with **RadListView for Android**: how to initialize the list, how to create the adapter that populates it and extend it in accordance with your layout. By the end of 
-the article we will have a list that looks like this:
+In this article, you will learn how to get started with **ListView for Xamarin.Android**: how to initialize the list, how to create the adapter that populates it and extend it in accordance with your layout. 
+
+By the end of the article we will have a list that looks like this:
 
 ![TelerikUI-ListView-Getting-Started](images/listview-getting-started-1.png "In this article you will learn how to create this list view from scratch.")
 

@@ -8,10 +8,9 @@ position: 4
 publish: true
 ---
 
-# Tabs Position
+## TabView for Xamarin.Android: Tabs Position
 
-RadTabView can position its tabs on its four edges: Top, Left, Right and Bottom. To set the tabs position simply set the
-<code>TabsPosition</code> property:
+RadTabView can position its tabs on its four edges: Top, Left, Right and Bottom. To set the tabs position simply set the <code>TabsPosition</code> property:
 
 ```C#
 tabView.TabsPosition = TabsPosition.Top;
@@ -22,7 +21,6 @@ Furthermore if the <code>TabWidth</code> property is set, and the total width of
 ```C#
 tabView.TabStrip.TabsAlignment = TabsAlignment.Center;
 ```
-
 
 ## Max visible tabs
 

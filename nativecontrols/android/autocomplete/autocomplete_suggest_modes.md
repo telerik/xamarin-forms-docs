@@ -8,16 +8,15 @@ position: 4
 publish: true
 ---
 
-# RadAutoCompleteTextView: Suggest modes
+## AutoComplete for Xamarin.Android: Suggest Modes
 
-**RadAutoCompleteTextView** has three different modes for providing suggestions. 
+**RadAutoCompleteTextView** has three different modes for providing suggestions, namely:
 
 - Suggest
 - Append
-- Suggest-Append
+- SuggestAppend
 
-The suggest mode can be changed with the `setSuggestionMode` method of the TKAutoCompleteTextView. The default value is `SuggestMode.SUGGEST`.
-
+The suggest mode can be changed with the `SuggestionMode` property of the AutoCompleteTextView. The default value is `SuggestMode.Suggest`.
 
 ```C#
 this.autocomplete.SuggestMode = SuggestMode.Suggest;
@@ -25,16 +24,18 @@ this.autocomplete.SuggestMode = SuggestMode.Suggest;
 
 ## Suggest Mode
 
-In `SuggestMode.SUGGEST` mode the autocomplete represents the filtered suggestions, matching the typed text, in a pop-up view, which contains list of the suggestions.
+In `SuggestMode.Suggest` the autocomplete represents the filtered suggestions, matching the typed text, in a pop-up view, which contains list of the suggestions.
 
 ![TelerikUI-AutoComplete-Suggest-Modes](images/autocomplete-suggest-mode.png "Suggest mode")
 
 ## Append Mode
-In `SuggestMode.APPEND` mode the autocomplete shows only the first suggestion matching the typed text, which is represented as direct suffix of the typed text.
+
+In `SuggestMode.Append` mode the autocomplete shows only the first suggestion matching the typed text, which is represented as direct suffix of the typed text.
 
 ![TelerikUI-AutoComplete-Completion-Modes](images/autocomplete-append.png "Append mode")
 
-## Suggest-Append Mode
-In `SuggestMode.SUGGEST_APPEND` mode the autocomplete combines both upper-mentioned modes. It shows all matching suggestions in a pop-up view and the first of them is appened to the typed text.
+## SuggestAppend Mode
+
+In `SuggestMode.SuggestAppend` mode the autocomplete combines both upper-mentioned modes. It shows all matching suggestions in a pop-up view and the first of them is appended to the typed text.
 
 ![TelerikUI-AutoComplete-Completion-Modes](images/autocomplete-suggest-append.png "Suggest-Append mode")

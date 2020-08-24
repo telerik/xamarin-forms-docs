@@ -7,12 +7,12 @@ tags: radscrollview, scrollview, getting started
 publish: true
 ---  
 
-## RadScrollView: Getting started
-### Finding the needed packages
+## ScrollView for Xamarin.Android: Getting started
+
 To be able to use **RadScrollView** you need to reference the following libraries:
 
-- Common
-- Primitives
+- Telerik.Xamarin.Android.Common.dll
+- Telerik.Xamarin.Android.Primitives.dll
 
 **RadScrollView** is defined in the Primitives library in the _com.telerik.widget.primitives.panels_ package. The following code snippet demonstrates how to add an instance of the component in your XML layout:
 

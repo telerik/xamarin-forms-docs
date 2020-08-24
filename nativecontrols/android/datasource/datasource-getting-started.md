@@ -8,20 +8,17 @@ position: 2
 publish: true
 ---
 
-## RadDataSource: Getting Started
+## DataSource for Xamarin.Android: Getting Started
 
 To use **RadDataSource** developers first need raw data in a collection of some sort. Then RadDataSource can be constructed like this:
-
 
 ```C#
 // This method gets the raw data from somewhere. (web service, file etc.)
 Java.Util.ArrayList rawData = GetData();
-RadDataSource dataSource = new RadDataSource (rawData);
+RadDataSource dataSource = new RadDataSource(rawData);
 ```
 
 Once the data source is constructed the data can be filtered, sorted and grouped:
-
-
 
 ```C#
 public class Person : Java.Lang.Object
@@ -63,21 +60,17 @@ public class NationalityGroupDescriptor : Java.Lang.Object, IFunction
 
 >The order in which the descriptors are added does not matter. RadDataSource always filters first, sorts second and groups last.
 
-Finally when the data is processed it can be consumed in two ways. One is the **view()** method, which returns the data in full hierarchy (if grouped multiple times). The other is the **flatView()** method which,
-as the method name says, returns the hierarchical data flattened to a single level. Both methods return lists of DataItem<Person>. The **DataItem** class wraps the native data so that the data source can represent 
-groups and actual data items. A DataItem<Person> is a group if it does not have an entity associated, that is if its **entity()** method returns null. A group can also be recognized if it has a non-null **groupKey()** value.
-
-
+Finally when the data is processed it can be consumed in two ways. One is the **View()** method, which returns the data in full hierarchy (if grouped multiple times). The other is the **FlatView()** method which, as the method name says, returns the hierarchical data flattened to a single level. Both methods return lists of DataItem<Person>. The **DataItem** class wraps the native data so that the data source can represent groups and actual data items. A DataItem<Person> is a group if it does not have an entity associated, that is if its **Entity()** method returns null. A group can also be recognized if it has a non-null **GroupKey()** value.
 
 ```C#
 foreach (Java.Lang.Object data in dataSource.FlatView()) 
 {
-	DataItem dataItem = data.JavaCast<DataItem> ();
+	DataItem dataItem = data.JavaCast<DataItem>();
 
 	if (dataItem.Entity () == null) {
-		Console.WriteLine (dataItem.GroupKey ().ToString ());
+		Console.WriteLine (dataItem.GroupKey().ToString());
 	} else {
-		Console.WriteLine (dataItem.Entity ().ToString ());
+		Console.WriteLine (dataItem.Entity().ToString());
 	}
 }
 ```

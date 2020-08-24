@@ -8,7 +8,7 @@ position: 5
 publish: true
 ---
 
-# Listening for changes
+## TabView for Xamarin.Android: Listening for changes
 
 RadTabView Beta will notify its **TabViewChangeListener** objects before and after a tab selection occurs. Also the listeners will be asked for a tab's content view if it does not have one.
 

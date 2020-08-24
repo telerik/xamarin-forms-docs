@@ -8,7 +8,7 @@ position: 2
 publish: true
 ---
 
-# Getting Started
+## TabView for Xamarin.Android: Getting Started
 
 To use **RadTabView** Beta  a reference to the Primitives library first must be added to your project. Then simply create an instance:
 

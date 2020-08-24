@@ -8,9 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
-
-Thank you for choosing Telerik **RadSpreadStreamProcessing**!
+## SpreadStreamProcessing for Xamarin.Android: Overview
 
 This article briefly explains the specifics of **RadSpreadStreamProcessing** - what is spread streaming, how it works compared to other libraries and when to use it.
 

@@ -34,10 +34,10 @@ If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have 
 
 | Platform | Assemblies |
 | -------- | ---------- |
-| Portable | Telerik.XamarinForms.Primitives.dll |
-| Android  | Telerik.Xamarin.Android.Primitives.dll <br/>Telerik.XamarinForms.Primitives.dll |
-| iOS      | Telerik.Xamarin.iOS.dll <br/>Telerik.XamarinForms.Primitives.dll |
-| UWP      | Telerik.Core.dll <br/> Telerik.UI.Xaml.Primitives.UWP.dll <br/>Telerik.XamarinForms.Common.dll <br/>Telerik.XamarinForms.Primitives.dll |
+| Portable | Telerik.XamarinForms.Input.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.DataControls.dll<br/>Telerik.XamarinForms.Primitives.dll |
+| Android  | Telerik.XamarinForms.Input.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.DataControls.dll<br/>Telerik.Xamarin.Android.Primitives.dll<br/>Telerik.XamarinForms.Primitives.dll |
+| iOS      | Telerik.Xamarin.iOS.dllTelerik.XamarinForms.Input.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.DataControls.dll<br/>Telerik.XamarinForms.Primitives.dll |
+| UWP      | Telerik.Core.dll<br/>Telerik.UI.Xaml.Primitives.UWP.dll Telerik.XamarinForms.Input.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.DataControls.dll<br/>Telerik.XamarinForms.Primitives.dll |
 
 ## 3. Adding RadComboBox control
 
@@ -99,7 +99,7 @@ Here is the result:
 
 ![CheckBox Getting Started Example](images/checkbox-getting-started.png)
 
->important The Getting Started example can be found in our [SDK Browser Application](). You can find the applications in the **Examples** folder of your local **Telerik UI for Xamarin** installation or in the following [GitHub repo]().
+>important The Getting Started example can be found in our [SDK Browser Application](developer-focused-examples). You can find the applications in the **Examples** folder of your local **Telerik UI for Xamarin** installation or in the following [GitHub repo](https://github.com/telerik/xamarin-forms-sdk).
 
 ## See Also
 

@@ -39,6 +39,8 @@ div#xamarin_trial .xamarin_download_btn {
 }
 </style>
 
+<script type="text/javascript">
+
 function ready(callback){
     // in case the document is already rendered
     if (document.readyState!='loading') callback();

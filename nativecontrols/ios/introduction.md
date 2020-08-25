@@ -39,21 +39,30 @@ div#xamarin_trial .xamarin_download_btn {
 }
 </style>
 
-<script type="text/javascript">
+function ready(callback){
+    // in case the document is already rendered
+    if (document.readyState!='loading') callback();
+    // modern browsers
+    else if (document.addEventListener) document.addEventListener('DOMContentLoaded', callback);
+    // IE <= 8
+    else document.attachEvent('onreadystatechange', function(){
+        if (document.readyState=='complete') callback();
+    });
+}
 
-  $(document).ready(function(){
+ready(function(){
 	  var mac = navigator.userAgent.match(/(Mac)/i);
-	  var $btnWin = $(".js-btnWin");
-	  var $btnOSX = $(".js-btnOSX");
+	  var btnWin = document.getElementById("js-btnWin");
+	  var btnOSX = document.getElementById("js-btnOSX");
 
-	  if (mac) {
-		$btnOSX.show();
-		$btnWin.hide();
+	  if (mac) {	  
+		btnOSX.style.display = "inline-block";
+		btnWin.style.display = "none";
 	  } else {
-		$btnOSX.hide();
-		$btnWin.show();
+		btnOSX.style.display = "none";
+		btnWin.style.display = "inline-block";
 	  }
-  });
+});
 
 </script>
 

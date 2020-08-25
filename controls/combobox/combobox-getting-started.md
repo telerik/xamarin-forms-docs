@@ -104,7 +104,7 @@ Here is the result:
 ## See Also
 
 - [Key Features]({%slug combobox-key-features%})
-- [Data Binding]({%slug combobox-data-binding%})
+- [Data Binding]({%slug combobox-databinding%})
 - [Editing]({%slug combobox-editing%})
 - [Searching]({%slug combobox-searching%})
 - [Single and Multiple Selection]({%slug combobox-selection%})

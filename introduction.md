@@ -42,26 +42,37 @@ div#xamarin_trial .xamarin_download_btn {
 
 <script type="text/javascript">
 
-  $(document).ready(function(){
-	  var mac = navigator.userAgent.match(/(Mac)/i);
-	  var $btnWin = $(".js-btnWin");
-	  var $btnOSX = $(".js-btnOSX");
+function ready(callback){
+    // in case the document is already rendered
+    if (document.readyState!='loading') callback();
+    // modern browsers
+    else if (document.addEventListener) document.addEventListener('DOMContentLoaded', callback);
+    // IE <= 8
+    else document.attachEvent('onreadystatechange', function(){
+        if (document.readyState=='complete') callback();
+    });
+}
 
-	  if (mac) {
-		$btnOSX.show();
-		$btnWin.hide();
+ready(function(){
+	  var mac = navigator.userAgent.match(/(Mac)/i);
+	  var btnWin = document.getElementById("js-btnWin");
+	  var btnOSX = document.getElementById("js-btnOSX");
+
+	  if (mac) {	  
+		btnOSX.style.display = "inline-block";
+		btnWin.style.display = "none";
 	  } else {
-		$btnOSX.hide();
-		$btnWin.show();
+		btnOSX.style.display = "none";
+		btnWin.style.display = "inline-block";
 	  }
-  });
+});
 
 </script>
 
 <div id="xamarin_trial">
 <br />
-<a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-xamarin" class="xamarin_download_btn js-btnWin" style="display: none">Download Free Trial</a>
-<a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-xamarin?file=pkg" class="xamarin_download_btn js-btnOSX" style="display: none">Download Free Trial</a>
+<a id="js-btnWin" href="https://www.telerik.com/download-trial-file/v2-b/ui-for-xamarin" class="xamarin_download_btn js-btnWin" style="display: none">Download Free Trial</a>
+<a id="js-btnOSX" href="https://www.telerik.com/download-trial-file/v2-b/ui-for-xamarin?file=pkg" class="xamarin_download_btn js-btnOSX" style="display: none">Download Free Trial</a>
 </div>
 
 ![Telerik UI for Xamarin](front-image.png)

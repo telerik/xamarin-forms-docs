@@ -25,7 +25,7 @@ With R3 2020 Release the views used within the built-in Scheduling UI control ca
 * **RepeatAppointmentView** – view for repeating appointments 
 * **EndRepeatAppointmentView** – view for end repeat appointments 
 
->note Please note that scheduling screens are available for MonthView, DayView, MultiDayView and WeekView modes. You could refer to the [View Modes]({%slug calendar-features-navigation-and-view-mode%}) topic for more information on the available in RadCalendar views. 
+>note Please note that scheduling screens can be shown in MonthView, DayView, MultiDayView and WeekView modes. You could refer to the [View Modes]({%slug calendar-features-navigation-and-view-mode%}) topic for more information on the available in RadCalendar views. For MonthView and WeekView Modes the scheduling screens can be shown using the AddAppointmentButton. You will need to set the **IsAddAppointmentButtonVisible to True"**. 
 
 ## Partially customization options 
 

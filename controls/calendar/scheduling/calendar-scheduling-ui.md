@@ -18,7 +18,7 @@ In order to allow users to create and modify appointments by tapping on a time s
 
 <snippet id='calendar-scheduling-ui' />
 
->note Please note that scheduling screens can be shown only in DayView and MultiDayView modes. You could refer to the [View Modes]({%slug calendar-features-navigation-and-view-mode%}) topic for more information on the available in RadCalendar views. 
+>note Please note that scheduling screens can be shown in MonthView, DayView, MultiDayView and WeekView modes. You could refer to the [View Modes]({%slug calendar-features-navigation-and-view-mode%}) topic for more information on the available in RadCalendar views. For MonthView and WeekView Modes the scheduling screens can be shown using the AddAppointmentButton. You will need to set the **IsAddAppointmentButtonVisible to True"**. 
 
 >important If you have a collection of custom appointments as a source for RadCalendar - the custom appointment class should inherit from the **Telerik.XamarinForms.Input.Appointment** class. You should also make sure to add a default constructor for the custom appointment. These requirements are needed in order to properly create appointments through Scheduling UI.
 

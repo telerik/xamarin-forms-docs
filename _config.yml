@@ -501,6 +501,10 @@ navigation:
     controls/rating:
         title: "Rating"    
     ## End Rating
+    ## RichTextEditor
+    controls/richtexteditor:
+        title: "RichTextEditor"    
+    ## End RichTextEditor
     ## SegmentedControl
     controls/segmentedcontrol:
         title: "SegmentedControl"

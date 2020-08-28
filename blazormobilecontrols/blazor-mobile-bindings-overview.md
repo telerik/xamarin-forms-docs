@@ -18,15 +18,17 @@ The available controls which can be used in Mobile Blazor Bindings projects are 
 
 | Controls |
 | -------- |
+| AutoCompleteView |
 | Border |
 | Button |
 | BusyIndicator |
 | CheckBox |
+| DataGrid |
 | Expander |
 | ListView |
 | SideDrawer |
 
-## Getting Started with Telerik Xamarin Mobile Blazor Bindings
+## Getting Started
 
 Let’s review the steps needed to get started with the Telerik UI for Xamarin controls in a Mobile Blazor Bindings project.
 
@@ -38,118 +40,21 @@ Let's begin with a new Xamarin Mobile Blazor project. Visit the [Getting Started
 
 ### 2. Adding the required Telerik references
 
-Let’s add the **RadBusyIndicator** to the project. To do this, we'll need to add the Telerik references that the RadBusyIndicator requires.
-
 You have two options:
 
 *	Add the Telerik UI for Xamarin Blazor Nuget package following the instructions from the [Telerik Nuget package server]({%slug telerik-nuget-server%}) topic.
 
-*	Add the references to Telerik assemblies manually, check the list bellow with the required assemblies for RadBusyIndicator component:
+*	Add the references to Telerik assemblies manually. Each control's Getting Started article contains a section which describes the needed Telerik assemblies.
 
-| Platform | Assemblies |
-| -------- | ---------- |
-| Portable | Telerik.XamarinForms.Blazor.Primitives.dll<br/>Telerik.XamarinForms.Primitives.dll |
-| Android  | Telerik.Xamarin.Android.Primitives.dll<br/>Telerik.XamarinForms.Primitives.dll<br /> Telerik.XamarinForms.SkiaSharp.dll |
-| iOS      | Telerik.Xamarin.iOS.dll <br/>Telerik.XamarinForms.Primitives.dll<br/>Telerik.XamarinForms.SkiaSharp.dll |
+>important No matter whether the Telerik UI for Xamarin Blazor assemblies are added manually or using the Telerik NuGet server, they  the references need to be added in the `_Imports.razor` page:
 
-After that we need to add the Telerik.XamarinForms.Blazor.Primitives in our `_Imports.razor` page:
+for example: 
 
 ```C#
-@using Telerik.XamarinForms.Blazor.Primitives;
+@using Telerik.XamarinForms.Blazor.Primitives
+@using Telerik.XamarinForms.Blazor.Input
+@using Telerik.XamarinForms.Blazor.Common
+@using Telerik.XamarinForms.Blazor.DataControls
 ```
 
->important RadBusyIndicator is rendered via the SkiaSharp graphics library so you need to install also **SkiaSharp.Views.Forms** in all projects of the xamarin solution (.NET Standard, Android, iOS).
-
-### 3. Adding RadBusyIndicator control
-	
-3.1 Add new Razor component (lets call it RadBusyIndicatorPage.razor) and create the control inside:
-		
-```XML
-<ContentView VerticalOptions="LayoutOptions.Center" >
-	<RadBusyIndicator />
-</ContentView>
-```
-	
-3.2 Then use the RadBusyIndicatorPage component as MainPage for the application by modifying the App.cs:
-
-```C#
-public class App : Application
-{
-    public App()
-    {
-        var host = MobileBlazorBindingsHost.CreateDefaultBuilder()
-            .ConfigureServices((hostContext, services) =>
-            {
-                // Register app-specific services
-                //services.AddSingleton<AppState>();
-            })
-            .Build();
-
-        MainPage = new ContentPage();
-        host.AddComponent<RadBusyIndicatorPage>(parent: MainPage);
-    }
-    // ...
-}
-```
-
-### 4. Customizations
-
-4.1. Lets add a button that changes the IsBusy property of the RadBusyIndicator:
-	
-```XML
-<ContentView>
-	<StackLayout>
-		<Button Text="Change RadBusyIndicator IsBusy" 
-				OnClick="@ChangeIsBusy"/>
-		<RadBusyIndicator IsBusy="@IsBusyIndicatorBusy"/>
-	</StackLayout>
-</ContentView>
-
-@code {
-
-	protected override void OnInitialized()
-	{
-		base.OnInitialized();
-
-		this.IsBusyIndicatorBusy = true;
-	}
-
-	bool IsBusyIndicatorBusy { get; set; }
-
-	void ChangeIsBusy()
-	{
-		this.IsBusyIndicatorBusy = !this.IsBusyIndicatorBusy;
-	}
-}
-```
-
-4.2 Customize RadBusyIndicator. Lets change its **AnimationContentColor** and **AnimationType**. Also let's add **Content** and **BusyContent**:
-	
-```XML
-<RadBusyIndicator IsBusy="@IsBusyIndicatorBusy"	
-				  AnimationContentColor="Color.Blue"                 
-				  AnimationType="Telerik.XamarinForms.Primitives.AnimationType.Animation4">
-    <Content>
-        <Telerik.XamarinForms.Blazor.Primitives.BusyIndicator.Content>
-            <Label Text="This is the content of the RadBusyIndicator control displayed when the indicator is not busy." />
-        </Telerik.XamarinForms.Blazor.Primitives.BusyIndicator.Content>
-    </Content>
-    <BusyContent>
-        <Telerik.XamarinForms.Blazor.Primitives.BusyIndicator.BusyContent>
-            <Label HorizontalOptions="LayoutOptions.Center"
-                   Text="Loading..."
-                   VerticalOptions="LayoutOptions.Center" />
-       </Telerik.XamarinForms.Blazor.Primitives.BusyIndicator.BusyContent>
-    </BusyContent>
-</RadBusyIndicator>
-```
-
-### 5. Run the application and see the result:
-
-On Android:
-
-![Xamarin Blazor Binding BusyIndicator Android](images/busyindicator-blazor-xamarin-android.png "Xamarin Blazor Binding BusyIndicator")
-
-On iOS:
-
-![Xamarin Blazor Binding BusyIndicator iOS](images/busyindicator-blazor-xamarin-iOS.png "Xamarin Blazor Binding BusyIndicator")
+>important **RadBusyIndicator** is rendered via the SkiaSharp graphics library so you need to install , **RadDataGrid** is renderer for Android via the SkiaSharp graphics library, so you need to install also **SkiaSharp.Views.Forms** in the .NET Standard and Android projects.

@@ -697,7 +697,7 @@ intro_columns:
         "List Picker": "list-picker-overview"
         "MaskedInput": "maskedinput-overview"
         "NumericInput": "numericinput-overview"        
-        "List Picker": "list-picker-overview"
+        "RichTextEditor": "richtexteditor-overview"
         "Templated Picker": "templated-picker-overview"
         "Time Picker": "time-picker-overview"
         "TimeSpan Picker": "timespan-picker-overview"

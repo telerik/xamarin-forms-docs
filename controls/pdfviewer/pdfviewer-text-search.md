@@ -12,7 +12,7 @@ With R3 2020 PdfViewer for Xamarin comes with text search functionality which al
 
 You can take advantage of the PdfViewerToolbar bult-in search UI or search programmatically through the provided methods. With the built-in search UI users can easily enter text and browse through the search results withing the PdfViewer toolbar. In addition, there is a small toast message showing the count of the search results or a localizable message in case no results are found.
 
-![](pdfviewer-default-textsearch.png)
+![](images/pdfviewer-default-textsearch.png)
 
 This topic will go through the search text feature in details as well as the customization options it provides.
 
@@ -88,7 +88,7 @@ Here is an example of how you can customize SearchOptions as well as highlight c
 
 First, let's add the PdfViewer together with PdfViewerToolbar with the **SearchSettings** applied:
 
-<snippet id='dfviewer-textsearch-xaml' />
+<snippet id='pdfviewer-textsearch-xaml' />
 
 Add the needed namespaces:
 

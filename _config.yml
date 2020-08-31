@@ -349,6 +349,9 @@ navigation:
     controls/calendar/view-modes:
         title: "View Modes"
         position: 3
+    controls/calendar/appointments:
+        title: "Appointments"
+        position: 5
     controls/calendar/recurrence:
         title: "Recurrence"
         position: 6

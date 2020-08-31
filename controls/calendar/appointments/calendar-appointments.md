@@ -2,11 +2,11 @@
 title: Appointments
 page_title: Xamarin Calendar Documentation | Appointments
 description: Check our &quot;Appointments&quot; documentation article for Telerik Calendar for Xamarin control.
-position: 5
+position: 0
 slug: calendar-appointments
 ---
 
-# Appointments
+# Calendar Appointments Overview
 
 ## Creating an Appointment
 
@@ -34,11 +34,11 @@ Then, add the RadCalendar definition to your page:
 
 #### **Figure 1: Appearance of the RadCalendar control in month view mode**
 
-![Appointments monthview](images/monthviews.png)
+![Appointments monthview](../images/monthviews.png)
 
 #### **Figure 2: Appearance of the RadCalendar control in day view mode**
 
-![Appointments dayview](images/dayviews.png)
+![Appointments dayview](../images/dayviews.png)
 
 ## Add Appointment Button
 
@@ -54,7 +54,7 @@ With R2 2020 Release of Telerik UI for Xamarin RadCalendar control provides you 
 
 The image below shows where is the button position when IsAddAppointmentVisible="True":
 
-![Appointment Button](images/add-appointment-button.png)
+![Appointment Button](../images/add-appointment-button.png)
 
 ## Appointment Template
 
@@ -64,7 +64,7 @@ With R3 2019 Release of Telerik UI for Xamarin RadCalendar control provides the 
 
 #### Appointment Template in DayView and MultiDayView
 
-![Appointment Template Overview](images/appointment-template-overview.png)
+![Appointment Template Overview](../images/appointment-template-overview.png)
 
 ### Appointment Template Example
 
@@ -88,7 +88,7 @@ Finally, set the AppointmentContentTemplate property of the DayViewSettings:
 
 Here is the result:
 
-![Appointment Content Template](images/appointment-content-template.png)
+![Appointment Content Template](../images/appointment-content-template.png)
 
 >important [SDK Browser application](https://docs.telerik.com/devtools/xamarin/sdk-browser-overview#sdk-browser-application) contains a sample Appointments Template example. You can find it in the **Calendar &amp; Scheduling /Features** folder.
 

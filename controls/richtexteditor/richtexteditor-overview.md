@@ -28,7 +28,7 @@ Telerik RichTextEditor for Xamarin enables users to create rich textual content 
 	* Indentation and content alignment;
 	* Undo/Redo editing actions on UWP platform.
 
-* **Various HTML source options**: You can load the HTML source from a string as well as a stream. 
+* **Various HTML source options**: You can load the HTML source from a string as well as from a stream. 
 
 * **Commands Support**: RichTextEditor exposes commands, such as ToggleBoldCommand, ToggleBulletingCommand, AlignRightCommand, etc, that allow you to execute rich text editing actions over the loaded into the editor content. For detailed information on the matter check [Commands]({%slug richtexteditor-commands%}) article. 
 

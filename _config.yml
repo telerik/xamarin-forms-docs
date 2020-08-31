@@ -352,7 +352,7 @@ navigation:
     controls/calendar/recurrence:
         title: "Recurrence"
         position: 6
-    controls/calendar/scheduling-ui:
+    controls/calendar/scheduling:
         title: "Scheduling"
         position: 7
             ## Calendar Scheduling Sub-Folders

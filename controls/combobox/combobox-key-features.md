@@ -76,6 +76,8 @@ ComboBox provides both case-sensitive and case-insensitive searching modes. The 
 
 ComboBox control has a support for single and multiple selection. You can easily specify the required selection using the `SelectionMode` property. You can check all properties, event and commands provided for the selection feature in the [Combobox Selection]({%slug combobox-selection%}) article.
 
+>important The Key Features example can be found in our [SDK Browser Application](developer-focused-examples). You can find the applications in the **Examples** folder of your local **Telerik UI for Xamarin** installation or in the following [GitHub repo](https://github.com/telerik/xamarin-forms-sdk).
+
 ## See Also
 
 - [ComboBox]({%slug combobox-databinding%}) 

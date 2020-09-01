@@ -31,7 +31,9 @@ and the ViewModel used:
 
 The final result: 
 
-![CheckBox Item and selectedItem Templates](images/checkbox-item-selecteditem-templates.png)
+![ComboBox Item and selectedItem Templates](images/combobox-item-selecteditem-templates.png)
+
+>important The Item and SelectedItem Template example can be found in our [SDK Browser Application](developer-focused-examples). You can find the applications in the **Examples** folder of your local **Telerik UI for Xamarin** installation or in the following [GitHub repo](https://github.com/telerik/xamarin-forms-sdk).
 
 ## Example with TokenTemplate and ShowMoreTemplate
 
@@ -55,7 +57,9 @@ here is a sample logic removing the token when adding TapGestureRecognizer to th
 
 Here is the how the Token and ShowMore Templates look:
 
-![CheckBox Token and Show More Templates](images/checkbox-token-showmore-templates.png)
+![ComboBox Token and Show More Templates](images/combobox-token-showmore-templates.png)
+
+>important The Token and ShowMore Template example can be found in our [SDK Browser Application](developer-focused-examples). You can find the applications in the **Examples** folder of your local **Telerik UI for Xamarin** installation or in the following [GitHub repo](https://github.com/telerik/xamarin-forms-sdk).
 
 ## See Also
 

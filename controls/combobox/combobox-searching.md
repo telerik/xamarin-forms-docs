@@ -31,6 +31,8 @@ and the ViewModel used:
 
 <snippet id='combobox-searching-mode-viewmodel'/> 
 
+>important The SearchingMode example can be found in our [SDK Browser Application](developer-focused-examples). You can find the applications in the **Examples** folder of your local **Telerik UI for Xamarin** installation or in the following [GitHub repo](https://github.com/telerik/xamarin-forms-sdk).
+
 ## See Also
 
 - [Key Features]({%slug combobox-key-features%})

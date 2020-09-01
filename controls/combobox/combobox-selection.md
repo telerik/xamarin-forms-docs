@@ -64,6 +64,8 @@ This is how multiple selection looks:
 
 ![ComboBox Multiple Selection](images/combobox-multiple-selection.png)
 
+>important The Selection example can be found in our [SDK Browser Application](developer-focused-examples). You can find the applications in the **Examples** folder of your local **Telerik UI for Xamarin** installation or in the following [GitHub repo](https://github.com/telerik/xamarin-forms-sdk).
+
 ## Events
 
 ComboBox exposes a SelectionChanged event which is raised when item is selected.

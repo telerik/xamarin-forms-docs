@@ -8,7 +8,7 @@ slug: date-picker-selection
 
 # Selection
 
-RadDatePicker control enables the app users to quickly and easily select a date value. This topic will go through the provided by the DatePicker API related to time selection.
+RadDatePicker control enables the app users to quickly and easily select a date value. This topic will go through the provided by the DatePicker API related to date selection.
 
 ## Important Properties
 

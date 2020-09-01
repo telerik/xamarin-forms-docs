@@ -80,7 +80,7 @@ Here is the result:
 
 ### Binding to a complex object
 
-Here is the ComboBox definition in XAML ad in code behind:
+Here is the ComboBox definition in XAML and in code behind:
 
 <snippet id='combobox-getting-started-complex-object-xaml'/>
 <snippet id='combobox-getting-started-complex-object-csharp'/>

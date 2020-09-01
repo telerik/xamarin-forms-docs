@@ -12,7 +12,7 @@ Telerik RichTextEditor for Xamarin enables users to create rich textual content 
 
 #### Figure 1: RadRichTextEditor Overview
 
-![RichTextEditor Overview](images/richtexteditor-overview.png "RichTextEditor Overview")
+![RichTextEditor Overview](images/richtexteditor-overview.png)
 
 ## Key Features
 
@@ -26,7 +26,7 @@ Telerik RichTextEditor for Xamarin enables users to create rich textual content 
 	* Hyperlinks manipulations - create and remove hyperlinks;
 	* Subscript and superscript formatting;
 	* Indentation and content alignment;
-	* Undo/Redo editing actions on UWP platform.
+	* Undo/Redo editing actions.
 
 * **Various HTML source options**: You can load the HTML source from a string as well as from a stream. 
 

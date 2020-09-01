@@ -1,12 +1,12 @@
 ---
-title: Customizable Scheduling UIs
+title: Customizing Scheduling UIs
 page_title: Xamarin Calendar Documentation | Scheduling UI
 description: Check our &quot;Scheduling UI&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 1
 slug: calendar-scheduling-ui-customization
 ---
 
-# Customizable Scheduling UIs
+# Customizing Scheduling UIs
 
 With R3 2020 Release the views used within the built-in Scheduling UI control can be customized. You can edit the control templates of the different views and apply customizations.
 
@@ -18,10 +18,7 @@ With R3 2020 Release the views used within the built-in Scheduling UI control ca
 * **DeleteAppointmentView** –view for deleting appointments 
 * **RecurrenceView** – view for recurrence appointments 
 * **SaveRecurringAppointmentView** – view for saving the recurring appointment 
-* **DeleteRecurringAppointmentView** – view for deleting the recurring appointments 
-* **CalendarMonthlyPickerView** – view for monthly custom recurrence 
-* **CalendarWeeklyPickerView** - view for weekly custom recurrence 
-* **CalendarYearlyPickerView** - view for yearly custom recurrence 
+* **DeleteRecurringAppointmentView** – view for deleting the recurring appointments
 * **RepeatAppointmentView** – view for repeating appointments 
 * **EndRepeatAppointmentView** – view for end repeat appointments 
 
@@ -38,6 +35,6 @@ In addition, to avoid editing the whole control template, there are additional p
 ## See Also
 
 * [Appointments]({%slug calendar-appointments%})
+* [Custom Appointments]({%slug calendar-custom-appointments%})
 * [View Modes]({%slug calendar-features-navigation-and-view-mode%})
 * [Calendar Selection]({%slug calendar-selection%})
-

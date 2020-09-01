@@ -12,8 +12,7 @@ The purpose of this help article is to show you the key features of the **RadCom
 
 ## Data Binding
 
-You could set static items to the control's ItemsSource or binding it to a complex object using the `DisplayMemberPath` property. For more information please check the [ComboBox Data Binding]({%slug combobox-databinding%}) article
-
+You could set static items to the control's ItemsSource or binding it to a complex object using the `DisplayMemberPath` property. For more information please check the [ComboBox Data Binding]({%slug combobox-databinding%}) article.
 
 ## Placeholder
 
@@ -71,7 +70,7 @@ ComboBox supports both editable and noneditable state. When the control is in ed
 
 ## Searching
 
- ComboBox provides both case-sensitive and case-insensitive searching modes. The available options are: Contains, StartsWith, ContainsCaseSensitive and StartsWithCaseSensitive. Please check the [Searching]({%slug combobox-searching%}) article for more details and a sample demo. 
+ComboBox provides both case-sensitive and case-insensitive searching modes. The available options are: Contains, StartsWith, ContainsCaseSensitive and StartsWithCaseSensitive. Please check the [Searching]({%slug combobox-searching%}) article for more details and a sample demo. 
 
 ## Selection
 

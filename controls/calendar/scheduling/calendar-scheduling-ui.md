@@ -91,78 +91,24 @@ If you prefer the MVVM pattern, you can take advantage of the exposed commands w
 
 Let's have the following Calendar instance with both **ShowAddAppointmentViewCommand** and **ShowEditAppointmentViewCommand** added to Calendar's Commands collection:
 
-```XAML
-<telerikInput:RadCalendar Grid.Row="1"
-                          x:Name="calendar" 
-                          AppointmentsSource="{Binding Appointments}"
-                          ViewMode="Day">
-    <telerikInput:RadCalendar.Commands>
-        <commands:ShowAddAppointmentViewCommand/>
-        <commands:ShowEditAppointmentViewCommand/>
-    </telerikInput:RadCalendar.Commands>
-</telerikInput:RadCalendar>
-```
+<snippet id='calendar-scheduling-commands-xaml' />
 
 Add the following namespaces:
 
 ```XAML
 xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
-xmlns:commands="clr-namespace:Telerik.XamarinForms.Input.Calendar.Commands;assembly=Telerik.XamarinForms.Input"            
+xmlns:calendarCommands="clr-namespace:Telerik.XamarinForms.Input.Calendar.Commands;assembly=Telerik.XamarinForms.Input"       
 ```
 
 For the purpose of the example, the commands will be called from two buttons:
 
-```XAML
-<StackLayout Orientation="Horizontal">
-	<Button Command="{Binding Source={x:Reference calendar}, Path=Commands[0]}"
-			CommandParameter="{Binding AddNewAppointmentContext}"
-			Text="Create Appointment"/>
-	<Button Command="{Binding Source={x:Reference calendar}, Path=Commands[1]}"
-			CommandParameter="{Binding EditAppointmentContext}"
-			Text="Edit First Appointment"/>
-</StackLayout>
-```
+<snippet id='calendar-scheduling-commands-buttons' />
 
 Let's take a look at the ViewModel class where both *AddNewAppointmentContext* and *EditAppointmentContext* objects are defined:
 
-```C#
-public class ViewModel
-{
-    public ViewModel()
-    {
-        var date = DateTime.Today;
-        this.Appointments = new ObservableCollection<Appointment> {
-            new Appointment {
-                Title = "Meeting with Tom",
-                Detail = "Sea Garden",
-                StartDate = date.AddHours(10),
-                EndDate = date.AddHours(11),
-                Color = Color.Tomato
-            },
-            new Appointment {
-                Title = "Lunch with Sara",
-                Detail = "Restaurant",
-                StartDate = date.AddHours(12).AddMinutes(30),
-                EndDate = date.AddHours(14),
-                Color = Color.DarkTurquoise
-            }
-        };
+<snippet id='calendar-scheduling-commands-vm' />
 
-        this.AddNewAppointmentContext = new ShowAddAppointmentViewCommandContext();
-        this.AddNewAppointmentContext.StartDate = DateTime.Now;
-        this.AddNewAppointmentContext.EndDate = DateTime.Now.AddHours(1);
-
-        this.EditAppointmentContext = new ShowEditAppointmentViewCommandContext();
-        this.EditAppointmentContext.Appointment = this.Appointments.FirstOrDefault();
-    }
-	
-    public ObservableCollection<Appointment> Appointments { get; set; }
-
-    public ShowAddAppointmentViewCommandContext AddNewAppointmentContext { get; set; }
-
-    public ShowEditAppointmentViewCommandContext EditAppointmentContext { get; set; }
-}
-```
+*AddNewAppointmentContext* sets a new 1-hour appointment from now on, while *EditAppointmentContext* specifies the first appointment from the AppointmentsSource for editing.
 
 ## See Also
 

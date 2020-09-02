@@ -66,14 +66,14 @@ xmlns:telerikRichTextEditor="clr-namespace:Telerik.XamarinForms.RichTextEditor;a
 
 With RichTextEditor users can create and edit HTML content. In some cases you may need to load formatted text in advance - this can be achieved through the *Source* property of the control:
 
-<snippet id=' richtexteditor-getting-started' />
+<snippet id='richtexteditor-getting-started' />
 
 This is the result:
 
-![PdfViewer Getting Started Example](images/pdfviewer-getting-started.png "PdfViewer Getting Started Example")
+![RichTextEditor Getting Started Example](images/richtexteditor-getting-started.png "RichTextEditor Getting Started Example")
 
 ## See Also
 
-- [Key Features]({%slug pdfviewer-key-features%})
-- [Commands]({%slug pdfviewer-commands%})
-- [PdfViewer Toolbar]({%slug pdfviewer-toolbar%})
+- [Key Features]({%slug richtexteditor-key-features%})
+- [Commands]({%slug richtexteditor-commands%})
+- [RichTextEditor Toolbar]({%slug richtexteditor-toolbar%})

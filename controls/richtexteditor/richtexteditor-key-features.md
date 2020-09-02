@@ -18,7 +18,7 @@ RichTextEditor exposes **Source** property used to load HTML content into the ed
 
 You can easily load the HTML content from a string by using the static <code>FromString</code> method of the **RichTextSource** class and assigning the result to the **Source** property of RadRichTextEditor:
 
-<snippet id='richtexteditor-keyfeatures-fromstring" />
+<snippet id='richtexteditor-keyfeatures-fromstring' />
 
 ### Load HTML from a stream
 

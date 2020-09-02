@@ -30,7 +30,11 @@ PdfViewerToolbar exposes a new **SearchToolbarItem** which enables the search fe
  
 When the user clicks the search toolbar item, all of the the current toolbar items are hidden and new child items are displayed - back button along with an input for entering search. This way when the user has finished searching they can easily go back. 
 
+As soon as the user types into the entry, a clear button is shown to enable quickly clear the entered text and reset the search. 
+
 ![](images/pdfviewer-searchtoolbar.png)
+
+> If the text in the entry is cleared, the search results will be cleared as well.
 
 By default, search is performed when the user clicks the Search button of the keyboard (or the Enter key of the physical keyboard in UWP). You can modify this behavior through the **SearchTrigger** property of the SearchToolbarItem. SearchTrigger is of enum *Telerik.XamarinForms.PdfViewer.SearchTrigger* and is used to define when a search operation should be performed. The available values are:
 

@@ -38,6 +38,10 @@ and the ViewModel used:
 
 <snippet id='comobobox-editing-viewmodel'/> 
 
+Herre is how the control looks in edit mode:
+
+![ComboBox Edit Mode](images/combobox-edit.png)
+
 ## See Also
 
 - [Key Features]({%slug combobox-key-features%})

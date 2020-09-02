@@ -17,8 +17,7 @@ ComboBox control has a support for single and multiple selection. You can easily
 * **SelectionMode** (enumeration of type *Telerik.XamarinForms.Input.ComboBoxSelectionMode*): Defines whether the selection is single or multiple.
 * **SelectedIndex** (*int*): Specifies the index of the first item in the current selection or -1 if the selection is empty.
 * **SelectedItem** (*object*): Defines the first item in the current selection, or null if the selection is empty.
-* **SelectedItems** (*readonly ObservableCollection<object>*): Gets the collection of currently Selected Items.
-* **HighlightTextColor** (*Xamarin.Forms.Color*): Defines the color of the text that will be highlighted when searching is performed.
+* **SelectedItems** (*readonly ObservableCollection &lt;object &gt; *): Gets the collection of currently Selected Items.
 
 ## Single Selection
 
@@ -40,7 +39,7 @@ and the ViewModel used:
 
 This is how single selection looks:
 
-![ComboBox Single Selection](images/combobox-single-selection.png)
+![ComboBox Single Selection](images/dropdown-single-selection.png)
 
 ## Multiple Selection
 
@@ -62,7 +61,7 @@ and the ViewModel used:
 
 This is how multiple selection looks: 
 
-![ComboBox Multiple Selection](images/combobox-multiple-selection.png)
+![ComboBox Multiple Selection](images/dropdown-multiple-selection.png)
 
 >important The Selection example can be found in our [SDK Browser Application](developer-focused-examples). You can find the applications in the **Examples** folder of your local **Telerik UI for Xamarin** installation or in the following [GitHub repo](https://github.com/telerik/xamarin-forms-sdk).
 

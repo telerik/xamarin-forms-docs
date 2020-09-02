@@ -25,7 +25,7 @@ Here is an example of setting the `Placeholder` property:
 
 and the result:
 
-![ComboBox Placeholder](images/combobox-placeholder.png)
+![ComboBox Placeholder](images/combobox-visual-structure.png)
 
 ## Text
 

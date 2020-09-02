@@ -8,7 +8,7 @@ slug: combobox-overview
 
 # ComboBox for Xamarin Overview
 
-**Telerik ComboBox for Xamarin** allows users to select item/items from a dropdown list of items. The control has a number of features such as editing, searching, single and multiple selection, flexible styling API, dropdown customizations and more.  
+**Telerik ComboBox for Xamarin** allows users to select item/items from a drop down list of items. The control has a number of features such as editing, searching, single and multiple selection, flexible styling API, dropdown customizations and more.  
 
 #### Figure 1: ComboBox for Xamarin Overview
 

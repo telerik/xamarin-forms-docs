@@ -43,11 +43,11 @@ and the result:
 
 ![ComboBox Clear Button Visibility](images/combobox-clearbuttonvisibility.png)
 
-## DropDown Visibility
+## DropDown Behavior
 
 ComboBox provides the following properties for managing the drop down visbility:
 
-* **IsDropDownOpen**(*bool*): Defines whether the drop down box of the control is opened. Default value is `false`. 
+* **IsDropDownOpen**(*bool*): Defines whether the drop down part of the control is opened. Default value is `false`. 
 * **IsDropdownClosedOnSelection**(*bool*): Defines whether the drop down should be closed when item is selected/deselected. The default value is `false`.
 
 Here is an example with `IsDropdownClosedOnSelection` property set:

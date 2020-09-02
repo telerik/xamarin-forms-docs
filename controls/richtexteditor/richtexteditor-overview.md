@@ -23,7 +23,7 @@ Telerik RichTextEditor for Xamarin enables users to create rich textual content 
 	* Font manipulations such as size, family, text color and text background color;
 	* Bulleted and numbered lists;
 	* Text selection;
-	* Hyperlinks manipulations - create and remove hyperlinks;
+	* Hyperlinks manipulations - create, edit and remove hyperlinks;
 	* Subscript and superscript formatting;
 	* Indentation and content alignment;
 	* Undo/Redo editing actions.

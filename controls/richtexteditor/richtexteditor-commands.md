@@ -30,39 +30,29 @@ RadRichTextEditor provides the following commands of type *ICommand*:
 * **ApplyHyperlinkCommand**
 * **UndoCommand**
 
->note RadPdfViewer Toolbar exposes some of the commands built-in. For more information please check the [PdfViewer Toolbar]({%slug pdfviewer-toolbar%}) article.
+>note RadRichTextEditor Toolbar exposes some of the commands built-in. For more information please check the [RadRichTextEditor Toolbar]({%slug richtexteditor-toolbar%}) article.
 
 ## Example
 
-Following is an example how the RadPdfViewer commands could be called on a button click action. For the example we will visualize a pdf document from stream. 
+Through the provided commands you can execute the corresponding actions over RichTextEditor (for example apply bold text formatting) from a custom UI other than the RichTextEditor toolbar. 
 
-First, add a pdf document to the project and set its build action to be **EmbeddedResource**.
+Following is an example how the RadRichTextEditor commands could be called on a button click action. 
 
-Then, add the following code to visualize the document:
+Let's add the RichTextEditor definition together with a few sample buttons wired to the editor's commands:
 
-<snippet id='pdfviewer-commands'/>
+<snippet id='richtexteditor-commands-xaml' />
 
-Finally, use the following snippet to declare a RadPdfViewer in XAML and add a few buttons that will execute the pdf viewer commands:
-
-<snippet id='pdfviewer-commands-xaml'/>
-
-Where the **telerikPdfViewer** namespace is the following:
+Add the required namespaces:
 
 ```XAML
-xmlns:telerikPdfViewer="clr-namespace:Telerik.XamarinForms.PdfViewer;assembly=Telerik.XamarinForms.PdfViewer"
 xmlns:telerikCommon="clr-namespace:Telerik.XamarinForms.Common;assembly=Telerik.XamarinForms.Common"
+xmlns:telerikRichTextEditor="clr-namespace:Telerik.XamarinForms.RichTextEditor;assembly=Telerik.XamarinForms.RichTextEditor"
 ```
 
-By default FitToWidth command of the PdfViewer is assigned to "Fit Document to Width" option. You can easily switch to "Fit Page to Width" option by setting **FitToWidthCommand** property of RadPdfViewer to **FitPageToWidthCommand**, check the snippet below:
-	
-```C#	
-this.pdfViewer.FitToWidthCommand = new FitPageToWidthCommand();
-```
+Now text formatting and creating lists can be executed over the editor through the sample buttons:
 
-In this way, calling the **FitToWidthCommand** on a button click action, as in the example above, will execute "Fit Page to Width" on the current page.
- 
->important A sample Commands example can be found in the PdfViewer/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+>important A sample Commands example can be found in the RichTextEditor/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 
-- [PdfViewer Toolbar]({%slug pdfviewer-toolbar%})
+- [RadRichTextEditor Toolbar]({%slug richtexteditor-toolbar%})

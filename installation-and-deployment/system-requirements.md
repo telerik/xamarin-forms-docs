@@ -24,11 +24,13 @@ In order to develop applications with **Telerik UI for Xamarin** you need to hav
 	![VS 2019 Mobile Workload](images/vs2019_xamarin_workload.png)
 		
 	> Before proceeding, please make sure the following Individual components are included:
-	>	* Xamarin
-	>	* Text Template Transformation
+	>	* **Xamarin**
+	>	* **Text Template Transformation**
 
-	>tip For more detailed instructions go to [Installing Xamarin in Visual Studio on Windows](https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/installation/windows) topic in Xamarin documentation.
- 
+	>tip If you use Telerik UI for Xamarin version older than **R2 2019**, the **.NET Portable Library Targeting Pack** individual component is also required to successfully install and build with our Xamarin controls.
+	
+	>tip For more detailed instructions go to [Installing Xamarin in Visual Studio on Windows](https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/installation/windows) topic in Xamarin documentation.	
+	
 - For building iOS apps - [configured iOS build host](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/).
 
 
@@ -50,7 +52,7 @@ You will be able to develop **Android** and **iOS** apps. The **iOS** apps will 
 
 ## Xamarin.Forms reference
 
-The minimum required version of **Xamarin.Forms** package is **4.1.0.581479**.
+The minimum required version of **Xamarin.Forms** package is **4.6.0.726**.
 
 >The **Android project** requires multiple packages with specific versions. The **Xamarin.Forms** package will install most of the required packages as its dependencies. You can then go to [Required Android Support Libraries]({% slug required-android-support-libraries %}) article and check if you have all required files and versions.
 

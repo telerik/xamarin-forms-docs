@@ -2,7 +2,7 @@
 title: Commands
 page_title: Xamarin RichTextEditor Documentation | Commands
 description: Check our &quot;Commands&quot; documentation article for Telerik RichTextEditor for Xamarin control.
-position: 8
+position: 9
 slug: richtexteditor-commands
 ---
 

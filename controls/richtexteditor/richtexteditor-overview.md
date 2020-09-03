@@ -34,7 +34,9 @@ Telerik RichTextEditor for Xamarin enables users to create rich textual content 
 
 * **RichTextEditor Toolbar**: Take advantage of a pre-defined UI automatically wired with all of the commands provided by the control through built-in functionality. 
 
-* **Styling API**: You can easily modify the visual appearance of RadRichTextEditor through styling properties such as BackgroundColor, Border Color and Thickness, CornerRadius, HighlightTextColor, and more.
+* **Custom Toolbar**: The RadImageEditor Toolbar can be fully customized. You could populate the toolbar with the ToolbarItems needed for editing the HTML content. Read more about this in [RichTextEditor Custom Toolbar]({%slug richtexteditor-custom-toolbar%}).
+
+* **Styling API**: You can easily modify the visual appearance of RadRichTextEditor through styling properties such as BackgroundColor, Border Color and Thickness, CornerRadius, and more.
 
 >tip Check out RadRichTextEditor [Getting Started]({%slug richtexteditor-getting-started%}) help article that shows how to use it in a basic scenario.
 

@@ -24,6 +24,8 @@ Portable\Telerik.XamarinForms.PdfViewer.dll
 Portable\Telerik.XamarinForms.PdfViewer.xml
 Portable\Telerik.XamarinForms.Primitives.dll
 Portable\Telerik.XamarinForms.Primitives.xml
+Portable\Telerik.XamarinForms.RichTextEditor.dll
+Portable\Telerik.XamarinForms.RichTextEditor.xml
 Portable\Telerik.XamarinForms.SkiaSharp.dll
 Portable\Telerik.XamarinForms.SkiaSharp.xml
 Android\Telerik.Xamarin.Android.Chart.dll

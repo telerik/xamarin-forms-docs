@@ -8,30 +8,19 @@ slug: richtexteditor-toolbar
 
 # RichTextEditor Toolbar
 
-RadRichTextEditorToolbar includes all commands that RichTextEditor provides. They can be used as predefined UI toolbar items.
+RadRichTextEditor control comes with various editing capabilities and with the help of the RadRichTextEditorToolbar you can provide to the users easy and quick way to edit their HTML content. The default toolbar include items for all the available text formatting options, alternatively you could customize the shown editing options according to your needs.
 
-## RichTextEditor ToolbarItem
+By default the RadRichTextEditorToolbar Items are auto-populated. You could change this by setting the RadRichTextEditorToolbar boolean AutoGenerateItems property to False. In this case you will need to manually define the available editing options, for more details check [Custom Toolbar]({%slug richtexteditor-custom-toolbar%}) article.
 
-All predefined toolbar items derive from a common <code>RichTextEditorToolbarItem</code> which exposes some useful configuration as well as styling properties, such as:
+In order to attach the RichTextEditor control to the RadRichTextEditorToolbar control you need to set the <code>RichTextEditor</code> (from type *RadRichTextEditor*) property. All toolbar items execute their actions against the specified richtext editor.
 
-* Text
-* Description
-* IsOverflowItem
+When the RadRichTextEditorToolbar items can not fit into the device screen, OverflowButton is shown in the toolbar. You could customize it through the following properties:
 
-## Predefined Toolbar Items
+* OverflowButtonBorderColor { get; set; }
+* OverflowButtonBorderThickness { get; set; }
+* OpenOverflowButtonTextColor { get; set; }
+* OpenOverflowButtonBackgroundColor { get; set; }
 
-RadRichTextEditorToolbar contains the following Toolbar items:
-
-* AlignCenterToolbarItem
-* AlignJustifyToolbarItem
-* AlignLeftToolbarItem
-* AlignRightToolbarItem
-* BoldToolbarItem
-* BulletingToolbarItem
-
-By default, all toolbar items are shown in the RadRichTextEditorToolbar. You can control this by **AutoGenerateItems** boolean property. If you'd like to choose what toolbar items to be shown inside the toolbar, you would need to set **AutoGenerateItems** to *False* and add the items manually:
-
-<snippet id='richtexteditor-toolbar-xaml' />
 
 ## RichTextEditor Toolbar Placement
 

@@ -29,6 +29,10 @@ Here is the ComboBox definition in XAML:
 
 <snippet id='combobox-single-selection'/>
 
+you need to add the following namespace:
+
+<snippet id='xmlns-telerikinput'/>
+
 the sample business model
 
 <snippet id='combobox-city-businessmodel'/>

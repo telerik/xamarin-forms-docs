@@ -20,9 +20,13 @@ ComboBox provides both case-sensitive and case-insensitive searching modes. The 
 
 Here is the ComboBox definition in XAML:
 
-<snippet id='combobox-editing'/>
+<snippet id='combobox-searching-moode'/>
 
 >note When binding to a complex objects, ComboBox `DisplayMemberPath` property should be set. When you want to achieve Searching set `IsEditable` to `true` and `SearchTextPath`.
+
+In addition to this, you need to add the following namespace:
+
+<snippet id='xmlns-telerikinput'/>
 
 the sample business model
 
@@ -32,7 +36,7 @@ and the ViewModel used:
 
 <snippet id='combobox-searching-mode-viewmodel'/> 
 
-Herre is how the control looks when searching is performed:
+Here is how the control looks when searching is performed:
 
 ![ComboBox Searching](images/combobox-searching.png)
 

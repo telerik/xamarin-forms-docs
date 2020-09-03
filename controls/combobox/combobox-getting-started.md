@@ -97,7 +97,7 @@ and the ViewModel used:
 
 Here is the result:
 
-![CheckBox Getting Started Example](images/checkbox-getting-started.png)
+![CheckBox Getting Started Example](images/checkbox-getting-started-complex-data.png)
 
 >important The Getting Started example can be found in our [SDK Browser Application](developer-focused-examples). You can find the applications in the **Examples** folder of your local **Telerik UI for Xamarin** installation or in the following [GitHub repo](https://github.com/telerik/xamarin-forms-sdk).
 

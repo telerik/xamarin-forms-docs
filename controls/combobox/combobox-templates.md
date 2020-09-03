@@ -21,6 +21,10 @@ Here is the ComboBox definition in XAML:
 
 <snippet id='combobox-item-selecteditem-templates'/>
 
+you need to add the following namespace:
+
+<snippet id='xmlns-telerikinput'/>
+
 the sample business model
 
 <snippet id='combobox-store-businessmodel'/>
@@ -40,6 +44,10 @@ The final result:
 Here is the ComboBox definition in XAML:
 
 <snippet id='combobox-tokentemplate'/>
+
+add the following namespace:
+
+<snippet id='xmlns-telerikinput'/>
 
 the sample business model
 

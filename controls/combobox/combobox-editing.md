@@ -26,9 +26,13 @@ In addition, when IsEditable is set to true, the drop-down list should be open w
 
 Here is the ComboBox definition in XAML:
 
-<snippet id='combobox-searching-moode'/>
+<snippet id='combobox-editing'/>
 
 >note When binding to a complex objects, ComboBox **DisplayMemberPath** property should be set. Also when `IsEditable` is `true` `SearchTextPath` property should be set.
+
+In addition to this, you need to add the following namespace:
+
+<snippet id='xmlns-telerikinput'/>
 
 the sample business model
 

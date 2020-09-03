@@ -18,12 +18,15 @@ For all cases where the business items are not simple strings data-binding is ne
 
 ## Binding to a complex object
 
-Here is the ComboBox definition in XAML and in code behind:
+Here is the ComboBox definition in XAML:
 
 <snippet id='combobox-getting-started-complex-object-xaml'/>
-<snippet id='combobox-getting-started-complex-object-csharp'/>
 
 >note When binding to a complex objects, ComboBox **DisplayMemberPath** property should be set.
+
+In addition to this, you need to add the following namespace:
+
+<snippet id='xmlns-telerikinput'/>
 
 the sample business model
 

@@ -12,6 +12,7 @@ ComboBox provides both case-sensitive and case-insensitive searching modes. The 
 
 - **SearchMode** (enumeration of type *Telerik.XamarinForms.Input.SearchMode*): Defines the value that sets search sets some search criteria for the control. The available options are: `Contains`, `StartsWith`, `ContainsCaseSensitive` and `StartsWithCaseSensitive`. The default SearchMode is `StartsWith`.
 - **SearchTexhPath**(*string*): Specifies the name of the property against which the searching will be performed.
+* **HighlightTextColor** (*Xamarin.Forms.Color*): Defines the color of the text that will be highlighted when searching is performed.
 
 > Searching can be performed when `IsEditable` is set to `true`.
 
@@ -30,6 +31,10 @@ the sample business model
 and the ViewModel used:
 
 <snippet id='combobox-searching-mode-viewmodel'/> 
+
+Herre is how the control looks when searching is performed:
+
+![ComboBox Searching](images/combobox-searching.png)
 
 >important The SearchingMode example can be found in our [SDK Browser Application](developer-focused-examples). You can find the applications in the **Examples** folder of your local **Telerik UI for Xamarin** installation or in the following [GitHub repo](https://github.com/telerik/xamarin-forms-sdk).
 

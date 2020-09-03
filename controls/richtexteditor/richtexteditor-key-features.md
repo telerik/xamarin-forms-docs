@@ -34,7 +34,31 @@ Through **GetHtmlAsync** method of RadRichTextEditor you can obtain the created 
 
 ## RichText Editing Capabilities
 
-RichTextEditor will help app users create and edit HTML content.  
+RichTextEditor will help app users create and edit HTML content. You can apply provided by RichTextEditor editing features through the built-in UI, namely RadRichTextEditorToolbar, or you can create custom UI and manually execute the RadRichTextEditor Commands.
+
+In addition, RichTextEditor provides flexible API for checking the applied formatting at the current caret position or on the selected text inside the editing area.
+
+* **TextFormatting** (of type *RichTextFormatting*): Defines the text formatting, such as heading, paragraph or of the text at the current position or selection. 
+
+* **SelectionRange** (of type *RichTextSelectionRange*): Specifies the start and end position of the currently selected inside the editor text.
+
+* **FontSize** (*double*): Sets the font size of the text at the current caret position or selection;
+
+* **FontAttributes** (of type *RichTextFontAttributes*): Defines the font attributes, such as bold, italic, subscript and superscript at the current position or selection;
+
+* **TextDecorations** (of type *RichTextDecorations*): Specifies text decorations, such as underline and strikethrough at the current position or selection;
+
+* **HorizontalTextAlignment** (of type RichTextHorizontalAlignment) : Specifies the text alignment, such as left, right, center or justify at the current position or selection;
+
+* **ListType** (of type RichTextListType): Specifies the list type, such as numbered or bulleted list at the current position or selection.
+
+You can take advantage of the following methods related to hyperlinks and selection:
+
+* GetHyperlinkAsync() - returns asynchronously a <code>RichTextHyperlink</code> under the caret in the editor (or *null* in case there is no hyperlink).  The <code>RichTextHyperlink</code> object contains the *Url* and *Title* of the link;
+
+* GetHyperlinkAsync() - returns asynchronously a <code>RichTextSelection</code> object which defines the current text selection inside the editor (*null* if there is no text selection). The <code>RichTextSelection</code> object contains the *Text* itself as well as the *Start* and *End* position of the text characters;
+
+
 
 ## See Also
 

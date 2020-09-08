@@ -29,7 +29,7 @@ and the result:
 
 ## Text
 
-* **Text**(*string*): Specifies the Text of the control. When the ComboBox is in editable state, The Text is the text in the box. When it is in non-editable state and selection mode is single this is the text from the default template of the selected item.
+* **Text**(*string*): Specifies the Text of the control. This is the Text that gets visualized when the control is editable or when it is non-editable and the selection mode is single.
 
 ## ClearButton Visibility
 
@@ -47,14 +47,14 @@ and the result:
 
 ComboBox provides the following properties for managing the drop down visbility:
 
-* **IsDropDownOpen**(*bool*): Defines whether the drop down part of the control is opened. Default value is `false`. 
+* **IsDropDownOpen**(*bool*): Defines whether the drop down part of the control is opened. Default value is `true`. 
 * **IsDropdownClosedOnSelection**(*bool*): Defines whether the drop down should be closed when item is selected/deselected. The default value is `false`.
 
 Here is an example with `IsDropdownClosedOnSelection` property set:
 
 <snippet id='combobox-keyfeatures-dropdownvisibility-isdropdownclosed'/>
 
-* **OpenOnFocus**(*bool*):Defines whether the drop down should be opened when the control is focused. The default value is `false`. It is only applicable for Editable ComboBox. So the IsEditable property should be set to true.
+* **OpenOnFocus**(*bool*):Defines whether the drop down should be opened when the control is focused. The default value is `true`. It is only applicable for Editable ComboBox.
 
 Here is an example with `OpenOnFocus` property set:
 

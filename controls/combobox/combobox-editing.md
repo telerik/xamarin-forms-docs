@@ -11,16 +11,11 @@ slug: combobox-editing
 ComboBox supports both **editable** and **noneditable** state. When the control is in edit mode searching can be performed. 
 
 - **IsEditable**(*bool*): Defines whether editing can be performed. The default value is `false`.
+- **SearchTextPath** (*string*): Defines the name of the property against which the searching will be performed. The property is usable when editing is performed. 
 
-Editing could be achieved when `SearchTextPath` property is set.
+In addition, when IsEditable is set to true, the drop-down list is opening when the control is focused. That behavior could be changed using the OpenOnFocus property (bool) that is true by default. If the property is set to false when the control is focused the drop-down will no longer open.
 
-- **SearchTextPath** (*string*): Defines the name of the property against which the searching will be performed.
-
->The **SearchTextPath** property is required in editable mode.
-
-In addition, when IsEditable is set to true, the drop-down list should be open when the control is focused through the **OpenOnFocus** (*bool*) property. Default value is `false`.
-
-- **Text**(*string*): Defines the Text of the control. When it is editable this is the text from the box. When it is non-editable and selection mode is single this is the text from the default template of the selected item.
+- **Text**(*string*): Specifies the Text of the control. This is the Text that gets visualized when the control is editable or when it is non-editable and the selection mode is single.
 
 ## Example
 

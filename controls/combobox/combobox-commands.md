@@ -11,6 +11,9 @@ slug: combobox-commands
 ComboBox has the following commands:
 
 - **SelectAllCommand** (*ICommand*): Selects all items from the source.
+
+> SelectAll command can be used only when `SelectionMode` is `Multiple`. An exception will be thrown, if the command is invoked in `Single` `SelectionMode`.
+
 - **ClearSelectionCommand** (*ICommand*): Sets the selection to null. If Multiple SelectionMode is used, this command will clear all selected items.
 
 ## Example

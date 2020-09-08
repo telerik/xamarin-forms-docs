@@ -14,7 +14,7 @@ ComboBox for Xamarin exposes the following events:
 	- The `sender` which is the RadComboBox control.
 	- ComboBoxSelectionChangedEventArgs provides the following properties:
 		- `AddedItems`: the items added to the SelectedItemsCollection
-		- `RemovedItems`: the items removed from the SelectedItmesCollection
+		- `RemovedItems`: the items removed from the SelectedItemsCollection
 
 - **Completed**: Invoked when the completed button of the keyboard gets pressed. In UWP it is invoked when entered gets pressed. 
 

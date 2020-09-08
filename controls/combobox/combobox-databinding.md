@@ -9,20 +9,15 @@ slug: combobox-databinding
 # ComboBox Data Binding
 
 - **ItemsSource** (*IEnumerable*): Defines the collection of the items that will populate the control with data.
-
-For all cases where the business items are not simple strings data-binding is necessary in order to correctly visualize information. The **RadComboBox** component supports data binding in the form of path property.
-
 - **DisplayMemberPath** (*string*): Defines the name of the property which will be visualized inside the drop-down list.
 
->The **DisplayMemberPath** property is required in data-binding scenarios.
+> If DisplayMemberPath is not set the “ToString” implementation of the business object will be visualized. The DisplayMemberPath is a property that helps the developers to visualize an exact property from the business object they are bound to.
 
 ## Binding to a complex object
 
 Here is the ComboBox definition in XAML:
 
 <snippet id='combobox-getting-started-complex-object-xaml'/>
-
->note When binding to a complex objects, ComboBox **DisplayMemberPath** property should be set.
 
 In addition to this, you need to add the following namespace:
 

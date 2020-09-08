@@ -13,6 +13,8 @@ You can easily add Header and Footer to the Drop Down list of the ComboBox contr
 * **HeaderTemplate**(*DataTemplate*): Defines the template of the header that will be visualized in the drop down list.
 * **FooterTemplate**(*DataTemplate*): Defines the template of the footer that will be visualized in the drop down list.
 
+> It is not recommended to add controls in the Header and Footer which steal the focus (like Entry, editor, etc.) from the ComboBox control, as unexpected behavior may occur. 
+
 ## Example 
 
 Here is the ComboBox definition in XAML:

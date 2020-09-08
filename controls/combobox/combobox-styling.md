@@ -13,12 +13,13 @@ slug: combobox-styling
 ComboBox control for Xamarin provides the following Style properties for customizing its look:
 
 * **PlaceholderColor**(*Xamarin.Forms.Color*): Defines the color for the placeholder text.
-* **TextColor**(*Xamarin.Forms.Color*): Specifies the text color of the selected item.
+* **TextColor**(*Xamarin.Forms.Color*): Defines the color of the text when the control is editable and color of the selected item when it is not editable and selection mode is single.
 * **BackgroundColor**(*Xamarin.Forms.Color*): Defines the background color of the control.
-* **BorderColor**(*Xamarin.Forms.Color*): Deines the color of the border.
+* **BorderColor**(*Xamarin.Forms.Color*): Defines the color of the border.
 * **BorderThickness**(*Xamarin.Forms.Color*): Defines the thickness of the border.
 * **FocusedBorderColor**(*Xamarin.Forms.Color*): Defines the color of the nborder when the control is focused.
 * **ClearButtonStyle**(of type *Style* with target type *Xamarin.Forms.Button*): Defines the style for the clear button.
+* **Font Options**(`FontAttributes`, `FontFamily`, `FontSize`): Define the font options to the text of the RadComboBox. It is applied to the Placeholder, Selected Text(for single selection) and when the control is in Editable Mode.
 
 ### Example for ComboBox Styling
 

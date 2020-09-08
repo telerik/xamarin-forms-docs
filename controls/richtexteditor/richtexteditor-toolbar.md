@@ -16,9 +16,13 @@ In order to attach the RichTextEditor control to the RadRichTextEditorToolbar co
 
 <snippet id='richtexteditor-getting-started-xaml' />
 
-RadRichTextEditorToolbar is horizontally scrollable, so that the toolbar items can be easily accessed - you can control this by setting **IsScrollable** boolean property.
+RadRichTextEditorToolbar is horizontally scrollable, so that the toolbar items can be easily accessed - you can control this by setting **IsScrollable** boolean property (by default it is **True**).
+
+![](images/richtexteditor-scrollabletoolbar.png)
 
 In addition, an OverflowButton is available in the toolbar on the right to enable opening a menu area with additional toolbar items. If you'd like to customize the toolbar and manually define the toolbar items, you can define what toolbar items should be located in that menu area.
+
+![](images/richtexteditor-menuarea.png)
 
 ## RichTextEditor Toolbar Placement
 

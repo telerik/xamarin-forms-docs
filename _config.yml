@@ -514,7 +514,12 @@ navigation:
     ## End Rating
     ## RichTextEditor
     controls/richtexteditor:
-        title: "RichTextEditor"    
+        title: "RichTextEditor"
+        ## RichTextEditor Sub-Folders
+    controls/richtexteditor/styling:
+        title: "Styling"
+        position: 11
+        ## End RichTextEditor Sub-Folders        
     ## End RichTextEditor
     ## SegmentedControl
     controls/segmentedcontrol:

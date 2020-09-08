@@ -55,7 +55,12 @@ You can also customize the **PickerToolbarItems** used in the toolbar such as Co
 * **ItemStyle** and **SelectedItemStyle**: Modify the picker items' style in regular and selected state, accordingly. You would need to use **telerikDataControls:NonVirtualizedItemsControlItemContainer** as the TargetType of the ItemStyle properties;
 * **PopupContentSyle** and **PopupContentHeight**: Allow you to customize the popup that is displayed when tapping on a PickerToolbarItem. The TargetType of PopupContentSyle should be **telerikRichTextEditor:PopupContentView**.
 
+In addition, hyperlink toolbar items provide customization options, such as:
 
+* **PopupContentStyle**: Defines the style of the popup for creating/editing hyperlinks. The target type of this Style should be **telerikRichTextEditor:HyperlinkPopupContentView**;
+* **PopupOutsideBackgroundColor**: Sets the background behind the popup, so that it is clear the content outside is currently inactive.
+
+When creating a Style for the AddHyperlinkToolbarItem, you should set as target type **telerikRichTextEditor:InsertHyperlinkToolbarItem**  - this is needed as AddHyperlinkToolbarItem contains nested toolbar items, all of the derive fro InsertHyperlinkToolbarItem and in this way the style will affect the nested items as well.
 
 ## Example
 

@@ -26,7 +26,7 @@ All predefined toolbar items derive from a common <code>RichTextEditorToolbarIte
 
 RadRichTextEditorToolbar contains a bunch of predefined toolbar items used to execute the editing features over the content. Below you will find a complete list of the predefined toolbar items grouped according to their type:
 
-- Checkable Toolbar items - these items remain checked and apply the formatting over the text under the caret:
+- Checkable Toolbar items - these items remain checked and apply the formatting over the text under the caret or the selected text:
 	* AlignCenterToolbarItem
 	* AlignJustifyToolbarItem
 	* AlignLeftToolbarItem
@@ -40,14 +40,14 @@ RadRichTextEditorToolbar contains a bunch of predefined toolbar items used to ex
 	* SuperscriptToolbarItem
 	* UnderlineToolbarItem
 	
-- Action Toolbar items - execute the concrete action over the current text or selection:
+- Action Toolbar items - execute the concrete action over the current position or selection:
 	* ClearFormattingToolbarItem
 	* IndentToolbarItem
 	* OutdentToolbarItem
 	* RedоToolbarItem
 	* UndоToolbarItem
 	
-- Picker Toolbar items - open picker controls for choosing color, font, etc:
+- Picker Toolbar items - open picker controls for choosing color, font, etc and apply it at the current position or selection:
 	* ColorPickerToolbarItem
 	* FontFamilyToolbarItem
 	* FontSizeToolbarItem
@@ -55,14 +55,32 @@ RadRichTextEditorToolbar contains a bunch of predefined toolbar items used to ex
 	* TextColorToolbarItem
 	* TextFormattingToolbarItem
 	
-- Hyperlink Toolbar item - toolbar item for managing hyperlinks:
-	* AddHyperlinkToolbarItem  - contains child toolbar items for creating, editing and removing hyperlinks;
+Check below how the ColorPickerToolbarItem, for example, looks when the picker is open:
 
-If you'd like to choose what toolbar items to be shown inside the toolbar as well as their order, you would need to set **AutoGenerateItems** to *False* and add the items manually:
+![](images/richtexteditor-colorpicker.png)
+	
+- Hyperlink Toolbar item - toolbar item for managing hyperlinks:
+	* AddHyperlinkToolbarItem  - used to create hyperlinks; in addition contains child toolbar items for editing, removing and opening hyperlinks, namely EditHyperlinkToolbarItem, RemoveHyperlinkToolbarItem and OpenHyperlinkToolbarItem;
+	
+In order to create hyperlinks, users need to select text and use the **AddHyperlinkToolbarItem** - a popup with a field for entering URL will be displayed:
+
+![](images/richtexteditor-addhyperlink.png)
+
+If the caret is over an existing hyperlink, tapping on the **AddHyperlinkToolbarItem** will replace the current toolbar items with the AddHyperlinkToolbarItem child items:
+
+![](images/richtexteditor-hyperlink-nesteditems.png)
+
+BackButton is shown inside the RichTextEditorToolbar whenever there is a RichTextEditorToolbarItem with nested toolbar items to provide a way to return to the main toolbar. 
+
+OpenHyperlink toolbar item opens a browser and navigates to the respective URL address.
+
+If you'd like to choose what toolbar items to be shown inside the toolbar as well as their order and arrangement, you would need to set **AutoGenerateItems** to *False* and add the items manually:
 
 <snippet id='richtexteditor-toolbar-xaml' />
 
 And here is the result:
+
+![](images/richtexteditor-custom-toolbar.png)
 
 ## See Also
 

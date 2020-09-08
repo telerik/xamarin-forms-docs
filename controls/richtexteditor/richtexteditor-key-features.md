@@ -38,23 +38,23 @@ RichTextEditor will help app users create and edit HTML content. You can apply p
 
 In addition, RichTextEditor provides flexible API to apply formatting at the current caret position or on the selected text inside the editing area.
 
-* **TextFormatting** (of type *RichTextFormatting*): Defines the text formatting, such as heading, paragraph or of the text at the current position or selection. 
+* **TextFormatting** (of type [RichTextFormatting](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtextformatting)): Defines the text formatting, such as heading, paragraph or of the text at the current position or selection. 
 
-* **TextColor** (of type *Color*): Specifies the color of the text at the current position or selection;
+* **TextColor**: Specifies the color of the text at the current position or selection;
 
-* **HighlightTextColor** (of type *Color*): Defines the text background color at the current position or selection;
+* **HighlightTextColor**: Defines the text background color at the current position or selection;
 
-* **SelectionRange** (of type *RichTextSelectionRange*): Specifies the start and end position of the currently selected inside the editor text.
+* **SelectionRange** (of type [RichTextSelectionRange](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtextselectionrange)): Specifies the start and end position of the currently selected inside the editor text.
 
-* **FontSize** (*double*): Sets the font size of the text at the current caret position or selection;
+* **FontSize**: Sets the font size of the text at the current caret position or selection;
 
-* **FontAttributes** (of type *RichTextFontAttributes*): Defines the font attributes, such as bold, italic, subscript and superscript at the current position or selection;
+* **FontAttributes** (of type [RichTextFontAttributes](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtextfontattributes)): Defines the font attributes, such as bold, italic, subscript and superscript at the current position or selection;
 
-* **TextDecorations** (of type *RichTextDecorations*): Specifies text decorations, such as underline and strikethrough at the current position or selection;
+* **TextDecorations** (of type [RichTextDecorations](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtextdecorations)): Specifies text decorations, such as underline and strikethrough at the current position or selection;
 
-* **HorizontalTextAlignment** (of type RichTextHorizontalAlignment) : Specifies the text alignment, such as left, right, center or justify at the current position or selection;
+* **HorizontalTextAlignment** (of type [RichTextHorizontalAlignment](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtexthorizontalalignment)): Specifies the text alignment, such as left, right, center or justify at the current position or selection;
 
-* **ListType** (of type RichTextListType): Specifies the list type, such as numbered or bulleted list at the current position or selection.
+* **ListType** (of type [RichTextListType](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtextlisttype)): Specifies the list type, such as numbered or bulleted list at the current position or selection.
 
 You can take advantage of the following methods related to hyperlinks and selection:
 

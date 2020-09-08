@@ -18,7 +18,7 @@ RichTextEditor exposes **Source** property used to load HTML content into the ed
 
 You can easily load the HTML content from a string by using the static <code>FromString</code> method of the **RichTextSource** class and assigning the result to the **Source** property of RadRichTextEditor:
 
-<snippet id='richtexteditor-keyfeatures-fromstring' />
+<snippet id='richtexteditor-getting-started' />
 
 ### Load HTML from a stream
 
@@ -34,11 +34,15 @@ Through **GetHtmlAsync** method of RadRichTextEditor you can obtain the created 
 
 ## RichText Editing Capabilities
 
-RichTextEditor will help app users create and edit HTML content. You can apply provided by RichTextEditor editing features through the built-in UI, namely RadRichTextEditorToolbar, or you can create custom UI and manually execute the RadRichTextEditor Commands.
+RichTextEditor will help app users create and edit HTML content. You can apply provided by RichTextEditor editing features through the built-in UI, namely [RadRichTextEditorToolbar]({%slug richtexteditor-toolbar %}), or you can create custom UI and manually execute the RadRichTextEditor [Commands]({%slug richtexteditor-commands%}).
 
-In addition, RichTextEditor provides flexible API for checking the applied formatting at the current caret position or on the selected text inside the editing area.
+In addition, RichTextEditor provides flexible API to apply formatting at the current caret position or on the selected text inside the editing area.
 
 * **TextFormatting** (of type *RichTextFormatting*): Defines the text formatting, such as heading, paragraph or of the text at the current position or selection. 
+
+* **TextColor** (of type *Color*): Specifies the color of the text at the current position or selection;
+
+* **HighlightTextColor** (of type *Color*): Defines the text background color at the current position or selection;
 
 * **SelectionRange** (of type *RichTextSelectionRange*): Specifies the start and end position of the currently selected inside the editor text.
 
@@ -58,8 +62,7 @@ You can take advantage of the following methods related to hyperlinks and select
 
 * GetHyperlinkAsync() - returns asynchronously a <code>RichTextSelection</code> object which defines the current text selection inside the editor (*null* if there is no text selection). The <code>RichTextSelection</code> object contains the *Text* itself as well as the *Start* and *End* position of the text characters;
 
-
-
 ## See Also
 
 - [PdfViewer Toolbar]({%slug richtexteditor-toolbar%})
+- [Commands]({%slug richtexteditor-commands%})

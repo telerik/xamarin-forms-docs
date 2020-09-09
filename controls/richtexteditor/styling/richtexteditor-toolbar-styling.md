@@ -60,7 +60,7 @@ In addition, hyperlink toolbar items provide customization options, such as:
 * **PopupContentStyle**: Defines the style of the popup for creating/editing hyperlinks. The target type of this Style should be **telerikRichTextEditor:HyperlinkPopupContentView**;
 * **PopupOutsideBackgroundColor**: Sets the background behind the popup, so that it is clear the content outside is currently inactive.
 
-When creating a Style for the AddHyperlinkToolbarItem, you should set as target type **telerikRichTextEditor:InsertHyperlinkToolbarItem**  - this is needed as AddHyperlinkToolbarItem contains nested toolbar items, all of the derive fro InsertHyperlinkToolbarItem and in this way the style will affect the nested items as well.
+When creating a Style for the AddHyperlinkToolbarItem, you should set as target type **telerikRichTextEditor:InsertHyperlinkToolbarItem**  - this is needed as AddHyperlinkToolbarItem contains nested toolbar items, all of the derive from InsertHyperlinkToolbarItem and in this way the style will affect the nested items as well.
 
 ## Example
 

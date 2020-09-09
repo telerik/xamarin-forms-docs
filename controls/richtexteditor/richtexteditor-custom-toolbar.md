@@ -16,7 +16,7 @@ All predefined toolbar items derive from a common <code>RichTextEditorToolbarIte
 
 * **Text** and **Description** - when the toolbar is placed inside the main toolbar area only the Text is shown, but when in the menu area – both Text and Description are shown.
 
-* **IsOverflowItem** (*bool*): Identifies a toolbar item as a OverflowButton. In case you'd like to add some toolbar items inside additional area that can be open from a overflow button, create a <code>RichTextEditorToolbarItem</code> instance, set its IsOverflowItem to *True* and add toolbar items to it.
+* **IsOverflowItem** (*bool*): Identifies a toolbar item as an OverflowButton. In case you'd like to add some toolbar items inside additional area that can be open from an overflow button, create a <code>RichTextEditorToolbarItem</code> instance, set its IsOverflowItem to *True* and add toolbar items to it.
  
 * **IsChecked** (*bool*): Indicates whether the toolbar item is checked; more toolbar items can be checked at the same time, for example, both ItalicToolbarItem and BoldToolbarItem can be checked;
 

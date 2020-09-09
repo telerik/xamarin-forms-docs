@@ -28,7 +28,7 @@ You have two options:
 
 * Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
 
-If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RichTextEditor control you have to install the **Telerik.UI.for.Xamarin.RichTextEditor** nuget package. This nuget will automatically refer the *Telerik.UI.for.Xamarin.Common*, *Telerik.UI.for.Xamarin.DataControls* and *Telerik.UI.for.Xamarin.Primitives* nuget packages.
+If you don't want to add the complete Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RichTextEditor control you have to install the **Telerik.UI.for.Xamarin.RichTextEditor** nuget package. This nuget will automatically refer the *Telerik.UI.for.Xamarin.Common*, *Telerik.UI.for.Xamarin.DataControls* and *Telerik.UI.for.Xamarin.Primitives* nuget packages.
 
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadRichTextEditor** component:
 

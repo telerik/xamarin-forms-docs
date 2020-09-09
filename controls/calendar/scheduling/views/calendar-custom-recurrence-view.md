@@ -22,14 +22,33 @@ The control template for the **CustomRecurrenceView** can be found at the [follo
 
 In addition, to avoid editing the whole control template, there are additional properties which you can use to customize the look of the **CustomRecurrenceView**:
 
-* ****(**):
-* ****(**):
-* ****(**):
-* ****(**):
-* ****(**):
-* ****(**):
+* **ControlTemplate**(*controlTemplate*): Defines the Control Template of the CustomRecurrenceView.
+* **TitleFontSize**(*double*): Defines the font size of the appointment title.
+* **TitleTextColor**(*Xamarin.Forms.Color*): Defines the text color of the recurrence title.
+* **TextColor**(*Xamarin.Forms.Color*): Defines the text color of the frequency text, interval text, etc.
+* **SeparatorColor**(*Xamarin.Forms.Color*): Defines the color of the separator (the lines which devide each custom recurrence option).
+* **SeparatorThickness**(*Xamarin.Forms.Thickness*): Defines the thickness of the separators (the lines which devide each custom recurrence option).
+* **DetailsTextColor**(*Xamarin.Forms.Color*): Defines the text color of the recurence detail.
+* **DetailsFontSize**(*Xamarin.Forms.Color*): Defines the font size of the recurrence detail text.
+* **ButtonBackgroundColor**(*Xamarin.Forms.Color*): Defines the background color for the OK and Cancel buttons.
+* **ButtonTextColor**(*Xamarin.Forms.Color*): Defines the text color of the OK and Cancel buttons.
+* **BackgroundColor**(*Xamarin.Forms.Color*): Defines the background color of the CustomRecurrenceView.
 
->important These properties or the ControlTemplates can be changed by applying styles that target a specific view in the Resources of the “App.xaml” file of your application. 
+>important These properties or the ControlTemplate can be changed by applying style with TargetType telerikInput:CustomRecurrenceView in the Resources of the “App.xaml” file of your application. 
+
+### Example
+
+```XAML
+<Style TargetType="telerikInput:CustomRecurrenceView">
+    <Setter Property="TextColor" Value="Red"/>
+    <Setter Property="TitleTextColor" Value="Red"/>
+    <Setter Property="TitleFontSize" Value="20"/>
+</Style>
+```
+
+In addition, you will need to add the following namespace: 
+
+<snippet id='xmlns-telerikinput'/>
 
 ## See Also
 

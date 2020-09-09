@@ -10,7 +10,7 @@ slug: pdfviewer-text-search
 
 With R3 2020 PdfViewer for Xamarin comes with text search functionality which allows users to find and highlight text inside the pdf document. 
 
-You can take advantage of the PdfViewerToolbar bult-in search UI or search programmatically through the provided methods. With the built-in search UI users can easily enter text and browse through the search results withing the PdfViewer toolbar. In addition, there is a small toast message showing the count of the search results or a localizable message in case no results are found.
+You can take advantage of the PdfViewerToolbar built-in search UI or search programmatically through the provided methods. With the built-in search UI users can easily enter text and browse through the search results within the PdfViewer toolbar. In addition, there is a small toast message showing the count of the search results or a localizable message in case no results are found.
 
 ![](images/pdfviewer-default-textsearch.png)
 
@@ -128,7 +128,7 @@ SearchSettings exposes **NavigateToPreviousSearchResultCommand** and **NavigateT
 
 ### Manual Search
 
-You can use the **SearchAsync** method of the SearchSettings to manually initiate an async search operaion with the provided text and search options:
+You can use the **SearchAsync** method of the SearchSettings to manually initiate an async search operation with the provided text and search options:
 
 ```C#
 pdfViewer.SearchSettings.SearchAsync("viewer");

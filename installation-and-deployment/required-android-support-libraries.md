@@ -35,7 +35,8 @@ In addition, the following reference is required in the Android project:
 ### Requirements
 
 Check below the requirements for using AndroidX in Xamarin-based apps:
-  
+ 
+- **Visual Studio 2019** - On Windows update to Visual Studio 2019 version 16.4 or later. On macOS, update to Visual Studio 2019 for Mac version 8.4 or later.
 - **Xamarin.Android** - Xamarin.Android 10.0 or later must be installed with Visual Studio (Xamarin.Android is automatically installed as part of the Mobile Development With .NET workload on Windows and installed as part of the Visual Studio for Mac Installer)
 - **Java Developer Kit** - Xamarin.Android 10.0 development requires JDK 8. Microsoft's distribution of the OpenJDK is automatically installed as part of Visual Studio.
 - **Android SDK** - Android SDK API 28 or higher must be installed via the Android SDK Manager.

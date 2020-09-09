@@ -16,7 +16,7 @@ Appointment Summery View displays brief information about the appointment. The A
 
 ## Control Template
 
-The control template for the **AppointmentSummaryView** can be found at the following location: [SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/AppointmentSummaryView.xaml](https://github.com/telerik/xamarin-forms-sdk/blob/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/AppointmentSummaryView.xaml).
+The control template for the **AppointmentSummaryView** can be found at the [following location in our SDKBrowser Application](https://github.com/telerik/xamarin-forms-sdk/blob/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/AppointmentSummaryView.xaml).
 
 ## Partial Customization Options 
 

@@ -8,7 +8,7 @@ slug: calendar-custom-recurrence-view
 
 # Scheduling UI - Custom Recurrence View
 
-Add Appointment View allows the user to change the main appointment properties like `Title`, `Start` and `End Date`, `Detail`, `Recurrence`, whether it will be All Day appointment.
+CustomRecurrenceView is a view for choosing custom recurring intervals of an appointment.
 
 ## Visual Structure of Custom Recurrence View
 
@@ -23,8 +23,8 @@ The control template for the **CustomRecurrenceView** can be found at the [follo
 In addition, to avoid editing the whole control template, there are additional properties which you can use to customize the look of the **CustomRecurrenceView**:
 
 * **ControlTemplate**(*controlTemplate*): Defines the Control Template of the CustomRecurrenceView.
-* **TitleFontSize**(*double*): Defines the font size of the appointment title.
-* **TitleTextColor**(*Xamarin.Forms.Color*): Defines the text color of the recurrence title.
+* **TitleFontSize**(*double*): Defines the font size of the custom recurrence title.
+* **TitleTextColor**(*Xamarin.Forms.Color*): Defines the text color of the custom recurrence title.
 * **TextColor**(*Xamarin.Forms.Color*): Defines the text color of the frequency text, interval text, etc.
 * **SeparatorColor**(*Xamarin.Forms.Color*): Defines the color of the separator (the lines which devide each custom recurrence option).
 * **SeparatorThickness**(*Xamarin.Forms.Thickness*): Defines the thickness of the separators (the lines which devide each custom recurrence option).
@@ -34,7 +34,7 @@ In addition, to avoid editing the whole control template, there are additional p
 * **ButtonTextColor**(*Xamarin.Forms.Color*): Defines the text color of the OK and Cancel buttons.
 * **BackgroundColor**(*Xamarin.Forms.Color*): Defines the background color of the CustomRecurrenceView.
 
->important These properties or the ControlTemplate can be changed by applying style with TargetType telerikInput:CustomRecurrenceView in the Resources of the “App.xaml” file of your application. 
+>important These properties or the ControlTemplate can be changed by applying style with TargetType="telerikInput:CustomRecurrenceView" in the resources of the “App.xaml” file of your application. 
 
 ### Example
 

@@ -8,7 +8,7 @@ slug: calendar-repeat-appointment-view
 
 # Scheduling UI - Repeat Appointment View
 
-Add Appointment View allows the user to change the main appointment properties like `Title`, `Start` and `End Date`, `Detail`, `Recurrence`, whether it will be All Day appointment.
+RepeatAppointmentView is a view for choosing predefined repeat options like EveryDay, Every Month, Every Year, etc.
 
 ## Visual Structure of Repeat Appointment View
 
@@ -22,14 +22,33 @@ The control template for the **RepeatAppointmentView** can be found at the [foll
 
 In addition, to avoid editing the whole control template, there are additional properties which you can use to customize the look of the UIs, such as SeparatorThickness, ButtonBackgroundColor, etc.  
 
-* ****(**):
-* ****(**):
-* ****(**):
-* ****(**):
-* ****(**):
-* ****(**):
+* **ControlTemplate**(*controlTemplate*): Defines the Control Template of the RepeatAppointmentView.
+* **TitleFontSize**(*double*): Defines the font size of the RepeatAppointmentView title.
+* **TitleTextColor**(*Xamarin.Forms.Color*): Defines the text color of the RepeatAppointmentView title.
+* **FontSize**(*double*): Defines the font size of the repeat appointment options.
+* **TextColor**(*Xamarin.Forms.Color*): Defines the text color of the repeat appointment options.
+* **SeparatorColor**(*Xamarin.Forms.Color*): Defines the color of the separator (the lines which devide each repeat appointment option).
+* **SeparatorThickness**(*Xamarin.Forms.Thickness*): Defines the thickness of the separators (the lines which devide each repeat appointment option).
+* **ButtonBackgroundColor**(*Xamarin.Forms.Color*): Defines the background color for the OK and Cancel buttons.
+* **ButtonTextColor**(*Xamarin.Forms.Color*): Defines the text color of the OK and Cancel buttons.
+* **BackgroundColor**(*Xamarin.Forms.Color*): Defines the background color of the RepeatAppointmentView.
 
->important These properties or the ControlTemplates can be changed by applying styles that target a specific view in the “App.xaml” file of your application. 
+>important These properties or the ControlTemplate can be changed by applying style with TargetType="telerikInput:RepeatAppointmentView" in the  resources of the “App.xaml” file of your application. 
+
+### Example
+
+```XAML
+<Style TargetType="telerikInput:RepeatAppointmentView">
+    <Setter Property="TextColor" Value="Red"/>
+    <Setter Property="TitleTextColor" Value="Red"/>
+    <Setter Property="TitleFontSize" Value="20"/>
+	...
+</Style>
+```
+
+In addition, you will need to add the following namespace: 
+
+<snippet id='xmlns-telerikinput'/>
 
 ## See Also
 

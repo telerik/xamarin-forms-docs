@@ -16,7 +16,7 @@ Add Appointment View allows the user to change the main appointment properties l
 
 ## Control Template
 
-The control template for the **SaveRecurringAppointmentView** can be found at the following location: SDK Browser App/Controls/Calendar
+The control template for the **SaveRecurringAppointmentView** can be found at the [following location in our SDK Browse Application](https://github.com/telerik/xamarin-forms-sdk/blob/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/SaveRecurringAppointmentView.xaml).
 
 ## Partial Customization Options 
 

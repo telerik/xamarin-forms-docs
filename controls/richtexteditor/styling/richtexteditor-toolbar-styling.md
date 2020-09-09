@@ -68,6 +68,8 @@ You will need to declare Styles in the ResourceDictionary of the page and set Ta
 
 >note In order to apply the style to all toolbar items you should set the *Style.ApplyToDerivedTypes* property to *True*. In this way each style with target type <code>RichTextEditorToolbarItem</code> will affect the predefined toolbar items.
 
+>tip The example below uses Telerik Font Icons as **Text** for some of the toolbar items - this requires to include into the application the Telerik Font ttf file and use it as a reference to the FontFamily properties. For detailed instructions on this check [Telerik Font Icons]({%slug telerik-font-icons%}) topic.
+
 The example below shows how you can customize the RichTextEditorToolbar as well as the RichTextEditorToolbarItems. 
 
 First, let's add the RichTextEditorToolbar definition:
@@ -93,3 +95,4 @@ This is the result:
 
 - [RichTextEditor Styling]({%slug richtexteditor-styling%})
 - [Custom Toolbar]({%slug richtexteditor-custom-toolbar%})
+- [Telerik Font Icons]({%slug telerik-font-icons%}) 

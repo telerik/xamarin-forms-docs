@@ -74,6 +74,8 @@ BackButton is shown inside the RichTextEditorToolbar whenever there is a RichTex
 
 OpenHyperlink toolbar item opens a browser and navigates to the respective URL address.
 
+## Example
+
 If you'd like to choose what toolbar items to be shown inside the toolbar as well as their order and arrangement, you would need to set **AutoGenerateItems** to *False* and add the items manually:
 
 <snippet id='richtexteditor-toolbar-xaml' />

@@ -15,7 +15,7 @@ If the default templates of the control do not suit your needs, you can easily d
 > When the selection mode is single and the control is not editable if there is ItemTemplate set the same template will be visualized in the box part of the control when item is selected.
 
 * **SelectedItemTemplate**(*DataTemplate*): Defines the template of the selected items that are visualized in the drop-down list.
-* **TokenTemplate**(*DataTemplate*):  Defines the template of the tokens that are visualized when multiple selection is performed. The value is SuggestionItemTemplate.
+* **TokenTemplate**(*DataTemplate*):  Defines the template of the tokens that are visualized when multiple selection is performed.
 * **ShowMoreTemplate**(*DataTemplate*): Defines the Template of the show more UI that gets visualized when the control is not focused and there is not enough space for all Tokens to be visualized when the selection mode is multiple.
 
 ## Example with ItemTemplate and SelectedItemTemplate

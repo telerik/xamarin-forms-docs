@@ -48,7 +48,7 @@ and the result:
 ComboBox provides the following properties for managing the drop down visbility:
 
 * **IsDropDownOpen**(*bool*): Defines whether the drop down part of the control is opened. Default value is `true`. 
-* **IsDropdownClosedOnSelection**(*bool*): Defines whether the drop down should be closed when item is selected/deselected. The default value is `false`.
+* **IsDropdownClosedOnSelection**(*bool*): Defines whether the drop down should be closed when item is selected/deselected. The default value is `true`.
 
 Here is an example with `IsDropdownClosedOnSelection` property set:
 

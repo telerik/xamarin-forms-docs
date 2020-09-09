@@ -8,19 +8,19 @@ slug: calendar-appointment-summary-view
 
 # Scheduling UI Appointment Summary View
 
-Add Appointment View allows the user to change the main appointment properties like `Title`, `Start` and `End Date`, `Detail`, `Recurrence`, whether it will be All Day appointment.
-
+Appointment Summery View displays brief information about the appointment. The Appointment's Title, Details, Start Date and End Date, Recurrence, Detail.
+ 
 ## Visual Structure of Appointment Summary View 
 
 ![Scheduling UI Appointment Summary View](images/calendar-appointment-summary-view.png)
 
 ## Control Template
 
-The control template for the **AppointmentSummaryView** can be found at the following location: SDK Browser App/Controls/Calendar
+The control template for the **AppointmentSummaryView** can be found at the following location: [SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/AppointmentSummaryView.xaml](https://github.com/telerik/xamarin-forms-sdk/blob/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/AppointmentSummaryView.xaml).
 
 ## Partial Customization Options 
 
-In addition, to avoid editing the whole control template, there are additional properties which you can use to customize the look of the UIs, such as SeparatorThickness, ButtonBackgroundColor, etc.  
+In addition, to avoid editing the whole control template, there are additional properties which you can use to customize the look of the **AppointmentSummaryView**: 
 
 * ****(**):
 * ****(**):

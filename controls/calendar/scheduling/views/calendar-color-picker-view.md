@@ -16,11 +16,11 @@ Add Appointment View allows the user to change the main appointment properties l
 
 ## Control Template
 
-The control template for the **ColorPickerView** can be found at the following location: SDK Browser App/Controls/Calendar
+The control template for the **ColorPickerView** can be found at the following location: [SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/ColorPickerView.xaml](https://github.com/telerik/xamarin-forms-sdk/blob/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/ColorPickerView.xaml).
 
 ## Partial Customization Options 
 
-In addition, to avoid editing the whole control template, there are additional properties which you can use to customize the look of the UIs, such as SeparatorThickness, ButtonBackgroundColor, etc.  
+In addition, to avoid editing the whole control template, there are additional properties which you can use to customize the look of the **ColorPickerView**:
 
 * ****(**):
 * ****(**):

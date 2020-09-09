@@ -8,7 +8,7 @@ slug: calendar-delete-recurring-appointment-view
 
 # Scheduling UI - Delete Recurring Appointment View
 
-Add Appointment View allows the user to change the main appointment properties like `Title`, `Start` and `End Date`, `Detail`, `Recurrence`, whether it will be All Day appointment.
+DeleteRecurringAppointmentView is a view for choosing recurring appointments deleting options.
 
 ## Visual Structure of Delete Recurring Appointment View
 
@@ -22,14 +22,22 @@ The control template for the **DeleteRecurringAppointmentView** can be found at 
 
 In addition, to avoid editing the whole control template, there are additional properties which you can use to customize the look of the UIs, such as SeparatorThickness, ButtonBackgroundColor, etc.  
 
-* ****(**):
-* ****(**):
-* ****(**):
-* ****(**):
-* ****(**):
-* ****(**):
+* **ControlTemplate**(*ControlTemplate*): Defines the control template of the DeleteRecurringAppointmentView.
+* **BackgroundColor**(*Xamarin.Forms.Color*): Defines the background color of the DeleteRecurringAppointmentView.
 
->important These properties or the ControlTemplates can be changed by applying styles that target a specific view in the “App.xaml” file of your application. 
+>important These properties or the ControlTemplates can be changed by applying style with TargetType="telerikInput:DeleteRecurringAppointmentView" in the resources of the “App.xaml” file of your application. 
+
+### Example:
+
+```XAML
+<Style TargetType="telerikInput:DeleteRecurringAppointmentView">
+    <Setter Property="BackgroundColor" Value="Red"/>
+</Style>
+```
+
+In addition you will need to add the following namespace: 
+
+<snippet id='xmlns-telerikinput'/>
 
 ## See Also
 

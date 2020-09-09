@@ -8,7 +8,7 @@ slug: calendar-save-recurring-appointment-view
 
 # Scheduling UI - Save Recurring Appointment View
 
-Add Appointment View allows the user to change the main appointment properties like `Title`, `Start` and `End Date`, `Detail`, `Recurrence`, whether it will be All Day appointment.
+SaveRecurringAppointmentView is a view for choosing recurring appointment saving options.
 
 ## Visual Structure of Save Recurring Appointment View
 
@@ -22,14 +22,22 @@ The control template for the **SaveRecurringAppointmentView** can be found at th
 
 In addition, to avoid editing the whole control template, there are additional properties which you can use to customize the look of the UIs, such as SeparatorThickness, ButtonBackgroundColor, etc.  
 
-* ****(**):
-* ****(**):
-* ****(**):
-* ****(**):
-* ****(**):
-* ****(**):
+* **ControlTemplate**(*controlTemplate*): Defines the Control Template of the SaveRecurringAppointmentView.
+* **BackgroundColor**(*Xamarin.Forms.Color*): Defines the background color of the SaveRecurringAppointmentView.
 
->important These properties or the ControlTemplates can be changed by applying styles that target a specific view in the “App.xaml” file of your application. 
+>important These properties or the ControlTemplate can be changed by applying style with TargetType="telerikInput:SaveRecurringAppointmentView" in the resources of the “App.xaml” file of your application. 
+
+### Example
+
+```XAML
+<Style TargetType="telerikInput:SaveRecurringAppointmentView">
+    <Setter Property="BackgroundColor" Value="Red"/>
+</Style>
+```
+
+In addition, you will need to add the following namespace: 
+
+<snippet id='xmlns-telerikinput'/>
 
 ## See Also
 

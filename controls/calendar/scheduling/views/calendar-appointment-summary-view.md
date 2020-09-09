@@ -31,7 +31,7 @@ In addition, to avoid editing the whole control template, there are additional p
 * **ButtonTextColor**(*Xamarin.Forms.Color*): Defines the text color of the OK and Cancel buttons.
 * **BackgroundColor**(*Xamarin.Forms.Color*): Defines the background color of the AppintmentSummaryView.
 
->important These properties or the ControlTemplate can be changed by applying style with TargetType telerikInput:AppointmentSummaryView in the “App.xaml” file of your application. 
+>important These properties or the ControlTemplate can be changed by applying style with TargetType="telerikInput:AppointmentSummaryView" in the resources of the “App.xaml” file of your application. 
 
 ### Example
 

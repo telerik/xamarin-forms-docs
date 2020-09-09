@@ -8,7 +8,7 @@ slug: calendar-color-picker-view
 
 # Scheduling UI - Color Picker View
 
-Add Appointment View allows the user to change the main appointment properties like `Title`, `Start` and `End Date`, `Detail`, `Recurrence`, whether it will be All Day appointment.
+ColorPickerView is a view for picking color which is applied to the appointment.
 
 ## Visual Structure of Color Picker View
 
@@ -29,7 +29,7 @@ In addition, to avoid editing the whole control template, there are additional p
 * **ButtonTextColor**(*Xamarin.Forms.Color*): Defines the text color of the OK and Cancel buttons.
 * **BackgroundColor**(*Xamarin.Forms.Color*): Defines the background color of the ColorPickerView.
 
->important These properties or the ControlTemplate can be changed by applying style with TargetType telerikInput:ColorPickerView in the “App.xaml” file of your application. 
+>important These properties or the ControlTemplate can be changed by applying style with TargetType="telerikInput:ColorPickerView" in the resources of the  “App.xaml” file of your application. 
 
 ### Example:
 

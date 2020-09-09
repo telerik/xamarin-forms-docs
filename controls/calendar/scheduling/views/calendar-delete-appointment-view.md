@@ -8,7 +8,7 @@ slug: calendar-delete-appointment-view
 
 # Scheduling UI - Delete Appointment View
 
-Add Appointment View allows the user to change the main appointment properties like `Title`, `Start` and `End Date`, `Detail`, `Recurrence`, whether it will be All Day appointment.
+DeleteAppointmentView – view for choosing appointment deleting options.
 
 ## Visual Structure of Delete Appointment View
 
@@ -20,21 +20,25 @@ The control template for the **DeleteAppointmentView** can be found at the [foll
 
 ## Partial Customization Options 
 
-In addition, to avoid editing the whole control template, there are additional properties which you can use to customize the look of the UIs, such as SeparatorThickness, ButtonBackgroundColor, etc.  
+* **ControlTemplate**(*ControlTemplate*): Defines the control template of the DeleteAppointmentView.
+* **BackgroundColor**(*Xamarin.Forms.Color*): Defines the background color of the DeleteAppointmentView.
 
-* ****(**):
-* ****(**):
-* ****(**):
-* ****(**):
-* ****(**):
-* ****(**):
+>important These properties or the ControlTemplates can be changed by applying style with TargetType="telerikInput:DeleteAppointmentView" in the resources of the “App.xaml” file of your application. 
 
->important These properties or the ControlTemplates can be changed by applying styles that target a specific view in the “App.xaml” file of your application. 
+### Example:
+
+```XAML
+<Style TargetType="telerikInput:DeleteAppointmentView">
+    <Setter Property="BackgroundColor" Value="Red"/>
+</Style>
+```
+
+In addition you will need to add the following namespace: 
+
+<snippet id='xmlns-telerikinput'/>
 
 ## See Also
 
-* [Delete Appointment View]({%slug calendar-delete-appointment-view%})
 * [Color Picker View]({%slug calendar-color-picker-view%})
-
 * [View Modes]({%slug calendar-features-navigation-and-view-mode%})
 * [Calendar Selection]({%slug calendar-selection%})

@@ -22,14 +22,28 @@ The control template for the **ColorPickerView** can be found at the [following 
 
 In addition, to avoid editing the whole control template, there are additional properties which you can use to customize the look of the **ColorPickerView**:
 
-* ****(**):
-* ****(**):
-* ****(**):
-* ****(**):
-* ****(**):
-* ****(**):
+* **ControlTemplate**(*controlTemplate*): Defines the Control Template of the ColorPickerView.
+* **TitleFontSize**(*double*): Defines the font size of the color picker title.
+* **TitleTextColor**(*Xamarin.Forms.Color*): Defines the text color of the color picker title.
+* **ButtonBackgroundColor**(*Xamarin.Forms.Color*): Defines the background color for the Cancel button.
+* **ButtonTextColor**(*Xamarin.Forms.Color*): Defines the text color of the OK and Cancel buttons.
+* **BackgroundColor**(*Xamarin.Forms.Color*): Defines the background color of the ColorPickerView.
 
->important These properties or the ControlTemplates can be changed by applying styles that target a specific view in the “App.xaml” file of your application. 
+>important These properties or the ControlTemplate can be changed by applying style with TargetType telerikInput:ColorPickerView in the “App.xaml” file of your application. 
+
+### Example:
+
+```XAML
+<Style TargetType="telerikInput:ColorPickerView">
+    <Setter Property="ButtonBackgroundColor" Value="Blue"/>
+    <Setter Property="TitleFontSize" Value="16"/>
+    <Setter Property="BackgroundColor" Value="LightGray"/>
+</Style>
+```
+
+In addition, you will need to add the following namespace: 
+
+<snippet id='xmlns-telerikinput'/>
 
 ## See Also
 

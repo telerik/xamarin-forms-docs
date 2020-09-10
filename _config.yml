@@ -514,7 +514,7 @@ navigation:
     ## End Rating
     ## RichTextEditor
     controls/richtexteditor:
-        title: "RichTextEditor"
+        title: "RichTextEditor(beta)"
         ## RichTextEditor Sub-Folders
     controls/richtexteditor/styling:
         title: "Styling"

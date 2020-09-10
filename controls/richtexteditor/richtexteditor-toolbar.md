@@ -30,19 +30,13 @@ There are some specifics you'd need to take into account when placing RichTextEd
 
 * On Android - when you place the RichTextEditor Toolbar below the RichTextEditor, you will need to set the Application WindowSoftInputModeAdjust to **Resize** - this setting causes the page to resize when the keyboard is shown and in this way if the RichTextEditorToolbar is on the bottom of the page it will be displayed over the keyboard when it appears.
 
-You can apply it inside the OnParentSet() override of the page:
+You can apply it on application level like this:
 
 ```C#
-protected override void OnParentSet()
-{
-	base.OnParentSet();
-
-	if (Xamarin.Forms.Device.RuntimePlatform == Xamarin.Forms.Device.Android)
-	{
-		Application.SetWindowSoftInputModeAdjust(Xamarin.Forms.Application.Current, WindowSoftInputModeAdjust.Resize);
-	}
-}
+App.Current.On<Android>().UseWindowSoftInputModeAdjust(WindowSoftInputModeAdjust.Resize);
 ```
+
+>tip For more details on the matter check the [Soft Keyboard Input Mode on Android](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/platform/android/soft-keyboard-input-mode) from Xamarin documentation.
 
 * on iOS -  if the RadRichTextEditorToolbar is positioned under the keyboard, when the keyboard shows, the control is translated over the keyboard, so users can access it without a problem. Due to [Xamarin.Forms implementation](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.translationy?view=xamarin-forms), it is important that the RadRichTextEditorToolbar is placed in a container which bounds would still contain it after the control is translated over the keyboard. Otherwise, the Tap and Pan gestures on the RadRichTextEditorToolbar will not work until the keyboard is hidden and the control is translated back to its original place.
 

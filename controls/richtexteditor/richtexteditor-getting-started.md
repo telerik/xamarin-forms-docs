@@ -62,6 +62,8 @@ In addition to this, you need to add the following namespace:
 xmlns:telerikRichTextEditor="clr-namespace:Telerik.XamarinForms.RichTextEditor;assembly=Telerik.XamarinForms.RichTextEditor"
 ```
 
+> RadRichTextEditor relies on WebView for rendering HTML content and, as there is a limitation for placing WebView inside ScrollView control, keep in mind that placing RichTextEditor inside ScrollView will not work.
+
 ## 4. Loading HTML Content
 
 With RichTextEditor users can create and edit HTML content. In some cases you may need to load formatted text in advance - this can be achieved through the *Source* property of the control:

@@ -58,9 +58,9 @@ In addition, RichTextEditor provides flexible API to apply formatting at the cur
 
 You can take advantage of the following methods related to hyperlinks and selection:
 
-* GetHyperlinkAsync() - returns asynchronously a <code>RichTextHyperlink</code> under the caret in the editor (or *null* in case there is no hyperlink).  The <code>RichTextHyperlink</code> object contains the *Url* and *Title* of the link;
+* GetHyperlinkAsync() - returns asynchronously a [RichTextHyperlink](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtexthyperlink) under the caret in the editor (or *null* in case there is no hyperlink). The <code>RichTextHyperlink</code> object contains the *Url* and *Title* of the link;
 
-* GetHyperlinkAsync() - returns asynchronously a <code>RichTextSelection</code> object which defines the current text selection inside the editor (*null* if there is no text selection). The <code>RichTextSelection</code> object contains the *Text* itself as well as the *Start* and *End* position of the text characters;
+* GetSelectionAsync() - returns asynchronously a [RichTextSelection](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtextselection) object which defines the current text selection inside the editor (*null* if there is no text selection). The <code>RichTextSelection</code> object contains the *Text* itself as well as the *Start* and *End* position of the text characters;
 
 ## See Also
 

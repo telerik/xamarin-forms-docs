@@ -52,5 +52,9 @@ In addition, you will need to add the following namespace:
 
 ## See Also
 
+* [Add Appointment View]({%slug calendar-add-appointment-view%})
+* [Appointment Summery View]({%slug calendar-appointment-summary-view%})
 * [Delete Appointment View]({%slug calendar-delete-appointment-view%})
 * [Color Picker View]({%slug calendar-color-picker-view%})
+* [Custom Recurrence View]({%slug calendar-custom-recurrence-view%})
+* [End Repeat Appointment View]({%slug calendar-end-repeat-appointment-view%})

@@ -12,7 +12,13 @@ The purpose of this help article is to show you the key features of the **RadRic
 
 ## HTML Source options
 
-RichTextEditor exposes **Source** property used to load HTML content into the editor from a string as well as from a stream. 
+RichTextEditor exposes **Source** property of type [RichTextSource](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtextsource) used to load HTML content into the editor from a string as well as from a stream. 
+
+You can directly assign a string (containing HTML) as a <code>Source</code> of the editor - RadRichTextEditor will properly display the HTML content through the implemented in RichTextSource implicit converter. Check a simple example on this below:
+
+```C#
+this.richTextEditor.Source = "<b>Hello World!</b>";
+```
 
 ### Load HTML from a string
 
@@ -20,11 +26,15 @@ You can easily load the HTML content from a string by using the static <code>Fro
 
 <snippet id='richtexteditor-getting-started' />
 
+Alternatively, you can create a [RichTextHtmlStringSource](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtexthtmlstringsource) object and assign it to the <code>Source</code> property of the RichTextEditor.
+
 ### Load HTML from a stream
 
 Another option to preload HTML is by retrieving it from a stream through the static <code>FromStream</code> method of the **RichTextSource** and again,  assign the result to the **Source** property of the RichTextEditor:
 
 <snippet id='richtexteditor-keyfeatures-fromstream' />
+
+Alternatively, you can create a [RichTextHtmlStreamSource](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtexthtmlstreamsource) object and set it as the <code>Source</code> of the RichTextEditor.
 
 ## Retrieving HTML Content
 

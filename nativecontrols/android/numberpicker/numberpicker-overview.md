@@ -10,6 +10,8 @@ publish: true
 
 ## NumberPicker for Xamarin.Android: Overview
 
-**RadNumberPicker** for Xamarin.Android is an editing component that allows users to select a number with incremental step adjustments.
+**RadNumberPicker** for Xamarin.Android is a customizable input control for numeric data. It allows the user to set or edit a number using the decrease and increase buttons or directly enter it in the input field.
+
+You have control over the allowed minimum and maximum values, the increase/decrease step when clicking the buttons as well as the format of the value.
 
 ![TelerikUI-NumberPicker-Overview](images/number-picker-overview.png "RadNumberPicker overview.")

@@ -8,7 +8,7 @@ publish: true
 position: 0
 ---
 
-# Series Overview
+## ChartView for Xamarin.Android: Series Overview
 
 The data visualization in **RadChartView** is done by a hierarchy of classes that inherit from the **ChartSeries** class. Each series has a collection of data items which provide the data. Concrete series types are available for specific charts. For example, there is a set of **CartesianSeries** applicable in the context of a **RadCartesianChartView**.
 

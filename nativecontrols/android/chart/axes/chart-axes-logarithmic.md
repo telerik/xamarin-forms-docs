@@ -8,7 +8,7 @@ publish: true
 position: 5
 ---
 
-# LogarithmicAxis
+## ChartView for Xamarin.Android: LogarithmicAxis
 
 **RadCartesianChartView** needs an axis that can represent the values of the data points. The base class for the axes that can represent value is **NumericalAxis**.
 It is an abstract class which extends the base **CartesianAxis** class and is used to represent the value of a data point.

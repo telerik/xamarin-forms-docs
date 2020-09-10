@@ -8,7 +8,7 @@ position: 7
 publish: true
 ---
 
-# RadCalendarView: Gestures and Transitions
+## CalendarView for Xamarin.Android: Gestures and Transitions
 
 **RadCalendarView** provides different types of transitions which are played when certain gestures are executed by the user.
 These gestures can change the display date and display mode of the control. The other way to play transitions are by using the corresponding methods which force animation while changing the display date or display mode.

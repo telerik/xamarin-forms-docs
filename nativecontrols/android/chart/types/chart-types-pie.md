@@ -7,7 +7,7 @@ tags: radchartview, radpiechartview, chart, pie
 publish: true
 ---  
 
-# RadPieChartView
+## ChartView for Xamarin.Android: RadPieChartView
 
 **RadPieChartView** is one of the **RadChartView** types. This chart visualizes its data points using radial coordinate system. Each data point is represented as a slice from a pie. The ratio between the space consumed by each slice and the space consumed by the whole chart is the same as the ratio between the value of the data point that it represents and the total value of all data points in the series.
 

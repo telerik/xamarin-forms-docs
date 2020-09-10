@@ -8,7 +8,7 @@ position: 9
 publish: true
 ---
 
-# Visually Customizing RadDataForm's Validation
+## DataForm for Xamarin.Android: Visually Customizing RadDataForm's Validation
 
 Every editor in RadDataForm has a default **validation behavior**. This behavior is represented by the **DataFormValidationViewBehavior** class. It shows only negative feedback which
 looks like this:

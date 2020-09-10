@@ -8,7 +8,7 @@ publish: true
 position: 1
 ---
 
-# PanAndZoomBehavior
+## ChartView for Xamarin.Android: PanAndZoomBehavior
 
 With **PanAndZoomBehavior**, **RadCartesianChartView** handles the gestures drag, pinch open and pinch close which respectively cause panning, zooming in and zooming out of the associated chart plot area.
 

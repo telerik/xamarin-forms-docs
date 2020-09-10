@@ -8,7 +8,7 @@ publish: true
 position: 9
 ---
 
-# Financial Series
+## ChartView for Xamarin.Android: Financial Series
 
 The financial series are represented by the **OhlcSeries** and **CandlestickSeries** classes. They must be added to RadCartesianChartView and the chart must be configured with a CategoricalAxis and a NumericalAxis. Both financial series use OhlcDataPoint for data points internally and they only differ in the way they visualize the data point. OHLC stands for Open, High, Low and Close.
 

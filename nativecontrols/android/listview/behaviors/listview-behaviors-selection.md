@@ -8,7 +8,7 @@ publish: true
 position: 1
 ---
 
-# RadListView: SelectionBehavior
+## ListView for Xamarin.Android: SelectionBehavior
 
 The **SelectionBehavior** is responsible for selecting, deselecting and reporting the selection of items in **RadListView**. It supports single and multiple selection and can provide a notification
 when the selection state of an item is changed. Here's how the default settings work: when long press gesture occurs, the list view starts selection mode and the item that was pressed gets selected. Once in selection mode,

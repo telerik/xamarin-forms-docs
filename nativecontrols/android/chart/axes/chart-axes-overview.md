@@ -8,7 +8,7 @@ publish: true
 position: 0
 ---
 
-# Axes
+## ChartView for Xamarin.Android: Axes
 
 **RadCartesianChartView** plots data points in a coordinate system defined by its two axes. Usually, one data point has category and value, which define its Cartesian coordinates. This means that your chart will need one axis that can visualize the category and another which can visualize the value. **CartesianAxis** is the base class for all axes that **RadCartesianChartView** can plot.
 

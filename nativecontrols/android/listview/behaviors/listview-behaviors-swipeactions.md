@@ -8,7 +8,8 @@ publish: true
 position: 6
 ---
 
-# SwipeActionsBehavior: Overview
+## ListView for Xamarin.Android: SwipeActionsBehavior
+
 RadListView's `SwipeActionsBehavior` is an upgraded version of the `SwipeExecuteBehavior` addressing animation glitches and introducing new capabilities. With `SwipeExecuteBehavior` the dragged item was basically a screenshot of the actual `View` which prevented the end-user from interacting with the content in it. With `SwipeActionsBehavior` this is no longer the case, as the end-user drags the actual `View`. The way `SwipeActionsBehavior` is used is very similar to the approach with `SwipeExecuteBehavior` so you will be familiar with most of the APIs.
 
 # SwipeActionsBehavior: Getting Started

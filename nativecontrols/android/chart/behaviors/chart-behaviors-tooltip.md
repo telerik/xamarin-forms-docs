@@ -8,7 +8,7 @@ publish: true
 position: 3
 ---
 
-# ChartTooltipBehavior
+## ChartView for Xamarin.Android: ChartTooltipBehavior
 
 **ChartTooltipBehavior** is responsible for rendering concise information about a data point in a small popup which displays close to its relevant data point.
 

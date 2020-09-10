@@ -8,7 +8,7 @@ position: 1
 publish: true
 ---
 
-# Getting Started
+## ChartView for Xamarin.Android: Getting Started
 
 In this article, you will learn how to get started with **RadChartView for Xamarin.Android**: how to initialize the chart, how to create the data series, how to use the different axes and how to create a chart that looks like this:
 

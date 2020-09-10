@@ -8,7 +8,7 @@ publish: true
 position: 0
 ---
 
-# RadListView: Behaviors
+## ListView for Xamarin.Android: Behaviors
 
 If you have already read the [Getting Started page]({% slug listview-gettingstarted %} "Read the RadListView getting started"), you know how to add **RadListView** instance to your project and populate it with data.
 This section will demonstrate how to add different behaviors to the list view instance that we have created.

@@ -8,7 +8,7 @@ position: 1
 publish: true
 ---
 
-# RadDataForm: Getting Started
+## DataForm for Xamarin.Android: Getting Started
 
 To use **RadDataForm** a reference to the **Input** and **Common** libraries must first be added. Then it's just a matter of creating a new RadDataForm instance, adding it to the Android UI tree and providing an object to edit. For example:
 

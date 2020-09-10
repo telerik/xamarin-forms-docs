@@ -8,7 +8,7 @@ position: 5
 publish: true
 ---
 
-# RadCalendarView: Reading events from other calendars
+## CalendarView for Xamarin.Android: Reading events from other calendars
 
 **RadCalendarView** can be set up to read and display the events from other calendars on the device. The process is managed by the **EventReadAdapter** which is responsible for connecting to the calendar content provider and reading the requested events.
 There is no need for the developer to bother using any SQL queries since the default scenarios are provided out of the box. It is however possible for the queries to be fully customized as needed.

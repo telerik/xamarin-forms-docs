@@ -8,7 +8,7 @@ publish: true
 position: 10
 ---
 
-# Financial Indicators
+## ChartView for Xamarin.Android: Financial Indicators
 
 **RadCartesianChartView** visualizes each data item from the **Indicator Series** using a LineRenderer. The **Indicator Series** extend **CartesianSeries** and they require one **CategoricalAxis** and one **LinearAxis**.
 

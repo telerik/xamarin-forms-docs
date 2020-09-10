@@ -8,7 +8,7 @@ position: 1
 publish: true
 ---
 
-# RadSideDrawer Overview
+## SideDrawer for Xamarin.Android: Overview
 
 **RadSideDrawer** is a component can show a hidden view that contains navigation UI or common settings. A popular application that uses the drawer UI is the Android Playstore app.
 The hidden view can be displayed with a flick gesture and can be shown from any of the four edges of the screen. The view is also displayed with a transition which can be chosen from a set of pre-defined transitions.

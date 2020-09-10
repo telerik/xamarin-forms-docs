@@ -8,7 +8,7 @@ position: 8
 publish: true
 ---
 
-# RadCalendarView: Localization
+## CalendarView for Xamarin.Android: Localization
 
 By default **RadCalendarView** uses the current device's locale to initialize the values that are displayed along with some other calendar specifics like which is the first day of the week. Here's an example with of the calendar
 run on a device where the language is set to English (United States):

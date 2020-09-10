@@ -8,13 +8,23 @@ position: 1
 publish: true
 ---
 
-# RadCalendarView: Getting Started
+## CalendarView for Xamarin.Android: Getting Started
 
 In this article, you will learn how to get started with **RadCalendarView for Android**: how to initialize the calendar, how to set the dates that are displayed and how to create a calendar that looks like this one:
 
 ![TelerikUI-Calendar-Getting-Started-01](images/calendar-getting-started-1.png "In this article you will learn how to create this calendar from scratch.")
 
-## Adding the calendar instance
+### Project Setup
+
+For **CalendarView** you will need the following Telerik references:
+
+* Telerik.Xamarin.Android.Common
+* Telerik.Xamarin.Android.Data
+* Telerik.Xamarin.Android.Input
+* Telerik.Xamarin.Android.List
+* Telerik.Xamarin.Android.Primitives
+
+### Adding the calendar instance
 
 You can easily add **RadCalendarView** in the layout file for the main activity of your project:
 
@@ -45,7 +55,7 @@ You can access the control from the activity in order to be able to apply furthe
 	}
 ```
 
-## Display Date
+### Display Date
 
 By default when the calendar is loaded, it shows the current month. If you need to change the month that is currently visible, you can use the method **setDisplayDate(long)**. If you want the month that is visible to be January 2014, you need to set the display date to a time during this month. Here's an example:
 
@@ -58,7 +68,7 @@ By default when the calendar is loaded, it shows the current month. If you need 
 Here we used the 1st of January, but the result would have been the same if we had chosen another date from the same month. If you need to get the current display date, you can use the **getDisplayDate()** method.
 Since the result will be of type long (just as the parameter for the method that sets the display date) which may not seem very meaningful, you can use it along with setTimeInMillis() of an instance of type `java.util.Calendar`, which provides more easily readable date representation.
 
-## Week numbers
+### Week numbers
 
 At this point the calendar already looks like the screen shot from the beginning of the article. The only difference is that we still don't see the week numbers.
 **RadCalendarView** provides three options for the week numbers:

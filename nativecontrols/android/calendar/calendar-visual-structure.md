@@ -8,7 +8,7 @@ position: 1
 publish: true
 ---
 
-# RadCalendarView: Visual Structure
+## CalendarView for Xamarin.Android: Visual Structure
 
 In this article, you will learn how the **RadCalendarView for Android** is structured and what manages its core functionality.
 

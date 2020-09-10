@@ -9,7 +9,7 @@ position: 9
 publish: true
 ---
 
-# Annotations
+## ChartView for Xamarin.Android: Annotations
 
 In this article, you will learn to use the annotations feature in **RadChartView for Xamarin.Android** and also how to create custom annotations.
 

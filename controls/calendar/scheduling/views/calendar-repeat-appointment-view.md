@@ -35,6 +35,8 @@ In addition, to avoid editing the whole control template, there are additional p
 
 >important These properties or the ControlTemplate can be changed by applying style with TargetType="telerikInput:RepeatAppointmentView" in the  resources of the “App.xaml” file of your application. 
 
+![Scheduling UI Repeat Appointment View Properties](images/calendar-repeat-appointment-view-properties.png)
+
 ### Example
 
 ```XAML

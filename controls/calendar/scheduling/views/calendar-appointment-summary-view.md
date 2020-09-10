@@ -31,6 +31,8 @@ In addition, to avoid editing the whole control template, there are additional p
 * **ButtonTextColor**(*Xamarin.Forms.Color*): Defines the text color of the Delete event button.
 * **BackgroundColor**(*Xamarin.Forms.Color*): Defines the background color of the AppintmentSummaryView.
 
+![Scheduling UI Appointment Summary View Properties](images/calendar-appointment-summary-view-properties.png)
+
 >important These properties or the ControlTemplate can be changed by applying style with TargetType="telerikInput:AppointmentSummaryView" in the resources of the “App.xaml” file of your application. 
 
 ### Example

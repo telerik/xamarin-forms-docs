@@ -29,6 +29,8 @@ In addition, to avoid editing the whole control template, there are additional p
 * **ButtonTextColor**(*Xamarin.Forms.Color*): Defines the text color of the Cancel button.
 * **BackgroundColor**(*Xamarin.Forms.Color*): Defines the background color of the ColorPickerView.
 
+![Scheduling UI Color Picker View Properties](images/calendar-color-picker-view-properties.png)
+
 >important These properties or the ControlTemplate can be changed by applying style with TargetType="telerikInput:ColorPickerView" in the resources of the  “App.xaml” file of your application. 
 
 ### Example:

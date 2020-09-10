@@ -10,10 +10,6 @@ slug: calendar-save-recurring-appointment-view
 
 SaveRecurringAppointmentView is a view for choosing recurring appointment saving options.
 
-## Visual Structure of Save Recurring Appointment View
-
-![Scheduling UI Save Recurring Appointment View](images/calendar-save-recurring-appointment-view.png)
-
 ## Control Template
 
 The control template for the **SaveRecurringAppointmentView** can be found at the [following location in our SDK Browse Application](https://github.com/telerik/xamarin-forms-sdk/blob/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/SaveRecurringAppointmentView.xaml).

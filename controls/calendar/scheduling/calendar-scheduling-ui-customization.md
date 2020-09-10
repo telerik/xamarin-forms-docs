@@ -28,13 +28,23 @@ With R3 2020 Release the views used within the built-in Scheduling UI control ca
 
 In addition, to avoid editing the whole control template, there are additional properties which you can use to customize the look of the UIs, such as SeparatorThickness, ButtonBackgroundColor, etc.  
 
->note These properties are different for different views. For more details which properties can be set for the concrete view refer to the articles of the separate views inside the Scheduling UI Views section.
+> These properties are different for different views. For more details which properties can be set for the concrete view refer to the articles of the separate views inside the Scheduling UI Views section.
 
->important These properties or the ControlTemplates can be changed by applying styles that target a specific view in the “App.xaml” file of your application. 
+> These properties or the ControlTemplates can be changed by applying styles that target a specific view in the “App.xaml” file of your application. 
+
+## Example
+
+A sample demo code with custom Scheduling UI can be found in our [Telerik Sample Application](https://github.com/telerik/telerik-xamarin-forms-samples/tree/master/QSF/QSF/Examples/CalendarControl/SchedulingUICustomizationExample).
 
 ## See Also
 
 * [Appointments]({%slug calendar-appointments%})
 * [Custom Appointments]({%slug calendar-custom-appointments%})
-* [View Modes]({%slug calendar-features-navigation-and-view-mode%})
-* [Calendar Selection]({%slug calendar-selection%})
+* [Custom Scheduling UIs]({%slug calendar-scheduling-ui-customization%})
+* [Add Appointment View]({%slug calendar-add-appointment-view%})
+* [Appointment Summery View]({%slug calendar-appointment-summary-view%})
+* [Delete Appointment View]({%slug calendar-delete-appointment-view%})
+* [Color Picker View]({%slug calendar-color-picker-view%})
+* [Custom Recurrence View]({%slug calendar-custom-recurrence-view%})
+* [Repeat Appointment View]({%slug calendar-repeat-appointment-view%})
+* [End Repeat Appointment View]({%slug calendar-end-repeat-appointment-view%})

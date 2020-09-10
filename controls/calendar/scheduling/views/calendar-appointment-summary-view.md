@@ -27,8 +27,8 @@ In addition, to avoid editing the whole control template, there are additional p
 * **AppointmentTitleTextColor**(*Xamarin.Forms.Color*): Defines the text color of the appointment title.
 * **DetailsTextColor**(*Xamarin.Forms.Color*): Defines the text color of the appointment detail.
 * **DetailsFontSize**(*Xamarin.Forms.Color*): Defines the font size of the appointment detail text.
-* **ButtonBackgroundColor**(*Xamarin.Forms.Color*): Defines the background color for the OK and Cancel buttons.
-* **ButtonTextColor**(*Xamarin.Forms.Color*): Defines the text color of the OK and Cancel buttons.
+* **ButtonBackgroundColor**(*Xamarin.Forms.Color*): Defines the background color for the Delete event button.
+* **ButtonTextColor**(*Xamarin.Forms.Color*): Defines the text color of the Delete event button.
 * **BackgroundColor**(*Xamarin.Forms.Color*): Defines the background color of the AppintmentSummaryView.
 
 >important These properties or the ControlTemplate can be changed by applying style with TargetType="telerikInput:AppointmentSummaryView" in the resources of the “App.xaml” file of your application. 

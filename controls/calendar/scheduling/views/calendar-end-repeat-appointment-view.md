@@ -36,6 +36,8 @@ In addition, to avoid editing the whole control template, there are additional p
 * **SummaryFontSize**(*double*): Defines the font size of the summary text (when the repeat appointment ends).
 * **BackgroundColor**(*Xamarin.Forms.Color*): Defines the background color of the EndRepeatAppointmentView.
 
+![Scheduling UI End Repeat Appointment View Properties](images/calendar-end-repeat-appointment-view-properties.png)
+
 >important These properties or the ControlTemplate can be changed by applying style with TargetType="telerikInput:EndRepeatAppointmentView" in the resources of the “App.xaml” file of your application. 
 
 ### Example

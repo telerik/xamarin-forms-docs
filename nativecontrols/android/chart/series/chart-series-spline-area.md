@@ -8,7 +8,7 @@ publish: true
 position: 4
 ---
 
-# SplineAreaSeries
+## ChartView for Xamarin.Android: SplineAreaSeries
 
 **RadCartesianChartView** visualizes **SplineAreaSeries** as an area on the chart that is enclosed by the coordinate axes and curved line segments that connect the data points represented by these series. The **SplineAreaSeries** extend **AreaSeries**, so they are also **CategoricalSeries** and require one **CategoricalAxis** and one **LinearAxis**.
 

@@ -8,7 +8,7 @@ publish: true
 position: 7
 ---
 
-# PieSeries
+## ChartView for Xamarin.Android: PieSeries
 
 **RadPieChartView** visualizes the **PieSeries** in the shape of a pie. Each data item is visually represented by a pie slice. The ratio between the space consumed by each slice and the space consumed by the whole chart is the same as the ratio between the value of the data point that it represents and the total value of all data points in the series.
 

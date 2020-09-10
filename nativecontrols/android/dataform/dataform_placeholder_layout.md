@@ -8,7 +8,7 @@ position: 12
 publish: true
 ---
 
-# RadDataForm: Using DataFormPlaceholderLayoutManager
+## DataForm for Xamarin.Android: Using DataFormPlaceholderLayoutManager
 
 To use the placeholder layout developers must create an instance of the **DataFormPlaceholderLayoutManager** class.
 

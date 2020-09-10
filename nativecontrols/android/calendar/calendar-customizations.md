@@ -8,7 +8,7 @@ position: 6
 publish: true
 ---
 
-# RadCalendarView: Customizations
+## CalendarView for Xamarin.Android: Customizations
 
 **RadCalendarView** provides various ways to alter its look. It allows you to define dates which use special visuals, additional decorations and coloring, etc. Another customization option is to
 define which of its elements should be visible and even alter their appearance.

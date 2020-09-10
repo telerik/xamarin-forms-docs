@@ -8,7 +8,7 @@ publish: true
 position: 3
 ---
 
-# RadListView: LoadOnDemandBehavior
+## ListView for Xamarin.Android: LoadOnDemandBehavior
 
 If your list contains a lot of items, it may not be necessary to load of them at the start. Here the **LoadOnDemandBehavior** can be useful to allow the end user to request the loading of more items if needed.
 There are two modes for this behavior: manual and automatic. The manual is represented by a button at the end of the list that can be clicked to load more items. The automatic mode, as the name suggests,

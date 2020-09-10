@@ -8,7 +8,7 @@ position: 3
 publish: true
 ---
 
-# RadCalendarView: Selection
+## CalendarView for Xamarin.Android: Selection
 
 **RadCalendarView** provides three different types of selection: Single, Multiple and Range. They are contained in the `CalendarSelectionMode` enumeration. You can get the current value through the method **getSelectionMode()**.
 The default value is `Multiple` and you can change it either using the XML attribute **selectionMode** or using the method **setSelectionMode(CalendarSelectionMode)**.

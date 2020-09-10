@@ -8,7 +8,7 @@ publish: true
 position: 0
 ---
 
-# Behaviors
+## ChartView for Xamarin.Android: Behaviors
 
 Each chart can be enabled with interactivity through its Behaviors. A behavior is generally an abstraction that handles user input in a **RadChartView** instance and optionally provides visual feedback upon some action. The following behaviors are available:
 

@@ -8,7 +8,7 @@ position: 0
 publish: true
 ---
 
-# RadCalendarView: Overview
+## CalendarView for Xamarin.Android: Overview
 
 **RadCalendarView** for Android is a calendar component that has been designed for the mobile environment. It offers great performance, powerful customization options and various features.
 The dates in the calendar can be presented with different modes which visualize Month, Week or Year. The user can provide a selection in different selection modes - Single, Multiple or Range depending on the required results.

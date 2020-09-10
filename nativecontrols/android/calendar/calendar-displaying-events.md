@@ -8,7 +8,7 @@ position: 5
 publish: true
 ---
 
-# RadCalendarView: Displaying events in the calendar
+## CalendarView for Xamarin.Android: Displaying events in the calendar
 
 **RadCalendarView** can be used to display the events for a single cell, that is currently selected. There are currently two ways for displaying the events, which are being set by using a single property of the calendar.
 

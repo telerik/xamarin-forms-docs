@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# ZipLibrary for Xamarin.Android: Overview
 
 Have you ever wondered how to increase the responsiveness of your applications by compressing the data that you send over the internet? With the new __Zip Library__ you can compress data like images, docx or pdf files and send them over the wire. Thus, you will achieve fast and secure transactions. 
 

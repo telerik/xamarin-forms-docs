@@ -8,7 +8,7 @@ publish: true
 position: 3
 ---
 
-# AreaSeries
+## ChartView for Xamarin.Android: AreaSeries
 
 **RadCartesianChartView** visualizes **AreaSeries** as an area on the chart that is enclosed by the coordinate axes and straight line segments that connect the data points represented by these series. The **AreaSeries** extend **CategoricalStrokedSeries**, so they are also **CategoricalSeries** and require one **CategoricalAxis** and one **LinearAxis**.
 

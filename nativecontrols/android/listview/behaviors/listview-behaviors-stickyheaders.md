@@ -8,16 +8,17 @@ publish: true
 position: 7
 ---
 
-# RadListView: StickyHeaderBehavior
+## ListView for Xamarin.Android: StickyHeaderBehavior
 
-If your list contains group headers as demonstrated in [this article]({% slug listview-data %} "Read more about Grouping"), you can use the **StickyHeaderBehavior** which will 'freeze' the group header of the top item:
+If your list contains group headers as demonstrated in [Group, Sort and Filter]({% slug listview-data %}#group "Read more about Grouping") topic, you can use the **StickyHeaderBehavior** which will 'freeze' the group header of the top item:
 
 ![TelerikUI-ListView-StickyHeaders](images/listview-behaviors-stickyheaders-1.png "This is the sticky header behavior.")
 
-As you can see from the image, even though the list is scrolled to the middle of an item, its header remains visible on the top of the list. Here's the code for this to work:
+This means the GroupHeader will remain sticked to the top corner of the ListView while scrolling through the items until the whole group is scrolled away. As you scroll through the next group, the currently sticked group header will be pushed by the next group header.
 
+Here's the code for this to work - just create an instance of <code>StickyHeaderBehavior</code> class and assign it to the ListView through **AddBehavior** method:
 
 ```C#
-StickyHeaderBehavior stickyHeaderBehavior = new StickyHeaderBehavior ();
-listView.AddBehavior (stickyHeaderBehavior);
+StickyHeaderBehavior stickyHeaderBehavior = new StickyHeaderBehavior();
+listView.AddBehavior(stickyHeaderBehavior);
 ```

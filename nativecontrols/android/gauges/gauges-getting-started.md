@@ -8,7 +8,7 @@ position: 1
 publish: true
 ---
 
-# Gauges: Getting Started
+## Gauges for Xamarin.Android: Getting Started
 
 This article demonstrates how to setup an instance of **RadGaugeView** from scratch.
 
@@ -16,7 +16,7 @@ This article demonstrates how to setup an instance of **RadGaugeView** from scra
 
 In order to use **RadGuageView** you need to add reference to the **Gauges** library which is part of Telerik UI for Xamarin.Android.
 
-After your project is set up referencing the library you are ready to add a gauge to your activity. **RadGaugeView** is a base class for TelerikUI gauges so you need to instanciate a subclass. The most common way is to describe the gauge in the XML layout of your activity.
+After your project is set up referencing the library you are ready to add a gauge to your activity. **RadGaugeView** is a base class for TelerikUI gauges so you need to instantiate a subclass. The most common way is to describe the gauge in the XML layout of your activity.
 
 ```XML
 <com.telerik.widget.gauge.RadRadialGaugeView
@@ -35,7 +35,7 @@ RadRadialGaugeView gauge = (RadRadialGaugeView)rootView.FindViewById(Resource.Id
 
 ## Adding scales
 
-After the gauge is loaded in the activity/fragment you are ready to add scales and indicators to it. The base class that represents a scale in **RadGaugeView** is **GaugeScale**. It has maximum and minimum values and a set of indicators that show values on the scale. You can also set the count of labels and ticks drawn on the scale. The code below demonstrates how to instanciate and configure a scale:
+After the gauge is loaded in the activity/fragment you are ready to add scales and indicators to it. The base class that represents a scale in **RadGaugeView** is **GaugeScale**. It has maximum and minimum values and a set of indicators that show values on the scale. You can also set the count of labels and ticks drawn on the scale. The code below demonstrates how to instantiate and configure a scale:
 
 
 ```C#
@@ -51,7 +51,6 @@ scale.TicksOffset = 0;
 ```
 
 After the scale is configured you are ready to add indicators to it. In this example you will add a radial needle and radial bar indicators to the scale. The needle points to a specific value and the bar shows a range on the scale.
-
 
 ```C#
 int[] colors = new int[] {
@@ -80,7 +79,6 @@ scale.AddIndicator(needle);
 ```
 
 The last thing that you need to do is to add the scale to the gauge:
-
 
 ```C#
 gauge.AddScale(scale);

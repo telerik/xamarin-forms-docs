@@ -8,7 +8,7 @@ publish: true
 position: 12
 ---
 
-# ScatterBubbleSeries
+## ChartView for Xamarin.Android: ScatterBubbleSeries
 
 **RadCartesianChartView** visualizes each data item from the **ScatterBubbleSeries** as individual bubbles on the plot area where each bubble has an individual size. The size is measured in pixels and represents the area of the bubble. ScatterBubbleSeries like all other scatter series require two numerical axes to function properly. All scatter series are incompatible with all categorical axes.
 

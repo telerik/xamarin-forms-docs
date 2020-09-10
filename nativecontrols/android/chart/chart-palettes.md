@@ -8,7 +8,7 @@ position: 7
 publish: true
 ---
 
-# Palettes
+## ChartView for Xamarin.Android: Palettes
 
 In this article you will learn to use the predefined palettes in **RadChartView for Xamarin.Android** and also how to create custom palettes.
 

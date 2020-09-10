@@ -8,7 +8,7 @@ publish: true
 position: 4
 ---
 
-# ChartSelectionBehavior
+## ChartView for Xamarin.Android: ChartSelectionBehavior
 
 **ChartSelectionBehavior** is responsible for selecting, deselecting and reporting the selection of either data points or series. In other words,
 the selection behavior can target data points, series or both if required.

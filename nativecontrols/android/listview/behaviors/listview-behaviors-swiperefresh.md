@@ -8,7 +8,7 @@ publish: true
 position: 4
 ---
 
-# RadListView: SwipeRefreshBehavior
+## ListView for Xamarin.Android: SwipeRefreshBehavior
 
 If your list contains items, which may change after the initial list has been loaded, it may be good idea to allow the users to refresh the list. That is easy with the **SwipeRefreshBehavior**. 
 Simply add an instance of this behavior

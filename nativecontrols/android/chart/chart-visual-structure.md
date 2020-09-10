@@ -8,7 +8,7 @@ position: 2
 publish: true
 ---
 
-# RadChartView: Visual Structure
+## ChartView for Xamarin.Android: Visual Structure
 
 In this article, you will learn which are the visual elements and terms used in **RadChartView for Xamarin.Android**.
 

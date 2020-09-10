@@ -8,7 +8,7 @@ position: 11
 publish: true
 ---
 
-# RadDataForm: Using DataFormLinearLayoutManager
+## DataForm for Xamarin.Android: Using DataFormLinearLayoutManager
 
 RadDataForm can easily arrange its editors in a linear layout instead of the default table layout. This can be done with the **DataFormLinearLayoutManager** class. For example:
 

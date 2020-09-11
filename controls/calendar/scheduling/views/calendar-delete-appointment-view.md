@@ -6,7 +6,7 @@ position: 3
 slug: calendar-delete-appointment-view
 ---
 
-# Scheduling UI - Delete Appointment View
+# Delete Appointment View
 
 DeleteAppointmentView – view for choosing appointment deleting options.
 
@@ -16,9 +16,9 @@ DeleteAppointmentView – view for choosing appointment deleting options.
 
 ## Control Template
 
-The control template for the **DeleteAppointmentView** can be found at the [following location in our SDKBrowser Application](https://github.com/telerik/xamarin-forms-sdk/blob/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/DeleteAppointmentView.xaml).
+> The control template for the **DeleteAppointmentView** can be found at the [following location in our SDKBrowser Application](https://github.com/telerik/xamarin-forms-sdk/blob/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/DeleteAppointmentView.xaml).
 
-## Partial Customization Options 
+## Customization Properties 
 
 * **ControlTemplate**(*ControlTemplate*): Defines the control template of the DeleteAppointmentView.
 * **BackgroundColor**(*Xamarin.Forms.Color*): Defines the background color of the DeleteAppointmentView.

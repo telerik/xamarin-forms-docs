@@ -24,7 +24,7 @@ With R3 2020 Release the views used within the built-in Scheduling UI control ca
 
 >note Scheduling screens can be shown in MonthView, DayView, MultiDayView and WeekView modes. You could refer to the [View Modes]({%slug calendar-features-navigation-and-view-mode%}) topic for more information on the available in RadCalendar views. For MonthView and WeekView Modes the scheduling screens can be shown using the AddAppointmentButton. You will need to set the `IsAddAppointmentButtonVisible` `True`. 
 
-## Partial Customization Options 
+## Customization Properties 
 
 In addition, to avoid editing the whole control template, there are additional properties which you can use to customize the look of the UIs, such as SeparatorThickness, ButtonBackgroundColor, etc.  
 

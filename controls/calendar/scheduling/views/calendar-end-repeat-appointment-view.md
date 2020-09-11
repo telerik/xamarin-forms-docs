@@ -6,7 +6,7 @@ position: 7
 slug: calendar-end-repeat-appointment-view
 ---
 
-# Scheduling UI - End Repeat Appointment View
+# End Repeat Appointment View
 
 EndRepeatAppointmentView is a view for choosing when recurring appointments end.
 
@@ -16,9 +16,9 @@ EndRepeatAppointmentView is a view for choosing when recurring appointments end.
 
 ## Control Template
 
-The control template for the **EndRepeatAppointmentView** can be found at the [following location in our SDKBrowser Application](https://github.com/telerik/xamarin-forms-sdk/blob/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/EndRepeatAppointmentView.xaml).
+> The control template for the **EndRepeatAppointmentView** can be found at the [following location in our SDKBrowser Application](https://github.com/telerik/xamarin-forms-sdk/blob/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/EndRepeatAppointmentView.xaml).
 
-## Partial Customization Options 
+## Customization Properties 
 
 In addition, to avoid editing the whole control template, there are additional properties which you can use to customize the look of the EndRepeatAppointmentView: 
 

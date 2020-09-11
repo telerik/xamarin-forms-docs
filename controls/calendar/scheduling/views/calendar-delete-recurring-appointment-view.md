@@ -6,15 +6,15 @@ position: 5
 slug: calendar-delete-recurring-appointment-view
 ---
 
-# Scheduling UI - Delete Recurring Appointment View
+# Delete Recurring Appointment View
 
 DeleteRecurringAppointmentView is a view for choosing recurring appointments deleting options.
 
 ## Control Template
 
-The control template for the **DeleteRecurringAppointmentView** can be found at the [following location in our SDKBrowser Application](https://github.com/telerik/xamarin-forms-sdk/blob/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/DeleteRecurringAppointmentView.xaml).
+> The control template for the **DeleteRecurringAppointmentView** can be found at the [following location in our SDKBrowser Application](https://github.com/telerik/xamarin-forms-sdk/blob/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/DeleteRecurringAppointmentView.xaml).
 
-## Partial Customization Options 
+## Customization Properties 
 
 In addition, to avoid editing the whole control template, there are additional properties which you can use to customize the look of the UIs, such as SeparatorThickness, ButtonBackgroundColor, etc.  
 

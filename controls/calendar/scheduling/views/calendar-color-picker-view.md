@@ -6,7 +6,7 @@ position: 2
 slug: calendar-color-picker-view
 ---
 
-# Scheduling UI - Color Picker View
+# Color Picker View
 
 ColorPickerView is a view for picking color which is applied to the appointment.
 
@@ -16,9 +16,9 @@ ColorPickerView is a view for picking color which is applied to the appointment.
 
 ## Control Template
 
-The control template for the **ColorPickerView** can be found at the [following location in our SDKBrowser Application](https://github.com/telerik/xamarin-forms-sdk/blob/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/ColorPickerView.xaml).
+> The control template for the **ColorPickerView** can be found at the [following location in our SDKBrowser Application](https://github.com/telerik/xamarin-forms-sdk/blob/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/ColorPickerView.xaml).
 
-## Partial Customization Options 
+## Customization Properties 
 
 In addition, to avoid editing the whole control template, there are additional properties which you can use to customize the look of the **ColorPickerView**:
 

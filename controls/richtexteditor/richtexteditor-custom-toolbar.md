@@ -44,8 +44,8 @@ RadRichTextEditorToolbar contains a bunch of predefined toolbar items used to ex
 	* ClearFormattingToolbarItem
 	* IndentToolbarItem
 	* OutdentToolbarItem
-	* RedоToolbarItem
-	* UndоToolbarItem
+	* RedoToolbarItem
+	* UndoToolbarItem
 	
 - Picker Toolbar items - open picker controls for choosing color, font, etc and apply it at the current position or selection:
 	* ColorPickerToolbarItem

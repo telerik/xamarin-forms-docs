@@ -10,9 +10,12 @@ publish: true
 
 ## DataForm for Xamarin.Android: Getting Started
 
-To use **RadDataForm** a reference to the **Input** and **Common** libraries must first be added. Then it's just a matter of creating a new RadDataForm instance, adding it to the Android UI tree and providing an object to edit. For example:
+To use **RadDataForm** you will need to add the following Telerik references:
 
+* Telerik.Xamarin.Android.Input
+* Telerik.Xamarin.Android.Common 
 
+Then it's just a matter of creating a new RadDataForm instance, adding it to the Android UI tree and providing an object to edit. For example:
 
 ```C#
 RadDataForm form = new RadDataForm(context);
@@ -21,7 +24,7 @@ form.SetEntity(new Person());
 layout.AddView(form);
 ```
 
-Here's the person class:
+Here's the <code>Person</code> class:
 
 ```C#
 public class Person : Java.Lang.Object
@@ -77,7 +80,7 @@ To learn more about the @DataFormProperty annotation see the page about [propert
 
 ## Editing JSON Objects
 
-You can also use **RadDataForm** to edit Json Objects. For example, if you have a json file person with the following content:
+You can also use **RadDataForm** to edit Json Objects. For example, if you have the Person details in a json file with the following content:
 
 	{
 		"name": "John Doe",
@@ -85,7 +88,7 @@ You can also use **RadDataForm** to edit Json Objects. For example, if you have 
 		"email": "john.doe@example.com"
 	}
 	
-You can edit it through RadDataForm, the following way:
+You can edit it through RadDataForm like this:
 
 
 ```C#

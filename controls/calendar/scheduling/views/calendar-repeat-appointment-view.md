@@ -6,7 +6,7 @@ position: 6
 slug: calendar-repeat-appointment-view
 ---
 
-# Scheduling UI - Repeat Appointment View
+# Repeat Appointment View
 
 RepeatAppointmentView is a view for choosing predefined repeat options like EveryDay, Every Month, Every Year, etc.
 
@@ -16,9 +16,9 @@ RepeatAppointmentView is a view for choosing predefined repeat options like Ever
 
 ## Control Template
 
-The control template for the **RepeatAppointmentView** can be found at the [following location in our SDKBrowser Application](https://github.com/telerik/xamarin-forms-sdk/blob/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/RepeatAppointmentView.xaml).
+> The control template for the **RepeatAppointmentView** can be found at the [following location in our SDKBrowser Application](https://github.com/telerik/xamarin-forms-sdk/blob/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/RepeatAppointmentView.xaml).
 
-## Partial Customization Options 
+## Customization Properties 
 
 In addition, to avoid editing the whole control template, there are additional properties which you can use to customize the look of the UIs, such as SeparatorThickness, ButtonBackgroundColor, etc.  
 

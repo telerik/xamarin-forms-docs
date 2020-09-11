@@ -6,7 +6,7 @@ position: 0
 slug: calendar-add-appointment-view
 ---
 
-# Scheduling UI Add Appointment View
+# Add Appointment View
 
 Add Appointment View allows the user to change the main appointment properties like `Title`, `Start` and `End Date`, `Detail`, `Recurrence`, whether it will be All Day appointment.
 
@@ -16,9 +16,9 @@ Add Appointment View allows the user to change the main appointment properties l
 
 ## Control Template
 
-The control template for the **AddAppointmentView** can be found at the [following location in our SDKBrowser Application](https://github.com/telerik/xamarin-forms-sdk/blob/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/AddAppointmentView.xaml).
+> The control template for the **AddAppointmentView** can be found at the [following location in our SDKBrowser Application](https://github.com/telerik/xamarin-forms-sdk/blob/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/AddAppointmentView.xaml).
 
-## Partial Customization Options 
+## Customization Properties 
 
 In addition, to avoid editing the whole control template, there are additional properties which you can use to customize the look of the AddAppointmnetView:
 

@@ -10,15 +10,15 @@ slug: calendar-custom-recurrence-view
 
 CustomRecurrenceView is a view for choosing custom recurring intervals of an appointment.
 
-## Visual Structure of Custom Recurrence View
+## Custom Recurrence View
 
 ![Scheduling UI Custom Recurrence View](images/calendar-custom-recurrence-view.png)
 
 ## Control Template
 
-The control template for the **CustomRecurrenceView** can be found at the [following location in our SDKBrowser Application](https://github.com/telerik/xamarin-forms-sdk/blob/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/CustomRecurrenceView.xaml).
+> The control template for the **CustomRecurrenceView** can be found at the [following location in our SDKBrowser Application](https://github.com/telerik/xamarin-forms-sdk/blob/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/SchedulingCategory/SchedulingUIViews/CustomRecurrenceView.xaml).
 
-## Partial Customization Options 
+## Customization Properties 
 
 In addition, to avoid editing the whole control template, there are additional properties which you can use to customize the look of the **CustomRecurrenceView**:
 

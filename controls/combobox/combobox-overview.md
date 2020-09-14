@@ -12,7 +12,7 @@ slug: combobox-overview
 
 #### Figure 1: ComboBox for Xamarin Overview
 
-![CheckBox Overview](images/combobox-overview.png "ComboBox Overview")
+![ComboBox Overview](images/combobox-overview.png "ComboBox Overview")
 
 ## Key features
 

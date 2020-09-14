@@ -29,7 +29,7 @@ The default **SelectinMode** (enumeration of type *Telerik.XamarinForms.Input.Co
 
 Here is the ComboBox definition in XAML:
 
-<snippet id='combobox-single-selection'/>
+<snippet id='combobox-single-selection-selectedindex'/>
 
 you need to add the following namespace:
 
@@ -47,11 +47,29 @@ This is how single selection looks:
 
 ![ComboBox Single Selection](images/dropdown-single-selection.png)
 
+### Example with Single Selection and SelectedItem set
+
+Here is the ComboBox definition in XAML:
+
+<snippet id='combobox-single-selection-selecteditem'/>
+
+you need to add the following namespace:
+
+<snippet id='xmlns-telerikinput'/>
+
+the sample business model
+
+<snippet id='combobox-city-businessmodel'/>
+
+and the ViewModel used:
+
+<snippet id='comobobox-selection-viewmodel'/> 
+
 ## Multiple Selection
 
 If you want to achieve multiple selection you will need to set the `SelectionMode` to `Multiple`. The multiple selected items are visualized inside tokens.
 
-### Example with Multiple Selection and SelectedItem set
+### Example with Multiple Selection and SelectedItems set
 
 Here is the ComboBox definition in XAML:
 
@@ -67,7 +85,7 @@ and the ViewModel used:
 
 This is how multiple selection looks: 
 
-![ComboBox Multiple Selection](images/dropdown-multiple-selection.png)
+![ComboBox Multiple Selection](images/combobox-multiple-selection-selecteditems.png)
 
 >important The Selection example can be found in our [SDK Browser Application](developer-focused-examples). You can find the applications in the **Examples** folder of your local **Telerik UI for Xamarin** installation or in the following [GitHub repo](https://github.com/telerik/xamarin-forms-sdk).
 

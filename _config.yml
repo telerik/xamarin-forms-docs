@@ -417,6 +417,11 @@ navigation:
     ## ComboBox
     controls/combobox:
         title: "ComboBox"
+        ## ComboBox Sub-Folders
+    controls/combobox/how-to:
+        title: "How To"
+        position: 11
+        ##End ComboBox Sub-Folders
     ## End ComboBox
     ## Chat
     controls/chat:

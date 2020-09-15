@@ -31,6 +31,10 @@ Next we will need a clear selection command in our ViewModel, then bind it to th
 
 <snippet id='combobox-howto-dropdown-clearbutton-viewmodel'/> 
 
+and the SelectedItemToColorConverter class:
+
+<snippet id='combobox-selecteditem-to-color-converter'/> 
+
 > Example for Clear Selection in DropDown can be found in the [ComboBox/How To](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/ComboBox/HowTo/DropDownClearButtonExample) section from the SDK Browser Application.
 
 ## See Also

@@ -13,6 +13,8 @@ The following article will show you how to display checkbox for each item inside
   
 ![ComboBox Selection with CheckBox](../images/combobox-howto-selection-video.gif "ComboBox Selection with CheckBox")
 
+## Example
+
 Here are the steps needed to achieve the functionality describe above.
 
 The ComboBox definition in XAML:
@@ -44,6 +46,8 @@ Here is the ViewModel used:
 This is the result:
 
 ![ComboBox Selection with CheckBox](../images/combobox-howto-checkboxes.png "ComboBox Selection with CheckBox")
+
+> Example for ComboBox with CheckBox selection can be found in the [ComboBox/How To](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/ComboBox/HowTo/SelectionWithCheckBoxExample) section from the SDK Browser Application.
 
 ## See Also
 

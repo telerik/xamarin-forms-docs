@@ -8,37 +8,41 @@ slug: pdfviewer-viewport
 
 # Viewport Settings
 
-The viewport is the user's visible area of the loaded in the PdfViewer pdf document. The viewport dimension varies according to the screen dimension of the target devices.
+With R2 2020 SP release of Telerik UI for Xamarin RadPdfViewer provides API for getting and manipulating its viewport through the **Viewport** property and **ChangeViewport** method. 
 
-As the viewport represents that part of the pdf document that is currently displayed, zooming and scrolling, for example, change the viewport - after these actions a different part of the document is shown. Zooming changes the width and height of the portion of the document, scrolling and panning change the viewport position. 
+The viewport is the "window" in which the PdfViewer displays its content, users can change the viewport through zooming, panning and scrolling:
 
-Now with R2 2020 SP release RadPdfViewer provides a way to access its visible area through the **Viewport** property as well as modify it through **ChangeViewport** method.
+![](images/pdfviewer-viewport.gif)
 
-The **Viewport** property is of type *Xamarin.Forms.Rectangle* and can be defined through its top left corner at (x, y) position and width and height values out of the overall content size of the pdf document.
-
-The content size of the document depends on the current layout mode of the PDfViewer.  
+In order to explain how the viewport works, first we need to make clear what's the PdfViewer content as well as how to define the content size. The PdfViewer content is the pdf document itself, and more specifically the document pages. RadPdfViewer provides two layout mode (SinglePage or ContinuousScroll) which use different approaches for arranging the document pages. The way the content is defined varies according to the selected layout mode.
 
 >tip For detailed information on the available layout modes check [Viewing Modes]({%slug pdfviewer-key-features%}#viewing-modes) topic.
 
 #### SinglePage LayoutMode
 
-With SinglePage layout mode RadPdfViewer shows one page at a time, so the content size is the size of that page. The viewport position is calculated relative to the page.
+With SinglePage layout mode RadPdfViewer shows one page at a time (the pages are stacked), so the content is the current page and the content size is the size of that page. In cases there are pages with different size in the pdf document, the content size is changed accordingly. 
+
+The viewport position is calculated relative to the current page.
 
 ![](images/pdfviewer-viewport-singlepage.png)
 
 #### ContinuousScroll LayoutMode
 
-With ContinuousScroll layout mode the content size is calculated taking into account all the pages of the document. In this mode the pages are ordered vertically one below another and are horizontally centered (if the document contains pages with different width, some pages will not be at 0 horizontal position). 
+With ContinuousScroll layout mode, the content refers to all pages of the document. In this mode the pages are ordered vertically one below another with space between them and are horizontally centered (if the document contains pages with different width, some pages will not be at 0 horizontal position). 
 
 The content width is even to the widest page, the content height is calculated as a sum of the heights of all the pages plus a sum of the distances between the pages (the distance between pages is controlled by the <code>PageSpacing</code> property of the PdfViewer).
 
-So, viewport Y position is calculated relative to the content height (all pages' height + distances):
+So, the viewport position is calculated relative to the whole content (all pages + distances):
 
 ![](images/pdfviewer-viewport-continuous.png)
 
+No matter which layout mode is selected, the viewport is the "window" which moves over the defined content and renders those pdf elements currently positioned in it.
+
+The **Viewport** property of the PdfViewer is of type *Xamarin.Forms.Rectangle* and can be defined by its top left corner at (x, y) position and width and height values. Keep in mind it's possible to have negative X and Y values in case the viewport becomes bigger than the content itself.
+
 ### Example
 
-The example below demonstrates how you can utilize the ChangeViewport method to navigate to the last page of the document in ContinuousScroll layout mode.  The same method is also used to set the zoom level, so that the whole width of the last page is visible in both ContinuousScroll and SinglePage modes.
+The example below demonstrates how you can utilize the ChangeViewport method to navigate to the last page of the document in ContinuousScroll and SinglePage layout modes as well as how to access the current viewport.
 
 Use the following snippet to define the RadPdfViewer and RadPdfToolbar:
 
@@ -79,8 +83,7 @@ The next snippets demonstrates how you can manipulate the viewport of the PdfVie
 
 ```C#
 RadFixedDocument document = this.pdfViewer.Document;
-
-var lastPageSize = document.Pages[document.Pages.Count - 1].Size;
+var currentViewport = this.pdfViewer.Viewport;
 
 if (this.pdfViewer.LayoutMode == LayoutMode.ContinuousScroll)
 {               
@@ -91,12 +94,12 @@ if (this.pdfViewer.LayoutMode == LayoutMode.ContinuousScroll)
 		pagesHeight += document.Pages[i].Size.Height;
 		pagesHeight += this.pdfViewer.PageSpacing;
 	}               
-	this.pdfViewer.ChangeViewport(new Rectangle(0, pagesHeight, lastPageSize.Width, lastPageSize.Height));
+	this.pdfViewer.ChangeViewport(new Rectangle(0, pagesHeight, currentViewport.Width, currentViewport.Height));
 }
 else
 {
 	this.pdfViewer.NavigateToPage(document.Pages.Count - 1);
-	this.pdfViewer.ChangeViewport(new Rectangle(0, 0, lastPageSize.Width, lastPageSize.Height));
+	this.pdfViewer.ChangeViewport(new Rectangle(0, 0, currentViewport.Width, currentViewport.Height));
 }
 ```
 

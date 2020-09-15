@@ -107,6 +107,10 @@ ComboBox has two commands related to the Selection feature:
 - **SelectAllCommand** (*ICommand*): Selects all items from the source.
 - **ClearSelectionCommand** (*ICommand*): Sets the selection to null. If Multiple SelectionMode is used, this command will clear all selected items.
 
+## ComboBox with CheckBox
+
+If you want to add checkbox inside the drop down and select/desect items using CheckBox, we have a how-to article how this scenario can be achieved. In addition you can select all/deselect all items using CheckBox inside the drop down header. For more details please check the [ComboBox with CheckBox Selection how to article]({%slug combobox-checkboxes-selection%}). 
+
 ## See Also
 
 - [Key Features]({%slug combobox-key-features%})

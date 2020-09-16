@@ -3,10 +3,10 @@ title: Getting Started
 page_title: Getting Started with Xamarin Mobile Blazor Border Control
 description: Check our &quot;Getting Started&quot; documentation article for Telerik Border control for Xamarin Mobile Blazor Bindings.
 position: 1
-slug: border-xamarin-blazor-getting-started
+slug: border-blazor-getting-started
 ---
 
-# Getting Started with RadBorder for Xamarin Mobile Blazor Bindings
+# Getting Started with Border for Xamarin Mobile Blazor Bindings
 
 This article will guide you through the steps needed to add a basic **RadBorder** control in your application.
 
@@ -22,7 +22,7 @@ Take a look at the [Getting Started]({%slug blazor-mobile-bindings-overview%}#ge
 
 You have two options:
 
-* Add the Telerik UI for Xamarin Blazor Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+* Add the Telerik.UI.for.Xamarin.Blazor Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
 
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadBorder** component:
 

@@ -30,7 +30,7 @@ You have two options:
 | -------- | ---------- |
 | Portable | Telerik.XamarinForms.Blazor.Primitives.dll<br/>Telerik.XamarinForms.Primitives.dll |
 | Android  | Telerik.Xamarin.Android.Primitives.dll<br/>Telerik.XamarinForms.Primitives.dll |
-| iOS      | Telerik.Xamarin.iOS.dll <br/>Telerik.XamarinForms.Primitives.dll |
+| iOS      | Telerik.Xamarin.iOS.dll<br/>Telerik.XamarinForms.Primitives.dll |
 
 After that we need to add the Telerik.XamarinForms.Blazor.Primitives in our `_Imports.razor` page:
 

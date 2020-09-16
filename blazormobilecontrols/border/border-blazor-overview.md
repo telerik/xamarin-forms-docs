@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Xamarin Mobile Blazor Bindings Border Documentation | Overview
-description: Check our &quot;Overview&quot; documentation article for Telerik Border for Xamarin Mobile Blazor Bindings control.
+description: Check our &quot;Overview&quot; documentation article for Telerik Border control for Xamarin Mobile Blazor Bindings.
 position: 0
 slug: border-blazor-overview
 ---
@@ -46,4 +46,3 @@ Here is the result:
 ## See Also
 
 - [Getting Started]({%slug border-blazor-getting-started %})
-- [Key Features]({%slug border-blazor-key-features %})

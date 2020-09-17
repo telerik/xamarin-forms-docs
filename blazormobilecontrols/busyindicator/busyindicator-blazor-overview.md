@@ -40,7 +40,7 @@ The snippet below shows how you can configure the predefined animations of RadBu
 
 and the result:
 
-![BusyIndicator animations](images/busyindicator-features-animations-0.png) 
+![BusyIndicator animations](images/busyindicator-animations-settings.png) 
 
 ### BusyContent
 

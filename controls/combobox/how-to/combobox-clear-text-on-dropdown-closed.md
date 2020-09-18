@@ -11,7 +11,7 @@ slug: combobox-clear-text-on-dropdown-closed
 
 The following article will show you how to clear the Text of the ComboBox when the `SelectionMode` is `Multiple` and the dropdown is closed.
 
-![ComboBox Clear Text when DropDown is Closed](../images/combobox-howto-clear-text.gif "ComboBox Clear Text when DropDown is Closed")
+![ComboBox Clear Text when DropDown is Closed](../images/combobox-howto-clear-text-dropdown-closed-video.gif "ComboBox Clear Text when DropDown is Closed")
 
 ## Example
 

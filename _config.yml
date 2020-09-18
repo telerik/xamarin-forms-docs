@@ -93,7 +93,23 @@ navigation:
     nativecontrols/ios/ios-native-controls:
         title: "iOS Native Controls"
 ## End Native Controls Sub-Folders
-
+## Blazor Bindings Sub-Folders
+    blazormobilecontrols/autocompleteview:
+        title: "AutoCompleteView"
+        position: 1
+    blazormobilecontrols/border:
+        title: "Border"
+        position: 5
+    blazormobilecontrols/busyindicator:
+        title: "BusyIndicator"
+        position: 8
+    blazormobilecontrols/button:
+        title: "Button"
+        position: 10
+    blazormobilecontrols/checkbox:
+        title: "CheckBox"
+        position: 15
+## End Blazor Bindings Sub-Folders       
 ## Android Controls
     nativecontrols/android/autocomplete:
         title: AutoComplete

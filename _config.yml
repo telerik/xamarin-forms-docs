@@ -109,6 +109,12 @@ navigation:
     blazormobilecontrols/checkbox:
         title: "CheckBox"
         position: 15
+    blazormobilecontrols/datagrid:
+        title: "DataGrid"
+        position: 18
+    blazormobilecontrols/sidedrawer:
+        title: "SideDrawer"
+        position: 25
 ## End Blazor Bindings Sub-Folders       
 ## Android Controls
     nativecontrols/android/autocomplete:

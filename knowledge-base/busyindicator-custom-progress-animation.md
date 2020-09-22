@@ -2,7 +2,7 @@
 title: BusyIndicator with Custom Download Progress Animation
 description: Show download progress in a custom BusyIndicator animation
 type: how-to
-page_title: Data bound controls inside busy indicator raise exception when busy state is changed
+page_title: BusyIndicator with Custom Download Progress Animation
 slug: busyIndicator-with-custom-download-progress-animation
 position: 3
 tags: busyindicator, cusotm animation, animation, HttpClient, download progress, progress bar, Xamarin, XamarinForms

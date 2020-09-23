@@ -8,7 +8,7 @@ slug: sidedrawer-blazor-overview
 
 # SideDrawer for Xamarin Mobile Blazor Bindings
 
-**RadSideDrawer for Xamarin** is designed to enable users to visualize a hidden view in their applications. That view can host navigation UI, common settings or any other UI of your choice. It can be visualized using a flick gesture and can be shown from all four sides of the screen.
+**RadSideDrawer for Xamarin Mobile Blazor Bindings** is designed to enable users to visualize a hidden view in their applications. That view can host navigation UI, common settings or any other UI of your choice. It can be visualized using a flick gesture and can be shown from all four sides of the screen.
 
 #### Figure 1: RadSideDrawer Overview
 

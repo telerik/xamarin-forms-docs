@@ -16,26 +16,20 @@ By the end of the article we will have a list that looks like this:
 
 ![TelerikUI-ListView-Getting-Started](images/listview-getting-started-1.png "In this article you will learn how to create this list view from scratch.")
 
-## Project Setup
+### Project Setup
 
-For **RadListView** you will need the modules **Common**, **Data** and **List**, as well as the **AppCompat v7** and **RecyclerView v7** from the support library:
+For **RadListView** you will need the following Telerik references:
 
-``` gradle
-	compile 'com.android.support:appcompat-v7:<version_of_app_compat>'
-    compile 'com.android.support:recyclerview-v7:<version_of_app_compat>'
-```
+* Telerik.Xamarin.Android.Common
+* Telerik.Xamarin.Android.Data
+* Telerik.Xamarin.Android.List
 
-![TelerikUI-Calendar-Getting-Started-02](images/listview-getting-started-2.png "Make sure you add Common, Data and List to the libs folder of your project.")
+And add references to the following AndroidX packages:
 
-Don't forget to add the modules to the project's dependencies with the same name and version:
+* Xamarin.AndroidX.AppCompat
+* Xamarin.AndroidX.RecyclerView
 
-![TelerikUI-ListView-Getting-Started-03](images/listview-getting-started-3.png "Make sure that the name and the version match.")
-
-If you are using Xamarin Studio, you can add the support libraries from the Add Packages Wizard in the Project menu:
-
-![TelerikUI-ListView-Getting-Started-04](images/listview-getting-started-4.png "Make sure you add both AppCompat and RecyclerView.")
-
-## Adding the list view instance
+### Adding the list view instance
 
 Now that the project is setup, you can easily add **RadListView** in the layout file for the main activity of your project:
 
@@ -61,19 +55,19 @@ protected override void OnCreate (Bundle bundle)
 	base.OnCreate (bundle);
 	SetContentView (Resource.Layout.Main);
 
-	RadListView listView = FindViewById<RadListView> (
-		Resource.Id.listView);
+	RadListView listView = FindViewById<RadListView> (Resource.Id.listView);
 }
 ```
 
-## Adapter
+### Adapter
 
-**RadListView** extends <a href="https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html" target="_blank">RecyclerView</a> and requires a similar adapter, which will be responsible for providing 
-a proper view for each data item. The items are represented by ViewHolders which are recycled for better performance. For example if we have a list of 20 items, but only 7 are visible on the screen at one point.
-Then 7 view holders should be enough to represent all the data. Later when the user scrolls the same view holders will be reused to show the new data. 
-The default adapter that is used by **RadListView** is called **ListViewAdapter**. 
-In order to create a new instance, you simply need to pass a list of items to the constructor of the adapter. Let's create a simple class that we will use later to populate the list:
+**RadListView** extends <a href="https://developer.android.com/reference/androidx/recyclerview/widget/package-summary" target="_blank">RecyclerView</a> and requires a similar adapter, which will be responsible for providing a proper view for each data item. The items are represented by ViewHolders which are recycled for better performance. 
 
+For example if we have a list of 20 items, but only 7 are visible on the screen at one point, then 7 view holders should be enough to represent all the data. Later when the user scrolls the same view holders will be reused to show the new data. 
+
+The default adapter that is used by **RadListView** is called **ListViewAdapter**. In order to create a new instance, you simply need to pass a list of items to the constructor of the adapter.
+
+Let's create a simple class that we will use later to populate the list:
 
 ```C#
 public class City : Java.Lang.Object {
@@ -92,7 +86,6 @@ public class City : Java.Lang.Object {
 ```
 
 Now, let's create a method that will create a list of items that we can use for our list view adapter:
-
 
 ```C#
 private List<City> GetListOfCities() {
@@ -119,10 +112,9 @@ ListViewAdapter listViewAdapter = new ListViewAdapter (GetListOfCities ());
 listView.SetAdapter (listViewAdapter);
 ```
 
-More often than not, you will want your list view items to include a bit more complex layout. In order to achieve this you will need to extend the **ListViewAdapter** class and override its **onCreateViewHolder** and 
-**onBindViewHolder** methods. The first one is responsible for creating a new view holder that will be later reused to visualize different data items. The second is responsible for the binding of a view holder with information
-about a specific item from the list. Here's one way to extend the default adapter:
+More often than not, you will want your list view items to include a bit more complex layout. In order to achieve this you will need to extend the **ListViewAdapter** class and override its **onCreateViewHolder** and **onBindViewHolder** methods. The first one is responsible for creating a new view holder that will be later reused to visualize different data items. The second is responsible for the binding of a view holder with information about a specific item from the list. 
 
+Here's one way to extend the default adapter:
 
 ```C#
 public class CityAdapter : ListViewAdapter

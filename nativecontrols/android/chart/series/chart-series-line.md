@@ -8,7 +8,7 @@ publish: true
 position: 1
 ---
 
-# LineSeries
+## ChartView for Xamarin.Android: LineSeries
 
 **RadCartesianChartView** visualizes each data item from the **LineSeries** and connects them with straight line segments. The **LineSeries** extend **CategoricalStrokedSeries**, so they are also **CategoricalSeries** and require one **CategoricalAxis** and one **LinearAxis**.
 

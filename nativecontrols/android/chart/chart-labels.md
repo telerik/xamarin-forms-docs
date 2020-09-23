@@ -8,7 +8,7 @@ url: /chart-labels
 publish: true
 ---
 
-# Labels
+## ChartView for Xamarin.Android: Labels
 
 In this article, you will learn to use the labels in **RadChartView for Android**: how to use the labels for the series and for the axes and how to customize them.
 

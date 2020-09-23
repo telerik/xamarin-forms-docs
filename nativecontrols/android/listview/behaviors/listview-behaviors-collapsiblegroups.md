@@ -8,7 +8,7 @@ publish: true
 position: 8
 ---
 
-# RadListView: CollapsibleGroupsBehavior
+## ListView for Xamarin.Android: CollapsibleGroupsBehavior
 
 If your list contains group headers as demonstrated in [this article]({% slug listview-data %} "Read more about Grouping"), you can use the **CollapsibleGroupsBehavior** which will allow users to collapse and expand
 groups by tapping on their headers.

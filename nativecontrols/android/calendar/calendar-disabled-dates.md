@@ -8,7 +8,7 @@ position: 5
 publish: true
 ---
 
-# RadCalendarView: Disabled Dates
+## CalendarView for Xamarin.Android: Disabled Dates
 
 **RadCalendarView** allows you to restrict the dates that can be displayed and selected by the users. This can be achieved by setting minimum date and maximum date for the calendar. The default values for these properties are `0`.
 This means that there are no restrictions. If you would like to use the calendar for hotel/flight reservation, you wouldn't want the selection to be possible for dates that are in the past. In this scenario the minimum date

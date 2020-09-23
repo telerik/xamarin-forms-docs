@@ -8,7 +8,7 @@ publish: true
 position: 3
 ---
 
-# DateTimeContinuousAxis
+## ChartView for Xamarin.Android: DateTimeContinuousAxis
 
 When **RadCartesianChartView** visualizes **CategoricalSeries**, it needs an axis that can represent the different categories. The **CategoricalAxis** extends the base **CartesianAxis** class and is used to displays a range of categories. Categories are built depending on the **Category** value of each **CategoricalDataPoint** present in the owning **CategoricalSeries** chart series. The axis is divided into discrete slots and each data point is visualized in the slot corresponding to its categorical value. These are the axes which can plot categorical data:
 

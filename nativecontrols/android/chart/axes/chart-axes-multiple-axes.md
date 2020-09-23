@@ -8,7 +8,7 @@ publish: true
 position: 6
 ---
 
-# Multiple Axes
+## ChartView for Xamarin.Android: Multiple Axes
 
 **RadCartesianChartView** can visualize multiple axes simultaneously. You can add vertical and horizontal axes per chart basis and per series basis. This means that if you have two series in one chart instance, you can use different horizontal and vertical axes for each series. Depending on the requirements, the axes can be plot independently, or relatively to each other.
 

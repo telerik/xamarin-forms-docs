@@ -8,7 +8,7 @@ position: 0
 publish: true
 ---
 
-# Overview
+## ChartView for Xamarin.Android: Overview
 
 **RadChartView for Xamarin.Android** is a charting component that has been designed for the mobile environment. It offers great performance in loading time, drawing capabilities and real-time updates. Its intuitive object model and public API allow you to easily setup complex chart objects and integrate them into your application. 
 

@@ -8,7 +8,7 @@ position: 0
 publish: true
 ---
 
-# Gauges: Overview
+## Gauges for Xamarin.Android: Overview
 
 **RadGaugeView** is a highly customizable component that allows you to show the current status of a value within a range of upper and lower bounds, illustrate progress towards a goal or a summary of a fluctuating metric.
 ![TelerikUI-Gauges-Overview](images/gauges-overview.png "Three radial gauges.")

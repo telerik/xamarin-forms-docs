@@ -9,7 +9,7 @@ position: 10
 publish: true
 ---
 
-# Animations
+## ChartView for Xamarin.Android: Animations
 
 In this article, you will learn to use the animations feature in **RadChartView for Xamarin.Android**.
 

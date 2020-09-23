@@ -8,7 +8,7 @@ publish: true
 position: 2
 ---
 
-# RadListView: ItemReorderBehavior and ReorderWithHandlesBehavior
+## ListView for Xamarin.Android: ItemReorderBehavior and ReorderWithHandlesBehavior
 
 The **ItemReorderBehavior** can be used to allow the end user to reorder an item by long-pressing and dragging it. When a long-press gesture is detected, the item that lies beneath is highlighted.
 Any forthcoming move gestures cause the item to be dragged around the screen and if at some point another item lies beneath the dragged item's position is changed to the position of the new item.

@@ -8,14 +8,13 @@ position: 3
 publish: true
 ---
 
-# Gauges: Scales
+## Gauges for Xamarin.Android: Scales
 
 **GaugeScale** is a base class for the scales in **RadGaugeView**. The scale is a **ViewGroup** that has range and a set of indicators that are rendered according to the range of the scale they belog to. The scale manages the count and appearance of its ticks and labels. **GaugeRadialScale** also allows setting its start and sweep angles. It is possible to add more than one scale to a gauge as this example demonstrates.
 
 ## Setup scales
 
 **GaugeScale** allows you to customize every aspect of its visual appearance. You can set the count of ticks and labels or choose to draw then inside or outside the scale. We are going to create an configure 2 scales that will be added to a radial gauge. First thing to do is to instantiate a scale and set its minimum and maximum values:
-
 
 ```C#
 GaugeRadialScale scale1 = new GaugeRadialScale(Activity);
@@ -34,7 +33,6 @@ scale1.StrokeWidth = 2;
 
 Now we can customize the appearance of the ticks and labels.
 
-
 ```C#
 scale1.LabelsColor = Color.Gray;
 scale1.LabelsCount = 7;
@@ -52,10 +50,9 @@ The scale are ready to be added to the gauge.
 
 <snippet id='add-scales-to-gauge' />
 
-## Add indicators to GaugeScale
+### Add indicators to GaugeScale
 
 We now have a gauge with 2 scales, however to be able to show values on the gauge we need to add some indicators. We are going to add 2 radial bar indicators and a needle to the inner scale of the gauge. Below is a helper method that returns bar indicator.
-
 
 ```C#
 private GaugeIndicator GetIndicator(float min, float max, int color)
@@ -72,7 +69,6 @@ private GaugeIndicator GetIndicator(float min, float max, int color)
 
 And here is how to add the indicators:
 
-
 ```C#
 GaugeRadialNeedle needle = new GaugeRadialNeedle(Activity);
 needle.Value = 36.5f;
@@ -86,7 +82,6 @@ scale1.AddIndicator(GetIndicator(36.05f, 40, Color.Red));
 
 The last thing to do is to set titles to the gauge.
 
-
 ```C#
 gauge.Title.Text = "celsius";
 gauge.Subtitle.Text = "fahrenheit";
@@ -96,5 +91,4 @@ gauge.TitleVerticalOffset = 90;
 Here is how the gauge should look like.
 
 ![TelerikUI-Gauges-Scales](images/gauges-scales.png "RadRadialGaugeView with two scales.")
-
 

@@ -8,7 +8,7 @@ publish: true
 position: 8
 ---
 
-# DoughnutSeries
+## ChartView for Xamarin.Android: DoughnutSeries
 
 The **DoughnutSeries** class inherit from **PieSeries** and are also used to visualize series of data in a **RadPieChartView**. The difference between adding **DoughnutSeries** compared to adding **PieSeries** is that there will be a blank portion in center.
 

@@ -8,7 +8,7 @@ publish: true
 position: 11
 ---
 
-# ScatterPointSeries
+## ChartView for Xamarin.Android: ScatterPointSeries
 
 **RadCartesianChartView** visualizes each data item from the **ScatterPointSeries** as individual points on the plot area. ScatterPointSeries like all other scatter series require two numerical axes to function properly. 
 

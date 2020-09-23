@@ -8,7 +8,7 @@ publish: true
 position: 5
 ---
 
-# BarSeries
+## ChartView for Xamarin.Android: BarSeries
 
 **RadCartesianChartView** visualizes each data point from the **BarSeries** as a rectangle. These rectangles (or bars) can be displayed either horizontally, or vertically, depending on whether the **CategoricalAxis** is the vertical axis or the horizontal. When the horizontal axis is categorical, the rectangles are displayed vertically. This means that they have equal width while their height represents the numerical value of each of the data points. On the other hand, when the vertical axis is categorical, the rectangles have equal height, while their width represents the value of the data point. The **BarSeries** extend **CategoricalSeries** and require one **CategoricalAxis** and one **LinearAxis**.
 

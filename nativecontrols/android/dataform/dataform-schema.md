@@ -8,7 +8,7 @@ position: 6
 publish: true
 ---
 
-# RadDataForm: Schema
+## DataForm for Xamarin.Android: Schema
 
 You can set up how each property will be edited through the [property metadata]({% slug data-form-metadata %} "Read more about the data form metadata.").
 Another way to achieve the same is through a json schema that provides the same information. This can be useful for example when editing json objects that can't be annotated with the

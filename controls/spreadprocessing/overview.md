@@ -67,6 +67,8 @@ This library enables you to work with spreadsheet documents – create ones from
 
 * [**XLSX**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/xlsx/xlsxformatprovider)
 
+* [**XLS**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/xls/xlsformatprovider)
+
 * [**CSV**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/csv/csvformatprovider) 
 
 * [**Plain text**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/txt/txtformatprovider) 
@@ -85,16 +87,17 @@ You have two options to add the required Telerik references to your Xamarin.Form
 
 * Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
 
-If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadSpreadProcessing you have to install the *Telerik.Documents.Core* and *Telerik.Documents.Spreadsheet* nuget packages. The following nugets are required in order to be able to export to xlsx and PDF formats: *Telerik.Documents.Spreadsheet.FormatProviders.OpenXml*, *Telerik.Documents.Fixed*, *Telerik.Documents.Spreadsheet.FormatProviders.Pdf*, *Telerik.Zip*.
+If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadSpreadProcessing you have to install the *Telerik.Documents.Core* and *Telerik.Documents.Spreadsheet* nuget packages. The following nugets are required in order to be able to export to XLSX, XLS and PDF formats: *Telerik.Documents.Spreadsheet.FormatProviders.OpenXml*,*Telerik.Documents.Spreadsheet.FormatProviders.Xls*, *Telerik.Documents.Fixed*, *Telerik.Documents.Spreadsheet.FormatProviders.Pdf*, *Telerik.Zip*.
 
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for RadSpreadProcessing:
 
 	- **Telerik.Documents.Core.dll**
 	- **Telerik.Documents.Spreadsheet.dll**
 	
-	The following assemblies are required in order to be able to export to xlsx and PDF formats:
+	The following assemblies are required in order to be able to export to XLSX, XLS and PDF formats:
 	
 	- **Telerik.Documents.Spreadsheet.FormatProviders.OpenXml.dll**
+	- **Telerik.Documents.Spreadsheet.FormatProviders.Xls.dll**
 	- **Telerik.Documents.Fixed.dll**
 	- **Telerik.Documents.Spreadsheet.FormatProviders.Pdf.dll**
 	- **Telerik.Zip.dll**

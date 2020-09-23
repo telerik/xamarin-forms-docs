@@ -8,7 +8,7 @@ position: 4
 publish: true
 ---
 
-# RadCalendarView: Events
+## CalendarView for Xamarin.Android: Events
 
 **RadCalendarView** has a built-in infrastructure for handling events. The events that are presented are handled by an **EventAdapter** and the way they are rendered is handled by an **EventRenderer**.
 Both classes have their default implementation so that you can simply provide a list of events and the calendar will take care of the rest.

@@ -8,13 +8,11 @@ position: 2
 publish: true
 ---
 
-# RadDataForm: Features
+## DataForm for Xamarin.Android: Features
 
-## Editors
+### Editors
 
-Before the data form editors are explained it is important to define the concept of **properties**.
-A property is a field of a class that has a public getter and, optionally, a setter method. For example if a Person class has a field that stores the age of the person, it should have
-a public getter and setter with the following signature:
+RadDataForm is used for editing the properties of an object. For example if a Person class has a field that stores the age of the person, it should have a public getter and setter with the following signature:
 
 ```C#
 public int Age {
@@ -23,17 +21,14 @@ public int Age {
 }
 ```
 
-The field "age" in conjunction with the getter and setter define the "Age" property. Internally the data form does not care about what field the getter and setter are modifying, it just looks whether the methods exist.
-It is important to note that the property name must begin with a capital letter, and the name should be preceded by "get" and "set" for the getter and setter respectively.
-If the property only has a getter, the property will be read-only and a **property viewer** will be created instead of a **property editor**. If a field only has a setter it will be ignored by RadDataForm.
+The field "age" in conjunction with the getter and setter define the "Age" property. If the property only has a getter, the property will be read-only and a **property viewer** will be created instead of a **property editor**. If a field only has a setter it will be ignored by RadDataForm.
 
-RadDataForm supports the basic data types for editing out of the box. Text, date and time, booleans, enums and numbers are all supported. Every editor is desiged to support one more
-data types. For custom types more editors can be easily created by the developer. Also, the basic editors can be replaced by custom editors whenever necessary. 
+RadDataForm supports the basic data types for editing out of the box - these include text, date and time, booleans, enums and numbers. For custom types RadDataForm provides means for creating a custom editor. Also, the basic editors can be replaced by custom editors whenever necessary. 
 
-RadDataForm has a priority list when it decides which editor to show for a given property or type. If the developer has defined [property metadata]({% slug data-form-metadata %} "Read more about the data form metadata.") for their object it will be used first. 
+RadDataForm has a priority list when it decides which editor to show for a given property or type:
 
-If the metadata does not define an editor, a special callback (editor provider) will be attempted next.
-The callback is set by calling **dataForm.getAdapter().setEditorProvider()**. The callback is a function that accepts an EntityProperty and returns an EntityPropertyEditor. For example:
+<ol><li>If the developer has defined an editor with the [property metadata]({% slug data-form-metadata %} "Read more about the data form metadata.") for their object it will be used first.</li>
+<li>If the metadata does not define an editor, a special callback (editor provider) will be attempted next. The callback is a function that accepts an EntityProperty and returns an EntityPropertyEditor. For example:
 
 ```C#
 dataForm.Adapter.SetEditorProvider(new EditorProviderImpl(dataForm));
@@ -55,13 +50,11 @@ public class EditorProviderImpl : Java.Lang.Object, IFunction {
 }
 ```
 
-This callback replaces the default checkbox editor for booleans with the switch editor. For other types and properties it returns null. When the data form adapter gets null from this callback it proceeds
-with the remaining options for editor resolution. 
+The sample callback above replaces the default checkbox editor for booleans with the switch editor. For other types and properties it returns null. When the data form adapter gets null from this callback it proceeds with the remaining options for editor resolution. 
+</li>
+<li>The next option is the **editor registry**. The registry contains pre-defined editors for properties and types. First it looks if it has an editor for the specific property provided. If it doesn't it finally tries to map the property type to a default editor. If an editor is not found at all, the property is not displayed for editing. 
 
-The next option is the **editor registry**. The registry contains pre-defined editors for properties and types. First it looks if it has an editor for the specific
-property provided. If it doesn't it finally tries to map the property type to a default editor. If an editor is not found at all, the property is not displayed for editing. Developers can modify the registry
-as required. For example the default types can be mapped to custom editors and the editors for custom types can also be defined:
-
+Developers can modify the registry as required. For example the default types can be mapped to custom editors and the editors for custom types can also be defined:
 
 ```C#
 dataForm.Adapter.EditorRegistry.AddEditorForProperty(
@@ -74,17 +67,18 @@ Similarly to set a single editor for multiple types developers have to edit the 
 dataForm.Adapter.EditorRegistry.AddEditorForTypes(Java.Lang.Class.FromType(
 	typeof(MyCustomEditor)), new Java.Lang.Class[] {CustomType1.Type, CustomType2.Type});
 ```
+</li></ol>
 
-When in **read-only** mode RadDataForm creates property viewers instead of property editors. Developers can use the exact same mechanism for viewer resolution: metadata, viewer provider callback and viewer registry modification. The editor registry of
-the data form adapter has corresponding methods for registering viewers, just like the editors. For example:
+When in **read-only** mode RadDataForm creates property viewers instead of property editors. Developers can use the exact same mechanism for viewer resolution: metadata, viewer provider callback and viewer registry modification. 
 
+The editor registry of the data form adapter has corresponding methods for registering viewers, just like the editors. For example:
 
 ```C#
 dataForm.Adapter.EditorRegistry.AddViewerForTypes(Java.Lang.Class.FromType(
 	typeof(MyCustomViewer)), new Java.Lang.Class[] {CustomType1.Type, CustomType2.Type});
 ```
 
-For more information on how to create a custom editor or viewer see the [custom editors]({% slug data-form-custom-editors %} "Read more about how to create custom editors.") page.
+For more information on how to create a custom editor or viewer see the [Custom Editors]({% slug data-form-custom-editors %} "Read more about how to create custom editors.") page.
 
 ## Validation
 

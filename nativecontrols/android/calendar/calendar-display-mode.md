@@ -8,7 +8,7 @@ position: 2
 publish: true
 ---
 
-# RadCalendarView: DisplayMode
+## CalendarView for Xamarin.Android: DisplayMode
 
 **RadCalendarView** provides various modes for displaying dates. They are `Month`, `Week`, `Year`, `Day`, `MultiDay`and `Agenda` and are included in the `CalendarDisplayMode` enumeration.
 These modes represent the period that is displayed at once by the control. 

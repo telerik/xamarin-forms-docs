@@ -18,7 +18,6 @@ With the new **Telerik RadBorder for Xamarin** component you will have full cont
 * **Setting BorderThickness**: RadBorder provides a BorderThickness property which you can use together with BorderColor in order to have various types of borders around your views, check [here]({%slug border-key-features %}#setting-border-thickness) for more details.
 * **Defining different corner radius on each side**: Through the CornerRadius property you could specify separate corner radius value on all four angles of RadBorder. Go [here]({%slug border-key-features %}#defining-different-corners) for more information on this.
 
-
 ## See Also
 
 - [Getting Started]({%slug border-getting-started %})

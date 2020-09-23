@@ -8,7 +8,7 @@ publish: true
 position: 5
 ---
 
-# RadListView: SwipeExecuteBehavior
+## ListView for Xamarin.Android: SwipeExecuteBehavior
 
 A popular pattern when you have a list of items is to allow the user to remove an item by swiping it to the right (or to the left). The **SwipeExecuteBehavior** allows you to achieve this fairly easy. 
 You can also use it to reveal additional swipe content behind the item. For example a button with some dedicated action.

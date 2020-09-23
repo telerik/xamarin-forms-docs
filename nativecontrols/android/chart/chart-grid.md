@@ -8,7 +8,7 @@ position: 7
 publish: true
 ---
 
-# Grid
+## ChartView for Xamarin.Android: Grid
 
 In this article, you will learn how to display the grid lines in **RadChartView for Xamarin.Android**.
 

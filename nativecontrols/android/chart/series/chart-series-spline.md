@@ -8,7 +8,7 @@ publish: true
 position: 2
 ---
 
-# SplineSeries
+## ChartView for Xamarin.Android: SplineSeries
 
 **RadCartesianChartView** visualizes each data item from the **SplineSeries** and connects them with curved line segments. The **SplineSeries** extend **LineSeries**, so they are also **CategoricalSeries** and require one **CategoricalAxis** and one **LinearAxis**.
 

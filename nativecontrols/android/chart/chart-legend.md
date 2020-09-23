@@ -8,7 +8,7 @@ url: /chart-legend
 publish: true
 ---
 
-# Legend
+## ChartView for Xamarin.Android: Legend
 
 In this article, you will learn to use the built-in legend in **RadChartView for Android**.
 

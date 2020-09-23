@@ -21,6 +21,7 @@ RadPdfToolbar contains the following Toolbar items:
 * **NavigateToPageToolbarItem**
 * **FitToWidthToolbarItem**
 * **ToggleLayoutModeToolbarItem**
+* **SearchToolbarItem**
 
 ### Example
 
@@ -73,4 +74,5 @@ Check below the result on different platforms:
 ## See Also
 
 - [Telerik Font Icons]({%slug telerik-font-icons%})
+- [Text Search]({%slug pdfviewer-text-search%})
 - [Commands]({%slug pdfviewer-commands%})

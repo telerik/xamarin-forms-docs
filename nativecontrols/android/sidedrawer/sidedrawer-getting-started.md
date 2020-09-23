@@ -8,12 +8,13 @@ position: 2
 publish: true
 ---
 
-# RadSideDrawer: Getting Started
+## SideDrawer for Xamarin.Android: Overview Getting Started
 
 **RadSideDrawer** is a component similar to Android's DrawerLayout but it provides many **transitions** out of the box. The transitions are also extensible so users can provide their own custom transitions if necessary.
-RadSideDrawer has two main properties that users need to set in order to get the full drawer experience. These properties are **MainContent** and **DrawerContent**. They are two separate View objects. The drawer
-content is displayed beside the main content either through a swipe gesture or via code. When the drawer content is visible, the main content fades out indicating that interaction with it is not possible until the drawer is
-closed. The transitions are groups of animations that are started when the user opens the drawer either through code or gestures.
+
+RadSideDrawer has two main properties you need to set in order to get the full drawer experience. These properties are **MainContent** and **DrawerContent**. They are two separate View objects. The drawer content is displayed beside the main content either through a swipe gesture or via code. When the drawer content is visible, the main content fades out indicating that interaction with it is not possible until the drawer is closed. 
+
+The transitions are groups of animations that are started when the user opens the drawer either through code or gestures.
 
 Here the drawer part is not visible with only the main content showing:
 
@@ -24,8 +25,6 @@ If the user swipes from the left edge to the right, the drawer appears and fades
 ![TelerikUI-SideDrawer-Getting-Started](images/drawer-getting-started-2.png "Drawer content.")
 
 Below is a very simple code example that shows the minimum steps required to display RadSideDrawer with some static content:
-
-
 
 ```C#
 protected override void OnCreate (Bundle bundle)
@@ -45,5 +44,4 @@ protected override void OnCreate (Bundle bundle)
 }
 ```
 
->Please note that setMainContent() and setDrawerContent() have two overloads each. One overload accepts a resource id as the argument and the other accepts a View object directly with the resource id overload provided
-for convenience.
+>Please note that SetMainContent() and SetDrawerContent() have two overloads each. One overload accepts a resource id as the argument and the other accepts a View object directly with the resource id overload provided for convenience.

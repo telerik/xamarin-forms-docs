@@ -93,7 +93,35 @@ navigation:
     nativecontrols/ios/ios-native-controls:
         title: "iOS Native Controls"
 ## End Native Controls Sub-Folders
-
+## Blazor Bindings Sub-Folders
+    blazormobilecontrols/autocompleteview:
+        title: "AutoCompleteView"
+        position: 1
+    blazormobilecontrols/border:
+        title: "Border"
+        position: 5
+    blazormobilecontrols/busyindicator:
+        title: "BusyIndicator"
+        position: 8
+    blazormobilecontrols/button:
+        title: "Button"
+        position: 10
+    blazormobilecontrols/checkbox:
+        title: "CheckBox"
+        position: 15
+    blazormobilecontrols/datagrid:
+        title: "DataGrid"
+        position: 18
+    blazormobilecontrols/expander:
+        title: "Expander"
+        position: 20
+    blazormobilecontrols/listview:
+        title: "ListView"
+        position: 22
+    blazormobilecontrols/sidedrawer:
+        title: "SideDrawer"
+        position: 25
+## End Blazor Bindings Sub-Folders       
 ## Android Controls
     nativecontrols/android/autocomplete:
         title: AutoComplete
@@ -349,9 +377,20 @@ navigation:
     controls/calendar/view-modes:
         title: "View Modes"
         position: 3
+    controls/calendar/appointments:
+        title: "Appointments"
+        position: 5
     controls/calendar/recurrence:
         title: "Recurrence"
         position: 6
+    controls/calendar/scheduling:
+        title: "Scheduling"
+        position: 7
+            ## Calendar Scheduling Sub-Folders
+    controls/calendar/scheduling/views:
+        title: "Views"
+        position: 2
+             ## End Calendar Scheduling Sub-Folders
     controls/calendar/styling:
         title: "Styling"
         position: 14
@@ -403,6 +442,15 @@ navigation:
     controls/checkbox:
         title: "CheckBox"
     ## End CheckBox
+    ## ComboBox
+    controls/combobox:
+        title: "ComboBox"
+        ## ComboBox Sub-Folders
+    controls/combobox/how-to:
+        title: "How To"
+        position: 11
+        ##End ComboBox Sub-Folders
+    ## End ComboBox
     ## Chat
     controls/chat:
         title: "Conversational UI"
@@ -497,6 +545,15 @@ navigation:
     controls/rating:
         title: "Rating"    
     ## End Rating
+    ## RichTextEditor
+    controls/richtexteditor:
+        title: "RichTextEditor(beta)"
+        ## RichTextEditor Sub-Folders
+    controls/richtexteditor/styling:
+        title: "Styling"
+        position: 11
+        ## End RichTextEditor Sub-Folders        
+    ## End RichTextEditor
     ## SegmentedControl
     controls/segmentedcontrol:
         title: "SegmentedControl"
@@ -673,6 +730,7 @@ intro_columns:
     title: "Editors"
     items: 
         "AutoCompleteView": "autocompleteview-overview"
+        "ComboBox": "combobox-overview"
         "Date Picker": "date-picker-overview"
         "DateTime Picker": "datetime-picker-overview"        
         "Entry": "entry-overview"
@@ -680,7 +738,7 @@ intro_columns:
         "List Picker": "list-picker-overview"
         "MaskedInput": "maskedinput-overview"
         "NumericInput": "numericinput-overview"        
-        "List Picker": "list-picker-overview"
+        "RichTextEditor": "richtexteditor-overview"
         "Templated Picker": "templated-picker-overview"
         "Time Picker": "time-picker-overview"
         "TimeSpan Picker": "timespan-picker-overview"

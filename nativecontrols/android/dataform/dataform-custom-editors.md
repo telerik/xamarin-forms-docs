@@ -8,7 +8,7 @@ position: 4
 publish: true
 ---
 
-# RadDataForm: Custom Editors
+## DataForm for Xamarin.Android: Custom Editors
 
 Creating a custom editor for RadDataForm consists of two things: creating an **editor** and creating a **viewer**, when in read-only mode.
 

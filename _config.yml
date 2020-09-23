@@ -112,6 +112,12 @@ navigation:
     blazormobilecontrols/datagrid:
         title: "DataGrid"
         position: 18
+    blazormobilecontrols/expander:
+        title: "Expander"
+        position: 20
+    blazormobilecontrols/listview:
+        title: "ListView"
+        position: 22
     blazormobilecontrols/sidedrawer:
         title: "SideDrawer"
         position: 25

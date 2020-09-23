@@ -18,15 +18,15 @@ The available controls which can be used in Mobile Blazor Bindings projects are 
 
 | Controls |
 | -------- |
-| AutoCompleteView |
-| Border |
-| Button |
-| BusyIndicator |
-| CheckBox |
-| DataGrid |
-| Expander |
-| ListView |
-| SideDrawer |
+| [AutoCompleteView]({%slug autocompleteview-blazor-overview%}) |
+| [Border]({%slug border-blazor-overview%}) |
+| [BusyIndicator]({%slug busyindicator-blazor-overview%}) |
+| [Button]({%slug button-blazor-overview%}) |
+| [CheckBox]({%slug checkbox-blazor-overview%}) |
+| [DataGrid]({%slug datagrid-blazor-overview%}) |
+| [Expander]({%slug expander-blazor-overview%}) |
+| [ListView]({%slug listview-blazor-overview%}) |
+| [SideDrawer]({%slug sidedrawer-blazor-overview%}) |
 
 ## Getting Started
 

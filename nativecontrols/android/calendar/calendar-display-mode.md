@@ -24,7 +24,7 @@ RadCalendarView calendarView = new RadCalendarView();
 
 This is the result:
 
-![TelerikUI-Calendar-Display-Mode-Month](images/calendar-display-mode-1.png "This is the look of RadCalendarView when the display mode is Month.")
+![TelerikUI-Calendar-Display-Mode-Month](images/calendar-monthview.png "This is the look of RadCalendarView when the display mode is Month.")
 
 ## Week
 
@@ -37,7 +37,7 @@ calendarView.DisplayMode = CalendarDisplayMode.Week;
 
 Here's the result:
 
-![TelerikUI-Calendar-Display-Mode-Week](images/calendar-display-mode-2.png "This is the look of RadCalendarView when the display mode is Week.")
+![TelerikUI-Calendar-Display-Mode-Week](images/calendar-weekmode.png "This is the look of RadCalendarView when the display mode is Week.")
 
 ## Year
 
@@ -50,7 +50,7 @@ calendarView.DisplayMode = CalendarDisplayMode.Year;
 
 How the Year Mode looks:
 
-![TelerikUI-Calendar-Display-Mode-Year](images/calendar-display-mode-3.png "This is the look of RadCalendarView when the display mode is Year.")
+![TelerikUI-Calendar-Display-Mode-Year](images/calendar-yearview.png "This is the look of RadCalendarView when the display mode is Year.")
 
 Since the default look of the year view contains a lot of dates it may seem too overcrowded on smaller devices. This is why this view also has a compact mode, where the months are represented only by their names and the exact dates are not drawn.
 Whether the Year view is in compact mode can be changed through the **YearCompactMode**(*bool*) property. 

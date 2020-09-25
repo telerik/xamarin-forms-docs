@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: RadCalendarView Overview  | Telerik UI for Xamarin.Android Documentation
+page_title: Calendar for Xamarin Android | Telerik UI for Xamarin.Android Documentation
 description: An overview page of RadCalendarView for Android. This article explains the most important things you need to know before using RadCalendarView.
 slug: android-calendar-overview
 tags: radcalendarview, calendar, overview
@@ -8,10 +8,10 @@ position: 0
 publish: true
 ---
 
-## CalendarView for Xamarin.Android: Overview
+# CalendarView for Xamarin.Android: Overview
 
 **RadCalendarView** for Android is a calendar component that has been designed for the mobile environment. It offers great performance, powerful customization options and various features.
-The dates in the calendar can be presented with different modes which visualize Month, Week or Year. The user can provide a selection in different selection modes - Single, Multiple or Range depending on the required results.
+The dates in the calendar can be presented with different modes which visualize Month, Week, Year, Day, MultiDay Views and Agenda. The user can provide a selection in different selection modes - Single, Multiple or Range depending on the required results.
 Different scroll modes are available including but not limited to: Sticky, Combo and Stacked.
 The calendar also offers events integration.
 
@@ -19,7 +19,7 @@ The calendar also offers events integration.
 
 ## Display Modes
 
-**RadCalendarView** provides three different [display modes]({% slug calendar-displaymode %} "Read more about RadCalendarView's display modes"), which allow you to present dates from a month, a week or an year, depending on you preferences:
+**RadCalendarView** provides different [display modes]({% slug calendar-displaymode %} "Read more about RadCalendarView's display modes"), which allow you to present dates from a month, a week or an year, depending on you preferences:
 
 ![TelerikUI-Calendar-Year](images/calendar-overview-2.png "Calendar in Year mode.")
 
@@ -53,3 +53,9 @@ be handled in a way which changes the calendar's properties with nice transition
 
 **RadCalendarView** follows the locale information provided from the user's device settings. If you want, you can easily apply locale of your choice so that the information that is displayed is translated and formatted
 according to your preferences. [Here]({% slug calendar-localization %} "Read more about RadCalendarView's localization")'s more about the calendar's localizations capabilities.
+
+## Xamarin.Android Examples
+
+Xamarin.Android examples that show how to use RadCalendarView for Xamarin.Android are included in the Telerik UI for Xamarin zip file provided for manual installation. 
+
+Telerik_UI_for_Xamarin_[version]_[license].zip, where [version] marks the release and [license] is replaced with Dev or Trial depending on the license, is available for download from the [Downloads section of your Telerik account](https://www.telerik.com/account/product-download?product=UIXAM). Unzip the archive and go to Examples/Android folder to access our Samples Xamarin.Android solution. 

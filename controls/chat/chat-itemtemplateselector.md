@@ -12,7 +12,7 @@ RadChat control exposes an ItemTemplateSelector property which you can use to ap
 
 ## Default ItemTemplateSelector
 
-Any change on the appearance of the chat items depends on the ChatItemTemplateSelector and the containing templates and referenced Styles. The default selector includes separate templates for the incoming and outgoing messages (so they're aligned on the left/right accordingly), as well as for single and the first, middle and last messages (in case there area a few messages in a row) - this is needed in order to achieve the "balloon" look & feel of the messages.
+Any change on the appearance of the chat items depends on the ChatItemTemplateSelector and the containing templates and referenced Styles. The default selector includes separate templates for the incoming and outgoing messages (so they're aligned on the left/right accordingly), as well as for single and the first, middle and last messages (in case there area a few messages in a row) - this is needed in order to achieve the "balloon" look & feel of the messages. In addition, the TimeBreak template is also assigned through the ItemTemplateSelector.
 
 Below you can find the default ItemTemplateSelector which you can use as a base for any further customizations to the way the messages look. 
 
@@ -64,6 +64,7 @@ and add the **telerikPrimitives** namespace:
 	
 ## See Also
 
+- [Time Break]({% slug chat-timebreak %})
 - [Key Features]({% slug chat-key-features %})
 - [MVVM Support]({% slug chat-mvvm-support %})
 - [Commands] ({% slug chat-commands %})

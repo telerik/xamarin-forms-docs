@@ -73,35 +73,11 @@ xmlns:telerikPdfViewer="clr-namespace:Telerik.XamarinForms.PdfViewer;assembly=Te
 
 In order to get the current viewport  position and size, use the snippet below:
 
-```C#
-var viewport = this.pdfViewer.Viewport;
-var viewportMessage = String.Format("Current viewport with Width: {0:0.00}, Height: {1:0.00}, Left: {2:0.00}, Top: {3:0.00}", viewport.Width, viewport.Height, viewport.X, viewport.Y);
-Application.Current.MainPage.DisplayAlert("Current Viewport", viewportMessage, "OK");
-```
+<snippet id='pdfviewer-viewport-getviewport' />
 
 The next snippets demonstrates how you can manipulate the viewport of the PdfViewer:
 
-```C#
-RadFixedDocument document = this.pdfViewer.Document;
-var currentViewport = this.pdfViewer.Viewport;
-
-if (this.pdfViewer.LayoutMode == LayoutMode.ContinuousScroll)
-{               
-	double pagesHeight = 0;
-
-	for (int i = 0; i < document.Pages.Count - 1; i++)
-	{
-		pagesHeight += document.Pages[i].Size.Height;
-		pagesHeight += this.pdfViewer.PageSpacing;
-	}               
-	this.pdfViewer.ChangeViewport(new Rectangle(0, pagesHeight, currentViewport.Width, currentViewport.Height));
-}
-else
-{
-	this.pdfViewer.NavigateToPage(document.Pages.Count - 1);
-	this.pdfViewer.ChangeViewport(new Rectangle(0, 0, currentViewport.Width, currentViewport.Height));
-}
-```
+<snippet id='pdfviewer-viewport-setviewport' />
 
 ## See Also
 

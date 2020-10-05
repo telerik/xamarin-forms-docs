@@ -10,7 +10,7 @@ publish: true
 
 ## DataForm for Xamarin.Android: Features
 
-### Editors
+## Editors
 
 RadDataForm is used for editing the properties of an object. For example if a Person class has a field that stores the age of the person, it should have a public getter and setter with the following signature:
 
@@ -21,13 +21,13 @@ public int Age {
 }
 ```
 
-The field "age" in conjunction with the getter and setter define the "Age" property. If the property only has a getter, the property will be read-only and a **property viewer** will be created instead of a **property editor**. If a field only has a setter it will be ignored by RadDataForm.
+If the property only has a getter, the property will be read-only and a **property viewer** will be created instead of a **property editor**. If a field only has a setter it will be ignored by RadDataForm.
 
 RadDataForm supports the basic data types for editing out of the box - these include text, date and time, booleans, enums and numbers. For custom types RadDataForm provides means for creating a custom editor. Also, the basic editors can be replaced by custom editors whenever necessary. 
 
 RadDataForm has a priority list when it decides which editor to show for a given property or type:
 
-<ol><li>If the developer has defined an editor with the [property metadata]({% slug data-form-metadata %} "Read more about the data form metadata.") for their object it will be used first.</li>
+<ol><li>If the developer has defined an editor with the [property metadata]({% slug data-form-metadata %} "Read more about the data form metadata.") for their object it will be used first.<br /></li>
 <li>If the metadata does not define an editor, a special callback (editor provider) will be attempted next. The callback is a function that accepts an EntityProperty and returns an EntityPropertyEditor. For example:
 
 ```C#
@@ -51,7 +51,7 @@ public class EditorProviderImpl : Java.Lang.Object, IFunction {
 ```
 
 The sample callback above replaces the default checkbox editor for booleans with the switch editor. For other types and properties it returns null. When the data form adapter gets null from this callback it proceeds with the remaining options for editor resolution. 
-</li>
+<br /></li>
 <li>The next option is the **editor registry**. The registry contains pre-defined editors for properties and types. First it looks if it has an editor for the specific property provided. If it doesn't it finally tries to map the property type to a default editor. If an editor is not found at all, the property is not displayed for editing. 
 
 Developers can modify the registry as required. For example the default types can be mapped to custom editors and the editors for custom types can also be defined:
@@ -82,17 +82,18 @@ For more information on how to create a custom editor or viewer see the [Custom 
 
 ## Validation
 
-Every editor in RadDataForm can validate the entered data before it is committed to the object being edited. There are two ways to set a validator for a property. The first way is to specify it when defining the property
-metadata. The second way is to get the editor for the required property during run-time and set a validator on the editor. For example:
+Every editor in RadDataForm can validate the entered data before it is committed to the object being edited. There are two ways to set a validator for a property:
 
+The first way is to specify it when defining the property metadata, for more details on this check [Metadata]({%slug data-form-metadata %}) topic.
+
+The second way is to get the editor for the required property during run-time and set a validator on the editor. For example:
 
 ```C#
 MailValidator validator = new MailValidator();
 dataForm.GetExistingEditorForProperty ("EMail").Property ().Validator = validator;
 ```
 
-Any validator can be set this way provided it implements the **PropertyValidator** interface.
-For example here is how MailValidator is implemented:
+Any validator should implements the **PropertyValidator** interface. For example here is how MailValidator is implemented:
 
 ```C#
 public class MailValidator : Com.Telerik.Widget.Dataform.Engine.PropertyValidatorBase {
@@ -103,17 +104,15 @@ public class MailValidator : Com.Telerik.Widget.Dataform.Engine.PropertyValidato
 }
 ```
 
-When an editor tries to commit its value, if the validation fails or succeeds, the validation view of the editor will be notified with the validation info produced in the process.
-The validation view must be present inside the editor and will visually update itself to reflect the validation info that is passed to it. For example if the user enters a value for
-the mail field that is not an e-mail, a validation error will be displayed like this:
+When an editor tries to commit its value, if the validation fails or succeeds, the validation view of the editor will be notified with the validation info produced in the process. The validation view must be present inside the editor and will visually update itself to reflect the validation info that is passed to it. 
+
+For example if the user enters a value for the mail field that is not an e-mail, a validation error will be displayed like this:
 
 ![TelerikUI-DataForm-Features](images/dataform-validation-error.png "DataForm demos.")
 
 ## Property Value Converters
 
-RadDataForm can associate property value converters with the properties of the edited object. For example the developer decides to use a text editor to display an integer, they will have to specify a way to convert
-that integer to and from a string. For example:
-
+RadDataForm can associate property value converters with the properties of the edited object. For example the developer decides to use a text editor to display an integer, they will have to specify a way to convert that integer to and from a string. For example:
 
 ```C#
 dataForm.GetExistingEditorForProperty("Age").Property().Converter = 
@@ -134,10 +133,11 @@ public class IntegerToStringConverter : Java.Lang.Object,
 
 ## Editor Relations
 
-Some data entry forms contain editors that depend on each other. For example if there is an editor that displays a spinner with pre-defined items, the items might need to change if the value of another editor changes.
-A practical case is when the user selects the country in which they live, then another editor can be enabled so that they can choose a city from the selected country and so on. 
-An editor relation is just a callback method that is called when an editor value changes:
+Some data entry forms contain editors that depend on each other. For example if there is an editor that displays a spinner with predefined items, the items might need to change if the value of another editor changes.
 
+A practical case is when the user selects the country in which they live, then another editor can be enabled so that they can choose a city from the selected country and so on.  
+
+An editor relation is just a callback method that is called when an editor value changes:
 
 ```C#
 dataForm.AddEditorDependency("City", new Procedure2Impl());
@@ -156,19 +156,17 @@ public class Procedure2Impl : Java.Lang.Object, IProcedure2 {
 }
 ```
 
-In this example the editor for the City property depends on the value of the editor for the Country property. When the country changes, the callback gets invoked and the city spinner is populated with the cities from the
-selected country.
+In this example the editor for the City property depends on the value of the editor for the Country property. When the country changes, the callback gets invoked and the city spinner is populated with the cities from the selected country.
 
 ## Property Metadata
 
-When defining custom classes for RadDataForm to edit, developers have the option to annotate the properties of their classes with the [@DataFormProperty]({% slug data-form-metadata %} "Read more about the data form metadata.") annotation. It contains several attributes than can be used to customize
-the functionality of the editor corresponding to the property.
+When defining custom classes for RadDataForm to edit, developers have the option to annotate the properties of their classes with the [@DataFormProperty]({% slug data-form-metadata %} "Read more about the data form metadata.") annotation. It contains several attributes than can be used to customize the functionality of the editor corresponding to the property.
 
 ## Commit Modes
 
-RadDataForm supports three commit modes. These are **IMMEDIATE**, **ON_LOST_FOCUS** and **MANUAL**. Immediate mode validates and commits the property value of an editor immediately after the editor value changes. ON_LOST_FOCUS works only for
-editors that can be focused, like a text field for example. Editors that can't be focused can work only in immediate or manual mode. Finally manual mode allows the developer to dictate when to validate and commit
-all or some the edited properties by calling the dataForm.commitChanges() method. To commit a single property the EntityProperty object for the property must be obtained and then its commit() method must be called:
+RadDataForm supports three commit modes - **Immediate**, **OnLostFocus** and **Manual**. Immediate mode validates and commits the property value of an editor immediately after the editor value changes. OnLostFocus works only for editors that can be focused, like a text field for example. Editors that can't be focused can work only in immediate or manual mode. Finally manual mode allows the developer to dictate when to validate and commit all or some the edited properties by calling the dataForm.CommitChanges() method. 
+
+To commit a single property the EntityProperty object for the property must be obtained and then its Commit() method must be called:
 
 
 ```C#
@@ -176,17 +174,17 @@ dataForm.GetExistingEditorForProperty("Age").Property().Commit();
 ```
 
 >It is important to note that committing in this way will **not** validate the currently set value. 
-To validate manually first call **setValueCandidate(someValue)** to the EntityProperty object and then call commit if no validation errors occur.
-To listen for validation errors call **addValidationCompletedListener()** on the EntityProperty object.
+To validate manually first call **ValueCandidate** to the EntityProperty object and then call commit if no validation errors occur.
+To listen for validation errors call **AddValidationCompletedListener()** on the EntityProperty object.
 
 ## Customizing the editors layout
 
-Supporting multiple screen sizes on android is a necessity so RadDataForm allows developers to specify a [layout manager]({% slug data-form-linear-layout %} "Read more the data form layout.") that will be used to arrange the editors. 
+Supporting multiple screen sizes on Android is a necessity so RadDataForm allows developers to specify a [Layout Manager]({% slug data-form-linear-layout %} "Read more the data form layout.") that will be used to arrange the editors. 
 The default layout manager arranges the editors in a table layout.
 
 ## Read-Only mode
 
-RadDataForm can simply display information about an object in read-only mode. To make RadDataForm read-only, simply call the **dataForm.setIsReadOnly(true)** method.
+RadDataForm can simply display information about an object in read-only mode. To make RadDataForm read-only, simply set **IsReadOnly** property to "True".
 When in read-only mode, RadDataForm will disregard the property setters and will create non-interactive viewers for each property.
 
 ## Creating custom editors and viewers
@@ -195,7 +193,7 @@ RadDataForm can be extended by [creating custom editors]({% slug data-form-custo
 
 ## Label Position
 
-RadDataForm has two options for layout of the labels and the editors. The default label position is on top of the editor, but with the **setLabelPosition** method you can change that so that the labels and the editors are on the same row. Here’s how:
+RadDataForm has two options for layout of the labels and the editors. The default label position is on top of the editor, but with the **LabelPosition** property you can change it, so that the labels and the editors are on the same row. Here’s how:
 
 
 ```C#

@@ -8,9 +8,9 @@ position: 11
 publish: true
 ---
 
-## DataForm for Xamarin.Android: Using DataFormLinearLayoutManager
+## DataForm for Xamarin.Android: Linear Layout
 
-RadDataForm can easily arrange its editors in a linear layout instead of the default table layout. This can be done with the **DataFormLinearLayoutManager** class. For example:
+RadDataForm can easily arrange its editors in a linear layout instead of the default table layout. This can be done with the **DataFormLinearLayoutManager** class. 
 
 ```C#
 // The context argument of the manager is the app context/activity.
@@ -23,9 +23,9 @@ The linear manager can also change its orientation:
 linearLayoutManager.Orientation = (int)Android.Widget.Orientation.Horizontal;
 ```
 
-Finally, DataFormLinearLayoutManager can be intialized with a special linear layout inflated from XML. 
-Assuming the app project contains a layout called R.layout.data_form_custom_linear_layout, the manager can be initialized like this:
+Finally, DataFormLinearLayoutManager can be initialized with a special linear layout inflated from XML. 
 
+Assuming the app project contains a layout called R.layout.data_form_custom_linear_layout, the manager can be initialized like this:
 
 ```C#
 // Note that the orientation of the linear layout specified in the XML 

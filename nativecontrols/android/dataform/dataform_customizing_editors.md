@@ -17,7 +17,7 @@ Each editor in RadDataForm consists of the following elements:
 * Validation message
 * Validation icon
 
-Each of these elements can be customized individually for each editor. They (except core editor) can also be specified once to be used for every editor in the data form.
+Each of these elements can be customized individually for each editor. They (except core editor) can also be specified once to be used for every editor in the DataForm
 
 ## Custom layouts
 
@@ -39,9 +39,7 @@ public string Name {
 }
 ```
 
-Notice one additional attribute of the annotation, the **editorLayout**. This is the main layout of the editor which contains each of the sub-elements described above. This can be used
-if the app design requires the header to be on the right of the editor or if the validation message should be on top of the core editor for example. The main layout's purpose is
-allow custom positioning of the sub elements of each editor.
+Notice one additional attribute of the annotation, the **EditorLayout**. This is the main layout of the editor which contains each of the sub-elements described above. This can be used if the app design requires the header to be on the right of the editor or if the validation message should be on top of the core editor for example. The main layout's purpose is to allow custom positioning of the sub elements of each editor.
 
 Finally along with the fine grained options above, one main layout can be specified and reused for every editor. For example:
 
@@ -60,17 +58,17 @@ To illustrate the main layout and its sub elements consider this image:
 
 ![TelerikUI-DataForm-Customizing-Editors](images/dataform-customizing-editors.png "Data form editor structure.")
 
-Here "Date" is the header. The red highlighted text field is the core editor which is a date picker in this case and finally the red message below is the validation message.
-When there is a validation icon specified it will be displayed to the right of the core editor.
+Here "Date" is the header. The red highlighted text field is the core editor which is a date picker in this case and finally the red message below is the validation message. When there is a validation icon specified it will be displayed to the right of the core editor.
 
 ## Editor customizations
 
-Another way to customize the editors is with DataForm's **setEditorCustomization** method. It allows you to define a procedure that will be applied for each editor and you will get a chance to alter the appearance for the editors that meet a certain requirement. Here's an example:
+Another way to customize the editors is with DataForm's **EditorCustomization** property. It allows you to define a procedure that will be applied for each editor and you will get a chance to alter the appearance for the editors that meet a certain requirement. 
 
+Here is an example:
 
 ```C#
-        dataForm.EditorCustomizations = new EditorCustomizationsExample ();
-        // ...
+dataForm.EditorCustomizations = new EditorCustomizationsExample();
+// ...
 class EditorCustomizationsExample : Java.Lang.Object, IProcedure {
     public void Apply (Java.Lang.Object p0)
     {
@@ -95,7 +93,6 @@ class EditorCustomizationsExample : Java.Lang.Object, IProcedure {
     }
 }
 ```
-<snippet id='data-form-customizations-editor-styles-class'/>
 
 And here's the result:
 

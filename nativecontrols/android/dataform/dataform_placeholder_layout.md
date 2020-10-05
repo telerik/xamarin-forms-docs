@@ -8,7 +8,7 @@ position: 12
 publish: true
 ---
 
-## DataForm for Xamarin.Android: Using DataFormPlaceholderLayoutManager
+## DataForm for Xamarin.Android: Placeholder Layout
 
 To use the placeholder layout developers must create an instance of the **DataFormPlaceholderLayoutManager** class.
 

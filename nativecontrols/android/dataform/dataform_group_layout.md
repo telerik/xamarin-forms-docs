@@ -8,9 +8,9 @@ position: 10
 publish: true
 ---
 
-## DataForm for Xamarin.Android: Using DataFormGroupLayoutManager
+## DataForm for Xamarin.Android: Group Layout
 
-To separate the data form editors into groups, developers must use **DataFormGroupLayoutManager**.
+To separate the DataForm editors into groups, developers must use **DataFormGroupLayoutManager**.
 
 
 ```C#
@@ -19,6 +19,7 @@ dataForm.LayoutManager = new DataFormGroupLayoutManager (context);
 ```
 
 Each editor will be put in the group specified in the [@DataFormProperty]({% slug data-form-metadata %} "Read more about @DataFormProperty") annotation of the associated property. 
+
 For example if we have a Reservation class with a ReservationDate property:
 
 ```C#

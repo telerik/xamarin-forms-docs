@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Xamarin ComBoBox Documentation | Overview
+page_title: Xamarin ComboBox Documentation | Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik ComboBox for Xamarin control.
 position: 0
 slug: combobox-overview
@@ -27,7 +27,7 @@ slug: combobox-overview
 * **Templates** – You can easily change the default ItemTemplate and SelectedItemTemplate. In addition, if the ComboBox is in multiple selection mode, the selected item is displayed inside a token. You can customize the token using the TokenTemplate property. Also, you can customize the ShowMoreTemplate which is visualized inside the ComboBox when the control is not focused and when there is not enough space for all tokens to be displayed. Check [here]({%slug combobox-templates%}) for more detail.
 * **Flexible Styling API** – Allows you to change the ComboBox background color, Style the control’s dropdown box, change the clear and dropdown buttons. In addition, you can change the Placeholder text color and the Highlighted text color.  Check [here]({%slug combobox-styling%}) how you can work with the Styling API.
 * **Theming Support** - RadComboBox comes with built-in theming support that helps you achieve consistent look with the rest controls from Telerik UI for Xamarin suite. To learn more about this go to [Theme Overview]({%slug common-themes-overview%}) topic. 
-* **Commands Support** – ComboBox for Xamarin exposes ClearSelectionCommand that allows you clear the selected item/s from external UI and SelectAllCommand that allows you to select all items from the source. For more details check [here]({%slug combobox-selection%}).
+* **Commands Support** – ComboBox for Xamarin exposes ClearSelectionCommand that allows you clear the selected item(s) from external UI and SelectAllCommand that allows you to select all items from the source. For more details check [here]({%slug combobox-selection%}).
 
 >important **SDK Browser** and **QSF** applications contain different examples that show RadComboBox's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
 

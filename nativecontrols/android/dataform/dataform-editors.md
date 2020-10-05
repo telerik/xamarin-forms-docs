@@ -10,7 +10,7 @@ publish: true
 
 ## DataForm for Xamarin.Android: Built-in Editors
 
-The **RadDataForm** contains many built-in property editors that are either automatically resolved depending on the property's type or by the associated annotation **@DataFormProperty** `editor`. The RadDataForm currently ships with the following built-in editors:
+**RadDataForm** contains many built-in property editors that are either automatically resolved depending on the property's type or by the associated annotation **@DataFormProperty** `editor`. RadDataForm currently ships with the following built-in editors:
 
 - DataFormTextEditor
 - DataFormEmailEditor
@@ -30,19 +30,27 @@ The **RadDataForm** contains many built-in property editors that are either auto
 - DataFormCheckBoxEditor
 - DataFormRadAutoCompleteEditor
 
-# Using @DataFormProperty
+## Using @DataFormProperty
 
-The RadDataForm 'annotations' can be used to easily assign an editor to a property of the set Entity. The next example demonstrates how to set the editor of a property via the described annotations:
+RadDataForm 'Editor annotation' can be used to easily assign an editor to a property of the source object. The next example demonstrates how to set the editor of a property via the described annotations:
 
+```C#
+[DataFormProperty(Label = "Phone Number", Hint = "phone",
+				  Editor = typeof(DataFormPhoneEditor)]
+public string Phone
+{
+	get;
+	set;
+}
+```
 
+## Using the 'DataFormRadAutoCompleteEditor'
 
-# Using the 'DataFormRadAutoCompleteEditor'
+The DataFormRadAutoCompleteEditor is a bit more advanced editor which provides an out of the box quick search functionality. This editor uses the [RadAutoCompleteTextView]() standalone control and all its functionality like `DisplayMode` is available to the RadDataForm editor.
 
-The DataFormRadAutoCompleteEditor is a bit more advanced editor which provides an out of the box quick search functionality. This editor uses the **RadAutoCompleteTextView** stand alone element and all its functionality like `DisplayMode` is available to the RadDataForm editor.
+### Setting the suggestions 'source'
 
-## Setting the suggestions 'source'
-
-Because of the nature of the RadAutoCompleteTextView the editor which exposes its functionality requires some additional data to be passed to it which will be used as the 'suggestions' when a user starts typing in its text box.
+Because of the nature of the RadAutoCompleteTextView the editor which exposes its functionality requires some additional data to be passed to it which will be used as the 'suggestions' when a user starts typing in its textbox.
 
 Passing this data can be done in multiple different approaches depending on which one is the easiest for your scenario:
 
@@ -56,7 +64,7 @@ Passing this data can be done in multiple different approaches depending on whic
 
  
 
-## Setting the DisplayMode
+### Setting the DisplayMode
 
 If you are familiar with the RadAutoCompleteTextView element you know that is supports out of the box two different selected items display modes:
 

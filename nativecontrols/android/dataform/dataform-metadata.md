@@ -10,9 +10,7 @@ publish: true
 
 ## DataForm for Xamarin.Android: Metadata
 
-When defining a class that will be edited by RadDataForm it is useful to annotate it with the **@DataFormProperty** annotation.
-This annotation contains several attributes that help the data form editors to be rendered with precision. The available attributes
-are label, index, column index, group, required, readOnly, skip, viewer, editor, converter and validator.
+When defining a class that will be edited by RadDataForm it is useful to annotate it with the **@DataFormProperty** annotation. This annotation contains several attributes that help the data form editors to be rendered with precision. The available attributes are label, index, column index, group, required, readOnly, skip, viewer, editor, converter and validator.
 
 ## Label
 
@@ -73,6 +71,8 @@ Specifies a custom validator for the associated property.
 ## ValidatorParams
 
 Custom parameters used to properly set up the validator.
+
+## Example
 
 To annotate a class with @DataFormProperty, **only the getters of the properties should be annotated**. Any annotations on the setters will be ignored:
 

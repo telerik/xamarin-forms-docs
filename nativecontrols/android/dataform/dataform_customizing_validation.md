@@ -8,22 +8,20 @@ position: 9
 publish: true
 ---
 
-## DataForm for Xamarin.Android: Visually Customizing RadDataForm's Validation
+## DataForm for Xamarin.Android: Customizing Validation
 
-Every editor in RadDataForm has a default **validation behavior**. This behavior is represented by the **DataFormValidationViewBehavior** class. It shows only negative feedback which
-looks like this:
+Every editor in RadDataForm has a default **validation behavior**. This behavior is represented by the **DataFormValidationViewBehavior** class. It shows only negative feedback which looks like this:
 
 ![TelerikUI-DataForm-Customizing-Validation](images/dataform-validation-negative.png "DataForm demos.")
 
-The negative feedback consists of displaying a message somewhere around the editor, showing an error icon if available and setting the background of the core editor parent to some red
-color.
+The negative feedback consists of displaying a message somewhere around the editor, showing an error icon if available and setting the background of the core editor parent to some red color.
 
 Another indication for negative validation that you can use is, to show red color as a background of the core editor. You can use this behavior with validation behavior's **setChangeBackground** method and set it to `true`, if you want the color modification to be applied not to the line below the editor, but to its background.
 
-The error message and indications can also be animated. RadDataForm provides another class called **ValidationAnimationBehavior** which animates an invalid editor by shaking it. It can
-easily be extended to blink, fade or any other appropriate animation.
+The error message and indications can also be animated. RadDataForm provides another class called **ValidationAnimationBehavior** which animates an invalid editor by shaking it. It can easily be extended to blink, fade or any other appropriate animation.
 
 To customize the validation behavior the DataFormValidationViewBehavior class can be tweaked with the following properties:
+
 * InvalidBackgroundDrawable: The error background.
 * InvalidDrawable: The error icon.
 
@@ -33,6 +31,7 @@ The positive behavior can display negative as well as positive feedback. For exa
 ![TelerikUI-DataForm-Customizing-Validation](images/dataform-validation-positive.png "DataForm demos.")
 
 The positive behavior adds two more properties:
+
 * ValidBackgroundDrawable
 * ValidDrawable
 

@@ -52,7 +52,7 @@ Here is an example being used in this tutorial's demo
 
 *ItemModel.cs*
 
-```csharp
+```C#
 public class ItemModel : NotifyPropertyChangedBase
 {
     private bool isLoading;
@@ -92,7 +92,7 @@ With the basic setup prepared and the data model ready, it is time to further cu
 
 An easy way to do this is to use a [Xamarin.Forms RelativeSource](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/data-binding/relative-bindings) binding, here's what that looks like (see the final code at the end of this article):
 
-```xml
+```XAML
 <ControlTemplate x:Key="HeaderControlTemplate">
     <Grid BackgroundColor="LightGray"
           HeightRequest="50">

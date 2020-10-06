@@ -1,6 +1,6 @@
 ---
 title: Display a Loading animation to TabView Header
-description: A tutorial on adding RadBusyIndicator to a TabViewHeader that can be toggles on demand.
+description: A tutorial on adding RadBusyIndicator to a TabViewHeader that can be toggled on demand.
 type: how-to
 page_title: TabView Header BusyIndicator
 slug: tabview-busyindicator-header
@@ -84,7 +84,7 @@ public class ItemModel : NotifyPropertyChangedBase
 }
 
 ```
-> Notice that the Command's `ToggleLoading()` Action toggles the value of `IsLoading`. equally important is that IsLoading must invoke PropertyChanged. 
+> Notice that the Command's `ToggleLoading()` Action toggles the value of `IsLoading`. Equally important is that IsLoading must invoke PropertyChanged. 
 
 ### Step 3
 
@@ -144,7 +144,7 @@ Here are the rest of the demo's files so you can complete the tutorial.
 
 *MainViewModel.cs*
 
-```csharp
+```C#
 public class MainViewModel
 {
     public MainViewModel()
@@ -165,7 +165,7 @@ public class MainViewModel
 
 *MainPage.xaml*
 
-```xml
+```XAML
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -309,7 +309,7 @@ public class MainViewModel
 
 *MainPage.xaml.cs*
 
-```csharp
+```C#
 public partial class MainPage : ContentPage
 {
     public MainPage()

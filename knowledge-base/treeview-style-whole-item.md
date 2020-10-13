@@ -1,8 +1,8 @@
 ---
-title: Expand Collapse TreeView item when tapping on the indicator
+title: Style TreeView Item Pprent node and child nodes when expanding the node
 description: How to style the whole treeview item, with the child nodes
 type: how-to
-page_title: Expand Collapse TreeView item when tapping on the indicator
+page_title: Style TreeView Item Pprent node and child nodes when expanding the node
 slug: treeview-style-whole-item-when
 position: 
 tags: treeview, expand, collapse, indicator, item, treeviewitem, style, expanded, item, child, node

@@ -82,11 +82,17 @@ For the example we will trigger the IsReadOnly State using a Switch. Here is the
 
 <snippet id='richtexteditor-readonly-state' />
 
+For the example we will use a converter to hide the Toolbar when the control is in read-only state:
+
+<snippet id='richtexteditor-readonly-converter' />
+
 defining the Source of the RichTextEditor:
 
 <snippet id='richtexteditor-readonly-state-code-behind' />
 
 > The richtexteditor-htmlsource.html file is visualized in the Editor as an EmbeddedResource.
+
+The sample Read-Only State demo can be found in our [SDK Browser Application](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/RichTextEditorControl/FeaturesCategory/ReadOnlyStateExample).
 
 ## See Also
 

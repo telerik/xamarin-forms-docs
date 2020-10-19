@@ -72,6 +72,28 @@ You can take advantage of the following methods related to hyperlinks and select
 
 * GetSelectionAsync() - returns asynchronously a [RichTextSelection](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtextselection) object which defines the current text selection inside the editor (*null* if there is no text selection). The <code>RichTextSelection</code> object contains the *Text* itself as well as the *Start* and *End* position of the text characters;
 
+## Read-Only State
+
+**IsReadOnly**(*bool*) property of the RichTextEditor indicating whether the control is in a read-only mode. Setting `IsReadOnly="True"` means that the Toolbar Items will be disabled, the content of the document cannot be changed and no selection can be performed. The default the value is `False`. 
+
+### Example
+
+For the example we will trigger the IsReadOnly State using a Switch. Here is the XAML Definition:
+
+<snippet id='richtexteditor-readonly-state' />
+
+For the example we will use a converter to hide the Toolbar when the control is in read-only state:
+
+<snippet id='richtexteditor-readonly-converter' />
+
+defining the Source of the RichTextEditor:
+
+<snippet id='richtexteditor-readonly-state-code-behind' />
+
+> The richtexteditor-htmlsource.html file is visualized in the Editor as an EmbeddedResource.
+
+The sample Read-Only State demo can be found in our [SDK Browser Application](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/RichTextEditorControl/FeaturesCategory/ReadOnlyStateExample).
+
 ## See Also
 
 - [PdfViewer Toolbar]({%slug richtexteditor-toolbar%})

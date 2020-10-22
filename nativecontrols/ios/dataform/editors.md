@@ -6,12 +6,11 @@ slug: data-form-ios-editors
 ---
 
 
-# RadDataForm: Built-in Editors
+## RadDataForm for Xamarin.iOS: Built-in Editors
 
-The **RadDataForm** contains many built-in property editors that are either automatically resolved depending on the property's type or by the **dataSource** `editorClass` of the **TKDataForm**. The RadDataForm currently ships with the following built-in editors:
+RadDataForm for Xamarin.iOS contains many built-in property editors that are either automatically resolved depending on the property's type or can be set by the **TKDataFormEntityDataSourceHelper** `EditorClass` of the **TKDataForm**. RadDataForm currently ships with the following built-in editors:
 
-- TKDataFormAutocompleteController
-- TKDataFormAutocompleteEditor
+- TKDataFormAutocompleteInlinEditor
 - TKDataFormTextFieldEditor
 - TKDataFormMultilineTextEditor
 - TKDataFormEmailEditor
@@ -31,27 +30,47 @@ The **RadDataForm** contains many built-in property editors that are either auto
 - TKDataFormPickerViewEditor
 - TKDataFormCustomEditor
 
-# Using the 'TKDataFormAutocompleteController'
+>tip For more details on how you can define and customize the editors check the [Getting Started](/devtools/xamarin/nativecontrols/ios/dataform/getting-started) topic.
 
-The TKDataFormAutocompleteController is a bit more advanced editor which provides an out of the box quick search functionality. This editor uses the **TKAutoCompleteTextView** stand alone element and all its functionality like `DisplayMode` is available to the RadDataForm editor.
+### Using the TKDataFormAutoCompleteInlineEditor
 
-In order to set a specific editor to a property of your data source all that you need is set the `editorClass` of that element in the **TKDataFormEntityDataSource**
+TKDataFormAutoCompleteInlineEditor is a bit more advanced editor which provides an out of the box quick search functionality. This editor uses the **TKAutoCompleteTextView** standalone element and all its functionality like `DisplayMode` is available to the RadDataForm editor.
 
-## Setting the suggestions 'source'
+#### Setting the suggestions 'Source'
 
-Because of the nature of the RadAutoCompleteTextView the editor which exposes its functionality requires some additional data to be passed to it which will be used as the 'suggestions' when a user starts typing in its text box.
+Because of the nature of the RadAutoCompleteTextView the editor which exposes its functionality requires some additional data to be passed to it which will be used as the 'suggestions' when a user starts typing in its textbox. Suggestions can be set through the `ValuesProvider` property of the **TKDataFormEntityDataSourceHelper** and setting it to array of strings. 
 
-Passing this data can be done in multiple different approaches depending on which one is the easiest for your scenario:
+The example below uses the setup from the [Getting Started](/devtools/xamarin/nativecontrols/ios/dataform/getting-started) topic.
 
-- By using the `valuesProvider` property of the **TKDataFormEntityDataSource** and setting it to array of strings
+```C#
+var dataSource = new TKDataFormEntityDataSourceHelper(new PersonalInfo());
+ 
+dataSource["Account"].EditorClass = new Class(typeof(TKDataFormAutoCompleteInlineEditor));        
+dataSource["Account"].ValuesProvider = NSArray.FromStrings(new string[] { "CMOK", "Drako", "Falkor", "Longma", "Pyrene" });
+```
 
-## Setting the DisplayMode
+#### Setting the DisplayMode
 
 If you are familiar with the TKAutoCompleteTextView element you know that is supports out of the box two different selected items display modes:
 
 - Token - the selected item from the 'suggestion box' is displayed as a box with a remove 'X' button
 - Plain - the selected item's text is appended and autocompleted after an item from the 'suggestion box' is selected
 
-When using the `DataFormRadAutoCompleteEditor` you too have the option to change the editor's `displayMode` by simply setting the `autoCompleteDisplayMode` of the specific element in the TKDataFormEntityDataSource.
+When using the `DataFormRadAutoCompleteInlineEditor` you too have the option to change the editor's `DisplayMode` by simply setting the `AutoCompleteDisplayMode` of the AutoCompleteTextView control inside the <code>UpdateEditor</code> method of the DataForm Delegate:
 
-The full Objective-C source code of the above example can be found [here](https://github.com/telerik/ios-sdk/blob/5adf23c7fbc20087aba2cfe04a56fca6d2b56370/TelerikUIExamples/TelerikUIExamples/DataFormEditorsAutoComplete.m).
+```C#
+class MydDataFormDelegate : TKDataFormDelegate
+{
+    public override void UpdateEditor(TKDataForm dataForm, TKDataFormEditor editor, TKEntityProperty property)
+    {
+        if(property.Name == "Account")
+        {
+            (editor as TKDataFormAutoCompleteInlineEditor).AutoCompleteView.DisplayMode = TKAutoCompleteDisplayMode.Tokens;
+        }   
+    }  
+}
+```
+
+Here is the result:
+
+![](../images/dataform-autocompleteeditor.png)

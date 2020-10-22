@@ -1,37 +1,31 @@
 ---
 title: Getting Started
-page_title: DataForm Getting Started
+page_title: RadDataForm Getting Started | Telerik UI for Xamarin.iOS Documentation
+description: Describes how to start using RadDataForm.
 slug: ios-dataform-overview
 position: 2
 ---
 
-# DataForm: Getting Started
+## DataForm for Xamarin.iOS: Getting Started
 
-This quick start tutorial demonstrates how to create a simple iOS application with <code>TKDataForm</code>.
-
-<img src="../images/dataform-gettingstarted001.png" />
-
+This quick start tutorial demonstrates how you can add <code>TKDataForm</code> to your Xamarin.iOS application. 
 
 ## Setting up TKDataForm
 
-Now that our project is created and the TelerikUI.framework is added, we can start referencing and using the TelerikUI types:
+There are two approaches you can use - either add a <code>TKDataForm</code> instance to an existing UIViewController or utilize our predefined <code>TKDataFormViewController</code>. 
 
-Open your **UIViewController** file and add a reference to the chart header file:
+Either way you choose, first you will need to reference Telerik.Xamarin.iOS.dll into the Xamarin.iOS project.
+
+### Adding TKDataForm instance
+
+Open your **UIViewController** file and add a reference to the <code>TelerikUI</code> namespace:
 
 ```C#
 using TelerikUI;
 ```
 
-Note that starting with Xcode 6 Apple doesn't generate the precompiled headers file automatically. That is why you should add import the UIKit framework before importing TelerikUI:
+You should create a business object that will be displayed and edited by <code>TKDataForm</code>. Let's create a class called <code>PersonalInfo</code>:
 
-```C#
-using UIKit;
-```
-   
-First you should create a business object that will be displayed and edited by <code>TKDataForm</code>. Lets create a class called <code>PersonalInfo</code>
-
-<snippet id='dataform-info'/>
-<snippet id='dataform-info-swift'/>
 ```C#
 public class PersonalInfo : NSObject
 {
@@ -73,41 +67,108 @@ public class PersonalInfo : NSObject
 }
 ```
 
-The <code>TKDataForm</code> object should be created in <code>viewDidLoad</code> method:
+The <code>TKDataForm</code> object should be created in <code>ViewDidLoad</code> method of the UIViewController:
 
-<snippet id='dataform-obj'/>
-<snippet id='dataform-obj-swift'/>
 ```C#
-this.dataForm = new TKDataForm (this.View.Bounds);
-this.dataForm.Delegate = this.dataFormDelegate;
-this.View.AddSubview (this.dataForm);
+public override void ViewDidLoad ()
+{
+    base.ViewDidLoad ();
+    // Perform any additional setup after loading the view, typically from a nib.
+    var dataForm = new TKDataForm(this.View.Bounds)
+    {
+        WeakDataSource = new TKDataFormEntityDataSource(new PersonalInfo())
+    };  
+    this.View.AddSubview(dataForm);
+}
 ```
 
-You should adopt <code>TKDataFormDelegate</code> and implement its <code>dataForm:updateEditor:forProperty:</code> method in order to customize the editors:
+And here is the result:
 
-<snippet id='dataform-delegate'/>
-<snippet id='dataform-delegate-swift'/>
+![](../images/dataform-gettingstarted001.png)
+
+### Utilizing TKDataFormViewController
+
+The other option is to utilize the <code>TKDataFormViewController</code> - it inherits from `UIViewController` and contains a predefined <code>TKDataForm</code> instance.
+
+For the example below the same <code>PersonalInfo</code> class is used as a source of the DataForm.
+
 ```C#
-public override void UpdateEditor (TKDataForm dataForm, TKDataFormEditor editor, TKEntityProperty property)
+public partial class MyViewController : TKDataFormViewController
 {
-    TKGridLayoutCellDefinition feedbackDef = editor.GridLayout.DefinitionForView (editor.FeedbackLabel);
-    editor.GridLayout.SetHeight (0, feedbackDef.Row.Int32Value);
+	public MyViewController(IntPtr handle) : base(handle)
+	{
+	}
 
-    if (property.Name == "InfoProtocol") {
-        editor.Style.TextLabelDisplayMode = TKDataFormEditorTextLabelDisplayMode.Hidden;
-        TKGridLayoutCellDefinition textLabelDef = editor.GridLayout.DefinitionForView (editor.TextLabel);
-        editor.GridLayout.SetWidth (0, textLabelDef.Column.Int32Value);
-    }
+	public override void ViewDidLoad()
+	{
+		base.ViewDidLoad();
 
-    if (editor.IsKindOfClass (new Class(typeof(TKDataFormTextFieldEditor))) && !(property.Name.Equals("Password"))) {
-        property.HintText = "Required";
+		// Perform any additional setup after loading the view, typically from a nib.
+		this.DataForm.WeakDataSource = new TKDataFormEntityDataSource(new PersonalInfo());         
+	}
+}
+```
+
+## Customize the editors
+
+TKDataForm chooses a default editor based on each property's type. You have the option to change the default editors by utilizing the <code>TKDataFormEntityDataSourceHelper</code> class and set it as the DataSource of the DataForm. <code>TKDataFormEntityDataSourceHelper</code> gives access to each dataform entity for each property of the source object, so you can modify its editor, provide predefined values, and more.
+
+In addition, if you would like to customize the editors, you would need to adopt <code>TKDataFormDelegate</code> and override its <code>UpdateEditor</code> method. Then you just need to set thus created delegate to the <code>Delegate</code> property of the TKDataForm instance.
+
+Check below an example of <code>TKDataFormEntityDataSourceHelper</code> and <code>TKDataFormDelegate</code>:
+
+```C#
+public override void ViewDidLoad ()
+{
+    base.ViewDidLoad ();
+    // Perform any additional setup after loading the view, typically from a nib.
+
+    var dataSource = new TKDataFormEntityDataSourceHelper(new PersonalInfo());          
+        
+    dataSource["Password"].EditorClass = new Class(typeof(TKDataFormPasswordEditor));
+    dataSource["InfoProtocol"].ValuesProvider = NSArray.FromStrings(new string[] { "L2TP", "PPTP", "IPSec" });
+    dataSource["EncryptionLevel"].ValuesProvider = NSArray.FromStrings(new string[] { "FIPS Compliant", "High", "Client Compatible", "Low" });
+
+    dataSource.AddGroup(" ", new string[] { "InfoProtocol" });
+    dataSource.AddGroup(" ", new string[] {  "Details", "Server", "Account", "Secure", "Password", "EncryptionLevel", "SendAllTraffic" });        
+
+    var dataForm = new TKDataForm(this.View.Bounds)
+    {
+        BackgroundColor = new UIColor(0.937f, 0.937f, 0.960f, 1.0f),
+        GroupSpacing = 20,
+        Delegate = new MydDataFormDelegate(),
+        WeakDataSource = dataSource.NativeObject
+    };      
+    this.View.AddSubview(dataForm);
+}
+```
+
+where MydDataFormDelegate is defined as below:
+
+```C#
+class MydDataFormDelegate : TKDataFormDelegate
+{
+    public override void UpdateEditor(TKDataForm dataForm, TKDataFormEditor editor, TKEntityProperty property)
+    {
+        TKGridLayoutCellDefinition feedbackDef = editor.GridLayout.DefinitionForView(editor.FeedbackLabel);
+        editor.GridLayout.SetHeight(0, feedbackDef.Row.Int32Value);
+
+        if (property.Name == "InfoProtocol")
+        {
+            editor.Style.TextLabelDisplayMode = TKDataFormEditorTextLabelDisplayMode.Hidden;
+            TKGridLayoutCellDefinition textLabelDef = editor.GridLayout.DefinitionForView(editor.TextLabel);
+            editor.GridLayout.SetWidth(0, textLabelDef.Column.Int32Value);
+        }
+
+        if (editor.IsKindOfClass(new Class(typeof(TKDataFormTextFieldEditor))) && !(property.Name.Equals("Password")))
+        {
+            property.HintText = "Required";
+        }
     }
 }
 ```
 
-## Setting up TKDataForm with TKDataFormViewController
-
-In master/detail scenario the content of an editor will open on its own screen. It this case you should use <code>TKDataFormViewController</code>. This view controller contains a <code>TKDataForm</code> and adopts its <code>TKDataFormDelegate</code> and <code>TKDataFormDataSouece</code> protocols. <code>TKDataFormOptionsEditor</code>  is used to display option lists on its own screen and it requires the usage of <code>TKDataFormViewController</code>.
+The images below show the result after applying the snippet:
 
 <table>
 	<tr>
@@ -115,52 +176,3 @@ In master/detail scenario the content of an editor will open on its own screen. 
 		<td><img src="../images/dataform-gettingstarted003.png" /></td>
 	</tr>
 </table>
-
-We should create a view controller that inherits from <code>TKDataFormViewController</code>. For demonstration purposes we will be using the <code>PersonalInfo</code> class from the snippet above.
-
-<snippet id='dataform-ctrl'/>
-<snippet id='dataform-ctrl-swift'/>
-```C#
-public class DataFormGettingStarted : TKDataFormViewController
-{
-```
-
-<code>TKDataFormViewController</code> does not contain a navigation controller. You should provide one before using the TKDataFormViewController.
-
-The setup of the <code>TKDataForm</code> is done in the <code>viewDidLoad</code> of the inheriting class. since the <code>TKDataformViewController</code> provides ready-to-use instance of the <code>TKDataForm</code>, you can used it and just setup the visual appereance and data properties.
-
-<snippet id='dataform-ctrl-setup'/>
-
-<snippet id='dataform-ctrl-setup-swift'/>
-
-```C#
-public override void ViewDidLoad()
-{
-    base.ViewDidLoad ();
-        
-    this.personalInfo = new PersonalInfo ();
-    this.dataSource = new TKDataFormEntityDataSourceHelper (this.personalInfo);
-    this.dataFormDelegate = new GettingStartedDataFormDelegate ();
-
-    this.dataSource["Password"].HintText = "Ask every time";
-    this.dataSource ["Password"].EditorClass = new Class (typeof(TKDataFormPasswordEditor));
-    this.dataSource["InfoProtocol"].ValuesProvider = NSArray.FromStrings(new string[] { "L2TP", "PPTP", "IPSec" });
-    this.dataSource["EncryptionLevel"].ValuesProvider = NSArray.FromStrings(new string[] { "FIPS Compliant", "High", "Client Compatible", "Low" });
-
-    this.dataSource.AddGroup(" ", new string[] { "InfoProtocol" });
-    this.dataSource.AddGroup (" ", new string[] {
-        "Details",
-        "Server",
-        "Account",
-        "Secure",
-        "Password",
-        "EncryptionLevel",
-        "SendAllTraffic"
-    });
-                
-    this.DataForm.BackgroundColor = new UIColor (0.937f, 0.937f, 0.960f, 1.0f);
-    this.DataForm.GroupSpacing = 20;
-    this.DataForm.Delegate = this.dataFormDelegate;
-    this.DataForm.WeakDataSource = this.dataSource.NativeObject;
-}
-```

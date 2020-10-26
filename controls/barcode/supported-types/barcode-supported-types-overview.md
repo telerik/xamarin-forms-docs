@@ -37,8 +37,7 @@ The linear (one dimensional) barcodes are made up of lines and spaces of various
 |**MSI**|Variation of Plessey code, with similar applications|
 |**EAN 8**|Short version of EAN-13, 8 characters|
 |**EAN 13**|Used with consumer products internationally, 13 characters|
-|**Intelligent Mail**|Used by U.S. Post Office as successor of POSTNET and PLANET barcodes.|
-|**PLANET**|Printed by U.S. Post Office on envelopes. Predecessor of Intelligent Mail barcode.|
+|**GS1-128**|Formerly known as UCC-128 and EAN-128. Used to encode shipping/product information  \*(more info in 1D Barcodes)|
 |**Postnet**|Printed by U.S. Post Office on envelopes|
 |**UPC A**|Used with consumer products in U.S., 12 characters|
 |**UPC E**|Short version of UPC symbol, 6 characters|

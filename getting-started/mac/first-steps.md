@@ -32,14 +32,14 @@ Follow the steps below in order to download the installation files:
 
 1. Log into your [Telerik account](https://www.telerik.com/account/) and click on the __Downloads__ tab.
 
-	#### __Figure 1a: Downloads tab__
+	##### __Figure 1a: Downloads tab__
 	![](images/download_product_files_1.png)
 
 2. Select __Progress Telerik UI for Xamarin__ product title.
 
 3. Download the Installation __.pkg__ and __.mpack__ files.
 
-	#### __Figure 3a: Download installers__
+	##### __Figure 3a: Download installers__
 	![](images/download_product_files_2.png)
 	
 4. Install __Progress Telerik UI for Xamarin__ 
@@ -49,8 +49,8 @@ Follow the steps below in order to download the installation files:
 	2. Select "Open With"
 	3. Select "Installer" (see Fig 4a). 
 
-	#### __Figure 4a: Open With -> Installer__
-	![OpenWithInstaller](https://user-images.githubusercontent.com/3520532/97219167-fd30ba00-179f-11eb-8f7b-bcace21cbc4f.png)
+	##### __Figure 4a: Open With -> Installer__
+	![OpenWithInstaller](images/macos-open-with-installer.png)
 
 	> For a more permanent solution, open the Mac OS [Settings -> Security & Privacy](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/Mojave/macos-mojave-system-preferences-security-general-require-disable-dark.jpg) settings panel and select **Allow apps downloaded from App Store and Identified developers**. 
 
@@ -60,23 +60,23 @@ Follow the steps below in order to download the installation files:
 	
 	Open the Visual Studio **Extension Manager** and select the *Install form file...* option. __Figure 5a__ shows how to access the Extension Manager.
 
-	#### __Figure 5a: Accessing Visual Studio Extensions__
+	##### __Figure 5a: Accessing Visual Studio Extensions__
 	![Visual Studio Extensions](images/VisualStudioExtensions.png)
 
 	Once you have accessed the **Extension Manager**, the following dialog will appear and you should look for the **Install from file** option.
 
-	#### __Figure 5b: Reaching the Extension Manager__
+	##### __Figure 5b: Reaching the Extension Manager__
 	![Visual Studio Extensions](images/ExtensionManager.png)
 
 	Navigate to the **ProjectTemplateXamarin.mpack** file, select it and click "Open" to complete the installation.
 
-	#### __Figure 5c: The ProjectTemplate location__
+	##### __Figure 5c: The ProjectTemplate location__
 	![Visual Studio Extensions](images/InstallExtensionPackage.png)
 
 	If the add-in is successfully added to Visual Studio, you should see it in the **IDE extensions** section.
 	
-	#### __Figure 5d: Installation Successful__
-	![Installed Extension](https://user-images.githubusercontent.com/3520532/97222120-3c610a00-17a4-11eb-9e70-2266669510f0.png)
+	##### __Figure 5d: Installation Successful__
+	![Installed Extension](images/macos-vs-extension-install-confirmation.png)
 	
 
 7. **Restart Visual Studio for Mac** to complete the installation.

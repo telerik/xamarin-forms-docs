@@ -32,46 +32,65 @@ Follow the steps below in order to download the installation files:
 
 1. Log into your [Telerik account](https://www.telerik.com/account/) and click on the __Downloads__ tab.
 
-	#### __Figure 1: Downloads tab__
+	##### __Figure 1a: Downloads tab__
 	![](images/download_product_files_1.png)
 
 2. Select __Progress Telerik UI for Xamarin__ product title.
 
-3. Download the Installation __pkg__ and __mpack__ files.
+3. Download the Installation __.pkg__ and __.mpack__ files.
 
-	#### __Figure 2: Download installers__
+	##### __Figure 3a: Download installers__
 	![](images/download_product_files_2.png)
 	
-	Once you have installed the pkg file, you will also need to install the mpack file in order to use the Visual Studio Extensions. 
-4. Open the Visual Studio **Extension Manager** and select the *Install form file...* option. __Figure 3__ shows how to access the Extension Manager.
+4. Install __Progress Telerik UI for Xamarin__ 
+	
+	Since MacOS Catalina, downloaded installers and packages are quarantined. If you try to just open the **pkg** file, you may see a popup preventing you from installing it. The easiest solution is to
+	1. Right-click on the **.pkg** file you downloaded in Step 3
+	2. Select "Open With"
+	3. Select "Installer" (see Fig 4a). 
 
-	#### __Figure 3: Accessing Visual Studio Extensions__
+	##### __Figure 4a: Open With -> Installer__
+	![OpenWithInstaller](images/macos-open-with-installer.png)
+
+	> For a more permanent solution, open the Mac OS [Settings -> Security & Privacy](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/Mojave/macos-mojave-system-preferences-security-general-require-disable-dark.jpg) settings panel and select **Allow apps downloaded from App Store and Identified developers**. 
+
+5. Install Visual Studio for Mac Extensions
+
+	Once you have finished the **pkg** installation, now it's time to install the Visual Studio Extensions with the **mpack** file. 
+	
+	Open the Visual Studio **Extension Manager** and select the *Install form file...* option. __Figure 5a__ shows how to access the Extension Manager.
+
+	##### __Figure 5a: Accessing Visual Studio Extensions__
 	![Visual Studio Extensions](images/VisualStudioExtensions.png)
 
-5. Once you have accessed the **Extension Manager**, the following dialog will appear and you should look for the **Install from file** option.
+	Once you have accessed the **Extension Manager**, the following dialog will appear and you should look for the **Install from file** option.
 
-	#### __Figure 4: Reaching the Extension Manager__
+	##### __Figure 5b: Reaching the Extension Manager__
 	![Visual Studio Extensions](images/ExtensionManager.png)
 
-6. Navigate to the **ProjectTemplateXamarin.mpack** file. 
+	Navigate to the **ProjectTemplateXamarin.mpack** file, select it and click "Open" to complete the installation.
 
-	#### __Figure 5: The ProjectTemplate location__
+	##### __Figure 5c: The ProjectTemplate location__
 	![Visual Studio Extensions](images/InstallExtensionPackage.png)
 
-	If the add-in is successfully added to Visual Studio, you should see it in the **IDE** extensions section.
+	If the add-in is successfully added to Visual Studio, you should see it in the **IDE extensions** section.
+	
+	##### __Figure 5d: Installation Successful__
+	![Installed Extension](images/macos-vs-extension-install-confirmation.png)
+	
 
-7. **Restart Visual Studio for Mac** to complete the installation.
+6. **Restart Visual Studio for Mac** to complete the installation.
 
 ## Create a Project with Telerik UI for Xamarin
 
 1. Now you can create a new project using the Telerik Project Template. Select which platform(s) your application targets and the wizard will automatically reference all required Telerik binaries and packages.
 
-	#### __Figure 6: Create New Project Dialog__
+	#### __Figure 1a: Create New Project Dialog__
 	![Xamarin Studio Create new project](images/CreateNewProject.png)
 
 2. Select the **Telerik Forms App** template which can be found in *Other > Miscellaneous* section.
 
-	#### __Figure 7: Telerik Forms App template__
+	#### __Figure 2a: Telerik Forms App template__
 	![Xamarin Studio Create new project](images/ChooseTemplate.png)
 
 ## Next Steps

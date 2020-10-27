@@ -1,11 +1,12 @@
 ---
 title: View Modes
-page_title: Calendar View Modes
+page_title: TKCalendar for Xamarin iOS View Modes | Telerik UI for Xamarin.iOS Documentation
+description: TKCalendar for Xamarin iOS View Modes. This article explains what are the View Modes of the TKCalendar
 slug: ios-calendar-view-modes
 position: 4
 ---
 
-# Calendar: View Modes
+# Calendar for Xamarin.iOS: View Modes
 
 TKCalendar is able to present its contents in different ways. Those include:
 

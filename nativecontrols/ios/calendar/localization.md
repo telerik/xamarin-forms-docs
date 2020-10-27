@@ -4,7 +4,7 @@ slig: ios-calendar-localization
 position: 7
 ---
 
-# Calendar: Localization
+# Calendar for Xamarin.iOS: Localization
 
 <img src="../images/calendar-localization001.png"/>
 

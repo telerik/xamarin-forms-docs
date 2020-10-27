@@ -5,7 +5,7 @@ slug: ios-calendar-customization
 position: 8
 ---
 
-# Calendar: Customizations
+# Calendar for Xamarin.iOS: Customizations
 
 <img src="../images/calendar-customization001.png"/>
 
@@ -104,3 +104,7 @@ public class DocsCustomCell : TKCalendarDayCell
 The result is presented below:
 
 <img src="../images/calendar-customization002.png"/>
+
+## Examples
+
+>tip Sample Customization TKCalendar example can be found in our native [Xamarin.iOS Examples/Calendar folder]({%slug developer-focused-examples%}#native-only-examples).

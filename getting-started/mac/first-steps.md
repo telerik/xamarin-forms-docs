@@ -79,7 +79,7 @@ Follow the steps below in order to download the installation files:
 	![Installed Extension](images/macos-vs-extension-install-confirmation.png)
 	
 
-7. **Restart Visual Studio for Mac** to complete the installation.
+6. **Restart Visual Studio for Mac** to complete the installation.
 
 ## Create a Project with Telerik UI for Xamarin
 

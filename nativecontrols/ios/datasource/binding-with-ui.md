@@ -4,9 +4,9 @@ page_title: DataSource Binding with UI Controls
 position: 5
 ---
 
-# DataSource: Binding with UI Controls
+## DataSource for Xamarin.iOS: Binding with UI Controls
 
-<code>TKDataSource</code> works well with data enabled controls and provides an easy way to shape and present your data. The currently supported UI controls are:
+<code>TLKDataSource</code> works well with data enabled controls and provides an easy way to shape and present your data. The currently supported UI controls are:
 
 - UITableView
 - UICollectionView
@@ -14,13 +14,13 @@ position: 5
 - TKChart
 - TKCalendar
 
-This article describes how to bind <code>TKDataSource</code> and customize those controls.
+This article describes how to bind <code>TLKDataSource</code> and customize those controls.
 
 ## UITableView ##
 
 <img width="300" src="../images/datasource-binding-with-ui001.png"/>
 
-Setting the <code>dataSource</code> property is enough in order to present data in <code>UITableView</code>. <code>TKDataSource</code> will take care of the implementation of all methods in <code>UITableViewDataSource</code> protocol:
+Setting the <code>DataSource</code> property is enough in order to present data in <code>UITableView</code>. <code>TLKDataSource</code> will take care of the implementation of all methods in <code>UITableViewDataSource</code> protocol:
 
 <snippet id='datasource-tableview-ui'/>
 <snippet id='datasource-tableview-ui-swift'/>
@@ -34,7 +34,7 @@ NSObject[] array = new NSObject[] {
     NSObject.FromObject (44)
 };
 
-this.dataSource = new TKDataSource (array);
+this.dataSource = new TLKDataSource (array);
 
 CGRect rect = this.View.Bounds;
 rect.Inflate (0, -30);
@@ -44,7 +44,7 @@ table.DataSource = this.dataSource;
 this.View.AddSubview (table);
 ```
 
-You can specify <code>displayKey</code> and <code>valueKey</code> properties to specify what to display in table view cells:
+You can set <code>DisplayKey</code> and <code>ValueKey</code> properties to specify what to display in table view cells:
 
 <snippet id='datasource-displaykey'/>
 <snippet id='datasource-displaykey-swift'/>
@@ -56,12 +56,12 @@ items.Add (new DSItem () { Name = "Smith", Value = 42, Group = "B" });
 items.Add (new DSItem () { Name = "Peter", Value = 28, Group = "B" });
 items.Add (new DSItem () { Name = "Paula", Value = 25, Group = "B" });
 
-this.dataSource = new TKDataSource ();
+this.dataSource = new TLKDataSource ();
 this.dataSource.ItemSource = items;
 this.dataSource.DisplayKey = "Name";
 ```
 
-In the majority of the scenarios you will also need to customize the cells. In this case you can implement the <code>initCell</code> block from <code>TKDataSourceTableViewSettings</code> class:
+In the majority of the scenarios you will also need to customize the cells. In this case you can implement the <code>InitCell</code> block from <code>TKDataSourceTableViewSettings</code> class:
 
 <snippet id='datasource-cell-init'/>
 <snippet id='datasource-cell-init-swift'/>
@@ -72,7 +72,7 @@ this.dataSource.Settings.TableView.InitCell ((UITableView tableView, NSIndexPath
 });
 ```
 
-If this is not enough to achieve to look you want, you can create your custom cells by using the <code>createCell</code> block function:
+If this is not enough to achieve to look you want, you can create your custom cells by using the <code>CreateCell</code> block function:
 
 <snippet id='datasource-cell-create'/>
 <snippet id='datasource-cell-create-swift'/>
@@ -86,7 +86,7 @@ this.dataSource.Settings.TableView.CreateCell ((UITableView tableView, NSIndexPa
 });
 ```
 
-<code>TKDataSource</code> will take care of everything and no code is necessary even when your data is grouped:
+<code>TLKDataSource</code> will take care of everything and no code is necessary even when your data is grouped:
 
 <img>
 
@@ -100,11 +100,9 @@ this.dataSource.Group ((NSObject item) => {
 
 ## UICollectionView ##
 
-
-
 <img width="300" src="../images/datasource-binding-with-ui002.png"/>
 
-<code>TKDataSource</code> integrates well with <code>UICollectionView</code>. Just set the <code>dataSource</code> property and prepare the collection view:
+<code>TLKDataSource</code> integrates well with <code>UICollectionView</code>. Just set the <code>DataSource</code> property and prepare the collection view:
 
 <snippet id='datasource-collectionview-ui'/>
 <snippet id='datasource-collectionview-ui-swift'/>
@@ -121,7 +119,7 @@ collectionView.BackgroundColor = UIColor.White;
 this.View.AddSubview(collectionView);
 ```
 
-Use the collection view settings class and its <code>initCell</code> in case you want to customize the cell appearance:
+Use the collection view settings class and its <code>InitCell</code> in case you want to customize the cell appearance:
 
 <snippet id='datasource-collectionview-cell-init'/>
 <snippet id='datasource-collectionview-cell-init-swift'/>
@@ -137,7 +135,7 @@ this.dataSource.Settings.CollectionView.InitCell ((UICollectionView collection, 
 
 <img width="300" src="../images/datasource-binding-with-ui003.png"/>
 
-You can also easily use <code>TKListView</code> with <code>TKDataSource</code>:
+You can also easily use <code>TKListView</code> with <code>TLKDataSource</code>:
 
 <snippet id='datasource-listview-ui'/>
 <snippet id='datasource-listview-ui-swift'/>
@@ -150,7 +148,7 @@ this.dataSource.SetDataSourceFor (listView);
 this.View.AddSubview (listView);
 ```
 
-The <code>initCell</code> and <code>createCell</code> methods can be used to customize the cell appearance:
+The <code>InitCell</code> and <code>CreateCell</code> methods can be used to customize the cell appearance:
 
 <snippet id='datasource-listview-cell-create'/>
 <snippet id='datasource-listview-cell-create-swift'/>
@@ -169,7 +167,7 @@ this.dataSource.Settings.ListView.InitCell ((TKListView list2, NSIndexPath index
 
 <img width="300" src="../images/datasource-binding-with-ui004.png"/>
 
-In order to present data in <code>TKChart</code>, you need to set the <code>displayKey</code> and <code>valueKey</code> properties. The <code>displayKey</code> defines the x-axis values, and the <code>valueKey</code> defines the y-axis values:
+In order to present data in <code>TKChart</code>, you need to set the <code>DisplayKey</code> and <code>ValueKey</code> properties. The <code>DisplayKey</code> defines the x-axis values, and the <code>ValueKey</code> defines the y-axis values:
 
 <snippet id='datasource-chart-ui'/>
 <snippet id='datasource-chart-ui-swift'/>
@@ -193,7 +191,7 @@ chart.DataSource = this.dataSource;
 this.View.AddSubview(chart);
 ```
 
-In order to present different series the data should be grouped. When this is done the <code>createSeries</code> method can be used to customize the series that should be created:
+In order to present different series the data should be grouped. When this is done the <code>CreateSeries</code> method can be used to customize the series that should be created:
 
 <snippet id='datasource-chart-series'/>
 <snippet id='datasource-chart-series-swift'/>
@@ -210,7 +208,7 @@ this.dataSource.Settings.Chart.CreateSeries ((TKDataSourceGroup group) => {
 
 <img width="300" src="../images/datasource-binding-with-ui005.png"/>
 
-<code>TKDataSource</code> is able to represent your data as calendar events. In this scenario you should set the <code>startDateKey</code> and <code>endDateKey</code> properties:
+<code>TLKDataSource</code> is able to represent your data as calendar events. In this scenario you should set the <code>StartDateKey</code> and <code>EndDateKey</code> properties:
 
 <snippet id='datasource-calendar-ui'/>
 <snippet id='datasource-calendar-ui-swift'/>

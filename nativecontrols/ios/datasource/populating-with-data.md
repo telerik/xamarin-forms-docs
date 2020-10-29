@@ -4,23 +4,23 @@ page_title: Populating DataSource with Data
 position: 3
 ---
 
-# DataSource: Populating with Data
+## DataSource for Xamarin.iOS: Populating with Data
 
-TKDataSource can consume data coming from various sources. 
+TLKDataSource can consume data coming from various sources. 
 
 <img width="300" src="../images/datasource-populating-with-data001.png"/>
 
-The simplest way to load data in <code>TKDataSource</code> is to use an array with numbers or strings:
+The simplest way to load data in <code>TLKDataSource</code> is to use an array with numbers or strings:
 
 <snippet id='datasource-getting-started'/>
 
 <snippet id='datasource-getting-started-swift'/>
 
 ```C#
-dataSource = new TKDataSource (ArrayWithObjects(new object [] { 10, 5, 12, 7, 44 }), null);
+dataSource = new TLKDataSource (ArrayWithObjects(new object [] { 10, 5, 12, 7, 44 }), null);
 ```
 
-It also supports arrays of business objects. In this scenario you can use <code>displayKey</code> and <code>valueKey</code> properties to define how to present the data:
+It also supports arrays of business objects. In this scenario you can use <code>DisplayKey</code> and <code>ValueKey</code> properties to define how to present the data:
 
 <snippet id='datasource-feed-object'/>
 
@@ -40,8 +40,7 @@ dataSource.ValueKey = "Value";
 dataSource.ItemSource = array;
 ```
 
-
-If a greater precision is necessary, you can implement the <code>formatText</code> block to define how the data will be presented:
+If a greater precision is necessary, you can implement the <code>FormatText</code> block to define how the data will be presented:
 
 <snippet id='datasource-text'/>
 
@@ -54,7 +53,7 @@ dataSource.FormatText ((NSObject item, TKDataSourceGroup group) => {
 });
 ```
 
-When using <code>NSDictionary</code> as a data provider for TKDataSource, its <code>items</code> property contains the keys collection of the dictionary and the <code>itemSource</code> property contains the dictionary itself. The following code manipulates the dictionary by applying sorting and filtering methods and then presents the data:
+When using <code>NSDictionary</code> as a data provider for TLKDataSource, its <code>Items</code> property contains the keys collection of the dictionary and the <code>ItemSource</code> property contains the dictionary itself. The following code manipulates the dictionary by applying sorting and filtering methods and then presents the data:
 
 <snippet id='datasource-dict'/>
 
@@ -68,7 +67,7 @@ dict.Add (new NSString ("Smith"), NSObject.FromObject (42));
 dict.Add (new NSString ("Peter"), NSObject.FromObject (28));
 dict.Add (new NSString ("Paula"), NSObject.FromObject (25));
 
-TKDataSource dataSource = new TKDataSource ();
+TLKDataSource dataSource = new TLKDataSource ();
 dataSource.ItemSource = dict;
 dataSource.SortWithKey ("", true);
 dataSource.Filter ((NSObject item) => {
@@ -76,14 +75,14 @@ dataSource.Filter ((NSObject item) => {
 });
 ```
 
-<code>TKDataSource</code> is handy when loading data from resources. With a simple method call it loads a JSON formatted file, parses its data and is ready to present or shape the data:
+<code>TLKDataSource</code> is handy when loading data from resources. With a simple method call it loads a JSON formatted file, parses its data and is ready to present or shape the data:
 
 <snippet id='datasource-file'/>
 
 <snippet id='datasource-file-swift'/>
 
 ```C#
-this.Photos = new TKDataSource ("PhotosWithNames", "json", "photos");
+this.Photos = new TLKDataSource ("PhotosWithNames", "json", "photos");
 ```
 
 It can load also data coming from a web service. The following code downloads a JSON formatted data from a web service, groups its items and presents the result in TKChart:

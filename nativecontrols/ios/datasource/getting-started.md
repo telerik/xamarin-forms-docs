@@ -4,16 +4,16 @@ page_title: DataSource Getting Started
 position: 2
 ---
 
-# DataSource: Getting Started
+## DataSource for Xamarin.iOS: Getting Started
 
-This quick start tutorial demonstrates how to create a simple iOS application with <code>TKDataSource</code>.
+This quick start tutorial demonstrates how to create a simple Xamarin.iOS application with <code>TLKDataSource</code>.
 
 <img width="500" src="../images/datasource-getting-started001.png"/>
 
 
-## Setting up TKDataSource
+## Setting up TLKDataSource
 
-Now that our project is created and the TelerikUI.framework is added, we can start referencing and using the TelerikUI types:
+Now that our project is created and the Telerik.Xamarin.iOS assembly is added, you can start referencing and using the TelerikUI types.
 
 Open your **UIViewController** file and add a reference to the chart header file:
 
@@ -21,29 +21,14 @@ Open your **UIViewController** file and add a reference to the chart header file
 using TelerikUI;
 ```
 
-
-Note that starting with Xcode 6 Apple doesn't generate the precompiled headers file automatically. That is why you should add import the UIKit framework before importing TelerikUI:
-
-```C#
-using UIKit;
-```
-    
-The simplest way to use <code>TKDataSource</code> is to initialize it with an array. The following code creates a new instance of <code>TKDataSource</code> and loads it with a numeric array:
-
-<snippet id='datasource-getting-started'/>
-
-<snippet id='datasource-getting-started-swift'/>
+The simplest way to use <code>TLKDataSource</code> is to initialize it with an array. The following code creates a new instance of <code>TLKDataSource</code> and loads it with a numeric array:
 
 ```C#
-dataSource = new TKDataSource (ArrayWithObjects(new object [] { 10, 5, 12, 7, 44 }), null);
+dataSource = new TLKDataSource (ArrayWithObjects(new object [] { 10, 5, 12, 7, 44 }), null);
 ```
 
 <br>
-<code>TKDataSource</code> supports a full range of data shaping operations including filtering, sorting and grouping. In the code snippet below, we first filter the numbers smaller than 5, then sort the rest, group the sorted values depending on whether they are even or odd, multiply every value by 10 and finally find the max value:
-
-<snippet id='datasource-data-shaping'/>
-
-<snippet id='datasource-data-shaping-swift'/>
+<code>TLKDataSource</code> supports a full range of data shaping operations including filtering, sorting and grouping. In the code snippet below, we first filter the numbers smaller than 5, then sort the rest, group the sorted values depending on whether they are even or odd, multiply every value by 10 and finally find the max value:
 
 ```C#
 // filter all values less or equal to 5
@@ -79,11 +64,8 @@ NSObject maxValue = dataSource.Reduce (NSObject.FromObject(0), (NSObject item, N
 ```
 
 <br>
-<code>TKDataSource</code> is an independent component and you can use it without connecting it to a UI control. To show the result just iterate the items:
+<code>TLKDataSource</code> is an independent component and you can use it without connecting it to a UI control. To show the result just iterate the items:
 
-<snippet id='datasource-print'/>
-
-<snippet id='datasource-print-swift'/>
 
 ```C#
 // output everything to the console
@@ -99,7 +81,7 @@ dataSource.Enumerate ((NSObject item) => {
 ```
 
 <br>
-Or, you can create a table view and set its data source property:
+Or, you can create a UITableView and set its DataSource property:
 
 <snippet id='datasource-tableview'/>
 
@@ -112,28 +94,24 @@ tableView.DataSource = dataSource;
 this.View.AddSubview (tableView);
 ```
 
-Note that the <code>dataSource</code> property of <code>UITableView</code> is weak and you should assign the <code>dataSource</code> instance to a class variable in order to persist its value!
+Note that the <code>DataSource</code> property of <code>UITableView</code> is weak and you should assign the <code>DataSource</code> instance to a class variable in order to persist its value!
 
 <br>
 Here is the full code of this example:
 
 <img width="300" src="../images/datasource-getting-started002.png"/>
 
-<snippet id='datasource-gettingstarted-full'/>
-
-<snippet id='datasource-gettingstarted-full-swift'/>
-
 ```C#
 [Register("DataSourceGettingStarted")]
 public class DataSourceGettingStarted: XamarinExampleViewController
 {
-    TKDataSource dataSource;
+    TLKDataSource dataSource;
 
     public override void ViewDidLoad ()
     {
         base.ViewDidLoad ();
 
-        dataSource = new TKDataSource (ArrayWithObjects(new object [] { 10, 5, 12, 7, 44 }), null);
+        dataSource = new TLKDataSource (ArrayWithObjects(new object [] { 10, 5, 12, 7, 44 }), null);
 
         // filter all values less or equal to 5
         dataSource.Filter ((NSObject item) => {
@@ -198,10 +176,10 @@ public class DataSourceGettingStarted: XamarinExampleViewController
 ```
 
 <br>
-You can easily switch the UI control used to present data coming from <code>TKDataSource</code>. It supports the most common data enabled UI controls, so you can use it the same way with <code>UICollectionView</code>, <code>TKChart</code>, <code>TKListView</code>, or <code>TKCalendar</code>. The following article demonstates how to initialize and customize the UI controls supported by <code>TKDataSource</code>:
+You can easily switch the UI control used to present data coming from <code>TLKDataSource</code>. It supports the most common data enabled UI controls, so you can use it the same way with <code>UICollectionView</code>, <code>TKChart</code>, <code>TKListView</code>, or <code>TKCalendar</code>. The following article demonstrates how to initialize and customize the UI controls supported by <code>TLKDataSource</code>:
 [Binding with UI controls](binding-with-ui)
 
-<code>TKDataSource</code> supports also different data inputs. This article demonstrates how to load data comming from files or a web service.
+<code>TLKDataSource</code> supports also different data inputs. This article demonstrates how to load data coming from files or a web service:
 [Loading with data](populating-with-data)
 
 Data shaping operations are described in detail in this article:

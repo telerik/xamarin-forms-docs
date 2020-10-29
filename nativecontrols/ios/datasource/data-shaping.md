@@ -4,9 +4,9 @@ page_title: DataSource Data Shaping Operations
 position: 4
 ---
 
-# DataSource: Data Shaping Operations
+## DataSource for Xamarin.iOS: Data Shaping Operations
 
-<code>TKDataSource</code> supports a full range of data shaping operations with APIs specific for your scenario. 
+<code>TLKDataSource</code> supports a full range of data shaping operations with APIs specific for your scenario. 
 
 The simplest way to shape your data is to use the block API. Just specify the block function responsible for the data operation:
 
@@ -47,7 +47,7 @@ NSObject maxValue = dataSource.Reduce (NSObject.FromObject(0), (NSObject item, N
 });
 ```
 
-<code>TKDataSource</code> supports also <code>NSPredicate</code> style queries. The following methods use queries and property names instead of block methods:
+<code>TLKDataSource</code> supports also <code>NSPredicate</code> style queries. The following methods use queries and property names instead of block methods:
 
 <snippet id='datasource-predicate-style'/>
 
@@ -56,7 +56,7 @@ NSObject maxValue = dataSource.Reduce (NSObject.FromObject(0), (NSObject item, N
 ```C#
 public class DataSourceDocsQueries : XamarinExampleViewController
 {
-    TKDataSource dataSource;
+    TLKDataSource dataSource;
 
     public DataSourceDocsQueries ()
     {
@@ -73,7 +73,7 @@ public class DataSourceDocsQueries : XamarinExampleViewController
         items.Add (new DSItem () { Name = "Peter", Value = 28, Group = "B" });
         items.Add (new DSItem () { Name = "Paula", Value = 25, Group = "B" });
 
-        this.dataSource = new TKDataSource ();
+        this.dataSource = new TLKDataSource();
         this.dataSource.ItemSource = items;
         this.dataSource.DisplayKey = "Name";
 
@@ -89,9 +89,9 @@ public class DataSourceDocsQueries : XamarinExampleViewController
 }
 ```
 
-All the methods mentioned above execute immediately when called. They operate directly on the current <code>items</code> view in <code>TKDataSource</code>. <code>TKDataSource</code> extends its API by supporting three collections with sorting, filtering and group descriptors. 
+All the methods mentioned above execute immediately when called. They operate directly on the current <code>Items</code> view in <code>TLKDataSource</code>. <code>TLKDataSource</code> extends its API by supporting three collections with sorting, filtering and group descriptors. 
 
-The descriptors API supports both code blocks and queries with property names. This allows for specifying the data shaping operations before loading the data. In this scenario all descriptors are applied after the data is actually loaded in <code>TKDataSource</code>. This data-loading operation can happen on setting the <code>itemSource</code> property. The following code demonstrates this API:
+The descriptors API supports both code blocks and queries with property names. This allows for specifying the data shaping operations before loading the data. In this scenario all descriptors are applied after the data is actually loaded in <code>TLKDataSource</code>. This data-loading operation can happen on setting the <code>itemSource</code> property. The following code demonstrates this API:
 
 <snippet id='datasource-descriptor'/>
 
@@ -100,13 +100,13 @@ The descriptors API supports both code blocks and queries with property names. T
 ```C#
 public class DataSourceDescriptorsAPI: XamarinExampleViewController
 {
-    TKDataSource dataSource;
+    TLKDataSource dataSource;
 
     public override void ViewDidLoad ()
     {
         base.ViewDidLoad ();
 
-        dataSource = new TKDataSource ();
+        dataSource = new TLKDataSource ();
 
         dataSource.AddFilterDescriptor (new TKDataSourceFilterDescriptor ("NOT (Name like 'John')"));
         dataSource.AddSortDescriptor (new TKDataSourceSortDescriptor ("Name", true));
@@ -136,4 +136,4 @@ public class DataSourceDescriptorsAPI: XamarinExampleViewController
 }
 ```
 
-You can modify descriptor collections by using the corresponding add and remove methods. You can reaplly all descriptors when data has changed by calling the <code>reloadData</code> method.
+You can modify descriptor collections by using the corresponding add and remove methods. You can reapply all descriptors when data has changed by calling the <code>ReloadData</code> method.

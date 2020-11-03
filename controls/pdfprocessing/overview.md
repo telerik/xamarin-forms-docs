@@ -67,10 +67,4 @@ If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have 
 	- **Telerik.Documents.Fixed.dll**
 	- **Telerik.Zip.dll**
 	
-	To export images different than Jpeg and Jpeg2000 or ImageQuality different than High you will need to add references to the following .Net Standard assembly:
-	- **Telerik.Documents.ImageUtils.dll** (The following dll is availabe with the R3 2020 Service Pack release)
-	
->tip The Telerik.Documents.ImageUtils.dll assembly depends on Magick.NET. In order to use this assembly, you will need to add a reference to Magick.NET.
-	
 >important Please keep in mind these assemblies are located in the Portable folder, still, you need to add a reference to them in the Xamarin.Forms project as well as in each of the platform projects (Android | iOS | UWP).
-

@@ -17,7 +17,44 @@ The **RadTabView** control exposes a **Header** property which you can use to mo
 
 You can use the **HeaderPosition** property of RadTabView to control the position of the header. The property allows you to place the header at the **top** of the control where is by default or at the **bottom**, under the content of the selected tab. 
 
-## Custom TabViewHeader 
+## Default TabViewHeader ControlTemplate
+
+Here is the default Header ControlTemplate definition:
+
+```XAML
+<ControlTemplate x:Key="HeaderControlTemplate" >
+    <Grid BackgroundColor="Transparent">
+        <BoxView IsVisible="{TemplateBinding IsSelected}"
+                    BackgroundColor="{TemplateBinding SelectedColor}"
+                    VerticalOptions="End"
+                    HeightRequest="2" />
+        <Label Text="{TemplateBinding Text}" 
+                Margin="0, 0, 0, 2" 
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+    </Grid>
+</ControlTemplate>
+```
+
+The TabView definition and how to control template is set to the TabView Header
+
+```XAML
+<telerikPrimitives:RadTabView x:Name="tabView"
+                                HeaderPosition="Top">
+    <telerikPrimitives:RadTabView.Items>
+        <telerikPrimitives:TabViewItem>
+            <telerikPrimitives:TabViewItem.Header>
+                <telerikPrimitives:TabViewHeaderItem Text="Tab 1" 
+                                                     ControlTemplate="{StaticResource HeaderControlTemplate}" />
+            </telerikPrimitives:TabViewItem.Header>
+        </telerikPrimitives:TabViewItem>
+        <telerikPrimitives:TabViewItem HeaderText="Tab 2"/>
+        <telerikPrimitives:TabViewItem HeaderText="Tab 3"/>
+    </telerikPrimitives:RadTabView.Items>
+</telerikPrimitives:RadTabView>
+```
+
+## Customize the TabViewHeader control template: 
 
 You can customize the appearance of each **TabViewHeaderItem** by replacing its default template with one of your choice. Below you can find a sample scenario where a custom control template is declared and set to the **ControlTemplate** property of the **TabViewHeaderItem**. 
 
@@ -44,8 +81,8 @@ If there are too many items in the tabview control and they cannot fit into the 
 
 This example demonstrates how to replace the default header of the RadTabView control and change its background. Also, how to set the header position to display the tab strip area at bottom.
 
-<snippet id='tabview-features-tabviewitem-xaml'/>
-<snippet id='tabview-features-tabviewitem-csharp'/>
+<snippet id='tabview-features-tabviewheader-xaml'/>
+<snippet id='tabview-features-tabviewheader-csharp'/>
 
 Additionally, you can work with the already assigned header instead of replacing it with a new one. For example - `tabView.Header.BackgroundColor = Color.Green`. 
 

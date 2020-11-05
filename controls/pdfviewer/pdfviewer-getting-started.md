@@ -28,7 +28,7 @@ You have two options:
 
 * Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
 
-If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadPdfViewer control you have to install the **Telerik.UI.for.Xamarin.PdfViewer** nuget package. This nuget will automatically refer the *Telerik.UI.for.Xamarin.Common*, *Telerik.UI.for.Xamarin.Primitives*, *Telerik.UI.for.Xamarin.SkiaSharp*, *SkiaSharp* and *ShiaSharp.Views.Forms* nuget packages.
+If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadPdfViewer control you have to install the **Telerik.UI.for.Xamarin.PdfViewer** nuget package. This nuget will automatically refer the *Telerik.UI.for.Xamarin.Common*, *Telerik.UI.for.Xamarin.Primitives*, *Telerik.UI.for.Xamarin.SkiaSharp*, *SkiaSharp* and *SkiaSharp.Views.Forms* nuget packages.
 
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadPdfViewer** component:
 

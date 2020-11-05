@@ -18,7 +18,8 @@ The sections below list all the localization keys used in RadCalendar grouped by
 
 | Localization Key | Default Value | Refers to |
 | -----------------| ------------- |----------- |
-| Calendar_AppointmentAllDay  | All-day | All-day appointments label in DayView and MultiDayView |
+| Calendar_AllDayAreaText | ALL-DAY | All-day area text in DayView and MultiDayView on Android and iOS |
+| Calendar_AllDayAreaTextUWP | All-day | All-day area text in DayView and MultiDayView on UWP |
 | Calendar_AgendaAllDay  | All-Day | All-day appointments label in AgendaView |
 | Calendar_AgendaStartTimeText  | Starts | Multi-day appointments that have Start and End times (so they are not all-day) |
 | Calendar_AgendaEndTimeText  | Ends | Multi-day appointments that have Start and End times (so they are not all-day) |
@@ -29,25 +30,31 @@ Check in the image below how the localization strings are presented in AgendaVie
 
 ## Scheduling UIs Localization Keys
 
-The next localization keys are related to RadCalendar [Scheduling UIs]({%slug calendar-scheduling-ui%}). These include built-in screens for creating and modifying appointments, including applying recurrence rules.
+The next localization keys are related to RadCalendar [Scheduling UIs]({%slug calendar-scheduling-ui%}). These include built-in views for creating and modifying appointments, including applying recurrence rules.
 
-#### Edit/Delete Existing Appointment Screen
+#### Appointment Summary View
 
 | Localization Key | Default Value |
 | -----------------| ------------- |
 | Calendar_EditButton  | Edit |
-|Calendar_DeleteButton  | Delete Event |
+| Calendar_DeleteButton  | Delete Event |
+| Calendar_AppointmentSummaryFromDate | from |
+| Calendar_AppointmentSummaryToDate | to |
 
 ![](images/calendar_localization_0.png)
 
-#### Create/Edit Appointment Screen
+>tip For detailed information on the view go to [Appointment Summary View]({%slug calendar-appointment-summary-view%}) topic.
+
+
+#### Add Appointment View
 
 | Localization Key | Default Value |
 | -----------------| ------------- |
 | Calendar_AppointmentEventTitle  | Event |
-|Calendar_EditEventTitle  |	Event Title |
+| Calendar_EditEventTitle  |	Event Title |
 | Calendar_AppointmentStarts  | Starts |
 | Calendar_AppointmentEnds  | Ends |
+| Calendar_AppointmentAllDay  | All-day |
 | Calendar_AppointmentRepeats  | Repeats |
 | Calendar_AppointmentEndRepeats  | End Repeat |
 | Calendar_AppointmentColor  | Color |
@@ -58,7 +65,9 @@ The next localization keys are related to RadCalendar [Scheduling UIs]({%slug ca
 
 ![](images/calendar_localization_1.png)
 
-#### Repeat Options Screen
+>tip For detailed information on the view go to [Add Appointment View]({%slug calendar-add-appointment-view%}) topic.
+
+#### Repeat Appointment View
 
 | Localization Key | Default Value |
 | -----------------| ------------- |
@@ -73,7 +82,9 @@ The next localization keys are related to RadCalendar [Scheduling UIs]({%slug ca
 
 ![](images/calendar_localization_2.png)
 
-#### End Repeat Screen
+>tip For detailed information on the view go to [Repeat Appointment View]({%slug calendar-repeat-appointment-view%}) topic.
+
+#### End Repeat Appointment View
 
 | Localization Key | Default Value |
 | -----------------| ------------- |
@@ -86,7 +97,9 @@ The next localization keys are related to RadCalendar [Scheduling UIs]({%slug ca
 
 ![](images/calendar_localization_3.png)
 
-#### Delete Appointment Screen
+>tip For detailed information on the view go to [End Repeat Appointment View]({%slug calendar-end-repeat-appointment-view%}) topic.
+
+#### Delete Appointment View
 
 | Localization Key | Default Value |
 | -----------------| ------------- |
@@ -101,7 +114,9 @@ The next localization keys are related to RadCalendar [Scheduling UIs]({%slug ca
 
 ![](images/calendar_localization_4.png)
 
-#### Save Appointment Screen
+>tip For detailed information on the view go to [Delete Appointment View]({%slug calendar-delete-appointment-view%}) topic.
+
+#### Save Recurring Appointment View
 
 | Localization Key | Default Value |
 | -----------------| ------------- |
@@ -111,10 +126,11 @@ The next localization keys are related to RadCalendar [Scheduling UIs]({%slug ca
 | Calendar_Android_SaveSingleRecurringEvent  | This event |
 | Calendar_iOS_SaveSeries  | Save All Events in the Series 
 
-
 ![](images/calendar_localization_5.png)
 
-#### Custom Recurrence Screens
+>tip For detailed information on the view go to [Save Recurring Appointment View]({%slug calendar-save-recurring-appointment-view%}) topic.
+
+#### Custom Recurrence View
 
 | Localization Key | Default Value |
 | -----------------| ------------- |
@@ -151,6 +167,8 @@ The next localization keys are related to RadCalendar [Scheduling UIs]({%slug ca
 | Calendar_MonthFrequencyThird  | Third |
 
 ![](images/calendar_localization_6.png)
+
+>tip For detailed information on the view go to [Custom Recurrence View]({%slug calendar-custom-recurrence-view%}) topic.
 
 #### Days/Months Names
 

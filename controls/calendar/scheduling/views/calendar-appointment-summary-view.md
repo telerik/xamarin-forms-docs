@@ -8,7 +8,7 @@ slug: calendar-appointment-summary-view
 
 # Appointment Summary View
 
-Appointment Summery View displays brief information about the appointment. The Appointment's Title, Details, Start Date and End Date, Recurrence, Detail.
+Appointment Summary View displays brief information about the appointment. The Appointment's Title, Details, Start Date and End Date, Recurrence, Detail.
  
 ## Visual Structure of Appointment Summary View 
 

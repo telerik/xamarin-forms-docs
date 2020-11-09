@@ -60,14 +60,14 @@ namespace App4.iOS
             var dateeditor = (editor as TKDataFormDatePickerEditor);
             if (dateeditor == null)
                 return;
-			// set the PreferredDatePickerStyle property to Wheels
+            // set the PreferredDatePickerStyle property to Wheels
             dateeditor.DatePicker.PreferredDatePickerStyle = UIDatePickerStyle.Wheels;
 
 
             var timeEditor = (editor as TKDataFormTimePickerEditor);
             if (timeEditor == null)
                 return;
-			// set the PreferredDatePickerStyle property to Wheels
+	    // set the PreferredDatePickerStyle property to Wheels
             timeEditor.DatePicker.PreferredDatePickerStyle = UIDatePickerStyle.Wheels;
         }
     }

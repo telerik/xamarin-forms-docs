@@ -39,6 +39,7 @@ The linear (one dimensional) barcodes are made up of lines and spaces of various
 |**EAN 13**|Used with consumer products internationally, 13 characters|
 |**GS1-128**|Formerly known as UCC-128 and EAN-128. Used to encode shipping/product information  \*(more info in 1D Barcodes)|
 |**Postnet**|Printed by U.S. Post Office on envelopes|
+|**Planet**|Used by the U.S. Postal Service to identify and track pieces of mail during delivery - the Post Office's "CONFIRM" services|
 |**UPC A**|Used with consumer products in U.S., 12 characters|
 |**UPC E**|Short version of UPC symbol, 6 characters|
 |**UPC Supplement 2**|Used to indicate magazines and newspaper issue numbers|

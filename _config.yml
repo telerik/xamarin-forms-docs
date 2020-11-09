@@ -183,7 +183,7 @@ navigation:
 ## IOS Controls
     nativecontrols/ios/alert:
         title: Alert
-        position: 1   
+        position: 2   
     nativecontrols/ios/autocompletetextview:
         title: AutoCompleteTextView
         position: 3

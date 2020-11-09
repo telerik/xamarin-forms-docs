@@ -44,25 +44,96 @@ public string Phone
 }
 ```
 
-## Using the 'DataFormRadAutoCompleteEditor'
+## Using the DataFormRadAutoCompleteEditor
 
-The DataFormRadAutoCompleteEditor is a bit more advanced editor which provides an out of the box quick search functionality. This editor uses the [RadAutoCompleteTextView]() standalone control and all its functionality like `DisplayMode` is available to the RadDataForm editor.
+DataFormRadAutoCompleteEditor is a bit more advanced editor which provides quick search functionality. This editor uses the [RadAutoCompleteTextView]({%slug android-autocomplete-overview%}) standalone control and all its functionality like `DisplayMode` is available to the RadDataForm editor.
 
 ### Setting the suggestions 'source'
 
 Because of the nature of the RadAutoCompleteTextView the editor which exposes its functionality requires some additional data to be passed to it which will be used as the 'suggestions' when a user starts typing in its textbox.
 
-Passing this data can be done in multiple different approaches depending on which one is the easiest for your scenario:
+In order to pass this data, you would need to create `AutoCompleteAdapter` and set it to the RadAutoComplete via its `Adapter` property. RadAutoComplete control can be accessed through the EditorView of the DataFormRadAutoCompleteEditor.
 
-- By using the `additionalData` property of the **@DataFormProperty** and setting it to an static `String[]`
-- By creating an `AutoCompleteAdapter` and setting it to the DataFormRadAutoCompleteEditor via its `setAdapter()` method
-- Or by directly by calling the `updateValues()` of the specific `EntityPropertyCore` object. The next code snippet shows how you can use the mentioned 'updateValues' method on an existing 'from' property of the RadDataForm, the `list` object is a simple `List<String>` :
+To illustrate the approach better, the example below will use the following class as a Source of the DataForm:
 
- 
+```C#
+public class Booking : NotifyPropertyChangedBase
+{
+    private string from;
+    private string to;
 
- Because calling the updateValues can be done after the editor has been rendered you need to make sure you also update the DataFormRadAutoCompleteEditor itself by simply calling its `updateAdapter()` method:
+    [DataFormProperty(Label = "From", Index =0, Editor = typeof(DataFormRadAutoCompleteEditor))]
+    public string From
+    {
+        get
+        {
+            return this.from;
+        }
+        set
+        {
+            this.from = value;
+            NotifyListeners("From", value);
+        }
+    }
 
- 
+    [DataFormProperty(Label = "To", Index = 1, Editor = typeof(DataFormRadAutoCompleteEditor))]
+    public string To
+    {
+        get
+        {
+            return this.to;
+        }
+        set
+        {
+            this.to = value;
+            NotifyListeners("To", value);
+        }
+    }
+}
+```
+
+Here is the DataForm definition with the AutoCompleteAdapter applied:
+
+```C#
+public class MainActivity : AppCompatActivity
+{
+	private List<string> destinations = new List<string>()
+	{
+		"Atlanta", "Beijing", "Los Angeles", "Dubai", "Tokyo", "Chicago", "London", "Shanghai", "Paris",
+		"Dallas", "Amsterdam", "Hong Kong", "Frankfurt", "Delhi", "Madrid", "Toronto", "Sydney"
+	};
+	
+	protected override void OnCreate(Bundle savedInstanceState)
+	{
+		base.OnCreate(savedInstanceState);
+		Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+
+		RadDataForm dataForm = new RadDataForm(Application.Context);
+
+		dataForm.SetEntity(new Booking());           
+		var adapter = new AutoCompleteAdapter(Application.Context, this.GetTokenObjects(), Java.Lang.Integer.ValueOf(Resource.Layout.suggestion_item_layout));
+		adapter.CompletionMode = CompletionMode.StartsWith;
+		
+
+		DataFormRadAutoCompleteEditor fromEditor = (DataFormRadAutoCompleteEditor)dataForm.GetExistingEditorForProperty("From");
+		RadAutoCompleteTextView fromAutocomplete = (RadAutoCompleteTextView)fromEditor.EditorView;
+		fromAutocomplete.Adapter = adapter;	
+		SetContentView(dataForm);
+	}
+
+	private List<TokenModel> GetTokenObjects()
+	{
+		List<TokenModel> feedData = new List<TokenModel>();
+		for (int i = 0; i < this.destinations.Count; i++)
+		{
+			TokenModel token = new TokenModel(this.destinations[i], null);
+			feedData.Add(token);
+		}
+
+		return feedData;
+	}
+}
+```
 
 ### Setting the DisplayMode
 
@@ -71,10 +142,12 @@ If you are familiar with the RadAutoCompleteTextView element you know that is su
 - Token - the selected item from the 'suggestion box' is displayed as a box with a remove 'X' button
 - Plain - the selected item's text is appended and autocompleted after an item from the 'suggestion box' is selected
 
-When using the `DataFormRadAutoCompleteEditor` you too have the option to change the editor's `displayMode` by simply calling its `setDisplayMode()` and passing the desired mode:
+When using the `DataFormRadAutoCompleteEditor` you too have the option to change the editor's `DisplayMode`:
 
- 
+```C#
+DataFormRadAutoCompleteEditor fromEditor = (DataFormRadAutoCompleteEditor)dataForm.GetExistingEditorForProperty("From");
+RadAutoCompleteTextView fromAutocomplete = (RadAutoCompleteTextView)fromEditor.EditorView;
+fromAutocomplete.DisplayMode = DisplayMode.Tokens;
+```
 
- When the displayMode is set to `TOKEN` if the bound to that editor property of your EntityProperty is of type `String[]` and each of its elements is present in the "suggestion source" those items from the array will be rendered as separate tokens.
-
- The full Java source code of the above example can be found [here](https://github.com/telerik/Android-samples/blob/453ad69247632f3c4d48eff87e682e167a35115a/Samples-Java/Samples/src/main/java/fragments/dataform/DataFormAutoCompleteTextViewEditorFragment.java).
+When the DisplayMode is set to `Tokens` if the bound to that editor property of your EntityProperty is of type `String[]` and each of its elements is present in the "suggestion source" those items from the array will be rendered as separate tokens.

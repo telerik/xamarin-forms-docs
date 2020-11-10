@@ -28,7 +28,7 @@ presenter.TransitionIsVertical = true;
 
 The <code>TransitionIsReverse</code> changes the forward/backward direction of the transition, thus changing its effect.
 
-Finally the transition duration can be customized by setting the <code>transitionDuration</code> property:
+Finally the transition duration can be customized by setting the <code>TransitionDuration</code> property:
 
 ```C#
 presenter.TransitionDuration = 2;

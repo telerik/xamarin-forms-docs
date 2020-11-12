@@ -6,20 +6,18 @@ position: 3
 
 # ListView: Populating with data
 
-There are two ways to feed TKListView data you need to display. You can do that by implementing several methods from the TKListViewDataSource protocol or you could let the  TKDataSource component do the dirty work for you. 
+There are two ways to feed TKListView data you need to display. You can do that by implementing several methods from the TKListViewDataSource protocol or you could let the TLKDataSource component do the dirty work for you. 
 
 ## Populating with data using TKDataSource ##
-TKDataSource contains implementation of the TKListViewDataSource protocol that you may use out-of-the box. In addition TKDataSource provides handy data shaping capabilities such as sorting and filtering.
+TKDataSource contains implementation of the TKListViewDataSource protocol that you may use out-of-the box. In addition TLKDataSource provides handy data shaping capabilities such as sorting and filtering.
 
 The following example shows how to initialise TKDataSource with data and feed that data to TKListView.
 
-<snippet id='listview-populating-ds'/>
-<snippet id='listview-populating-ds-swift'/>
 ```C#
 public class ListViewBasicSetup : XamarinExampleViewController
 {
     NSMutableArray simpleArrayOfStrings;
-    TKDataSource dataSource = new TKDataSource();
+    TLKDataSource dataSource = new TLKDataSource();
 
     public ListViewBasicSetup ()
     {
@@ -65,8 +63,6 @@ public class ListViewBasicSetup : XamarinExampleViewController
 Alternatively TKListView may be populated with data by manually implementing several methods from the TKListViewDataSource protocol. This way requires a bit more code but gives more flexibility.
 First we need to set the datasource property of TKListView to a class adopting the TKListViewDatasource protocol. In the sample code bellow it is our view controller.
 
-<snippet id='listview-populating'/>
-<snippet id='listview-populating-swift'/>
 ```C#
 public class ListViewDocsSetupDataSource : XamarinExampleViewController
 {

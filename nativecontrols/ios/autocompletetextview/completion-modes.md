@@ -4,7 +4,7 @@ page_title: AutoCompleteTextView Completion Modes
 position: 4
 ---
 
-# AutoCompleteTextView (Beta): Completion Modes
+# AutoCompleteTextView for Xamarin.iOS: Completion Modes
 
 <code>TKAutoCompleteTextView</code> provides two completion modes:
 
@@ -18,12 +18,12 @@ position: 4
 <img src="../images/autocomplete-gettingstarted002.png"/>
 
 
-They are accessible through the <code>TKDataSource</code>. The default completion mode is <code>TKAutoCompleteCompletionModeStartsWith</code>.
-
-<snippet id='autocmp-completion'/>
-
-<snippet id='autocmp-completion-swift'/>
+They are accessible through the <code>TLKDataSource</code>. The default completion mode is <code>TKAutoCompleteCompletionModeStartsWith</code>.
 
 ```C#
-this.dataSource.Settings.AutoComplete.CompletionMode = TKAutoCompleteCompletionMode.StartsWith;
+this.Autocomplete = new TKAutoCompleteTextView(new CGRect(10, this.View.Bounds.Y + 10, this.View.Bounds.Size.Width - 20, 30));
+this.AutomaticallyAdjustsScrollViewInsets = false;
+this.Datasource = new TLKDataSource ();
+this.Datasource.Settings.AutoComplete.CompletionMode = TKAutoCompleteCompletionMode.Contains;
+//this.dataSource.Settings.AutoComplete.CompletionMode = TKAutoCompleteCompletionMode.StartsWith;
 ```

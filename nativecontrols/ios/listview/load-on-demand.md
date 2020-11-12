@@ -8,29 +8,21 @@ position: 11
 
 There are certain scenarios typically with remote data over the wire where data needs to be loaded continuously on small portions. TKListView can load data on demand.
 
-## Enabling the load-on-demand  ##
+## Enabling the load-on-demand
 
-To enable the load on demand feature, you shoud set the <code>loadOnDemandMode</code> property to one of the two supported modes <code>TKListViewLoadOnDemandModeAuto</code> or <code>TKListViewLoadOnDemandModeManual</code>.
-
-<snippet id='listview-load-on-demand'/>
-
-<snippet id='listview-load-on-demand-swift'/>
+To enable the load on demand feature, you shoud set the <code>LoadOnDemandMode</code> property to one of the two supported modes <code>TKListViewLoadOnDemandModeAuto</code> or <code>TKListViewLoadOnDemandModeManual</code>.
 
 ```C#
 listView.LoadOnDemandMode = TKListViewLoadOnDemandMode.Manual;
 ```
 
-When using the auto mode the <code>loadOnDemandBufferSize</code> property defines the number of cells from the bottom of the list view up at which to start requesting data. 
-
-<snippet id='listview-buffer'/>
-
-<snippet id='listview-buffer-swift'/>
+When using the auto mode the <code>LoadOnDemandBufferSize</code> of type `int` property defines the number of cells from the bottom of the list view up at which to start requesting data. 
 
 ```C#
 listView.LoadOnDemandBufferSize = 5;
 ```
 
-After setting the desired <code>loadOnDemandMode</code> you should implement the <code>TKListViewDelgate</code> method <code>listView:shouldLoadMoreDataAtIndexPath:</code> to determine if more data should be loaded. After the data is loaded you should notify the ListView by calling its <code>didLoadDataOnDemand</code> method:
+After setting the desired <code>LoadOnDemandMode</code> you should implement the <code>TKListViewDelgate</code> method <code>ShouldLoadMoreDataAtIndexPath:</code> to determine if more data should be loaded. After the data is loaded you should notify the ListView by calling its <code>DidLoadDataOnDemand</code> method:
 
 <snippet id='listview-should-load'/>
 
@@ -63,11 +55,7 @@ class ListViewDelegate: TKListViewDelegate
 }
 ```
 
-When using manual mode, TKListView appends a special cell at the end of the list. Touching this cell starts the process of loading more data. In this scenario you should process listView:cellForItemAtIndexPath: method of TKListViewDataSource and check whether this is a "load on demand cell":
-
-<snippet id='listview-load-on-demand-deque'/>
-
-<snippet id='listview-load-on-demand-deque-swift'/>
+When using manual mode, TKListView appends a special cell at the end of the list. Touching this cell starts the process of loading more data. In this scenario you should process `CellForItem` method of TKListViewDataSource and check whether this is a "load on demand cell":
 
 ```C#
 public override TKListViewCell CellForItem (TKListView listView, NSIndexPath indexPath)
@@ -89,3 +77,5 @@ public override TKListViewCell CellForItem (TKListView listView, NSIndexPath ind
     return cell;
 }
 ```
+
+> ListView Load On Demand example can be found in our [Native Xamarin.iOS examples]({%slug sdk-browser-overview%}##native-only-examples).

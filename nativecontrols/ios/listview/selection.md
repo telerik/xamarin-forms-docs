@@ -1,10 +1,10 @@
 ---
 title: Selection
-page_title: ListView selection
+page_title: ListView for Xamarin.iOS Selection
 position: 5
 ---
 
-# ListView: Selection
+# ListView for Xamarin.iOS: Selection
 
 TKListView supports different selection modes:
 
@@ -20,23 +20,19 @@ Additionaly, TKListView provides a few methods to programmatically control the s
 
 This article describes the selection API of TKListView in detail.
 
-The <code>allowsMultipleSelection</code> property of <code>TKListView</code> defines whether the user is allowed to select multiple items at the same time. It also affects the default appearance of the selected items.
+The <code>AllowsMultipleSelection</code> property of <code>TKListView</code> defines whether the user is allowed to select multiple items at the same time. It also affects the default appearance of the selected items.
 
 ## Single seletion mode ##
 
 <img src="../images/listview-selection001.png"/>
 
-The default value of the <code>allowsMultipleSelection</code> property is <code>NO (false)</code> 
+The default value of the <code>AllowsMultipleSelection</code> property is <code>false</code> 
 
 ## Multiple selection mode##
 
 <img src="../images/listview-selection002.png"/>
 
-Set the <code>allowsMultipleSelection</code> property to <code>YES (true)</code> to enable this view:
-
-<snippet id='listview-multiple-selection'/>
-
-<snippet id='listview-multiple-selection-swift'/>
+Set the <code>allowsMultipleSelection</code> property to <code>true</code> to enable this view:
 
 ```C#
 this.listView.AllowsMultipleSelection = true;
@@ -47,10 +43,6 @@ this.listView.AllowsMultipleSelection = true;
 The selectionBehavior property determines on what type of interaction cells get selected. It's values are 
 By default TKListView will allow user to select on press.
 
-<snippet id='listview-selection-behavior'/>
-
-<snippet id='listview-selection-behavior-swift'/>
-
 ```C#
 this.listView.SelectionBehavior = TKListViewSelectionBehavior.Press;
 ```
@@ -59,21 +51,13 @@ this.listView.SelectionBehavior = TKListViewSelectionBehavior.Press;
 
 In this mode a long-press gesture is required in order to select a cell.
 
-<snippet id='listview-selection-behavior-long'/>
-
-<snippet id='listview-selection-behavior-long-swift'/>
-
 ```C#
 this.listView.SelectionBehavior = TKListViewSelectionBehavior.LongPress;
 ```
 
 ## Disable selection##
 
-In order to disable the selection, you need to set the <code>_listView.selectionBehavior</code> property to <code>TKListViewSelectionBehaviorNone</code>:
-
-<snippet id='listview-selection-behavior-none'/>
-
-<snippet id='listview-selection-behavior-none-swift'/>
+In order to disable the selection, you need to set the <code>SelectionBehavior</code> property to <code>TKListViewSelectionBehavior.None</code>:
 
 ```C#
 this.listView.SelectionBehavior = TKListViewSelectionBehavior.None;
@@ -83,29 +67,20 @@ this.listView.SelectionBehavior = TKListViewSelectionBehavior.None;
 
 Cells can be selected programatically as well.
 
-<snippet id='listview-selection-programatically'/>
-
-<snippet id='listview-selection-programatically-swift'/>
-
 ```C#
 NSIndexPath indexPath = NSIndexPath.FromRowSection (1, 0);
 this.listView.SelectItem (indexPath, false, UICollectionViewScrollPosition.None);
 ```
 
-To deselected a cell programatically, you should call the <code>deselectItemAtIndexPath</code> method giving the indexPath of the cell.
+To deselected a cell programatically, you should call the <code>DeselectItem</code> method giving the indexPath of the cell.
 
 ## TKListViewDelegate methods
 
 The <code>TKListViewDelegate</code> protocol provides a few handy delegate methods to be used to control and respond to selection events triggered by user. In order to take advantage of these methods, you should set the delegate proeprty of <code>TKListView</code> to a class adopting the <code>TKListViewDelegate</code> protocol. For example:
 
-<snippet id='listview-delegate-set'/>
-
-<snippet id='listview-delegate-set-swift'/>
-
 ```C#
 this.listViewDelegate = new ListViewDelegate(this);
 ```
-
 
 Bellow you can find some details on how you can use the delegate methods from TKListViewDelegate.
 
@@ -133,3 +108,5 @@ public override void DidDeselectItemAtIndexPath (TKListView listView, NSIndexPat
     Console.WriteLine("Did deselect item at row {0}", this.owner.dataSource.Items[indexPath.Row]);
 }
 ```
+
+> ListView Selection example can be found in our [Native Xamarin.iOS examples]({%slug sdk-browser-overview%}##native-only-examples).

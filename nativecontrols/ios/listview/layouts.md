@@ -4,29 +4,23 @@ page_title: ListView Layouts
 position: 6
 ---
 
-# ListView: Layouts
+# ListView for Xamarin.iOS: Layouts
 
 TKListView provides the same layout mechanism as UICollectionView. There are three additionally implemented layouts and you can also create your own by inheriting from UICollectionViewLayout class. However, all list view features will be available only when using a layout which inherits from TKListViewLinearLayout.
 
-## Getting started##
-
-By default TKListView will use TKListViewLinearLayout but you can easily change that with the layout property. The layouts that are implemented are:
+By default TKListView uses `TKListViewLinearLayout` but you can easily change that with the layout property. The layouts that are implemented are:
 
 - Linear - the default layout which orders items in a simple list.
 - Grid - lays out items in a grid.
 - Staggered - lays out items in a staggered grid formation.
 
-Each of these layouts can layout items in either horizontal or vertical direction.
+> Each of these layouts can layout items in either horizontal or vertical direction.
 
-## Linear layout##
+## Linear layout
 
 In linear layout cells are distributed in a simple list horizontally or vertically depending on the selected scroll direction.
 
 <img src="../images/listview-layouts001.png"/>
-
-<snippet id='listview-linear'/>
-
-<snippet id='listview-linear-swift'/>
 
 ```C#
 TKListViewLinearLayout layout = new TKListViewLinearLayout ();
@@ -40,23 +34,15 @@ this.SetSelectedOption (1, 1);
 
 Cells can be aligned (left, right, center, stretch) by setting the itemAlignment property:
 
-<snippet id='listview-alignment'/>
-
-<snippet id='listview-alignment-swift'/>
-
 ```C#
 layout.ItemAlignment = TKListViewItemAlignment.Center;
 ```
 
-## Grid layout##
+## Grid layout
 
 The grid layout allows for distributing cells in a fixed number of columns/rows. The grid layout inherits from TKListViewLinearLayout, therefore all properties of TKListViewLinearLayout are also available in TKListViewGridLayout.
 
 <img src="../images/listview-layouts002.png"/>
-
-<snippet id='listview-grid'/>
-
-<snippet id='listview-grid-swift'/>
 
 ```C#
 TKListViewGridLayout layout = new TKListViewGridLayout ();
@@ -69,17 +55,13 @@ layout.ScrollDirection = this.scrollDirection;
 this.listView.Layout = layout;
 ```
 
-## Staggered layout##
+## Staggered layout
 
 The staggered layout lays out items in a staggered grid formation. It supports horizontal & vertical layout as well as an ability to align cells. It inherits from TKListViewGridLayout. 
 
 <img src="../images/listview-layouts003.png"/>
 
-Staggered layout lays its items based on their size. The item size is determined by using the listView:layout:sizeForItemAtIndexPath: method of TKListViewLinearLayoutDelegate protocol:
-
-<snippet id='listview-staggered-size'/>
-
-<snippet id='listview-staggered-size-swift'/>
+Staggered layout lays its items based on their size. The item size is determined by using the `SizeForItem` method of `TKListViewLinearLayoutDelegate` protocol:
 
 ```C#
 public override CGSize SizeForItem (TKListView listView, TKListViewLinearLayout layout, NSIndexPath indexPath)
@@ -93,11 +75,7 @@ public override CGSize SizeForItem (TKListView listView, TKListViewLinearLayout 
 }
 ```
 
-Staggered grids are likely to have gaps at the edges of the layout. To avoid these gaps, set the alignLastLine property to YES.
-
-<snippet id='listview-staggered'/>
-
-<snippet id='listview-staggered-swift'/>
+Staggered grids are likely to have gaps at the edges of the layout. To avoid these gaps, set the `AlignLastLine` property to `true`.
 
 ```C#
 TKListViewStaggeredLayout layout = new TKListViewStaggeredLayout ();
@@ -111,3 +89,5 @@ layout.ScrollDirection = this.scrollDirection;
 layout.AlignLastLine = true;
 this.listView.Layout = layout;
 ```
+
+> LiatView Layout example can be found in our [Native Xamarin.iOS examples]({%slug sdk-browser-overview%}##native-only-examples).

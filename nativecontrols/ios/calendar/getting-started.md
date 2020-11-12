@@ -77,7 +77,7 @@ Now let's add this random data to the calendar and present it. In order to do th
 class CalendarDataSource : TKCalendarDataSource
 ```
 
-And we should implement its <code>calendar:eventsForDate:</code> method:
+And we should implement its <code>EventsForDate:</code> method:
 
 ```C#
 public TKCalendarEventProtocol[] EventsForDate (TKCalendar calendar, NSDate date)
@@ -99,7 +99,7 @@ public TKCalendarEventProtocol[] EventsForDate (TKCalendar calendar, NSDate date
 }
 ```
 
-Here, the predicate is used to filter the events array by date. Do not forget to assign the <code>dataSource</code> property of <code>TKCalendar</code>:
+Here, the predicate is used to filter the events array by date. Do not forget to assign the <code>DataSource</code> property of <code>TKCalendar</code>:
 
 ```C#
 calendarView.DataSource = new CalendarDataSource (this);
@@ -253,8 +253,6 @@ Here is the full code of this example:
 ## Change Calendar View Mode
 
 You can easily change the way data is presented in chart by changing the view mode property:
-
-<snippet id='getting-started-viewmodeyear'/>
 
 ```C#
 this.CalendarView.ViewMode = TKCalendarViewMode.Year;

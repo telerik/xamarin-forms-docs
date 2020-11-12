@@ -56,6 +56,6 @@ this.View.AddSubview (this.CalendarView);
 
 However, <code>TKCalendarEventKitDataSource</code> supports event filtering. Adopt its <code>TKCalendarEventKitDataSourceDelegate</code> protocol to enable this feature.
 
-In the cases when you want to filter only specific events, use the <code>shouldImportEvent:</code> method.
+In the cases when you want to filter only specific events, use the <code>ShouldImportEvent</code> method.
 
 > A sample Calendar with Events example can be found in our [Native Telerik UI for Xamarin.iOS Examples]({%slug developer-focused-examples%}#native-only-examples).

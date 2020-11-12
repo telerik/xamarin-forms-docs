@@ -63,4 +63,4 @@ Animations are controlled by setting properties of <code>TKAlert</code> class. T
 alert.AnimationDuration = 0.5f;
 ```
 
-> Demos for Alert Animaions can be found in our [Native Xamarin.iOS examples]({%slug sdk-browser-overview%}##native-only-examples).
+> Demos for Alert Animaions can be found in our [Native Xamarin.iOS examples]({%slug sdk-browser-overview%}#native-only-examples).

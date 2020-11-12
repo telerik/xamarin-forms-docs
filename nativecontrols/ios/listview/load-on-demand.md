@@ -78,4 +78,4 @@ public override TKListViewCell CellForItem (TKListView listView, NSIndexPath ind
 }
 ```
 
-> ListView Load On Demand example can be found in our [Native Xamarin.iOS examples]({%slug sdk-browser-overview%}##native-only-examples).
+> ListView Load On Demand example can be found in our [Native Xamarin.iOS examples]({%slug sdk-browser-overview%}#native-only-examples).

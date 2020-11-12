@@ -156,4 +156,4 @@ public partial class ViewController : UIViewController
 
 For more information about the suggest modes, please refer to the [Suggest Modes article](suggest-modes)
 
-> AutoCompleteTextView Getting Started example can be found in our [Native Xamarin.iOS examples]({%slug sdk-browser-overview%}##native-only-examples).
+> AutoCompleteTextView Getting Started example can be found in our [Native Xamarin.iOS examples]({%slug sdk-browser-overview%}#native-only-examples).

@@ -7,6 +7,10 @@ position: 0
 publish: true
 ---
 
+{% if site.has_cta_panels == true %}
+{% include cta-panel-small.html %}
+{% endif %}
+
 # Blazor Mobile Bindings for Xamarin
 
 ## Overview

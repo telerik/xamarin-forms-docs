@@ -7,9 +7,10 @@ position: 1
 
 # Alert Overview
 
-<code>TKAlert</code> is a highly customizable alert view component that offers different predefined animations, easy to use Block API, many customization options. 
+**TKAlert** is a highly customizable alert view component that offers different predefined animations, easy to use Block API, many customization options. 
 
 <img src="../images/alert-overview-001.png"/> <img src="../images/alert-overview-002.png"/>
+
 <code>TKAlert</code> features include:
 
 

@@ -4,7 +4,7 @@ slug: ios-chart-overview
 position: .1
 ---
 
-## Chart for Xamarin.iOS: Overview
+# Chart for Xamarin.iOS: Overview
 
 RadChart for Xamarin.iOS is a versatile charting component that offers full customization, great performance and intuitive object model. Its API allows creating complex charts with stunning animations and appearance.
 

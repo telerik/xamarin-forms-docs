@@ -8,7 +8,7 @@ position: 0
 publish: true
 ---
 
-## ListView for Xamarin.Android: Overview
+# ListView for Xamarin.Android: Overview
 
 **RadListView** for Android is a virtualizing list component that provides the most popular features associated with scenarios where a list of items is used. All these features are embedded in one control with the idea to save developer time and provide better experience. 
 

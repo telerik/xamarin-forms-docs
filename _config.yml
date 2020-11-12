@@ -689,6 +689,7 @@ footer_social:
     twitter: https://twitter.com/Telerik/ 
 
 has_kb_portal: true
+has_cta_panels: true
 
 intro_columns:
 -

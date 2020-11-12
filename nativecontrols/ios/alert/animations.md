@@ -32,7 +32,7 @@ TKAlert supports tree predefined show/dismiss animations:
 
 </table>
 
-> In order to get a real understanding of how the animations look and feel, check the [Demo application that ships with the UI for Xamarin suite]({%slug sdk-browser-overview%}##native-only-examples).
+> In order to get a real understanding of how the animations look and feel, check the [Demo application that ships with the UI for Xamarin suite]({%slug developer-focused-examples%}#native-only-examples).
 
 These animations can be applied when TKAlert is being shown or dismissed.
 

@@ -41,4 +41,4 @@ public override bool ListViewShouldRefreshOnPull (TKListView listView)
 }
 ```
 
-> ListView Pull to Refresh example can be found in our [Native Xamarin.iOS examples]({%slug sdk-browser-overview%}##native-only-examples).
+> ListView Pull to Refresh example can be found in our [Native Xamarin.iOS examples]({%slug sdk-browser-overview%}#native-only-examples).

@@ -22,4 +22,4 @@ position: 1
 - Completion Modes
 - Display Modes
 
-> Demos for AutoCompleteTextView control can be found in our [Native Xamarin.iOS examples]({%slug sdk-browser-overview%}#native-only-examples).
+> Demos for AutoCompleteTextView control can be found in our [Native Xamarin.iOS examples]({%slug developer-focused-examples%}#native-only-examples).

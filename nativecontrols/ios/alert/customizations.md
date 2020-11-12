@@ -93,5 +93,5 @@ alert.ContentView.AddSubview (view);
 
 <img src="../images/alert-customization002.png" >
 
-> Demos for Alert Customization can be found in our [Native Xamarin.iOS examples]({%slug sdk-browser-overview%}#native-only-examples).
+> Demos for Alert Customization can be found in our [Native Xamarin.iOS examples]({%slug developer-focused-examples%}#native-only-examples).
 

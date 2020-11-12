@@ -37,4 +37,4 @@ class AutoCompleteTokensDelegate : TKAutoCompleteDelegate
 }
 ```
 
-> AutoCompleteTextView Token demo can be found in our [Native Xamarin.iOS examples]({%slug sdk-browser-overview%}#native-only-examples).
+> AutoCompleteTextView Token demo can be found in our [Native Xamarin.iOS examples]({%slug developer-focused-examples%}#native-only-examples).

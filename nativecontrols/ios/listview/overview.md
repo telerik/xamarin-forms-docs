@@ -24,4 +24,4 @@ The features at a glance are:
 - Single/Multiple Selection
 - Grouping
 
-> Demos for ListView can be found in our [Native Xamarin.iOS examples]({%slug sdk-browser-overview%}#native-only-examples).
+> Demos for ListView can be found in our [Native Xamarin.iOS examples]({%slug developer-focused-examples%}#native-only-examples).

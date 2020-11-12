@@ -57,4 +57,4 @@ And here is what it looks like:
 
 <img src="../images/alert-gettingstarted001.png">
 
-> Getting Started Alert example can be found in our [Native Xamarin.iOS examples]({%slug sdk-browser-overview%}#native-only-examples).
+> Getting Started Alert example can be found in our [Native Xamarin.iOS examples]({%slug developer-focused-examples%}#native-only-examples).

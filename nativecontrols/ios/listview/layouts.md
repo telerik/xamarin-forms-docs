@@ -90,4 +90,4 @@ layout.AlignLastLine = true;
 this.listView.Layout = layout;
 ```
 
-> LiatView Layout example can be found in our [Native Xamarin.iOS examples]({%slug sdk-browser-overview%}#native-only-examples).
+> LiatView Layout example can be found in our [Native Xamarin.iOS examples]({%slug developer-focused-examples%}#native-only-examples).

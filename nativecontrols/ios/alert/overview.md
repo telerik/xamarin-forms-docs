@@ -30,4 +30,4 @@ position: 1
 <li>Horizontal/vertical buttons layout</li>
 </ul>
 
-> Demos for Alert control can be found in our [Native Xamarin.iOS examples]({%slug sdk-browser-overview%}#native-only-examples).
+> Demos for Alert control can be found in our [Native Xamarin.iOS examples]({%slug developer-focused-examples%}#native-only-examples).

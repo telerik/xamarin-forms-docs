@@ -15,35 +15,6 @@ In addition to the numerous Xamarin.Forms controls, the suite includes Xamarin.A
  
 To learn more please visit the [Telerik UI for Xamarin](http://www.telerik.com/xamarin-ui) product overview page.
 
-<script type="text/javascript">
-
-function ready(callback){
-    // in case the document is already rendered
-    if (document.readyState!='loading') callback();
-    // modern browsers
-    else if (document.addEventListener) document.addEventListener('DOMContentLoaded', callback);
-    // IE <= 8
-    else document.attachEvent('onreadystatechange', function(){
-        if (document.readyState=='complete') callback();
-    });
-}
-
-ready(function(){
-	  var mac = navigator.userAgent.match(/(Mac)/i);
-	  var btnWin = document.getElementById("js-btnWin");
-	  var btnOSX = document.getElementById("js-btnOSX");
-
-	  if (mac) {	  
-		btnOSX.style.display = "inline-block";
-		btnWin.style.display = "none";
-	  } else {
-		btnOSX.style.display = "none";
-		btnWin.style.display = "inline-block";
-	  }
-});
-
-</script>
-
 ![Telerik UI for Xamarin](front-image.png)
 
 ### Telerik UI for Xamarin.Forms Controls

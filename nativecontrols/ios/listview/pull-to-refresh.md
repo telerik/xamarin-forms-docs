@@ -4,30 +4,23 @@ page_title: ListView Pull-to-refresh Gesture
 position: 10
 ---
 
-# ListView: Pull-to-refresh
+# ListView for Xamarin.iOS: Pull-to-refresh
 
 TKListView can be refreshed by a pull-to-refresh gesture. If enabled, the feature allows the user to refresh data by swiping his finger down when the content is scrolled up to the top. This will trigger an animated activity indicator which will stay visible until data is refreshed.
 
 <img src="../images/listview-pull-to-refresh001.png" />
 
+## Enabling pull-to-refresh
 
-## Enabling pull-to-refresh##
-Use the <code>allowsPullToRefresh</code> property to enable the feature.
-
-<snippet id='listview-pull-to-refresh'/>
-
-<snippet id='listview-pull-to-refresh-swift'/>
+Use the <code>AllowsPullToRefresh</code> property to enable the feature.
 
 ```C#
 listView.AllowsPullToRefresh = true;
 ```
 
-## Responding to the pull-to-refresh gesture##
-To be able to respond to the a pull-to-refresh gesture, you will need to implement the <code>listViewShouldRefreshOnPull:</code> method from the <code>TKListViewDelegate</code>protocol. After fresh data is available you will need to notify TKListView by calling the <code>didRefreshOnPull</code> method. This call will allow TKListView to hide the activity indicator and display the fresh data. 
+## Responding to the pull-to-refresh gesture
 
-<snippet id='listview-should-refresh'/>
-
-<snippet id='listview-should-refresh-swift'/>
+To be able to respond to the a pull-to-refresh gesture, you will need to implement the <code>ListViewShouldRefreshOnPull</code> method from the <code>TKListViewDelegate</code>protocol. After fresh data is available you will need to notify TKListView by calling the <code>didRefreshOnPull</code> method. This call will allow TKListView to hide the activity indicator and display the fresh data. 
 
 ```C#
 public override bool ListViewShouldRefreshOnPull (TKListView listView)
@@ -47,3 +40,5 @@ public override bool ListViewShouldRefreshOnPull (TKListView listView)
     return true;
 }
 ```
+
+> ListView Pull to Refresh example can be found in our [Native Xamarin.iOS examples]({%slug sdk-browser-overview%}##native-only-examples).

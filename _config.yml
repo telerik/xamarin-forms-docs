@@ -137,8 +137,11 @@ navigation:
         position: 5
     nativecontrols/android/datasource:
         title: DataSource
-        position: 6    
-    nativecontrols/android/agauges:
+        position: 6   
+    nativecontrols/android/feedback:
+        title: Feedback
+        position: 8        
+    nativecontrols/android/gauges:
         title: Gauges
         position: 8
     nativecontrols/android/listview:
@@ -183,6 +186,9 @@ navigation:
 ## IOS Controls
     nativecontrols/ios/alert:
         title: Alert
+        position: 2   
+    nativecontrols/ios/appfeedback:
+        title: AppFeedback
         position: 2   
     nativecontrols/ios/autocompletetextview:
         title: AutoCompleteTextView
@@ -339,6 +345,15 @@ navigation:
     controls/barcode/supported-types/2d-barcodes:
         title: "2D Barcodes"
         position: 1
+                ## Barcode 2D Barcodes Sub-Folders
+    controls/barcode/supported-types/2d-barcodes/PDF417:
+        title: "PDF417"
+        position: 1
+                    
+    controls/barcode/supported-types/2d-barcodes/QRCode:
+        title: "QRCode"
+        position: 2
+                ## End Barcode 2D Barcodes Sub-Folders
            ## End Barcode Supported Types Sub-Folders
         ## End Barcode Sub-Folders
     ## End Barcode

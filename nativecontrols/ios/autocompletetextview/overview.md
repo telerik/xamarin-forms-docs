@@ -7,9 +7,7 @@ position: 1
 
 # AutoCompleteTextView for Xamarin.iOS: Overview
 
-**TKAutoCompleteTextView** (Beta) can automatically complete user input string by comparing the text being entered to all strings in the associated data source. The control provides means for easy customization and data management. To make working with data easier for developers, <code>TKAutoCompleteTextView</code> works seamlessly with the Telerik DataSource control which serves as a mediator between the raw suggestions data and the UI component which serves as a suggestion view.
-
-<code>TKAutoCompleteTextView</code> can automatically complete user input string by comparing the text being entered to all strings in the associated data source. The control provides means for easy customization and data management. To make working with data easier for developers, <code>TKAutoCompleteTextView</code> works seamlessly with the Telerik DataSource control which serves as a mediator between the raw suggestions data and the UI component which serves as a suggestion view.
+**TKAutoCompleteTextView** can automatically complete user input string by comparing the text being entered to all strings in the associated data source. The control provides means for easy customization and data management. To make working with data easier for developers, <code>TKAutoCompleteTextView</code> works seamlessly with the Telerik DataSource control which serves as a mediator between the raw suggestions data and the UI component which serves as a suggestion view.
 
 <img src="../images/autocomplete-overview001.png"/>
 

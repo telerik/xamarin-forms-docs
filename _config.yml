@@ -345,7 +345,7 @@ navigation:
     controls/barcode/supported-types/2d-barcodes:
         title: "2D Barcodes"
         position: 1
-                ## Barcode 2D-Barcodes Sub-Folders
+                ## Barcode 2D Barcodes Sub-Folders
     controls/barcode/supported-types/2d-barcodes/PDF417:
         title: "PDF417"
         position: 1
@@ -353,7 +353,7 @@ navigation:
     controls/barcode/supported-types/2d-barcodes/QRCode:
         title: "QRCode"
         position: 2
-                ## End Barcode 2D-Barcodes Sub-Folders
+                ## End Barcode 2D Barcodes Sub-Folders
            ## End Barcode Supported Types Sub-Folders
         ## End Barcode Sub-Folders
     ## End Barcode

@@ -70,37 +70,41 @@ The default adapter that is used by **RadListView** is called **ListViewAdapter*
 Let's create a simple class that we will use later to populate the list:
 
 ```C#
-public class City : Java.Lang.Object {
-	public String Name { get; set; }
-	public String Country { get; set; }
+public class City : Java.Lang.Object 
+{
+    public String Name { get; set; }
+    public String Country { get; set; }
 
-	public City(String name, String country) {
-		this.Name = name;
-		this.Country = country;
-	}
+    public City(String name, String country) 
+    {
+        this.Name = name;
+        this.Country = country;
+    }
 
-	public override string ToString () {
-		return string.Format ("{0} ({1})", Name, Country);
-	}
+    public override string ToString () 
+    {
+        return string.Format ("{0} ({1})", Name, Country);
+    }
 }
 ```
 
 Now, let's create a method that will create a list of items that we can use for our list view adapter:
 
 ```C#
-private List<City> GetListOfCities() {
-	List<City> cities = new List<City> ();
-	cities.Add (new City ("London", "United Kingdom"));
-	cities.Add (new City ("Berlin", "Germany"));
-	cities.Add (new City ("Madrid", "Spain"));
-	cities.Add (new City ("Rome", "Italy"));
-	cities.Add (new City ("Paris", "France"));
-	cities.Add (new City ("Hamburg", "Germany"));
-	cities.Add (new City ("Barcelona", "Spain"));
-	cities.Add (new City ("Munich", "Germany"));
-	cities.Add (new City ("Milan", "Italy"));
-	cities.Add (new City ("Cologne", "Germany"));
-	return cities;
+private List<City> GetListOfCities() 
+{
+    List<City> cities = new List<City> ();
+    cities.Add (new City ("London", "United Kingdom"));
+    cities.Add (new City ("Berlin", "Germany"));
+    cities.Add (new City ("Madrid", "Spain"));
+    cities.Add (new City ("Rome", "Italy"));
+    cities.Add (new City ("Paris", "France"));
+    cities.Add (new City ("Hamburg", "Germany"));
+    cities.Add (new City ("Barcelona", "Spain"));
+    cities.Add (new City ("Munich", "Germany"));
+    cities.Add (new City ("Milan", "Italy"));
+    cities.Add (new City ("Cologne", "Germany"));
+    return cities;
 }
 ```
 
@@ -117,20 +121,20 @@ More often than not, you will want your list view items to include a bit more co
 Here's one way to extend the default adapter:
 
 ```C#
-public class CityAdapter : ListViewAdapter
+public class CityAdapter : Com.Telerik.Widget.List.ListViewAdapter
 {
-	public CityAdapter(IList items)
-		:base(items) {
+	public CityAdapter(IList items) : base(items) 
+	{ 
 	}
 
-	public override RecyclerView.ViewHolder OnCreateViewHolder (ViewGroup parent, int viewType)
+	public override AndroidX.RecyclerView.Widget.RecyclerView.ViewHolder OnCreateViewHolder (ViewGroup parent, int viewType)
 	{
 		LayoutInflater inflater = LayoutInflater.From(parent.Context);
 		View view = inflater.Inflate(Resource.Layout.city_list_item, parent, false);
 		return new CityViewHolder(view);
 	}
 
-	public override void OnBindListViewHolder (ListViewHolder holder, int position)
+	public override void OnBindListViewHolder (Com.Telerik.Widget.List.ListViewHolder holder, int position)
 	{
 		CityViewHolder viewHolder = (CityViewHolder)holder;
 		City city = (City)Items[position];
@@ -138,12 +142,13 @@ public class CityAdapter : ListViewAdapter
 		viewHolder.countryView.Text = city.Country;
 	}
 
-	public class CityViewHolder : ListViewHolder {
+	public class CityViewHolder : Com.Telerik.Widget.List.ListViewHolder 
+	{
 		public TextView nameView;
 		public TextView countryView;
 
-		public CityViewHolder(View itemView)
-			:base(itemView){
+		public CityViewHolder(View itemView) : base(itemView)
+		{
 
 			nameView = (TextView)itemView.FindViewById(Resource.Id.nameView);
 			countryView = (TextView)itemView.FindViewById(Resource.Id.countryView);
@@ -154,28 +159,30 @@ public class CityAdapter : ListViewAdapter
 
 The resource city_list_item that is used in the adapter is a new layout resource added in the layout directory of your project and its content is as follows:
 
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:orientation="vertical"
-		android:background="@drawable/pressable_item_background"
-		android:padding="16dp">
+```xml
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pressable_item_background"
+    android:padding="16dp">
 
-		<TextView
-			android:id="@+id/nameView"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:textSize="16sp"
-			android:textColor="#FF33B5E5" />
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#FF33B5E5" />
 
-		<TextView
-			android:id="@+id/countryView"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:textSize="14sp"
-			android:textColor="#8A000000" />
+    <TextView
+        android:id="@+id/countryView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#8A000000" />
 
-	</LinearLayout>
+</LinearLayout>
+```
 
 When you set an instance of your new adapter to the list view, it will look as the one in image from the beginning of the article:
 

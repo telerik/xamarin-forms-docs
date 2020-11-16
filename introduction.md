@@ -15,6 +15,10 @@ In addition to the numerous Xamarin.Forms controls, the suite includes Xamarin.A
  
 To learn more please visit the [Telerik UI for Xamarin](http://www.telerik.com/xamarin-ui) product overview page.
 
+{% if site.has_cta_panels == true %}
+{% include cta-panel-introduction.html %}
+{% endif %}
+
 ![Telerik UI for Xamarin](front-image.png)
 
 ### Telerik UI for Xamarin.Forms Controls

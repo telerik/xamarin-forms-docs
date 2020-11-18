@@ -80,5 +80,5 @@ Here is hot the DataGrid Template Colum could be defined. Note that inside the D
 
 Here is the result:
 
-![DataGrid Image Fill in Column](images/datagird-image-fill-columm.png "DataGrid Image Fill in Column")
+![DataGrid Image Fill in Column](images/datagird-image-fill-column.png "DataGrid Image Fill in Column")
 

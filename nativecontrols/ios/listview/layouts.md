@@ -1,6 +1,7 @@
 ---
 title: Layouts
 page_title: ListView Layouts
+slug: ios-listview-layouts
 position: 6
 ---
 
@@ -8,7 +9,7 @@ position: 6
 
 TKListView provides the same layout mechanism as UICollectionView. There are three additionally implemented layouts and you can also create your own by inheriting from UICollectionViewLayout class. However, all list view features will be available only when using a layout which inherits from TKListViewLinearLayout.
 
-By default TKListView uses `TKListViewLinearLayout` but you can easily change that with the layout property. The layouts that are implemented are:
+By default TKListView uses `Linear` layout but you can easily change that with the layout property. The layouts that are implemented are:
 
 - Linear - the default layout which orders items in a simple list.
 - Grid - lays out items in a grid.
@@ -32,7 +33,7 @@ this.listView.Layout = layout;
 this.SetSelectedOption (1, 1);
 ```
 
-Cells can be aligned (left, right, center, stretch) by setting the itemAlignment property:
+Cells can be aligned **left**, **right**, **center**, **stretch** by setting the `ItemAlignment` property:
 
 ```C#
 layout.ItemAlignment = TKListViewItemAlignment.Center;

@@ -1,12 +1,13 @@
 ---
 title: Animations
 page_title: ListView Animations
+slug: ios-listview-animations
 position: 7
 ---
 
-# ListView: Animations
+# ListView for Xamarin.iOS: Animations
 
-TKListView supports three predefined item animations: 
+TKListView supports the following predefined animations: 
 
 <table>
 
@@ -41,25 +42,17 @@ These animations can be applied when items enter different states. The following
 - when removing an item
 
 
-## Accessing the animations API
+## Accessing the Animations API
 
 The animations can be controlled from the animations-related properties of the Telerik ListView layouts. These properties are exposed at the TKListViewLinearLayout which is the base layout for the TKListViewGridLayout and TKListViewStaggeredLayout. So, in order to apply some animation settings to that layout, you can take it like this:
-
-<snippet id='listview-layout'/>
-
-<snippet id='listview-layout-swift'/>
 
 ```C#
 TKListViewLinearLayout layout = (TKListViewLinearLayout)listView.Layout;
 ```
 
-## Appear animations
+## Appear Animations
 
-Those animations are applied when scrolling the list view. You can add a scroll animation by setting the <code>itemAppearAnimation</code> property of <code>TKListViewLinearLayout</code>:
-
-<snippet id='listview-appear'/>
-
-<snippet id='listview-appear-swift'/>
+Those animations are applied when scrolling the list view. You can add a scroll animation by setting the <code>ItemAppearAnimation</code> property of <code>TKListViewLinearLayout</code>:
 
 ```C#
 layout.ItemAppearAnimation = TKListViewItemAnimation.Scale;
@@ -67,58 +60,27 @@ layout.ItemAppearAnimation = TKListViewItemAnimation.Scale;
 
 ## Add/Remove animations
 
-To animate an item on insert set the <code>itemInsertAnimation</code> property:
-
-
-<snippet id='listview-insert'/>
-
-<snippet id='listview-insert-swift'/>
+To animate an item on insert set the <code>ItemInsertAnimation</code> property:
 
 ```C#
 layout.ItemInsertAnimation = TKListViewItemAnimation.Scale;
 ```
 
-Use the <code>insertItemsAtIndexPaths:</code> method to insert an item with animation:
-
-<snippet id='listview-insert-item'/>
-
-<snippet id='listview-insert-item-swift'/>
-
-```C#
-this.listView.InsertItems (new NSIndexPath[] { NSIndexPath.FromItemSection ((nint)(this.items.Count - 1), 0) });
-```
-
-To animate an item on delete set the <code>itemDeleteAnimation</code> property:
-
-<snippet id='listview-delete'/>
-
-<snippet id='listview-delete-swift'/>
+To animate an item on delete set the <code>ItemDeleteAnimation</code> property:
 
 ```C#
 layout.ItemDeleteAnimation = TKListViewItemAnimation.Slide;
 ```
 
-Use the <code>deleteItemsAtIndexPaths:</code> method to delete an item with animation:
-
-<snippet id='listview-delete-item'/>
-
-<snippet id='listview-delete-item-swift'/>
-
-```C#
-this.listView.DeleteItems(selectedItemsPaths);
-```
-
 Be sure to update your data source before triggering item insert/delete methods in TKListView.
 
 
-## Animations duration
+## Animations Duration
 
-Animations are controlled by setting properties of <code>TKListViewLinearLayout</code> class. The animation duration is controlled by setting the <code>animationDuration</code> property:
-
-<snippet id='listview-animation-duration'/>
-
-<snippet id='listview-animation-duration-swift'/>
+Animations are controlled by setting properties of <code>TKListViewLinearLayout</code> class. The animation duration is controlled by setting the <code>AnimationDuration</code> property:
 
 ```C#
 layout.AnimationDuration = 0.4f;
 ```
+
+> A sample ListView Animations example can be found in our [Native Xamarin.iOS examples]({%slug developer-focused-examples%}#native-only-examples).

@@ -1,44 +1,34 @@
 ---
 title: Segments
 page_title: Gauges Segments
+slug: ios-gauges-segments
 position: 4
 ---
 
-# Gauges: Segments
+# Gauges for Xamarin.iOS: Segments
 
-TKGauge segment is a class representing a color range indicating a portion of the gauge with different width, radius, start and end value. 
+**TKGauge Segment** is a class representing a color range indicating a portion of the gauge with different width, radius, start and end value. 
 
 <table>
 <tr><img src="../images/gauges-segments001.png"/> </tr>
 <tr><img src="../images/gauges-segments002.png"/></tr>
 </table>
 
-Let's take a look over the segments added to a radial gauge:
-The <code>location</code> property of <code>TKGaugeSegment</code> determines how far from the center the segment will be placed. Its value could be between 0 and 1.
+You can use the following properties when applying a Segment:
 
-The width of a segment is controlled by the <code>width</code> property which can also be between 0 and 1.
+* `Location` property of <code>TKGaugeSegment</code> determines how far from the center the segment will be placed. Its value could be between 0 and 1.
 
-<snipppet id='gauge-segments'/>
+* The width of a segment is controlled by the <code>Width</code> property which can also be between 0 and 1.
 
-<snipppet id='gauge-segments-swift'/>
+* The segment has properties as <code>Fill</code> and <code>Stroke</code> that are used for customizing the look of the segment. 
 
-<snipppet id='gauge-segments-cs'/>
-
-The segment has properties as <code>fill</code> and <code>stroke</code> that are used for customizing the look of the segment. And the <code>cap</code> property determines if the ends of the segment are rounded or edgy.
-
-<snippet id='gauge-customize'/>
-
-<snippet id='gauge-customize-swift'/>
+* `Cap` property (of type *TelerikUI.TKGaugeSegmentCap*) determines if the ends of the segment are **rounded** or **edgy**.
 
 ```C#
-this.colors = new UIColor[] { 
-    new UIColor (0.00f, 0.70f, 0.90f ,1.00f),
-    new UIColor (0.38f, 0.73f, 0.00f, 1.00f),
-    new UIColor (0.96f, 0.56f, 0.00f, 1.00f),
-    new UIColor (0.00f, 1.00f, 1.00f, 1.00f),
-    new UIColor (0.77f, 1.00f, 0.00f, 1.00f),
-    new UIColor (1.00f, 0.85f, 0.00f, 1.00f)
-};
+TKGaugeSegment segment = new TKGaugeSegment (this.greenValues[i], this.greenValues[i+1]);
+segment.Fill = new TKSolidFill(this.greenColors[i]);
+segment.Location = 0.67f;
+segment.Cap = TKGaugeSegmentCap.Round;
 ```
 
-<img src="../images/gauges-segments003.png"/>
+> Sample example Segments can be found in our [Native Xamarin.iOS examples]({%slug developer-focused-examples%}#native-only-examples) Gauge Ranges demo.

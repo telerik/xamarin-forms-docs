@@ -1,17 +1,17 @@
 ---
 title: Getting Started
 page_title: Gauges Getting Started
+slug: ios-gauges-getting-started
 position: 1
 ---
 
-# Gauges: Getting Started
+# Gauges for Xamarin.iOS: Getting Started
 
 This quick start tutorial demonstrates how to create a simple gauge view with <code>TKGauge</code>.
 
+## Setting up the TKGauge
 
-## Setting up TKGauge
-
-Now that our project is created and the TelerikUI.framework is added, we can start referencing and using the TelerikUI types:
+In order to use the Telerik UI for Xamarin.iOS Gauge control you need to add the following namespace: 
 
 Open your **UIViewController* file and add a reference to the chart header file:
 
@@ -25,11 +25,9 @@ Note that starting with Xcode 6 Apple doesn't generate the precompiled headers f
 using UIKit;
 ```
 
+## Add Radial Gauge
+
 You can start by creating a <code>TKGauge</code> view object in <code>ViewDidLoad()</code> method. TelerikUI supports radial and linear type of gauge. You can instantiate TKRadialGauge by using the following lines:
-
-<snippet id='gauge-radial'/>
-
-<snippet id='gauge-radial-swift'/>
 
 ```C#
 radialGauge = new TKRadialGauge ();
@@ -37,13 +35,11 @@ this.radialGauge.Delegate = new GaugeDelegate ();
 this.View.AddSubview (this.radialGauge);
 ```
 
-TKGauge is created with flexibility in mind. There is few tipes of components - scales, segments and indicators - allowing you to fully customize the overall look and feel.
+There is few tipes of components - scales, segments and indicators - allowing you to fully customize the overall look and feel.
 
-Let's add scale to TKGauge:
+## Add Scale
 
-<snippet id='gauge-radial-scale'/>
-
-<snippet id='gauge-radial-scale-swift'/>
+Here is an example how to add scale:
 
 ```C#
 TKGaugeRadialScale scale = new TKGaugeRadialScale (new NSNumber (0), new NSNumber (6));
@@ -52,11 +48,9 @@ this.radialGauge.AddScale (scale);
 
 <img src="../images/gauges-gettingstarted001.png" />
 
+## Add Segment
+
 Now add a segment to the scale:
-
-<snippet id='gauge-segment'/>
-
-<snippet id='gauge-segment-swift'/>
 
 ```C#
 TKGaugeSegment segment = new TKGaugeSegment (new NSNumber(-10), new NSNumber(18));
@@ -68,11 +62,9 @@ segment.Cap = TKGaugeSegmentCap.Round;
 
 <img src="../images/gauges-gettingstarted002.png" />
 
+## Add Indicator
+
 Add an indicator to the scale:
-
-<snippet id='gauge-needle'/>
-
-<snippet id='gauge-needle-swift'/>
 
 ```C#
 TKGaugeNeedle needle = new TKGaugeNeedle();
@@ -87,3 +79,4 @@ scale.AddIndicator(needle);
 		
 <img src="../images/gauges-gettingstarted003.png" />
 
+> Gauge Getting Started example can be found in our [Native Xamarin.iOS examples]({%slug developer-focused-examples%}#native-only-examples).

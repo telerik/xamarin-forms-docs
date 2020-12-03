@@ -21,6 +21,12 @@ The RadListView component exposes the following events:
 * __ItemHold__ - occurs when the end user is holding on a specific item. The __ItemHold__ event handler receives two parameters:
 	* The sender argument which is of type object, but can be cast to the __RadListView__ type.
 	* An __ItemHoldEventArgs__ object which has a reference to the held item through its **Item** property.
+	
+* __RefreshRequested__ - occurs when the pull-to-refresh gesture is triggered. The __RefreshRequested__ event handler receives two parameters:
+	* The sender argument which is of type object, but can be cast to the __RadListView__ type.
+	* A __PullToRefreshRequestedEventArgs__ object which provides Cancel property used to cancel the pull-to-refresh operation.
+	
+	>tip For more details on the RefreshRequested event usage go to [Pull to Refresh]({%slug listview-features-pull-to-refresh%}) topic.
 
 ### Selection events
 
@@ -46,14 +52,14 @@ The RadListView component exposes the following events:
 	* The sender argument which is of type object, but can be cast to the __RadListView__ type.
 	* A __ReorderEndedEventArgs__ object which has a reference to the item that was reordered through its **Item** property;
 
->You could also check the events related to the cell swiping feature [here]({%slug listview-features-cell-swipe %}).	
+### Swipe Events
+
+RadListView exposes a few useful events related to the item swiping feature, namely __ItemSwipeStarting__, __ItemSwiping__ and __ItemSwipeCompleted__. For detailed information on the swiping events usage go to [Cell Swipe]({%slug listview-features-cell-swipe %}) topic.	
 	
 ## See Also
 
-[Selection]({%slug listview-features-selection%})
-
-[Grouping]({%slug listview-features-grouping%})
-
-[Reordering]({%slug listview-features-reorder-items%})
-
-
+ - [Selection]({%slug listview-features-selection%})
+ - [Grouping]({%slug listview-features-grouping%})
+ - [Reordering]({%slug listview-features-reorder-items%})
+ - [Pull to Refresh]({%slug listview-features-pull-to-refresh%})
+ - [Cell Swipe]({%slug listview-features-cell-swipe %})

@@ -77,6 +77,12 @@ public class ViewModel
 }
 ```
 
+Set thus defined ViewModel as a BindingContext of the page:
+
+```C#
+this.BindingContext = new ViewModel();
+```
+
 also you will need to add the following namespace:
 
 ```XAML

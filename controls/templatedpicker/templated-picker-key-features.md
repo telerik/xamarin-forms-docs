@@ -17,6 +17,7 @@ Its purpose is to specify a property of the source object to serve as the visual
 ## DisplayStringFormat
 
 You can choose what text to display when an item from the spinner was picked through the Picker DisplayStringFormat property.
+
 ## SelectedValue
 
 The SelectedValue property is used when you have linked your RadTemplatedPicker to a data source, and you want to return a value of type object other than the one which is displayed. 
@@ -35,17 +36,23 @@ and for the HeaderTemplate:
 
 <snippet id='templatedpicker-keyfeatures-headertemplate' />
 
-add the following Business model for the first spinner:
+add the following data item for the first spinner:
 
 <snippet id='templatedpicker-country-businessmodel' />
 
-add the following Business model for the second spinner:
+add the following data item for the second spinner:
 
 <snippet id='templatedpicker-city-businessmodel' />
 
 here is a sample definition of the ViewModel:
 
 <snippet id='templatedpicker-viewmodel' />
+
+Set thus defined ViewModel as a BindingContext of the page:
+
+```C#
+this.BindingContext = new ViewModel();
+```
 
 In addition to this, you need to add the following namespace:
 

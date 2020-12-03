@@ -73,21 +73,31 @@ Check below the appearance of the filtering component within the RadDataGrid aft
 
 ### Localization using ResourceManager
 
-The second option for applying localization is through setting a custom **ResourceManager**:
-
-<snippet id='datagrid-setting-the-custom-resource-manager-csharp'/> 
+The second option for applying localization is through setting a custom **ResourceManager**.
 
 In the same way as the built-in mechanism for localizing .NET applications uses [RESX files](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/ekyft91f(v=vs.90)) and the classes in the **System.Resources** and **System.Globalization** namespaces, Telerik Xamarin controls rely on similar setup to achieve the functionality.
 
-You should add different resource files according to the different languages/cultures which you would like to use. Next image shows an example of a custom resource file used for German:
+You should add different resource (.RESX) files according to the different languages/cultures which you would like to use. Imagine that you want to translate your control, RadDataGrid for example, into English and German. You will have to add two new resource files to your Xamarin.Forms project with **Embedded resource** Build action:
+
+* **DataGridResource.resx** - this resource file will store the English(default) resources for the DataGrid control.
+
+* **DataGridResource.de.resx** - this resource file will store the German resources for the DataGrid control. It will be automatically used when the language of the target device is set to German.
+
+Next image shows an example of a custom resource file used for German:
 
 ![custom resource file](images/datagrid_resourcesfile.png)
 
-The resource file ends with "de.resx" and is automatically used when the language of the target device is set to German.
+In order to apply the localization from the **DataGridResource** resource files, you would need to set the **ResourceManager** property of the TelerikLocalizationManager.Manager to the DataGridResource.ResourceManager: 
 
-Check below the appearance of the filtering control when the localization is applied:
+<snippet id='datagrid-setting-the-custom-resource-manager-csharp' />
+
+>important You should set the custom manager before the InitializeComponent() method is invoked otherwise the default values will be applied to the RadDataGrid.
+
+Check the appearance of the filtering control when the localization is applied:
 
 #### Figure 3: Custom Resource File for German language
 ![custom resource manager](images/datagrid_resourcemanager.png)
 
->important You can check a working example in the **DataGrid/Localization/CustomResourceManager** folder within the **SDK Samples Browser**.
+>important You can check working localization examples in the **DataGrid/Localization** folder within the [SDK Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
+>
+>You can directly explore the code in the [SDKBrowser Examples repository on GitHub](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/DataGridControl/LocalizationCategory).

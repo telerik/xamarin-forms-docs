@@ -106,6 +106,12 @@ here is a sample definition of the ViewModel:
 
 <snippet id='templatedpicker-viewmodel' />
 
+Set thus defined ViewModel as a BindingContext of the page:
+
+```C#
+this.BindingContext = new ViewModel();
+```
+
 In addition to this, you need to add the following namespace:
 
 ```XAML

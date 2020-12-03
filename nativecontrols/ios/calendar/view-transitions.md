@@ -11,7 +11,7 @@ View transitions allow for switching to the next/previous month with different a
 
 <img src="../images/calendar-view-transitions001.png"/>
 
-The available animations are: *card, flip, flow, fold, rotate, and scroll*. The default transition is *scroll*. You should access the <code>TransitionMode</code> property of the presenter class in order to customize the transition effect:
+The available animations are: *card, flip, float, fold, rotate, card and scroll*. The default transition is *scroll*. You should access the <code>TransitionMode</code> property of the presenter class in order to customize the transition effect:
 
 ```C#
 TKCalendarMonthPresenter presenter = (TKCalendarMonthPresenter)this.CalendarView.Presenter;

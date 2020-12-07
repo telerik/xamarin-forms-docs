@@ -72,6 +72,31 @@ Here is the how the Token and ShowMore Templates look:
 
 >important The Token and ShowMore Template example can be found in our [SDK Browser Application](developer-focused-examples). You can find the applications in the **Examples** folder of your local **Telerik UI for Xamarin** installation or in the following [GitHub repo](https://github.com/telerik/xamarin-forms-sdk).
 
+## Default Templates
+
+Default ItemTemplate and SelectedItemTemplate of RadComboBox provide highlighting of the matching text while searching - this is implemented through a small auxiliary control in the templates, named **RadHighlightLabel**. RadHighlightLabel exposes <code>UnformattedText</code> property that should be set to the complete text shown in the label and <code>HighlightText</code> that should be set to the highlighted part of that text.
+
+The example below shows the default ItemTemplate and SelectedItemTemplate with the RadHighlightLabel properly setup to highlight the search text coming from the RadComboBox input field.
+
+First, add the required DataTemplates inside the Resources of your page:
+
+<snippet id='combobox-default-templates-resources' />
+
+Add the required namespace:
+
+```C#
+xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+```
+
+And here is the RadComboBox definition with the defined templates referenced:
+
+<snippet id='combobox-default-templates-xaml' />
+
+Check the result in the screenshot below:
+
+![](images/combobox-default-templates.png)
+
 ## See Also
 
 - [Key Features]({%slug combobox-key-features%})

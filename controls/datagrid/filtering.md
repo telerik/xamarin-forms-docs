@@ -157,7 +157,9 @@ The image below shows where the OptionsButton is placed
 
 ### Filtering UI
 
-![Filtering UI](images/datagrid-filtering-optionsbutton.png "DataGrid Filtering UI")
+Here is how the Filtering UI looks: 
+
+![Filtering UI](images/datagrid-filtering-ui.png "DataGrid Filtering UI")
 
 The Filtering UI exposes the following property:
 

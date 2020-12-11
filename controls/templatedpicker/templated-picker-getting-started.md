@@ -73,4 +73,7 @@ This is the result:
 
 ## See Also
 
-
+- [Visual Structure]({%slug templated-picker-visual-structure%})
+- [Key Features]({%slug templated-picker-key-features%})
+- [Templates]({%slug templated-picker-templates%})
+- [Styling]({%slug templated-picker-styling%})

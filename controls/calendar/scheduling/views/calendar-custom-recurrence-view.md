@@ -6,11 +6,11 @@ position: 8
 slug: calendar-custom-recurrence-view
 ---
 
-# Scheduling UI - Custom Recurrence View
+# Custom Recurrence View
 
 CustomRecurrenceView is a view for choosing custom recurring intervals of an appointment.
 
-## Custom Recurrence View
+## Visual Structure of Custom Recurrence View
 
 ![Scheduling UI Custom Recurrence View](images/calendar-custom-recurrence-view.png)
 

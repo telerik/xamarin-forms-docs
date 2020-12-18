@@ -41,7 +41,15 @@ Either way you choose, after installing Telerik Xamarin VSExtensions, a Telerik 
 
 ## VSExtensions Options
 
-The **Visual Studio Extensions** options dialog provides settings, so you can configure the Telerik Visual Studio Extensions to best suit your needs. It can be accessed through the Telerik menu in Visual Studio (under Extensions menu item in VS2019) -> VSExtensions Options…
+The **Visual Studio Extensions** options dialog provides settings, so you can configure the Telerik Visual Studio Extensions to best suit your needs. 
+
+It can be accessed through the Telerik menu in Visual Studio (under Extensions menu item in VS2019) -> VSExtensions Options…
+
+![Telerik Menu VS](images/telerik_menu.png)
+
+or from the Visual Studio Oprions Dialod -> Tools -> Options -> Telerik
+
+![Telerik Menu in Visual Studio Options](images/telerik_menu_tools_options.png)
 
 The **Options** dialog contains two sets of options that affect the Telerik UI for Xamarin.
 

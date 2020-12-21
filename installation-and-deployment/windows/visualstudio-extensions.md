@@ -47,7 +47,7 @@ It can be accessed through the Telerik menu in Visual Studio (under Extensions m
 
 ![Telerik Menu VS](images/telerik_menu.png)
 
-or from the Visual Studio Oprions Dialod -> Tools -> Options -> Telerik
+or from the Visual Studio Options Dialog -> Tools -> Options -> Telerik
 
 ![Telerik Menu in Visual Studio Options](images/telerik_menu_tools_options.png)
 
@@ -64,9 +64,9 @@ The settings under the General category affect all of the installed **Telerik Vi
 	* **Suggest project upgrades for Telerik product version available on my computer**: When enabled, you will be prompted to upgrade upon opening a project, which is not using the latest version of Telerik UI installed on your system;
 	* **Suggest upgrades when an equal Dev release is detected on projects using a Trial**: When enabled, you will be prompted to upgrade if a licensed version of Telerik UI for Xamarin is available on your system, but the current project uses a trial version.
 
-* **Select a Folder for Downloads**: Configures the path where the extensions look for and store distributions.
+* **Download Location**: Configures the path where the extensions look for and store distributions.
 
-All settings under the Telerik UI for Xamarin category affect only the respective product.
+All settings under the Telerik UI for **Xamarin** category affect only the respective product.
 
 ![VSExtensions Xamarin Options](images/vsextensions_options_xamarin.png)
 

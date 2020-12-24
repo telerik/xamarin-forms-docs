@@ -17,43 +17,48 @@ Both classes have their default implementation so that you can simply provide a 
 
 The Event class that is used by the calendar contains the following information about an event:
 
-* **Title**: The title of the event. You can get the current value and set a new one through the methods: **getTitle()** and **setTitle(String)**.
-* **StartDate**: The time of the start of the event. You can get the current value and set a new one through the methods: **getStartDate()** and **setStartDate(long)**.
-* **EndDate**: The time of the end of the event. You can get the current value and set a new one through the methods: **getEndDate()** and **setEndDate(long)**.
-* **AllDay**: Whether this event is occurring during the whole day. You can get the current value and set a new one through the methods: **isAllDay()** and **setAllDay(boolean)**.
-* **CalendarId**: The id of the calendar that contains this event. You can get the current value and set a new one through the methods: **getCalendarId()** and **setCalendarId(int)**.
-* **EventColor**: The color of the event. You can get the current value and set a new one through the methods: **getEventColor()** and **setEventColor(int)**.
+* **Title**: The title of the event. 
+* **StartDate**: The time of the start of the event.
+* **EndDate**: The time of the end of the event.
+* **AllDay**: Whether this event is occurring during the whole day. 
+* **CalendarId**: The id of the calendar that contains this event.
+* **EventColor**: The color of the event. 
 
 The first three are mandatory and must be provided as parameters of the event's constructor. Here's a simple example of how to create an event and add it to the instance of the calendar:
 
 
 ```C#
-	Calendar calendar = Calendar.Instance;
-	calendar.Set(CalendarField.HourOfDay, 20);
-	calendar.Set(CalendarField.Minute, 0);
-	calendar.Set(CalendarField.Second, 0);
-	calendar.Set(CalendarField.Millisecond, 0);
+RadCalendarView calendarView = new RadCalendarView (Activity);
 
-	long eventStart = calendar.TimeInMillis;
+Calendar calendar = Java.Util.Calendar.Instance;
+long start = calendar.TimeInMillis;
+calendar.Add (CalendarField.Hour, 3);
+long end = calendar.TimeInMillis;
+Event newEvent = new Event ("Enjoy Life", start, end);
 
-	calendar.Add(CalendarField.Hour, 3);
-	long eventEnd = calendar.TimeInMillis;
+calendar.Add (CalendarField.Hour, 1);
+start = calendar.TimeInMillis;
+calendar.Add (CalendarField.Hour, 1);
+end = calendar.TimeInMillis;
+Event newEvent2 = new Event("Walk to work", start, end);
+newEvent2.EventColor = Android.Graphics.Color.Green;
 
-	Event event1 = new Event("Dinner with Jane", eventStart, eventEnd);
+IList<Event> events = new List<Event> ();
+events.Add (newEvent);
+events.Add (newEvent2);
 
-	List<Event> events = new List<Event>();
-	events.Add(event1);
+calendarView.EventAdapter.Events = events;
 
-	calendarView.EventAdapter.Events = events;
+return calendarView;
 ```
 
 Here's the result:
 
-![TelerikUI-Calendar-Events](images/calendar-events-1.png "This is an example of RadCalendarView with one event.")
+![TelerikUI-Calendar-Events](images/calendar-events.png "This is an example of RadCalendarView with one event.")
 
-> You need to call notifyDataChanged() when the events' information is updated.
+> You need to call NotifyDataChanged() when the events' information is updated.
 
-If you would like to present more information about the events for a certain cell when it's pressed, you can use a **RadCalendarView.OnCellClickListener** to get notified when this happens. Here's an example which demonstrates how to display more
+If you would like to present more information about the events for a certain cell when it's pressed, you can use a **RadCalendarView.SetOnCellClickListener** to get notified when this happens. Here's an example which demonstrates how to display more
 information about the event that we have just added when the user taps on the cell that contains it:
 
 
@@ -117,12 +122,16 @@ lasts longer than another, it will consume more space. Also, if time when one ev
 
 
 ```C#
-	calendarView.EventAdapter.Renderer.EventRenderMode = EventRenderMode.Shape;
+calendarView.EventAdapter.Renderer.EventRenderMode = EventRenderMode.Shape;
 ```
 
-You can get the current mode by calling the renderer's **getEventRenderMode()** method.
+and the result:
 
-If the modes provided by the default event renderer do not suit your needs, you can extend it and override its **renderEvents(Canvas, CalendarCell)** method. This method is responsible for the drawing of the event representation
+![TelerikUI-Calendar-Events](images/calendar-evets-shape.png "This is an example of RadCalendarView with one event.")
+
+You can get the current mode when set the renderer's **EventRenderMode** property.
+
+If the modes provided by the default event renderer do not suit your needs, you can extend it and override its **RenderEvents(Canvas, CalendarCell)** method. This method is responsible for the drawing of the event representation
 of the events from the cell that is the second parameter to the canvas that is the first. Here's an example which draws a circle for each of the events:
 
 
@@ -175,7 +184,7 @@ public class MyEventRenderer : EventRenderer
     }
 ```
 
-When your custom renderer is created you can set it to the **EventAdapter** by using its **setRenderer(EventRenderer)** method:
+When your custom renderer is created you can set it to the **EventAdapter** by using its **Renderer(EventRenderer)** property:
 
 
 ```C#
@@ -183,10 +192,13 @@ MyEventRenderer eventRenderer = new MyEventRenderer(Context);
 calendarView.EventAdapter.Renderer = eventRenderer;
 ```
 
+and the result:
+
+![TelerikUI-Calendar-Events](images/calendar-custom-eventshape.png "This is an example of RadCalendarView with one event.")
+
 ## Extending the events
 
 If the provided event infrastructure is not enough to suit your needs you can easily extend the **Event** type and add your own properties.
-You can also extend the **EventAdapter** class and set an instance of your adapter to the calendar by using its **setEventAdapter(EventAdapter)** method.
-However, the default event adapter should be enough for most scenarios. The events for each date are returned by **EventAdapter**'s **getEventsForDate(long)** method. The default implementation
-determines this list by each event's start date and end date, however, if you add some recurrence information to the events, you will probably want to use it when determining the list of events for a date.
-This is when extending the **EventAdapter** may be useful as you will be able to provide your custom logic for the **getEventsForDate(long)** method and take your recurrence rules into consideration.
+You can also extend the **EventAdapter** class and set an instance of your adapter to the calendar by using its **EventAdapter(EventAdapter)** method.
+However, the default event adapter should be enough for most scenarios. The default implementation determines this list by each event's start date and end date, however, if you add some recurrence information to the events, you will probably want to use it when determining the list of events for a date.
+This is when extending the **EventAdapter** may be useful as you will be able to provide your custom logic for the **GetEventsForDate(long)** method and take your recurrence rules into consideration.

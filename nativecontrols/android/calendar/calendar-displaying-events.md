@@ -1,6 +1,6 @@
 ---
 title: Displaying events
-page_title: RadCalendarView Displaying Events  | Telerik UI for Xamarin.Android Documentation
+page_title: RadCalendarView for Xamarin Android Displaying Events  | Telerik UI for Xamarin.Android Documentation
 description: A page which explains how to display the events in RadCalendarView for Android.
 slug: calendar-displaying-events
 tags: radcalendarview, calendar, events, displaying
@@ -8,7 +8,7 @@ position: 5
 publish: true
 ---
 
-## CalendarView for Xamarin.Android: Displaying events in the calendar
+# CalendarView for Xamarin.Android: Displaying events in the calendar
 
 **RadCalendarView** can be used to display the events for a single cell, that is currently selected. There are currently two ways for displaying the events, which are being set by using a single property of the calendar.
 
@@ -17,16 +17,23 @@ publish: true
 In this mode the calendar will crack open below the selected cell and will display the events as a scrollable list, which will fill the entire width of the calendar. The height will be determined by the height and the number of events, that need to be displayed. It will however be limited to the height of 4 calendar rows.
 
 ```C#
-	calendarView.EventsDisplayMode = EventsDisplayMode.Inline;
+calendarView.EventsDisplayMode = EventsDisplayMode.Inline;
 ```
+
+and the result:
+
 ![TelerikUI-Calendar-Events](images/inline-events.png "This is an example of RadCalendarView displaying inline events.")
 
 ## Popup events
+
 In this mode the events will be displayed as a popup window, which will load at most four of the cell's events inside a list view and will take place at the lower part of the cell's location.
 
 ```C#
-	calendarView.EventsDisplayMode = EventsDisplayMode.Popup;
+calendarView.EventsDisplayMode = EventsDisplayMode.Popup;
 ```
+
+and the result:
+
 ![TelerikUI-Calendar-Events](images/popup-events.png "This is an example of RadCalendarView displaying popup events.")
 
 > Please note that both modes are only available when using **Single** selection mode. An exception will be thrown otherwise.
@@ -35,29 +42,42 @@ In both modes it is valid that all scrolling will be disabled and only selection
 Switching to year display mode is possible, but the events will be closed first, and then the switching will perform.
 
 ### Displaying Events Programmatically
-You can programmatically show or hide events for a specific date/cell by using the following two methods:
-- `toggleEventsVisibilityForDate(long date)`
-- `toggleEventsVisibilityForCell(CalendarCell cell)`
 
-You can additionally check if events are shown for a specific date/cell by using the following methods:
-- `eventsForDateVisible(long date)`
-- `eventsForCellVisible(CalendarCell cell)`
+**EventsManager** class exposes the following methods for 
 
-# Customizing the display of the events
-Customization is being done using the calendar adapter for both modes. The properties for the two modes are different and are as follows:
+#### programmatically show or hide events for a specific date/cell by using the following two methods:
 
-* popupEventsWindowBackgroundColor - the background color for the events popup window;
-* inlineEventsBackgroundColor - the background color for the inline events;
-* popupEventTitleTextSize - the text size for the event title in popup mode;
-* popupEventTimeTextSize - the text size for the event time in popup mode;
-* inlineEventTitleTextSize - the text size for the event title in inline mode;
-* inlineEventTimeStartTextSize - the text size for the event start time in inline mode;
-* inlineEventTimeEndTextSize - the text size for the event end time in inline mode;
-* inlineEventTimeStartTextColor - the text color for the event start time in inline mode;
-* inlineEventTimeEndTextColor - the text color for the event end time in inline mode;
+- `ToggleEventsVisibilityForDate(long date)`
+- `ToggleEventsVisibilityForCell(CalendarCell cell)`
+
+### additionally check if events are shown for a specific date/cell by using the following methods:
+
+- `EventsForDateVisible(long date)`
+- `EventsForCellVisible(CalendarCell cell)`
+
+## Customizing the display of the events for Popup and Inline Modes
+
+Customization is being done using the calendar Adapter for both modes. The properties for the two modes are different and are as follows:
+
+* `PopupEventsWindowBackgroundColor` - the background color for the events popup window;
+* `InlineEventsBackgroundColor` - the background color for the inline events;
+* `PopupEventTitleTextSize` - the text size for the event title in popup mode;
+* `PopupEventTimeTextSize` - the text size for the event time in popup mode;
+* `InlineEventTitleTextSize` - the text size for the event title in inline mode;
+* `InlineEventTimeStartTextSize` - the text size for the event start time in inline mode;
+* `InlineEventTimeEndTextSize` - the text size for the event end time in inline mode;
+* `InlineEventTimeStartTextColor` - the text color for the event start time in inline mode;
+* `InlineEventTimeEndTextColor` - the text color for the event end time in inline mode;
+
+### Example:
+
+```C#
+calendarView.Adapter.PopupEventsWindowBackgroundColor = Color.Black;
+calendarView.Adapter.PopupEventTitleTextSize = 22.0F;
+calendarView.Adapter.PopupEventTimeTextSize = 14.0F;
+```
 
 If this is not enough, you can further customize the events by setting a new adapter which extends ArrayAdapter for the inline events. Here's an example which shows how to use a single view to show both start and end time of an event:
-
 
 ```C#
 public class MyInlineEventsAdapter : ArrayAdapter
@@ -67,7 +87,7 @@ public class MyInlineEventsAdapter : ArrayAdapter
     public MyInlineEventsAdapter(Context context)
         : base(context, Resource.Layout.custom_inline_event_layout)
     {
-        this.layoutInflater = LayoutInflater.From(context); ;
+        this.layoutInflater = LayoutInflater.From(context);
     }
 
     public override View GetView(int position, View convertView, ViewGroup parent)
@@ -152,7 +172,6 @@ calendarView.EventsManager().Adapter = adapter;
 # Handling event clicks
 
 If you need to display additional information about events, you can listen for item clicks. Here's an example to show a toast that an event is clicked:
-
 
 ```C#
 calendarView.EventsManager ().SetOnItemClickListener (new MyClickListener());

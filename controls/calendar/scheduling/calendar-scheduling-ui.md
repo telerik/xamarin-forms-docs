@@ -8,9 +8,9 @@ slug: calendar-scheduling-ui
 
 # Scheduling UI #
 
-Telerik Xamarin RadCalendar control exposes built-in UI for creation and modification of appointments, so you could provide users with the ability to directly schedule their meetings. 
+Telerik Xamarin RadCalendar control exposes built-in UI for creation and modification of appointments, so you can provide users with the ability to directly schedule their meetings. 
 
-This article gives an overview of the available scheduling screens in RadCalendar used for managing meetings.
+This article gives an overview of the available scheduling views in Calendar &amp; Scheduling control used for managing appointments.
 
 ## Overview
 
@@ -18,31 +18,43 @@ In order to allow users to create and modify appointments by tapping on a time s
 
 <snippet id='calendar-scheduling-ui' />
 
->note Please note that scheduling screens can be shown in MonthView, DayView, MultiDayView and WeekView modes. You could refer to the [View Modes]({%slug calendar-features-navigation-and-view-mode%}) topic for more information on the available in RadCalendar views. For MonthView and WeekView Modes the scheduling screens can be shown using the AddAppointmentButton. You will need to set the **IsAddAppointmentButtonVisible to True"**. 
+>note Please note the scheduling UIs can be shown in MonthView, DayView, MultiDayView and WeekView modes. You can refer to [View Modes]({%slug calendar-features-navigation-and-view-mode%}) topic for more information on the available in RadCalendar view modes. For MonthView and WeekView Modes the scheduling UIs can be shown using the AddAppointmentButton. You will need to set the **IsAddAppointmentButtonVisible to True"**. 
 
->important If you have a collection of custom appointments as a source for RadCalendar - the custom appointment class should inherit from the **Telerik.XamarinForms.Input.Appointment** class. You should also make sure to add a default constructor for the custom appointment. These requirements are needed in order to properly create appointments through Scheduling UI.
+>important If you have a collection of custom appointments as a source for RadCalendar, the custom appointment class should inherit from the **Telerik.XamarinForms.Input.Appointment** class. You should also make sure to add a default constructor for the custom appointment. These requirements are needed in order to properly create appointments through Scheduling UI.
 
-* When the end user taps on an appointment, the following screen appears, giving the option to edit or delete the appointment:
+* **Appointment Summary View**: When the end user taps on an appointment or use the AddAppointmentButton, the following screen appears, giving the option to edit or delete the appointment:
 
 ![Scheduling UI](../images/calendar_schedulingui_0.png)
 
-* Next, you could see the edit appointment screen which is displayed with pre-selected values when "Edit" from the previous screen is tapped, or with empty fields (except "Starts" and "Ends") when the user has tapped on an empty time slot in order to create a new appointment:
+* **Add Appointment View**: Next, you could see the edit appointment screen which is displayed with pre-selected values when "Edit" from the previous screen is tapped, or with empty fields (except "Starts" and "Ends") when the user has tapped on an empty time slot in order to create a new appointment:
 
 ![Scheduling UI](../images/calendar_schedulingui_1.png)
 
-* Note the "Repeats" field which is used to set a recurrence rule to the appointment. You could choose between any of the predefined recurrences or create a custom recurrence:
+* **Color Picker View**: Note the "Color" field inside Add Appointment View used to apply a color to the appointment. Users can choose between any of the predefined colors:
+
+![Scheduling UI](../images/calendar_schedulingui_8.png)
+
+* **Repeat Appointment View**: Note the "Repeats" field which is used to set a recurrence rule to the appointment. You could choose between any of the predefined recurrences or create a custom recurrence:
 
 ![Scheduling UI](../images/calendar_schedulingui_2.png)
 
-* If you're modifying a recurrent appointment, you'll be prompted whether the changes should be applied to the whole series or only to the current occurrence, thus making an exception of the recurrence rule:
+* **Custom Recurrence View**: If you choose to create a custom recurrence rule, the next screen is shown:
+
+![Scheduling UI](../images/calendar_schedulingui_6.png)
+
+* **End Repeat Appointment View**: When a recurrence rule is defined, users will have the option to choose when the recurrent appointments end:
+
+![Scheduling UI](../images/calendar_schedulingui_7.png)
+
+* **Save Recurring Appointment View**: If you're modifying a recurrent appointment, you'll be prompted whether the changes should be applied to the whole series or only to the current occurrence, thus making an exception of the recurrence rule:
 
 ![Scheduling UI](../images/calendar_schedulingui_4.png)
 
-* In order to delete an appointment, you would need to choose "Delete Event" option from the first screen shown after tapping an appointment. You would need to confirm the deletion as shown in the image below:
+* **Delete Appointment View**: In order to delete an appointment, you would need to choose "Delete Event" option from the first screen shown after tapping an appointment. You would need to confirm the deletion as shown in the image below:
 
 ![Scheduling UI](../images/calendar_schedulingui_3.png)
 
-* If you choose to delete a recurrent appointment, you'll prompted whether the deletion operation should be applied only to the current occurrence or to the whole series:
+* **Delete Recurring Appointment View**: If you choose to delete a recurrent appointment, you'll prompted whether the deletion operation should be applied only to the current occurrence or to the whole series:
 
 ![Scheduling UI](../images/calendar_schedulingui_5.png) 
 

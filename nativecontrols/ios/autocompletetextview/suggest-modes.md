@@ -4,7 +4,7 @@ page_title: AutoCompleteTextView Suggest Modes
 position: 3
 ---
 
-# AutoCompleteTextView (Beta): Suggest Modes
+# AutoCompleteTextView for Xamarin.iOS: Suggest Modes
 
 There are three suggesting modes in which <code>TKAutoCompleteTextView</code> operates: 
 
@@ -20,11 +20,7 @@ There are three suggesting modes in which <code>TKAutoCompleteTextView</code> op
 
 <img src="../images/autocomplete-suggestmodes001.png"/>
 
-The default suggesting mode is <code>TKAutoCompleteSuggestModeSuggest</code>. It can be changed through the <code>suggestMode</code> property of the <code>TKAutoCompleteTextView</code>:
-
-<snippet id='autocmp-suggest-mode'/>
-
-<snippet id='autocmp-suggest-mode-swift'/>
+The default suggesting mode is <code>TKAutoCompleteSuggestMode.Suggest</code>. It can be changed through the <code>SuggestMode</code> property of the <code>TKAutoCompleteTextView</code>:
 
 ```C#
 this.Autocomplete.SuggestMode = TKAutoCompleteSuggestMode.Suggest;

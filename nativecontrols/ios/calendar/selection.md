@@ -5,18 +5,24 @@ slug: ios-calendar-selection
 position: 6
 ---
 
-# Calendar: Selection
+# Calendar for Xamarin.iOS: Selection
 
 This article describes the different selection modes available in <code>TKCalendar</code>
 
 The selection mode in <code>TKCalendar</code> can be altered by using the <code>SelectionMode</code> property. The available options are:
 
-- <code>TKCalendarSelectionModeNode</code> - No selection is allowed.
-- <code>TKCalendarSelectionModeSingle</code> - A single date can be selected.
-- <code>TKCalendarSelectionModeMultiple</code> - Different dates can be selected by tapping on them. A second tap will deselect the date.
-- <code>TKCalendarSelectionModeRange</code> - A range between two dates on the same page can be selected.
+- <code>TKCalendarSelectionMode.Node</code> - No selection is allowed.
+- <code>TKCalendarSelectionMode.Single</code> - A single date can be selected.
+- <code>TKCalendarSelectionMode.Multiple</code> - Different dates can be selected by tapping on them. A second tap will deselect the date.
+- <code>TKCalendarSelectionMode.Range</code> - A range between two dates on the same page can be selected.
 
 <img src="../images/calendar-selection001.png" />
+
+Here is an example how to set the SelectionMode:
+
+```C#
+this.CalendarView.SelectionMode = TKCalendarSelectionMode.Range;
+```
 
 Use the <code>SelectedDate</code> property to get or set the currently selected date in <code>TKCalendar</code> when the single selection mode is used.
 

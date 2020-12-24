@@ -18,7 +18,7 @@ ComboBox has the following commands:
 
 ## Example
 
-How to scenario with selectall command 
+> Sample example where SelectAll command is used can be found in the ComboBox How-To section [ComboBox with CheckBox]({%slug combobox-checkboxes-selection%}) article.
 
 ## See Also
 

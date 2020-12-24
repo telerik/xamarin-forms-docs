@@ -10,11 +10,9 @@ publish: true
 
 ## DataForm for Xamarin.Android: Schema
 
-You can set up how each property will be edited through the [property metadata]({% slug data-form-metadata %} "Read more about the data form metadata.").
-Another way to achieve the same is through a json schema that provides the same information. This can be useful for example when editing json objects that can't be annotated with the
-**DataFormProperty** annotation. The schema can be used not only as a replacement for the annotations for defining the metadata for each property - label, 
-index, columnIndex, group, required, readOnly, skip, editor, editorParams, converter, validator, validatorParams - but also for data form properties like isReadOnly, commitMode and
-validationMode. More about each of these properties is available in the article about [metadata]({% slug data-form-metadata %} "Read more about the data form metadata.").
+You can set up how each property will be edited through the [Property Metadata]({% slug data-form-metadata %} "Read more about the data form metadata."). Another way to achieve the same is through a json schema that provides the same information. This can be useful for example when editing json objects that can't be annotated with the **DataFormProperty** annotation. 
+
+The schema can be used not only as a replacement for the annotations for defining the metadata for each property - label, index, columnIndex, group, required, readOnly, skip, editor, editorParams, converter, validator, validatorParams - but also for data form properties like IsReadOnly, CommitMode and ValidationMode. 
 
 Here's one schema example:
 
@@ -67,10 +65,9 @@ This schema can be used to edit the following object:
 	  "city": "New York"
 	}
 
-The result would be that the name property will have a header "Your name", the age property will be edited with NumberPicker(Stepper), with available range from 18 to 70. The gender will be edited with a Picker(Spinner) with 
-male and female as possible values, etc.
+The result would be that the name property will have a header "Your name", the age property will be edited with NumberPicker(Stepper), with available range from 18 to 70. The gender will be edited with a Picker(Spinner) with male and female as possible values, etc.
 
-Here's how to apply the schema to the data form:
+Here's how to apply the schema to the DataForm:
 
 
 ```C#
@@ -91,4 +88,4 @@ try {
 }
 ```
 
-The loadJSONFromAsset simply returns the content of file with given name. One sample implementation is provided in the getting started [article]({% slug data-form-getting-started %} "Read Data Form Getting Started.").
+The LoadJSONFromAsset simply returns the content of file with given name. One sample implementation is provided in the [Getting Started article]({% slug data-form-getting-started %} "Read Data Form Getting Started.").

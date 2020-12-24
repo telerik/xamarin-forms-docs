@@ -31,13 +31,15 @@ The table below lists the supported selection modes for each view mode:
 | -----------------	| -------- | ---------- | -------- | -------- |
 | Month 		   	| &#x2714; | &#x2714;	| &#x2714; | &#x2714; |
 | Day 			   	| &#x2714; | &#x2714;	| - 	   | -	   	  |
-| MultiDay 		   	| &#x2714; | &#x2714;	| -  	   | -        |
+| MultiDay 		   	| &#x2714; | -        	| -  	   | -        |
 | Agenda			| -		   | -			| - 	   | -		  |
 | Year				| -	 	   | -			| - 	   | - 		  |
 | Week				| &#x2714; | &#x2714;	| &#x2714; | &#x2714; |
 | MonthNames		| -		   | -			| -		   | -		  |
 | YearNumbers		| -		   | -			| -		   | -		  |
 | Flow				| -		   | -			| - 	   | -		  |
+
+>important MultiDay View mode does not provide support for Selection. DayView only supports Single Selection.
 
 For more details about the supported view modes for each platform, please check the [Calendar and Scheduling View Modes article]({%slug calendar-features-navigation-and-view-mode%}).
 

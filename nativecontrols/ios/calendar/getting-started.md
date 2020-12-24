@@ -1,11 +1,12 @@
 ---
 title: Getting Started
-page_title: Calendar Getting Started
+page_title: TKCalendar for Xamarin iOS Getting Started | Telerik UI for Xamarin.iOS Documentation
+description: A getting started page of TKCalendar for Xamarin iOS. This article explains what are the step to create a TKCalendar instance from scratch.
 slug: ios-calendar-getting-started
 position: 2
 ---
 
-# Calendar: Getting Started
+# TKCalendar for Xamarin.iOS: Getting Started
 
 This quick start tutorial demonstrates how to create a simple iOS application with <code>TKCalendar</code>.
 
@@ -45,9 +46,9 @@ this.View.AddSubview (calendarView);
 
 This code creates a new instance of <code>TKCalendar</code> and adds it as a subview of the ViewController's main view. The <code>AutoresizingMask</code> property is set in order to allow correct resizing of the calendar when the device is rotated in landscape mode.
 
-The next step is to create some random data that will be consumed by the calendar. You can use the following code:
+## Events
 
-<snippet id='getting-started-event'/>
+The next step is to create some random data that will be consumed by the calendar. You can use the following code:
 
 ```C#
 events = new List<TKCalendarEvent> ();
@@ -72,19 +73,11 @@ This code will add 10 events with random dates to an array named <code>events</c
 
 Now let's add this random data to the calendar and present it. In order to do this, we should first adopt the <code>TKCalendarDataSource</code> protocol:
 
-<snippet id='getting-started-datasource'/>
-
-<snippet id='getting-started-datasource-swift'/>
-
 ```C#
 class CalendarDataSource : TKCalendarDataSource
 ```
 
-And we should implement its <code>calendar:eventsForDate:</code> method:
-
-<snippet id='getting-started-eventsfordate'/>
-
-<snippet id='getting-started-eventsfordate-swift'/>
+And we should implement its <code>EventsForDate:</code> method:
 
 ```C#
 public TKCalendarEventProtocol[] EventsForDate (TKCalendar calendar, NSDate date)
@@ -106,9 +99,7 @@ public TKCalendarEventProtocol[] EventsForDate (TKCalendar calendar, NSDate date
 }
 ```
 
-Here, the predicate is used to filter the events array by date. Do not forget to assign the <code>dataSource</code> property of <code>TKCalendar</code>:
-
-<snippet id='getting-started-assigndatasource'/>
+Here, the predicate is used to filter the events array by date. Do not forget to assign the <code>DataSource</code> property of <code>TKCalendar</code>:
 
 ```C#
 calendarView.DataSource = new CalendarDataSource (this);
@@ -116,21 +107,18 @@ calendarView.DataSource = new CalendarDataSource (this);
 
 For information about populating <code>TKCalendar</code> with EventKit events, please refer to the following article: [Populating with data](populating-with-data)
 
-As a next step you may want to tune up the calendar more precisely by specifying minimum and maximum allowed dates. This can be done by setting the <code>minDate</code> and <code>maxDate</code> properties:
+## Calendar MinDate and MaxDate
 
-<snippet id='getting-started-minmaxdate'/>
-
-<snippet id='getting-started-minmaxdate-swift'/>
+As a next step you may want to tune up the calendar more precisely by specifying minimum and maximum allowed dates. This can be done by setting the <code>MinDate</code> and <code>MaxDate</code> properties:
 
 ```C#
 calendarView.MinDate = TKCalendar.DateWithYear (2010, 1, 1, calendar);
 calendarView.MaxDate = TKCalendar.DateWithYear (2016, 12, 31, calendar);
 ```
 
-By default, <code>TKCalendar</code> displays the current date, use the <code>navigateToDate:animated</code> method to display a different date:
+## NavigateToDate 
 
-<snippet id='getting-started-navigatetodate'/>
-
+By default, <code>TKCalendar</code> displays the current date, use the <code>NavigateToDate</code> method to display a different date:
 
 ```C#
 NSDateComponents newComponents = new NSDateComponents();
@@ -141,11 +129,9 @@ NSDate newDate = calendarView.Calendar.DateFromComponents (newComponents);
 calendarView.NavigateToDate (newDate, true);
 ```
 
-<code>TKCalendar</code> sends different notifications. For example, in order to be notified when a date was selected, override the <code>calendar:didSelectDate:</code> method of <code>TKCalendarDelegate</code> protocol:
+## Notification when date is selected
 
-<snippet id='getting-started-didselectdate'/>
-
-<snippet id='getting-started-didselectdate-swift'/>
+<code>TKCalendar</code> sends different notifications. For example, in order to be notified when a date was selected, override the <code>DidSelectDate</code> method of <code>TKCalendarDelegate</code> protocol:
 
 ```C#
 class CalendarDelegate : TKCalendarDelegate
@@ -157,15 +143,13 @@ class CalendarDelegate : TKCalendarDelegate
 }
 ```
 
+## Selection Modes
+
 Note that <code>TKCalendar</code> supports single, multiple and range date selection. Selection modes are described in detail in the article about [Selection](selection).
 
 Along with selection notifications <code>TKCalendar</code> supports navigation and customization notifications by adopting the <code>TKCalendarDelegate</code> protocol. These notifications are described in the articles about: [Navigation](navigation) and [Customizations](customizations).
 
 Here is the full code of this example:
-
-<snippet id='getting-started-example'/>
-
-<snippet id='getting-started-example-swift'/>
 
 ```C#
     public class CalendarDocsWithSimpleEvent : XamarinExampleViewController
@@ -266,9 +250,9 @@ Here is the full code of this example:
 }
 ```
 
-You can easily change the way data is presented in chart by changing the view mode property:
+## Change Calendar View Mode
 
-<snippet id='getting-started-viewmodeyear'/>
+You can easily change the way data is presented in chart by changing the view mode property:
 
 ```C#
 this.CalendarView.ViewMode = TKCalendarViewMode.Year;

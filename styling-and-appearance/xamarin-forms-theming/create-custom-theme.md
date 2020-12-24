@@ -125,6 +125,14 @@ The default resources are located in the **Telerik.XamarinForms.Common** assembl
     <!-- ImageEditor -->
     <Color x:Key="TelerikImageEditorToolbarItemTextColor">#3148CA</Color>
 
+    <!-- RichTextEditor -->
+    <Color x:Key="TelerikRichTextEditorToolbarBackgroundColor">#F7F7F7</Color>
+    <Color x:Key="TelerikRichTextEditorToolbarItemTextColor">#3148CA</Color>
+    <Color x:Key="TelerikRichTextEditorToolbarItemSelectedBackgroundColor">#3148CA</Color>
+    <Color x:Key="TelerikRichTextEditorPickerToolbarItemPopupBackgroundColor">#F7F7F7</Color>
+    <Color x:Key="TelerikRichTextEditorColorToolbarItemPopupBackgroundColor">#F7F7F7</Color>
+    <Color x:Key="TelerikRichTextEditorHyperlinkPopupContentViewButtonTextColor">#3148CA</Color>
+
     <!-- Rating -->
     <Color x:Key="TelerikRatingControlAccentColor">#3148CA</Color>
 
@@ -146,6 +154,10 @@ The default resources are located in the **Telerik.XamarinForms.Common** assembl
     <Color x:Key="TelerikTimePickerSelectedBorderColor">#3148CA</Color>
     <Color x:Key="TelerikTimePickerSelectedTextColor">#3148CA</Color>
 
+    <!-- Toolbar -->
+    <Color x:Key="TelerikBackToolbarItemTextColor">#3148CA</Color>
+    <Color x:Key="TelerikToolbarItemTextColor">#3148CA</Color>
+
     <!-- TreeView -->
     <Color x:Key="TelerikTreeViewCheckBoxCheckedColor">#3148CA</Color>
     <Color x:Key="TelerikTreeViewCheckBoxCheckedSymbolColor">White</Color>
@@ -154,6 +166,14 @@ The default resources are located in the **Telerik.XamarinForms.Common** assembl
     <Color x:Key="TelerikTreeViewCheckBoxUncheckedColor">#919191</Color>
     <Color x:Key="TelerikTreeViewItemTextTextColor">Black</Color>
     <Color x:Key="TelerikTreeViewExpandCollapseIndicatorTextColor">#3148CA</Color>
+
+    <!-- Pickers -->
+    <Color x:Key="TelerikPickerPopupButtonTextColor">#3148CA</Color>
+    <Color x:Key="TelerikPickerTabStripItemSelectedColor">#3148CA</Color>
+
+    <!-- ComboBox -->
+    <Color x:Key="TelerikComboBoxHightlightTextColor">#3148CA</Color>
+    <Color x:Key="TelerikComboBoxBorderColor">#3148CA</Color>
 </ResourceDictionary>
 ```
 
@@ -215,7 +235,8 @@ Another possibility is to create your own **ResourceDictionary** and merge it in
 <ResourceDictionary ...>
 </ResourceDictionary>
 ```
-3. Change the base type in the code behind from `ContentPage` to `ResourceDictionary`:
+
+	3. Change the base type in the code behind from `ContentPage` to `ResourceDictionary`:
 
 ```csharp
 // Set base type to ResourceDictionary
@@ -228,7 +249,7 @@ public partial class MyTheme : ResourceDictionary
 }
 ```
 
-4. Add the Telerik Blue theme resources
+	4. Add the Telerik Blue theme resources
 
 ```xml
 <ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
@@ -370,9 +391,9 @@ public partial class MyTheme : ResourceDictionary
     <Color x:Key="TelerikTreeViewExpandCollapseIndicatorTextColor">#3148CA</Color>
 </ResourceDictionary>
 ```
-
-5. Customize those color values with the ones you prefer for your theme.
-6. Open **App.xaml** and replace BlueResources with your newly created one.
+	
+	5. Customize those color values with the ones you prefer for your theme.
+	6. Open **App.xaml** and replace BlueResources with your newly created one.
 
 See the comment in the following example. Notice that `portable:MyTheme` has replaced `telerikCommon:BlueResources` in the MergedDictionaries list.
 
@@ -405,6 +426,14 @@ See the comment in the following example. Notice that `portable:MyTheme` has rep
         </ResourceDictionary>
 	</Application.Resources>
 </Application>
+```
+
+	7. Set StyleClass on Control Level
+
+Once you have merged all the required dictionaries, you need to set the **StyleClass** property of the control's instance whose theme you would like to modify. The example below shows how to achieve this on a **RadListView** control:
+
+```XAML
+<telerikDataControls:RadListView x:Name="list" StyleClass="TelerikTheme"/>
 ```
 
 >important In case you need to modify the default resources of the TelerikTheme for the **RadDataForm** control, please refer to the following article - [DataForm: Modifying TelerikTheme resources]({%slug dataform-howto-modify-theme-resources%})

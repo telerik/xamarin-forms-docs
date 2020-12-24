@@ -1,5 +1,3 @@
-Portable\Telerik.Documents.SpreadsheetStreaming.dll
-Portable\Telerik.Documents.Spreadsheet.dll
 Portable\Telerik.XamarinForms.Barcode.dll
 Portable\Telerik.XamarinForms.Barcode.xml
 Portable\Telerik.XamarinForms.ConversationalUI.dll
@@ -35,8 +33,3 @@ Android\Telerik.Xamarin.Android.Gauges.dll
 Android\Telerik.Xamarin.Android.Input.dll
 Android\Telerik.Xamarin.Android.List.dll
 Android\Telerik.Xamarin.Android.Primitives.dll
-UWP\Telerik.Data.dll
-UWP\Telerik.UI.Xaml.Chart.UWP.dll
-UWP\Telerik.UI.Xaml.Controls.Data.UWP.dll
-UWP\Telerik.UI.Xaml.Input.UWP.dll
-UWP\Telerik.UI.Xaml.Primitives.UWP.dll

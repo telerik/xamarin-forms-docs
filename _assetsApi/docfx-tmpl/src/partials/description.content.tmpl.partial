@@ -1,1 +1,1 @@
-﻿Full list and descriptions of all public available classes, methods and properties of the Telerik UI for Xamarin product. Check our Xamarin.Forms API Reference documentation
+﻿Learn how to use {{#title}}{{title}}{{/title}}{{^title}}{{>partials/title}}{{/title}} {{#_appTitle}}| {{_appTitle}} {{/_appTitle}}. Read more in Telerik UI for Xamarin complete API reference documentation.

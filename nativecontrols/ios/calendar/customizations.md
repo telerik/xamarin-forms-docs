@@ -5,9 +5,11 @@ slug: ios-calendar-customization
 position: 8
 ---
 
-# Calendar: Customizations
+# Calendar for Xamarin.iOS: Customizations
 
 <img src="../images/calendar-customization001.png"/>
+
+## Customize the visual appearance
 
 <code>TKCalendar</code> allows customizing almost evety aspect of its visual appearance. This article demonstrates some of the customization techniques that can be used with it.
 
@@ -15,11 +17,7 @@ position: 8
 - <code>TKCalendarDefaultTheme</code> - a default theme
 - <code>TKCalendarIPadTheme</code> - a theme designed for iPad
 
-You can switch between themes by usig the <code>theme</code> property:
-
-<snippet id='customization-theme'/>
-
-<snippet id='customization-theme-swift'/>
+You can switch between themes by usig the <code>Theme</code> property:
 
 ```C#
 TKCalendar calendar = new TKCalendar (this.View.Bounds);
@@ -29,10 +27,6 @@ this.View.AddSubview (calendar);
 ```
 
 <code>TKCalendar</code> uses presenter classes to render different view modes. They all inherit from <code>UIView</code> and contain subviews with settings that can be changed. Most useful settings are grouped in a style property in the presenter class:
-
-<snippet id='customization-presenter'/>
-
-<snippet id='customization-presenter-swift'/>
 
 ```C#
 TKCalendarMonthPresenter presenter = (TKCalendarMonthPresenter)calendar.Presenter;
@@ -44,8 +38,6 @@ presenter.Update (false);
 ```
 
 There are cases when specific cells must have custom design based on the cell state (e.g. today, weekend, selected). This can be dobe by adopging the <code>TKCalendarDelegate</code> protocol and implementing its <code>UpateVisualsForCell</code> method:
-
-<snippet id='customization-updatevisualcell'/>
 
 ```C#
 public override void UpdateVisualsForCell (TKCalendar calendar, TKCalendarCell cell)
@@ -104,3 +96,7 @@ public class DocsCustomCell : TKCalendarDayCell
 The result is presented below:
 
 <img src="../images/calendar-customization002.png"/>
+
+## Examples
+
+>tip Sample Customization TKCalendar example can be found in our native [Xamarin.iOS Examples/Calendar folder]({%slug developer-focused-examples%}#native-only-examples).

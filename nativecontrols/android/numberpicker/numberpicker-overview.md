@@ -8,7 +8,7 @@ position: 0
 publish: true
 ---
 
-## NumberPicker for Xamarin.Android: Overview
+# NumberPicker for Xamarin.Android: Overview
 
 **RadNumberPicker** for Xamarin.Android is a customizable input control for numeric data. It allows the user to set or edit a number using the decrease and increase buttons or directly enter it in the input field.
 

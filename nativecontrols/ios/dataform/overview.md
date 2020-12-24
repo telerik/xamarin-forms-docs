@@ -1,11 +1,13 @@
 ---
 title: Overview
+page_title: RadDataForm Overview  | Telerik UI for Xamarin.iOS Documentation
+description: An overview page of RadDataForm for Xamarin.iOS. This article explains the most important things you need to know before using RadDataForm.
 position: .1
 ---
 
-# DataForm: Overview
+# DataForm for Xamarin.iOS: Overview
 
-DataForm for iOS is customizable component that allows you to easily create a form for collecting or editing business object data. It is ideal for settings or registration/login pages. TKDataForm supports different commit modes allowing you to commit property values one by one or commit the whole form at once. You could also determine at what moment the properties should be validated choosing between three validation modes. The control lets you use rich set of editors out of the box.
+RadDataForm for Xamarin.iOS is a customizable component that allows you to easily create a form for collecting or editing business object data. It is ideal for settings or registration/login pages. TKDataForm supports different commit modes allowing you to commit property values one by one or commit the whole form at once. You can also determine at what moment the properties should be validated choosing between three validation modes. The control lets you use rich set of editors out of the box.
 
 <img src="../images/dataform-overview001.png" />
 
@@ -19,6 +21,8 @@ DataForm for iOS is customizable component that allows you to easily create a fo
 - DatePicker
 - PickerView
 - Options
+
+For more information on this go to [Editors](/devtools/xamarin/nativecontrols/ios/dataform/editors) topic.
 
 **Commit and validation modes**
 

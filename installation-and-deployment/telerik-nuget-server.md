@@ -77,20 +77,41 @@ Once the server is added users will be able to add to their projects any of the 
 
 ## Troubleshooting
 
-#### '401 Logon failed' error
+### '401 Logon failed' error
 
 If you're receiving this error when connecting to Telerik Nuget Server, you could try to update your NuGet credentials through the Windows Credential Manager. Please follow the steps below:
 
-1. Close all open Visual Studio instances (this is so that all NuGet package manager tasks are stopped);
-1. Open the "Credential Manager" app on your PC;
-1. Scroll through all the entries until you find any that are for nuget.telerik.com;
-1. Once you find that entry, expand it and select "edit";
-1. Make sure the username and password are the same ones you use for your Telerik account (use the Email in the place of username) and click "Save".
-1. Make sure the URL does not have a trailing slash, it must be only `https://nuget.telerik.com/nuget`
+1. Close all open Visual Studio instances (this is so that all NuGet package manager tasks are stopped).
+2. Open the "Credential Manager" app on your PC.
+3. Scroll through all the entries until you find any that are for nuget.telerik.com.
+4. Once you find that entry, expand it and select "edit".
+5. Make sure the username and password are the same ones you use for your Telerik account and clisk
+    1. Use the email address in the place of username
+    2. Make sure any special characters are escaped (see *Handling Special Characters in Password* below)
+    3. Click "Save" 
+6. Make sure the URL does not have a trailing slash, it must be only `https://nuget.telerik.com/nuget`
 
 Now you can reopen Visual Studio and access the Telerik NuGet server. 
 
-#### Networking Problems
+#### Handling Special Characters in Password
+
+If your password contains a special character, those characters need to be escaped or it may fail authentication resulting in *Error 401 login failure* from the NuGet server. A common character that needs to be escaped is the ampersand `&`, but it can be as unique as the section character `§`. There are two ways to handle this.
+
+1. Change the password so that it only includes characters that do not need to be escaped
+2. HTML encode the password so the special characters are escaped (e.g. `my§uper&P@§§word` becomes `my&sect;uper&amp;P@&sect;&sect;word`).
+
+We **strongly** discourage entering your password into an online encoder utility, use Powershell instead. Here's one example:
+
+```
+Add-Type -AssemblyName System.Web
+[System.Web.HttpUtility]::HtmlEncode('my§uper&P@§§word')
+```
+
+Result:
+
+![Powershell Encoding](https://user-images.githubusercontent.com/3520532/93901989-13d98200-fcc5-11ea-9d36-0eaee4272453.png)
+
+### Networking Problems
 
 Another common problem is that your machine (PC or DevOps agent) is behind a proxy. To check if you're experiencing a networking issue, open the following URL in your web browser:
 

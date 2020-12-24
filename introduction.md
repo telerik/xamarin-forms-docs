@@ -15,65 +15,9 @@ In addition to the numerous Xamarin.Forms controls, the suite includes Xamarin.A
  
 To learn more please visit the [Telerik UI for Xamarin](http://www.telerik.com/xamarin-ui) product overview page.
 
-<style>
-/* Xamarin download trial button */
-div#xamarin_trial {
-	text-align: center !important;
-}
-
-div#xamarin_trial .xamarin_download_btn {	
-	color: #fff;
-	background-color: #e74b3c;
-	padding:.44em .9em .52em;
-	font-size: 20px;
-	font-weight:400;
-	letter-spacing:-.025em;
-	position:relative;
-	display:inline-block;
-	line-height:1.2;
-	-webkit-transition:color .2s ease,background-color .2s ease;
-	transition:color .2s ease,background-color .2s ease;
-	border-radius:2px;
-	-webkit-appearance:none;
-	font-family:Metric,Arial,Gadget,sans-serif;
-	text-align:center	
-}
-</style>
-
-<script type="text/javascript">
-
-function ready(callback){
-    // in case the document is already rendered
-    if (document.readyState!='loading') callback();
-    // modern browsers
-    else if (document.addEventListener) document.addEventListener('DOMContentLoaded', callback);
-    // IE <= 8
-    else document.attachEvent('onreadystatechange', function(){
-        if (document.readyState=='complete') callback();
-    });
-}
-
-ready(function(){
-	  var mac = navigator.userAgent.match(/(Mac)/i);
-	  var btnWin = document.getElementById("js-btnWin");
-	  var btnOSX = document.getElementById("js-btnOSX");
-
-	  if (mac) {	  
-		btnOSX.style.display = "inline-block";
-		btnWin.style.display = "none";
-	  } else {
-		btnOSX.style.display = "none";
-		btnWin.style.display = "inline-block";
-	  }
-});
-
-</script>
-
-<div id="xamarin_trial">
-<br />
-<a id="js-btnWin" href="https://www.telerik.com/download-trial-file/v2-b/ui-for-xamarin" class="xamarin_download_btn js-btnWin" style="display: none">Download Free Trial</a>
-<a id="js-btnOSX" href="https://www.telerik.com/download-trial-file/v2-b/ui-for-xamarin?file=pkg" class="xamarin_download_btn js-btnOSX" style="display: none">Download Free Trial</a>
-</div>
+{% if site.has_cta_panels == true %}
+{% include cta-panel-introduction.html %}
+{% endif %}
 
 ![Telerik UI for Xamarin](front-image.png)
 

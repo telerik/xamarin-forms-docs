@@ -23,25 +23,25 @@ You can define styles that are applied to all cells that meet a certain critiria
 
 Here are the methods for the **CalendarDayCellFilter** which allow you to filter the cells that use a certain style:
 
-* **setCellType** - to apply style to dates, dayNames, weekNumbers or titles; default is `Date`
-* **setIsSelected** - to apply style only to cells which are selected
-* **setIsFromCurrentMonth** - to apply style only to cells from the current month and not to the visible cells from the previous and the next months
-* **setIsToday** - to apply the style only to the today cell
-* **setIsWeekend** - to apply the style only to cells used to display Saturdays and Sundays
-* **setCustom** - if none of the above works for you, you can add a custom function which based on a passed cell, returns true or false, depending on whether the cell should be customized.
+* **CellType** - to apply style to dates, dayNames, weekNumbers or titles; default is `Date`
+* **IsSelected** - to apply style only to cells which are selected
+* **IsFromCurrentMonth** - to apply style only to cells from the current month and not to the visible cells from the previous and the next months
+* **IsToday** - to apply the style only to the today cell
+* **IsWeekend** - to apply the style only to cells used to display Saturdays and Sundays
+* **Custom** - if none of the above works for you, you can add a custom function which based on a passed cell, returns true or false, depending on whether the cell should be customized.
 
 And here's what you can customize with a CalendarDayCellStyle:
 
-* **setBorderColor**
-* **setBorderWidth**
-* **setBackgroundColor**
-* **setTextColor**
-* **setTextSize**
-* **setFontStyle** - must be one of: Typeface.NORMAL, Typeface.BOLD, Typeface.ITALIC, Typeface.BOLD_ITALIC
-* **setFontName** - must be one of: sans-serif, sans-serif-light, sans-serif-condensed, sans-serif-thin, sans-serif-medium
-* **setPaddingHorizontal**
-* **setPaddingVertical**
-* **setTextPosition** - must be one of or a combination of: CalendarElement.TOP, CalendarElement.BOTTOM, CalendarElement.CENTER_VERTICAL, CalendarElement.LEFT, CalendarElement.RIGHT, CalendarElement.CENTER_HORIZONTAL
+* **BorderColor**
+* **BorderWidth**
+* **BackgroundColor**
+* **TextColor**
+* **TextSize**
+* **FontStyle** - must be one of: Typeface.NORMAL, Typeface.BOLD, Typeface.ITALIC, Typeface.BOLD_ITALIC
+* **FontName** - must be one of: sans-serif, sans-serif-light, sans-serif-condensed, sans-serif-thin, sans-serif-medium
+* **PaddingHorizontal**
+* **PaddingVertical**
+* **TextPosition** - must be one of or a combination of: CalendarElement.AlignTop, CalendarElement.AlignBottom, CalendarElement.Center, CalendarElement.AlignLeft, CalendarElement.AlignRight, CalendarElement.CenterHorizontal, CalendarElement.CenterVertical
 
 Here's an example that changes the text color for weekends to `RED` and the border for today to `GREEN`, 4 dps wide:
 
@@ -74,18 +74,17 @@ Similarly, you can use **CalendarMonthCellStyle** and **CalendarMonthCellFilter*
 
 While the styles for the month cells are very similar to the day cell style, the filtering differs in order to allow you to change color, size and/or fonts for a specific text inside the month cell. Here are the filtering options for **CalendarMonthCellFilter**:
 
-* **setTextIsDate** - to apply the style only to the text of the dates
-* **setTextIsDayName** - to apply the style only to the text of the day names
-* **setTextIsMonthName** - to apply the style only to the text of the month names
-* **setTextIsToday** - to apply the style only to the text of the date that is today
-* **setTextIsWeekend** - to apply the style only to the text of the weekends (saturday and sunday)
-* **setMonthIsCurrent** - to apply the style only to the cell that holds the current month
-* **setMonthIsCompact** - to apply special style to cells when year mode of the calendar is compact
-* **setMonthIsCustomDate** - in none of the above fits your needs, you can add a custom function so that based on the value of the month returns true or false to determine whether the style should be applied
-* **setTextIsCustomDate** - similar to the previous but can be used for the text of specific dates
+* **TextIsDate** - to apply the style only to the text of the dates
+* **TextIsDayName** - to apply the style only to the text of the day names
+* **TextIsMonthName** - to apply the style only to the text of the month names
+* **TextIsToday** - to apply the style only to the text of the date that is today
+* **TextIsWeekend** - to apply the style only to the text of the weekends (saturday and sunday)
+* **MonthIsCurrent** - to apply the style only to the cell that holds the current month
+* **MonthIsCompact** - to apply special style to cells when year mode of the calendar is compact
+* **MonthIsCustomDate** - in none of the above fits your needs, you can add a custom function so that based on the value of the month returns true or false to determine whether the style should be applied
+* **TextIsCustomDate** - similar to the previous but can be used for the text of specific dates
 
 Here's an example that changes the text color of the month names for all month cells to `BLUE`:
-
 
 ```C#
 CalendarMonthCellFilter monthCellTitleFilter = new CalendarMonthCellFilter();
@@ -105,14 +104,14 @@ And this is the result:
 ### Defining set of customization rules
 
 You can define a customization rule which contains a list of operations that should be performed on a calendar cell if it meets certain requirements and apply it to the calendar
-through the method **setCustomizationRule(Procedure<CalendarCell>)**. For example, if we want to mark a specific important date with custom background,
+through the method **CustomizationRule(Procedure<CalendarCell>)**. For example, if we want to mark a specific important date with custom background,
 here's how we can do it:
 
 
 ```C#
-    Calendar calendar = Calendar.GetInstance(Java.Util.TimeZone.Default);
-    calendarView.CustomizationRule = new CustomizationRuleExample ();
-    // ...
+Calendar calendar = Calendar.GetInstance(Java.Util.TimeZone.Default);
+calendarView.CustomizationRule = new CustomizationRuleExample ();
+// ...
 
 class CustomizationRuleExample : Java.Lang.Object, IProcedure
 {
@@ -142,7 +141,7 @@ This example changes the background of the cell which contains the 21st day of t
 
 ### Changing the color of a date
 
-If the required change for marking a cell as special is simply changing the text color you can use the method **setDateToColor(Function<Long, Integer>)** to define a color that is used for a date. Here's an example, which marks
+If the required change for marking a cell as special is simply changing the text color you can use the method **DateToColor(Function<Long, Integer>)** to define a color that is used for a date. Here's an example, which marks
 all Sundays in Red:
 
 
@@ -174,33 +173,31 @@ When the returned value is *null* the default value is used:
 
 ### Title and DayNames
 
-The Week and the Month views of **RadCalendarView** contain three visual elements: title, a row with the names of the days and the actual dates from the month. The Year view contains two elements: title and months. You can disable the title that is presented in all of the modes by using the **setShowTitle(boolean)** method and check the current state by using **getShowTitle()**. 
+The Week and the Month views of **RadCalendarView** contain three visual elements: title, a row with the names of the days and the actual dates from the month. The Year view contains two elements: title and months. 
 
-Similarly you can remove the row with the names of the days which is present in both week and month views by using **setShowDayNames(boolean)**. You can get a value which represents whether the day names are shown by calling the method **getShowDayNames()**.
+* disable the title that is presented in all of the modes by using the **ShowTitle(boolean)** property 
 
-You can also use XML attributes for setting whether the title and the day names are visible. Their names are **showTitle** and **showDayNames**.
+* remove the row with the names of the days which is present in both week and month views by using **ShowDayNames(boolean)**. 
+
+* setting whether the title and the day names are visible. Their names are **ShowTitle** and **ShowDayNames**.
 
 ### Grid Lines
 
-Another visual element of **RadCalendarView** is the layer which is responsible for drawing grid lines. You can easily remove the grid lines by using the method **setShowGridLines(boolean)** and get the current state with **getShowGridLines()**. 
+Another visual element of **RadCalendarView** is the layer which is responsible for drawing grid lines. You can easily remove the grid lines by using the method **ShowGridLines(boolean)**.
 
-The XML attribute which can be used to control whether the grid lines are visible is **showGridLines**. The default **GridLinesLayer** provides method for changing the color that is used for the grid lines, as well as their width. These methods are **setColor(int)** and **setStrokeWidth(float)**.
-
-These methods are implemented in the layer, whose instance you can take with calendar's **getGridLinesLayer()**. This means that this way you can change the lines to `Green`, for example:
+The XML attribute which can be used to control whether the grid lines are visible is **ShowGridLines**. The default **GridLinesLayer** provides method for changing the color that is used for the grid lines, as well as their width. These methods are **Color(int)** and **Width(float)**.
 
 ```C#
 calendarView.GridLinesLayer.Color = Color.Green;
 ```
 
-If you are not happy with the default implementation of this layer, you can create your own layer which extends **GridLinesLayer** and override its methods. After you create your implementation, you can set an instance of your layer to the calendar by using its **setGridLinesLayer(GridLineLayer)** method.
+If you are not happy with the default implementation of this layer, you can create your own layer which extends **GridLinesLayer** and override its methods. 
 
 ### Cell Decorations
 
 When a cell in **RadCalendarView** is selected it can get additional decoration. This decoration is provided by the **CellDecorationLayer**. The default implementation provides a border around the cells that are selected.
 
-You can easily remove this decoration by using calendar's **setShowCellDecorations(boolean)** or check the current state through **getShowCellDecorations()**.
-
-The XML attribute which can be used to control whether the grid lines are visible is **showCellDecorations**. You can also easily change the color or the width of the decorations with **CellDecorationLayer**'s **setColor(int)** and **setStrokeWidth(float)**.
+You can easily remove this decoration by using calendar's **ShowCellDecorations(boolean)**. You can also easily change the color or the width of the decorations with **CellDecorationLayer**'s **setColor(int)** and **setStrokeWidth(float)**.
 
 Here's how you can change the decorations around the selected cells to `Green`, for example:
 
@@ -212,10 +209,8 @@ You can see a custom implementation of the decoration layer in our <a href="http
 
 ![TelerikUI-Calendar-Custom-Decorations](images/calendar-customizations-5.png "This is how you can modify the decorations in RadCalendarView.")
 
-It is achieved by creating a new decorations layer which extends **CellDecorationLayer** and overrides its methods: **addDecorationForCell(int,int,int,int)**, **removeDecorationForCell(int,int,int,int)** and **render(Canvas)**. An instance of the new implementation is applied to the calendar by using its **setDecorationLayer(CellDecorationLayer)** method.
-
 ## Further customizations
 
-For more sophisticated customizations and scenarios it is recommended to use the calendar adapter, which can be obtained by calling **getAdapter()** method if the calendar. It provides various customization features, that can be applied and preserved over the recreation of the calendar. 
+For more sophisticated customizations and scenarios it is recommended to use the calendar adapter, which can be obtained by using the **Adapter** property. It provides various customization features, that can be applied and preserved over the recreation of the calendar. 
 
 Customizations applied by using the adapter will be stored in the current calendar style and will not be lost after calendar recreation, for example when switching between display modes.

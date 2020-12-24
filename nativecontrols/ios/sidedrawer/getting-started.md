@@ -1,15 +1,15 @@
 ---
 title: Getting Started
 page_title: SideDrawer Getting Started
+sliug: ios-sidedrawer-getting-started
 position: 2
 ---
 
-# SideDrawer: Getting Started
+# SideDrawer for Xamarin.iOS: Getting Started
 
 This quick start tutorial demonstrates how to create a simple iOS application with <code>TKSideDrawer</code>.
 
 <img src="../images/sidedrawer-gettingstarted001.png"/>
-
 
 ## Setting up TKSideDrawer with TKSideDrawerController
 
@@ -29,8 +29,6 @@ using UIKit;
 
 Type the following code in your <code>AppDelegate</code> implementation class inside the <code>FinishedLaunching</code> method:
 
-<snippet id='sidedrawer-appdelegate'/>
-<snippet id='sidedrawer-appdelegate-swift'/>
 ```C#
 [Register ("AppDelegate")]
 public partial class AppDelegate : UIApplicationDelegate
@@ -63,8 +61,6 @@ Or, instead of using the <code>sideDrawer</code> property, you can call the <cod
 
 Type the following code in the <code>viewDidLoad</code> method of the content controller:
 
-<snippet id='sidedrawer-appdelegate-ctrl'/>
-<snippet id='sidedrawer-appdelegate-ctrl-swift'/>
 ```C#
 public class SideDrawerGettingStarted : UIViewController
 {
@@ -106,10 +102,6 @@ public class SideDrawerGettingStarted : UIViewController
 ## Attaching TKSideDrawer to UIViewController
 
 <code>TKSideDrawer</code> can be attached to your view controllers without <code>TKSideDrawerController</code>. In such a scenario, you should initialize <code>TKSideDrawerView</code> that should be added as subview to your UIViewController's view and use its <code>mainView</code> property to set up the content of the view.
-
-<snippet id='drawer-attached'/>
-
-<snippet id='drawer-attached-swift'/>
 
 ```C#
 [Register("SideDrawerGettingStarted")]
@@ -194,3 +186,5 @@ public class SideDrawerGettingStarted : XamarinExampleViewController
         this.SideDrawerView.SideDrawers[0].Dismiss();
     }
 ```
+
+> SideDrawer Getting Started example can be found in our [Native Xamarin.iOS examples]({%slug developer-focused-examples%}#native-only-examples).

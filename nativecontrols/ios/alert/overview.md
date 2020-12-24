@@ -1,17 +1,19 @@
 ---
 title: Overview
-page_title: Alert Overview
+page_title: Alert for Xamarin.iOS | Overview
 slug: ios-alert-overview
 position: 1
 ---
 
-# Alert Overview
+# Alert for Xamarin.iOS: Overview
 
-<code>TKAlert</code> is a highly customizable alert view component that offers different predefined animations, easy to use Block API, many customization options. 
+**TKAlert** is a highly customizable alert view component that offers different predefined animations, easy to use Block API, many customization options. 
 
 <img src="../images/alert-overview-001.png"/> <img src="../images/alert-overview-002.png"/>
+
 <code>TKAlert</code> features include:
 
+## Key Features:
 
 <ul>
 <li>Device orientation change support </li>
@@ -28,4 +30,4 @@ position: 1
 <li>Horizontal/vertical buttons layout</li>
 </ul>
 
-
+> Demos for Alert control can be found in our [Native Xamarin.iOS examples]({%slug developer-focused-examples%}#native-only-examples).

@@ -4,10 +4,9 @@ page_title: AutoCompleteTextView Getting Started
 position: 2
 ---
 
-# AutoCompleteTextView (Beta): Getting Started
+# AutoCompleteTextView for Xamarin.iOS: Getting Started
 
 This quick start tutorial demonstrates how to create a simple iOS application with <code>TKAutoCompleteTextView</code>.
-
 
 ## Setting up TKAutoCompleteTextView
 
@@ -156,4 +155,5 @@ public partial class ViewController : UIViewController
 ```
 
 For more information about the suggest modes, please refer to the [Suggest Modes article](suggest-modes)
- 
+
+> AutoCompleteTextView Getting Started example can be found in our [Native Xamarin.iOS examples]({%slug developer-focused-examples%}#native-only-examples).

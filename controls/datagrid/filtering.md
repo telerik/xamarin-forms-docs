@@ -146,7 +146,22 @@ grid.FilterDescriptors.Add(new DelegateFilterDescriptor() { Filter = new CustomF
 
 ## Filtering UI
 
-The filtering component(Filtering UI) appears when clicking the options icon on each column's header and it allows the user to easily filter data by column values. The Filtering UI exposes the following property:
+
+The filtering component(Filtering UI) appears when clicking the options icon (**OptionsButton**, three dots) on each column's header and it allows the user to easily filter data by column values. 
+
+### OptionsButton opens the Filtering UI
+
+The image below shows where the OptionsButton is placed
+
+![OptionsButton three dots opens filtering UI](images/datagrid-filtering-optionsbutton.png "OptionsButton three dots opens filtering UI")
+
+### Filtering UI
+
+Here is how the Filtering UI looks: 
+
+![Filtering UI](images/datagrid-filtering-ui.png "DataGrid Filtering UI")
+
+The Filtering UI exposes the following property:
 
 * **UserFilterMode**: Defines whether the Filtering UI is enabled/disabled. The available options are *Auto/Enabled/Disabled*. The default value of the UserFilterMode is *Auto*.
 

@@ -1,21 +1,21 @@
 ---
 title: Grouping
 page_title: ListView Grouping
+slug: ios-listview-grouping
 position: 4
 ---
 
-# ListView: Grouping 
+# ListView for Xamarin.iOS: Grouping 
+
 ListView may be set up to display items in groups divided visually by section headers and footers.
-There are two ways to implement grouping with TKListView - manually implementing the required methods of the TKListViewDataSource delegate or using TKDataSource and let it do the dirty work for you.
+There are two ways to implement grouping with TKListView - manually implementing the required methods of the TKListViewDataSource delegate or using TLKDataSource and let it do the dirty work for you.
 
 <img src="../images/listview-grouping001.png"/>
 
-## Displaying grouped data using TKDataSource##
+## Displaying grouped data using TKDataSource
 
 In case you need more flexibility you may implement grouping manualy as follows.
 
-<snippet id='listview-groups'/>
-<snippet id='listview-groups-swift'/>
 ```C#
 NSMutableArray items = new NSMutableArray ();
 items.Add (new DataSourceItem ("John", 50f, "A"));
@@ -24,7 +24,7 @@ items.Add (new DataSourceItem ("Smith", 42f, "B"));
 items.Add (new DataSourceItem ("Peter", 28f, "B"));
 items.Add (new DataSourceItem ("Paula", 25f, "B"));
 
-this.dataSource = new TKDataSource ();
+this.dataSource = new TLKDataSource ();
 this.dataSource.ItemSource = items;
 this.dataSource.GroupWithKey ("Group");
 dataSource.DisplayKey = "Name";
@@ -37,10 +37,10 @@ var layout = listView.Layout as TKListViewLinearLayout;
 layout.HeaderReferenceSize = new CGSize (200, 22);
 ```
 
-## Displaying grouped data using a TKListViewDataSource delegate methods ##
+## Displaying grouped data using a TKListViewDataSource delegate methods
 
-<snippet id='listview-groups-delegate'/>
-<snippet id='listview-groups-delegate-swift'/>
+Here is the code:
+
 ```C#
 public class ListViewDocsGroupsDelegate : XamarinExampleViewController
 {
@@ -103,3 +103,5 @@ class ListViewDataSource : TKListViewDataSource
     }
 }
 ```
+
+> ListView Grouping example can be found in our [Native Xamarin.iOS examples]({%slug developer-focused-examples%}#native-only-examples).

@@ -10,9 +10,9 @@ slug: autocompleteview-suggestion-view-template
 
 ## SuggestionView Template
 
-RadAutoCompleteView provides the option to change the default template that vizualize the filtered items and implement a custom template using **SuggestionViewTemplate** property.
+RadAutoCompleteView provides the option to change the default template that visualize the filtered items and implement a custom template using **SuggestionViewTemplate** property.
 
-* **SuggestionViewTemplate** (DataTemplate): Defines the template used to vizualize the filtered items
+* **SuggestionViewTemplate** (DataTemplate): Defines the template used to visualize the filtered items
 
 ## Example
 

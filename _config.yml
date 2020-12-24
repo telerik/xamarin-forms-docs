@@ -15,6 +15,9 @@ navigation:
     getting-started:
         title: "Getting Started"
         position: 1
+    demos-and-sample-apps:
+        title: "Demos and Sample Apps"
+        position: 2
     licensing:
         title: "Licensing"
         position: 4

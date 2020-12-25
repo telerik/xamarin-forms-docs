@@ -155,6 +155,24 @@ The image below shows where the OptionsButton is placed
 
 ![OptionsButton three dots opens filtering UI](images/datagrid-filtering-optionsbutton.png "OptionsButton three dots opens filtering UI")
 
+### Show/Hide OptionsButton
+
+* `IsOptionsButtonVisible` (*bool*) property indicated whetehr the OptionsButton is visible. The default value is `true`. The property could be set inside the `DataGridColumnHeaderStyle`. 
+
+![OptionsButton three dots visibility](images/datagrid-optionsbutton-visibility.png "OptionsButton three dots visibility")
+
+**Example**
+
+```XAML
+<telerikGrid:DataGridTextColumn.HeaderStyle>
+    <telerikGrid:DataGridColumnHeaderStyle BackgroundColor="LightSkyBlue" 
+                                           IsOptionsButtonVisible="False"
+                                           TextColor="Black"
+                                           BorderColor="Black" 
+                                           BorderThickness="2"/>
+</telerikGrid:DataGridTextColumn.HeaderStyle>
+```
+
 ### Filtering UI
 
 Here is how the Filtering UI looks: 

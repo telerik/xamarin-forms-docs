@@ -8,7 +8,7 @@ slug: pdfviewer-fonts
 
 # Fonts
 
-RadPdfViewer has a support for standard and embeded fonts. 
+RadPdfViewer has a support for standard and embedded fonts. 
 
 ## Standard Fonts
 

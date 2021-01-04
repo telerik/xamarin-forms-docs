@@ -55,14 +55,27 @@ The **Indicator** is shown once the RadDataGridColumnHeader is sorted (tapped/cl
 
 ### OptionsButton Styling
 
-The **OptionsButton** of the RadDataGridColumnHeader refers to the FilteringUI of the data grid. The style of the options button can be customized using the following properties:
+The **OptionsButton** of the RadDataGridColumnHeader refers to the FilteringUI of the DataGrid. Using the OptionsButton you can open the Filtering UI control. 
+
+The style of the options button can be customized using the following properties:
 
 * **OptonsButton Font Options** (OptonsButtonFontAttributes, OptionsButtonFontFamily, OptionsButtonFontSize): Define the font options for the ColumHeaders options button,
 * **OptionsButtonMargin**: Defines the margin of the ColumnsHeader options button
 * **OptionsButtonText**: Defines the text of the ColumnHeaders options button. 
 * **OptionsButtonTextColor**: Defines the text color of the ColumnHeaders options button. 
 
->tip In order to make the ColumnHeader OptionsButton hidden, set the **OptionsButtonTextColor** to transparent. 
+>tip In order to change the OptionsButton visibility you can set the `IsOptionsButtonVisible` `bool` property. By default its value is `True` which means that the OptionsButton is visible by default.
+
+![OptionsButton three dots visibility](../images/datagrid-optionsbutton-visibility.png "OptionsButton three dots visibility")
+
+```XAML
+<telerikGrid:DataGridTextColumn.HeaderStyle>
+    <telerikGrid:DataGridColumnHeaderStyle IsOptionsButtonVisible="False"
+                                           TextColor="Black"
+                                           BorderColor="Black" 
+                                           BorderThickness="2"/>
+</telerikGrid:DataGridTextColumn.HeaderStyle>
+```
 
 >note By default the options button is represented by a string symbol that could be changed through **OptionsButtonText** and **OptionsButtonFontFamily** properties.
 

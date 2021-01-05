@@ -50,9 +50,9 @@ Take a look at the following topics on how to use the toolbox:
 * [Telerik UI for Xamarin Toolbox on Windows]({%slug telerik-xamarin-toolbox%})
 * [Telerik UI for Xamarin Toolbox on Mac]({%slug telerik-xamarin-toolbox-mac%})
 	
-#### Create the control definition in XAML or C#.
+#### Create the control definition in XAML or C# .
 
-The snippet below shows a simple RadListView definition:
+The snippet below shows a simple RadListView definition (_Do not use a `StackLayout` or `ScrollView` parent, see the **WARNING** note below_):
 
 ```XAML
 <telerikDataControls:RadListView x:Name="listView" />
@@ -66,11 +66,12 @@ In addition to this, you need to add the following namespace:
 <snippet id='xmlns-telerikdatacontrols' />
 <snippet id='ns-telerikdatacontrols' />
 
-> RadListView control provides UI virtualization, so it requires its visual parent to provide vertical or horizontal space for the control to fill into. The following scenarios will measure the control with infinity and the virtualization will not work:
->	* positioning the ListView control inside StackLayout which is wrapped in ScrollView.
->	* positioning the ListVew inside ScrollView.
+> **WARNING**: RadListView control provides UI virtualization, this feature requires the visual parent to provide vertical or horizontal space. To avoid breaking UI virtualization or gesture mechanisms, please follow these rules: 
+>	* **Do not** place the RadListView control inside a `StackLayout`
+>	* **Do not** place the RadListVew inside a `ScrollView`
+>	* **Do not** set the RadListVew to a Grid `RowDefinition Height="Auto"`
 >
-> For additional information, please check the [Controls are not Apppearing]({%slug controls-are-not-appearing%}) article.
+> For additional information and solutions for these layouts, please check the [Controls are not Apppearing]({%slug controls-are-not-appearing%}) article.
 
 ## 4. Populating RadListView with data
 

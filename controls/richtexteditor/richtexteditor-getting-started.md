@@ -69,7 +69,7 @@ xmlns:telerikRichTextEditor="clr-namespace:Telerik.XamarinForms.RichTextEditor;a
 > - When the RadRichTextEditor is placed inside a StackLayout, you would need to set explicitly its WidthRequest and HeightRequest properties, otherwise the control will not render. This is due to the fact that StackLayout usually wants to size itself according to its children, but a WebView (since it does scrolling) wants to size itself to its parent. You can learn more about this in the [Xamarin.Forms WebView documentation](https://docs.microsoft.com/bg-bg/xamarin/xamarin-forms/user-interface/webview?tabs=windows#layout).
 
 >
->You should either use a Grid as a parent container or define explicitly the size of the RichTextEditor control.
+> You should either use a Grid as a parent container or define explicitly the size of the RichTextEditor control.
 
 
 ## 4. Loading HTML Content

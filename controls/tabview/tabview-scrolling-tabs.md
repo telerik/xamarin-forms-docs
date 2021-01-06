@@ -12,7 +12,7 @@ position: 2
 
 With R1 2021 Official release the **RadTabView** control allows you to scroll through the tabs inside the TabView Header.
 
-* **IsHeaderScrollable**(*bool*): Specifies whetehr the header will allow scrolling. The default valie is false. 
+* **IsHeaderScrollable**(*bool*): Specifies whether the header will allow scrolling. The default value is false. 
 
 ## Scrolling in the header using the TabView IsHeaderScrollable property and the default TabView Header
 

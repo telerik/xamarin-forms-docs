@@ -14,12 +14,6 @@ With R1 2021 Official release the **RadTabView** control allows you to scroll th
 
 * **IsHeaderScrollable**(*bool*): Specifies whether the header will allow scrolling. The default value is false. 
 
-## Scrolling in the header using the TabView IsHeaderScrollable property and the default TabView Header
-
->important The IsHeaderScrollable is working when the default TabView Header is used.
-
-### Example
-
 Here is the TabView definition with default header and `IsHeaderScrollable` set to `True`:
 
 <snippet id='tabview-features-isheaderscrollable-xaml'/>
@@ -32,9 +26,7 @@ This is the result:
 
 ## Scrolling in the header with custom TabView Header
 
-In order to customize the TabView Header you will need to use the RadTabView `Header` property of type `TabViewHeader` . If you want to apply scrolling in the custom header then you should use the `IsScrolling` property. 
-
->important `IsScrolling` property is a property of the `RadToolbarBase` class. The property can be applied to the TabViewHeader.
+In order to customize the TabView Header you will need to use the RadTabView `Header` property of type `TabViewHeader` . If you want to apply scrolling in the custom header then you should use the `IsScrolling` property of type `bool`. 
 
 ### Example:
 

@@ -17,7 +17,7 @@ position: 2
 * The TabView Header position could be easily changed to top/bottom through the **HeaderPosition**(*TabViewHeaderPosition*) property. The default header position is top. 
 * **SelectedItem**(*object*)
 * **IsContentPreserved**: This property could be used to preserve the tabs content when switching them. In this way the visual state of the components inside each tab wouldn't be reset. When IsContentPreserved is set to True, the tabview does not unload/reload the tabs' content. By default the property is False.
-* **IsHeaderScrollable**(*bool*): Specifies whether the header will allow scrolling. The default valie is false. For more details please check the [TabView Scrolling Tabs]({%slug tabview-scrolling-tabs%}) article.
+* **IsHeaderScrollable**(*bool*): Specifies whether the header will allow scrolling. The default value is false. For more details please check the [TabView Scrolling Tabs]({%slug tabview-scrolling-tabs%}) article.
 * **IsContentSwipeAnimationEnabled**(*bool*): Specifies whether a swipe inside the content will change the selected item with animation. The default value is false.
 
 >tip **IsHeaderScrollable** and **IsContentSwipeAnimationEnabled** are part of the TabView features set from R1 2021 Release. **IsContentPreserved** property is part of the TabView features set from R2 2019 Service Pack.

@@ -10,7 +10,7 @@ slug: richtexteditor-commands
 
 RadRichTextEditor provides the following commands of type *ICommand*:
 
-* **RemoveHyperlinkCommand**
+* **UndoCommand**
 * **RedoCommand**
 * **ToggleBoldCommand**
 * **ToggleItalicCommand**
@@ -20,6 +20,7 @@ RadRichTextEditor provides the following commands of type *ICommand*:
 * **ToggleSuperscriptCommand**
 * **ToggleBulletingCommand**
 * **ToggleNumberingCommand**
+* **SelectAllCommand**
 * **ClearFormattingCommand**
 * **AlignLeftCommand**
 * **AlignRightCommand**
@@ -28,7 +29,8 @@ RadRichTextEditor provides the following commands of type *ICommand*:
 * **IndentCommand**
 * **OutdentCommand**
 * **ApplyHyperlinkCommand**
-* **UndoCommand**
+* **RemoveHyperlinkCommand**
+* **OpenHyperlinkCommand**
 
 >note RadRichTextEditor Toolbar exposes some of the commands built-in. For more information please check the [RadRichTextEditor Toolbar]({%slug richtexteditor-toolbar%}) article.
 

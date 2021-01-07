@@ -68,12 +68,13 @@ In addition, RichTextEditor provides flexible API to apply formatting at the cur
 
 ## Text Selection
 
-RichTextEditor supports text selection functionality - the end user can initiate a selection action through the tap and hold gesture over the text. The selected text is marked with a different background color and two drag handles are available to the user to make it easier to modify the current selection. In addition, as soon as the selection is made, RichTextEditor displays a customizable ContextMenu with a few default commands.
+RichTextEditor supports text selection functionality - the end user can initiate a selection action through the tap and hold gesture over the text. The selected text is marked with a different background color and two drag handles are available to the user to make it easier to modify the current selection. 
 
-You can take advantage of the following methods related to text selection:
+In addition, as soon as the selection is made on Android and iOS, RichTextEditor displays a customizable ContextMenu with a few default commands. For more details on this go to [Context Menu]({%slug richtexteditor-context-menu%}) topic.
 
+You can take advantage of the following API related to text selection:
 
-* GetSelectionAsync() - returns asynchronously a [RichTextSelection](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtextselection) object which defines the current text selection inside the editor (*null* if there is no text selection). The <code>RichTextSelection</code> object contains the *Text* itself as well as the *Start* and *End* position of the text characters;
+* **GetSelectionAsync** method - returns asynchronously a [RichTextSelection](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtextselection) object which defines the current text selection inside the editor (*null* if there is no text selection). The <code>RichTextSelection</code> object contains the *Text* itself as well as the *Start* and *End* position of the text characters;
 
 ## Hyperlink Support
 
@@ -98,28 +99,18 @@ You can override the default behavior by handling the RichTextEditor's **OpenHyp
 	* The <code>Sender</code> which is the RichTextEditor control;
 	* OpenHyperlinkErrorEventArgs provides the following properties:
 		* <code>Error</code> - of type System.Exception, can be used to get the exact error message;
-		* <code>Url</code> - the url of the hyperlink;
+		* <code>Url</code> - of type string, defining the url of the hyperlink;
 		* <code>Handled</code> - boolean property indicating whether the event is handled.
 
 Subscribe to the event, set <code>Handled</code> property of the event args to *True* to prevent the default message and add custom implementation. 
 
 Here is a quick example on the OpenHyperlinkError event usage:
 
-```XAML
-<telerikRichTextEditor:RadRichTextEditor x:Name="richTextEditor" 
-										 OpenHyperlinkError="RichTextEditor_OpenHyperlinkError"
-										 Grid.Row="1" />
-```
+<snippet id='richtexteditor-hyperlinkerrorhandling-xaml' />
 
 And the event handler which shows a custom message:
 
-```C#
-private void RichTextEditor_OpenHyperlinkError(object sender, OpenHyperlinkErrorEventArgs e)
-{
-	e.Handled = true;
-	Application.Current.MainPage.DisplayAlert(string.Format("Error opening {0}", e.Url), e.Error.Message, "Ok");
-}
-```
+<snippet id='richtexteditor-hyperlinkerrorhandling-code' />
 
 Here is the custom message:
 
@@ -151,3 +142,4 @@ The sample Read-Only State demo can be found in our [SDK Browser Application](ht
 
 - [RichTextEditor Toolbar]({%slug richtexteditor-toolbar%})
 - [Commands]({%slug richtexteditor-commands%})
+- [Context Menu]({%slug richtexteditor-context-menu%})

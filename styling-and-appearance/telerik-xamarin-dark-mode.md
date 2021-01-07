@@ -14,13 +14,17 @@ Telerik UI for Xamariin controls have a support for Dark Theme/Dark Mode from th
 
 ## Dark Theme for Android
 
-By default, existing Xamarin.Forms applications won't be affected by the Dark theme for Android. With no changes, they will look the same way as on Light theme.
-
 In order to support Dark theme for Android, the application's theme must inherit from a DayNight theme as explained [here](https://developer.android.com/guide/topics/ui/look-and-feel/darktheme#supporting_dark_theme_in_your_app).
 
-For more details about System theme changes please review the official Microsoft documentation about [Respond to system theme changes in Xamarin.Forms applications](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/theming/system-theme-changes).  
+Example:
 
-Here is how the Telerik Xamarin Samples Application looks with Darh theme:
+Set the app theme inside the Resources/valies/styles.xml file locaded in the Android project.
+
+```xml
+<style name="MainTheme" parent="Theme.AppCompat.DayNight">
+```
+
+Here is how the Telerik Xamarin controls look on Android with Darh Theme applied:
 
 ![Telerik Xamarin Android Dark Theme](images/telerik-android-dark-theme.png)
 
@@ -30,7 +34,7 @@ Here is how the Telerik Xamarin Samples Application looks with Darh theme:
 
 Telerik UI for Xamarin controls automatically react to system appearance changes.
 
-Here is how the Telerik Xamarin Samples Application looks with Darh Mode:
+Here is how the Telerik Xamarin controls look on iOS with Darh Mode applied:
 
 ![Telerik Xamarin iOS Dark Mode](images/telerik-ios-dark-mode.png)
 
@@ -38,7 +42,7 @@ Here is how the Telerik Xamarin Samples Application looks with Darh Mode:
 
 ## Dark Theme for UWP
 
-If you want to use Dark Theme in our UWP application you will need to change the `RequestedTheme` property in the `App.xaml` file of the UWP project.
+You can change themes in our application changing the `RequestedTheme` property in the `App.xaml` file of the UWP project.
 
 Example:
 
@@ -51,6 +55,9 @@ Example:
     RequestedTheme="Dark">
 </Application>
 ```
+>important If you remove the `RequestedTheme` property, this means that your application will use the user’s system settings.
+
+Here is how the Telerik Xamarin controls look on UWP with Darh Theme applied:
 
 ![Telerik Xamarin UWP Dark Theme](images/telerik-uwp-dark-theme.png)
 

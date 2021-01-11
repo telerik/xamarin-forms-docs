@@ -40,29 +40,9 @@ Here is how the Telerik Xamarin controls look on iOS with Darh Mode applied:
 
 > Make sure to test your application carefully and thoroughly on both Light and Dark system appearance.
 
-## Dark Theme for UWP
-
-You can change themes in our application changing the `RequestedTheme` property in the `App.xaml` file of the UWP project.
-
-Example:
-
-```XAML
-<Application
-    x:Class="QSF.UWP.App"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:QSF.UWP"
-    RequestedTheme="Dark">
-</Application>
-```
->important If you remove the `RequestedTheme` property, this means that your application will use the user’s system settings.
-
-Here is how the Telerik Xamarin controls look on UWP with Darh Theme applied:
-
-![Telerik Xamarin UWP Dark Theme](images/telerik-uwp-dark-theme.png)
-
-> Make sure to test your application carefully and thoroughly on both Light and Dark system appearance.
+## App Theme Binding
 
 ## See Also
 
-
+* [Telerik Font Icons]({%slug telerik-font-icons%})
+* [Telerik Blue Theme]({%slug common-themes-overview%})

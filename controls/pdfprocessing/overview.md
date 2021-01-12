@@ -64,7 +64,7 @@ You have two options to add the required Telerik references to your Xamarin.Form
 
 * Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
 
-	If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadPdfProcessing you have to install the *Telerik.Documents.Core*, *Telerik.Documents.Fixed* and *Telerik.Zip* nuget packages.
+If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadPdfProcessing you have to install the *Telerik.Documents.Core*, *Telerik.Documents.Fixed* and *Telerik.Zip* nuget packages.
 
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for RadPdfProcessing:
 
@@ -72,14 +72,4 @@ You have two options to add the required Telerik references to your Xamarin.Form
 	- **Telerik.Documents.Fixed.dll**
 	- **Telerik.Zip.dll**
 	
-	To export images different than **Jpeg** and **Jpeg2000** or ImageQuality different than High you will need to add a reference to the following assembly:
-
-	- **Telerik.Documents.ImageUtils.dll**
-		
-	To enable the import of documents containing [CMap Tables](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/concepts/cmaps), you will need to add a reference to:
-
-	- **Telerik.Documents.CMapUtils.dll**
-
-	>note The **Telerik.Documents.ImageUtils.dll** assembly depends on **ImageSharp** and **TiffLibrary.ImageSharpAdapter**. In order to use this assembly, you will need to add references to [ImageSharp](https://www.nuget.org/packages/SixLabors.ImageSharp/) and [TiffLibrary.ImageSharpAdapter](https://www.nuget.org/packages/TiffLibrary.ImageSharpAdapter/).
-
-	>important Please keep in mind these assemblies are located in the Portable folder, still, you need to add a reference to them in the Xamarin.Forms project as well as in each of the platform projects (Android | iOS | UWP).
+>important Please keep in mind these assemblies are located in the Portable folder, still, you need to add a reference to them in the Xamarin.Forms project as well as in each of the platform projects (Android | iOS | UWP).

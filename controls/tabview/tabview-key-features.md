@@ -18,9 +18,20 @@ position: 2
 * **SelectedItem**(*object*)
 * **IsContentPreserved**: This property could be used to preserve the tabs content when switching them. In this way the visual state of the components inside each tab wouldn't be reset. When IsContentPreserved is set to True, the tabview does not unload/reload the tabs' content. By default the property is False.
 * **IsHeaderScrollable**(*bool*): Specifies whether the header will allow scrolling. The default value is false. For more details please check the [TabView Scrolling Tabs]({%slug tabview-scrolling-tabs%}) article.
-* RadTabView allows you to **swipe inside the content** in order to change the selected item. **IsContentSwipeAnimationEnabled**(*bool*) property specifies whether a swipe inside the content will change the selected item with animation. The default value is false.
 
->tip **IsHeaderScrollable** and **IsContentSwipeAnimationEnabled** are part of the TabView features set from R1 2021 Release. **IsContentPreserved** property is part of the TabView features set from R2 2019 Service Pack.
+## Swiping inside the TabView content
+
+RadTabView allows you to **swipe inside the content** in order to change the selected item. 
+
+If you want to prevent this feature you will need to set the `IsContentSwipingEnabled` bool property to `False. The default value of th `IsContentSwipingEnabled` propery is `True`.
+
+**IsContentSwipingAnimationEnabled**(*bool*) property specifies whether a swipe inside the content will change the selected item with animation. The default value is false.
+
+Here is how the swiping inside the content looks:
+
+![TabView Swiping](images/tabview-swiping.gif "TabView Swiping")
+
+>tip **IsHeaderScrollable**, **IsContentSwipingEnabled** and **IsContentSwipeAnimationEnabled** are part of the TabView features set from R1 2021 Release. **IsContentPreserved** property is part of the TabView features set from R2 2019 Service Pack.
 
 ## TabView Selection
 

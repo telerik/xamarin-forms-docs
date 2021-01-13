@@ -28,11 +28,22 @@ The application can be accessed in the following ways:
 	* [Apple App Store](https://apps.apple.com/us/app/telerik-erp/id1450527259) 
 	* [Windows Store](https://www.microsoft.com/bg-bg/p/telerik-erp/9nmk4g533qlh?rtc=1&activetab=pivot:overviewtab).
 
-The image below shows how the Telerik ERP app looks:
+The image below shows how the Telerik ERP app looks on mobile phone:
 
 ![Telerk Xamarin EPR Application](images/telerik-erp-app.png)
 
+and the other screens:
+
+![Telerk Xamarin EPR Application](images/telerk-xamarin-erp-app.png)
+
+and how the Tablet version looks:
+
+![Telerk Xamarin EPR Application](images/telerik-erp-app-tablet.png)
+
+>tip Check [here](https://www.telerik.com/xamarin-ui/sample-apps#telerik-erp) to learn more about the Telerik ERP App.
+
 ## Telerik CRM App
+
 The Telerik CRM is a cross-platform Xamarin.Forms demo application developed within the business context of a functioning art gallery and its customer relations. The application is built from the ground up using a combination of Azure App Services for the backend, Azure Bot Framework for an in-app support chat service and Telerik UI for Xamarin for a beautiful and feature-rich client experience.
 
 The application provides a seamless user-experience which enables the users to easily explore information about employees, customers, products and orders, as well as interact with a support chat bot that will guide them through the application and answer various questions about finding the appropriate information.
@@ -45,9 +56,11 @@ The application can be accessed in the following ways:
 	* [Apple App Store](https://apps.apple.com/us/app/art-gallery-crm/id1449462263?ls=1) 
 	* [Windows Store](https://www.microsoft.com/bg-bg/p/telerik-crm/9pbnqz08r0c8).
 
-The image below shows how the Telerik ERP app looks:
+The image below shows how the Telerik CRM app looks:
 
 ![Telerik Xamarin CRM Application](images/telerik-crm-app.png)
+
+>tip Check [here](https://www.telerik.com/xamarin-ui/sample-apps#telerik-crm) to learn more about the Telerik CRM App.
 
 ## Telerik ToDo App
 
@@ -68,9 +81,11 @@ The application can be accessed in the following ways:
 	* [Apple App Store](https://apps.apple.com/us/app/telerik-to-do/id1475654512) 
 	* [Windows Store](https://www.microsoft.com/en-us/p/telerik-to-do/9ns4dbcsdzh6).
 
-The image below shows how the Telerik ERP app looks:
+The image below shows how the Telerik ToDo app looks:
 
 ![Telerik Xamarin ToDo App](images/telerik-todo-app.png)
+
+>tip Check [here](https://www.telerik.com/xamarin-ui/sample-apps#telerik-todo) to learn more about the Telerik ToDo App.
 
 ## Telerik Tagit App
 
@@ -86,9 +101,11 @@ The application can be accessed in the following ways:
 	* [Apple App Store](https://apps.apple.com/us/app/telerik-tagit/id1310584457) 
 	* [Windows Store](https://www.microsoft.com/bg-bg/p/telerik-tagit/9pb07plrwpfs).
 
-The image below shows how the Telerik ERP app looks:
+The image below shows how the Telerik Tagit app looks:
 
 ![Telerik Xamarin Tagit App](images/telerik-tagit-app.png)
+
+>tip Check [here](https://www.telerik.com/xamarin-ui/sample-apps#telerik-tagit) to learn more about the Telerik Tagit App.
 
 ## See Also
 

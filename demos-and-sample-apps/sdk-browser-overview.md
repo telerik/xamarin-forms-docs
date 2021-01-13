@@ -27,7 +27,18 @@ The image below shows the Samples application main view with all the Telerik UI 
 ![](images/samplesapplication_0.png)
 
 The next images shows a concrete example from the Samples Application (Calendar &amp; Scheduling Appointment Template example):
+
 ![](images/samplesapplication_1.png)
+
+### Telerik UI for Xamarin Samples Application Dark Mode
+
+The Telerik UI for Xamarin Samples Application has a dark mode support on Android and on iOS. You can change the app theme by clicking on a button. 
+
+![Telerik Xamarin controls Light Dark appearance](images/dark-light-mode-xamarin-telerik-app.gif)
+
+Here is how the Samples App loos when Dark Mode is applied:
+
+![Telerik Xamarin Dark Mode](images/telerik-sample-xamarin-app-dark-mode.png)
 
 ## SDK Browser Application
 

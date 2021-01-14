@@ -42,6 +42,8 @@ Let's begin with a new Xamarin Mobile Blazor project. Visit the [Getting Started
 
 > For a faster quick-start, visit [Walkthrough: Creating your First App](https://docs.microsoft.com/en-us/mobile-blazor-bindings/walkthroughs/build-first-app).
 
+>important Please make sure you have the **0.3.26-preview** release of Microsoft.MobileBlazorBindings. Telerik UI for Xamarin Blazor controls are built and tested against it, and that's the version we currently support.
+
 ### 2. Adding the required Telerik references
 
 You have two options:

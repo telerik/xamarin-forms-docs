@@ -66,12 +66,56 @@ In addition, RichTextEditor provides flexible API to apply formatting at the cur
 
 * **ListType** (of type [RichTextListType](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtextlisttype)): Specifies the list type, such as numbered or bulleted list at the current position or selection.
 
-You can take advantage of the following methods related to hyperlinks and selection:
+## Text Selection
 
-* GetHyperlinkAsync() - returns asynchronously a [RichTextHyperlink](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtexthyperlink) under the caret in the editor (or *null* in case there is no hyperlink). The <code>RichTextHyperlink</code> object contains the *Url* and *Title* of the link;
+RichTextEditor supports text selection functionality - the end user can initiate a selection action through the tap and hold gesture over the text. The selected text is marked with a different background color and two drag handles are available to the user to make it easier to modify the current selection. 
 
-* GetSelectionAsync() - returns asynchronously a [RichTextSelection](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtextselection) object which defines the current text selection inside the editor (*null* if there is no text selection). The <code>RichTextSelection</code> object contains the *Text* itself as well as the *Start* and *End* position of the text characters;
+In addition, as soon as the selection is made on Android and iOS, RichTextEditor displays a customizable ContextMenu with a few default commands. For more details on this go to [Context Menu]({%slug richtexteditor-context-menu%}) topic.
 
+You can take advantage of the following API related to text selection:
+
+* **GetSelectionAsync** method - returns asynchronously a [RichTextSelection](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtextselection) object which defines the current text selection inside the editor (*null* if there is no text selection). The <code>RichTextSelection</code> object contains the *Text* itself as well as the *Start* and *End* position of the text characters;
+
+## Hyperlink Support
+
+RichTextEditor provides built-in support for creating and managing hyperlinks (hyperlinks are presented with the [RichTextHyperlink](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtexthyperlink) class). Through the exposed commands related to hyperlinks, namely ApplyHyperlinkCommand, RemoveHyperlinkCommand, and OpenHyperlinkCommand, users can manipulate the hyperlinks inside the RichTextEditor content.
+
+In addition, RichTextEditorToolbar exposes predefined toolbar items wired to the hyperlink commands. For more details on this check [RichTextEditor Custom Toolbar]({%slug richtexteditor-custom-toolbar%}#predefined-toolbar-items) topic.
+
+You can also take advantage of the following API related to hyperlinks:
+
+* **GetHyperlinkAsync** method - returns asynchronously a [RichTextHyperlink](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtexthyperlink) under the caret in the editor (or *null* in case there is no hyperlink). The <code>RichTextHyperlink</code> object contains the *Url* and *Title* of the link;
+
+### Hyperlink Error Handling
+
+In case users try to open invalid urls (for example, the url is not absolute, the domain does not exist or is incomplete, etc) the following message is shown by default indicating there is an error with the url:
+
+![](images/richtexteditor-invalidurl-default.png)
+
+You can override the default behavior by handling the RichTextEditor's **OpenHyperlinkError** event:
+
+* **OpenHyperlinkError** event - raised when users try to open invalid urls in the editor. The OpenHyperlinkError event handler receives two parameters:
+
+	* The <code>Sender</code> which is the RichTextEditor control;
+	* OpenHyperlinkErrorEventArgs provides the following properties:
+		* <code>Error</code> - of type System.Exception, can be used to get the exact error message;
+		* <code>Url</code> - of type string, defining the url of the hyperlink;
+		* <code>Handled</code> - boolean property indicating whether the event is handled.
+
+Subscribe to the event, set <code>Handled</code> property of the event args to *True* to prevent the default message and add custom implementation. 
+
+Here is a quick example on the OpenHyperlinkError event usage:
+
+<snippet id='richtexteditor-hyperlinkerrorhandling-xaml' />
+
+And the event handler which shows a custom message:
+
+<snippet id='richtexteditor-hyperlinkerrorhandling-code' />
+
+Here is the custom message:
+
+![](images/richtexteditor-invalidurl-custom.png)
+		
 ## Read-Only State
 
 **IsReadOnly**(*bool*) property of the RichTextEditor indicating whether the control is in a read-only mode. Setting `IsReadOnly="True"` means that the Toolbar Items will be disabled, the content of the document cannot be changed and no selection can be performed. The default the value is `False`. 
@@ -96,5 +140,6 @@ The sample Read-Only State demo can be found in our [SDK Browser Application](ht
 
 ## See Also
 
-- [PdfViewer Toolbar]({%slug richtexteditor-toolbar%})
+- [RichTextEditor Toolbar]({%slug richtexteditor-toolbar%})
 - [Commands]({%slug richtexteditor-commands%})
+- [Context Menu]({%slug richtexteditor-context-menu%})

@@ -15,6 +15,9 @@ navigation:
     getting-started:
         title: "Getting Started"
         position: 1
+    demos-and-sample-apps:
+        title: "Demos and Sample Apps"
+        position: 2
     licensing:
         title: "Licensing"
         position: 4
@@ -562,7 +565,7 @@ navigation:
     ## End Rating
     ## RichTextEditor
     controls/richtexteditor:
-        title: "RichTextEditor(beta)"
+        title: "RichTextEditor"
         ## RichTextEditor Sub-Folders
     controls/richtexteditor/styling:
         title: "Styling"

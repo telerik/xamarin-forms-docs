@@ -1,9 +1,9 @@
 ---
-title: Xamarin Demo Applications
+title: Xamarin Controls Examples
 page_title: SDK Browser application - Xamarin App Demos | Telerik UI for Xamarin
 description: The SDKBrowser is a set of various examples that explain how to use the features of a control without the complexity that extra styling and polish can add to an application.
 slug: developer-focused-examples
-position: 3
+position: 0
 ---
 
 # Telerik UI for Xamarin Demo Applications
@@ -27,7 +27,18 @@ The image below shows the Samples application main view with all the Telerik UI 
 ![](images/samplesapplication_0.png)
 
 The next images shows a concrete example from the Samples Application (Calendar &amp; Scheduling Appointment Template example):
+
 ![](images/samplesapplication_1.png)
+
+### Telerik UI for Xamarin Samples Application Dark Mode
+
+The Telerik UI for Xamarin Samples Application has a dark mode support on Android and on iOS. You can change the app theme by clicking on a button. 
+
+![Telerik Xamarin controls Light Dark appearance](images/dark-light-mode-xamarin-telerik-app.gif)
+
+Here is how the Samples App loos when Dark Mode is applied:
+
+![Telerik Xamarin Dark Mode](images/telerik-sample-xamarin-app-dark-mode.png)
 
 ## SDK Browser Application
 
@@ -51,19 +62,8 @@ Clicking on any control will navigate to a page containing categories with all t
 
 ![](images/sdkbrowser_1.png)
 
-## Native-only Examples
-
-Solutions that show how to use the controls when developing through **Xamarin.Android** or **Xamarin.iOS** are included in the Telerik UI for Xamarin zip file provided for manual installation. 
-
-Telerik_UI_for_Xamarin_[version]_[license].zip, where [version] marks the release and [license] is replaced with Dev or Trial depending on the license, is available for download from the [Downloads section of your Telerik account](https://www.telerik.com/account/product-download?product=UIXAM). Unzip the archive and go to Examples folder - Xamarin.Android and Xamarin.iOS solutions are available in separate folders - Android and iOS, respectively.
-
-In addition, the native-only examples are included as part of the [Telerik UI for Xamarin MSI installation]({%slug install-msi%}). You can find the solutions in the  "[installation-path]/Telerik UI for Xamarin [version]/Examples" folder. 
-
-Visit the [Native Controls Wrappers]({%slug native-controls-overview%}) section for more information on Telerik Xamarin.Android and Xamarin.iOS components.
-
 ## See Also
 
 - [System Requirements]({%slug system-requirements%})
 - [Getting Started on Windows]({%slug win-getting-started%})
 - [Getting Started on Mac]({%slug mac-getting-started%})
-

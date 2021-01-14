@@ -81,7 +81,7 @@ If there are too many items in the tabview control and they cannot fit into the 
 
 This example demonstrates how to replace the default header of the RadTabView control and change its background. Also, how to set the header position to display the tab strip area at bottom.
 
-<snippet id='tabview-features-tabviewheader-xaml'/>
+<snippet id='tabview-features-tabviewheader-overflowbutton-xaml'/>
 <snippet id='tabview-features-tabviewheader-csharp'/>
 
 Additionally, you can work with the already assigned header instead of replacing it with a new one. For example - `tabView.Header.BackgroundColor = Color.Green`. 

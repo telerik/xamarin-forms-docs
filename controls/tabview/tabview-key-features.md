@@ -23,7 +23,7 @@ position: 2
 
 RadTabView allows you to **swipe inside the content** in order to change the selected item. 
 
-If you want to prevent this feature you will need to set the `IsContentSwipingEnabled` bool property to `False. The default value of th `IsContentSwipingEnabled` propery is `True`.
+If you want to prevent this feature you will need to set the `IsContentSwipingEnabled` bool property to `False`. The default value of the `IsContentSwipingEnabled` propery is `True`.
 
 **IsContentSwipingAnimationEnabled**(*bool*) property specifies whether a swipe inside the content will change the selected item with animation. The default value is false.
 
@@ -65,3 +65,4 @@ In order to customize the appearance of the selected item, you can modify the co
 
 - [TabViewItem]({%slug tabview-item%})
 - [TabView HeaderItem]({%slug tabview-header-item%})
+- [TabView Scrolling Tabs]({%slug tabview-scrolling-tabs%})

@@ -24,7 +24,9 @@ Set the app theme inside the Resources/valies/styles.xml file locaded in the And
 <style name="MainTheme" parent="Theme.AppCompat.DayNight">
 ```
 
-Here is how the Telerik Xamarin controls look on Android with Darh Theme applied:
+Here is how some of the Telerik Xamarin controls look on Android with Darh Theme applied
+
+ListView, DataForm and DataGrid:
 
 ![Telerik Xamarin Android Dark Theme](images/telerik-android-dark-theme.png)
 
@@ -34,7 +36,9 @@ Here is how the Telerik Xamarin controls look on Android with Darh Theme applied
 
 Telerik UI for Xamarin controls automatically react to system appearance changes.
 
-Here is how the Telerik Xamarin controls look on iOS with Darh Mode applied:
+Here is how some of the Telerik Xamarin controls look on iOS with Darh Mode applied:
+
+Date and Time Picker, Calendar and Chart controls:
 
 ![Telerik Xamarin iOS Dark Mode](images/telerik-ios-dark-mode.png)
 

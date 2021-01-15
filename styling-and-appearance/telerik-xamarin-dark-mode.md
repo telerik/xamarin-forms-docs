@@ -58,11 +58,9 @@ Requrements:
 
 > For more details about this please review the following article from the Microsoft documentation: [Respond to system theme changes in Xamarin.Forms applications](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/theming/system-theme-changes).
 
-1. Detecting the current system theme
+* **Detecting the current system theme**: This can be achieved by getting the value of the `Application.RequestedTheme` property. Information about this option can be found [here](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/theming/system-theme-changes#detect-the-current-system-theme).
 
-* This can be achieved by getting the value of the `Application.RequestedTheme` property. Information about this option can be found [here](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/theming/system-theme-changes#detect-the-current-system-theme).
-
-2. Set the app theme
+* **Set the app theme**
 
 If you want to specify the theme which your Xamarin.Forms application will use, regardless of which system theme is currently operational, set the `Application.UserAppTheme` property (*of type Xamarin.Forms OSAppTheme*):
 
@@ -72,7 +70,7 @@ Application.Current.UserAppTheme = OSAppTheme.Dark;
 
 For more details on this check [here](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/theming/system-theme-changes#set-the-current-user-theme).
 
-3. Theme Changes
+* **Theme Changes**
 
 If you want your Xamarin.Forms app to be notified when the system theme changes you have to use the `Application.RequestedThemeChanged` even. For more information on this check [here](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/theming/system-theme-changes#react-to-theme-changes).
 

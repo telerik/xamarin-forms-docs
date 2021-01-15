@@ -46,6 +46,42 @@ Date and Time Picker, Calendar and Chart controls:
 
 ## App Theme Binding
 
+If you want to make your Xamarin.Forms applications to respond to system theme changes, you need to consume resources with the AppThemeBinding markup extension, and the SetAppThemeColor and SetOnAppTheme<T> extension methods.
+
+Requrements: 
+
+* Xamarin.Forms 4.6.0.967 or greater.
+* iOS 13 or greater.
+* Android 10 (API 29) or greater.
+* UWP build 14393 or greater.
+* macOS 10.14 or greater.
+
+> For more details about this please review the following article from the Microsoft documentation: [Respond to system theme changes in Xamarin.Forms applications](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/theming/system-theme-changes).
+
+1. Detecting the current system theme
+
+* This can be achieved by getting the value of the `Application.RequestedTheme` property. Information about this option can be found [here](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/theming/system-theme-changes#detect-the-current-system-theme).
+
+2. Set the app theme
+
+If you want to specify the theme which your Xamarin.Forms application will use, regardless of which system theme is currently operational, set the `Application.UserAppTheme` property (*of type Xamarin.Forms OSAppTheme*):
+
+```C#
+Application.Current.UserAppTheme = OSAppTheme.Dark;
+```
+
+For more details on this check [here](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/theming/system-theme-changes#set-the-current-user-theme).
+
+3. Theme Changes
+
+If you want your Xamarin.Forms app to be notified when the system theme changes you have to use the `Application.RequestedThemeChanged` even. For more information on this check [here](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/theming/system-theme-changes#react-to-theme-changes).
+
+### Example
+
+The Telerik UI for Xamarin Samples Application has a dark mode support on Android and on iOS. You can change the app theme by clicking on a button. 
+
+![Telerik Xamarin controls Light Dark appearance](images/dark-light-mode-xamarin-telerik-app.gif)
+
 ## See Also
 
 * [Telerik Font Icons]({%slug telerik-font-icons%})

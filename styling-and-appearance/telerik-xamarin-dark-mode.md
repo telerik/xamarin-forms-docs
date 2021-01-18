@@ -10,7 +10,7 @@ position: 1
 
 Android 10 (API level 29) and iOS 13 introduce system-wide dark appearance for all user interface elements, known as [Dark theme](https://developer.android.com/guide/topics/ui/look-and-feel/darktheme) for Android and [Dark Mode](https://developer.apple.com/documentation/xcode/supporting_dark_mode_in_your_interface) for iOS. They have many benefits as to allow users to toggle their interface and focus on the application’s content based on ambient lighting conditions as well as to reduce power usage amount depending on the device's screen technology.
 
->note Telerik UI for Xamarin controls have a support for Dark Theme/Dark Mode on Android and on iOS from the R1 2021 Official Release. Telerik UI for Xamarin controls do not have a support for Dark Theme on UWP.
+>note From the R1 2021 Official Release the Telerik UI for Xamarin controls have a support for Dark Theme/Dark Mode on Android and on iOS.
 
 ## Dark Theme for Android
 
@@ -60,13 +60,13 @@ Requrements:
 
 * **Set the app theme**
 
-If you want to specify the theme which your Xamarin.Forms application will use, regardless of which system theme is currently operational, set the `Application.UserAppTheme` property (*of type Xamarin.Forms OSAppTheme*):
-
-```C#
-Application.Current.UserAppTheme = OSAppTheme.Dark;
-```
-
-For more details on this check [here](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/theming/system-theme-changes#set-the-current-user-theme).
+	If you want to specify the theme which your Xamarin.Forms application will use, regardless of which system theme is currently operational, set the `Application.UserAppTheme` property (*of type Xamarin.Forms OSAppTheme*):
+	
+	```C#
+	Application.Current.UserAppTheme = OSAppTheme.Dark;
+	```
+	
+	For more details on this check [here](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/theming/system-theme-changes#set-the-current-user-theme).
 
 * **Theme Changes**
 

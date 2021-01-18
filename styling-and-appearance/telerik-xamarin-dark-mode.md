@@ -38,7 +38,7 @@ Telerik UI for Xamarin controls automatically react to system appearance changes
 
 Here is how some of the Telerik Xamarin controls look on iOS with Darh Mode applied:
 
-Date and Time Picker, Calendar and Chart controls:
+DateTime Picker, Calendar and Chart controls:
 
 ![Telerik Xamarin iOS Dark Mode](images/telerik-ios-dark-mode.png)
 
@@ -54,7 +54,6 @@ Requrements:
 * iOS 13 or greater.
 * Android 10 (API 29) or greater.
 * UWP build 14393 or greater.
-* macOS 10.14 or greater.
 
 > For more details about this please review the following article from the Microsoft documentation: [Respond to system theme changes in Xamarin.Forms applications](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/theming/system-theme-changes).
 
@@ -76,7 +75,7 @@ If you want your Xamarin.Forms app to be notified when the system theme changes 
 
 ### Example
 
-The Telerik UI for Xamarin Samples Application has a dark mode support on Android and on iOS. You can change the app theme by clicking on a button. 
+The [Telerik UI for Xamarin Samples Application]({%slug developer-focused-examples%}) has a dark mode support on Android and on iOS. You can change the app theme by clicking on a button. 
 
 ![Telerik Xamarin controls Light Dark appearance](images/dark-light-mode-xamarin-telerik-app.gif)
 

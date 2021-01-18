@@ -26,7 +26,7 @@ This is the result:
 
 ## Scrolling in the header with custom TabView Header
 
-In order to customize the TabView Header you will need to use the RadTabView `Header` property of type `TabViewHeader` . If you want to apply scrolling in the custom header then you should use the `IsScrolling` property of type `bool`. 
+In order to customize the TabView Header you will need to use the RadTabView `Header` property of type `TabViewHeader` . If you want to apply scrolling in the custom header then you should use the `IsScrollable` property of type `bool`. 
 
 ### Example:
 

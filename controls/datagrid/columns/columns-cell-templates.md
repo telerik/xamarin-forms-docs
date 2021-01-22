@@ -36,6 +36,10 @@ And the **Club** custom object:
 
 <snippet id='datagrid-columns-data'/>
 
+DataGrid Date Column with CellContentTemplate property and inside the template we have added a DateTime Picker control
+
+![DataGrid Cell Content Template Property](../images/datagrid-column-cell-content-template.png)
+
 >important An example with DataGrid CellContentTemplate can be found in the DataGrid/Columns folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## Cell Edit Template Example
@@ -58,6 +62,10 @@ The **ViewModel** class is declared as following:
 And the **Club** custom object:
 
 <snippet id='datagrid-columns-data'/>
+
+DataGrid Boolean Column with CellEditTemplate property and inside the template we have added a switch, and two buttons. The edit template is visualized when the cell is in edit mode.
+
+![DataGrid Cell Content Template Property](../images/datagrid-column-cell-edit-template.png)
 
 >important A sample example with DataGrid CellEditTemplate can be found in the DataGrid/Columns folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

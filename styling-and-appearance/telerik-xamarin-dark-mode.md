@@ -18,7 +18,7 @@ In order to support Dark theme for Android, the application's theme must inherit
 
 Example:
 
-Set the app theme inside the Resources/valies/styles.xml file locaded in the Android project.
+Set the app theme inside the Resources/values/styles.xml file located in the Android project.
 
 ```xml
 <style name="MainTheme" parent="Theme.AppCompat.DayNight">
@@ -34,7 +34,7 @@ ListView, DataForm and DataGrid:
 
 ## Dark Mode for iOS
 
-Telerik UI for Xamarin controls automatically react to system appearance changes.
+Telerik UI for Xamarin controls **automatically** react to system appearance changes.
 
 Here is how some of the Telerik Xamarin controls look on iOS with Darh Mode applied:
 

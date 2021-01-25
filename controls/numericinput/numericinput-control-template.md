@@ -19,6 +19,7 @@ The XAML defined below relies on the following namespaces to be set:
 ```xml
 xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
 xmlns:numericInput="clr-namespace:Telerik.XamarinForms.Input.NumericInput;assembly=Telerik.XamarinForms.Input"
+xmlns:common="clr-namespace:Telerik.XamarinForms.Common;assembly=Telerik.XamarinForms.Common"
 ```
 
 <snippet id='numericinput-resources-controltemplate' />

@@ -24,11 +24,11 @@ xmlns:telerikTreeView="clr-namespace:Telerik.XamarinForms.DataControls.TreeView;
 
 ```XAML
 <ResourceDictionary>
-    <telerikTreeView:LevelToMarginConverter x:Key="levelToMarginConverter" />
+   <telerikTreeView:LevelToMarginConverter x:Key="levelToMarginConverter" />
 
     <DataTemplate x:Key="CustomControlTemplate">
         <StackLayout Orientation="Horizontal"
-            Margin="{Binding Path=Level, Converter={StaticResource levelToMarginConverter}}">
+                     Margin="{Binding Path=Level, Converter={StaticResource levelToMarginConverter}}">
             <StackLayout.HeightRequest>
                 <OnPlatform x:TypeArguments="x:Double">
                     <On Platform="iOS" Value="44"></On>
@@ -37,13 +37,13 @@ xmlns:telerikTreeView="clr-namespace:Telerik.XamarinForms.DataControls.TreeView;
                 </OnPlatform>
             </StackLayout.HeightRequest>
             <telerikTreeView:ExpandCollapseIndicator FontSize="Medium"
-													WidthRequest="10"
-													Margin="15,0"
-													VerticalTextAlignment="Center"
-													IsLoading="{Binding Path=IsLoading}"
-													IsLoadOnDemandEnabled="{Binding Path=IsLoadOnDemandEnabled}"
-													IsExpanded="{Binding Path=IsExpanded}"
-													IsLeaf="{Binding Path=IsLeaf}">
+                                           WidthRequest="10"
+                                           Margin="15,0"
+                                           VerticalTextAlignment="Center"
+                                           IsLoading="{Binding Path=IsLoading}"
+                                           IsLoadOnDemandEnabled="{Binding Path=IsLoadOnDemandEnabled}"
+                                           IsExpanded="{Binding Path=IsExpanded}"
+                                           IsLeaf="{Binding Path=IsLeaf}">
                 <AutomationProperties.HelpText>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="iOS" Value="RadTreeView"></On>
@@ -51,8 +51,8 @@ xmlns:telerikTreeView="clr-namespace:Telerik.XamarinForms.DataControls.TreeView;
                 </AutomationProperties.HelpText>
             </telerikTreeView:ExpandCollapseIndicator>
             <telerikPrimitives:RadCheckBox IsChecked="{Binding Path=IsChecked, Mode=TwoWay}"
-                        IsVisible="{Binding Path=IsCheckBoxVisible}"
-                        VerticalOptions="Center">
+                                    IsVisible="{Binding Path=IsCheckBoxVisible}"
+                                    VerticalOptions="Center">
                 <AutomationProperties.HelpText>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="iOS" Value="RadTreeView"></On>
@@ -60,7 +60,7 @@ xmlns:telerikTreeView="clr-namespace:Telerik.XamarinForms.DataControls.TreeView;
                 </AutomationProperties.HelpText>
             </telerikPrimitives:RadCheckBox>
             <telerikTreeView:ItemText Text="{Binding Path=Header}"
-                VerticalTextAlignment="Center">
+                            VerticalTextAlignment="Center">
                 <AutomationProperties.HelpText>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="iOS" Value="RadTreeView"></On>

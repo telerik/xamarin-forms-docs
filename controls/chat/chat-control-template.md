@@ -22,53 +22,61 @@ xmlns:telerikConversationalUI="clr-namespace:Telerik.XamarinForms.Conversational
 xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
 ```
 
+Then here is the RadChat default control template. Add it to the Page resources:
+
 ```XAML
 <ResourceDictionary>
     <telerikConversationalUI:ChatListViewMarginConverter x:Key="ChatListViewMarginConverter" />
 
     <ControlTemplate x:Key="RadChat_ControlTemplate">
         <Grid telerikInput:KeyboardHelper.IsTranslationTarget="True"
-            RowSpacing="2">
+              RowSpacing="2">
             <Grid.RowDefinitions>
                 <RowDefinition />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
             <telerikConversationalUI:ChatListView telerikCommon:StyleManager.InheritedStyleClass="{TemplateBinding ActualStyleClass}"
-												AutoScrollMode="{TemplateBinding AutoScrollMode}"
-												ScrollMediator="{TemplateBinding ActualScrollMediator}"
-												Margin="{Binding Height, Source={x:Reference PickerContainer}, Converter={StaticResource ChatListViewMarginConverter}}"
-												ItemTemplate="{TemplateBinding ItemTemplateSelector}" 
-												ItemsSource="{TemplateBinding Items}"
-												AutomationProperties.Name="ChatListView" />
+                                                  AutoScrollMode="{TemplateBinding AutoScrollMode}"
+                                                  ScrollMediator="{TemplateBinding ActualScrollMediator}"
+                                                  Margin="{Binding Height, Source={x:Reference PickerContainer}, Converter={StaticResource ChatListViewMarginConverter}}"
+                                                  ItemTemplate="{TemplateBinding ItemTemplateSelector}" 
+                                                  ItemsSource="{TemplateBinding Items}"
+                                                  AutomationProperties.Name="ChatListView" />
             <telerikCommon:RadContentView telerikCommon:StyleManager.InheritedStyleClass="{TemplateBinding ActualStyleClass}"
-										Grid.Row="1"
-										Content="{TemplateBinding TypingIndicator}" />
+                                          Grid.Row="1"
+                                          Content="{TemplateBinding TypingIndicator}" />
             <telerikCommon:RadContentView telerikCommon:StyleManager.InheritedStyleClass="{TemplateBinding ActualStyleClass}"
-										x:Name="PickerContainer"
-										VerticalOptions="End"
-										Content="{TemplateBinding Picker}" />
-            <Grid Grid.Row="2" BackgroundColor="{TemplateBinding InputAreaBackgroundColor}" Padding="5, 0, 0, 0">
+                                          x:Name="PickerContainer"
+                                          VerticalOptions="End"
+                                          Content="{TemplateBinding Picker}" />
+            <Grid x:Name="PART_InputAreaGrid"
+                  Grid.Row="2"
+                  Padding="5, 0, 0, 0" 
+                  telerikInput:KeyboardHelper.IsTranslationPivot="True">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
-                <telerikConversationalUI:ChatEntry telerikCommon:StyleManager.InheritedStyleClass="{TemplateBinding ActualStyleClass}"
-												Text="{TemplateBinding Message, Mode=TwoWay}"
-												BackgroundColor="Transparent"
-												VerticalOptions="Center"
-												CompletedCommand="{TemplateBinding ActualSendMessageCommand}"
-												FocusMediator="{TemplateBinding FocusMediator}"
-												telerikInput:KeyboardHelper.IsTranslationSource="True" />
-                <telerikInput:RadButton telerikCommon:StyleManager.InheritedStyleClass="{TemplateBinding ActualStyleClass}"
-										Grid.Column="1"
-										Margin="0, 0, 10, 0"
-										BackgroundImage="{TemplateBinding SendMessageButtonImage}"
-										BackgroundColor="Transparent"
-										Command="{TemplateBinding ActualSendMessageCommand}"
-										WidthRequest="30"
-										HeightRequest="30"
-										VerticalOptions="Center" />
+
+                <telerikConversationalUI:ChatEntry
+                    telerikCommon:StyleManager.InheritedStyleClass="{TemplateBinding ActualStyleClass}"
+                    Text="{TemplateBinding Message, Mode=TwoWay}"
+                    BackgroundColor="Transparent"
+                    VerticalOptions="Center"
+                    CompletedCommand="{TemplateBinding ActualSendMessageCommand}"
+                    FocusMediator="{TemplateBinding FocusMediator}"
+                    telerikInput:KeyboardHelper.IsTranslationSource="True" />
+
+                <telerikInput:RadButton x:Name="PART_SendMessageButton"
+                                        telerikCommon:StyleManager.InheritedStyleClass="{TemplateBinding ActualStyleClass}"
+                                        Grid.Column="1"
+                                        Margin="0, 0, 10, 0"
+                                        BackgroundColor="Transparent"
+                                        Command="{TemplateBinding ActualSendMessageCommand}"
+                                        WidthRequest="30"
+                                        HeightRequest="30"
+                                        VerticalOptions="Center" />
             </Grid>
         </Grid>
     </ControlTemplate>

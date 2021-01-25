@@ -27,81 +27,103 @@ Here is the definition of the
     <ResourceDictionary>
 		<!-- IndicatorTemplate -->
         <ControlTemplate x:Key="RadSlideView_IndicatorTemplate">
-            <Label Text="{TemplateBinding IndicatorText}"
-	               FontSize="{TemplateBinding IndicatorFontSize}"
-	               FontFamily="{TemplateBinding IndicatorFontFamily}"
-	               VerticalOptions="Center"
-	               TextColor="{TemplateBinding IndicatorColor}">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="IndicatorTapped" NumberOfTapsRequired="1"/>
-                </Label.GestureRecognizers>
-            </Label>
-        </ControlTemplate>
+	        <Label Text="{TemplateBinding IndicatorText}" 
+	               FontSize="{TemplateBinding IndicatorFontSize}" 
+	               FontFamily="{TemplateBinding IndicatorFontFamily}" 
+	               VerticalOptions="Center" 
+	               TextColor="{TemplateBinding IndicatorColor}" />
+    	</ControlTemplate>
 		
-		<!-- SelectedIndicatorTemplate -->
-        <ControlTemplate x:Key="RadSlideView_SelectedIndicatorTemplate">
-            <Label Text="{TemplateBinding SelectedIndicatorText}"
-	               FontSize="{TemplateBinding SelectedIndicatorFontSize}"
-	               FontFamily="{TemplateBinding SelectedIndicatorFontFamily}"
-	               VerticalOptions="Center"
+		<!-- SelectedIndicator ControlTemplate -->
+	    <ControlTemplate x:Key="RadSlideView_SelectedIndicatorTemplate">
+	        <Label Text="{TemplateBinding SelectedIndicatorText}" 
+	               FontSize="{TemplateBinding SelectedIndicatorFontSize}" 
+	               FontFamily="{TemplateBinding SelectedIndicatorFontFamily}" 
+	               VerticalOptions="Center" 
 	               TextColor="{TemplateBinding SelectedIndicatorColor}" />
-        </ControlTemplate>
+	    </ControlTemplate>
 		
-		<!-- ControlTemplate -->
-        <ControlTemplate x:Key="RadSlideView_ControlTemplate">
-            <Grid>
-				<!-- Content Presenter -->
-                <ContentPresenter AutomationId="SlideViewContentPresenter"/>
-				
-				<!-- Left Arrow -->
-                <Label AutomationId="SlideViewLeftArrow" 
-					   VerticalOptions="Center"
-	                   IsVisible="{TemplateBinding ShowButtons}"
-	                   Text="&#x2039;"
-	                   FontSize="{TemplateBinding SlideButtonsSize}"
-	                   FontFamily="Arial"
-	                   HorizontalOptions="Start"
-	                   TextColor="{TemplateBinding SlideButtonsColor}">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Command="{TemplateBinding Path=PreviousItemCommand}"/>
-                    </Label.GestureRecognizers>
-                </Label>
-
-				<!-- Right Arrow -->
-                <Label AutomationId="SlideViewRightArrow"    
-	                   VerticalOptions="Center" 
-	                   Text="&#x203A;" 
-	                   IsVisible="{TemplateBinding ShowButtons}"
-	                   FontSize="{TemplateBinding SlideButtonsSize}"
-	                   FontFamily="Arial"
-	                   HorizontalOptions="End"
-	                   TextColor="{TemplateBinding SlideButtonsColor}">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Command="{TemplateBinding Path=NextItemCommand}"/>
-                    </Label.GestureRecognizers>
-                    <AutomationProperties.HelpText>
-                        <OnPlatform x:TypeArguments="x:String">
-                            <On Platform="iOS" Value="Navigate Forward" />
-                            <On Platform="UWP" Value="Navigate Forward" />
-                        </OnPlatform>
-                    </AutomationProperties.HelpText>
-                    <AutomationProperties.Name>
-                        <OnPlatform x:TypeArguments="x:String">
-                            <On Platform="iOS" Value="RadSlideView" />
-                            <On Platform="UWP" Value="RadSlideView" />
-                        </OnPlatform>
-                    </AutomationProperties.Name>
-                </Label>
-
-				<!-- SlideView indicators-->
-                <slideView:SlideViewIndicators Owner="{TemplateBinding}"
-	                                           SelectedIndicatorTemplate="{TemplateBinding SelectedIndicatorTemplate}"
+		<!-- SlideView ControlTemplate -->
+	    <ControlTemplate x:Key="RadSlideView_ControlTemplate">
+	        <Grid>
+	            <ContentPresenter AutomationId="SlideViewContentPresenter" />
+	
+	            <telerikPrimitives:SlideViewLabel AutomationId="SlideViewLeftArrow"
+	                                              VerticalOptions="Center"
+	                                              IsVisible="{TemplateBinding ShowButtons}"
+	                                              Text="&#x2039;"
+	                                              FontSize="{TemplateBinding SlideButtonsSize}"
+	                                              FontFamily="Arial"
+	                                              HorizontalOptions="Start"
+	                                              TextColor="{TemplateBinding SlideButtonsColor}">
+	                <common:TelerikEffects.HelpText>
+	                    <OnPlatform x:TypeArguments="x:String">
+	                        <On Platform="Android" Value="RadSlideView Navigate Backward" />
+	                    </OnPlatform>
+	                </common:TelerikEffects.HelpText>
+	                <telerikPrimitives:SlideViewLabel.Effects>
+	                    <common:HelpTextEffect/>
+	                </telerikPrimitives:SlideViewLabel.Effects>
+	                <telerikPrimitives:SlideViewLabel.GestureRecognizers>
+	                    <TapGestureRecognizer Command="{TemplateBinding Path=PreviousItemCommand}" />
+	                </telerikPrimitives:SlideViewLabel.GestureRecognizers>
+	                <AutomationProperties.HelpText>
+	                    <OnPlatform x:TypeArguments="x:String">
+	                        <On Platform="iOS" Value="Navigate Backward" />
+	                        <On Platform="UWP" Value="Navigate Backward" />
+	                    </OnPlatform>
+	                </AutomationProperties.HelpText>
+	                <AutomationProperties.Name>
+	                    <OnPlatform x:TypeArguments="x:String">
+	                        <On Platform="iOS" Value="RadSlideView" />
+	                        <On Platform="UWP" Value="RadSlideView" />
+	                    </OnPlatform>
+	                </AutomationProperties.Name>
+	            </telerikPrimitives:SlideViewLabel>
+	
+	            <telerikPrimitives:SlideViewLabel AutomationId="SlideViewRightArrow"    
+	                                              VerticalOptions="Center" 
+	                                              Text="&#x203A;" 
+	                                              IsVisible="{TemplateBinding ShowButtons}"
+	                                              FontSize="{TemplateBinding SlideButtonsSize}"
+	                                              FontFamily="Arial"
+	                                              HorizontalOptions="End"
+	                                              TextColor="{TemplateBinding SlideButtonsColor}">
+	                <common:TelerikEffects.HelpText>
+	                    <OnPlatform x:TypeArguments="x:String">
+	                        <On Platform="Android" Value="RadSlideView Navigate Forward" />
+	                    </OnPlatform>
+	                </common:TelerikEffects.HelpText>
+	                <telerikPrimitives:SlideViewLabel.Effects>
+	                    <common:HelpTextEffect />
+	                </telerikPrimitives:SlideViewLabel.Effects>
+	                <telerikPrimitives:SlideViewLabel.GestureRecognizers>
+	                    <TapGestureRecognizer Command="{TemplateBinding Path=NextItemCommand}" />
+	                </telerikPrimitives:SlideViewLabel.GestureRecognizers>
+	                <AutomationProperties.HelpText>
+	                    <OnPlatform x:TypeArguments="x:String">
+	                        <On Platform="iOS" Value="Navigate Forward" />
+	                        <On Platform="UWP" Value="Navigate Forward" />
+	                    </OnPlatform>
+	                </AutomationProperties.HelpText>
+	                <AutomationProperties.Name>
+	                    <OnPlatform x:TypeArguments="x:String">
+	                        <On Platform="iOS" Value="RadSlideView" />
+	                        <On Platform="UWP" Value="RadSlideView" />
+	                    </OnPlatform>
+	                </AutomationProperties.Name>
+	            </telerikPrimitives:SlideViewLabel>
+	
+	            <slideView:SlideViewIndicators Owner="{TemplateBinding}" 
+	                                           Spacing="{TemplateBinding Path=IndicatorsSpacing}"
+	                                           SelectedIndicatorTemplate="{TemplateBinding SelectedIndicatorTemplate}" 
 	                                           IndicatorTemplate="{TemplateBinding IndicatorTemplate}"
-	                                           IsVisible="{TemplateBinding ShowIndicators}"
+	                                           IsVisible="{TemplateBinding ShowIndicators}" 
 	                                           VerticalOptions="End"
-	                                           HorizontalOptions="Center"/>
-            </Grid>
-        </ControlTemplate>
+	                                           HorizontalOptions="Center" 
+	                                           InputTransparent="True" />
+	        </Grid>
+	    </ControlTemplate>
     </ResourceDictionary>
 </ContentPage.Resources>
 ```
@@ -111,6 +133,7 @@ where the Telerik namespace is as follow:
 ```XAML
 xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
 xmlns:slideView="clr-namespace:Telerik.XamarinForms.Primitives.SlideView;assembly=Telerik.XamarinForms.Primitives"
+xmlns:common="clr-namespace:Telerik.XamarinForms.Common;assembly=Telerik.XamarinForms.Common"
 ```
 
 Finally, use the custom ControlTemplate, IndicatorTemplate and SelectedIndicatorTemplate as a **StaticResource** on any instance of RadSlideView:

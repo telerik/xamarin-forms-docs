@@ -17,33 +17,36 @@ This article will guide you through the steps needed to add a basic **RadPdfView
 
 ## 1. Setting up the app
 
-Take a look at these articles and follow the instructions to setup your app:
+Start by setting up the app. See the following articles for detailed instructions:
 
-- [Setup app with Telerik UI for Xamarin on Windows]({%slug getting-started-windows%})
-- [Setup app with Telerik UI for Xamarin on Mac]({%slug getting-started-mac%})
+* [Setup app with Telerik UI for Xamarin on Windows]({%slug getting-started-windows%}).
+* [Setup app with Telerik UI for Xamarin on Mac]({%slug getting-started-mac%}).
 
 ## 2. Adding the required Telerik references
 
-You have two options:
+To add the required Telerik references to your project, choose one of the three options:
 
-* Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
+* Add the entire [**Telerik.UI.for.Xamarin** NuGet package]({%slug telerik-nuget-server%}).
+* Add only the **Telerik.UI.for.Xamarin.PdfViewer** NuGet package.
 
-If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadPdfViewer control you have to install the **Telerik.UI.for.Xamarin.PdfViewer** nuget package. This nuget will automatically refer the *Telerik.UI.for.Xamarin.Common*, *Telerik.UI.for.Xamarin.Primitives*, *Telerik.UI.for.Xamarin.SkiaSharp*, *SkiaSharp* and *SkiaSharp.Views.Forms* nuget packages.
+    The NuGet package manager will automatically add the following dependencies: *Telerik.UI.for.Xamarin.Common*, *Telerik.UI.for.Xamarin.Primitives*, *Telerik.UI.for.Xamarin.SkiaSharp*, *SkiaSharp* and *SkiaSharp.Views.Forms*.
 
-* Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadPdfViewer** component:
+* Add the references to all required Telerik assemblies manually.
 
-| Platform | Assemblies |
-| -------- | ---------- |
-| Portable | Telerik.Documents.Core.dll<br/>Telerik.Documents.Fixed.dll<br/>Telerik.XamarinForms.PdfViewer.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll<br/>Telerik.XamarinForms.SkiaSharp.dll |
-| Android  | Telerik.Documents.Core.dll<br/>Telerik.Documents.Fixed.dll<br/>Telerik.Xamarin.Android.Primitives.dll<br/>Telerik.Xamarin.Android.Common.dll<br/>Telerik.XamarinForms.PdfViewer.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll<br/>Telerik.XamarinForms.SkiaSharp.dll |
-| iOS      | Telerik.Documents.Core.dll<br/>Telerik.Documents.Fixed.dll<br/>Telerik.Xamarin.iOS.dll<br/>Telerik.XamarinForms.PdfViewer.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll<br/>Telerik.XamarinForms.SkiaSharp.dll |
-| UWP      | Telerik.Core.dll<br/>Telerik.Documents.Core.dll<br/>Telerik.Documents.Fixed.dll<br/>Telerik.UI.Xaml.Primitives.UWP.dll<br/>Telerik.XamarinForms.PdfViewer.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives<br/>Telerik.XamarinForms.SkiaSharp.dll |
+    The following table presents the required assemblies for the **RadPdfViewer** component:
 
->important Please keep in mind that **Telerik.Documents.Core.dll** and **Telerik.Documents.Fixed.dll** assemblies are located in the Portable folder, still, you need to add a reference to them in each of the platform projects.
+    | Platform | Assemblies |
+    | -------- | ---------- |
+    | Portable | Telerik.Documents.Core.dll<br/>Telerik.Documents.Fixed.dll<br/>Telerik.XamarinForms.PdfViewer.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll<br/>Telerik.XamarinForms.SkiaSharp.dll |
+    | Android  | Telerik.Documents.Core.dll<br/>Telerik.Documents.Fixed.dll<br/>Telerik.Xamarin.Android.Primitives.dll<br/>Telerik.Xamarin.Android.Common.dll<br/>Telerik.XamarinForms.PdfViewer.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll<br/>Telerik.XamarinForms.SkiaSharp.dll |
+    | iOS      | Telerik.Documents.Core.dll<br/>Telerik.Documents.Fixed.dll<br/>Telerik.Xamarin.iOS.dll<br/>Telerik.XamarinForms.PdfViewer.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll<br/>Telerik.XamarinForms.SkiaSharp.dll |
+    | UWP      | Telerik.Core.dll<br/>Telerik.Documents.Core.dll<br/>Telerik.Documents.Fixed.dll<br/>Telerik.UI.Xaml.Primitives.UWP.dll<br/>Telerik.XamarinForms.PdfViewer.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives<br/>Telerik.XamarinForms.SkiaSharp.dll |
+
+>important Add a reference to the **Telerik.Documents.Core.dll** and **Telerik.Documents.Fixed.dll** assemblies to each project. The assemblies are located in the `\Binaries\Portable` folder of your Telerik UI for Xamarin installation.
 
 ## 3. Adding RadPdfViewer control
 
-You could use one of the following approaches:
+Use one of the following approaches:
 
 #### Drag the control from the Toolbox. 
 
@@ -56,7 +59,7 @@ Take a look at the following topics on how to use the toolbox:
 
 <snippet id='prfviewer-getting-started-xaml' />
 
-In addition to this, you need to add the following namespace:
+After you create the control definition, add the following namespace:
 
 ```XAML
 xmlns:telerikPdfViewer="clr-namespace:Telerik.XamarinForms.PdfViewer;assembly=Telerik.XamarinForms.PdfViewer"
@@ -64,17 +67,15 @@ xmlns:telerikPdfViewer="clr-namespace:Telerik.XamarinForms.PdfViewer;assembly=Te
 
 ## 4. Visualize a Pdf Document
 
->important To visualize the pdf document you will need to set the *Source* property of the control.
-
-* **Source** (DocumentSource): Defines the source of the document.
-
->note The example below shows a pdf document visualized as an EmbeddedResource. This is one of the options for loading a pdf inside PdfViewer control, you could check the others in the [Key Features]({%slug pdfviewer-key-features%}) topic.
+To visualize the pdf document, set the *Source* property of the control:
 
 <snippet id='pdfviewer-getting-started' />
 
 This is the result:
 
 ![PdfViewer Getting Started Example](images/pdfviewer-getting-started.png "PdfViewer Getting Started Example")
+
+>note The example below shows a pdf document visualized as an EmbeddedResource. This is one of the options for loading a pdf with the PdfViewer control. For all available options, see the [Key Features]({%slug pdfviewer-key-features%}) topic.
 
 ## See Also
 

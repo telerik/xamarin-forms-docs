@@ -64,10 +64,10 @@ Here is an example containing all types of columns RadDataGrid control provides.
 Use the following snippet to declare a RadDataGrid in XAML: 
 <snippet id='datagrid-columns-xaml'/>
 
-Where the **telerikGrid** namespace is the following:
+Where the **telerikDataGrid** namespace is the following:
 
 ```xml
-xmlns:telerikGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
+xmlns:telerikDataGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
 ```
 
 The **ViewModel** class is declared as following:

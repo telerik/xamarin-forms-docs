@@ -25,7 +25,7 @@ Corresponding Regex | Usage
 
 ## Custom Regex Example
 
-**MaskedInput with custom RegEx validation**
+**MaskedInput with custom RegEx validation**. The `Keyboard` type is `Numeric`.
 
 <snippet id='maskedinput-features-regex-custom-validation-xaml'/>
 
@@ -38,7 +38,7 @@ The static class **Telerik.XamarinForms.Input.MaskedInput.MaskExtensions** conta
  
 ## Built-in Regex Example
 
-**Validation using the MaskExtensions class**
+**Validation using the MaskExtensions class**. The Masked type is Email. Note that the `Keyboard` type set is `Email`.
 
 <snippet id='maskedinput-features-regex-extensions-validation-xaml'/>
 

@@ -36,6 +36,26 @@ RadEntry provides **IsPassword**(*bool*) property, which when set to True, repla
 
 <snippet id='entry-features-password'/>
 
+## Non-Editable State
+
+With R1 2021 Service Pack, RadEntry control provides a feature which allows you to choose whether the control will be editable or not - Read-Only state.
+
+* **IsReadOnly** *bool* property: Specifies whether the control will be in edit mode. The default value is `False`. If you want to restrict the control from editing, set the `IsReadOnly` to `True`
+
+### Example
+
+<snippet id='entry-features-read-only'/>
+
+## Max Length
+
+From r1 2021 Service Pack, the Radentry control has an additional feature, you can restrict the number of the symbols allowed to be entered in the input field. 
+
+* **MaxLength** (*int*) property: Specifies the maximum number of symbols allowed to be entered.
+
+### Example with MaxLength set to 10
+
+<snippet id='entry-features-maxlength'/>
+
 ## Keyboard
 
 The **Keyboard** property of type *Xamarin.Forms.Keyboard* allows you to define the type of the keyboard that will be visualized by the device.

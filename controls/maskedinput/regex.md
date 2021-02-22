@@ -38,7 +38,7 @@ The static class **Telerik.XamarinForms.Input.MaskedInput.MaskExtensions** conta
  
 ## Built-in Regex Example
 
-**Validation using the MaskExtensions class**. The Masked type is Email. Note that the `Keyboard` type set is `Email`.
+**Validation using the MaskExtensions class**. The MaskedExtention type is Email. Note that the `Keyboard` type is set to `Email`.
 
 <snippet id='maskedinput-features-regex-extensions-validation-xaml'/>
 

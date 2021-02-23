@@ -50,6 +50,10 @@ And here is how the control looks when Theming is applied:
 
 ![Styling](images/maskedinput-theme.png)
 
+And how the MaskedInpur control looks when in edit mode with `Keyboard` type `Telephone`.
+
+![Telephone masked](images/maskedinput-telephone.png)
+
 >note You can find a working demo labeled **Theme** in the MaskedInput/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}). 
 
 ## See Also

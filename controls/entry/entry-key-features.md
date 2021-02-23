@@ -46,6 +46,8 @@ With R1 2021 Service Pack, RadEntry control provides a feature which allows you 
 
 <snippet id='entry-features-read-only'/>
 
+>important You can find a working demo labeled **Read-Only State** in the Entry/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
 ## Max Length
 
 From r1 2021 Service Pack, the Radentry control has an additional feature, you can restrict the number of the symbols allowed to be entered in the input field. 
@@ -55,6 +57,8 @@ From r1 2021 Service Pack, the Radentry control has an additional feature, you c
 ### Example with MaxLength set to 10
 
 <snippet id='entry-features-maxlength'/>
+
+>important You can find a working demo labeled **Max Length** in the Entry/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## Keyboard
 

@@ -50,7 +50,7 @@ And here is how the control looks when Theming is applied:
 
 ![Styling](images/maskedinput-theme.png)
 
-And how the MaskedInpur control looks when in edit mode with `Keyboard` type `Telephone`.
+And how the MaskedInput control looks when in edit mode with `Keyboard` type `Telephone`.
 
 ![Telephone masked](images/maskedinput-telephone.png)
 

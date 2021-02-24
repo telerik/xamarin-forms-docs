@@ -65,6 +65,7 @@ The **RadMaskedInput** control exposes the following properties which you can co
 * **IsMaskFull**(*bool*): Gets a value indicating if all required symbols are filled. The default value is true. Can be false only when required symbols tokens are present in the mask. (*ReadOnly*)
 * **InputValue**(*string*): Defines the input value.
 * **IsInputAccepted**(*bool*): Gets a value indicating whether the input matches the mask.(*ReadOnly*)
+* **Keyboard** (*Xamarin.Forms.Keyboard*): Defines the type of the keyboard that will be visualized by the device.
 
 ### Appearance-related properties: 
 

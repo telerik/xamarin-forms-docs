@@ -36,7 +36,7 @@ RadEntry provides **IsPassword**(*bool*) property, which when set to True, repla
 
 <snippet id='entry-features-password'/>
 
-## Non-Editable State
+## Read-Only State
 
 With R1 2021 Service Pack, RadEntry control provides a feature which allows you to choose whether the control will be editable or not - Read-Only state.
 

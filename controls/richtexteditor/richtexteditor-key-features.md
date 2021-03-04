@@ -48,7 +48,7 @@ RichTextEditor will help app users create and edit HTML content. You can apply p
 
 In addition, RichTextEditor provides flexible API to apply formatting at the current caret position or on the selected text inside the editing area.
 
-* **TextFormatting** (of type [RichTextFormatting](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtextformatting)): Defines the text formatting, such as heading, paragraph or of the text at the current position or selection. 
+* **TextFormatting** (of type [RichTextFormatting](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtextformatting)): Defines the text formatting, such as heading, paragraph or quotation of the text at the current position or selection. 
 
 * **TextColor**: Specifies the color of the text at the current position or selection;
 

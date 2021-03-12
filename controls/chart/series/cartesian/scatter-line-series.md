@@ -48,14 +48,37 @@ And here is the result:
 
 ### Customization Example
 
-Here we make some customization:
-```C#
-	var series = new ScatterLineSeries 
-	{ 
-		Stroke = new Color(0.6, 0.6, 0.9), 
-		StrokeThickness = 5 
-	};
+Here we make some customizations on the ScatterLine Series applying `Stroke` and `StrokeThickness` to the series. We extended the example above:
+
+```XAML
+<telerikChart:RadCartesianChart>
+    <telerikChart:RadCartesianChart.BindingContext>
+        <local:SeriesNumericalViewModel />
+    </telerikChart:RadCartesianChart.BindingContext>
+    <telerikChart:RadCartesianChart.HorizontalAxis>
+        <telerikChart:NumericalAxis LabelFitMode="MultiLine" />
+    </telerikChart:RadCartesianChart.HorizontalAxis>
+    <telerikChart:RadCartesianChart.VerticalAxis>
+        <telerikChart:NumericalAxis />
+    </telerikChart:RadCartesianChart.VerticalAxis>
+    <telerikChart:RadCartesianChart.Series>
+        <telerikChart:ScatterLineSeries XValueBinding="XData"
+                                        YValueBinding="YData"
+                                        Stroke="Red"
+                                        StrokeThickness="5"
+                                        ItemsSource="{Binding Data1}" />
+        <telerikChart:ScatterLineSeries XValueBinding="XData"
+                                        YValueBinding="YData"
+                                        Stroke="Blue"
+                                        StrokeThickness="5"
+                                        ItemsSource="{Binding Data2}" />
+    </telerikChart:RadCartesianChart.Series>
+</telerikChart:RadCartesianChart>
 ```
+
+Here is the result:
+
+![Scatter Line Series Customization](images/chart-scatter-line-series-customizatrion.png)
 
 ## See Also
 

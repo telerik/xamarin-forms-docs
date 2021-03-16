@@ -41,9 +41,15 @@ Then add the following code to visualize the pdf document:
 
 <snippet id='pdfviewer-toolbar'/>
 
+>The snippet above shows one of the approaches for loading a pdf document inside RadPdfViewer just for the purpose of the example. For more details on various ways for loading the document check [Key Features: Pdf Document Visualization]({%slug pdfviewer-key-features%}#pdf-document-visualization) topic.
+
 This is the result:
 
 ![PdfViewer Toolbar](images/pdfviewer-toolbar.png "PdfViewer Toolbar")
+
+>important A sample PdfViewer Toolbar example is available in PdfViewer -> Features folder of the [SDK Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
+>
+>You can directly explore the code in the [SDK Samples Browser repository on GitHub](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/PdfViewerControl/FeaturesCategory/PdfToolbarExample).
 
 ## Custom Toolbar Item
 
@@ -70,9 +76,12 @@ Check below the result on different platforms:
 ![PdfToolbar Custom ToolbarItem](images/pdfviewer-toolbar-customitem.png)
 
 >important A sample Custom ToolbarItem example is available in PdfViewer -> Features folder of the [SDK Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
+>
+>You can directly explore the code in the [SDK Samples Browser repository on GitHub](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/PdfViewerControl/FeaturesCategory/CustomToolbarItemExample).
 
 ## See Also
 
+- [Key Features]({%slug pdfviewer-key-features%})
 - [Telerik Font Icons]({%slug telerik-font-icons%})
 - [Text Search]({%slug pdfviewer-text-search%})
 - [Commands]({%slug pdfviewer-commands%})

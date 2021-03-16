@@ -13,7 +13,7 @@ This article describes how to set the content and edit templates to the DataGrid
 * **CellContentTemplate** (DataTemplate): Defines the appearance of each cell associated with the concrete column. CellContenTemplate gives you the opportunity to wrap the text inside each datagrid column. You can add a Label as a content of the Text, Template Column and wrap its text using the Label's **LineBreakMode** property.
 * **CellEditTemplate** (DataTemplate): Defines the editor associated with the concrete column. The CellEditTemplate is displayed when the cell is in edit mode.
 
->important **CellContentTemplate** and **CellEditTemplate** properties are part of the DataGrid features from R2 2020 Official Release. More details on this feature check the [Cell Templates]({%slug datagrid-cell-templates%}) article.
+>important **CellContentTemplate** and **CellEditTemplate** properties are part of the DataGrid features from R2 2020 Official Release. 
 
 ## Cell Content Template Example
 
@@ -21,7 +21,7 @@ Use the following snippet to declare a RadDataGrid in XAML:
 
 <snippet id='datagrid-columns-cellcontenttemplate-xaml'/>
 
-And add the following namespaces
+And add the following namespaces:
 
 ```xml
 xmlns:telerikGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"

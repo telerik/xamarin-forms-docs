@@ -31,6 +31,8 @@ RadPdfViewer provides the following commands of type *ICommand*:
 
 Following is an example how the RadPdfViewer commands could be called on a button click action. For the example we will visualize a pdf document from stream. 
 
+>The snippet below shows one of the approaches for loading a pdf document inside RadPdfViewer just for the purpose of the example. For more details on various ways for loading the document check [Key Features: Pdf Document Visualization]({%slug pdfviewer-key-features%}#pdf-document-visualization) topic.
+
 First, add a pdf document to the project and set its build action to be **EmbeddedResource**.
 
 Then, add the following code to visualize the document:
@@ -57,7 +59,10 @@ this.pdfViewer.FitToWidthCommand = new FitPageToWidthCommand();
 In this way, calling the **FitToWidthCommand** on a button click action, as in the example above, will execute "Fit Page to Width" on the current page.
  
 >important A sample Commands example can be found in the PdfViewer/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+>
+>You can directly explore the code in the [SDK Samples Browser repository on GitHub](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/PdfViewerControl/FeaturesCategory/CommandsExample).
 
 ## See Also
 
+- [Key Features]({%slug pdfviewer-key-features%})
 - [PdfViewer Toolbar]({%slug pdfviewer-toolbar%})

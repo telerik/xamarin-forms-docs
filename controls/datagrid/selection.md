@@ -126,7 +126,7 @@ Now you use various approaches to select the first employee from the Marketing d
 
   <snippet id='datagrid-selection-selectall' />
 
->important A sample Programmatic Selection example is available in the `DataGrid\Selection` folder of the [SDK Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
+>important A sample Programmatic Selection example is available in the `DataGrid => Selection` folder of the [SDK Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
 >
 >You can directly explore the code in the [SDKBrowser Examples repository on GitHub](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/DataGridControl/SelectionCategory/ProgrammaticSelectionExample).
 

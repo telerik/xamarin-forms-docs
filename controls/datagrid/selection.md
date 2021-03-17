@@ -6,25 +6,26 @@ position: 3
 slug: datagrid-selection-overview
 ---
 
-# Selection #
+# Selection
 
-**RadDataGrid** exposes a selection feature - you can select a cell or a row by tapping on it. The control provides single as well as multiple selection.
+**RadDataGrid** exposes a selection feature - users can select a cell or a row by tapping on it. To cancel the selection, they can simply tap on the cell or a row again. The control provides single and multiple selection.
 
-You can unselect by a tap on already selected cell/row.
-
-This article will show the basic properties and methods RadDataGrid provides for working with selection.
+This article explains the basic properties and methods that RadDataGrid provides for working with selection.
 
 ## Important Properties
 
-RadDataGrid supports different selection modes that can be modified by the following properties. First, you can choose the Unit that you will be allowed to select and then the Selection Mode:
+RadDataGrid supports different selection modes that you can modify through the [**SelectionUnit**](#selectionunit) and [**SelectedItems**](#selecteditems) properties. Before you can set the [**SelectionMode**](#selectionmode), you must choose which Unit can be selected.
 
-* **SelectionUnit** property (type of *Telerik.XamarinForms.DataGrid.DataGridSelectionUnit*):
- * **Row**: The unit to select is a grid row (by default).
- * **Cell**: The unit to select is a cell within a grid row.
- 
->note To define a Cell when using a selection you can use the DataGridCellInfo class, that holds all the information about it. To define a Row when using a selection you can use your data object.
+### SelectionUnit
 
-Check below how you can set **SelectionUnit** in XAML and code-behind:
+The **SelectionUnit** property (type of *Telerik.XamarinForms.DataGrid.DataGridSelectionUnit*) allows you to control which Unit can be selected:
+
+* **Row**: The unit to select is a grid row (by default).
+* **Cell**: The unit to select is a cell within a grid row.
+
+  >note To define a Cell when using a selection, you can use the DataGridCellInfo class that holds all the information about the Cell. To define a Row when using a selection, you can use your data object.
+
+The example below shows how to set **SelectionUnit** in XAML and code-behind:
 
 ```XAML
 <telerikDataGrid:RadDataGrid x:Name="dataGrid"
@@ -35,11 +36,16 @@ var dataGrid = new RadDataGrid();
 dataGrid.SelectionUnit = Telerik.XamarinForms.DataGrid.DataGridSelectionUnit.Cell;
 ```
 
-* **SelectionMode** property (type of *Telerik.XamarinForms.DataGrid.DataGridSelectionMode*):
-  * **Single**: Single unit may be selected(by default).
-  * **Multiple**: Multiple units may be selected.
-  * **None**: No selection is allowed.
-  
+### SelectionMode
+
+The **SelectionMode** property (type of *Telerik.XamarinForms.DataGrid.DataGridSelectionMode*) provides the following modes:
+
+* **Single**: Single unit may be selected(by default).
+* **Multiple**: Multiple units may be selected.
+* **None**: No selection is allowed.
+
+The example below shows how to set **SelectionMode** in XAML and code-behind:
+
 ```XAML
 <telerikDataGrid:RadDataGrid x:Name="dataGrid"
 							 SelectionMode="Multiple" />
@@ -48,19 +54,21 @@ dataGrid.SelectionUnit = Telerik.XamarinForms.DataGrid.DataGridSelectionUnit.Cel
 var dataGrid = new RadDataGrid();
 dataGrid.SelectionMode = Telerik.XamarinForms.DataGrid.DataGridSelectionMode.Multiple;
 ```
-  
-Once you make a selection, you can get or modify a collection with the selected Items by using:
 
-* **SelectedItems** property (type of *ObservableCollection&lt;object&gt;*): Gets or Modifies an ObservableCollection of the currently selected Items(their type depends on the applied SelectionUnit, that is, DataGridCellInfo for Cell and Data Item for Row).
+### SelectedItems
+
+Once you make a selection, you can get or modify the collection with the selected Items by using the **SelectedItems** property:
+
+* **SelectedItems** property (type of *ObservableCollection&lt;object&gt;*): Gets or Modifies an ObservableCollection of the currently selected Items (their type depends on the applied SelectionUnit, that is, DataGridCellInfo for Cell and Data Item for Row).
 
 >note You can listen to the CollectionChanged event of the SelectedItems directly.
 
 ## Events
 
-- **SelectionChanged**: An event that is triggered whenever the SelectedItems collection is changed. SelectionChanged event handler receives two parameters:
-	* The sender argument which is of type object, but can be cast to the __RadDataGrid__ type.
-	* A __DataGridSelectionChangedEventArgs__ object which provides the following properties:
-		- RemovedItems - gets a list of the removed items from the SelectedItems collection;
+- **SelectionChanged**: An event that is triggered whenever the SelectedItems collection is changed. The SelectionChanged event handler receives two parameters:
+	* The sender argument, which is of type object, but can be cast to the __RadDataGrid__ type.
+	* A __DataGridSelectionChangedEventArgs__ object, which provides the following properties:
+		- RemovedItems - gets a list of the removed items from the SelectedItems collection.
 		- AddedItems - gets a list of the added items to the SelectedItems collection.
 
 ## Methods
@@ -85,40 +93,40 @@ Additional functionalities for programmatic selecting and deselecting items are 
 ### Example
 In order to illustrate how these methods can be used, let's have the following example:
 
-First, add a sample business object:
+1. Add a sample business object:
 
-<snippet id='datagrid-selection-object' />
+  <snippet id='datagrid-selection-object' />
 
-And a ViewModel with a list of "Person" objects:
+1. Add a ViewModel with a list of "Person" objects:
 
-<snippet id='datagrid-grouping-propertygroupdescriptor-viewmodel' />
+  <snippet id='datagrid-grouping-propertygroupdescriptor-viewmodel' />
 
-Here is the RadDataGrid definition:
+1. Add the RadDataGrid definition:
 
-```XAML
-<telerikDataGrid:RadDataGrid x:Name="dataGrid"
-							 ItemsSource="{Binding People}" />
-```
+ ```XAML
+ <telerikDataGrid:RadDataGrid x:Name="dataGrid"
+ 							  ItemsSource="{Binding People}" />
+ ```
 
-Lastly, set the ViewModel class as a BindingContext:
+1. Set the ViewModel class as a BindingContext:
 
-<snippet id='datagrid-selection-setvm' />
+  <snippet id='datagrid-selection-setvm' />
 
-For example, you can select the first employee from Marketing department as shown in the snippets below.
+Now you use various approaches to select the first employee from the Marketing department. Each snippet shows a possible approach:
 
-In the case of Row selection use SelectItem method:
+* In the case of Row selection, use SelectItem method:
 
-<snippet id='datagrid-selection-selectitem' />
+  <snippet id='datagrid-selection-selectitem' />
 
-For Cell selection use SelectCell method - it takes as a parameter a **DataGridCellInfo** object. DataGridCellInfo object can be easily created using the needed data item (of type Person in our case) and setting the column corresponding to the cell you'd need to select.
+* For Cell selection, use SelectCell method - it takes as a parameter a **DataGridCellInfo** object. DataGridCellInfo object can be easily created using the needed data item (of type Person in our case) and setting the column corresponding to the cell you'd need to select.
 
-<snippet id='datagrid-selection-selectcell' />
+  <snippet id='datagrid-selection-selectcell' />
 
-Lastly, you call SelectAll/DeselectAll method like this:
+* Lastly, you call the SelectAll/DeselectAll method like this:
 
-<snippet id='datagrid-selection-selectall' />
+  <snippet id='datagrid-selection-selectall' />
 
->important A sample Programmatic Selection example is available in DataGrid -> Selection folder of the [SDK Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
+>important A sample Programmatic Selection example is available in the `DataGrid => Selection` folder of the [SDK Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
 >
 >You can directly explore the code in the [SDKBrowser Examples repository on GitHub](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/DataGridControl/SelectionCategory/ProgrammaticSelectionExample).
 

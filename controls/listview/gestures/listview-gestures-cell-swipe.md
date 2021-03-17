@@ -8,26 +8,24 @@ slug: listview-features-cell-swipe
 
 # Cell Swipe
 
-The cell swipe feature allows end-users to use swipe gesture on cells. When the user swipes, the content view moves revealing a designated swipe background view where you can place custom views ready for interaction e.g. buttons, images etc.
+Cell swipe allows end-users to use swipe gestures on cells. When users swipe, they reveal a designated custom view with buttons, images etc.
 
-The image below shows how swiping right could reveal additional view on the left containing a Delete button:
+The image below shows how swiping right could reveal a Delete button on the left:
 
 ![](images/listview-cellswipe.png)
 
-The same can be achieve if the user swipes left - in this case a view on the right would be displayed. As soon as the user taps the swiped item or anywhere on the ListView, the item returns to its original position.
+You can reveal another custom view if the user swipes left. In this case, Cell Swipe displays the custom view on the right. As soon as the user taps the swiped item or anywhere on the ListView, the item returns to its original position.
 
 ## Properties
 
-The following RadListView properties are related to the cell swiping feature:
+You can use the following RadListView properties to configure the Cell Swipe feature:
 
-- **IsItemSwipeEnabled** (*bool*): Turns on or off the feature. It's default value is False.
-- **SwipeThreshold** (*double*): Defines the length (in pixels) of the swipe gesture which is required to trigger the feature. Any shorter swipe will not be respected. Its default value is 0.
-- **SwipeOffset** (*Thickness*): Specifies how much the swiped cell will be moved to the side and stick there. It's default value is 100.
+- **IsItemSwipeEnabled** (*bool*): Enables or disables the Cell Swipe feature. The default value is False.
+- **SwipeThreshold** (*double*): Defines the length (in pixels) of the swipe gesture that is required to trigger the feature. Shorter swipe gestures are not respected. The default value is 0.
+- **SwipeOffset** (*Thickness*): Specifies how much to move the swiped cell to the side and stick it there. The default value is 100.
 - **ItemSwipeContentTemplate** (*DataTemplate*): Defines the content that will be visualized when users swipe a cell.
 
-To enable swipe feature the **IsItemSwipeEnabled** property of the RadListView should be set to **True**. 
-
->tip Please keep in mind that **SwipeThreshold** should be set to a smaller number than the **SwipeOffset** - this is required as the **SwipeThreshold** defines the minimum swipe gesture length that needs to be exceeded in order for the swipe feature to be initialized.
+>tip The **SwipeThreshold** value must be lower than the **SwipeOffset** value. This is required because the **SwipeThreshold** defines the minimum swipe gesture length that triggers the Cell Swipe feature and reveals a custom view.
 
 ## Methods
 
@@ -39,82 +37,81 @@ The following RadListView methods are related to the cell swiping feature:
 
 The following RadListView events are related to the cell swiping feature:
 
-- **ItemSwipeStarting**: Occurs when the user has initiated swipe gesture. The event arguments are of type **ItemSwipeStartingEventArgs**, that provides the following properties:
- - **Item** (object): The item that will be swiped.
- - **Cancel** (bool): If you set this value to `false`, the swiping will be canceled.
-- **ItemSwiping**: Occurs while the user is swiping the item. The event arguments are of type **ItemSwipingEventArgs**, that provides the following properties:
- - **Item** (object): The item that is being swiped.
- - **Offset** (double): The current swipe offset.
-- **ItemSwipeCompleted**: Occurs when the user finishes the swipe gesture. The event arguments are of type **ItemSwipeCompletedEventArgs**, that provides the following properties:
- - **Item** (object): The item that has been swiped.
- - **Offset** (double): The swipe offset at which the item has been dropped.
+- **ItemSwipeStarting**: Occurs when the user initiates the swipe gesture. The event arguments are of the **ItemSwipeStartingEventArgs** type that provides the following properties:
+  - **Item** (object): The item that will be swiped.
+  - **Cancel** (bool): If you set this value to `false`, the swiping will be canceled.
+- **ItemSwiping**: Occurs while the user is swiping the item. The event arguments are of the **ItemSwipingEventArgs** type that provides the following properties:
+  - **Item** (object): The item that is being swiped.
+  - **Offset** (double): The current swipe offset.
+- **ItemSwipeCompleted**: Occurs when the user finishes the swipe gesture. The event arguments are of the **ItemSwipeCompletedEventArgs** type that provides the following properties:
+  - **Item** (object): The item that has been swiped.
+  - **Offset** (double): The swipe offset at which the item has been dropped.
 
 ## Commands
 
-In addition to the swipe events, RadListView provides similar commands related to certain swipe actions, namely:
+In addition to the swipe events, RadListView provides the following commands related to certain swipe actions:
 
-* **ItemSwipeStarting**:
-* **ItemSwiping**
-* **ItemSwipeCompleted**
+- **ItemSwipeStarting**
+- **ItemSwiping**
+- **ItemSwipeCompleted**
 
-For more detailed information on how you can utilize the ListView commands, go to [Commands]({% slug listview-features-commands %}) topic.
+For more details on how to utilize the ListView commands, see [Commands]({% slug listview-features-commands %}).
   
 ## Examples
 
-With the RadListView swipe events, we can perform custom actions depending on the swipe direction, the swiped amount or the data item.
+The RadListView swipe events allow you to configure custom actions that depend on the swipe direction, the swipe gesture length or the data item.
 
-Alternatively, we can add interactive elements to the swipe content and use the swipe gesture only to reveal this content. The user then can choose how to interact with the revealed content.
+Alternatively, you can add interactive elements to the swipe content and use the swipe gesture only to reveal this content. The user can then choose how to interact with the revealed content.
 
 ### Example with swipe events
 
-The following example demonstrates how to use the **ItemSwipeCompleted** event and depending on the swipe distance, we will modify the data item or remove it from the source.
+The following example demonstrates how to use the **ItemSwipeCompleted** event. Depending on the swipe gesture length, we will modify the data item or remove it from the source.
 
 ![CellSwipe](images/listview-gestures-swipe-swipe-event.png)
 
-Here is the view model for the list view:
+1. Add the view model for the ListView:
 
-<snippet id='listview-gestures-cellswipe-swipeevents-viewmodel'/>
+    <snippet id='listview-gestures-cellswipe-swipeevents-viewmodel'/>
 
-Below is the setup of the list view. Swiping left or right will reveal content with a hint for what will happen if the user completes the swipe action. 
+1. Set up ListView. Swiping left or right will reveal content with a hint for what will happen if the user completes the swipe action.
 
-<snippet id='listview-gestures-cellswipe-swipeevents-listview'/>
+    <snippet id='listview-gestures-cellswipe-swipeevents-listview'/>
 
-Where:
+1. Define the ListView namespace:
 
-<snippet id='xmlns-teleriklistview'/>
+    <snippet id='xmlns-teleriklistview'/>
 
-Finally, here is what happens when the user has completed the swipe gesture:
+1. Configure what happens when the user completes the swipe gesture:
 
-<snippet id='listview-gestures-cellswipe-swipeevents-swipecompleted'/> 
+    <snippet id='listview-gestures-cellswipe-swipeevents-swipecompleted'/> 
 
-We call the **EndItemSwipe()** method to force the item to go to its default position, since the scenario does not require any interaction with the swipe content itself.
+We call the **EndItemSwipe()** method to force the item to go to its default position since the scenario does not require any interaction with the swipe content itself.
 
 ### Example with interactive content
 
-The following example demonstrates how to add a delete button to the swipe content and using the button `Clicked` event handler, delete an item from the list view source.
+The following example demonstrates how to add a delete button to the swipe content. We use the button's `Clicked` event handler to delete an item from the ListView source.
 
 ![CellSwipe](images/listview-gestures-swipe-interactive-content.png)
 
-Here is the view model for the list view. 
+1. Add the view model for the ListView:
 
-<snippet id='listview-gestures-cellswipe-interactivecontent-viewmodel'/>
+    <snippet id='listview-gestures-cellswipe-interactivecontent-viewmodel'/>
 
-Below is the setup of the list view. Note that the SwipeOffset is equal to the width of the button in the swipe content. Thus when the swipe is complete, the revealed content will be the whole button.
+1. Set up ListView. Note that the SwipeOffset is equal to the width of the button in the swipe content. Thus, when the swipe is complete, the revealed content will be the whole button.
 
-<snippet id='listview-gestures-cellswipe-interactivecontent-listview'/>
+    <snippet id='listview-gestures-cellswipe-interactivecontent-listview'/>
 
-Where:
+1. Define the ListView namespace:
 
-<snippet id='xmlns-teleriklistview'/>
+    <snippet id='xmlns-teleriklistview'/>
 
-The BindingContext of the swipe content is the data item. This could be used to perform operations on the data. In our case we will delete the item from the source.
+1. Configure what happens when the user completes the swipe gesture. The BindingContext of the swipe content is the data item. This could be used to perform operations on the data. In this case, we will delete the item from the source.
 
-<snippet id='listview-gestures-cellswipe-interactivecontent-deleteitem'/>
+    <snippet id='listview-gestures-cellswipe-interactivecontent-deleteitem'/>
 
->important Sample Cell Swipe examples are available in ListView -> Gestures folder of the [SDK Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
+>important Sample Cell Swipe examples are available in the `ListView => Gestures` folder of the [SDK Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
 >
 >You can directly explore the code in the [SDKBrowser Examples repository on GitHub](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/ListViewControl/GesturesCategory).
-
 
 ## See Also
 

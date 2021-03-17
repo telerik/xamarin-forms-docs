@@ -112,7 +112,7 @@ In order to illustrate how these methods can be used, let's have the following e
 
   <snippet id='datagrid-selection-setvm' />
 
-Now you use various approaches to select the first employee from the Marketing department. Each snippet a possible approach:
+Now you use various approaches to select the first employee from the Marketing department. Each snippet shows a possible approach:
 
 * In the case of Row selection, use SelectItem method:
 

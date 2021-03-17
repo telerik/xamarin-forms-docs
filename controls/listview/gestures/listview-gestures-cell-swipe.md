@@ -109,7 +109,7 @@ The following example demonstrates how to add a delete button to the swipe conte
 
     <snippet id='listview-gestures-cellswipe-interactivecontent-deleteitem'/>
 
->important Sample Cell Swipe examples are available in the `ListView\Gestures` folder of the [SDK Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
+>important Sample Cell Swipe examples are available in the `ListView => Gestures` folder of the [SDK Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
 >
 >You can directly explore the code in the [SDKBrowser Examples repository on GitHub](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/ListViewControl/GesturesCategory).
 

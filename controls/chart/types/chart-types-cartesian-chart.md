@@ -50,11 +50,16 @@ The following Cartesian series are available:
 Each of the above series of the same type may be combined in either [stacks or clusters]({%slug chart-series-combine-mode%}). Combinations are formed when more than one data point from different series fall within the same category. The "Cluster" combine mode will position such points next to each other while the "Stack" combine mode will arrange such points in a stack-like structure. When stacks are formed, the numerical axis (if present) will consider each stack as a single entity and its sum will be the actual value used rather than each point’s one.
 
 - **Scatter**: Scatter series need two Numerical axes in order to get properly plotted. Scatted data provides both the X and the Y coordinate.
-    - [**ScatterPoint**]({%slug chart-series-scatter-point-series%}): Data points are represented by an arbitrary template.
+	- [**ScatterPoint**]({%slug chart-series-scatter-point-series%}): Data points are represented by an arbitrary template.
     - [**ScatterLine**]({%slug chart-series-scatter-line-series%}): Data points are connected with straight line segments.
     - [**ScatterSpline**]({%slug chart-series-scatter-spline-series%}): Data points are connected with smooth line segments.
     - [**ScatterArea**]({%slug chart-series-scatter-area-series%}): Data points and the horizontal axis enclose an area that may be optionally stroked and/or filled.
     - [**ScatterSplineArea**]({%slug chart-series-scatter-spline-area-series%}): A ScatterArea, where points are connected with smooth rather than straight segments.
+	
+- **Financial**: Financial series need a [**Numerical**]({%slug axes-numerical-axis%}) and a [**Date-Time Continuous**]({%slug axes-date-time-continuous-axis%})/[**Categorical**]({%slug axes-categorical-axis%}) axis in order to get properly plotted.
+	- [**Ohlc**]({%slug chart-series-ohlc-series%}): Each data point is visualized as a line with open and close value indicators on its side.
+	- [**Candlestick**]({%slug chart-series-candlestick-series%}): Data points are plotted as visuals that resemble candlesticks.
+	- [**Financial Indicators**]({%slug chart-series-financial-indicators%}): The financial, or also called stock indicators, are mainly used for keeping track of stock prices and patterns of price changes over time. 
 
 ## Example
 

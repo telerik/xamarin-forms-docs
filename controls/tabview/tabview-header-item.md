@@ -10,14 +10,13 @@ position: 4
 
 # TabViewHeaderItem
 
-The tab strip area of RadTabView contains a special toolbar panel that hosts all **TabViewHeaderItem** elements. 
-The **RadTabView** control exposes a **Header** property which you can use to modify the header's appearance. Each individual **TabViewItem** has a **Header** property as well so you can set a specific **TabViewHeaderItem** for each tab.
+The tab strip area of RadTabView contains a special toolbar panel that hosts all **TabViewHeaderItem** elements. Each individual **TabViewItem** has a **Header** property as well so you can set a specific **TabViewHeaderItem** for each tab.
 
 ## Setting the Header's Position
 
-You can use the **HeaderPosition** property of RadTabView to control the position of the header. The property allows you to place the header at the **top** of the control where is by default or at the **bottom**, under the content of the selected tab. 
+You can use the **HeaderPosition** property of RadTabView to control the position of the header. The property allows you to place the header at the **Top** of the control where is by default or at the **Bottom**, under the content of the selected tab. 
 
-## Default TabViewHeader ControlTemplate
+## Default TabViewHeaderItem ControlTemplate
 
 Here is the default Header ControlTemplate definition:
 
@@ -40,7 +39,7 @@ The TabView definition and how to control template is set to the TabView Header
 
 ```XAML
 <telerikPrimitives:RadTabView x:Name="tabView"
-                                HeaderPosition="Top">
+                              HeaderPosition="Top">
     <telerikPrimitives:RadTabView.Items>
         <telerikPrimitives:TabViewItem>
             <telerikPrimitives:TabViewItem.Header>
@@ -54,7 +53,7 @@ The TabView definition and how to control template is set to the TabView Header
 </telerikPrimitives:RadTabView>
 ```
 
-## Customize the TabViewHeader control template: 
+## Customize the TabViewHeaderItem Control Template: 
 
 You can customize the appearance of each **TabViewHeaderItem** by replacing its default template with one of your choice. Below you can find a sample scenario where a custom control template is declared and set to the **ControlTemplate** property of the **TabViewHeaderItem**. 
 
@@ -70,7 +69,58 @@ Here is the result how the TabViewHeaderItem with custom Control Template looks:
 
 >important A sample HeaderItem Custom Template example can be found in the TabView/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
-## Customizing the Overflow Button
+
+## TabView Header
+
+The **RadTabView** control exposes a **Header**(*TelerikXamarinForms.Primitives.TabViewHeader*) property which you can use to modify the header's appearance.
+
+The `TabViewHeader` allows you to style and customize the OverflowButton. In addition you can decide whetehr scrolling inside the tabs will be allowed using the `IsScrollanle` `bool` property. When `IsScrollable` is `True`, OverflowButton won't be visualized, instead you can scroll through the tabs.
+
+### OverflowButton styling
+
+Example how to set styling to OverflowButton
+
+```XAML
+<telerikPrimitives:RadTabView x:Name="tabViewHeaderOverfowButton" HeaderPosition="Bottom">
+    <telerikPrimitives:RadTabView.Header>
+        <telerikPrimitives:TabViewHeader BackgroundColor="LightBlue" 
+                                         OverflowButtonContentPadding="3" 
+                                         OverflowButtonFontSize="20"
+                                         OverflowButtonText="More items"
+                                         OverflowButtonTextColor="Black"
+                                         OverflowPopupBackgroundColor="LightBlue"/>
+    </telerikPrimitives:RadTabView.Header>
+</telerikPrimitives:RadTabView>
+```
+
+### Scrolling Tabs
+
+Here is how to set `IsScrollable`
+
+```XAML
+<telerikPrimitives:RadTabView x:Name="tabViewHeader" HeaderPosition="Top">
+    <telerikPrimitives:RadTabView.Header>
+        <telerikPrimitives:TabViewHeader BackgroundColor="Orange" IsScrollable="True"/>
+    </telerikPrimitives:RadTabView.Header>
+</telerikPrimitives:RadTabView>
+```
+
+### Adjust the width between the tab view headers
+
+By default there is a spacing between the tab view headers. The behavior comes from the RadToolbar control which is used for the TabView headers.
+In order to adjust the width between the tabview headers you will need to set the `ItemSpacing` property (of type `double`) to the `RadTabView.Header`
+
+
+```XAML
+<telerikPrimitives:RadTabView x:Name="tabView"
+                            HeaderPosition="Top">
+    <telerikPrimitives:RadTabView.Header>
+        <telerikPrimitives:TabViewHeader ItemSpacing="0"/>
+    </telerikPrimitives:RadTabView.Header>
+</telerikPrimitives:RadTabView>
+```
+
+### Customizing the Overflow Button
 
 If there are too many items in the tabview control and they cannot fit into the tab strip area, an overflow button will be displayed. You can customize the button through the following properties.
 

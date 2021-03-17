@@ -11,7 +11,7 @@ To install Telerik UI for Xamarin on your machine from the Windows Installer MSI
 
 >Please, make sure you have already read the [System Requirements]({% slug system-requirements %}) article before you proceed.
 
-1. Go to to the Telerik UI for Xamarin download page following the instructions in [Download Product Files]({%slug download-product-files%}) topic.
+1. Go to the Telerik UI for Xamarin download page following the instructions in [Download Product Files]({%slug download-product-files%}) topic.
 
 2. Download the automatic installation (MSI) file.
 

@@ -13,18 +13,18 @@ position: 2
 **RadTabView** control exposes the following properties:
 
 * **Items**(*ObservableItemCollection<TabViewItem>*)
-* **Header** (*TabViewHeader*): Modify the header appearance.
-* The TabView Header position could be easily changed to top/bottom through the **HeaderPosition**(*TabViewHeaderPosition*) property. The default header position is top. 
-* **SelectedItem**(*object*)
+* **Header** (*Telerik.XamarinForms.Primitives.TabViewHeader*): Modify the header appearance.
+* **HeaderPosition**(*Telerik.XamarinForms.Primitives.TabViewHeaderPosition*). Defnes the tabview header position. You can choose between two options top and bottom. The default header position is top. 
+* **SelectedItem**(*object*):
 * **IsContentPreserved**: This property could be used to preserve the tabs content when switching them. In this way the visual state of the components inside each tab wouldn't be reset. When IsContentPreserved is set to True, the tabview does not unload/reload the tabs' content. By default the property is False.
 
 ## Swiping inside the TabView content
 
-RadTabView allows you to **swipe inside the content** in order to change the selected item. 
+RadTabView allows you to **swipe inside the content** in order to change the selected item. This is the default behavior of the control.
 
 If you want to prevent this feature you will need to set the `IsContentSwipingEnabled` bool property to `False`. The default value of the `IsContentSwipingEnabled` property is `True`.
 
-**IsContentSwipingAnimationEnabled**(*bool*) property specifies whether a swipe inside the content will change the selected item with animation. The default value is false.
+`IsContentSwipingAnimationEnabled`(*bool*) property specifies whether a swipe inside the content will change the selected item with animation. The default value is false.
 
 Here is how the swiping inside the content looks:
 

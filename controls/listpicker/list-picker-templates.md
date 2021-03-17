@@ -55,6 +55,25 @@ and the templates definition in the page resources:
 
 <snippet id='listpicker-features-placeholdertemplate' />
 
+## DisplayTemplate
+
+```XAML
+<telerikInput:RadListPicker ItemsSource="{Binding Items}" 
+                            DisplayMemberPath="Name">
+    <telerikInput:RadListPicker.DisplayTemplate>
+        <ControlTemplate>
+            <StackLayout>
+                <Label Text="This is the DisplayTemplate of the ListPicker" FontSize="10"/>
+                <Label Text="{TemplateBinding DisplayString}" TextColor="Black" FontSize="15" Grid.Row="1" VerticalTextAlignment="Center"/>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Command="{TemplateBinding ToggleCommand}" />
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+        </ControlTemplate>
+    </telerikInput:RadListPicker.DisplayTemplate>
+</telerikInput:RadListPicker>
+```
+
 ## Header Template
 
 <snippet id='listpicker-features-headertemplate' />

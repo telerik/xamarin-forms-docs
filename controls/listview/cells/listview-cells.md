@@ -5,8 +5,10 @@ description: Check our &quot;Cell Types&quot; documentation article for Telerik 
 position: 1
 slug: listview-cells
 ---
+
 # ListView Cell Types
-Cells are non-visual objects used to describe a template for creating a visual element inside each ListView item. There are two types of cells:
+
+Cells in RadListView are the presentation of each data item from the control's ItemsSource. You can choose between two types of cells, namely:
 
 - **ListViewTextCell** derives from Xamarin.Forms.**TextCell** and displays text. It can optionally render detail text as a second row within a list view item. This is the default cell of the RadListView.
 - **ListViewTemplateCell** derives from Xamarin.Forms.**ViewCell** and used to present complex data sets as RadListView.**ItemTemplate**.

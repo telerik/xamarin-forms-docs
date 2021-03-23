@@ -75,7 +75,7 @@ The example below demonstrates how to use the LoadOnDemand event:
 
 4. Add the following event handler:
 
-    <snippet id='listview-loadondemand-loadondemandeventauto-event'/>
+<snippet id='listview-loadondemand-loadondemandeventauto-event'/>
 
 ### Using LoadOnDemand Command
 
@@ -103,11 +103,12 @@ The example below demonstrates how to use the LoadOnDemand command:
 
 4. Set the ViewModel as BindingContext in the page constructor:
 
-    <snippet id='listview-loadondemand-loadondemandcommand-binding'/>
+<snippet id='listview-loadondemand-loadondemandcommand-binding'/>
 
 ## Advanced Options
 
 ### Control the Number of Preloaded Items
+
 This feature works in conjunction with the [LoadOnDemandMode.Automatic mode of the ListView]({%slug listview-features-load-on-demand%}#automatic-mode). You can control the minimum number of items loaded ahead through ListView's **LoadOnDemandBufferItemsCount** property. By default, it is set to 10 items. When ListView requests an item in the buffer, it will trigger a new loading batch.
 
 ### Change the Appearance of the Manual Load Button
@@ -117,6 +118,7 @@ This feature works in conjunction with the [LoadOnDemandMode.Manual mode of the 
 <snippet id='listview-loadondemand-loadondemandcustomizations-lodbutton'/>
 
 ### Change the Appearance of the Manual Loading Indicator
+
 This feature works in conjunction with the [LoadOnDemandMode.Manual mode of the ListView]({%slug listview-features-load-on-demand%}#manual-loading-mode).
 You can control the content of the Loading Indicator through the **LoadingOnDemandItemTemplate** property.
 

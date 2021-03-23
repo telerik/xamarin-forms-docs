@@ -63,19 +63,19 @@ The example below demonstrates how to use the LoadOnDemand event:
 
 1. Define ListView:
 
-    <snippet id='listview-loadondemand-loadondemandeventauto-declaration'/>
+	<snippet id='listview-loadondemand-loadondemandeventauto-declaration'/>
 
 1. Define the ListView namespace:
 
-    <snippet id='xmlns-telerikdatacontrols'/>
+	<snippet id='xmlns-telerikdatacontrols'/>
 
 1. Set ListView itemsSource in page constructor:
 
-    <snippet id='listview-loadondemand-loadondemandeventauto-bind'/>
+	<snippet id='listview-loadondemand-loadondemandeventauto-bind'/>
 
 1. Add the following event handler:
 
-    <snippet id='listview-loadondemand-loadondemandeventauto-event'/>
+	<snippet id='listview-loadondemand-loadondemandeventauto-event'/>
 
 ### Using LoadOnDemand Command
 

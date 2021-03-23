@@ -63,19 +63,19 @@ The example below demonstrates how to use the LoadOnDemand event:
 
 1. Define ListView:
 
-	<snippet id='listview-loadondemand-loadondemandeventauto-declaration'/>
+<snippet id='listview-loadondemand-loadondemandeventauto-declaration'/>
 
 1. Define the ListView namespace:
 
-	<snippet id='xmlns-telerikdatacontrols'/>
+<snippet id='xmlns-telerikdatacontrols'/>
 
 1. Set ListView itemsSource in page constructor:
 
-	<snippet id='listview-loadondemand-loadondemandeventauto-bind'/>
+<snippet id='listview-loadondemand-loadondemandeventauto-bind'/>
 
 1. Add the following event handler:
 
-	<snippet id='listview-loadondemand-loadondemandeventauto-event'/>
+<snippet id='listview-loadondemand-loadondemandeventauto-event'/>
 
 ### Using LoadOnDemand Command
 
@@ -88,11 +88,11 @@ The example below demonstrates how to use the LoadOnDemand command:
 
 1. Create a ViewModel class with a LoadItemsCommand as well as IsLoadingMoreItems bool property:
 
-    <snippet id='listview-loadondemand-loadondemandcommand-viewmodel' />
+<snippet id='listview-loadondemand-loadondemandcommand-viewmodel' />
 
 1. Define the RadListView instance in XAML with the ListViewUserCommand defined as well as the **IsLoadOnDemandActive** property bound to the boolean property in the ViewModel:
 
-    <snippet id='listview-loadondemand-loadondemandcommand-declaration'/>
+<snippet id='listview-loadondemand-loadondemandcommand-declaration'/>
 
 1. Define the following namespaces:
 
@@ -103,7 +103,7 @@ The example below demonstrates how to use the LoadOnDemand command:
 
 1. Set the ViewModel as BindingContext in the page constructor:
 
-    <snippet id='listview-loadondemand-loadondemandcommand-binding'/>
+<snippet id='listview-loadondemand-loadondemandcommand-binding'/>
 
 ## Advanced Options
 
@@ -111,6 +111,7 @@ The example below demonstrates how to use the LoadOnDemand command:
 This feature works in conjunction with the [LoadOnDemandMode.Automatic mode of the ListView]({%slug listview-features-load-on-demand%}#automatic-mode). You can control the minimum number of items loaded ahead through ListView's **LoadOnDemandBufferItemsCount** property. By default, it is set to 10 items. When ListView requests an item in the buffer, it will trigger a new loading batch.
 
 ### Change the Appearance of the Manual Load Button
+
 This feature works in conjunction with the [LoadOnDemandMode.Manual mode of the ListView]({%slug listview-features-load-on-demand%}#manual-loading-mode). You can control the content of the Load More Button through the **LoadOnDemandItemTemplate** property.
 
 <snippet id='listview-loadondemand-loadondemandcustomizations-lodbutton'/>

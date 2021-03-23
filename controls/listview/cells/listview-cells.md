@@ -21,19 +21,17 @@ This example demonstrates how to create a list view with text cells, like this:
 
 1. Create a view model that will be the source of the list view:
 	
-	<snippet id='listview-celltypes-textcell-viewmodel'/>
+<snippet id='listview-celltypes-textcell-viewmodel'/>
 	
 2. Add the definition of the listview control:
 	
-	<snippet id='listview-celltypes-textcell-listview-xaml'/>
-	
-	<snippet id='listview-celltypes-textcell-listview-csharp'/>
+<snippet id='listview-celltypes-textcell-listview-xaml'/>
+<snippet id='listview-celltypes-textcell-listview-csharp'/>
 	
 3. Add the following namespaces:
 	
-	<snippet id='xmlns-teleriklistview'/>
-	
-	<snippet id='ns-teleriklistview'/>
+<snippet id='xmlns-teleriklistview'/>
+<snippet id='ns-teleriklistview'/>
 	
 4. Finally, set the list view as the content of your page.
 
@@ -45,27 +43,27 @@ This example demonstrates how to create a list view with templated cells, like t
 
 1. Create a view model that will be the source of the list view:
 
-	<snippet id='listview-celltypes-templatecell-viewmodel'/>
+<snippet id='listview-celltypes-templatecell-viewmodel'/>
 
 2. Define the listview control either in Xaml or in code behind.
 
 You can define the list view in Xaml like this:
 	
-	<snippet id='listview-celltypes-templatecell-listview-xaml'/>
+<snippet id='listview-celltypes-templatecell-listview-xaml'/>
 	
 * Define the namespace
 
-	<snippet id='xmlns-teleriklistview'/>
+<snippet id='xmlns-teleriklistview'/>
 		
 * You can define the list view in code behind:
 		
 * For clarity, let's build the template of the list view cell in a separate method:
 		
-	<snippet id='listview-celltypes-templatecell-cellcontent'/>
+<snippet id='listview-celltypes-templatecell-cellcontent'/>
 		
 * Define the list view:
 		
-	<snippet id='listview-celltypes-templatecell-listview-code'/>
+<snippet id='listview-celltypes-templatecell-listview-code'/>
 	
 3. Finally, set the list view as the content of your page.
 

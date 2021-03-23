@@ -100,10 +100,14 @@ Here is how to set `IsScrollable`
 ```XAML
 <telerikPrimitives:RadTabView x:Name="tabViewHeader" HeaderPosition="Top">
     <telerikPrimitives:RadTabView.Header>
-        <telerikPrimitives:TabViewHeader BackgroundColor="Orange" IsScrollable="True"/>
+        <telerikPrimitives:TabViewHeader IsScrollable="True"/>
     </telerikPrimitives:RadTabView.Header>
 </telerikPrimitives:RadTabView>
 ```
+
+Here is how the scrolling is performed:
+
+![Sctolling Tabs](images/tabview-scrolling-in-the-header.gif)
 
 ### Adjust the width between the tab view headers
 
@@ -129,9 +133,16 @@ If there are too many items in the tabview control and they cannot fit into the 
 
 ### Example
 
-This example demonstrates how to replace the default header of the RadTabView control and change its background. Also, how to set the header position to display the tab strip area at bottom.
+This example demonstrates how to replace the default header of the RadTabView control and change its background.
 
 <snippet id='tabview-features-tabviewheader-overflowbutton-xaml'/>
+
+and the style used for TabViewHeaderItem
+
+<snippet id='tabview-features-tabviewheader-styling'/>
+
+In addition here is how to define the TadView Header using C#:
+
 <snippet id='tabview-features-tabviewheader-csharp'/>
 
 Additionally, you can work with the already assigned header instead of replacing it with a new one. For example - `tabView.Header.BackgroundColor = Color.Green`. 

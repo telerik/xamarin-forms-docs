@@ -19,23 +19,23 @@ This example demonstrates how to create a list view with text cells, like this:
 
 ![](../images/listview-celltypes-textcell.png)
 
-	1. Create a view model that will be the source of the list view:
+1. Create a view model that will be the source of the list view:
 	
 	<snippet id='listview-celltypes-textcell-viewmodel'/>
 	
-	2. Add the definition of the listview control:
+2. Add the definition of the listview control:
 	
 	<snippet id='listview-celltypes-textcell-listview-xaml'/>
 	
 	<snippet id='listview-celltypes-textcell-listview-csharp'/>
 	
-	3. Add the following namespaces:
+3. Add the following namespaces:
 	
 	<snippet id='xmlns-teleriklistview'/>
 	
 	<snippet id='ns-teleriklistview'/>
 	
-	4. Finally, set the list view as the content of your page.
+4. Finally, set the list view as the content of your page.
 
 ## ListViewTemplateCell Example
 
@@ -43,31 +43,31 @@ This example demonstrates how to create a list view with templated cells, like t
 
 ![](../images/listview-celltypes-templatecell.png)
 
-	1. Create a view model that will be the source of the list view:
+1. Create a view model that will be the source of the list view:
 
 	<snippet id='listview-celltypes-templatecell-viewmodel'/>
 
-	2. Define the listview control either in Xaml or in code behind.
+2. Define the listview control either in Xaml or in code behind.
 
-	You can define the list view in Xaml like this:
+You can define the list view in Xaml like this:
 	
 	<snippet id='listview-celltypes-templatecell-listview-xaml'/>
 	
-	- Define the namespace
+* Define the namespace
 
 	<snippet id='xmlns-teleriklistview'/>
 		
-	- You can define the list view in code behind:
+* You can define the list view in code behind:
 		
-	- For clarity, let's build the template of the list view cell in a separate method:
+* For clarity, let's build the template of the list view cell in a separate method:
 		
 	<snippet id='listview-celltypes-templatecell-cellcontent'/>
 		
-	- Define the list view:
+* Define the list view:
 		
 	<snippet id='listview-celltypes-templatecell-listview-code'/>
 	
-	3. Finally, set the list view as the content of your page.
+3. Finally, set the list view as the content of your page.
 
 ## See Also
 - [ListView Item TemplateSelector]({%slug listview-item-template-selector%})

@@ -40,15 +40,15 @@ The example below demonstrates how to use LoadOnDemandCollection:
 
     <snippet id='listview-loadondemand-loadondemandcollection-viewmodel'/>
 
-1. Define RadListView instance and bind its ItemsSource to the data in the viewmodel:
+2. Define RadListView instance and bind its ItemsSource to the data in the viewmodel:
 
     <snippet id='listview-loadondemand-loadondemandcollection-declaration'/>
 
-1. Define the ListView namespace:
+3. Define the ListView namespace:
 
     <snippet id='xmlns-telerikdatacontrols'/>
 
-1. Set the ViewModel as BindingContext in the page constructor:
+4. Set the ViewModel as BindingContext in the page constructor:
 
     <snippet id='listview-loadondemand-loadondemandcollection-binding'/>
 
@@ -63,19 +63,19 @@ The example below demonstrates how to use the LoadOnDemand event:
 
 1. Define ListView:
 
-<snippet id='listview-loadondemand-loadondemandeventauto-declaration'/>
+    <snippet id='listview-loadondemand-loadondemandeventauto-declaration'/>
 
-1. Define the ListView namespace:
+2. Define the ListView namespace:
 
-<snippet id='xmlns-telerikdatacontrols'/>
+    <snippet id='xmlns-telerikdatacontrols'/>
 
-1. Set ListView itemsSource in page constructor:
+3. Set ListView itemsSource in page constructor:
 
-<snippet id='listview-loadondemand-loadondemandeventauto-bind'/>
+    <snippet id='listview-loadondemand-loadondemandeventauto-bind'/>
 
-1. Add the following event handler:
+4. Add the following event handler:
 
-<snippet id='listview-loadondemand-loadondemandeventauto-event'/>
+    <snippet id='listview-loadondemand-loadondemandeventauto-event'/>
 
 ### Using LoadOnDemand Command
 
@@ -88,22 +88,22 @@ The example below demonstrates how to use the LoadOnDemand command:
 
 1. Create a ViewModel class with a LoadItemsCommand as well as IsLoadingMoreItems bool property:
 
-<snippet id='listview-loadondemand-loadondemandcommand-viewmodel' />
+    <snippet id='listview-loadondemand-loadondemandcommand-viewmodel' />
 
-1. Define the RadListView instance in XAML with the ListViewUserCommand defined as well as the **IsLoadOnDemandActive** property bound to the boolean property in the ViewModel:
+2. Define the RadListView instance in XAML with the ListViewUserCommand defined as well as the **IsLoadOnDemandActive** property bound to the boolean property in the ViewModel:
 
-<snippet id='listview-loadondemand-loadondemandcommand-declaration'/>
+    <snippet id='listview-loadondemand-loadondemandcommand-declaration'/>
 
-1. Define the following namespaces:
+3. Define the following namespaces:
 
     ```XAML
     xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
     xmlns:telerikListViewCommands="clr-namespace:Telerik.XamarinForms.DataControls.ListView.Commands;assembly=Telerik.XamarinForms.DataControls"
     ```
 
-1. Set the ViewModel as BindingContext in the page constructor:
+4. Set the ViewModel as BindingContext in the page constructor:
 
-<snippet id='listview-loadondemand-loadondemandcommand-binding'/>
+    <snippet id='listview-loadondemand-loadondemandcommand-binding'/>
 
 ## Advanced Options
 

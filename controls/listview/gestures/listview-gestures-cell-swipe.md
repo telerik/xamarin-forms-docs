@@ -73,15 +73,15 @@ The following example demonstrates how to use the **ItemSwipeCompleted** event. 
 
 <snippet id='listview-gestures-cellswipe-swipeevents-viewmodel'/>
 
-1. Set up ListView. Swiping left or right will reveal content with a hint for what will happen if the user completes the swipe action.
+2. Set up ListView. Swiping left or right will reveal content with a hint for what will happen if the user completes the swipe action.
 
 <snippet id='listview-gestures-cellswipe-swipeevents-listview'/>
 
-1. Define the ListView namespace:
+3. Define the ListView namespace:
 
 <snippet id='xmlns-teleriklistview'/>
 
-1. Configure what happens when the user completes the swipe gesture:
+4. Configure what happens when the user completes the swipe gesture:
 
 <snippet id='listview-gestures-cellswipe-swipeevents-swipecompleted'/> 
 
@@ -97,15 +97,15 @@ The following example demonstrates how to add a delete button to the swipe conte
 
 <snippet id='listview-gestures-cellswipe-interactivecontent-viewmodel'/>
 
-1. Set up ListView. Note that the SwipeOffset is equal to the width of the button in the swipe content. Thus, when the swipe is complete, the revealed content will be the whole button.
+2. Set up ListView. Note that the SwipeOffset is equal to the width of the button in the swipe content. Thus, when the swipe is complete, the revealed content will be the whole button.
 
 <snippet id='listview-gestures-cellswipe-interactivecontent-listview'/>
 
-1. Define the ListView namespace:
+3. Define the ListView namespace:
 
 <snippet id='xmlns-teleriklistview'/>
 
-1. Configure what happens when the user completes the swipe gesture. The BindingContext of the swipe content is the data item. This could be used to perform operations on the data. In this case, we will delete the item from the source.
+4. Configure what happens when the user completes the swipe gesture. The BindingContext of the swipe content is the data item. This could be used to perform operations on the data. In this case, we will delete the item from the source.
 
 <snippet id='listview-gestures-cellswipe-interactivecontent-deleteitem'/>
 

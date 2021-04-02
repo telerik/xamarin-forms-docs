@@ -30,11 +30,15 @@ To get a specific version of the LIB, open the **Internal Builds tab** on the Do
 
 ## Installing LIB from NuGet
 
-Latest Internal Builds are available for installing as a [NuGet package]({%slug telerik-nuget-server%}) as well:
+Latest Internal Builds are available for installing as a [NuGet package]({%slug telerik-nuget-server%}) as well.
 
->important Don't forget to check the **Include prerelease** option next to the search box.
+- On Visual Studio you would need to check the **Include prerelease** option next to the search box:
 
 ![](images/lib_nuget.png)
+
+- On Visual Studio for Mac you should check the **Show pre-release package** option at the bottom of the "Manage NuGet Packages" window:
+
+![](images/lib_nuget_mac.png)
 
 ## See Also
 - [System Requirements]({%slug system-requirements%})

@@ -34,7 +34,7 @@ The Telerik server is now ready to use. Users can go to their solution and open 
 
 ![](images/nuget-server/nuget-vs-manage-packages.png)
 
-### Add Telerik UI for Xamarin pack
+### Add Telerik UI for Xamarin pack in Visual Studio for Windows
 
 Users have to find the **Telerik.UI.for.Xamarin** package and install it to their projects following these steps:
 
@@ -69,7 +69,7 @@ In the Add Package Source dialog users should fill in the information of the Tel
 
 After the Telerik NuGet server is added users will be able to see the packages they are allowed to download in the Add Packages dialog. This will allow them to check the **Telerik UI for Xamarin** pack and add it into their projects.
 
-### Add Telerik UI for Xamarin pack
+### Add Telerik UI for Xamarin pack in Visual Studio for Mac
 
 Once the server is added users will be able to add to their projects any of the **Telerik NuGet** packages available for their license. One click on the settings icon of the “*Packages*” folder of any project will open the **Add Packages** dialog where the available Telerik packs will be listed.
 

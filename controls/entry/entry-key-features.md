@@ -34,7 +34,7 @@ Where:
 
 RadEntry provides **IsPassword**(*bool*) property, which when set to True, replaces the input with password hint character.
 
->tip With Telerik UI for Xamarin version 2021.1.409.1 we have added an additional feature to the RadEntry control - The suggestion tab that is above the keyboard is hidden when **IsPassword="True"** . 
+>tip With Telerik UI for Xamarin version 2021.1.409.1 we have added an additional feature to the RadEntry control - The suggestion tab that is above the keyboard is hidden when **IsPassword="True"**. 
 
 <snippet id='entry-features-password'/>
 

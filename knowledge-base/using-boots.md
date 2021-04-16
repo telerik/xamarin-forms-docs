@@ -32,7 +32,7 @@ There are times in the development life-cycle where AppCenter, GitHub Actions or
 
 # Boots
 
-The solution is to use [Boots](https://github.com/jonathanpeppers/boots) Boots is a tool makes it very easy to install a specific SDK that you need. 
+The solution is to use [Boots](https://github.com/jonathanpeppers/boots). Boots is a tool makes it very easy to install a specific SDK that you need. 
 
 It's most common use is to install the latest version on an outdated public build agent. Here's the commands to install boots and then install any SDK you need
 

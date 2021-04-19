@@ -10,9 +10,9 @@ slug: busyindicator-features-animations
 
 ## Built-in Animations
 
-**RadBusyIndicator** provides a set of built-in animations which you can use. They can be changed via the **AnimationType** property. 
+**RadBusyIndicator** provides a set of built-in animations. You can change the selected animation through the **AnimationType** property.
 
-The property is an enum called AnimationType and it accepts values named **Animation1** to **Animation10**. Animation1, Animation2, Animation3, etc. to Animation10. **Animation1** is the default one. 
+The **AnimationType** property is an enum that accepts values from **Animation1** to **Animation10**. **Animation1** is the default.
 
 ![BusyIndicator animations list](images/busyindicator-features-animations-0.png) 
 
@@ -20,11 +20,15 @@ The property is an enum called AnimationType and it accepts values named **Anima
 	
 ### Changing animation size and color
 
-You can set the size of the animation content, which is the animated element. This can be done via the **AnimationContentWidthRequest** and **AnimationContentHeightRequest** properties. By default the size of the default animation content is 25x25 pixels.
+You can use the following properties to change the size and color of the animated element (animation content):
 
-You can also change the color of the animation with the **AnimationColor** property.
+* **AnimationContentWidthRequest**
+* **AnimationContentHeightRequest**
+* **AnimationColor**
 
-The snippet below shows how you can configure the predefined animations of RadBusyIndicator:
+By default, the size of the animation content is 25x25 pixels.
+
+The snippet below shows how to configure the predefined RadBusyIndicator animations:
 
 <snippet id='busyindicator-animations-settings' />
 
@@ -32,15 +36,15 @@ Here is the result on different platforms:
 
 ![BusyIndicator Settings](images/busyindicator-animations-settings.png)
 
-> **AnimationContentWidthRequest**, **AnimationContentHeightRequest** and **AnimationColor** won't be applied if you use custom animation.
+> **AnimationContentWidthRequest**, **AnimationContentHeightRequest** and **AnimationColor** won't be applied if you use custom animations.
 	
 ## Custom animation
 
-You can create a custom animation using a combination of 3 properties - Animations, BusyContent and AnimationType.
+You can create a custom animation by using a combination of 3 properties - AnimationType, BusyContent, and Animations:
 
-* To tell the control that a custom animation is used you can set the **AnimationType** to **Custom**
-* The **BusyContent** holds the view that will be animated.
-* The custom animation is added in the **Animations** collection of the busy indicator
+* To tell the control that you use a custom animation, set the **AnimationType** to **Custom**.
+* Add the content that you want to animate to **BusyContent**.
+* The custom animation is added in the **Animations** collection of the busy indicator.
 
 The following example demonstrates how to create a custom animation that changes the opacity of a text (blinking effect).
 

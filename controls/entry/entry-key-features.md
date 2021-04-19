@@ -34,7 +34,33 @@ Where:
 
 RadEntry provides **IsPassword**(*bool*) property, which when set to True, replaces the input with password hint character.
 
+>tip With Telerik UI for Xamarin version 2021.1.409.1 we have added an additional feature to the RadEntry control - The suggestion tab that is above the keyboard is hidden when **IsPassword="True"**. 
+
 <snippet id='entry-features-password'/>
+
+## Read-Only State
+
+With R1 2021 Service Pack, RadEntry control provides a feature which allows you to choose whether the control will be editable or not - Read-Only state.
+
+* **IsReadOnly** *bool* property: Specifies whether the control will be in edit mode. The default value is `False`. If you want to restrict the control from editing, set the `IsReadOnly` to `True`
+
+### Example
+
+<snippet id='entry-features-read-only'/>
+
+>important You can find a working demo labeled **Read-Only State** in the Entry/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
+## Max Length
+
+From r1 2021 Service Pack, the Radentry control has an additional feature, you can restrict the number of the symbols allowed to be entered in the input field. 
+
+* **MaxLength** (*int*) property: Specifies the maximum number of symbols allowed to be entered.
+
+### Example with MaxLength set to 10
+
+<snippet id='entry-features-maxlength'/>
+
+>important You can find a working demo labeled **Max Length** in the Entry/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## Keyboard
 

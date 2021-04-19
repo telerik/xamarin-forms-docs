@@ -43,6 +43,13 @@ The table below shows all commands in the RadDataGrid control and for each of th
 | CommitEdit | EditContext |
 | ValidateCell | ValidateCellContext |
 | LoadMoreData | LoadOnDemandContext |
+| OptionsTap | OptionsTapContext |
+| ApplyFilter | OptionsTapContext | 
+| CloseOptionsTap | OptionsTapContext |
+| ResetFilter | OptionsTapContext |
+| ApplyGrouping | GroupDescriptorBase |
+| MoreTap | OptionsTapContext |
+
 
 ## See Also
 

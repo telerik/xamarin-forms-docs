@@ -6,121 +6,121 @@ position: 8
 slug: listview-features-load-on-demand
 ---
 
-# Load On Demand
+# Load on Demand
 
-Loading a large data set on a mobile device has its challenges. One of the most popular approaches is using incremental data loading as the items needs to be visualized. **RadListView** is capable of doing this using its load on demand functionality. 
+Loading a large data set on a mobile device has its challenges. One of the most popular approaches is using incremental data loading when the items need to be visualized. **RadListView** does this by using its load-on-demand functionality.
 
 ## Configuration
 
-The following properties are related to the **LoadOnDemand** feature:
+The following properties control the **LoadOnDemand** feature:
 
-* **IsLoadOnDemandEnabled**(*bool*) - used to enable the load on demand mechanism of RadListView;
-* **IsLoadOnDemandActive** (*bool*) - this flag should be used when the data is retrieved asynchronously. It should be set to "True" when an async operation is started, to notify the ListView to show loading indicator and to "False" when items are loaded. 
+* **IsLoadOnDemandEnabled**(*bool*) - used to enable the load on demand mechanism of RadListView.
+* **IsLoadOnDemandActive** (*bool*) - used to control the loading indicator that is rendered when the data is retrieved asynchronously. Set it to `True` when an async operation is running and items are loading. Set it to `False` when the items are loaded.
+* **LoadOnDemandMode** - used to set the loading mode. You can select between:
+  * **Automatic** - the data is requested automatically when you scroll near the end of the ListView.
+  * **Manual** - a button is rendered at the end of the ListView. The data is requested explicitly by pressing the button.
 
-RadListView offers two loading modes through its **LoadOnDemandMode** property:
+## Methods to Load Data on Demand
 
- * **Automatic** - the data is requested automatically when you scroll near the end of the listview.
- * **Manual** - a button is rendered at the end of the listview. The data is requested explicitly by pressing the button.
+There are three ways to load the data on demand, regardless of whether you use the **Automatic** or **Manual** loading mode:
 
-There are three ways to load the data on demand, regardless of the loading mode you've chosen:
+* [Create a **ListViewLoadOnDemandCollection** instance as a source and pass it to the ListView ItemsSource property](#using-loadondemandcollection).
+* [Subscribe to the **LoadOnDemand event** and add the loaded data to the source](#using-loadondemand-event).
+* [Use the **LoadOnDemand UserCommand** and add the loaded data to the source](#using-loadondemand-command).
 
-* Create a **ListViewLoadOnDemandCollection** instance as source and pass it to the ListView ItemsSource property.
-* Subscribe to **LoadOnDemand event** and add the loaded data to the source.
-* Use the **LoadOnDemand UserCommand** and add the loaded data to the source.
+>note All three approaches for loading items on demand in ListView work with both Automatic and Manual LoadOnDemandMode.
 
->note Either of the three approaches for loading items on demand in ListView works with both Automatic and Manual LoadOnDemandMode.
+### Using LoadOnDemandCollection
 
-## Using LoadOnDemandCollection
+To load items on demand, you can utilize the **ListViewLoadOnDemandCollection** and set it as ItemsSource for ListView. The ListViewLoadOnDemandCollection accepts an action in the constructor and this action is later executed by the ListView in a non-UI thread when new items are requested.
 
-One possible approach to load items on demand is by utilizing the **ListViewLoadOnDemandCollection** which should be set as ItemsSource of the ListView. The ListViewLoadOnDemandCollection accepts an action in the constructor and this action is later executed  by the ListView in a non-UI thread when new items are requested.
+The example below demonstrates how to use LoadOnDemandCollection:
 
-ListViewLoadOnDemandCollection can work both in **Manual** and **Automatic** mode. Below you can find an example with loading on demand through LoadOnDemandCollection.
+1. Define a sample ViewModel class with *Source* property of type ListViewLoadOnDemandCollection:
 
-First, let's define a sample ViewModel class with *Source* property of type ListViewLoadOnDemandCollection:
+    <snippet id='listview-loadondemand-loadondemandcollection-viewmodel'/>
 
-<snippet id='listview-loadondemand-loadondemandcollection-viewmodel'/>
+2. Define RadListView instance and bind its ItemsSource to the data in the viewmodel:
 
-Then, define RadListView instance and bind its ItemsSource to the data in the viewmodel:
+    <snippet id='listview-loadondemand-loadondemandcollection-declaration'/>
 
-<snippet id='listview-loadondemand-loadondemandcollection-declaration'/>
+3. Define the ListView namespace:
 
-You would also need to define the listview namespace:
+    <snippet id='xmlns-telerikdatacontrols'/>
 
-<snippet id='xmlns-telerikdatacontrols'/>
+4. Set the ViewModel as BindingContext in the page constructor:
 
-Finally, set the ViewModel as BindingContext in the page constructor:
+    <snippet id='listview-loadondemand-loadondemandcollection-binding'/>
 
-<snippet id='listview-loadondemand-loadondemandcollection-binding'/>
+### Using LoadOnDemand Event
 
-## Using LoadOnDemand Event
+Another way to handle loading more items is to use the **LoadOnDemand** event. This event is being raised on a UI thread, so in the event handler you can add items right away or asynchronously:
 
-Another way to handle loading more items is via the **LoadOnDemand** event. This event is being raised on a UI thread, so in the event handler you can add items right away or get the data asynchronously:
+* In case the data is available right away, add the items to the ListView ItemsSource in the LoadOnDemand event handler.
+* In case you require an async operation, set the **IsLoadOnDemandActive** property of the ListView to `True`. This notifies the ListView that it must display the loading indicator. Then an async call can be initiated to get the data. When the new items are ready, you must set the **IsLoadOnDemandActive** property to `False` again to notify the ListView that the load-on-demand operation is completed.
 
-* In case data is available right away, you just need to add the items to the ListView ItemsSource in the LoadOnDemand event handler;
+The example below demonstrates how to use the LoadOnDemand event:
 
-* In case an async operation is required, you need to notify the ListView that the loading indicator should be displayed by setting the **IsLoadOnDemandActive** property of the ListView to true. Then an async call can be initiated to get the data. When the new items are ready, you'd need to set the **IsLoadOnDemandActive** property to False, again to notify the ListView that load-on-demand operation is completed.
+1. Define ListView:
 
-Again, this approach works with both **Automatic** and **Manual** loading modes.
+    <snippet id='listview-loadondemand-loadondemandeventauto-declaration'/>
 
-Let's have the following ListView definition:
+2. Define the ListView namespace:
 
-<snippet id='listview-loadondemand-loadondemandeventauto-declaration'/>
+    <snippet id='xmlns-telerikdatacontrols'/>
 
-You would also need to define the listview namespace:
+3. Set ListView itemsSource in page constructor:
 
-<snippet id='xmlns-telerikdatacontrols'/>
+    <snippet id='listview-loadondemand-loadondemandeventauto-bind'/>
 
-Set ListView itemsSource in page constructor:
-
-<snippet id='listview-loadondemand-loadondemandeventauto-bind'/>
-
-Then add the following event handler:
+4. Add the following event handler:
 
 <snippet id='listview-loadondemand-loadondemandeventauto-event'/>
 
-## Using LoadOnDemand Command
+### Using LoadOnDemand Command
 
-This approach is similar to the one with using the LoadOnDemand event, just in this case the load-on-demand is handled in the ViewModel through the exposed by RadListView **LoadOnDemandUserCommand**. In the Execute method of the command you can add items right away or get the data asynchronously.
+This approach is similar to [using the LoadOnDemand event](#using-loadondemand-event), but in this case, the load-on-demand is handled in the ViewModel through the **LoadOnDemandUserCommand** exposed by RadListView. In the Execute method of the command, you can add items right away or asynchronously:
 
-* In case data is available right away, you just need to add the items to the ListView ItemsSource in the LoadOnDemand command Execute method;
+* In case the data is available right away, add the items to the ListView ItemsSource in the LoadOnDemand command Execute method.
+* In case you require an async operation, set the **IsLoadOnDemandActive** property of the ListView to `True`. This notifies the ListView that it must display the loading indicator. Then an async call can be initiated to get the data. When the new items are ready, you must set the **IsLoadOnDemandActive** property to `False` again to notify the ListView that the load-on-demand operation is completed. You can control the behavior of **IsLoadOnDemandActive** through a binding to a boolean property in the ViewModel class.
 
-* In case an async operation is required, you need to notify the ListView that the loading indicator should be displayed by setting the **IsLoadOnDemandActive** property of the ListView to true. Then an async call can be initiated to get the data. When the new items are ready, you'd need to set the **IsLoadOnDemandActive** property to False, again to notify the ListView that load-on-demand operation is completed. You can control the behavior of **IsLoadOnDemandActive** through a binding to a boolean property in the ViewModel class.
+The example below demonstrates how to use the LoadOnDemand command:
 
-You can use **LoadOnDemandUserCommand** with both "Automatic" and "Manual" loading mode depending on the concrete requirements.
+1. Create a ViewModel class with a LoadItemsCommand as well as IsLoadingMoreItems bool property:
 
-First, let's create a ViewModel class with a LoadItemsCommand as well as IsLoadingMoreItems bool property:
+    <snippet id='listview-loadondemand-loadondemandcommand-viewmodel' />
 
-<snippet id='listview-loadondemand-loadondemandcommand-viewmodel' />
+2. Define the RadListView instance in XAML with the ListViewUserCommand defined as well as the **IsLoadOnDemandActive** property bound to the boolean property in the ViewModel:
 
-Define the RadListView instance in XAML with the ListViewUserCommand defined as well as the **IsLoadOnDemandActive** property bound to the boolean property in the ViewModel:
+    <snippet id='listview-loadondemand-loadondemandcommand-declaration'/>
 
-<snippet id='listview-loadondemand-loadondemandcommand-declaration'/>
-
-You would also need to define the following namespaces:
+3. Define the following namespaces:
 
 ```XAML
 xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
 xmlns:telerikListViewCommands="clr-namespace:Telerik.XamarinForms.DataControls.ListView.Commands;assembly=Telerik.XamarinForms.DataControls"
 ```
 
-Finally, set the ViewModel as BindingContext in the page constructor:
+4. Set the ViewModel as BindingContext in the page constructor:
 
 <snippet id='listview-loadondemand-loadondemandcommand-binding'/>
 
-## Advanced options
+## Advanced Options
 
-### Control the number of preloaded items
-This feature works in conjunction with [LoadOnDemandMode.Automatic mode of the listview]({%slug listview-features-load-on-demand%}#automatic-mode).  You can control the number of minimum items loaded ahead through listview **LoadOnDemandBufferItemsCount** property. By default it is set to 10 item. When the listview requests an item in the buffer it will trigger new loading batch.
+### Control the Number of Preloaded Items
 
-### Change the appearance of Manual load button
-This feature works in conjunction with [LoadOnDemandMode.Manual mode of the listview]({%slug listview-features-load-on-demand%}#manual-loading-mode)
-You can control load more button content through the **LoadOnDemandItemTemplate** property.
+This feature works in conjunction with the [LoadOnDemandMode.Automatic mode of the ListView]({%slug listview-features-load-on-demand%}#automatic-mode). You can control the minimum number of items loaded ahead through ListView's **LoadOnDemandBufferItemsCount** property. By default, it is set to 10 items. When ListView requests an item in the buffer, it will trigger a new loading batch.
+
+### Change the Appearance of the Manual Load Button
+
+This feature works in conjunction with the [LoadOnDemandMode.Manual mode of the ListView]({%slug listview-features-load-on-demand%}#manual-loading-mode). You can control the content of the Load More Button through the **LoadOnDemandItemTemplate** property.
 
 <snippet id='listview-loadondemand-loadondemandcustomizations-lodbutton'/>
 
-### Change the appearance of Manual loading indicator
-This feature works in conjunction with [LoadOnDemandMode.Manual mode of the listview]({%slug listview-features-load-on-demand%}#manual-loading-mode)
-You can control the loading indicator content through the **LoadingOnDemandItemTemplate** property.
+### Change the Appearance of the Manual Loading Indicator
+
+This feature works in conjunction with the [LoadOnDemandMode.Manual mode of the ListView]({%slug listview-features-load-on-demand%}#manual-loading-mode).
+You can control the content of the Loading Indicator through the **LoadingOnDemandItemTemplate** property.
 
 <snippet id='listview-loadondemand-loadondemandcustomizations-loadingindicator'/>
 

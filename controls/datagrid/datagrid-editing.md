@@ -8,7 +8,7 @@ slug: datagrid-editing
 
 # Editing
 
-**RadDataGrid** provides a built-in editing functionality, which allows the app users to easily edit the data presented in the grid. Depending on the column data type, a relevant editor allows end users to edit content in a friendly environment.
+**RadDataGrid** provides a built-in editing functionality, which allows the app users to easily edit the data presented in the grid. Depending on the column data type, a relevant editor allows end users to edit content in a friendly environment. As soon as the user double-taps on a certain cell, the cell is switched to an edit mode.
 
 ## Important Properties
 
@@ -19,7 +19,7 @@ You would need to define the **UserEditMode** property of the DataGrid control i
 * **None**: Editing is disabled (by default);
 * **Cell**: Used to enable the editing option.
 
-In addition, you could disable editing for concrete columns separately through the **CanUserEdit** property of the **DataGridColumn** class. For more details on this check [Columns Overview]({%slug datagrid-columns-overview%}) topic.
+In addition, you can disable editing for concrete columns separately through the **CanUserEdit** property of the **DataGridColumn** class. For more details on this check [Columns Overview]({%slug datagrid-columns-overview%}) topic.
 
 ## Columns' Editors
 
@@ -33,9 +33,11 @@ Each DataGrid column type provides different editor, so that the content could b
 | DateColumn		| DatePicker		|
 | TimeColumn		| TimePicker		|
 | PickerColumn		| Picker			|
-| TemplateColumn	| *not applicable	|
+| TemplateColumn	| custom editor by defining CellEditTemplate |
 
-&#42;TemplateColumn doesn't have support for editing as that column is not bound to any property and the DataGrid has no way of knowing what type of Editor to use or what property to update after edit mode closes.
+## CellEditTemplate
+
+In case the default editors do not suit the scenario you have, you can easily create a custom editor for each column by utilizing the **CellEditTemplate** property of the DataGridColumn. For detailed information on how the **CellEditTemplate** can be applied, go to [Columns Cell Templates]({%slug datagrid-cell-templates%}).
 
 ## Editing Commands
 
@@ -58,4 +60,5 @@ Check below a quick snippet with **CellEditorStyle** applied to **DataGridTextCo
 ## See Also
 
 - [Editing Commands]({%slug datagrid-commands-editing%})
+- [Columns Cell Templates]({%slug datagrid-cell-templates%})
 - [Columns Styling]({%slug datagrid-columns-styling%})

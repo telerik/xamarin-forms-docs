@@ -584,6 +584,10 @@ navigation:
         position: 2
         ## End SegmentedControl Sub-Folders
     ## End SegmentedControl
+    ## Shadow
+    controls/shadow:
+        title: "Shadow"
+    ## End Shadow
     ## TabView
     controls/tabview:
         title: "TabView"

@@ -14,7 +14,7 @@ There are two types of barcodes according to their dimensions:
 
 The matrix code is a two-dimensional way for representing information. It can also be referred to as a 2D barcode or simply a 2D code. It is similar to the linear (one dimensional) barcode, but can represent more data per unit area.
 
-Currently, **RadBarcode** supports *QR Code* and *PDF417* matrix barcode types.
+Currently, **RadBarcode** supports [QR Code]({% slug barcode-qrcode-overview%}), [PDF417]({% slug barcode-pdf417-overview%}) and [SwissQR Code]({% slug barcode-swissqrcode-overview%}) matrix barcode types.
 
 ## Linear (1D) barcodes
 

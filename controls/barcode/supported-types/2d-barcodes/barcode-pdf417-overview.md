@@ -1,12 +1,12 @@
 ---
-title: Overview
+title: PDF417
 page_title: Xamarin Barcode Documentation | PDF417 Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik Barcode for Xamarin control.
 position: 0
 slug: barcode-pdf417-overview
 ---
 
-# Overview
+# PDF417
 
 PDF417 is a stacked linear barcode symbol format used in a variety of applications, primarily transport, identification cards, and inventory management. PDF stands for Portable Data File. The 417 signifies that each pattern in the code consists of 4 bars and spaces, and that each pattern is 17 units long. The PDF417 symbology was invented by Dr. Ynjiun P. Wang at Symbol Technologies in 1991. (Wang 1993) It is represented by ISO standard 15438.
 

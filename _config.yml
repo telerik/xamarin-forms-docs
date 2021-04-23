@@ -333,7 +333,10 @@ navigation:
         title: "Custom Templates"
         position: 12
     ## End AutoCompleteView
-    
+    ## BadgeView
+    controls/badgeview:
+        title: "BadgeView"
+    ## End BadgeView
     ## Barcode
     controls/barcode:
         title: "Barcode"

@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Badge
 page_title: Xamarin Badge Documentation | Badge Overview
 description: Check our &quot;Badge&quot; documentation article for Telerik Badge for Xamarin control.
 position: 12
@@ -11,9 +11,7 @@ slug: badge-overview
 BadgeView vs Badge
 
 
-
-
-## Badge Definnition
+## Badge Getting Started
 
 ```XAML
 <telerikPrimitives:Badge/>
@@ -21,7 +19,7 @@ BadgeView vs Badge
 
 ## Badge Features
 
-Badge has the following properties 
+Badge has the following properties: 
 
 * **Text**(*string*): Defines the badge text.
 * **TextColor**(*Xamarin.Forms.Color*): Defines the text color of the badge.
@@ -30,14 +28,15 @@ Badge has the following properties
 * **FontFamily**(*string*): Defines the badge text font family.
 * **FontAttributes**(*FontAttributes*): Defines the badge text font family.
 * **BorderColor**(*Xamarin.Forms.Color*): Defines the badge border color.
-* **CornerRadius**(*Xamarin.Forms.Thickness*)
+* **CornerRadius**(*Xamarin.Forms.Thickness*): Defines the corner radius of the badge.
 * **BorderThickness**(*Xamarin.Forms.Thickness*): Defines the badge border thickness.
 * **AnimationType**(*Telerik.XamarinForms.Primitives.BadgeAnimationType*). You can choose between `Scale` and `None`. The default value is `Scale`.
-* **AnimationEasing**(*Xamarin.Forms.Easing*): Defines the animation easing.
+* **AnimationEasing**(*Xamarin.Forms.Easing*): Defines the animation easing. For more details about different easing options check the [Xamarin.Forms.Easing](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/animation/easing) article
 * **AnimationDuration** in milliseconds(*int*) Defines the animation duration
 * **ControlTemplate**(*Xamarin.Forms.ControlTemplate*): Specifies the Badge control template.
 
 ## Example
+
 
 
 ## See Also

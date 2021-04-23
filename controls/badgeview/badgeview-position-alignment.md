@@ -1,12 +1,12 @@
 ---
-title: Overview
+title: Badge Alignment and Position
 page_title: Xamarin BadgeView Documentation | Badge Align and Position
 description: Check our &quot;Align and Position&quot; documentation article for Telerik BadgeView for Xamarin control.
 position: 3
 slug: badgeview-position-alignment
 ---
 
-# Align and Position
+# Alignment and Position
 
 This article explains the options we can use to align and position the badge according to the BadgeView Content.
 
@@ -42,3 +42,5 @@ Use the following properties to specify the horizontal/vertical distance between
 
 ## See Also
 
+- [Badge Animation]({%slug badgeview-animation%})
+- [Predefined Badges]({%slug badgeview-predefined-badges%})

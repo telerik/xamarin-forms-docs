@@ -1,12 +1,13 @@
 ---
-title: Overview
+title: Badge Animation
 page_title: Xamarin BadgeView Documentation | RadBadgeView Animation
-description: Check our &quot;Overview&quot; documentation article for Telerik BadgeView for Xamarin control.
+description: Check our &quot;Badge Animation&quot; documentation article for Telerik BadgeView for Xamarin control.
+tags: badge, animation, badgeview for xamarin, badge for xamarin
 position: 4
 slug: badgeview-animation
 ---
 
-# Animation
+# Badge Animation
 
 BadgeView allows you to display the badge indicator using animation. The following properties are related to the Badge animation feature:
 
@@ -17,3 +18,6 @@ BadgeView allows you to display the badge indicator using animation. The followi
 **BadgeAnimationEasing**([Xamarin.Forms.Easing](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/animation/easing)): Specifies the Easing of the badge animation. The default value is `SinInOut`.
 
 ## See Also
+
+- [Predefined Badges]({%slug badgeview-predefined-badges%})
+- [Badge Position and Alignment]({%slug badgeview-position-alignment%})

@@ -6,9 +6,11 @@ position: 0
 slug: badgeview-visual-structure
 ---
 
-# BadgeView Visual structure#
+# Visual Structure of BadgeView for Xamarin
 
 ## BadgeView
+
+
 
 ## Legend
 

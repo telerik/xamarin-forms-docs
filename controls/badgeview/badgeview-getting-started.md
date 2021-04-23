@@ -37,8 +37,6 @@ You have two options:
 | iOS      | Telerik.Xamarin.iOS.dll <br/> Telerik.XamarinForms.Primitives.dll <br />Telerik.XamarinForms.Common.dll |
 | UWP      | Telerik.Core.dll<br/>Telerik.XamarinForms.Primitives.dll <br/>Telerik.XamarinForms.Common.dll |
 
->important RadBarcode is rendered via the **SkiaSharp** graphics library so you need to install also [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms) in all projects of the Xamarin solution (.Net Standard/Shared, Android, iOS, etc). 
-
 ## 3. Adding RadBadgeView control
 
 If your app is setup, you are ready to add a **RadBadgeView** control to your page. 
@@ -56,7 +54,7 @@ In addition to this you need to add the following namespace:
 
 Here is the result:
 
-#### Figure 1: Barcode Getting Started
+#### Figure 1: BadgeView Getting Started
 
 ![Getting Started Example](images/badgeview-getting-started.png)
 
@@ -65,3 +63,6 @@ Here is the result:
 ## See Also
 
 - [Key Features]({%slug badgeview-key-features%})
+- [Badge Position and Alignment]({%slug badgeview-position-alignment%})
+- [Badge Animation]({%slug badgeview-animation%})
+- [Predefined Badges]({%slug badgeview-predefined-badges%})

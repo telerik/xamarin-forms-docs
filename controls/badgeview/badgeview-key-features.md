@@ -100,4 +100,6 @@ You can easily customize the badge appearance using the
 
 ## See Also
 
-
+- [Badge Position and Alignment]({%slug badgeview-position-alignment%})
+- [Badge Animation]({%slug badgeview-animation%})
+- [Predefined Badges]({%slug badgeview-predefined-badges%})

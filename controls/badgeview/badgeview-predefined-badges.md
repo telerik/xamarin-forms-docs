@@ -1,7 +1,8 @@
 ---
-title: Overview
+title: Predefined Badges
 page_title: Xamarin BadgeView Documentation | Predefined Badges
-description: Check our &quot;Overview&quot; documentation article for Telerik BadgeView for Xamarin control.
+description: Check our &quot;Predefined Badges&quot; documentation article for Telerik BadgeView for Xamarin control.
+tags: badge, marker, indicator, badgeview for xamarin, badge for xamarin
 position: 5
 slug: badgeview-predefined-badges
 ---
@@ -25,9 +26,8 @@ The available options are:
 * Remove 
 * Rejected 
 
-The default BadgeType is `Default`.
-
 ## Example
+
 
 ## Customization
 

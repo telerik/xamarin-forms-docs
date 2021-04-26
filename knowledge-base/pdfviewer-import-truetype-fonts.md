@@ -31,6 +31,8 @@ The text in certain pdf documents is not displayed correctly in Telerik Xamarin 
 
 ## Solution
 
+>important Starting with R2 2021 release of Telerik UI for Xamarin, PdfViewer provides the ability to directly use the registered fonts through the FontsRepository static class of the PdfProcessing library, please check the exact approach inside the PdfViewer [Fonts -> Embedded Fonts]({%slug pdfviewer-fonts%}#embedded-fonts) topic.
+
 In order to workaround the issue, you can use the [PdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library and import the missing fonts before passing the pdf document to the PdfViewer control. You would need to use the FontsRepository class  to [register a font file and create a font instance](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/concepts/fonts#embedded-fonts).
 
 Below you can find a sample implementation showing how you can utilize RadPdfProcessing library to import the needed font.

@@ -52,7 +52,7 @@ Check below a quick example with RadButton with CornerRadius applied:
 
 <snippet id='shadow-features-cornerradius'/>
 
-In this way the hadow looks consistent with the rounded button:
+In this way the shadow looks consistent with the rounded button:
 
 ![Shadow CornerRadius](images/shadow-features-cornerradius.png)
 
@@ -65,6 +65,8 @@ By default, the **BlurRadius** is 10.
 <snippet id='shadow-features-blurradius'/>
 
 ![Shadow BlurRadius](images/shadow-features-blurradius.png) 
+
+>You may notice some differences in blur effect depending on the target platform. This is due to the different native implementations of the Shadow BlurRadius – on iOS it is implemented as a [Gaussian blur](https://developer.apple.com/documentation/swiftui/text/blur(radius:opaque:)), while on Android and UWP the shadow blur effect is determined by the elevation of the surrounded view. 
 
 ## See Also
 

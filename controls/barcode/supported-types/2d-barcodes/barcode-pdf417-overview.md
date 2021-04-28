@@ -12,7 +12,7 @@ PDF417 is a stacked linear barcode symbol format used in a variety of applicatio
 
 >caption Figure 1. PDF417 RadBarcode
 
-![winforms/barcode-2d-barcodes-pdf417-overview 001](images/barcode-2d-barcodes-pdf417-overview001.png)
+![Telerik Xamarin Barcode PDF417](images/barcode-2d-barcodes-pdf417-overview001.png)
 
 ## Visual Structure
 
@@ -23,7 +23,7 @@ The PDF417 barcode has the following structure:
 
 >caption Figure 2. PDF417 RadBarcode's structure
 
-![barcode-2d-barcodes-pdf417-overview 002](images/barcode-2d-barcodes-pdf417-overview002.png)
+![Telerik Xamarin Barcode PDF417 structure](images/barcode-2d-barcodes-pdf417-overview002.png)
 
 The Data codewords are located in the middle section of the barcode and include the following sections:
 

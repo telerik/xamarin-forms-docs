@@ -16,14 +16,16 @@ In order to use the TelerikXamarinForms Toolbox, first you have to install the P
 
 ## Showing the Telerik Toolbox
 
-In order to show the Toolbox and start using the controls, you should navigate to the StartPage.xaml file in your project and click on it. If the ProjectTemplate.mpack file is installed successfully, Toolbox window is visible in the project when you click on the StartPage.xaml file. You can also find this option when typing “Toolbox” in the Search filed (top right corner in Visual Studio for Mac).
+In order to show the Toolbox and start using the controls, you should navigate to the MainPage.xaml file in your project and click on it. If the ProjectTemplate.mpack file is installed successfully, Toolbox window is visible in the project when you click on the MainPage.xaml file (or any other XAML file inside your project). You can also find this option when typing “Toolbox” in the Search filed (top right corner in Visual Studio for Mac).
+
 **Figure 1** and **Figure 2** shows where you can find the options in Visual Studio for Mac:
 
-#### Figure 1: Showing the TelerikXamarinForms Toolbox when clicking on StartPage.xaml 
+#### Figure 1: Showing the TelerikXamarinForms Toolbox when clicking on MainPage.xaml 
 ![](images/enabled_toolbox_mac.png)
 
 #### Figure 2: Showing the TelerikXamarinForms Toolbox from Search field
 ![](images/search_toolbox_mac.png)
+
 Once you have clicked the option you should be prompted to the window which contains the different controls from the suite. **Figure 1** and **Figure 2** shows the appearance of the toolbox if everything is correctly set.
 
 >important If no usable controls are present in the toolbox - make sure all the required references are added and try rebuilding your project. 

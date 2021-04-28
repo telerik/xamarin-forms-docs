@@ -39,6 +39,20 @@ The format data is encoded in 15 bits. One full copy of the format data is locat
 
 * **Data** - The data occupies all available modules, not occupied by any of the formatting data segments mentioned above. If the data is smaller than the capacity of the remaining modules, it is padded, in order to ensure that all modules are used. Additionally, the data consists of the actual encoded data, entered by the user, and the error correction bits, calculated on that data.
 
+## Example
+
+Check below a quick example with QRCode symbology applied to RadBarcode:
+
+<snippet id='qrcode-example-xaml' />
+
+Add the *telerikBarcode* namespace:
+
+<snippet id='xmlns-telerikbarcode'/>
+
+Here is the result:
+
+![QRCode](images/barcode-2d-barcodes-qrcode-example.png)
+ 
 ## See Also
 
 - [Key Features]({% slug barcode-key-features%})

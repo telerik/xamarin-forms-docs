@@ -38,6 +38,20 @@ The Start and Stop patterns are present on each row in the PDF417. The signal wh
 
 Additionally, there is a minimum of two modules on each side of the PDF417 barcode, dedicated to the quiet zone. This gives space and separates the barcode from other visual elements on the page, allowing the reader to more reliably detect it.
 
+## Example
+
+Check below a quick example with PDF417 symbology applied to RadBarcode:
+
+<snippet id='pdf417-example-xaml' />
+
+Add the *telerikBarcode* namespace:
+
+<snippet id='xmlns-telerikbarcode'/>
+
+Here is the result:
+
+![PDF417](images/barcode-2d-barcodes-pdf417-example.png)
+
 ## See Also
 
 - [Key Features]({% slug barcode-key-features%})

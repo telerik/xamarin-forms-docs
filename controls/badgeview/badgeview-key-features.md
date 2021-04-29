@@ -30,7 +30,13 @@ You must define a content. The Badge marker/indicatior is positioned based on th
 
 There is a Button inside the Content. The BadgeText is updated on a ButtonClick.  
 
+<snippet id='badgeview-content'/>
 
+and the page's code behind where is the button click implementation:
+
+<snippet id='badgeview-content-code-behind'/>
+
+And the result
 
 ![BadgeView Badge Content](images/badgeview-content-text.gif)
 
@@ -57,6 +63,8 @@ With `BadgeText` property(*string*) you can define a text. The text will be disp
 ```
 
 ![BadgeView Badge Text](images/badgeview-badgetext.png)
+
+>tip For more details about Badge Styling and Customization oprions please check the Styling and Customization articles.
 
 ## Badge Position 
 
@@ -93,10 +101,6 @@ You can choose what will be the type of the badge by setting the `BadgeType` pro
 Here are the available options:
 
 ![BadgeView Badge Types](images/badgeview-badgetypes.png)
-
-## Customization and Styling Options
-
-You can easily customize the badge appearance using the 
 
 ## See Also
 

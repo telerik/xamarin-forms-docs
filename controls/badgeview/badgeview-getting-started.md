@@ -41,16 +41,28 @@ You have two options:
 
 If your app is setup, you are ready to add a **RadBadgeView** control to your page. 
 
-
+```XAML
+<telerikPrimitives:RadBadgeView/>
+```
+```C#
+var badge = new RadBadgeView();
+```
 
 In addition to this you need to add the following namespace:
 
+<snippet id='xmlns-telerikprimitives'/>
+<snippet id='ns-telerikprimitives'/>
 
-## 4. Adding RadBadgeView Content
+## 4. Adding RadBadgeView Content and BadgeText
 
 >important The BadgeView will be visualized only if its `Content` property is set. 
 
 ## Example
+
+Add the RadBadgeView and set its `Content` property and BadgeText property.
+
+<snippet id='badgeview-getting-started-xaml'/>
+<snippet id='badgeview-getting-started-csharp'/>
 
 Here is the result:
 

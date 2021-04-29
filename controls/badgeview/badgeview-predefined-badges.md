@@ -4,10 +4,11 @@ page_title: Xamarin BadgeView Documentation | Predefined Badges
 description: Check our &quot;Predefined Badges&quot; documentation article for Telerik BadgeView for Xamarin control.
 tags: badge, marker, indicator, badgeview for xamarin, badge for xamarin
 position: 5
+tags: badge types, badge for xamarin, badgeview
 slug: badgeview-predefined-badges
 ---
 
-# Predefined Badges
+# Badge Types
 
 You can change the Badge type using one of the predefined badge types. 
 
@@ -28,23 +29,19 @@ The available options are:
 
 ## Example
 
+Here is the BadgeView definition:
 
-## Customization
+<snippet id='badgeview-badge-types'/>
 
-Use the following properties to cuatomize the look of the predefined badges:
+The code used for choosing different badge type
 
-* **BadgeTextColor**(*Color*):
-* **BadgeTextPadding** 
-* **BadgeFontSize** 
-* **BadgeFontFamily**   
-* **BadgeFontAttributes**   
-* **BadgeBackgroundColor**   
-* **BadgeBorderColor**   
-* **BadgeBorderThickness**   
-* **BadgeCornerRadius**   
-* **BadgeMinimumWidth**  
-* **BadgeMinimumHeight**  
+<snippet id='badgeview-badge-types-code-behind'/>
 
-## Example
+The final Result::
+
+![Badge Types](images/badgeview-badge-types.png)
+
+## Style the predefined badges
+
 
 ## See Also

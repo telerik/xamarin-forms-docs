@@ -38,6 +38,20 @@ The following table describes the specific characteristics of the bar codes per 
 |**UPC Supplement 2**|![barcode-1d-barcodes 020](images/barcode-1d-barcodes020.png)|A two digit UPC supplementary code. This barcode should only be used with magazines, newspapers and other such periodicals.|0123456789|2|none|
 |**UPC Supplement 5**|![barcode-1d-barcodes 021](images/barcode-1d-barcodes021.png)|A five digit UPC supplementary code. This barcode is used on books to indicate a suggested retail price.|0123456789|5|none|
 
+## 1D Barcode example
+
+Here is a quick example of RadBarcode with the Code39 symbology applied:
+
+<snippet id='barcode-features-symbology'/>
+
+You need to add the following namespace:
+
+<snippet id='xmlns-telerikbarcode'/>
+
+Check the result below:
+
+![Barcode Symbology](../../images/barcode_setsymbology_1.png)
+
 ## See Also
 
 - [Key Features]({% slug barcode-key-features%})

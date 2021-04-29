@@ -36,7 +36,7 @@ If the add-in is successfully added to Visual Studio, you should see it in the *
 
 **Restart Visual Studio for Mac** to complete the installation.
 
-## New Telerik Forms App
+## New Telerik Xamarin UI Application
 
 Now you can create a new project using the Telerik Project Template.
 
@@ -44,9 +44,9 @@ Now you can create a new project using the Telerik Project Template.
 
 ![Xamarin Studio Create new project](images/project-wizard/CreateNewProject.png)
 
-The **Telerik Forms App** template can be found in *Other > Miscellaneous* section.
+The **Telerik Xamarin UI Application** template can be found in *Other > .NET* section.
 
-#### __Figure 5: Telerik Forms App template__
+#### __Figure 5: Telerik Xamarin UI Application template__
 
 ![Xamarin Studio Create new project](images/project-wizard/ChooseTemplate.png)
 

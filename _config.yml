@@ -333,7 +333,10 @@ navigation:
         title: "Custom Templates"
         position: 12
     ## End AutoCompleteView
-    
+    ## BadgeView
+    controls/badgeview:
+        title: "BadgeView"
+    ## End BadgeView
     ## Barcode
     controls/barcode:
         title: "Barcode"
@@ -347,16 +350,7 @@ navigation:
         position: 2
     controls/barcode/supported-types/2d-barcodes:
         title: "2D Barcodes"
-        position: 1
-                ## Barcode 2D Barcodes Sub-Folders
-    controls/barcode/supported-types/2d-barcodes/PDF417:
-        title: "PDF417"
-        position: 1
-                    
-    controls/barcode/supported-types/2d-barcodes/QRCode:
-        title: "QRCode"
-        position: 2
-                ## End Barcode 2D Barcodes Sub-Folders
+        position: 1        
            ## End Barcode Supported Types Sub-Folders
         ## End Barcode Sub-Folders
     ## End Barcode
@@ -584,6 +578,10 @@ navigation:
         position: 2
         ## End SegmentedControl Sub-Folders
     ## End SegmentedControl
+    ## Shadow
+    controls/shadow:
+        title: "Shadow"
+    ## End Shadow
     ## TabView
     controls/tabview:
         title: "TabView"

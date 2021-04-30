@@ -77,4 +77,4 @@ Here is the result:
 - [Key Features]({%slug badgeview-key-features%})
 - [Badge Position and Alignment]({%slug badgeview-position-alignment%})
 - [Badge Animation]({%slug badgeview-animation%})
-- [Predefined Badges]({%slug badgeview-predefined-badges%})
+- [Badge Types]({%slug badgeview-predefined-badges%})

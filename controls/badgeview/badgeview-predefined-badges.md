@@ -1,5 +1,5 @@
 ---
-title: Predefined Badges
+title: Badge Types
 page_title: Xamarin BadgeView Documentation | Predefined Badges
 description: Check our &quot;Predefined Badges&quot; documentation article for Telerik BadgeView for Xamarin control.
 tags: badge, marker, indicator, badgeview for xamarin, badge for xamarin

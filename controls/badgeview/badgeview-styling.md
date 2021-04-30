@@ -31,11 +31,19 @@ The BadgeView definition with some of the above properties set.
 
 <snippet id='badgeview-styling'/>
 
+Use the following namespace:
+
+<snippet id='xmlns-telerikprimitives'/>
+
 The final Result::
 
 ![Badge Styling](images/badgeview-badge-styling.png)
 
+>tip Badge Styling Example can be found inside the FeaturesCategory folder in SDK Browser Application/Examples/BadgeViewControl
+
 ## See Also
 
-- [BadgeView Overview]({%slug badgeview-overview%})
-- [BadgeView Getting Started]({%slug badgeview-getting-started%})
+- [Key Features]({%slug badgeview-key-features%})
+- [Badge Position and Alignment]({%slug badgeview-position-alignment%})
+- [Badge Animation]({%slug badgeview-animation%})
+- [CustomizAation]({%slug badgeview-customization%})

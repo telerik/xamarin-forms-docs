@@ -10,6 +10,8 @@ slug: badgeview-predefined-badges
 
 # Badge Types
 
+![Badge Types](images/badgeview-badge-types.png)
+
 You can change the Badge type using one of the predefined badge types. 
 
 * **BadgeType**(of type *Telerik.XamarinForms.Primitives.BadgeType*): Specifies the type of the Badge. The default value is `Default`
@@ -29,19 +31,22 @@ The available options are:
 
 ## Example
 
-Here is the BadgeView definition:
+Define the BadgeView:
 
 <snippet id='badgeview-badge-types'/>
+
+Use the following namespace:
+
+<snippet id='xmlns-telerikprimitives'/>
 
 The code used for choosing different badge type
 
 <snippet id='badgeview-badge-types-code-behind'/>
 
-The final Result::
-
-![Badge Types](images/badgeview-badge-types.png)
-
-## Style the predefined badges
-
-
 ## See Also
+
+- [Key Features]({%slug badgeview-key-features%})
+- [Badge Position and Alignment]({%slug badgeview-position-alignment%})
+- [Badge Animation]({%slug badgeview-animation%})
+- [Styling]({%slug badgeview-styling%})
+- [CustomizAation]({%slug badgeview-customization%})

@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Xamarin BadgeView Documentation | RadBadgeView Overview
-description: Check our &quot;Overview&quot; documentation article for Telerik BadgeView for Xamarin control.
+description: Check our &quot;Overview&quot; documentation article for Telerik Badge for Xamarin control.
 position: 0
 tags: badge, xamarin, badgeview, notifications, indicator, marker, badge for xamarin.forms, badge for xamarin
 slug: badgeview-overview
@@ -24,7 +24,7 @@ In addition you can change the badge look setting different predefined badge typ
 * You can choose whether to have an **Animation** while displaying the badge. In addition, you can specify the animation duration and animation easing. For more details and example -> navigate to [Badge Animation]({%slug badgeview-animation%}) topic.
 * **Predefined Badges** - You can choose in between various predefined badge types. Also, you have the option to customize and style the badge types. More information about how-to define, style and customize the predefined badges can be found in the [Predefined Badges]({%slug badgeview-predefined-badges%}) article.
 * **Flexible Styling API** and **Customization options** – Allows you to change the BadgeView BackgroundColor, Border Thickness and Color. Also, we have exposed API which you can use to fully customize and style the badge indicator.  
-	For more details, please visit our [Styling]() and [Customizations]() articles.
+	For more details, please visit our [Styling]({%slug badgeview-styling%}) and [Customizations]({%slug badgeview-customization%}) articles.
 
 ## See Also
 
@@ -33,4 +33,6 @@ In addition you can change the badge look setting different predefined badge typ
 - [Key Features]({%slug badgeview-key-features%})
 - [Badge Position and Alignment]({%slug badgeview-position-alignment%})
 - [Badge Animation]({%slug badgeview-animation%})
-- [Predefined Badges]({%slug badgeview-predefined-badges%})
+- [Badge Types]({%slug badgeview-predefined-badges%})
+- [Styling]({%slug badgeview-styling%})
+- [CustomizAation]({%slug badgeview-customization%})

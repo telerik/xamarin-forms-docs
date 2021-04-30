@@ -42,7 +42,7 @@ The Badge has a default ControlTemplate which you can customize.
 
 ## Example how to change the default ControlTemplate
 
-
+>important ControlTemplate Example can be found inside the FeaturesCategory folder in SDK Browser Application/Examples/BadgeViewControl.
 
 ## See Also
 

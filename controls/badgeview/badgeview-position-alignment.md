@@ -16,7 +16,11 @@ You can use the following properties to specify the position of the badge accord
 
 * **BadgeHorizontalPosition**(of type *Telerik.XamarinForms.Primitives.BadgePosition*): Specifies the horizontal `BadgePosition` of the badge. The following options are: `Start`, `Center`, `End`. The default value is `End`.
 
+![Badge Position](images/badgeview-horizontal-position.png)
+
 * **BadgeVerticalPosition**(of type *Telerik.XamarinForms.Primitives. BadgePosition*): Specifies the vertical `BadgePosition` of the badge. The following options are: `Start`, `Center`, `End`. The default value is `Start`.
+
+![Badge Position](images/badgeview-vertical-position.png)
 
 ## Badge Alignment
 
@@ -24,7 +28,11 @@ You can use the following properties to specify the alignment of the badge accor
 
 * **BadgeHorizontalAlignment**(of type *Telerik.XamarinForms.Primitives.BadgeAlignment*): Specifies the horizontal alignment of the badge. The following options are: `Start`, `Center`, `End`. The default value is `Center`.
 
+![Badge Alignment](images/badgeview-horizontal-alignment.png)
+
 * **BadgeVerticalAlignment**(of type *Telerik.XamarinForms.Primitives.BadgeAlignment*): Specifies the vertical alignment of the badge. The following options are: `Start`, `Center`, `End`. The default value is `End`.
+
+![Badge Alignment](images/badgeview-vertical-alignment.png)
 
 ## Example with Badge Alignment and Position
 

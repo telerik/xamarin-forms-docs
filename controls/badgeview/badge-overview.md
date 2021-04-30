@@ -8,9 +8,11 @@ slug: badge-overview
 
 # Badge
 
-BadgeView vs Badge
+Badge vs BadgeView 
 
-RadBadge is a 
+Badge is the marker which is displayed to show notifications, statuses, etc. The BadgeView is the control in which you can add a content and position the badge based on this content. 
+
+>important We reccomend you use the [BadgeView control]({%slug badgeview-overview%})
 
 ## Badge Getting Started
 
@@ -38,29 +40,26 @@ Badge has the following properties:
 
 ## Badge ControlTemplate
 
+Default ControlTemplate definition
+
+<snippet id='badgeview-badge-control-template'/>
+
+Define the Badge:
+
 ```XAML
-<ControlTemplate x:Key="RadBadge_BadgeTemplate">
-    <primitives:RadBorder BorderThickness="{TemplateBinding BorderThickness}"
-                          BorderColor="{TemplateBinding BorderColor}"
-                          CornerRadius="{TemplateBinding CornerRadius}"
-                          BackgroundColor="{TemplateBinding BackgroundColor}">
-        <Label x:Name="PART_BadgeContent"
-               Text="{TemplateBinding Text}" 
-               TextColor="{TemplateBinding TextColor}"
-               Padding="{TemplateBinding TextPadding}"
-               FontSize="{TemplateBinding FontSize}"
-               FontFamily="{TemplateBinding FontFamily}"
-               FontAttributes="{TemplateBinding FontAttributes}"
-               BackgroundColor="{TemplateBinding BackgroundColor}"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
-    </primitives:RadBorder>
-</ControlTemplate>
+<telerikPrimitives:Badge/>
 ```
+
+Add the following namespace:
+
+<snippet id='xmlns-telerikprimitives'/>
 
 ## See Also
 
 - [BadgeView Overview]({%slug badgeview-overview%})
 - [BadgeView Getting Started]({%slug badgeview-getting-started%})
+- [Badge Position and Alignment]({%slug badgeview-position-alignment%})
+- [Badge Animation]({%slug badgeview-animation%})
+- [Badge Types]({%slug badgeview-predefined-badges%})
+- [Badge Styling]({%slug badgeview-styling%})
+- [Badge Customization]({%slug badgeview-customization%})

@@ -23,11 +23,7 @@ Here is the Animation properties set to the RadBadgeVierw control:
 
 <snippet id='badgeview-animation'/>
 
->tip Find the image used in the example inside the Android, iOS and UWP project of the SDK Browser Application. 
-
-And the result:
-
-![Badge Animation](images/badgeview-animation.png)
+>tip Badge Animation example is located inside the SDK Browser Application/Examples/BadgeViewControl/FeatersCategory folder.
 
 ## See Also
 

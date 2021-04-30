@@ -26,7 +26,7 @@ You can use the following properties to specify the alignment of the badge accor
 
 * **BadgeVerticalAlignment**(of type *Telerik.XamarinForms.Primitives.BadgeAlignment*): Specifies the vertical alignment of the badge. The following options are: `Start`, `Center`, `End`. The default value is `End`.
 
-## Example with Badge Alignemnt and Position
+## Example with Badge Alignment and Position
 
 Here is the BadgeView definition:
 

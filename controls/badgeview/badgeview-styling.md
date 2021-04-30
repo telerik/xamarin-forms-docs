@@ -23,7 +23,7 @@ Use the following properties to style the look of the badge:
 * **BadgeMinimumWidth**(*double*): Defines the minimum width of tha badge.
 * **BadgeMinimumHeight**(*double*): Defines the minimum height of the badge.
 
->important Use `BadgeType` for predefined types for the badge. If you set the `BadgeText` it will override the predefined icon for the padge type.
+>important Use `BadgeType` for predefined types for the badge. If you set the `BadgeText` it will override the predefined icon for the badge type.
 
 ## Example
 

@@ -107,3 +107,5 @@ Here are the available options:
 - [Badge Position and Alignment]({%slug badgeview-position-alignment%})
 - [Badge Animation]({%slug badgeview-animation%})
 - [Badge Types]({%slug badgeview-predefined-badges%})
+- [Badge Styling]({%slug badgeview-styling%})
+- [Badge Customization]({%slug badgeview-customization%})

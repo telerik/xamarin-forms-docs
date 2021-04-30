@@ -8,12 +8,21 @@ slug: badgeview-visual-structure
 
 # Visual Structure of BadgeView for Xamarin
 
-## BadgeView
+Here are described all visual elements used in the Date Picker for Xamarin.
 
-
+![Badge Types](images/badgeview-visual-structure.png)
 
 ## Legend
 
+* **BadgeView** - The BadgeView control which includes the Badge marker(indicator) and 
+* **Badge** - The marker that can be used for notifications, statuses, etc.
+* **BadgeView Content** - The Badge marker/indicatior is positioned based on the content inside the RadBadgeView. Without a content the Badge won't be visualized.
 
 ## See Also
+
+- [Getting Started]({%slug badgeview-getting-started%})
+- [Key Features]({%slug badgeview-key-features%})
+- [Badge Position and Alignment]({%slug badgeview-position-alignment%})
+- [Badge Animation]({%slug badgeview-animation%})
+- [Badge Types]({%slug badgeview-predefined-badges%})
 

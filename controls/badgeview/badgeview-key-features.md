@@ -100,10 +100,10 @@ You can choose what will be the type of the badge by setting the `BadgeType` pro
 
 Here are the available options:
 
-![BadgeView Badge Types](images/badgeview-badgetypes.png)
+![BadgeView Badge Types](images/badgeview-badge-types.png)
 
 ## See Also
 
 - [Badge Position and Alignment]({%slug badgeview-position-alignment%})
 - [Badge Animation]({%slug badgeview-animation%})
-- [Predefined Badges]({%slug badgeview-predefined-badges%})
+- [Badge Types]({%slug badgeview-predefined-badges%})

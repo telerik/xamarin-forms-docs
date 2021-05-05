@@ -26,7 +26,7 @@ Take a look at these articles and follow the instructions to setup your app:
 
 You have two options:
 
-* Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic. Note that RadBarcode does not have a separate nuget package. 
+* Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic. Note that RadBadgeView does not have a separate nuget package. 
 
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadBadgeView** component:
 

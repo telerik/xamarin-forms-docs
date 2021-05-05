@@ -8,7 +8,7 @@ slug: badgeview-position-alignment
 
 # Alignment and Position
 
-This article explains the options we can use to align and position the badge according to the BadgeView Content.
+This article explains the options you can use to align and position the badge according to the BadgeView Content.
 
 ## Badge Position
 
@@ -51,8 +51,6 @@ Use the following properties to specify the horizontal/vertical distance between
 * **BadgeOffsetX**(*double*): Specifies the horizontal distance between the content of the Badge and its alignment point. The default value is `0`.
 
 * **BadgeOffsetY**(*double*): Specifies the vertical distance between the content of the Badge and its alignment point. The default value is `0`.
-
-### Example 
 
 ## See Also
 

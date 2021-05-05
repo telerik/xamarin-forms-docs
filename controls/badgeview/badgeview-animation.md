@@ -23,7 +23,7 @@ Here is the Animation properties set to the RadBadgeVierw control:
 
 <snippet id='badgeview-animation'/>
 
->tip Badge Animation example is located inside the SDK Browser Application/Examples/BadgeViewControl/FeatersCategory folder.
+>tip Badge Animation example is located inside the SDK Browser Application/Examples/BadgeViewControl/Features Category folder.
 
 ## See Also
 

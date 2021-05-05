@@ -64,7 +64,7 @@ With `BadgeText` property(*string*) you can define a text. The text will be disp
 
 ![BadgeView Badge Text](images/badgeview-badgetext.png)
 
->tip For more details about Badge Styling and Customization oprions please check the Styling and Customization articles.
+>tip You can fully customize the look &amp; feel of the BadgeView, for detailed information check the [Badge Styling]({%slug badgeview-styling%}) and [Badge Customization]({%slug badgeview-customization%}) articles.
 
 ## Badge Position 
 
@@ -72,15 +72,11 @@ Use the `BadgeHorizontalPositon` and `BadgeVerticalPosition` properties to posit
 
 For more details about this check the [Badge Position]({%slug badgeview-position-alignment%}) article.
 
-![BadgeView Badge Position](images/badgeview-badgeposition.png)
-
 ## Badge Alignment 
 
-Specify the alignment of the badge based on the content insdie the RadBadgeView using the `BadgeHorizontalAlignment` and `BadgeVerticalAlignment` properties. The properties are of type *Telerik.XamarinForms.Primitives.BadgeAlignment* and the available options are `Start`, `Center` and `End`. 
+Specify the alignment of the badge based on the content inside the RadBadgeView using the `BadgeHorizontalAlignment` and `BadgeVerticalAlignment` properties. The properties are of type *Telerik.XamarinForms.Primitives.BadgeAlignment* and the available options are `Start`, `Center` and `End`. 
 
 For more details about this check the [Badge Alignment]({%slug badgeview-position-alignment%}) article.
-
-![BadgeView Badge Alignment](images/badgeview-badgealignment.png)
 
 ## Badge Offset
 
@@ -90,7 +86,7 @@ For more details please visit our [Badge Offset]({%slug badgeview-position-align
 
 ## Badge Animation 
 
-You can choose wheter the badge marker/indicator will be displayed with animation. In addition you can define the antimation duration and easing. 
+You can choose whether the badge marker/indicator will be displayed with animation. In addition you can define the antimation duration and easing. 
 
 For more details please visit our [Badge Animation]({%slug badgeview-animation%}) article.
 

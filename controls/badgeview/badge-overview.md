@@ -1,18 +1,18 @@
 ---
-title: Badge
+title: Badge Control
 page_title: Xamarin Badge Documentation | Badge Overview
 description: Check our &quot;Badge&quot; documentation article for Telerik Badge for Xamarin control.
 position: 12
 slug: badge-overview
 ---
 
-# Badge
+# Badge Control
 
-Badge vs BadgeView 
+## Badge vs BadgeView 
 
 Badge is the marker which is displayed to show notifications, statuses, etc. The BadgeView is the control in which you can add a content and position the badge based on this content. 
 
->important We reccomend you use the [BadgeView control]({%slug badgeview-overview%})
+>important We recommend you use the [BadgeView control]({%slug badgeview-overview%})
 
 ## Badge Getting Started
 

@@ -68,11 +68,27 @@ With `BadgeText` property(*string*) you can define a text. The text will be disp
 
 ## Badge Position 
 
+**BadgeHorizontalPosition**
+
+![Badge Horizontal Position](images/badgeview-horizontal-position.png)
+
+**BadgeVerticalPosition**
+
+![Badge Vertical Position](images/badgeview-vertical-position.png)
+
 Use the `BadgeHorizontalPositon` and `BadgeVerticalPosition` properties to position the badge marker based on the content inside the RadBadgeView. The properties are of type *Telerik.XamarinForms.Primitives.BadgePosition* and the available options are `Start`, `Center` and `End`. 
 
 For more details about this check the [Badge Position]({%slug badgeview-position-alignment%}) article.
 
 ## Badge Alignment 
+
+**BadgeHorizontalAlignment**
+
+![Badge Horizontal Alignment](images/badgeview-horizontal-alignment.png)
+
+**BadgeVerticalAlignment**
+
+![Badge Vertical Alignment](images/badgeview-vertical-alignment.png)
 
 Specify the alignment of the badge based on the content inside the RadBadgeView using the `BadgeHorizontalAlignment` and `BadgeVerticalAlignment` properties. The properties are of type *Telerik.XamarinForms.Primitives.BadgeAlignment* and the available options are `Start`, `Center` and `End`. 
 

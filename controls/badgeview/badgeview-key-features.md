@@ -78,7 +78,7 @@ With `BadgeText` property(*string*) you can define a text. The text will be disp
 
 Use the `BadgeHorizontalPositon` and `BadgeVerticalPosition` properties to position the badge marker based on the content inside the RadBadgeView. The properties are of type *Telerik.XamarinForms.Primitives.BadgePosition* and the available options are `Start`, `Center` and `End`. 
 
-For more details about this check the [Badge Position]({%slug badgeview-position-alignment%}) article.
+For more details about this check the [Badge Position]({%slug badgeview-position-alignment%}#badge-position) section.
 
 ## Badge Alignment 
 
@@ -92,13 +92,13 @@ For more details about this check the [Badge Position]({%slug badgeview-position
 
 Specify the alignment of the badge based on the content inside the RadBadgeView using the `BadgeHorizontalAlignment` and `BadgeVerticalAlignment` properties. The properties are of type *Telerik.XamarinForms.Primitives.BadgeAlignment* and the available options are `Start`, `Center` and `End`. 
 
-For more details about this check the [Badge Alignment]({%slug badgeview-position-alignment%}) article.
+For more details about this check the [Badge Alignment]({%slug badgeview-position-alignment%}#badge-alignment) section.
 
 ## Badge Offset
 
 Specify the horizontal/vertical distance between the content of the Badge and its alignment point using the `BadgeOffsetX` and  `BadgeOffsetY` properties. 
 
-For more details please visit our [Badge Offset]({%slug badgeview-position-alignment%}) article.
+For more details please visit our [Badge Offset]({%slug badgeview-position-alignment%}#badge-offset) section.
 
 ## Badge Animation 
 
@@ -108,11 +108,18 @@ For more details please visit our [Badge Animation]({%slug badgeview-animation%}
 
 ## Badge Types
 
-You can choose what will be the type of the badge by setting the `BadgeType` property(enumeration of type *Telerik.XamarinForms.Primitives.BadgeType*). 
-
-Here are the available options:
-
 ![BadgeView Badge Types](images/badgeview-badge-types.png)
+
+You can choose what will be the type of the badge by setting the `BadgeType` property(enumeration of type *Telerik.XamarinForms.Primitives.BadgeType*). 
+For more details please visit our [Badge Types]({%slug badgeview-predefined-badges%}) article.
+
+## Integration with other Controls
+
+BadgeView control can be integrated with other controls like ListView, SideDrawer, TabView, Button, Label, Image, etc. It depends on the scenario you want to achieve. 
+
+![BadgeView Integration Example](images/badgeview-integration-example.gif)
+
+Sample Integration Example can be found in our [Telerik UI for Xamarin Sample application](https://github.com/telerik/telerik-xamarin-forms-samples/tree/master/QSF/QSF/Examples/BadgeViewControl/IntegrationExample) and [SDK Browser application](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/BadgeViewControl/FeaturesCategory/BadgeViewIntegrationExample).
 
 ## See Also
 

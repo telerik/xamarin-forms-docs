@@ -39,7 +39,7 @@ The final Result::
 
 ![Badge Styling](images/badgeview-badge-styling.png)
 
->tip Badge Styling Example can be found inside the FeaturesCategory folder in SDK Browser Application/Examples/BadgeViewControl
+>tip Badge Styling Example can be found inside the FeaturesCategory folder in [SDK Browser Application/Examples/BadgeViewControl](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/BadgeViewControl/FeaturesCategory/StylingExample).
 
 ## See Also
 

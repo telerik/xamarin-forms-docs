@@ -72,7 +72,7 @@ The final result:
 
 ![Badge Custom Control Template](images/badgeview-custom-controltemplate.png)
 
->important ControlTemplate Example can be found inside the FeaturesCategory folder in SDK Browser Application/Examples/BadgeViewControl.
+>important ControlTemplate Example can be found inside the FeaturesCategory folder in [SDK Browser Application/Examples/BadgeViewControl](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/BadgeViewControl/FeaturesCategory/ControlTemplateExample).
 
 ## See Also
 

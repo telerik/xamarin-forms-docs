@@ -34,7 +34,15 @@ You can use the following properties to specify the alignment of the badge accor
 
 ![Badge Alignment](images/badgeview-vertical-alignment.png)
 
-## Example with Badge Alignment and Position
+## Badge Offset
+
+Use the following properties to specify the horizontal/vertical distance between the content of the Badge and its alignment point:  
+
+* **BadgeOffsetX**(*double*): Specifies the horizontal distance between the content of the Badge and its alignment point. The default value is `0`.
+
+* **BadgeOffsetY**(*double*): Specifies the vertical distance between the content of the Badge and its alignment point. The default value is `0`.
+
+## Example with Badge Alignment, Position and Offset
 
 Here is the BadgeView definition:
 
@@ -44,13 +52,7 @@ And the result:
 
 ![Badge Position and Alignment](images/badgeview-position-alignment.png)
 
-## Badge Offset
-
-Use the following properties to specify the horizontal/vertical distance between the content of the Badge and its alignment point:  
-
-* **BadgeOffsetX**(*double*): Specifies the horizontal distance between the content of the Badge and its alignment point. The default value is `0`.
-
-* **BadgeOffsetY**(*double*): Specifies the vertical distance between the content of the Badge and its alignment point. The default value is `0`.
+Sample Badge Alignment, Position, and Offset example can be found [here](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/BadgeViewControl/FeaturesCategory/BadgeAlignPositionExample).
 
 ## See Also
 

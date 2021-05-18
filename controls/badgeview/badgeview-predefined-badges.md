@@ -37,16 +37,22 @@ Define the BadgeView:
 
 Use the following namespace:
 
-<snippet id='xmlns-telerikprimitives'/>
+```XAML
+xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives" 
+xmlns:telerikListView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls" 
+xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+```
 
-The code used for choosing different badge type
+The result:
 
-<snippet id='badgeview-badge-types-code-behind'/>
+![Badge Types](images/badgeview-badge-types-example.png)
+
+Badge Types example can be found in our [SDK Browser Application](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/BadgeViewControl/FeaturesCategory/BadgeTypesExample).
 
 ## See Also
 
 - [Key Features]({%slug badgeview-key-features%})
-- [Badge Position and Alignment]({%slug badgeview-position-alignment%})
+- [Badge Position, Alignment and Offset]({%slug badgeview-position-alignment%})
 - [Badge Animation]({%slug badgeview-animation%})
 - [Styling]({%slug badgeview-styling%})
 - [CustomizAation]({%slug badgeview-customization%})

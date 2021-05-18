@@ -10,6 +10,8 @@ slug: badge-overview
 
 ## Badge vs BadgeView 
 
+![Badge vs BadgeView](images/badge-badgeview.png)
+
 Badge is the marker which is displayed to show notifications, statuses, etc. The BadgeView is the control in which you can add a content and position the badge based on this content. 
 
 >important We recommend you use the [BadgeView control]({%slug badgeview-overview%})

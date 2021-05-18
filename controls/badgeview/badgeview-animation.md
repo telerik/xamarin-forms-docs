@@ -23,7 +23,7 @@ Here is the Animation properties set to the RadBadgeVierw control:
 
 <snippet id='badgeview-animation'/>
 
->tip Badge Animation example is located inside the SDK Browser Application/Examples/BadgeViewControl/Features Category folder.
+>tip Badge Animation example is located inside the [SDKBrowserApplication/Examples/BadgeViewControl/FeaturesCategory](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/BadgeViewControl/FeaturesCategory/BadgeAnimationExample).
 
 ## See Also
 

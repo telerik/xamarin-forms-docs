@@ -117,6 +117,8 @@ For more details please visit our [Badge Types]({%slug badgeview-predefined-badg
 
 BadgeView control can be integrated with other controls like ListView, SideDrawer, TabView, Button, Label, Image, etc. It depends on the scenario you want to achieve. 
 
+![BadgeView Integration Example](images/badgeview-integration-example.gif)
+
 Sample Integration Example can be found in our [Telerik UI for Xamarin Sample application](https://github.com/telerik/telerik-xamarin-forms-samples/tree/master/QSF/QSF/Examples/BadgeViewControl/IntegrationExample) and [SDK Browser application](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/BadgeViewControl/FeaturesCategory/BadgeViewIntegrationExample).
 
 ## See Also

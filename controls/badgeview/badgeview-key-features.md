@@ -113,6 +113,38 @@ For more details please visit our [Badge Animation]({%slug badgeview-animation%}
 You can choose what will be the type of the badge by setting the `BadgeType` property(enumeration of type *Telerik.XamarinForms.Primitives.BadgeType*). 
 For more details please visit our [Badge Types]({%slug badgeview-predefined-badges%}) article.
 
+## Badge Visibility
+
+Change the Badge visibility state using the `BadgeVisibility` property (enum of type *Telerik.XamarinForms.Common.Visibility*).
+
+The available options are:
+
+* **Visible** - The badge marker/indicator is visualized.
+* **Hidden** - The badge marker/indicator is hidden.
+* **Collapsed** - The badge marker/indicator is collapsed.
+
+The default value of `BadgeVisibility` is `Visible`.
+
+### Example with BadgeVisibility Hidden
+
+```XAML
+<telerikPrimitives:RadBadgeView BadgeText="1" BadgeVisibility="Hidden">
+    <telerikPrimitives:RadBadgeView.Content>
+        <telerikPrimitives:RadBorder WidthRequest="80"
+                                    HeightRequest="80"
+                                    BorderThickness="1"
+                                    BorderColor="LightGray">
+            <Label Text="Telerik Badge View for Xamarin" 
+                FontSize="14"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+        </telerikPrimitives:RadBorder>
+    </telerikPrimitives:RadBadgeView.Content>
+</telerikPrimitives:RadBadgeView>
+```
+
+![BadgeView Badge Visibility](images/badgeview-badge-visibility.png)
+
 ## Integration with other Controls
 
 BadgeView control can be integrated with other controls like ListView, SideDrawer, TabView, Button, Label, Image, etc. It depends on the scenario you want to achieve. 

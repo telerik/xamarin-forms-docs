@@ -120,10 +120,10 @@ Change the Badge visibility state using the `BadgeVisibility` property (enum of 
 The available options are:
 
 * **Visible** - The badge marker/indicator is visualized.
-* **Hidden** - The badge marker/indicator is hideden.
+* **Hidden** - The badge marker/indicator is hidden.
 * **Collapsed** - The badge marker/indicator is collapsed.
 
-The default value is Visible.
+The default value of `BadgeVisibility` is `Visible`.
 
 ### Example with BadgeVisibility Hidden
 

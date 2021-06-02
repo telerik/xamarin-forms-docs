@@ -12,7 +12,7 @@ Conversational UI for Xamarin provides language localization. In short, you can 
 
 >important To learn in details about the localization process of Telerik UI for Xamarin components, please go through the common [Localization and Globalization]({%slug common-localization-and-globalization%}) topic.
 
-In RadChat you can localization the following string:
+In RadChat you can localize the following string:
 
 | Localization Key | Default Value |
 | -----------------| ------------- |

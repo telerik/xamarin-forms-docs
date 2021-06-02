@@ -33,7 +33,6 @@ Localization refers to the translation of application resources into localized v
 
 * AutoCompleteView
 * Calendar &amp; Scheduling
-* ComboBox
 * ConversationalUI
 * DataForm
 * DataGrid
@@ -41,6 +40,7 @@ Localization refers to the translation of application resources into localized v
 * Date Picker
 * DateTime Picker
 * List Picker
+* PdfViewer
 * RichTextEditor
 * Templated Picker
 * Time Picker

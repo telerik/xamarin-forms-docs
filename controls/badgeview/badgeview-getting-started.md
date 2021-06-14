@@ -26,16 +26,16 @@ Take a look at these articles and follow the instructions to setup your app:
 
 You have two options:
 
-* Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic. Note that RadBarcode does not have a separate nuget package. 
+* Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic. Note that RadBadgeView does not have a separate nuget package. 
 
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadBadgeView** component:
 
 | Platform | Assemblies |
 | -------- | ---------- |
-| Portable | Telerik.XamarinForms.Primitives.dll <br />Telerik.XamarinForms.Common.dll |
-| Android  | Telerik.XamarinForms.Primitives.dll<br/>Telerik.XamarinForms.Common.dll |
-| iOS      | Telerik.Xamarin.iOS.dll <br/> Telerik.XamarinForms.Primitives.dll <br />Telerik.XamarinForms.Common.dll |
-| UWP      | Telerik.Core.dll<br/>Telerik.XamarinForms.Primitives.dll <br/>Telerik.XamarinForms.Common.dll |
+| Portable | Telerik.XamarinForms.Primitives.dll <br/>Telerik.XamarinForms.Common.dll <br/>Telerik.XamarinForms.SkiaSharp.dll |
+| Android  | Telerik.XamarinForms.Primitives.dll <br/>Telerik.XamarinForms.Common.dll <br/>Telerik.XamarinForms.SkiaSharp.dll |
+| iOS      | Telerik.Xamarin.iOS.dll <br/> Telerik.XamarinForms.Primitives.dll <br />Telerik.XamarinForms.Common.dll <br/>Telerik.XamarinForms.SkiaSharp.dll |
+| UWP      | Telerik.Core.dll <br/>Telerik.XamarinForms.Primitives.dll <br/>Telerik.XamarinForms.Common.dll <br/>Telerik.XamarinForms.SkiaSharp.dll |
 
 ## 3. Adding RadBadgeView control
 
@@ -55,11 +55,11 @@ In addition to this you need to add the following namespace:
 
 ## 4. Adding RadBadgeView Content and BadgeText
 
->important The BadgeView will be visualized only if its `Content` property is set. 
+>important The Badge marker(indicator) which is part of the RadBadgeView will be visualized only if RadBadgeView `Content` property is set. 
 
 ## Example
 
-Add the RadBadgeView and set its `Content` property and BadgeText property.
+Add the RadBadgeView and set `Content` property and `BadgeText` property.
 
 <snippet id='badgeview-getting-started-xaml'/>
 <snippet id='badgeview-getting-started-csharp'/>
@@ -70,11 +70,11 @@ Here is the result:
 
 ![Getting Started Example](images/badgeview-getting-started.png)
 
->important BadgeView Getting Started Example can be found in *SDK Browser/Examples/BadgeViewControl* folder.
+>important BadgeView Getting Started Example can be found in [SDK Browser/Examples/BadgeViewControl/GettingStartedCategory](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/BadgeViewControl/GettingStartedCategory/GettingStartedExample) folder.
 
 ## See Also
 
 - [Key Features]({%slug badgeview-key-features%})
 - [Badge Position and Alignment]({%slug badgeview-position-alignment%})
 - [Badge Animation]({%slug badgeview-animation%})
-- [Predefined Badges]({%slug badgeview-predefined-badges%})
+- [Badge Types]({%slug badgeview-predefined-badges%})

@@ -777,6 +777,8 @@ intro_columns:
         "SlideView": "slideview-overview"
         "Border": "border-overview"
         "Path": "path-overview"
+        "BadgeView": "badgeview-overview"
+        "Shadow": "shadow-overview"
 -
   categories:
   -

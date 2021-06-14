@@ -1,5 +1,5 @@
 ---
-title: Predefined Badges
+title: Badge Types
 page_title: Xamarin BadgeView Documentation | Predefined Badges
 description: Check our &quot;Predefined Badges&quot; documentation article for Telerik BadgeView for Xamarin control.
 tags: badge, marker, indicator, badgeview for xamarin, badge for xamarin
@@ -9,6 +9,8 @@ slug: badgeview-predefined-badges
 ---
 
 # Badge Types
+
+![Badge Types](images/badgeview-badge-types.png)
 
 You can change the Badge type using one of the predefined badge types. 
 
@@ -29,19 +31,28 @@ The available options are:
 
 ## Example
 
-Here is the BadgeView definition:
+Define the BadgeView:
 
 <snippet id='badgeview-badge-types'/>
 
-The code used for choosing different badge type
+Use the following namespace:
 
-<snippet id='badgeview-badge-types-code-behind'/>
+```XAML
+xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives" 
+xmlns:telerikListView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls" 
+xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+```
 
-The final Result::
+The result:
 
-![Badge Types](images/badgeview-badge-types.png)
+![Badge Types](images/badgeview-badge-types-example.png)
 
-## Style the predefined badges
-
+Badge Types example can be found in our [SDK Browser Application](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/BadgeViewControl/FeaturesCategory/BadgeTypesExample).
 
 ## See Also
+
+- [Key Features]({%slug badgeview-key-features%})
+- [Badge Position, Alignment and Offset]({%slug badgeview-position-alignment%})
+- [Badge Animation]({%slug badgeview-animation%})
+- [Styling]({%slug badgeview-styling%})
+- [CustomizAation]({%slug badgeview-customization%})

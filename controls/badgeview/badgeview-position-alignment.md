@@ -8,7 +8,7 @@ slug: badgeview-position-alignment
 
 # Alignment and Position
 
-This article explains the options we can use to align and position the badge according to the BadgeView Content.
+This article explains the options you can use to align and position the badge according to the BadgeView Content.
 
 ## Badge Position
 
@@ -16,7 +16,11 @@ You can use the following properties to specify the position of the badge accord
 
 * **BadgeHorizontalPosition**(of type *Telerik.XamarinForms.Primitives.BadgePosition*): Specifies the horizontal `BadgePosition` of the badge. The following options are: `Start`, `Center`, `End`. The default value is `End`.
 
+![Badge Position](images/badgeview-horizontal-position.png)
+
 * **BadgeVerticalPosition**(of type *Telerik.XamarinForms.Primitives. BadgePosition*): Specifies the vertical `BadgePosition` of the badge. The following options are: `Start`, `Center`, `End`. The default value is `Start`.
+
+![Badge Position](images/badgeview-vertical-position.png)
 
 ## Badge Alignment
 
@@ -24,17 +28,11 @@ You can use the following properties to specify the alignment of the badge accor
 
 * **BadgeHorizontalAlignment**(of type *Telerik.XamarinForms.Primitives.BadgeAlignment*): Specifies the horizontal alignment of the badge. The following options are: `Start`, `Center`, `End`. The default value is `Center`.
 
+![Badge Alignment](images/badgeview-horizontal-alignment.png)
+
 * **BadgeVerticalAlignment**(of type *Telerik.XamarinForms.Primitives.BadgeAlignment*): Specifies the vertical alignment of the badge. The following options are: `Start`, `Center`, `End`. The default value is `End`.
 
-## Example with Badge Alignemnt and Position
-
-Here is the BadgeView definition:
-
-<snippet id='badgeview-align-position-offset'/>
-
-And the result:
-
-![Badge Position and Alignment](images/badgeview-position-alignment.png)
+![Badge Alignment](images/badgeview-vertical-alignment.png)
 
 ## Badge Offset
 
@@ -44,7 +42,17 @@ Use the following properties to specify the horizontal/vertical distance between
 
 * **BadgeOffsetY**(*double*): Specifies the vertical distance between the content of the Badge and its alignment point. The default value is `0`.
 
-### Example 
+## Example with Badge Alignment, Position and Offset
+
+Here is the BadgeView definition:
+
+<snippet id='badgeview-align-position-offset'/>
+
+And the result:
+
+![Badge Position and Alignment](images/badgeview-position-alignment.png)
+
+Sample Badge Alignment, Position, and Offset example can be found [here](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/BadgeViewControl/FeaturesCategory/BadgeAlignPositionExample).
 
 ## See Also
 

@@ -23,7 +23,7 @@ Use the following properties to style the look of the badge:
 * **BadgeMinimumWidth**(*double*): Defines the minimum width of tha badge.
 * **BadgeMinimumHeight**(*double*): Defines the minimum height of the badge.
 
->important Use `BadgeType` for predefined types for the badge. If you set the `BadgeText` it will override the predefined icon for the padge type.
+>important Use `BadgeType` for predefined types for the badge. If you set the `BadgeText` it will override the predefined icon for the badge type.
 
 ## Example
 
@@ -31,11 +31,19 @@ The BadgeView definition with some of the above properties set.
 
 <snippet id='badgeview-styling'/>
 
+Use the following namespace:
+
+<snippet id='xmlns-telerikprimitives'/>
+
 The final Result::
 
 ![Badge Styling](images/badgeview-badge-styling.png)
 
+>tip Badge Styling Example can be found inside the FeaturesCategory folder in [SDK Browser Application/Examples/BadgeViewControl](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/BadgeViewControl/FeaturesCategory/StylingExample).
+
 ## See Also
 
-- [BadgeView Overview]({%slug badgeview-overview%})
-- [BadgeView Getting Started]({%slug badgeview-getting-started%})
+- [Key Features]({%slug badgeview-key-features%})
+- [Badge Position and Alignment]({%slug badgeview-position-alignment%})
+- [Badge Animation]({%slug badgeview-animation%})
+- [CustomizAation]({%slug badgeview-customization%})

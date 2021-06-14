@@ -1,5 +1,5 @@
 ---
-title: How to add  custom view to the event in calendar?
+title: How to add custom view to the event in calendar
 description: add custom appointment view for ios calendar
 type: how-to
 page_title: Add custom appointment view to the calendar

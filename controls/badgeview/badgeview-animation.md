@@ -17,6 +17,12 @@ BadgeView allows you to display the badge indicator using animation. The followi
 
 **BadgeAnimationEasing**([Xamarin.Forms.Easing](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/animation/easing)): Specifies the Easing of the badge animation. The default value is `SinInOut`.
 
+**BadgeStartAnimationCommand**(*System.Windows.Input.ICommand*): Gets the command that starts the badge animation.
+
+```C#
+this.badgeView.BadgeStartAnimationCommand.Execute(null);
+```
+
 ## Example
 
 Here is the Animation properties set to the RadBadgeVierw control:

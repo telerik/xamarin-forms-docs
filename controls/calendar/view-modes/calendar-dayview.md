@@ -23,8 +23,6 @@ You can specify the initial and end hours displayed in the DayView through the *
 * **TimelineInterval**: This property is of type *TimeSpan* and defines the time intervals inside the timeline.
 * **IsCurrentTimeIndicatorVisible**: Boolean property that enables the option to visually mark the current time. In addition, you could customize the way the current time indicator looks through a few styling properties, for more details go to [Styling](#styling) section.
 
-> CurrentTimeIndicator for DayView is available only for Android and iOS. For UWP you can use [MultiDay ViewMode]({%slug calendar-multidayview%}) with its **VisibleDays** property set to "1".
-
 >tip Through the DayViewSettings you can also configure [Special and restricted slots]({%slug calendar-specialslots%}) and [Non-working hours]({%slug calendar-nonworking-hours%}) features of RadCalendar.
 
 ## Styling

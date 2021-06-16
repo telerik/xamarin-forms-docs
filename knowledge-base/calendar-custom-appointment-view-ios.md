@@ -57,7 +57,7 @@ public class DayViewDataSource : TKCalendarDayViewDataSource
 }
 ```
 
-3. Create CustomCell which inherits from UICollectionViewCell and create the Layout for the cell, to position the additional properties from the event. I have used the [Telerik UI for Xamarin.iOS Calendar examples]({%slug https://docs.telerik.com/devtools/xamarin/demos-and-sample-apps/xamarin-native-examples#xamarinios-examples%}) for this implementation. 
+3. Create CustomCell which inherits from UICollectionViewCell and create the Layout for the cell, to position the additional properties from the event. I have used the [Telerik UI for Xamarin.iOS Calendar examples](https://docs.telerik.com/devtools/xamarin/demos-and-sample-apps/xamarin-native-examples#xamarinios-examples) for this implementation. 
 
 ```C#
 public class DayViewCustomCell : UICollectionViewCell

@@ -69,6 +69,8 @@ and the ViewModel used:
 
 If you want to achieve multiple selection you will need to set the `SelectionMode` to `Multiple`. The multiple selected items are visualized inside tokens.
 
+>important As the SelectedItems collection is read-only, in order to be notified when the collection is changed, you should listen to the  `CollectionChanged` event of the `SelectedItems`. Example with SelectedItems CollectionChanged can be found here: SDK Browser App - [ComboBo/HowTo/Selection with Checkboxes](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/ComboBoxControl/HowToCategory/SelectionWithCheckBoxExample) and QSF app -> [ComboBox Customization example](https://github.com/telerik/telerik-xamarin-forms-samples/tree/master/QSF/QSF/Examples/ComboBoxControl/CustomizationExample). 
+
 ### Example with Multiple Selection and SelectedItems set
 
 Here is the ComboBox definition in XAML:

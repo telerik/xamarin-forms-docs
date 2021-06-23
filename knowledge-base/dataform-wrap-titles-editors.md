@@ -101,9 +101,11 @@ public class CustomDataFormRenderer : DataFormRenderer
 			var editorLabelDef = editor.GridLayout.Definitions[1];
 			editorLabelDef.Row = 0;
 			editorLabelDef.Column = 1;
+			editorLabelDef.ColumnSpan = 3;
 
 			var feedbackDef = editor.GridLayout.Definitions[3];
 			feedbackDef.Row = 2;
+			feedbackDef.ColumnSpan = 3;
 		}
 
 		base.UpdateEditor(editor, property);

@@ -145,6 +145,21 @@ The default value of `BadgeVisibility` is `Visible`.
 
 ![BadgeView Badge Visibility](images/badgeview-badge-visibility.png)
 
+
+## Padding
+
+* **Padding**(*Xamarin.Forms.Thickness*): Defines the inner padding of the BadgeView.
+
+```XAML
+ <telerikPrimitives:RadBadgeView BadgeText="Add" Padding="30">
+	 <telerikPrimitives:RadBadgeView.Content>
+	 <!-- add your content here -->
+	 </telerikPrimitives:RadBadgeView.Content>
+ </telerikPrimitives:RadBadgeView>
+```
+
+![BadgeView Padding](images/badgeview-padding.png)
+
 ## Integration with other Controls
 
 BadgeView control can be integrated with other controls like ListView, SideDrawer, TabView, Button, Label, Image, etc. It depends on the scenario you want to achieve. 

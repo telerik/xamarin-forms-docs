@@ -16,7 +16,8 @@ position: 3
 * **Header**(*Telerik.XamarinForms.Primitives.TabViewHeaderItem*): Allows you to create a more **complex layout** for the TabView Header using the **TabViewHeaderItem** control.
 * **Content**(*Xamarin.Forms.View*): Defines the content of the TabView Item
 * **IsSelected**(*bool*): Defines the selected TabView item.
-* **IsEnabled**(*bool*): Defines wheteher the TabView Item is enabled/disabled. By default `IsEnabled` is `True`
+* **IsEnabled**(*bool*): Defines whether the TabView Item is enabled/disabled. By default `IsEnabled` is `True`.
+* **IsVisible**(*bool*): Specified whether the TabView Item is visible/hidden.
 
 ## Displaying TabViewItem
 
@@ -112,8 +113,6 @@ You can manually select TabViewItem via its `IsSelected` `bool` property. Select
 
 With Telerik UI for Xamarin version 2020.3.1106.1 TabView Item has a support for Disabled tabs. You can set the `IsEnabled` `bool` property of the TadViewItem to `False` if you want to prevent the header to be clicked. The header text will look disabled and you can not click on it.
 
-### Example
-
 ```XAML
 <telerikPrimitives:RadTabView x:Name="tabView">
 	<telerikPrimitives:RadTabView.Items>
@@ -132,6 +131,41 @@ With Telerik UI for Xamarin version 2020.3.1106.1 TabView Item has a support for
 	</telerikPrimitives:RadTabView.Items>
 </telerikPrimitives:RadTabView>
 ```
+
+## Hidden Tabs
+
+With Telerik UI for Xamarin R3 2021 TabView introduces `IsVisible` property for the TabViewItem - with it you can easily show/hide certain TabItem without removing it from the TabView Items collection. 
+
+```XAML
+<telerikPrimitives:RadTabView x:Name="tabView">
+    <telerikPrimitives:RadTabView.Items>
+
+        <telerikPrimitives:TabViewItem HeaderText="Home">
+            <telerikPrimitives:TabViewItem.Content>
+                <Label Margin="10" Text="This is the content of the Home tab" />
+            </telerikPrimitives:TabViewItem.Content>
+        </telerikPrimitives:TabViewItem>
+
+        <telerikPrimitives:TabViewItem HeaderText="View" 
+									   IsVisible="False">
+            <telerikPrimitives:TabViewItem.Content>
+                <Label Margin="10" Text="This is the content of the View tab" />
+            </telerikPrimitives:TabViewItem.Content>
+        </telerikPrimitives:TabViewItem>
+
+        <telerikPrimitives:TabViewItem HeaderText="Folder">
+            <telerikPrimitives:TabViewItem.Content>
+                <Label Margin="10" Text="This is the content of the Folder tab" />
+            </telerikPrimitives:TabViewItem.Content>
+        </telerikPrimitives:TabViewItem>
+
+    </telerikPrimitives:RadTabView.Items>
+</telerikPrimitives:RadTabView>
+```
+
+Check the result below on different platforms:
+
+![](images/tabview-item-isvisible.png)
 
 ## Example
 

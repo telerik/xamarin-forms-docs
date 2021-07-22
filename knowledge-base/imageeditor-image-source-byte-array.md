@@ -1,8 +1,8 @@
 ---
-title: ImageEditor Source from byte[] array
+title: ImageEditor Source from byte array
 description: image editor source from byte array
 type: how-to
-page_title: Add imageeditor source from byte[] array
+page_title: Add imageeditor source from byte array
 slug: imageeditor-image-source-byte-array
 position: 
 tags: 

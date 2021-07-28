@@ -26,7 +26,7 @@ Here is a list of the required AndroidX packages:
  - Xamarin.Google.Android.Material
  - Xamarin.AndroidX.Migration
  
-In addition, the following reference is required in the Android project when using the RichTextEditro control:
+In addition, the following reference is required in the Android project:
 
 - Mono.Android.Export.dll
 

@@ -26,24 +26,7 @@ Here is a list of the required AndroidX packages:
  - Xamarin.Google.Android.Material
  - Xamarin.AndroidX.Migration
  
->important Telerik UI for Xamarin assemblies are build against an earlier versions of AndroidX packages. With Xamarin.AndroidX.Core version 1.3.2.2 or higher Xamatin.Forms introduced a breaking change by namespace renaming in AndroidX.Core package: [Check this GitHub commit](https://github.com/xamarin/AndroidX/commit/b64834625ba231d89afb9c89bdae007a7258eca0#diff-64d65877e1b5eb3de016e98941c7020707c9b317946c38a0e63972fab41e1984). This breaking change (namespace renaming) leads to us not being able to find all classes in that namespace as they are now in different ones. **Downgrade the Xamarin.AndroidX.Core package to version to 1.3.2.1**. Also, you may need to downgrade other packages like **Xamarin.AndroidX.Media to 1.2.1.1**; **Xamarin.Google.Android.Material to 1.2.1.1**, etc. as they depend on the Xamarin.AndroidX.Core package.
-
-Here is a list of the Xamarin.AndroidX packages depend on Xamarin.AndroidX.Core package.
-
-```
-Xamarin.AndroidX.Browser -> Xamarin.AndroidX.Core
-Xamarin.AndroidX.Media-> Xamarin.AndroidX.Core
-Xamarin.AndroidX.MediaRouter -> Xamarin.AndroidX.Media -> Xamarin.AndroidX.Core 
-Xamarin.Google.Android.Material-> Xamarin.AndroidX.Core
-Xamarin.AndroidX.RecyclerView -> Xamarin.AndroidX.Core
-Xamarin.AndroidX.RecyclerView.Selection -> Xamarin.AndroidX.Core
-Xamarin.AndroidX.Legacy.Support.V4 -> Xamarin.AndroidX.Core
-```
-
-**You need to downgrade their versions to a version that depends on Xamarin.AndroidX.Core 1.3.2.1**
-
-
-In addition, the following reference is required in the Android project:
+In addition, the following reference is required in the Android project when using the RichTextEditro control:
 
 - Mono.Android.Export.dll
 

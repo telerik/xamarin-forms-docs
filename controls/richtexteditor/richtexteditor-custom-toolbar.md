@@ -46,6 +46,9 @@ RadRichTextEditorToolbar contains a bunch of predefined toolbar items used to ex
 	* OutdentToolbarItem
 	* RedoToolbarItem
 	* UndoToolbarItem
+	* CutToolbarItem
+	* CopyToolbarItem
+	* PastePlainTextToolbarItem
 	
 - Picker Toolbar items - open picker controls for choosing color, font, etc and apply it at the current position or selection:
 	* ColorPickerToolbarItem
@@ -73,6 +76,17 @@ If the caret is over an existing hyperlink, tapping on the **AddHyperlinkToolbar
 BackButton is shown inside the RichTextEditorToolbar whenever there is a RichTextEditorToolbarItem with nested toolbar items to provide a way to return to the main toolbar. 
 
 OpenHyperlink toolbar item opens a browser and navigates to the respective URL address.
+
+- Add Image Toolbar item - toolbar item for adding images:
+	* AddImageToolbarItem: used for adding images. 
+
+- EditImage Toolbar item
+	* EditImageToolbarItem: used for image resizing. In addition the toolbar allows you to pick an image if you haven't selected one. 
+	
+- RemoveImage Toolbar item
+	* RemoveImageToolbarItem: used for removing the currently selected image from the editor.
+	
+For more details review [Insert and Edit Images]({%slug richtexteditor-insert-images%}) article.
 
 ## Example
 

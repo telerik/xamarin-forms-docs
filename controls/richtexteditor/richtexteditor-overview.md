@@ -32,6 +32,8 @@ Telerik RichTextEditor for Xamarin enables users to create rich textual content 
 
 * **Commands Support**: RichTextEditor exposes commands, such as ToggleBoldCommand, ToggleBulletingCommand, AlignRightCommand, etc, that allow you to execute rich text editing actions over the loaded into the editor content. For detailed information on the matter check [Commands]({%slug richtexteditor-commands%}) article. 
 
+* **Insert and Edit Images Support**: You can easily insert images and use the built-in edit images operations like resize, cut, copy, paste, remove. Read more about this in [Insert and Edit Images]({%slug richtexteditor-insert-images%}) article.  
+
 * **RichTextEditor Toolbar**: Take advantage of a pre-defined UI automatically wired with all of the commands provided by the control through built-in functionality. For more details check the [RadRichTextEditor Toolbar]({%slug richtexteditor-toolbar%}) article. 
 
 * **Custom Toolbar**: The RadRichTextEditor Toolbar can be fully customized. You could populate the toolbar with the ToolbarItems needed for editing the HTML content. Read more about this in [RichTextEditor Custom Toolbar]({%slug richtexteditor-custom-toolbar%}).

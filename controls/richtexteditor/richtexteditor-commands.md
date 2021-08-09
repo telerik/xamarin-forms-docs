@@ -12,6 +12,9 @@ RadRichTextEditor provides the following commands of type *ICommand*:
 
 * **UndoCommand**
 * **RedoCommand**
+* **CutCommand**
+* **CopyCommand**
+* **PasteCommand**
 * **ToggleBoldCommand**
 * **ToggleItalicCommand**
 * **ToggleUnderlineCommand**
@@ -31,6 +34,8 @@ RadRichTextEditor provides the following commands of type *ICommand*:
 * **ApplyHyperlinkCommand**
 * **RemoveHyperlinkCommand**
 * **OpenHyperlinkCommand**
+* **InsertImageCommand**
+* **RemoveImageCommand**
 
 >note RadRichTextEditor Toolbar exposes some of the commands built-in. For more information please check the [RadRichTextEditor Toolbar]({%slug richtexteditor-toolbar%}) article.
 

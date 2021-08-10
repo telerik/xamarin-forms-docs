@@ -24,6 +24,10 @@ res_type: kb
     </tbody>
 </table>
 
+>important This exception occurs when using Telerik UI for Xamarin 2021.2.615.1 version and below. **The issue is fixed in Telerik UI for Xamarin version - 2021.2.728.1**
+
+
+>important The workaround below must be used when Telerik UI for Xamarin 2021.2.615.1 version or below is used.
 
 ## Description
 

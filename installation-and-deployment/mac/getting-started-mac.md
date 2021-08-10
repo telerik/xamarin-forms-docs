@@ -82,7 +82,7 @@ You can use our [**Telerik NuGet package server**]({%slug telerik-nuget-server%}
 
 If you prefer to manually reference the required Telerik UI for Xamarin assemblies into your solution, you can get them in the following ways:
 
-* [Download the .pkg file]({%slug download-product-files%}), then install it on the Mac machine. After successfull instalation you will get the following screen:
+* [Download the .pkg file]({%slug download-product-files%}), then install it on the Mac machine. After successful installation you will get the following screen:
 
 	![Instal Telerik Xamarin Pkg](images/install-telerik-xamarin-pkg.png)
 	
@@ -92,7 +92,17 @@ If you prefer to manually reference the required Telerik UI for Xamarin assembli
 	
 * Download a ZIP file containing all the assemblies, for more details on this go to [Download Product Files]({%slug download-product-files %}) topic. You can then unzip the file to any location on your machine and reference the assemblies from that location.
 
-If you're planning to use only a few components, you can add references to part of the assemblies. There is a special section in each control documentation that lists all the required assemblies. The section is called **"Adding the required Telerik references"** and is located in the **Getting Started** article for each control.
+#### Exploring the installation folder
+
+If you open the installation folder you will probably note the following sub directories:
+
+* Binaries
+* Examples - here you can find the [SDK Browser application]({%slug developer-focused-examples%}#sdk-browser-application) as well as sample applications demonstrating our [controls for Xamarin.Android and Xamarin.iOS]({%slug native-controls-overview%}).
+* LicenseAgreements - provides the product EULA.
+* QSF - includes the full source of [Telerik UI for Xamarin Samples Application]({%slug developer-focused-examples%}#telerik-ui-for-xamarin-samples-application).
+* VSExtensions - includes our Visual Studio Extension package. For more details go to [Visual Studio Extensions]({%slug vs-extensions %}) topic.
+
+>tip If you're planning to use only a few components, you can add references to part of the assemblies. There is a special section in each control documentation that lists all the required assemblies. The section is called **"Adding the required Telerik references"** and is located in the **Getting Started** article for each control.
 
 >important As some of the controls included in **Telerik UI for Xamarin** suite rely on the **SkiaSharp** rendering library, you should either install [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.59.0) in all projects included in the Xamarin solution (portable, android, ios, etc.) or in case you do not intend to use any of the Skia-dependent components (Gauges, Rating, BusyIndicator), you could reference the [Lite assemblies]({%slug telerik-light-assemblies%}).
 

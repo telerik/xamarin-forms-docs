@@ -8,6 +8,10 @@ slug: typeloadexception-accessibilitydelegatecompat
 
 &nbsp;
 
+>important This exception occurs when using Telerik UI for Xamarin 2021.2.615.1 version and below. **The issue is fixed in Telerik UI for Xamarin version - 2021.2.728.1**.
+
+>important The workaround below must be used when Telerik UI for Xamarin 2021.2.615.1 version or below is used.
+
 If you recently came across any of these exceptions when upgrading your solution:
 
 * **Exception in ListView**: System.TypeLoadException: 'VTable setup of type Telerik.XamarinForms.DataControlsRenderer.Android.ListViewAccessibilityDelegateCompat failed'

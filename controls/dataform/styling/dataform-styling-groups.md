@@ -18,6 +18,7 @@ The **DataFormGroupHeaderStyle** class exposes the following properties:
 - **Foreground**: Determines the group header text color.
 - **Height**: Specifies the group header height.
 - **IsCollapsible**: Indicates whether the group will be collapsible.
+- **IsCollapsed**: Specifies whether the group is collapsed. When setting it to "False", the groups will be collapsed by default.
 - **Padding**: Sets the group header content padding.
 - **TextAlignment**: Specifies the group header text alignment.
 

@@ -10,7 +10,7 @@ slug: gauge-animations
 
 All gauge indicators are being animated upon initial load and upon value change. The animations are enabled by default and you have full control over them via the **AnimationSettings** property. 
 
-**AnimationSettings** property could be applied to the Gauge or separaptely to the indicators. By default the property of the indicator is null and in this case the **AnimationSettings** property of the gauge is taken into consideration. This allows you to control all animations by setting only one property - the property of the gauge. If you need an indicator to be animated differently, you can set its **AnimationSettings** property as it has a higher precedence than the gauge's property.
+**AnimationSettings** property could be applied to the Gauge or separately to the indicators. By default the property of the indicator is null and in this case the **AnimationSettings** property of the gauge is taken into consideration. This allows you to control all animations by setting only one property - the property of the gauge. If you need an indicator to be animated differently, you can set its **AnimationSettings** property as it has a higher precedence than the gauge's property.
 
 The **AnimationSettings** class contains the following properties:
 

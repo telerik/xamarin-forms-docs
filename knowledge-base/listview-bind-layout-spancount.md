@@ -22,7 +22,6 @@ res_type: kb
 	</tbody>
 </table>
 
-
 ## Description
 
 Let's have the following RadListView with `ListViewGridLayout` configured as follow:
@@ -38,7 +37,6 @@ Let's have the following RadListView with `ListViewGridLayout` configured as fol
 ```
 
 The requirement is to update the SpanCount property through a binding.
-
 
 ## Solution
 

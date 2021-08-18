@@ -2,7 +2,7 @@
 title: DataMatrix
 page_title: Xamarin Barcode Documentation | DataMatrix Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik DataMatrix Barcode for Xamarin control.
-position: 2	
+position: 0	
 slug: barcode-datamatrix
 ---
 

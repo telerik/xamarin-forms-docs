@@ -53,7 +53,7 @@ Built-in Toolbar editing options for currently selected image:
 * `EditImageToolbarItem`(*InsertImageToolbarItem*): allows you to resize the image. In addition the toolbar allows you to pick an image if you haven't selected one. 
 * `CutToolbarItem`(*RichTextEditorToolbarItem*): allows you to cut the selected HTML/image from the clipboard.
 * `CopyToolbarItem`(*RichTextEditorToolbarItem*): allows you to copy the selected HTML to the clipboard. 
-* `PastePlainTextToolbarItem`(*RichTextEditorToolbarItem*): allows you to paste plain text from the clipboard.
+* `PasteHtmlToolbarItem`(*RichTextEditorToolbarItem*): allows you to paste HTML from the clipboard.
 * `RemoveImageToolbarItem`(*RichTextEditorToolbarItem*): allows you to remove/delete the currently selected image.
 
 How the editing toolbar looks when image is selected: 

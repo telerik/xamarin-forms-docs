@@ -2,19 +2,17 @@
 title: DataMatrix
 page_title: Xamarin Barcode Documentation | DataMatrix Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik DataMatrix Barcode for Xamarin control.
-position: 0	
+position: 4	
 slug: barcode-datamatrix
 ---
 
-# DataMatrix Barcode 
+# DataMatrix 
 
 Data Matrix barcode is a two-dimensional type of code used widely in industry for marking small parts and items due to its high data density and reliability. Data Matrix code consists of dark and light square cells that form a matrix. The produced code can be square or rectangular and can have size up to 144x144 for square codes or 16x48 for rectangular codes. To provide better readability, the Data Matrix code includes error correction algorithm, allowing to reconstruct up to 30% of damaged code image.
 
 #### Figure 1: DataMatrix Barcode
 
 ![DataMatrix barcode](images/barcode-datamatrix-structure.png)
-
-The Swiss QR Code encodes all the information necessary for a payment in specific format and structure. Along with the printed information, the Swiss QR Code forms the payment part of the QR-bill. The allowed currencies for payments are CHF and EUR. The QR-Bill also guarantees you compliance with the regulatory requirements arising from the revised Anti-Money Laundering Ordinance.
 
 ## DataMatrix Barcode Structure
 
@@ -61,23 +59,27 @@ The following table shows the supported encodations and provides information abo
 
 * **AsciiGS1**: Used to encode FNC1 characters in the ASCII range
 
-## SymbolSize
+## Symbol Size
 
 Sets the symbol size and shape of the generated barcode. It can be automatically determined using SquareAuto or RectangleAuto, or specific like __Square32x32__ or __Rectangle16x48__.
 
-## TextEncoding
+## Text Encoding
 
 Determines character encoding used to encode the barcode contents. By default it is set to UTF-8, which uses more bits per character and may increase the size of the barcode image.
 
 ## Example 
 
-```C#
-	<telerik:RadBarcode Value="https://www.telerik.com/wpf" Height="200" Width="200" x:Name="barcode" Foreground="Black"  VerticalAlignment="Top">
-		<telerik:RadBarcode.Symbology>
-			<telerik:DataMatrix  />
-		</telerik:RadBarcode.Symbology>
-	</telerik:RadBarcode>
-```
+Check below a quick example with DataMatrix symbology applied to RadBarcode:
+
+<snippet id='datamatrix-example-xaml' />
+
+Add the *telerikBarcode* namespace:
+
+<snippet id='xmlns-telerikbarcode'/>
+
+Here is the result:
+
+![Barcode DataMatrix](images/barcode-datamatrix-example.png)
 
 ## See Also
 

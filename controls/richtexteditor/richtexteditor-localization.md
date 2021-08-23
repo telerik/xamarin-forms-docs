@@ -17,14 +17,18 @@ RichTextEditor for Xamarin provides language localization. In short, you can tra
 | Localization Key | Default Value |
 | -----------------| ------------- |
 | RichTextEditor_AddHyperlink  | Hyperlink |
+| RichTextEditor_AddImage  | Image |
 | RichTextEditor_AlignCenter  | Center Text |
 | RichTextEditor_AlignJustify  | Justify Text |
 | RichTextEditor_AlignLeft  | Align to Left |
 | RichTextEditor_AlignRight  | Align to Right |
 | RichTextEditor_Bold  | Bold |
 | RichTextEditor_ClearFormatting  | Clear Formatting |
+| RichTextEditor_Copy  | Copy |
+| RichTextEditor_Cut  | Cut |
 | RichTextEditor_DecreaseIndent  | Decrease Indent |
 | RichTextEditor_EditHyperlink  | Edit Hyperlink |
+| RichTextEditor_EditImage  | Edit Image |
 | RichTextEditor_FontColor  | Font color |
 | RichTextEditor_FontFamily  | Font |
 | RichTextEditor_FontSize  | Font Size |
@@ -43,14 +47,27 @@ RichTextEditor for Xamarin provides language localization. In short, you can tra
 | RichTextEditor_HyperlinkTitlePlaceholderText  | Additional Info |
 | RichTextEditor_HyperlinkUrlLabelText  | URL: |
 | RichTextEditor_HyperlinkUrlPlaceholderText  | http://www.... |
+| RichTextEditor_ImageCancelButtonText  | Cancel |
+| RichTextEditor_ImageHeaderText  | Image |
+| RichTextEditor_ImageMaximumLabelText  | 100% |
+| RichTextEditor_ImageMinimumLabelText  | 0% |
+| RichTextEditor_ImageOkButtonText  | Ok |
+| RichTextEditor_ImageResizeLabelText  | Resize: |
 | RichTextEditor_IncreaseIndent  | Increase Indent |
+| RichTextEditor_InsertImageErrorHeaderText  | Error |
+| RichTextEditor_InsertImageErrorOKButtonText  | OK |
+| RichTextEditor_InsertImageErrorText  | Cannot insert image from the specified location. |
 | RichTextEditor_Italic  | Italic |
 | RichTextEditor_OpenHyperlink  | Open Hyperlink |
 | RichTextEditor_OrderedList  | Ordered Indent |
 | RichTextEditor_Paragraph  | Paragraph |
 | RichTextEditor_Quotation  | Quotation |
+| RichTextEditor_Paste  | Paste |
+| RichTextEditor_PastePlainText  | Paste as Plain Text |
 | RichTextEditor_Redo  | Redo |
 | RichTextEditor_RemoveHyperlink  | Remove Hyperlink |
+| RichTextEditor_RemoveImage  | Remove Image |
+| RichTextEditor_PickImage  | Pick Image |
 | RichTextEditor_Strike  | Strike |
 | RichTextEditor_Subscript  | Subscript |
 | RichTextEditor_Superscript  | Superscript |

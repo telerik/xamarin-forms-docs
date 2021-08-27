@@ -19,6 +19,10 @@ position: 3
 * **IsEnabled**(*bool*): Defines whether the TabView Item is enabled/disabled. By default `IsEnabled` is `True`.
 * **IsVisible**(*bool*): Specified whether the TabView Item is visible/hidden.
 
+>important If you want to hide the current Selected TabView Item (setting `IsVisible="False"`), and the RadTabView `IsContentPreserved` property is set to `True`, you have to programatically select the next available item(that is **visible** and **enabled**) and then hide the previously selected item.
+>important ToggleSelectedItemVisibility example can be found in the SDKBrowserApp/Examples/TabViewControl/FeaturesCategory
+
+
 ## Displaying TabViewItem
 
 To display a TabViewItem you can add it in the **Items** collection of **RadTabView**.

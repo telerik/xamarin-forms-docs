@@ -561,6 +561,9 @@ navigation:
     controls/richtexteditor:
         title: "RichTextEditor"
         ## RichTextEditor Sub-Folders
+    controls/richtexteditor/working-with-images:
+        title: "Working with Images"
+        position: 6
     controls/richtexteditor/styling:
         title: "Styling"
         position: 11

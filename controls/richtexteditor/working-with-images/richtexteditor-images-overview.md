@@ -14,16 +14,26 @@ From R3 2021 release the RichTextEditor control allows you to add(insert), cut, 
 ![RichTextEditor AddImage](../images/add-image-toolbar-item.png) 
 ![RichTextEditor AddImage](../images/rte-edit-image-toolbar-items.png)
 
-* `AddImageToolbarItem`(*RichTextEditorToolbarItem*): allows you to add images 
-* `EditImageToolbarItem`(*InsertImageToolbarItem*): allows you to resize the image. In addition the toolbar allows you to pick an image if you haven't selected one. 
+* `AddImageToolbarItem`(*RichTextEditorToolbarItem*): allows you to add images. 
+* `EditImageToolbarItem`(*InsertImageToolbarItem*): allows you to resize the image. In addition the toolbar allows you to pick an image (the RichTextEditor.`PickImage` event is fired) if you haven't selected one. Check [here]({%slug richtexteditor-insert-images%}#edit-image-toolbaritem) for more detail.
 * `CutToolbarItem`(*RichTextEditorToolbarItem*): allows you to cut the selected HTML/image from the clipboard.
 * `CopyToolbarItem`(*RichTextEditorToolbarItem*): allows you to copy the selected HTML to the clipboard. 
 * `PasteHtmlToolbarItem`(*RichTextEditorToolbarItem*): allows you to paste HTML from the clipboard.
 * `RemoveImageToolbarItem`(*RichTextEditorToolbarItem*): allows you to remove/delete the currently selected image.
 
-You can insert images from Uri, Data(byte []), Stream, File. The image source is of type `RichTextImageSource`. Also you have to point out the image format type.
+You can insert images from Uri, Data(byte []), Stream, File. The image source is of type `RichTextImageSource`. 
 
-The supported image format types(of type `RichTextImageType`) are:
+* `RichTextImageSource FromData**(byte[] data, RichTextImageType type)`
+* `RichTextImageSource FromFile**(string path)`
+* `RichTextImageSource FromFile**(string path, RichTextImageType type)`
+* `RichTextImageSource FromStream**(Stream stream, RichTextImageType type)`
+* `RichTextImageSource FromStream**(Func<Stream> stream, RichTextImageType type)`
+* `RichTextImageSource FromStream**(Func<Task<Stream>> stream, RichTextImageType type)`
+* `RichTextImageSource FromStream**(Func<CancellationToken, Task<Stream>> stream, RichTextImageType type*)`
+* `RichTextImageSource FromUrl**(string uri)`
+
+
+Also you have to point out the image format type. The supported image format types(of type `RichTextImageType`) are:
 
 * **Gif**
 * **Jpeg**
@@ -33,9 +43,9 @@ The supported image format types(of type `RichTextImageType`) are:
 
 ## Permissions if adding images from gallery
 
->important If you want to work with images from the device gallery, then you have to grant permissions.
+>important If you want to work with images from the device gallery, then you have to grant permissions. Check below for more details about the needed permissions per platform.
 
-Add images using the predefined toolbar item - `AddImageToolbarItem`. When tapping on it the `PickImage` event is raised. You need to implement your logic for picking images from the gallery insdie the PickImage event handler:
+Add images using the predefined toolbar item - `AddImageToolbarItem`. When tapping on it the `PickImage` event is fired. You need to implement your logic for picking images from the gallery inside the PickImage event handler:
 
 The RichTextEditor definition in XAML and the Toolbar definition:
 
@@ -51,7 +61,7 @@ Load HTML file
 
 ![RichTextEditor Insert Images](../images/rte-insert-images.png)
 
-The demo uses the Xam.Plugin.Media nuget package for all projects - .NET Standard, Android, iOS, UWP. In addition for Android Plugin.Permissions NuGet package is installed. 
+The demo uses the **Xam.Plugin.Media** nuget package for all projects - .NET Standard, Android, iOS, UWP. In addition for Android **Plugin.Permissions** NuGet package is installed. 
 
 ### Permissions for Android
 
@@ -95,7 +105,7 @@ Inside the Info.plist file add the following code to grant permissions to access
 	* The `sender` which is the RichTextEditor control;
 	* `InsertImageErrorEventArgs` provides the following methods:
 		* `Source` - of type RichTextImageSource. The property allows you to get the source of the image (read-only property).
-		* `error` - of type Exception. Specifies the exception that is raised when image cannot be inserted.
+		* `Error` - of type Exception. Specifies the exception that is raised when image cannot be inserted.
 
 * **IsImageSelectedChanged**: Raised when an image inside the editor is selected. The IsImageSelectedChanged event handler receives two parameters:
 	* The `sender` which is the RichTextEditor control;
@@ -103,7 +113,7 @@ Inside the Info.plist file add the following code to grant permissions to access
 
 ## Methods
 
-* `GetImageAsync` method returns asynchronously the current selected image (or null in case there is no image). The RichTextImage object contains the Source, Title, Width and Height of the image;
+* `GetImageAsync` method returns asynchronously an object of type RichTextImage which represents the current selected image (or null in case there is no image). The RichTextImage object contains the Source, Title, Width and Height of the image;
 
 ## Commands
 

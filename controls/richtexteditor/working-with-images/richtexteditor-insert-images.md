@@ -1,5 +1,5 @@
 ---
-title: Insert and Edit Images
+title: Toolbar Items for Insert and Edit Images
 page_title: Xamarin RichTextEditor Documentation | Insert and Edit Images
 description: Check our &quot;Insert Edit Images&quot; documentation article for Telerik RichTextEditor for Xamarin control.
 position: 2

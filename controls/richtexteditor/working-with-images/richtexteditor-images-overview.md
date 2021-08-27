@@ -25,11 +25,11 @@ You can insert images from Uri, Data(byte []), Stream, File. The image source is
 
 The supported image format types(of type `RichTextImageType`) are:
 
-**Gif**
-**Jpeg**
-**Png**
-**Svg**
-**Webp**
+* **Gif**
+* **Jpeg**
+* **Png**
+* **Svg**
+* **Webp**
 
 ## Permissions if adding images from gallery
 
@@ -55,13 +55,13 @@ The demo uses the Xam.Plugin.Media nuget package for all projects - .NET Standar
 
 ### Permissions for Android
 
-Inside the OnCreate method initialize the Plugin.Media:
+In MainActivity.cs inside the OnCreate method initialize the Plugin.Media:
 
 ```C#
 Plugin.Media.CrossMedia.Current.Initialize();
 ```
 
-Inside the MainActivity.cs file override the `OnRequestPermissionsResult` method
+In MainActivity.cs override the `OnRequestPermissionsResult` method
 
 ```C#
 public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)

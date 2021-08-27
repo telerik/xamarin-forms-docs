@@ -16,7 +16,7 @@ In this article we will review the built-in toolbar items for imsert and edit im
 
 Default look of the `AddImageToolbarItem`:
 
-![RichTextEditor AddImage](images/add-image-toolbar-item.png)
+![RichTextEditor AddImage](../images/add-image-toolbar-item.png)
 
 ## Built-in Toolbar Items for editing images
 
@@ -30,7 +30,7 @@ The following Built-in Toolbar itema are displayed in the RichTextEditorToolbar 
 
 How the editing toolbar looks when image is selected: 
 
-![RichTextEditor AddImage](..images/rte-edit-image-toolbar-items.png)
+![RichTextEditor AddImage](../images/rte-edit-image-toolbar-items.png)
 
 ## Edit Image ToolbarItem
 
@@ -48,7 +48,7 @@ EditImageToolbarItem allows you to resize the image and pick an image. When tapp
 * **PopupOutsideBackgroundColor**(*Color*): Defines the backgrounf color applied outside of the popup content.
 * **PopupContentTemplate**(*ControlTemplate*): Defines  the control template of the popup.
 
-![RichTextEditor AddImage](..images/edit-image-popup.png)
+![RichTextEditor AddImage](../images/edit-image-popup.png)
 
 >Insert Images example can be found inside the **SDK Browser App - RichTextEditor/Features folder**
 
@@ -56,7 +56,7 @@ EditImageToolbarItem allows you to resize the image and pick an image. When tapp
 
 * **ImagePickerToolbarItem**(*Telerik.XamarinForms.RichTextEditor.PickerToolbarItem*): Allows you to pick an image from a collection of pre-defined images.
 
-![RichTextEditor ImagePicker Toolbar](..images/imagepicker-toolbar-item.png)
+![RichTextEditor ImagePicker Toolbar](../images/imagepicker-toolbar-item.png)
 
 ### Example
 

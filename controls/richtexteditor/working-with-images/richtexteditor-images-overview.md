@@ -11,8 +11,8 @@ slug: richtexteditor-images-overview
 
 From R3 2021 release the RichTextEditor control allows you to add(insert), cut, copy, paste, resize and delete images using built-in toolbar items. 
 
-![RichTextEditor AddImage](..images/add-image-toolbar-item.png) 
-![RichTextEditor AddImage](..images/rte-edit-image-toolbar-items.png)
+![RichTextEditor AddImage](../images/add-image-toolbar-item.png) 
+![RichTextEditor AddImage](../images/rte-edit-image-toolbar-items.png)
 
 * `AddImageToolbarItem`(*RichTextEditorToolbarItem*): allows you to add images 
 * `EditImageToolbarItem`(*InsertImageToolbarItem*): allows you to resize the image. In addition the toolbar allows you to pick an image if you haven't selected one. 
@@ -49,7 +49,7 @@ Load HTML file
 
 <snippet id='rte-insert-images-add-rte-source' />
 
-![RichTextEditor Insert Images](..images/rte-insert-images.png)
+![RichTextEditor Insert Images](../images/rte-insert-images.png)
 
 The demo uses the Xam.Plugin.Media nuget package for all projects - .NET Standard, Android, iOS, UWP. In addition for Android Plugin.Permissions NuGet package is installed. 
 

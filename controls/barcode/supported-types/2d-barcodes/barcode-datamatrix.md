@@ -69,13 +69,15 @@ Determines character encoding used to encode the barcode contents. By default it
 
 ## Example 
 
-Check below a quick example with DataMatrix symbology applied to RadBarcode:
+Check below a quick example with DataMatrix symbology applied to RadBarcode.
 
-<snippet id='datamatrix-example-xaml' />
-
-Add the *telerikBarcode* namespace:
+First, add the *telerikBarcode* namespace:
 
 <snippet id='xmlns-telerikbarcode'/>
+
+Then, add the Barcode definition:
+
+<snippet id='datamatrix-example-xaml' />
 
 Here is the result:
 

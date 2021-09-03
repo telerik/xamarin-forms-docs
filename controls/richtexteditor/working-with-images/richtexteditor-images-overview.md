@@ -9,13 +9,13 @@ slug: richtexteditor-images-overview
 
 # Overview
 
-From R3 2021 release the RichTextEditor control allows you to add(insert), cut, copy, paste, resize and delete images using built-in toolbar items. 
+From R3 2021 release of Telerik UI for Xamarin the RichTextEditor control allows you to add(insert), cut, copy, paste, resize and delete images using built-in toolbar items. 
 
 ![RichTextEditor AddImage](../images/add-image-toolbar-item.png) 
 ![RichTextEditor AddImage](../images/rte-edit-image-toolbar-items.png)
 
-* `AddImageToolbarItem`(*RichTextEditorToolbarItem*): allows you to add images. 
-* `EditImageToolbarItem`(*InsertImageToolbarItem*): allows you to resize the image. In addition the toolbar allows you to pick an image (the RichTextEditor.`PickImage` event is fired) if you haven't selected one. Check [here]({%slug richtexteditor-insert-images%}#edit-image-toolbaritem) for more detail.
+* `AddImageToolbarItem`(*RichTextEditorToolbarItem*): allows you to add an image - the RichTextEditor `PickImage` event is fired, so you can handle the logic for selecting an image.
+* `EditImageToolbarItem`(*InsertImageToolbarItem*): allows you to resize the image. In addition the toolbar allows you to pick an image (the RichTextEditor.`PickImage` event is fired) if you haven't selected one. Check [Edit Image ToolbarItem]({%slug richtexteditor-insert-images%}#edit-image-toolbaritem) for more details.
 * `CutToolbarItem`(*RichTextEditorToolbarItem*): allows you to cut the selected HTML/image from the clipboard.
 * `CopyToolbarItem`(*RichTextEditorToolbarItem*): allows you to copy the selected HTML to the clipboard. 
 * `PasteHtmlToolbarItem`(*RichTextEditorToolbarItem*): allows you to paste HTML from the clipboard.
@@ -45,17 +45,19 @@ Also you have to point out the image format type. The supported image format typ
 
 >important If you want to work with images from the device gallery, then you have to grant permissions. Check below for more details about the needed permissions per platform.
 
-Add images using the predefined toolbar item - `AddImageToolbarItem`. When tapping on it the `PickImage` event is fired. You need to implement your logic for picking images from the gallery inside the PickImage event handler:
+Add images using the predefined toolbar items - `AddImageToolbarItem` and `EditImageToolbarItem`. Both toolbar items provide a way to pick an image - with `AddImageToolbarItem` directly, while with `EditImageToolbarItem` users have the option to select a new image from the additional dialog (go to [Edit Image ToolbarItem]({%slug richtexteditor-insert-images%}#edit-image-toolbaritem) for more details) - in both cases the RichTextEditor `PickImage` event is fired. You need to manually implement the logic for selecting an image inside the PickImage event handler. 
+
+Check below a sample implementation of handling the PickImage event and providing the option for the end user to select an image from the device gallery.
 
 The RichTextEditor definition in XAML and the Toolbar definition:
 
 <snippet id='rte-insert-images' />
 
-And the PickImage event handler with implementation to get permissions to access photos and media on the device
+And the PickImage event handler with implementation to get permissions to access photos and media on the device:
 
 <snippet id='rte-insert-images-pick-image-implementation' />
 
-Load HTML file
+Load HTML file:
 
 <snippet id='rte-insert-images-add-rte-source' />
 

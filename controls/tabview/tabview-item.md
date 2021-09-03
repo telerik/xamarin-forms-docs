@@ -17,9 +17,9 @@ position: 3
 * **Content**(*Xamarin.Forms.View*): Defines the content of the TabView Item
 * **IsSelected**(*bool*): Defines the selected TabView item.
 * **IsEnabled**(*bool*): Defines whether the TabView Item is enabled/disabled. By default `IsEnabled` is `True`.
-* **IsVisible**(*bool*): Specified whether the TabView Item is visible/hidden.
+* **IsVisible**(*bool*): Specified whether the TabView Item is visible/hidden. **IsVisible** is supported only with the TabView `IsContentPreserved` property set to `False`.
 
->important If you want to hide the current Selected TabView Item (setting `IsVisible="False"`), and the RadTabView `IsContentPreserved` property is set to `True`, you have to programatically select the next available item(that is **visible** and **enabled**) and then hide the previously selected item. For more details visit the [Toggle TabView SelectedItem Visibility]({%slug tabview-hide-current-selected-item-iscontentpreserved-true%}) how-to article. ToggleSelectedItemVisibility example can be found in the SDKBrowserApp/Examples/TabViewControl/FeaturesCategory
+>important TabViewItem **IsVisible** is supported only in scenarios where "IsContentPreserved" property of the TabView is **False**. If you try to hide an item (set "IsVisible" to **False**) when "IsContentPreserved" is enabled, an **InvalidOperationException** will be raised.
 
 
 ## Displaying TabViewItem
@@ -106,7 +106,7 @@ You can define the content of a TabViewItem via its `Content` property. It is of
 </telerikPrimitives:RadTabView>
 ```
 
-> The RadTabView control will display only the content of the selected item.
+> The RadTabView control displays only the content of the selected item.
 
 ## Selecting an Item
 

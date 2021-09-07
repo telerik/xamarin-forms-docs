@@ -8,7 +8,7 @@ slug: richtexteditor-insert-images
 
 # Toolbar Items for Working With Images
 
-In this article we will review the built-in toolbar items for imsert and edit images.
+In this article we will review the built-in toolbar items for insert and edit images.
 
 ## Insert Images
 

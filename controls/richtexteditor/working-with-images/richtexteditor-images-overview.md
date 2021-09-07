@@ -23,14 +23,14 @@ From R3 2021 release of Telerik UI for Xamarin the RichTextEditor control allows
 
 You can insert images from Uri, Data(byte []), Stream, File. The image source is of type `RichTextImageSource`. 
 
-* `RichTextImageSource FromData**(byte[] data, RichTextImageType type)`
-* `RichTextImageSource FromFile**(string path)`
-* `RichTextImageSource FromFile**(string path, RichTextImageType type)`
-* `RichTextImageSource FromStream**(Stream stream, RichTextImageType type)`
-* `RichTextImageSource FromStream**(Func<Stream> stream, RichTextImageType type)`
-* `RichTextImageSource FromStream**(Func<Task<Stream>> stream, RichTextImageType type)`
-* `RichTextImageSource FromStream**(Func<CancellationToken, Task<Stream>> stream, RichTextImageType type*)`
-* `RichTextImageSource FromUrl**(string uri)`
+* `RichTextImageSource FromData(byte[] data, RichTextImageType type)`
+* `RichTextImageSource FromFile(string path)`
+* `RichTextImageSource FromFile(string path, RichTextImageType type)`
+* `RichTextImageSource FromStream(Stream stream, RichTextImageType type)`
+* `RichTextImageSource FromStream(Func<Stream> stream, RichTextImageType type)`
+* `RichTextImageSource FromStream(Func<Task<Stream>> stream, RichTextImageType type)`
+* `RichTextImageSource FromStream(Func<CancellationToken, Task<Stream>> stream, RichTextImageType type)`
+* `RichTextImageSource FromUrl(string uri)`
 
 
 Also you have to point out the image format type. The supported image format types(of type `RichTextImageType`) are:
@@ -53,9 +53,15 @@ The RichTextEditor definition in XAML and the Toolbar definition:
 
 <snippet id='rte-insert-images' />
 
-And the PickImage event handler with implementation to get permissions to access photos and media on the device:
+The PickImage event handler with implementation to get permissions to access photos and media on the device:
 
 <snippet id='rte-insert-images-pick-image-implementation' />
+
+The PermissionHelper class definition:
+
+<snippet id='rte-insert-images-pick-image-permissionhelper' />
+
+The **Plugin.Permission** NuGet package is requred.
 
 Load HTML file:
 
@@ -63,7 +69,7 @@ Load HTML file:
 
 ![RichTextEditor Insert Images](../images/rte-insert-images.png)
 
-The demo uses the **Xam.Plugin.Media** nuget package for all projects - .NET Standard, Android, iOS, UWP. In addition for Android **Plugin.Permissions** NuGet package is installed. 
+The demo uses the **Xam.Plugin.Media** nuget package for all projects - .NET Standard, Android, iOS, UWP. In addition for .NET Standard and Android projects - **Plugin.Permissions** NuGet package is installed. 
 
 ### Permissions for Android
 

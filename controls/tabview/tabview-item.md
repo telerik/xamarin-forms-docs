@@ -17,7 +17,7 @@ position: 3
 * **Content**(*Xamarin.Forms.View*): Defines the content of the TabView Item
 * **IsSelected**(*bool*): Defines the selected TabView item.
 * **IsEnabled**(*bool*): Defines whether the TabView Item is enabled/disabled. By default `IsEnabled` is `True`.
-* **IsVisible**(*bool*): Specified whether the TabView Item is visible/hidden. **IsVisible** is supported only with the TabView `IsContentPreserved` property set to `False`.
+* **IsVisible**(*bool*): Specifies whether the TabView Item is visible/hidden. **IsVisible** is supported only with the TabView `IsContentPreserved` property set to `False`.
 
 >important TabViewItem **IsVisible** is supported only in scenarios where "IsContentPreserved" property of the TabView is **False**. If you try to hide an item (set "IsVisible" to **False**) when "IsContentPreserved" is enabled, an **InvalidOperationException** will be raised.
 

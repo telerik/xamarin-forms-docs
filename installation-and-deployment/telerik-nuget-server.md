@@ -14,6 +14,8 @@ The following steps demonstrate how users can take advantage of **Telerik NuGet 
 
 >You will find Nuget packages containing the standard and the lite assemblies - the latter have *Lite* in their names. Please take a look at the [Lite Assemblies]({%slug telerik-light-assemblies%}) topic for more details on the difference between them.
 
+>tip The improved Telerik NuGet Server v3 is now available for beta testing at https://nuget.telerik.com/v3/index.json. The new v3 API is faster, lighter, and reduces the number of requests from NuGet clients. You are welcome to try it. For authentication use the same credentials.
+
 ## Visual Studio for Windows
 
 <iframe width="800" height="400" src="https://www.youtube.com/embed/c3m_BLMXNDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

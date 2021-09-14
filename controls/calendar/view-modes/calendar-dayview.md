@@ -12,7 +12,7 @@ Day ViewMode allows you to display the schedule for a specific day in RadCalenda
 
 Day ViewMode provides a convenient way to display appointments for a certain day. For more details on the Appointments feature of RadCalendar refer to [Appointments]({%slug calendar-appointments%}) topic.
 
->note You can also consider [MultiDay ViewMode]({%slug calendar-multidayview%}) as it gives the option to select how many days to display, provides current time indicator as well as a few other configuration settings.
+>note You can also consider [MultiDay ViewMode]({%slug calendar-multidayview%}) as it gives the option to select how many days to display and provides work week support.
 
 ## Timeline Settings
 
@@ -21,14 +21,23 @@ You can specify the initial and end hours displayed in the DayView through the *
 * **DayStartTime**: Defines the time used to indicate the start of the Calendar timeline. The default value of the DayStartTime is 00:00:00 or 12:00 AM. 
 * **DayEndTime**: Sets the time used to indicate the end of the timeline.
 * **TimelineInterval**: This property is of type *TimeSpan* and defines the time intervals inside the timeline.
+* **IsCurrentTimeIndicatorVisible**: Boolean property that enables the option to visually mark the current time. In addition, you could customize the way the current time indicator looks through a few styling properties, for more details go to [Styling](#styling) section.
 
-Through the DayViewSettings you can also configure [Special and restricted slots]({%slug calendar-specialslots%}) and [Non-working hours]({%slug calendar-nonworking-hours%}) features of RadCalendar.
+>tip Through the DayViewSettings you can also configure [Special and restricted slots]({%slug calendar-specialslots%}) and [Non-working hours]({%slug calendar-nonworking-hours%}) features of RadCalendar.
 
 ## Styling
 
 This section presents the various properties you can use for customizing the visual appearance of different parts of the Day view. All of them are applied through **DayViewStyle** property of RadCalendar. 
+
+#### CurrentTimeIndicator
+
+You can customize the way the current time indicator looks through the styling properties listed below:
+
+* **CurrentTimeIndicatorColor**
+* **CurrentTimeIndicatorWidth**
+* **CurrentTimeIndicatorRadius**: Specifies the radius of the round marker at the beginning of the indicator on Android and iOS.
  
-#### AllDayArea Styling
+#### AllDayArea
 
 DayView provides all-day area at the top of the timeline to display appointments that continue a whole day(s). Following are the styling properties related to AllDay area:
 
@@ -39,7 +48,7 @@ DayView provides all-day area at the top of the timeline to display appointments
 
 >tip In order to create all-day appointments you just need to set **IsAllDay** bool property of the Appointment class. For more details on the Appointments feature of RadCalendar refer to [Appointments]({%slug calendar-appointments%}) topic.
 
-#### Timeline Styling 
+#### Timeline 
 
 Through **DayViewStyle** you could define the background of the timeline as well as different background to the current day, also the background and font-size of appointments inside timeline.  
 
@@ -58,7 +67,9 @@ And here is the result:
 
 ![Calendar DayView Settings](../images/calendar-dayviewsettings.png)
 
->important A DayViewSettings and Style example can be found in the Calendar &amp; Scheduling/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
+>important **DayView Settings** example can be found in the Calendar &amp; Scheduling/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
+>
+>You can also explore the example code directly in the [SDKBrowser Examples repository on GitHub](https://github.com/telerik/xamarin-forms-sdk/tree/master/XamarinSDK/SDKBrowser/SDKBrowser/Examples/CalendarControl/FeaturesCategory/DayViewSettingsExample).
 
 ## See Also
 

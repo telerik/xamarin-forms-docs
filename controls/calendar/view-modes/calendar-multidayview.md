@@ -31,7 +31,7 @@ The next image shows MultiDay view with the MultiDayViewSettings applied:
 
 ![Calendar Scheduling Key Features](../images/calendar_scheduling_keysettings.png)
 
-Through the MultiDayViewSettings you can also configure [Special and restricted slots]({%slug calendar-specialslots%}) and [Non-working hours]({%slug calendar-nonworking-hours%}) features of RadCalendar.
+>tip Through the MultiDayViewSettings you can also configure [Special and restricted slots]({%slug calendar-specialslots%}) and [Non-working hours]({%slug calendar-nonworking-hours%}) features of RadCalendar.
 
 ## Work Week Support
 
@@ -43,7 +43,11 @@ This section presents the various properties you can use for customizing the vis
  
 #### CurrentTimeIndicator
 
-You can customize the way the current time indicator looks through the styling properties shown in the example below:
+You can customize the way the current time indicator looks through the styling properties listed below:
+
+* **CurrentTimeIndicatorColor**
+* **CurrentTimeIndicatorWidth**
+* **CurrentTimeIndicatorRadius**: Specifies the radius of the round marker at the beginning of the indicator on Android and iOS.
 
 <snippet id='calendar-scheduling-currenttimeindicator' />
 

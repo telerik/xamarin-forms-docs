@@ -115,6 +115,10 @@ And the event handler which shows a custom message:
 Here is the custom message:
 
 ![](images/richtexteditor-invalidurl-custom.png)
+
+## Working With Images
+
+You can easily add insert, delete, copy, paste, cut, edit images in the editor using the predefined toolbar items. For more details please check [Workin with Images]({%slug richtexteditor-images-overview%}) article.
 		
 ## Read-Only State
 

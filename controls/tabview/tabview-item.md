@@ -16,7 +16,11 @@ position: 3
 * **Header**(*Telerik.XamarinForms.Primitives.TabViewHeaderItem*): Allows you to create a more **complex layout** for the TabView Header using the **TabViewHeaderItem** control.
 * **Content**(*Xamarin.Forms.View*): Defines the content of the TabView Item
 * **IsSelected**(*bool*): Defines the selected TabView item.
-* **IsEnabled**(*bool*): Defines wheteher the TabView Item is enabled/disabled. By default `IsEnabled` is `True`
+* **IsEnabled**(*bool*): Defines whether the TabView Item is enabled/disabled. By default `IsEnabled` is `True`.
+* **IsVisible**(*bool*): Specifies whether the TabView Item is visible/hidden. **IsVisible** is supported only with the TabView `IsContentPreserved` property set to `False`.
+
+>important TabViewItem **IsVisible** is supported only in scenarios where "IsContentPreserved" property of the TabView is **False**. If you try to hide an item (set "IsVisible" to **False**) when "IsContentPreserved" is enabled, an **InvalidOperationException** will be raised.
+
 
 ## Displaying TabViewItem
 
@@ -102,7 +106,7 @@ You can define the content of a TabViewItem via its `Content` property. It is of
 </telerikPrimitives:RadTabView>
 ```
 
-> The RadTabView control will display only the content of the selected item.
+> The RadTabView control displays only the content of the selected item.
 
 ## Selecting an Item
 
@@ -111,8 +115,6 @@ You can manually select TabViewItem via its `IsSelected` `bool` property. Select
 ## Disabled Tabs
 
 With Telerik UI for Xamarin version 2020.3.1106.1 TabView Item has a support for Disabled tabs. You can set the `IsEnabled` `bool` property of the TadViewItem to `False` if you want to prevent the header to be clicked. The header text will look disabled and you can not click on it.
-
-### Example
 
 ```XAML
 <telerikPrimitives:RadTabView x:Name="tabView">
@@ -132,6 +134,41 @@ With Telerik UI for Xamarin version 2020.3.1106.1 TabView Item has a support for
 	</telerikPrimitives:RadTabView.Items>
 </telerikPrimitives:RadTabView>
 ```
+
+## Hidden Tabs
+
+With Telerik UI for Xamarin R3 2021 TabView introduces `IsVisible` property for the TabViewItem - with it you can easily show/hide certain TabItem without removing it from the TabView Items collection. 
+
+```XAML
+<telerikPrimitives:RadTabView x:Name="tabView">
+    <telerikPrimitives:RadTabView.Items>
+
+        <telerikPrimitives:TabViewItem HeaderText="Home">
+            <telerikPrimitives:TabViewItem.Content>
+                <Label Margin="10" Text="This is the content of the Home tab" />
+            </telerikPrimitives:TabViewItem.Content>
+        </telerikPrimitives:TabViewItem>
+
+        <telerikPrimitives:TabViewItem HeaderText="View" 
+									   IsVisible="False">
+            <telerikPrimitives:TabViewItem.Content>
+                <Label Margin="10" Text="This is the content of the View tab" />
+            </telerikPrimitives:TabViewItem.Content>
+        </telerikPrimitives:TabViewItem>
+
+        <telerikPrimitives:TabViewItem HeaderText="Folder">
+            <telerikPrimitives:TabViewItem.Content>
+                <Label Margin="10" Text="This is the content of the Folder tab" />
+            </telerikPrimitives:TabViewItem.Content>
+        </telerikPrimitives:TabViewItem>
+
+    </telerikPrimitives:RadTabView.Items>
+</telerikPrimitives:RadTabView>
+```
+
+Check the result below on different platforms:
+
+![](images/tabview-item-isvisible.png)
 
 ## Example
 

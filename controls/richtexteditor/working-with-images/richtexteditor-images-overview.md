@@ -16,10 +16,10 @@ From R3 2021 release of Telerik UI for Xamarin the RichTextEditor control allows
 
 * `AddImageToolbarItem`(*RichTextEditorToolbarItem*): allows you to add an image - the RichTextEditor `PickImage` event is fired, so you can handle the logic for selecting an image.
 * `EditImageToolbarItem`(*InsertImageToolbarItem*): allows you to resize the image. In addition the toolbar allows you to pick an image (the RichTextEditor.`PickImage` event is fired) if you haven't selected one. Check [Edit Image ToolbarItem]({%slug richtexteditor-insert-images%}#edit-image-toolbaritem) for more details.
-* `CutToolbarItem`(*RichTextEditorToolbarItem*): allows you to cut the selected HTML/image from the clipboard.
-* `CopyToolbarItem`(*RichTextEditorToolbarItem*): allows you to copy the selected HTML to the clipboard. 
-* `PasteHtmlToolbarItem`(*RichTextEditorToolbarItem*): allows you to paste HTML from the clipboard.
-* `RemoveImageToolbarItem`(*RichTextEditorToolbarItem*): allows you to remove/delete the currently selected image.
+* `CutToolbarItem`(*RichTextEditorToolbarItem*): allows you to cut the selected HTML/image to the clipboard.
+* `CopyToolbarItem`(*RichTextEditorToolbarItem*): allows you to copy the selected HTML/image to the clipboard. 
+* `PasteHtmlToolbarItem`(*RichTextEditorToolbarItem*): allows you to paste HTML/image from the clipboard.
+* `RemoveImageToolbarItem`(*RichTextEditorToolbarItem*): allows you to remove the currently selected image from the document.
 
 You can insert images from Uri, Data(byte []), Stream, File. The image source is of type `RichTextImageSource`. 
 

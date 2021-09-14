@@ -26,7 +26,7 @@ The following Built-in Toolbar itema are displayed in the RichTextEditorToolbar 
 * `CutToolbarItem`(*RichTextEditorToolbarItem*): allows you to cut the selected HTML/image to the clipboard.
 * `CopyToolbarItem`(*RichTextEditorToolbarItem*): allows you to copy the selected HTML/image to the clipboard. 
 * `PasteHtmlToolbarItem`(*RichTextEditorToolbarItem*): allows you to paste HTML/image from the clipboard.
-* `RemoveImageToolbarItem`(*RichTextEditorToolbarItem*): allows you to remove the currently selected image fromt he document.
+* `RemoveImageToolbarItem`(*RichTextEditorToolbarItem*): allows you to remove the currently selected image from the document.
 
 How the editing toolbar looks when image is selected: 
 

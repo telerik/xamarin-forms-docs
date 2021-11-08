@@ -1,12 +1,12 @@
 ---
 title: Events
-page_title: Xamarin Calendar Documentation | Appointments
+page_title: Xamarin Calendar Documentation | Scheduling Events
 description: Check our &quot;Scheduling&quot; documentation article for Telerik Calendar for Xamarin control.
 position: 4
 slug: calendar-scheduling-events
 ---
 
-# Scheduling Events
+# Scheduling UI Events
 
 Since R3 2021 Service Pack Calendar's Scheduling UIs for Xamarin exposes events for appointments changes:
  
@@ -25,11 +25,10 @@ Since R3 2021 Service Pack Calendar's Scheduling UIs for Xamarin exposes events 
 		* `OccurrenceAction` property of type *OccurrenceAction* which gets the action performed over the occurrence. 
 		
 The `OccurrenceAction` enumeration specifies an action performed over an exception occurrence. The actions are:
-
-	* `None`: No action is performed over the exception occurrence of the recurrent appointment.
-	* `Add`: When an exception occurence of the recurrent appointment is added.
-	* `Update`: When an exception occurence of the recurrent appointment is updated.
-	* `Delete`: When an exception occurence of the recurrent appointment is deleted.
+* `None`: No action is performed over the exception occurrence of the recurrent appointment.
+* `Add`: When an exception occurence of the recurrent appointment is added.
+* `Update`: When an exception occurence of the recurrent appointment is updated.
+* `Delete`: When an exception occurence of the recurrent appointment is deleted.
 		
 * **AppointmentDeleted**(AppointmentChangedEventAgrs): Occurs when appointment is deleted.
 	* The `sender` argument which is of type *object*, but can be cast to the *RadCalendar* type.
@@ -51,6 +50,8 @@ Calendar definition in XAML:
 Events:
 
 <snippet id='calendar-schedulingui-events-handlers'/>
+
+![Scheduling UI Events](../images/scheduling-events.gif)
 
 ## See Also
 

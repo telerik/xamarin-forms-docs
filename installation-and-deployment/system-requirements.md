@@ -13,7 +13,13 @@ In order to develop applications with **Telerik UI for Xamarin** you need to hav
 ## Windows
 
 - [Windows 10](https://www.microsoft.com/en-us/windows/get-windows-10) is required to develop for Xamarin.Forms.
-- Visual Studio 2019 with Xamarin installed. Go to [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/) page to see the available download options.
+- Visual Studio 2022 Preview with Xamarin installed. Go to [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/) page to see the available download options.
+	To install Xamarin for Visual Studio 2022, you would need to enable **Mobile development with .NET** workload. **Universal Windows Platform development** workload would be needed as well if you'd like to target UWP. 
+		
+	* If you run a fresh installation of Visual Studio, you will be prompted to select workloads during the installation process.
+	* if you already have Visual Studio installed, you could modify the active workloads by re-running the Visual Studio installer and selecting "Modify" option.
+	
+- Visual Studio 2019 with Xamarin installed. Go to [Visual Studio Downloads](https://visualstudio.microsoft.com/vs/older-downloads/) page to see the available download options.
 
 	To install Xamarin for Visual Studio 2019, you would need to enable **Mobile development with .NET** workload. **Universal Windows Platform development** workload would be needed as well if you'd like to target UWP. 
 		

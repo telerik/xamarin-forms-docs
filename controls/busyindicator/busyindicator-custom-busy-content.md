@@ -24,6 +24,42 @@ You could check the result in the image below:
 #### __Figure 1: RadBusyIndicator with BusyContentTemplate__  
 ![BusyIndicator example](images/busyindicator-custombusycontent.png)
 
+
+## Data Binding Custom Content
+
+The BusyContent is rendered inside its own ContentView. This means that it has a different BindingContext than the RadBusyIndicator. Therefore, if you would like to data bind the BusyContent, you would need to use RelativeSource to connect to the same BindingContext as the RadBusyIndicator.
+
+Here is the previous example, but modified to support databinding:
+
+```xml
+<telerikPrimitives:RadBusyIndicator x:Name="BusyIndicator"
+                                    AnimationContentHeightRequest="100"
+                                    AnimationContentWidthRequest="100"  
+                                    AnimationType="Animation6"                                            
+                                    IsBusy="True">           
+    <telerikPrimitives:RadBusyIndicator.BusyContent>
+        <Grid BindingContext={Binding BindingContext, Source={RelativeSource AncestorType={x:Type telerikPrimitives:RadBusyIndicator}}}">
+            <Label Text="{Binding MyViewModelProperty}" />
+        </Grid>
+    </telerikPrimitives:RadBusyIndicator.BusyContent>
+	 <telerikPrimitives:RadBusyIndicator.BusyContentTemplate>
+        <ControlTemplate>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <ContentPresenter Content="{TemplateBinding Path=AnimationContent}" />
+                <ContentPresenter Grid.Row="1"
+                                  Content="{TemplateBinding Path=BusyContent}"
+                                  HorizontalOptions="Center" />
+            </Grid>
+        </ControlTemplate>
+    </telerikPrimitives:RadBusyIndicator.BusyContentTemplate>
+</telerikPrimitives:RadBusyIndicator>
+```
+
 ## See Also
 
 - [Animations]({% slug busyindicator-features-animations %})

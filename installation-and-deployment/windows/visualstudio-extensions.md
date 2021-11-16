@@ -22,7 +22,7 @@ The extensions handle the following major points in the development with Telerik
 
 Visual Studio Extensions for Telerik UI for Xamarin are distributed with the Telerik UI for Xamarin MSI installation. They can be downloaded and installed as separate product from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) for Visual Studio 2019 and 2022 Preview.
  
->tip Telerik UI for Xamarin Extension for Visual Studio is avaiulable for Visual Studio 2022 Preview and Visual Studio 2019 
+>tip Telerik UI for Xamarin Extension for Visual Studio is available for Visual Studio 2022 Current, Visual Studio 2022 Preview and Visual Studio 2019 
 
 Below you can find more details on both options:
 
@@ -106,6 +106,10 @@ Telerik Visual Studio Extensions are disabled or not installed correctly.
 >* Execute the command - **devenv /log %userprofile%\desktop\ActivityLog.xml**. This will start Visual Studio and create logs on your Desktop.
 >* Reproduce the problem.
 >* Attach the **Activitylog** files when you contact our support.
+
+#### Visual Studio Support is Disabled
+
+Your Visual Studio installation needs to have both the **Mobile Development with .NET** workload and the **Text Template Transformation** installed. you can find the Text Template Transformation option under the Additional Components tab in the Visual Studio Installer.
 
 ## See Also
 - [Project Wizard]({%slug project-wizard%})

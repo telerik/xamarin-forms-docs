@@ -67,38 +67,52 @@ You can choose any of the available Telerik Font icons:
 
 | Telerik Font Icons |  |  | | | | 
 |--------------------|----------------|------------|---------------------|-------------------|----------------|
-| <span class="icon-badge-available"></span> badge-available |  __\&#xe85b;__ | <span class="icon-badge-away"></span> badge-away | __\&#xe85c;__ | <span class="icon-badge-busy"></span> badge-busy | __\&#xe85a;__ |
-| <span class="icon-badge-add"></span> badge-add | __\&#xe857;__ | <span class="icon-badge-delete"></span> badge-delete| __\&#xe858;__ | <span class="icon-badge-NA"></span> badge-NA | __\&#xe856;__ |
-| <span class="icon-badge-ooo"></span> badge-ooo | __\&#xe85d;__ | <span class="icon-sort_descent"></span> sort_descent | __\&#xe800;__ | <span class="icon-spinner2"></span> spinner | __\&#xe801;__ |
-| <span class="icon-filter"></span> filter | __\&#xe802;__ | <span class="icon-sort_ascent"></span> sort_ascent |  __\&#xe803;__ | <span class="icon-group"></span> group |  __\&#xe804;__ |
-| <span class="icon-right-open-big"></span> right-open | __\&#xe805;__ | <span class="icon-right-dir"></span> right-dir |  __\&#xe806;__ | <span class="icon-dots_vert"></span> dots-vertical |  __\&#xe807;__ |
-| <span class="icon-menu"></span> menu | __\&#xe808;__ | <span class="icon-check"></span> check |  __\&#xe809;__ | <span class="icon-cancel"></span> cancel |  __\&#xe80a;__ |
-| <span class="icon-dot"></span> dot | __\&#xe80b;__ | <span class="icon-dot-3"></span> dots-horizontal |  __\&#xe80c;__ | <span class="icon-down-dir"></span> down-dir |  __\&#xe80d;__ |
-| <span class="icon-left-open-big"></span> left-open | __\&#xe80e;__ | <span class="icon-cog"></span> configure |  __\&#xe80f;__ | <span class="icon-search"></span> search |  __\&#xe810;__ |
-| <span class="icon-up-dir"></span> up-dir | __\&#xe811;__ | <span class="icon-down-open-big"></span> down-open |  __\&#xe812;__ | <span class="icon-up-open-big"></span> up-open |  __\&#xe813;__ |
-| <span class="icon-right-dir-outlines"></span> right-dir-outlines | __\&#xe814;__ | <span class="icon-brightness"></span> brightness |  __\&#xe815;__ | <span class="icon-down-dir-outlines "></span> down-dir-outlines  |  __\&#xe816;__ |
-| <span class="icon-expand"></span> expand | __\&#xe817;__ | <span class="icon-zoom-in"></span> zoom-in |  __\&#xe817;__ | <span class="icon-zoom-out"></span> zoom-out |  __\&#xe818;__ |
-| <span class="icon-rotate-cw"></span> rotate | __\&#xe81a;__ | <span class="icon-highlight-color"></span> highlight-color |  __\&#xe81b;__ | <span class="icon-file"></span> file |  __\&#xe81c;__ |
-| <span class="icon-files"></span> files | __\&#xe81d;__ | <span class="icon-blur"></span> blur |  __\&#xe81e;__ | <span class="icon-table-delete-column"></span> table-delete-column |  __\&#xe81f;__ |
-| <span class="icon-arrow-right"></span> arrow-right | __\&#xe820;__ | <span class="icon-color_saturation"></span> color_saturation |  __\&#xe821;__ | <span class="icon-contrast"></span> contrast |  __\&#xe822;__ |
-| <span class="icon-crop-rotate"></span> crop-rotate | __\&#xe823;__ | <span class="icon-crop"></span> crop |  __\&#xe824;__ | <span class="icon-filters-1"></span> filters |  __\&#xe825;__ |
-| <span class="icon-flip-horizontal"></span> flip-horizontal | __\&#xe826;__ | <span class="icon-flip-vertical"></span> flip-vertical |  __\&#xe827;__ | <span class="icon-hue"></span> hue |  __\&#xe828;__ |
-| <span class="icon-resize"></span> resize | __\&#xe829;__ | <span class="icon-table-add-column-after"></span> table-add-column |  __\&#xe82a;__ | <span class="icon-sharpen"></span> sharpen |  __\&#xe82b;__ |
-| <span class="icon-brightness-contrast"></span> brightness-contrast | __\&#xe82c;__ | <span class="icon-undo-1"></span> undo |  __\&#xe82d;__ | <span class="icon-redo"></span> redo |  __\&#xe82e;__ |
-| <span class="icon-crop-rotate"></span> crop-rotate | __\&#xe82f;__ | <span class="icon-check-2"></span> check |  __\&#xe830;__ | <span class="icon-arrow-left"></span> arrow-left |  __\&#xe831;__ |
-| <span class="icon-image"></span> image | __\&#xe832;__ | <span class="icon-view-code"></span> view-code |  __\&#xe833;__ | <span class="icon-clear-formatting"></span> clear-formatting |  __\&#xe834;__ |
-| <span class="icon-list-ordered"></span> list-ordered | __\&#xe835;__ | <span class="icon-list-unordered"></span> list-unordered |  __\&#xe836;__ | <span class="icon-indent-decrease"></span> indent-decrease |  __\&#xe837;__ |
-| <span class="icon-indent-increase"></span> indent-increase | __\&#xe838;__ | <span class="icon-align-right"></span> align-right |  __\&#xe839;__ | <span class="icon-align-center"></span> align-center |  __\&#xe83a;__ |
-| <span class="icon-align-left"></span> align-left | __\&#xe83b;__ | <span class="icon-rotate-ccw"></span> rotate |  __\&#xe83c;__ | <span class="icon-underlined"></span> underlined |  __\&#xe83d;__ |
-| <span class="icon-italic"></span> italic | __\&#xe83e;__ | <span class="icon-bold"></span> bold |  __\&#xe83f;__ | <span class="icon-font-size"></span> font-size |  __\&#xe840;__ |		
-| <span class="icon-font-family"></span> font-family | __\&#xe841;__ | <span class="icon-hyperlink"></span> hyperlink |  __\&#xe842;__ | <span class="icon-table"></span> table |  __\&#xe843;__ |	
-| <span class="icon-strike"></span> strike | __\&#xe844;__ | <span class="icon-link-external"></span> link-external |  __\&#xe845;__ | <span class="icon-hyperlink-remove"></span> hyperlink-remove |  __\&#xe846;__ |
-| <span class="icon-sup-script"></span> sup-script | __\&#xe847;__ | <span class="icon-sub-script"></span> sub-script |  __\&#xe848;__ | <span class="icon-align-justify"></span> align-justify |  __\&#xe849;__ |
-| <span class="icon-table-split-cells-vertically"></span> table-split-cells-vertically | __\&#xe84a;__ | <span class="icon-table-split-cells-horizontally"></span> table-split-cells-horizontally |  __\&#xe84b;__ | <span class="icon-table-merge-cells-vertically"></span> table-merge-cells-vertically |  __\&#xe84c;__ |
-| <span class="icon-table-merge-cells-horizontally"></span> table-merge-cells-horizontally | __\&#xe84d;__ | <span class="icon-cancel-android"></span> cancel-android |  __\&#xe84e;__ | <span class="icon-table-delete-row"></span> table-delete-row |  __\&#xe84f;__ |
-| <span class="icon-table-delete"></span> table-delete | __\&#xe850;__ | <span class="icon-cancel2"></span> cancel |  __\&#xe851;__ | <span class="icon-table-add-column-before"></span> table-add-column-before |  __\&#xe852;__ |
-| <span class="icon-table-add-row-after"></span> table-add-row-after | __\&#xe853;__ | <span class="icon-table-add-row-before"></span> table-add-row-before |  __\&#xe854;__ | <span class="icon-table-add"></span> table-add | __\&#xe855;__ | 
-|<span class="icon-font-style"></span> cancel |  __\&#xe859;__ | | |
+| <span class="icon-sort_descent"></span> sort_descent | __\&#xe800;__ | <span class="icon-star-empty"></span> star-empty | __\&#xe801;__ | <span class="icon-filter"></span> filter | __\&#xe802;__ |
+| <span class="icon-sort_ascent"></span> sort_ascent | __\&#xe803;__ | <span class="icon-group"></span> group | __\&#xe804;__ | <span class="icon-star"></span> star | __\&#xe805;__ |
+| <span class="icon-right-dir"></span> right-dir | __\&#xe806;__ | <span class="icon-dots_vert"></span> dots_vert | __\&#xe807;__ | <span class="icon-menu"></span> menu | __\&#xe808;__ |
+| <span class="icon-check"></span> check | __\&#xe809;__ | <span class="icon-cancel"></span> cancel | __\&#xe80a;__ | <span class="icon-dot"></span> dot | __\&#xe80b;__ |
+| <span class="icon-dot-3"></span> check | __\&#xe80c;__ | <span class="icon-down-dir"></span> down-dir | __\&#xe80d;__ | <span class="icon-left-open-big"></span> left-open-big | __\&#xe80e;__ |
+| <span class="icon-cog"></span> configure | __\&#xe80f;__ | <span class="icon-search"></span> search | __\&#xe810;__ | <span class="icon-up-dir"></span> up-dir | __\&#xe811;__ |
+| <span class="icon-pattern"></span> pattern | __\&#xe812;__ | <span class="icon-add"></span> add | __\&#xe813;__ | <span class="icon-right-dir-outlines"></span> right-dir-outlines | __\&#xe814;__ |
+| <span class="icon-info"></span> info | __\&#xe815;__ | <span class="icon-down-dir-outlines"></span> down-dir-outlines | __\&#xe816;__ | <span class="icon-bin-solid"></span> bin-solid | __\&#xe817;__ |
+| <span class="icon-edit"></span> edit | __\&#xe818;__ | <span class="icon-copy"></span> copy | __\&#xe819;__ | <span class="icon-arrow-up"></span> arrow-up | __\&#xe81a;__ |
+| <span class="icon-airplane"></span> airplane | __\&#xe81c;__ | <span class="icon-pdf"></span> pdf | __\&#xe81d;__ | <span class="icon-encoding-1"></span> encoding | __\&#xe81e;__ |
+| <span class="icon-length"></span> length | __\&#xe81f;__ | <span class="icon-arrow-right"></span> arrow-right | __\&#xe820;__ | <span class="icon-contacts"></span> contacts | __\&#xe821;__ |
+| <span class="icon-cog-outlines"></span> cog-outlines | __\&#xe822;__ | <span class="icon-type"></span> type | __\&#xe823;__ | <span class="icon-location"></span> location | __\&#xe824;__ |
+| <span class="icon-link"></span> link | __\&#xe825;__ | <span class="icon-archive"></span> archive | __\&#xe826;__ | <span class="icon-bin"></span> bin | __\&#xe827;__ |
+| <span class="icon-draft"></span> draft | __\&#xe828;__ | <span class="icon-folder-open"></span> folder-open | __\&#xe829;__ | <span class="icon-folder"></span> folder | __\&#xe82a;__ |
+| <span class="icon-group-1"></span> group | __\&#xe82b;__ | <span class="icon-item"></span> item | __\&#xe82c;__ | <span class="icon-sent"></span> sent | __\&#xe82d;__ |
+| <span class="icon-spam"></span> spam | __\&#xe82e;__ | <span class="icon-warning"></span> warning | __\&#xe82f;__ | <span class="icon-lock"></span> lock | __\&#xe830;__ |
+| <span class="icon-thickness"></span> thickness | __\&#xe831;__ | <span class="icon-car"></span> car | __\&#xe832;__ | <span class="icon-shopping-bag"></span> shopping-bag | __\&#xe833;__ |
+| <span class="icon-coffee-cup"></span> coffee-cup | __\&#xe834;__ | <span class="icon-get-money"></span> get-money | __\&#xe835;__ | <span class="icon-user"></span> shopping-user | __\&#xe836;__ |
+| <span class="icon-group_users"></span> group_users | __\&#xe837;__ | <span class="icon-dashboard"></span> dashboard | __\&#xe838;__ | <span class="icon-location-1"></span> location | __\&#xe83d;__ |
+| <span class="icon-link-1"></span> link | __\&#xe83e;__ | <span class="icon-assets"></span> assets | __\&#xe846;__ | <span class="icon-book"></span> book | __\&#xe847;__ |
+| <span class="icon-design"></span> design | __\&#xe848;__ | <span class="icon-graphics"></span> graphics | __\&#xe849;__ | <span class="icon-image"></span> image | __\&#xe84a;__ |
+| <span class="icon-font-size"></span> font-size | __\&#xe84b;__ | <span class="icon-template"></span> template | __\&#xe84c;__ | <span class="icon-wireframes"></span> wireframes | __\&#xe84d;__ |
+| <span class="icon-distance2"></span> distance | __\&#xe84e;__ | <span class="icon-stopwatch"></span> stopwatch | __\&#xe84f;__ | <span class="icon-play"></span> play | __\&#xe850;__ |
+| <span class="icon-cancel2"></span> cancel | __\&#xe851;__ | <span class="icon-picture"></span> picture | __\&#xe852;__ | <span class="icon-text"></span> text | __\&#xe853;__ |
+| <span class="icon-code"></span> code | __\&#xe854;__ | <span class="icon-analysis"></span> analysis | __\&#xe855;__ | <span class="icon-network"></span> network | __\&#xe856;__ |
+| <span class="icon-network2"></span> network | __\&#xe857;__ | <span class="icon-bar-chart"></span> bar-chart | __\&#xe858;__ | <span class="icon-sap"></span> sap | __\&#xe859;__ |
+| <span class="icon-dba"></span> dba | __\&#xe85a;__ | <span class="icon-home"></span> home | __\&#xe85b;__ | <span class="icon-temperature"></span> temperature | __\&#xe85c;__ |
+| <span class="icon-phone1"></span> phone | __\&#xe85d;__ | <span class="icon-electricity"></span> electricity | __\&#xe85e;__ | <span class="icon-wifi"></span> wifi | __\&#xe85f;__ |
+| <span class="icon-distance-horizontal"></span> distance-horizontal | __\&#xe860;__ | <span class="icon-calendar_dayview"></span> calendar_dayview | __\&#xe861;__ | <span class="icon-calendar_multiday"></span> calendar_multiday | __\&#xe862;__ |
+| <span class="icon-calendar_week"></span> calendar_week | __\&#xe863;__ | <span class="icon-calendar_month"></span> calendar_month | __\&#xe864;__ | <span class="icon-calendar_year2"></span> calendar_year | __\&#xe865;__ |
+| <span class="icon-calendar_selection_single"></span> calendar selection single | __\&#xe866;__ | <span class="icon-calendar_selection_multiple"></span> calendar selection multiple | __\&#xe867;__ | <span class="icon-calendar_selection_range"></span> calendar selection range | __\&#xe868;__ |
+| <span class="icon-gallery"></span> gallery | __\&#xe869;__ | <span class="icon-camera"></span> camera | __\&#xe86a;__ | <span class="icon-crop_free"></span> crop_free | __\&#xe86b;__ |
+| <span class="icon-crop_original"></span> crop_original | __\&#xe86c;__ | <span class="icon-crop_rect"></span> crop_rect | __\&#xe86d;__ | <span class="icon-crop_circular"></span> crop_circular | __\&#xe86e;__ |
+| <span class="icon-badge"></span> badge | __\&#xe86f;__ | <span class="icon-notes"></span> notes | __\&#xe870;__ | <span class="icon-time"></span> time | __\&#xe871;__ |
+| <span class="icon-calendar_agenda"></span> calendar_agenda | __\&#xe872;__ | <span class="icon-arrows"></span> arrows | __\&#xe873;__ | <span class="icon-video-camera"></span> video-camera | __\&#xe87;__ |
+| <span class="icon-check-3"></span> check | __\&#xe876;__ | <span class="icon-cancel-3"></span> cancel | __\&#xe877;__ | <span class="icon-time-3"></span> time | __\&#xe878;__ |
+| <span class="icon-arrow-down"></span> arrow-down | __\&#xe879;__ | <span class="icon-flag"></span> flag | __\&#xe87a;__ | <span class="icon-save"></span> save | __\&#xe87b;__ |
+| <span class="icon-share"></span> share | __\&#xe87c;__ | <span class="icon-menu-custom"></span> menu-custom | __\&#xe87d;__ | <span class="icon-heart-filled"></span> heart-filled | __\&#xe87e;__ |
+| <span class="icon-heart-empty"></span> heart-empty | __\&#xe87f;__ | <span class="icon-reorder"></span> reorder | __\&#xe881;__ | <span class="icon-arrow-box-left"></span> arrow-box-left | __\&#xe882;__ |
+| <span class="icon-arrow-box-right"></span> arrow-box-right | __\&#xe883;__ | <span class="icon-bell-empty"></span> bell-empty | __\&#xe901;__ | <span class="icon-chat"></span> chat | __\&#xe903;__ |
+| <span class="icon-phone"></span> phone | __\&#xe904;__ | <span class="icon-menu-1"></span> menu | __\&#xf008;__ | <span class="icon-link-ext"></span> link-external | __\&#xf08e;__ |
+| <span class="icon-plus-squared"></span> plus-squared | __\&#xf0fe;__ | <span class="icon-angle-left"></span> angle-left | __\&#xf104;__ | <span class="icon-angle-right"></span> angle-right | __\&#xf105;__ |
+| <span class="icon-angle-up"></span> angle-up | __\&#xf106;__ | <span class="icon-angle-down"></span> angle-down | __\&#xf107;__ | <span class="icon-spinner"></span> spinner | __\&#xf110;__ |
+| <span class="icon-angle-circled-left-1"></span> angle circled left | __\&#xf137;__ | <span class="icon-angle-circled-right-1"></span> angle circled right | __\&#xf138;__ | <span class="icon-minus-squared"></span> minus-squared | __\&#xf146;__ |
+| <span class="icon-minus-squared-alt"></span> minus squared | __\&#xf147;__ | <span class="icon-plus-squared-alt"></span> plus squared | __\&#xf196;__ | <span class="icon-emoji"></span> emoji | __\&#xe900;__ |
+
 
 >important You need to set the Telerik Font icon code on the concrete property to visualize the icon. 
 

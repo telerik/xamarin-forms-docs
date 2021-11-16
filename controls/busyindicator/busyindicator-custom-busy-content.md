@@ -42,7 +42,7 @@ Here is the previous example, but modified to support databinding:
             <Label Text="{Binding MyViewModelProperty}" />
         </Grid>
     </telerikPrimitives:RadBusyIndicator.BusyContent>
-	 <telerikPrimitives:RadBusyIndicator.BusyContentTemplate>
+    <telerikPrimitives:RadBusyIndicator.BusyContentTemplate>
         <ControlTemplate>
             <Grid>
                 <Grid.RowDefinitions>

@@ -27,6 +27,8 @@ The **DataGridNumericalColumn** is used to represent only numerical values. It u
 
 >important **CellContentFormat** uses the format string provided by the framework. For more details check the [Standard Numeric Formatting](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) and [Custom Numeric Formatting](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings) articles.
 
+>important The `CellContentStyle` is not applied when `CellContentTemplate` is used.
+
 ## Example
 
 ```XAML

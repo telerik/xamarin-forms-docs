@@ -91,6 +91,8 @@ An example how to set the HeaderStyle property is shown below:
 * **TextColor**/**SelectedTextColor**: Defines the color of the cells text, you could set different value for the selected cell.
 * **Text Alignment** (TextMargin, HorizontalTextAlignment, VerticalTextAlignment): Define the positioning of the Text inside the cell.
 
+>important The `CellContentStyle` does not apply for `TemplateColumn`. Also, the property is not applied to the built-in colums when `CellContentTemplate` is used.
+
 Here is an example how to set the CellContentStyle property:
 
 <snippet id='datagrid-columnstyle-cellcontent'/>

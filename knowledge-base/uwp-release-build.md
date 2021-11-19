@@ -5,7 +5,7 @@ type: how-to
 page_title: UWP Release Build Missing Border
 slug: uwp-release-build
 position: 
-tags: xamarin, accordion, items, dynamically
+tags: xamarin, uwp, release, build, border, not visible
 ticketid: 1507547
 res_type: kb
 ---

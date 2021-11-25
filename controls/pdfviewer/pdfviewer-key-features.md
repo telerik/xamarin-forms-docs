@@ -20,24 +20,11 @@ The Pdf Document could be loaded from:
 
 >tip Using this approach you have more control over the loading process, for example, you could modify the document after it is imported and before it is assigned as a Source to the PdfViewer control. For more details check [RadFixedDocument](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/model/radfixeddocument) topic from RadPdfProcessing documentation. 
 
-You could use it in two ways:
+Example:
 
 <snippet id='pdfviewer-key-features-source-fixed-method' />
 
-or 
-```C#
-private void ImportFixedDocument()
-{
-    Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.PdfFormatProvider provider = new Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.PdfFormatProvider();
-    Assembly assembly = typeof(KeyFeatures).Assembly;
-    string fileName = assembly.GetManifestResourceNames().FirstOrDefault(n => n.Contains("pdfviewer-overview.pdf"));
-    using (Stream stream = assembly.GetManifestResourceStream(fileName))
-    {
-        RadFixedDocument document = provider.Import(stream);
-        this.pdfViewer.Source = new FixedDocumentSource(document);
-    }
-}
-```
+>note The example shows a pdf document visualized as an EmbeddedResource. This is one of the options for loading a pdf with the PdfViewer control. 
 
 * **Uri**
 

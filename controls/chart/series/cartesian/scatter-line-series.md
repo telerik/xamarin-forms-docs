@@ -18,6 +18,8 @@ The **ScatterLineSeries** are represented on the chart as data points connected 
 - **Stroke** (Color): changes the color used to draw lines.
 - **StrokeThickness** (double): changes the width of the lines.
 
+>important If you want to style the series, on iOS both `Stroke` and `StrokeThickness` must be set
+
 ## Example
 
 Here is an example how to create RadCartesianChart with ScatterLine Series:

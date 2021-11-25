@@ -69,7 +69,7 @@ You would need to assign the .shp file containing the data through the **Source*
 
 <snippet id='map-gettingstarted-setting-source' />
 
-In the example the .shp file is loaded as an EmbeddedResource, there are other options as well, please check them in the [ShapefileLayer]({% slug map-layers-shapefilelayer%}) topic.
+>note In the example the .shp file is loaded as an EmbeddedResource, there are other options as well, please check them in the [ShapefileLayer]({% slug map-layers-shapefilelayer%}) topic.
 
 This is the result:
 

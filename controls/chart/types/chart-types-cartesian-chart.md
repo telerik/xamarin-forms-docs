@@ -61,39 +61,39 @@ Each of the above series of the same type may be combined in either [stacks or c
 	- [**Candlestick**]({%slug chart-series-candlestick-series%}): Data points are plotted as visuals that resemble candlesticks.
 	- [**Financial Indicators**]({%slug chart-series-financial-indicators%}): The financial, or also called stock indicators, are mainly used for keeping track of stock prices and patterns of price changes over time. 
 
-## Example
+## Step by Step Chart Definition
 
 1. Define RadCartesianChart:
   
-```XAML
+ ```XAML
 <telerikChart:RadCartesianChart>
 </telerikChart:RadCartesianChart>
-```
-```C#
+ ```
+ ```C#
 var chart = new RadCartesianChart();
-```
+ ```
 
-2. The RadCartesianChart control needs two axes - horizontal and vertical to plot its data.
+1. The RadCartesianChart control needs two axes - horizontal and vertical to plot its data.
 
-```XAML
+ ```XAML
 <telerikChart:RadCartesianChart.HorizontalAxis>
 	<telerikChart:CategoricalAxis/>
 </telerikChart:RadCartesianChart.HorizontalAxis>
 <telerikChart:RadCartesianChart.VerticalAxis>
 	<telerikChart:NumericalAxis/>
 </telerikChart:RadCartesianChart.VerticalAxis>
-```
-```C#
+ ```
+ ```C#
 chart.HorizontalAxis = new CategoricalAxis();
 chart.VerticalAxis = new NumericalAxis();
-```
+ ```
 
-3. After that you can add the series to the RadCartesianChart.Series collection:
+1. After that you can add the series to the RadCartesianChart.Series collection:
 
-```XAML
+ ```XAML
 <telerikChart:RadCartesianChart>
 	<telerikChart:RadCartesianChart.Series>
-		<telerikChart:BarSeries ItemsSource="{Binding CategoricalData}">
+		<telerikChart:BarSeries ItemsSource="{Binding Data}">
 			<telerikChart:BarSeries.ValueBinding>
 				<telerikChart:PropertyNameDataPointBinding PropertyName="Value"/>
 			</telerikChart:BarSeries.ValueBinding>
@@ -103,35 +103,41 @@ chart.VerticalAxis = new NumericalAxis();
 		</telerikChart:BarSeries>
 	</telerikChart:RadCartesianChart.Series>
 </telerikChart:RadCartesianChart>
-```
-```C#	
+ ```
+ ```C#	
 var series = new BarSeries();
-series.SetBinding(BarSeries.ItemsSourceProperty, new Binding("CategoricalData"));
+series.SetBinding(BarSeries.ItemsSourceProperty, new Binding("Data"));
 series.ValueBinding = new PropertyNameDataPointBinding("Value");
 series.CategoryBinding = new PropertyNameDataPointBinding("Category");            
 chart.Series.Add(series);
-```
+ ```
 
-4. You also have to set a BindingContext of the chart if none of its parents have a context:
+1. You also have to set a BindingContext of the chart if none of its parents have a context:
  
-```XAML
+ ```XAML
 <telerikChart:RadCartesianChart.BindingContext>
-	<local:ViewModel/>
+	<local:CategoricalDataViewModel/>
 </telerikChart:RadCartesianChart.BindingContext>
-```
-```C#
+ ```
+ ```C#
 chart.BindingContext = new ViewModel();
-```
+ ```
 
 Where `local` is
 
-```XAML
+ ```XAML
 xmlns:local="clr-namespace:[The namespace where the ViewModel class is defined];assembly=[The assembly name]"
-```
+ ```
 
-### CartesianChart Example
+1. Use the following business model
 
-Here is the full definition of the chart:
+ <snippet id='categorical-data-model'/>
+
+1. And ViewModel:
+
+ <snippet id='chart-series-categorical-data-view-model'/>
+
+## Example
 
 First, create the needed business object, for example:
 
@@ -141,7 +147,7 @@ Then create a ViewModel:
 
 <snippet id='chart-series-categorical-data-view-model'/>
 
-Finally use the following snippet to declare a RadPieChart with Pie Series in XAML and in C#:
+Finally use the following snippet to declare a RadCartesianChart with Bar Series in XAML and in C#:
 
 <snippet id='chart-series-barvertical-xaml'/>
 <snippet id='chart-series-barvertical-csharp'/>

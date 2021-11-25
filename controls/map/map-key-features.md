@@ -29,6 +29,8 @@ where the Source of the MapShapeReader should be defined as well:
 
 <snippet id='map-interactionmode-settintsource' />
 
+>note In the example the .shp file is loaded as an EmbeddedResource, there are other options as well, please check them in the [ShapefileLayer]({% slug map-layers-shapefilelayer%}) topic.
+
 ## Zoom Level Support
 
 RadMap exposes properties for applying min and max zoom values.

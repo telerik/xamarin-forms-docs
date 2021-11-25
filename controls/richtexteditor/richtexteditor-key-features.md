@@ -34,6 +34,8 @@ Another option to preload HTML is by retrieving it from a stream through the sta
 
 <snippet id='richtexteditor-keyfeatures-fromstream' />
 
+>note In the example the HTML file is loaded as an `EmbeddedResource` 
+
 Alternatively, you can create a [RichTextHtmlStreamSource](/devtools/xamarin/api/telerik.xamarinforms.richtexteditor.richtexthtmlstreamsource) object and set it as the <code>Source</code> of the RichTextEditor.
 
 ## Retrieving HTML Content

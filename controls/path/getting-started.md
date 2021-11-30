@@ -27,16 +27,16 @@ You have two options:
 
 * Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
 
-If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadPath control you have to install the **Telerik.UI.for.Xamarin.Primitives** nuget package. This nuget will automatically refer the *Telerik.UI.for.Xamarin.Common* and *Telerik.UI.for.Xamarin.SkiaSharp* nuget packages.
+If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add separate nuget packages. For RadPath control you have to install the **Telerik.UI.for.Xamarin.Primitives** and **Telerik.UI.for.Xamarin.Input** nuget packages. These nugets will automatically refer the *Telerik.UI.for.Xamarin.Common*, *Telerik.UI.for.Xamarin.DataControls* and *Telerik.UI.for.Xamarin.SkiaSharp* nuget packages.
 
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadPath** component:
 
 | Platform | Assemblies |
 | -------- | ---------- |
-| Portable | Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Input.dll<br/>Telerik.XamarinForms.Primitives.dll <br /> Telerik.XamarinForms.SkiaSharp.dll
-| Android  | Telerik.Xamarin.Android.Common.dll<br/>Telerik.Xamarin.Android.Data.dll <br /> Telerik.Xamarin.Android.Input.dll<br/>Telerik.Xamarin.Android.List.dll<br/>Telerik.Xamarin.Android.Primitives.dll<br/>Telerik.XamarinForms.Common.dll<br/> Telerik.XamarinForms.Input.dll<br/> Telerik.XamarinForms.Primitives.dll <br /> Telerik.XamarinForms.SkiaSharp.dll
-| iOS      | Telerik.Xamarin.iOS.dll <br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Input.dll<br/>Telerik.XamarinForms.Primitives.dll<br /> Telerik.XamarinForms.SkiaSharp.dll
-| UWP      | Telerik.Core.dll<br/> Telerik.Data.dll <br />Telerik.UI.Xaml.Controls.Data.UWP.dll <br />Telerik.UI.Xaml.Input.UWP.dll<br/>Telerik.UI.Xaml.Primitives.UWP.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Input.dll<br/>Telerik.XamarinForms.Primitives.dll<br /> Telerik.XamarinForms.SkiaSharp.dll
+| Portable | Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.DataControls.dll<br/>Telerik.XamarinForms.Input.dll<br/>Telerik.XamarinForms.Primitives.dll <br /> Telerik.XamarinForms.SkiaSharp.dll
+| Android  | Telerik.Xamarin.Android.Common.dll<br/>Telerik.Xamarin.Android.Data.dll <br /> Telerik.Xamarin.Android.Input.dll<br/>Telerik.Xamarin.Android.List.dll<br/>Telerik.Xamarin.Android.Primitives.dll<br/>Telerik.XamarinForms.Common.dll<br/> Telerik.XamarinForms.DataControls.dll<br/>Telerik.XamarinForms.Input.dll<br/> Telerik.XamarinForms.Primitives.dll <br /> Telerik.XamarinForms.SkiaSharp.dll
+| iOS      | Telerik.Xamarin.iOS.dll <br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.DataControls.dll<br/>Telerik.XamarinForms.Input.dll<br/>Telerik.XamarinForms.Primitives.dll<br /> Telerik.XamarinForms.SkiaSharp.dll
+| UWP      | Telerik.Core.dll<br/> Telerik.Data.dll <br />Telerik.UI.Xaml.Controls.Data.UWP.dll <br />Telerik.UI.Xaml.Input.UWP.dll<br/>Telerik.UI.Xaml.Primitives.UWP.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.DataControls.dll<br/>Telerik.XamarinForms.Input.dll<br/>Telerik.XamarinForms.Primitives.dll<br /> Telerik.XamarinForms.SkiaSharp.dll
 
 >important RadPath is rendered via the **SkiaSharp** graphics library so you need to install also [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms) in all projects of the Xamarin solution (.Net Standard/Shared, Android, iOS, etc). 
 

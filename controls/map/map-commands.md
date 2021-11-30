@@ -8,14 +8,15 @@ slug: map-commands
 
 # Commands
 
-RadMap provides the following commands of type ICommand:
+RadMap provides the following commands of type `ICommand` which handle the zoom level of the visualized shapes:
 
 * **ZoomInCommand**
+
 * **ZoomOutCommand**
 
-You could manually call these commands, for example on button click action, to update the zoom level of the shapes displayed in RadMap.
+You can manually call these commands, for example on button click action, to zoom-in or zoom-out respectively, the shapes displayed in RadMap.
 
-Following is a quick example on how the commands of the Map control can be used.
+Following is a quick example on how the commands of the Map control can be called from external UI:
 
 Let's have the following Map definition:
 
@@ -25,7 +26,7 @@ where the Source of the MapShapeReader is defined like this:
 
 <snippet id='map-interactionmode-settintsource' />
 
-Lastly, use the following snippet to add two buttons that will execute the Map commands:
+Lastly, add two buttons that will execute the Map commands - their Command property is bound to the corresponding Zoom command of the Map instance:
 
 ```XAML
 <Button Text="Zoom In" Command="{Binding Source={x:Reference map}, Path=ZoomInCommand}"/>
@@ -34,5 +35,4 @@ Lastly, use the following snippet to add two buttons that will execute the Map c
 
 ## See Also
 
-- [Key Features]({% slug pdfviewer-key-features%})
-
+- [Key Features]({% slug map-key-features%})

@@ -32,6 +32,8 @@ Here are the specific properties defined for DataGridPickerColumn:
 
 >important **CellContentFormat** uses the format string provided by the framework. For more details check the [String.Format](https://docs.microsoft.com/en-us/dotnet/api/system.string.format?view=netframework-4.8) article.
 
+>important The `CellContentStyle` is not applied when `CellContentTemplate` is used.
+
 ## Example 
 
 ```XAML

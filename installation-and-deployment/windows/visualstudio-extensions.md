@@ -20,8 +20,10 @@ The extensions handle the following major points in the development with Telerik
 
 ## Installing VSExtensions
 
-Visual Studio Extensions for Telerik UI for Xamarin are distributed with the Telerik UI for Xamarin MSI installation. They can be downloaded and installed as separate product from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) for Visual Studio 2017/2019.
+Visual Studio Extensions for Telerik UI for Xamarin are distributed with the Telerik UI for Xamarin MSI installation. They can be downloaded and installed as separate product from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) for Visual Studio 2019 and 2022 Preview.
  
+>tip Telerik UI for Xamarin Extension for Visual Studio is available for Visual Studio 2022 Current, Visual Studio 2022 Preview and Visual Studio 2019 
+
 Below you can find more details on both options:
 
 * **Telerik UI for Xamatin installer**: If you install the Telerik Xamarin suite through the [MSI automatic installation]({%slug install-msi%}), you will be prompted to install the extensions automatically;
@@ -35,15 +37,16 @@ Below you can find more details on both options:
 	1. After the installation is complete, it will be present in the "Installed" section in Visual Studio:	
 	![VSExtensions installed](images/extensions_installed.png)
 
-Either way you choose, after installing Telerik Xamarin VSExtensions, a Telerik menu (under Extensions menu item in VS2019) will be available in Visual Studio with several links that will help you quickly navigate to various useful resources:
+Either way you choose, after installing Telerik Xamarin VSExtensions, a Telerik menu (under Extensions menu item) will be available in Visual Studio with several links that will help you quickly navigate to various useful resources:
 
 ![Telerik Menu VS](images/telerik_menu.png)
 
 ## VSExtensions Options
 
-The **Visual Studio Extensions** options dialog provides settings, so you can configure the Telerik Visual Studio Extensions to best suit your needs. 
+The **Visual Studio Extensions** options dialog provides settings, so you can configure the Telerik Visual Studio Extensions to best suit your needs.
 
-It can be accessed through the Telerik menu in Visual Studio (under Extensions menu item in VS2019) -> VSExtensions Options…
+
+It can be accessed through the Telerik menu in Visual Studio (under Extensions menu item) -> VSExtensions Options…
 
 ![Telerik Menu VS](images/telerik_menu.png)
 
@@ -103,6 +106,10 @@ Telerik Visual Studio Extensions are disabled or not installed correctly.
 >* Execute the command - **devenv /log %userprofile%\desktop\ActivityLog.xml**. This will start Visual Studio and create logs on your Desktop.
 >* Reproduce the problem.
 >* Attach the **Activitylog** files when you contact our support.
+
+#### Visual Studio Support is Disabled
+
+Your Visual Studio installation needs to have both the **Mobile Development with .NET** workload and the **Text Template Transformation** installed. you can find the Text Template Transformation option under the Additional Components tab in the Visual Studio Installer.
 
 ## See Also
 - [Project Wizard]({%slug project-wizard%})

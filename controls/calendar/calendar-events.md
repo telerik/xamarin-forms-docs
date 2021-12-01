@@ -22,6 +22,10 @@ The RadCalendar component exposes the following events:
 	* The sender argument which is of type *object*, but can be cast to the *RadCalendar* type.
 	* A __ValueChangedEventArgs&lt;object&gt;__ object which provides old and new value of the __SelectedDate__. The values are of type *object*, but can be cast to the *DateTime* type.
 
+* **MonthChanged**: Occurs when the calendar month is changed in **Month** ViewMode.
+	* The `sender` argument which is of type *object*, but can be cast to the *RadCalendar* type.
+	* A __ValueChangedEventArgs&lt;object&gt;__ object which provides both `NewValue` and `PreviousValue`. The values are of type *object*.
+
 * **TimeSlotTapped**: Occurs when the end-user taps on a time slot.
 	* The sender argument which is of type *object*, but can be cast to the *RadCalendar* type.
 	* A __TimeSlotTapEventArgs__ object which provides StartTime and EndTime properties of type *DateTime* that define the time slot.
@@ -38,6 +42,8 @@ In addition, RadCalendar provides the following eventa relating to the native Ca
 Both event handlers receives two parameters:
 * The sender argument which is of type *object*, but can be cast to the *RadCalendar* type.
 * A **System.EventArgs** object.
+
+> With R3 2021 Service Pack Scheduling UIs exposes events for appointments changes: `AppointmentAdded`, `AppointmentUpdated` and `AppointmentDeleted` events. For more details check the [SchedulingUI Events]({%slug calendar-scheduling-events%}) article.
 
 ## See Also
 

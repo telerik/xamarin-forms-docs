@@ -27,6 +27,8 @@ The **DataGridTimeColumn** is used to represent DateTime objects. It uses the Ti
 
 >important **CellContentTemplate**, **CellEditTemplate** and **FilterControlTemplate** properties are part of the DataGrid features from R2 2020 Official Release. For more details on celledit and cell content templates features check the [Cell Templates]({%slug datagrid-cell-templates%})article. For more details on filtercontrol template please review the [FilterControl Template]({%slug datagrid-filtering-overview%}#filtercontrol-template) section.
 
+>important The `CellContentStyle` property is not applied when `CellContentTemplate` is used.
+
 ## Example
 
 ```XAML

@@ -27,6 +27,8 @@ The **DataGridDateColumn** is used to represent **DateTime** objects. It uses th
 
 >important **CellContentFormat** uses the format string provided by the framework. For more details check the [Standard Date and Time Formatting](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings) and [Custom Date and Time Formatting](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings) articles.
 
+>important The `CellContentStyle` is not applied when `CellContentTemplate` is used.
+
 ## Example
 
 ```XAML

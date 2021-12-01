@@ -38,7 +38,7 @@ Here is the previous example, but modified to support databinding:
                                     AnimationType="Animation6"                                            
                                     IsBusy="True">           
     <telerikPrimitives:RadBusyIndicator.BusyContent>
-        <Grid BindingContext={Binding BindingContext, Source={RelativeSource AncestorType={x:Type telerikPrimitives:RadBusyIndicator}}}">
+        <Grid BindingContext="{Binding BindingContext, Source={RelativeSource AncestorType={x:Type telerikPrimitives:RadBusyIndicator}}}">
             <Label Text="{Binding MyViewModelProperty}" />
         </Grid>
     </telerikPrimitives:RadBusyIndicator.BusyContent>

@@ -41,6 +41,9 @@ When you customize the toolbar you could include the following editing capabilit
 	
 >tip For more details please check the [History article]({%slug imageeditor-history%}).
 
+* For navigating back to the different levels/toolbar items use the `BackToolbarITem`.
+	* When ImageEditroToolbar.`IsMultiLine` is `False` - nested levels of toolbar items are displayed on a single line in the toolbar. If you customize the toolbar item the option to navigate back to the different levels is using the `BackToolbarItem`.
+
 * For applying Commands use the **CommandToolbarItem** which allows executing an arbitrary user-defined command from the toolbar. It exposes the following properties:
 	* **Command**(*ICommand*): Specifies the command to execute. 
 	* **CommandParameter**(*object*): Specifies a parameter to be passed to the command upon execution.

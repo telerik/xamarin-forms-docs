@@ -21,10 +21,10 @@ Through the popup users can pick an item. The value should be confirmed or rejec
 
 TemplatedPicker allows you to add a custom logic for the Accept and Cancel commands which are executed when OK and Cancel buttons, respectively, are pressed.
 
-* **AcceptCommand**(*ICommand*): Defines the command which confirms the current selection of the picker and closes the popup.
-* **CancelCommand**(*ICommand*): Defines the command which rejects the current selection of the picker and closes the popup.
+* **AcceptCommand**(*ICommand*): Defines the command which confirms the current selection of the picker and closes the popup. **AcceptCommandParameter** can be used to pass a parameter to the command execute method. 
+* **CancelCommand**(*ICommand*): Defines the command which rejects the current selection of the picker and closes the popup. **CancelCommandParameter** can be used to pass a parameter to the command execute method.
 
-The Accept and Cancel commands can be applied using the SelectorSettings property of RadTemplatedPicker.
+The Accept and Cancel commands can be applied using the SelectorSettings property of RadTemplatedPicker. In addition, you can pass command parameters through the `AcceptCommandParameter` and `CancelCommandParameter` properties of the TemplatedPicker SelectorSettings.
 
 ## Example
 
@@ -42,11 +42,13 @@ Here is the Templated Picker definition:
         </telerikInput:RadTemplatedPicker.SelectorTemplate>
 		<telerikInput:RadTemplatedPicker.SelectorSettings>
                 <telerikInput:PickerPopupSelectorSettings AcceptCommand="{Binding Accept}"
-                                                          CancelCommand="{Binding Cancel}"/>
-            </telerikInput:RadTemplatedPicker.SelectorSettings>
-            <telerikInput:RadTemplatedPicker.BindingContext>
-                <local:ViewModel/>
-            </telerikInput:RadTemplatedPicker.BindingContext>
+                                                          AcceptCommandParameter="{Binding SelectedValue, Source={x:Reference picker}}"
+                                                          CancelCommand="{Binding Cancel}"
+                                                          CancelCommandParameter="{Binding SelectedValue, Source={x:Reference picker}}"/>
+          </telerikInput:RadTemplatedPicker.SelectorSettings>
+          <telerikInput:RadTemplatedPicker.BindingContext>
+              <local:ViewModel/>
+          </telerikInput:RadTemplatedPicker.BindingContext>
     </telerikInput:RadTemplatedPicker>
 </StackLayout>
 ```
@@ -56,31 +58,28 @@ a sample ViewModel:
 ```C#
 public class ViewModel
 {
+    public ICommand Accept { get; set; }
+    public ICommand Cancel { get; set; }
+
     public ViewModel()
     {
         this.Accept = new Command(this.OnAccept);
-        this.Accept = new Command(this.OnCancel);
+        this.Cancel = new Command(this.OnCancel);
     }
 
-    private void OnAccept(object obj)
+    private void OnAccept(object param)
     {
+        Application.Current.MainPage.DisplayAlert("Value selected", String.Format("New Value: {0:d}", (DateTime)param), "OK");
         // implement your custom logic here
     }
 
-    private void OnCancel(object obj)
+    private void OnCancel(object param)
     {
+        var message = param != null ? String.Format("Current value: {0:d}", (DateTime)param) : "Currently no value is selected";
+        Application.Current.MainPage.DisplayAlert("Value Selection Canceled", message, "OK");
         // implement your custom logic here
     }
-
-    public ICommand Accept { get; set; }
-    public ICommand Cancel { get; set; }
 }
-```
-
-Set thus defined ViewModel as a BindingContext of the page:
-
-```C#
-this.BindingContext = new ViewModel();
 ```
 
 also you will need to add the following namespace:

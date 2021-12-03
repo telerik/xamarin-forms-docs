@@ -11,11 +11,9 @@ slug: imageeditor-commands
 
 This article explains the commands provided in ImageEditor and ImageEditorToolbar. 
 
-With R1 2022 Release all available ToolbarItems are exposed as commands. 
-
 ## ImageEditor Commands
 
-RadImageEditon provides commands for programatically editing the image without the usage of the ImageEditorToolbar.  commands of type `ICommand` which all:
+From R1 2022 Release RadImageEditon provides commands for programatically editing the image without the usage of the ImageEditorToolbar.  commands of type `ICommand` which all:
 
 * `CropCommand`- crop the image
 * `CropInteractiveCommand`- initiates the crop action
@@ -36,9 +34,37 @@ Commands which cancel/apply the changes made in interactive commands:
 * `CancelInteractiveCommand`- cancels the changes done in interactive command such as `Telerik.XamarinForms.ImageEditor.RadImageEditor.CropInteractiveCommand`
 * `ApplyInteractiveCommand`- applies the changes done in interactive command such as `Telerik.XamarinForms.ImageEditor.RadImageEditor.CropInteractiveCommand`
 
+When using the `CropInteractiveCommand` you can apply the crop changes using `ApplyInteractiveCommand` and cancel the changes using `CancelInteractiveCommand`.
+
 ### Example
 
+ImageEditor definition in XAML:
 
+<snippet id='imageeditor-commands-xaml'/>
+
+**InteractiveCropCommand with Apply and Cancel commands**
+
+<snippet id='imageeditor-interactive-commands-xam'/>
+
+**FlipHorizontal and FlipVerical commands**
+
+<snippet id='imageeditor-flip-commands-xaml'/>
+
+**RotateLeft and RotateRight commands**
+
+<snippet id='imageeditor-rotate-commands-xaml'/>
+
+**BrightnessCommand**
+
+<snippet id='imageeditor-brightness-command-xaml'/>
+
+**HueCommand**
+
+<snippet id='imageeditor-hue-command-xaml'/>
+
+![ImageEditor Commands](images/imageeditor-commands.gif "ImageEditor Commands")
+
+>tip Sample Commands example can be found inside the [SDKBrowser app/ImageEditor/Fetures](https://docs.telerik.com/devtools/xamarin/sdk-browser-overview#sdk-browser-application) folder.
 
 ## ImageEditor Toolbar Commands
 

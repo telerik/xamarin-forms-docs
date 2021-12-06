@@ -13,48 +13,48 @@ This article explains the commands provided in ImageEditor and ImageEditorToolba
 
 ## ImageEditor Commands
 
-From R1 2022 Release RadImageEditon provides commands for programatically editing the image without the usage of the ImageEditorToolbar.  commands of type `ICommand` which all:
+From R1 2022 Release RadImageEditor provides commands for programatically editing the image without the usage of the ImageEditorToolbar. The available commands are:
 
-* `CropCommand`- crop the image.
+* `CropCommand`(`ICommand`): crop the image.
 The `CropCommandContext` object is passed as a parameter to the `CropCommand`. The CropCommandContext has the following properties:
-	* `Geometry`(of type `Telerik.XamarinForems.Common.RadGeometry`) - specifies the geomerty of the crop selection.
-	* `Bounds`(of type `Rectangle`) - used to gets the current crop bounding rectangle.
+	* `Geometry`(of type `Telerik.XamarinForems.Common.RadGeometry`): specifies the geomerty of the crop selection.
+	* `Bounds`(of type `Rectangle`): used to gets the current crop bounding rectangle.
 
-* `CropInteractiveCommand`- initiates the crop action.
-* `ResizeCommand`- for image resizing.
+* `CropInteractiveCommand`(`ICommand`): initiates the crop action.
+* `ResizeCommand`: for image resizing.
 The `ResizeCommandContext` object is passed as a parameter to the `ResizeCommand`. The ResizeCommandContext has the following property:
-	* `Size`(of type`Xamarin.Forms.Size`) - specifies the size which will be used to resize the image.
+	* `Size`(of type`Xamarin.Forms.Size`): specifies the size which will be used to resize the image.
 
 
-* `RotateLeftCommand`- for image rotation 90 degree to the left.
-* `RotateRightCommand`- for image rotation 90 degree to the right.
-* `BlurCommand`- applies blur to the image
+* `RotateLeftCommand`(`ICommand`): for image rotation 90 degree to the left.
+* `RotateRightCommand`: for image rotation 90 degree to the right.
+* `BlurCommand`: applies blur to the image
 The `BlurCommandContext` object is passed as a parameter to the `BlurCommand`. The BlurCommandContext has the following property:
-	* `Blur`(`int`) - specifies the blur value.
+	* `Blur`(`int`): specifies the blur value.
 
 
-* `BrightnessCommand`- changes the brightness of the image.
+* `BrightnessCommand`(`ICommand`) changes the brightness of the image.
 The `BrightnessCommandContext` object is passed as a parameter to the `BrightnessCommand`. The BrightnessCommandContext has the following property:
-	* `Brightness`(`double`) - specifies the brightness value.
+	* `Brightness`(`double`): specifies the brightness value.
 
-* `ContrastCommand`- changes the image contrast.
+* `ContrastCommand`(`ICommand`): changes the image contrast.
 The `ContrastCommandContext` object is passed as a parameter to the `ContrastCommand`. The ContrastCommandContext has the following property:
-	* `Contrast`(`double`) - specifies the contrast value.
+	* `Contrast`(`double`): specifies the contrast value.
 
-* `HueCommand`- changes the image hue.
+* `HueCommand`(`ICommand`): changes the image hue.
 The `HueCommandContext` object is passed as a parameter to the `HueCommand`. The HueCommandContext has the following property:
-	* `Hue`(`double`) - specifies the hue value.
+	* `Hue`(`double`): specifies the hue value.
 
-* `SaturationCommand`- changes the image saturation.
+* `SaturationCommand`(`ICommand`): changes the image saturation.
 The `SaturationCommandContext` object is passed as a parameter to the `SaturationCommand`. The SaturationCommandContext has the following property:
-	* `Saturation`(`double`) - specifies the saturation value.
+	* `Saturation`(`double`): specifies the saturation value.
 
-* `SharpenCommand`- changes the image sharpness.
+* `SharpenCommand`(`ICommand`): changes the image sharpness.
 The `SaturationCommandContext` object is passed as a parameter to the `SharpenCommand`. The SharpenCommandContext has the following property:
-	* `Sharpen`(`int`) - specifies the sharpen value.
+	* `Sharpen`(`int`): specifies the sharpen value.
 
-* `FlipHorizontalCommand`- flips the image horizontally.
-* `FlipVerticalCommand`- flips the image vertically.
+* `FlipHorizontalCommand`(`ICommand`): flips the image horizontally.
+* `FlipVerticalCommand`(`ICommand`): flips the image vertically.
 
 Commands which cancel/apply the changes made in interactive commands:
 

@@ -50,7 +50,7 @@ Once you have created the custom command, you need to add it to the Commands col
 Where the **telerikTreeView** namespace is the following:
 
 ```XAML
-xmlns:telerikTreeView="clr-namespace:Telerik.XamarinForms.DataControls.TreeView;assembly=Telerik.XamarinForms.DataControls"
+xmlns:telerikTreeView="clr-namespace:Telerik.XamarinForms.DataControls.TreeView.Commands;assembly=Telerik.XamarinForms.DataControls"
 ```
 
 >important You can check a runnable demo in the **Features** section of the **RadTreeView** component in the **SDK Samples Browser application**(can be found in the Examples folder of your local *Telerik UI for Xamarin* installation)

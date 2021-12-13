@@ -56,6 +56,30 @@ Here is the result:
 
 >important A sample Custom Filtering example can be found in the AutoCompleteView/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
+## Handling Punctuation
+
+By default, the .NET `string.Contains` method will take all punctuation into consideration. If you find punctuation to be hindering your user experience, you can use a custom filter that removes the punctuation before the strings are compared. 
+
+For example, if the source string is `Main Street, 101` and the user searches `Main Street 101`, string.Contains will return false and the result will not appear in the FilteredItems view. The custom filter below removes the commas before the string is used with the Contains method.
+
+```
+public class CustomAutoCompleteViewFilter : IAutoCompleteFilter
+{
+    public bool Filter(object item, string searchText, CompletionMode completionMode)
+    {
+        var googleSearchResult = (string)item;
+
+        // Remove commas from the source value before comparing with the search term
+        var googleSearchResultNoCommas = googleSearchResult.Replace(",", "");
+
+        var normalizedPlace = googleSearchResultNoCommas.ToLowerInvariant();
+        var normalizedSearchText = searchText.ToLowerInvariant();
+        
+        return normalizedPlace.Contains(normalizedSearchText);
+    }
+}
+```
+
 ## See Also
 
 - [Remote Search]({% slug autocompleteview-remote-search%})

@@ -13,5 +13,5 @@ slug: signaturepad-commands
 ## See Also
 
 - [Signature Configuration]({% slug shadow-key-features%})
-- [Events]({% slug shadow-events%})
+- [Events]({% slug signaturepad-events%})
 - [Saving Options]({% slug signaturepad-saving-options%})

@@ -553,6 +553,10 @@ navigation:
     controls/sidedrawer:
         title: "SideDrawer"      
     ## End SideDrawer
+    ## SignaturePad
+    controls/signaturepad:
+        title: "SignaturePad"      
+    ## End SignaturePad
     ## Rating
     controls/rating:
         title: "Rating"    
@@ -759,6 +763,7 @@ intro_columns:
         "MaskedInput": "maskedinput-overview"
         "NumericInput": "numericinput-overview"        
         "RichTextEditor": "richtexteditor-overview"
+        "SignaturePad": "signaturepad-overview"
         "Templated Picker": "templated-picker-overview"
         "Time Picker": "time-picker-overview"
         "TimeSpan Picker": "timespan-picker-overview"

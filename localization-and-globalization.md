@@ -77,7 +77,7 @@ Check below the appearance of the filtering component within the RadDataGrid aft
 
 The second option for applying localization is through setting a custom **ResourceManager**.
 
-In the same way as the built-in mechanism for localizing .NET applications uses [RESX files](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/ekyft91f(v=vs.90)) and the classes in the **System.Resources** and **System.Globalization** namespaces, Telerik Xamarin controls rely on similar setup to achieve the functionality.
+In the same way as the built-in mechanism for localizing .NET applications uses [RESX files](https://docs.microsoft.com/en-us/dotnet/core/extensions/create-resource-files) and the classes in the **System.Resources** and **System.Globalization** namespaces, Telerik Xamarin controls rely on similar setup to achieve the functionality.
 
 You should add different resource (.RESX) files according to the different languages/cultures which you would like to use. Imagine that you want to translate your control, RadDataGrid for example, into English and German. You will have to add two new resource files to your Xamarin.Forms project with **Embedded resource** Build action:
 

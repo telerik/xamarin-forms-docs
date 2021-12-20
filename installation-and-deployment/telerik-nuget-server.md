@@ -10,9 +10,9 @@ position: 8
 
 The following steps demonstrate how you can take advantage of **Telerik NuGet server** [https://nuget.telerik.com/v3/index.json](https://nuget.telerik.com/v3/index.json) in order to include Telerik UI for Xamarin suite in your solution and/or update to the latest available version.
 
->important The credentials needed to access Telerik Nuget server are the same you use to log into your [Telerik account](https://www.telerik.com/account).
+>important The credentials needed to access Telerik NuGet server are the same you use to log into your [Telerik account](https://www.telerik.com/account).
 
->You will find Nuget packages containing the standard and the lite assemblies - the latter have *Lite* in their names. Please take a look at the [Lite Assemblies]({%slug telerik-light-assemblies%}) topic for more details on the difference between them.
+>You will find NuGet packages containing the standard and the lite assemblies - the latter have *Lite* in their names. Please take a look at the [Lite Assemblies]({%slug telerik-light-assemblies%}) topic for more details on the difference between them.
 
 ## Visual Studio for Windows
 
@@ -52,11 +52,11 @@ Now the solution has all required Telerik assemblies.
 
 ## Visual Studio for Mac
 
-You have to first add the Telerik NuGet server to the VS for Mac packages sources list. This can be done by clicking on the settings icon of any “*Packages*” folder (any project will do the job) and choosing “*Add Packages…*”.
+You have to first add the Telerik NuGet server to the Visual Studio for Mac packages sources list. This can be done by clicking on the solution folder in Visual Studio for Mac to display the context menu and choose “*Manage NuGet Packages…*”.
 
 ![Add Packages](images/getting-started-add-packages-menu.png "Add Packages")
 
-This will open another dialog. Choose “*Configure Sources…*” option from the dropdown in the upper right corner.
+This will open another dialog. Choose “*Configure Sources…*” option from the dropdown in the lower left corner.
 
 ![Configure Sources](images/getting-started-configure-sources.png "Configure Sources")
 
@@ -70,13 +70,17 @@ In the Add Package Source dialog you should fill in the information of the Teler
 
 ![Telerik NuGet server details](images/getting-started-add-telerk-server.png "Telerik NuGet server details")
 
-After the Telerik NuGet server is added you will be able to see the available for download packages in the Add Packages dialog. This will allow you to check the **Telerik UI for Xamarin** pack and add it into your projects.
+After the Telerik NuGet server is added you will be able to see the available for download packages in the *Manage NuGet Packages...* dialog. This will allow you to check the **Telerik UI for Xamarin** pack and add it into your projects.
 
 ### Add Telerik UI for Xamarin pack in Visual Studio for Mac
 
-Once the server is added you will be able to add to your projects any of the **Telerik NuGet** packages available for your license. One click on the settings icon of the “*Packages*” folder of any project will open the **Add Packages** dialog where the available Telerik packs will be listed.
+Once the server is added you will be able to add to your projects any of the **Telerik NuGet** packages available for your license. One click on the solution folder will open the context menu and will give you the option to call the **Manage NuGet Packages...** dialog where the available Telerik packs will be listed.
 
 ![Telerik NuGet packages](images/getting-started-add-packages-dialog.png "Telerik NuGet packages")
+
+After choosing **Telerik UI for Xamarin** package, you can apply it to all the projects in the solution:
+
+![Telerik NuGet packages](images/getting-started-add-packages-dialog-all.png)
 
 ## Troubleshooting
 
@@ -105,10 +109,8 @@ If your password contains a special character, those characters need to be escap
 
 We **strongly** discourage entering your password into an online encoder utility, use Powershell instead. Here's one example:
 
-```
-Add-Type -AssemblyName System.Web
-[System.Web.HttpUtility]::HtmlEncode('my§uper&P@§§word')
-```
+	Add-Type -AssemblyName System.Web
+	[System.Web.HttpUtility]::HtmlEncode('my§uper&P@§§word')
 
 Result:
 

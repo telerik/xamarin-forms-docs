@@ -11,24 +11,13 @@ slug: signaturepad-commands
 
 SignaturePad exposes a `ClearCommand`(`ICommand`) for clearing the signature. 
 
-```XAML
-<Grid RowDefinitions="Auto,*">
-    <Button Text="Clear the signature" 
-            Command="{Binding ClearCommand, Source={x:Reference signaturePad}}"/>
-    <telerikInput:RadSignaturePad x:Name="signaturePad" 
-                                  Grid.Row="1"
-                                  BorderThickness="1" 
-                                  BorderColor="LightGray" />
-</Grid>
-```
+<snippet id='signaturepad-clear-command'/>
 
-And the namespace: 
+Add the namespace: 
 
-```XAML
-xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
-```
+<snippet id='xmlns-telerikinput'/>
 
-This is the resut: 
+And the resut: 
 
 
 

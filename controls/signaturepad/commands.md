@@ -9,6 +9,17 @@ slug: signaturepad-commands
 
 # Commands
 
+SignaturePad exposes a `ClearCommand`(`ICommand`) for clearing the signature. 
+
+<snippet id='signaturepad-clear-command'/>
+
+Add the namespace: 
+
+<snippet id='xmlns-telerikinput'/>
+
+And the resut: 
+
+
 
 ## See Also
 

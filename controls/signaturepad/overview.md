@@ -22,7 +22,7 @@ slug: signaturepad-overview
 
 * [Exhaustive numbers of events]({%slug signaturepad-events%}) that are raised when a new stroke is started, completed and an event for clearing the surface.  
 
-* [Commands Support]({%slug signaturepad-commands%}): Easily Save the signature as am image using the exposed command. 
+* [Commands Support]({%slug signaturepad-commands%}): Easily clear the signature fromt he surface using the exposed command. 
 
 ## See Also
 

@@ -21,6 +21,38 @@ The SignaturePad for Xamarin exposes the following events:
 
 * `Cleared` event is raised when the surface of Telerik.XamarinForms.Input.RadSignaturePad is cleared
 
+## Example
+
+1. Here is a sample example using the above events. The definition in XAML: 
+
+<snippet id='signaturepad-events'/>
+
+The example contains a **X** Button, two Labels and a SignaturePad.
+
+1. Add the following namespace:
+
+<snippet id='xmlns-telerikinput'/>
+
+
+
+1. The `SignaturePad.StrokeStarted` event:
+
+<snippet id='signaturepad-strokestarted-event'/>
+
+When stroke starts a timestamp  is displayed.
+
+1. The `SignaturePad.StrokeCompleted` event:
+
+<snippet id='signaturepad-strokecompleted-event'/>
+
+When stroke complets the timespamp text is udated.
+ 
+1. The `SignaturePad.Cleared` event: 
+
+<snippet id='signaturepad-cleared-event'/>
+
+When `Cleared` event is fired, Label with `Text="Cleared"` is displayed.
+
 ## See Also
 
 - [Configure the Signature]({% slug signaturepad-configuration%})

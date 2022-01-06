@@ -29,11 +29,11 @@ The SignaturePad for Xamarin exposes the following events:
 
 The example contains a **X** Button, two Labels and a SignaturePad.
 
-1. Add the following namespace:
+Add the following namespace:
 
 <snippet id='xmlns-telerikinput'/>
 
-
+Let's add the events:
 
 1. The `SignaturePad.StrokeStarted` event:
 
@@ -52,6 +52,8 @@ When stroke complets the timespamp text is udated.
 <snippet id='signaturepad-cleared-event'/>
 
 When `Cleared` event is fired, Label with `Text="Cleared"` is displayed.
+
+![SignaturePad Events](images/signatrue-events.gif)
 
 ## See Also
 

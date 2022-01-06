@@ -2,7 +2,7 @@
 title: Getting Started
 page_title: Xamarin SignaturePad Documentation | Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for Telerik SignaturePad for Xamarin control.
-position: 0
+position: 1
 tags: sing pad, signature, xamarin, xamarin.forms, pad, signature pad
 slug: signaturepad-getting-started
 ---

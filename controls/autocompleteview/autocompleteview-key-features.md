@@ -82,7 +82,7 @@ With R2 2022 AutoCompleteView exposes a new **SuggestionViewPosition** property 
 * Top
 * Bottom
 
-Where "Auto" calculates the available space and chooses what's the best position of the popup. In other cases, if there is no available space, the popup is repositioned as well, still, the "Top"/"Bottom" setting takes precedence.
+Where "Auto" calculates the available space and chooses what's the best position of the popup, starting with "Bottom". With "Top"/"Bottom" setting, the popup is positioned above or below the AutoCompleteView respectively.
 
 <snippet id='autocompleteview-suggestionview-position' />
 

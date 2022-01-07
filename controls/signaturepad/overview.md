@@ -20,9 +20,9 @@ slug: signaturepad-overview
  
 * [Save the signature as an image]({%slug signaturepad-saving-options%}) in different formats (**Png** or **Jpeg**). In addition the Saving API allows you to set the image's quality and scale factor. Also you have the option to change the stroke color and thickness of the signature when saving it as an image.
 
-* [Exhaustive numbers of events]({%slug signaturepad-events%}) that are raised when a new stroke is started, completed and an event for clearing the surface.  
+* [Exhaustive numbers of events]({%slug signaturepad-events%}) that are raised when a new stroke is started, completed and an event fired when the surface is cleared.  
 
-* [Commands Support]({%slug signaturepad-commands%}): Easily clear the signature fromt he surface using the exposed command. 
+* [Commands Support]({%slug signaturepad-commands%}): Easily clear the signature from the surface using the exposed command. 
 
 ## See Also
 

@@ -8,31 +8,35 @@ slug: datagrid-datatable-support
 
 # DataTable Support
 
-With R1 2022 Release of Telerik UI for Xamarin, **DataGrid** fully supports binding to a `DataTable`. In addition, all DataGrid features works with DataTable. You can add, remove, select, edit item(s) and update the DataGrid's ItemsSource. In addition all available commands and operations like filtering, sorting, grouping, selection works in DataGrid when bind to a DataTable. 
+With R1 2022 Release of Telerik UI for Xamarin, **DataGrid** fully supports binding to a `DataTable`. 
 
-DataGid bind to a DataTable
+All DataGrid features works with DataTable. You can add, remove, select, edit item(s) and update the DataGrid's ItemsSource. In addition, all available commands and operations like filtering, sorting, grouping, selection works when the DataGrid is binded to a DataTable. 
 
-1. The ViewModel used: 
-
-<snippet id='datagrid-datatable-view-model'/>
-
-Where the DataTable namespace is `using System.Data;`
+## Bind to DataTable
 
 1. DataGrid definition:
 
-<snippet id='datagrid-datatable-binding'/>
+ <snippet id='datagrid-datatable-binding'/>
 
-Add the namespace: 
 
-```XAML
+1. Add the namespace: 
+
+ ```XAML
 xmlns:telerikDataGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
-```
+ ```
+
+1. The ViewModel used: 
+
+ <snippet id='datagrid-datatable-view-model'/>
+ 
+
+Where the DataTable namespace is `using System.Data;`
 
 >important A sample Bind to DataTable example can be found in the DataGrid/DataTable folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## Filtering, Sorting, Grouping
 
-When binded to a DataTable you can filter, group, sort the data inside the DataGrid through the UI or programatically.  
+When using DataTable you can filter, group, sort the data inside the DataGrid through the UI or programatically.  
 
 ## CRUD Operations with DataTable
 

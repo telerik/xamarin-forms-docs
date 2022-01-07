@@ -74,6 +74,18 @@ By default the search is triggered as soon as the user types into the input fiel
 
 <snippet id='autocompleteview-features-suggestionview'/>
 
+## SuggestionView Position
+
+With R2 2022 AutoCompleteView exposes a new **SuggestionViewPosition** property which enables you to explicitly define whether the suggestions popup will be shown below or above the input field. **SuggestionViewPosition** is of enum type *Telerik.XamarinForms.Input.AutoCompleteView.PopupPosition* and can be set to any of the following values:
+
+* (default) Auto
+* Top
+* Bottom
+
+Where "Auto" calculates the available space and chooses what's the best position of the popup. In other cases, if there is no available space, the popup is repositioned as well, still, the "Top"/"Bottom" setting takes precedence.
+
+<snippet id='autocompleteview-suggestionview-position' />
+
 ## FilteredItems collection
 
 **FilteredItems** bindable property allows you to access the collection containing the search results of the AutoCompleteView. The property can be used in scenarios where the search results are visualized at a different place or inside another container.

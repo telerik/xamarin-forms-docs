@@ -17,10 +17,6 @@ Add the namespace:
 
 <snippet id='xmlns-telerikinput'/>
 
-And the resut: 
-
-
-
 ## See Also
 
 - [Signature Configuration]({% slug shadow-key-features%})

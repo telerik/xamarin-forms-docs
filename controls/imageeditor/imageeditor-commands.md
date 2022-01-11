@@ -25,41 +25,48 @@ The `CropCommandContext` object is passed as a parameter to the `CropCommand`. T
 The `ResizeCommandContext` object is passed as a parameter to the `ResizeCommand`. The ResizeCommandContext has the following property:
 	* `Size`(of type`Xamarin.Forms.Size`): specifies the size which will be used to resize the image.
 
-
 * `RotateLeftCommand`(`ICommand`): for image rotation 90 degree to the left.
+
 * `RotateRightCommand`: for image rotation 90 degree to the right.
+
 * `BlurCommand`: applies blur to the image
 The `BlurCommandContext` object is passed as a parameter to the `BlurCommand`. The BlurCommandContext has the following property:
 	* `Blur`(`int`): specifies the blur value.
-
 
 * `BrightnessCommand`(`ICommand`) changes the brightness of the image.
 The `BrightnessCommandContext` object is passed as a parameter to the `BrightnessCommand`. The BrightnessCommandContext has the following property:
 	* `Brightness`(`double`): specifies the brightness value.
 
+
 * `ContrastCommand`(`ICommand`): changes the image contrast.
 The `ContrastCommandContext` object is passed as a parameter to the `ContrastCommand`. The ContrastCommandContext has the following property:
 	* `Contrast`(`double`): specifies the contrast value.
+
 
 * `HueCommand`(`ICommand`): changes the image hue.
 The `HueCommandContext` object is passed as a parameter to the `HueCommand`. The HueCommandContext has the following property:
 	* `Hue`(`double`): specifies the hue value.
 
+
 * `SaturationCommand`(`ICommand`): changes the image saturation.
 The `SaturationCommandContext` object is passed as a parameter to the `SaturationCommand`. The SaturationCommandContext has the following property:
 	* `Saturation`(`double`): specifies the saturation value.
+
 
 * `SharpenCommand`(`ICommand`): changes the image sharpness.
 The `SaturationCommandContext` object is passed as a parameter to the `SharpenCommand`. The SharpenCommandContext has the following property:
 	* `Sharpen`(`int`): specifies the sharpen value.
 
+
 * `FlipHorizontalCommand`(`ICommand`): flips the image horizontally.
+
 * `FlipVerticalCommand`(`ICommand`): flips the image vertically.
 
 Commands which cancel/apply the changes made in interactive commands:
 
-* `CancelInteractiveCommand`- cancels the changes done in interactive command such as `Telerik.XamarinForms.ImageEditor.RadImageEditor.CropInteractiveCommand`
-* `ApplyInteractiveCommand`- applies the changes done in interactive command such as `Telerik.XamarinForms.ImageEditor.RadImageEditor.CropInteractiveCommand`
+* `CancelInteractiveCommand`- cancels the changes done in interactive command such as `Telerik.XamarinForms.ImageEditor.RadImageEditor.CropInteractiveCommand`.
+
+* `ApplyInteractiveCommand`- applies the changes done in interactive command such as `Telerik.XamarinForms.ImageEditor.RadImageEditor.CropInteractiveCommand`.
 
 When using the `CropInteractiveCommand` you can apply the crop changes using `ApplyInteractiveCommand` and cancel the changes using `CancelInteractiveCommand`.
 

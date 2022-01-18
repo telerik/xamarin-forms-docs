@@ -10,7 +10,7 @@ slug: datagrid-datatable-support
 
 With R1 2022 Release of Telerik UI for Xamarin, **DataGrid** fully supports binding to a `DataTable`. 
 
-All DataGrid features work with DataTable. You can add, remove, select, edit item(s) and update the DataGrid's ItemsSource. In addition, all available commands and operations like filtering, sorting, grouping, selection work when the DataGrid is binded to a DataTable. 
+All DataGrid features work with DataTable. You can add, remove, select, edit item(s) and update the DataGrid's ItemsSource. In addition, all available commands and operations like filtering, sorting, grouping, selection work when the DataGrid is bound to a DataTable. 
 
 ## Bind to DataTable
 

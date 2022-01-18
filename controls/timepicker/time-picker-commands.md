@@ -37,19 +37,23 @@ Through the popup users can pick a time. The time value should be confirmed or r
 
 RadTimePicker allows you to add a custom logic for the Accept and Cancel commands which are executed when OK and Cancel buttons, respectively, are pressed. 
 
-* **AcceptCommand**(*ICommand*): Defines the command which confirms the current selection of the picker and closes the popup. 
-* **CancelCommand**(*ICommand*): Defines the command which rejects the current selection of the picker and closes the popup.
+* **AcceptCommand**(*ICommand*): Defines the command which confirms the current selection of the picker and closes the popup. **AcceptCommandParameter** can be used to pass a parameter to the command execute method. 
+* **CancelCommand**(*ICommand*): Defines the command which rejects the current selection of the picker and closes the popup. **CancelCommandParameter** can be used to pass a parameter to the command execute method.
 
-The Accept and Cancel commands can be applied using the SelectorSettings property of RadTimePicker. Here is a quick example on how they could be set:
+The Accept and Cancel commands can be applied using the SelectorSettings property of RadTimePicker. In addition, you can pass command parameters through the `AcceptCommandParameter` and `CancelCommandParameter` properties of the TimePicker SelectorSettings.
+
+Here is a quick example on how they could be set:
 
 #### Example for AcceptCommand and CancelCommand
 
 ```XAML
 <telerikInput:RadTimePicker x:Name="timePicker">
-	<telerikInput:RadTimePicker.SelectorSettings>
-		<telerikInput:PickerPopupSelectorSettings AcceptCommand="{Binding Accept}"  
-												  CancelCommand="{Binding Cancel}"/>
-	</telerikInput:RadTimePicker.SelectorSettings>
+    <telerikInput:RadTimePicker.SelectorSettings>
+        <telerikInput:PickerPopupSelectorSettings AcceptCommand="{Binding Accept}"
+                                                AcceptCommandParameter="{Binding Time, Source={x:Reference timePicker}}"
+                                                CancelCommand="{Binding Cancel}"
+                                                CancelCommandParameter="{Binding Time, Source={x:Reference timePicker}}"/>
+    </telerikInput:RadTimePicker.SelectorSettings>
 </telerikInput:RadTimePicker>
 ```
 
@@ -60,20 +64,23 @@ public class ViewModel
 {
     public ICommand Accept { get; set; }
     public ICommand Cancel { get; set; }
-	
+
     public ViewModel()
     {
         this.Accept = new Command(this.OnAccept);
         this.Cancel = new Command(this.OnCancel);
     }
-	
-    private void OnAccept(object obj)
+
+    private void OnAccept(object param)
     {
+        Application.Current.MainPage.DisplayAlert("Time selected", "New time: " + (TimeSpan)param, "OK");
         // implement your custom logic here
     }
-	
-    private void OnCancel(object obj)
+
+    private void OnCancel(object param)
     {
+        var message = param != null ? "Current time: " + (TimeSpan)param : "Currently no time is selected";
+        Application.Current.MainPage.DisplayAlert("Time Selection Canceled", message, "OK");
         // implement your custom logic here
     }
 }

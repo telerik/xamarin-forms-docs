@@ -13,6 +13,7 @@ This article will guide you through the steps needed to add a basic **RadDataGri
 * [Setting up the app](#1-setting-up-the-app)
 * [Adding the required Telerik references](#2-adding-the-required-telerik-references)
 * [Adding RadDataGrid control](#3-adding-raddatagrid-control)
+* [Setting RadDataGrid ItemsSource](#4-setting-raddatagrid-itemssource)
 
 ## 1. Setting up the app
 
@@ -44,14 +45,14 @@ If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have 
 
 You could use one of the following approaches:
 
-#### Drag the control from the Toolbox. 
+### Drag the control from the Toolbox. 
 
 Take a look at the following topics on how to use the toolbox:
 
 * [Telerik UI for Xamarin Toolbox on Windows]({%slug telerik-xamarin-toolbox%})
 * [Telerik UI for Xamarin Toolbox on Mac]({%slug telerik-xamarin-toolbox-mac%})	
 
-#### Create the control definition in XAML:
+### Create the control definition in XAML:
 
 The snippet below shows a simple RadDataGrid definition:
 ```XAML	
@@ -72,18 +73,13 @@ In addition to this, you need to add the following namespace:
 
 Now that you have added the control to your view, you need to make sure that is properly loaded with the required data. 
 
-By default, the **RadDataGrid** control will autogenerate rows depending on the number of objects in the collection set as its **ItemsSource**. For the purpose of this article, we are going to use the following simple business objects:
+## 4. Setting RadDataGrid ItemsSource
 
-```C#
- 	public class Data
-	{
-    	public string Country { get; set; }
+By default, the **RadDataGrid** control will autogenerate rows depending on the number of objects in the collection set as its **ItemsSource**. 
 
-    	public string Capital { get; set; }
-	}
-```
+#### Binding to a collection of objects
 
-After you have created your collection of custom objects, you should assign it to the **ItemsSource** property of the control:
+The collection of custom objects, then assigned to the **ItemsSource** property of the control:
 
 ```C#
  	 this.DataGrid.ItemsSource = new List<Data>
@@ -95,9 +91,41 @@ After you have created your collection of custom objects, you should assign it t
 	 };
 ```
 
+And the simple business model used:
+
+```C#
+ 	public class Data
+	{
+    	public string Country { get; set; }
+
+    	public string Capital { get; set; }
+	}
+```
+
 Here is the result:
 
 ![datagrid-itemssource](images/datagrid-itemssource.png)
+
+#### Binding to a DataTable
+
+1. The ViewModel used: 
+
+<snippet id='datagrid-datatable-view-model'/>
+
+Where the DataTable namespace is `using System.Data;`
+
+1. DataGrid definition:
+
+<snippet id='datagrid-datatable-binding'/>
+
+Add the namespace: 
+
+```XAML
+xmlns:telerikDataGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
+```
+
+>note Check our [DataGrid DataTable support]({%slug datagrid-datatable-support%}) article for more information about this feature.
+
 
 >important **SDK Browser** and **QSF** applications contain different examples that show RadDataGrid's main features. You can find the applications in the **Examples** and **QSF** folders of your local **Telerik UI for Xamarin** installation.
 

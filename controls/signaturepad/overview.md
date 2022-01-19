@@ -8,7 +8,7 @@ slug: signaturepad-overview
 
 # Overview
 
-**Telerik UI for Xamarin SignaturePad** control gives you the option to capture a signature in your desktop and mobile applications, and fully customize signature's stroke and color. In addition you can easily save the signature as PNG or JPEG with additional saving settings using the flexible Saving API of the SignaturePad.  
+**Telerik UI for Xamarin SignaturePad** control gives you the option to capture a signature in your mobile and UWP applications, and fully customize signature's stroke and color. In addition you can easily save the signature as PNG or JPEG with additional saving settings using the flexible Saving API of the SignaturePad.  
 
 ![SignaturePad Overview](images/signaturepad-overview.png)
 

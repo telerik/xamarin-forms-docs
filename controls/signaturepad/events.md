@@ -27,6 +27,7 @@ The SignaturePad for Xamarin exposes the following events:
 
  <snippet id='signaturepad-events'/>
 
+
 1. Add the following namespace:
 
  <snippet id='xmlns-telerikinput'/>

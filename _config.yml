@@ -720,17 +720,23 @@ intro_columns:
   -
     title: "Data Controls"  
     items:
+      "DataForm": "dataform-overview" 
       "DataGrid": "datagrid-overview"
       "ListView": "listview-overview"
-      "DataForm": "dataform-overview"   
-  -
-    title: "Pdf Viewer"
+  - 
+    title: "Interactivity & UX"
     items:
-      "PdfViewer": "pdfviewer-overview"
+        "BusyIndicator": "busyindicator-overview"
+        "Popup": "popup-overview"
+        "SlideView": "slideview-overview"
+        "Border": "border-overview"
+        "Path": "path-overview"
+        "BadgeView": "badgeview-overview"
+        "Shadow": "shadow-overview" 
   -
-    title: "Calendar & Scheduling"
+    title: "Chatbots"
     items:
-        "Calendar": "calendar-overview"
+        "Conversational UI": "chat-overview"        
 -
   categories:
   -
@@ -742,6 +748,10 @@ intro_columns:
         "Accordion": "accordion-overview"
         "Expander": "expander-overview"
         "DockLayout": "docklayout-overview"
+  -
+    title: "Calendar & Scheduling"
+    items:
+        "Calendar": "calendar-overview"
   -
     title: "Buttons"
     items:
@@ -777,18 +787,10 @@ intro_columns:
         "Gauge": "gauge-overview"
         "Rating": "rating-overview"
         "Barcode": "barcode-overview"    
-  - 
-    title: "Interactivity & UX"
+  -
+    title: "Pdf Viewer"
     items:
-        "BusyIndicator": "busyindicator-overview"
-        "Popup": "popup-overview"
-        "SlideView": "slideview-overview"
-        "Border": "border-overview"
-        "Path": "path-overview"
-        "BadgeView": "badgeview-overview"
-        "Shadow": "shadow-overview"
--
-  categories:
+      "PdfViewer": "pdfviewer-overview"
   -
     title: "Document Processing Libraries"
     items:
@@ -797,10 +799,6 @@ intro_columns:
         "SpreadProcessing": "radspreadprocessing-overview"
         "SpreadStreamProcessing": "radspreadstreamprocessing-overview"
         "ZipLibrary": "radziplibrary-overview"
-  -
-    title: "Chatbots"
-    items:
-        "Conversational UI": "chat-overview"
         
 # Assets pipeline configuration
 assets:

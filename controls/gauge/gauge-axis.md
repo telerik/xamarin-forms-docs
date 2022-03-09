@@ -68,6 +68,50 @@ The distance between the concrete element and the axis line is defined by an off
 
 ![Gauge Offset and Length](images/gauge-axis-offset-and-length.png)
 
+## Label Visibility
+
+You can change axis label visibility by setting the `ShowLabels = "False"`. The default value is `True`. 
+
+```XAML
+<telerikGauges:GaugeLinearAxis ShowLabels="False"
+							   Maximum="250"
+                               Minimum="0"
+                               Step="25" />
+```
+
+The following image shows the end result.
+
+![Gauge Label and Tick Visibility](images/gauge-axis-label-hidden.png)
+
+## Tick Thickness
+
+Change the thickness of the axis ticks using the `TickThickness` property. 
+
+If you want to completely remove the ticks set `TickThickness="0"`.
+
+```XAML
+<telerikGauges:GaugeLinearAxis Maximum="250"
+                               Minimum="0"
+                               Step="25" 
+							   TickThickness="0" />
+```
+
+The following image shows the end result.
+
+![Gauge Tick Visibility](images/gauge-axis-tick-hidden.png)
+
+In scenario when Labels are hidden and the tick thickness is set to 0:
+
+```XAML
+<telerikGauges:GaugeLinearAxis Maximum="250"
+                               Minimum="0"
+                               Step="25" 
+							   TickThickness="0" 
+							   ShowLabels="False" />
+```
+
+![Gauge Label and Tick Visibility](images/gauge-axis-label-tick-hidden.png)
+
 >important A sample Gauge Axis Customization example can be found in the Gauge/Customizations folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also

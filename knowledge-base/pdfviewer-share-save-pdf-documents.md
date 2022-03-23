@@ -77,9 +77,11 @@ this.pdfViewer.Source = streamFunc;
  
  ![PdfViewer Loaded document](images/loaded-document.png)
  
-## Save and Share pdf documents. We will need a ViewModel for the bindings we have. PdfViewer.`Document` property which we will use for saving the pdf document, and for two commands we have 
+## Save and Share pdf documents. 
 
-ViewModel with `ShareDocument` and `SaveDocument` implementation:
+We will need a ViewModel for the bindings we have. PdfViewer.`Document` property which we will use for saving the pdf document, and for the two commands we have.
+
+ViewModel with `ShareDocumentCommand` and `SaveDocumentCommand` implementation:
 
 ```C#
 public class ViewModel

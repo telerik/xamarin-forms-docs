@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Extensions
 page_title: Visual Studio Extensions
-description: Check our detailed documentation artile for the Visual Studio Extensions on Windows. Find all you need to know in Xamarin.Forms instalation and deployment documentation.
+description: Check our detailed documentation article for the Visual Studio Extensions on Windows. Find all you need to know in Xamarin.Forms installation and deployment documentation.
 slug: vs-extensions
 position: 4
 ---
@@ -26,7 +26,7 @@ Visual Studio Extensions for Telerik UI for Xamarin are distributed with the Tel
 
 Below you can find more details on both options:
 
-* **Telerik UI for Xamatin installer**: If you install the Telerik Xamarin suite through the [MSI automatic installation]({%slug install-msi%}), you will be prompted to install the extensions automatically;
+* **Telerik UI for Xamarin installer**: If you install the Telerik Xamarin suite through the [MSI automatic installation]({%slug install-msi%}), you will be prompted to install the extensions automatically;
 
 * **Visual Studio Marketplace**: You can download the Telerik Xamarin VSExtensions from within Visual Studio:
 

@@ -17,7 +17,7 @@ From R1 2022 Release RadImageEditor provides commands for programatically editin
 
 * `CropCommand`(`ICommand`): crop the image.
 The `CropCommandContext` object is passed as a parameter to the `CropCommand`. The CropCommandContext has the following properties:
-	* `Geometry`(of type `Telerik.XamarinForems.Common.RadGeometry`): specifies the geomerty of the crop selection.
+	* `Geometry`(of type `Telerik.XamarinForems.Common.RadGeometry`): specifies the geometry of the crop selection.
 	* `Bounds`(of type `Rectangle`): used to gets the current crop bounding rectangle.
 
 * `CropInteractiveCommand`(`ICommand`): initiates the crop action.
@@ -98,7 +98,7 @@ ImageEditor definition in XAML:
 
 ![ImageEditor Commands](images/imageeditor-commands.gif "ImageEditor Commands")
 
->tip Sample Commands example can be found inside the [SDKBrowser app/ImageEditor/Fetures](https://docs.telerik.com/devtools/xamarin/sdk-browser-overview#sdk-browser-application) folder.
+>tip Sample Commands example can be found inside the [SDKBrowser app/ImageEditor/Features](https://docs.telerik.com/devtools/xamarin/sdk-browser-overview#sdk-browser-application) folder.
 
 ## ImageEditor Toolbar Commands
 

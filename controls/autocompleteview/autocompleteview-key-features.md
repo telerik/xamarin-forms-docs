@@ -76,7 +76,7 @@ By default the search is triggered as soon as the user types into the input fiel
 
 ## SuggestionView Position
 
-With R2 2022 AutoCompleteView exposes a new **SuggestionViewPosition** property which enables you to explicitly define whether the suggestions popup will be shown below or above the input field. **SuggestionViewPosition** is of enum type *Telerik.XamarinForms.Input.AutoCompleteView.PopupPosition* and can be set to any of the following values:
+With R1 2022 AutoCompleteView exposes a new **SuggestionViewPosition** property which enables you to explicitly define whether the suggestions popup will be shown below or above the input field. **SuggestionViewPosition** is of enum type *Telerik.XamarinForms.Input.AutoCompleteView.PopupPosition* and can be set to any of the following values:
 
 * (default) Auto
 * Top

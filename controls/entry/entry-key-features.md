@@ -16,9 +16,27 @@ The following properties are related to the Entry Text appearance and alignment:
 
 * **Text**(*string*): Defines the Text;
 * **TextColor**(*Color*): Defines the color of the visible text of the RadEntry control.
-* **VerticalTextAlignment**(*of type Xamarin.Forms.Textalignment*): Specifies the vertical alignment of the RadEntry.Text;
-* **HorizontalTextAlignment**(*of type Xamarin.Forms.Textalignment*): Specifies the horizontal alignment of the RadEntry.Text;
+* **VerticalTextAlignment**(*of type Xamarin.Forms.TextAlignment*): Specifies the vertical alignment of the RadEntry.Text;
+* **HorizontalTextAlignment**(*of type Xamarin.Forms.TextAlignment*): Specifies the horizontal alignment of the RadEntry.Text;
 * **Padding**(*Thickness*): Defines the Padding of the text;
+
+### Example
+
+The example below shows how you can bind **Text** property of the Entry to a `string` property inside your ViewModel.
+
+Here is the Entry definition:
+
+<snippet id='entry-features-textbinding'/>
+
+And a sample ViewModel class which should implement `INotifyPropertyChanged` interface in order to update the UI when the string property is modified.
+
+<snippet id='entry-textbinding-viewmodel'/>
+
+The ViewModel class inherits from `Telerik.XamarinForms.Common.NotifyPropertyChangedBase` which actually implements the `INotifyPropertyChanged` interface.
+
+Last step is to set the ViewModel class as a BindingContext of the page:
+
+<snippet id='entry-textbinding-setviewmodel'/>
 
 ## Watermark 
 

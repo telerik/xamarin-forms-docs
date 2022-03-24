@@ -94,7 +94,7 @@ ImageEditor definition in XAML:
 
 ![ImageEditor Commands](images/imageeditor-commands.gif "ImageEditor Commands")
 
->tip Sample Commands example can be found inside the [SDKBrowser app/ImageEditor/Fetures](https://docs.telerik.com/devtools/xamarin/sdk-browser-overview#sdk-browser-application) folder.
+>tip Sample Commands example can be found inside the [SDKBrowser app/ImageEditor/Features](https://docs.telerik.com/devtools/xamarin/sdk-browser-overview#sdk-browser-application) folder.
 
 ## ImageEditor Toolbar Commands
 

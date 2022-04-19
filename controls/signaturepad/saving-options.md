@@ -31,7 +31,7 @@ Add a sample Image control to the page:
 
 <snippet id='signaturepad-image-control' />
 
-Use the following snippet for saving the image as a Jpeg in a memory stream and use the stream as a source of the defined Image control:
+Use the following snippet for saving the image as a JPEG in a memory stream and use the stream as a source of the defined Image control:
 
 <snippet id='signaturepad-saving-image-method' />
 

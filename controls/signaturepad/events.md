@@ -23,13 +23,13 @@ The SignaturePad for Xamarin exposes the following events:
 
 ## Example
 
-1. The example contains a **X** Button, two Labels and a SignaturePad. The control's definition in XAML:
+The example contains a **X** Button, two Labels and a SignaturePad. The control's definition in XAML:
 
- <snippet id='signaturepad-events'/>
+<snippet id='signaturepad-events'/>
 
-1. Add the following namespace:
+Add the following namespace:
 
- <snippet id='xmlns-telerikinput'/>
+<snippet id='xmlns-telerikinput'/>
 
 Let's add the events:
 

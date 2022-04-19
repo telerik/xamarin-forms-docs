@@ -17,11 +17,11 @@ From R1 2022 Release RadImageEditor provides commands for programatically editin
 
 * `CropCommand`(`ICommand`): crop the image.
 The `CropCommandContext` object is passed as a parameter to the `CropCommand`. The CropCommandContext has the following properties:
-	* `Geometry`(of type `Telerik.XamarinForems.Common.RadGeometry`): specifies the geomerty of the crop selection.
-	* `Bounds`(of type `Rectangle`): used to gets the current crop bounding rectangle.
+	* `Geometry`(of type `Telerik.XamarinForms.Common.RadGeometry`): specifies the geometry of the crop selection.
+	* `Bounds`(of type `Rectangle`): used to get the current crop bounding rectangle.
 
 * `CropInteractiveCommand`(`ICommand`): initiates the crop action.
-* `ResizeCommand`: for image resizing.
+* `ResizeCommand`: for image resizing. 
 The `ResizeCommandContext` object is passed as a parameter to the `ResizeCommand`. The ResizeCommandContext has the following property:
 	* `Size`(of type`Xamarin.Forms.Size`): specifies the size which will be used to resize the image.
 
@@ -29,7 +29,7 @@ The `ResizeCommandContext` object is passed as a parameter to the `ResizeCommand
 
 * `RotateRightCommand`: for image rotation 90 degree to the right.
 
-* `BlurCommand`: applies blur to the image
+* `BlurCommand`: applies blur to the image.
 The `BlurCommandContext` object is passed as a parameter to the `BlurCommand`. The BlurCommandContext has the following property:
 	* `Blur`(`int`): specifies the blur value.
 
@@ -37,21 +37,17 @@ The `BlurCommandContext` object is passed as a parameter to the `BlurCommand`. T
 The `BrightnessCommandContext` object is passed as a parameter to the `BrightnessCommand`. The BrightnessCommandContext has the following property:
 	* `Brightness`(`double`): specifies the brightness value.
 
-
 * `ContrastCommand`(`ICommand`): changes the image contrast.
 The `ContrastCommandContext` object is passed as a parameter to the `ContrastCommand`. The ContrastCommandContext has the following property:
 	* `Contrast`(`double`): specifies the contrast value.
-
 
 * `HueCommand`(`ICommand`): changes the image hue.
 The `HueCommandContext` object is passed as a parameter to the `HueCommand`. The HueCommandContext has the following property:
 	* `Hue`(`double`): specifies the hue value.
 
-
 * `SaturationCommand`(`ICommand`): changes the image saturation.
 The `SaturationCommandContext` object is passed as a parameter to the `SaturationCommand`. The SaturationCommandContext has the following property:
 	* `Saturation`(`double`): specifies the saturation value.
-
 
 * `SharpenCommand`(`ICommand`): changes the image sharpness.
 The `SaturationCommandContext` object is passed as a parameter to the `SharpenCommand`. The SharpenCommandContext has the following property:
@@ -98,7 +94,7 @@ ImageEditor definition in XAML:
 
 ![ImageEditor Commands](images/imageeditor-commands.gif "ImageEditor Commands")
 
->tip Sample Commands example can be found inside the [SDKBrowser app/ImageEditor/Fetures](https://docs.telerik.com/devtools/xamarin/sdk-browser-overview#sdk-browser-application) folder.
+>tip Sample Commands example can be found inside the [SDKBrowser app/ImageEditor/Features](https://docs.telerik.com/devtools/xamarin/sdk-browser-overview#sdk-browser-application) folder.
 
 ## ImageEditor Toolbar Commands
 

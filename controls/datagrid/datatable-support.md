@@ -32,8 +32,6 @@ xmlns:telerikDataGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Tele
 
 Where the DataTable namespace is `using System.Data;`
 
->important A sample Bind to DataTable example can be found in the DataGrid/DataTable folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
-
 ## Filtering, Sorting, Grouping
 
 When using DataTable you can filter, group, sort the data inside the DataGrid through the UI or programatically.  
@@ -58,27 +56,13 @@ DataGrid definition:
 
 <snippet id='datagrid-datatable-update-data'/>
 
-### SelectionChanged
+### Examples
 
-<snippet id='datagrid-datatable-selection'/>
+A sample Bind to DataTable example can be found in the DataGrid/DataTable folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
->important A sample CRUD Operations example can be found in the DataGrid/DataTable folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+A sample CRUD Operations example can be found in the DataGrid/DataTable folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
-## DataGrid Commands with DataTable
-
-DataGrid definition:
-
-<snippet id='datagrid-datatable-binding'/>
-
-CellTapUserCommand implementation:
-
-<snippet id='datagrid-commands-celltap'/>
-
-The ViewModel used:
-
-<snippet id='datagrid-datatable-view-model'/>
-
->important A sample Commands example can be found in the DataGrid/DataTable folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+A sample Commands example can be found in the DataGrid/DataTable folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also
 

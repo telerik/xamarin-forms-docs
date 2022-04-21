@@ -19,7 +19,7 @@ The ProgressBar exposes `Value` and `Progress` properties which are used to set 
 
 Here is a quick example showing how you can update `Value` and get the `Progress`:
 
-<snippet id=`progressbar-configuration-value'/>
+<snippet id='progressbar-configuration-value'/>
 
 And the ProgressBarStartClicked event handler:
 

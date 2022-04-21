@@ -67,5 +67,3 @@ The ProgressBar exposes `LabelHorizontalOptions` property of type `Xamarin.Forms
 
 ## See Also
 
-- [Globalization]({%slug numericinput-globalization%})
-- [Commands]({%slug numericinput-commands%})

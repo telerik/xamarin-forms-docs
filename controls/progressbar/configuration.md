@@ -65,5 +65,11 @@ The ProgressBar exposes `LabelHorizontalOptions` property of type `Xamarin.Forms
 
 <snippet id='progressbar-configuration-labelalignment' />
 
+>important A sample Configuration example can be found in the ProgressBar/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
 ## See Also
 
+- [Animations]({%slug progressbar-animations%})
+- [Indeterminate Mode]({%slug progressbar-indeterminate-mode%})
+- [Events]({%slug progressbar-events%})
+- [Styling]({%slug progressbar-styling%})

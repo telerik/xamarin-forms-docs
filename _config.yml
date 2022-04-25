@@ -307,7 +307,12 @@ navigation:
     controls/popup:
         title: "Popup"
     ## End Popup
-    
+
+    ## ProgressBar
+    controls/progressbar:
+        title: "ProgressBar"
+    ## End ProgressBar
+
     ## Accordion
     controls/accordion:
         title: "Accordion"
@@ -785,6 +790,7 @@ intro_columns:
         "Charts": "chart-overview"
         "Map": "map-overview"
         "Gauge": "gauge-overview"
+        "ProgressBar": "progressbar-overview"
         "Rating": "rating-overview"
         "Barcode": "barcode-overview"    
   -

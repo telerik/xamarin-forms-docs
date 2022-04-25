@@ -59,11 +59,27 @@ You can also use `ValueDisplayMode` set to `Text` together with `CustomText`:
 
 <snippet id='progressbar-configuration-customtext'/>
 
+## Chunks
+
+Divided the ProgressBar in chunks using the `ChunkCount`(`int`) property.
+
+<snippet id='progressbar-configuration-chunks'/>
+
 ## Label Alignment
 
 The ProgressBar exposes `LabelHorizontalOptions` property of type `Xamarin.Forms.LayoutOptions` which defines the horizontal alignment of the label showing the progress. By default `LabelHorizontalOptions` is `LayoutOptions.End`.
 
 <snippet id='progressbar-configuration-labelalignment' />
 
+>important A sample Configuration example can be found in the ProgressBar/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
+
+Here is how the Configuration example looks:
+
+![ProgressBar Configuration](images/progressbar-configuration.png)
+
 ## See Also
 
+- [Animations]({%slug progressbar-animations%})
+- [Indeterminate Mode]({%slug progressbar-indeterminate-mode%})
+- [Events]({%slug progressbar-events%})
+- [Styling]({%slug progressbar-styling%})

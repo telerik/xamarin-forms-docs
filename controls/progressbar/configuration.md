@@ -73,6 +73,10 @@ The ProgressBar exposes `LabelHorizontalOptions` property of type `Xamarin.Forms
 
 >important A sample Configuration example can be found in the ProgressBar/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
+Here is how the Configuration example looks:
+
+![ProgressBar Configuration](images/progressbar-configuration.png)
+
 ## See Also
 
 - [Animations]({%slug progressbar-animations%})

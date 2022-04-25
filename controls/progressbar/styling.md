@@ -16,19 +16,19 @@ The control supports the following styling properties:
 
 <snippet id='progressbar-styling-trackfill'/>
 
-![ProgressBar Getting Started Example](images/progressbar-getting-started.png)
+![ProgressBar Track Fill](images/progressbar-styling-track-fill.png)
 
 * `ProgressFill`(`Brush`): Specifies the fill of the progress indicator.
 
 <snippet id='progressbar-styling-progressfill'/>
 
-![ProgressBar Getting Started Example](images/progressbar-getting-started.png)
+![ProgressBar Progress Fill](images/progressbar-styling-progress-fill.png)
 
 * `IndeterminateFill`(`Brush`): Defines the fill of the indeterminate indicator.
 
 <snippet id='progressbar-styling-indeterminatefill'/>
 
-![ProgressBar Getting Started Example](images/progressbar-getting-started.png)
+![ProgressBar Text Styling](images/styling-indeterminate-fill.png)
 
 The following Style properties are related to the text displayed in the ProgressBar:
 
@@ -38,13 +38,13 @@ The following Style properties are related to the text displayed in the Progress
 
 <snippet id='progressbar-styling-text'/>
 
-![ProgressBar Getting Started Example](images/progressbar-getting-started.png)
+![ProgressBar Text Styling](images/progressbar-styling-text.png)
 
 Style the ProgressBar Chunks using the `SeparatorFill`(`Brush`) property.
 
 <snippet id='progressbar-styling-separator-chunks'/>
 
-![ProgressBar Getting Started Example](images/progressbar-getting-started.png)
+![ProgressBar Chunks Separator Fill](images/progressbar-styling-chunks-separator.png)
 
 >important A sample Styling example can be found in the ProgressBar/Styling folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

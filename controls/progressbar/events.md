@@ -35,6 +35,10 @@ In addition to this, you need to add the following namespace:
 
 <snippet id='progressbar-progresscompleted-event'/>
 
+Te final result when using the `ProgressChanged` and `ProgressCompleted` events:
+
+![ProgressBar Events](images/progressbar-events.gif)
+
 >important A sample Events example can be found in the ProgressBar/Events folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 
 ## See Also

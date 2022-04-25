@@ -16,6 +16,8 @@ Telerik ProgressBar for Xamarin supports two modes of operation:
 
 Using the `IsIndeterminate` property(of type `bool`) you can specify whether the control is in Indeterminate mode or not. The default value is `false`.
 
+![ProgressBar Indeterminate support](images/progressbar-indeterminate-mode.gif)
+
 **Example with Indeterminate mode**
 
 The snippet below shows a simple `RadLinearProgressBar` definition with `IsIndeterminate` property set to `True`.
@@ -25,10 +27,6 @@ The snippet below shows a simple `RadLinearProgressBar` definition with `IsIndet
 In addition to this, you need to add the following namespace:
 
 <snippet id='xmlns-telerikprimitives'/>
-
-Here is the result:
-
-![ProgressBar Getting Started Example](images/progressbar-getting-started.png)
 
 >important A sample Indeterminate Mode example can be found in the ProgressBar/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

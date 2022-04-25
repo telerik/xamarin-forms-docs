@@ -29,7 +29,7 @@ In addition to this, you need to add the following namespace:
 
 Here is the result:
 
-![ProgressBar Getting Started Example](images/progressbar-getting-started.png)
+![ProgressBar Animation Duration and Easing](images/progress-animation-duration-easing.gif)
 
 ## Animation when Indeterminate Mode 
 
@@ -50,7 +50,7 @@ In addition to this, you need to add the following namespace:
 
 Here is the result:
 
-![ProgressBar Getting Started Example](images/progressbar-getting-started.png)
+![ProgressBar Indeterminate Animation Duration and Easing](images/indeterminate-animation-duration-easing.gif)
 
 >important A sample Animation example can be found in the ProgressBar/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

@@ -15,7 +15,7 @@ The ProgressBar for Xamarin exposes the following events:
 	* `sender` of type Telerik.XaarinForms.Primitives.LinearProgressView.
 	* A `ProgressChangedEventArgs` which has a reference to the `Progress`(`double`) property.
 
-* `ProgressCompleted` event is raised when the Value of the ProgressBar reaches the `Maximum`.
+* `ProgressCompleted` event is raised when the Value of the ProgressBar reaches the `Maximum` value.
 
 **Example with ProgressChanged and ProgressCompleted**
 
@@ -27,11 +27,11 @@ In addition to this, you need to add the following namespace:
 
 <snippet id='xmlns-telerikprimitives'/>
 
-**ProgressChanged** event in code behind. The Label text will be updated with the current `Progress` value:
+**ProgressChanged** event in code behind. The Label text is updated with the current `Progress` value:
 
 <snippet id='progressbar-progresschanged-event'/>
 
-**ProgressCompleted** event in code behind. The Label text will be updated with `Text = "Completed"` when the progress reaches the `Maximum` value:
+**ProgressCompleted** event in code behind. The Label text is updated with `Text = "Completed"` when the progress reaches the `Maximum` value:
 
 <snippet id='progressbar-progresscompleted-event'/>
 

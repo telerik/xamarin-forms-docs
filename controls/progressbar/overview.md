@@ -7,19 +7,20 @@ slug: progressbar-overview
 ---
 
 # Overview
-RadProgressBar is designed to display progress information to the user during a long-running operation.
-**Telerik ProgressBar for Xamarin** is designed to display progress information to the user during a long-running operation. You can track the progress various tasks. The control supports multiple lable formats, and has an indeterminate mode. In addition you can customize the control using the Flexible Styling API.  
+
+**Telerik ProgressBar for Xamarin** is designed to display progress information to the users during a long-running operation. With the ProgressBar you can track the progress various tasks. The control has an indeterminate mode and chunks support. In addition you can customize it using the Flexible Styling API.  
 
 ## Key Features
 
-* [Value and Progress]({%slug progressbar-configuration%}): 
-* [Ranges]({%slug progressbar-configuratio%}):
-* [Different value display modes]({%slug progressbar-configuratio%}): The label that shows the current state of the progress can be set to absolute value, percent, text or fully hidden.
-* Render a [custom text]({%slug progressbar-configuratio%}) when `ValueDisplayMode` is set to `Text`.
-* [Indeterminate mode]({%slug progressbar-indeterminate-mode%}):
-* [Different animations]([%slug progressbar-animations%])
+* [Value and Progress]({%slug progressbar-configuration%}#value-and-progress) features are used to set and report the progress of a task inside the PrgressBar control.
+* [Value range]({%slug progressbar-configuration%}#value-range): Define value ranges by setting the minimum and maximum values.
+* [Different value display modes]({%slug progressbar-configuration%}#value-displaymode): The label that shows the current state of the progress can be set to absolute value, percent, text or fully hidden.
+* [Chunk support]({%slug progressbar-configuration%}): The ProgressBar is divided in chunks.
+* Render a [custom text]({%slug progressbar-configuration%}) when `ValueDisplayMode` is set to `Text`.
+* [Indeterminate mode support]({%slug progressbar-indeterminate-mode%}): A mode that displays an animation indicating an unspecified amount of waiting time.
+* [Different animations]([%slug progressbar-animations%]): Apply different animation and animation duration while changing the value of the ProgressBar.
 * [Events]({%slug progressbar-events%}) for tracking when the progress is chnages and when the progress reaches the maximum value.  
-* [Flexible Styling API]({%slug progressbar-styling%}) for customizing the progress and trac fill, label text color and fnt size and more.
+* [Flexible styling API]({%slug progressbar-styling%}) for customizing the progress and trac fill, label text color and fnt size and more.
 
 ## See Also
 

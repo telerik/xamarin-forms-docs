@@ -19,7 +19,7 @@ Customize the animation duration and easing through `ProgressAnimationDuration` 
 
 **Example with ProgressAnimationDuration and ProgressAnimationEasing**
 
-The snippet below shows a simple `RadLinearProgressBar` definition. The PrgressBar `Value` chnages when using the Stepper control. The animation occurs when the control `Value` changes.
+The snippet below shows a simple `RadLinearProgressBar` definition. The PrgressBar `Value` changes when using the Stepper control. The animation occurs when the control `Value` changes.
 
 <snippet id='progressbar-progress-animation-duration-easing'/>
 

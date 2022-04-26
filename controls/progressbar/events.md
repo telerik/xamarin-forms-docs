@@ -17,7 +17,9 @@ The ProgressBar for Xamarin exposes the following events:
 
 * `ProgressCompleted` event is raised when the Value of the ProgressBar reaches the `Maximum` value.
 
-**Example with ProgressChanged and ProgressCompleted**
+
+
+**Example with ProgressChanged and ProgressCompleted events**
 
 The snippet below shows a simple `RadLinearProgressBar` definition:
 
@@ -27,15 +29,15 @@ In addition to this, you need to add the following namespace:
 
 <snippet id='xmlns-telerikprimitives'/>
 
-**ProgressChanged** event in code behind. The Label text is updated with the current `Progress` value:
+`ProgressChanged` event in code behind. The Label text is updated with the current `Progress` value:
 
 <snippet id='progressbar-progresschanged-event'/>
 
-**ProgressCompleted** event in code behind. The Label text is updated with `Text = "Completed"` when the progress reaches the `Maximum` value:
+`ProgressCompleted` event in code behind. The Label text is updated with `Text = "Completed"` when the progress reaches the `Maximum` value:
 
 <snippet id='progressbar-progresscompleted-event'/>
 
-Te final result when using the `ProgressChanged` and `ProgressCompleted` events:
+The final result when using the `ProgressChanged` and `ProgressCompleted` events:
 
 ![ProgressBar Events](images/progressbar-events.gif)
 

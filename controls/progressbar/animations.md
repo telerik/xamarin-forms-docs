@@ -8,18 +8,18 @@ slug: progressbar-animations
 
 # Animations
 
-ProgressBar for Xamarin allows you to apply animation while changing the progress and an animation while the control is in **Indeterminate mode**.  
+ProgressBar for Xamarin allows you to apply animation while changing its `Value` and an animation while in **Indeterminate mode**. In addition you can change the duration of the animation. 
 
 ## Animation during progress change
 
 Customize the animation duration and easing through `ProgressAnimationDuration` and `ProgressAnimationEasing` properties.
 
-* `ProgressAnimationDuration`(`int`): Defines the duration of the animation while control's progress changes. The default calue is `800`.
+* `ProgressAnimationDuration`(`int`): Defines the duration of the animation while control's value changes. The default calue is `800`.
 * `ProgressAnimationEasing`(`Xamarin.Forms.Easing)`): Specifies animation acceleration over time. The default value is `Easing.Linear`.
 
 **Example with ProgressAnimationDuration and ProgressAnimationEasing**
 
-The snippet below shows a simple `RadLinearProgressBar` definition. The PrgressBar value chnages when using the Stepper control. The animation occurs when the cotrol Progress changes.
+The snippet below shows a simple `RadLinearProgressBar` definition. The PrgressBar `Value` changes when using the Stepper control. The animation occurs when the control `Value` changes.
 
 <snippet id='progressbar-progress-animation-duration-easing'/>
 

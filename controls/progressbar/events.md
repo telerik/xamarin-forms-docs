@@ -10,13 +10,11 @@ slug: progressbar-events
 
 The ProgressBar for Xamarin exposes the following events:
 
-* `ProgressChanged` event is raised when progress is changed. The `ProgressChanged` event handler receives two paraeters:
+* `ProgressChanged` event is raised when progress is changed. The `ProgressChanged` event handler receives two parameters:
 
-	* `sender` of type Telerik.XaarinForms.Primitives.LinearProgressView.
-	* A `ProgressChangedEventArgs` which has a reference to the `Progress`(`double`) property.
+	* A `ProgressChangedEventArgs` which has a `Progress`(`double`) property. Using this property you can get the current progress of the ProgressBar control.
 
 * `ProgressCompleted` event is raised when the Value of the ProgressBar reaches the `Maximum` value.
-
 
 
 **Example with ProgressChanged and ProgressCompleted events**
@@ -38,8 +36,6 @@ In addition to this, you need to add the following namespace:
 <snippet id='progressbar-progresscompleted-event'/>
 
 The final result when using the `ProgressChanged` and `ProgressCompleted` events:
-
-![ProgressBar Events](images/progressbar-events.gif)
 
 >important A sample Events example can be found in the ProgressBar/Events folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

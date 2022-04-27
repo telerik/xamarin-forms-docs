@@ -29,7 +29,7 @@ You have two options:
 
 If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For `RadLinearProgressBar` control you have to install the **Telerik.UI.for.Xamarin.Primitives** nuget package. This nuget will automatically refer the *Telerik.UI.for.Xamarin.Common* and *Telerik.UI.for.Xamarin.SkiaSharp* nuget packages.
 
-* Add the references to Telerik assemblies manually, check the list below with the required assemblies for **RadSignaturePad** component:
+* Add the references to Telerik assemblies manually, check the list below with the required assemblies for `RadLinearProgressBar` component:
 
 | Platform | Assemblies |
 | -------- | ---------- |
@@ -65,7 +65,7 @@ Here is the result:
 
 ![ProgressBar Getting Started Example](images/progressbar-getting-started.png)
 
->important **SDK Browser** and **Telerik Xamarin Samples** applications contain different examples that show RadProgressBar's main features. For detailed information on this go to [Xamarin Demos Applications]({%slug developer-focused-examples%}) topic.
+>important **SDK Browser** and **Telerik Xamarin Samples** applications contain different examples that show RadLinearProgressBar main features. For detailed information on this go to [Xamarin Demos Applications]({%slug developer-focused-examples%}) topic.
 
 ## See Also
 

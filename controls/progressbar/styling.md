@@ -33,7 +33,7 @@ The control supports the following styling properties:
 The following Style properties are related to the text displayed in the ProgressBar:
 
 * `TextColor`(`Color`): Defines the color of the Text which displays the progress value.
-* `AlternateTextColor`(`Color`)
+* `AlternateTextColor`(`Color`): Defines the text color when the progress indicator overlaps the label which displays the current progress.
 * `FontSize`(`double`): Defines the font size of the Text which displays the progress value
 
 <snippet id='progressbar-styling-text'/>

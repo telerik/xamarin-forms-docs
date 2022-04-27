@@ -20,7 +20,7 @@ slug: progressbar-overview
 * [Segments support]({%slug progressbar-configuration%}#segments): The ProgressBar can be divided in segments.
 * Render a [custom text]({%slug progressbar-configuration%}) when `ValueDisplayMode` is set to `Text`.
 * [Indeterminate mode support]({%slug progressbar-indeterminate-mode%}): A mode that displays an animation indicating an unspecified amount of waiting time.
-* [Different animations]([%slug progressbar-animations%]): Apply different animation and animation duration while changing the value of the ProgressBar.
+* [Different animations]([%slug progressbar-animations%]): Apply different animation easing and animation duration while changing the value of the ProgressBar.
 * [Events]({%slug progressbar-events%}) for tracking when the progress progress changes and completion.  
 * [Flexible styling API]({%slug progressbar-styling%}) for customizing the progress fill, track fill, indeterminate fill, label text color, font size and more.
 

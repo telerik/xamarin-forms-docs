@@ -8,7 +8,7 @@ slug: progressbar-animations
 
 # Animations
 
-ProgressBar for Xamarin allows you to apply animation while changing its `Value` and an animation while in **Indeterminate mode**. In addition you can change the duration of the animation. 
+ProgressBar for Xamarin allows you to apply dfferent animation easing while changing its `Value` and an animation while in **Indeterminate mode**. In addition you can change the animation duration. 
 
 ## Animation during progress change
 

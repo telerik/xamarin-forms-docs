@@ -53,17 +53,17 @@ The `StringFormat`(`string`) specifies the string format applied to the numeric 
 
 Here is a quick example with `ValueDisplayMode` set to `Value`:
 
-<snippet id='progressbar-configuration-ValueDisplayMode'/>
+<snippet id='progressbar-configuration-valuedisplaymode'/>
 
 You can also use `ValueDisplayMode` set to `Text` together with `CustomText`:
 
 <snippet id='progressbar-configuration-customtext'/>
 
-## Chunks
+## Segments
 
-Divided the ProgressBar in chunks using the `ChunkCount`(`int`) property.
+Divide the ProgressBar in segments using the `SegmentCount`(`int`) property.
 
-<snippet id='progressbar-configuration-chunks'/>
+<snippet id='progressbar-configuration-segments'/>
 
 ## Label Alignment
 

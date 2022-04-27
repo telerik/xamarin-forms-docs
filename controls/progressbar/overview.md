@@ -8,7 +8,7 @@ slug: progressbar-overview
 
 # Overview
 
-**Telerik ProgressBar for Xamarin** is designed to display progress information to the users during a long-running operation. With the ProgressBar you can track the progress of various tasks. The control has an indeterminate mode and chunks support. In addition you can customize it using the Flexible Styling API.  
+**Telerik ProgressBar for Xamarin** is designed to display progress information to the users during a long-running operation. With the ProgressBar you can track the progress of various tasks. The control has an indeterminate mode and segments support. In addition you can customize it using the Flexible Styling API.  
 
 ![ProgressBar Overview](images/progressbar-overview.gif)
 
@@ -17,7 +17,7 @@ slug: progressbar-overview
 * [Value and Progress]({%slug progressbar-configuration%}#value-and-progress) features are used to set and report the progress of a task inside the PrgressBar control.
 * [Value range]({%slug progressbar-configuration%}#value-range): Define value ranges by setting the minimum and maximum values.
 * [Different value display modes]({%slug progressbar-configuration%}#value-displaymode): The label that shows the current state of the progress can be set to absolute value, percent, text or fully hidden.
-* [Chunks support]({%slug progressbar-configuration%}): The ProgressBar is divided in chunks.
+* [Segments support]({%slug progressbar-configuration%}#segments): The ProgressBar can be divided in segments.
 * Render a [custom text]({%slug progressbar-configuration%}) when `ValueDisplayMode` is set to `Text`.
 * [Indeterminate mode support]({%slug progressbar-indeterminate-mode%}): A mode that displays an animation indicating an unspecified amount of waiting time.
 * [Different animations]([%slug progressbar-animations%]): Apply different animation and animation duration while changing the value of the ProgressBar.

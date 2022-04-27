@@ -40,11 +40,14 @@ The following Style properties are related to the text displayed in the Progress
 
 ![ProgressBar Text Styling](images/progressbar-styling-text.png)
 
-Style the ProgressBar Chunks using the `SeparatorFill`(`Brush`) property.
+Style the ProgressBar segments using the following properties:
 
-<snippet id='progressbar-styling-separator-chunks'/>
+* `SegmentSeparatorFill`(`Brush`): Specifies the fill of the segments separators.
+* `SegmentSeparatorThickness`(`double`): Sets the thickness of the segments separators.
 
-![ProgressBar Chunks Separator Fill](images/progressbar-styling-chunks-separator.png)
+<snippet id='progressbar-styling-separator-segments'/>
+
+![ProgressBar Segments Separator Fill](images/progressbar-styling-segments-separator.png)
 
 >important A sample Styling example can be found in the ProgressBar/Styling folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}).
 

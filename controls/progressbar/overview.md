@@ -17,11 +17,11 @@ slug: progressbar-overview
 * [Value and Progress]({%slug progressbar-configuration%}#value-and-progress) features are used to set and report the progress of a task inside the PrgressBar control.
 * [Value range]({%slug progressbar-configuration%}#value-range): Define value ranges by setting the minimum and maximum values.
 * [Different value display modes]({%slug progressbar-configuration%}#value-displaymode): The label that shows the current state of the progress can be set to absolute value, percent, text or fully hidden.
-* [Chunk support]({%slug progressbar-configuration%}): The ProgressBar is divided in chunks.
+* [Chunks support]({%slug progressbar-configuration%}): The ProgressBar is divided in chunks.
 * Render a [custom text]({%slug progressbar-configuration%}) when `ValueDisplayMode` is set to `Text`.
 * [Indeterminate mode support]({%slug progressbar-indeterminate-mode%}): A mode that displays an animation indicating an unspecified amount of waiting time.
 * [Different animations]([%slug progressbar-animations%]): Apply different animation and animation duration while changing the value of the ProgressBar.
-* [Events]({%slug progressbar-events%}) for tracking when the progress is chnages and when the progress reaches the maximum value.  
+* [Events]({%slug progressbar-events%}) for tracking when the progress progress changes and completion.  
 * [Flexible styling API]({%slug progressbar-styling%}) for customizing the progress fill, track fill, indeterminate fill, label text color, font size and more.
 
 ## See Also

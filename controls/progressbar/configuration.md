@@ -15,15 +15,19 @@ This article will explain all configuration options that ProgressBar control pro
 The ProgressBar exposes `Value` and `Progress` properties which are used to set and report, respectively, the progress of a task inside the ProgressBar control.
 
 * `Value`&mdash;Sets the value of the ProgressBar. When `Value` property is updated, this initiates the progress animation of the progress bar.
-* `Progress`&mdash;Reports the current progress of the ProgressBar. `Progress` property is updated internally after `Value` is updated and progress animation is complete. It can be used to display the current progress either through `CustomText` property or in external UI.
+* `Progress`&mdash;Reports the current progress of the ProgressBar. `Progress` property is updated internally after `Value` is updated and progress animation is complete.
 
 Here is a quick example showing how you can update `Value` and get the `Progress`:
 
 <snippet id='progressbar-configuration-value'/>
 
-And the ProgressBarStartClicked event handler:
+And the Update button click event handler:
 
 <snippet id='progressbar-configuration-valueupdated'/>
+
+Check the result in the gif below:
+
+![](images/progressbar-progress.gif)
 
 ## Value Range
 
@@ -46,8 +50,8 @@ The `StringFormat`(`string`) specifies the string format applied to the numeric 
 
 `ValueDisplayMode` property of enum type `Telerik.XamarinForms.Primitives.ProgressBar.ValueDisplayMode` can be set to any of the following values:
 
-* (default) Percent&mdash;Displays the progress status in percentage.
-* Value&mdash;Displays the progress status as an absolute value.
+* (default) Percent&mdash;Displays the progress as percent from the range from minimum to maximum;
+* Value&mdash;Displays the Progress value.
 * Text&mdash;Shows custom text inside the progress bar label. You would need to combine it with `CustomText` property of the ProgressBar.
 * None&mdash; No text is shown inside the progress bar.
 

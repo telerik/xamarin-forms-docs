@@ -8,11 +8,11 @@ slug: progressbar-getting-started
 
 # Getting Started
 
-This article will guide you through the steps needed to add a basic **RadProgressBar** control in your application.
+This article will guide you through the steps needed to add a basic **ProgressBar** control in your application.
 
 * [Setting up the app](#1-setting-up-the-app)
 * [Adding the required Telerik references](#2-adding-the-required-telerik-references)
-* [Adding RadProgressBar control](#3-adding-radprogressbar-control)
+* [Adding RadLinearProgressBar control](#3-adding-radlinearprogressbar-control)
 
 ## 1. Setting up the app
 
@@ -38,7 +38,7 @@ If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have 
 | iOS      | Telerik.Xamarin.iOS.dll <br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
 | UWP      | Telerik.Core.dll<br/>Telerik.UI.Xaml.Primitives.UWP.dll<br/>Telerik.XamarinForms.Common.dll<br/>Telerik.XamarinForms.Primitives.dll |
 
-## 3. Adding RadProgressBar control
+## 3. Adding RadLinearProgressBar control
 
 You could use one of the following approaches:
 

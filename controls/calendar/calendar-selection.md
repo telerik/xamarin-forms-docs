@@ -30,7 +30,7 @@ The table below lists the supported selection modes for each view mode:
 | View \ Selection 	|	None   | Singe 		| Multiple | Range	  |
 | -----------------	| -------- | ---------- | -------- | -------- |
 | Month 		   	| &#x2714; | &#x2714;	| &#x2714; | &#x2714; |
-| Day 			   	| &#x2714; | &#x2714;	| - 	   | -	   	  |
+| Day 			   	| &#x2714; | &#x2714; on Android and iOS	| - 	   | -	   	  |
 | MultiDay 		   	| &#x2714; | -        	| -  	   | -        |
 | Agenda			| -		   | -			| - 	   | -		  |
 | Year				| -	 	   | -			| - 	   | - 		  |
@@ -39,7 +39,7 @@ The table below lists the supported selection modes for each view mode:
 | YearNumbers		| -		   | -			| -		   | -		  |
 | Flow				| -		   | -			| - 	   | -		  |
 
->important MultiDay View mode does not provide support for Selection. DayView only supports Single Selection.
+>important MultiDay View mode does not provide support for Selection. DayView only supports Single Selection on Android and iOS.
 
 For more details about the supported view modes for each platform, please check the [Calendar and Scheduling View Modes article]({%slug calendar-features-navigation-and-view-mode%}).
 

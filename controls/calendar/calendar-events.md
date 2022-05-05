@@ -21,6 +21,7 @@ The RadCalendar component exposes the following events:
 * **SelectionChanged**: Occurs when the selected date is changed programmatically or due to user interaction. The SelectionChanged event handler receives two parameters:
 	* The sender argument which is of type *object*, but can be cast to the *RadCalendar* type.
 	* A __ValueChangedEventArgs&lt;object&gt;__ object which provides old and new value of the __SelectedDate__. The values are of type *object*, but can be cast to the *DateTime* type.
+SelectionChanged event is fired on UWP in MonthView mode.
 
 * **MonthChanged**: Occurs when the calendar month is changed in **Month** ViewMode.
 	* The `sender` argument which is of type *object*, but can be cast to the *RadCalendar* type.

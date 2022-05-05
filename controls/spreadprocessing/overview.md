@@ -84,6 +84,10 @@ This library enables you to work with spreadsheet documents – create ones from
 
 * [**DataTable**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/data-table/using-data-table-format-provider)
 
+* [**Comments**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/comments): You can leave comments and replies on cells, which allows for easier team communication.
+
+* [**Notes**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/notes): Note important information in your worksheet.
+
 ## See Also
 
 * [Getting Started](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/getting-started)

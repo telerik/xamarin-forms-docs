@@ -3,7 +3,7 @@ url: "https://docs.telerik.com/devtools/xamarin"
 site_name: Xamarin
 
 # Exclude files which should not be in the output 
-exclude: [README.md,Gemfile,Gemfile.lock]
+exclude: [README.md,Gemfile,Gemfile.lock, cloud-integration]
 exclude_navigation: [knowledge-base/*]
 
 navigation:

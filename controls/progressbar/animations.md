@@ -14,7 +14,7 @@ ProgressBar for Xamarin allows you to apply dfferent animation easing while chan
 
 Customize the animation duration and easing through `ProgressAnimationDuration` and `ProgressAnimationEasing` properties.
 
-* `ProgressAnimationDuration`(`int`): Defines the duration of the animation while control's value changes. The default calue is `800`.
+* `ProgressAnimationDuration`(`int`): Defines the duration of the animation while control's value changes. The default value is `800`.
 * `ProgressAnimationEasing`(`Xamarin.Forms.Easing)`): Specifies animation acceleration over time. The default value is `Easing.Linear`.
 
 **Example with ProgressAnimationDuration and ProgressAnimationEasing**

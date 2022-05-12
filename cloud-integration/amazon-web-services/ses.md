@@ -3,8 +3,6 @@ title: Simple Email Service
 page_title: Simple Email Service
 description: Simple Email Service
 slug: cloud-services/aws/ses
-tags: cloud,aws
-published: True
 position: 4
 
 ---

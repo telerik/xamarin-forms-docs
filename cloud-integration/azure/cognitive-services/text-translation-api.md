@@ -3,8 +3,6 @@ title: Text Translation
 page_title: Text Translation
 description: Text Translation API
 slug: cloud-integration-text-translation-azure
-tags: cloud,integration,azure,cognitive,services,translation,text
-published: True
 position: 0
 ---
 

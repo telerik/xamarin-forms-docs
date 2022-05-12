@@ -3,8 +3,6 @@ title: Text Analysis
 page_title: Text Analysis
 description: Text Analysis
 slug: cloud-integration-cognitive-services-text-analysis
-tags: cloud,integration,azure,cognitive,services,text,analysis
-published: True
 position: 2
 ---
 

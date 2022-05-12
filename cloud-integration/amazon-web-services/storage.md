@@ -3,8 +3,6 @@ title: Storage (S3)
 page_title: Storage (S3) 
 description: Storage (S3)
 slug: cloud-services/aws/storage
-tags: cloud,aws,storage
-published: True
 position: 3
 ---
 

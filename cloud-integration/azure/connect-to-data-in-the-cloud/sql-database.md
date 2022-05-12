@@ -3,8 +3,6 @@ title: SQL Database
 page_title: SQL Database
 description: SQL Database
 slug: cloud-integration-azure-sql-database
-tags: cloud,integration,azure,sql,database
-published: True
 position: 0
 ---
 

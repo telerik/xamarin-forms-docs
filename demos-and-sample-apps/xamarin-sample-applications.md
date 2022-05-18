@@ -17,8 +17,6 @@ The applications are developed using the Telerik UI for Xamarin controls. These 
 The Telerik ERP (Enterprise Resource Management Application) is a showcase software that demonstrates how you can view and process different financial transactions and processes. From clients to orders and vendors, this application provides a quick and efficient way to manage your business.
 
 The application is created with the powerful Telerik UI for Xamarin controls and demonstrates how one can architecture real-world line of business application. It uses the most popular Telerik UI for Xamarin controls such as Charts, Data Grid, ListView, Inputs, BusyIndicator and also features MVVM utilizing the MVVM Cross framework.
-	
-The "Telerik UI for Xamarin ERP Application" is in the app stores (Google Play, Apple App Store and Microsoft Store).
 
 The application can be accessed in the following ways:
 

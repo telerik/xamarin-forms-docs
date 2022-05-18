@@ -18,7 +18,7 @@ The Telerik ERP (Enterprise Resource Management Application) is a showcase softw
 
 The application is created with the powerful Telerik UI for Xamarin controls and demonstrates how one can architecture real-world line of business application. It uses the most popular Telerik UI for Xamarin controls such as Charts, Data Grid, ListView, Inputs, BusyIndicator and also features MVVM utilizing the MVVM Cross framework.
 	
-The "Telerik UI for Xamarin ERP Application" is in the app stores (Google Play, Apple App Store and  Windows Store).
+The "Telerik UI for Xamarin ERP Application" is in the app stores (Google Play, Apple App Store and Microsoft Store).
 
 The application can be accessed in the following ways:
 
@@ -26,7 +26,7 @@ The application can be accessed in the following ways:
 * You can install it from the corresponding app store 
 	* [Google Play](https://play.google.com/store/apps/details?id=com.telerik.ErpApp), 
 	* [Apple App Store](https://apps.apple.com/us/app/telerik-erp/id1450527259) 
-	* [Windows Store](https://www.microsoft.com/bg-bg/p/telerik-erp/9nmk4g533qlh?rtc=1&activetab=pivot:overviewtab).
+	* [Microsoft Store](https://apps.microsoft.com/store/detail/telerik-erp/9NMK4G533QLH?Wt.mc_id=DX_MVP5000553).
 
 The image below shows how the Telerik ERP app looks on mobile phone:
 
@@ -54,7 +54,7 @@ The application can be accessed in the following ways:
 * You can install it from the corresponding app store 
 	* [Google Play](https://play.google.com/store/apps/details?id=com.telerik.ArtGalleryCRM), 
 	* [Apple App Store](https://apps.apple.com/us/app/art-gallery-crm/id1449462263?ls=1) 
-	* [Windows Store](https://www.microsoft.com/bg-bg/p/telerik-crm/9pbnqz08r0c8).
+	* [Microsoft Store](https://apps.microsoft.com/store/detail/telerik-crm/9PBNQZ08R0C8?Wt.mc_id=DX_MVP5000553).
 
 The image below shows how the Telerik CRM app looks:
 
@@ -79,7 +79,7 @@ The application can be accessed in the following ways:
 * You can install it from the corresponding app store 
 	* [Google Play](https://play.google.com/store/apps/details?id=com.telerik.TodoApp), 
 	* [Apple App Store](https://apps.apple.com/us/app/telerik-to-do/id1475654512) 
-	* [Windows Store](https://www.microsoft.com/en-us/p/telerik-to-do/9ns4dbcsdzh6).
+	* [Microsoft Store](https://apps.microsoft.com/store/detail/telerik-todo/9NS4DBCSDZH6?Wt.mc_id=DX_MVP5000553).
 
 The image below shows how the Telerik ToDo app looks:
 
@@ -99,7 +99,7 @@ The application can be accessed in the following ways:
 * You can install it from the corresponding app store 
 	* [Google Play](https://play.google.com/store/apps/details?id=com.telerik.tagit), 
 	* [Apple App Store](https://apps.apple.com/us/app/telerik-tagit/id1310584457) 
-	* [Windows Store](https://www.microsoft.com/bg-bg/p/telerik-tagit/9pb07plrwpfs).
+	* [Windows Store](https://www.microsoft.com/en-us/p/telerik-tagit/9pb07plrwpfs).
 
 The image below shows how the Telerik Tagit app looks:
 

@@ -20,7 +20,7 @@ You can access the Xamarin Samples application in the following ways:
 
 * If you have already installed **Telerik UI for Xamarin**, navigate to the **/[installation-path]/Telerik UI for Xamarin [version]/QSF/** folder and open the `QSF.sln` file;
 * You can explore the code directly in the [Xamarin Samples repository on GitHub](https://github.com/telerik/telerik-xamarin-forms-samples/tree/master/QSF);
-* You can install it from the corresponding app store ([Google Play](https://play.google.com/store/apps/details?id=com.telerik.xamarin&hl=en), [Apple App Store](https://apps.apple.com/dm/app/telerik-ui-for-xamarin-examples/id1083924868) or [Windows Store](https://www.microsoft.com/en-us/p/telerik-ui-for-xamarin-demo/9pld1kn2tcxs)).
+* You can install it from the corresponding app store ([Google Play](https://play.google.com/store/apps/details?id=com.telerik.xamarin&hl=en), [Apple App Store](https://apps.apple.com/dm/app/telerik-ui-for-xamarin-examples/id1083924868) or [Microsoft Store](https://apps.microsoft.com/store/detail/telerik-ui-for-xamarin-demo/9PLD1KN2TCXS?Wt.mc_id=DX_MVP5000553)).
 
 The image below shows the Xamarin Samples application main view with all the Telerik UI for Xamarin controls. There are the **Latest** and **Featured** sections that give a quick overview of the features and recently introduced components.
 

@@ -78,6 +78,25 @@ In addition to this, you need to add the following namespace:
 xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
 ```
 
+## IsLooping property
+
+The DatePicker exposes **IsLooping** boolean property which indicates whether the items in the popup should loop infinitely while scrolling. By default looping is enabled, to disable it, just set **IsLooping** to *False*.
+
+```XAML
+<telerikInput:RadDatePicker IsLooping="False" />
+```
+
+Check the difference in the behavior according to **IsLooping** below:
+
+#### IsLooping set to True (default)
+
+![](images/datepicker_islooping_true.gif)
+
+#### IsLooping set to False
+
+![](images/datepicker_islooping_false.gif)
+
+
 >important A sample Key Features example can be found in the DatePicker/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
 
 ## See Also

@@ -59,6 +59,24 @@ RadTimeSpan Picker DefaultHighlightedTime(*TimeSpan*) defines the System.TimeSpa
 
 >note The format set for **DisplayStringFormat** should be a valid timespan format. 
 
+## IsLooping property
+
+The TimeSpanPicker exposes **IsLooping** boolean property which indicates whether the items in the popup should loop infinitely while scrolling. By default looping is enabled, to disable it, just set **IsLooping** to *False*.
+
+```XAML
+<telerikInput:RadTimeSpanPicker IsLooping="False" />
+```
+
+Check the difference in the behavior according to **IsLooping** below:
+
+#### IsLooping set to True (default)
+
+![](images/timespanpicker_islooping_true.gif)
+
+#### IsLooping set to False
+
+![](images/timespanpicker_islooping_false.gif)
+
 >important A sample Key Features example can be found in the TimeSpanPicker/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
 
 ## See Also

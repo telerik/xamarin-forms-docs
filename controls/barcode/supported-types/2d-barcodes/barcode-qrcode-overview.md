@@ -16,7 +16,11 @@ A QR code uses four standardized encoding modes (numeric, alphanumeric, byte/bin
 
 ## Visual Structure
 
-There are a total of 40 versions available in the QR code, from 21 by 21 modules to 177 by 177 modules, increasing in steps of 4 modules per side. Naturally, higher versions are used to encode larger amounts of data:
+There are a total of 40 versions available in the QR code, from 21 by 21 modules to 177 by 177 modules, increasing in steps of 4 modules per side.
+
+The `Version`(`int`) property defines the version of the QR code. The version determinates the size of the QR code and the amount of the information that can be encoded. Accepted values are in the range from 1 to 40. If you set the version to a number outside of this range, version will be calculated automatically.
+
+Naturally, higher versions are used to encode larger amounts of data:
 
 ![barcode-2d-barcodes-qrcode-overview 001](images/barcode-2d-barcodes-qrcode-overview001.png)
 

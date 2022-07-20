@@ -22,7 +22,7 @@ The purpose of this tutorial is to show you:
 
 	* [Interval](#interval)
 
-	* [DayOfMonth](#dayofmonth)
+	* [DaysOfMonth](#daysofmonth)
 
 	* [DayOrdinal](#dayordinal)
 
@@ -44,8 +44,8 @@ If you want to set the __frequency__ of the recurrence, you need to set the __Re
 
 * **Daily**: Use it whenever you want the appointment to occur every day.
 * **Weekly**: Use it whenever you want the appointment to occur every week.
-* **Monthly**: Use it whenever you want the appointment to occur every month.
-* **Yearly**: Use it whenever you want the appointment to occur every year.
+* **Monthly**: Use it whenever you want the appointment to occur every month. Use it together with [DaysOfMonth](#daysofmonth) to mark the exact days the event occurs on.
+* **Yearly**: Use it whenever you want the appointment to occur every year. Use it together with [DaysOfMonth](#daysofmonth) and [MonthOfYear](#monthofyear) to mark the exact date the event occurs on.
 
 ## DaysOfWeekMask
 
@@ -78,9 +78,9 @@ If you want to set the number of days between each recurrence, you need to speci
 
 >tipCombining the __Interval__ property with the __DaysOfWeekMask__ and __Frequency__ pattern gives you even more flexibility when creating recurring appointments.
 
-## DayOfMonth
+## DaysOfMonth
 
-When you want to specify on which day of the month the appointment occurs, you need to set the __DayOfMonth__ property.
+When you want to specify on which day of the month the appointment occurs, you need to set the __DaysOfMonth__ property.
 
 ## DayOrdinal
 
@@ -96,7 +96,7 @@ When you want to specify a limit of the occurrences for the appointment, then yo
 
 ## RepeatUntil
 
-When you want to specify the end date of the appointment's occurrences, then you need to set the __RepatUntil__ property. 
+When you want to specify the end date of the appointment's occurrences, then you need to set the __RepeatUntil__ property. 
 
 ## See Also
 

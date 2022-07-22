@@ -96,7 +96,7 @@ If you're receiving this error when connecting to Telerik Nuget Server, you coul
     1. Use the email address in the place of username
     2. Make sure any special characters are escaped (see *Handling Special Characters in Password* below)
     3. Click "Save" 
-6. Make sure the URL does not have a trailing slash, it must be only `https://nuget.telerik.com/nuget`
+6. If you are using the old v2 NuGet server, make sure the URL does not have a trailing slash. It must be only be `https://nuget.telerik.com/nuget`
 
 Now you can reopen Visual Studio and access the Telerik NuGet server. 
 

@@ -129,3 +129,4 @@ After you enter your Telerik.com username and password, you should see an XML se
 - [System Requirements]({%slug system-requirements%})
 - [Getting Started on Windows]({%slug getting-started-windows%})
 - [Getting Started on Mac]({%slug getting-started-mac%})
+- [Restoring NuGet Packages in Your CI Workflow]({%slug using-nuget-keys%})

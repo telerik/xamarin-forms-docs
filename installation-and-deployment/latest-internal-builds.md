@@ -3,7 +3,7 @@ title: Latest Internal Builds
 page_title: Latest Internal Builds
 description: Check our detailed documentation article on how to use Telerik UI for Xamarin Latest Internal Builds.
 slug: latest-internal-builds
-position: 9
+position: 15
 ---
 
 # Latest Internal Builds

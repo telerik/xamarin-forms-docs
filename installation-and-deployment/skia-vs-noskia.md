@@ -3,7 +3,7 @@ title: Lite vs Standard Assemblies
 page_title: Lite vs Standard Assemblies
 description: Check our detailed documentation artile for Lite vs Standard Assemblies. Find all you need to know in Xamarin.Forms instalation and deployment documentation.
 slug: telerik-light-assemblies
-position: 9
+position: 20
 ---
 
 # Lite vs Standard Assemblies

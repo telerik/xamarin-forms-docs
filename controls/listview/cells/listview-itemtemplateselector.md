@@ -14,23 +14,23 @@ This article will show you how you can utilize this property to achieve divergen
 
 ## TemplateSelector Implementation
 
-Let's assume you have a **RadListView** bound to a collection of multiple **DataItem** objects and the appearance of each item depends on a specific property of the business object. Below is the **DataItem** class definition:
+**1.** Let's assume you have a **RadListView** bound to a collection of multiple **DataItem** objects and the appearance of each item depends on a specific property of the business object. Below is the **DataItem** class definition:
 
 <snippet id='listview-itemtemplateselector-dataitem'/>
 
-The first step is to declare a simple **RadListView** and set its **ItemsSource** property to point to the collection of custom objects:
+**2.** The first step is to declare a simple **RadListView** and set its **ItemsSource** property to point to the collection of custom objects:
 
 <snippet id='listview-itemtemplateselector-sourcecollection'/> 
 
-Eventually, as you need to apply different template to the item based on the value of the **IsSpecial** property, you have to create a custom class that inherits from **DataTemplateSelector**. This class will return different **DataTemplate** according to whether the value is true or false:
+**3.** Eventually, as you need to apply different template to the item based on the value of the **IsSpecial** property, you have to create a custom class that inherits from **DataTemplateSelector**. This class will return different **DataTemplate** according to whether the value is true or false:
 
 <snippet id='listview-itemtemplateselector-customitemtemplateselector'/>
 
-As a last step, you need to set this custom class as the **ItemTemplateSelector** property of the **RadListView** and customize the templates within it:
+**4.** As a last step, you need to set this custom class as the **ItemTemplateSelector** property of the **RadListView** and customize the templates within it:
 
 <snippet id='listview-itemtemplateselector-setting-itemtemplateselector'/>
 
-Running the sample will lead to the following appearance of the control:
+**5.** Running the sample will lead to the following appearance of the control:
 
 ![listview itemtemplateselector](../images/listview-itemtemplateselector.png)
 

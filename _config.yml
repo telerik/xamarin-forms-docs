@@ -15,14 +15,11 @@ navigation:
     getting-started:
         title: "Getting Started"
         position: 1
-    demos-and-sample-apps:
-        title: "Demos and Sample Apps"
-        position: 2
-    licensing:
-        title: "Licensing"
-        position: 4
     installation-and-deployment:
         title: "Installation and Deployment"
+        position: 2
+    demos-and-sample-apps:
+        title: "Demos and Sample Apps"
         position: 5
     upgrade:
         title: "Upgrade"
@@ -42,6 +39,9 @@ navigation:
     styling-and-appearance:
         title: "Styling and Appearance"
         position: 10
+    licensing:
+        title: "Licensing"
+        position: 11
     cloud-integration:
         title: "Cloud Integration"
         position: 11  
@@ -60,7 +60,7 @@ navigation:
         position: 1
     cloud-integration/azure/connect-to-data-in-the-cloud:
         title: "Connect to Data in the Cloud"
-        position: 3				
+        position: 3			
     cloud-integration/azure/cognitive-services:
         title: "Cognitive Services"
         position: 5

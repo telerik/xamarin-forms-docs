@@ -3,8 +3,6 @@ title: Cosmos DB
 page_title: Cosmos DB
 description: Integration between Cosmos DB and RadListView
 slug: cloud-integration-cosmosdb
-tags: cloud,integration,radlistview,cosmosdb
-published: True
 position: 1
 ---
 

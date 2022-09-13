@@ -14,7 +14,7 @@ slug: progressbar-overview
 
 ## Key Features
 
-* [Value and Progress]({%slug progressbar-configuration%}#value-and-progress) features are used to set and report the progress of a task inside the PrgressBar control.
+* [Value and Progress]({%slug progressbar-configuration%}#value-and-progress) features are used to set and report the progress of a task inside the ProgressBar control.
 * [Value range]({%slug progressbar-configuration%}#value-range): Define value ranges by setting the minimum and maximum values.
 * [Different value display modes]({%slug progressbar-configuration%}#value-displaymode): The label that shows the current state of the progress can be set to absolute value, percent, text or fully hidden.
 * [Segments support]({%slug progressbar-configuration%}#segments): The ProgressBar can be divided in segments.

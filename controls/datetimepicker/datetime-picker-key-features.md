@@ -96,6 +96,25 @@ Here is how the Time Picker looks when Time Format String is applied:
 
 ![Date Picker](images/datetimepicker_time_picker.png)
 
+## IsLooping property
+
+The DateTimePicker exposes **IsLooping** boolean property which indicates whether the items in the popup should loop infinitely while scrolling. By default looping is enabled, to disable it, just set **IsLooping** to *False*.
+
+```XAML
+<telerikInput:RadDateTimePicker IsLooping="False" />
+```
+
+Check the difference in the behavior according to **IsLooping** below:
+
+#### IsLooping set to True (default)
+
+![](images/datetimepicker_islooping_true.gif)
+
+#### IsLooping set to False
+
+![](images/datetimepicker_islooping_false.gif)
+
+
 >important A sample Key Features example can be found in the DateTimePicker/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
 
 ## See Also

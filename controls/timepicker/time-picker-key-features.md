@@ -60,6 +60,24 @@ Here is a sample Time Picker definition:
 
 <snippet id='timepicker-keyfeatures-time-defaulthighlighted' />
 
+## IsLooping property
+
+The TimePicker exposes **IsLooping** boolean property which indicates whether the items in the popup should loop infinitely while scrolling. By default looping is enabled, to disable it, just set **IsLooping** to *False*.
+
+```XAML
+<telerikInput:RadTimePicker IsLooping="False" />
+```
+
+Check the difference in the behavior according to **IsLooping** below:
+
+#### IsLooping set to True (default)
+
+![](images/timepicker_islooping_true.gif)
+
+#### IsLooping set to False
+
+![](images/timepicker_islooping_false.gif)
+
 >important A sample Key Features example can be found in the TimePicker/Features folder of the [SDK Samples Browser application]({%slug developer-focused-examples%}#sdk-browser-application).
 
 ## See Also

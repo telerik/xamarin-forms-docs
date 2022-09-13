@@ -96,7 +96,7 @@ If you're receiving this error when connecting to Telerik Nuget Server, you coul
     1. Use the email address in the place of username
     2. Make sure any special characters are escaped (see *Handling Special Characters in Password* below)
     3. Click "Save" 
-6. Make sure the URL does not have a trailing slash, it must be only `https://nuget.telerik.com/nuget`
+6. If you are using the old v2 NuGet server, make sure the URL does not have a trailing slash. It must be only be `https://nuget.telerik.com/nuget`
 
 Now you can reopen Visual Studio and access the Telerik NuGet server. 
 
@@ -129,3 +129,4 @@ After you enter your Telerik.com username and password, you should see an XML se
 - [System Requirements]({%slug system-requirements%})
 - [Getting Started on Windows]({%slug getting-started-windows%})
 - [Getting Started on Mac]({%slug getting-started-mac%})
+- [Restoring NuGet Packages in Your CI Workflow]({%slug using-nuget-keys%})

@@ -20,13 +20,60 @@ The following example uses the `DelegateAggregateDescriptor` and a custom implem
 
 **1.** First, create a class that inherits from the `IKeyLookup` interface. It will return the values of a Price property declared in our business model that is of type double.
 
-<snippet id='datagrid-delegate-aggregate-key'/>
+```C#
+public class SumIfKeyLookUp : IKeyLookup
+{
+    public object GetKey(object instance) => ((Data)instance).Price; 
+}
+```
 
 **2.** Then, declare a class that inherits from the `IAggregateFunction` interface. This class will contain our logic for the SumIf function which we will later implement through XAML:
 
-<snippet id='datagrid-delegate-aggregate-function'/>
+```C#
+public class SumIfAggregateFunction : IAggregateFunction
+{
+    private double value;
+    public double GreaterThanValue { get; set; }
 
-**3.** Declare the `DelegateAggregateDescriptor` in XAML.
+    public object GetValue() => $"SumIf (Price > {this.GreaterThanValue}): " + string.Format("{0:C}", this.value);
+
+    public IAggregateFunction Clone() => new SumIfAggregateFunction() { GreaterThanValue = this.GreaterThanValue };
+
+    public void Accumulate(object value)
+    {
+        var price = (double)value;
+        if (price > this.GreaterThanValue)
+        {
+            this.value += price;
+        }
+    }
+
+    public void Merge(IAggregateFunction aggregateFunction)
+    {
+        var myFunction = aggregateFunction as SumIfAggregateFunction;
+        if (myFunction != null)
+        {
+            this.value += myFunction.value;
+        }
+    }
+}
+```
+
+**3.** DataGrid ItemsSource:
+
+```C#
+this.dataGrid.ItemsSource = new List<Data>
+{
+    new Data { Name = "KeyBoard", Price = 24.6, DeliveryPrice = 2, Quantity = 32 },
+    new Data { Name = "Mouse", Price = 30.9, DeliveryPrice = 2, Quantity = 54 },
+    new Data { Name = "Video Card", Price = 760.7, DeliveryPrice = 3, Quantity = 17 },
+    new Data { Name = "Motherboard", Price = 210.4, DeliveryPrice = 4, Quantity = 12 },
+    new Data { Name = "SSD", Price = 42.9, DeliveryPrice = 3, Quantity = 88 },
+    new Data { Name = "RAM", Price = 50, DeliveryPrice = 4, Quantity = 126 }
+};
+```
+
+**4.** Declare the `DelegateAggregateDescriptor` in XAML.
 
 ```XAML
 <telerikDataGrid:RadDataGrid x:Name="dataGrid"

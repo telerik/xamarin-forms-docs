@@ -47,4 +47,13 @@ The following example shows how to add a `PropertyAggregateDescriptor` to the Da
 </telerikDataGrid:DataGridNumericalColumn>
 ```
 
+And the namespaces used:
+
+```XAML
+xmlns:telerikDataGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid" 
+xmlns:telerikCommon="clr-namespace:Telerik.XamarinForms.Common.Data;assembly=Telerik.XamarinForms.Common"
+```
+
 ## See Also
+
+- [Delegate Aggregate Descriptor]({%slug datagrid-delegate-aggregate-descriptor%})

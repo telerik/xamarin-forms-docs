@@ -38,3 +38,4 @@ In order to show the Aggregates in the Header of the group the `ShowGroupHeaderA
 ## See Also
 
 - [Property Aggregate Descriptor]({%slug datagrid-property-aggregate-descriptor%})
+- [Delegate Aggregate Descriptor]({%slug datagrid-delegate-aggregate-descriptor%})

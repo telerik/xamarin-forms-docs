@@ -8,7 +8,7 @@ slug: datagrid-aggregates
 
 # Overview
 
-![DataGrid Aggregates](images/datagrid-aggregate.png)
+![DataGrid Aggregates](../images/datagrid-aggregate.png)
 
 The DataGrid exposes an Aggregates API through the `DataGridColumn.AggregateDescriptors` property where you can add PropertyAggregateDescriptors or DelegateAggregateDescriptors.
 

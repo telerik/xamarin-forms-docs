@@ -69,7 +69,7 @@ You can use Telerik UI for Xamarin for application development for the following
 |Platform 		| Supported version 			|
 |:---			| :---							|
 |Android		| 5.0 (API Level 21) or higher	|
-|iOS			| 7.0 or higher					|
+|iOS			| 9.0 or higher					|
 |Windows		| Windows 10  					|
 
 ## Next Steps

@@ -120,9 +120,9 @@ Result:
 
 Another common problem is that your machine (PC or DevOps agent) is behind a proxy. To check if you're experiencing a networking issue, open the following URL in your web browser:
 
-https://nuget.telerik.com/nuget/Search()?$filter=IsAbsoluteLatestVersion&searchTerm=%27Xamarin%27&includePrerelease=true&$skip=0&$top=100&semVerLevel=2.0.0. 
+https://nuget.telerik.com/v3/search?q=xamarin
 
-After you enter your Telerik.com username and password, you should see an XML search result containing a list of all the Telerik.UI.for.Xamarin packages available with your license.
+After you enter your Telerik.com username and password, you should see a JSON search result containing a list of all the Telerik.UI.for.Xamarin packages available with your license.
 
 
 ## See Also

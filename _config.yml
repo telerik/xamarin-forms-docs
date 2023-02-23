@@ -247,6 +247,9 @@ navigation:
     controls/datagrid/columns/column-types: 
         title: "Column Types"
         position: 1    
+    controls/datagrid/aggregates: 
+        title: "Aggregates"
+        position: 3
     controls/datagrid/commands:
         title: "Commands"
         position: 9

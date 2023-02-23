@@ -117,6 +117,16 @@ And this is how the column style looks when the properties are applied for custo
 
 ![DataGrid Columns Styling](../images/datagrid-columns-styling.png)
 
+## FooterStyle
+
+`FooterStyle` defines the appearance of the column footer. The `DataGridColumnFooterStyle` exposes the following properties for styling:
+
+* `TextColor` and `BackgroundColor`&mdash;Define the colors of the text part/background respectively.
+* `BorderColor` and `BorderThickness`&mdash;Define the style of the border around the column footer.
+* `Font Options` (`TextFontFamily`, `TextFontAttributes`, `TextFontSize`)&mdash;Define the font options to the text part of the `ColumnFooter`.
+* `Text Alignment` (`TextMargin`, `HorizontalTextAlignment`, `VerticalTextAlignment`)&mdash;Define the positioning for the text part of the `ColumnFooter`.
+
+
 >important [SDK Samples Browser application]({%slug developer-focused-examples%}) contains Columns Styling example in the DataGrid/Styling folder.  
 
 ## See Also

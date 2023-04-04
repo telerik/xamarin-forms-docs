@@ -94,7 +94,7 @@ You have two options to add the required Telerik references to your Xamarin.Form
 
 * Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
 
-If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadWordsProcessing you have to install the *Telerik.Zip*, *Telerik.Documents.Core*, *Telerik.Documents.Flow* nuget packages. If you need to export documents to PDF format, you will need to refer the *Telerik.Documents.Flow.FormatProviders.Pdf* and *Telerik.Documents.Fixed* nuget packages.
+If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadWordsProcessing you have to install the *Telerik.UI.for.Xamarin.Zip*, *Telerik.UI.for.Xamarin.Documents.Core*, *Telerik.UI.for.Xamarin.Documents.Flow* nuget packages. If you need to export documents to PDF format, you will need to refer the *Telerik.UI.for.Xamarin.Documents.Flow.FormatProviders.Pdf* and *Telerik.UI.for.Xamarin.Documents.Fixed* nuget packages.
 
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for RadWordsProcessing:
 

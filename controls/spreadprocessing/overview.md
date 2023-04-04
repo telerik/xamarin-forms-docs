@@ -100,7 +100,7 @@ You have two options to add the required Telerik references to your Xamarin.Form
 
 * Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
 
-If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadSpreadProcessing you have to install the *Telerik.Documents.Core* and *Telerik.Documents.Spreadsheet* nuget packages. The following nugets are required in order to be able to export to XLSX, XLS and PDF formats: *Telerik.Documents.Spreadsheet.FormatProviders.OpenXml*,*Telerik.Documents.Spreadsheet.FormatProviders.Xls*, *Telerik.Documents.Fixed*, *Telerik.Documents.Spreadsheet.FormatProviders.Pdf*, *Telerik.Zip*.
+If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadSpreadProcessing you have to install the *Telerik.Documents.Core* and *Telerik.UI.for.Xamarin.Documents.Spreadsheet* nuget packages. The following nugets are required in order to be able to export to XLSX, XLS and PDF formats: *Telerik.UI.for.Xamarin.Documents.Spreadsheet.FormatProviders.OpenXml*,*Telerik.UI.for.Xamarin.Documents.Spreadsheet.FormatProviders.Xls*, *Telerik.UI.for.Xamarin.Documents.Fixed*, *Telerik.UI.for.Xamarin.Documents.Spreadsheet.FormatProviders.Pdf*, *Telerik.UI.for.Xamarin.Zip*.
 
 * Add the references to Telerik assemblies manually, check the list below with the required assemblies for RadSpreadProcessing:
 

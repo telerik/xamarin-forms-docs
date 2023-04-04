@@ -40,7 +40,7 @@ You have two options to add the required Telerik references to your Xamarin.Form
 
 * Add the Telerik UI for Xamarin Nuget package following the instructions in [Telerik NuGet package server]({%slug telerik-nuget-server%}) topic.
 
-If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadZipLibrary you have to install the **Telerik.Zip** nuget package.
+If you don't want to add the all Telerik.UI.for.Xamarin nuget package, you have the option to add a separate nuget package. For RadZipLibrary you have to install the *Telerik.UI.for.Xamarin.Zip* nuget package.
 
 * Add the references to Telerik assemblies manually, check below the required assembly for RadZipLibrary:
 	

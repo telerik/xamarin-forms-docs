@@ -96,11 +96,10 @@ If you're receiving this error when connecting to Telerik Nuget Server, you coul
     1. Use the email address in the place of username
     2. Make sure any special characters are escaped (see *Handling Special Characters in Password* below)
     3. Click "Save" 
-6. If you are using the old v2 NuGet server, make sure the URL does not have a trailing slash. It must be only be `https://nuget.telerik.com/nuget`
+6. Make sure the URL does not have a trailing slash. It must be only be `https://nuget.telerik.com/nuget`
+7. Reopen Visual Studio and access the Telerik NuGet server. 
 
-Now you can reopen Visual Studio and access the Telerik NuGet server. 
-
-#### Handling Special Characters in Password
+### Handling Special Characters in Password
 
 If your password contains a special character, those characters need to be escaped or it may fail authentication resulting in *Error 401 login failure* from the NuGet server. A common character that needs to be escaped is the ampersand `&`, but it can be as unique as the section character `§`. There are two ways to handle this.
 
@@ -122,8 +121,15 @@ Another common problem is that your machine (PC or DevOps agent) is behind a pro
 
 https://nuget.telerik.com/nuget/Search()?$filter=IsAbsoluteLatestVersion&searchTerm=%27Xamarin%27&includePrerelease=true&$skip=0&$top=100&semVerLevel=2.0.0. 
 
-After you enter your Telerik.com username and password, you should see an XML search result containing a list of all the Telerik.UI.for.Xamarin packages available with your license.
+After you enter your telerik.com `username` and `password`, you should see an XML search result containing a list of all the `Telerik.UI.for.Xamarin` packages available with your license.
 
+### Unable to Load the Service Index for Source
+
+The following error may occur if the nuget.telerik.com server is down.
+
+`Unable to load the service index for source https://nuget.telerik.com/v3/index.json`
+
+If you hit that error, make sure that the Telerik NuGet Feed is live at https://status.telerik.com/.
 
 ## See Also
 - [System Requirements]({%slug system-requirements%})

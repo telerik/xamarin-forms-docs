@@ -2,7 +2,7 @@
 title: Columns Cell Templates
 page_title: Xamarin DataGrid Documentation | Columns Cell Templates
 description: Check our &quot;Columns CellTemplates&quot; documentation article for Telerik DataGrid for Xamarin control.
-position: 2
+position: 3
 slug: datagrid-cell-templates
 ---
 

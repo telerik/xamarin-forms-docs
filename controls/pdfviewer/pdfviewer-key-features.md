@@ -151,6 +151,37 @@ private void pdfViewer_SourcePasswordNeeded(object sender, Telerik.Windows.Docum
 
 * **VisiblePagesStartIndex**(int): Defines the index at which the document will be displayed. The default value is 0.
 
+## Event when elements in the page are loaded
+
+PdfViewer privdes an event that is raised when all elements in the page are loaded&mdash;`PageElementsLoaded`. Use this event to alter the page content before it is rendered. This event is raised on a background thread.
+The `PageElementsLoaded` event handler receives two parameters:
+	* `sender`&mdash;the PdfViewer control.
+	* `PageElementsLoadedEventArgs`&mdash;object which has a reference to the  `Page`(`RadFixedPage`).
+
+**Example**
+
+```C#
+this.pdfViewer.PageElementsLoaded += OnPageElementsLoaded;
+```
+
+And the handler:
+
+```C#
+private void OnPageElementsLoaded(object sender, PageElementsLoadedEventArgs e)
+{
+    foreach (var item in e.Page.Content)
+    {
+        if (item is Telerik.Windows.Documents.Fixed.Model.Graphics.Path path)
+        {
+            if (path.StrokeThickness == 0)
+            {
+                path.StrokeThickness = 5;
+            }
+        }
+    }
+}
+```
+
 ## BusyIndicator Template
 
 If the default busy template does not suit your needs, you could easily define a custom template through the following property:

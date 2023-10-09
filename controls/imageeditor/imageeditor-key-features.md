@@ -16,12 +16,61 @@ RadImageEditor control enables you to visualize images through the following pro
 
 * **Source**(of type *Xamarin.Forms.ImageSource*): Specifies the source of the image. For more details about the Source property check the [Images in Xamarin.Forms](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/images?tabs=windows) article.
 
+In addition, by using the `IsImageLoaded` (read-only `bool`) property, you can get information whether an image is loaded in the editor. There are many scenarios this property helps. For example, if you want to apply a crop operation as soon as the image is loaded.
+
 The images could be loaded from:
 
 * **File**
 * **Uri**
 * **Resource**
 * **Stream**
+
+## Loading Event
+
+The ImageEditor control provides the `ImageLoaded` event that is raised when an image is loaded in the editor. The event handler receives the following parameters:
+
+* The `sender` argument which is of type object, but can be cast to the `RadImageEditor` type.
+* An `ImageLoadedEventArgs` that provides information about an image loaded in the `RadImageEditor` control. The `ImageLoadedEventArgs` object has a reference to the `ImageSize` (`Size`). This allows you to get the size of the image in pixels.
+
+The following example demonstrates how to use the `ImageLoaded` event.
+
+**1.** Add the `RadImageEditor` definition:
+
+```XAML
+<telerikImageEditor:RadImageEditor x:Name="imageEditor"
+                                   ImageLoaded="OnImageLoaded" />
+```
+
+**2** The `ImageLoaded` event handler implementation. Execute `CropInteractiveCommand` with custom crop bounds that are calculated based on the image's size:
+
+```C#
+private void OnImageLoaded(object sender, ImageLoadedEventArgs eventArgs)
+{
+    var imageSize = eventArgs.ImageSize;
+    var cropCommand = this.imageEditor.CropInteractiveCommand;
+    var cropCommandContext = new CropCommandContext
+    {
+        AspectRatio = AspectRatio.Square,
+        Bounds = new Rectangle
+        {
+            X = imageSize.Width * 0.25,
+            Y = imageSize.Height * 0.25,
+            Width = imageSize.Width * 0.5,
+            Height = imageSize.Height * 0.5
+        },
+        Geometry = new RadEllipseGeometry
+        {
+            Center = new Point(0.5, 0.5),
+            Radius = new Size(0.5, 0.5)
+        }
+    };
+
+    if (cropCommand.CanExecute(cropCommandContext))
+    {
+        cropCommand.Execute(cropCommandContext);
+    }
+}
+```
 
 ## Save Images
 

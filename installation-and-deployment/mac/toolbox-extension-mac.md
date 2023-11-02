@@ -14,6 +14,8 @@ In order to use the TelerikXamarinForms Toolbox, first you have to install the P
 
 >For more details on adding the Telerik UI for Xamarin ProjectTemplate.mpack file check the article about [Project Wizard for Visual Studio for Mac]({%slug project-wizard-xamarin-studio%}). 
 
+>important Telerik Visual Studio Toolbox extension for Mac will be phased out in 2024, following the [discontinuation of Visual Studio for Mac](https://devblogs.microsoft.com/visualstudio/visual-studio-for-mac-retirement-announcement/).
+
 ## Showing the Telerik Toolbox
 
 In order to show the Toolbox and start using the controls, you should navigate to the MainPage.xaml file in your project and click on it. If the ProjectTemplate.mpack file is installed successfully, Toolbox window is visible in the project when you click on the MainPage.xaml file (or any other XAML file inside your project). You can also find this option when typing “Toolbox” in the Search filed (top right corner in Visual Studio for Mac).

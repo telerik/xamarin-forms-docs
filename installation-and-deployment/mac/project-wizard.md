@@ -10,6 +10,8 @@ position: 1
 
 This article introduces the **Telerik UI for Xamarin.Forms Project Wizard for Visual Studio for Mac**. The project wizard is a Visual Studio add-in that improves the getting started experience for Telerik customers. It provides a project template that is pre-setup with all requirements to run our components so the customers can start writing their apps right away.
 
+>important Telerik Visual Studio Project Template for Mac will be phased out in 2024, following the [discontinuation of Visual Studio for Mac](https://devblogs.microsoft.com/visualstudio/visual-studio-for-mac-retirement-announcement/).
+
 ## Installation
 
 First, you have to download the **ProjectTemplateXamarin.mpack** file from the Telerik UI for Xamarin product download page inside your [Telerik account](https://www.telerik.com/account/). Go to [Download Product Files]({%slug download-product-files %}) for exact steps on how to navigate to the download page.

@@ -47,7 +47,7 @@ Here is how the styling is applied when the control is focused and item is selec
 
 ![ComboBox Edit Mode](images/combobox-styling-focused.png)
 
->important The ComboBox Styling example can be found in our [SDK Browser Application](developer-focused-examples). You can find the applications in the **Examples** folder of your local **Telerik UI for Xamarin** installation or in the following [GitHub repo](https://github.com/telerik/xamarin-forms-sdk).
+>important The ComboBox Styling example can be found in our [SDK Browser Application]({%slug developer-focused-examples%}). You can find the applications in the **Examples** folder of your local **Telerik UI for Xamarin** installation or in the following [GitHub repo](https://github.com/telerik/xamarin-forms-sdk).
 
 ## DropDown Styling
 
@@ -85,7 +85,7 @@ Here is how the Drop Down Styling looks:
 
 ![ComboBox Drop Down Style](images/combobox-drop-down-style.png)
 
->important The DropDown Styling example can be found in our [SDK Browser Application](developer-focused-examples). You can find the applications in the **Examples** folder of your local **Telerik UI for Xamarin** installation or in the following [GitHub repo](https://github.com/telerik/xamarin-forms-sdk).
+>important The DropDown Styling example can be found in our [SDK Browser Application]({%slug developer-focused-examples%}). You can find the applications in the **Examples** folder of your local **Telerik UI for Xamarin** installation or in the following [GitHub repo](https://github.com/telerik/xamarin-forms-sdk).
 
 ## Theming
 

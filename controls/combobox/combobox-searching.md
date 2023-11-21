@@ -40,7 +40,7 @@ Here is how the control looks when searching is performed:
 
 ![ComboBox Searching](images/combobox-searching.png)
 
->important The SearchingMode example can be found in our [SDK Browser Application](developer-focused-examples). You can find the applications in the **Examples** folder of your local **Telerik UI for Xamarin** installation or in the following [GitHub repo](https://github.com/telerik/xamarin-forms-sdk).
+>important The SearchingMode example can be found in our [SDK Browser Application]({%slug developer-focused-examples%}). You can find the applications in the **Examples** folder of your local **Telerik UI for Xamarin** installation or in the following [GitHub repo](https://github.com/telerik/xamarin-forms-sdk).
 
 ## See Also
 

@@ -33,7 +33,7 @@ This is how the Header and Footer Templates look:
 
 ![ComboBox Header Footer Templates](images/combobox-header-footer.png)
 
->important Header and Footer Template example can be found in our [SDK Browser Application](developer-focused-examples). You can find the applications in the **Examples** folder of your local **Telerik UI for Xamarin** installation or in the following [GitHub repo](https://github.com/telerik/xamarin-forms-sdk).
+>important Header and Footer Template example can be found in our [SDK Browser Application]({%slug developer-focused-examples%}). You can find the applications in the **Examples** folder of your local **Telerik UI for Xamarin** installation or in the following [GitHub repo](https://github.com/telerik/xamarin-forms-sdk).
 
 ## See Also
 

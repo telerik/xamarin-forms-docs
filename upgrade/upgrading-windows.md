@@ -47,7 +47,7 @@ In order to upgrade your controls to a newer version of the suite, you need to p
 
 	So, you should remove the trial version first.
 
-3. If the upgrade is major (i.e. from R3 2023 to Q1 2024), check the [Release History](https://www.telerik.com/support/whats-new/xamarin-ui/release-history).
+3. If the upgrade is major (i.e. from R3 2023 to 2024 Q1), check the [Release History](https://www.telerik.com/support/whats-new/xamarin-ui/release-history).
 4. Back up your application.
 5. Update all the Telerik references in all projects (.Net Standard/Shared, Android, iOS, UWP) in Visual Studio to point to the new assemblies.
 6. Clean the solution.
@@ -58,7 +58,7 @@ In order to upgrade your controls to a newer version of the suite, you need to p
 
 Each version number of Telerik UI for Xamarin is formed depending on what major release that version belongs to as well the source code build date. In other words, the version number corresponds to the date when the dlls were built.
 
-The following image shows the name of the version for Q1 2024 release.
+The following image shows the name of the version for 2024 Q1 release.
 
 ![Version](images/versions.png)
 

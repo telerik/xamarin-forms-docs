@@ -17,7 +17,7 @@ It allows customers to select which platform(s) their application targets and th
 
 ## Installing the Project Wizard
 
-In order to have access to the **Project Wizard to Visual Studio**, you need to install the Visual Studio Extensions that is shipped with the default installation of the **Telerik UI for Xamarin** suite. It can also be downloaded and installed as separate product from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) for Visual Studio 2017/2019.
+In order to have access to the **Project Wizard to Visual Studio**, you need to install the Visual Studio Extensions that is shipped with the default installation of the **Telerik UI for Xamarin** suite. It can also be downloaded and installed as separate product from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) for Visual Studio 2019/2022.
 
 >For detailed information on installing the Project Wizard, go to [Installing VSExtensions]({%slug vs-extensions%}) topic.
 

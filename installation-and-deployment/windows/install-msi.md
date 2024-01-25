@@ -15,7 +15,7 @@ To install Telerik UI for Xamarin on your machine from the Windows Installer MSI
 
 2. Download the automatic installation (MSI) file.
 
-3. Once the download completes, **run the MSI file** and follow the instructions. On a 32bit machine the wizard will install the UI for Xamarin component in the following folder unless you specify otherwise: *C:\Program Files\Telerik\* or *C:\Program Files (x86)\Telerik\* for a 64bit machine.
+3. Once the download completes, **run the MSI file** and follow the instructions. On a 32bit machine the wizard will install the UI for Xamarin component in the following folder unless you specify otherwise: *C:\Program Files\Progress\* or *C:\Program Files (x86)\Progress\* for a 64bit machine.
 
 > If you prefer using the ZIP file with the dlls instead of the automatic installation you can download it from the [Telerik UI for Xamarin product download page]({%slug download-product-files%}).
 

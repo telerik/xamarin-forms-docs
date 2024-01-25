@@ -49,7 +49,7 @@ If you just start your app, you have two options:
 		 * Available for MacOS.
 		 * If you wish to use Visual Studio as a development environment you will also need a mac machine. You can find more information how to set up your environment here: [Introduction to Xamarin.iOS for Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/)
 
->important The minimum required version of **Xamarin.Forms** package is **4.6.0.726**.
+>important The minimum required version of **Xamarin.Forms** package is **5.0.0.2083**.
   
 >The **Android project** requires multiple packages with specific versions. The **Xamarin.Forms** package will install most of the required packages as its dependencies. You can then go to [Required Android Support Libraries]({% slug required-android-support-libraries %}) article and check if you have all required files and versions.
 

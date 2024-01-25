@@ -4,7 +4,7 @@ page_title: Major and Minor Releases Installation
 description: Major and Minor Releases Installation
 slug: major-and-minor-releases-installation
 tags: major,and,minor,releases,installation
-published: True
+published: False
 position: 3
 ---
 

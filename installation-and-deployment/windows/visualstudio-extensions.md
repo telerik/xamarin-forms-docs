@@ -87,7 +87,7 @@ Telerik Visual Studio Extensions are disabled or not installed correctly.
 *Suggested solution 1 (Extension is Disabled):*
 
 1. Open Visual Studio
-1. Go to menu **Extensions -> Manage Extensions** (for Visual Studio 2017 - **Tools -> Extensions and Updates...**)
+1. Go to menu **Extensions -> Manage Extensions**
 1. Open the **Installed** tab on the left
 1. Search for **Telerik Xamarin VSExtensions** and make sure it's **Enabled**
 
@@ -96,7 +96,7 @@ Telerik Visual Studio Extensions are disabled or not installed correctly.
 *Suggested solution 2 (Extension is not installed):*
 
 1. Open Visual Studio
-1. Go to menu **Extensions -> Manage Extensions** (for Visual Studio 2017 - **Tools -> Extensions and Updates...**)
+1. Go to menu **Extensions -> Manage Extensions**
 1. Open the **Online** tab on the left
 1. Search for **Telerik Xamarin VSExtensions**
 1. Download and install the extensions

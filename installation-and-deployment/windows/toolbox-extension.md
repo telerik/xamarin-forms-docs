@@ -10,7 +10,7 @@ position: 6
 
 This article introduces Telerik UI for Xamarin Toolbox for Visual Studio, which eases the process of adding Telerik controls to your Xamarin.Forms application. The Xamarin Toolbox is part of the **Visual Studio Extensions** for Telerik UI for Xamarin.
 
-Telerik UI for Xamarin Visual Studio Extensions are distributed with the Telerik UI for Xamarin [MSI installation]({%slug install-msi%}). You can also download and install them as a separate product from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) for Visual Studio 2017/2019.
+Telerik UI for Xamarin Visual Studio Extensions are distributed with the Telerik UI for Xamarin [MSI installation]({%slug install-msi%}). You can also download and install them as a separate product from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) for Visual Studio 2019/2022.
 
 >For detailed instructions on how to install the Visual Studio Extensions, see [Installing VSExtensions]({%slug vs-extensions%}).
 
@@ -24,19 +24,6 @@ To show the Toolbox and start using the controls, navigate to the tab "Extension
 
 #### Figure 1: Showing the Telerik UI for Xamarin Toolbox in Visual Studio 2019
 ![](images/enabled_toolbox.png)
-
-### Visual Studio 2017
-
-To show the Toolbox and start using the controls, navigate to the tab "Telerik" -> "Telerik UI for Xamarin" -> "Open Telerik UI for Xamarin Toolbox" within Visual Studio. You can also find this option when you type "Telerik UI for Xamarin Toolbox" in the Quick Launch search field (top right corner in Visual Studio). 
-
-**Figure 2** shows where you can find the option in Visual Studio 2017: 
-
-#### Figure 2: Showing the Telerik UI for Xamarin Toolbox in Visual Studio 2017
-![](images/enable_toolbox_vs2017.png)
-
-When you open the Telerik UI for Xamarin Toolbox, you will see a window with the different controls from the suite. **Figure 3** shows the appearance of the toolbox in a correctly configured project.
-
->important If no usable controls are present in the toolbox, make sure that you [added all the required references]({%slug getting-started-windows%}#2-add-references-to-telerik-components), and try to rebuild your project. 
 
 ## Adding Controls to Your Project
 

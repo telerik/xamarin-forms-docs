@@ -32,7 +32,7 @@ There are two options for referencing Telerik components and the upgrade method 
 In order to upgrade your controls to a newer version of the suite, you need to perform the following instructions:
 
 1. Download the installation method you prefer (pkg installation or zip file) from you Telerik account, check [Download Product Files]({% slug download-product-files %}) for more details.
-2. If the upgrade is major (i.e. from R3 2018 to R1 2019), check the [Release History](https://www.telerik.com/support/whats-new/xamarin-ui/release-history).
+2. If the upgrade is major (i.e. from R3 2023 to 2024 Q1), check the [Release History](https://www.telerik.com/support/whats-new/xamarin-ui/release-history).
 3. Back up your application.
 4. Update all the Telerik references in all projects (.Net Standard/Shared, Android, iOS) in Visual Studio for Mac to point to the new assemblies.
 5. Clean the solution.

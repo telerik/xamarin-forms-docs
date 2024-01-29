@@ -124,7 +124,7 @@ You can easily add insert, delete, copy, paste, cut, edit images in the editor u
 		
 ## Read-Only State
 
-**IsReadOnly**(*bool*) property of the RichTextEditor indicating whether the control is in a read-only mode. Setting `IsReadOnly="True"` means that the Toolbar Items will be disabled, the content of the document cannot be changed and no selection can be performed. The default the value is `False`. 
+**IsReadOnly**(*bool*) property of the RichTextEditor indicating whether the control is in a read-only mode. Setting `IsReadOnly="True"` means that the Toolbar Items will be disabled and the content of the document cannot be changed. The default the value is `False`. 
 
 ### Example
 

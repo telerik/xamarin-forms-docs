@@ -675,8 +675,8 @@ defaults:
 # Define any custom fields that you use in the site here
 framework_name: Xamarin
 
-# Feedback Form Google Sheet ID
-ff-sheet-id: 1XHRCSFFh2aL9W_EfhfO2lXDGTR8kKFnK8x289HbujIU
+# Feedback Form Product code
+productCode: UIXAM
 
 # The google services configuration
 google_tag_manager: GTM-6X92

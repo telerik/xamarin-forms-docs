@@ -28,11 +28,7 @@ In the the Package Sources section you can add new sources.
 
 In the Source field you should fill in the address of the Telerik server (URL: **https://nuget.telerik.com/v3/index.json**) and click the Update button.
 
-In addition to feed URL `https://nuget.telerik.com/v3/index.json`, there is also an obsolete NuGet v2 server at `https://nuget.telerik.com/nuget`, which is no longer recommended.
-
-> The NuGet v2 server at `https://nuget.telerik.com/nuget` will be sunset in November 2024.
-> The new v3 protocol offers faster package searches and restores, improved security, and more reliable infrastructure.
-> To redirect your feed to the NuGet v3 protocol, all you have to do is to change your NuGet package source URL to `https://nuget.telerik.com/v3/index.json`.
+> The obsolete NuGet v2 server at `https://nuget.telerik.com/nuget` will be sunset in November 2024. To avoid any interruptions in your development process, change the NuGet server URL to `https://nuget.telerik.com/v3/index.json`.
 
 ![](images/nuget-server/nuget-vs-telerik-server.png)
 
@@ -70,11 +66,7 @@ On the next dialog you can see all the available sources. Choose “*Add*” to 
 
 In the Add Package Source dialog you should fill in the information of the Telerik server (URL: **https://nuget.telerik.com/v3/index.json**) as well as your private Telerik credentials. Authentication procedure is required in order to allow downloading the packs.
 
-In addition to feed URL `https://nuget.telerik.com/v3/index.json`, there is also an obsolete NuGet v2 server at `https://nuget.telerik.com/nuget`, which is no longer recommended.
-
-> The NuGet v2 server at `https://nuget.telerik.com/nuget` will be sunset in November 2024.
-> The new v3 protocol offers faster package searches and restores, improved security, and more reliable infrastructure.
-> To redirect your feed to the NuGet v3 protocol, all you have to do is to change your NuGet package source URL to `https://nuget.telerik.com/v3/index.json`.
+> The obsolete NuGet v2 server at `https://nuget.telerik.com/nuget` will be sunset in November 2024. To avoid any interruptions in your development process, change the NuGet server URL to `https://nuget.telerik.com/v3/index.json`.
 
 ![Telerik NuGet server details](images/getting-started-add-telerk-server.png "Telerik NuGet server details")
 

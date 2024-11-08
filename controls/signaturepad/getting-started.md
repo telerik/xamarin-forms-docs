@@ -50,7 +50,6 @@ You could use one of the following approaches:
 Take a look at the following topics on how to use the toolbox:
 
 * [Telerik UI for Xamarin Toolbox on Windows]({%slug telerik-xamarin-toolbox%})
-* [Telerik UI for Xamarin Toolbox on Mac]({%slug telerik-xamarin-toolbox-mac%})
 	
 #### Create the control definition in XAML or C#.
 

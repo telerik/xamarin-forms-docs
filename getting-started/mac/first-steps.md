@@ -37,7 +37,7 @@ Follow the steps below in order to download the installation files:
 
 2. Select __Progress Telerik UI for Xamarin__ product title.
 
-3. Download the Installation __.pkg__ and __.mpack__ files.
+3. Download the Installation __.pkg__ file.
 
 	##### __Figure 3a: Download installers__
 	![](images/download_product_files_2.png)
@@ -54,44 +54,7 @@ Follow the steps below in order to download the installation files:
 
 	> For a more permanent solution, open the Mac OS [Settings -> Security & Privacy](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/Mojave/macos-mojave-system-preferences-security-general-require-disable-dark.jpg) settings panel and select **Allow apps downloaded from App Store and Identified developers**. 
 
-5. Install Visual Studio for Mac Extensions
-
-	Once you have finished the **pkg** installation, now it's time to install the Visual Studio Extensions with the **mpack** file. 
-	
-	Open the Visual Studio **Extension Manager** and select the *Install form file...* option. __Figure 5a__ shows how to access the Extension Manager.
-
-	##### __Figure 5a: Accessing Visual Studio Extensions__
-	![Visual Studio Extensions](images/VisualStudioExtensions.png)
-
-	Once you have accessed the **Extension Manager**, the following dialog will appear and you should look for the **Install from file** option.
-
-	##### __Figure 5b: Reaching the Extension Manager__
-	![Visual Studio Extensions](images/ExtensionManager.png)
-
-	Navigate to the **ProjectTemplateXamarin.mpack** file, select it and click "Open" to complete the installation.
-
-	##### __Figure 5c: The ProjectTemplate location__
-	![Visual Studio Extensions](images/InstallExtensionPackage.png)
-
-	If the add-in is successfully added to Visual Studio, you should see it in the **IDE extensions** section.
-	
-	##### __Figure 5d: Installation Successful__
-	![Installed Extension](images/macos-vs-extension-install-confirmation.png)
-	
-
-6. **Restart Visual Studio for Mac** to complete the installation.
-
-## Create a Project with Telerik UI for Xamarin
-
-1. Now you can create a new project using the Telerik Project Template. Select which platform(s) your application targets and the wizard will automatically reference all required Telerik binaries and packages.
-
-	#### __Figure 1a: Create New Project Dialog__
-	![Xamarin Studio Create new project](images/CreateNewProject.png)
-
-2. Select the **Telerik Forms App** template which can be found in *Other > Miscellaneous* section.
-
-	#### __Figure 2a: Telerik Forms App template__
-	![Xamarin Studio Create new project](images/ChooseTemplate.png)
+5. **Restart Visual Studio for Mac** to complete the installation.
 
 ## Next Steps
 

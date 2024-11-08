@@ -29,7 +29,6 @@ Video Tutorials
 Installation and Upgrade
 * [System Requirements]({%slug system-requirements%})
 * [Download Product Files]({%slug download-product-files%})
-* [Telerik Visual Studio Extensions]({%slug vs-extensions%})
 * [Required Android Support Libraries]({%slug required-android-support-libraries%})
 * [Telerik NuGet Server]({%slug telerik-nuget-server%})
 * [Lite Assemblies]({%slug telerik-light-assemblies%})

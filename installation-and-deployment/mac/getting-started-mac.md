@@ -4,6 +4,7 @@ page_title: Getting Started with Telerik UI for Xamarin.Forms on Mac
 description: Check our detailed documentation artile on how to get started with Telerik UI for Xamarin on Mac. Find all you need to know in Xamarin.Forms instalation and deployment documentation.
 slug: getting-started-mac
 position: 0
+Previous_url: /installation-and-deployment/mac/project-wizard, /installation-and-deployment/mac/toolbox-extension-mac
 ---
 
 # Using Telerik UI for Xamarin on Mac
@@ -19,30 +20,6 @@ Depending on your scenario, you either have an existing app where you will add o
 ### Add Telerik components to an already existing app
 
 You can manually reference the Telerik UI for Xamarin assemblies in each of the projects (Xamarin.Forms, Android, iOS) or use the Telerik Nuget packages. For detailed instructions, go to [Step 3: Add references to Telerik Components](#3-add-references-to-telerik-components).
-
-### Create a new app with Telerik UI for Xamarin
-
-If you just start your app, you have two options:
-
-- Use our [**Project Wizard**]({%slug project-wizard-xamarin-studio%}) to create a project that has everything setup for you. You can start using our components right away without manually adding required assemblies and modifying solution files.
-
-	>tip We strongly recommend using the **Project Wizard**. If you choose this option, you can skip the next steps in this article and jump directly to the **Getting Started** topic of any control.
-	
-- Create a new Xamarin.Forms app in Visual Studio for Mac and add the required references to Telerik assemblies.
-
-	If your scenario requires creating a new app from scratch, please proceed following the steps below:
-	
-	1. Open Visual Studio for Mac, then create new project from the **Multiplatform**  section select **App** -> **Xamarin.Forms** -> **Blank Forms App**:
-	
-		![Create new Xamerin.Forms app](images/vs-mac-new-xf-app.png)
-
-	1. In the next screen you could set App name. Organization Identifier, Target Platforms:
-
-		![Create new Xamarin.Forms solution second screen](images/vs-mac-new-xf-app-setup.png)
-
-	1. Follow the steps in the wizard until your app is created. It should contain the following projects:
-
-		![App setup](images/vs-mac-xf-app.png)
 
 ## 2. Getting the latest platform SDK versions
 

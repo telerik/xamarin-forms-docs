@@ -9,16 +9,7 @@ position: 1
 
 # Add a Control to Your Project
 
-## Show the Telerik Toolbox. 
-In order to show the Toolbox and start using the controls, you should navigate to the StartPage.xaml file in your project and click on it. If the ProjectTemplate.mpack file is installed successfully, Toolbox window is visible in the project when you click on the StartPage.xaml file. 
-
->tip For more information about Toolbox for Mac check the [TelerikXamarinForms Toolbox]({%slug telerik-xamarin-toolbox-mac %}) article.
-
-## Add a Control to Your Project.
-Embedding the controls from the suite is made as easy as possible and all you need to do is simply drag one of the controls within your XAML file. This will add the control definition and will also map the needed namespace declarations. For the purpose of this example we will add [RadListView] ({%slug listview-overview%}) Control.
-
-#### __Figure 1: Adding Telerik controls to your application__
-![Add Control from Toolbox](images/mac-visual-studio-add-control-from-toolbox.gif)
+For the purpose of this example we will add [RadListView] ({%slug listview-overview%}) Control.
 		
 ## Populating RadListView with data
 

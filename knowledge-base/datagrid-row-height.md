@@ -3,7 +3,7 @@ title: How to set row height of Xamarin DataGrid?
 description: How to define the rows height through TextMargin property in Telerik DataGrid for Xamarin control
 type: how-to
 page_title: Is there a simple way to set the heights of the rows in Telerik DataGrid for Xamarin?
-slug: datagrid-row-height
+slug: set-datagrid-row-height
 tags: datagrid, row, height, textmargin, xamarin, xamarin.forms
 ticketid: 1427027
 res_type: kb

@@ -87,4 +87,3 @@ If you open the installation folder you will probably note the following sub dir
 
 - [System Requirements]({% slug system-requirements %})
 - [Telerik NuGet packages server]({%slug telerik-nuget-server%})
-- [Project Wizard for Visual Studio for Mac]({%slug project-wizard-xamarin-studio%})

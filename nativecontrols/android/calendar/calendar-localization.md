@@ -2,7 +2,7 @@
 title: Localization
 page_title: RadCalendarView Localization  | Telerik UI for Xamarin.Android Documentation
 description: This page explains how to localize RadCalendarView for Android per your requirements.
-slug: calendar-localization
+slug: android-calendar-localization
 tags: radcalendarview, calendar, localization
 position: 8
 publish: true

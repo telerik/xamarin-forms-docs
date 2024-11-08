@@ -52,7 +52,7 @@ be handled in a way which changes the calendar's properties with nice transition
 ## Localizations
 
 **RadCalendarView** follows the locale information provided from the user's device settings. If you want, you can easily apply locale of your choice so that the information that is displayed is translated and formatted
-according to your preferences. [Here]({% slug calendar-localization %} "Read more about RadCalendarView's localization")'s more about the calendar's localizations capabilities.
+according to your preferences. [Here]({% slug android-calendar-localization %} "Read more about RadCalendarView's localization")'s more about the calendar's localizations capabilities.
 
 ## Xamarin.Android Examples
 

@@ -36,7 +36,7 @@ To activate the Telerik UI for Xamarin controls:
 
 * Alternatively, copy the `telerik-license.txt` license key file to the root folder of your project. This makes the license key available only to this project. Do not commit the file to source control as this is your personal license key.
 
-When you build the project, the `Telerik.Licensing` NuGet package automatically locates the license file and uses it to activate the MAUI controls.
+When you build the project, the `Telerik.Licensing` NuGet package automatically locates the license file and uses it to activate the Xamarin controls.
 
 > If your project doesn’t use NuGet packages, see the [next document section](#installing-a-license-key-in-projects-without-nuget-references).
 

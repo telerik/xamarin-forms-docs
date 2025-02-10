@@ -77,6 +77,9 @@ navigation:
         position: 1
 ## End Styling Sub-Folders
 ## Intallation Sub-Folders
+    installation-and-deployment/licensing:
+        title: "Activating Your License"
+        position: 1
     installation-and-deployment/windows:
         title: "Windows"
         position: 3

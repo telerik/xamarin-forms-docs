@@ -77,7 +77,6 @@ If you open the installation folder you will probably note the following sub dir
 * Examples - here you can find the [SDK Browser application]({%slug developer-focused-examples%}#sdk-browser-application) as well as sample applications demonstrating our [controls for Xamarin.Android and Xamarin.iOS]({%slug native-controls-overview%}).
 * LicenseAgreements - provides the product EULA.
 * QSF - includes the full source of [Telerik UI for Xamarin Samples Application]({%slug developer-focused-examples%}#telerik-ui-for-xamarin-samples-application).
-* VSExtensions - includes our Visual Studio Extension package. For more details go to [Visual Studio Extensions]({%slug vs-extensions %}) topic.
 
 >tip If you're planning to use only a few components, you can add references to part of the assemblies. There is a special section in each control documentation that lists all the required assemblies. The section is called **"Adding the required Telerik references"** and is located in the **Getting Started** article for each control.
 

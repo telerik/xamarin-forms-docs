@@ -23,8 +23,6 @@ To download a license key for Telerik UI for Xamarin, you must have either a dev
 
     ![Download a Telerik UI for Xamarin License Key](./images/download-license-key.png)
 
-The [Progress Control Panel]({%slug control-panel%}), [automated installers]({%slug automated-installer%}), and the [Visual Studio Extensions]({%slug vs-integration-overview%}) will automatically download and store your license key in your home directory. This makes it available for all projects that you develop on your local machine.
-
 ## Activating the Telerik UI for Xamarin Components
 
 To activate the Telerik UI for Xamarin controls:

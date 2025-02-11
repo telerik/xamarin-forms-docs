@@ -17,7 +17,7 @@ An invalid license results in [errors and warnings]({%slug license-errors-warnin
 
 To download a license key for Telerik UI for Xamarin, you must have either a developer license or a trial license. If you are new to Telerik UI for Xamarin, sign up for a [free trial](https://www.telerik.com/try/ui-for-xamarin) first, and then follow the steps below.
 
-1. Go to the [License Keys](https://www.telerik.com/account/your-licenses/license-keys/new) page in your Telerik account.
+1. Go to the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your Telerik account.
 
 1. Click the **Download License Key** button.
 
@@ -44,7 +44,7 @@ Telerik strongly recommends the use of NuGet packages whenever possible. Only in
 
 If you cannot use NuGet packages in your project, add the license as a code snippet:
 
-1. Go to the [License Keys page](https://www.telerik.com/account/your-licenses/license-keys/new) in your Telerik account.
+1. Go to the [License Keys page](https://www.telerik.com/account/your-licenses/license-keys) in your Telerik account.
 
 1. On the Telerik UI for Xamarin row, click the **View key** link in the **SCRIPT KEY** column.
 

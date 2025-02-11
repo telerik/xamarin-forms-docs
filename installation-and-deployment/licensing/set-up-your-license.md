@@ -9,13 +9,13 @@ position: 1
 
 # Setting Up Your Telerik UI for Xamarin License Key
 
-Starting with the Q1 2025 release, the UI components from the Telerik UI for Xamarin library require activation through a license key (trial or commercial). This article describes how to download your personal license key and use it to activate the Telerik UI for Xamarin components.
+Starting with the Q1 2025 release, the UI components from the Telerik UI for Xamarin library require activation through a commercial license key. This article describes how to download your personal license key and use it to activate the Telerik UI for Xamarin components.
 
 An invalid license results in [errors and warnings]({%slug license-errors-warnings%}) during build and run-time indicators such as watermarks and banners.
 
 ## Downloading the License Key
 
-To download a license key for Telerik UI for Xamarin, you must have either a developer license or a trial license. If you are new to Telerik UI for Xamarin, sign up for a [free trial](https://www.telerik.com/try/ui-for-xamarin) first, and then follow the steps below.
+To download a license key for Telerik UI for Xamarin, you must have a developer license.
 
 1. Go to the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your Telerik account.
 
@@ -55,10 +55,6 @@ If you cannot use NuGet packages in your project, add the license as a code snip
 1. Add the `TelerikLicense.cs` file to your project.
 
 >Do not publish the license key code snippet in publicly accessible repositories. This is your personal license key.
-
-## Updating Your License Key
-
-Whenever you purchase a new Telerik UI for Xamarin license or renew an existing one, always [download a new license key](#downloading-the-license-key). The new license key includes information about all previous license purchases. This process is referred to as a license key update. Once you have the new license key, use it to [activate the Telerik UI for Xamarin](#activating-the-telerik-ui-for-net-xamarin-components).
 
 ## See Also
 

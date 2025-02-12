@@ -15,12 +15,10 @@ This article lists the answers to the most frequently asked questions (FAQs) abo
 
 Yes, the license key expires at the end of your subscription:
 
-* For trial users, this is at the end of your 30-day trial period.
 * For commercial license holders, this is when your subscription term expires.
 
 You need to download and install a new license key after:
 
-* Starting a new trial.
 * Buying a new license.
 * Renewing an existing license.
 * Upgrading an existing license.
@@ -29,11 +27,10 @@ An expired [perpetual license](https://www.telerik.com/purchase/faq/licensing-pu
 
 ## Will Telerik UI for Xamarin function with an expired license key?
 
-This depends on the [Telerik UI for Xamarin license type (perpetual, subscription, or trial)](https://www.telerik.com/purchase/faq/licensing-purchasing#licensing):
+This depends on the [Telerik UI for Xamarin license type (perpetual or subscription)](https://www.telerik.com/purchase/faq/licensing-purchasing#licensing):
 
 * *Perpetual licenses* function normally with an expired license key, as long as the application is using a Telerik UI for Xamarin version that was released before the expiration date of the license.
 * *Subscription licenses* function normally in already deployed applications, but you cannot rebuild and republish the app.
-* *Trial licenses* function normally only within the 30-day trial period.
 
 If none of the above conditions are met, the following behaviors occur:
 

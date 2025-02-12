@@ -17,7 +17,6 @@ An invalid license can be caused by any of the following:
 
 - Using an expired subscription license—subscription licenses expire at the end of the subscription term.
 - Using a perpetual license for product versions released outside the validity period of your license.
-- Using an expired trial license.
 - A missing license for Telerik UI for Xamarin.
 - Not installing a license key in your application.
 - Not updating the license key after renewing your Telerik UI for Xamarin license.
@@ -34,7 +33,6 @@ When using Telerik UI for .NET MAUI in a project with an expired or missing lice
 | `Your perpetual license is invalid.` | TKL102 | You are using a product version released outside the validity period of your perpetual license. To remove the error message, do either of the following: |
 |                                        | | - Renew your license, then download a new license key and use it to activate the controls. |
 |                                        | | - Downgrade to a product version included in your perpetual license as indicated in the message. |
-| `Your trial license has expired.`        | TKL105 | Purchase a commercial license to continue using the product. |
 | `Your license is not valid for the detected product(s).` | TKL101 | Review the purchase options for the listed products. Alternatively, remove the references to the listed packages from `package.json`. |
 
 ## See Also

@@ -94,4 +94,4 @@ Another feature of **RadChartView** is the ability to show [annotations]({% slug
 
 Xamarin.Android examples that show how to use RadChartView for Xamarin.Android are included in the Telerik UI for Xamarin zip file provided for manual installation. 
 
-Telerik_UI_for_Xamarin_[version]_[license].zip, where [version] marks the release and [license] is replaced with Dev or Trial depending on the license, is available for download from the [Downloads section of your Telerik account](https://www.telerik.com/account/product-download?product=UIXAM). Unzip the archive and go to Examples/Android folder to access our Samples Xamarin.Android solution. 
+Telerik_UI_for_Xamarin_[version]_[license].zip, where [version] marks the release and [license] is replaced with Dev license, is available for download from the [Downloads section of your Telerik account](https://www.telerik.com/account/product-download?product=UIXAM). Unzip the archive and go to Examples/Android folder to access our Samples Xamarin.Android solution. 

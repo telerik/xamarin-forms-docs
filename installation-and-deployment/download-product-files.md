@@ -8,14 +8,12 @@ position: 2
 
 # Download Product Files
 
-When you have an active trial or developer license, you can download the following files:
+When you have an active developer license, you can download the following files:
 
 * Standalone installation
 * Assemblies for manual installation
 * NuGet packages
 * Old versions
-
->tip You can enable a free trial license from the [Telerik UI for Xamarin product page](https://www.telerik.com/xamarin-ui). 
 
 In order to download these you need to take the following steps:
 
@@ -35,7 +33,7 @@ In order to download these you need to take the following steps:
 
 Below you could find a list of the available files:
 
->[license] could be Trial or Dev depending on the license you have.
+>[license] Dev license you have.
 
 >[version] is replaced with the version the file corresponds to.
 

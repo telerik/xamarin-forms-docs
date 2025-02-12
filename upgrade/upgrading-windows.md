@@ -8,8 +8,6 @@ position: 0
 
 # Upgrading on Windows
 
-The purpose of this topic is to explain you how to upgrade Telerik UI for Xamarin from Trial to Developer License or to a newer version on Windows. 
-
 There are two options for referencing Telerik components and the upgrade method depends on which one you chose. Both are listed below:
 
 * [Upgrade using the Telerik NuGet server](#upgrade-using-the-telerik-nuget-server)
@@ -41,18 +39,12 @@ In order to upgrade your controls to a newer version of the suite, you need to p
 	* [MSI file for automatic installation]({%slug install-msi%}).
 	* ZIP file for manual (advanced) installation - you can download the zip containing the dlls from the [Telerik UI for Xamarin product download page]({%slug download-product-files%}).
 
-2. If you have installed the trial version of Telerik UI for Xamarin and try to install the developer version of the same release, you will receive the following message: 
-
-	![Update](images/trial_installed.png)
-
-	So, you should remove the trial version first.
-
-3. If the upgrade is major (i.e. from R3 2023 to 2024 Q1), check the [Release History](https://www.telerik.com/support/whats-new/xamarin-ui/release-history).
-4. Back up your application.
-5. Update all the Telerik references in all projects (.Net Standard/Shared, Android, iOS, UWP) in Visual Studio to point to the new assemblies.
-6. Clean the solution.
-7. Rebuild the projects.
-8. Run the application.
+2. If the upgrade is major (i.e. from R3 2023 to 2024 Q1), check the [Release History](https://www.telerik.com/support/whats-new/xamarin-ui/release-history).
+3. Back up your application.
+4. Update all the Telerik references in all projects (.Net Standard/Shared, Android, iOS, UWP) in Visual Studio to point to the new assemblies.
+5. Clean the solution.
+6. Rebuild the projects.
+7. Run the application.
 
 ## Check the version of Telerik UI for Xamarin
 

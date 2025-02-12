@@ -14,66 +14,6 @@ publish: true
 
 To learn more please visit the [ Telerik UI for Xamarin](http://www.telerik.com/xamarin-ui) product overview page.
 
-<style>
-/* Xamarin download trial button */
-div#xamarin_trial {
-	text-align: center !important;
-}
-
-div#xamarin_trial .xamarin_download_btn {	
-	color: #fff;
-	background-color: #e74b3c;
-	padding:.44em .9em .52em;
-	font-size: 20px;
-	font-weight:400;
-	letter-spacing:-.025em;
-	position:relative;
-	display:inline-block;
-	line-height:1.2;
-	-webkit-transition:color .2s ease,background-color .2s ease;
-	transition:color .2s ease,background-color .2s ease;
-	border-radius:2px;
-	-webkit-appearance:none;
-	font-family:Metric,Arial,Gadget,sans-serif;
-	text-align:center	
-}
-</style>
-
-<script type="text/javascript">
-
-function ready(callback){
-    // in case the document is already rendered
-    if (document.readyState!='loading') callback();
-    // modern browsers
-    else if (document.addEventListener) document.addEventListener('DOMContentLoaded', callback);
-    // IE <= 8
-    else document.attachEvent('onreadystatechange', function(){
-        if (document.readyState=='complete') callback();
-    });
-}
-
-ready(function(){
-	  var mac = navigator.userAgent.match(/(Mac)/i);
-	  var btnWin = document.getElementById("js-btnWin");
-	  var btnOSX = document.getElementById("js-btnOSX");
-
-	  if (mac) {	  
-		btnOSX.style.display = "inline-block";
-		btnWin.style.display = "none";
-	  } else {
-		btnOSX.style.display = "none";
-		btnWin.style.display = "inline-block";
-	  }
-});
-
-</script>
-
-<div id="xamarin_trial">
-<br />
-<a id="js-btnWin" href="https://www.telerik.com/download-trial-file/v2-b/ui-for-xamarin" class="xamarin_download_btn js-btnWin" style="display: none">Download Free Trial</a>
-<a id="js-btnOSX" href="https://www.telerik.com/download-trial-file/v2-b/ui-for-xamarin?file=pkg" class="xamarin_download_btn js-btnOSX" style="display: none">Download Free Trial</a>
-</div>
-
 ## Controls Overview
 
 Our suite features the following controls for development with Xamarin.Android:
@@ -100,15 +40,15 @@ Our suite features the following controls for development with Xamarin.Android:
 
 * [ScrollView]({%slug android-scrollview-overview %} "Read more about RadScrollView for Android"): A layout container for a view hierarchy that can be scrolled by the user both horizontally and vertically, allowing it to be larger than the physical display.
 
-## Trial Version and Commercial License
+## Commercial License
 
-Telerik UI for Xamarin library is a commercial UI library. You are welcome to explore its full functionality and get technical support from the team when you register for a free 30-day trial. To use it commercially, you need to [purchase a license](https://www.telerik.com/purchase/xamarin-ui). Feel free to review the Telerik UI for Xamarin [License Agreement](https://www.telerik.com/purchase/license-agreement/ui-for-xamarin) to get acquainted with the full terms of use.
+Telerik UI for Xamarin library is a commercial UI library.
 
 ## Support Options
 
 For any issues you might encounter while working with Telerik UI for Xamarin, use any of the available support channels:
 
-* UI for Xamarin license holders and active trialists can take advantage of the outstanding customer support delivered by the developers building the library. To submit a support ticket, use the [UI for Xamarin dedicated support](https://www.telerik.com/account/support-tickets?pid=1534) system.
+* UI for Xamarin license holders can take advantage of the outstanding customer support delivered by the developers building the library. To submit a support ticket, use the [UI for Xamarin dedicated support](https://www.telerik.com/account/support-tickets?pid=1534) system.
 * [UI for Xamarin forums](https://www.telerik.com/forums/xamarin) are part of the free support you can get from the community and from the UI for Xamarin team on all kinds of general issues.
 * [UI for Xamarin feedback portal](https://feedback.telerik.com/xamarin) provides information on the features in discussion and also the planned ones for release.
 * You may still need a tailor-made solution for your project. In such cases, go straight to [Progress Services](https://www.progress.com/services).

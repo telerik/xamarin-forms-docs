@@ -11,10 +11,6 @@ CTAControlName: TreeView
 
  **RadTreeView** facilitates display, management, and navigation of hierarchical data structures. The product offers many advanced features like commands mechanism, data binding, checkbox support. RadTreeView allows you to achieve complex behavior and nicely blends into the interface of your application.
 
-{% if site.has_cta_panels == true %}
-{% include cta-panel-overview.html %}
-{% endif %}
-
 ## Figure 1: Overview
 
 ![RadTreeView-Overview](images/overview_treeview.png)

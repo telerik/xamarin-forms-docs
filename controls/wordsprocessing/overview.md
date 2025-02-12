@@ -16,10 +16,6 @@ CTAControlName: WordsProcessing
       
 **RadWordsProcessing** is a processing library that allows to create, modify and export documents to a variety of formats. Through the API, you can access each element in the document and modify, remove it or add a new one. The generated content you can save as a stream, as a file, or send it to the client browser.
 
-{% if site.has_cta_panels == true %}
-{% include cta-panel-overview.html %}
-{% endif %}
-
 ![RadWordsProcessing Overview image](images/RadWordsProcessing_Overview_01.png)
 
 ## Model

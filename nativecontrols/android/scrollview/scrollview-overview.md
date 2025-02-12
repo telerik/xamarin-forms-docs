@@ -17,8 +17,4 @@ CTAControlName: ScrollView
 - Vertical
 - Both
 
-{% if site.has_cta_panels == true %}
-{% include cta-panel-overview.html %}
-{% endif %}
-
 The component preserves the API of the original **ScrollView** as documented on the official Android Documentation website.

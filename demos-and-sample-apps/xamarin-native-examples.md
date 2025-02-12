@@ -14,7 +14,7 @@ position: 2
 
 Solutions that show how to use the controls when developing through **Xamarin.Android** or **Xamarin.iOS** are included in the Telerik UI for Xamarin zip file provided for manual installation. 
 
-Telerik_UI_for_Xamarin_[version]_[license].zip, where [version] marks the release and [license] is replaced with Dev or Trial depending on the license, is available for download from the [Downloads section of your Telerik account](https://www.telerik.com/account/product-download?product=UIXAM). Unzip the archive and go to Examples folder - Xamarin.Android and Xamarin.iOS solutions are available in separate folders - Android and iOS, respectively.
+Telerik_UI_for_Xamarin_[version]_[license].zip, where [version] marks the release and [license] is replaced with Dev license, is available for download from the [Downloads section of your Telerik account](https://www.telerik.com/account/product-download?product=UIXAM). Unzip the archive and go to Examples folder - Xamarin.Android and Xamarin.iOS solutions are available in separate folders - Android and iOS, respectively.
 
 In addition, the native-only examples are included as part of the [Telerik UI for Xamarin MSI installation]({%slug install-msi%}). You can find the solutions in the  "[installation-path]/Telerik UI for Xamarin [version]/Examples" folder. 
 

@@ -65,7 +65,6 @@ The settings under the General category affect all of the installed **Telerik Vi
 	
 * **Project Upgrade Notifications for Detected Local Distributions**
 	* **Suggest project upgrades for Telerik product version available on my computer**: When enabled, you will be prompted to upgrade upon opening a project, which is not using the latest version of Telerik UI installed on your system;
-	* **Suggest upgrades when an equal Dev release is detected on projects using a Trial**: When enabled, you will be prompted to upgrade if a licensed version of Telerik UI for Xamarin is available on your system, but the current project uses a trial version.
 
 * **Download Location**: Configures the path where the extensions look for and store distributions.
 

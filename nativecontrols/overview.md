@@ -8,10 +8,6 @@ position: 0
 publish: true
 ---
 
-{% if site.has_cta_panels == true %}
-{% include cta-panel-small.html %}
-{% endif %}
-
 ## Xamarin Forms vs Xamarin Native(Xamarin.iOS & Xamarin.Android)
 
 If you are new to the Xamarin world and are still hesitating what approach to take for developing your application, you should familiarize yourself with the strengths and weaknesses of the available approaches for developing Xamarin applications. We are here summarizing the main points discussed in the [Xamarin.Forms introduction page](https://www.xamarin.com/forms). 
